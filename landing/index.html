@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" data-hero="center" data-accent="gold">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>조선헌터스 — Joseon Hunters</title>
+<meta name="description" content="조선풍 가공 세계. 떠돌이 도사 도호가 봉인된 던전을 내려가 요괴를 베어내는 탑다운 픽셀 액션 RPG. Steam Early Access 준비 중." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="조선헌터스 — Joseon Hunters" />
+<meta property="og:description" content="바람의나라의 향수, 디아블로의 학살감. 전우치 톤의 조선풍 핵앤슬래시." />
+<meta property="og:image" content="https://genesiskoo.github.io/joseon-assets/landing/art/title.png" />
+<meta property="og:url" content="https://genesiskoo.github.io/joseon-assets/landing/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Cinzel:wght@400;500;600;700;900&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="landing.css" />
+</head>
+<body data-grain="on">
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="landing-sections.jsx"></script>
+<script type="text/babel">
+function App(){
+  useReveal();
+  return (
+    <React.Fragment>
+      <Nav/>
+      <Hero/>
+      <PitchBand/>
+      <Features/>
+      <Doho/>
+      <Hunters/>
+      <Boss/>
+      <Gallery/>
+      <Release/>
+      <Footer/>
+    </React.Fragment>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>
