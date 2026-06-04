@@ -80,7 +80,7 @@ function Nav(){
           <a href="#boss">봉인</a>
           <a href="#release">소식</a>
         </div>
-        <a className="btn btn-primary btn-sm nav-cta" href="https://www.threads.net/@ai_koo99" target="_blank" rel="noopener noreferrer">소식 받기</a>
+        <a className="btn btn-primary btn-sm nav-cta" href="#release">소식 받기</a>
       </div>
     </nav>
   );
@@ -110,7 +110,7 @@ function Hero(){
           <p className="hero-pitch">조선풍 가공 세계. 떠돌이 도사 <b style={{color:'var(--paper)'}}>도호</b>가 봉인된 던전에 잠든 장비를 해방하고, 요괴를 베어내는 탑다운 픽셀 액션 RPG.</p>
           <div className="hero-cta">
             <a className="btn btn-primary btn-lg" href="#features">세계관 살펴보기</a>
-            <a className="btn btn-ghost btn-lg" href="#boss">봉인 너머 보기</a>
+            <a className="btn btn-ghost btn-lg" href="https://www.threads.com/@ai_koo99" target="_blank" rel="noopener noreferrer">봉인 너머 보기</a>
           </div>
           <div className="hero-meta">
             <div className="m"><div className="mk">Genre</div><div className="mv">픽셀 액션 RPG</div></div>
@@ -288,7 +288,7 @@ function Release(){
           <h2>전부를 보일 때는 아직.<br/>다만, <span className="em">서막</span>은 지금 엽니다</h2>
           <p>도호의 칼끝, 봉인된 던전, 그리고 그 너머의 무언가 — 정식 공개에 앞서 세계의 단면을 먼저 펼칩니다.</p>
           <div className="cta-row">
-            <a className="btn btn-primary btn-lg" href="#boss">봉인 너머 보기</a><a className="btn btn-ghost btn-lg" href="https://www.threads.net/@ai_koo99" target="_blank" rel="noopener noreferrer">스레드에서 소식 받기</a>
+            <a className="btn btn-primary btn-lg" href="https://www.threads.com/@ai_koo99" target="_blank" rel="noopener noreferrer">봉인 너머 보기</a>
           </div>
           <div className="wishlist-note reveal">
             <div className="wt">Stay Tuned</div>
@@ -309,7 +309,7 @@ function Footer(){
           <div>
             <a className="brand" href="#top"><span className="mark">虎</span>
               <span className="bt"><b>조선헌터스</b><span>JOSEON HUNTERS</span></span></a>
-            <p className="disclosure" style={{marginTop:'20px'}}>본 작품은 AI 도구를 풀활용한 1인 개발로 제작됩니다. 기획·코드·픽셀·일러스트·번역을 한 사람이 엮어, 작품 한 편을 끝까지 완성하기 위한 파이프라인입니다.</p><a className="threads-link" style={{display:"inline-block",marginTop:"18px",fontSize:"13px",color:"var(--paper-dim)",whiteSpace:"nowrap"}} href="https://www.threads.net/@ai_koo99" target="_blank" rel="noopener noreferrer">개발 소식 · Threads <b style={{color:"var(--accent)"}}>@ai_koo99 →</b></a>
+            <p className="disclosure" style={{marginTop:'20px'}}>본 작품은 AI 도구를 풀활용한 1인 개발로 제작됩니다. 기획·코드·픽셀·일러스트·번역을 한 사람이 엮어, 작품 한 편을 끝까지 완성하기 위한 파이프라인입니다.</p>
           </div>
         </div>
         <div className="footer-bot">
