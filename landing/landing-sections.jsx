@@ -4,16 +4,16 @@ const { useState: useStateL, useEffect: useEffectL, useRef: useRefL } = React;
 /* ── 콘텐츠 데이터 ─────────────────────────────────── */
 const FEATURES = [
   { hanja:"自由", title:"자유 이동 핵앤슬래시", icon:"slash",
-    desc:"그리드의 시대는 끝났다. 마우스를 누르고 있으면 도호가 알아서 베어 넘긴다. 바람의나라의 향수 어린 픽셀 룩 위에, 디아블로의 학살감을 얹었다.",
+    desc:"그리드의 시대는 끝났다. 마우스를 누르고 있으면 도호가 알아서 베어 넘긴다. 향수 어린 픽셀 룩 위에, 묵직한 학살의 손맛을 얹었다.",
     chips:[["자유 이동",1],["마우스 홀드 자동 연타",1],["3/4 탑다운",0]] },
   { hanja:"道術", title:"부적과 도술검", icon:"talisman",
     desc:"떠돌이 도사의 무기는 칼만이 아니다. 부적을 던지고, 도술을 두르고, 도술검을 휘두른다. 핫키로 즉발하는 도술을 엮어 자신만의 콤보를 만든다.",
     chips:[["핫키 즉발",1],["도술 콤보",1],["부적·도술검",0]] },
   { hanja:"封印", title:"봉인된 던전", icon:"gate",
-    desc:"봉인이 풀린 던전은 층마다 다른 요사한 기운을 품는다. 청염이 타오르는 기와 폐허를 내려가 미니보스를 베고, 끝내 구미호와 마주한다.",
-    chips:[["층별 진행",1],["미니보스",1],["보스 구미호",0]] },
+    desc:"봉인이 풀린 던전은 층마다 다른 요사한 기운을 품는다. 청염이 타오르는 기와 폐허를 내려가 미니보스를 베고, 끝내 봉인 너머의 그것과 마주한다.",
+    chips:[["층별 진행",1],["미니보스",1],["봉인 너머의 존재",0]] },
   { hanja:"解封", title:"무한 드롭과 Rare 해금", icon:"loot",
-    desc:"디아블로 원본의 Affix + Rarity 3등급. 수만 가지 조합이 바닥에 쏟아진다. 그리고 구미호를 처치한 뒤에야 진짜 엔드게임 — Rare 해금이 열린다.",
+    desc:"Affix + Rarity 3등급. 수만 가지 조합이 바닥에 쏟아진다. 그리고 봉인 끝의 그것을 베어 넘긴 뒤에야 진짜 엔드게임 — Rare 해금이 열린다.",
     chips:[["랜덤 드롭",1],["Affix + Rarity",1],["Rare 해금 엔드게임",0]] },
 ];
 
@@ -77,10 +77,10 @@ function Nav(){
           <a href="#features">특징</a>
           <a href="#doho">도호</a>
           <a href="#hunters">헌터스</a>
-          <a href="#boss">구미호</a>
-          <a href="#release">출시</a>
+          <a href="#boss">봉인</a>
+          <a href="#release">소식</a>
         </div>
-        <a className="btn btn-primary btn-sm nav-cta" href="#release"><Ico name="steam"/>위시리스트</a>
+        <a className="btn btn-primary btn-sm nav-cta" href="#release">소식 받기</a>
       </div>
     </nav>
   );
@@ -103,14 +103,14 @@ function Hero(){
       </div>
       <div className="hero-inner">
         <div className="wrap">
-          <div className="hero-eyebrow"><span className="eyebrow he">Early Access · Steam</span> <span className="tbd">가제</span></div>
+          <div className="hero-eyebrow"><span className="eyebrow he">First Look</span> <span className="tbd">가제</span></div>
           <h1>조선헌터스<span className="latin">JOSEON HUNTERS</span></h1>
           <div className="hero-tag">조선의 어둠, 그 너머의 진실을 베어내다
             <span className="latin">Cut through the darkness — to the truth beyond.</span></div>
           <p className="hero-pitch">조선풍 가공 세계. 떠돌이 도사 <b style={{color:'var(--paper)'}}>도호</b>가 봉인된 던전에 잠든 장비를 해방하고, 요괴를 베어내는 탑다운 픽셀 액션 RPG.</p>
           <div className="hero-cta">
-            <a className="btn btn-primary btn-lg" href="#release"><Ico name="steam"/>Steam 위시리스트</a>
-            <a className="btn btn-ghost btn-lg" href="#boss"><Ico name="play"/>구미호 영상</a>
+            <a className="btn btn-primary btn-lg" href="#features">세계관 살펴보기</a>
+            <a className="btn btn-ghost btn-lg" href="#boss">봉인 너머 보기</a>
           </div>
           <div className="hero-meta">
             <div className="m"><div className="mk">Genre</div><div className="mv">픽셀 액션 RPG</div></div>
@@ -130,8 +130,8 @@ function PitchBand(){
   return (
     <section className="pitch-band" id="pitch">
       <div className="wrap reveal">
-        <p className="big">바람의나라의 <span className="em">향수</span>, 디아블로의 <span className="em">학살감</span>.<br/>28년간 비어 있던 자리에, 조선풍 핵앤슬래시가 들어선다.</p>
-        <div className="sub">— 전우치 톤의 떠돌이 도사, 그 칼끝의 그루브 —</div>
+        <p className="big">잊고 있던 <span className="em">그 시절의 픽셀</span>, 손끝이 기억하는 <span className="em">베어내는 손맛</span>.<br/>오래 비어 있던 자리에, 조선풍 핵앤슬래시가 선다.</p>
+        <div className="sub">— 떠돌이 도사의 칼끝, 그 특유의 박자 —</div>
       </div>
     </section>
   );
@@ -176,11 +176,11 @@ function Doho(){
           <div className="spot-body reveal d1">
             <span className="role">The Wanderer · 도호</span>
             <div className="hanja-big">道虎<small>도호</small></div>
-            <p><span className="em">능청맞고 시니컬한 떠돌이 도사.</span> 갈색 도포에 회색 목도리, 흑립을 눌러쓴 채 마을과 던전을 떠돈다. 평소엔 술 한 잔의 여유, 결정적 순간엔 부적과 도술검의 진중함. 전우치의 결을 잇는 한 사람.</p>
+            <p><span className="em">능청맞고 시니컬한 떠돌이 도사.</span> 갈색 도포에 회색 목도리, 흑립을 눌러쓴 채 마을과 던전을 떠돈다. 평소엔 술 한 잔의 여유, 결정적 순간엔 부적과 도술검의 진중함. 능청 뒤에 진심을 감춘, 한 자루의 칼 같은 사람.</p>
             <div className="spot-traits">
               <div className="trait"><div className="tk">Class Color</div><div className="tv">갈색 · 회 · 흑</div></div>
               <div className="trait"><div className="tk">Weapon</div><div className="tv">부적 · 도술검</div></div>
-              <div className="trait"><div className="tk">Tone</div><div className="tv">전우치 그루브</div></div>
+              <div className="trait"><div className="tk">Tone</div><div className="tv">능청 · 진중</div></div>
             </div>
           </div>
         </div>
@@ -217,7 +217,7 @@ function Hunters(){
   );
 }
 
-/* ════════════ 구미호 보스 ════════════ */
+/* ════════════ 봉인 너머 (보스 미스터리) ════════════ */
 function Boss(){
   const vid = useRefL(null);
   const [playing,setPlaying] = useStateL(false);
@@ -228,16 +228,16 @@ function Boss(){
         <div className="boss-grid">
           <div className="boss-media reveal" onClick={toggle}>
             <video ref={vid} src="art/gumiho_vid.mp4" poster="art/gumiho_40.png" loop muted playsInline preload="metadata"/>
-            <span className="frame-tag">BOSS · 九尾狐</span>
+            <span className="frame-tag">SEALED · ???</span>
             <div className={`play ${playing?'hide':''}`}><div className="pbtn"><Ico name="play"/></div></div>
           </div>
           <div className="boss-body reveal d1">
             <span className="eyebrow">The Sealed One</span>
-            <h2 className="sec-title">봉인 너머의 <span className="em">구미호</span></h2>
-            <p>황금빛 아홉 꼬리의 눈이 어둠 속에서 당신을 응시한다. <span className="em">던전 가장 깊은 곳, 풀려가는 봉인 끝에서</span> 도호는 마침내 구미호와 마주선다.</p>
+            <h2 className="sec-title">봉인, 그 너머의 <span className="em">무언가</span></h2>
+            <p>던전 가장 깊은 곳, 풀려가는 봉인의 끝. <span className="em">어둠 속에서 무언가가 당신을 응시한다.</span> 도호가 마침내 마주서는 그것 — 정체는, 직접 확인하라.</p>
             <div className="boss-end">
               <span className="bk">처치 후</span>
-              <span className="bv">구미호를 베어 넘긴 순간, 진짜 사냥이 시작된다 — <b style={{color:'var(--paper)'}}>Rare 해금 엔드게임</b>. 차원 너머의 던전이 열리는, 그 시절의 향수를 직격하는 무한 도전.</span>
+              <span className="bv">그것을 베어 넘긴 순간, 진짜 사냥이 시작된다 — <b style={{color:'var(--paper)'}}>Rare 해금 엔드게임</b>. 봉인 너머에서, 끝없이 변주되는 도전이 열린다.</span>
             </div>
           </div>
         </div>
@@ -254,7 +254,7 @@ function Gallery(){
         <div className="sec-head reveal">
           <span className="eyebrow">In-Game</span>
           <h2 className="sec-title">픽셀로 되살린 <span className="em">조선의 밤</span></h2>
-          <p className="sec-lead">128×128 캔버스 위, 한복과 갓과 기와. 클래식 한국 MMORPG의 톤 그대로.</p>
+          <p className="sec-lead">128×128 캔버스 위, 한복과 갓과 기와. 손끝이 기억하는 그 시절의 톤 그대로.</p>
         </div>
         <div className="gallery">
           {GALLERY.map((g,i)=>(
@@ -275,8 +275,8 @@ function Release(){
     <section className="section release" id="release">
       <div className="wrap">
         <div className="sec-head center reveal">
-          <span className="eyebrow center">Early Access</span>
-          <h2 className="sec-title">곧, Steam에서 <span className="em">사냥을 시작한다</span></h2>
+          <span className="eyebrow center">Prologue</span>
+          <h2 className="sec-title">정식 공개에 앞서, <span className="em">먼저 펼쳐 보이는 한 장</span></h2>
         </div>
         <div className="fact reveal">
           <div className="f"><div className="fk">Release</div><div className="fv"><span className="accent">Early Access</span></div></div>
@@ -285,15 +285,14 @@ function Release(){
           <div className="f"><div className="fk">Language</div><div className="fv">한 · 영 <small>자막</small></div></div>
         </div>
         <div className="final-cta reveal">
-          <h2>도호의 칼끝에<br/><span className="em">당신의 이름</span>을 더하라</h2>
-          <p>위시리스트 한 번이 1인 개발자에게는 가장 큰 응원입니다.</p>
+          <h2>전부를 보일 때는 아직.<br/>다만, <span className="em">서막</span>은 지금 엽니다</h2>
+          <p>도호의 칼끝, 봉인된 던전, 그리고 그 너머의 무언가 — 정식 공개에 앞서 세계의 단면을 먼저 펼칩니다.</p>
           <div className="cta-row">
-            <a className="btn btn-primary btn-lg" href="#"><Ico name="steam"/>Steam 위시리스트 등록</a>
-            <a className="btn btn-ghost btn-lg" href="#"><Ico name="discord"/>디스코드 합류</a>
+            <a className="btn btn-primary btn-lg" href="#boss">봉인 너머 보기</a>
           </div>
           <div className="wishlist-note reveal">
-            <div className="wt">Wishlist</div>
-            <div className="wd">Steam 페이지 준비 중 — 위시리스트가 열리면 가장 먼저 알려드립니다.</div>
+            <div className="wt">Stay Tuned</div>
+            <div className="wd">Steam 페이지와 정식 공개는 준비 중입니다. 소식이 열리면 가장 먼저 전해드리겠습니다.</div>
           </div>
         </div>
       </div>
@@ -311,11 +310,6 @@ function Footer(){
             <a className="brand" href="#top"><span className="mark">虎</span>
               <span className="bt"><b>조선헌터스</b><span>JOSEON HUNTERS</span></span></a>
             <p className="disclosure" style={{marginTop:'20px'}}>본 작품은 AI 도구를 풀활용한 1인 개발로 제작됩니다. 기획·코드·픽셀·일러스트·번역을 한 사람이 엮어, 작품 한 편을 끝까지 완성하기 위한 파이프라인입니다.</p>
-          </div>
-          <div className="socials">
-            <a href="#" aria-label="X"><Ico name="x"/></a>
-            <a href="#" aria-label="YouTube"><Ico name="yt"/></a>
-            <a href="#" aria-label="Discord"><Ico name="discord"/></a>
           </div>
         </div>
         <div className="footer-bot">
