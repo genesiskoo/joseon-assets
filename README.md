@@ -188,6 +188,7 @@ archive/
 
 ## 관련 문서
 
+- GPT Image 2 게임 에셋 활용 전략 (Codex 작성) → `docs/gpt-image2_asset_strategy.md`
 - 캐릭터 캔버스·Layer·컬러 규격 → `joseon/docs/04_ART_STYLE_GUIDE.md`
 - 아트 결정 락 (D-007, D-022, D-030, D-034) → `joseon/docs/DECISIONS.md`
 - 컨셉아트 발주 리스트 → `joseon/docs/design/concept_art_list.md`
