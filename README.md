@@ -12,13 +12,15 @@ joseon-assets/
 ├── concept/         # 컨셉아트 및 일러스트
 ├── magazine/        # 매거진·카드 스타일 프로모 이미지
 ├── sprites/         # 픽셀 스프라이트시트 + Aseprite 소스
-├── reference/       # 외부 수집 레퍼런스 + UI 목업
+├── reference/       # 내부 참고 자료 + 외부 수집 레퍼런스
 ├── video/           # 영상 파일
 ├── 2026/            # 월별 생성 에셋 (날짜 기반 아카이브)
 ├── landing/         # 랜딩 페이지용 에셋
 ├── maps/            # 맵 이미지
-├── inbox/           # 새 에셋 드롭존 (정리 전 임시 보관)
-└── archive/         # 폐기·중복 파일 보관
+├── inbox/           # 새 에셋 단기 드롭존
+├── workbench/       # 미승인 후보·프로브·테스트
+├── catalog/         # 경로·해시·이동·중복 manifest
+└── archive/         # 중복·변형·레거시 보관
 ```
 
 ---
@@ -79,13 +81,13 @@ concept/
 │   └── gumiho_art_standing.png    # 구미호 전신 (혈흔 한복+불꽃)
 ├── npc/
 │   ├── general_master_sheet.png   # 장군 NPC 마스터 시트 (파란 갑옷)
-│   ├── yungeom_ref_sheet.png      # 윤검(호위도사) 레퍼런스 시트
-│   └── yungeom_ref_sheet_v2.png   # 윤검 레퍼런스 시트 v2
-├── probe/                         # 화풍 수렴 프로브 이미지
+│   └── yungeom_ref_sheet.png      # 윤검(호위도사) 레퍼런스 시트
 ├── keyart_trio_v1.jpg             # 3인 키아트 가로형 (조선판타지)
 ├── keyart_trio_v2.png             # 3인 키아트 세로형
 └── keyart_trio_action.png         # 3인 액션 단체컷
 ```
+
+화풍·구도 프로브는 공식 컨셉과 섞지 않고 `workbench/probes/`에 둔다.
 
 ---
 
@@ -115,17 +117,17 @@ Pixellab 생성 스프라이트시트 및 Aseprite 소스 파일.
 sprites/
 ├── doho_cref1_spritesheet.png     # 도호 4방향 스프라이트시트 (그린BG)
 ├── doho_sheet_4dir.png            # 도호 4방향 strip (투명BG)
-├── doho_sheet_test.png            # 도호 8프레임 테스트 strip
 ├── doho_128_dir0~3.png            # 도호 128px 단일 방향 프레임 4종
 ├── doho_256_dir0~3.png            # 도호 256px 단일 방향 프레임 4종
 ├── doho_sprite.aseprite           # 도호 Aseprite 소스
-├── doho_sprite_test.aseprite      # 도호 Aseprite 테스트 소스
 ├── gwisae_cref2_spritesheet.png   # 귀새 4방향 스프라이트시트
 ├── cheongyeon_cref3_spritesheet.png   # 청연 4방향 스프라이트시트 v1
 └── cheongyeon_cref3a_spritesheet.png  # 청연 4방향 스프라이트시트 v2 (축제 의상)
 ```
 
-> 캔버스 규격: 메인 캐릭터 128×128 (D-007). 2방향(좌우 반전) 원칙 (D-034).
+테스트 스프라이트와 작업 소스는 `workbench/tests/sprites/`에 둔다.
+
+> 캔버스 규격과 방향 정책은 `joseon/docs/04_ART_STYLE_GUIDE.md`와 최신 `DECISIONS.md`를 따른다.
 
 ---
 
@@ -133,17 +135,11 @@ sprites/
 
 ```
 reference/
-├── ui_mockup/                     # 게임 UI 목업 레퍼런스 (바람의나라 스타일)
-│   ├── ui_battle_scene1~3.png     # 전투 화면 목업
-│   ├── ui_dungeon_boss.png        # 던전 보스룸 목업
-│   ├── ui_village_npc.png         # 마을 NPC 대화 목업
-│   ├── ui_field_scene1~3.png      # 필드 이동 목업
-│   ├── ui_field_forest.png        # 숲 필드 목업
-│   ├── ui_battle_dungeon.png      # 던전 전투 목업 (스틸컷)
-│   └── view_comparison_iso_topdown.png  # 아이소메트릭 vs 탑다운 비교
-├── sprite_ref_3char_concept.png   # 3캐릭터 스프라이트 컨셉 (개념도)
-├── sprite_ref_3char_animations.png  # 3캐릭터 애니메이션 5동작 레퍼런스
-└── [해시명].jpg × 30              # 외부 수집 레퍼런스 (조선·판타지 의상·갑옷·캐릭터)
+├── internal/
+│   ├── ui_mockup/                 # 프로젝트 UI 목업
+│   └── sprites/                   # 프로젝트 스프라이트 방향 참고
+└── external/
+    └── unclassified/              # 해시명 외부 레퍼런스, 출처·태그 정리 대기
 ```
 
 ---
@@ -160,8 +156,11 @@ video/
 
 ## inbox/ — 드롭존
 
-**새 파일은 여기 던진다.** 정기적으로 아트팀이 분류해 각 폴더로 이동.
-하위 폴더(`artwork/`, `magazine/`, `sheets/`, `sprite/`, `reference/`)에 미리 분류해서 넣어도 된다.
+**새 파일은 여기 던지되 같은 작업 세션 안에서 분류한다.**
+
+- 미승인 후보·프로브·테스트 → `workbench/`
+- 승인된 공식 에셋 → 목적 폴더
+- 배포 복제본 → `landing/` 또는 `2026/YYYY/MM/`
 
 ---
 
@@ -169,8 +168,12 @@ video/
 
 ```
 archive/
-└── inbox_dup/   # 중복 확인된 파일 (삭제 전 임시 보관)
+└── duplicates/
+    ├── exact/      # canonical과 SHA-256 완전 동일
+    └── variants/   # 중복 이름이지만 내용은 다른 변형
 ```
+
+정리 manifest와 로그는 `catalog/`, `docs/ASSET_CLEANUP_LOG_2026-06-07.md`를 참조한다.
 
 ---
 
@@ -189,6 +192,8 @@ archive/
 ## 관련 문서
 
 - GPT Image 2 게임 에셋 활용 전략 (Codex 작성) → `docs/gpt-image2_asset_strategy.md`
+- 에셋 정리 로그 → `docs/ASSET_CLEANUP_LOG_2026-06-07.md`
+- 정리 manifest → `catalog/`
 - 캐릭터 캔버스·Layer·컬러 규격 → `joseon/docs/04_ART_STYLE_GUIDE.md`
 - 아트 결정 락 (D-007, D-022, D-030, D-034) → `joseon/docs/DECISIONS.md`
 - 컨셉아트 발주 리스트 → `joseon/docs/design/concept_art_list.md`
