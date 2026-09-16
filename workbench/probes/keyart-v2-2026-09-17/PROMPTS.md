@@ -1,0 +1,31 @@
+# 키아트 시안 프롬프트 — 2026-09-17
+
+도구: built-in image_gen. 실제 모델 ID 미노출. 이미지 참조를 실제로 첨부했으며 2.5 모델 확정 표기하지 않음. 후보 상태 review, 공식 에셋 반입 전.
+
+참조: C:/workspace/joseon-assets/sheets/doho/doho_ref_sheet.png
+
+## A — 인물 중심 초안
+
+Use case: ads-marketing.
+Create ONE polished landscape 16:9 key art concept A for the Korean fantasy action RPG Joseon Hunters. Input image 1 is CHARACTER IDENTITY REFERENCE ONLY: Doho's young Korean male face, black hair, wide black horsehair heukrip hat with its blue ornament and bead cords, deep navy layered dopo robe, white collar, belt, sword shape and adult body proportions. Use those visual identifiers; do not reproduce the reference sheet, captions, multiple views, old personality text or diagrams.
+Scene: the broken seal at a Joseon-inspired shrine's underground dungeon entrance, cracked stone threshold, worn Korean woodwork, sparse torn paper talismans. Clearly visible stone stairs lead DOWN below the threshold into the background. Distant darkness may subtly suggest fox-tail-shaped shadow, not a second main character.
+Composition: Doho is the sole hero, dominant three-quarter figure at the right-center, shown from hat to below knees, his face large enough to read at thumbnail size. Keep the left third calm with weathered stone and atmospheric negative space for a future title. Fully include his hat and his sword. Body casually angled, weight on one leg; he looks toward viewer with a restrained mischievous half smile and one slightly raised brow, relaxed confidence of a wandering trickster swordsman. His right hand holds one clearly readable unsheathed Korean straight sword down at his side, distinct from clothing; the other hand casually touches the hat brim. Preserve recognizable identity and navy costume from reference. No scarf. Ornaments controlled, not redesigned.
+Mood: adventurous Korean folk fantasy with swagger and playful assurance amid mystery. Painterly illustrated game cover, elegant controlled brushwork, handsome expressive face, readable large shapes. Not a horror poster or grim stoic hero.
+Lighting: a dominant soft daylight from entrance, weak ambient fill into stairwell; face and navy garment separated by broad value groups. Matte fabric, rough dry stone, understated metal highlights. Ink black, rich deep navy, warm old paper and muted wood, small aged gold accents. No glowing contour, no glossy CGI, no excessive bloom, no particles, no giant magic circle.
+No other playable characters, no modern clothing, no samurai armor, no xianxia exaggeration, no text, no letters, no logos, no watermarks, no borders. One coherent finished illustration, not a comparison sheet.
+
+## B — 하강 동세
+
+Use case: ads-marketing. Create ONE polished landscape 16:9 key art concept B for Joseon Hunters, Korean folk fantasy action RPG.
+Input image 1: character identity reference ONLY. Preserve Doho's young Korean male face, black hair, black broad-brim heukrip hat with blue ornament and bead cords, deep navy layered dopo with white collar, belt ornaments, Korean straight sword, adult proportions. Do NOT reproduce reference sheet, text, stern personality or multi-view layout.
+Composition: wider FULL BODY view, Doho occupies approximately 65 percent image height in center-right with ample clearance above hat, below boots and around ENTIRE sword. He is taking the first confident stride DOWN a wide stone stairwell from a broken-seal shrine entrance. Camera is above and in front of him, at the lower-right side of the frame the staircase visibly descends further into darkness with its treads clearly below his feet. Behind him at upper left is the higher sunlit threshold framed by Korean weathered wood, roof-eave fragments and torn paper seals. Anatomically clear weight-bearing step. He turns his head slightly back toward the viewer with a knowing playful half-smile. Robe hem swings with the downward step, not flying. Right hand holds ONE unsheathed sword low and diagonally beside his body, tip fully visible, left hand relaxed for balance. Sword silhouette separate from costume and stair edges.
+Visual hierarchy: recognizable Doho and facial expression first, unequivocal underground descent second, Korean shrine architecture third. Quiet shadowed upper-left area for later title placement. In deepest recess only a restrained fox-tail-shaped shadow suggests the future boss. No second human or full creature.
+Style: premium painterly illustrated game keyart, crisp handsome character features and expressive brushwork, readable broad shapes and subtle garment detail. Korean fantasy adventure, swagger, mischievous wandering swordsman, mysterious but not horror or despair. Ink black, navy, warm paper and weathered wood, muted crimson on paper seals. Broad soft entrance daylight and weak ambient fill, matte high-roughness cloth/wood/stone, sparse metal reflections. Keep face readable under hat.
+Constraints: same costume identity as reference, no grey scarf, no brown robe, no modern garments, no samurai armor or xianxia costume. No giant magic circle, no glowing weapon, no particles, no glossy CGI, no full rim glow, no excessive bloom. No text, lettering, logo, watermarks, border. Single coherent image. IMPORTANT: full uncropped hat, feet and blade entirely inside frame with safe margins.
+
+## A2 — A 구도 보정
+
+입력: exec-b757e0b9-fa96-4f69-af6d-f69ce010ac83.png (A 초안)
+
+Use case: precise-object-edit. Edit this key art A. Change ONLY camera framing and surrounding canvas coverage: zoom the viewpoint out approximately 25 percent so the ENTIRE black hat including tall crown has generous clearance from top edge and the ENTIRE sword including blade tip is visible with safe clearance from lower-left edge. Show full figure down to boots if necessary for sword clearance. Maintain landscape 16:9. Keep Doho on the right with left-side environment negative space. Preserve exactly the same face, mischievous subtle smile, hat-touching hand pose, down-pointed sword, navy costume, proportions, architecture design, matte painted rendering, palette and daylight. Preserve the stairwell. Do not add text, logos, new people, effects or new props. This is framing correction, not character redesign. Whole hat and whole sword inside frame with at least 5 percent outer safe margins.
+
