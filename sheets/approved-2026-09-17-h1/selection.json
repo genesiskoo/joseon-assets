@@ -1,0 +1,83 @@
+{
+    "decision":  "D-071",
+    "approved":  true,
+    "approved_at":  "2026-09-17",
+    "user_selection":  "h1으로 가자",
+    "scope":  "Only the leftmost H1 Doho appearance and follow-up art direction; not the entire board, regeneration, animation or game GLB import.",
+    "selections":  [
+                       {
+                           "character":  "doho",
+                           "panel":  "H1",
+                           "column":  "left",
+                           "board":  "K2_H_doho_hero_options.png",
+                           "approved":  true,
+                           "style":  "K2 Korean manhwa, matte dark fantasy",
+                           "identity":  [
+                                            "black heukrip and black hair",
+                                            "clean-shaven witty adult face",
+                                            "divided navy layered dopo with visible loose trousers",
+                                            "ivory collar",
+                                            "muted red waist sash",
+                                            "small round blue waist ornament",
+                                            "straight sword resting over shoulder, relaxed swordsman stance"
+                                        ],
+                           "source_path":  "workbench/production/k2-player-gumiho-2026-09-17/K2_H_doho_hero_options.png",
+                           "width":  1536,
+                           "height":  1024,
+                           "source_sha256":  "BF0138017F8FF1FEAC4C79E0B25B01FAF44624FC3EB67369DE3C0B99C10F2B75",
+                           "approved_sha256":  "BF0138017F8FF1FEAC4C79E0B25B01FAF44624FC3EB67369DE3C0B99C10F2B75",
+                           "approved_path":  "sheets/approved-2026-09-17-h1/K2_H_doho_hero_options.png"
+                       }
+                   ],
+    "unselected_panels":  [
+                              "H2",
+                              "H3"
+                          ],
+    "unselected_other_candidates":  [
+                                        "R1",
+                                        "R2"
+                                    ],
+    "supersedes":  {
+                       "decision":  "D-068",
+                       "character":  "doho",
+                       "panel":  "D03",
+                       "scope":  "Doho appearance only"
+                   },
+    "retained":  [
+                     {
+                         "character":  "gwisae",
+                         "panel":  "G02",
+                         "decision":  "D-068"
+                     },
+                     {
+                         "character":  "cheongyeon",
+                         "panel":  "C01",
+                         "decision":  "D-068"
+                     },
+                     {
+                         "character":  "gumiho",
+                         "panel":  "F01",
+                         "form":  "before_transformation",
+                         "decision":  "D-068"
+                     },
+                     {
+                         "character":  "gumiho",
+                         "panel":  "F03",
+                         "form":  "after_transformation",
+                         "decision":  "D-068"
+                     }
+                 ],
+    "original_generation":  {
+                                "tool":  "builtin image_gen",
+                                "model":  "not exposed",
+                                "prompt_record":  "workbench/production/k2-player-gumiho-2026-09-17/PROMPTS.md",
+                                "record_id":  "H"
+                            },
+    "preservation":  "Byte-identical source board copied without cropping, recoloring or regeneration. Only H1 is approved.",
+    "followup_qa":  [
+                        "Compare only H1 identity and costume to generated derivatives.",
+                        "Check K2 drawing/material consistency, Korean costume readability, hands, sword, limbs and frame.",
+                        "Re-check targeted fixes for regressions; record residual differences.",
+                        "Image review is separate from actual 3D/rigging/in-game validation."
+                    ]
+}

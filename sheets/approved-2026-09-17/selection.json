@@ -1,45 +1,51 @@
 {
-  "decision": "D-068",
-  "approved": true,
-  "approved_at": "2026-09-17",
-  "user_selection": "d3, g2, c1, f1 f3(변신전 후)",
-  "scope": "Selected panel character appearance only; not game import or combat phases",
-  "model": "builtin-default-unverified",
-  "selections": [
-    {
-      "character": "doho",
-      "panel": "D03",
-      "column": "right",
-      "board": "catalog_doho_D01-D03.png"
-    },
-    {
-      "character": "gwisae",
-      "panel": "G02",
-      "column": "middle",
-      "board": "catalog_gwisae_G01-G03.png"
-    },
-    {
-      "character": "cheongyeon",
-      "panel": "C01",
-      "column": "left",
-      "board": "catalog_cheongyeon_C01-C03.png"
-    },
-    {
-      "character": "gumiho",
-      "form": "before_transformation",
-      "panel": "F01",
-      "column": "left",
-      "board": "catalog_gumiho_F01-F03.png"
-    },
-    {
-      "character": "gumiho",
-      "form": "after_transformation",
-      "panel": "F03",
-      "column": "right",
-      "board": "catalog_gumiho_F01-F03.png"
-    }
-  ],
-  "unselected_panels": "Not approved; each board also contains unselected candidates.",
-  "source_directory": "workbench/probes/character-catalog-2026-09-17",
-  "approved_directory": "sheets/approved-2026-09-17"
+    "decision":  "D-068",
+    "approved":  true,
+    "approved_at":  "2026-09-17",
+    "user_selection":  "d3, g2, c1, f1 f3(변신전 후)",
+    "scope":  "Selected panel character appearance only; not game import or combat phases",
+    "model":  "builtin-default-unverified",
+    "selections":  [
+                       {
+                           "character":  "doho",
+                           "panel":  "D03",
+                           "column":  "right",
+                           "board":  "catalog_doho_D01-D03.png",
+                           "superseded_by":  {
+                                                 "decision":  "D-071",
+                                                 "panel":  "H1",
+                                                 "selection_path":  "sheets/approved-2026-09-17-h1/selection.json",
+                                                 "scope":  "Doho appearance only; original D068 approval retained as history."
+                                             }
+                       },
+                       {
+                           "character":  "gwisae",
+                           "panel":  "G02",
+                           "column":  "middle",
+                           "board":  "catalog_gwisae_G01-G03.png"
+                       },
+                       {
+                           "character":  "cheongyeon",
+                           "panel":  "C01",
+                           "column":  "left",
+                           "board":  "catalog_cheongyeon_C01-C03.png"
+                       },
+                       {
+                           "character":  "gumiho",
+                           "form":  "before_transformation",
+                           "panel":  "F01",
+                           "column":  "left",
+                           "board":  "catalog_gumiho_F01-F03.png"
+                       },
+                       {
+                           "character":  "gumiho",
+                           "form":  "after_transformation",
+                           "panel":  "F03",
+                           "column":  "right",
+                           "board":  "catalog_gumiho_F01-F03.png"
+                       }
+                   ],
+    "unselected_panels":  "Not approved; each board also contains unselected candidates.",
+    "source_directory":  "workbench/probes/character-catalog-2026-09-17",
+    "approved_directory":  "sheets/approved-2026-09-17"
 }

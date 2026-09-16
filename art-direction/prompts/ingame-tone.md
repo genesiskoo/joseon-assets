@@ -5,7 +5,7 @@ STYLE_BIBLE.md와 함께 사용한다. 기존 common.md의 밝고 평평한 ambi
 ## 공통 블록
 
 ```text
-Korean dark fantasy action RPG, consistent with the supplied actual stylized 3D game assets. Use their proportions, large color masses, matte hand-painted materials, simple geometry and restrained detail density. Deep navy, charcoal, muted mineral grey and soot brown, limited dull-red and teal identifying accents. Preserve the preferred NPC B roles, age differences and sardonic personalities while following the requested K2 Korean manhwa facial drawing. Keep Korean costume signatures. Give protagonists stronger large garment silhouettes, weapon presence, focal contrast and selected D068 costume motifs than village NPCs without changing the shared drawing medium. No glossy porcelain skin or intricate decorative inflation. Match PC, NPC and environment material treatment.
+Korean dark fantasy action RPG, consistent with the supplied actual stylized 3D game assets. Use their proportions, large color masses, matte hand-painted materials, simple geometry and restrained detail density. Deep navy, charcoal, muted mineral grey and soot brown, limited dull-red and teal identifying accents. Preserve the preferred NPC B roles, age differences and sardonic personalities while following the requested K2 Korean manhwa facial drawing. Keep Korean costume signatures. Give protagonists stronger large garment silhouettes, weapon presence, focal contrast and selected H1 costume signatures for Doho and D068 identifiers for the other characters than village NPCs without changing the shared drawing medium. No glossy porcelain skin or intricate decorative inflation. Match PC, NPC and environment material treatment.
 ```
 
 ## 중립 제작 시트 추가
@@ -24,7 +24,7 @@ Orthographic isometric scale and camera consistent with the current game. Low am
 
 1. 실제 3D 렌더/인게임: 색·형태·재질·조명·정보 밀도.
 2. K2: 최신 한국풍 얼굴·선·무광 명암. NPC B: 표정·연령·역할의 출발점.
-3. D-068 카탈로그: 캐릭터 식별 요소·복식·소품.
+3. 도호 = D-071 H1 비교 보드의 왼쪽 열만. 다른 캐릭터 = D-068 선택 열. H2/H3/R1/R2 문양을 H1에 자동 혼합하지 않는다.
 4. 현재 타일 텍스처: 큰 소재 면·격자 모티프.
 
 임시 박스·캡슐·디버그 UI·체커 바닥·렌더 오류를 완성 미술로 복제하지 않는다. 생성 이미지에는 '목표 시안'임을 기록하며 실제 게임 캡처와 구분한다.

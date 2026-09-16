@@ -9,7 +9,7 @@
     "tool":  "builtin image_gen",
     "model":  "not exposed",
     "reference_policy":  "K2 is the user\u0027s requested style direction. D068 catalogue identity and older D03 costume are source references; D070 dark matte game-compatible palette retained. No new external asset is automatically approved.",
-    "status":  "K2 style requested by user; A cast/forms and H exploration preserved. D03-costume R2 is latest Doho candidate; no approved artwork or game GLB replacement.",
+    "status":  "D071: only left H1 selected for Doho. H2/H3/R1/R2 unselected. No image regeneration or game GLB replacement.",
     "records":  [
                     {
                         "id":  "A_PC",
@@ -56,8 +56,8 @@
                         "key":  "hero_H",
                         "source":  "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-6e3709f3-2eb1-473c-854e-127ce5a37d84.png",
                         "filename":  "K2_H_doho_hero_options.png",
-                        "status":  "candidate",
-                        "review":  "H1/H2/H3 도호 실루엣 비교. 이후 PD가 기존 복장 차용을 지시; H안 단독 채택 없음.",
+                        "status":  "partially_approved_H1",
+                        "review":  "H1/H2/H3 도호 실루엣 비교. 이후 PD가 기존 복장 차용을 지시; H안 단독 채택 없음. Later user selection: H1 only, D071. Approved source board preserved byte-for-byte.",
                         "prompt":  "Create ONE landscape 1536x1024 character-design comparison sheet: THREE distinct lead-hero designs of DOHO, the same clean-shaven adult Korean wandering swordsman. Title \"K2 / DOHO\". Column labels \"H1\", \"H2\", \"H3\". All three must clearly look like a playable protagonist, not a plain village NPC.\n\nREFERENCE ROLES:\nImage 1, leftmost Doho, supplies identity and current K2 drawing style. The user says this design is too ordinary/NPC-like. Substantially redesign his garment shapes and hero presence while retaining identity, NOT just relight the same figure. Other two characters are style neighbors only, do not depict them.\nImage 2 is K2 NPC context. Match the same Korean manhwa line, mature face treatment, matte brush shading and world palette, but give Doho stronger shape hierarchy and a recognizable signature. NPCs keep workaday closed silhouettes; Doho must have a distinct athletic, open, asymmetric swordsman silhouette even standing still.\n\nCOMMON IDENTITY: late-20s adult Korean male, lean athletic rather than huge muscular body, appealing confident sly eyes and tiny knowing half smile, CLEAN-SHAVEN, black hair under a black Korean heukrip/gat with thin wide nearly horizontal brim and cylindrical crown, fine manggeon band, ONE small blue crown badge, restrained bead cords. Deep navy/indigo Korean dopo, off-white narrow dongjeong, dull cinnabar red waist cloth, one round blue waist charm, straight slender sword and dark scabbard, charcoal baji, matte black boots. NO scarf, moustache, beard, oversized fantasy sword, horns, western armor, fur cape or added crown.\n\nHERO DESIGN RULES: preserve unmistakable curved crossed Korean collar and cloth closures. Strengthen shoulder-to-waist-to-hem rhythm through garment cut, not exaggerated anatomy. 3-4 BIG legible color and cloth shapes, clear waist anchor, readable separate legs and sword. Give face/upper chest the strongest local value contrast with the ivory collar against navy; navy can be a little richer than NPC grey-brown but the world stays DARK. More decisive eye contact and confident body weight. Simple iconic sword fitting with tiny dull-brass/blue accent, not filigree. Avoid repeated decorative texture. The three variations differ in CUT, LAYERING and SILHOUETTE so the change survives neutral light and a game idle pose. Same rendering and physical character size in all three; no colored rim lighting, halos, magic or scene staging to fake protagonism.\n\nH1 — witty swordsman: a dynamic clean short-over-long Korean dopo cut, front upper layer ends slightly above knees and opens into two broad sharp falling navy panels, darker calf-length rear layer. Narrow off-white inner collar extends in a clear V without becoming a scarf. Red waist tie is firm and has two medium asymmetrical tails. Visible charcoal baji from mid-thigh below open split, planted boots, relaxed bend in one knee. Right hand rests a straight sword over one shoulder at a contained diagonal; full blade visible inside his own column. Left hand at waist. Slight body lean, raised chin, small playful grin. Signature: triangle of brim/shoulders, narrow red waist, open athletic lower silhouette. Cloth matte, zero embroidery.\n\nH2 — composed exorcist swordsman: somewhat longer overlapping Korean po layers, a broad deep-indigo outer shoulder/sleeve silhouette over charcoal-blue inner robe, clean angular opening showing the white collar. One fitted cloth waist knot and ONE round blue medallion form the visual center. Two short aged paper seals tucked into belt as CONSUMABLE EQUIPMENT, no supernatural powers or spell glow. One forward knee parts the long straight outer panels, dark trousers clearly visible. Both hands in a calm sword-ready posture, one lightly resting on the hilt of a long dark scabbard angled beside the body; blade mostly sheathed. More steady confident gaze than H1, dignified but still young and clever. Korean garment layers, NO chest armor, pauldrons, shield or monk beads. Signature: strong wide upper silhouette and commanding central vertical, large quiet cloth fields.\n\nH3 — legendary wandering swordsman: elegant long divided navy-blue dopo with slightly longer side/back panels flowing into TWO broad curved cloth shapes, not many narrow ribbons. A small area of faded lighter blue inner sleeve/lining visible to separate shapes. Off-white dongjeong frames face, rich muted red diagonal waist tie with one longer clearly visible tail, blue charm at knot. Forearms gently gathered in dark cuffs, free hand loosely near hat brim without hiding face, other hand holding straight sword lowered obliquely; full blade clear. One foot forward, long relaxed S-line in the body, confident direct look and subtle smirk. Modern Korean historical action-manhwa lead presence without idol makeup. Signature: long sweeping outer contour broken by visible knees and boots, not a closed scholar\u0027s cylinder. No cape, scarf or luxurious brocade.\n\nCOMPOSITION: Three full-body figures occupying equal columns with generous gutters and 5% margins. All hat brims, scabbards, swords, cloth ends and soles completely in frame. Similar eye-level slight three-quarter catalogue views, same ground line and body height. No scenic backgrounds, portrait boxes or NPC silhouettes. Soft neutral inspection light, simple dark grey backdrop, small contact shadows. Same fine confident K2 ink lines and broad matte painterly shading on every variant, naturally differentiated fabric folds, unglossy skin. Deep navy, charcoal, dirty ivory, limited dark red and muted blue; mature Korean dark fantasy. Make each hero outfit visibly different from the starting plain Doho while retaining his Korean identity and practical stylized 3D readability.",
                         "reference_assets":  [
                                                  "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-0378dc63-11c7-4c64-bcea-c25a4559a83f.png",
@@ -68,7 +68,14 @@
                         "sha256":  "BF0138017F8FF1FEAC4C79E0B25B01FAF44624FC3EB67369DE3C0B99C10F2B75",
                         "output_path":  "workbench/production/k2-player-gumiho-2026-09-17/K2_H_doho_hero_options.png",
                         "source_write_time":  "2026-09-17T05:51:56.3694801+09:00",
-                        "timestamp_basis":  "Original PNG LastWriteTime; server generation time not exposed."
+                        "timestamp_basis":  "Original PNG LastWriteTime; server generation time not exposed.",
+                        "approved_panels":  [
+                                                "H1"
+                                            ],
+                        "unselected_panels":  [
+                                                  "H2",
+                                                  "H3"
+                                              ]
                     },
                     {
                         "id":  "R1",
@@ -88,7 +95,8 @@
                         "sha256":  "9B8A004B7A587A66320FDCC38C394D1388CD516B2A3F284DB6D321D557926DD5",
                         "output_path":  "workbench/production/k2-player-gumiho-2026-09-17/K2_D_R1_costume_restore.png",
                         "source_write_time":  "2026-09-17T05:55:28.8331639+09:00",
-                        "timestamp_basis":  "Original PNG LastWriteTime; server generation time not exposed."
+                        "timestamp_basis":  "Original PNG LastWriteTime; server generation time not exposed.",
+                        "selection_status":  "not_selected"
                     },
                     {
                         "id":  "R2",
@@ -107,7 +115,8 @@
                         "sha256":  "1E520F22DE5BE36247EE2D262B28BFCFCFCA409E6116DBF31E79E7E466439460",
                         "output_path":  "workbench/production/k2-player-gumiho-2026-09-17/K2_D_R2_costume_restore.png",
                         "source_write_time":  "2026-09-17T05:58:15.1040000+09:00",
-                        "timestamp_basis":  "Original PNG LastWriteTime; server generation time not exposed."
+                        "timestamp_basis":  "Original PNG LastWriteTime; server generation time not exposed.",
+                        "selection_status":  "not_selected"
                     }
                 ],
     "generation_call_count":  5,
@@ -133,5 +142,12 @@
                                           "Micro embroidery and bead strings need simplification when translating to game scale.",
                                           "Same-scale NPC vs protagonist comparison has not been rendered in-game."
                                       ]
-                  }
+                  },
+    "current_selection":  {
+                              "decision":  "D-071",
+                              "character":  "doho",
+                              "panel":  "H1",
+                              "column":  "left",
+                              "manifest":  "sheets/approved-2026-09-17-h1/selection.json"
+                          }
 }
