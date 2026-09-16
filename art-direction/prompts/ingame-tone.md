@@ -5,7 +5,7 @@ STYLE_BIBLE.md와 함께 사용한다. 기존 common.md의 밝고 평평한 ambi
 ## 공통 블록
 
 ```text
-Korean dark fantasy action RPG, consistent with the supplied actual stylized 3D game assets. Use their proportions, large color masses, matte hand-painted materials, simple geometry and restrained detail density. Deep navy, charcoal, muted mineral grey and soot brown, limited dull-red and teal identifying accents. Preserve the preferred NPC B faces, age differences and sardonic personalities. Keep Korean costume signatures. No glossy porcelain skin or intricate decorative inflation. Match PC, NPC and environment material treatment.
+Korean dark fantasy action RPG, consistent with the supplied actual stylized 3D game assets. Use their proportions, large color masses, matte hand-painted materials, simple geometry and restrained detail density. Deep navy, charcoal, muted mineral grey and soot brown, limited dull-red and teal identifying accents. Preserve the preferred NPC B roles, age differences and sardonic personalities while following the requested K2 Korean manhwa facial drawing. Keep Korean costume signatures. Give protagonists stronger large garment silhouettes, weapon presence, focal contrast and selected D068 costume motifs than village NPCs without changing the shared drawing medium. No glossy porcelain skin or intricate decorative inflation. Match PC, NPC and environment material treatment.
 ```
 
 ## 중립 제작 시트 추가
@@ -23,7 +23,7 @@ Orthographic isometric scale and camera consistent with the current game. Low am
 ## 참조 역할
 
 1. 실제 3D 렌더/인게임: 색·형태·재질·조명·정보 밀도.
-2. NPC B: 얼굴·표정·연령·역할.
+2. K2: 최신 한국풍 얼굴·선·무광 명암. NPC B: 표정·연령·역할의 출발점.
 3. D-068 카탈로그: 캐릭터 식별 요소·복식·소품.
 4. 현재 타일 텍스처: 큰 소재 면·격자 모티프.
 
