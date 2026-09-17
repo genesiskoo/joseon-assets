@@ -1,0 +1,125 @@
+{
+  "EDL": [
+    {
+      "id": "H01",
+      "file": "inputs/H01.mp4",
+      "from": 0.5,
+      "dur": 4,
+      "at": 0
+    },
+    {
+      "id": "H02",
+      "file": "inputs/H02.mp4",
+      "from": 0.75,
+      "dur": 4,
+      "at": 4
+    },
+    {
+      "id": "H03",
+      "file": "inputs/H03.mp4",
+      "from": 0.75,
+      "dur": 5,
+      "at": 8
+    },
+    {
+      "id": "H04",
+      "file": "inputs/H04.mp4",
+      "from": 0.75,
+      "dur": 4,
+      "at": 13
+    },
+    {
+      "id": "H05A",
+      "file": "inputs/H05A.mp4",
+      "from": 1,
+      "dur": 2,
+      "at": 17
+    },
+    {
+      "id": "H05B",
+      "file": "inputs/H05B.mp4",
+      "from": 0.5,
+      "dur": 2,
+      "at": 19
+    },
+    {
+      "id": "H06",
+      "file": "inputs/H06.mp4",
+      "from": 0.5,
+      "dur": 3,
+      "at": 21
+    },
+    {
+      "id": "H07",
+      "file": "inputs/H07.mp4",
+      "from": 0.75,
+      "dur": 3,
+      "at": 24
+    },
+    {
+      "id": "H08",
+      "file": "inputs/H08.mp4",
+      "from": 1,
+      "dur": 4,
+      "at": 27
+    },
+    {
+      "id": "H09",
+      "file": "inputs/H09.mp4",
+      "from": 0,
+      "dur": 8,
+      "at": 31
+    },
+    {
+      "id": "H10",
+      "file": "inputs/H10_r2.mp4",
+      "from": 0.5,
+      "dur": 4,
+      "at": 39
+    },
+    {
+      "id": "H12",
+      "file": "inputs/H12.mp4",
+      "from": 0,
+      "dur": 3,
+      "at": 47
+    }
+  ],
+  "CAPTIONS": [
+    {
+      "text": "깊은 봉인에 금이 들더니.",
+      "at": 0.5,
+      "dur": 3
+    },
+    {
+      "text": "사람 살던 못골에도—",
+      "at": 4.25,
+      "dur": 3.5
+    },
+    {
+      "text": "괴질이 돌고,\n열린 문마다 빗장이 걸리네.",
+      "at": 8.5,
+      "dur": 8
+    },
+    {
+      "text": "달빛 아래 꼬리가 아홉이라.",
+      "at": 17.25,
+      "dur": 2.75
+    },
+    {
+      "text": "고개 너머 갓 하나 넘어오니—",
+      "at": 27.25,
+      "dur": 3.5
+    },
+    {
+      "text": "어슬렁어슬렁, 못골로 들어서더라.",
+      "at": 39.25,
+      "dur": 3.5
+    }
+  ],
+  "frames": 1200,
+  "fps": 24,
+  "duration": 50,
+  "H10_status": "r2 selected; feet planted at ~1.75s source",
+  "renderer": "assemble_local.py / FFmpeg 8.1; edit.mjs not executed"
+}

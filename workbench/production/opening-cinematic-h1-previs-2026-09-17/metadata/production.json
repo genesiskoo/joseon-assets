@@ -1,0 +1,928 @@
+{
+  "schema_version": 1,
+  "project": "Joseon Hunters H1 opening previs",
+  "created_date": "2026-09-17",
+  "status": "complete_previs_candidate",
+  "target": {
+    "duration": 50,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "audio": "no voices; temp foley/instrumental if added"
+  },
+  "estimated_video_credits": 305.5,
+  "balance_before": {
+    "credits": 2639.5,
+    "subscription_plan_type": "ultra",
+    "pricing_url": "https://higgsfield.ai/mcp-pricing",
+    "free_trial": {
+      "status": null,
+      "eligible": false,
+      "offered_kind": null,
+      "kind": null,
+      "trial_credits": null,
+      "ends_at": null,
+      "unlim_available": false,
+      "unlim_remaining": null,
+      "unlim_expires_at": null
+    },
+    "free_gens": [
+      {
+        "job_set_types": [
+          "hf_mult_motion_control",
+          "hf_mult_replace_object"
+        ],
+        "remaining": 1,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": 30
+      },
+      {
+        "job_set_types": [
+          "viral_hub_video"
+        ],
+        "remaining": 1,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": null
+      }
+    ]
+  },
+  "keyframes": [
+    {
+      "id": "H01",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/21_seal_wall_cutscene.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nREFERENCE ROLES: image 1 is drawing, night palette and matte material style only; image 2 stone seal MATERIAL and carved circular motif only. Do not include either reference's people. SHOT: extreme close-up of ancient dark grey stone seal wall. Thin vertical hairline fissure divides a small portion of a carved circular Korean seal. A thumbnail-sized irregular STONE flake is still attached near the central crack; clear empty downward space beneath it so its eventual fall will read. Torn blank weathered paper talisman edges at far side only. Faintest contained blue-white line deep inside crack, no large glow yet. Slight oblique camera, stone occupies entire background. Still moment just before flake detaches; no moving debris, no hands, no people.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-ceb63ae9-a238-4072-b478-0822c15a9fe7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "c3f52ac0-7a81-4475-8bdf-10a4b0e4b9e1",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H01_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2314474,
+        "source_file_id": "file_00000000e5648206b52c6946fa000050"
+      }
+    },
+    {
+      "id": "H02",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/02_motgol_wide.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nREFERENCE ROLES: image 1 style and night lighting only, no protagonists; image 2 Korean village architecture and shop timber/paper/lantern vocabulary, not composition. SHOT: eye-level medium-wide view of ONE small Korean timber market stall OPEN at night. Adult Korean merchant inside behind waist-high counter on screen right, ordinary adult woman customer outside screen left. Merchant wears plain faded brown vest over cream hanbok, black headcloth, middle-aged ordinary face; woman in muted grey-blue plain hanbok, tied hair. They are distinct townsfolk, not Doho/Gwisae/Cheongyeon. A SINGLE small folded cloth-wrapped parcel is entirely supported by merchant's extended hands, customer's hands open under it a little away, ready to receive. Keep all four hands individually readable without tangling. Plain closed parcels behind counter. Two hinged wooden shutter panels sit open at sides of same stall opening. Hanging paper lantern at upper right burns calmly upright, amber light only locally. View framed from thighs up, faces plus hands + parcel + shutters + lantern all readable. Quiet everyday transaction BEFORE an abnormal wind. Background lane sparse and dim, no crowd, no text.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-d7e740be-f781-4f9e-a9c0-fd0a87cc28a3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "c21497b2-7c34-4de4-8775-b3945acea6f4",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H02_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2288884,
+        "source_file_id": "file_00000000c054820693c9504933586661"
+      }
+    },
+    {
+      "id": "H03",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/02_motgol_wide.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nREFERENCE ROLES: image 1 drawing/night tone only; image 2 village wood/stone/hanji material vocabulary only. SHOT: grounded medium-wide eye-level shot of a DIFFERENT ordinary Korean household doorway at night. TWO adult villagers full bodies including knees and feet. Screen right an adult middle-aged man in simple dusty olive-grey hanbok is upright but weak, his near hand resting against a vertical wooden doorpost for support. On screen left his adult wife in faded ochre/grey plain hanbok stands within forearm reach, both hands ready but not touching yet. She watches his face with sober concern. The man's feet are still firmly on stone ground; no collapse or already-seated pose. Low wide stone threshold directly BEHIND him, clearly available to sit on. Frame shows physical space to bend knees and wife to catch his near forearm. Local dim amber window behind, blue-grey shadow outside. No gore, no fantasy markings, no monsters, no children, no laughing.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-46d9a0d8-add1-46ab-af43-13e9fb5c0799.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "ac7e1c52-ebaf-48a8-ac84-c3fd94d32d37",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H03_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2480855,
+        "source_file_id": "file_0000000021d0822fb8a1b612e04480c9"
+      }
+    },
+    {
+      "id": "H06",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/08_gwisae.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nREFERENCE ROLES: image 1 style/night tone only; image 2 sole exact GWISAE identity anchor, copy face MASK, clothing, hair, weapon and spare masks, not sheet format. SHOT: Gwisae ALONE in a narrow already-shuttered Korean alley, three-quarter medium-full portrait cropped below knees, face and BOTH hands and waist fully visible. She stands frame right facing slightly toward empty damaged alley to screen left; posture alert but stationary, looking at existing damage. White bride mask with red cheek dots stays over her face, long high black ponytail with dull red ribbons. Layered black and muted crimson robe, dark purple underlayers, leather forearm wraps, EXACTLY TWO spare masks hanging side by side at her waist. Anatomical RIGHT hand (on viewer left in near frontal pose) already loosely grips ONE curved short dagger pointing downward, away from body; anatomical LEFT hand hangs empty. Curve and tip of blade within frame. No second dagger, no sword draw, no attack. Damaged loose wooden board and closed shutters in background, no other people. Small local amber source from alley side, cool low ambient. No supernatural glow.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-a250066a-0350-492f-95ce-3dcde22d8f83.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "747e6c42-6e86-40ca-8b8b-af22940637cc",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H06_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2473429,
+        "source_file_id": "file_00000000a9c08230a748819025bedcd7"
+      }
+    },
+    {
+      "id": "H04",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/opening-cinematic-h1-previs-2026-09-17/keyframes/H02_start.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nEDIT TARGET: supplied open shop frame. Same camera axis, same SAME wooden stall, two shutter panels hinged to side posts, hanging cylindrical paper lantern upper right, same lighting/materials. Advance time after the customer has left: REMOVE the woman entirely so foreground street is empty. Merchant remains inside on right, same brown vest and headcloth, his hands pull the LAST small cloth parcel inward over counter toward his body. His face quietly worried, no disease injury. The side wooden hinged shutters remain wide OPEN, about to be closed inward across this square shop opening. Show the rectangular opening and both panels clearly, no new doors, no extra windows. It is the still instant BEFORE shutdown, not the already shut result. Restrained night tone.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-c8d6ab6b-fa89-4a8c-bfba-73a816754e53.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "d6c2c20d-3328-49fe-9966-370f4538c301",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H04_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2241202,
+        "source_file_id": "file_000000000a9c8206af70a2e4eb88f16b"
+      }
+    },
+    {
+      "id": "H07",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/09_cheongyeon.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nREFERENCE ROLES: image 1 style and night palette; image 2 exact CHEONGYEON adult identity, face, hairstyle, outfit, fan and bells. Produce ONE cinematic shot, not sheet. She is ALONE beneath Korean courtyard eaves in a different sheltered location from Gwisae. Medium-full three-quarter view from mid-shin up, frame left, looking quietly toward an already dark closed street on screen right. Both hands completely visible and separated. Anatomical RIGHT hand holds her black-and-gold star/moon FOLDING FAN OPEN at lower chest height; anatomical LEFT hand hangs lowered beside hip holding bronze bell cluster by its loop, no new bells. Ivory/pale teal layered Korean robe and restrained jade waist ornaments, exact dark hairstyle/crown from ref. Body remains poised, no dance or spell. A few stone jars and a timber column imply sheltered house court, shuttered gate in far background. Soft localized lantern side light shows face/hands without glow, cool night shadows. No other characters.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-7ae354e3-fb94-407a-a901-21ce1241ed67.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "0b5ae2fa-269f-4b2b-8cd4-6f6ff708920e",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H07_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2362275,
+        "source_file_id": "file_00000000a2b0820689b75445e56322f7"
+      }
+    },
+    {
+      "id": "H08",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/opening-cinematic-h1-r3-2026-09-17/keyframes/OP11_H1_start_v001.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nEDIT TARGET / environment and costume reference: existing Doho inn doorway first-frame. Recompose a new LOW CAMERA arrival insert in exactly this street, just BEFORE he reaches that position. Foreground rough stone paving covers lower half. Show Doho's two complete dark wrapped boots and lower split navy robe with red sash ends at top edge. Adult same character, only body below waist visible. One boot planted, the other a short distance behind preparing first grounded step toward closed wooden inn door at screen right. Door's lower wood and stone threshold visible on right. Camera angle low around ankle height and close but both boots fit fully, no cropped toes, no extra feet. Cool grey night paving, warm local lantern light from upper right, same worn dry matte stones. No sword or face appears in this low framing, they will be revealed by a later upward tilt. No text.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-d506bbe4-68e0-4cf5-a6f4-10621a116989.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "120a58a9-0f27-4ced-89b9-89f14e005904",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H08_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2327913,
+        "source_file_id": "file_0000000000508206bad7cd10931f066e"
+      }
+    },
+    {
+      "id": "H10",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/02_motgol_wide.png",
+        "C:/workspace/joseon-assets/workbench/production/opening-cinematic-h1-r3-2026-09-17/keyframes/OP11_H1_start_v001.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nREFERENCE ROLES: image 1 H1 Doho identity/style; image 2 surviving village courtyard spatial design, shaman look (red jacket, teal skirt, grey hair); image 3 exact Doho night costume and shoulder-sword continuity. ONE new cinematic wide shot from a rear three-quarter camera just behind Doho entering the town's inner square from the lower-left foreground lane. Doho full body is in LOWER LEFT, facing away toward center-right square, about 35% frame height, clearly about to take the last few steps into square. Anatomical RIGHT hand holds ONE sword at right shoulder, blade behind shoulders toward his left, LEFT hand empty near waist; one empty waist scabbard. Black gat, navy split coat, dull red sash, no scarf. Closed wooden inn/lane is behind camera. Across square, small living amber lantern light beside shrine on far right reveals ONE distant elderly female shaman in red top/teal skirt. Her full figure 12% frame height. Surrounding shop doors shut, but no ruin apocalypse or dead bodies. Ground open with clear walkable space between Doho and square center. Cool low night fill, sparse amber pools, controlled ink/matte painting. No title, no frame label, no trio and no meeting or conversation yet.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-7160055c-d887-41b1-ac1c-29203c91aae8.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "ac9b9bac-de84-4c19-86d8-2bf07add0c65",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H10_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2653370,
+        "source_file_id": "file_00000000112081f596f9e22a5504a98b"
+      }
+    },
+    {
+      "id": "H05N",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nREFERENCE ROLE: supplied image gives only drawing medium and night palette. NEW SHOT: fixed low oblique close-up of a quiet dark shallow puddle between rough Korean village flagstones, after dusk. Still water occupies about 80% of wide frame. Narrow moon reflection near upper left, faint broken amber lantern reflection near upper right. Water center and lower center is a clear smooth pale blue-grey reflection field with sufficient light to later read a dark shadow, subtle noise only. Stone border at bottom corners and top edge, a single fallen leaf at bottom right. NO person, face, monster, tail, shadow animal, fish, hand or body. Ordinary empty water BEFORE anything uncanny appears. Flat subdued reflective highlights without glossy CGI.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-9990512d-8e49-40dc-877b-e374fe3d3e87.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "a15389f5-f3a6-41e5-b8c5-756e79281589",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H05N_start.png",
+        "content_type": "image/png",
+        "size_bytes": 2324018,
+        "source_file_id": "file_0000000067a4821185b5e22ca853a555"
+      }
+    },
+    {
+      "id": "H05S",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/opening-cinematic-h1-previs-2026-09-17/keyframes/H05N_start.png"
+      ],
+      "prompt": "Create ONE finished cinematic first-frame illustration, 16:9 landscape, no panel divisions or writing, full-bleed. Joseon Hunters Korean dark fantasy, controlled fine ink outlines and broad matte cel-painterly shadows matching the references exactly. Night lighting: low cool ambient, sparse localized amber practical light, muted soot brown/grey/deep navy. Clear anatomy and physical staging. Matte cloth/stone/skin, restrained detail, no photographic CGI, no excessive bloom or rim light. Do not include text, labels, borders, subtitles, logos, or a character sheet.\nEDIT TARGET supplied puddle image: preserve exactly same camera, puddle borders, stones, moon, amber lantern, tree reflections and lower-right fallen leaf. Add ONLY a DARK FLAT SHADOW REFLECTION in the water, center of puddle. It is the ambiguous reflected shadow of NINE FOX TAILS spreading in a fan. There are EXACTLY NINE clearly countable tapering tips: FOUR tips on left, ONE uppermost center tip, FOUR on right. The nine long furry tapering shapes share one base near lower center, no visible face or body. Count each tip with clean negative water gaps between neighboring tails. Broad furry pointed fox-tail ends, not octopus arms or smooth tentacles. Fit all 9 tips within the clear central water region. Same dark charcoal silhouette uniform flat tone like a shadow, subtly distorted by surface, no volume, no highlights or actual tails protruding above water, no eyes. Ordinary moon and lantern remain reflections around it. This is still water at the brief moment when the nine-tip REFLECTION can be counted, before the ripple erases it. Do not add digits, labels or magic circle.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-eadc1b52-a68a-41f7-9bb8-cf7c67bfac4b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "dbc3be15-0f99-45e1-8636-ad70909cfe3e",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H05_shadow_9tips.png",
+        "content_type": "image/png",
+        "size_bytes": 2123805,
+        "source_file_id": "file_00000000a4fc8209b5b8998fd1a3b224"
+      }
+    },
+    {
+      "id": "H05S_r2",
+      "refs": [
+        "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab93-d681-76b3-bf13-54c5196fa469/exec-eadc1b52-a68a-41f7-9bb8-cf7c67bfac4b.png"
+      ],
+      "prompt": "Precise edit of supplied cinematic Korean ink-painted puddle image. Keep camera, water, moon, lantern, leaf, tree reflections and every existing tail silhouette exactly. The existing dark reflected shape has SEVEN long tails (left3 center1 right3). ADD EXACTLY TWO MORE fully distinct long furry tapered FOX-TAIL SHADOWS from the same lower-central base: one new bottom-left tail reaching outward to near x=400,y=750, and one new bottom-right tail reaching outward to near x=1260,y=760 (relative to this 1671x941 image). These additional tails spread horizontally lower than the original seven, with clear blue-grey negative WATER GAPS separating each new tail from its upper neighboring tail. Make both new outer tips prominent and individually countable. Result MUST be exactly NINE tips: left4, center1, right4. No extra heads, ears, eyes, face, body, feet, real 3D fur or tentacles. All nine are a FLAT dark shadow REFLECTION below the surface. Preserve existing seven, merely add two at bottom to complete the fan. Do not add any written numbers or labels.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-7cac924b-03ef-4274-8918-1ba50aa31e28.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "id": "H10_end_r2",
+      "refs": [
+        "C:/workspace/joseon-assets/workbench/production/opening-cinematic-h1-previs-2026-09-17/keyframes/H10_start.png"
+      ],
+      "prompt": "Edit this exact H1 Korean cinematic night courtyard picture into the END pose of one short step. Preserve the entire background, shaman, perspective, lighting, drawing style, Doho's size, identity, hat and costume. Doho is seen from behind in the lower-left foreground. Change ONLY his legs/hips/lower robe into a clearly SETTLED STANDING posture: BOTH complete boots flat on the stone ground, heels and toes in visible contact, feet apart at relaxed shoulder width. The currently lifted rear foot has come forward and planted beside the other, no crossed legs, no toe balance. Upright balanced natural rest; no walking pose. His RIGHT hand still holds ONE sword by hilt over right shoulder, blade behind head extends to left. LEFT hand relaxed, ONE empty waist scabbard. Slight head turn toward distant lantern and shaman. Keep whole character inside frame. No extra sword, people, limbs, labels or text. All matte ink-painted night lighting unchanged.",
+      "generated": "Generated images are saved to C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469 as C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab93-d681-76b3-bf13-54c5196fa469\\exec-61a0a597-0a99-4d05-af25-87a4ef1e804c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "upload": {
+        "media_id": "3ea01a2b-b630-4756-a56a-596113d3382a",
+        "status": "uploaded",
+        "type": "image",
+        "filename": "H10_end_r2.png",
+        "content_type": "image/png",
+        "size_bytes": 2521160,
+        "source_file_id": "file_00000000827c8230be03c74281b735d5"
+      }
+    }
+  ],
+  "video_specs": [
+    {
+      "id": "H01",
+      "index": 1,
+      "duration": 5,
+      "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. 0–0.5s: stone still. 0.5–1.8s: the protruding small stone flake at the central fissure loosens, tips forward and falls downward out of frame. Fine dust trickles after it under gravity. 1.8–3.5s: contained blue-white light grows slightly brighter along that SAME now opened crack. 3.5–5s: settle on the widened dark slit and dim blue leak, dust dissipates. Camera stays steady with only a minute inward move. No explosion, no entire wall collapsing, no person causing this. The falling flake visibly leaves its former attached place."
+    },
+    {
+      "id": "H02",
+      "index": 2,
+      "duration": 5,
+      "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. 0–0.4s establish. 0.4–1.8s: merchant moves the ONE tied cloth parcel into the woman's waiting hands; her hands take its weight, merchant fully releases it and pulls back BOTH empty hands. 1.8–2.8s: she draws the SAME parcel to her abdomen and holds it. 2.2–3.2s: the paper lantern on upper right swings a little inward in one cold gust, its light briefly dims. Merchant notices and turns his eyes then head upward toward it; woman becomes still. 3.2–5s hold completed transfer and uneasy reaction. No duplicated parcel, no repeated handover, no drastic magical light."
+    },
+    {
+      "id": "H03",
+      "index": 3,
+      "duration": 6,
+      "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. One clear caring physical action. 0–0.5s: man remains upright against the post. 0.5–1.8s: his supporting palm slides DOWN along the post, his knees buckle and body lowers. His adult wife immediately takes his near forearm with both hands and supports him. 1.8–4.5s: together they pivot slightly backward and she lowers him onto the LOW STONE DOORSTEP already behind him. Both feet stay on ground; no free fall. 4.5–6s: he is clearly SEATED, hunched and weak, she stays beside him holding his forearm and looks briefly toward the empty lane for help. Keep the contact, bending knees and final seated pose visible. No laughing, no screaming, no graphic injury, no kisses."
+    },
+    {
+      "id": "H06",
+      "index": 6,
+      "duration": 4,
+      "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. Gwisae alone. 0–0.7s she examines the already broken shutters to screen left. 0.7–2.0s she turns her bride-mask face a few degrees toward the dark empty lane, while the fingers of her anatomical RIGHT hand close more firmly on her ALREADY-HELD lowered curved dagger. 2–4s holds the alert final attitude. Ribbon tips move very slightly. EXACTLY two spare masks remain fixed at waist, one black dotted and one carved brown; facial bride mask remains opaque and unmoving. Do not lift or draw dagger, don't walk or attack. Bare LEFT hand stays relaxed. Camera almost locked, slight push only."
+    },
+    {
+      "id": "H04",
+      "index": 4,
+      "duration": 5,
+      "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. SAME market stall closing after customer has left. 0–1s merchant brings final parcel fully behind counter and puts it down inside. 1–3.5s his two empty hands reach to the existing two HINGED wooden shutters at the sides and swing them toward each other across the shop opening. Panels rotate around the original vertical hinges, do NOT slide out of nowhere. Interior is progressively occluded, warm slit becomes narrow then closes. By 4s the two panels meet and stop with a small final settling movement of the latch from inside. 4–5s hold on the SHUT stall. Lantern outside remains at upper right. Camera fixed. Merchant never steps through solid counter or closed panel. End decisively with customer opening closed."
+    },
+    {
+      "id": "H07",
+      "index": 7,
+      "duration": 4,
+      "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. Cheongyeon has already been watching the closed street to screen right. 0–0.8s holds that observation. 0.8–2.4s she slowly brings her gaze slightly down and uses the thumb and fingers of her anatomical RIGHT hand to gather the ribs of the black folding fan into ONE CLOSED narrow fan, with the correct hinge at its base. Do not turn it into a sword or second fan. LEFT hand keeps bronze bells LOW at hip; they move a little ONCE naturally as she shifts her weight. 2.4–4s holds closed fan near waist and thoughtful calm face. No spell, no particle flash, no walking away. Locked frame, very slight cloth breathing."
+    },
+    {
+      "id": "H08",
+      "index": 8,
+      "duration": 5,
+      "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. ARRIVAL connecting start and end reference images. Begin low on Doho's two boots. 0.3–2.3s he makes TWO SMALL grounded natural steps toward the inn, one boot lifts, travels, heel plants, weight transfers, then other repeats. The camera smoothly tilts upward AND pulls back enough to reveal the whole body, face and hat. By 3.8s he stops in the EXACT full-body pose and doorway position of the supplied END IMAGE. Hold that end pose through 5s. Same clean-shaven adult H1 face, navy split robe, black gat, dull red sash, blue pendants. Anatomical RIGHT hand holds ONE sword by its hilt at right shoulder with blade extending behind his shoulders to his left. LEFT hand near waist. One EMPTY scabbard. No new sword draw, no sliding feet, no scene change. Do not merely zoom a still image: boots take physical steps."
+    },
+    {
+      "id": "H10",
+      "index": 10,
+      "duration": 5,
+      "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. Doho enters the surviving town courtyard. 0.2–2.8s viewed from behind, takes two small grounded steps out of foreground lane toward square center, then STOPS with weight settling. His anatomical RIGHT hand keeps ONE sword at right shoulder, tip extending behind shoulders to his left; keep ONE empty scabbard at waist. By 3s he notices the remaining lantern-lit shrine across the square and turns his head slightly toward it, without raising weapon or recognizing any secret. Far-right elderly shaman stays distant and makes one small ordinary turn toward the lantern. She does not wave, greet or join him. 3–5s settle on this inhabited refuge. Minimal forward camera move, no big zoom. Maintain matte low night light, no new extra NPCs or gates."
+    },
+    {
+      "id": "H05A",
+      "index": 51,
+      "duration": 4,
+      "prompt": "One continuous locked-off shot of the SAME night puddle in supplied start/end frames. Preserve all stone borders, moon, lantern and fallen leaf. Exact H1 matte ink-painted visual style. The nine-tail figure is ONLY a FLAT DARK SHADOW REFLECTION in water, never physical limbs rising out. No faces, eyes, body, real monster, tentacles, extra tails or text, no voices. 0–0.5s ordinary puddle matching start reference. 0.5–1.8s a faint flat shadow REFLECTION smoothly darkens in the center until it EXACTLY matches the END IMAGE with NINE separate furry tapered tail tips, left4 center1 right4. It emerges as one complete reflected silhouette becoming visible, not wriggling animals. 1.8–4s maintain the clear counted NINE-tip reflection almost still, with minute water movement only. Do not change number or tip spacing. No ripple erasure in this shot.",
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "a15389f5-f3a6-41e5-b8c5-756e79281589"
+        },
+        {
+          "role": "end_image",
+          "value": "dbc3be15-0f99-45e1-8636-ad70909cfe3e"
+        }
+      ]
+    },
+    {
+      "id": "H05B",
+      "index": 52,
+      "duration": 4,
+      "prompt": "One continuous locked-off shot of the SAME night puddle in supplied start/end frames. Preserve all stone borders, moon, lantern and fallen leaf. Exact H1 matte ink-painted visual style. The nine-tail figure is ONLY a FLAT DARK SHADOW REFLECTION in water, never physical limbs rising out. No faces, eyes, body, real monster, tentacles, extra tails or text, no voices. 0–0.8s hold the exactly NINE-tip dark reflected shadow from START IMAGE, left4 center1 right4. 0.8–2.6s ONE gentle concentric water ripple crosses the center and breaks up the reflected silhouette until it completely disappears. The shadow never leaps out, it only dissolves in water distortion. By 2.6s water is ordinary again, matching END IMAGE with moon and lantern only. 2.6–4s settle clear. No new creature or partial tail remains.",
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "dbc3be15-0f99-45e1-8636-ad70909cfe3e"
+        },
+        {
+          "role": "end_image",
+          "value": "a15389f5-f3a6-41e5-b8c5-756e79281589"
+        }
+      ]
+    },
+    {
+      "id": "H10_r2",
+      "index": 11,
+      "duration": 5,
+      "prompt": "Single continuous H1 Korean ink-painted night courtyard shot, matched start and end images, locked camera. Doho seen from behind finishes ONE short step: the raised rear boot comes forward and lands on the stone, his weight shifts onto both planted feet. Complete this physical step within the first TWO seconds. Both heels and toes then stay on ground, feet apart, exactly matching the END IMAGE's stable standing posture. Coat settles, he turns head a little toward the remaining light and distant old shaman. By 3 seconds he is fully stopped, hold the balanced end pose through 5 seconds with tiny natural breathing. Far shaman makes a small calm shoulder turn. Anatomical RIGHT hand holds one sword over right shoulder, left empty, one empty waist scabbard. Preserve lighting, costume, character anatomy, all buildings. No frozen mid-stride, no raised heel after stopping, no extra steps, no gliding, no camera pullback, no new people, no facial expression reveal, no text. Silent.",
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "ac9b9bac-de84-4c19-86d8-2bf07add0c65"
+        },
+        {
+          "role": "end_image",
+          "value": "3ea01a2b-b630-4756-a56a-596113d3382a"
+        }
+      ]
+    }
+  ],
+  "submissions": [
+    {
+      "jobs": [
+        {
+          "index": 1,
+          "job_id": "33b9b649-c37f-4be3-9919-d9273c327035",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "job_id": "ddba1817-5a67-4ebe-834a-4636e64fa617",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "job_id": "38bf752c-39aa-4f5c-8e96-67d386dbe9ce",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "job_id": "552b2bad-7c7d-4722-8ab0-ba44d3ecd2ef",
+          "status": "pending"
+        }
+      ],
+      "submitted_count": 4,
+      "failed_count": 0
+    },
+    {
+      "jobs": [
+        {
+          "index": 4,
+          "job_id": "629d73eb-6c39-4d0b-a95d-9fc35c8da43d",
+          "status": "pending"
+        },
+        {
+          "index": 7,
+          "job_id": "a66fd4c2-2a91-4597-b2d2-f7f5c74b41ff",
+          "status": "pending"
+        },
+        {
+          "index": 8,
+          "job_id": "c8822238-7ed0-4999-b20a-afa63c106a9d",
+          "status": "pending"
+        },
+        {
+          "index": 10,
+          "job_id": "9718efe5-0420-41a8-b069-e3009887eab2",
+          "status": "pending"
+        }
+      ],
+      "submitted_count": 4,
+      "failed_count": 0
+    },
+    {
+      "jobs": [
+        {
+          "index": 51,
+          "job_id": "43b48a89-f0c0-486b-b03f-dc2489052530",
+          "status": "pending"
+        },
+        {
+          "index": 52,
+          "job_id": "c86b6d0e-9b34-4980-b2d2-63b692e70925",
+          "status": "pending"
+        }
+      ],
+      "submitted_count": 2,
+      "failed_count": 0
+    },
+    {
+      "jobs": [
+        {
+          "index": 11,
+          "job_id": "7c066f65-3211-475c-808a-bd8f86797fe6",
+          "status": "pending"
+        }
+      ],
+      "submitted_count": 1,
+      "failed_count": 0
+    }
+  ],
+  "requests": [
+    [
+      {
+        "index": 1,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 5,
+          "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. 0–0.5s: stone still. 0.5–1.8s: the protruding small stone flake at the central fissure loosens, tips forward and falls downward out of frame. Fine dust trickles after it under gravity. 1.8–3.5s: contained blue-white light grows slightly brighter along that SAME now opened crack. 3.5–5s: settle on the widened dark slit and dim blue leak, dust dissipates. Camera stays steady with only a minute inward move. No explosion, no entire wall collapsing, no person causing this. The falling flake visibly leaves its former attached place.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "c3f52ac0-7a81-4475-8bdf-10a4b0e4b9e1"
+            }
+          ]
+        }
+      },
+      {
+        "index": 2,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 5,
+          "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. 0–0.4s establish. 0.4–1.8s: merchant moves the ONE tied cloth parcel into the woman's waiting hands; her hands take its weight, merchant fully releases it and pulls back BOTH empty hands. 1.8–2.8s: she draws the SAME parcel to her abdomen and holds it. 2.2–3.2s: the paper lantern on upper right swings a little inward in one cold gust, its light briefly dims. Merchant notices and turns his eyes then head upward toward it; woman becomes still. 3.2–5s hold completed transfer and uneasy reaction. No duplicated parcel, no repeated handover, no drastic magical light.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "c21497b2-7c34-4de4-8775-b3945acea6f4"
+            }
+          ]
+        }
+      },
+      {
+        "index": 3,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 6,
+          "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. One clear caring physical action. 0–0.5s: man remains upright against the post. 0.5–1.8s: his supporting palm slides DOWN along the post, his knees buckle and body lowers. His adult wife immediately takes his near forearm with both hands and supports him. 1.8–4.5s: together they pivot slightly backward and she lowers him onto the LOW STONE DOORSTEP already behind him. Both feet stay on ground; no free fall. 4.5–6s: he is clearly SEATED, hunched and weak, she stays beside him holding his forearm and looks briefly toward the empty lane for help. Keep the contact, bending knees and final seated pose visible. No laughing, no screaming, no graphic injury, no kisses.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "ac7e1c52-ebaf-48a8-ac84-c3fd94d32d37"
+            }
+          ]
+        }
+      },
+      {
+        "index": 6,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 4,
+          "prompt": "Animate the supplied first frame as a single continuous cinematic shot. Preserve exact Korean H1 ink-drawn matte style, faces, clothes, architecture and low night lighting throughout. Natural-speed physical motion, no slow motion, no image morph, no camera shake, no cuts, no new props or people, no text. SILENT, no speech or voices. Gwisae alone. 0–0.7s she examines the already broken shutters to screen left. 0.7–2.0s she turns her bride-mask face a few degrees toward the dark empty lane, while the fingers of her anatomical RIGHT hand close more firmly on her ALREADY-HELD lowered curved dagger. 2–4s holds the alert final attitude. Ribbon tips move very slightly. EXACTLY two spare masks remain fixed at waist, one black dotted and one carved brown; facial bride mask remains opaque and unmoving. Do not lift or draw dagger, don't walk or attack. Bare LEFT hand stays relaxed. Camera almost locked, slight push only.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "747e6c42-6e86-40ca-8b8b-af22940637cc"
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "index": 4,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 5,
+          "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. SAME market stall closing after customer has left. 0–1s merchant brings final parcel fully behind counter and puts it down inside. 1–3.5s his two empty hands reach to the existing two HINGED wooden shutters at the sides and swing them toward each other across the shop opening. Panels rotate around the original vertical hinges, do NOT slide out of nowhere. Interior is progressively occluded, warm slit becomes narrow then closes. By 4s the two panels meet and stop with a small final settling movement of the latch from inside. 4–5s hold on the SHUT stall. Lantern outside remains at upper right. Camera fixed. Merchant never steps through solid counter or closed panel. End decisively with customer opening closed.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "d6c2c20d-3328-49fe-9966-370f4538c301"
+            }
+          ]
+        }
+      },
+      {
+        "index": 7,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 4,
+          "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. Cheongyeon has already been watching the closed street to screen right. 0–0.8s holds that observation. 0.8–2.4s she slowly brings her gaze slightly down and uses the thumb and fingers of her anatomical RIGHT hand to gather the ribs of the black folding fan into ONE CLOSED narrow fan, with the correct hinge at its base. Do not turn it into a sword or second fan. LEFT hand keeps bronze bells LOW at hip; they move a little ONCE naturally as she shifts her weight. 2.4–4s holds closed fan near waist and thoughtful calm face. No spell, no particle flash, no walking away. Locked frame, very slight cloth breathing.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "0b5ae2fa-269f-4b2b-8cd4-6f6ff708920e"
+            }
+          ]
+        }
+      },
+      {
+        "index": 8,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 5,
+          "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. ARRIVAL connecting start and end reference images. Begin low on Doho's two boots. 0.3–2.3s he makes TWO SMALL grounded natural steps toward the inn, one boot lifts, travels, heel plants, weight transfers, then other repeats. The camera smoothly tilts upward AND pulls back enough to reveal the whole body, face and hat. By 3.8s he stops in the EXACT full-body pose and doorway position of the supplied END IMAGE. Hold that end pose through 5s. Same clean-shaven adult H1 face, navy split robe, black gat, dull red sash, blue pendants. Anatomical RIGHT hand holds ONE sword by its hilt at right shoulder with blade extending behind his shoulders to his left. LEFT hand near waist. One EMPTY scabbard. No new sword draw, no sliding feet, no scene change. Do not merely zoom a still image: boots take physical steps.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "120a58a9-0f27-4ced-89b9-89f14e005904"
+            },
+            {
+              "role": "end_image",
+              "value": "a7c66f14-85f2-4e19-b079-33a7d195d208"
+            }
+          ]
+        }
+      },
+      {
+        "index": 10,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 5,
+          "prompt": "Animate this supplied first frame in one continuous cinematic shot. Preserve exact H1 Korean ink contours, matte painted surfaces, character design and low night palette. Natural physical timing. Silent, no voice, no text, no morphing or extra limbs/props. Doho enters the surviving town courtyard. 0.2–2.8s viewed from behind, takes two small grounded steps out of foreground lane toward square center, then STOPS with weight settling. His anatomical RIGHT hand keeps ONE sword at right shoulder, tip extending behind shoulders to his left; keep ONE empty scabbard at waist. By 3s he notices the remaining lantern-lit shrine across the square and turns his head slightly toward it, without raising weapon or recognizing any secret. Far-right elderly shaman stays distant and makes one small ordinary turn toward the lantern. She does not wave, greet or join him. 3–5s settle on this inhabited refuge. Minimal forward camera move, no big zoom. Maintain matte low night light, no new extra NPCs or gates.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "ac9b9bac-de84-4c19-86d8-2bf07add0c65"
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "index": 51,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 4,
+          "prompt": "One continuous locked-off shot of the SAME night puddle in supplied start/end frames. Preserve all stone borders, moon, lantern and fallen leaf. Exact H1 matte ink-painted visual style. The nine-tail figure is ONLY a FLAT DARK SHADOW REFLECTION in water, never physical limbs rising out. No faces, eyes, body, real monster, tentacles, extra tails or text, no voices. 0–0.5s ordinary puddle matching start reference. 0.5–1.8s a faint flat shadow REFLECTION smoothly darkens in the center until it EXACTLY matches the END IMAGE with NINE separate furry tapered tail tips, left4 center1 right4. It emerges as one complete reflected silhouette becoming visible, not wriggling animals. 1.8–4s maintain the clear counted NINE-tip reflection almost still, with minute water movement only. Do not change number or tip spacing. No ripple erasure in this shot.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "a15389f5-f3a6-41e5-b8c5-756e79281589"
+            },
+            {
+              "role": "end_image",
+              "value": "dbc3be15-0f99-45e1-8636-ad70909cfe3e"
+            }
+          ]
+        }
+      },
+      {
+        "index": 52,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 4,
+          "prompt": "One continuous locked-off shot of the SAME night puddle in supplied start/end frames. Preserve all stone borders, moon, lantern and fallen leaf. Exact H1 matte ink-painted visual style. The nine-tail figure is ONLY a FLAT DARK SHADOW REFLECTION in water, never physical limbs rising out. No faces, eyes, body, real monster, tentacles, extra tails or text, no voices. 0–0.8s hold the exactly NINE-tip dark reflected shadow from START IMAGE, left4 center1 right4. 0.8–2.6s ONE gentle concentric water ripple crosses the center and breaks up the reflected silhouette until it completely disappears. The shadow never leaps out, it only dissolves in water distortion. By 2.6s water is ordinary again, matching END IMAGE with moon and lantern only. 2.6–4s settle clear. No new creature or partial tail remains.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "dbc3be15-0f99-45e1-8636-ad70909cfe3e"
+            },
+            {
+              "role": "end_image",
+              "value": "a15389f5-f3a6-41e5-b8c5-756e79281589"
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "index": 11,
+        "params": {
+          "model": "seedance_2_5",
+          "mode": "omni_reference",
+          "resolution": "720p",
+          "aspect_ratio": "16:9",
+          "generate_audio": false,
+          "bitrate_mode": "standard",
+          "count": 1,
+          "use_unlim": false,
+          "duration": 5,
+          "prompt": "Single continuous H1 Korean ink-painted night courtyard shot, matched start and end images, locked camera. Doho seen from behind finishes ONE short step: the raised rear boot comes forward and lands on the stone, his weight shifts onto both planted feet. Complete this physical step within the first TWO seconds. Both heels and toes then stay on ground, feet apart, exactly matching the END IMAGE's stable standing posture. Coat settles, he turns head a little toward the remaining light and distant old shaman. By 3 seconds he is fully stopped, hold the balanced end pose through 5 seconds with tiny natural breathing. Far shaman makes a small calm shoulder turn. Anatomical RIGHT hand holds one sword over right shoulder, left empty, one empty waist scabbard. Preserve lighting, costume, character anatomy, all buildings. No frozen mid-stride, no raised heel after stopping, no extra steps, no gliding, no camera pullback, no new people, no facial expression reveal, no text. Silent.",
+          "medias": [
+            {
+              "role": "start_image",
+              "value": "ac9b9bac-de84-4c19-86d8-2bf07add0c65"
+            },
+            {
+              "role": "end_image",
+              "value": "3ea01a2b-b630-4756-a56a-596113d3382a"
+            }
+          ]
+        }
+      }
+    ]
+  ],
+  "source_storyboard": "C:/workspace/joseon/docs/design/opening_cinematic_h1_storyboard_shots_2026-09-17.json",
+  "keyframe_qa": {
+    "H05S": "rejected:7 tips",
+    "H05S_r2": "9 counted tips, selected"
+  },
+  "completed_jobs": [
+    {
+      "index": 1,
+      "job_id": "33b9b649-c37f-4be3-9919-d9273c327035",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_092505_33b9b649-c37f-4be3-9919-d9273c327035.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/c3f52ac0-7a81-4475-8bdf-10a4b0e4b9e1.png"
+    },
+    {
+      "index": 2,
+      "job_id": "ddba1817-5a67-4ebe-834a-4636e64fa617",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_092505_ddba1817-5a67-4ebe-834a-4636e64fa617.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/c21497b2-7c34-4de4-8775-b3945acea6f4.png"
+    },
+    {
+      "index": 3,
+      "job_id": "38bf752c-39aa-4f5c-8e96-67d386dbe9ce",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_092505_38bf752c-39aa-4f5c-8e96-67d386dbe9ce.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/ac7e1c52-ebaf-48a8-ac84-c3fd94d32d37.png"
+    },
+    {
+      "index": 6,
+      "job_id": "552b2bad-7c7d-4722-8ab0-ba44d3ecd2ef",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_092505_552b2bad-7c7d-4722-8ab0-ba44d3ecd2ef.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/747e6c42-6e86-40ca-8b8b-af22940637cc.png"
+    },
+    {
+      "index": 4,
+      "job_id": "629d73eb-6c39-4d0b-a95d-9fc35c8da43d",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_093229_629d73eb-6c39-4d0b-a95d-9fc35c8da43d.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/d6c2c20d-3328-49fe-9966-370f4538c301.png"
+    },
+    {
+      "index": 7,
+      "job_id": "a66fd4c2-2a91-4597-b2d2-f7f5c74b41ff",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_093229_a66fd4c2-2a91-4597-b2d2-f7f5c74b41ff.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/0b5ae2fa-269f-4b2b-8cd4-6f6ff708920e.png"
+    },
+    {
+      "index": 10,
+      "job_id": "9718efe5-0420-41a8-b069-e3009887eab2",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_093229_9718efe5-0420-41a8-b069-e3009887eab2.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/ac9b9bac-de84-4c19-86d8-2bf07add0c65.png"
+    },
+    {
+      "index": 8,
+      "job_id": "c8822238-7ed0-4999-b20a-afa63c106a9d",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_093229_c8822238-7ed0-4999-b20a-afa63c106a9d.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/120a58a9-0f27-4ced-89b9-89f14e005904.png"
+    },
+    {
+      "index": 51,
+      "job_id": "43b48a89-f0c0-486b-b03f-dc2489052530",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_093729_43b48a89-f0c0-486b-b03f-dc2489052530.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/a15389f5-f3a6-41e5-b8c5-756e79281589.png"
+    },
+    {
+      "index": 52,
+      "job_id": "c86b6d0e-9b34-4980-b2d2-63b692e70925",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_093729_c86b6d0e-9b34-4980-b2d2-63b692e70925.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/dbc3be15-0f99-45e1-8636-ad70909cfe3e.png"
+    },
+    {
+      "index": 11,
+      "job_id": "7c066f65-3211-475c-808a-bd8f86797fe6",
+      "status": "completed",
+      "type": "video",
+      "model": "seedance_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_094621_7c066f65-3211-475c-808a-bd8f86797fe6.mp4",
+      "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/ac9b9bac-de84-4c19-86d8-2bf07add0c65.png"
+    }
+  ],
+  "output": {
+    "file": "edit/joseon_h1_opening_previs_50s_v001.mp4",
+    "duration": 50,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 1200,
+    "bytes": 14511276,
+    "sha256": "68372f12c71de56bccda1270e7a486a5f7bd990c1b94795a2be2ba61848af264",
+    "renderer": "FFmpeg 8.1 local; Higgsedit remote render failed",
+    "audio": {
+      "kind": "original procedural temp music and Foley; no vocals",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "aac",
+      "integrated_lufs": -25.3,
+      "true_peak_dbfs": -3.1
+    }
+  },
+  "cost": {
+    "initial_video_estimate": 305.5,
+    "repair_video_estimate": 32.5,
+    "total_video_estimate": 338,
+    "balance_before": 2639.5,
+    "balance_after": 2301.5,
+    "observed_decrease": 338,
+    "not_billing_ledger": true,
+    "builtin_image_generation_cost": "not provided by tool"
+  },
+  "counts": {
+    "image_calls": 12,
+    "selected_image_frames": 11,
+    "new_video_jobs": 11,
+    "new_requested_video_seconds": 52,
+    "used_ai_video_seconds": 43,
+    "reused_ai_video_seconds": 8,
+    "runtime_seconds": 3,
+    "title_seconds": 4
+  },
+  "selections": {
+    "H05_shadow": "keyframes/H05_shadow_9tips.png",
+    "H05_rejected": "keyframes/H05_shadow_rejected_7tips.png",
+    "H10": "clips/H10_r2.mp4",
+    "H10_rejected": "clips/H10.mp4"
+  },
+  "render_failures": {
+    "raw_error": "failed to serialize JavaScript value: expected value at line 1 column 1",
+    "recovered_remote_render": false,
+    "fallback": "same sources/EDL/author text/temporary sound rendered locally",
+    "unused_reserved_remote_outputs": "not delivered; diagnostic JSON is not final render audit"
+  },
+  "sound_final_upload": {
+    "media_id": "3a759ddd-dee5-4bfe-af70-1f85d09f5549",
+    "status": "uploaded",
+    "type": "audio",
+    "filename": "temp_soundtrack.wav",
+    "content_type": "audio/x-wav",
+    "size_bytes": 9605776,
+    "source_file_id": "file_0000000019e08206b316a8a1a61ce9d4"
+  },
+  "runtime": {
+    "local": "runtime/H12_actual_game_start_GT1_3s_720p24.mp4",
+    "kind": "actual Godot 4.7.2 current prototype capture",
+    "H1_model": false,
+    "game_handoff_implemented": false,
+    "save_isolated": true
+  },
+  "qa": {
+    "scope": "full decode plus 0.25-second samples; not continuous normal-speed playback",
+    "shots": {
+      "H05A": {
+        "duration": 4.041667,
+        "frames": 97,
+        "trim": [
+          1,
+          3
+        ],
+        "observations": "ordinary water until ~1.25; silhouette emerges ~1.5-2; counted nine tips (4+1+4) in full-resolution 2.75s; no body above water"
+      },
+      "H05B": {
+        "duration": 4.041667,
+        "frames": 97,
+        "trim": [
+          0.5,
+          2.5
+        ],
+        "observations": "nine tips early; concentric ripple grows, shadow fades by 2.25-2.5; sampled frame2.5 ordinary water",
+        "seam_note": "same camera and stones; generated water/tree-reflection texture may subtly change at seam"
+      },
+      "H08": {
+        "duration": 5.041667,
+        "frames": 121,
+        "trim": [
+          1,
+          5
+        ],
+        "observations": "boots lift and plant ~1.25/~2.5; upward reveal begins~2.75 and reaches fullbody end image by4.75; first selected frame begins mid first step",
+        "limitations": "end nearly matches r3 reference; gait and perceived seam require playback judgment"
+      },
+      "H10_r2": {
+        "duration": 5.041667,
+        "frames": 121,
+        "trim": [
+          0.5,
+          4.5
+        ],
+        "selected": true,
+        "observations": "both boots settle flat by~1.75 seconds; stable final standing by2; restored completed arrival; distant shaman small turn",
+        "rejects": "H10 initial frozen midstride retained as unselected candidate"
+      }
+    },
+    "sound": {
+      "kind": "original procedural temporary soundtrack, no recorded voices; not final Korean instrument recording",
+      "rate": 48000,
+      "channels": 2,
+      "duration": 50,
+      "peak_dBFS": -3,
+      "integrated_LUFS": -25.2,
+      "playback_audition": false
+    },
+    "final_sampled_frames": 13,
+    "normal_speed_continuous_av_review": false
+  }
+}

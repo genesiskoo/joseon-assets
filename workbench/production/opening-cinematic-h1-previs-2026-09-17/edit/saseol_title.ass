@@ -1,0 +1,24 @@
+﻿[Script Info]
+Title: Joseon Hunters H1 opening previs
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Saseol,NanumMyeongjo,34,&H00D2E6F0,&H00D2E6F0,&H001A1411,&H80000000,0,0,0,0,100,100,0,0,1,1.1,2,8,80,80,0,1
+Style: Title,NanumMyeongjo,88,&H00A4CBDF,&H00A4CBDF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: English,NanumMyeongjo,23,&H007B94A4,&H007B94A4,&H00000000,&H00000000,0,0,0,0,100,100,4,0,1,0,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:03.50,Saseol,,0,0,0,,{\an8\pos(640,621)\fad(250,250)}깊은 봉인에 금이 들더니.
+Dialogue: 0,0:00:04.25,0:00:07.75,Saseol,,0,0,0,,{\an8\pos(640,621)\fad(250,250)}사람 살던 못골에도—
+Dialogue: 0,0:00:08.50,0:00:16.50,Saseol,,0,0,0,,{\an8\pos(640,583)\fad(250,250)}괴질이 돌고,\N열린 문마다 빗장이 걸리네.
+Dialogue: 0,0:00:17.25,0:00:20.00,Saseol,,0,0,0,,{\an8\pos(640,621)\fad(250,250)}달빛 아래 꼬리가 아홉이라.
+Dialogue: 0,0:00:27.25,0:00:30.75,Saseol,,0,0,0,,{\an8\pos(640,621)\fad(250,250)}고개 너머 갓 하나 넘어오니—
+Dialogue: 0,0:00:39.25,0:00:42.75,Saseol,,0,0,0,,{\an8\pos(640,621)\fad(250,250)}어슬렁어슬렁, 못골로 들어서더라.
+Dialogue: 1,0:00:43.00,0:00:47.00,Title,,0,0,0,,{\an5\pos(640,346)\fad(600,400)}조선헌터스
+Dialogue: 1,0:00:43.00,0:00:47.00,English,,0,0,0,,{\an5\pos(640,428)\fad(600,400)}JOSEON HUNTERS

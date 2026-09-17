@@ -1,0 +1,254 @@
+{
+  "batch": "H04-H06-H07-H10",
+  "purpose": "Preserve approved generated source clips as editing/QA inputs.",
+  "review_scope": "76 sampled frames at 0.25-second intervals in eight contact sheets, plus eight full-resolution frame views. No complete real-time playback or frame-by-frame review claimed. Audio not assessed.",
+  "editorial_status": "Suggested original-speed trims preserve observed actions. H10 natural stopping action remains an editorial concern; parent owns final sample edit and continuity decision.",
+  "regeneration": "None. No paid generation calls made by this QA task.",
+  "shots": {
+    "H04": {
+      "clip": "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\clips\\H04.mp4",
+      "sha256": "73c59ea82f007fba1fe13fcc7f1661fe2c244850cbae3d8743edbd47c2b6f34c",
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration_seconds": 5.041667,
+      "frames": "121",
+      "intended_source_seconds": 5,
+      "intended_used_seconds": 4,
+      "sample_interval_seconds": 0.25,
+      "sample_times_seconds": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0,
+        4.25,
+        4.5,
+        4.75,
+        5.0
+      ],
+      "contact_sheets": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H04_contact_025s_1.jpg",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H04_contact_025s_2.jpg"
+      ],
+      "review_status": "All listed 0.25s contact-sheet samples and listed full-resolution frames visually inspected.",
+      "verdict": "PASS_FOR_PREVIS_FROM_SAMPLED_FRAMES",
+      "recommended_trim_seconds": [
+        0.75,
+        4.75
+      ],
+      "recommended_trim_frames_24fps_start_inclusive_end_exclusive": [
+        18,
+        114
+      ],
+      "used_frames": 96,
+      "observed_beats_ko": [
+        "0.75~1.5초 상인이 양손을 뻗어 양쪽 덧문을 잡음.",
+        "1.75~3.5초 덧문이 안쪽으로 닫히며 상인과 안쪽 좌판이 가려짐.",
+        "3.5초에는 중앙 틈이 남고, 3.75~5초는 닫힌 결과가 보임."
+      ],
+      "notes_ko": [
+        "0.75~4.75초 사용으로 닫기 시작과 완전히 닫힌 결과를 함께 보존.",
+        "3.5초 이전 종료하면 중앙 틈이 남은 상태에서 결과가 잘릴 수 있음."
+      ],
+      "full_resolution_frames_reviewed_seconds": [
+        3.5
+      ]
+    },
+    "H06": {
+      "clip": "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\clips\\H06.mp4",
+      "sha256": "342dd73b54177185e84c0b0724e1c4f103cc0b7a54cbd5a93a38705065392cdc",
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration_seconds": 4.041667,
+      "frames": "97",
+      "intended_source_seconds": 4,
+      "intended_used_seconds": 3,
+      "sample_interval_seconds": 0.25,
+      "sample_times_seconds": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0
+      ],
+      "contact_sheets": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H06_contact_025s_1.jpg",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H06_contact_025s_2.jpg"
+      ],
+      "review_status": "All listed 0.25s contact-sheet samples and listed full-resolution frames visually inspected.",
+      "verdict": "PASS_FOR_PREVIS_FROM_SAMPLED_FRAMES",
+      "recommended_trim_seconds": [
+        0.5,
+        3.5
+      ],
+      "recommended_trim_frames_24fps_start_inclusive_end_exclusive": [
+        12,
+        84
+      ],
+      "used_frames": 72,
+      "observed_beats_ko": [
+        "0.5초 가면 정면과 오른손 단검·허리의 예비 가면 두 개가 함께 판독됨.",
+        "0.75~1.5초 가면을 쓴 고개가 화면 왼쪽으로 돌아감.",
+        "1.5~4초 회전한 자세를 유지하며 머리카락과 끈이 움직임."
+      ],
+      "notes_ko": [
+        "가면이 벗겨지거나 실제 얼굴로 교체되는 오류 없음.",
+        "단검 한 개는 해부학적 오른손에 유지. 허리 예비 가면 두 개는 원해상도 0.5/3.5초 모두 확인."
+      ],
+      "full_resolution_frames_reviewed_seconds": [
+        0.5,
+        3.5
+      ]
+    },
+    "H07": {
+      "clip": "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\clips\\H07.mp4",
+      "sha256": "8eebe3f6ecdbb0bb86ed0f6070ba912673a3827d88cd836b51a4f976ce8cf90d",
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration_seconds": 4.041667,
+      "frames": "97",
+      "intended_source_seconds": 4,
+      "intended_used_seconds": 3,
+      "sample_interval_seconds": 0.25,
+      "sample_times_seconds": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0
+      ],
+      "contact_sheets": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H07_contact_025s_1.jpg",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H07_contact_025s_2.jpg"
+      ],
+      "review_status": "All listed 0.25s contact-sheet samples and listed full-resolution frames visually inspected.",
+      "verdict": "PASS_FOR_PREVIS_FROM_SAMPLED_FRAMES",
+      "recommended_trim_seconds": [
+        0.75,
+        3.75
+      ],
+      "recommended_trim_frames_24fps_start_inclusive_end_exclusive": [
+        18,
+        90
+      ],
+      "used_frames": 72,
+      "observed_beats_ko": [
+        "0.75~2.25초 시선을 낮추며 오른손의 펼친 부채를 듦.",
+        "2.5~3초 오른손 부채가 접힘.",
+        "3.25~4초 접힌 부채를 허리 높이에 둠. 왼손 방울은 계속 유지."
+      ],
+      "notes_ko": [
+        "원해상도 2.5/3.25초에서 펼침과 접힘의 전후 상태가 분명함.",
+        "부채와 방울의 손 교환·복제 및 추가 팔이 표본에서 보이지 않음."
+      ],
+      "full_resolution_frames_reviewed_seconds": [
+        2.5,
+        3.25
+      ]
+    },
+    "H10": {
+      "clip": "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\clips\\H10.mp4",
+      "sha256": "d28d8f1a08b2dddb5c707953490a9d67a174c802f53cc2c45a6041e4b1c0423f",
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration_seconds": 5.041667,
+      "frames": "121",
+      "intended_source_seconds": 5,
+      "intended_used_seconds": 4,
+      "sample_interval_seconds": 0.25,
+      "sample_times_seconds": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0,
+        4.25,
+        4.5,
+        4.75,
+        5.0
+      ],
+      "contact_sheets": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H10_contact_025s_1.jpg",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H10_contact_025s_2.jpg"
+      ],
+      "review_status": "All listed 0.25s contact-sheet samples and listed full-resolution frames visually inspected.",
+      "verdict": "EDITORIAL_CONCERN_NATURAL_STOP_NOT_ESTABLISHED",
+      "recommended_trim_seconds": [
+        0.5,
+        4.5
+      ],
+      "recommended_trim_frames_24fps_start_inclusive_end_exclusive": [
+        12,
+        108
+      ],
+      "used_frames": 96,
+      "observed_beats_ko": [
+        "0~1.25초 도호의 발 위치가 교대하며 전진하는 움직임.",
+        "1.5~5초 뒤쪽 발을 걸친 보행 중간 자세가 거의 고정되며 도포와 띠만 계속 움직임.",
+        "3.5~4.5초 먼 무당의 고개와 몸 방향에 작은 변화가 있음."
+      ],
+      "notes_ko": [
+        "자연스럽게 양발을 정착시키는 멈춤이 원해상도 1.5/2.5/4.5초에서 확인되지 않음. 보행 중간 포즈 정지처럼 읽힐 위험.",
+        "먼 무당의 방향 변화는 보이나 명확한 발걸음·이동은 확인되지 않음.",
+        "검 한 개와 오른손 어깨 자세·흑립은 유지됨. 추천 구간은 관찰된 전후를 보존할 뿐 연출 결함을 해결하지 않음."
+      ],
+      "full_resolution_frames_reviewed_seconds": [
+        1.5,
+        2.5,
+        4.5
+      ]
+    }
+  }
+}

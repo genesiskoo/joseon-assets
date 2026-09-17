@@ -1,0 +1,16 @@
+[0:v]trim=start_frame=12:end_frame=108,setpts=PTS-STARTPTS,setsar=1,format=yuv420p,fade=t=in:st=0:d=0.35[v0];
+[1:v]trim=start_frame=18:end_frame=114,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v1];
+[2:v]trim=start_frame=18:end_frame=138,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v2];
+[3:v]trim=start_frame=18:end_frame=114,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v3];
+[4:v]trim=start_frame=24:end_frame=72,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v4];
+[5:v]trim=start_frame=12:end_frame=60,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v5];
+[6:v]trim=start_frame=12:end_frame=84,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v6];
+[7:v]trim=start_frame=18:end_frame=90,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v7];
+[8:v]trim=start_frame=24:end_frame=120,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v8];
+[9:v]trim=start_frame=0:end_frame=192,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v9];
+[10:v]trim=start_frame=12:end_frame=108,setpts=PTS-STARTPTS,setsar=1,format=yuv420p,fade=t=out:st=3.75:d=0.25[v10];
+[11:v]trim=start_frame=0:end_frame=96,setpts=PTS-STARTPTS,setsar=1,format=yuv420p[v11];
+[12:v]trim=start_frame=0:end_frame=72,setpts=PTS-STARTPTS,setsar=1,format=yuv420p,fade=t=in:st=0:d=0.5[v12];
+[v0][v1][v2][v3][v4][v5][v6][v7][v8][v9][v10][v11][v12]concat=n=13:v=1:a=0[cut];
+[cut]drawbox=x=0:y=604:w=1280:h=116:color=0x05070b@0.32:t=fill:enable='between(t,0.5,3.5)',drawbox=x=0:y=604:w=1280:h=116:color=0x05070b@0.32:t=fill:enable='between(t,4.25,7.75)',drawbox=x=0:y=570:w=1280:h=150:color=0x05070b@0.32:t=fill:enable='between(t,8.5,16.5)',drawbox=x=0:y=604:w=1280:h=116:color=0x05070b@0.32:t=fill:enable='between(t,17.25,20.0)',drawbox=x=0:y=604:w=1280:h=116:color=0x05070b@0.32:t=fill:enable='between(t,27.25,30.75)',drawbox=x=0:y=604:w=1280:h=116:color=0x05070b@0.32:t=fill:enable='between(t,39.25,42.75)',drawbox=x=530:y=266:w=220:h=1:color=0x756447@0.8:t=fill:enable='between(t,43.25,46.6)',ass=filename=saseol_title.ass:fontsdir=fonts[out];
+[13:a]atrim=duration=50,asetpts=PTS-STARTPTS,afade=t=out:st=49.5:d=0.5[aout]

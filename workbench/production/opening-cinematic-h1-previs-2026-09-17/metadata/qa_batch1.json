@@ -1,0 +1,279 @@
+{
+  "batch": "H01-H03",
+  "purpose": "Preserve approved generated source clips as editing/QA inputs, not a display workaround.",
+  "review_scope": "67 sampled frames at 0.25-second intervals in six contact sheets, plus seven full-resolution frame views. No complete real-time playback or frame-by-frame review claimed. Audio not assessed.",
+  "editorial_status": "Suggested trims preserve observed action results at original 24fps without speed changes. Parent owns final sample edit, overall continuity review and commit.",
+  "regeneration": "None. No paid generation calls made by this QA task.",
+  "shots": {
+    "H01": {
+      "clip": "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\clips\\H01.mp4",
+      "sha256": "28ef14094e610d6962e3d6a033bc3c031c34e454c74c8b530250dbde3fc8442e",
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration_seconds": 5.041667,
+      "frames": "121",
+      "intended_source_seconds": 5,
+      "intended_used_seconds": 4,
+      "sample_interval_seconds": 0.25,
+      "sample_times_seconds": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0,
+        4.25,
+        4.5,
+        4.75,
+        5.0
+      ],
+      "contact_sheets": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H01_contact_025s_1.jpg",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H01_contact_025s_2.jpg"
+      ],
+      "review_status": "All listed 0.25s contact-sheet samples and listed full-resolution frames visually inspected.",
+      "verdict": "PASS_FOR_PREVIS_FROM_SAMPLED_FRAMES",
+      "recommended_trim_seconds": [
+        0.5,
+        4.5
+      ],
+      "recommended_trim_frames_24fps_start_inclusive_end_exclusive": [
+        12,
+        108
+      ],
+      "used_frames": 96,
+      "observed_beats": [
+        {
+          "source_seconds": [
+            0.0,
+            1.0
+          ],
+          "observation_ko": "봉인 중앙 돌조각이 붙어 있고 얇은 틈빛이 보이는 전조."
+        },
+        {
+          "source_seconds": [
+            1.25,
+            2.5
+          ],
+          "observation_ko": "돌조각이 분리되어 아래로 떨어지고 화면 아래로 사라짐. 낙하 전후 상태가 명확함."
+        },
+        {
+          "source_seconds": [
+            2.75,
+            4.5
+          ],
+          "observation_ko": "틈의 청백색 빛과 먼지가 남아 봉인 변화의 결과를 보여줌."
+        }
+      ],
+      "notes_ko": [
+        "얼굴·생물·손 등 무관한 대상 없음.",
+        "시작 여유와 결과를 함께 보존하는 0.5~4.5초 권장."
+      ],
+      "full_resolution_frames_reviewed_seconds": [
+        2.25
+      ]
+    },
+    "H02": {
+      "clip": "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\clips\\H02.mp4",
+      "sha256": "c6c4f40f0bd3d3a84085b871389db8050b35d4ad1d5361c9ad6c776ac78151f3",
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration_seconds": 5.041667,
+      "frames": "121",
+      "intended_source_seconds": 5,
+      "intended_used_seconds": 4,
+      "sample_interval_seconds": 0.25,
+      "sample_times_seconds": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0,
+        4.25,
+        4.5,
+        4.75,
+        5.0
+      ],
+      "contact_sheets": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H02_contact_025s_1.jpg",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H02_contact_025s_2.jpg"
+      ],
+      "review_status": "All listed 0.25s contact-sheet samples and listed full-resolution frames visually inspected.",
+      "verdict": "PASS_FOR_PREVIS_FROM_SAMPLED_FRAMES",
+      "recommended_trim_seconds": [
+        0.75,
+        4.75
+      ],
+      "recommended_trim_frames_24fps_start_inclusive_end_exclusive": [
+        18,
+        114
+      ],
+      "used_frames": 96,
+      "observed_beats": [
+        {
+          "source_seconds": [
+            0.0,
+            1.5
+          ],
+          "observation_ko": "두 성인의 손이 꾸러미 하나를 함께 받치며 건네는 과정."
+        },
+        {
+          "source_seconds": [
+            1.75,
+            2.25
+          ],
+          "observation_ko": "상인이 양손을 거두고 손님이 꾸러미를 단독으로 보유하여 인계 완료."
+        },
+        {
+          "source_seconds": [
+            2.5,
+            3.25
+          ],
+          "observation_ko": "상단 등불이 기울고 어두워졌다 밝아짐."
+        },
+        {
+          "source_seconds": [
+            3.5,
+            4.75
+          ],
+          "observation_ko": "상인이 등불 쪽으로 고개와 시선을 올려 변화에 반응함."
+        }
+      ],
+      "notes_ko": [
+        "원해상도 1.75/2.0초에서 꾸러미는 손님 손에 지지되며 상인 손과 분리됨.",
+        "꾸러미 복제·추가 팔·명백한 손 융합은 표본에서 보이지 않음."
+      ],
+      "full_resolution_frames_reviewed_seconds": [
+        1.75,
+        2.0,
+        4.5
+      ]
+    },
+    "H03": {
+      "clip": "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\clips\\H03.mp4",
+      "sha256": "fc521612912ae397783a12a85a352e87c14d1c326763b69d94479f79f2e243ea",
+      "width": 1280,
+      "height": 720,
+      "fps": "24/1",
+      "duration_seconds": 6.041667,
+      "frames": "145",
+      "intended_source_seconds": 6,
+      "intended_used_seconds": 5,
+      "sample_interval_seconds": 0.25,
+      "sample_times_seconds": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0,
+        3.25,
+        3.5,
+        3.75,
+        4.0,
+        4.25,
+        4.5,
+        4.75,
+        5.0,
+        5.25,
+        5.5,
+        5.75,
+        6.0
+      ],
+      "contact_sheets": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H03_contact_025s_1.jpg",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\opening-cinematic-h1-previs-2026-09-17\\review\\H03_contact_025s_2.jpg"
+      ],
+      "review_status": "All listed 0.25s contact-sheet samples and listed full-resolution frames visually inspected.",
+      "verdict": "CONDITIONAL_PASS_FOR_PREVIS_FROM_SAMPLED_FRAMES",
+      "recommended_trim_seconds": [
+        0.75,
+        5.75
+      ],
+      "recommended_trim_frames_24fps_start_inclusive_end_exclusive": [
+        18,
+        138
+      ],
+      "used_frames": 120,
+      "observed_beats": [
+        {
+          "source_seconds": [
+            0.75,
+            1.25
+          ],
+          "observation_ko": "남성이 기둥에 기대어 몸을 낮추기 시작하고 여성이 다가옴."
+        },
+        {
+          "source_seconds": [
+            1.25,
+            2.5
+          ],
+          "observation_ko": "여성이 팔을 붙잡아 몸을 받치며 함께 낮아짐."
+        },
+        {
+          "source_seconds": [
+            2.5,
+            2.75
+          ],
+          "observation_ko": "남성이 기둥을 지지하던 손을 떼어 아래로 내림."
+        },
+        {
+          "source_seconds": [
+            3.0,
+            3.25
+          ],
+          "observation_ko": "남성이 돌턱에 앉은 자세로 정착하며 착석 완료가 읽힘."
+        },
+        {
+          "source_seconds": [
+            3.5,
+            5.75
+          ],
+          "observation_ko": "여성도 낮아져 부축을 이어가고 주변을 잠깐 돌아봄."
+        }
+      ],
+      "notes_ko": [
+        "계획의 급작스러운 지지손 미끄러짐보다 점진적 주저앉음으로 읽힘.",
+        "여성이 먼저 팔을 받친 뒤 기둥 손이 떨어져 인과 순서가 변경됨. 착석까지의 완료는 분명함.",
+        "성인 두 명 및 각 두 팔 유지. 원해상도 확인에서 추가 손·팔이나 명백한 융합 없음."
+      ],
+      "full_resolution_frames_reviewed_seconds": [
+        2.75,
+        3.25,
+        5.25
+      ]
+    }
+  }
+}
