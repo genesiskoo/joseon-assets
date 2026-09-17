@@ -14,6 +14,8 @@
 | enemy_windup | enemy_windup/enemy_windup_v2b.mp4 | 120d7b69-af53-47ef-975c-92ccbc067f81 | 두꺼운 먹 원 즉시 + 두근 2회 ("bold thick white ink circle appears instantly … heavy solid ring with ink drips and spikes … throbs twice … dissolves") | **v2b 채택** (#56, -Fps 12 -End 1.9 -Units 1.8 -Key black) — 나타나 버티다 가늘어지며 사라짐, 게임에서 재생 속도를 선딜에 맞춤 |
 | talisman_paper | talisman_paper/talisman_paper_v1.mp4 | a73c0543-42c4-490d-8236-9d17848e2810 | 노란 부적 종이 회전(루프) | v1 채택 (-Fps 12 -Loop -Units 0.5 -Max 128 -LoopBlend 3, seam_z 1.47→0.75) — 투사체 본체 |
 | boss_roar | boss_roar/boss_roar_v1.mp4 | 8e10db8c-6a6d-47d4-a3c8-1702325201d1 | 위에서 본 이중 링 충격파+먹 튐 | v1 채택 (-Fps 12 -PlayFps 30 -End 1.2) — 바닥, 3u |
-| torch_flame | torch_flame/torch_flame_v1.mp4 | 813b7dc5-765f-47e4-866e-c0e34e9f41a3 | 촛불형 불꽃(루프) | v1 채택 (-Fps 12 -Loop -Units 0.55 -Max 128) — 발광 구 대체, FIRE 틴트. 붓 느낌은 약함(후보 재생성) |
+| torch_flame | torch_flame/torch_flame_v1.mp4 | 813b7dc5-765f-47e4-866e-c0e34e9f41a3 | 촛불형 불꽃(루프) | v1 — 사진 같은 촛불, v2a로 교체 |
+| torch_flame | torch_flame/torch_flame_v2a.mp4 | ba6542f7-cc54-4e57-a424-cc7bf6c7df69 | 마른 붓 불꽃 혀 + 먹 점 불씨 ("single tall tapering tongue of white ink flame painted with a dry brush … not photographic, no candle, no wick") | **v2a 채택** (#57, -Fps 12 -Loop -LoopBlend 4 -Units 0.55 -Max 128 -Crop 0,0,0,80) — 흰 먹 실루엣, 아래 심지 80px 크롭 |
+| torch_flame | torch_flame/torch_flame_v2b.mp4 | 6494cb55-57b7-48b2-b9fd-dc0952d6248a | 겹친 붓 획 서예 불꽃 ("two or three overlapping white brush strokes shaped like a flame") | 기각 — 사진풍 불길로 나옴 |
 | portal_idle | portal_idle/portal_idle_v1.mp4 | 1e7e8344-1009-4d44-9ba8-613f1dc28b6e | 붓 소용돌이(루프) | v1 채택 (-Fps 12 -Loop -Units 1.6 -LoopBlend 4, seam_z 1.19→0.88) — 발광 고리 대체, MANA 틴트 |
 
