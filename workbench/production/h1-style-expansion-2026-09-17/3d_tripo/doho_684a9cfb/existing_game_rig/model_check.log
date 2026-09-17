@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+== model_check C:/workspace/joseon/tmp/doho_existing_rig_transfer/doho_existing_rig_new_visual_exact_anims.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 26: Hips, LeftUpLeg, LeftLeg, LeftFoot, LeftToeBase, RightUpLeg…
+삼각형 11999
+AABB: 키 1.70 · 너비 1.28 · 깊이 0.42 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: tripo_node_50e3aa36-9bca-4ab2-aa5d-43149541808a_Clone_BaseColor 1024x1024
+클립 9: attack(1.54s), attack2(1.42s), attack3(1.29s), attack4(1.92s), die(3.71s), hit(1.63s), idle(1.88s), run(0.88s), walk(1.08s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+  타격 프레임(오른손 속도 피크) → attack_impact = {"attack": 0.42, "attack2": 0.56, "attack3": 0.45, "attack4": 0.25}
+RESULT PASS
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
