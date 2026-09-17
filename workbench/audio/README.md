@@ -59,3 +59,17 @@
 
 배치 1 채택: sword_swing v1~v4 → sword_swing_1~4 · hit 프로브+v1~v3 → hit_1~4 · hit_crit v1·v2 · whiff v1·v2 · player_hurt v1·v3 → _1·_2 · player_die v1 · enemy_attack v1·v2 · shoot v2 → shoot_1 · enemy_hurt v1~v3 · enemy_die v1·v2 · boss_roar v1·v2 · boss_die v1 · step_stone v1 → step_stone_4.
 배치 1 기각: shoot v1(−40 LUFS 무음), step_stone v2·v3·v4(−39/−53/−56 LUFS 무음). 반입 LUFS 목표는 joseon `docs/design/audio.md §4.3`.
+
+## BGM 후보 (보드 #42, 2026-09-18) — ACE-Step 1.5 turbo (Comfy Cloud 템플릿 `audio_ace_step_1_5_split`, API 크레딧 0·GPU 초만)
+
+Suno는 공식 API가 없어 세션이 못 돌린다 → 오픈 모델 후보를 먼저 넣고 PD가 Suno 수동 제작으로 교체할지 판정. 입력 = `94.tags`(스타일)·`94.lyrics="[instrumental]"`·`94.bpm/keyscale/duration=90`·`98.seconds=90`·seed.
+
+| id | job | seed | 태그 요지 |
+|---|---|---|---|
+| town | da8afd4c-8903-4773-8a28-a0da8336ab9c | 101 | 가야금·대금 + mellow lo-fi hip hop, 80 bpm D minor, 저녁 산골 마을 |
+| dungeon | 922bfa23-7caa-4fa7-aaae-d20f4b9d20fc | 202 | dark ambient lo-fi, 드문 가야금, 서브 베이스·동굴 드론, 70 bpm E minor |
+| dungeon_tense | 92fd09cd-3beb-4ffa-8fb8-b8f99f0435a8 | 303 | tense trap, 가야금 트레몰로·해금, 808, 95 bpm F minor |
+| boss | 1cd97fae-0bda-4237-a284-b0f1d2dcc178 | 404 | aggressive trap, 디스토션 가야금·북, 무속 타악, 140 bpm G minor |
+| kumiho | 914d5d16-20c9-4f34-b386-4d9c659fb39c | 505 | epic dark final boss, 해금 리드·태평소·합창 패드, 120 bpm C minor |
+
+파일 = `bgm/<id>_v1.mp3`(90s, 원본 −12~−14.5 LUFS), 스펙트로그램 대조 = `bgm/contact_bgm.png`. 반입 = `intake_audio.ps1 -Src <mp3> -Cue <id> -Kind bgm`(−18 LUFS, ogg q5) — 5곡 모두 반입, 채택 여부는 PD 판정(#42).
