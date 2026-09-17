@@ -1,0 +1,43 @@
+{
+  "completed": true,
+  "qa_scope": "Full-file decode plus 33 frame samples at 0.25-second intervals; three full-resolution interaction/face frames inspected. Not a normal-speed continuous playback review.",
+  "measured": {
+    "duration_seconds": 8.041667,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 193,
+    "video_codec": "h264",
+    "audio_streams": 0,
+    "bytes": 2373495
+  },
+  "observations": [
+    "New H1 face, black gat, navy layered robe, red sash and blue pendants remain recognizable in inspected frames.",
+    "Low cool night lighting and localized amber lantern match the new key art direction.",
+    "Left fist advances and retracts at the door; two extension/recoil cycles are visible in sampled frames.",
+    "Door stays closed; right hand retains one shoulder-held sword; empty waist scabbard remains distinct.",
+    "Head turns and smile becomes clearer around 4.75-5.5 seconds.",
+    "Actor translates toward the lower-left foreground with alternating leg poses and moving coat; no editorial cut."
+  ],
+  "limitations": [
+    "Knock impact and gait smoothness require normal-speed playback judgment; sampled frames do not establish perceived impact.",
+    "Face becomes slightly softer/simpler while moving than the still key art.",
+    "Waiting beat around 3-4.5 seconds remains comparatively quiet.",
+    "Final frame retains part of the departing robe and arm; it is a departure-in-progress cut, not an empty-stage ending.",
+    "Output includes one extra frame beyond requested 8 seconds; preserved original 8.041667-second source with no trim, retime, or interpolation."
+  ],
+  "cost": {
+    "estimate_credits": 52,
+    "balance_before": 2691.5,
+    "balance_after": 2639.5,
+    "observed_decrease": 52,
+    "not_a_billing_ledger": true
+  },
+  "generation": {
+    "model": "seedance_2_5",
+    "job_id": "4248a709-d718-4f44-8981-067c4d857d90",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260917_054939_4248a709-d718-4f44-8981-067c4d857d90.mp4"
+  },
+  "game_import": false,
+  "review_status": "candidate_for_user_direction"
+}
