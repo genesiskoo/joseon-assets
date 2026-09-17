@@ -1,19 +1,10 @@
 {
   "active_images": 23,
-  "superseded_images": 6,
+  "superseded_images": 0,
+  "archived_images": 6,
   "image_checks": [
     {
-      "id": "H1-X01",
-      "exists": true,
-      "sha256_matches": true
-    },
-    {
       "id": "H1-X01r1",
-      "exists": true,
-      "sha256_matches": true
-    },
-    {
-      "id": "H1-X02",
       "exists": true,
       "sha256_matches": true
     },
@@ -33,11 +24,6 @@
       "sha256_matches": true
     },
     {
-      "id": "H1-X03",
-      "exists": true,
-      "sha256_matches": true
-    },
-    {
       "id": "H1-X03r1",
       "exists": true,
       "sha256_matches": true
@@ -53,17 +39,7 @@
       "sha256_matches": true
     },
     {
-      "id": "H1-C01",
-      "exists": true,
-      "sha256_matches": true
-    },
-    {
       "id": "H1-C01r1",
-      "exists": true,
-      "sha256_matches": true
-    },
-    {
-      "id": "H1-C02",
       "exists": true,
       "sha256_matches": true
     },
@@ -123,11 +99,6 @@
       "sha256_matches": true
     },
     {
-      "id": "H1-K01",
-      "exists": true,
-      "sha256_matches": true
-    },
-    {
       "id": "H1-CS04",
       "exists": true,
       "sha256_matches": true
@@ -144,6 +115,38 @@
     },
     {
       "id": "H1-TEX01",
+      "exists": true,
+      "sha256_matches": true
+    }
+  ],
+  "archive_image_checks": [
+    {
+      "id": "H1-X01",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "H1-X02",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "H1-X03",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "H1-C01",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "H1-C02",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "H1-K01",
       "exists": true,
       "sha256_matches": true
     }

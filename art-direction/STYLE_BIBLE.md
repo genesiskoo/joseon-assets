@@ -16,10 +16,10 @@ PD **“h1으로 가자”**. [승인 원본·선택 manifest](../sheets/approve
 
 PD “조금 더 한국느낌” → “k2스타일에서…플레이어 캐릭터랑 구미호까지” → “주인공이…그냥 NPC같어” → “기존 버전의 복장디자인 좀 차용해. 그리고 이미지 생성되면 검증한번 돌려”.
 
-- **화풍 = K2에서 선택된 H1(D-072)**의 한국 만화풍 얼굴·선·큰 무광 명암. [K1/K2](../workbench/production/korean-character-refinement-2026-09-17/README.md). NPC B의 역할·연령·능청은 유지하며 얼굴 구조와 복식은 재탐색할 수 있다.
+- **화풍 = K2에서 선택된 H1(D-072)**의 한국 만화풍 얼굴·선·큰 무광 명암. [K1/K2](../archive/art-history-2026-09-17/workbench/production/korean-character-refinement-2026-09-17/README.md). NPC B의 역할·연령·능청은 유지하며 얼굴 구조와 복식은 재탐색할 수 있다.
 - **주인공 위계:** 같은 화풍 안에서 PC는 큰 겹옷 실루엣·무기·얼굴 주변 대비·대표 장식으로 구분한다. 도호는 선택된 H1의 겹소매·갈라진 옷자락·붉은 허리끈·푸른 패를 우선한다. 기존 D03/R2의 촘촘한 문양·장신구를 H1에 자동 혼합하지 않는다.
 - **생성 후 검수:** 정체성/복식, K2 화풍, PC/NPC 위계, 한국적인 인상, 손·검·사지·프레임을 직접 대조한다. 보정한 부분과 회귀 오류를 다시 확인하고 잔여 차이도 남긴다. 원화 검수와 실제 3D·인게임 검증은 구분한다.
-- [PC·구미호·H안·R1/R2와 검수](../workbench/production/k2-player-gumiho-2026-09-17/README.md). H1만 채택됐으며 R2의 원화 검수는 탐색 이력으로 보존한다. 다른 캐릭터의 K2 신규 시안·게임 GLB를 일괄 승인한 것은 아니다.
+- [PC·구미호·H안·R1/R2와 검수](../archive/art-history-2026-09-17/workbench/production/k2-player-gumiho-2026-09-17/README.md). H1만 채택됐으며 R2의 원화 검수는 탐색 이력으로 보존한다. 다른 캐릭터의 K2 신규 시안·게임 GLB를 일괄 승인한 것은 아니다.
 - D-070의 어두운 무광 팔레트·실제 게임 재질 기준은 아래대로 유지한다.
 
 ## 현재 지시 — D-070
@@ -31,8 +31,8 @@ PD: “다크판타지인데 너무 밝은것 같음. 지금 제작되는 3d에�
 ## 참조 역할
 
 0. **H1 승인 원본 왼쪽 열**: PC·NPC·배경의 공통 선·형태·얼굴 표현·무광 명암 앵커. 위 D-072를 적용한다.
-1. **현재 실제 3D 렌더와 인게임**: 색·명암·재질·형태 복잡도·장식 밀도·게임 시점과 크기의 기준. [동결 캡처·소재·시안](../workbench/production/ingame-tone-alignment-2026-09-17/README.md). 캡처는 2026-09-17 05:00 KST 기준이며 이후 실제 자산이 바뀌면 다시 확인한다.
-2. **NPC B1·B2·B3 전체**: [선호 원본](../workbench/production/npc-variants-2026-09-17/NPC_B_expressive.png). 연령·표정·역할 실루엣을 계승하고 얼굴 구조는 최신 K2 방향으로 조정할 수 있다. B1의 넉넉함 / B2의 가는 얼굴·능청 / B3의 엄격함. 밝은 조명과 촘촘한 문양까지 계승하지 않는다. S2 셀 애니형은 B 세트가 아니다.
+1. **현재 실제 3D 렌더와 인게임**: 색·명암·재질·형태 복잡도·장식 밀도·게임 시점과 크기의 기준. [동결 캡처·소재·시안](../archive/art-history-2026-09-17/workbench/production/ingame-tone-alignment-2026-09-17/README.md). 캡처는 2026-09-17 05:00 KST 기준이며 이후 실제 자산이 바뀌면 다시 확인한다.
+2. **NPC B1·B2·B3 전체**: [선호 원본](../archive/art-history-2026-09-17/workbench/production/npc-variants-2026-09-17/NPC_B_expressive.png). 연령·표정·역할 실루엣을 계승하고 얼굴 구조는 최신 K2 방향으로 조정할 수 있다. B1의 넉넉함 / B2의 가는 얼굴·능청 / B3의 엄격함. 밝은 조명과 촘촘한 문양까지 계승하지 않는다. S2 셀 애니형은 B 세트가 아니다.
 3. **D-068·D-071 외형 정본**: 도호는 [H1 승인 보드 왼쪽 열](../sheets/approved-2026-09-17-h1/SELECTION.md), 귀새 G02·청연 C01·구미호 F01→F03는 [기존 승인 카탈로그](../sheets/approved-2026-09-17/SELECTION.md). 선택된 형태·대표 복식·소품을 따르며 도호 구 D03은 이력 참조다.
 4. 모델 생산은 D-069 Meshy 이미지 경로·리깅·Mixamo를 따른다. 새 시안이 승인 외형이나 게임 GLB를 자동 교체하지 않는다.
 
@@ -68,10 +68,10 @@ PD: “다크판타지인데 너무 밝은것 같음. 지금 제작되는 3d에�
 
 ## 탐색 이력
 
-- [D03 기반 NPC 보정](../workbench/production/npc-style-alignment-2026-09-17/README.md)
-- [NPC A/B/C](../workbench/production/npc-variants-2026-09-17/README.md): B 전체 선호
-- [S1/S2/S3](../workbench/production/world-style-exploration-2026-09-17/README.md): 미선택 탐색
-- [밝은 B 후속](../workbench/production/npc-b-style-followup-2026-09-17/README.md): 얼굴·표정 비교용 이력. 조명·재질 밀도는 D-070으로 보정
-- [GT1/GT2 인게임 정합 후보](../workbench/production/ingame-tone-alignment-2026-09-17/README.md): 신규 검토본
+- [D03 기반 NPC 보정](../archive/art-history-2026-09-17/workbench/production/npc-style-alignment-2026-09-17/README.md)
+- [NPC A/B/C](../archive/art-history-2026-09-17/workbench/production/npc-variants-2026-09-17/README.md): B 전체 선호
+- [S1/S2/S3](../archive/art-history-2026-09-17/workbench/production/world-style-exploration-2026-09-17/README.md): 미선택 탐색
+- [밝은 B 후속](../archive/art-history-2026-09-17/workbench/production/npc-b-style-followup-2026-09-17/README.md): 얼굴·표정 비교용 이력. 조명·재질 밀도는 D-070으로 보정
+- [GT1/GT2 인게임 정합 후보](../archive/art-history-2026-09-17/workbench/production/ingame-tone-alignment-2026-09-17/README.md): 신규 검토본
 
 새 결과는 workbench에서 검토한다. 선택 전 공식 자산이나 승인 플래그를 바꾸지 않는다.

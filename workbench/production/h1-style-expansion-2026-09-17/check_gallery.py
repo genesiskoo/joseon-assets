@@ -10,6 +10,7 @@ class Links(HTMLParser):
 missing=[]; checked=0
 pages=[root/"index.html",root/"00_style_anchor.html",root/"portraits_128.html",root/"3d_trial/review.html"]
 pages += [p for p in (root/"3d_modules/index.html",root/"3d_modules/review.html") if p.exists()]
+pages.append(root/"../../../archive/art-history-2026-09-17/index.html")
 for page in pages:
     parser=Links();parser.feed(page.read_text(encoding="utf-8-sig"))
     for link in parser.links:

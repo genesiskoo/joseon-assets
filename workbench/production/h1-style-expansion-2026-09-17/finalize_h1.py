@@ -23,16 +23,16 @@ for name in ("H1_doho.glb", "H1_merchant.glb"):
     if name == "H1_doho.glb":
         assert digest.upper() == "E5FEA5C6383180D1369D5F1975F804C4F3A2DD70A608918E26593D94C2511749"
     models.append({"file": relative, "sha256": digest})
-assert images["active_images"] == 23 and images["superseded_images"] == 6
+assert images["active_images"] == 23 and images["superseded_images"] == 0 and images["archived_images"] == 6
 assert all(x["exists"] and x["sha256_matches"] for x in images["image_checks"])
 assert not links["missing"]
-for name in ("README.md", "build_gallery.py", "check_gallery.py", "finalize_h1.py", "browser_qa.json"):
-    shutil.copyfile(scratch / name, root / name)
+assert all(x["exists"] and x["sha256_matches"] for x in images["archive_image_checks"])
 summary = {
     "date": "2026-09-17",
     "status": "Reviewable H1 art production; final game intake incomplete",
     "latest_images_including_material": 23,
-    "superseded_images": 6,
+    "superseded_images": 0,
+    "archived_images": 6,
     "canonical_glb_candidates": models,
     "canonical_glb_count": len(models),
     "enemy_glb_count": 0,
@@ -51,4 +51,5 @@ summary = {
     ]
 }
 (root / "delivery_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
-print(json.dumps({"latest_images": 23, "superseded_images": 6, "canonical_glb_candidates": len(models), "hash_and_link_checks": "PASS", "enemy_transfer": "approval_pending"}, ensure_ascii=False))
+print(json.dumps({"latest_images": 23, "superseded_images": 0,
+    "archived_images": 6, "canonical_glb_candidates": len(models), "hash_and_link_checks": "PASS", "enemy_transfer": "approval_pending"}, ensure_ascii=False))

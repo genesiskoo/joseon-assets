@@ -6,3 +6,5 @@
 - `duplicates/variants/`: 이름은 중복으로 표시됐지만 내용이 다른 변형본
 
 `duplicates/exact/`는 삭제 후보지만, 이번 정리에서는 Git 이력과 검토 가능성을 위해 보존했다. canonical 관계는 `catalog/duplicates-2026-06-07.csv`에 기록돼 있다.
+
+- [art-history-2026-09-17](art-history-2026-09-17/index.html): H1 채택 후 이전 키아트·구버전 이미지100장, 부속 기록 포함142파일.

@@ -3,7 +3,9 @@ ROOT = pathlib.Path(r"C:/workspace/joseon-assets/workbench/production/h1-style-e
 def esc(v): return html.escape(str(v), quote=True)
 manifest = json.loads((ROOT/"manifest.json").read_text(encoding="utf-8-sig"))
 active = [r for r in manifest["records"] if r["status"] != "superseded"]
-old = [r for r in manifest["records"] if r["status"] == "superseded"]
+archive_info = manifest["archived_images"]
+archive_manifest_path = (ROOT/archive_info["manifest"]).resolve()
+old = json.loads(archive_manifest_path.read_text(encoding="utf-8-sig"))["records"]
 style = """*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#141719;color:#e7e0d5;font:16px/1.65 system-ui,'Malgun Gothic',sans-serif}a{color:#b4cfda;text-underline-offset:4px}header,main,footer{max-width:1280px;margin:auto;padding:32px}header{padding-top:52px}.eyebrow{font-size:12px;letter-spacing:.16em;color:#b39b74}h1{font-size:44px;line-height:1.25;margin:12px 0}h2{font-size:27px;margin:0 0 10px}h3{font-size:18px;margin:10px 0}.muted{color:#aeb9bb}.summary{max-width:950px}nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}nav a,.button{display:inline-block;border:1px solid #44484b;border-radius:5px;padding:8px 13px;text-decoration:none;color:#d4ddd9}.hero{width:100%;display:block;border-radius:8px}.hero-caption{display:flex;justify-content:space-between;gap:16px;color:#bec7c6;font-size:14px;margin:12px 0}.note{background:#202527;border-left:3px solid #ab9069;padding:16px 20px;border-radius:3px}.section{margin:42px 0;scroll-margin-top:20px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{background:#202527;border:1px solid #373e41;border-radius:7px;overflow:hidden}.card img{width:100%;height:350px;object-fit:contain;background:#101315;display:block}.card .body{padding:14px 20px}.tag{font-size:12px;color:#acbdc2}.qa{font-size:14px;color:#bac4c6}details{margin:10px 0}summary{cursor:pointer}.portrait-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:24px}.portrait{background:#24292d;padding:20px;text-align:center;border:1px solid #3d4548;border-radius:7px}.portrait svg{width:128px;height:128px;display:block;margin:0 auto;background:#303333}.portrait p{font-size:14px;margin:10px 0 0}.small{font-size:14px}.old .grid img{height:200px}table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #394144;text-align:left;padding:12px}footer{font-size:13px;color:#aeb8ba;border-top:1px solid #373e41}@media(max-width:740px){header,main,footer{padding:22px}h1{font-size:32px}.grid{grid-template-columns:1fr}.card img{height:auto}.portrait-row{grid-template-columns:repeat(2,minmax(0,1fr))}.portrait{padding:12px}.hero-caption{display:block}}"""
 def page(title, body):
     return '<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><style>'+style+'</style></head><body>'+body+'</body></html>'
@@ -32,7 +34,7 @@ runtime=[("3d_trial/captures/fist_final_baseline/h1_trial_idle_01.png","인물 /
 ("3d_trial/captures/fist_final_grip/h1_trial_attack_01.png","검 그립 / 확대 검사","주먹과 손잡이 접촉 확인. 손끝 모양은 후속 보완 항목")]
 for file,title,qa in runtime:
  if (ROOT/file).exists(): body+='<article class="card"><a href="'+file+'"><img loading="lazy" src="'+file+'" alt="'+title+'"></a><div class="body"><span class="tag">실제 3D 렌더</span><h3>'+title+'</h3><p class="qa">'+qa+'</p></div></article>'
-body+='</div></section><details class="section old"><summary>이전 시안·수정 이력 '+str(len(old))+'장</summary><p class="muted">현재 제작 기준은 위의 수정본입니다. 초기 파일은 검수 이력으로 보존했습니다.</p><div class="grid">'+''.join(card(r) for r in old)+'</div></details></main><footer><a href="PROMPTS.md">정확한 프롬프트·참조 순서·QA</a> · <a href="manifest.json">파일·해시 명세</a> · <a href="generations.csv">생성 기록</a><p>원화: built-in image_gen, 참조 기반 생성 및 부분 수정. 실제 모델 ID는 노출되지 않습니다. H1 승인 원본은 수정하지 않았습니다.</p></footer>'
+body+='</div></section></main><footer><a href="'+esc(archive_info["gallery"])+'">이전 키아트·구버전 아카이브</a> · <a href="PROMPTS.md">프롬프트·참조·QA</a> · <a href="manifest.json">파일·해시 명세</a> · <a href="generations.csv">생성 기록</a><p>원화: built-in image_gen. 현재 갤러리는 최신 23장만 표시합니다. H1 승인 원본은 보존했습니다.</p></footer>'
 (ROOT/"index.html").write_text(page("H1 아트 확장 · 조선헌터스",body),encoding="utf-8")
 portraits=[("도호",22,16),("귀새",434,16),("청연",845,16),("구미호 F01",1256,16),("김 영감",22,471),("무당 할매",434,471),("촌장",845,471),("구미호 F03",1256,471)]
 pbody='<header><div class="eyebrow">PORTRAIT READABILITY / H1</div><h1>초상 128px 표시</h1><p>같은 원화를 실제 CSS 128×128px로 표시합니다. 얼굴·나이·대표 소품의 식별을 확인하는 페이지입니다.</p><nav><a href="index.html">전체 갤러리</a><a href="22_portraits.png">원본 8칸 시트</a></nav></header><main><div class="portrait-row">'
@@ -44,5 +46,10 @@ checks=[]
 for r in manifest["records"]:
  path=ROOT/r["file"]
  checks.append({"id":r["id"],"exists":path.exists(),"sha256_matches":hashlib.sha256(path.read_bytes()).hexdigest().upper()==r["sha256"].upper()})
-(ROOT/"delivery_check.json").write_text(json.dumps({"active_images":len(active),"superseded_images":len(old),"image_checks":checks,"generated_png_edited_locally":False},ensure_ascii=False,indent=2),encoding="utf-8")
-print(json.dumps({"active":len(active),"iterations":len(old),"hash_pass":all(c["sha256_matches"] for c in checks)},ensure_ascii=False))
+archive_checks=[]
+for r in old:
+ path=archive_manifest_path.parent/r["file"]
+ archive_checks.append({"id":r["id"],"exists":path.exists(),"sha256_matches":hashlib.sha256(path.read_bytes()).hexdigest().upper()==r["sha256"].upper()})
+(ROOT/"delivery_check.json").write_text(json.dumps({"active_images":len(active),"superseded_images":0,"archived_images":len(old),"image_checks":checks,"archive_image_checks":archive_checks,"generated_png_edited_locally":False},ensure_ascii=False,indent=2),encoding="utf-8")
+assert all(c["sha256_matches"] for c in checks+archive_checks)
+print(json.dumps({"active":len(active),"archived_h1":len(old),"hash_pass":True},ensure_ascii=False))

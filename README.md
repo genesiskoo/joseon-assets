@@ -1,5 +1,9 @@
 # joseon-assets
 
+## 2026-09-17 H1 기준 정리
+
+현재 제작 기준은 [H1 승인본](sheets/approved-2026-09-17-h1/SELECTION.md)과 [최신 제작 갤러리](workbench/production/h1-style-expansion-2026-09-17/index.html)다. 이전 키아트·화풍 후보·구버전 일러스트100장은 [아카이브](archive/art-history-2026-09-17/index.html)에 보관한다. 아래 기존 목록의 구버전 경로도 아카이브 위치를 따른다.
+
 조선헌터스 아트 에셋 저장소. 컨셉아트, 캐릭터 레퍼런스 시트, 픽셀 스프라이트, 레퍼런스 이미지 등 게임 제작에 쓰이는 모든 시각 에셋을 관리한다.
 
 ---
@@ -9,8 +13,8 @@
 ```
 joseon-assets/
 ├── sheets/          # 공식 캐릭터 레퍼런스 시트 (Pixellab cref 입력용)
-├── concept/         # 컨셉아트 및 일러스트
-├── magazine/        # 매거진·카드 스타일 프로모 이미지
+├── archive/art-history-2026-09-17/concept/         # 컨셉아트 및 일러스트
+├── archive/art-history-2026-09-17/magazine/        # 매거진·카드 스타일 프로모 이미지
 ├── sprites/         # 픽셀 스프라이트시트 + Aseprite 소스
 ├── reference/       # 내부 참고 자료 + 외부 수집 레퍼런스
 ├── video/           # 영상 파일
@@ -51,12 +55,12 @@ sheets/
 
 ---
 
-## concept/ — 컨셉아트 및 일러스트
+## archive/art-history-2026-09-17/concept/ — 컨셉아트 및 일러스트
 
 캐릭터별 서브폴더로 분류. 고화질 일러스트, 액션 컨셉, 마스터 시트(개념 검증용).
 
 ```
-concept/
+archive/art-history-2026-09-17/concept/
 ├── doho/
 │   ├── doho_art_action1.png       # 도호 액션 컨셉 (검+달밤)
 │   ├── doho_art_action2.png       # 도호 액션 컨셉 (마법진+부적)
@@ -91,12 +95,12 @@ concept/
 
 ---
 
-## magazine/ — 매거진·카드 스타일 프로모
+## archive/art-history-2026-09-17/magazine/ — 매거진·카드 스타일 프로모
 
 캐릭터 소개용 매거진 커버, 캐릭터 파일 카드. SNS·마케팅 소재로 활용.
 
 ```
-magazine/
+archive/art-history-2026-09-17/magazine/
 ├── doho_modern_orient.png         # 도호 Modern Orient 매거진 커버
 ├── cheongyeon_magazine_card.png   # 청연 조선판타지 매거진 카드
 ├── cheongyeon_char_no01.png       # 청연 캐릭터 파일 No.01

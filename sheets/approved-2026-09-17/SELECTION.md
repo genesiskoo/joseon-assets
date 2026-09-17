@@ -6,7 +6,7 @@
 
 ## 승인 원본
 
-원본 폴더: `C:/workspace/joseon-assets/workbench/probes/character-catalog-2026-09-17/`.
+원본 폴더: `C:/workspace/joseon-assets/archive/art-history-2026-09-17/workbench/probes/character-catalog-2026-09-17/`.
 
 | 캐릭터·상태 | 선택 | 파일·열 | 계승할 특징 |
 |---|---|---|---|

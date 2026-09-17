@@ -1,48 +1,18 @@
 # H1 production prompts and QA
-Built-in image_gen; actual model ID not exposed. Timestamp is source PNG LastWriteTime, not server generation time.
+Built-in image_gen; actual model ID not exposed. Historical call reference paths are preserved below. Resolved reference paths follow the archive relocation map.
 
-## H1-X01 - 도호·NPC 공통 화풍 비교
-Output: iterations/01_cast_comparison_r0.png
-Mode: built-in image_gen / reference-guided generation
-Status: superseded
-QA: 독립 QA: 화풍·H1·주인공 위계·해부·프레임 통과. B2 노년성이 약해 얼굴만 수정.
-References in exact call order:
-1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
-2. C:\workspace\joseon-assets\workbench\production\korean-character-refinement-2026-09-17\K2_korean_manhwa.png
-```text
-Use case: stylized-concept. Asset H1-X01: production-quality shared-style cast lineup for Joseon Hunters, fictional Korean dark fantasy action RPG. Create ONE wide landscape illustration, 4 complete full-body figures with generous space around hats, weapons and feet, on a plain warm charcoal background, a common ground line, neutral inspection lighting. Quiet small labels only: "DOHO · H1", "KIM · B1", "SHAMAN · B2", "ELDER · B3".
-Input 1 is the APPROVED H1/H2/H3 board. ONLY the LEFTMOST H1 figure is both the Doho character identity and shared visual-style anchor. Ignore H2/H3. Closely preserve H1's clean-shaven Korean face, playful half-smile, narrow controlled eyes, relaxed athletic proportions, wide thin black gat with blue badge and bead cords, deep navy layered dopo with split short angled front hems revealing voluminous black trousers, white collar, dark wrist wraps, dull red sash with TWO trailing ends, one round blue waist charm, black boots. His right hand holds a straight sword over his shoulder with the blade clear of the hat and face, left hand resting by the scabbard. Retain the strong relaxed open stance and silhouette of H1, no beard, no scarf.
-Input 2 is supporting NPC identity only: preserve the SECOND, THIRD and FOURTH figures from that sheet; do NOT use its first plain Doho figure. B1 is a shorter stout elderly Korean male merchant with round welcoming face, short grey moustache/goatee, black gat, soot-brown overvest over ivory wide sleeves, baggy trousers, ledger and coin pouch, sly welcoming open palm. B2 is a slim elderly Korean woman with a narrow knowing face, grey hair in a LOW chignon with simple binyeo, muted brick-red jeogori, white collar and deep teal chima, closed black fan and small brass ritual bells, slightly crooked amused smile. B3 is a tall stern elderly Korean village elder with broad angular face, thin grey brows, long straight white beard, black gat, charcoal robe and plain wooden staff.
-All FOUR must be drawn by the SAME illustrator using H1's Korean manhwa facial abstraction, thin confident ink contours, broad soft MATTE painted shadow planes and sparse large cloth folds. Age is communicated by shape and a few deliberate lines, never photoreal skin. Their costume colors and distinct silhouettes are retained. Doho gets the clearest focal silhouette and slightly stronger face/white-collar separation; NPCs remain individually memorable without looking like other protagonists. Korean collars and closures, grounded fabric. Muted navy/charcoal/earth/ivory/brick/teal; no glossy gold embroidery, no ornament inflation, no western comic exaggeration, no chibi, no generic Chinese fantasy armor, no porcelain/glossy skin. Neutral readability must coexist with the dark restrained palette. Complete correct anatomy and props; no extra figures, no decorative frame, no text other than the four small labels. Target landscape 2048x1152.
-```
+[Previous versions archive](../../../archive/art-history-2026-09-17/index.html)
 
 ## H1-X01r1 - 도호·NPC 공통 화풍 비교 / B2 나이 보정
 Output: 01_cast_comparison.png
 Mode: built-in image_gen / targeted edit
 Status: visual_qa_pass
 QA: 독립 재검수 통과: B2 노년성 개선, H1/다른 인물/손/검/소품 회귀 없음. 원화 검수이며 3D 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-f7fd1965-f62b-45af-875f-2cea2e287893.png
 ```text
 Edit target: supplied H1-X01 four-person cast sheet. Make ONE surgical correction: the THIRD character, SHAMAN B2, must read clearly as an elderly Korean grandmother, approximately late 60s/70s, while retaining her slender face and mischievous knowing smile. In the SAME restrained H1 manhwa linework, slightly lower the upper eyelids, add a few deliberate eye-corner and cheek age lines, subtly soften the sag of cheeks/jaw. Keep her exact grey low chignon, facial identity, pose, costume, fan and bells. NO photoreal skin, no dense wrinkles or ugly caricature.
 Preserve all other content: Doho H1 on the left, merchant B1 and elder B3 faces/bodies, four poses, scale and positions, all garments/colors, hands, props, labels, sword, framing, plain charcoal background and matte lighting. Do not redesign or beautify any other face. Full original composition and resolution.
-```
-
-## H1-X02 - 못골 통합 초안
-Output: iterations/02_motgol_close.png
-Mode: built-in image_gen / reference-guided generation
-Status: superseded
-QA: 공통화풍 양호. 인물비중이 실제보다 약2배 크고 상점천이 일본 노렌처럼 읽힐 여지 → 시점/천구조 보정.
-References in exact call order:
-1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
-2. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-af073d7b-b9db-4df2-9490-f2910f203e27.png
-3. C:\workspace\joseon\tmp\h1_artwork_build\references\actual_town.png
-```text
-Use case: stylized-concept. H1-X02: ONE production environment illustration for MOTGOL village in Joseon Hunters, fictional KOREAN dark fantasy. Wide landscape 2048x1152, fixed orthographic isometric camera approx 35 degrees down / 45 degrees yaw, matching a playable 3D ARPG view. This is a target concept painting, not a screenshot or UI mockup.
-References: image 1 APPROVED board LEFT H1 ONLY = exact Doho identity and common drawing style. Image 2 = corrected shared-style cast identities (Doho, stout elderly Kim merchant, elderly woman shaman, stern elder); preserve their proportions and mature faces. Image 3 = CURRENT ACTUAL GAME screenshot for camera angle and small on-screen actor scale ONLY. Discard its checker ground, capsules, boxes, labels, dialogue/HUD and rendering defects.
-Scene: a small worn Korean village shop courtyard at dim overcast dusk. Broad stone threshold, packed dark earth and irregular simple grey stone pavers, muted soot-brown timber shop with paper lattice doors and a modest low curved grey giwa roof, low stone retaining wall, one jars-and-ledger stall. A shrine alcove is visible to one side. Large calm shapes; walkable court remains clearly open. The architecture uses Korean timber/post spacing and hanji doors, no Chinese palace eaves or Japanese shrine gates.
-Doho H1 walks in the clear center foreground, about 14-17 percent of image height, navy split layered robe revealing trousers, red sash with two tails, blue waist charm, white collar, black gat, straight sword held easily across his shoulder. Stout elder Kim stands at his shop counter with ledger, white sleeves and brown vest. The SHAMAN is visibly ELDERLY, grey low chignon, few deliberate facial age lines, brick red jeogori/deep teal chima, fan and brass bells near shrine. Only these THREE figures; coherent physical size and feet firmly grounded. They are interacting lightly, not combat. Doho is the focal figure; keep his hat, face/collar, sash and sword distinct.
-Use the SAME restrained H1 Korean manhwa fine ink edges, broad soft matte painted planes and limited large folds for BOTH people and architecture. Stone and wood are drawn in the same hand, not photoreal background under anime figures. Muted charcoal/navy/mineral-grey/soot-brown; limited brick/teal accents. Low cool ambient light, one small warm paper-lantern pool at shop, sufficient neutral reflected light to read silhouettes and paths. Dark fantasy weathered atmosphere with lively personalities. No golden sunshine wash, no bright pastel village, no glossy material, no fog that hides traversal, no dense embroidery/noise, no extra crowd, no western medieval props, no HUD, no frame. Small discreet bottom-left title only: "H1-X02 / MOTGOL".
 ```
 
 ## H1-X02r1 - 못골 통합 / 넓은 시점
@@ -50,7 +20,7 @@ Output: 02_motgol_wide.png
 Mode: built-in image_gen / composition and storefront edit
 Status: visual_qa_pass
 QA: 시점 후퇴·천 가리개 정리. 원화 인물비중은 개선됐으며 실제3D 정합은 별도 시험. 독립검수: 환경 원화 합격, 실제3D/게임가독성·가림·애니는 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-d3b8eebd-c04b-4d22-af80-c2bd10d482ae.png
 ```text
 Edit the supplied village concept into a WIDER gameplay-scale version of the SAME location and cast. Preserve the H1 Korean manhwa drawing style, charcoal/earth palette, cool ambient and small warm lantern pools, and the exact identities/costumes of Doho, Kim and the elderly shaman.
@@ -64,7 +34,7 @@ Output: 04_doho_front.png
 Mode: built-in image_gen / identity-preserving pose derivative
 Status: input_visual_qa_pass
 QA: 독립 QA: H1 복식·앞트임·분리바지·무광·T-pose 확인. 주먹손이라 손펴는 동작은 미검증. 실제3D 합격과 구분.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 ```text
 Use case: stylized-concept. Asset H1-M01-F. ONE single full-body FRONT ORTHOGRAPHIC character production reference for 3D reconstruction. Portrait 1024x1536, plain neutral medium-grey background, shadowless neutral diffuse light, generous margins, all hat and boot edges inside the image. Exactly ONE figure, no layout, no extra side/back views, no labels, no props floating beside body.
@@ -78,7 +48,7 @@ Output: 05_doho_back.png
 Mode: built-in image_gen / identity-preserving pose derivative
 Status: input_visual_qa_pass
 QA: 독립 QA: 정면/후면 의상·허리끈 위치 연결. 후면 머리·옷자락은 제작상 추론, 실제3D 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-ebad1a1c-e64e-49c9-b94d-c6f7eddd4d87.png
 2. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 ```text
@@ -87,30 +57,12 @@ One figure only, complete hat/hands/boots inside frame. Back of a clean-shaven K
 Ensure the rear coat tails are separated to support leg movement and keep the H1 front-side panel lengths consistent with image1. The sleeves have exactly the same large hanging silhouette as the front image. No perspective, no three-quarter view, no labels, no shadow gradients or strong baked light. Portrait 1024x1536, same framing as input1 with enough margin to avoid clipping fists.
 ```
 
-## H1-X03 - 석실 던전 통합
-Output: 03_sealed_chamber.png
-Mode: built-in image_gen / reference-guided generation
-Status: superseded
-QA: 무광 석재·도호/산적·이동면 판독 양호. 현재캡처보다 인물비중이 커 실제크기 검증은 별도. 독립검수: 환경 원화 합격, 실제3D/게임가독성·가림·애니는 미검증. 현행 art_3d_pipeline 산적 무기는 나무곤봉으로 확인되어 칼→곤봉 수정본으로 대체.
-References in exact call order:
-1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
-2. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-d3b8eebd-c04b-4d22-af80-c2bd10d482ae.png
-3. C:\workspace\joseon\tmp\h1_artwork_build\references\actual_dungeon.png
-```text
-Use case: stylized-concept. H1-X03: ONE wide orthographic ISOMETRIC PLAYABLE DUNGEON VIEW for Joseon Hunters, a fictional Korean dark fantasy ARPG. Target 2048x1152. Establish H1's illustration style across hero, enemy and stone environment while obeying small in-game actor scale.
-Reference 1: approved LEFTMOST H1 only for Doho and the shared fine ink / broad matte painted shadows. Ignore its other two characters. Reference 2: recent town illustration for the SHARED HAND-DRAWN material language only, NOT its oversized character scale. Reference 3: current actual Godot dungeon screenshot for isometric axis, camera distance, torch-pool lighting and dark atmosphere ONLY. Remove ALL checker/black grid defects, dithering, capsules, portal covering player, labels and HUD. The floor must be continuous visible stone, not black tile holes.
-Composition/scale: an orthographic camera looking down about 35 degrees, yaw 45 degrees. Show a roomy stone chamber AND the start of two corridors, roughly eighteen metres across the wide frame. One floor tile = 1 metre; Doho is 1.7 metres tall. Make the ENTIRE Doho figure including hat only about ONE SEVENTH of the canvas HEIGHT (14 percent), deliberately small in the room, NOT a large portrait or toy diorama. One bandit is similar human scale. Leave a broad uncluttered playable floor, clear paths, no obstructing front wall.
-Scene: grey-green Korean granite blocks, broad uneven stone slabs with sparse broken corners and subdued moss, heavy stone lintel with simple Korean lattice seal motif and worn paper talismans, short descending stone stair at the back, one small earthenware jar by the wall, two restrained warm wall-lantern pools. Cool charcoal shadows and faint mineral-grey bounce make stone floors/paths readable. Low ambient, no bright fill over the entire scene. No photoreal surface grime, ornate gothic detail or Chinese/Japanese architectural symbols.
-Doho H1 stands at the lower center facing diagonally toward one plague-afflicted Korean bandit higher-right with 3 metres of clear separation, both fully visible. Doho keeps his black gat, clean-shaven sly face, navy layered split hems over black loose trousers, white collar, dull red sash two ends and one round blue charm. He holds his straight sword in a relaxed ready position, weapon apart from body, no glow hiding it. Bandit: adult Korean male, grey-green sickly skin, rough dark-brown short jeogori and patched trousers, cloth head tie, rusty single-edged short blade; hunched threatening stance but clearly the same H1 manhwa drawing medium. No armor inflation or oversized fantasy sword.
-Fine controlled ink contours, broad matte color shapes, low saturation and sparse large folds. Character faces, cloth, wood and stone share one illustrator. PC has the clearer silhouette and contrast than enemy and background. No dramatic closeup, no huge actors, no UI, no extra creatures, no lens perspective, no sunlight, no black floor voids. Small bottom-left title only: "H1-X03 / SEALED CHAMBER".
-```
-
 ## H1-X03r1 - 석실 통합 / 현행 산적 곤봉
 Output: 03b_sealed_chamber_club.png
 Mode: built-in image_gen / targeted prop correction
 Status: visual_qa_pass
 QA: 산적의 칼만 나무 곤봉으로 정정(art_3d_pipeline §3). 부모 재검수: 도호 검·배경·인물·조명 회귀 없음. 원화 합격, 실제3D는 별도.
-References in exact call order:
+References in exact original call order:
 1. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-eb2b42bc-ded4-4106-8a2e-1f8bda79a81c.png
 ```text
 Edit target = supplied H1-X03 dungeon illustration. Make exactly ONE targeted correction for the current game specification: the enemy bandit at upper right holds a rough short WOODEN CLUB in his right hand, NOT a metal blade. Replace only his knife/short sword with a clearly readable worn brown wooden cudgel of plausible hand length, a thick blunt striking end and correct grip. No metal blade, no spikes, no glow. Preserve everything else precisely: camera framing, floor/stonework, lighting and shadows, bandit's identity and stance, Doho H1 pose/sword/navy clothes/black gat/red sash, scale, two figures, all environment objects and title. Same hand-drawn H1 matte style. Doho's straight sword MUST remain a sword, untouched.
@@ -121,7 +73,7 @@ Output: 06_merchant_front.png
 Mode: built-in image_gen / identity-preserving pose derivative
 Status: input_visual_qa_pass
 QA: 부모 QA: B1 연령·체형·복장·T-pose·빈손 확인. 손펴는 동작은 미검증. 독립 검수에서도 고령상인·앞뒤연결·프레임 합격.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-af073d7b-b9db-4df2-9490-f2910f203e27.png
 ```text
@@ -136,28 +88,11 @@ Output: 07_merchant_back.png
 Mode: built-in image_gen / identity-preserving pose derivative
 Status: input_visual_qa_pass
 QA: 부모 QA: 전후 복식·주머니 동일 신체측면·체형·전신 프레임 확인. 후면은 제작상 추론. 독립 검수에서도 고령상인·앞뒤연결·프레임 합격.
-References in exact call order:
+References in exact original call order:
 1. C:\Users\FORYOUCOM\.codex\generated_images\01a0ab0c-798a-7282-8f8b-e183b8b90559\exec-5fb42af1-d867-4c6e-b380-31c038ea9bec.png
 ```text
 Use case: stylized-concept. H1-M02-B, a single direct BACK ORTHOGRAPHIC T-pose reference of EXACTLY the same elderly stout Korean merchant in the supplied front input. Preserve the same full-body scale, grey background, matte even light and 1024x1536 portrait framing. One figure only, no labels, no inset, no props.
 Rotate the SAME merchant 180 degrees, without changing proportions/clothes. Back of plain thin black gat, small grey-black hair bun and simple tied cord, neck under the same white collar. Brown sleeveless overvest with broad simple back panel and central seam, same subtle tone-on-tone cloth pattern and hem reaching upper thigh. Ivory loose jeogori sleeves hang in matching shapes from horizontal T-pose arms. Rope belt continues around the waist without adding a second bow at the back. The single small coin pouch is on image LEFT in this rear view because it was image RIGHT in the front view; it must not duplicate. Warm ivory voluminous baji trousers, ivory ankle wraps and low black/brown Korean shoes, two feet firmly apart. Same simple closed fists, arms fully horizontal and separated from body. NO face at the back, no ledger, no weapons, no extra pockets, no Doho blue badge, no red sash. H1 fine ink and broad matte painted shading across the entire figure. No glossy 3D render, no dramatic shadow, no photoreal skin. Keep generous margins so hands, hat and feet never crop.
-```
-
-## H1-C01 - 귀새 G02 / 초기 앞뒤 시트
-Output: iterations/08_gwisae_r0.png
-Mode: built-in image_gen / reference-guided generation
-Status: superseded
-QA: 독립 QA: 정체성/화풍 통과. 후면 두 탈의 허리 좌우가 모호해 정후면으로 수정.
-References in exact call order:
-1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
-2. C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_gwisae_G01-G03.png
-3. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
-```text
-Create a polished 16:9 character production catalog plate for GWISAE from Joseon Hunters, a Korean dark fantasy action RPG. This is a style transfer of an already approved character, not a redesign.
-REFERENCE ROLES: image 1 is a three-option Doho board; ONLY its LEFT H1 supplies the drawing style: delicate Korean manhwa contour lines, restrained facial details, large clean matte shadow planes, simple major fabric folds, quiet material surfaces. Do not copy Doho's outfit or face. Image 2 is the Gwisae identity board; use ONLY the MIDDLE G02. Ignore G01 and G03. Image 3 is the accepted H1 shared-cast style demonstration.
-LAYOUT: tasteful charcoal-gray neutral studio sheet. Large complete front three-quarter full-body character at left (45% width), same character full-body rear three-quarter at center (30%), at right a close detail of her worn mask and three neatly separated accessories: one curved dagger with short red tassel, two spare masks together, long dark-red ribbon. All images are the SAME design. Generous margins; no cropped hair, boots, hands or blades. Small exact heading "GWISAE / H1" only; no prose.
-IDENTITY: adult agile Korean woman, high long black ponytail with small red cords; ivory wooden gaksital mask with gently closed smiling eyes, small red forehead circle and red cheeks, subtle aged material. Black and muted crimson split-front short overcoat with purple inner layer; baggy black trousers visibly separated from coat tails, black wrapped boots and wrists. Preserve the G02 major overlap and hem shapes, but simplify dense embroidery into sparse dark-red border motifs; broad matte fabrics like H1. TWO spare masks hang at her anatomical LEFT hip (viewer RIGHT in front view, viewer LEFT in back view): one dark patterned mask and one brown smiling carved mask. They must remain the same two masks on the same belt attachment, not three. One single-edged curved dagger held safely down in anatomical right hand, long loose red ribbon from belt moves gently, no ribbon tangles with hands. Human anatomy and sensible grip. Read as a distinctive player character rather than generic ninja. No uncovered new face, no katana, no kimono/obi, no bulky Western armor.
-LIGHTING: neutral soft even production light, original colors clearly visible with dark body values retained; no dramatic rim light, no scene lights baked on cloth, no photorealistic skin or microtexture, no bright anime cel gloss, no new blue charms. The two views must match proportions and accessory placement.
 ```
 
 ## H1-C01r1 - 귀새 G02 / H1 카탈로그
@@ -165,28 +100,11 @@ Output: 08_gwisae.png
 Mode: built-in image_gen / localized reference edit
 Status: visual_qa_pass
 QA: 독립 QA 통과: 정후면 왼 허리 두 탈·오른손 곡단검 연결, G02 각시탈·기동형 복식 유지. 실제 메시·리깅은 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-edcab808-aa92-49b9-a356-92a3414b518c.png
 ```text
 Edit this supplied GWISAE / H1 production plate with ONE strictly localized correction to the MIDDLE full-body rear-view figure only. Preserve every pixel outside the middle figure area as closely as possible: the front-view figure, all right-hand accessory details, close-up mask portrait, typography, palette, texture and composition are already correct.
 Replace the middle rear-three-quarter view by a CLEAR DIRECT REAR VIEW of the same character at the same height and position. Head looking straight away, no face visible, black ponytail and same rear coat panels. Her anatomical RIGHT hand is on viewer RIGHT and holds the same curved dagger down. Her anatomical LEFT hip is on viewer LEFT: attach EXACTLY TWO spare masks to that left-side belt attachment (one dark patterned mask and one brown smiling mask), visibly hanging at the LEFT OUTER hip. NO mask or mask attachment at the right hip or center of her back. The pair may rotate slightly to show their carved faces but the straps must attach at the left belt seam. Match the two spare masks and clothing to the untouched large front figure. Keep the exact same boots, coat, muted red sash, purple lining, ponytail and style; do not add or remove any other prop. Fully framed feet and hair. This is a continuity correction, not a redesign.
-```
-
-## H1-C02 - 청연 C01 / 초기 앞뒤 시트
-Output: iterations/09_cheongyeon_r0.png
-Mode: built-in image_gen / reference-guided generation
-Status: superseded
-QA: 독립 QA: 후면 소품 손 배치 모호, 치맛단 봉황 문양 복구 필요.
-References in exact call order:
-1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
-2. C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_cheongyeon_C01-C03.png
-3. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
-```text
-Create a polished 16:9 production character catalog for CHEONGYEON from Joseon Hunters. Preserve the approved LEFT C01 character in reference 2, but render her in the drawing style of ONLY LEFT H1 in reference 1. Reference 3 demonstrates H1 used consistently across ages. This is one character's style translation, not options or a redesigned costume.
-STYLE: Korean manhwa fine confident outlines, restrained eyes/nose/mouth, broad simple matte shadow masses, clear major folds. Match H1's relatively quiet cloth surfaces; drastically simplify fine decorative noise while preserving the C01 distinct silhouette and key accessories. No photorealistic cloth or glossy skin.
-DESIGN: serene adult Korean woman, slender but credible human anatomy, black loosely flowing hair with slim braids, small distinctive black-and-dull-gold ceremonial headpiece precisely as C01 (not tall emperor crown). Ivory layered long hanbok over pale-celadon underdress, generous hanging sleeves, crossed white collar, low-contrast limited embroidery near hems, celadon sash, carved pale jade round pendant, two paper talismans. A dark navy/black folding fan with sparse golden moon-and-star marks in right hand; a small cluster of aged brass bells with tassels in left hand. Keep these C01 features, no sword, no Doho red sash or blue bead necklace.
-LAYOUT: dark warm neutral gray studio background, 16:9. Left: large 3/4 front complete full-body pose with fan and bells, calm faint knowing smile; feet visible. Middle: matching rear 3/4 full-body view with sleeves hanging and hair resting naturally, same headpiece and layers. Right top: one face close-up exactly same adult woman and small headpiece. Right bottom: clearly separated open celestial fan, brass bell cluster, jade pendant/talismans. Use small exact heading "CHEONGYEON / H1". Nothing else written.
-PRODUCTION LIGHT: soft neutral fill sufficient to see local ivory and celadon colors, not white emissive glow; dark outline and matte gray shadows keep her in the same moody world. No scene environment, no floating magic, no glamour lighting, no bright cheerful anime shine, no complex ornate embroidery, no Japanese miko design, no Chinese xianxia flowery accessories. Full framing with safe margins, readable hands gripping the correct objects, consistent scale/proportions between front and rear.
 ```
 
 ## H1-C02r1 - 청연 C01 / H1 카탈로그
@@ -194,7 +112,7 @@ Output: 09_cheongyeon.png
 Mode: built-in image_gen / localized reference edit
 Status: visual_qa_pass
 QA: 독립 QA 통과: 정후면 오른 부채·왼 방울, C01 봉황·상아/청록 복식·얼굴 유지. 실제 메시·리깅은 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-da5d1405-3344-413c-9a24-9162d5950e36.png
 2. C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_cheongyeon_C01-C03.png
 ```text
@@ -209,7 +127,7 @@ Output: 10_shaman.png
 Mode: built-in image_gen / reference-guided generation
 Status: visual_qa_pass
 QA: 독립 QA 통과: 노년의 얼굴·낮은 쪽머리·벽돌색/청록 복식·능청 유지. 앞뒤 소품 손 위치 일치. 실제 메시·리깅 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 ```text
@@ -224,7 +142,7 @@ Output: 11_elder.png
 Mode: built-in image_gen / reference-guided generation
 Status: visual_qa_pass
 QA: 직접 검수: 각진 노년 얼굴·긴 백수염·먹색 도포 유지, 정면 왼/후면 오른 지팡이 연속성·전신 프레임 통과. 실제 메시·리깅 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 ```text
@@ -239,7 +157,7 @@ Output: 12_gumiho_forms.png
 Mode: built-in image_gen / reference-guided generation
 Status: visual_qa_pass
 QA: 독립 QA 통과: 같은 성인 얼굴·흑발·금안, 인간형 귀/꼬리 없음, 변신형 왼4+중앙1+오른4=9개 꼬리 끝 확인. 실제3D 미제작.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_gumiho_F01-F03.png
 3. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
@@ -256,7 +174,7 @@ Output: 13_dungeon_modules.png
 Mode: built-in image_gen / reference-guided generation
 Status: concept_visual_qa_pass
 QA: 직접 검수: 바닥·벽·코너·문틀·봉인문·기둥·계단2·화로9종 구분. 중립 목표 원화이며 정밀치수·반복 텍스처 합격을 의미하지 않음. 실제GLB 후보는 별도3d_modules.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png
 3. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
@@ -274,7 +192,7 @@ Output: 14_motgol_modules_props.png
 Mode: built-in image_gen / reference-guided generation
 Status: concept_visual_qa_pass
 QA: 직접 검수: 목조·기와·한지·옹기·상자·사각등·평상에 H1의 무광 면 적용. 시트의 소품은 상대 확대됨. 실제GLB치수·배치 검수는 별도.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/02_motgol_wide.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 ```text
@@ -288,7 +206,7 @@ Output: 15_bandit_input.png
 Mode: built-in image_gen / reference-guided generation
 Status: input_visual_qa_pass
 QA: 삼베·머리띠·회녹 피부, 2팔/2다리·사지 분리·전신 프레임 확인. 곤봉은 별도 소품. 실제3D 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 ```text
@@ -302,7 +220,7 @@ Output: 16_bat_input.png
 Mode: built-in image_gen / reference-guided generation
 Status: input_visual_qa_pass
 QA: 자흑색 날개2·귀2·후지2·꼬리막, 펼친 날개 형상 확인. 날개끝 여백은 좁지만 잘림 없음. 실제3D·비행 리그 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 ```text
@@ -316,7 +234,7 @@ Output: 17_talisman_caster_input.png
 Mode: built-in image_gen / reference-guided generation
 Status: input_visual_qa_pass
 QA: 현행 흰도포·창백한 가면·양손목 종이부적 유지, 던질 부적 별도. 빈손·팔/몸 간격·전신 확인. 실제3D 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 ```text
@@ -330,7 +248,7 @@ Output: 18_heukrang_input.png
 Mode: built-in image_gen / reference-guided generation
 Status: input_visual_qa_pass
 QA: 거대한 검은 4족 늑대·붉은 눈·꼬리1·분리된 발4 확인. 연기는 후속VFX로 분리, 입력은 불투명 털 덩어리. 실제3D·4족 리그 미검증.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/01_cast_comparison.png
 ```text
@@ -344,7 +262,7 @@ Output: 19_weapons_props.png
 Mode: built-in image_gen / reference-guided generation
 Status: concept_visual_qa_pass
 QA: 직접검수: 직검/검집/나무곤봉/종이부적 분리, 칼끝·손잡이 프레임과 재질 구분. 실제 무기 원점·축·치수는 별도GLB 검사, 원화측면은 정밀도면 아님.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png
 ```text
@@ -357,31 +275,12 @@ Four clearly separated groups:
 Place each group with ample negative space and small exact labels "SWORD", "SCABBARD", "CLUB", "TALISMAN"; heading "EQUIPMENT / H1". All full tips and handles visible, no cropped blades. The grip centers and directions must be unambiguous for 3D hand sockets, but do not draw axes, measurements or claims. No baked emissive effects or bright rim light. Slight steel edge highlight, aged dull metal, matte dark wood, flat paper.
 ```
 
-## H1-K01 - H1 3인방 키아트 / 초기 프레임
-Output: iterations/20_keyart_r0.png
-Mode: built-in image_gen / reference-guided generation
-Status: superseded
-QA: 인물정체성과주인공위계양호. 도호 발끝 잘림을 수정.
-References in exact call order:
-1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
-2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/08_gwisae.png
-3. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/09_cheongyeon.png
-4. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png
-```text
-Create one finished wide 16:9 key art illustration for JOSEON HUNTERS, a Korean dark-fantasy isometric action RPG. No text or logo. Use the same H1 Korean manhwa illustrator across all characters AND scenery: delicate purposeful contours, restrained handsome faces, large MATTE painted shadow planes, confident major cloth folds, quiet rough stone/wood surfaces, low overall saturation. Dramatic but readable; not photoreal, not glossy anime.
-REFERENCES: Image1 ONLY the LEFT H1 is DOHO's exact approved identity and strongest style anchor; ignore H2/H3. Image2 is the corrected GWISAE character catalog: preserve its front design and left-hip two masks. Image3 is CHEONGYEON corrected catalog. Image4 is the accepted H1 dungeon/town dark-material language. All identities remain distinct. Do NOT put Doho's clothes on others.
-COMPOSITION: Doho dominates the center foreground, his body roughly 75% of canvas height, his face highest local contrast. Three-quarter body, relaxed confident ready stance with separated legs, turned toward viewer. Clean-shaven young adult Korean face, sly half smile, narrow alert eyes; black wide-brim gat with small blue badge and bead strings, navy layered split-front dopo showing black baggy trousers, white collar, muted red sash with exactly two loose ends, one round blue waist charm, black boots/wrist wraps. Right hand casually rests his single straight sword over the right shoulder, blade clear of hat and face, left hand near matching dark scabbard. Preserve H1's costume and silhouette with restrained ornamentation, no scarf or beard.
-GWISAE stands behind him at viewer left at about 50% canvas height: adult Korean woman in ivory smiling gaksital with red circles, high black ponytail, black/crimson split coat and purple inner layer, black trousers/boots, two spare masks at HER LEFT hip, one curved dagger held low in right hand, short red ribbon sweeping aside. CHEONGYEON stands behind at viewer right at similar smaller scale: same serene adult woman, small black-gold headpiece, ivory/pale celadon long hanbok and broad sleeves, black celestial fan in right hand, brass bells in left, jade charm. Neither support obscures Doho or becomes a generic NPC.
-LOCATION: worn Korean granite dungeon entrance beneath a simple low tiled village gate at the edge of Motgol; cracked stone threshold, restrained wooden beams and paper seals, distant dark rooflines, a suggestion of an unsafe passage beyond. The stone and timber share the same simplified matte planes as the clothing. Avoid giant decorative architecture swallowing the characters. No torii/noren/Chinese dragon palace, no Western Gothic castle.
-LIGHT: low cool charcoal ambient light, one small warm brazier reflected subtly on lower stone, very restrained cool seal-light in the doorway. Doho's face/white collar and sword edge get the strongest readable separation, red sash second, supporting faces readable but less contrast. Cheongyeon's ivory cloth stays gray in shadow rather than lighting up the whole picture. Only a little dust and mist near distant ground, no bloom or particle storm. Strong depth and triangular staging, heroic swagger without losing danger. Entire hats, hands, blades and boots remain in frame; no extra people or limbs. This is a cast key art, not a gameplay screenshot, class-selection UI or photoreal movie poster.
-```
-
 ## H1-CS04 - 봉인 벽 / 컷씬 목표 원화
 Output: 21_seal_wall_cutscene.png
 Mode: built-in image_gen / reference-guided generation
 Status: visual_qa_pass
 QA: 독립QA합격: storyline §2.4 도호+무당·푸른봉인균열·잠깐진지전환 일치. 허리검집/어깨검중복없음, 인물과석벽무광명암정합. 기존컷4이며흡수후전체8컷재번호는미정리.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/10_shaman.png
 3. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png
@@ -398,7 +297,7 @@ Output: 20_keyart.png
 Mode: built-in image_gen / localized framing edit
 Status: visual_qa_pass
 QA: 독립 원화 QA 합격: 중앙 도호가 크기·자세·검 방향으로 먼저 읽힘. G02 여분 탈 2개·C01 부채/방울·전신 프레임 유지. 캐스트 키아트이며 EA 3클래스 제공을 뜻하지 않음.
-References in exact call order:
+References in exact original call order:
 1. C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-c527c242-0749-429f-826b-8a1beb8d738d.png
 ```text
 Reframe this exact finished key art by pulling the camera back about 15-18% so the ENTIRE THREE CHARACTERS, including all of Doho's boots, both Gwisae boots and Cheongyeon's feet/lower hem, fit comfortably inside the image. Preserve their exact faces, costumes, hand-held objects, pose relationships, background design, dark lighting and overall composition. Doho must remain the largest central leading figure; don't shrink him to the supporting characters' size. Show the whole black gat with at least a small margin above it and foreground stone ground below both of his boots. Extend the existing Korean stone entrance and dark sky naturally as needed to keep the wide16:9 format. Keep sword clear of hat and face. No new characters, no redraw of wardrobe, no new ornaments or effects. The only goal is clean complete framing without changing this selected composition. No logo or text.
@@ -409,7 +308,7 @@ Output: 22_portraits.png
 Mode: built-in image_gen / reference-guided generation
 Status: visual_qa_pass
 QA: 독립 원화 QA 합격: PC/NPC의 얼굴·나이·표정 구분, 구미호 F01/F03 동일 인물, 선·무광 명암 정합. UI 얼굴 우선 크롭으로 갓 끝 일부 잘림. 128px 표시 검수는 별도 페이지에 기록.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 2. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/08_gwisae.png
 3. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/09_cheongyeon.png
@@ -434,7 +333,7 @@ Output: 23_material_atlas.png
 Mode: built-in image_gen / reference-guided generation
 Status: material_trial_candidate
 QA: 4분면 배치와 무광 색조 확인: 좌상 목재·우상 기와·좌하 회벽·우하 한지. 기와에 얕은 명암이 남고 완전 반복 타일링은 미검증. 원본 PNG 편집 없이 실제 GLB UV 적용 시험용이며 최종 ≤1K 규격 합격을 뜻하지 않음.
-References in exact call order:
+References in exact original call order:
 1. C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17/14_motgol_modules_props.png
 2. C:\workspace\joseon-assets\sheets\approved-2026-09-17-h1\K2_H_doho_hero_options.png
 ```text

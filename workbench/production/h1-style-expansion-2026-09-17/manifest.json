@@ -6,26 +6,6 @@
   "status": "Production candidates with visual QA; not automatic game intake",
   "records": [
     {
-      "id": "H1-X01",
-      "file": "iterations/01_cast_comparison_r0.png",
-      "stage": 2,
-      "title": "도호·NPC 공통 화풍 비교",
-      "source_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-f7fd1965-f62b-45af-875f-2cea2e287893.png",
-      "prompt": "Use case: stylized-concept. Asset H1-X01: production-quality shared-style cast lineup for Joseon Hunters, fictional Korean dark fantasy action RPG. Create ONE wide landscape illustration, 4 complete full-body figures with generous space around hats, weapons and feet, on a plain warm charcoal background, a common ground line, neutral inspection lighting. Quiet small labels only: \"DOHO · H1\", \"KIM · B1\", \"SHAMAN · B2\", \"ELDER · B3\".\nInput 1 is the APPROVED H1/H2/H3 board. ONLY the LEFTMOST H1 figure is both the Doho character identity and shared visual-style anchor. Ignore H2/H3. Closely preserve H1's clean-shaven Korean face, playful half-smile, narrow controlled eyes, relaxed athletic proportions, wide thin black gat with blue badge and bead cords, deep navy layered dopo with split short angled front hems revealing voluminous black trousers, white collar, dark wrist wraps, dull red sash with TWO trailing ends, one round blue waist charm, black boots. His right hand holds a straight sword over his shoulder with the blade clear of the hat and face, left hand resting by the scabbard. Retain the strong relaxed open stance and silhouette of H1, no beard, no scarf.\nInput 2 is supporting NPC identity only: preserve the SECOND, THIRD and FOURTH figures from that sheet; do NOT use its first plain Doho figure. B1 is a shorter stout elderly Korean male merchant with round welcoming face, short grey moustache/goatee, black gat, soot-brown overvest over ivory wide sleeves, baggy trousers, ledger and coin pouch, sly welcoming open palm. B2 is a slim elderly Korean woman with a narrow knowing face, grey hair in a LOW chignon with simple binyeo, muted brick-red jeogori, white collar and deep teal chima, closed black fan and small brass ritual bells, slightly crooked amused smile. B3 is a tall stern elderly Korean village elder with broad angular face, thin grey brows, long straight white beard, black gat, charcoal robe and plain wooden staff.\nAll FOUR must be drawn by the SAME illustrator using H1's Korean manhwa facial abstraction, thin confident ink contours, broad soft MATTE painted shadow planes and sparse large cloth folds. Age is communicated by shape and a few deliberate lines, never photoreal skin. Their costume colors and distinct silhouettes are retained. Doho gets the clearest focal silhouette and slightly stronger face/white-collar separation; NPCs remain individually memorable without looking like other protagonists. Korean collars and closures, grounded fabric. Muted navy/charcoal/earth/ivory/brick/teal; no glossy gold embroidery, no ornament inflation, no western comic exaggeration, no chibi, no generic Chinese fantasy armor, no porcelain/glossy skin. Neutral readability must coexist with the dark restrained palette. Complete correct anatomy and props; no extra figures, no decorative frame, no text other than the four small labels. Target landscape 2048x1152.",
-      "references": [
-        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
-        "C:\\workspace\\joseon-assets\\workbench\\production\\korean-character-refinement-2026-09-17\\K2_korean_manhwa.png"
-      ],
-      "mode": "built-in image_gen / reference-guided generation",
-      "status": "superseded",
-      "qa": "독립 QA: 화풍·H1·주인공 위계·해부·프레임 통과. B2 노년성이 약해 얼굴만 수정.",
-      "width": 1672,
-      "height": 941,
-      "sha256": "D52D20B734E0551982FA728FE687EFB6F50B96304EC548AEBF7454D68A2E4289",
-      "output_path": "workbench/production/h1-style-expansion-2026-09-17/iterations/01_cast_comparison_r0.png",
-      "source_write_time": "2026-09-17T07:11:18.1768200+09:00"
-    },
-    {
       "id": "H1-X01r1",
       "file": "01_cast_comparison.png",
       "stage": 2,
@@ -42,28 +22,10 @@
       "height": 941,
       "sha256": "432C08B3C74760A64D931001AC4A9F3B595734584EB963FF66D3D7CEB2AF1FD3",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/01_cast_comparison.png",
-      "source_write_time": "2026-09-17T07:13:38.0416356+09:00"
-    },
-    {
-      "id": "H1-X02",
-      "file": "iterations/02_motgol_close.png",
-      "stage": 2,
-      "title": "못골 통합 초안",
-      "source_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-d3b8eebd-c04b-4d22-af80-c2bd10d482ae.png",
-      "prompt": "Use case: stylized-concept. H1-X02: ONE production environment illustration for MOTGOL village in Joseon Hunters, fictional KOREAN dark fantasy. Wide landscape 2048x1152, fixed orthographic isometric camera approx 35 degrees down / 45 degrees yaw, matching a playable 3D ARPG view. This is a target concept painting, not a screenshot or UI mockup.\nReferences: image 1 APPROVED board LEFT H1 ONLY = exact Doho identity and common drawing style. Image 2 = corrected shared-style cast identities (Doho, stout elderly Kim merchant, elderly woman shaman, stern elder); preserve their proportions and mature faces. Image 3 = CURRENT ACTUAL GAME screenshot for camera angle and small on-screen actor scale ONLY. Discard its checker ground, capsules, boxes, labels, dialogue/HUD and rendering defects.\nScene: a small worn Korean village shop courtyard at dim overcast dusk. Broad stone threshold, packed dark earth and irregular simple grey stone pavers, muted soot-brown timber shop with paper lattice doors and a modest low curved grey giwa roof, low stone retaining wall, one jars-and-ledger stall. A shrine alcove is visible to one side. Large calm shapes; walkable court remains clearly open. The architecture uses Korean timber/post spacing and hanji doors, no Chinese palace eaves or Japanese shrine gates.\nDoho H1 walks in the clear center foreground, about 14-17 percent of image height, navy split layered robe revealing trousers, red sash with two tails, blue waist charm, white collar, black gat, straight sword held easily across his shoulder. Stout elder Kim stands at his shop counter with ledger, white sleeves and brown vest. The SHAMAN is visibly ELDERLY, grey low chignon, few deliberate facial age lines, brick red jeogori/deep teal chima, fan and brass bells near shrine. Only these THREE figures; coherent physical size and feet firmly grounded. They are interacting lightly, not combat. Doho is the focal figure; keep his hat, face/collar, sash and sword distinct.\nUse the SAME restrained H1 Korean manhwa fine ink edges, broad soft matte painted planes and limited large folds for BOTH people and architecture. Stone and wood are drawn in the same hand, not photoreal background under anime figures. Muted charcoal/navy/mineral-grey/soot-brown; limited brick/teal accents. Low cool ambient light, one small warm paper-lantern pool at shop, sufficient neutral reflected light to read silhouettes and paths. Dark fantasy weathered atmosphere with lively personalities. No golden sunshine wash, no bright pastel village, no glossy material, no fog that hides traversal, no dense embroidery/noise, no extra crowd, no western medieval props, no HUD, no frame. Small discreet bottom-left title only: \"H1-X02 / MOTGOL\".",
-      "references": [
-        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
-        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-af073d7b-b9db-4df2-9490-f2910f203e27.png",
-        "C:\\workspace\\joseon\\tmp\\h1_artwork_build\\references\\actual_town.png"
-      ],
-      "mode": "built-in image_gen / reference-guided generation",
-      "status": "superseded",
-      "qa": "공통화풍 양호. 인물비중이 실제보다 약2배 크고 상점천이 일본 노렌처럼 읽힐 여지 → 시점/천구조 보정.",
-      "width": 1672,
-      "height": 941,
-      "sha256": "5943BC097E4609D4C4F7E83658E0E47F144DF364E806A98D3ADD03137D8A8E5F",
-      "output_path": "workbench/production/h1-style-expansion-2026-09-17/iterations/02_motgol_close.png",
-      "source_write_time": "2026-09-17T07:22:02.8807764+09:00"
+      "source_write_time": "2026-09-17T07:13:38.0416356+09:00",
+      "reference_paths_at_generation": [
+        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-f7fd1965-f62b-45af-875f-2cea2e287893.png"
+      ]
     },
     {
       "id": "H1-X02r1",
@@ -82,7 +44,10 @@
       "height": 941,
       "sha256": "1CEB50DCA391C130DA11EAE2E6ECA3D017ED5F47C8D61D3B6453CFECD559CC2D",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/02_motgol_wide.png",
-      "source_write_time": "2026-09-17T07:26:12.3764953+09:00"
+      "source_write_time": "2026-09-17T07:26:12.3764953+09:00",
+      "reference_paths_at_generation": [
+        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-d3b8eebd-c04b-4d22-af80-c2bd10d482ae.png"
+      ]
     },
     {
       "id": "H1-M01F",
@@ -101,7 +66,10 @@
       "height": 1536,
       "sha256": "CF4AFD24933B4BDD578FBA410B539C7CC89F73AFBF631BC5D82ED2AFD44E1D1A",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/04_doho_front.png",
-      "source_write_time": "2026-09-17T07:28:58.2496155+09:00"
+      "source_write_time": "2026-09-17T07:28:58.2496155+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png"
+      ]
     },
     {
       "id": "H1-M01B",
@@ -121,28 +89,11 @@
       "height": 1536,
       "sha256": "CCD6F65B9F922944DC9E8FC3D83444853D94094C076E1EE82D37507B954355E9",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/05_doho_back.png",
-      "source_write_time": "2026-09-17T07:30:40.4662937+09:00"
-    },
-    {
-      "id": "H1-X03",
-      "file": "03_sealed_chamber.png",
-      "stage": 2,
-      "title": "석실 던전 통합",
-      "source_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-eb2b42bc-ded4-4106-8a2e-1f8bda79a81c.png",
-      "prompt": "Use case: stylized-concept. H1-X03: ONE wide orthographic ISOMETRIC PLAYABLE DUNGEON VIEW for Joseon Hunters, a fictional Korean dark fantasy ARPG. Target 2048x1152. Establish H1's illustration style across hero, enemy and stone environment while obeying small in-game actor scale.\nReference 1: approved LEFTMOST H1 only for Doho and the shared fine ink / broad matte painted shadows. Ignore its other two characters. Reference 2: recent town illustration for the SHARED HAND-DRAWN material language only, NOT its oversized character scale. Reference 3: current actual Godot dungeon screenshot for isometric axis, camera distance, torch-pool lighting and dark atmosphere ONLY. Remove ALL checker/black grid defects, dithering, capsules, portal covering player, labels and HUD. The floor must be continuous visible stone, not black tile holes.\nComposition/scale: an orthographic camera looking down about 35 degrees, yaw 45 degrees. Show a roomy stone chamber AND the start of two corridors, roughly eighteen metres across the wide frame. One floor tile = 1 metre; Doho is 1.7 metres tall. Make the ENTIRE Doho figure including hat only about ONE SEVENTH of the canvas HEIGHT (14 percent), deliberately small in the room, NOT a large portrait or toy diorama. One bandit is similar human scale. Leave a broad uncluttered playable floor, clear paths, no obstructing front wall.\nScene: grey-green Korean granite blocks, broad uneven stone slabs with sparse broken corners and subdued moss, heavy stone lintel with simple Korean lattice seal motif and worn paper talismans, short descending stone stair at the back, one small earthenware jar by the wall, two restrained warm wall-lantern pools. Cool charcoal shadows and faint mineral-grey bounce make stone floors/paths readable. Low ambient, no bright fill over the entire scene. No photoreal surface grime, ornate gothic detail or Chinese/Japanese architectural symbols.\nDoho H1 stands at the lower center facing diagonally toward one plague-afflicted Korean bandit higher-right with 3 metres of clear separation, both fully visible. Doho keeps his black gat, clean-shaven sly face, navy layered split hems over black loose trousers, white collar, dull red sash two ends and one round blue charm. He holds his straight sword in a relaxed ready position, weapon apart from body, no glow hiding it. Bandit: adult Korean male, grey-green sickly skin, rough dark-brown short jeogori and patched trousers, cloth head tie, rusty single-edged short blade; hunched threatening stance but clearly the same H1 manhwa drawing medium. No armor inflation or oversized fantasy sword.\nFine controlled ink contours, broad matte color shapes, low saturation and sparse large folds. Character faces, cloth, wood and stone share one illustrator. PC has the clearer silhouette and contrast than enemy and background. No dramatic closeup, no huge actors, no UI, no extra creatures, no lens perspective, no sunlight, no black floor voids. Small bottom-left title only: \"H1-X03 / SEALED CHAMBER\".",
-      "references": [
-        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
-        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-d3b8eebd-c04b-4d22-af80-c2bd10d482ae.png",
-        "C:\\workspace\\joseon\\tmp\\h1_artwork_build\\references\\actual_dungeon.png"
-      ],
-      "mode": "built-in image_gen / reference-guided generation",
-      "status": "superseded",
-      "qa": "무광 석재·도호/산적·이동면 판독 양호. 현재캡처보다 인물비중이 커 실제크기 검증은 별도. 독립검수: 환경 원화 합격, 실제3D/게임가독성·가림·애니는 미검증. 현행 art_3d_pipeline 산적 무기는 나무곤봉으로 확인되어 칼→곤봉 수정본으로 대체.",
-      "width": 1672,
-      "height": 941,
-      "sha256": "A846CF0F2F2348EA35506E2A3CBF30686D40F6D3F3853445E84681BA5D228700",
-      "output_path": "workbench/production/h1-style-expansion-2026-09-17/03_sealed_chamber.png",
-      "source_write_time": "2026-09-17T07:24:28.3809129+09:00"
+      "source_write_time": "2026-09-17T07:30:40.4662937+09:00",
+      "reference_paths_at_generation": [
+        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-ebad1a1c-e64e-49c9-b94d-c6f7eddd4d87.png",
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png"
+      ]
     },
     {
       "id": "H1-X03r1",
@@ -161,7 +112,10 @@
       "height": 941,
       "sha256": "9AA54A6473B102526D45B9F84E881E36162BCA454421CCDBCB4E06DAF7ABB434",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png",
-      "source_write_time": "2026-09-17T07:39:04.4688767+09:00"
+      "source_write_time": "2026-09-17T07:39:04.4688767+09:00",
+      "reference_paths_at_generation": [
+        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-eb2b42bc-ded4-4106-8a2e-1f8bda79a81c.png"
+      ]
     },
     {
       "id": "H1-M02F",
@@ -181,7 +135,11 @@
       "height": 1536,
       "sha256": "D90490F35980BCE6635720FA1153AEF0D7493AC55E1D136DFBDCF114764C98E5",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/06_merchant_front.png",
-      "source_write_time": "2026-09-17T07:32:15.9262679+09:00"
+      "source_write_time": "2026-09-17T07:32:15.9262679+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-af073d7b-b9db-4df2-9490-f2910f203e27.png"
+      ]
     },
     {
       "id": "H1-M02B",
@@ -200,28 +158,10 @@
       "height": 1536,
       "sha256": "33708FDD143CEEE29EF572BA5CB01C26B901B8991DD9151139AFACA4B0D5ADD9",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/07_merchant_back.png",
-      "source_write_time": "2026-09-17T07:34:13.7321212+09:00"
-    },
-    {
-      "id": "H1-C01",
-      "file": "iterations/08_gwisae_r0.png",
-      "stage": 4,
-      "title": "귀새 G02 / 초기 앞뒤 시트",
-      "source_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-edcab808-aa92-49b9-a356-92a3414b518c.png",
-      "prompt": "Create a polished 16:9 character production catalog plate for GWISAE from Joseon Hunters, a Korean dark fantasy action RPG. This is a style transfer of an already approved character, not a redesign.\nREFERENCE ROLES: image 1 is a three-option Doho board; ONLY its LEFT H1 supplies the drawing style: delicate Korean manhwa contour lines, restrained facial details, large clean matte shadow planes, simple major fabric folds, quiet material surfaces. Do not copy Doho's outfit or face. Image 2 is the Gwisae identity board; use ONLY the MIDDLE G02. Ignore G01 and G03. Image 3 is the accepted H1 shared-cast style demonstration.\nLAYOUT: tasteful charcoal-gray neutral studio sheet. Large complete front three-quarter full-body character at left (45% width), same character full-body rear three-quarter at center (30%), at right a close detail of her worn mask and three neatly separated accessories: one curved dagger with short red tassel, two spare masks together, long dark-red ribbon. All images are the SAME design. Generous margins; no cropped hair, boots, hands or blades. Small exact heading \"GWISAE / H1\" only; no prose.\nIDENTITY: adult agile Korean woman, high long black ponytail with small red cords; ivory wooden gaksital mask with gently closed smiling eyes, small red forehead circle and red cheeks, subtle aged material. Black and muted crimson split-front short overcoat with purple inner layer; baggy black trousers visibly separated from coat tails, black wrapped boots and wrists. Preserve the G02 major overlap and hem shapes, but simplify dense embroidery into sparse dark-red border motifs; broad matte fabrics like H1. TWO spare masks hang at her anatomical LEFT hip (viewer RIGHT in front view, viewer LEFT in back view): one dark patterned mask and one brown smiling carved mask. They must remain the same two masks on the same belt attachment, not three. One single-edged curved dagger held safely down in anatomical right hand, long loose red ribbon from belt moves gently, no ribbon tangles with hands. Human anatomy and sensible grip. Read as a distinctive player character rather than generic ninja. No uncovered new face, no katana, no kimono/obi, no bulky Western armor.\nLIGHTING: neutral soft even production light, original colors clearly visible with dark body values retained; no dramatic rim light, no scene lights baked on cloth, no photorealistic skin or microtexture, no bright anime cel gloss, no new blue charms. The two views must match proportions and accessory placement.",
-      "references": [
-        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
-        "C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_gwisae_G01-G03.png",
-        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
-      ],
-      "mode": "built-in image_gen / reference-guided generation",
-      "status": "superseded",
-      "qa": "독립 QA: 정체성/화풍 통과. 후면 두 탈의 허리 좌우가 모호해 정후면으로 수정.",
-      "width": 1672,
-      "height": 941,
-      "sha256": "2F94BA6A8DAFD08CC2B28A4C24BDAE0CA2C0330E6035D7A1AD9CE134DF229BC4",
-      "output_path": "workbench/production/h1-style-expansion-2026-09-17/iterations/08_gwisae_r0.png",
-      "source_write_time": "2026-09-17T07:48:33.2152016+09:00"
+      "source_write_time": "2026-09-17T07:34:13.7321212+09:00",
+      "reference_paths_at_generation": [
+        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-5fb42af1-d867-4c6e-b380-31c038ea9bec.png"
+      ]
     },
     {
       "id": "H1-C01r1",
@@ -240,28 +180,10 @@
       "height": 941,
       "sha256": "88DF143B9C0150D0C9D8C4CB507B9D1E5A969AFCE926AAE3D5ABDAF228BB9F70",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/08_gwisae.png",
-      "source_write_time": "2026-09-17T07:51:27.7867820+09:00"
-    },
-    {
-      "id": "H1-C02",
-      "file": "iterations/09_cheongyeon_r0.png",
-      "stage": 4,
-      "title": "청연 C01 / 초기 앞뒤 시트",
-      "source_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-da5d1405-3344-413c-9a24-9162d5950e36.png",
-      "prompt": "Create a polished 16:9 production character catalog for CHEONGYEON from Joseon Hunters. Preserve the approved LEFT C01 character in reference 2, but render her in the drawing style of ONLY LEFT H1 in reference 1. Reference 3 demonstrates H1 used consistently across ages. This is one character's style translation, not options or a redesigned costume.\nSTYLE: Korean manhwa fine confident outlines, restrained eyes/nose/mouth, broad simple matte shadow masses, clear major folds. Match H1's relatively quiet cloth surfaces; drastically simplify fine decorative noise while preserving the C01 distinct silhouette and key accessories. No photorealistic cloth or glossy skin.\nDESIGN: serene adult Korean woman, slender but credible human anatomy, black loosely flowing hair with slim braids, small distinctive black-and-dull-gold ceremonial headpiece precisely as C01 (not tall emperor crown). Ivory layered long hanbok over pale-celadon underdress, generous hanging sleeves, crossed white collar, low-contrast limited embroidery near hems, celadon sash, carved pale jade round pendant, two paper talismans. A dark navy/black folding fan with sparse golden moon-and-star marks in right hand; a small cluster of aged brass bells with tassels in left hand. Keep these C01 features, no sword, no Doho red sash or blue bead necklace.\nLAYOUT: dark warm neutral gray studio background, 16:9. Left: large 3/4 front complete full-body pose with fan and bells, calm faint knowing smile; feet visible. Middle: matching rear 3/4 full-body view with sleeves hanging and hair resting naturally, same headpiece and layers. Right top: one face close-up exactly same adult woman and small headpiece. Right bottom: clearly separated open celestial fan, brass bell cluster, jade pendant/talismans. Use small exact heading \"CHEONGYEON / H1\". Nothing else written.\nPRODUCTION LIGHT: soft neutral fill sufficient to see local ivory and celadon colors, not white emissive glow; dark outline and matte gray shadows keep her in the same moody world. No scene environment, no floating magic, no glamour lighting, no bright cheerful anime shine, no complex ornate embroidery, no Japanese miko design, no Chinese xianxia flowery accessories. Full framing with safe margins, readable hands gripping the correct objects, consistent scale/proportions between front and rear.",
-      "references": [
-        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
-        "C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_cheongyeon_C01-C03.png",
-        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
-      ],
-      "mode": "built-in image_gen / reference-guided generation",
-      "status": "superseded",
-      "qa": "독립 QA: 후면 소품 손 배치 모호, 치맛단 봉황 문양 복구 필요.",
-      "width": 1672,
-      "height": 941,
-      "sha256": "02DF611A03AAE491F22D2062C58391E79D2F7B30227D1CFEFFC851E4269F4113",
-      "output_path": "workbench/production/h1-style-expansion-2026-09-17/iterations/09_cheongyeon_r0.png",
-      "source_write_time": "2026-09-17T07:50:07.2662813+09:00"
+      "source_write_time": "2026-09-17T07:51:27.7867820+09:00",
+      "reference_paths_at_generation": [
+        "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-edcab808-aa92-49b9-a356-92a3414b518c.png"
+      ]
     },
     {
       "id": "H1-C02r1",
@@ -281,7 +203,11 @@
       "height": 941,
       "sha256": "68FB9F94421A44DA98B004210ABB09B659F22768E848A7DBD8E23EBC38F5E37A",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/09_cheongyeon.png",
-      "source_write_time": "2026-09-17T07:53:37.2616500+09:00"
+      "source_write_time": "2026-09-17T07:53:37.2616500+09:00",
+      "reference_paths_at_generation": [
+        "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-da5d1405-3344-413c-9a24-9162d5950e36.png",
+        "C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_cheongyeon_C01-C03.png"
+      ]
     },
     {
       "id": "H1-N02",
@@ -301,7 +227,11 @@
       "height": 941,
       "sha256": "06CE9DFC2B6903D524FC9DBA78162E71713416CF6AB6155D802B20E334BFA9CD",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/10_shaman.png",
-      "source_write_time": "2026-09-17T07:55:35.9168180+09:00"
+      "source_write_time": "2026-09-17T07:55:35.9168180+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-N03",
@@ -321,7 +251,11 @@
       "height": 941,
       "sha256": "F94793C6546DAC4B3E86B8321191A278E558F6A94C1E594C2D244CD945C52178",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/11_elder.png",
-      "source_write_time": "2026-09-17T07:57:09.0525891+09:00"
+      "source_write_time": "2026-09-17T07:57:09.0525891+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-F01",
@@ -342,7 +276,12 @@
       "height": 941,
       "sha256": "6BD28B4CCCD195D4F4CF0109F1345117C7965EE857DA97B4B28B004ECD4E8BE7",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/12_gumiho_forms.png",
-      "source_write_time": "2026-09-17T07:59:38.5746101+09:00"
+      "source_write_time": "2026-09-17T07:59:38.5746101+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_gumiho_F01-F03.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-BG01",
@@ -363,7 +302,12 @@
       "height": 941,
       "sha256": "240E5988D7C7E488FDD79CC466BAC4642E38A6BD2ECA117E8CF7C066446701B2",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/13_dungeon_modules.png",
-      "source_write_time": "2026-09-17T08:03:27.4476549+09:00"
+      "source_write_time": "2026-09-17T08:03:27.4476549+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png",
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png"
+      ]
     },
     {
       "id": "H1-BG02",
@@ -383,7 +327,11 @@
       "height": 941,
       "sha256": "A89030901416C5080E2963262B66EDD29269BBE1D97C84A32BA7EE3D74465182",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/14_motgol_modules_props.png",
-      "source_write_time": "2026-09-17T08:04:42.3295358+09:00"
+      "source_write_time": "2026-09-17T08:04:42.3295358+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/02_motgol_wide.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-E01",
@@ -403,7 +351,11 @@
       "height": 1536,
       "sha256": "1AECAD945FC061611FD2EDC812910CBD6BD00F71F62DE2115D7F2F35799A0CF9",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/15_bandit_input.png",
-      "source_write_time": "2026-09-17T08:07:16.9962454+09:00"
+      "source_write_time": "2026-09-17T08:07:16.9962454+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-E02",
@@ -423,7 +375,11 @@
       "height": 1024,
       "sha256": "1E6726A31CAAD23BB5612CEC1DD3098F84039C05F62D6AAB1BB6F8A2A0710389",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/16_bat_input.png",
-      "source_write_time": "2026-09-17T08:09:03.3444251+09:00"
+      "source_write_time": "2026-09-17T08:09:03.3444251+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-E03",
@@ -443,7 +399,11 @@
       "height": 1536,
       "sha256": "EF13C9688B089E91A0A03E12301C0D39B124B5A3A4E29E1C8193D0C7E3661A63",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/17_talisman_caster_input.png",
-      "source_write_time": "2026-09-17T08:10:39.5977602+09:00"
+      "source_write_time": "2026-09-17T08:10:39.5977602+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-E04",
@@ -463,7 +423,11 @@
       "height": 1024,
       "sha256": "D06A3C94A91783E908E2BD027E8BF6B2F934F513354F3F6FD6A7FFE72C030C5A",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/18_heukrang_input.png",
-      "source_write_time": "2026-09-17T08:11:51.0490319+09:00"
+      "source_write_time": "2026-09-17T08:11:51.0490319+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png"
+      ]
     },
     {
       "id": "H1-P01",
@@ -483,29 +447,11 @@
       "height": 941,
       "sha256": "F12B66455519A8D2819C62E4D2629879D1CFE58BC64CC01B8D48C24C77571167",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/19_weapons_props.png",
-      "source_write_time": "2026-09-17T08:15:05.9956164+09:00"
-    },
-    {
-      "id": "H1-K01",
-      "file": "iterations/20_keyart_r0.png",
-      "stage": 6,
-      "title": "H1 3인방 키아트 / 초기 프레임",
-      "source_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-c527c242-0749-429f-826b-8a1beb8d738d.png",
-      "prompt": "Create one finished wide 16:9 key art illustration for JOSEON HUNTERS, a Korean dark-fantasy isometric action RPG. No text or logo. Use the same H1 Korean manhwa illustrator across all characters AND scenery: delicate purposeful contours, restrained handsome faces, large MATTE painted shadow planes, confident major cloth folds, quiet rough stone/wood surfaces, low overall saturation. Dramatic but readable; not photoreal, not glossy anime.\nREFERENCES: Image1 ONLY the LEFT H1 is DOHO's exact approved identity and strongest style anchor; ignore H2/H3. Image2 is the corrected GWISAE character catalog: preserve its front design and left-hip two masks. Image3 is CHEONGYEON corrected catalog. Image4 is the accepted H1 dungeon/town dark-material language. All identities remain distinct. Do NOT put Doho's clothes on others.\nCOMPOSITION: Doho dominates the center foreground, his body roughly 75% of canvas height, his face highest local contrast. Three-quarter body, relaxed confident ready stance with separated legs, turned toward viewer. Clean-shaven young adult Korean face, sly half smile, narrow alert eyes; black wide-brim gat with small blue badge and bead strings, navy layered split-front dopo showing black baggy trousers, white collar, muted red sash with exactly two loose ends, one round blue waist charm, black boots/wrist wraps. Right hand casually rests his single straight sword over the right shoulder, blade clear of hat and face, left hand near matching dark scabbard. Preserve H1's costume and silhouette with restrained ornamentation, no scarf or beard.\nGWISAE stands behind him at viewer left at about 50% canvas height: adult Korean woman in ivory smiling gaksital with red circles, high black ponytail, black/crimson split coat and purple inner layer, black trousers/boots, two spare masks at HER LEFT hip, one curved dagger held low in right hand, short red ribbon sweeping aside. CHEONGYEON stands behind at viewer right at similar smaller scale: same serene adult woman, small black-gold headpiece, ivory/pale celadon long hanbok and broad sleeves, black celestial fan in right hand, brass bells in left, jade charm. Neither support obscures Doho or becomes a generic NPC.\nLOCATION: worn Korean granite dungeon entrance beneath a simple low tiled village gate at the edge of Motgol; cracked stone threshold, restrained wooden beams and paper seals, distant dark rooflines, a suggestion of an unsafe passage beyond. The stone and timber share the same simplified matte planes as the clothing. Avoid giant decorative architecture swallowing the characters. No torii/noren/Chinese dragon palace, no Western Gothic castle.\nLIGHT: low cool charcoal ambient light, one small warm brazier reflected subtly on lower stone, very restrained cool seal-light in the doorway. Doho's face/white collar and sword edge get the strongest readable separation, red sash second, supporting faces readable but less contrast. Cheongyeon's ivory cloth stays gray in shadow rather than lighting up the whole picture. Only a little dust and mist near distant ground, no bloom or particle storm. Strong depth and triangular staging, heroic swagger without losing danger. Entire hats, hands, blades and boots remain in frame; no extra people or limbs. This is a cast key art, not a gameplay screenshot, class-selection UI or photoreal movie poster.",
-      "references": [
+      "source_write_time": "2026-09-17T08:15:05.9956164+09:00",
+      "reference_paths_at_generation": [
         "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
-        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/08_gwisae.png",
-        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/09_cheongyeon.png",
         "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png"
-      ],
-      "mode": "built-in image_gen / reference-guided generation",
-      "status": "superseded",
-      "qa": "인물정체성과주인공위계양호. 도호 발끝 잘림을 수정.",
-      "width": 1672,
-      "height": 941,
-      "sha256": "96BA16F6A44FCB7D58D8CE1AEA2B03DA9C51DBAF8DE687C15EA07BC3276E65DD",
-      "output_path": "workbench/production/h1-style-expansion-2026-09-17/iterations/20_keyart_r0.png",
-      "source_write_time": "2026-09-17T08:18:25.8666427+09:00"
+      ]
     },
     {
       "id": "H1-CS04",
@@ -527,7 +473,13 @@
       "height": 941,
       "sha256": "64EB132ECA402D61EA9E5B24EDE6F1C26A7A5AFB77F6D1AAA165A41FB1C1A0C5",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/21_seal_wall_cutscene.png",
-      "source_write_time": "2026-09-17T08:20:53.0770267+09:00"
+      "source_write_time": "2026-09-17T08:20:53.0770267+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/10_shaman.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/03b_sealed_chamber_club.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/13_dungeon_modules.png"
+      ]
     },
     {
       "id": "H1-K01r1",
@@ -546,7 +498,10 @@
       "height": 941,
       "sha256": "25FC995E23B3BFA098BDE79E71D73086EF7FF0DDB254AA2F1CE93B631140E6C0",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
-      "source_write_time": "2026-09-17T08:22:26.9301321+09:00"
+      "source_write_time": "2026-09-17T08:22:26.9301321+09:00",
+      "reference_paths_at_generation": [
+        "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-c527c242-0749-429f-826b-8a1beb8d738d.png"
+      ]
     },
     {
       "id": "H1-UI01",
@@ -569,7 +524,14 @@
       "height": 941,
       "sha256": "2CC642D6B32D7FA5F48614F01422FCD03B449FF828CDFBEA60A44D676FC92832",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/22_portraits.png",
-      "source_write_time": "2026-09-17T08:23:39.1685213+09:00"
+      "source_write_time": "2026-09-17T08:23:39.1685213+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/08_gwisae.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/09_cheongyeon.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/01_cast_comparison.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/12_gumiho_forms.png"
+      ]
     },
     {
       "id": "H1-TEX01",
@@ -589,7 +551,16 @@
       "height": 1254,
       "sha256": "99BCF46F8C234308F8BF094F1165DC7A17516EC2DDCD9FCEAAAA7668186727A3",
       "output_path": "workbench/production/h1-style-expansion-2026-09-17/23_material_atlas.png",
-      "source_write_time": "2026-09-17T08:45:36.9787639+09:00"
+      "source_write_time": "2026-09-17T08:45:36.9787639+09:00",
+      "reference_paths_at_generation": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17/14_motgol_modules_props.png",
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png"
+      ]
     }
-  ]
+  ],
+  "archived_images": {
+    "count": 6,
+    "manifest": "../../../archive/art-history-2026-09-17/h1_superseded.json",
+    "gallery": "../../../archive/art-history-2026-09-17/index.html"
+  }
 }

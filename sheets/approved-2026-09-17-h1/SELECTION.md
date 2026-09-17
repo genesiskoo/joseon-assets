@@ -11,7 +11,7 @@
 
 D-068의 도호 D03 부분만 갱신했다. 귀새 G02·청연 C01·구미호 F01→F03는 [기존 선택](../approved-2026-09-17/SELECTION.md)을 유지한다. 새 이미지나 게임 모델을 만드는 작업은 이번 선택과 구분한다.
 
-원본을 재생성하거나 잘라 바꾸지 않고 보드 전체를 바이트 그대로 복사했다. 선택 패널·출처·SHA256·크기는 [selection.json](selection.json)에서 추적한다. [생성 프롬프트](../../workbench/production/k2-player-gumiho-2026-09-17/PROMPTS.md)의 H 항목이 원본이다.
+원본을 재생성하거나 잘라 바꾸지 않고 보드 전체를 바이트 그대로 복사했다. 선택 패널·출처·SHA256·크기는 [selection.json](selection.json)에서 추적한다. [생성 프롬프트](../../archive/art-history-2026-09-17/workbench/production/k2-player-gumiho-2026-09-17/PROMPTS.md)의 H 항목이 원본이다.
 
 후속 생성마다 H1 정체성/복식, K2 화풍·한국적 인상, 손·검·사지·프레임을 대조하고 보정한 부분을 재검수한다. 원화 검수와 실제 3D·리깅·인게임 검증을 구분한다.
 
