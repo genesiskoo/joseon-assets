@@ -1,0 +1,62 @@
+{
+  "aabb_position": [
+    -0.0350000001490116,
+    0.0,
+    -0.0209999997168779
+  ],
+  "aabb_size": [
+    0.0700000002980232,
+    0.76199996471405,
+    0.0419999994337559
+  ],
+  "contract": "Mouth origin (0,0,0); +Y sheath tip; internal opening .044 x .016; usable depth .75; place at sword local Y=.06 for fit diagnostic; no attachment approved",
+  "cw_winding_normal_disagreements": 0,
+  "degenerate_triangles": 0,
+  "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+  "file": "props/doho_scabbard.glb",
+  "id": "doho_scabbard",
+  "is_game_intake": false,
+  "materials": [
+    {
+      "color": [
+        0.370000004768372,
+        0.379999995231628,
+        0.400000005960464,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_dark_wood",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.330000013113022,
+        0.270000010728836,
+        0.15999998152256,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "aged_brass",
+      "roughness": 0.850000023841858,
+      "texture_size": []
+    }
+  ],
+  "sha256": "e801510cc887acdee88ca91b2b58d6c0342eca2add6d68e3b49a2ec36c1b94e2",
+  "triangles": 204,
+  "under_500_triangles": true,
+  "vertex_aabb_position": [
+    -0.0350000001490116,
+    0.0,
+    -0.0209999997168779
+  ],
+  "vertex_aabb_size": [
+    0.0700000002980232,
+    0.76199996471405,
+    0.0419999994337559
+  ],
+  "atlas": "textures/atlas_layout.json"
+}

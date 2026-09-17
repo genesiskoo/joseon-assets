@@ -1,0 +1,3 @@
+# Preserve generated payload bytes, raw logs, and recorded SHA256 values.
+# Extra EOF blank lines in captured output are part of the original evidence.
+* -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof

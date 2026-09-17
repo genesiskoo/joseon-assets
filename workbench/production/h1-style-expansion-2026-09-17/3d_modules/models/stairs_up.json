@@ -1,0 +1,49 @@
+{
+	"aabb_position": [
+		-0.5,
+		0.0,
+		-0.5
+	],
+	"aabb_size": [
+		1.0,
+		0.352756470441818,
+		1.0
+	],
+	"contract": "Existing fitted Meshy stair; candidate-only decimation 502 to 488 tri; footprint 1 x 1; same albedo",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "source candidate-only budget decimation; original preserved",
+	"file": "models/stairs_up.glb",
+	"id": "stairs_up",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 2,
+			"name": "material_0",
+			"roughness": 0.800000011920929,
+			"texture_size": [
+				2048,
+				2048
+			]
+		}
+	],
+	"sha256": "bf2718df807bee6eb9f1add5a502890eca4ba1d11980a24bde7216055ac4327a",
+	"triangles": 488,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.5,
+		0.0,
+		-0.5
+	],
+	"vertex_aabb_size": [
+		1.0,
+		0.352756470441818,
+		1.0
+	]
+}

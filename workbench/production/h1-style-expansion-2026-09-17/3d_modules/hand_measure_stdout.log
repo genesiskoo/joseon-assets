@@ -1,0 +1,54 @@
+08:28:27 | INFO: Data are loaded, start creating Blender stuff
+08:28:27 | INFO: Blender create Mesh node H1_doho_rigged_char1
+08:28:27 | INFO: glTF import finished in 0.10s
+{
+  "Right": {
+    "grip": [
+      -0.6230552,
+      -0.0111029,
+      1.325194
+    ],
+    "blade_dir": [
+      0.1028651,
+      -0.9809725,
+      -0.164656
+    ],
+    "width_dir": [
+      -0.9935643,
+      -0.0934389,
+      -0.064025
+    ],
+    "wrist": [
+      -0.5550015,
+      -0.0158723,
+      1.3566012
+    ],
+    "hand_len": 0.15373524771712255,
+    "R": 0.02849770277131847,
+    "fingers": 90,
+    "coords": "blender world (z up, -y front)",
+    "palm_dir": [
+      0.0474215,
+      0.1701823,
+      -0.9842709
+    ]
+  },
+  "measurement": {
+    "source": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\H1_doho.glb",
+    "method": "H1 weighted hand vertices (>0.65); palm covariance thin axis; thumb-side sign from proximal excess relative to distal fingers; rig_fix knuckle=.45,curl=170 geometry; no mesh deformation",
+    "vertex_count": 137,
+    "palm_vertex_count": 86,
+    "palm_covariance_eigenvalues": [
+      0.00012560071500399762,
+      0.0002627111965885038,
+      0.0008135150445704451
+    ],
+    "thumb_extent_positive": 0.023387500856188126,
+    "thumb_extent_negative": 0.06408086353621911,
+    "assumption": "Grip is the expected curl-axis center for an open hand, not closed-finger contact proof",
+    "main_assets_modified": false
+  }
+}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

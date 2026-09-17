@@ -1,0 +1,29 @@
+08:38:17 | INFO: Data are loaded, start creating Blender stuff
+08:38:17 | INFO: Blender create Mesh node H1_doho_rigged_char1
+08:38:17 | INFO: glTF import finished in 0.08s
+00:01.859  render           | Saved: 'C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17\3d_trial\fist\rig_fix_render\after_front.png'
+00:01.906  render           | Saved: 'C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17\3d_trial\fist\rig_fix_render\after_side.png'
+00:02.000  render           | Saved: 'C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17\3d_trial\fist\rig_fix_render\fist_right_front.png'
+00:02.031  render           | Saved: 'C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17\3d_trial\fist\rig_fix_render\fist_right_top.png'
+00:02.047  render           | Saved: 'C:\workspace\joseon-assets\workbench\production\h1-style-expansion-2026-09-17\3d_trial\fist\rig_fix_render\fist_right_below.png'
+== remove stray: Icosphere
+== src C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/pre_fist/H1_doho.glb verts 18068 zmin 0.000
+== skirt reweighted: 0
+== sash candidates: 0
+== head→neck/Spine01 below chin: 0
+== fist Right: hand 0.154 m, knuckle 0.069, fingers 90, thumb 0, R 0.028, grip (-0.623, -0.016, 1.324)
+== fist Left: hand 0.142 m, knuckle 0.064, fingers 80, thumb 14, R 0.026, grip (0.631, -0.022, 1.329)
+== fist report C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/H1_doho_fist_fist.json
+== top-weight bone counts(after): {"Hips": 2677, "RightUpLeg": 1990, "LeftUpLeg": 1684, "RightLeg": 1386, "LeftLeg": 1342, "Spine01": 1297, "LeftArm": 1228, "Spine02": 1153, "RightArm": 1100, "RightShoulder": 687, "LeftShoulder": 655, "Head": 618, "RightFoot": 354, "LeftFoot": 341, "LeftForeArm": 315, "RightForeArm": 253, "neck": 232, "Spine": 206, "RightHand": 173, "LeftHand": 143, "RightToeBase": 126, "LeftToeBase": 108}
+INFO Draco is available, use library at E:\SteamLibrary\steamapps\common\Blender\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at E:\SteamLibrary\steamapps\common\Blender\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+08:38:19 | INFO: Starting glTF 2.0 export
+08:38:19 | INFO: Extracting primitive: H1_doho_rigged_char1
+08:38:19 | INFO: Primitives created: 1
+08:38:19 | INFO: Finished glTF 2.0 export in 0.38001251220703125 s
+
+== exported C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/H1_doho_fist.glb 1501416
+== DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

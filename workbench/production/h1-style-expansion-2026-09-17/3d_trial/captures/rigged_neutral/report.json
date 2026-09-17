@@ -1,0 +1,404 @@
+{
+	"actors": [
+		{
+			"bones": 24,
+			"clips": [
+				"attack",
+				"idle",
+				"walk"
+			],
+			"id": "doho",
+			"loaded": true,
+			"placeholder": false,
+			"raw_height": 1.69999992847443,
+			"scale": 1.00000004207387,
+			"source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/models/H1_doho.glb",
+			"source_sha256": "aeedb3148d40492614106f02dea9e818b54be01e6d2dc3271b316ce4676b25ce",
+			"target_height": 1.7,
+			"triangles": 11619
+		},
+		{
+			"bones": 24,
+			"clips": [
+				"attack",
+				"idle",
+				"walk"
+			],
+			"id": "merchant",
+			"loaded": true,
+			"placeholder": false,
+			"raw_height": 1.60000002384186,
+			"scale": 0.999999985098839,
+			"source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/models/H1_merchant.glb",
+			"source_sha256": "3137ff2f749261f38c97df271c41ebf21ef5c76e295ef0e8ec8cfff8b7ed6401",
+			"target_height": 1.6,
+			"triangles": 10620
+		}
+	],
+	"animation_gate_passed": true,
+	"camera": {
+		"distance": 30.0,
+		"ortho_size": 3.3,
+		"pitch_deg": 10.0,
+		"viewport": [
+			1280,
+			720
+		],
+		"yaw_deg": 45.0
+	},
+	"captured_at_utc": "2026-09-16T23:04:52",
+	"captures": [
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_idle_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						356.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "idle",
+					"sample_sec": 0.225
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 0.225
+				}
+			],
+			"sha256": "2095b21b1a7533a00149a24b8f2d84425aa66636a76f75ef2c81317aef8680e7",
+			"width": 1280
+		},
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_idle_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						356.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "idle",
+					"sample_sec": 0.84375
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 0.84375
+				}
+			],
+			"sha256": "8f2ed7873324204415e552dabcddfb24c54ca3daeeb8c7b3f2f298534dddd2ad",
+			"width": 1280
+		},
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_idle_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						356.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "idle",
+					"sample_sec": 1.4625
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 1.4625
+				}
+			],
+			"sha256": "9a972fc345669564f2b52e04d715351355a5c464721046faf80dcb0f58a92996",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_walk_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						284.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "walk",
+					"sample_sec": 0.130000004768372
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 0.225
+				}
+			],
+			"sha256": "7e16e47d1ecaa243a0dad32abfbc337f6e7fcfe6798271a25461376c5867f861",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_walk_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						356.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "walk",
+					"sample_sec": 0.487500017881393
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 0.84375
+				}
+			],
+			"sha256": "d902b08ba5380aaf0ea9f27f9fb1693c8be5c7bda828e94ee77f6363ea892c22",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_walk_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						428.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "walk",
+					"sample_sec": 0.845000030994415
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 1.4625
+				}
+			],
+			"sha256": "32cc4726b409e03902a2bba058a21b51b916a7270cf7382a503a77cf2b985570",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_attack_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						356.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "attack",
+					"sample_sec": 0.184999995231628
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 0.225
+				}
+			],
+			"sha256": "16995f0e9fbe955f7d9d5e42d235459e1a8a59e2188f23c2e08b040caca3f02e",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_attack_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						356.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "attack",
+					"sample_sec": 0.693749982118607
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 0.84375
+				}
+			],
+			"sha256": "271a6b443b1dfadf0f68f28294eeffe0c7c0048348bfeb08c630f9fed461ca4e",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/captures/rigged_neutral/h1_trial_attack_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						356.363586425781,
+						542.637145996094
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 365.274291992188,
+					"requested": "attack",
+					"sample_sec": 1.20249996900558
+				},
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						923.636413574219,
+						542.637145996094
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 343.787490844727,
+					"requested": "idle",
+					"sample_sec": 1.4625
+				}
+			],
+			"sha256": "ebf176a813cbbdb36360da74b1382fe45aa9cc49cacdee16b0c5b18401d56cbd",
+			"width": 1280
+		}
+	],
+	"diagnostic": "neutral",
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"environment": "Diagnostic neutral environment; not the game lighting",
+	"errors": [],
+	"is_game_intake": false,
+	"is_h1_result": true,
+	"lighting": "Neutral white ambient 0.6 + directional 1.0; no game light/torch",
+	"limitations": [
+		"Isolated review room, not gameplay integration",
+		"Merchant uses idle while Doho is sampled in idle/walk/attack",
+		"Projected vertical height excludes hat width and pose-dependent silhouette",
+		"Assembly-reference captures are never H1 results"
+	],
+	"mode": "h1_trial",
+	"tile_flipped_winding_diagnostic": false,
+	"tile_two_sided_diagnostic": false,
+	"tiles": [],
+	"weapon_is_proxy": true
+}

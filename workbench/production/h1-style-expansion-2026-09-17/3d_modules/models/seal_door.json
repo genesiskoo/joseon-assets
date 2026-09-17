@@ -1,0 +1,85 @@
+{
+	"aabb_position": [
+		-0.740000009536743,
+		0.0,
+		-0.109999999403954
+	],
+	"aabb_size": [
+		1.48000001907349,
+		2.01999998092651,
+		0.293500006198883
+	],
+	"contract": "Separate 1.48 x 2.02 stone seal insert for door_frame; round plaque and sparse paper seals; +Z front; base-center pivot; no animation/collision; abstract seal marks",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "procedural candidate with matte materials; existing stone textures only where present",
+	"file": "models/seal_door.glb",
+	"id": "seal_door",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "source_wall",
+			"roughness": 1.0,
+			"texture_size": [
+				1024,
+				1024
+			]
+		},
+		{
+			"color": [
+				0.119999997317791,
+				0.109999999403954,
+				0.100000001490116,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "matte_iron",
+			"roughness": 0.899999976158142,
+			"texture_size": []
+		},
+		{
+			"color": [
+				0.569999992847443,
+				0.490000009536743,
+				0.340000003576279,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "aged_seal_paper",
+			"roughness": 1.0,
+			"texture_size": []
+		},
+		{
+			"color": [
+				0.28999999165535,
+				0.0850000083446503,
+				0.0649999976158142,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "muted_red_seal",
+			"roughness": 1.0,
+			"texture_size": []
+		}
+	],
+	"sha256": "5e27cf71b3b5f03dcbed55a5cf90821bd4ddd091b1a80a43487b79aaba128bb0",
+	"triangles": 268,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.740000009536743,
+		0.0,
+		-0.109999999403954
+	],
+	"vertex_aabb_size": [
+		1.48000001907349,
+		2.01999998092651,
+		0.293500006198883
+	]
+}

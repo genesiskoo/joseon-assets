@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="ModelDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://actors/model_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "doho"
+scene_path = "res://assets/models/doho/doho.glb"
+scale = 1.0
+y_offset = 0.0
+yaw_offset_deg = 0.0
+target_height = 1.7
+pixel_filter = false
+weapon_placeholder = true
+weapon_bone = "RightHand"
+weapon_offset_pos = Vector3(0.0093, 0.0832, 0.0361)
+weapon_offset_rot_deg = Vector3(-0.96, 179.24, 90.07)
+walk_speed = 1.45
+run_speed = 2.4
+run_threshold = 2.6
+loco_scale_min = 0.75
+loco_scale_max = 1.5
+spring_roots = PackedStringArray("SashTail1")
+spring_ends = PackedStringArray("SashTail2")
+spring_stiffness = 1.2
+spring_drag = 0.4
+spring_gravity = 0.8
+attack_impact = {
+"attack": 0.4,
+"attack2": 0.55,
+"attack3": 0.42,
+"attack4": 0.5
+}
+attack_impact_default = 0.45
+anim_idle = "idle"
+anim_walk = "walk"
+anim_run = "run"
+anim_attack = "attack"
+anim_hit = "hit"
+anim_die = "die"

@@ -1,0 +1,46 @@
+{
+	"aabb_position": [
+		-0.340000003576279,
+		0.0,
+		-0.340000003576279
+	],
+	"aabb_size": [
+		0.680000007152557,
+		0.720000028610229,
+		0.680000007152557
+	],
+	"contract": "0.68 x 0.72 x 0.68; broad ceramic body and open rim; matte constant-color material; no liquid/collision",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "procedural candidate with matte materials; existing stone textures only where present",
+	"file": "models/onggi_jar.glb",
+	"id": "onggi_jar",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				0.150000005960464,
+				0.0899999961256981,
+				0.0549999885261059,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "matte_onggi",
+			"roughness": 0.920000016689301,
+			"texture_size": []
+		}
+	],
+	"sha256": "52db80e4b80dacaa36b89367077f5914f3af6286ca3b69d1f7c68c62b4033c1e",
+	"triangles": 288,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.340000003576279,
+		0.0,
+		-0.340000003576279
+	],
+	"vertex_aabb_size": [
+		0.680000007152557,
+		0.720000028610229,
+		0.680000007152557
+	]
+}

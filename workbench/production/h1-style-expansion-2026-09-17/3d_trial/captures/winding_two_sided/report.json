@@ -1,0 +1,404 @@
+{
+	"actors": [
+		{
+			"bones": 26,
+			"clips": [
+				"attack",
+				"attack2",
+				"attack3",
+				"attack4",
+				"die",
+				"hit",
+				"idle",
+				"run",
+				"walk"
+			],
+			"id": "doho",
+			"loaded": true,
+			"placeholder": false,
+			"raw_height": 1.70000183582306,
+			"scale": 0.999998920105249,
+			"source": "C:/workspace/joseon/tmp/h1_3d_trial/references/CURRENT_REFERENCE_NOT_H1.glb",
+			"source_sha256": "a3fc7dd875610abc2929b04b4098cb9a330b11eca44c5c91efa7d5a6464c9e7d",
+			"target_height": 1.7,
+			"triangles": 12160
+		},
+		{
+			"clips": [],
+			"id": "merchant",
+			"loaded": false,
+			"placeholder": true,
+			"raw_height": 0.0,
+			"scale": 1.0,
+			"source": "",
+			"source_sha256": "",
+			"target_height": 1.6
+		}
+	],
+	"camera": {
+		"distance": 30.0,
+		"ortho_size": 11.0,
+		"pitch_deg": 35.264,
+		"viewport": [
+			1280,
+			720
+		],
+		"yaw_deg": 45.0
+	},
+	"captured_at_utc": "2026-09-16T22:43:35",
+	"captures": [
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_idle_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "idle",
+					"sample_sec": 0.225
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "b92e248d2075d282cc175ca468384a82fac9df7659d33c4d6cfe489c9555167a",
+			"width": 1280
+		},
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_idle_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "idle",
+					"sample_sec": 0.84375
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "d18cb40be54c495c51f6d8adbe8f100b39f5107e4e01c8a058f27a3734fb42a0",
+			"width": 1280
+		},
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_idle_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "idle",
+					"sample_sec": 1.4625
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "057559c1711edffe37e210e0245a2284f250966d0b96acb478c07946f8c41515",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_walk_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						533.30908203125,
+						360.000030517578
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "walk",
+					"sample_sec": 0.130000004768372
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "d3a613e72aa7f46a4459b6c601ccc08e08f3c680321c1f8287553a7bf36c1979",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_walk_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "walk",
+					"sample_sec": 0.487500017881393
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "c65698ca2a965649a72618f367bf50b82902d42a0dd208a2dcdcd1cbfbf3c7ea",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_walk_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						576.509033203125,
+						360.000030517578
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "walk",
+					"sample_sec": 0.845000030994415
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "8c32bb7138dc2a7279612eea966bcb94de4cbe53280801cf3a7e3d0e1c701080",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_attack_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "attack",
+					"sample_sec": 0.184999995231628
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "40651d592d5f465278fbb809f56e43abee35193689d7ea697ea55d6ccb0859ca",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_attack_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "attack",
+					"sample_sec": 0.693749982118607
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "16607e9557b66debb3eeda8f5790513197d003e43edb872922e3a6e16ac1957d",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_cullcheck/assembly_reference_attack_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "attack",
+					"sample_sec": 1.20249996900558
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "bd7b64946f9192861e12014496ebef4a4e9c109d29aea60bc739499a7598bd8b",
+			"width": 1280
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"environment": "Exact Environment property snapshot from current world/dungeon_level.tscn",
+	"errors": [],
+	"is_game_intake": false,
+	"is_h1_result": false,
+	"lighting": "Exact current player light plus reused production torch script; isolated room layout",
+	"limitations": [
+		"Isolated review room, not gameplay integration",
+		"Merchant uses idle while Doho is sampled in idle/walk/attack",
+		"Projected vertical height excludes hat width and pose-dependent silhouette",
+		"Assembly-reference captures are never H1 results"
+	],
+	"mode": "assembly_reference",
+	"tile_two_sided_diagnostic": true,
+	"tiles": [
+		{
+			"id": "floor",
+			"sha256": "c4b393d6964e80cc3c3f01b4f1cd68c42b4e226e0d3ff94c7c5cdba6f855e9e6",
+			"source": "res://assets/models/tilekit_stone/floor.glb"
+		},
+		{
+			"id": "wall",
+			"sha256": "2ab7bd3248996eb0e59517f7e694fec566803cfc97e55b4c58c8381241b335a1",
+			"source": "res://assets/models/tilekit_stone/wall.glb"
+		},
+		{
+			"id": "stairs_up",
+			"sha256": "4fcab9ee58d781cf7669ccda18ce63bcd373d32c9fd2588262d9815fd60937d5",
+			"source": "res://assets/models/tilekit_stone/stairs_up.glb"
+		},
+		{
+			"id": "stairs_down",
+			"sha256": "a1ca3bc8598e6cdd1361a5e1fb95bae2623f54a266749931d010b9e0c060dbcf",
+			"source": "res://assets/models/tilekit_stone/stairs_down.glb"
+		}
+	],
+	"weapon_is_proxy": true
+}

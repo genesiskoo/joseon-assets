@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-09-16T23:10:21.012Z",
+  "operation": "tools/call",
+  "tool": "meshy_download_model",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "# Model Downloaded\n\n**Task ID**: 01a0ac79-1ba0-7329-98a7-b4326c93ba13\n**Format**: GLB\n**Local File**: C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/retextured/H1_merchant_retexture.glb\n**File Size**: 3.66 MB\n\n## Saved Textures\n- C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\retextured\\H1_merchant_retexture_base_color.png\n\n**Note**: Source URL expires after 24 hours. The local file is permanent."
+      }
+    ],
+    "structuredContent": {
+      "download_url": "https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac79-1ba0-7329-98a7-b4326c93ba13/output/model.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]",
+      "local_path": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/retextured/H1_merchant_retexture.glb",
+      "file_size_bytes": 3841776,
+      "format": "glb",
+      "texture_paths": [
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\retextured\\H1_merchant_retexture_base_color.png"
+      ],
+      "expires_at": "2026-09-17T23:10:21.009Z"
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

@@ -1,0 +1,46 @@
+{
+	"aabb_position": [
+		-0.319999992847443,
+		0.0,
+		-0.319999992847443
+	],
+	"aabb_size": [
+		0.639999985694885,
+		0.689999997615814,
+		0.639999985694885
+	],
+	"contract": "0.64 x 0.69 x 0.64; empty open octagonal iron bowl/3 feet; effect socket at (0,0.64,0); fire/light only in review scene",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "procedural candidate with matte materials; existing stone textures only where present",
+	"file": "models/brazier.glb",
+	"id": "brazier",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				0.119999997317791,
+				0.109999999403954,
+				0.100000001490116,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "matte_iron",
+			"roughness": 0.899999976158142,
+			"texture_size": []
+		}
+	],
+	"sha256": "b113591491a77b7323a8de7f271c2b0b373b30b4134bf913c462ee84074fa5a7",
+	"triangles": 100,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.319999992847443,
+		0.0,
+		-0.319999992847443
+	],
+	"vertex_aabb_size": [
+		0.639999985694885,
+		0.689999997615814,
+		0.639999985694885
+	]
+}

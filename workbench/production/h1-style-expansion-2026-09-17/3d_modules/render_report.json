@@ -1,0 +1,363 @@
+{
+	"camera": {
+		"auxiliary_props_closeup_ortho": 2.2,
+		"auxiliary_socket_closeup_ortho": 3.5,
+		"ortho_size": 11.0,
+		"pitch": 35.264,
+		"viewport": [
+			1280,
+			720
+		],
+		"yaw": 45.0
+	},
+	"captures": [
+		{
+			"file": "captures/01_dungeon_catalog.png",
+			"height": 720,
+			"id": "01_dungeon_catalog",
+			"lighting": "neutral catalog",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 0,
+			"sha256": "1a244bf3e340e159750bdceba1026e537010a30a08501f07b0261618e447de59",
+			"width": 1280
+		},
+		{
+			"file": "captures/01b_town_catalog.png",
+			"height": 720,
+			"id": "01b_town_catalog",
+			"lighting": "neutral catalog",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 0,
+			"sha256": "d7813661080f2305296a859723ecbc6caa063c9e3e994c84ff3f9f1e30d14b33",
+			"width": 1280
+		},
+		{
+			"file": "captures/02_town_assembly.png",
+			"height": 720,
+			"id": "02_town_assembly",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 0,
+			"sha256": "479bb92ac845fad417c944b5bf60fc3cb90a342ad636a65abe2744154f01a5b0",
+			"width": 1280
+		},
+		{
+			"file": "captures/03_dungeon_assembly.png",
+			"height": 720,
+			"id": "03_dungeon_assembly",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 0,
+			"sha256": "1a600e9de53f909fe4c91895e0eeeae331eba2d5fecac0438d4ea8126982915c",
+			"width": 1280
+		},
+		{
+			"file": "captures/04_occlusion_baseline.png",
+			"height": 720,
+			"id": "04_occlusion_baseline",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 2729,
+			"sha256": "f035bef6f96d6b5fb9de9eecece435d5147ec23fa0df31ff427a8da3d2bc292b",
+			"width": 1280
+		},
+		{
+			"file": "captures/05_occlusion_opaque.png",
+			"height": 720,
+			"id": "05_occlusion_opaque",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 1328,
+			"sha256": "7516257fa8a37652b87561a4147e251b795055189c45ad3d62769beaf32bff69",
+			"width": 1280
+		},
+		{
+			"file": "captures/06_occlusion_cutaway.png",
+			"height": 720,
+			"id": "06_occlusion_cutaway",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 2075,
+			"sha256": "a54976ac59161e1d674cd921034cd26c10eaa7fd39b150bcd79353805483e54a",
+			"width": 1280
+		},
+		{
+			"file": "captures/07_props_catalog.png",
+			"height": 720,
+			"id": "07_props_catalog",
+			"lighting": "neutral catalog",
+			"ortho_size": 2.20000004768372,
+			"scale_proxy_pixels": 0,
+			"sha256": "d78b7420322d3789250ff7db6827eaf7977b093deea437a5168ad20b89748bbd",
+			"width": 1280
+		},
+		{
+			"file": "captures/08_sword_angles.png",
+			"height": 720,
+			"id": "08_sword_angles",
+			"lighting": "neutral catalog",
+			"ortho_size": 2.20000004768372,
+			"scale_proxy_pixels": 0,
+			"sha256": "cd5ea27c2bc43cdc3a58a9b82f7084fb2f612ef33b831c6b4c40d49b08dc1ee3",
+			"width": 1280
+		},
+		{
+			"file": "captures/09_sword_socket.png",
+			"height": 720,
+			"id": "09_sword_socket",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 11.0,
+			"scale_proxy_pixels": 0,
+			"sha256": "b0c98fc2487f19656031d183a7b473fb80032f2ac2b1207f3001efb73b2c7921",
+			"width": 1280
+		},
+		{
+			"file": "captures/10_sword_socket_closeup.png",
+			"height": 720,
+			"id": "10_sword_socket_closeup",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "650ca8089a8faafd2c3b05d66c606db9843b37a735531d6d6c2bfdf369b2d271",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_idle_00.png",
+			"height": 720,
+			"id": "11_h1_socket_idle_00",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "c862edb76119a0b58dd9545c1dd8ae32baa3e165726960b54bde35c49c2b72b1",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_idle_01.png",
+			"height": 720,
+			"id": "11_h1_socket_idle_01",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "a8bce32027eb1a00993a902336e035227cc8c4bce2113f52bff65068b5e9dfad",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_idle_02.png",
+			"height": 720,
+			"id": "11_h1_socket_idle_02",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "309dfc0877e9274333fcc6d7c3c76d6a9c3c1707f52b7d00e4b0848811bb153c",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_walk_00.png",
+			"height": 720,
+			"id": "11_h1_socket_walk_00",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "321e144e198e48aae8ff0ad42d4364dbfb2bd56837d06a252cbdfb01bea6cecf",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_walk_01.png",
+			"height": 720,
+			"id": "11_h1_socket_walk_01",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "ae4cbb8af9442100eb09e70ab34a918b4ea559a1f70b445ef4b6c9363f58e428",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_walk_02.png",
+			"height": 720,
+			"id": "11_h1_socket_walk_02",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "a54ff21108a9d707e586e3df367aa81d3a2a9b8517a4fb543294e8fa8061d195",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_attack_00.png",
+			"height": 720,
+			"id": "11_h1_socket_attack_00",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "533693ce90220c4e9373fea39e0f9e3b03edb5d4d9550f00588bd6bc05b6cbfb",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_attack_01.png",
+			"height": 720,
+			"id": "11_h1_socket_attack_01",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "06b6bd77903b2862381fbda7ce8a7afa486ebaf708a4c4aa98d570959e6f4f0f",
+			"width": 1280
+		},
+		{
+			"file": "captures/11_h1_socket_attack_02.png",
+			"height": 720,
+			"id": "11_h1_socket_attack_02",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "2ba93a05004b4b74cbee64a76199bd4a8545357e29a1b3c2a0834116947d1214",
+			"width": 1280
+		},
+		{
+			"file": "captures/12_town_catalog_flat_control.png",
+			"height": 720,
+			"id": "12_town_catalog_flat_control",
+			"lighting": "neutral catalog",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "ed9062b63ba41f8c6992c2a0deededab9bee994b4fc3d452721f21169c70d25c",
+			"width": 1280
+		},
+		{
+			"file": "captures/13_town_assembly_flat_control.png",
+			"height": 720,
+			"id": "13_town_assembly_flat_control",
+			"lighting": "copied dungeon environment + production light values, trial layout",
+			"ortho_size": 3.5,
+			"scale_proxy_pixels": 0,
+			"sha256": "ca2e2048a024b50ef58bc3fdc20b1c3edc93035e7bceccfcf9601354f589ce2e",
+			"width": 1280
+		},
+		{
+			"file": "captures/14_props_catalog_flat_control.png",
+			"height": 720,
+			"id": "14_props_catalog_flat_control",
+			"lighting": "neutral catalog",
+			"ortho_size": 2.20000004768372,
+			"scale_proxy_pixels": 0,
+			"sha256": "49fc5d6237f80a172008b264b1911ce8c0541fd57f2c47ae0c6df8401a11080b",
+			"width": 1280
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"errors": [],
+	"h1_actor": {
+		"local_copy": "res://reference_actor/H1_doho_preserved.glb",
+		"sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749",
+		"source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/H1_doho_preserved.glb",
+		"state": "H1 fist candidate; final finger/sleeve contact approval pending"
+	},
+	"is_game_intake": false,
+	"limitations": [
+		"All captures are actual GLBs rendered in Godot, not concept art",
+		"1254x1254 shared atlas exceeds nominal 1K budget and is not guaranteed seamless or fully unlit",
+		"Onggi and talisman remain simple matte colors; H1 illustration-level finish unapproved",
+		"H1 preserved fist rig is a candidate; thumb/finger/sleeve contact requires further visual approval",
+		"Collision/navigation/gameplay not tested",
+		"Stairs_down is an inherited wedge, not a real floor opening",
+		"9 pose capsule checks do not establish full animation collision clearance"
+	],
+	"material_atlas": {
+		"actual_size": [
+			1254,
+			1254
+		],
+		"local": "textures/H1_matte_atlas.png",
+		"not_1k_budget_pass": true,
+		"not_guaranteed_seamless_or_unlit": true,
+		"onggi": "unchanged matte solid color",
+		"renderer_filter": "Runtime GLTFDocument atlas textures receive standard mipmaps and anisotropic sampling; PNG base pixels unchanged",
+		"sha256": "99bcf46f8c234308f8bf094f1165dc7a17516ec2ddcd9fceaaaa7668186727a3",
+		"source": "../23_material_atlas.png",
+		"source_png_pixels_modified": false,
+		"uv_mapping": "UV0 quadrant transforms baked into candidate vertices"
+	},
+	"material_comparison": [
+		{
+			"after": "captures/01b_town_catalog.png",
+			"before": "captures/12_town_catalog_flat_control.png"
+		},
+		{
+			"after": "captures/02_town_assembly.png",
+			"before": "captures/13_town_assembly_flat_control.png"
+		},
+		{
+			"after": "captures/07_props_catalog.png",
+			"before": "captures/14_props_catalog_flat_control.png"
+		}
+	],
+	"occlusion": {
+		"baseline_pixels": 2729,
+		"cutaway_pixels": 2075,
+		"cutaway_visible_ratio": 0.760351777207768,
+		"diagnostic_only": true,
+		"opaque_pixels": 1328,
+		"opaque_visible_ratio": 0.486625137412972,
+		"position": [
+			2.29999995231628,
+			0.0,
+			2.29999995231628
+		],
+		"proxy_height": 1.7,
+		"shader": "Exact copied world/shaders/wall_cutaway.gdshader; uniforms radius=2.4 alpha=0.3; isolated MeshInstance test, not live DungeonBuilder"
+	},
+	"socket_probe": {
+		"attached": true,
+		"attachment_world": [
+			-0.194908425211906,
+			0.980065882205963,
+			0.566024780273438
+		],
+		"bone": "RightHand",
+		"bone_attachment_origin_error": 0.0,
+		"bone_world": [
+			-0.194908425211906,
+			0.980065882205963,
+			0.566024780273438
+		],
+		"copied_current_offset": [
+			0.0093,
+			0.0832,
+			0.0361
+		],
+		"copied_current_rotation_deg": [
+			-0.96,
+			179.24,
+			90.07
+		],
+		"cumulative_scale": 0.00999999977648258,
+		"grip_to_tip_world_length": 0.800000131130219,
+		"grip_world": [
+			-0.13625405728817,
+			0.924261271953583,
+			0.607946753501892
+		],
+		"is_final_grip_approval": false,
+		"notes": "H1 fist candidate + actual prop under BoneAttachment3D; current main GT1 proxy offset reused as superseded control. H1-specific measured offset is in h1_socket_correction.json.",
+		"tip_world": [
+			0.370943307876587,
+			1.49607515335083,
+			0.844124495983124
+		]
+	},
+	"tile_seams": {
+		"basis": "GLB AABB exact 1x1 floor/1x2x1 wall; positions at 1u spacing; integer corner cells; doorway floor included",
+		"floor_contact_gap_units": 0.0,
+		"texture_seam_review": "See repeated actual-render floor/wall; source image periodic patterns retained",
+		"wall_contact_gap_units": 0.0
+	},
+	"utc": "2026-09-16T23:54:54"
+}

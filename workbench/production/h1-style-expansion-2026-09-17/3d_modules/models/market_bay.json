@@ -1,0 +1,125 @@
+{
+  "aabb_position": [
+    -1.625,
+    0.0,
+    -0.725391507148743
+  ],
+  "aabb_size": [
+    3.25,
+    2.67999982833862,
+    1.45078301429749
+  ],
+  "contract": "3.25 x 2.68 x 1.451 including roof ribs; one open timber market facade bay; 3-cell pitch with eave overhang; modest lifted eave, paper windows and counter; no interior/collision",
+  "cw_winding_normal_disagreements": 0,
+  "degenerate_triangles": 0,
+  "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+  "file": "models/market_bay.glb",
+  "id": "market_bay",
+  "is_game_intake": false,
+  "materials": [
+    {
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "source_wall",
+      "roughness": 1.0,
+      "texture_size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "color": [
+        0.620000004768372,
+        0.600000023841858,
+        0.540000021457672,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_plaster",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.850000023841858,
+        0.800000011920929,
+        0.730000019073486,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_wood",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.810000002384186,
+        0.759999990463257,
+        0.649999976158142,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_paper",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.870000004768372,
+        0.910000026226044,
+        0.970000028610229,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_roof",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.949999988079071,
+        0.970000028610229,
+        1.0,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_roof_rib",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "sha256": "40176b4e92849bb6e825c134cf7e641ad05512422ee32c2123bdafaca743de69",
+  "triangles": 452,
+  "under_500_triangles": true,
+  "vertex_aabb_position": [
+    -1.625,
+    0.0,
+    -0.725391507148743
+  ],
+  "vertex_aabb_size": [
+    3.25,
+    2.67999982833862,
+    1.45078301429749
+  ],
+  "atlas": "textures/atlas_layout.json"
+}

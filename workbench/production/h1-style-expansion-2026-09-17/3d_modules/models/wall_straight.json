@@ -1,0 +1,49 @@
+{
+	"aabb_position": [
+		-0.5,
+		0.0,
+		-0.5
+	],
+	"aabb_size": [
+		1.0,
+		2.0,
+		1.0
+	],
+	"contract": "1 x 2 x 1 solid cell wall; base pivot; exact source normals/UV/albedo retained; winding corrected",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "source winding corrected",
+	"file": "models/wall_straight.glb",
+	"id": "wall_straight",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "material_0",
+			"roughness": 1.0,
+			"texture_size": [
+				1024,
+				1024
+			]
+		}
+	],
+	"sha256": "f5ff141b8dd3d7fb90ee8c6e9c01845fd9247b39719170864ad7b1ea9a746d2c",
+	"triangles": 20,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.5,
+		0.0,
+		-0.5
+	],
+	"vertex_aabb_size": [
+		1.0,
+		2.0,
+		1.0
+	]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "doho",
+    "source": "C:\\workspace\\joseon\\tmp\\h1_3d_trial\\references\\CURRENT_REFERENCE_NOT_H1.glb",
+    "source_sha256": "A3FC7DD875610ABC2929B04B4098CB9A330B11ECA44C5C91EFA7D5A6464C9E7D",
+    "source_clips": [
+      "idle",
+      "walk",
+      "attack"
+    ],
+    "base": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\rigged\\H1_doho_rigged.glb",
+    "base_sha256": "6B01F29B1670F34A21CA403495E99D6262205E652AE8D98564B66DFBE02F426A",
+    "output": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\models\\H1_doho.glb",
+    "output_sha256": "AEEDB3148D40492614106F02DEA9E818B54BE01E6D2DC3271B316CE4676B25CE",
+    "fps": 30,
+    "additional_upright_degrees": 0,
+    "additional_yaw_degrees": 0,
+    "explanation": "Retarget named current-game clips from frozen source; existing posture/yaw corrections are already baked. Merchant clips are technical motion probes, not an approved NPC performance."
+  },
+  {
+    "id": "merchant",
+    "source": "C:\\workspace\\joseon\\tmp\\h1_3d_trial\\references\\CURRENT_REFERENCE_NOT_H1.glb",
+    "source_sha256": "A3FC7DD875610ABC2929B04B4098CB9A330B11ECA44C5C91EFA7D5A6464C9E7D",
+    "source_clips": [
+      "idle",
+      "walk",
+      "attack"
+    ],
+    "base": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\rigged\\H1_merchant_rigged.glb",
+    "base_sha256": "5B1E09F5EC7E4FFE6696BFF1344070552B7DFD82265D94C4A82960ECB77A73DD",
+    "output": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\models\\H1_merchant.glb",
+    "output_sha256": "3137FF2F749261F38C97DF271C41EBF21EF5C76E295EF0E8EC8CFFF8B7ED6401",
+    "fps": 30,
+    "additional_upright_degrees": 0,
+    "additional_yaw_degrees": 0,
+    "explanation": "Retarget named current-game clips from frozen source; existing posture/yaw corrections are already baked. Merchant clips are technical motion probes, not an approved NPC performance."
+  }
+]

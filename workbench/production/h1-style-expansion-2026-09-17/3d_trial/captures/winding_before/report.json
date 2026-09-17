@@ -1,0 +1,403 @@
+{
+	"actors": [
+		{
+			"bones": 26,
+			"clips": [
+				"attack",
+				"attack2",
+				"attack3",
+				"attack4",
+				"die",
+				"hit",
+				"idle",
+				"run",
+				"walk"
+			],
+			"id": "doho",
+			"loaded": true,
+			"placeholder": false,
+			"raw_height": 1.70000183582306,
+			"scale": 0.999998920105249,
+			"source": "C:/workspace/joseon/tmp/h1_3d_trial/references/CURRENT_REFERENCE_NOT_H1.glb",
+			"source_sha256": "a3fc7dd875610abc2929b04b4098cb9a330b11eca44c5c91efa7d5a6464c9e7d",
+			"target_height": 1.7,
+			"triangles": 12160
+		},
+		{
+			"clips": [],
+			"id": "merchant",
+			"loaded": false,
+			"placeholder": true,
+			"raw_height": 0.0,
+			"scale": 1.0,
+			"source": "",
+			"source_sha256": "",
+			"target_height": 1.6
+		}
+	],
+	"camera": {
+		"distance": 30.0,
+		"ortho_size": 11.0,
+		"pitch_deg": 35.264,
+		"viewport": [
+			1280,
+			720
+		],
+		"yaw_deg": 45.0
+	},
+	"captured_at_utc": "2026-09-16T22:42:17",
+	"captures": [
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_idle_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "idle",
+					"sample_sec": 0.225
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "84df6a8bb1f5e00c27944b9859487f71f73368a92447f68c6b6191c97cb2bc73",
+			"width": 1280
+		},
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_idle_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "idle",
+					"sample_sec": 0.84375
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "d78228ea8460106ca96f9cfb9a30a6b18bb4a761c72041a0b2fc1a38d0667b34",
+			"width": 1280
+		},
+		{
+			"action": "idle",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_idle_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "idle",
+					"duration_sec": 1.875,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "idle",
+					"sample_sec": 1.4625
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "82b2138694534fad8343349dcc4c3d31f0dd410097c35a42551fe7e5bc095bc0",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_walk_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						533.30908203125,
+						360.000030517578
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "walk",
+					"sample_sec": 0.130000004768372
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "1032ddeb1394306f5a9475513b9eb370828f1290594ebc87493ee03283f04356",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_walk_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "walk",
+					"sample_sec": 0.487500017881393
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "1e3f77a5d392cbdd6b6ea9066b5a2af6b88a175058582eb12cae520cf3e6f458",
+			"width": 1280
+		},
+		{
+			"action": "walk",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_walk_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "walk",
+					"duration_sec": 1.08333337306976,
+					"foot_px": [
+						576.509033203125,
+						360.000030517578
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "walk",
+					"sample_sec": 0.845000030994415
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "5e7840ed1029759d195453be5e1aa8cd712b15ffbc521d69179f9bf35a14254c",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_attack_00.png",
+			"phase": 0.12,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "attack",
+					"sample_sec": 0.184999995231628
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "718300492b713b30ddd6d854777699e3b6a0132be053da4d0c01cfe7218914ce",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_attack_01.png",
+			"phase": 0.45,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "attack",
+					"sample_sec": 0.693749982118607
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "292af0103180069aa9bba4cd0a57eca5d20704ec97f098c92c1ad96d4efa7cb4",
+			"width": 1280
+		},
+		{
+			"action": "attack",
+			"height": 720,
+			"path": "C:/workspace/joseon/tmp/h1_3d_trial/captures/assembly_reference_v2/assembly_reference_attack_02.png",
+			"phase": 0.78,
+			"samples": [
+				{
+					"available": true,
+					"clip": "attack",
+					"duration_sec": 1.54166662693024,
+					"foot_px": [
+						554.908996582031,
+						360.0
+					],
+					"id": "doho",
+					"projected_vertical_height_px": 90.854248046875,
+					"requested": "attack",
+					"sample_sec": 1.20249996900558
+				},
+				{
+					"available": false,
+					"clip": "",
+					"foot_px": [
+						725.091003417969,
+						360.0
+					],
+					"id": "merchant",
+					"projected_vertical_height_px": 85.5098876953125,
+					"requested": "idle"
+				}
+			],
+			"sha256": "ee1dcfdaea3d874d4196091d99725fef3f823600b3f0dbc905254419255fa8d4",
+			"width": 1280
+		}
+	],
+	"engine": {
+		"build": "steam",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (steam)",
+		"timestamp": 0
+	},
+	"environment": "Exact Environment property snapshot from current world/dungeon_level.tscn",
+	"errors": [],
+	"is_game_intake": false,
+	"is_h1_result": false,
+	"lighting": "Exact current player light plus reused production torch script; isolated room layout",
+	"limitations": [
+		"Isolated review room, not gameplay integration",
+		"Merchant uses idle while Doho is sampled in idle/walk/attack",
+		"Projected vertical height excludes hat width and pose-dependent silhouette",
+		"Assembly-reference captures are never H1 results"
+	],
+	"mode": "assembly_reference",
+	"tiles": [
+		{
+			"id": "floor",
+			"sha256": "c4b393d6964e80cc3c3f01b4f1cd68c42b4e226e0d3ff94c7c5cdba6f855e9e6",
+			"source": "res://assets/models/tilekit_stone/floor.glb"
+		},
+		{
+			"id": "wall",
+			"sha256": "2ab7bd3248996eb0e59517f7e694fec566803cfc97e55b4c58c8381241b335a1",
+			"source": "res://assets/models/tilekit_stone/wall.glb"
+		},
+		{
+			"id": "stairs_up",
+			"sha256": "4fcab9ee58d781cf7669ccda18ce63bcd373d32c9fd2588262d9815fd60937d5",
+			"source": "res://assets/models/tilekit_stone/stairs_up.glb"
+		},
+		{
+			"id": "stairs_down",
+			"sha256": "a1ca3bc8598e6cdd1361a5e1fb95bae2623f54a266749931d010b9e0c060dbcf",
+			"source": "res://assets/models/tilekit_stone/stairs_down.glb"
+		}
+	],
+	"weapon_is_proxy": true
+}

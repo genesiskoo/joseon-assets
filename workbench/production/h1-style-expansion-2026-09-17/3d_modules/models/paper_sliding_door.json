@@ -1,0 +1,77 @@
+{
+  "aabb_position": [
+    -0.5,
+    0.0,
+    -0.0500000007450581
+  ],
+  "aabb_size": [
+    1.0,
+    1.79999995231628,
+    0.140000000596046
+  ],
+  "contract": "1 x 1.8 x 0.14; +Z front; base center; paper-and-timber sliding panel; no rail/animation/collision",
+  "cw_winding_normal_disagreements": 0,
+  "degenerate_triangles": 0,
+  "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+  "file": "models/paper_sliding_door.glb",
+  "id": "paper_sliding_door",
+  "is_game_intake": false,
+  "materials": [
+    {
+      "color": [
+        0.810000002384186,
+        0.759999990463257,
+        0.649999976158142,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_paper",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.850000023841858,
+        0.800000011920929,
+        0.730000019073486,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_wood",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.119999997317791,
+        0.109999999403954,
+        0.100000001490116,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "matte_iron",
+      "roughness": 0.899999976158142,
+      "texture_size": []
+    }
+  ],
+  "sha256": "38458904e8da1f4f82e57751cbcb416a1e08bee5b8b1fffb69bb1ec90aa530e2",
+  "triangles": 192,
+  "under_500_triangles": true,
+  "vertex_aabb_position": [
+    -0.5,
+    0.0,
+    -0.0500000007450581
+  ],
+  "vertex_aabb_size": [
+    1.0,
+    1.79999995231628,
+    0.140000000596046
+  ],
+  "atlas": "textures/atlas_layout.json"
+}

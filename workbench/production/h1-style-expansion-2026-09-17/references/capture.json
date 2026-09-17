@@ -1,0 +1,159 @@
+{
+  "status": "captured",
+  "started_at": "2026-09-17T07:17:51.8448826+09:00",
+  "source_project": "C:/workspace/joseon",
+  "source_scenarios": [
+    "res://tests/e2e/scenarios/portal_roundtrip.gd",
+    "res://tests/e2e/scenarios/vendor_quest.gd"
+  ],
+  "camera": {
+    "projection": "orthogonal",
+    "ortho_size": 11.0,
+    "pitch_deg": 35.264,
+    "yaw_deg": 45.0,
+    "source": "C:/workspace/joseon/world/iso_camera.gd",
+    "measurement": "current source; main.tscn has no property override"
+  },
+  "resolution": [
+    1280,
+    720
+  ],
+  "capture_method": "Separate Godot process with existing E2eRunner; viewport PNG; no remote debugger, OS key injection, or existing-process control",
+  "isolated_save_path": "user://save_e2e.json",
+  "normal_save_before": {
+    "path": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\save_v2.json",
+    "sha256": "14F2B85D5FB7F03FF3C042D1BD91C26FF03B6648BF989D351D07B28C1E92C254",
+    "length": 1477,
+    "last_write_time": "2026-09-17T07:09:24.0795915+09:00"
+  },
+  "model_at_launch": {
+    "path": "C:/workspace/joseon/assets/models/doho/doho.glb",
+    "sha256": "A3FC7DD875610ABC2929B04B4098CB9A330B11ECA44C5C91EFA7D5A6464C9E7D",
+    "last_write_time": "2026-09-17T07:06:24.8328053+09:00"
+  },
+  "source_hashes": [
+    {
+      "path": "world/iso_camera.gd",
+      "sha256": "BAE01F78B7AC6060D6985607C7F5757A32E30964ECC1E7BAD4B2BA9DCCAB2618"
+    },
+    {
+      "path": "world/main.tscn",
+      "sha256": "76AB9863DF2A0AB37C2272AA2BD416E5EBF1F0C475555C68C5A44826B6DB003C"
+    },
+    {
+      "path": "world/dungeon_level.tscn",
+      "sha256": "1E80F0C818FE3AC45B6E7A8CDD5268EBC4A797A4C090A2F48FFC426AB7022A82"
+    },
+    {
+      "path": "world/town.tscn",
+      "sha256": "361773543CF7C84F95C166A0548432E3AC3E9790E060F27DDB4F9CD347019045"
+    },
+    {
+      "path": "tests/e2e/e2e_runner.gd",
+      "sha256": "B6D2967BEABD62A4DA244DEC70643EF2155FFB409A13730992BC353A29E9F2C3"
+    }
+  ],
+  "existing_editor_pid": 28460,
+  "existing_game_pid": 36232,
+  "command_executable": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+  "command_args": [
+    "--path",
+    "C:/workspace/joseon",
+    "--windowed",
+    "--resolution",
+    "1280x720",
+    "--audio-driver",
+    "Dummy",
+    "--max-fps",
+    "60",
+    "--log-file",
+    "C:/workspace/joseon/tmp/h1_artwork_build/references/capture.log",
+    "--",
+    "--e2e=portal_roundtrip,vendor_quest",
+    "--e2e-shots"
+  ],
+  "capture_pid": 44200,
+  "normal_save_after": {
+    "path": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\save_v2.json",
+    "sha256": "14F2B85D5FB7F03FF3C042D1BD91C26FF03B6648BF989D351D07B28C1E92C254",
+    "length": 1477,
+    "last_write_time": "2026-09-17T07:09:24.0795915+09:00"
+  },
+  "normal_save_unchanged": true,
+  "model_after": {
+    "path": "C:/workspace/joseon/assets/models/doho/doho.glb",
+    "sha256": "A3FC7DD875610ABC2929B04B4098CB9A330B11ECA44C5C91EFA7D5A6464C9E7D",
+    "last_write_time": "2026-09-17T07:06:24.8328053+09:00"
+  },
+  "model_unchanged_during_capture": true,
+  "source_hashes_after": [
+    {
+      "path": "world/iso_camera.gd",
+      "sha256": "BAE01F78B7AC6060D6985607C7F5757A32E30964ECC1E7BAD4B2BA9DCCAB2618"
+    },
+    {
+      "path": "world/main.tscn",
+      "sha256": "76AB9863DF2A0AB37C2272AA2BD416E5EBF1F0C475555C68C5A44826B6DB003C"
+    },
+    {
+      "path": "world/dungeon_level.tscn",
+      "sha256": "1E80F0C818FE3AC45B6E7A8CDD5268EBC4A797A4C090A2F48FFC426AB7022A82"
+    },
+    {
+      "path": "world/town.tscn",
+      "sha256": "361773543CF7C84F95C166A0548432E3AC3E9790E060F27DDB4F9CD347019045"
+    },
+    {
+      "path": "tests/e2e/e2e_runner.gd",
+      "sha256": "B6D2967BEABD62A4DA244DEC70643EF2155FFB409A13730992BC353A29E9F2C3"
+    }
+  ],
+  "completed_at": "2026-09-17T07:18:47.5569921+09:00",
+  "artifacts": [
+    {
+      "name": "actual_town",
+      "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\e2e\\vendor_quest_03_quest_done.png",
+      "output": "C:\\workspace\\joseon\\tmp\\h1_artwork_build\\references\\actual_town.png",
+      "captured_at": "2026-09-17T07:17:57.922907+09:00",
+      "sha256": "2C4B3C925908EACDC05D79B05653C75A79C9DD923D9699C32C55D13978160676",
+      "width": 1280,
+      "height": 720,
+      "bytes": 250182
+    },
+    {
+      "name": "actual_dungeon",
+      "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\e2e\\portal_roundtrip_01_portal_open.png",
+      "output": "C:\\workspace\\joseon\\tmp\\h1_artwork_build\\references\\actual_dungeon.png",
+      "captured_at": "2026-09-17T07:17:54.2127646+09:00",
+      "sha256": "36182CAA7327365A03ADCEFCC52EB1BDD4251DFCEF6FD421A85A3E3A9D6DA473",
+      "width": 1280,
+      "height": 720,
+      "bytes": 432722
+    }
+  ],
+  "validation": "E2E SUMMARY: 2/2 PASS; portal_roundtrip 12 checks; vendor_quest 22 checks",
+  "existing_processes_still_running": [
+    {
+      "pid": 28460,
+      "running": true
+    },
+    {
+      "pid": 36232,
+      "running": true
+    }
+  ],
+  "scope_notes": [
+    "Town screenshot includes quest dialog and placeholder NPC/backgrounds.",
+    "Dungeon screenshot is floor 1 after E2E removes enemies and opens a portal.",
+    "These are actual game-render references at current source camera size 11, not H1 art completion.",
+    "Existing E2E save and E2E screenshots were refreshed by the runner; normal save_v2.json unchanged when verified.",
+    "No project source, GLB, shared documents, or existing Godot processes were modified by this capture task."
+  ],
+  "visual_review": {
+    "reviewed_at": "2026-09-17T07:19:21.7564200+09:00",
+    "town": "Current game shows GT1 Doho with placeholder capsule NPCs, checker ground, box buildings, and elder dialog overlay.",
+    "dungeon": "Current floor-1 screenshot has mostly black floor cells/grid, warm torch-lit walls, foreground dither occlusion, and the open return portal obscuring Doho.",
+    "art_reference_limit": "Use camera, scale, and current local-light contrast as constraints; do not copy placeholders, black-floor rendering defects, dither noise, UI, or portal occlusion into H1 target concept art.",
+    "completed": true
+  }
+}

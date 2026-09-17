@@ -1,0 +1,435 @@
+{
+  "engine": {
+    "build": "steam",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (steam)",
+    "timestamp": 0
+  },
+  "errors": [],
+  "generated_utc": "2026-09-16T23:52:04",
+  "is_game_intake": false,
+  "limitations": [
+    "Wood and dark scabbard use the supplied 1254x1254 TEX01 atlas; remaining surfaces use matte colors",
+    "Geometry/material candidates, not illustration-level finish",
+    "H1 preserved fist candidate attachability does not certify finger/sleeve contact or full animation clearance",
+    "No main weapon_scene, socket offset or runtime asset changed"
+  ],
+  "props": [
+    {
+      "aabb_position": [
+        -0.0599999986588955,
+        -0.135000005364418,
+        -0.0219999998807907
+      ],
+      "aabb_size": [
+        0.119999997317791,
+        0.935000002384186,
+        0.0439999997615814
+      ],
+      "contract": "Grip origin (0,0,0); +Y blade tip; XY broad face; blade Y=.06..80 (0.74u); hilt .16u; no skeleton; matches current ActorVisual proxy scale",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+      "file": "props/doho_sword.glb",
+      "id": "doho_sword",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.579999923706055,
+            0.610000014305115,
+            0.639999985694885,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "matte_blade",
+          "roughness": 0.670000016689301,
+          "texture_size": []
+        },
+        {
+          "color": [
+            0.0649999976158142,
+            0.051999993622303,
+            0.0430000051856041,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "dark_wrap",
+          "roughness": 1.0,
+          "texture_size": []
+        },
+        {
+          "color": [
+            0.330000013113022,
+            0.270000010728836,
+            0.15999998152256,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "aged_brass",
+          "roughness": 0.850000023841858,
+          "texture_size": []
+        },
+        {
+          "color": [
+            0.370000004768372,
+            0.379999995231628,
+            0.400000005960464,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_dark_wood",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        }
+      ],
+      "sha256": "71dc18da3ce310197a630356dd13c110d4112952359e7af71b14e26309d7c33d",
+      "triangles": 250,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.0599999986588955,
+        -0.135000005364418,
+        -0.0219999998807907
+      ],
+      "vertex_aabb_size": [
+        0.119999997317791,
+        0.935000002384186,
+        0.0439999997615814
+      ],
+      "atlas": "textures/atlas_layout.json"
+    },
+    {
+      "aabb_position": [
+        -0.0350000001490116,
+        0.0,
+        -0.0209999997168779
+      ],
+      "aabb_size": [
+        0.0700000002980232,
+        0.76199996471405,
+        0.0419999994337559
+      ],
+      "contract": "Mouth origin (0,0,0); +Y sheath tip; internal opening .044 x .016; usable depth .75; place at sword local Y=.06 for fit diagnostic; no attachment approved",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+      "file": "props/doho_scabbard.glb",
+      "id": "doho_scabbard",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.370000004768372,
+            0.379999995231628,
+            0.400000005960464,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_dark_wood",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.330000013113022,
+            0.270000010728836,
+            0.15999998152256,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "aged_brass",
+          "roughness": 0.850000023841858,
+          "texture_size": []
+        }
+      ],
+      "sha256": "e801510cc887acdee88ca91b2b58d6c0342eca2add6d68e3b49a2ec36c1b94e2",
+      "triangles": 204,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.0350000001490116,
+        0.0,
+        -0.0209999997168779
+      ],
+      "vertex_aabb_size": [
+        0.0700000002980232,
+        0.76199996471405,
+        0.0419999994337559
+      ],
+      "atlas": "textures/atlas_layout.json"
+    },
+    {
+      "aabb_position": [
+        -0.0750000029802322,
+        -0.119999997317791,
+        -0.0750000029802322
+      ],
+      "aabb_size": [
+        0.150000005960464,
+        0.800000011920929,
+        0.150000005960464
+      ],
+      "contract": "Grip origin (0,0,0); +Y striking end; .80u overall Y length; grip around origin; wooden club only, no skeleton/attack integration",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+      "file": "props/bandit_club.glb",
+      "id": "bandit_club",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.850000023841858,
+            0.800000011920929,
+            0.730000019073486,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_wood",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.0649999976158142,
+            0.051999993622303,
+            0.0430000051856041,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "dark_wrap",
+          "roughness": 1.0,
+          "texture_size": []
+        }
+      ],
+      "sha256": "75bc7ac8917aa9923f4884b1d55e6e586741a55460bcdbc3f33f78ad2a637dd3",
+      "triangles": 240,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.0750000029802322,
+        -0.119999997317791,
+        -0.0750000029802322
+      ],
+      "vertex_aabb_size": [
+        0.150000005960464,
+        0.800000011920929,
+        0.150000005960464
+      ],
+      "atlas": "textures/atlas_layout.json"
+    },
+    {
+      "aabb_position": [
+        -0.0399999991059303,
+        -0.319999992847443,
+        0.0
+      ],
+      "aabb_size": [
+        0.0799999982118607,
+        0.319999992847443,
+        9.99999974737875e-06
+      ],
+      "contract": "Zero-thickness double-sided XY sheet .08 x .32; top-edge pinch origin; extends -Y; +Z front; matte vertex-region colors, abstract marks; no paper simulation",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "procedural candidate with matte materials; existing stone textures only where present",
+      "file": "props/paper_talisman.glb",
+      "id": "paper_talisman",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.579999923706055,
+            0.519999980926514,
+            0.389999985694885,
+            1.0
+          ],
+          "cull_mode": 2,
+          "name": "talisman_paper",
+          "roughness": 1.0,
+          "texture_size": []
+        },
+        {
+          "color": [
+            0.069999985396862,
+            0.0649999976158142,
+            0.0549999885261059,
+            1.0
+          ],
+          "cull_mode": 2,
+          "name": "talisman_ink",
+          "roughness": 1.0,
+          "texture_size": []
+        },
+        {
+          "color": [
+            0.310000002384186,
+            0.0899999961256981,
+            0.0599999949336052,
+            1.0
+          ],
+          "cull_mode": 2,
+          "name": "talisman_stamp",
+          "roughness": 1.0,
+          "texture_size": []
+        }
+      ],
+      "sha256": "871cb174d3363244b563b798ec58edff5970bf00aebf54c58b27d51fe90532c7",
+      "triangles": 240,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.0399999991059303,
+        -0.319999992847443,
+        0.0
+      ],
+      "vertex_aabb_size": [
+        0.0799999982118607,
+        0.319999992847443,
+        0.0
+      ]
+    }
+  ],
+  "sheath_fit": {
+    "blade_length": 0.74,
+    "blade_thickness": 0.008,
+    "blade_width": 0.035,
+    "cavity_depth": 0.75,
+    "cavity_thickness": 0.016,
+    "cavity_width": 0.044,
+    "clearance_thickness_total": 0.008,
+    "clearance_width_total": 0.009,
+    "sheath_origin_in_sword_local": [
+      0,
+      0.06,
+      0
+    ],
+    "tip_clearance": 0.01
+  },
+  "sword_contract_source": "actors/actor_visual.gd::make_placeholder_sword, copied numeric dimensions only",
+  "supplied_material_atlas": {
+    "texture": "res://textures/H1_matte_atlas.png",
+    "source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/23_material_atlas.png",
+    "source_sha256": "99bcf46f8c234308f8bf094f1165dc7a17516ec2ddcd9fceaaaa7668186727a3",
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "pixel_editing_performed": false,
+    "mapping": "UV0 scale/offset baked into mesh vertices; 0.005 normalized inset avoids quadrant borders; no cropped or resampled image",
+    "quadrants": {
+      "wood": "top-left",
+      "roof": "top-right",
+      "plaster": "bottom-left",
+      "hanji": "bottom-right"
+    },
+    "materials": {
+      "wood": {
+        "offset": [
+          0.005,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.85,
+          0.8,
+          0.73
+        ]
+      },
+      "dark_wood": {
+        "offset": [
+          0.005,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.37,
+          0.38,
+          0.4
+        ]
+      },
+      "roof": {
+        "offset": [
+          0.505,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.87,
+          0.91,
+          0.97
+        ]
+      },
+      "roof_rib": {
+        "offset": [
+          0.505,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.95,
+          0.97,
+          1.0
+        ]
+      },
+      "plaster": {
+        "offset": [
+          0.005,
+          0.505
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.62,
+          0.6,
+          0.54
+        ]
+      },
+      "paper": {
+        "offset": [
+          0.505,
+          0.505
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.81,
+          0.76,
+          0.65
+        ]
+      }
+    },
+    "limits": [
+      "1254 exceeds the nominal 1024 texture budget",
+      "Shared atlas candidate; no seamless or perfectly flat illumination guarantee",
+      "Onggi remains the existing matte solid material"
+    ]
+  }
+}

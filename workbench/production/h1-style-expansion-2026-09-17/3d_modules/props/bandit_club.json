@@ -1,0 +1,62 @@
+{
+  "aabb_position": [
+    -0.0750000029802322,
+    -0.119999997317791,
+    -0.0750000029802322
+  ],
+  "aabb_size": [
+    0.150000005960464,
+    0.800000011920929,
+    0.150000005960464
+  ],
+  "contract": "Grip origin (0,0,0); +Y striking end; .80u overall Y length; grip around origin; wooden club only, no skeleton/attack integration",
+  "cw_winding_normal_disagreements": 0,
+  "degenerate_triangles": 0,
+  "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+  "file": "props/bandit_club.glb",
+  "id": "bandit_club",
+  "is_game_intake": false,
+  "materials": [
+    {
+      "color": [
+        0.850000023841858,
+        0.800000011920929,
+        0.730000019073486,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_wood",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.0649999976158142,
+        0.051999993622303,
+        0.0430000051856041,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "dark_wrap",
+      "roughness": 1.0,
+      "texture_size": []
+    }
+  ],
+  "sha256": "75bc7ac8917aa9923f4884b1d55e6e586741a55460bcdbc3f33f78ad2a637dd3",
+  "triangles": 240,
+  "under_500_triangles": true,
+  "vertex_aabb_position": [
+    -0.0750000029802322,
+    -0.119999997317791,
+    -0.0750000029802322
+  ],
+  "vertex_aabb_size": [
+    0.150000005960464,
+    0.800000011920929,
+    0.150000005960464
+  ],
+  "atlas": "textures/atlas_layout.json"
+}

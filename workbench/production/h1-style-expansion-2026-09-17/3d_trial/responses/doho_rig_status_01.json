@@ -1,0 +1,29 @@
+{
+  "captured_at": "2026-09-16T22:56:13.115Z",
+  "operation": "tools/call",
+  "tool": "meshy_get_task_status",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"01a0ac6d-15ac-77d0-b303-e2cd71747547\",\"type\":\"rig\",\"name\":\"\",\"status\":\"SUCCEEDED\",\"created_at\":1789599227906,\"progress\":100,\"started_at\":1789599227946,\"finished_at\":1789599272067,\"expires_at\":1789858472067,\"task_error\":null,\"result\":{\"rigged_character_fbx_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Character_output.fbx?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"rigged_character_glb_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Character_output.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"basic_animations\":{\"walking_glb_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Animation_Walking_withSkin.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"walking_fbx_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Animation_Walking_withSkin.fbx?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"walking_armature_glb_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Animation_Walking_withSkin_armature.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"running_glb_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Animation_Running_withSkin.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"running_fbx_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Animation_Running_withSkin.fbx?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"running_armature_glb_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac6d-15ac-77d0-b303-e2cd71747547/output/Animation_Running_withSkin_armature.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\"}},\"consumed_credits\":5}"
+      }
+    ],
+    "structuredContent": {
+      "outcome": "SUCCEEDED",
+      "task_id": "01a0ac6d-15ac-77d0-b303-e2cd71747547",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 5
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

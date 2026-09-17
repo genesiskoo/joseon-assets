@@ -1,0 +1,1055 @@
+{
+  "engine": {
+    "build": "steam",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (steam)",
+    "timestamp": 0
+  },
+  "errors": [],
+  "generated_utc": "2026-09-16T23:52:02",
+  "generator": "Godot GLTFDocument + procedural candidate geometry; Blender candidate-only stair simplification; no image generation",
+  "is_game_intake": false,
+  "limitations": [
+    "Candidates only; collision, navigation, runtime batching/cutaway integration not implemented",
+    "Stone albedos inherited unchanged; stairs retain inherited 2K textures",
+    "Door_frame and market_bay use 3-cell assembly pitch; not single-cell tile replacements",
+    "Brazier and lantern omit light; effect is separate in the review scene",
+    "Town TEX01 shared atlas is 1254x1254, above nominal 1K; seamless/fully unlit not guaranteed",
+    "Onggi retains matte solid color; H1 illustration-level material finish is unapproved"
+  ],
+  "modules": [
+    {
+      "aabb_position": [
+        -0.5,
+        -0.100000001490116,
+        -0.5
+      ],
+      "aabb_size": [
+        1.0,
+        0.100000001490116,
+        1.0
+      ],
+      "contract": "1 x 1 tile; top Y=0; exact source normals/UV/albedo retained; winding corrected",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "source winding corrected",
+      "file": "models/floor.glb",
+      "id": "floor",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "material_0",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "sha256": "90a56695aac08d446cbabceaaf93f4593c57e05185d64288deb03860dd8130e2",
+      "triangles": 12,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.5,
+        -0.100000001490116,
+        -0.5
+      ],
+      "vertex_aabb_size": [
+        1.0,
+        0.100000001490116,
+        1.0
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "aabb_size": [
+        1.0,
+        2.0,
+        1.0
+      ],
+      "contract": "1 x 2 x 1 solid cell wall; base pivot; exact source normals/UV/albedo retained; winding corrected",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "source winding corrected",
+      "file": "models/wall_straight.glb",
+      "id": "wall_straight",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "material_0",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "sha256": "f5ff141b8dd3d7fb90ee8c6e9c01845fd9247b39719170864ad7b1ea9a746d2c",
+      "triangles": 20,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "vertex_aabb_size": [
+        1.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "aabb_size": [
+        1.0,
+        0.352756470441818,
+        1.0
+      ],
+      "contract": "Existing fitted Meshy stair; candidate-only decimation 502 to 488 tri; footprint 1 x 1; same albedo",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "source candidate-only budget decimation; original preserved",
+      "file": "models/stairs_up.glb",
+      "id": "stairs_up",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 2,
+          "name": "material_0",
+          "roughness": 0.800000011920929,
+          "texture_size": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "sha256": "bf2718df807bee6eb9f1add5a502890eca4ba1d11980a24bde7216055ac4327a",
+      "triangles": 488,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "vertex_aabb_size": [
+        1.0,
+        0.352756470441818,
+        1.0
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "aabb_size": [
+        1.0,
+        0.61372298002243,
+        1.0
+      ],
+      "contract": "Existing fitted Meshy stair; candidate-only decimation 514 to 487 tri; footprint 1 x 1; same albedo",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "source candidate-only budget decimation; original preserved",
+      "file": "models/stairs_down.glb",
+      "id": "stairs_down",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 2,
+          "name": "material_0",
+          "roughness": 0.800000011920929,
+          "texture_size": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "sha256": "2f367c5c57e5ea7294a9bab364a8591fee9cfc11cde4964145150456a8a5f759",
+      "triangles": 487,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "vertex_aabb_size": [
+        1.0,
+        0.61372298002243,
+        1.0
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "aabb_size": [
+        1.0,
+        2.0,
+        1.0
+      ],
+      "contract": "1 x 2 x 1 outer corner; solid interior cell; 0.12u chamfer only on exposed +X/+Z corner",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "procedural candidate with matte materials; existing stone textures only where present",
+      "file": "models/wall_corner.glb",
+      "id": "wall_corner",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "source_wall",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "source_floor",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "sha256": "f090ed2530fbcbd0c3f077a8794b5cace38523449bc1d2986dea4335229f8e3c",
+      "triangles": 26,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "vertex_aabb_size": [
+        1.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "aabb_position": [
+        -1.5,
+        0.0,
+        -0.5
+      ],
+      "aabb_size": [
+        3.0,
+        2.39999985694885,
+        1.0
+      ],
+      "contract": "3 x 2.4 x 1, 3-cell doorway; clear opening 1.5 wide x 2.05 high; base-center pivot; no collision",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "procedural candidate with matte materials; existing stone textures only where present",
+      "file": "models/door_frame.glb",
+      "id": "door_frame",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "source_wall",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "sha256": "f62550f098634bd4db0d694174162082885888a5c3b861a0452025c182a850bd",
+      "triangles": 68,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -1.5,
+        0.0,
+        -0.5
+      ],
+      "vertex_aabb_size": [
+        3.0,
+        2.39999985694885,
+        1.0
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.740000009536743,
+        0.0,
+        -0.109999999403954
+      ],
+      "aabb_size": [
+        1.48000001907349,
+        2.01999998092651,
+        0.293500006198883
+      ],
+      "contract": "Separate 1.48 x 2.02 stone seal insert for door_frame; round plaque and sparse paper seals; +Z front; base-center pivot; no animation/collision; abstract seal marks",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "procedural candidate with matte materials; existing stone textures only where present",
+      "file": "models/seal_door.glb",
+      "id": "seal_door",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "source_wall",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "color": [
+            0.119999997317791,
+            0.109999999403954,
+            0.100000001490116,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "matte_iron",
+          "roughness": 0.899999976158142,
+          "texture_size": []
+        },
+        {
+          "color": [
+            0.569999992847443,
+            0.490000009536743,
+            0.340000003576279,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "aged_seal_paper",
+          "roughness": 1.0,
+          "texture_size": []
+        },
+        {
+          "color": [
+            0.28999999165535,
+            0.0850000083446503,
+            0.0649999976158142,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "muted_red_seal",
+          "roughness": 1.0,
+          "texture_size": []
+        }
+      ],
+      "sha256": "5e27cf71b3b5f03dcbed55a5cf90821bd4ddd091b1a80a43487b79aaba128bb0",
+      "triangles": 268,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.740000009536743,
+        0.0,
+        -0.109999999403954
+      ],
+      "vertex_aabb_size": [
+        1.48000001907349,
+        2.01999998092651,
+        0.293500006198883
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.430000007152557,
+        0.0,
+        -0.430000007152557
+      ],
+      "aabb_size": [
+        0.860000014305115,
+        2.29999995231628,
+        0.860000014305115
+      ],
+      "contract": "0.86 x 2.3 x 0.86; 1-cell freestanding pillar; octagonal broad chamfers; no collision",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "procedural candidate with matte materials; existing stone textures only where present",
+      "file": "models/pillar.glb",
+      "id": "pillar",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "source_wall",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "source_floor",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "sha256": "f706c8583e5c343c45f085c77b18abb0fccbed93ef9f7f89cc193b0124893cb5",
+      "triangles": 68,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.430000007152557,
+        0.0,
+        -0.430000007152557
+      ],
+      "vertex_aabb_size": [
+        0.860000014305115,
+        2.29999995231628,
+        0.860000014305115
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.319999992847443,
+        0.0,
+        -0.319999992847443
+      ],
+      "aabb_size": [
+        0.639999985694885,
+        0.689999997615814,
+        0.639999985694885
+      ],
+      "contract": "0.64 x 0.69 x 0.64; empty open octagonal iron bowl/3 feet; effect socket at (0,0.64,0); fire/light only in review scene",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "procedural candidate with matte materials; existing stone textures only where present",
+      "file": "models/brazier.glb",
+      "id": "brazier",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.119999997317791,
+            0.109999999403954,
+            0.100000001490116,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "matte_iron",
+          "roughness": 0.899999976158142,
+          "texture_size": []
+        }
+      ],
+      "sha256": "b113591491a77b7323a8de7f271c2b0b373b30b4134bf913c462ee84074fa5a7",
+      "triangles": 100,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.319999992847443,
+        0.0,
+        -0.319999992847443
+      ],
+      "vertex_aabb_size": [
+        0.639999985694885,
+        0.689999997615814,
+        0.639999985694885
+      ]
+    },
+    {
+      "aabb_position": [
+        -1.625,
+        0.0,
+        -0.725391507148743
+      ],
+      "aabb_size": [
+        3.25,
+        2.67999982833862,
+        1.45078301429749
+      ],
+      "contract": "3.25 x 2.68 x 1.451 including roof ribs; one open timber market facade bay; 3-cell pitch with eave overhang; modest lifted eave, paper windows and counter; no interior/collision",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+      "file": "models/market_bay.glb",
+      "id": "market_bay",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "source_wall",
+          "roughness": 1.0,
+          "texture_size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "color": [
+            0.620000004768372,
+            0.600000023841858,
+            0.540000021457672,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_plaster",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.850000023841858,
+            0.800000011920929,
+            0.730000019073486,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_wood",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.810000002384186,
+            0.759999990463257,
+            0.649999976158142,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_paper",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.870000004768372,
+            0.910000026226044,
+            0.970000028610229,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_roof",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.949999988079071,
+            0.970000028610229,
+            1.0,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_roof_rib",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        }
+      ],
+      "sha256": "40176b4e92849bb6e825c134cf7e641ad05512422ee32c2123bdafaca743de69",
+      "triangles": 452,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -1.625,
+        0.0,
+        -0.725391507148743
+      ],
+      "vertex_aabb_size": [
+        3.25,
+        2.67999982833862,
+        1.45078301429749
+      ],
+      "atlas": "textures/atlas_layout.json"
+    },
+    {
+      "aabb_position": [
+        -0.5,
+        0.0,
+        -0.0500000007450581
+      ],
+      "aabb_size": [
+        1.0,
+        1.79999995231628,
+        0.140000000596046
+      ],
+      "contract": "1 x 1.8 x 0.14; +Z front; base center; paper-and-timber sliding panel; no rail/animation/collision",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+      "file": "models/paper_sliding_door.glb",
+      "id": "paper_sliding_door",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.810000002384186,
+            0.759999990463257,
+            0.649999976158142,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_paper",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.850000023841858,
+            0.800000011920929,
+            0.730000019073486,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_wood",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.119999997317791,
+            0.109999999403954,
+            0.100000001490116,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "matte_iron",
+          "roughness": 0.899999976158142,
+          "texture_size": []
+        }
+      ],
+      "sha256": "38458904e8da1f4f82e57751cbcb416a1e08bee5b8b1fffb69bb1ec90aa530e2",
+      "triangles": 192,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.5,
+        0.0,
+        -0.0500000007450581
+      ],
+      "vertex_aabb_size": [
+        1.0,
+        1.79999995231628,
+        0.140000000596046
+      ],
+      "atlas": "textures/atlas_layout.json"
+    },
+    {
+      "aabb_position": [
+        -0.385000020265579,
+        0.0,
+        -0.385000020265579
+      ],
+      "aabb_size": [
+        0.770000040531158,
+        0.699999988079071,
+        0.770000040531158
+      ],
+      "contract": "0.77 x 0.7 x 0.77; dark timber crate with broad battens; base center; no collision",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+      "file": "models/wood_crate.glb",
+      "id": "wood_crate",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.850000023841858,
+            0.800000011920929,
+            0.730000019073486,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_wood",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        }
+      ],
+      "sha256": "bb5bb755228488ce874e69b65cdd3cc86f2d52b891f0ed19b1124620f706c10f",
+      "triangles": 108,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.385000020265579,
+        0.0,
+        -0.385000020265579
+      ],
+      "vertex_aabb_size": [
+        0.770000040531158,
+        0.699999988079071,
+        0.770000040531158
+      ],
+      "atlas": "textures/atlas_layout.json"
+    },
+    {
+      "aabb_position": [
+        -0.340000003576279,
+        0.0,
+        -0.340000003576279
+      ],
+      "aabb_size": [
+        0.680000007152557,
+        0.720000028610229,
+        0.680000007152557
+      ],
+      "contract": "0.68 x 0.72 x 0.68; broad ceramic body and open rim; matte constant-color material; no liquid/collision",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "procedural candidate with matte materials; existing stone textures only where present",
+      "file": "models/onggi_jar.glb",
+      "id": "onggi_jar",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.150000005960464,
+            0.0899999961256981,
+            0.0549999885261059,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "matte_onggi",
+          "roughness": 0.920000016689301,
+          "texture_size": []
+        }
+      ],
+      "sha256": "52db80e4b80dacaa36b89367077f5914f3af6286ca3b69d1f7c68c62b4033c1e",
+      "triangles": 288,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.340000003576279,
+        0.0,
+        -0.340000003576279
+      ],
+      "vertex_aabb_size": [
+        0.680000007152557,
+        0.720000028610229,
+        0.680000007152557
+      ]
+    },
+    {
+      "aabb_position": [
+        -0.189999997615814,
+        0.0,
+        -0.189999997615814
+      ],
+      "aabb_size": [
+        0.379999995231628,
+        0.629999995231628,
+        0.379999995231628
+      ],
+      "contract": "0.38 x 0.63 x 0.38; square timber-and-paper lantern; base center; light separate; no emissive baked albedo",
+      "cw_winding_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+      "file": "models/square_paper_lantern.glb",
+      "id": "square_paper_lantern",
+      "is_game_intake": false,
+      "materials": [
+        {
+          "color": [
+            0.810000002384186,
+            0.759999990463257,
+            0.649999976158142,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_paper",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.850000023841858,
+            0.800000011920929,
+            0.730000019073486,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "h1_atlas_wood",
+          "roughness": 1.0,
+          "texture_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "color": [
+            0.119999997317791,
+            0.109999999403954,
+            0.100000001490116,
+            1.0
+          ],
+          "cull_mode": 0,
+          "name": "matte_iron",
+          "roughness": 0.899999976158142,
+          "texture_size": []
+        }
+      ],
+      "sha256": "667ad6b39b8fd4ecd5db9185896f65bb86525b85819376e6bccb458eeada218a",
+      "triangles": 96,
+      "under_500_triangles": true,
+      "vertex_aabb_position": [
+        -0.189999997615814,
+        0.0,
+        -0.189999997615814
+      ],
+      "vertex_aabb_size": [
+        0.379999995231628,
+        0.629999995231628,
+        0.379999995231628
+      ],
+      "atlas": "textures/atlas_layout.json"
+    }
+  ],
+  "sources": [
+    {
+      "file": "floor.glb",
+      "sha256": "c4b393d6964e80cc3c3f01b4f1cd68c42b4e226e0d3ff94c7c5cdba6f855e9e6"
+    },
+    {
+      "file": "wall.glb",
+      "sha256": "2ab7bd3248996eb0e59517f7e694fec566803cfc97e55b4c58c8381241b335a1"
+    },
+    {
+      "file": "stairs_up.glb",
+      "sha256": "4fcab9ee58d781cf7669ccda18ce63bcd373d32c9fd2588262d9815fd60937d5"
+    },
+    {
+      "file": "stairs_down.glb",
+      "sha256": "a1ca3bc8598e6cdd1361a5e1fb95bae2623f54a266749931d010b9e0c060dbcf"
+    },
+    {
+      "file": "floor_floor_tex_raw.png",
+      "sha256": "b787bc35da78e21794224fa7a8e991e6ceb5499624cc38a0252c9c163f6c2fab"
+    },
+    {
+      "file": "wall_wall_tex_raw.png",
+      "sha256": "d1d9685be41804be835ef1a815dbfb2866e65a651c68710d8fd20755a17a2148"
+    },
+    {
+      "file": "stairs_up_0.png",
+      "sha256": "e4e356aedb3aa339e4731371ba1023f47470dc8d50c9da04cf0ece9ad91bf575"
+    },
+    {
+      "file": "stairs_down_0.png",
+      "sha256": "8cfccfc10b850be3ef284617b8a7030beb970a948280af224c526ccf3d02b7b2"
+    }
+  ],
+  "unit": "1 unit = 1 tile",
+  "supplied_material_atlas": {
+    "texture": "res://textures/H1_matte_atlas.png",
+    "source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/23_material_atlas.png",
+    "source_sha256": "99bcf46f8c234308f8bf094f1165dc7a17516ec2ddcd9fceaaaa7668186727a3",
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "pixel_editing_performed": false,
+    "mapping": "UV0 scale/offset baked into mesh vertices; 0.005 normalized inset avoids quadrant borders; no cropped or resampled image",
+    "quadrants": {
+      "wood": "top-left",
+      "roof": "top-right",
+      "plaster": "bottom-left",
+      "hanji": "bottom-right"
+    },
+    "materials": {
+      "wood": {
+        "offset": [
+          0.005,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.85,
+          0.8,
+          0.73
+        ]
+      },
+      "dark_wood": {
+        "offset": [
+          0.005,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.37,
+          0.38,
+          0.4
+        ]
+      },
+      "roof": {
+        "offset": [
+          0.505,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.87,
+          0.91,
+          0.97
+        ]
+      },
+      "roof_rib": {
+        "offset": [
+          0.505,
+          0.005
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.95,
+          0.97,
+          1.0
+        ]
+      },
+      "plaster": {
+        "offset": [
+          0.005,
+          0.505
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.62,
+          0.6,
+          0.54
+        ]
+      },
+      "paper": {
+        "offset": [
+          0.505,
+          0.505
+        ],
+        "scale": [
+          0.49,
+          0.49
+        ],
+        "tint": [
+          0.81,
+          0.76,
+          0.65
+        ]
+      }
+    },
+    "limits": [
+      "1254 exceeds the nominal 1024 texture budget",
+      "Shared atlas candidate; no seamless or perfectly flat illumination guarantee",
+      "Onggi remains the existing matte solid material"
+    ]
+  }
+}

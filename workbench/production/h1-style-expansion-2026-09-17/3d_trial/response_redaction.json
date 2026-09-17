@@ -1,0 +1,198 @@
+{
+  "sanitized_at": "2026-09-16T23:52:24.013Z",
+  "scope": "Shareable production response copies only. Local raw execution responses retained in git-ignored tmp/h1_3d_trial/private_original_responses.",
+  "marker": "[REDACTED_TEMPORARY_DOWNLOAD_QUERY]",
+  "response_file_count": 24,
+  "changed_files": [
+    {
+      "file": "responses/doho_download_raw.json",
+      "temporary_query_occurrences": 1,
+      "original_sha256": "b90d27bde2d5f62852d46273abdd34d89f9786e13e4866f79f880418e5ed3f53",
+      "redacted_sha256": "1c1190ee9d6b0e26fe54459d050e2314587dd0bb4c6407a77f87f3ab7b959b7c"
+    },
+    {
+      "file": "responses/doho_download_rigged.json",
+      "temporary_query_occurrences": 17,
+      "original_sha256": "0049345b2e0cf823bec995916f339e2179ab5fbd70dc874cb5ca762f50a3b4e2",
+      "redacted_sha256": "2b4ba0d8358da54efba0fd4d5063ebd073564c33689f2329eb25c4b334026b9a"
+    },
+    {
+      "file": "responses/doho_rig_status_01.json",
+      "temporary_query_occurrences": 8,
+      "original_sha256": "29db1fd8e4557830cd35739987654430f0b7cbfabdc9b67ce024e9bcefb22ebc",
+      "redacted_sha256": "8943d7c11a022fb85b849a983257f48198b6607d622d1b217594c3add3319459"
+    },
+    {
+      "file": "responses/doho_status_retry_02.json",
+      "temporary_query_occurrences": 5,
+      "original_sha256": "1f533dd7702223d1036fd897cf67ec92147928a2363a87ef2df90b04e2b6f35e",
+      "redacted_sha256": "0c4f903c381d4d5d10b56ccdc25e25e7ddc92322fa166f449a9fd35c681060c6"
+    },
+    {
+      "file": "responses/merchant_download_raw.json",
+      "temporary_query_occurrences": 1,
+      "original_sha256": "5993e83d34caa3691c903c712cdcfa9b1a6b9247c96359882a38e1d734fb4f89",
+      "redacted_sha256": "06699342be5770c94ff3340df958ebd915e15b11e28d9bb66d20120ab61b297a"
+    },
+    {
+      "file": "responses/merchant_download_retexture.json",
+      "temporary_query_occurrences": 1,
+      "original_sha256": "1eb2d77eb35673971b060ce746fc03c431b8c1ddd09bdd40363d5c74cd03e71b",
+      "redacted_sha256": "cfceb6a9a2ff1f8fe93b6b52a5ef6dbbe5c69f90f10eb75616ef5537d5641205"
+    },
+    {
+      "file": "responses/merchant_download_rigged.json",
+      "temporary_query_occurrences": 17,
+      "original_sha256": "4ea9e9f5a64f9b7e5149821d778781c68cf0ee9f7a957ac24f749c7e3b655fe8",
+      "redacted_sha256": "c098ff6c72e71de3e32a6d0e13fa912f9c55964b1fb4b5baa1f946f466a1d7e6"
+    },
+    {
+      "file": "responses/merchant_retexture_status_01.json",
+      "temporary_query_occurrences": 5,
+      "original_sha256": "45349bf5c52abb02210f8e2e521b986f831bf0316ccccc9c97114aabc4db1b77",
+      "redacted_sha256": "cd70ebdd45a040431a4d7cf32d417b014e120c064880cab81eb53b4bb2154464"
+    },
+    {
+      "file": "responses/merchant_rig_status_01.json",
+      "temporary_query_occurrences": 8,
+      "original_sha256": "ec66498906b8172f4f3718afecdd1f72309a1fa8cf20a92f862bee0cc1bcc680",
+      "redacted_sha256": "75c54132e2a02c3ecba7001bd44ae34bf8ab69f1c786f69f598b663504ae3251"
+    },
+    {
+      "file": "responses/merchant_status_retry_01.json",
+      "temporary_query_occurrences": 5,
+      "original_sha256": "178deaded7888ebfcecc2681fbf5eadfa4f4b5906c4238350f666864b8d952ee",
+      "redacted_sha256": "e2a0bdf24d8bb039427bd844a737f197b06dacfe6100108f8194dbc559d6c86c"
+    }
+  ],
+  "audit": {
+    "signed_query_files": 0,
+    "bearer_value_files": 0,
+    "api_key_value_files": 0,
+    "data_uri_files": 0,
+    "findings": []
+  },
+  "response_hash_manifest": [
+    {
+      "file": "responses/balance_after_failures.json",
+      "sha256": "657bd6e0a9f68c688e12650c3ba918d56170c0c6b538eab30afb0cc1b1808c59",
+      "bytes": 488
+    },
+    {
+      "file": "responses/balance_after_rigging.json",
+      "sha256": "d0d8646fefcd6f241640d8ff34b595d860332d9621403d52dba86f29d9f77b91",
+      "bytes": 488
+    },
+    {
+      "file": "responses/balance_before.json",
+      "sha256": "bd8d827f72014aae39815d816c6486646b5ef3b03e456bf629c41f1dea147465",
+      "bytes": 488
+    },
+    {
+      "file": "responses/balance_final.json",
+      "sha256": "62c4f9739f166d3f54beda168ccba1efff3168d5712f93531b25f9b79efa59b9",
+      "bytes": 488
+    },
+    {
+      "file": "responses/doho_download_raw.json",
+      "sha256": "1c1190ee9d6b0e26fe54459d050e2314587dd0bb4c6407a77f87f3ab7b959b7c",
+      "bytes": 1491
+    },
+    {
+      "file": "responses/doho_download_rigged.json",
+      "sha256": "2b4ba0d8358da54efba0fd4d5063ebd073564c33689f2329eb25c4b334026b9a",
+      "bytes": 4301
+    },
+    {
+      "file": "responses/doho_generate.json",
+      "sha256": "165cba300a551977a6ff4d58c570a62e7461878acc02b54da90d11fa68631b69",
+      "bytes": 935
+    },
+    {
+      "file": "responses/doho_generate_retry.json",
+      "sha256": "e7f529cdab886b9dc60e4dc9eb4f26f142510f55b2e59be9d933c27c061117f0",
+      "bytes": 935
+    },
+    {
+      "file": "responses/doho_rig.json",
+      "sha256": "b1659473eada9faaaf5d22a8e7414bb3878300f193abdfd668a5d5d62c698281",
+      "bytes": 885
+    },
+    {
+      "file": "responses/doho_rig_status_01.json",
+      "sha256": "8943d7c11a022fb85b849a983257f48198b6607d622d1b217594c3add3319459",
+      "bytes": 2578
+    },
+    {
+      "file": "responses/doho_status_01.json",
+      "sha256": "e905b24e811ae8ef7b476dc1ad02fd7db6d0febc77bc95b2c4b783e9cc962420",
+      "bytes": 1888
+    },
+    {
+      "file": "responses/doho_status_retry_01.json",
+      "sha256": "f743e79d6ec66c180be38195e1aec41118ce20c384959d25325c0f6b69ab0877",
+      "bytes": 1663
+    },
+    {
+      "file": "responses/doho_status_retry_02.json",
+      "sha256": "0c4f903c381d4d5d10b56ccdc25e25e7ddc92322fa166f449a9fd35c681060c6",
+      "bytes": 2427
+    },
+    {
+      "file": "responses/merchant_download_raw.json",
+      "sha256": "06699342be5770c94ff3340df958ebd915e15b11e28d9bb66d20120ab61b297a",
+      "bytes": 1507
+    },
+    {
+      "file": "responses/merchant_download_retexture.json",
+      "sha256": "cfceb6a9a2ff1f8fe93b6b52a5ef6dbbe5c69f90f10eb75616ef5537d5641205",
+      "bytes": 1559
+    },
+    {
+      "file": "responses/merchant_download_rigged.json",
+      "sha256": "c098ff6c72e71de3e32a6d0e13fa912f9c55964b1fb4b5baa1f946f466a1d7e6",
+      "bytes": 4301
+    },
+    {
+      "file": "responses/merchant_generate.json",
+      "sha256": "dad7ed3ad7092bac34f75c824f053abbf85f5e2fdd228fdd9e605e9255ce7ec3",
+      "bytes": 935
+    },
+    {
+      "file": "responses/merchant_generate_retry.json",
+      "sha256": "c0ec0dade384b6e6659c2bf06c7e483eacfcae15bb3885ad6901507ffc5c99d4",
+      "bytes": 935
+    },
+    {
+      "file": "responses/merchant_retexture_status_01.json",
+      "sha256": "cd70ebdd45a040431a4d7cf32d417b014e120c064880cab81eb53b4bb2154464",
+      "bytes": 2539
+    },
+    {
+      "file": "responses/merchant_retexture_text.json",
+      "sha256": "e6e141830cb7bfffc363289fbeda850231ad9a0ca1be7d45d57e109d22807d6f",
+      "bytes": 895
+    },
+    {
+      "file": "responses/merchant_rig.json",
+      "sha256": "fceadf4f0d831966dcd80ea86676128bcc060b04a48184e0ff052ddd1c56bb25",
+      "bytes": 885
+    },
+    {
+      "file": "responses/merchant_rig_status_01.json",
+      "sha256": "75c54132e2a02c3ecba7001bd44ae34bf8ab69f1c786f69f598b663504ae3251",
+      "bytes": 2578
+    },
+    {
+      "file": "responses/merchant_status_01.json",
+      "sha256": "a78dc7c5f90126844a5b70fff7e7c99dbae00aad045e308071e49fbebc45a7ad",
+      "bytes": 1888
+    },
+    {
+      "file": "responses/merchant_status_retry_01.json",
+      "sha256": "e2a0bdf24d8bb039427bd844a737f197b06dacfe6100108f8194dbc559d6c86c",
+      "bytes": 2427
+    }
+  ],
+  "source_art_and_game_fingerprint_checks": "Separate checks; response redaction intentionally changes response hashes only."
+}

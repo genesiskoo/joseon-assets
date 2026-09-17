@@ -1,0 +1,64 @@
+{
+	"aabb_position": [
+		-0.5,
+		0.0,
+		-0.5
+	],
+	"aabb_size": [
+		1.0,
+		2.0,
+		1.0
+	],
+	"contract": "1 x 2 x 1 outer corner; solid interior cell; 0.12u chamfer only on exposed +X/+Z corner",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "procedural candidate with matte materials; existing stone textures only where present",
+	"file": "models/wall_corner.glb",
+	"id": "wall_corner",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "source_wall",
+			"roughness": 1.0,
+			"texture_size": [
+				1024,
+				1024
+			]
+		},
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "source_floor",
+			"roughness": 1.0,
+			"texture_size": [
+				1024,
+				1024
+			]
+		}
+	],
+	"sha256": "f090ed2530fbcbd0c3f077a8794b5cace38523449bc1d2986dea4335229f8e3c",
+	"triangles": 26,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.5,
+		0.0,
+		-0.5
+	],
+	"vertex_aabb_size": [
+		1.0,
+		2.0,
+		1.0
+	]
+}

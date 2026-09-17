@@ -1,0 +1,28 @@
+{
+  "captured_at": "2026-09-16T22:38:28.909Z",
+  "operation": "tools/call",
+  "tool": "meshy_multi_image_to_3d",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"task_id\": \"01a0ac5f-0684-77fa-95b0-a2399bc3e6a7\",\n  \"status\": \"PENDING\",\n  \"message\": \"Multi-image 3D generation task created successfully. Task ID: 01a0ac5f-0684-77fa-95b0-a2399bc3e6a7\",\n  \"estimated_time\": \"2-3 minutes\"\n}"
+      }
+    ],
+    "structuredContent": {
+      "task_id": "01a0ac5f-0684-77fa-95b0-a2399bc3e6a7",
+      "status": "PENDING",
+      "message": "Multi-image 3D generation task created successfully. Task ID: 01a0ac5f-0684-77fa-95b0-a2399bc3e6a7",
+      "estimated_time": "2-3 minutes"
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

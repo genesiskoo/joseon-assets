@@ -1,0 +1,346 @@
+{
+  "generated_utc": "2026-09-16T23:59:46.261664+00:00",
+  "status": "CANDIDATE_REVIEW_READY_NOT_GAME_INTAKE",
+  "candidate_count": 18,
+  "environment_count": 14,
+  "separate_prop_count": 4,
+  "actual_godot_capture_count": 23,
+  "checks": {
+    "source_assets_unchanged": true,
+    "all_glb_self_contained": true,
+    "all_at_most_500_triangles": true,
+    "winding_normal_disagreements": 0,
+    "degenerate_triangles": 0,
+    "paper_vertex_z_thickness": 0.0,
+    "paper_all_materials_double_sided": true,
+    "final_build_error_count": 0,
+    "final_render_error_count": 0
+  },
+  "camera": {
+    "auxiliary_props_closeup_ortho": 2.2,
+    "auxiliary_socket_closeup_ortho": 3.5,
+    "ortho_size": 11.0,
+    "pitch": 35.264,
+    "viewport": [
+      1280,
+      720
+    ],
+    "yaw": 45.0
+  },
+  "tile_seams": {
+    "basis": "GLB AABB exact 1x1 floor/1x2x1 wall; positions at 1u spacing; integer corner cells; doorway floor included",
+    "floor_contact_gap_units": 0.0,
+    "texture_seam_review": "See repeated actual-render floor/wall; source image periodic patterns retained",
+    "wall_contact_gap_units": 0.0
+  },
+  "occlusion": {
+    "baseline_pixels": 2729,
+    "cutaway_pixels": 2075,
+    "cutaway_visible_ratio": 0.760351777207768,
+    "diagnostic_only": true,
+    "opaque_pixels": 1328,
+    "opaque_visible_ratio": 0.486625137412972,
+    "position": [
+      2.29999995231628,
+      0.0,
+      2.29999995231628
+    ],
+    "proxy_height": 1.7,
+    "shader": "Exact copied world/shaders/wall_cutaway.gdshader; uniforms radius=2.4 alpha=0.3; isolated MeshInstance test, not live DungeonBuilder"
+  },
+  "material_atlas": {
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "local": "textures/H1_matte_atlas.png",
+    "not_1k_budget_pass": true,
+    "not_guaranteed_seamless_or_unlit": true,
+    "onggi": "unchanged matte solid color",
+    "renderer_filter": "Runtime GLTFDocument atlas textures receive standard mipmaps and anisotropic sampling; PNG base pixels unchanged",
+    "sha256": "99bcf46f8c234308f8bf094f1165dc7a17516ec2ddcd9fceaaaa7668186727a3",
+    "source": "../23_material_atlas.png",
+    "source_png_pixels_modified": false,
+    "uv_mapping": "UV0 quadrant transforms baked into candidate vertices"
+  },
+  "material_comparison": [
+    {
+      "after": "captures/01b_town_catalog.png",
+      "before": "captures/12_town_catalog_flat_control.png"
+    },
+    {
+      "after": "captures/02_town_assembly.png",
+      "before": "captures/13_town_assembly_flat_control.png"
+    },
+    {
+      "after": "captures/07_props_catalog.png",
+      "before": "captures/14_props_catalog_flat_control.png"
+    }
+  ],
+  "sheath_fit": {
+    "blade_length": 0.74,
+    "blade_thickness": 0.008,
+    "blade_width": 0.035,
+    "cavity_depth": 0.75,
+    "cavity_thickness": 0.016,
+    "cavity_width": 0.044,
+    "clearance_thickness_total": 0.008,
+    "clearance_width_total": 0.009,
+    "sheath_origin_in_sword_local": [
+      0,
+      0.06,
+      0
+    ],
+    "tip_clearance": 0.01
+  },
+  "socket": {
+    "bone": "RightHand",
+    "caveat": "Right thumb selection=0 in helper report; fist geometry and selected frames remain visual candidates. Capsule clearance is not exact skinned mesh collision or full body/sleeve contact approval.",
+    "fist_geometry_applied": true,
+    "hand_contact_visual_approved": false,
+    "main_modeldef_modified": false,
+    "measurement": "reference_actor/H1_doho_fist_fist.json; h1_active_guides rig_fix.py --fist=both --palm=down candidate; unmodified tools/weapon_socket.gd exact transform inversion",
+    "measurement_sha256": "2bef5051a2fc0f7537ed89cfd366e7480cf0428e69f2521123413362f4b12961",
+    "model": "res://reference_actor/H1_doho_preserved.glb",
+    "position": [
+      0.0053,
+      0.0703,
+      0.026
+    ],
+    "rotation_degrees": [
+      1.8,
+      -174.82,
+      97.77
+    ],
+    "samples": [
+      {
+        "action": "idle",
+        "blade_tip_above_ground": true,
+        "clip": "idle",
+        "forearm_blade_angle_deg": 119.017658212116,
+        "grip": [
+          -0.112571999430656,
+          0.893732786178589,
+          0.616535782814026
+        ],
+        "grip_to_tip_length": 0.800000131130219,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.12,
+        "tip": [
+          0.24778987467289,
+          1.59815895557404,
+          0.734532475471497
+        ],
+        "torso_axis_min_distance": 0.392492324113846,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "idle",
+        "blade_tip_above_ground": true,
+        "clip": "idle",
+        "forearm_blade_angle_deg": 110.453215709946,
+        "grip": [
+          -0.174531236290932,
+          0.968426167964935,
+          0.593959450721741
+        ],
+        "grip_to_tip_length": 0.799999952316284,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.45,
+        "tip": [
+          0.232064083218575,
+          1.63417911529541,
+          0.771309971809387
+        ],
+        "torso_axis_min_distance": 0.402532041072845,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "idle",
+        "blade_tip_above_ground": true,
+        "clip": "idle",
+        "forearm_blade_angle_deg": 121.874548757014,
+        "grip": [
+          -0.136046051979065,
+          0.929143607616425,
+          0.626032471656799
+        ],
+        "grip_to_tip_length": 0.799999892711639,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.78,
+        "tip": [
+          0.200946092605591,
+          1.65452814102173,
+          0.641949653625488
+        ],
+        "torso_axis_min_distance": 0.363132238388062,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "walk",
+        "blade_tip_above_ground": true,
+        "clip": "walk",
+        "forearm_blade_angle_deg": 86.912217414688,
+        "grip": [
+          -0.127884790301323,
+          0.900130689144135,
+          0.522113084793091
+        ],
+        "grip_to_tip_length": 0.800000071525574,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.12,
+        "tip": [
+          0.666204750537872,
+          0.917908728122711,
+          0.617537558078766
+        ],
+        "torso_axis_min_distance": 0.314937919378281,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "walk",
+        "blade_tip_above_ground": true,
+        "clip": "walk",
+        "forearm_blade_angle_deg": 103.390895730801,
+        "grip": [
+          -0.128447160124779,
+          0.845194876194,
+          0.511661291122437
+        ],
+        "grip_to_tip_length": 0.800000131130219,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.45,
+        "tip": [
+          0.670177936553955,
+          0.844664990901947,
+          0.46478059887886
+        ],
+        "torso_axis_min_distance": 0.286591798067093,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "walk",
+        "blade_tip_above_ground": true,
+        "clip": "walk",
+        "forearm_blade_angle_deg": 85.9117176446862,
+        "grip": [
+          -0.311429917812347,
+          0.869235575199127,
+          0.186826899647713
+        ],
+        "grip_to_tip_length": 0.800000071525574,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.78,
+        "tip": [
+          0.24846613407135,
+          0.391301780939102,
+          0.500029385089874
+        ],
+        "torso_axis_min_distance": 0.244851410388947,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "attack",
+        "blade_tip_above_ground": true,
+        "clip": "attack",
+        "forearm_blade_angle_deg": 87.1689027538862,
+        "grip": [
+          -0.496268302202225,
+          0.963028907775879,
+          0.0830840915441513
+        ],
+        "grip_to_tip_length": 0.800000131130219,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.12,
+        "tip": [
+          -0.751442551612854,
+          1.36214029788971,
+          0.727751791477203
+        ],
+        "torso_axis_min_distance": 0.489232778549194,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "attack",
+        "blade_tip_above_ground": true,
+        "clip": "attack",
+        "forearm_blade_angle_deg": 52.1621820121441,
+        "grip": [
+          0.391815215349197,
+          1.09385740756989,
+          -0.0441297106444836
+        ],
+        "grip_to_tip_length": 0.800000131130219,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.45,
+        "tip": [
+          0.374346613883972,
+          1.72748672962189,
+          -0.532196164131165
+        ],
+        "torso_axis_min_distance": 0.482043117284775,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      },
+      {
+        "action": "attack",
+        "blade_tip_above_ground": true,
+        "clip": "attack",
+        "forearm_blade_angle_deg": 97.4864704008916,
+        "grip": [
+          -0.149513974785805,
+          0.958082556724548,
+          0.533009827136993
+        ],
+        "grip_to_tip_length": 0.800000190734863,
+        "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+        "phase": 0.78,
+        "tip": [
+          0.526840806007385,
+          1.33907806873322,
+          0.33965277671814
+        ],
+        "torso_axis_min_distance": 0.257935255765915,
+        "torso_proxy_clear": true,
+        "torso_proxy_radius": 0.18
+      }
+    ],
+    "sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749",
+    "source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/H1_doho_preserved.glb",
+    "weapon_socket_roundtrip_angle_deg": 0.0,
+    "weapon_socket_roundtrip_position_m": 0.0,
+    "visual_sample_review": {
+      "reviewed_images": 9,
+      "model_sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749",
+      "finding": "H1 socket follows the fist candidate; attack samples show blade extending away from hand/body. Idle blade overlaps forearm in projection; walk 78% hides blade behind garment/body, so exact skin clearance is unresolved.",
+      "finger_contact_final_approval": false,
+      "full_clip_collision_test_performed": false,
+      "exact_skinned_mesh_collision_test_performed": false
+    }
+  },
+  "limitations": [
+    "미승인 후보 묶음. 프로덕션 게임 반입, 충돌, 길찾기, 게임플레이, 실제 DungeonBuilder 배치 검증은 수행하지 않았다.",
+    "마을·곤봉·검집에 공급받은 TEX01 재질을 추가한 후보이며, 옹기·종이부적 등은 무광 단색을 유지한다. H1 원화 수준의 표면 완성본으로 승인되지 않았다.",
+    "기존 돌 텍스처의 규칙적인 반복 무늬를 보존했다. 기하 접합 간격 0이 시각적 텍스처 무봉제를 보증하지 않는다.",
+    "계단 2종은 기존 2048² 텍스처를 유지한다. 모서리·기둥은 각각 1024² 텍스처 2장 및 2재질을 사용하여 단일 1K 타일 재질 목표의 예외다.",
+    "TEX01 공유 아틀라스는 실제 1254×1254로 1K 목표를 넘는다. 기와에 얕은 명암이 포함되어 완전 평광·seamless를 보증하지 않는다. 원본 PNG를 편집하지 않고 UV로만 4분면을 선택했다.",
+    "stairs_down은 기존 쐐기 형상이다. 실제 바닥 개구부나 층 이동 기능이 없다.",
+    "문틀은 3칸 조립물, 상점은 3칸 배치 간격의 정면 한 칸이다. 상점 총폭 3.25u는 처마 돌출을 포함한다. 반복 처마 연결부는 지붕 설계 확정 시 추가 검수한다.",
+    "화로 불·등불 조명은 예제 씬 효과로 분리했다. GLB에는 화염, 빛, 콜리전, 문 애니메이션이 포함되지 않는다.",
+    "손 소켓 계산과 9개 포즈 표본은 손가락 접촉·소매 간섭·전체 공격 클립의 최종 승인이 아니다. 실제 손아귀 시각 상태는 h1_socket_correction.json을 따른다."
+  ],
+  "visual_review": {
+    "environment": "Actual exported GLBs inspected in neutral catalog and copied dark lighting. Integer floor/wall joins meet; source periodic texture repetition remains visible.",
+    "town": "TEX01 distinguishes timber, roof tiles, plaster and hanji in neutral catalog. Copied dark lights keep roof dark. Onggi remains matte solid color. Final H1 surface approval is pending.",
+    "props": "Sword grip-origin rotations and front/back talisman viewed; handles and scabbard visibly distinguishable in auxiliary closeup.",
+    "socket": "See dedicated hand/socket status and sampled renders. No production ModelDef edited."
+  },
+  "raw_logs": "*_stdout.log and *_stderr.log retain raw engine output; socket_probe_engine.log and build_initial_raw.log retain recovered initial failures."
+}

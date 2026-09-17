@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-09-16T23:10:37.772Z",
+  "operation": "tools/call",
+  "tool": "meshy_check_balance",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"balance\": 2543\n}"
+      }
+    ],
+    "structuredContent": {
+      "balance": 2543
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

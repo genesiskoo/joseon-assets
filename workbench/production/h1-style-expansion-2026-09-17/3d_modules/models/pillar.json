@@ -1,0 +1,64 @@
+{
+	"aabb_position": [
+		-0.430000007152557,
+		0.0,
+		-0.430000007152557
+	],
+	"aabb_size": [
+		0.860000014305115,
+		2.29999995231628,
+		0.860000014305115
+	],
+	"contract": "0.86 x 2.3 x 0.86; 1-cell freestanding pillar; octagonal broad chamfers; no collision",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "procedural candidate with matte materials; existing stone textures only where present",
+	"file": "models/pillar.glb",
+	"id": "pillar",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "source_wall",
+			"roughness": 1.0,
+			"texture_size": [
+				1024,
+				1024
+			]
+		},
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "source_floor",
+			"roughness": 1.0,
+			"texture_size": [
+				1024,
+				1024
+			]
+		}
+	],
+	"sha256": "f706c8583e5c343c45f085c77b18abb0fccbed93ef9f7f89cc193b0124893cb5",
+	"triangles": 68,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.430000007152557,
+		0.0,
+		-0.430000007152557
+	],
+	"vertex_aabb_size": [
+		0.860000014305115,
+		2.29999995231628,
+		0.860000014305115
+	]
+}

@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-17",
+  "status": "Reviewable H1 art production; final game intake incomplete",
+  "latest_images_including_material": 23,
+  "superseded_images": 6,
+  "canonical_glb_candidates": [
+    {
+      "file": "3d_modules/models/floor.glb",
+      "sha256": "90a56695aac08d446cbabceaaf93f4593c57e05185d64288deb03860dd8130e2",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/wall_straight.glb",
+      "sha256": "f5ff141b8dd3d7fb90ee8c6e9c01845fd9247b39719170864ad7b1ea9a746d2c",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/stairs_up.glb",
+      "sha256": "bf2718df807bee6eb9f1add5a502890eca4ba1d11980a24bde7216055ac4327a",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/stairs_down.glb",
+      "sha256": "2f367c5c57e5ea7294a9bab364a8591fee9cfc11cde4964145150456a8a5f759",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/wall_corner.glb",
+      "sha256": "f090ed2530fbcbd0c3f077a8794b5cace38523449bc1d2986dea4335229f8e3c",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/door_frame.glb",
+      "sha256": "f62550f098634bd4db0d694174162082885888a5c3b861a0452025c182a850bd",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/seal_door.glb",
+      "sha256": "5e27cf71b3b5f03dcbed55a5cf90821bd4ddd091b1a80a43487b79aaba128bb0",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/pillar.glb",
+      "sha256": "f706c8583e5c343c45f085c77b18abb0fccbed93ef9f7f89cc193b0124893cb5",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/brazier.glb",
+      "sha256": "b113591491a77b7323a8de7f271c2b0b373b30b4134bf913c462ee84074fa5a7",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/market_bay.glb",
+      "sha256": "40176b4e92849bb6e825c134cf7e641ad05512422ee32c2123bdafaca743de69",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/paper_sliding_door.glb",
+      "sha256": "38458904e8da1f4f82e57751cbcb416a1e08bee5b8b1fffb69bb1ec90aa530e2",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/wood_crate.glb",
+      "sha256": "bb5bb755228488ce874e69b65cdd3cc86f2d52b891f0ed19b1124620f706c10f",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/onggi_jar.glb",
+      "sha256": "52db80e4b80dacaa36b89367077f5914f3af6286ca3b69d1f7c68c62b4033c1e",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/models/square_paper_lantern.glb",
+      "sha256": "667ad6b39b8fd4ecd5db9185896f65bb86525b85819376e6bccb458eeada218a",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/props/doho_sword.glb",
+      "sha256": "71dc18da3ce310197a630356dd13c110d4112952359e7af71b14e26309d7c33d",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/props/doho_scabbard.glb",
+      "sha256": "e801510cc887acdee88ca91b2b58d6c0342eca2add6d68e3b49a2ec36c1b94e2",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/props/bandit_club.glb",
+      "sha256": "75bc7ac8917aa9923f4884b1d55e6e586741a55460bcdbc3f33f78ad2a637dd3",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_modules/props/paper_talisman.glb",
+      "sha256": "871cb174d3363244b563b798ec58edff5970bf00aebf54c58b27d51fe90532c7",
+      "manifest_hash_matches": true
+    },
+    {
+      "file": "3d_trial/H1_doho.glb",
+      "sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749"
+    },
+    {
+      "file": "3d_trial/H1_merchant.glb",
+      "sha256": "05639ad31b24bac65e8e72764359e4c6a9728228fcf064d5ddb47b6965a51a45"
+    }
+  ],
+  "canonical_glb_count": 20,
+  "enemy_glb_count": 0,
+  "enemy_meshy_credits_used": 0,
+  "actor_trial_meshy_credits_used": 80,
+  "enemy_transfer": "Awaiting explicit user approval after automatic approval review rejection: four concept images to Meshy, four generations, up to 120 credits",
+  "original_png_hashes_match": true,
+  "html_missing_links": 0,
+  "game_intake_performed": false,
+  "remaining_qa": [
+    "Hand-tip shape and cloth overlap",
+    "Merchant identity/height and triangle budget",
+    "Actor and inherited stair textures 2K and material atlas 1254-square exceed 1K contract",
+    "Environment seamless tiling, game collision, navigation and occlusion integration",
+    "Doho hit/die and enemy generation/rigging/animation"
+  ]
+}
