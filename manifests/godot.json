@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "producer": "joseon-assets",
+  "consumer": "joseon-hunters",
+  "target_project": "../joseon-hunters",
+  "lock_file": "manifests/godot.lock.json",
+  "assets": [
+    {
+      "id": "cutscene.title.trio",
+      "status": "published",
+      "source": "concept/keyart_trio_v2.png",
+      "target": "assets/cutscenes/stills/title.png",
+      "kind": "cutscene",
+      "generator": "gpt-image-2",
+      "director": "openai-codex",
+      "constraints": {
+        "format": "png",
+        "width": 1672,
+        "height": 941,
+        "alpha": false
+      }
+    },
+    {
+      "id": "map.prototype.field-map2",
+      "status": "published",
+      "source": "maps/map2.png",
+      "target": "assets/maps/_temp/map2.png",
+      "kind": "map",
+      "generator": "unknown",
+      "director": "legacy",
+      "constraints": {
+        "format": "png",
+        "width": 1672,
+        "height": 941,
+        "alpha": false
+      }
+    }
+  ]
+}

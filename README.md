@@ -218,6 +218,8 @@ archive/
 - 이미지 생성 조명 프롬프트 가이드 → `docs/image-generation-lighting-prompt-guide.md`
 - 에셋 정리 로그 → `docs/ASSET_CLEANUP_LOG_2026-06-07.md`
 - 정리 manifest → `catalog/`
+- PixelLab MCP 실험 및 v3 기본 정책 (Codex 작성) → `docs/pixellab_pipeline_findings.md`
+- Godot 에셋 배포 파이프라인 (Codex 작성) → `docs/asset_publish_pipeline.md`
 - 캐릭터 캔버스·Layer·컬러 규격 → `joseon/docs/04_ART_STYLE_GUIDE.md`
 - 아트 결정 락 (D-007, D-022, D-030, D-034) → `joseon/docs/DECISIONS.md`
 - 컨셉아트 발주 리스트 → `joseon/docs/design/concept_art_list.md`
