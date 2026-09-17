@@ -1,0 +1,18 @@
+﻿{
+    "asset_id":  "terrain_earth_packed_a_256",
+    "source":  "processed/terrain/base/terrain_earth_packed_a_256.png",
+    "source_generator":  "rd_plus__textured",
+    "processing":  "local luminance remap; optional 90-degree rotation",
+    "size":  {
+                 "height":  256,
+                 "width":  256
+             },
+    "tile_x":  true,
+    "tile_y":  true,
+    "low_color":  "#322A23",
+    "high_color":  "#675343",
+    "godot":  {
+                  "texture_repeat":  true,
+                  "z_index":  -100
+              }
+}

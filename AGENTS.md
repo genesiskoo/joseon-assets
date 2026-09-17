@@ -7,8 +7,12 @@
 - PixelLab 상세 사용법과 전체 도구 필드: [`docs/pixellab-mcp-guide.md`](docs/pixellab-mcp-guide.md)
 - PixelLab 라이브 JSON Schema 스냅샷: [`docs/pixellab-mcp-tools-schema-2026-06-07.json`](docs/pixellab-mcp-tools-schema-2026-06-07.json)
 - Retro Diffusion 상세 API 예제: [`tools/rd-api-examples/README.md`](tools/rd-api-examples/README.md)
+- GPT Image 컨셉아트 스타일·프롬프트 세트: [`art-direction/README.md`](art-direction/README.md)
+- 반사광, 림라이트, 블룸 억제 프롬프트: [`docs/image-generation-lighting-prompt-guide.md`](docs/image-generation-lighting-prompt-guide.md)
 
 PixelLab 작업 전에는 상세 가이드의 **저장소 v3 정책**, **도구 범주**, **검증 이력**을 먼저 확인한다. 필드가 불확실하면 이름을 추정하지 말고 JSON Schema 스냅샷 또는 새 `tools/list`를 확인한다.
+
+GPT Image 계열로 컨셉아트, 키아트, 캐릭터, 배경을 만들 때는 `art-direction/STYLE_BIBLE.md`와 `art-direction/prompts/`의 템플릿을 먼저 사용한다. `character-ref`, `style-ref`, `environment-ref`는 API 필드명이 아니라 프로젝트 내부 역할 구분이며, 실제 호출에서는 참조 이미지를 배열로 전달하고 프롬프트에 각 이미지 역할을 명시한다.
 
 ## PixelLab MCP
 

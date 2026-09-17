@@ -1,0 +1,79 @@
+# 2026-09-17: H1/D-072 is the active style. Entries referencing archive/art-history-2026-09-17 are historical identity/provenance references, not competing style anchors.
+# Joseon Hunters reference set registry.
+# `character_ref`, `style_ref`, `environment_ref` are project roles, not API field names.
+
+sets:
+  joseon_h1_d072:
+    approved: true
+    active: true
+    purpose: "H1 shared style; preserve each approved character identity."
+    style_refs:
+      - path: "sheets/approved-2026-09-17-h1/K2_H_doho_hero_options.png"
+        panel: "LEFT H1 ONLY"
+        role: "shared line, shape and matte shading anchor"
+    notes: "D-072; current outputs at workbench/production/h1-style-expansion-2026-09-17."
+
+  joseon_active_working_v1:
+    approved: false
+    active: false
+    purpose: "Working default set for starting concept art and key art generation."
+    style_refs:
+      - path: "workbench/probes/gpt-image2/style-tests-2026-06-07/joseon-hunter-16bit-action-rpg.png"
+        role: "primary game readability, dark Joseon palette, clear character-vs-monster staging"
+      - path: "workbench/probes/gpt-image2/style-tests-2026-06-07/joseon-hunter-minhwa-pixel-art.png"
+        role: "secondary folk-art texture, muted palette, pixel translation signal"
+      - path: "archive/art-history-2026-09-17/concept/keyart_trio_action.png"
+        role: "tertiary promotional drama and main party mood; do not copy particles or over-complex lighting"
+    character_refs:
+      - path: "sheets/doho/doho_ref_sheet.png"
+        character: "doho"
+      - path: "sheets/gwisae/gwisae_ref_sheet.png"
+        character: "gwisae"
+      - path: "sheets/cheongyeon/cheongyeon_ref_sheet.png"
+        character: "cheongyeon"
+    notes: "Historical set, superseded by H1/D-072; do not use as the current style default."
+
+  joseon_pixel_translation_v1:
+    approved: false
+    active: false
+    purpose: "Working set for assets that must translate cleanly into pixel art or in-game stills."
+    style_refs:
+      - path: "workbench/probes/gpt-image2/style-tests-2026-06-07/joseon-hunter-16bit-action-rpg.png"
+        role: "primary pixel readability and value grouping"
+      - path: "workbench/probes/gpt-image2/style-tests-2026-06-07/joseon-hunter-minhwa-pixel-art.png"
+        role: "secondary Korean folk-art motif and palette"
+    notes: "Historical pixel translation experiment; not the current H1/3D style default."
+
+  joseon_style_v1:
+    approved: false
+    purpose: "Initial style anchor candidates from current concept and GPT Image 2 probes."
+    style_refs:
+      - path: "archive/art-history-2026-09-17/concept/keyart_trio_action.png"
+        role: "overall key art tone and character staging"
+      - path: "workbench/probes/gpt-image2/style-tests-2026-06-07/joseon-hunter-minhwa-pixel-art.png"
+        role: "experimental palette and brush texture candidate"
+      - path: "workbench/probes/gpt-image2/style-tests-2026-06-07/joseon-hunter-16bit-action-rpg.png"
+        role: "game readability candidate"
+    notes: "Review and promote one to three anchors before using this as an approved locked set."
+
+  main_party_characters_v1:
+    approved: false
+    purpose: "Main party identity references for key art and character derivation."
+    character_refs:
+      - path: "sheets/doho/doho_ref_sheet.png"
+        character: "doho"
+      - path: "sheets/gwisae/gwisae_ref_sheet.png"
+        character: "gwisae"
+      - path: "sheets/cheongyeon/cheongyeon_ref_sheet.png"
+        character: "cheongyeon"
+    notes: "Use for identity only. Do not copy sheet layout into key art."
+
+  village_environment_v1:
+    approved: false
+    purpose: "Village and market environment direction candidates."
+    environment_refs:
+      - path: "workbench/probes/gpt-image2/map-tests-2026-06-07/village-riverside-market.png"
+        role: "market layout and material candidate"
+      - path: "workbench/probes/gpt-image2/map-tests-2026-06-07/village-mountain-fortress.png"
+        role: "mountain fortress layout candidate"
+    notes: "Promote after checking against current map direction."

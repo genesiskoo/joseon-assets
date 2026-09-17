@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+base doho_mixamo25_original_pbr_rigged.glb: 리그=mixamo 본 25, 트랙 경로 'Armature/Skeleton3D'
+  ✓ walk    ← mixamo_com (1.33s 제자리, 소스=mixamo, 트랙 26)
+  ✓ attack  ← mixamo_com (2.03s, 소스=mixamo, 트랙 26)
+retargeted GLB → C:/workspace/joseon/tmp/tripo_mixamo_compare/new_684a9cfb/mixamo_restored/doho_mixamo25_walk_attack_preview.glb (OK) 클립: attack, walk
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)

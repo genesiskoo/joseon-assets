@@ -1,0 +1,33 @@
+﻿{
+    "asset_id":  "path_main_cross_a",
+    "asset_type":  "ground_overlay",
+    "role":  "main road four-way junction",
+    "texture_path":  "res://maps/village_kits/motgol/processed/path_patches/path_main_cross_a.png",
+    "canvas_size":  [
+                        512,
+                        512
+                    ],
+    "branch_openings":  [
+                            "left",
+                            "right",
+                            "top",
+                            "bottom"
+                        ],
+    "z_index":  -90,
+    "y_sort_enabled":  false,
+    "collision_enabled":  false,
+    "rotation_allowed":  true,
+    "texture_filter":  "nearest",
+    "source_model":  "gpt-image-2",
+    "source_method":  "built-in image_gen, chroma-key removal, local matte color normalization",
+    "base_terrain_family":  "motgol normalized-base-v2",
+    "import_notes":  "Keep lossless. Place over BaseTerrain/SecondaryTerrain. Branch endpoints are alpha-faded; overlap connected pieces by about 24 px.",
+    "branch_edge_fade_px":  20,
+    "baked_alpha_scale":  0.9,
+    "recommended_overlap_px":  24,
+    "normalized_average_rgb":  [
+                                   63,
+                                   50,
+                                   38
+                               ]
+}

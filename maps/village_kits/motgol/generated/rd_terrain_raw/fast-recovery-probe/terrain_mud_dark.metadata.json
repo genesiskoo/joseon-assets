@@ -1,0 +1,17 @@
+﻿{
+    "asset_id":  "terrain_mud_dark",
+    "prompt":  "flat seamless top-down ground texture only, full-bleed edge-to-edge compact dark brown mud, shallow dull soil variation, matte low contrast, no puddles, no reflection, no stones, no scene, no frame, no border, no objects, no highlights",
+    "prompt_style":  "rd_fast__texture",
+    "width":  256,
+    "height":  256,
+    "num_images":  2,
+    "seed":  2026060981,
+    "tile_x":  true,
+    "tile_y":  true,
+    "input_palette":  "palettes/motgol-ground-palette.png",
+    "bypass_prompt_expansion":  true,
+    "balance_cost":  0.055,
+    "remaining_balance":  8.56,
+    "response_model":  "rd_fast",
+    "created_at":  1780984466
+}

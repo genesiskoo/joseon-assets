@@ -1,0 +1,18 @@
+﻿{
+    "asset_id":  "terrain_grass_dead_a_256",
+    "source":  "processed/terrain/base/terrain_earth_packed_a_256.png",
+    "version":  2,
+    "processing":  "low-contrast local luminance remap; optional 90-degree rotation",
+    "size":  {
+                 "height":  256,
+                 "width":  256
+             },
+    "tile_x":  true,
+    "tile_y":  true,
+    "low_color":  "#303529",
+    "high_color":  "#4A503C",
+    "godot":  {
+                  "texture_repeat":  true,
+                  "z_index":  -100
+              }
+}

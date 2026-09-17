@@ -283,3 +283,8 @@ runtime/          # 게임에서 직접 사용하는 확정 에셋
 - 타일셋과 애니메이션은 현재 단계에서 최종 생성물로 기대하지 않는다.
 - 생성 원본, 후처리본, 런타임 확정본을 분리해 관리한다.
 
+## 관련 프롬프트 가이드
+
+- 반사광, 림라이트, 블룸 억제:
+  [`image-generation-lighting-prompt-guide.md`](image-generation-lighting-prompt-guide.md)
+

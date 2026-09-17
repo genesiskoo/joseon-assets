@@ -21,6 +21,7 @@ joseon-assets/
 ├── 2026/            # 월별 생성 에셋 (날짜 기반 아카이브)
 ├── landing/         # 랜딩 페이지용 에셋
 ├── maps/            # 맵 이미지
+├── art-direction/   # 공통 스타일 바이블·프롬프트 템플릿·레퍼런스 세트
 ├── inbox/           # 새 에셋 단기 드롭존
 ├── workbench/       # 미승인 후보·프로브·테스트
 ├── catalog/         # 경로·해시·이동·중복 manifest
@@ -168,6 +169,23 @@ video/
 
 ---
 
+## art-direction/ — 스타일·프롬프트 세트
+
+GPT Image 계열로 컨셉아트, 캐릭터, 배경, 키아트를 만들 때 쓰는 공통 운영 세트.
+
+```
+art-direction/
+├── STYLE_BIBLE.md                 # 조선 다크판타지 공통 스타일 원칙
+├── anchors/                       # 앵커 운영 규칙, 원본 이미지는 manifest로 참조
+├── prompts/                       # 공통·캐릭터·배경·키아트·프롭 템플릿
+├── work-orders/                   # 실제 생성 작업 단위 프롬프트
+└── manifests/                     # 레퍼런스 세트와 생성 이력
+```
+
+`character-ref`, `style-ref`, `environment-ref`는 API 필드명이 아니라 이 저장소의 역할 구분이다. GPT Image 2에는 참조 이미지를 배열로 전달하고, 각 이미지의 역할은 프롬프트에서 명시한다.
+
+---
+
 ## archive/ — 보관
 
 ```
@@ -196,6 +214,8 @@ archive/
 ## 관련 문서
 
 - GPT Image 2 게임 에셋 활용 전략 (Codex 작성) → `docs/gpt-image2_asset_strategy.md`
+- 조선헌터스 아트 디렉션 세트 → `art-direction/README.md`
+- 이미지 생성 조명 프롬프트 가이드 → `docs/image-generation-lighting-prompt-guide.md`
 - 에셋 정리 로그 → `docs/ASSET_CLEANUP_LOG_2026-06-07.md`
 - 정리 manifest → `catalog/`
 - 캐릭터 캔버스·Layer·컬러 규격 → `joseon/docs/04_ART_STYLE_GUIDE.md`

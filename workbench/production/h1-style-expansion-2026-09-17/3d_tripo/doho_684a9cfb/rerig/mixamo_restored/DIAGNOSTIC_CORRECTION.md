@@ -1,0 +1,3 @@
+# Diagnostic correction
+
+Uniform clay renders at the exact walk50 and attack50 poses remove the conspicuous white triangular color marks. These images do not establish holes or weight-driven penetration at those spots. Earlier categorical labeling of white patches as garment penetration is retracted. The visible color contrast depends on materials/textures; whether it is painted albedo or exposed inner cloth is not resolved by two monochrome views. Broad faceted shading remains in attack50, indicating coarse geometry/normals. No weight, geometry, UV, or texture source was modified for this diagnostic.
