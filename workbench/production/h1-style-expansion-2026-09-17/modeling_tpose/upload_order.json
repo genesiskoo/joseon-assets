@@ -1,0 +1,98 @@
+{
+  "doho": {
+    "game_id": "doho",
+    "target_height": 1.7,
+    "meshy_images": [
+      "doho/01_front.png",
+      "doho/02_left.png",
+      "doho/03_back.png",
+      "doho/04_right.png"
+    ],
+    "tripo_slots": {
+      "front": "doho/01_front.png",
+      "left": "doho/02_left.png",
+      "back": "doho/03_back.png",
+      "right": "doho/04_right.png"
+    }
+  },
+  "merchant": {
+    "game_id": "merchant",
+    "target_height": 1.5,
+    "meshy_images": [
+      "merchant/01_front.png",
+      "merchant/02_left.png",
+      "merchant/03_back.png",
+      "merchant/04_right.png"
+    ],
+    "tripo_slots": {
+      "front": "merchant/01_front.png",
+      "left": "merchant/02_left.png",
+      "back": "merchant/03_back.png",
+      "right": "merchant/04_right.png"
+    }
+  },
+  "shaman": {
+    "game_id": "shaman",
+    "target_height": 1.5,
+    "meshy_images": [
+      "shaman/01_front.png",
+      "shaman/02_left.png",
+      "shaman/03_back.png",
+      "shaman/04_right.png"
+    ],
+    "tripo_slots": {
+      "front": "shaman/01_front.png",
+      "left": "shaman/02_left.png",
+      "back": "shaman/03_back.png",
+      "right": "shaman/04_right.png"
+    }
+  },
+  "elder": {
+    "game_id": "elder",
+    "target_height": 1.6,
+    "meshy_images": [
+      "elder/01_front.png",
+      "elder/02_left.png",
+      "elder/03_back.png",
+      "elder/04_right.png"
+    ],
+    "tripo_slots": {
+      "front": "elder/01_front.png",
+      "left": "elder/02_left.png",
+      "back": "elder/03_back.png",
+      "right": "elder/04_right.png"
+    }
+  },
+  "bandit": {
+    "game_id": "bandit",
+    "target_height": 1.5,
+    "meshy_images": [
+      "bandit/01_front.png",
+      "bandit/02_left.png",
+      "bandit/03_back.png",
+      "bandit/04_right.png"
+    ],
+    "tripo_slots": {
+      "front": "bandit/01_front.png",
+      "left": "bandit/02_left.png",
+      "back": "bandit/03_back.png",
+      "right": "bandit/04_right.png"
+    }
+  },
+  "talisman_master": {
+    "game_id": "talisman_master",
+    "target_height": 1.6,
+    "meshy_images": [
+      "talisman_master/01_front.png",
+      "talisman_master/02_left.png",
+      "talisman_master/03_back.png",
+      "talisman_master/04_right.png"
+    ],
+    "tripo_slots": {
+      "front": "talisman_master/01_front.png",
+      "left": "talisman_master/02_left.png",
+      "back": "talisman_master/03_back.png",
+      "right": "talisman_master/04_right.png"
+    }
+  }
+}
