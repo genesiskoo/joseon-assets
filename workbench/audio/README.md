@@ -1,6 +1,6 @@
 # workbench/audio — 효과음·BGM 원본 (보드 #34·#42, 오디오 사양 joseon/docs/design/audio.md)
 
-생성 = Comfy Cloud 파트너 노드 `elevenlabs/sound-generation`(ElevenLabs Sound Effects v2, MCP `partner_generate`/`submit_batch`). 별도 ElevenLabs 키 없음.
+생성 = 배치 1·2(#34): Comfy Cloud 파트너 노드 `elevenlabs/sound-generation`(MCP `submit_batch`, Comfy 크레딧) / **배치 3부터(#35): ElevenLabs Sound Effects v2 직접 API** — `joseon/tools/sfx_gen.py`(키 = `joseon/.env` `ELEVENLABS_API_KEY`, 구독 크레딧, 배치 JSON = 이 폴더 `batch_*.json`). PD 확인 2026-09-18: 구독이 있는데 Comfy 크레딧을 쓴 건 키가 세션에 없어서였고, 이후는 직접 API.
 비용 = 클립당 약 0.34 크레딧(0.7초 프로브 실측) + GPU 3초. 최소 길이 0.5초(0.45초 요청은 거부됨).
 톤 = narrative.md "검광 SFX 톤": 묵직한 금속음 대신 가야금 현 퉁김 + 짧은 공기 절단음, lo-fi. 목소리·비명은 넣지 않음(D-017 EA 음성 0, #41 판정 대기 — 피격은 몸·천 충격음).
 프롬프트 뼈대: "<사건> : <재질 충격> + <꼬리>, short, dry, isolated, no music, no voice" + 변주마다 무게·길이 수식어 하나.
@@ -73,3 +73,57 @@ Suno는 공식 API가 없어 세션이 못 돌린다 → 오픈 모델 후보를
 | kumiho | 914d5d16-20c9-4f34-b386-4d9c659fb39c | 505 | epic dark final boss, 해금 리드·태평소·합창 패드, 120 bpm C minor |
 
 파일 = `bgm/<id>_v1.mp3`(90s, 원본 −12~−14.5 LUFS), 스펙트로그램 대조 = `bgm/contact_bgm.png`. 반입 = `intake_audio.ps1 -Src <mp3> -Cue <id> -Kind bgm`(−18 LUFS, ogg q5) — 5곡 모두 반입, 채택 여부는 PD 판정(#42).
+
+## 배치 3 (보드 #35 월드·UI, 2026-09-18, 프로브 1 + 31편)
+
+생성 = ElevenLabs Sound Effects v2 직접 API (`joseon/tools/sfx_gen.py`, 키 `joseon/.env`), 출력 pcm_44100 (16-bit 스테레오 인터리브 → wav). 구독 크레딧 337 (구독 카운터 차이, 31편).
+
+| 큐 | 변주 | 길이 | LUFS | 피크 | request | 프롬프트 요지 |
+|---|---|---|---|---|---|---|
+| step_dirt | v1 | 0.48s | -28.8 | -10.2 | - | Single footstep of a straw sandal on a dry packed dirt path with a little gravel: soft cru… |
+| step_dirt | v2 | 0.48s | -29.5 | -8.6 | - | Single footstep of a straw sandal on a dry packed dirt path with a little gravel: soft cru… |
+| step_dirt | v3 | 0.48s | -28.1 | -6.2 | - | Single footstep of a straw sandal on a dry packed dirt path with a little gravel: soft cru… |
+| step_dirt | v4 | 0.48s | -18.3 | 0.2 | - | Single footstep of a straw sandal on a dry packed dirt path with a little gravel: soft cru… |
+| pickup | v1 | 0.48s | -35.5 | -19.0 | - | Picking up a small item from a stone floor: quick cloth rustle and a light leather-and-woo… |
+| pickup | v2 | 0.48s | -26.3 | -7.2 | - | Picking up a small item from a stone floor: quick cloth rustle and a light leather-and-woo… |
+| pickup_coin | v1 | 0.60s | -18.9 | -4.5 | - | A small handful of old Korean brass coins scooped up and dropped into a cloth pouch: brigh… |
+| pickup_coin | v2 | 0.60s | -20.1 | -2.9 | - | A small handful of old Korean brass coins scooped up and dropped into a cloth pouch: brigh… |
+| drop | v1 | 0.60s | -54.3 | -38.7 | - | A small leather-and-wood item dropped onto a stone floor: a compact clatter with one short… |
+| drop | v2 | 0.60s | -22.5 | -1.1 | - | A small leather-and-wood item dropped onto a stone floor: a compact clatter with one short… |
+| potion | v1 | 1.00s | -26.9 | -9.0 | - | Drinking herbal medicine from a small ceramic bottle: a cork pop, a quick liquid swig, and… |
+| potion | v2 | 1.00s | -13.6 | 0.0 | - | Drinking herbal medicine from a small ceramic bottle: a cork pop, a quick liquid swig, and… |
+| level_up | v1 | 2.00s | -6.6 | 0.1 | - | Level-up chime with a Korean flavor: a bright ascending gayageum arpeggio ending on a smal… |
+| level_up | v2 | 2.00s | -6.9 | 0.1 | - | Level-up chime with a Korean flavor: a bright ascending gayageum arpeggio ending on a smal… |
+| portal_open | v1 | 2.00s | -14.1 | 0.0 | - | A paper talisman igniting with a soft whoosh, then an ink-black vortex portal tearing open… |
+| portal_open | v2 | 2.00s | -16.3 | 0.1 | - | A paper talisman igniting with a soft whoosh, then an ink-black vortex portal tearing open… |
+| portal_use | v1 | 1.20s | -11.1 | 0.4 | - | Stepping through a swirling magic portal: a fast rising whoosh that flips into a soft fall… |
+| waypoint_wake | v1 | 1.76s | -25.2 | -6.7 | - | An old stone cairn shrine awakening: small stones settling and grinding, then a soft brass… |
+| waypoint_wake | v2 | 1.76s | -19.5 | -1.4 | - | An old stone cairn shrine awakening: small stones settling and grinding, then a soft brass… |
+| waypoint_use | v1 | 1.20s | -7.9 | -1.3 | - | Teleporting from a stone shrine: a soft airy whoosh sweeping upward with a single small br… |
+| stairs | v1 | 1.00s | -42.0 | -19.8 | - | Two quick footsteps going down worn stone stairs inside a cave with a short echo, close-up… |
+| revive | v1 | 2.48s | -20.4 | -10.0 | - | Waking up gently in a quiet village: a soft warm breath of wind and a single plucked gayag… |
+| revive | v2 | 2.48s | -19.7 | -8.4 | - | Waking up gently in a quiet village: a soft warm breath of wind and a single plucked gayag… |
+| ui_open | v1 | 0.48s | -18.9 | 0.1 | - | A paper scroll snapping open with a quick crisp paper flick and a small wooden click, clos… |
+| ui_open | v2 | 0.48s | -26.5 | -7.4 | - | A paper scroll snapping open with a quick crisp paper flick and a small wooden click, clos… |
+| ui_open | v3 | 0.48s | -33.4 | -7.3 | - | A paper scroll snapping open with a quick crisp paper flick and a small wooden click, clos… |
+| ui_close | v1 | 0.48s | -28.0 | -9.5 | - | A paper scroll rolling shut quickly: a soft paper roll and a small wooden tap, close-up, s… |
+| ui_close | v2 | 0.48s | -23.6 | -5.5 | - | A paper scroll rolling shut quickly: a soft paper roll and a small wooden tap, close-up, s… |
+| coin | v1 | 0.68s | -15.8 | -1.8 | - | A few old brass coins counted and dropped onto a wooden merchant counter: short bright cli… |
+| coin | v2 | 0.68s | -14.0 | -1.8 | - | A few old brass coins counted and dropped onto a wooden merchant counter: short bright cli… |
+| equip | v1 | 0.68s | -18.9 | 0.5 | - | Strapping on gear: a leather strap pulled tight with a buckle click, a short cloth shift a… |
+| equip | v2 | 0.68s | -22.3 | -3.3 | - | Strapping on gear: a leather strap pulled tight with a buckle click, a short cloth shift a… |
+
+## 배치 3b (재생성 8편 — 무음·약한 것 교체: pickup·drop·potion·stairs)
+
+생성 = ElevenLabs Sound Effects v2 직접 API (`joseon/tools/sfx_gen.py`, 키 `joseon/.env`), 출력 pcm_44100. 구독 크레딧 0.
+
+| 큐 | 변주 | 길이 | LUFS | 피크 | request | 프롬프트 요지 |
+|---|---|---|---|---|---|---|
+| pickup | v3 | 0.48s | -28.0 | -13.7 | - | Grabbing a small leather pouch off a stone floor and stuffing it into a satchel: a loud cr… |
+| pickup | v4 | 0.48s | -40.0 | -23.6 | - | Grabbing a small leather pouch off a stone floor and stuffing it into a satchel: a loud cr… |
+| drop | v3 | 0.60s | -21.3 | 0.1 | - | A small wooden and leather item falls onto a stone floor: a loud compact clatter with one … |
+| drop | v4 | 0.60s | -34.3 | -12.2 | - | A small wooden and leather item falls onto a stone floor: a loud compact clatter with one … |
+| potion | v3 | 1.00s | -24.8 | -5.2 | - | Quickly gulping a swig of liquid medicine from a small ceramic bottle: two wet gulps then … |
+| potion | v4 | 1.00s | -28.5 | -4.8 | - | Quickly gulping a swig of liquid medicine from a small ceramic bottle: two wet gulps then … |
+| stairs | v2 | 1.00s | -27.4 | -3.3 | - | Two loud quick footsteps of straw sandals going down worn stone stairs in a cave with a sh… |
+| stairs | v3 | 1.00s | -32.8 | -10.7 | - | Two loud quick footsteps of straw sandals going down worn stone stairs in a cave with a sh… |

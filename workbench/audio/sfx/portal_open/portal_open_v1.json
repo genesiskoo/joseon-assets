@@ -1,0 +1,18 @@
+{
+ "cue": "portal_open",
+ "v": 1,
+ "prompt": "A paper talisman igniting with a soft whoosh, then an ink-black vortex portal tearing open: a swirling low whoosh with a deep rumble tail and a faint mystical shimmer, isolated, no music, no voice",
+ "seconds": 2.0,
+ "influence": 0.4,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "duration": 2.0,
+ "lufs": "-14.1",
+ "peak": "0.0",
+ "made": "2026-09-18 09:35",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "channels": 2,
+ "note": "pcm_44100 = 16-bit 스테레오 인터리브(실측) — 모노 포장 오류를 헤더만 재작성으로 교정"
+}

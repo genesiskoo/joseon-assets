@@ -1,0 +1,18 @@
+{
+ "cue": "ui_open",
+ "v": 3,
+ "prompt": "A paper scroll snapping open with a quick crisp paper flick and a small wooden click, close-up, short, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "duration": 0.48,
+ "lufs": "-33.4",
+ "peak": "-7.3",
+ "made": "2026-09-18 09:35",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "channels": 2,
+ "note": "pcm_44100 = 16-bit 스테레오 인터리브(실측) — 모노 포장 오류를 헤더만 재작성으로 교정"
+}

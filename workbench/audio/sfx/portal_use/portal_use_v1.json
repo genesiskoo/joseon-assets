@@ -1,0 +1,18 @@
+{
+ "cue": "portal_use",
+ "v": 1,
+ "prompt": "Stepping through a swirling magic portal: a fast rising whoosh that flips into a soft falling whoosh and a light landing thud on stone, short, isolated, no music, no voice",
+ "seconds": 1.2,
+ "influence": 0.4,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "duration": 1.2,
+ "lufs": "-11.1",
+ "peak": "0.4",
+ "made": "2026-09-18 09:35",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "channels": 2,
+ "note": "pcm_44100 = 16-bit 스테레오 인터리브(실측) — 모노 포장 오류를 헤더만 재작성으로 교정"
+}
