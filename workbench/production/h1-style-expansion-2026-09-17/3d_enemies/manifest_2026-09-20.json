@@ -8,7 +8,8 @@
     "리깅 2종": 10,
     "애니 8건": 24,
     "흑랑 재시도(i2i 3 + 메시 30)": 33,
-    "합계": 187
+    "합계": 276,
+    "흑랑 총계(Meshy)": 122
   },
   "enemies": {
     "bandit": {
@@ -65,7 +66,7 @@
     "boss_heukrang": {
       "mesh_task": "01a0bcb4-1eb2-759a-ad3c-7aac00ae1ccb",
       "tri": 8235,
-      "status": "2회 기각 — PD 판정 대기",
+      "status": "Meshy 4회 기각 → 다른 엔진(Higgsfield Hunyuan3D v3 · Tripo H3.1) 시도 중",
       "note": "① 털을 짧게·다리 사이를 벌린 원화로 다시 그려 재시도(≈33) ② Tripo/Hunyuan 등 다른 경로(비교 이력 §10) ③ 보스 카드 #69까지 캡슐 유지, 중 택1",
       "retry": {
         "i2i_task": "01a0bcc4-bfcc-736f-b299-5b597ae07d55 (3뷰 생성, 3크레딧)",
@@ -77,7 +78,46 @@
           "d": 1.89
         },
         "결과": "역시 형태 붕괴 — 다리가 몸통에 붙고 너비 0.52로 납작. 긴 털 실루엣이라 Meshy가 몸을 한 덩어리로 본다(2회 연속 같은 실패)"
-      }
+      },
+      "attempts": [
+        {
+          "n": 1,
+          "route": "Meshy image_to_3d, 측면 원화 1장, remesh 8k",
+          "credits": 30,
+          "결과": "검은 덩어리(AABB 1.07×0.85×1.90)"
+        },
+        {
+          "n": 2,
+          "route": "Meshy multi_image 3뷰(i2i 생성, 304~702px), remesh 8k",
+          "credits": 33,
+          "결과": "다리 붙음·너비 0.52"
+        },
+        {
+          "n": 3,
+          "route": "가이드 반영 — 정면+측면+후면+3/4 4뷰·전부 1024²·순백 배경·remesh 끔",
+          "credits": 39,
+          "결과": "폴리 200만인데도 다리 없음 → remesh 탓이 아님이 확정"
+        },
+        {
+          "n": 4,
+          "route": "Meshy text_to_3d(meshy-6, 가이드가 '털·얇은 부위는 텍스트 경로' 권장), 12k remesh",
+          "credits": 20,
+          "결과": "머리·귀·갈기는 나왔으나 몸이 납작 엎드린 판, 다리 없음"
+        }
+      ],
+      "guide_findings": {
+        "출처": [
+          "docs.meshy.ai/en/api/image-to-3d",
+          "help.meshy.ai How to Get Better Image-to-3D Results"
+        ],
+        "요구": [
+          "입력 1024²+·순백/투명 배경·피사체 70~90%·가장자리 여백·균일 조명",
+          "다중뷰 권장 조합 = 정면 + 측면 + 후면 + 3/4, 스타일·조명·스케일 통일",
+          "얇은 부위·머리카락·털은 이미지 재구성이 약함 → Text to 3D 권장"
+        ],
+        "3·4차에서 전부 지켰는데도 실패": true
+      },
+      "credits_total": 122
     }
   },
   "contract_deviations": [
