@@ -127,3 +127,16 @@ Suno는 공식 API가 없어 세션이 못 돌린다 → 오픈 모델 후보를
 | potion | v4 | 1.00s | -28.5 | -4.8 | - | Quickly gulping a swig of liquid medicine from a small ceramic bottle: two wet gulps then … |
 | stairs | v2 | 1.00s | -27.4 | -3.3 | - | Two loud quick footsteps of straw sandals going down worn stone stairs in a cave with a sh… |
 | stairs | v3 | 1.00s | -32.8 | -10.7 | - | Two loud quick footsteps of straw sandals going down worn stone stairs in a cave with a sh… |
+
+## 배치 4 (기합·신음 6편, 보드 #66)
+
+생성 = ElevenLabs Sound Effects v2 직접 API (`joseon/tools/sfx_gen.py`, 키 `joseon/.env`), 출력 pcm_44100. 구독 크레딧 0.
+
+| 큐 | 변주 | 길이 | LUFS | 피크 | request | 프롬프트 요지 |
+|---|---|---|---|---|---|---|
+| doho_kiai | v1 | 0.68s | -58.4 | -37.8 | - | Single short male exertion grunt while swinging a sword, sharp exhale through clenched tee… |
+| doho_kiai | v2 | 0.68s | -9.4 | 0.3 | - | Single short male exertion grunt while swinging a sword, sharp exhale through clenched tee… |
+| doho_kiai | v3 | 0.68s | -10.4 | 0.1 | - | Single short male exertion grunt while swinging a sword, sharp exhale through clenched tee… |
+| doho_hurt | v1 | 0.80s | -11.6 | 0.1 | - | Single short male pain grunt after taking a hit, sharp inward gasp then low groan, no word… |
+| doho_hurt | v2 | 0.80s | -18.7 | 0.2 | - | Single short male pain grunt after taking a hit, sharp inward gasp then low groan, no word… |
+| doho_die | v1 | 1.60s | -19.8 | -6.7 | - | Male death groan, long falling exhale fading into silence, no words, dry close-up recordin… |
