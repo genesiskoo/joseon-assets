@@ -1,0 +1,77 @@
+{
+  "created": "2026-09-20",
+  "card": "#12 적 3종·흑랑·NPC 3 GLB 발주·반입",
+  "approval": "D-076 / 카드 #25 — 적 4종 Meshy 생성 최대 120크레딧",
+  "pipeline": "D-069 Meshy 7 (4뷰 T포즈 = modeling_tpose/<id>, 단일 = inputs/concept.png) → meshy_rig(키 지정, walk/run 무료) → meshy_animate(action 0 idle·219 attack·178 hit·8 die) → tools/merge_anims.gd → tools/intake_model.ps1",
+  "credits": {
+    "메시 4종": 120,
+    "리깅 2종": 10,
+    "애니 8건": 24,
+    "합계": 154,
+    "잔액(2026-09-20)": 2374
+  },
+  "enemies": {
+    "bandit": {
+      "mesh_task": "01a0bcb1-8cca-70c4-afb9-cfc511e9aa4f",
+      "rig_task": "01a0bcb5-f345-71f9-ae04-78f2e7430099",
+      "anim_tasks": {
+        "attack": "01a0bcb8-940f-7423-86b0-2f5360063cf2",
+        "hit": "01a0bcb8-9651-7051-8519-30894fb431c2",
+        "die": "01a0bcb8-994e-7379-9d93-c2e82f1f7bbb",
+        "idle": "01a0bcb8-9bc7-76ce-bd19-7d34527f6a80"
+      },
+      "tri": 8112,
+      "height": 1.44,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "attack",
+        "hit",
+        "die"
+      ],
+      "status": "반입"
+    },
+    "talisman_master": {
+      "mesh_task": "01a0bcb3-d83e-75a2-85e8-22aed59563e9",
+      "rig_task": "01a0bcb6-63df-76e1-845f-f45b5192dea5",
+      "anim_tasks": {
+        "attack": "01a0bcb8-a541-7011-b3e4-ed6791b0886d",
+        "hit": "01a0bcb8-a873-74dd-a6c6-04122dca15e1",
+        "die": "01a0bcb8-ab7a-708d-901c-0c26c86e09db",
+        "idle": "01a0bcb8-adea-770c-a48d-33a752e1305b"
+      },
+      "tri": 8096,
+      "clips": [
+        "idle",
+        "walk",
+        "run",
+        "attack",
+        "hit",
+        "die"
+      ],
+      "status": "반입"
+    },
+    "bat": {
+      "mesh_task": "01a0bcb4-0e1d-779f-a98b-b5f5fdb72059",
+      "tri": 6196,
+      "aabb": {
+        "h": 0.73,
+        "wingspan": 1.9
+      },
+      "status": "반입(정지 메시)",
+      "note": "리깅 안 함 — Meshy 리그는 휴머노이드. 날개폭 기준 scale 0.63(키 0.46)·y_offset 0.85(부양). 단일 비례로 키 0.7·날개폭 1.2를 동시에 못 맞춤 → 실루엣이 중요한 날개폭을 택함"
+    },
+    "boss_heukrang": {
+      "mesh_task": "01a0bcb4-1eb2-759a-ad3c-7aac00ae1ccb",
+      "tri": 8235,
+      "status": "기각",
+      "note": "단일 측면 원화 → 형태 붕괴(검은 덩어리, 다리·머리 안 읽힘). 3/4 뷰 입력 또는 ultra_mode로 재생성 필요(≈30~39크레딧) — PD 승인 대기"
+    }
+  },
+  "contract_deviations": [
+    "텍스처 2048px (정본 ≤1024) — 반입 시 Godot VRAM 압축만, 다운스케일 미적용",
+    "bandit 8,112 tri (상한 8,000 근사 초과)",
+    "박쥐 키·날개폭 동시 불일치(위 note)"
+  ]
+}
