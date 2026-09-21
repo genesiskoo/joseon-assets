@@ -126,6 +126,8 @@ def main():
                         'center_alpha_whirl':icons['whirl'].getpixel((64,64))[3],
                         'runtime':'not_run_candidate_assets_only','input_test':'deferred_to_109'}}
     assert manifest['checks']['center_alpha_whirl'] <= 7,'whirl center must remain transparent'
+    if (ROOT/'APPROVAL.json').exists():
+        manifest.update(status='approved', approval='APPROVAL.json')
     (ROOT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('PASS: 3 real-alpha source images, 3 safe 128px RGBA icons, 2 diagnostic sheets; whirl center transparent.')
     for rec in records:

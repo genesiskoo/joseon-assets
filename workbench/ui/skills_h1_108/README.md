@@ -2,7 +2,7 @@
 
 2026-09-21 · [제작 #108](https://github.com/genesiskoo/joseon-hunters/issues/108) · [HUD 반입 #109](https://github.com/genesiskoo/joseon-hunters/issues/109)
 
-상태: **제작·파일 검수 완료 / PD 채택 대기**. UI 표시가 없는 128×128 투명 PNG 3종이다. 게임의 `data/skills/` id와 파일명을 맞췄으며 실제 HUD/스킬창에는 아직 적용하지 않았다.
+상태: **2026-09-21 PD 채택 확정**. UI 표시가 없는 128×128 투명 PNG 3종이다. 게임의 `data/skills/` id와 파일명을 맞췄으며 채택 파일·해시의 정본은 `APPROVAL.json`이며 실제 HUD/스킬창 반입은 #109에서 추적한다.
 
 | 파일 | 동작·구분 단서 |
 |---|---|
