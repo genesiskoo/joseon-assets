@@ -200,6 +200,8 @@ def main():
                 for key in ['iron_sword', 'hwando']],
                 'items': records, 'checks': {'count': len(records), 'rgba_128': True, 'slot_safe_bounds': True,
                 'runtime_test': 'not_run_asset_candidate_only', 'engine_input_test': 'deferred_to_103'}}
+    if (out/'APPROVAL.json').exists():
+        manifest.update(status='approved', approval='APPROVAL.json')
     (out/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('PASS: 8 transparent RGBA sources; 8 slot-safe 128px outputs; 3 review sheets. Runtime not tested.')
     for row in records:

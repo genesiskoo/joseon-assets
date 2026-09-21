@@ -2,7 +2,7 @@
 
 2026-09-21 · [제작 #102](https://github.com/genesiskoo/joseon-hunters/issues/102) · [반입 #103](https://github.com/genesiskoo/joseon-hunters/issues/103)
 
-상태: **제작·파일 검수 완료 / PD 채택 대기**. 공식 `icons_h1`과 게임 파일은 교체하지 않았다. 새 후보 8종이며 전체 17종 리뉴얼이 아니다.
+상태: **2026-09-21 PD 채택 확정**. 채택 파일·해시의 정본은 `APPROVAL.json`이다. 게임 반입은 #103에서 추적한다. 새 후보 8종이며 전체 17종 리뉴얼이 아니다.
 
 ## 먼저 볼 이미지
 

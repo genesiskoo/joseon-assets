@@ -2,7 +2,7 @@
   "schema": 1,
   "issue": 102,
   "date": "2026-09-21",
-  "status": "PD_review_required",
+  "status": "approved",
   "tool": "built-in imagegen",
   "model_version": "not exposed by tool",
   "requested_size": [
@@ -585,5 +585,6 @@
     "slot_safe_bounds": true,
     "runtime_test": "not_run_asset_candidate_only",
     "engine_input_test": "deferred_to_103"
-  }
+  },
+  "approval": "APPROVAL.json"
 }
