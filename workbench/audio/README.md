@@ -74,6 +74,10 @@ Suno는 공식 API가 없어 세션이 못 돌린다 → 오픈 모델 후보를
 
 파일 = `bgm/<id>_v1.mp3`(90s, 원본 −12~−14.5 LUFS), 스펙트로그램 대조 = `bgm/contact_bgm.png`. 반입 = `intake_audio.ps1 -Src <mp3> -Cue <id> -Kind bgm`(−18 LUFS, ogg q5) — 5곡 모두 반입, 채택 여부는 PD 판정(#42).
 
+## BGM 2차 — Suno v6 조선 다크 판타지 (보드 #161, 2026-09-21)
+
+PD 지시로 Suno를 Chrome 제어로 돌렸다(디아2R식 공간감 + 판소리·곡소리·미궁 질감, 가사 없는 목소리만 — D-017). 8회 × 2곡 = 16곡, 80크레딧. 입력 원문·곡 id·입력 요령 = `bgm/suno_161/prompts.md`. 파일은 아직 없다 — Pro 다운로드가 월 20곡 한도라 PD가 Suno에서 듣고 고른 곡만 받아 `bgm/suno_161/<cue>_<후보>.mp3`로 둔다.
+
 ## 배치 3 (보드 #35 월드·UI, 2026-09-18, 프로브 1 + 31편)
 
 생성 = ElevenLabs Sound Effects v2 직접 API (`joseon/tools/sfx_gen.py`, 키 `joseon/.env`), 출력 pcm_44100 (16-bit 스테레오 인터리브 → wav). 구독 크레딧 337 (구독 카운터 차이, 31편).
