@@ -1,0 +1,589 @@
+{
+  "schema": 1,
+  "issue": 102,
+  "date": "2026-09-21",
+  "status": "PD_review_required",
+  "tool": "built-in imagegen",
+  "model_version": "not exposed by tool",
+  "requested_size": [
+    1024,
+    1024
+  ],
+  "canvas": [
+    128,
+    128
+  ],
+  "art_longest_px": 103,
+  "processing": "alpha-support bounding crop >=8/255 plus 2px; preserve retained RGBA; premultiplied proportional resize; center; no repaint or background keying",
+  "preview": "CPU approximation of used-rect, 8px padding, linear texture filter, 8px 9-slice. Not Godot screenshots. Neutral well is an unimplemented #101 proposal.",
+  "preview_inputs": {
+    "cotton_robe.png": "60d7fb3192e587077e12f675e13cdf5050ac39e1b476b1013a2eed3277ee9179",
+    "hwando.png": "0f36674bd7b921b95dccca4f30abcc2e46c06b55b739b3054d224c8da26d39a2",
+    "ident_scroll.png": "5b9a0101165a944f89e4c6798d988e49b718f793ab99079de423baa02a0236b1",
+    "iron_sword.png": "28e83a110aa05e1979c91401e6331eba05e9f0e3719a941868d3a8cd1d29197b",
+    "jade_charm.png": "d56e29392146951397e7e822edcdff9959234a7aec21080fb27df8c703c89116",
+    "leather_armor.png": "59a4d1f8246b78b17fd36ee1cdd92dc0d18654cface29c1ff49a60cbc821dce2",
+    "leather_shoes.png": "5e3c1a19164134ba7ecd905fa6167b364d4c73152adbdc96c60dd12f496a22b8",
+    "long_sword.png": "7625f05ced77705937a749a1d72ba20e744349cfd9cb62a50646ecab8dcbf190",
+    "slot.png": "13140d2033dff1492c0bf864a03dece6fec6cea173c494a37c62b54b3d4ce41a",
+    "straw_shoes.png": "84ddfe43d01b1bba146861c7c049c6e0c2b5e7fd256bf33e1c0f9a329c5c377d",
+    "town_portal.png": "b5e7227a80c76c95cde7225f544f5109fd749daa41f77ae64402b290cdd12371"
+  },
+  "rejected": [
+    {
+      "id": "iron_sword",
+      "source": "rejected/diagonal_swords/iron_sword.png",
+      "sha256": "b5cf5cdfc52429f492e58b695098076486e5caddf09c664cbca519e43d42851f",
+      "reason": "Diagonal composition shrank to about 24px in a 1x3 slot; superseded by upright revision."
+    },
+    {
+      "id": "hwando",
+      "source": "rejected/diagonal_swords/hwando.png",
+      "sha256": "cefbdae70d69c78cca0ceb277e1a9d262a53cd07fa76b6699ce329fbd7a85fe0",
+      "reason": "Diagonal composition shrank to about 24px in a 1x3 slot; superseded by upright revision."
+    }
+  ],
+  "items": [
+    {
+      "id": "leather_shoes",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Use case: precise-object-edit. Asset: leather_shoes inventory icon for Joseon Hunters, a Korean dark fantasy ARPG. Image 1 is the exact edit target and H1 illustration style reference. Repaint ONLY this one pair of empty brown leather ankle boots for small-size readability, keeping the Korean simple soft footwear, rounded toes, wrapped dark ankle cord, two boots, three-quarter orientation and matte black-ink illustration identity. Replace mottled near-black surfaces with THREE OR FOUR BROAD painted value planes: muted medium umber lit toe boxes and front ankle faces, darker side panels and cord, deep interior openings. Separate the two boots with a small clear negative gap and distinct overlap, make each ankle/top and toe unmistakable at 24-32 pixels. Broad restrained upper-left diffuse light; no shining edge lines. Greatly simplify tiny grain, stitches and knots. Keep worn brown leather, NOT orange, yellow, cream, glossy plastic or armor. Clean confident H1 ink silhouette, hand painted Korean manhwa prop, not pixel art, not a photoreal render. Entire pair centered as a single inventory item on a square 1024x1024 canvas, longest extent about 84 percent, all toes and tops fully within canvas. GENUINE TRANSPARENT RGBA background, empty alpha outside both boots; no black/white/checkerboard backdrop, no ground, no cast shadow, no frame, no label, no numbers, no watermark, no text, no rim light, no aura or bloom.",
+      "references": [
+        "C:/workspace/joseon-assets/workbench/ui/icons_h1/sources/leather_shoes.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-ba965272-04fb-4c20-9927-500e87ead6e0.png",
+      "source": "sources/leather_shoes.png",
+      "status": "candidate_pending_review",
+      "name": "가죽신",
+      "inventory_cells": [
+        2,
+        2
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          22,
+          29,
+          1254,
+          1230
+        ],
+        "transparent_pixels": 824140,
+        "partial_pixels": 747274,
+        "opaque_pixels": 1102
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        22,
+        141,
+        1252,
+        1160
+      ],
+      "source_sha256": "a56a570de56376c2ae3347be40219257b155a2e525e13bf7c42d89ffe0ef4b00",
+      "output": "leather_shoes.png",
+      "output_sha256": "53d019f2feb2fbc881e9d68dbf024fff1ba16818582b7fa65548b71aadcddb54",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          12,
+          21,
+          115,
+          106
+        ],
+        "transparent_pixels": 10769,
+        "partial_pixels": 5325,
+        "opaque_pixels": 290
+      },
+      "baseline_sha256": "5e3c1a19164134ba7ecd905fa6167b364d4c73152adbdc96c60dd12f496a22b8"
+    },
+    {
+      "id": "leather_armor",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Use case: precise-object-edit. Image 1 is the exact edit target and H1 style reference: one empty Korean crossed-collar leather jerkin inventory icon. Preserve this unworn short brown leather coat, big crossing lapels, short spread sleeves and TWO dark cord fastenings. Improve readability at 24-32 pixels by giving the chest and upper sleeve planes broad muted medium brown values, clearly separating a lighter large diagonal lapel from the darker chest, making the empty arm openings and neckline deep simple shapes. Use three or four broad matte painted planes with restrained clean black H1 ink contours. Remove fine mottled grain and tiny wrinkles; do not add ornament. Keep this Korean costume identity; no person, mannequin, metal plates, Western armor, modern jacket or extra belts. Single entire garment front/three-quarter icon view, centered, generous transparent empty margins on every edge, no clipping. Square 1024x1024. Genuine transparent RGBA background. Matte leather under one soft upper-left light, no edge glow, no rim light, no cast shadow, no backdrop or checkerboard, no frame, no text. This is game production illustration, not a photoreal render and not pixel art.",
+      "references": [
+        "C:/workspace/joseon-assets/workbench/ui/icons_h1/sources/leather_armor.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-0867fa2b-ce8f-4fea-84b8-d6dccceffcba.png",
+      "source": "sources/leather_armor.png",
+      "status": "candidate_pending_review",
+      "name": "가죽갑",
+      "inventory_cells": [
+        2,
+        3
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          35,
+          23,
+          1226,
+          1254
+        ],
+        "transparent_pixels": 871771,
+        "partial_pixels": 699474,
+        "opaque_pixels": 1271
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        34,
+        152,
+        1226,
+        1101
+      ],
+      "source_sha256": "48757e44b7505451caea898981e1b16c35e4e7262ca12c5a0cd42e9591ed688f",
+      "output": "leather_armor.png",
+      "output_sha256": "4306ca57f756da2bd24bcb72e672e8b08ab619a49160777017791293d1afb87e",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          12,
+          23,
+          115,
+          105
+        ],
+        "transparent_pixels": 10726,
+        "partial_pixels": 5420,
+        "opaque_pixels": 238
+      },
+      "baseline_sha256": "59a4d1f8246b78b17fd36ee1cdd92dc0d18654cface29c1ff49a60cbc821dce2"
+    },
+    {
+      "id": "jade_charm",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Use case: precise-object-edit. Image 1 is the edit target and H1 style: a round grey-green jade pendant on a dark knotted cord, inventory item for a Korean Joseon dark-fantasy game. Preserve the circular stone pendant, short dark knot, matte jade material, green identity and simple carved curling motif. Improve 24px recognition: ENLARGE the round jade body relative to the cord so the disk occupies about 78 percent of total icon height; SHORTEN and thicken the cord loop to a compact clearly separate loop. Give the jade front a broad muted pale sage-green midtone plane, a darker right/lower side, and ONE large simple dark curling groove rather than tiny marbling. Exactly one pendant, slightly three-quarter but mostly frontal, strong circular silhouette with visible thickness. H1 clean ink outlines and three broad matte painted values, sparse stone texture. It must read as a jade disk with a loop at 24px, not a tiny dark hanging dot. Do not turn it into gold, jewelry sparkle or a neon green magic orb. Entire object centered on square 1024x1024 with substantial clear margins. GENUINE TRANSPARENT RGBA empty alpha background. No background, checkerboard, shadow, frame, labels, text, glossy specular, bloom, aura, or bright outline.",
+      "references": [
+        "C:/workspace/joseon-assets/workbench/ui/icons_h1/sources/jade_charm.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-6c77c31a-8255-47b5-ac65-1917e010e58a.png",
+      "source": "sources/jade_charm.png",
+      "status": "candidate_pending_review",
+      "name": "옥패",
+      "inventory_cells": [
+        1,
+        1
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          111,
+          21,
+          1198,
+          1228
+        ],
+        "transparent_pixels": 1062780,
+        "partial_pixels": 508526,
+        "opaque_pixels": 1210
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        247,
+        107,
+        1010,
+        1160
+      ],
+      "source_sha256": "293a90ec30fe9de572dab70b36b766920f1b6ccf60e6170aeaa43417a8634b22",
+      "output": "jade_charm.png",
+      "output_sha256": "fb0caaa46547971be1de14de2899d6de8a11890dec4436d3f426851a0c3a5fa8",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          26,
+          12,
+          101,
+          115
+        ],
+        "transparent_pixels": 11151,
+        "partial_pixels": 5009,
+        "opaque_pixels": 224
+      },
+      "baseline_sha256": "d56e29392146951397e7e822edcdff9959234a7aec21080fb27df8c703c89116"
+    },
+    {
+      "id": "long_sword",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Edit this exact long_sword: a straight upright long Korean sword, blade pointing UP and handle DOWN. Preserve the tall vertical orientation, very long dark navy-black wrapped grip, simple aged brass oval disk guard and straight symmetric steel point. Main change: enlarge the actual metal blade WIDTH substantially, about 10 percent of total item height, so it becomes a clean visible broad silver-grey plane at 32px, not a hairline. Keep a long elegant blade about two thirds of item length, handle about one third. The blade should have only a broad light front plane and narrow muted grey bevel. Simplify diamond grip bands into four big visible bands. Guard moderately wider than blade. No scabbard, no tassel, no extra weapon, no western crossguard, no monstrous fantasy paddle. The complete point and pommel must fit comfortably on canvas. Use case: precise-object-edit for a Korean dark fantasy ARPG inventory icon. The reference is the existing accepted H1 ink-and-matte-paint object design; preserve that family, no photorealism, no pixel art. Optimize for genuine recognition at 24-32px. Use three broad painted value planes and confident dark ink contours, very little fine detail. Soft upper-left diffuse light, matte steel, no glints, no rim light, no aura, no bloom, no ground shadow. One complete isolated item centered on a square 1024x1024 transparent RGBA canvas, longest extent 82 percent with clear empty margins on all sides. No backdrop, no frame, no text, no letters, no numbers, no watermark.",
+      "references": [
+        "C:\\workspace\\joseon-assets\\workbench\\ui\\icons_h1\\sources\\long_sword.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-19a82b1d-b50f-47a5-b49e-7d16f0c3a48c.png",
+      "source": "sources/long_sword.png",
+      "status": "candidate_pending_review",
+      "name": "장검",
+      "inventory_cells": [
+        1,
+        3
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          210,
+          43,
+          1198,
+          1214
+        ],
+        "transparent_pixels": 1469425,
+        "partial_pixels": 101860,
+        "opaque_pixels": 1231
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        543,
+        44,
+        711,
+        1213
+      ],
+      "source_sha256": "17c68455abf0627183aad908fe05f077f87baea04261fb51d1b3998897e0b0c8",
+      "output": "long_sword.png",
+      "output_sha256": "899d2f67fe031a7efc675c4f406d4a989082e3aa83a993a22fe3a57e24687d95",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          56,
+          12,
+          71,
+          115
+        ],
+        "transparent_pixels": 15310,
+        "partial_pixels": 876,
+        "opaque_pixels": 198
+      },
+      "baseline_sha256": "7625f05ced77705937a749a1d72ba20e744349cfd9cb62a50646ecab8dcbf190"
+    },
+    {
+      "id": "iron_sword",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Recompose this exact Korean iron sword into a STRICTLY VERTICAL UPRIGHT inventory illustration: blade point at TOP CENTER, pommel at BOTTOM CENTER, no diagonal tilt. Preserve the short dark leather wrapped grip, plain rounded brass pommel, small brass oval guard, broad straight double edged silver-grey blade and short angular wedge tip exactly as this reference. The grip is short, about a QUARTER of the item's length; blade about three quarters. Broad light bevels and darker single central plane must remain visible at 24px. Shape should occupy a very tall narrow bounding box, overall width including guard about 18 percent of total height, so it fits a 1x3-cell inventory slot. This is an orientation/layout revision of the given sword, not a redesign. No tassel or sheath. Accepted H1 Korean dark fantasy item style: confident dark ink contour, three broad matte painted value planes, restrained aged materials. Complete isolated single object in square 1024x1024 canvas, full point and pommel with 7 percent clear top/bottom margin. Genuine transparent RGBA background outside object. No ground shadow, no background, no lighting halo, no rim glow, no sparkles, no text, no frame, no extra object. Keep the sword VERTICAL, centered and tall.",
+      "references": [
+        "C:\\workspace\\joseon-assets\\workbench\\ui\\icons_readability_102\\rejected\\diagonal_swords\\iron_sword.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-c4ff2835-fa4e-44a6-aa88-79e93f64e95c.png",
+      "source": "sources/iron_sword.png",
+      "revision": 2,
+      "status": "candidate_pending_review",
+      "supersedes": "rejected/diagonal_swords/iron_sword.png",
+      "reason": "Diagonal blade only used about 24px of a 1x3 inventory slot. Upright composition uses the tall content region.",
+      "name": "철검",
+      "inventory_cells": [
+        1,
+        3
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          210,
+          33,
+          1192,
+          1228
+        ],
+        "transparent_pixels": 1452151,
+        "partial_pixels": 119921,
+        "opaque_pixels": 444
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        541,
+        33,
+        713,
+        1213
+      ],
+      "source_sha256": "bc657b9dfce5fd76b55baa1da708dec8dc05100329b6efff54f3f648663740e2",
+      "output": "iron_sword.png",
+      "output_sha256": "de865c4a23c775aff1f16e40ddfe7ce25ab8566ec82c42e5d72d914d3b06c87c",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          56,
+          12,
+          71,
+          115
+        ],
+        "transparent_pixels": 15134,
+        "partial_pixels": 1108,
+        "opaque_pixels": 142
+      },
+      "baseline_sha256": "28e83a110aa05e1979c91401e6331eba05e9f0e3719a941868d3a8cd1d29197b"
+    },
+    {
+      "id": "hwando",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Recompose this exact Korean curved hwando into an UPRIGHT TALL NARROW inventory illustration: short handle nearly vertical at BOTTOM CENTER, blade rising upward, curved blade tip at TOP slightly RIGHT of center, no diagonal lower-left-to-upper-right layout. Preserve the graceful single edged saber curve, broad silver-grey matte steel plane, compact brass disk guard, dark wrapped grip and SMALL muted red short tassel from the reference. Use the curve within a very narrow upright bounding box: widest extent of blade curve plus handle/tassel about 22 percent of total height. Short tassel hangs DOWN below the pommel, not sideways. Overall full sword occupies tall narrow 1x3 shape. Need a clear gentle arc on the right edge and concave left edge but not a hook, not a scimitar. This is an orientation/layout revision of the given sword, not an ornamental redesign. Accepted H1 Korean dark fantasy item style: confident dark ink contour, three broad matte painted value planes, restrained aged materials. Complete isolated single object in square 1024x1024 canvas, full point and pommel with 7 percent clear top/bottom margin. Genuine transparent RGBA background outside object. No ground shadow, no background, no lighting halo, no rim glow, no sparkles, no text, no frame, no extra object. Keep the sword VERTICAL, centered and tall.",
+      "references": [
+        "C:\\workspace\\joseon-assets\\workbench\\ui\\icons_readability_102\\rejected\\diagonal_swords\\hwando.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-0ec66a79-b29e-4496-8d01-45112dccacbc.png",
+      "source": "sources/hwando.png",
+      "revision": 2,
+      "status": "candidate_pending_review",
+      "supersedes": "rejected/diagonal_swords/hwando.png",
+      "reason": "Diagonal blade only used about 24px of a 1x3 inventory slot. Upright composition uses the tall content region.",
+      "name": "환도",
+      "inventory_cells": [
+        1,
+        3
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          59,
+          32,
+          1192,
+          1231
+        ],
+        "transparent_pixels": 1491707,
+        "partial_pixels": 80117,
+        "opaque_pixels": 692
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        555,
+        32,
+        765,
+        1231
+      ],
+      "source_sha256": "7eade216cc9e9e2f5221e5869693238afdbcbd2f90526abb247fa5c738bfef10",
+      "output": "hwando.png",
+      "output_sha256": "7afc75827a52e0b3c9a4a4384ed2736d8519afbd7d4d120aaf8fefa98a1f6d4c",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          55,
+          12,
+          73,
+          115
+        ],
+        "transparent_pixels": 15514,
+        "partial_pixels": 710,
+        "opaque_pixels": 160
+      },
+      "baseline_sha256": "0f36674bd7b921b95dccca4f30abcc2e46c06b55b739b3054d224c8da26d39a2"
+    },
+    {
+      "id": "ident_scroll",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Redesign this identification talisman paper for recognizability. Preserve yellow-buff worn Korean hanji paper and vermilion ink. Deliberately use a SHORT WIDE rectangular talisman, width about 55 percent of its height, slight clockwise tilt, one VERY LARGE visibly folded-over top-right paper corner taking about a quarter of width. Upper half: only a few thick curved red talisman brush strokes, abstract ritual marks not legible language. Lower half: a BIG SIMPLE RED SQUARE SEAL with a clear pale center and one thick abstract mark. A wide paper silhouette and folded corner must identify it even without its red color. Do not fill with tiny glyphs or thin long lines; do not create a modern document, envelope, book, or rolled scroll. Matte muted parchment, three broad planes, almost no wrinkles. Precise object edit of the supplied accepted H1 icon for Joseon Hunters, a Korean dark fantasy ARPG. Clean confident ink silhouette, matte hand-painted broad planes, Korean manhwa prop language. Simplify all tiny mottling and scratches for 24-32px display. Restrained upper-left diffuse light. Isolated complete item, all tips and ornaments inside ample margin, square 1024x1024 canvas. Genuine transparent RGBA outside the object, no background, no ground or cast shadow, no frame, no labels, no UI text, no watermark, no rim lighting, no aura or bloom, no photorealism, no pixel art.",
+      "references": [
+        "C:\\workspace\\joseon-assets\\workbench\\ui\\icons_h1\\sources\\ident_scroll.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-697f375c-1f60-492e-8433-0fc7f5c3ec1d.png",
+      "source": "sources/ident_scroll.png",
+      "status": "candidate_pending_review",
+      "name": "식별부",
+      "inventory_cells": [
+        1,
+        1
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          7,
+          1232,
+          1230
+        ],
+        "transparent_pixels": 948877,
+        "partial_pixels": 622570,
+        "opaque_pixels": 1069
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        265,
+        57,
+        1011,
+        1212
+      ],
+      "source_sha256": "107472495f01c65d4737a9c50bbf75bee8e8e5adb9705494eff79a9010fcefa0",
+      "output": "ident_scroll.png",
+      "output_sha256": "0fa96b59a22345bbca1cc6653b80324e409a84e4c98ac0c83539bfd7b4222f22",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          30,
+          12,
+          97,
+          115
+        ],
+        "transparent_pixels": 11032,
+        "partial_pixels": 5137,
+        "opaque_pixels": 215
+      },
+      "baseline_sha256": "5b9a0101165a944f89e4c6798d988e49b718f793ab99079de423baa02a0236b1"
+    },
+    {
+      "id": "town_portal",
+      "issue": 102,
+      "tool": "built-in imagegen",
+      "model_version": "not exposed by tool",
+      "prompt": "Redesign this town-portal talisman paper for recognizability. Preserve the tall narrow yellow-buff Korean hanji paper and charcoal-black ink. Deliberately use a LONG NARROW rectangular strip, width about 30 percent of height, slight counterclockwise tilt, straight top edge with NO folded corner. One bold abstract ink emblem: a Korean gate-shaped arch with two thick black upright pillars and a heavy curved roof crossbar; leave a LARGE CLEAR PALE VERTICAL OPENING in its center occupying at least one third of emblem width. A simple pointed brushstroke trails below the gate. Tiny subordinate dark red seal near bottom. Make the long strip silhouette and gate's large empty center unmistakable at 32px. Do not make a real 3D gate, do not replace paper with architecture, no legible text, no dense glyph rows, no thin ornate talisman network. Worn matte ochre paper with two or three broad planes, almost no wrinkles. Precise object edit of the supplied accepted H1 icon for Joseon Hunters, a Korean dark fantasy ARPG. Clean confident ink silhouette, matte hand-painted broad planes, Korean manhwa prop language. Simplify all tiny mottling and scratches for 24-32px display. Restrained upper-left diffuse light. Isolated complete item, all tips and ornaments inside ample margin, square 1024x1024 canvas. Genuine transparent RGBA outside the object, no background, no ground or cast shadow, no frame, no labels, no UI text, no watermark, no rim lighting, no aura or bloom, no photorealism, no pixel art.",
+      "references": [
+        "C:\\workspace\\joseon-assets\\workbench\\ui\\icons_h1\\sources\\town_portal.png"
+      ],
+      "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-0fa7a828-590f-44e3-93d7-36e8bbe833e0.png",
+      "source": "sources/town_portal.png",
+      "status": "candidate_pending_review",
+      "name": "귀환부",
+      "inventory_cells": [
+        1,
+        1
+      ],
+      "source_info": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          49,
+          21,
+          1230,
+          1214
+        ],
+        "transparent_pixels": 1195789,
+        "partial_pixels": 376119,
+        "opaque_pixels": 608
+      },
+      "crop_alpha_ge_8_plus_2px": [
+        385,
+        42,
+        923,
+        1213
+      ],
+      "source_sha256": "67916ebdc8f0dad151d425450ab16011ba8e73542a6cc63e3ff4c4f04b4688d8",
+      "output": "town_portal.png",
+      "output_sha256": "042e6a55408442a3f8914092b955200a8e03dafee50b4c73d179fb9512545db6",
+      "output_info": {
+        "dimensions": [
+          128,
+          128
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          40,
+          12,
+          87,
+          115
+        ],
+        "transparent_pixels": 13183,
+        "partial_pixels": 2994,
+        "opaque_pixels": 207
+      },
+      "baseline_sha256": "b5e7227a80c76c95cde7225f544f5109fd749daa41f77ae64402b290cdd12371"
+    }
+  ],
+  "checks": {
+    "count": 8,
+    "rgba_128": true,
+    "slot_safe_bounds": true,
+    "runtime_test": "not_run_asset_candidate_only",
+    "engine_input_test": "deferred_to_103"
+  }
+}
