@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>못골 광장 · H1 기준 화면 #128</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#151917;color:#e5e2d8;font:15px/1.5 'Malgun Gothic',sans-serif}main{max-width:1344px;margin:auto;padding:24px}h1{font-size:25px;margin:0 0 5px}p{margin:6px 0 16px;color:#babfb6}nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 14px}button{font:inherit;color:#d8dbd2;background:#292e29;border:1px solid #536052;border-radius:6px;padding:10px 18px;cursor:pointer}button[aria-pressed=true]{color:#f3e2ba;background:#454532;border-color:#b2a071}button:focus-visible{outline:2px solid #e7ce8d;outline-offset:3px}.stage{width:100%;aspect-ratio:16/9;background:#090b0a;border:1px solid #343e34;display:flex;align-items:center;justify-content:center}.stage img{display:block;width:100%;height:100%;object-fit:contain}.caption{margin-top:10px;color:#e6ddc7}.tag{display:inline-block;background:#303528;padding:3px 9px;border-radius:3px;font-size:12px}.note{margin-top:22px;padding:16px;border-left:3px solid #a59469;background:#20251f}a{color:#dbc38e}.links{margin-top:15px}.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.thumbs img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#090b0a}.thumbs button{padding:6px;text-align:left;border-radius:4px}.thumbs span{display:block;padding:6px}small{color:#a9b2a5}@media(max-width:640px){main{padding:14px}h1{font-size:21px}.thumbs{grid-template-columns:1fr}nav button{flex:1;padding:8px}}
+</style>
+<main>
+<span class="tag">#128 · PD 선택 대기</span>
+<h1>못골 광장 — H1 재질과 빛</h1>
+<p>최신 실제 게임 1장과 AI 목표 원화 2장. 추천은 B입니다.</p>
+<nav aria-label="비교할 이미지">
+<button data-key="real" aria-pressed="false">실제 게임</button>
+<button data-key="A" aria-pressed="false">A · 무광 재질</button>
+<button data-key="B" aria-pressed="true">B · 국소광 대비</button>
+</nav>
+<div class="stage"><img id="hero" src="B_local_light_target.png" alt="B 생성 목표 원화"></div>
+<div class="caption" id="caption" aria-live="polite">B · 생성 목표 원화 — 어두운 주변과 작은 등불 대비. 1672×941.</div>
+<div class="thumbs">
+<button data-key="real" aria-pressed="false"><img src="references/02_current_plaza_clean.png" alt="실제 광장"><span>실제 게임 · 0aba611</span></button>
+<button data-key="A" aria-pressed="false"><img src="A_matte_material_target.png" alt="A 시안"><span>A · 무광 재질 통일</span></button>
+<button data-key="B" aria-pressed="true"><img src="B_local_light_target.png" alt="B 시안"><span>B · 주변 명도·등불 대비</span></button>
+</div>
+<div class="note"><strong>게임 적용 기준</strong><br>A/B는 재질·조명 참조입니다. 생성 과정에서 인물·우물 위치와 하단 울타리 노출이 조금 달라졌으므로 배치와 이동 공간은 실제 게임 원본을 따릅니다. 3D·충돌·입력·성능 검수는 #151에서 진행합니다.</div>
+<p class="links"><a href="references/01_current_plaza_with_ui.png">UI 포함 실제 캡처</a> · <a href="README.md">검수·인계 기록</a> · <a href="PROMPTS.md">생성 프롬프트</a> · <a href="manifest.json">참조·해시</a></p>
+<small>후보 PNG 원본을 수정하지 않고 동일한 16:9 표시 영역에 맞춰 보여줍니다. A/B의 실제 출력은 1672×941, 실제 캡처는 1280×720입니다.</small>
+</main>
+<script>
+const assets={real:{src:'references/02_current_plaza_clean.png',text:'실제 게임 · 0aba611 — UI와 이름표만 숨긴 촬영본. 1280×720.'},A:{src:'A_matte_material_target.png',text:'A · 생성 목표 원화 — 같은 광장을 H1 무광 재질·큰 색면으로 통일. 1672×941.'},B:{src:'B_local_light_target.png',text:'B · 생성 목표 원화 — 어두운 주변과 작은 등불 대비. 1672×941.'}};
+function show(key){const item=assets[key];document.querySelector('#hero').src=item.src;document.querySelector('#hero').alt=item.text;document.querySelector('#caption').textContent=item.text;document.querySelectorAll('[data-key]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.key===key)));}
+document.querySelectorAll('[data-key]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.key)));
+</script>
+</html>

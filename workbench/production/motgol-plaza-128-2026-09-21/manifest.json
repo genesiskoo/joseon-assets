@@ -1,0 +1,94 @@
+{
+  "ticket": 128,
+  "game_intake_ticket": 151,
+  "baseline_game_commit": "0aba611",
+  "tool": "builtin image_gen",
+  "model_id": "not exposed",
+  "recommended_variant": "B",
+  "pd_choice": null,
+  "production_spec": "PRODUCTION_SPEC.md",
+  "prompts": "PROMPTS.md",
+  "references": [
+    {
+      "role": "A edit target: exact game camera/layout, not a style approval",
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\plaza-art-128\\joseon\\._tmp\\plaza128_captures\\02_current_plaza_clean.png",
+      "sha256": "7e5966d9a756865436f010955c992c09be40819e3e286140cac97bb01de8ca2b",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB"
+    },
+    {
+      "role": "Material and Korean construction only; not relative prop scale",
+      "path": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\14_motgol_modules_props.png",
+      "sha256": "a89030901416c5080e2963262b66edd29269bbe1d97c84a32ba7ee3d74465182",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "role": "Only leftmost H1: approved shared drawing style and Doho identity",
+      "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+      "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "A_matte_material_target.png",
+      "sha256": "797e024f29e84bd6e2dc1e7dea2139a1798e528fe6751c8ab2178e5035799d90",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "variant": "A",
+      "original_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-62f59dfe-dad5-4cb9-804f-da524c918f7a.png",
+      "prompt_version": "motgol-128-A-v1",
+      "generated_file_mtime_utc": "2026-09-21T14:12:15.701184+00:00",
+      "review_status": "pending_pd_choice",
+      "pd_approved": false,
+      "image_is_actual_game_capture": false,
+      "requested_size": "1536x864",
+      "reference_paths": [
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\plaza-art-128\\joseon\\._tmp\\plaza128_captures\\02_current_plaza_clean.png",
+        "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\14_motgol_modules_props.png",
+        "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png"
+      ]
+    },
+    {
+      "path": "B_local_light_target.png",
+      "sha256": "ec891e2e491e08da3f14c937de6eefd09bed73a5320837c53d9d0e9e5a4bed69",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "variant": "B",
+      "original_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-c19fc95c-a707-4358-a85b-09f226d824f8.png",
+      "prompt_version": "motgol-128-B-v1",
+      "generated_file_mtime_utc": "2026-09-21T14:13:49.694419+00:00",
+      "review_status": "pending_pd_choice",
+      "pd_approved": false,
+      "image_is_actual_game_capture": false,
+      "requested_size": "1536x864",
+      "reference_paths": [
+        "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-62f59dfe-dad5-4cb9-804f-da524c918f7a.png"
+      ]
+    }
+  ],
+  "review": {
+    "relative_landmark_relationships_preserved": true,
+    "exact_pixel_layout_preserved": false,
+    "layout_deviations": "Characters and well shifted slightly upwards; more lower-center fence exposed. Use actual game coordinates for integration.",
+    "lighting_only_A_to_B": "No additional design/layout drift noticed in direct comparison.",
+    "remaining_density": "Roof tiles, ground marks and edge vegetation still dense. Reduce small texture details for game use.",
+    "independent_review": "narrative-world: recommends B as conditional reference concept, not an implemented scene or layout blueprint."
+  },
+  "capture": {
+    "manifest": "references/capture_manifest.json",
+    "script_errors": false,
+    "exit_resource_errors_retained": true,
+    "log": "logs/plaza128_capture.txt",
+    "first_import_log": "logs/plaza128_import.txt",
+    "first_import_cursor_loader_error_retained": true
+  },
+  "game_code_modified_for_this_art_task": false
+}

@@ -1,0 +1,66 @@
+{
+	"baseline": "0aba611",
+	"captures": [
+		{
+			"camera_size": 11.0,
+			"camera_transform": "[X: (0.707107, 0.0, -0.707107), Y: (-0.408244, 0.816501, -0.408244), Z: (0.577353, 0.577345, 0.577353), O: (17.32059, 17.32074, 18.32059)]",
+			"file": "01_current_plaza_with_ui.png",
+			"height": 720,
+			"player_position": "(0.0, 0.000391, 1.0)",
+			"width": 1280
+		},
+		{
+			"camera_size": 11.0,
+			"camera_transform": "[X: (0.707107, 0.0, -0.707107), Y: (-0.408244, 0.816501, -0.408244), Z: (0.577353, 0.577345, 0.577353), O: (17.32059, 17.32074, 18.32059)]",
+			"file": "02_current_plaza_clean.png",
+			"height": 720,
+			"player_position": "(0.0, 0.000391, 1.0)",
+			"width": 1280
+		}
+	],
+	"clean_hidden_nodes": [
+		{
+			"after": false,
+			"before": true,
+			"class": "CanvasLayer",
+			"path": "/root/Plaza128Capture/Main/HUD",
+			"property": "visible"
+		},
+		{
+			"after": false,
+			"before": true,
+			"class": "Label3D",
+			"path": "/root/Plaza128Capture/Main/WorldRoot/Town/Merchant/Label",
+			"property": "visible",
+			"text": "김 영감"
+		},
+		{
+			"after": false,
+			"before": true,
+			"class": "Label3D",
+			"path": "/root/Plaza128Capture/Main/WorldRoot/Town/Shaman/Label",
+			"property": "visible",
+			"text": "무당 할매"
+		},
+		{
+			"after": false,
+			"before": true,
+			"class": "Label3D",
+			"path": "/root/Plaza128Capture/Main/WorldRoot/Town/Elder/Label",
+			"property": "visible",
+			"text": "촌장"
+		},
+		{
+			"after": false,
+			"before": true,
+			"class": "Label3D",
+			"path": "/root/Plaza128Capture/Main/WorldRoot/Town/Waypoint/Label",
+			"property": "visible",
+			"text": "서낭단"
+		}
+	],
+	"common_capture_setup": "Live Main scene, 3s natural idle settlement, player teleported to (0,0,1), default camera size11. Main process_mode temporarily DISABLED before both captures to keep identical actor poses and script-driven lights. No meshes, materials, environment, light properties or camera properties altered.",
+	"dev_mode": false,
+	"note": "Shader TIME-driven environmental animation may advance between render frames; no shader or material modified.",
+	"save_path": "res://._tmp/plaza128_save.json"
+}

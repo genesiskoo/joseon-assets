@@ -1,0 +1,58 @@
+extends Node
+## #128 actual unchanged plaza render. Temporary scene only.
+const OUT := "res://._tmp/plaza128_captures/"
+var main: Node
+var captures: Array[Dictionary] = []
+var hidden_nodes: Array[Dictionary] = []
+
+func _ready() -> void:
+	_run.call_deferred()
+
+func frames(count: int) -> void:
+	for i in count:
+		await get_tree().process_frame
+
+func capture(filename: String) -> void:
+	await frames(4)
+	await RenderingServer.frame_post_draw
+	var img := get_viewport().get_texture().get_image()
+	assert(img.get_size() == Vector2i(1280, 720), "expected 1280x720")
+	var err := img.save_png(OUT + filename)
+	assert(err == OK, "save screenshot")
+	captures.append({"file": filename, "width": img.get_width(), "height": img.get_height(), "player_position": str(main.player.global_position), "camera_size": main.camera.size, "camera_transform": str(main.camera.global_transform)})
+	print("PLAZA128 SHOT ", filename)
+
+func _run() -> void:
+	DevMode.is_active = false
+	SaveSystem.save_path = "res://._tmp/plaza128_save.json"
+	SaveSystem.delete_save()
+	main = load("res://world/main.tscn").instantiate()
+	add_child(main)
+	await frames(12)
+	main.player.combat.target = null
+	main.player.teleport_to(Vector3(0, 0, 1))
+	main.camera.snap_to_target()
+	Input.warp_mouse(Vector2(1180, 580))
+	await get_tree().create_timer(3.0).timeout
+	assert(is_equal_approx(main.camera.size, 11.0), "default camera size")
+	# Pause the entire Main subtree after natural idle settling so both captures share the same actor/light state.
+	var old_process_mode: int = main.process_mode
+	main.process_mode = Node.PROCESS_MODE_DISABLED
+	await capture("01_current_plaza_with_ui.png")
+	var hud := main.get_node("HUD") as CanvasLayer
+	hidden_nodes.append({"path": str(hud.get_path()), "class": hud.get_class(), "property": "visible", "before": hud.visible, "after": false})
+	hud.visible = false
+	for label in main.find_children("*", "Label3D", true, false):
+		if label.visible:
+			hidden_nodes.append({"path": str(label.get_path()), "class": label.get_class(), "text": label.text, "property": "visible", "before": true, "after": false})
+			label.visible = false
+	await capture("02_current_plaza_clean.png")
+	var manifest := {"baseline": "0aba611", "dev_mode": DevMode.is_active, "save_path": SaveSystem.save_path, "captures": captures, "clean_hidden_nodes": hidden_nodes, "common_capture_setup": "Live Main scene, 3s natural idle settlement, player teleported to (0,0,1), default camera size11. Main process_mode temporarily DISABLED before both captures to keep identical actor poses and script-driven lights. No meshes, materials, environment, light properties or camera properties altered.", "note": "Shader TIME-driven environmental animation may advance between render frames; no shader or material modified."}
+	var file := FileAccess.open(OUT + "capture_manifest.json", FileAccess.WRITE)
+	file.store_string(JSON.stringify(manifest, "\t"))
+	file.close()
+	main.process_mode = old_process_mode
+	main.queue_free()
+	await frames(5)
+	print("PLAZA128 COMPLETE 2")
+	get_tree().quit()
