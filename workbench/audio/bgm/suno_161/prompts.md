@@ -16,6 +16,10 @@
 | boss A 굿판 | c854cc33-e677-4996-b3bd-ce659e0ab397 (2:30) | aaccf484-54dd-4777-83d9-add91b04359a (2:30) |
 | boss B 무당 칼춤 | 5531a81e-2b97-45b8-9403-cfbae248d96c (2:30) | 7a492909-358f-438d-85bb-68b4533a12c6 (2:30) |
 | kumiho 여우의 웃음 | b1023f53-882c-48ad-87a1-98938c69c9b7 (3:00) | df9dc8e0-3776-4ffb-84d1-64e7d04a6f33 (2:59) |
+| **던전 재생성 (2026-09-22, 2,400 → 2,370)** | | |
+| dungeon C 고요한 굴 | 19e1ec4e-8140-4de8-8887-8899e27c2766 (4:00) | 0d32587a-a831-4f45-a149-9ca640f722b0 (4:00) |
+| dungeon D 느린 맥박 | 447c60ae-acb8-4d0c-bf98-74c4c9a73981 (4:00) | 20dee3c7-63b6-4c0b-a7e3-f2b5a56d8e07 (4:00) |
+| dungeon E 먼 허밍 | 503d3b87-5a6c-4bfd-a7e0-2258d6a9beef (4:00) | 11ab73a4-3e55-45b3-8a8b-8777990fda74 (3:59) |
 
 ## 입력 요령 (Chrome 제어, 다음 세션용)
 
@@ -24,6 +28,8 @@
 - 슬라이더(`role=slider`)는 JS로 focus한 뒤 화살표 키: Weirdness·Style Influence 1%씩, Duration 5초씩(10~360초).
 - Vocal Gender 버튼은 누를 때마다 켜고 끈다(인스트 곡에선 끔). Max Mode = 2배 크레딧.
 - 곡은 비공개로 생긴다(목록의 Publish 버튼 = 아직 비공개). Publish는 누르지 않는다.
+- Create 뒤 페이지가 새로 고쳐지며 입력칸·More Options(접힘)·길이(Auto)가 초기화될 때가 있다 → 매번 글자 수·슬라이더 값을 확인하고 누른다. 길이 Custom 버튼은 More Options를 펼치고 패널을 내려야 보인다.
+- 슬라이더 focus는 값 넣는 JS와 **따로** 호출해야 화살표가 먹는다(같은 호출 끝에 focus하면 다시 그리면서 풀린다).
 
 공통 설정: Suno **v6** · Advanced(Custom) · Max Mode **Off**(켜면 2배 크레딧) · Variety Normal · Personalize Off · Save to My Workspace(비공개 — Publish 누르지 않음).
 가사 칸이 비어 있으면 인스트루멘털. 목소리 후보는 **가사 없는 소리만**(D-017 — 가사 있는 가창은 음성). `[대괄호]` = 연출 지시(안 부름), `(소괄호)` = 부르는 소리.
@@ -145,6 +151,51 @@
 
   [Outro]
   [jing crash]
+  ```
+
+## 던전 재생성 (2026-09-22, PD 판정 1 — 「으스스하되 시끄럽지 않게, 템포·노이즈 거슬림」)
+
+원칙 = joseon `audio.md §4.6.2`: 템포 고정 · 노이즈(긁힘·금속·물방울·바람·저음 웅웅) 빼기 · 음량 고르게 · 4분.
+
+### dungeon_C — 고요한 굴 (드론, 타악 없음)
+
+- 제목: `JH161 dungeon C 고요한 굴` · 길이 4:00 · Weirdness 35% · Style Influence 80% · 가사 없음
+- Styles:
+  > quiet eerie underscore for exploring sealed underground ruins, Korean traditional instruments played softly, low saenghwang (mouth organ) holding a sustained unresolved chord, ajaeng (bowed zither) long smooth low tones, soft breathy daegeum phrases far away, rare single gayageum harmonics, minor mode, lingering tension, steady and even from start to finish, soft dynamics, no build-up, no climax, no percussion, clean warm tone, lots of space, gentle reverb, calm but uneasy, stays in the background, instrumental
+- Exclude: `drums, percussion, beat, crescendo, build-up, climax, epic, cinematic, noise, harsh, distortion, glitch, industrial, scraping, fast tempo, vocals, pop, k-pop, trap, synth lead`
+
+### dungeon_D — 느린 맥박 (일정한 박)
+
+- 제목: `JH161 dungeon D 느린 맥박` · 길이 4:00 · Weirdness 40% · Style Influence 80% · 가사 없음
+- Styles:
+  > subdued eerie exploration music for sealed underground ruins, Korean traditional, soft muffled buk drum like a slow steady heartbeat at a constant 60 BPM that never speeds up, low geomungo plucks with long decay, quiet ajaeng drone underneath, a sparse haunting gayageum motif in a minor mode repeating patiently, restrained even dynamics, soft and low in the mix, no build-up, no climax, clean tone, calm tension, spacious reverb, loopable game background, instrumental
+- Exclude: `crescendo, build-up, climax, accelerando, fast tempo, epic, cinematic, taiko, war drums, noise, harsh, distortion, glitch, scraping, vocals, pop, k-pop, trap, EDM, synth lead`
+
+### dungeon_E — 먼 허밍 (희미한 목소리 두 번)
+
+- 제목: `JH161 dungeon E 먼 허밍` · 길이 4:00 · Weirdness 40% · Style Influence 80% · Vocal Gender Female
+- Styles:
+  > quiet haunted underscore for sealed underground ruins, Korean traditional, low ajaeng and saenghwang sustained drone, soft daegeum answering phrases, a faint distant wordless female humming that appears rarely and softly like a memory, never wailing, minor mode, steady even dynamics throughout, no build-up, no climax, no percussion, clean tone, gentle reverb, calm but haunted, stays in the background
+- Exclude: `drums, percussion, crescendo, build-up, climax, epic, cinematic, noise, harsh, distortion, scraping, wailing, screaming, choir, pop, k-pop, ballad, trap, synth lead, rap, spoken word`
+- Lyrics:
+  ```
+  [Intro]
+  [soft drone]
+
+  [Instrumental]
+  [daegeum far away]
+
+  [Verse]
+  (음...)
+
+  [Instrumental]
+  [drone continues softly]
+
+  [Verse]
+  (음... 음...)
+
+  [Outro]
+  [soft drone fades]
   ```
 
 ## kumiho — 여우의 웃음 (구미호)
