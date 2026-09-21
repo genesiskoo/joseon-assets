@@ -19,3 +19,38 @@
 | torch_flame | torch_flame/torch_flame_v2b.mp4 | 6494cb55-57b7-48b2-b9fd-dc0952d6248a | 겹친 붓 획 서예 불꽃 ("two or three overlapping white brush strokes shaped like a flame") | 기각 — 사진풍 불길로 나옴 |
 | portal_idle | portal_idle/portal_idle_v1.mp4 | 1e7e8344-1009-4d44-9ba8-613f1dc28b6e | 붓 소용돌이(루프) | v1 채택 (-Fps 12 -Loop -Units 1.6 -LoopBlend 4, seam_z 1.19→0.88) — 발광 고리 대체, MANA 틴트 |
 
+
+## #214 공방 6종 (2026-09-22) — 바닥 진 · 검광 마스크 · 타격 스파크 · 먼지 · 화염 폭발 · 살(독) 구름
+
+PD 지시: 「comfy cloud mcp를 이용해서 네크로 마법진·검격 슬래시 마스크·타격 스파크·먼지 임팩트·화염 폭발 8프레임·독구름 burst 8프레임 같은 vfx를 제작하고 적용 티켓 생성해」
+- 영상 = `video_wan2_2_14B_t2v`(640² · 먼지는 832×480, 2초, 16fps 33장) / 정지 = `image_z_image_turbo`(1024², 띠는 1280×320, 8 steps, seed 고정). 오픈 모델뿐 → API 크레딧 0, GPU 시간만.
+- 고르기·미리보기 = `_tools/vfx_workshop.py` (키잉은 `joseon/tools/vfx_sheet.py`의 key_alpha 그대로 — 미리보기 = 게임 알파): `contact`(전 프레임 대조표+먹 양 곡선) · `pick`(원본 33장 중 N장, ease>1 = 터지는 앞을 촘촘히, `--crop`·`--black`) · `preview`/`strip`(게임 바닥색·2배 척도·도호 키 막대, 틴트 또는 색띠 `fire|sal|necro`) · `still`(정지 텍스처 키잉·트림) · `decal`(바닥 진 그려짐→회전·맥동→사라짐 시연, 아이소 ×0.577) · `trail`(띠 마스크를 칼 궤적 호에 감은 시연) · `bend`(띠 → 반달) · `spark8`(정지 섬광 → 8프레임, 예비). 검토판 = `_tools/review_board.py` → `_review_214.png`.
+- **8프레임 폴더 `<cue>_<v>_8f/`가 반입 입력**이다(검은 바탕 RGB, 반입 때 `-Key black`으로 다시 키잉). 반입 명령은 적용 카드에.
+
+| 큐 | 파일 | job | 프롬프트 요지 | 판정 · 반입 인자 |
+|---|---|---|---|---|
+| fire_burst | fire_burst/fire_burst_v1a.mp4 | 49bd71e4-af01-41fc-943a-7801a334a5f5 | 흰 먹 붓 불꽃 혀가 둥근 불덩이로 터짐 → 불티 → 연기로 흩어짐 ("white-hot core with grey smoky edges, dry brush") | **★ 채택** — 8f = 원본 [2,4,7,10,14,18,22,27] (`pick --start 2 --end 27 --ease 1.3`), 18fps 0.44s · 1.3u. 색은 색띠(#198)가 틴트보다 훨씬 낫다 |
+| fire_burst | fire_burst/fire_burst_v1b.mp4 | 23d1e340-a009-4b59-90bf-9912843a236a | 둥근 불덩이 폭발, 흰 속 → 회색 가장자리 | 예비 — 가시 없이 둥글다. 8f 폴더 있음 |
+| fire_burst | fire_burst/fire_burst_v1c.mp4 | 70adb8c0-4727-4dec-b715-4c6c292c3218 | 동양화 붓 불꽃(말린 불꽃 모양) | 예비 — 화풍은 가장 H1답지만 처음부터 타오르는 모양(터짐 없음) → #185 「타서 재」·화상 루프 후보 |
+| sal_burst | sal_burst/sal_burst_v1a.mp4 | fc198353-3df6-4671-9ec7-b84ccea8e285 | 흰 연기 뭉치가 둥글게 터져 굴러 퍼짐 → 덩어리로 흩어짐 | **★ 채택** — 8f = [3,5,8,12,15,19,23,27] (`--start 3 --end 27 --ease 1.2`), 14fps 0.57s · 1.5u. 독 = 살(D-081) |
+| sal_burst | sal_burst/sal_burst_v1b.mp4 | 4333afb9-993d-439b-ab6c-60116916b2ea | 무거운 안개 고리가 부풀어 흩어짐 | 예비 — 천천히 부푼다(터짐 약함) |
+| sal_burst | sal_burst/sal_burst_v1c.mp4 | 6e7472fd-3780-4e08-9406-771dd3291a4c | 동양화 구름 말림(운문) 번짐 | 예비 — 조선 구름무늬가 나왔다. 독보다 **살풀이·도술 연기** 후보 |
+| hit_spark | hit_spark/hit_spark_v1a.mp4 | 895c8445-ab74-4733-b2cf-65e27703908d (첫 시도 e22c6737… = 플랫폼 「Job has stagnated」 실패 → 재제출) | 흰 섬광 → 굵은 가시 별 → 불티가 흩어짐 | **★ 채택** — 8f = [1,3,5,8,10,13,16,19] (`--start 1 --end 19 --ease 1.15`), 32fps 0.25s · 1.0u |
+| hit_spark | hit_spark/hit_spark_v1b.mp4 | c7470991-8e9d-4ad1-a2b9-e8b8e76b728e | 칼이 돌에 닿는 불티 별 | 기각 — 계속 타는 스파클러 + 끝에 막대가 보인다 |
+| hit_spark | hit_spark/hit_spark_v2.mp4 | 17866217-7c38-467c-8622-54e2366ada94 | 네 갈래 섬광 한 번 | 기각 — 여섯 모 별 + 막대(반짝임), 터짐 아님 |
+| hit_spark | hit_spark/hit_spark_still_s1.png | 1afbe298-6982-4108-a798-898ce3351d0e (seed 101) | 네 갈래 섬광 + 바늘 빛살(정지) | 예비 — `spark8`로 8프레임 가능하나 빛살이 게임 크기에서 0.5px(안 보임) |
+| hit_spark | hit_spark/hit_spark_still_s2.png | c7d7a159-0699-49d8-a836-7c6429842c2d (seed 102) | 같음 | 기각 — 사진 같은 스파클러 (512px로 줄여 보관) |
+| dust_impact | dust_impact/dust_impact_v1b.mp4 | 1545dbbc-e2cd-4e16-add7-88f2dc4c4cda | 옆에서 본 바닥 충격 먼지 고리 | **★ 채택** — 반사 바닥이 비쳐서 `--crop 0,0,0,112 --black 40`(바닥선 y≈360 아래 자름·회색 바닥 제거), 8f = [1,3,5,8,11,14,18,22] (`--start 1 --end 22 --ease 1.35`), 16fps 0.5s · 1.4u. **바닥 기준점 필요**(가운데 기준이면 반이 바닥에 묻힘) |
+| dust_impact | dust_impact/dust_impact_v1a.mp4 | e9ce3e1b-c5a0-4f59-8f18-71d6eef5a03a | 흰 먼지 뭉치가 바닥을 따라 퍼짐(먹 붓) | 기각 — 처음부터 퍼져 있고 흰 바닥선이 끝까지 남는다 |
+| necro_circle | necro_circle/necro_circle_c_s51.png | 359acaf2-b098-41f9-a798-3d6760856fed (seed 51) | 위에서 본 소환 진: 거친 겹 고리 + 안쪽 가시 고리 + 할퀸 자국 ("No letters, no runes, no animals") | **★ 채택** — `still --circle --max 512` → `necro_circle_c_s51_tex.png`, 2.2u 바닥 데칼 |
+| necro_circle | necro_circle/necro_circle_b_s33.png | 357f418d-16aa-4f5f-aeee-035df39d7018 (seed 33) | 겹 고리 + 초승달·점 + 가운데 연기 소용돌이 | **★ 둘째 안** — 가운데 연기가 옅은 회색이라 색띠에서 층이 산다. `_tex.png` 있음 |
+| necro_circle | necro_circle/necro_circle_c_s52.png | bed59130-0902-4e11-ac9a-a7ccc7c1d908 (seed 52) | c와 같음 | 예비 — 더 단순 |
+| necro_circle | necro_circle_a_s11 / a_s22 | 5402ff1c-f186-4edf-8a7a-7c2549b39825 / a9b378f4-6624-41c8-b0aa-663fb6c81e94 | 가시 고리 + 부적 문양 8개 | 기각 — 문양이 알파벳·한글 글자처럼 나온다 |
+| necro_circle | necro_circle_b_s44 | b53dd21f-98bf-4f72-906e-0a24461a5e06 | 「cursed seal circle」 | 기각 — **seal을 동물 물범으로 읽어** 가운데에 물범 |
+| necro_circle | necro_circle_d_s61 / d_s62 | fc82144a-d129-401f-b925-4d7cf517cbf0 / 0b382679-6357-4355-967f-4ba47e5fa417 | 겹 원 + 가시 12 + 초승달 고리 | 기각 — 조타륜·과녁·나침반처럼 읽힌다 |
+| slash_mask | slash_mask/slash_mask_strip_s7.png | b7788b44-b4f8-44cb-9999-b5281885027f (seed 7) | 가로 마른 붓 한 획, 오른쪽 뭉툭·왼쪽 붓결 꼬리 | **★ 채택(띠)** — `still --max 1024` → `slash_mask_strip_s7_tex.png` 1024×198. 머리 = 오른쪽, 꼬리 = 왼쪽, 위 = 칼끝 |
+| slash_mask | slash_mask/slash_mask_strip_s8.png | 90674ebd-a5da-4a2d-a21c-a6ab6a09322b (seed 8) | 같음 | **★ 채택(반달)** — 뾰족한 꼬리 → `bend --tail -75 --head 75` → `slash_mask_arc_s8_tex.png` 614×271. 띠 예비 |
+| slash_mask | slash_mask_arc_s5 / s6 | 5fcd47d0-e5ca-45a8-a468-a95640c61e11 / 76dd7cbd-7b23-4611-bdba-9e47242dc07c | 「crescent-shaped sword slash」 | 기각 — 매끈한 초승달(달)로 나온다 |
+| slash_mask | slash_arc_v2_s71 / s72 | aa830074-990f-45f6-acf2-a7da94040b1a / 64b92932-e621-467d-89f2-7cf9cabe3351 | 애니풍 반원 슬래시 속도선 | s71 예비(붓결 고리 — 회오리 링 마스크 후보) · s72 기각. 둘 다 반원 대신 **고리 전체**가 나왔다 |
+
+**재밟지 말 것 (#214)**: ① Z-Image는 말을 곧이곧대로 읽는다 — 「seal」 = 물범, 「crescent」 = 초승달, 「half circle slash」 = 고리. 모양은 「single horizontal dry brush stroke」처럼 **물건 이름 없이 붓 동작으로** 말하고, 호는 띠를 `bend`로 구부려 만든다 ② 진·부적 문양은 「talisman glyph」라고만 해도 글자가 나온다 → 「No letters, no alphabet, no runes, no writing」 + 가시·할퀸 자국·점 같은 **도형만** ③ Wan 「spark」는 스파클러(막대 달린 불꽃놀이)로 가기 쉽다 → 「one single quick impact … not continuous, no stick」 ④ Wan 먼지는 반사 바닥을 같이 그린다 → 바닥선 아래 크롭 + 검정점 ⑤ Comfy Cloud 영상은 계정당 한 번에 한 건씩 돌고(이미지는 여러 건 동시), 드물게 「Job has stagnated」로 실패 → 같은 인자로 재제출 ⑥ 이미지 결과 링크(`/api/s/…?raw=1`)는 몇 분 안에 만료 — 받자마자 내려받는다.
