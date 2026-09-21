@@ -20,6 +20,10 @@
 | dungeon C 고요한 굴 | 19e1ec4e-8140-4de8-8887-8899e27c2766 (4:00) | 0d32587a-a831-4f45-a149-9ca640f722b0 (4:00) |
 | dungeon D 느린 맥박 | 447c60ae-acb8-4d0c-bf98-74c4c9a73981 (4:00) | 20dee3c7-63b6-4c0b-a7e3-f2b5a56d8e07 (4:00) |
 | dungeon E 먼 허밍 | 503d3b87-5a6c-4bfd-a7e0-2258d6a9beef (4:00) | 11ab73a4-3e55-45b3-8a8b-8777990fda74 (3:59) |
+| **던전 3차 (2026-09-22, 2,370 → 2,340)** | | |
+| dungeon F 봉인 너머 | 58537482-bf4b-40ce-a295-9af9714ebb10 (4:00) | 28580a66-6b3c-43ed-8f03-4f3970677c46 (4:00) |
+| dungeon G 귀신 자장가 | 78a684d4-7c49-428f-a24f-5a2601810134 (4:00) | bdae9eed-9850-4f79-9039-1a7266417334 (4:00) |
+| dungeon H 불길한 맥박 | ea6c22bf-88c8-4f12-be73-6ad1a0b78d42 (4:00) | 682450b1-2d96-417b-9ba9-09db952179db (4:00) |
 
 ## 입력 요령 (Chrome 제어, 다음 세션용)
 
@@ -197,6 +201,50 @@
   [Outro]
   [soft drone fades]
   ```
+
+## 던전 3차 (2026-09-22, PD 판정 2 — 「너무 평화로움. 으스스해야됨」)
+
+진단 = joseon `audio.md §4.6.3`: 으스스함(불협·음정 흔들림·미끄럼음·드문 음)과 시끄러움(노이즈·빨라짐·절정·큰 소리)은 다른 축. 2차의 calm·warm·gentle을 빼고 sinister·dread·dissonant를 넣되, 노이즈 제외는 유지.
+
+### dungeon_F — 봉인 너머 (불협 드론)
+
+- 제목: `JH161 dungeon F 봉인 너머` · 길이 4:00 · Weirdness 65% · Style Influence 80% · 가사 없음
+- Styles:
+  > sinister unsettling underscore for a sealed underground crypt, Korean traditional instruments, low ajaeng bowed tones holding a dissonant minor second against a deep drone, eerie bowed gayageum harmonics, slow haegeum glissandi sliding downward like a ghost, rare dissonant geomungo plucks with long decay, tritone intervals, detuned wavering pitch, long ominous silences, creeping dread, something watching in the dark, quiet and restrained, steady, no build-up, no climax, no percussion, clean tones, instrumental
+- Exclude: `noise, scraping, metallic, industrial, glitch, distortion, rumble, wind, jump scare, stinger, loud hits, crescendo, build-up, climax, fast tempo, epic, trailer, drums, vocals, pop, k-pop, trap, synth lead`
+
+### dungeon_G — 귀신 자장가 (흔들리는 허밍)
+
+- 제목: `JH161 dungeon G 귀신 자장가` · 길이 4:00 · Weirdness 55% · Style Influence 80% · Vocal Gender Female
+- Styles:
+  > creepy haunted lullaby for a cursed underground crypt, a slow gayageum harmonics melody like a broken music box in a minor mode, slightly out of tune, a distant ghostly wordless female voice humming the lullaby, detuned and wavering, low ajaeng drone underneath, cold and sinister, something is wrong, quiet, steady slow tempo, sparse, no build-up, no climax, no percussion, clean tones
+- Exclude: `noise, scraping, metallic, industrial, glitch, distortion, jump scare, stinger, loud hits, crescendo, build-up, climax, fast tempo, epic, drums, wailing, screaming, choir, pop, k-pop, ballad, trap, synth lead, rap, spoken word`
+- Lyrics:
+  ```
+  [Intro]
+  [music box gayageum harmonics, low drone]
+
+  [Verse]
+  (음... 음음...)
+  (아... 아아...)
+
+  [Interlude]
+  [gayageum lullaby alone, slightly out of tune]
+
+  [Verse]
+  (음... 음음...)
+  (으음...)
+
+  [Outro]
+  [lullaby fades into drone]
+  ```
+
+### dungeon_H — 불길한 맥박 (고정 박동 + 반음계)
+
+- 제목: `JH161 dungeon H 불길한 맥박` · 길이 4:00 · Weirdness 55% · Style Influence 80% · 가사 없음
+- Styles:
+  > ominous dungeon underscore, Korean traditional, a muffled buk heartbeat at a constant slow tempo that never changes, dissonant low geomungo plucks, a creeping chromatic gayageum motif that never resolves, ajaeng dissonant low drone, eerie haegeum notes bending out of tune, tritone tension, dread and menace, restrained volume, sparse, no build-up, no climax, clean tones, instrumental
+- Exclude: `noise, scraping, metallic, industrial, glitch, distortion, rumble, jump scare, stinger, crescendo, build-up, climax, accelerando, fast tempo, epic, taiko, war drums, vocals, pop, k-pop, trap, EDM, synth lead`
 
 ## kumiho — 여우의 웃음 (구미호)
 
