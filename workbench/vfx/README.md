@@ -96,3 +96,30 @@ PD 「붓글씨 획단위로 쓰는걸 스프라이트로」. 첫 프레임 = �
 - 비교판 = `flf/write_board.png`, 영상별 대조표 = `flf/check_*.png`, 게임 합성 = `pair_levelup2.gif`·`pair_boss2.gif`.
 - 도구: `_tools/stroke_check.py`(쓰기 지수 = 글자 자리 밝기 흩어짐 최댓값, 0.35↑ = 획으로 씀), `_tools/stroke_sprite.py`(첫 먹 3%~완성 97%를 N장 + 끝 1장, `--by cover` = 먹 양 기준).
 - 결론: 쓰기 품질은 Wan = Seedance → 제작은 Wan(무료).
+
+### #231 3차 — 한자 획 쓰기 6장면 · 레벨업 음성 (2026-09-22)
+
+PD 「한자 획쓰는 이펙트 자체는 괜찮음 · 빨간 배경 한자·소용돌이는 안 어울림 · 시안 더 · 레벨업은 문구 대신 이펙트 + 레벨업 음성」. 붉은 번짐·붉은 낙관·소용돌이를 빼고 글자 색 = 금니(보상)·흰 먹(보스·지역).
+
+| 파일 (`mock_231/`) | 내용 |
+|---|---|
+| `levelup3_voice.mp4` | **소리 있는 비교** — 지금(「레벨 업! 2」 + 레벨업 소리) → 3차(글자 없음, 金 道) × 도호 목소리 6판 |
+| `pair_levelup3.gif` · `pair_roar3.gif` · `pair_drop3.gif` · `pair_quest3.gif` · `pair_title3.gif` | 지금 \| 3차 (레벨업 道 · 포효 怒 · 봉인 조각 寶 · 퀘스트 完 · 흑랑 굴 黑狼窟) |
+| `pair_boss3.gif` (네 칸) · `pair_boss3_{gold,white,ground}.gif` | 흑랑 처치 封 — 금니 허공 · 흰 먹 허공 · 금니 바닥(시체가 먹으로 스러지며 드러남) |
+| `raw/title_hrg_s1.png`(고름)·`s2` | Z-Image 가로 제목 「黑狼窟」 1344×512 |
+
+획 쓰기 영상 8편 (`flf/`, Wan 2.2 FLF2V · API 0) — 모두 획으로 씀(쓰기 지수 0.49~0.50):
+
+| 판 → 스프라이트 | 획 순서 | 판정 |
+|---|---|---|
+| `wanflf_bo_a` → `bo_a_14f/` | 宀 → 王·缶 → 貝 | **고름** |
+| `wanflf_bo_b` → `bo_b_14f/` | 위 → 아래 | 예비 |
+| `wanflf_no1` → `no1_14f/` | 女 → 又 → 心, 「사납게 휘갈김」 프롬프트 · 20장에 다 씀 | **고름** |
+| `wanflf_no2` → `no2_14f/` | 보통 | 예비 |
+| `wanflf_wan_a` → `wan_a_14f/` | 늦게 시작 · 글자 밖 먹 2.1% | 기각 |
+| `wanflf_wan_b` → `wan_b_14f/` | 宀 → 二 → 儿 | **고름** |
+| `wanflf_hrg_a` → `hrg_a_24f/` | 글자마다 한꺼번에 튀어나옴 | 기각 |
+| `wanflf_hrg_b` → `hrg_b_24f/` | 黑 → 狼 → 窟, 한 획씩 (832×320 · 65장) | **고름** |
+
+- 첫·끝 장면 = `flf/flf_{bo,no1,no2,wan,hrg}_end.png` · 가로 검정 `flf_black_wide.png`. 대조표 = `flf/check_wanflf_*.png`.
+- 레벨업 음성 = `../audio/sfx/doho_levelup_{a,b,c}/`(ElevenLabs 82 구독 크레딧, 배치 `../audio/batch_231_levelup_voice.json`, 파형 `../audio/sfx/contact_231_levelup_voice.png`) — A 능청 웃음 · B 차오르는 숨 · C 추임새 「어허!」. 말 없는 소리만(D-017).
