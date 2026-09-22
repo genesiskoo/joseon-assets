@@ -54,3 +54,28 @@ PD 지시: 「comfy cloud mcp를 이용해서 네크로 마법진·검격 슬래
 | slash_mask | slash_arc_v2_s71 / s72 | aa830074-990f-45f6-acf2-a7da94040b1a / 64b92932-e621-467d-89f2-7cf9cabe3351 | 애니풍 반원 슬래시 속도선 | s71 예비(붓결 고리 — 회오리 링 마스크 후보) · s72 기각. 둘 다 반원 대신 **고리 전체**가 나왔다 |
 
 **재밟지 말 것 (#214)**: ① Z-Image는 말을 곧이곧대로 읽는다 — 「seal」 = 물범, 「crescent」 = 초승달, 「half circle slash」 = 고리. 모양은 「single horizontal dry brush stroke」처럼 **물건 이름 없이 붓 동작으로** 말하고, 호는 띠를 `bend`로 구부려 만든다 ② 진·부적 문양은 「talisman glyph」라고만 해도 글자가 나온다 → 「No letters, no alphabet, no runes, no writing」 + 가시·할퀸 자국·점 같은 **도형만** ③ Wan 「spark」는 스파클러(막대 달린 불꽃놀이)로 가기 쉽다 → 「one single quick impact … not continuous, no stick」 ④ Wan 먼지는 반사 바닥을 같이 그린다 → 바닥선 아래 크롭 + 검정점 ⑤ Comfy Cloud 영상은 계정당 한 번에 한 건씩 돌고(이미지는 여러 건 동시), 드물게 「Job has stagnated」로 실패 → 같은 인자로 재제출 ⑥ 이미지 결과 링크(`/api/s/…?raw=1`)는 몇 분 안에 만료 — 받자마자 내려받는다.
+
+## #231 이펙트 시안 — 먹물·한자 (2026-09-22)
+
+PD 「시안으로 만들어봐 before/after보고 결정」. 실제 게임 화면을 두 번 찍어(지금 이펙트 / 이펙트만 숨김) 숨긴 판 위에 시안을 합성했다. 합성 스크립트·한 장짜리 before/after·글자판은 게임 저장소 `docs/art/231_vfx_mockup/`, 사양 `design/vfx.md §8.7`.
+
+| 파일 (`mock_231/`) | 무엇 |
+|---|---|
+| `pair_levelup/drops/roar/boss/portal.gif` | 지금 \| 시안 나란히 (움직임) |
+| `glyph_sheet_231.png` | Z-Image 한자·낙관 18장 전부 (기각본 포함) |
+| `contact_gold_column/ink_vortex/ink_ripple/ink_bloom.png` | Wan 먹 영상 4편 33장씩 |
+| `raw/` | 생성 원본 — 고른 것 원본 크기, 기각·예비는 512px |
+
+| 원본 | 판정 | 쓰임 |
+|---|---|---|
+| glyph_do_s2 · glyph_seung_s1 · glyph_bong_s1 · glyph_no_s1 · glyph_hwa_s1 · glyph_bing_s1 · glyph_wan_s1 · glyph_bo_s1 | 채택 후보 | 道(레벨업)·昇(둘째)·封·怒·火·冰(氷 대신)·完·寶 |
+| stamp_bo_s2 · stamp_wan_s1 · stamp_bong_s1 | 채택 후보 (도장 면만 떠서) | 寶 낙관(유니크)·完 낙관·封 낙관(봉인 조각) |
+| glyph_do_s1 | 기각 — 흰 테두리 | |
+| glyph_hwa_s2 | 기각 — 다른 글자 | |
+| glyph_seung_s2 · glyph_bong_s2 · glyph_no_s2 · glyph_bing_s2 · stamp_bo_s1 | 예비 | |
+| wan_gold_column | 채택 — 앞 0~10장 가시 분수(레벨업·유니크), 12~22장 가는 기둥(Magic·Rare) | |
+| wan_ink_vortex | 채택 — 돌기만 하고 모이지 않아 줄이며 돌리는 건 코드 | 흑랑 처치 |
+| wan_ink_ripple | 채택 — 광택 고리지만 금니로 물들이면 쓸 만 | 착지·레벨업 파문 |
+| wan_ink_bloom | 기각 — 반사 바닥이 같이 나옴 | 화면 전환은 잡음 셰이더 |
+
+재밟지 말 것: Z-Image는 한자를 정자로 쓴다(氷만 冰으로) · 「seal stamp impression」 = 입체 돌도장 사진 · 마른 붓 띠(#214 s7)를 세운 광선은 게임 크기(폭 20px)에서 판자.
