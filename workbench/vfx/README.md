@@ -79,3 +79,20 @@ PD 「시안으로 만들어봐 before/after보고 결정」. 실제 게임 화�
 | wan_ink_bloom | 기각 — 반사 바닥이 같이 나옴 | 화면 전환은 잡음 셰이더 |
 
 재밟지 말 것: Z-Image는 한자를 정자로 쓴다(氷만 冰으로) · 「seal stamp impression」 = 입체 돌도장 사진 · 마른 붓 띠(#214 s7)를 세운 광선은 게임 크기(폭 20px)에서 판자.
+
+### #231 2차 — 한자를 획 단위로 쓰는 스프라이트 (2026-09-22)
+
+PD 「붓글씨 획단위로 쓰는걸 스프라이트로」. 첫 프레임 = 빈 검정(`flf/flf_black.png`), 끝 프레임 = Z-Image 글자(`flf/flf_do_end.png`·`flf_bong_end.png`)로 박은 영상(FLF2V) → 쓰는 구간 15장.
+
+| 파일 (`mock_231/flf/`) | 모델 | 쓰기 지수 | 판정 |
+|---|---|---|---|
+| `wanflf_do_a.mp4` → `do_a_14f/` | Wan 2.2 14B FLF2V 49장 (API 0) | 0.50 | **채택 후보** — 首 → 책받침(교본 순서) |
+| `wanflf_do_b.mp4` → `do_b_14f/` | Wan 2.2 | 0.50 | 예비 — 책받침 먼저 |
+| `wanflf_bong_a.mp4` → `bong_14f/` | Wan 2.2 | 0.50 | **채택 후보** — 圭 → 寸 |
+| `wanflf_bong_b.mp4` | Wan 2.2 | 0.50 | 예비 |
+| `sd25flf_do.mp4` → `sd_do_14f/` | Seedance 2.5 FLF2V 121장 (약 352크레딧) | 0.50 | 예비 — 책받침 먼저·획 사이 멈춤(`--by cover`) |
+| `sd25flf_bong.mp4` | Seedance 2.5 | 0.50 | 예비 |
+
+- 비교판 = `flf/write_board.png`, 영상별 대조표 = `flf/check_*.png`, 게임 합성 = `pair_levelup2.gif`·`pair_boss2.gif`.
+- 도구: `_tools/stroke_check.py`(쓰기 지수 = 글자 자리 밝기 흩어짐 최댓값, 0.35↑ = 획으로 씀), `_tools/stroke_sprite.py`(첫 먹 3%~완성 97%를 N장 + 끝 1장, `--by cover` = 먹 양 기준).
+- 결론: 쓰기 품질은 Wan = Seedance → 제작은 Wan(무료).
