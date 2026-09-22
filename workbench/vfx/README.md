@@ -106,6 +106,7 @@ PD 「한자 획쓰는 이펙트 자체는 괜찮음 · 빨간 배경 한자·�
 | `levelup3_voice.mp4` | **소리 있는 비교** — 지금(「레벨 업! 2」 + 레벨업 소리) → 3차(글자 없음, 金 道) × 도호 목소리 6판 |
 | `pair_levelup3.gif` · `pair_roar3.gif` · `pair_drop3.gif` · `pair_quest3.gif` · `pair_title3.gif` | 지금 \| 3차 (레벨업 道 · 포효 怒 · 봉인 조각 寶 · 퀘스트 完 · 흑랑 굴 黑狼窟) |
 | `pair_boss3.gif` (네 칸) · `pair_boss3_{gold,white,ground}.gif` | 흑랑 처치 封 — 금니 허공 · 흰 먹 허공 · 금니 바닥(시체가 먹으로 스러지며 드러남) |
+| `pair_boss3_white_ground.gif` | **PD 판정 = 흰 먹 · 바닥 封** (D-085) — 레벨업 음성은 **C1**(`../audio/sfx/doho_levelup_c/doho_levelup_c_v1.wav`) |
 | `raw/title_hrg_s1.png`(고름)·`s2` | Z-Image 가로 제목 「黑狼窟」 1344×512 |
 
 획 쓰기 영상 8편 (`flf/`, Wan 2.2 FLF2V · API 0) — 모두 획으로 씀(쓰기 지수 0.49~0.50):
