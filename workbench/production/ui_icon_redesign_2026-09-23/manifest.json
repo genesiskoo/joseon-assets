@@ -1,0 +1,98 @@
+{
+  "card": 393,
+  "branch": "codex/393-ui-icon-redesign",
+  "base_commit": "2993fefa9a3013ef98022d1327f7601f879dbf51",
+  "tool": "built-in image_gen",
+  "generation_calls": 4,
+  "selected": null,
+  "purpose": "AI-generated style comparison, not an in-game screenshot or final sprite atlas",
+  "verification": {
+    "visual_review": true,
+    "byte_identical_copies": "6/6",
+    "in_game_30_48_60px_tested": false
+  },
+  "images": [
+    {
+      "code": "A",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-0bcba4d7-21e8-4b9b-a441-bbd72393e688.png",
+      "file": "A_painted.png",
+      "path": "results/A_painted.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2651354,
+      "sha256": "6b3e0fdc1de1f30c5f81b18561d721ddaa4e956292adbfe610750122c79efa53",
+      "status": "candidate"
+    },
+    {
+      "code": "B",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-3720c1f2-a0a9-4b85-8c2d-aadeb1418b8c.png",
+      "file": "B_ink_print.png",
+      "path": "results/B_ink_print.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2996166,
+      "sha256": "2ba9ca475fa208867236fa0bfe7abecd6bfecf9eb5a0f6d8a14aeeec7356bb13",
+      "status": "candidate"
+    },
+    {
+      "code": "C1",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-e1bb1251-9b5e-4ded-9c22-84718bc205c7.png",
+      "file": "C1_craft_initial.png",
+      "path": "results/C1_craft_initial.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2708825,
+      "sha256": "7885e2bf1d21aa930b422a192e2628940f2797280dc5b17e1a21c275bb68de78",
+      "status": "preserved_initial_iteration"
+    },
+    {
+      "code": "C2",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-910ce76b-8124-445d-ba4c-89c7395ad3dd.png",
+      "file": "C2_wood_relief.png",
+      "path": "results/C2_wood_relief.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2646956,
+      "sha256": "27b7cfa2326b73e4e7bf99dbc393f98b92ad449e3f63e7e08d4bf9e857a02cf6",
+      "status": "candidate"
+    }
+  ],
+  "references": [
+    {
+      "source": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+      "path": "references/H1_approved_reference.png",
+      "role": "H1 left panel: style and Doho identity",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1983620,
+      "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\245-skill-picker\\joseon\\docs\\art\\245_skill_picker\\after_skill_picker_04_picker_1280x720.png",
+      "path": "references/ingame_245_reference.png",
+      "role": "#245 actual game capture: tone only",
+      "width": 1280,
+      "height": 720,
+      "bytes": 1092710,
+      "sha256": "38fa71e4b506254b6df57c3abcd54bdd6dc3e5512645ace4484601ef946d9872"
+    }
+  ],
+  "prompts": [
+    {
+      "path": "prompt_A.txt",
+      "sha256": "18a0c59eb5ac4652339eaf794d682a850e33e555c9f23e1b238c0c79ead375f6"
+    },
+    {
+      "path": "prompt_B.txt",
+      "sha256": "483b59845c13b7f9e1dd397fb815ed4207d596e2eab6094d5492786d38653dc1"
+    },
+    {
+      "path": "prompt_C.txt",
+      "sha256": "ab8f20f6b60a6866d10525a5a83b6800926c81ee5c19b59ccd4e7c8abbc896f6"
+    },
+    {
+      "path": "prompt_C2.txt",
+      "sha256": "61379a3a35926839cd26e16dfd289fa4f1187da589f4be902ae661c6dc563a07"
+    }
+  ]
+}
