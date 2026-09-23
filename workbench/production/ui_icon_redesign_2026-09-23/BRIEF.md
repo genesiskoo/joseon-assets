@@ -1,3 +1,5 @@
+> **2026-09-23 PD 교정:** 소지품의 정사각 액자 표현은 철회. 최신은 revision_d2r/BRIEF.md 및 D1·D2b. 아래는 이전 생성 당시 기록.
+
 # #393 — UI / 스킬·아이템 아이콘 리디자인 시안
 
 상태: A·B·C2 생성·검수 완료, PD 방향 선택 대기. C1 초안도 보존, 모두 미채택. GitHub https://github.com/genesiskoo/joseon-hunters/issues/393

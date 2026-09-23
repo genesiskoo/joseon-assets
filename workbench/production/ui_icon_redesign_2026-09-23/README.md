@@ -1,24 +1,41 @@
-# UI·스킬/아이템 아이콘 리디자인 — #393
+# #393 — UI·아이콘 시안
 
-[GitHub 카드](https://github.com/genesiskoo/joseon-hunters/issues/393) · 브랜치 `codex/393-ui-icon-redesign` · **PD 방향 선택 대기**
+[GitHub 카드 #393](https://github.com/genesiskoo/joseon-hunters/issues/393)
+상태: **D2R 소지품 교정 완료, D1 + D2b 검토 대기. 모두 미채택·미반입.**
 
-같은 스킬 6종과 아이템 6종을 UI 적용 예시와 함께 비교한다. built-in image_gen으로 3안+공예 재질 보완 1장을 만들었다. 실제 인게임 적용 화면이 아닌 AI 생성 목표 시안이다.
+PD 지적에 따라 스킬과 소지품의 표현을 나눴다. 스킬은 정사각 동작 일러스트 후보를 유지할 수 있지만, 소지품은 다칸 격자에 들어가는 **물체 자체의 그림**이다. 기존 A/B/C2의 정사각 액자형 소지품 방향은 철회했다.
 
-## A · 채색 원화
+## 최신 ① D1 — 물체 확대 시트
+
+![D1 물체](results/D1_inventory_objects.png)
+
+쇠·천·가죽·대나무·옥·도기로 구분한 11종. 물건의 전체 실루엣과 가방 칸 수를 보여 준다. 최종 투명 PNG 묶음은 아니다.
+
+## 최신 ② D2b — 배치 보완본
+
+![D2b 배치](results/D2b_inventory_layout_refined.png)
+
+9장비칸 + 10×4 가방 + 다칸 물건. 내부 격자선 흔적을 정리하고 화염부를 火 문양으로 보완했다. 실제 Godot 캡처/정밀 좌표 시안은 아니다. 장비칸 비율·서체 크기는 구현 때 정본에 맞춘다.
+
+[교정 사양](revision_d2r/BRIEF.md) · [검수](revision_d2r/QA.md) · [아이템 표본](revision_d2r/item_samples.json) · [전체 출처·해시](manifest.json)
+프롬프트: [D1](revision_d2r/prompt_D1.txt), [D2](revision_d2r/prompt_D2.txt), [D2b](revision_d2r/prompt_D2b.txt).
+
+## 보존 — D2 첫 배치
+
+![D2 초안](results/D2_inventory_layout.png)
+
+신·패랭이 내부 세로선 흔적, 장비칸 비율, 화염부의 氣 문양을 찾아 D2b를 만들었다.
+
+## 보존 — 이전 후보
+
+소지품 표현은 사용자 교정으로 철회. 스킬 화풍도 아직 선택되지 않았다.
+
 ![A](results/A_painted.png)
 
-## B · 먹판 삽화
 ![B](results/B_ink_print.png)
 
-## C2 · 목조 부조
 ![C2](results/C2_wood_relief.png)
 
-## C1 · 보존한 공예 초안
 ![C1](results/C1_craft_initial.png)
 
-- [제작 기준](BRIEF.md), [생성 후 검수](QA.md)
-- 정확한 프롬프트: [A](prompt_A.txt), [B](prompt_B.txt), [C1](prompt_C.txt), [C2 수정](prompt_C2.txt)
-- `generation_sources.json`: 도구가 반환한 원본 파일 경로. 복사본과 원본 SHA256 대조는 `manifest.json`.
-- `references/`: H1 승인 원본과 #245 실제 캡처의 사본. H1은 왼쪽 열만 사용, 캡처는 현재 톤 참조다.
-
-기존 게임 에셋과 #245 기능 후보는 보존했다. 스타일 선택 뒤 원본 아이콘·UI 조각의 실제 규격을 확정한다.
+이전 프롬프트·QA는 생성 당시 기록으로 보존한다. 최신 판단은 revision_d2r/를 따른다.
