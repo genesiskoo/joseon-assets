@@ -1,0 +1,494 @@
+{
+  "card": 245,
+  "branch": "codex/245-skill-picker",
+  "base": "1a352d691f260a401fb128f2e8c03a5c159eaa2c",
+  "engine": "4.7.2.stable.steam.ed1daf0bf",
+  "verification": {
+    "unit": 30,
+    "tools": 12,
+    "runner_selftest": "5/5",
+    "e2e": "46/46",
+    "initial_e2e": "45/46, verify_flows fixture precondition fixed",
+    "initial_failure_log": "e2e_all_20260923_182544_791.raw.log",
+    "picker_windowed_checks": 132,
+    "icons_windowed_checks": 48,
+    "raw_logs": 48,
+    "intentional_error_tests": [
+      "runner_selftest",
+      "test_dungeon_gen malformed layouts: 3 expected errors, fails=0 PASS"
+    ],
+    "unexpected_engine_error_count": 0
+  },
+  "images": [
+    {
+      "path": "after_skill_icons_01_start_locked.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "e892be40bf372bf7dcafe9230c864eedd3f5f8fee17947fd640a4295d66ee24a"
+    },
+    {
+      "path": "after_skill_icons_02_skill_tree_learned.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "6aa3778fb1bdddfd3af47619ec1b1477aaac71da886cc4de4260e63b47eca9b8"
+    },
+    {
+      "path": "after_skill_icons_03_three_learned.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "a479b5b671f5820088a67103083af6726dd304c3e90a7b741dad48f016f1a8c3"
+    },
+    {
+      "path": "after_skill_icons_04_selected_slash.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "2621d82969da1b21f0be1f9de843d7852f740c9b4a7670ecac14a0ee2bfc2ebc"
+    },
+    {
+      "path": "after_skill_icons_05_selected_dash_strike.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ac538ba89af9e8812aaaffb82ab999a7ad2e25cbdbce3b94c14d21a2cfdea939"
+    },
+    {
+      "path": "after_skill_icons_06_selected_whirl.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b2a4d2698103f06282bef0d63770711aa2d20080d3778b1437c3fd0df9264341"
+    },
+    {
+      "path": "after_skill_icons_07_cooldown.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "5fb5316802bec0256491ee9dc2164f131fdb347551668f8fd149acec80ed63ef"
+    },
+    {
+      "path": "after_skill_icons_08_mp_shortage.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "f3ab6f59ad1208a622d424d105b99337ba8ab549d88dcd598a503d256245885c"
+    },
+    {
+      "path": "after_skill_icons_09_skill_tree_max_level.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "d737b2d519b95bb8d4fa3793304355e7042e983c9cafa8ad861f32a8fdc63f7c"
+    },
+    {
+      "path": "after_skill_icons_10_max_level_long_name.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "7d36b404a475989d71e2d23122361afb9df6709bbd23cf77eda96ce17afc1a5e"
+    },
+    {
+      "path": "after_skill_icons_11_skill_tree_sword.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "99338fe76d2b63e893389226f9fdff94101425023d3ceff4bb673deafb91ee86"
+    },
+    {
+      "path": "after_skill_icons_12_skill_tree_body.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "313ad73371ea262909bfcaa6ee6213647a7fa6182c4242073c1c422e9e090e17"
+    },
+    {
+      "path": "after_skill_icons_13_skill_tree_talisman.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "534e59ae3d5d3b259e77eee440893036bebaa39604026fefc6e0a69c7585c3fc"
+    },
+    {
+      "path": "after_skill_picker_01_starter.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "65eaf8766530b9397752b2700ab9324bde2e95ad4e9c9560dd0f6e20f10aa36c"
+    },
+    {
+      "path": "after_skill_picker_02_assigned_hud.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "f78b0d8e5bfeb48d5d13e3ee338c0846eb68624bc666ee3ebc59bcbd19126c85"
+    },
+    {
+      "path": "after_skill_picker_03_picker_tooltip.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "44985c7fe994f9c26dbf0a21e3a5d19f31487910b8c0ca581668bdb1fee65f5a"
+    },
+    {
+      "path": "after_skill_picker_04_picker_1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "38fa71e4b506254b6df57c3abcd54bdd6dc3e5512645ace4484601ef946d9872"
+    },
+    {
+      "path": "after_skill_picker_05_picker_1600x900.png",
+      "width": 1600,
+      "height": 900,
+      "sha256": "86bee90f07ff601d1eb730aceee72c900fc82acc2802d1acce5a250a8b907bd3"
+    },
+    {
+      "path": "after_skill_picker_06_picker_1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b91987c6a40f3f6c571c32141df51a99cc7b77e874743c86e40c6ef5e8ef4767"
+    },
+    {
+      "path": "after_skill_picker_07_six_belt.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "c451944730513e8b001656fa341ee660274e8c2149470b20f81d49275445fece"
+    },
+    {
+      "path": "before_skill_icons_01_start_locked.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "bb7f1e8b4c508153202d69046c0a12b42e0178127357da59fa5130c82ed8cc8d"
+    },
+    {
+      "path": "before_skill_icons_02_skill_tree_learned.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "bb7d498c0f7a2f33e8a571d2226011297433d1810defc982b8aa56500fe5c238"
+    },
+    {
+      "path": "before_skill_icons_03_three_learned.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "782d6a8faf0d4f4caf0e9529509893ce1e5474b15ac8086d4af52803913c895f"
+    },
+    {
+      "path": "before_skill_icons_04_selected_slash.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "4ed0aad02ba4fe229f31ce97cd36a2124cd0c60c48a3c4fd5eb017ccbff41746"
+    },
+    {
+      "path": "before_skill_icons_05_selected_dash_strike.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "31ec54360a174459fce2d75c90077fe1e0900cd754f7313252f5e9b8ed0c673c"
+    },
+    {
+      "path": "before_skill_icons_06_selected_whirl.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "38ae9c47eb0b1cead9a42661700aa1e1eb65983a8194a6ac0371c9020379296f"
+    },
+    {
+      "path": "before_skill_icons_07_cooldown.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "10b0fba746922fcbebc9d9c2a915c704fb98484f888e1b723b80a908fe74edca"
+    },
+    {
+      "path": "before_skill_icons_08_mp_shortage.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "dc4ae4855cf6f46b1a7a506a3cc7ff40c14b4a9c13dbe887779d382be0198f67"
+    },
+    {
+      "path": "before_skill_icons_09_skill_tree_max_level.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "2007b2b465f7163c0d3546a58c0a8329dc8261422d5845c15ae3ee8ec3c4f46f"
+    },
+    {
+      "path": "before_skill_icons_10_max_level_long_name.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "75eea444b0fa4b149deb47824f62c36d79b02cafe0a835204b061d54c64f68af"
+    },
+    {
+      "path": "before_skill_icons_11_skill_tree_sword.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "d7b38689f0914582a84107169d831329b5db427b4e68e737848fd62d331d6a6b"
+    },
+    {
+      "path": "before_skill_icons_12_skill_tree_body.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "5be8477fc937e57434988349e00363483115e2aa76d409922ed9caa0523ebadc"
+    },
+    {
+      "path": "before_skill_icons_13_skill_tree_talisman.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "6992a7afed83a9b89ee055bc9baad49fcecb2af67af4f77c242c270adc279c96"
+    },
+    {
+      "path": "iteration_01/after_skill_picker_01_starter.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "2155f213ee910354e0f22eecafd12f9a4795ac433d88625dd71c56100bd77c97"
+    },
+    {
+      "path": "iteration_01/after_skill_picker_02_assigned_hud.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "13cf987b244aee7b394ffedf2d474869733d6e43c1682b4dcaab8e95f9992bdd"
+    },
+    {
+      "path": "iteration_01/after_skill_picker_03_picker_tooltip.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "fe1a32fdda59fab4127f3e1bc64d41a2f4bc21a2d7b4c28bb5314e8089e78921"
+    },
+    {
+      "path": "iteration_01/after_skill_picker_04_picker_1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "0a1061847e9f8abd93f3eb72ba69e9313b162d1a1d37ab1a6dd000379028a67e"
+    },
+    {
+      "path": "iteration_01/after_skill_picker_05_picker_1600x900.png",
+      "width": 1600,
+      "height": 900,
+      "sha256": "6c51eacad931beb14aeca271945eeebc4fba54a4969f394e088dc40c0c20a41b"
+    },
+    {
+      "path": "iteration_01/after_skill_picker_06_picker_1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "96ee36d5b388c9a045848e40c73e0371467742a5a513e1a5012a9f5cc672a70f"
+    },
+    {
+      "path": "iteration_01/after_skill_picker_07_six_belt.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "d616001795b91a93533da28e180e1c84fb1574fed0f6e86fe8166ca4a618221e"
+    }
+  ],
+  "logs": [
+    {
+      "path": "backend_progression.raw.log",
+      "sha256": "9644e5bf11c5a9ea24258a5b7ae3d947feea2657cc86af56576d4fdab58810a3"
+    },
+    {
+      "path": "backend_save.raw.log",
+      "sha256": "8a3dac668ecb83acb6060ab480ef7ca936c791600c952ce095b4a9331c56985f"
+    },
+    {
+      "path": "before_skill_icons.raw.log",
+      "sha256": "6d6b79354ba2e3764d899285708690819818a8c011c1f70e5682e033b4ad1ad4"
+    },
+    {
+      "path": "logs/after_icons_runner.log",
+      "sha256": "b9fbd342fe8671de1fdbd0646a3708f77fd9c725116483e6858b1e950556e19a"
+    },
+    {
+      "path": "logs/e2e_all_20260923_182544_791.raw.log",
+      "sha256": "981013ae1378e41b460a7f87568833f28145d021900584dbadb5fee8ebc61afb"
+    },
+    {
+      "path": "logs/e2e_all_20260923_185420_808.raw.log",
+      "sha256": "863607d90f67ab35c5444287d95fe44cb370f602f4769558406e00689caab3ac"
+    },
+    {
+      "path": "logs/e2e_skill_icons_20260923_181236_272.raw.log",
+      "sha256": "6d6b79354ba2e3764d899285708690819818a8c011c1f70e5682e033b4ad1ad4"
+    },
+    {
+      "path": "logs/e2e_skill_picker_20260923_181129_287.raw.log",
+      "sha256": "d3105aad6ca67f68ae0f05254f655cfa179c072ee48d1dd15c71305058b80c2d"
+    },
+    {
+      "path": "logs/e2e_skill_picker_20260923_181947_256.raw.log",
+      "sha256": "264791af3e654dfda498ce8390b647cd94dc7d09e0afe9919942944f942535e4"
+    },
+    {
+      "path": "logs/e2e_verify_flows_20260923_184732_697.raw.log",
+      "sha256": "60a63a569a7e4a9dddd7355dbfbbc54ebb51501a21d74f666c37024c20870d22"
+    },
+    {
+      "path": "logs/final_e2e_runner.log",
+      "sha256": "788e1b47278a3eabae14dc35c410af39add18bd4898e8c7d3ee89a923d197fba"
+    },
+    {
+      "path": "logs/final_picker_runner.log",
+      "sha256": "ad62f94fe92fbcb6b94299afa54798d31ae1f6e4fd3bdbd656dbdc4867ac3cf5"
+    },
+    {
+      "path": "logs/first_picker_runner.log",
+      "sha256": "3389fbf569744b807e91acfab4ac86002375fecfaa3084a2f874d0ce956186c8"
+    },
+    {
+      "path": "logs/full_runner.log",
+      "sha256": "6b4dddc904e3248b7d4ebe175e4414690ed6ae52b2602beb8a6fce848d52daac"
+    },
+    {
+      "path": "logs/import_20260923_180645_020.raw.log",
+      "sha256": "730025ae1bab17340b686dad5d192aac4c429fbf207b21cd650098b401adf3f5"
+    },
+    {
+      "path": "logs/import_20260923_183737_760.raw.log",
+      "sha256": "c50fc80a46fa5a1b9019351de9a3bf28454d596eae9f6df75dbf337a30f09871"
+    },
+    {
+      "path": "logs/look_audit_20260923_181914_641.raw.log",
+      "sha256": "514eaa61a5464cd5b5f1b16845fc9f778f8acb748b6925b082b10f55a88d388d"
+    },
+    {
+      "path": "logs/look_audit_20260923_182008_730.raw.log",
+      "sha256": "0bfcf083d0d76cb68eec73791b2a6a3dc24ee236f041a337a0a13f4fdd143473"
+    },
+    {
+      "path": "logs/motion_audit_20260923_181913_269.raw.log",
+      "sha256": "310fe26971377ee71010cdd0054c122185b0f8eb50f27cb6830e97c0e94d28a2"
+    },
+    {
+      "path": "logs/robe_probe_20260923_181915_996.raw.log",
+      "sha256": "7f403f8c5ec1bdfaee6eff080134e680f0d39a062593482df369836c8c74e810"
+    },
+    {
+      "path": "logs/runner_selftest_20260923_181125_781.raw.log",
+      "sha256": "ac1d473bce343284677621120990be1b7a4877f43aef3dba1477163bfd6aea59"
+    },
+    {
+      "path": "logs/runner_selftest_20260923_181232_556.raw.log",
+      "sha256": "ac1d473bce343284677621120990be1b7a4877f43aef3dba1477163bfd6aea59"
+    },
+    {
+      "path": "logs/runner_selftest_20260923_181943_667.raw.log",
+      "sha256": "ac1d473bce343284677621120990be1b7a4877f43aef3dba1477163bfd6aea59"
+    },
+    {
+      "path": "logs/runner_selftest_20260923_182541_436.raw.log",
+      "sha256": "ac1d473bce343284677621120990be1b7a4877f43aef3dba1477163bfd6aea59"
+    },
+    {
+      "path": "logs/runner_selftest_20260923_184729_307.raw.log",
+      "sha256": "ac1d473bce343284677621120990be1b7a4877f43aef3dba1477163bfd6aea59"
+    },
+    {
+      "path": "logs/runner_selftest_20260923_185417_440.raw.log",
+      "sha256": "ac1d473bce343284677621120990be1b7a4877f43aef3dba1477163bfd6aea59"
+    },
+    {
+      "path": "logs/test_affixes_20260923_181657_932.raw.log",
+      "sha256": "1aa45e270ce2373f64d49a1b7b71c7c88b5951f2cfb882ee4add791beaa7ada2"
+    },
+    {
+      "path": "logs/test_aoe_field_20260923_181710_604.raw.log",
+      "sha256": "8d5185d95889e35500bfe6630fab3c0110dc140cc7330bbcce3a41867c09e0e4"
+    },
+    {
+      "path": "logs/test_attack_chain_20260923_181712_074.raw.log",
+      "sha256": "bd345bee089c07aa54120f2d1c90cc3abec00c848bde9593822f56a985287e45"
+    },
+    {
+      "path": "logs/test_attack_seam_20260923_181713_634.raw.log",
+      "sha256": "b2ff43c6984468373bd4dafb7593a4171500d674a538a1395a125e8fb5439b4c"
+    },
+    {
+      "path": "logs/test_audio_20260923_181715_004.raw.log",
+      "sha256": "1193f7313dda06945fc45a791a4d7e566a01ec8b8332d10c23c50b5429bf8b37"
+    },
+    {
+      "path": "logs/test_automap_data_20260923_181716_748.raw.log",
+      "sha256": "5dcfd33e691de9a79ff7c7aa9aa71e06ef22eb58969aa0cf487f631eaec359f1"
+    },
+    {
+      "path": "logs/test_balance_20260923_181718_565.raw.log",
+      "sha256": "cf463ce0acba61bd01a6c4a49e3f9d4b1a3c03f4baa74e00ae353e35249b552a"
+    },
+    {
+      "path": "logs/test_char_light_20260923_181804_112.raw.log",
+      "sha256": "027c649fa2a89c394596d2a827e7f39536bb86f6a31ba9aed88b8cd68ba5f433"
+    },
+    {
+      "path": "logs/test_damage_calc_20260923_181805_649.raw.log",
+      "sha256": "53f5d05716da008c49ee7f92a94692eac0afd2d11ed76a61d083ff4fc7764347"
+    },
+    {
+      "path": "logs/test_damage_popup_20260923_181807_001.raw.log",
+      "sha256": "c0db11df8fb3ccf5aee34a417fdc342210ec63d429f7c07627d5825685de9cb2"
+    },
+    {
+      "path": "logs/test_data_index_20260923_181808_259.raw.log",
+      "sha256": "abb757e9795c892d0426617e9b3189d584eb1cf6e3208cecb699b251bfff6ba6"
+    },
+    {
+      "path": "logs/test_dialogue_20260923_181809_615.raw.log",
+      "sha256": "ba5802a7c04949ae5d69b6f1bc56693b3469be9b5bdba7701c6111dcc5b34b3b"
+    },
+    {
+      "path": "logs/test_dialogue_band_20260923_181811_266.raw.log",
+      "sha256": "0e1cccaa5bbd348abbf45ad6cd85be211087a5a47455ecf494258ae4f1e7b203"
+    },
+    {
+      "path": "logs/test_doho_moves_20260923_181816_039.raw.log",
+      "sha256": "ce667528264143c5f5fd1adadfc7fcff68dfac25d95a3b488dac24d8009ac363"
+    },
+    {
+      "path": "logs/test_dungeon_gen_20260923_181817_396.raw.log",
+      "sha256": "6bd6d7bf5e44f4180f2583bf6b25ba1b549c05859b9eef0c017321a6fd456290"
+    },
+    {
+      "path": "logs/test_element_affixes_20260923_181819_125.raw.log",
+      "sha256": "442010f5bbf81206b011af5a1926a59fe43c505b4acfdd947956b9d1c7376e42"
+    },
+    {
+      "path": "logs/test_export_safety_20260923_181821_611.raw.log",
+      "sha256": "163aedb56b3688c80574ccea5ad1b614573997ba8ba5db9ca7977d24fd410d55"
+    },
+    {
+      "path": "logs/test_field_gen_20260923_181823_066.raw.log",
+      "sha256": "85c25637035d98a3a7e59109307f70e513f269a0198cf5a495ecde0075cc78aa"
+    },
+    {
+      "path": "logs/test_footsteps_20260923_181831_007.raw.log",
+      "sha256": "890f48eb7ad99e7c14031c91fc264026e682019be24b4e6727e257a4541210de"
+    },
+    {
+      "path": "logs/test_items_20260923_181832_461.raw.log",
+      "sha256": "f488b960dc7b11bd5dd6259112af35858418cd3e52af8ad9c65b1db0d3d95d64"
+    },
+    {
+      "path": "logs/test_kill_fx_20260923_181841_569.raw.log",
+      "sha256": "244e14f4e4ce99fbd08883c43eccbf530bc03db9ec8df13b4077633d87fc1c93"
+    },
+    {
+      "path": "logs/test_loot_sim_20260923_181843_698.raw.log",
+      "sha256": "d8c6c32e7d2b8944782039af0238829f4132e86e36795738dde4dfd86eada70c"
+    },
+    {
+      "path": "logs/test_models_20260923_181849_590.raw.log",
+      "sha256": "c7fefd488ddf96aa90b73ae61df2529b8ff5de98c64eec16373b97009bc2cf5f"
+    },
+    {
+      "path": "logs/test_monster_data_20260923_181851_881.raw.log",
+      "sha256": "51c1428bb9dc79ff750613513cd9801edf3eec29998e77bc0d0eb3c8f30cc568"
+    },
+    {
+      "path": "logs/test_progression_20260923_181853_165.raw.log",
+      "sha256": "120f95369de38668e76cb6d9554a99592ada33545b825845a1caceb7fdb8d32f"
+    },
+    {
+      "path": "logs/test_roster_20260923_181854_418.raw.log",
+      "sha256": "417ac0a67990ce13bc61cb557e3121de7ed924cc2638e281c91ddd7aeea804a9"
+    },
+    {
+      "path": "logs/test_save_20260923_181907_456.raw.log",
+      "sha256": "bf992f53ac28b3b3ebe760fa1c3c2693c4deb09f747e35dfc9fd22d2449a2dfc"
+    },
+    {
+      "path": "logs/test_status_20260923_181909_284.raw.log",
+      "sha256": "49c5103c720ea78b6cc44fc8cb098917d958d9646d235baece78ab594b49f694"
+    },
+    {
+      "path": "logs/test_town_20260923_181910_546.raw.log",
+      "sha256": "1c702629c6d058bd856a932f1ec427bfef18abdd66a4b115954b42f389f70d69"
+    },
+    {
+      "path": "logs/test_vfx_20260923_181911_806.raw.log",
+      "sha256": "8af7538a04d1928111c9b69e1955baaa63262b5577bd47630d17ca60ee30ad93"
+    },
+    {
+      "path": "logs/verify_flows_fixed_runner.log",
+      "sha256": "82717ada30f248202fe3d170fc7c8d313da91f25667a7dd2c0f3ea712264ea85"
+    }
+  ]
+}
