@@ -14,11 +14,10 @@ gallery = game / 'docs/art/447_d1_icons_intake'
 report.mkdir(parents=True, exist_ok=True)
 gallery.mkdir(parents=True, exist_ok=True)
 records = []
-for state in ['inventory', 'held_swap', 'skills_sword', 'skills_body', 'skills_talisman',
-        't1_inventory', 't1_held', 't1_vendor_tooltip']:
-    candidates = list(user.glob(f'icon_intake_*_{state}.png'))
-    assert candidates, state
-    source = max(candidates, key=lambda p: p.stat().st_mtime)
+for index, state in enumerate(['inventory', 'held_swap', 'skills_sword', 'skills_body', 'skills_talisman',
+        't1_inventory', 't1_held', 't1_vendor_tooltip'], 1):
+    source = user / f'icon_intake_{index:02d}_{state}.png'
+    assert source.exists(), state
     raw = report / f'{state}_{mode}.png'
     raw.write_bytes(source.read_bytes())
     if state.startswith('t1_'):

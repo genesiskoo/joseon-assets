@@ -1,13 +1,15 @@
 [
   {
-    "state": "inventory",
+    "state": "t1_inventory_duplicate",
     "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-293-monster-elite-ui\\e2e\\icon_intake_06_t1_inventory.png",
     "mtime": 1790457293.087189,
     "sha256": "d3769e1a25aaa2db2c88384bbc22e8f6a2fe82f1aba3074ae35b2c3d472d0960",
     "size": [
       1280,
       720
-    ]
+    ],
+    "requested_state": "inventory",
+    "note": "Suffix glob selected T1 inventory; first439 inventory-before raw was not retained. Primary T1 before/after three pairs remain exact."
   },
   {
     "state": "held_swap",
