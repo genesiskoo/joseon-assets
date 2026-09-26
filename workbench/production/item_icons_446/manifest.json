@@ -1,0 +1,226 @@
+{
+  "card": 446,
+  "parent_card": 274,
+  "status": "candidate_not_installed",
+  "method": "built-in image_gen originals; approved #393 deterministic alpha16/8%/Lanczos packing",
+  "logical_cell_px": 40,
+  "output_scale": 2,
+  "items": [
+    {
+      "item_id": "satgat",
+      "display_name": "삿갓",
+      "definition_path": "C:\\workspace\\joseon\\data\\items\\satgat.tres",
+      "item_type": "head",
+      "slot": "head",
+      "grid_w": 2,
+      "grid_h": 2,
+      "output_width": 160,
+      "output_height": 160,
+      "current_icon": null,
+      "class_req": "",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        50,
+        162,
+        1219,
+        1111
+      ],
+      "source_sha256": "683eba7c0abe1f9cea46e8a07218892f7b663b584ddd2a4ef29cf82d5461527d",
+      "game_size": [
+        160,
+        160
+      ],
+      "game_sha256": "9eb58a538cda3b133a8b6241c42510ff36e97f40d1a0db9bb3cd356875fc6534",
+      "visible_bbox": [
+        13,
+        25,
+        147,
+        134
+      ],
+      "definition_sha256": "353d46fc60964e599f7de1e2228435220fe9c34d63ca0ae065a1996c53cd1671"
+    },
+    {
+      "item_id": "piju",
+      "display_name": "피주",
+      "definition_path": "C:\\workspace\\joseon\\data\\items\\piju.tres",
+      "item_type": "head",
+      "slot": "head",
+      "grid_w": 2,
+      "grid_h": 2,
+      "output_width": 160,
+      "output_height": 160,
+      "current_icon": null,
+      "class_req": "",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        201,
+        135,
+        1139,
+        1076
+      ],
+      "source_sha256": "41a0e473951e82d5a1e26e1f593b88f1a63b67df88f70f39dc7cf68c54dfaf8e",
+      "game_size": [
+        160,
+        160
+      ],
+      "game_sha256": "aac97ddaeccc3fd3c4b0cf82e73f15912a5937cd13c81179a7c7162a81bd38ac",
+      "visible_bbox": [
+        13,
+        13,
+        147,
+        147
+      ],
+      "definition_sha256": "3dd8e8a9f5dece7681884f7dc0874b50d22593ce172d91f8ee8b1d6ef1f81fdf"
+    },
+    {
+      "item_id": "injang",
+      "display_name": "인장",
+      "definition_path": "C:\\workspace\\joseon\\data\\items\\injang.tres",
+      "item_type": "dosa_tool",
+      "slot": "offhand",
+      "grid_w": 1,
+      "grid_h": 1,
+      "output_width": 80,
+      "output_height": 80,
+      "current_icon": null,
+      "class_req": "doho",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        318,
+        153,
+        945,
+        1092
+      ],
+      "source_sha256": "517cb8cc5d3ba7ae4c46670acf77d4e226dcd1330cfa585752bd511ea613c31e",
+      "game_size": [
+        80,
+        80
+      ],
+      "game_sha256": "bf1f69fc6f37e339accda2f04b0cfd6ade26bf4f25128862fe5828da2e383833",
+      "visible_bbox": [
+        17,
+        6,
+        62,
+        74
+      ],
+      "definition_sha256": "5e9a80169c7f876971d984769ccfc3be32d5e7aabcba47338f943e4968b25b6d"
+    },
+    {
+      "item_id": "yedo",
+      "display_name": "예도",
+      "definition_path": "C:\\workspace\\joseon\\data\\items\\yedo.tres",
+      "item_type": "sword",
+      "slot": "weapon",
+      "grid_w": 1,
+      "grid_h": 3,
+      "output_width": 80,
+      "output_height": 240,
+      "current_icon": "res://assets/sprites/ui/icons_h1/hwando.png",
+      "class_req": "doho",
+      "source_size": [
+        724,
+        2172
+      ],
+      "source_bbox": [
+        180,
+        39,
+        454,
+        2115
+      ],
+      "source_sha256": "e0e9f21fe5d895ba0aaf7d79d4e7a876b86608b2980ecdbf5309942f1d8fdc67",
+      "game_size": [
+        80,
+        240
+      ],
+      "game_sha256": "a89a9eb1ab0c204049780f55bfa1ae30cd85398a201f8a3103d8c8b6a2b76389",
+      "visible_bbox": [
+        25,
+        6,
+        55,
+        234
+      ],
+      "definition_sha256": "e3ef8b9a4181d9c69022c9ea9ef94a3aaa78d5fe075250b349c1039dfb497ee5"
+    },
+    {
+      "item_id": "mituri",
+      "display_name": "미투리",
+      "definition_path": "C:\\workspace\\joseon\\data\\items\\mituri.tres",
+      "item_type": "boots",
+      "slot": "boots",
+      "grid_w": 2,
+      "grid_h": 2,
+      "output_width": 160,
+      "output_height": 160,
+      "current_icon": "res://assets/sprites/ui/icons_h1/straw_shoes.png",
+      "class_req": "",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        60,
+        294,
+        1224,
+        1020
+      ],
+      "source_sha256": "1b315857a02950fe73a6d12e0d329ca97caabf90197842ea3f18b6454468812d",
+      "game_size": [
+        160,
+        160
+      ],
+      "game_sha256": "f221a81c11636591ce05412ce647aa86443fbeb4ed0137fd766efec83920e361",
+      "visible_bbox": [
+        13,
+        38,
+        147,
+        122
+      ],
+      "definition_sha256": "9172bd26bd2ae95d2ebf64b12538aa370a46a21def8a3c7d0b42151406167440"
+    },
+    {
+      "item_id": "jeondae",
+      "display_name": "전대",
+      "definition_path": "C:\\workspace\\joseon\\data\\items\\jeondae.tres",
+      "item_type": "belt",
+      "slot": "belt",
+      "grid_w": 2,
+      "grid_h": 1,
+      "output_width": 160,
+      "output_height": 80,
+      "current_icon": "res://assets/sprites/ui/icons_h1/cotton_belt.png",
+      "class_req": "",
+      "source_size": [
+        1774,
+        887
+      ],
+      "source_bbox": [
+        37,
+        254,
+        1750,
+        697
+      ],
+      "source_sha256": "be0adb757ee9dfce499cf85707f06cea6f63993d5859243aa931bffb24c58d60",
+      "game_size": [
+        160,
+        80
+      ],
+      "game_sha256": "fa70629d671276a07d30aa241e36dfc89d0827aa42f17b18ce5453853993af00",
+      "visible_bbox": [
+        6,
+        21,
+        154,
+        59
+      ],
+      "definition_sha256": "11674ed7da44c10bfcd70eaf076256f49e4da0291ee00dc4ab77c45ca92e254b"
+    }
+  ]
+}
