@@ -630,5 +630,29 @@
     }
   },
   "game_commit": "b7be192bf75c01675cb0385b0b8b7f74e258aaff",
-  "main_landed": false
+  "main_landed": true,
+  "landing": {
+    "game_main": "b7be192bf75c01675cb0385b0b8b7f74e258aaff",
+    "main_import_seconds": 8,
+    "main_boot": "SCRIPT ERROR0; autoload10/10; main sceneOK",
+    "run": {
+      "mode": "land",
+      "command": [
+        "C:\\Users\\FORYOUCOM\\miniconda3\\python.exe",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon\\tools\\wt.py",
+        "land",
+        "--no-test",
+        "-m",
+        "승인 봉인물3 PNG·ItemDef.icon 반입, 실제 입력·전후3쌍·관련 검사 PASS"
+      ],
+      "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+      "started": 1790511049.7151897,
+      "elapsed": 14.916330575942993,
+      "exit_code": 0,
+      "raw_log": "457_land_211049.log",
+      "raw_sha256": "5e4c75c2c71a1490b890cfeb918bdf8b12adeb8e0a155f8da6b4062e76049484"
+    },
+    "pushed": false,
+    "main_new_png_hashes_verified": 3
+  }
 }
