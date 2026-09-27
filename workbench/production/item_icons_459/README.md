@@ -5,3 +5,5 @@
 재현: python prepare_assets.py로패킹/확대판, Godot --path=<게임> -s=<qa_godot.gd> -- --root=<이폴더> --mode=<before|after|sizes> --out=<출력폴더>. 현재 정의·공통UiSkin만 읽고 후보는검수메모리에서만사용. 독립4프롬프트·사인검수정문을도구의실제호출과같이보존했다.
 
 현재 판정(2026-09-28): 4종 전부 채택. 원화/패킹은 그대로, 게임 반입은 별도 카드. 최종 승인 기록은 [ACCEPTANCE.md](ACCEPTANCE.md). 위 후보 설명은 제작 시점 기록이다.
+
+후속 반입(2026-09-28): 승인 검4는 #460 게임 main에 적용 완료. 원본/패킹/최초 후보 기록을 보존하고 최종 반입 결과는 [ACCEPTANCE.md](ACCEPTANCE.md)에 추가했다.

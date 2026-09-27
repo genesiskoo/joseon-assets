@@ -1,0 +1,54 @@
+{
+  "started": 1790523553.4144733,
+  "exit_code": 0,
+  "command": [
+    "C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+    "--windowed",
+    "--resolution",
+    "1280x720",
+    "--",
+    "--e2e=icon_intake",
+    "--e2e-shots",
+    "--icon-intake-sword-only"
+  ],
+  "game_head": "91b8ddd64783ea7cc9b474b77eda48e5dea3a12e",
+  "stdout": "460_after_003913.log",
+  "stderr": "460_after_003913_errors.log",
+  "captures": [
+    {
+      "state": "sword_inventory",
+      "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-87-ui-wood-skin\\e2e\\icon_intake_01_sword_inventory.png",
+      "mtime": 1790523557.975227,
+      "sha256": "20fcf3e6c8b02d0e8b25deee2a1eeda65d3346379833f3ba588dc9402407dacb",
+      "size": [
+        1280,
+        720
+      ],
+      "jpg_bytes": 155026
+    },
+    {
+      "state": "sword_held_twohand",
+      "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-87-ui-wood-skin\\e2e\\icon_intake_02_sword_held_twohand.png",
+      "mtime": 1790523558.791168,
+      "sha256": "686f6b03c2ca04f8aa999412e0d7aff70f61c6a550de688c287cb9ad65f9b1fc",
+      "size": [
+        1280,
+        720
+      ],
+      "jpg_bytes": 152987
+    },
+    {
+      "state": "sword_vendor",
+      "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-87-ui-wood-skin\\e2e\\icon_intake_03_sword_vendor.png",
+      "mtime": 1790523561.4050248,
+      "sha256": "2a62686dd1c952a8e7f84330a382dda128e8ef9157e3bb77e8fb935dc5847e59",
+      "size": [
+        1280,
+        720
+      ],
+      "jpg_bytes": 152444
+    }
+  ]
+}
