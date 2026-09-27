@@ -1,0 +1,8 @@
+{
+  "path": "tests/e2e/scenarios/talisman_targeting.gd",
+  "change": "Remove only one empty final line after successful tests; script tokens and statements unchanged.",
+  "before_sha256": "1e3912f08aea10b9b92ae5bd62d0cb51cd2bb368ed03edc5d802564404502db3",
+  "after_sha256": "4c7917f5557a41aa7fb25333b0b42d68f554112c3746da9952176798800d33dd",
+  "after_git_blob": "125bffcc7b1607f2fc97515b08e2c93f4352ceac",
+  "gate_raw": "tests/e2e/scenarios/talisman_targeting.gd:319: new blank line at EOF.\n"
+}
