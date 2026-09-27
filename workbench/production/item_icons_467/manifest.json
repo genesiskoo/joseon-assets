@@ -1,0 +1,225 @@
+{
+  "card": 467,
+  "parent_card": 274,
+  "status": "candidate_not_installed",
+  "method": "native image_gen originals, alpha16, 8percent padding, Lanczos packing",
+  "logical_cell_px": 40,
+  "output_scale": 2,
+  "items": [
+    {
+      "item_id": "pouch",
+      "display_name": "복주머니",
+      "tier": 1,
+      "slot": 2,
+      "grid_w": 1,
+      "grid_h": 1,
+      "output_width": 80,
+      "output_height": 80,
+      "definition_path": "C:/workspace/joseon/data/items/pouch.tres",
+      "definition_sha256": "202c1eae3248b461883cb452986ebb5f22595c53c00805d3a9492802c4c95e90",
+      "source_path": "source/items/pouch.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        200,
+        118,
+        1088,
+        1131
+      ],
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "d1354d157e01d01e6c021d9c81e784394f2298b903fd8a05a9c72b468685c8a5",
+      "game_path": "game/items/pouch.png",
+      "game_size": [
+        80,
+        80
+      ],
+      "visible_bbox": [
+        10,
+        6,
+        70,
+        74
+      ],
+      "game_sha256": "00bddb15a4eeeb6226154bea79ee9f2f57499ecd36aeca5fdf585e54a741d127",
+      "note": "무명 천주머니 · 홍/남색 매듭",
+      "alternate_v1_source_path": null,
+      "alternate_v1_game_path": null
+    },
+    {
+      "item_id": "myeongdu",
+      "display_name": "명두",
+      "tier": 2,
+      "slot": 2,
+      "grid_w": 1,
+      "grid_h": 1,
+      "output_width": 80,
+      "output_height": 80,
+      "definition_path": "C:/workspace/joseon/data/items/myeongdu.tres",
+      "definition_sha256": "e930005ddf112cf9e1ae777cbf4dc21c638196a706f0fae9083d37017d5e1e13",
+      "source_path": "source/items/myeongdu.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        222,
+        84,
+        1038,
+        1163
+      ],
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "547af32dd8e22abe43d2218503e03d6949d483e9e3889e32317f29fdc4cfd5a4",
+      "game_path": "game/items/myeongdu.png",
+      "game_size": [
+        80,
+        80
+      ],
+      "visible_bbox": [
+        14,
+        6,
+        65,
+        74
+      ],
+      "game_sha256": "a48ede344d5a6c949865757e0c814e644fe6cbc5774f8ae4d0f2bdc6ffaa7cb1",
+      "note": "놋쇠 무구 거울 · 남색 걸이",
+      "alternate_v1_source_path": null,
+      "alternate_v1_game_path": null
+    },
+    {
+      "item_id": "yagwangju",
+      "display_name": "야광주",
+      "tier": 3,
+      "slot": 2,
+      "grid_w": 1,
+      "grid_h": 1,
+      "output_width": 80,
+      "output_height": 80,
+      "definition_path": "C:/workspace/joseon/data/items/yagwangju.tres",
+      "definition_sha256": "a9ca895b51943c444d179fd1134f868dd0f10d9f313c587d1cd7ed97bb4dffb9",
+      "source_path": "source/items/yagwangju_v2.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        167,
+        78,
+        1087,
+        1177
+      ],
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "f8c6c5becb3ede12fe25e51198a532a9778546840891919cd8930d2decf42784",
+      "game_path": "game/items/yagwangju.png",
+      "game_size": [
+        80,
+        80
+      ],
+      "visible_bbox": [
+        11,
+        6,
+        68,
+        74
+      ],
+      "game_sha256": "9ed5a84e01d934e5e5f549065b6dd06c2c1317bb559c5e5136cad02bb2735519",
+      "note": "청백 구슬 · 절제된 금속 걸이",
+      "alternate_v1_source_path": "source/items/yagwangju.png",
+      "alternate_v1_game_path": "game/variants/yagwangju_v1.png"
+    },
+    {
+      "item_id": "jade_ring",
+      "display_name": "옥가락지",
+      "tier": 1,
+      "slot": 3,
+      "grid_w": 1,
+      "grid_h": 1,
+      "output_width": 80,
+      "output_height": 80,
+      "definition_path": "C:/workspace/joseon/data/items/jade_ring.tres",
+      "definition_sha256": "91a764ceb830a63934d840b34a26a6bc90cf6eeb72d479e30cf52a5ccc8e5191",
+      "source_path": "source/items/jade_ring.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        228,
+        201,
+        1042,
+        1049
+      ],
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "d083d6ee51c70d1dbb660c07d0d0392e25575969b3a1618837f385da0430d356",
+      "game_path": "game/items/jade_ring.png",
+      "game_size": [
+        80,
+        80
+      ],
+      "visible_bbox": [
+        7,
+        6,
+        72,
+        74
+      ],
+      "game_sha256": "a4a5cb711f245bf2046487c1193450b584490b9c722ea8680794594a4b9e6085",
+      "note": "담록색 옥 · 두꺼운 고리",
+      "alternate_v1_source_path": null,
+      "alternate_v1_game_path": null
+    },
+    {
+      "item_id": "gold_ring",
+      "display_name": "금가락지",
+      "tier": 2,
+      "slot": 3,
+      "grid_w": 1,
+      "grid_h": 1,
+      "output_width": 80,
+      "output_height": 80,
+      "definition_path": "C:/workspace/joseon/data/items/gold_ring.tres",
+      "definition_sha256": "c550892b9e76304fbe8387cdb4d0ad6195d982243377e206219c5b46b87cec8c",
+      "source_path": "source/items/gold_ring.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        306,
+        281,
+        987,
+        975
+      ],
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_sha256": "47d6dd0257b72d38b1a27f87f867fd8b810f0f46a6a67a36bc03cf02759496d4",
+      "game_path": "game/items/gold_ring.png",
+      "game_size": [
+        80,
+        80
+      ],
+      "visible_bbox": [
+        6,
+        6,
+        73,
+        74
+      ],
+      "game_sha256": "57b37084c4b77d35dc546631ac56d611b1b2c91a44cff4c70ef1e0a5783fd0eb",
+      "note": "두툼한 금 · 손마감 테두리",
+      "alternate_v1_source_path": null,
+      "alternate_v1_game_path": null
+    }
+  ]
+}
