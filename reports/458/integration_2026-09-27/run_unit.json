@@ -1,0 +1,18 @@
+{
+  "mode": "unit",
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon\\tools\\test.ps1",
+    "-Unit"
+  ],
+  "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+  "started": 1790511949.8865776,
+  "elapsed": 329.4134783744812,
+  "exit_code": 0,
+  "raw_log": "458_unit_212549.log",
+  "raw_sha256": "c3ba06d449bbd45802b56d7c54573a3d88a1bd0b8ad3e9dd9e3c9c36d069f390"
+}

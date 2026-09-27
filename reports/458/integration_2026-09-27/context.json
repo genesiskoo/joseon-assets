@@ -1,0 +1,7 @@
+{
+  "card": 458,
+  "body": "## 문제와 범위\n#457 실제 봉인물 검수에서 확인: can_discard=false인 봉인3도 커서에 든 채 창 밖을 좌클릭하면 바닥에 버려진다. 툴팁은 불가능한 버리기를 안내하고, 좌판이 열리면 판매가 1엽전도 보여 준다. item_system_v2 §14.4의 팔기·버리기 불가 계약에 맞춘다.\n\n## 완료 기준\n- InventoryUi의 명시적 창 밖 버림만 can_discard()로 거부. 같은 ItemInstance를 커서에 유지하고 기존 거부 문구 표시.\n- TooltipContent: 퀘스트 가방 물건은 들기 + 팔기·버리기 불가 안내. 좌판 열린 가방에서도 판매가/판매 동작/버림 동작 없음.\n- 일반 물건의 창 밖 버림/판매가·힌트와 HUD 벨트 입력 유지. 가방 꽉 찬 상태에서 창 닫을 때 발밑으로 흘리는 안전망은 §14.5대로 유지하고 실제 이름표로 회수 검증.\n- 아이템 정의67/채택PNG38의 바이트 보존. 봉밀굴 개방#169/수하 보스#69는 이번 범위 아님.\n- 스펙 먼저 ui_v2.md, 기존 test_item_ui + icon_intake 봉인 표본에서 실제 입력/툴팁 회귀 검수. 변경 전후 같은 구도 JPG3쌍, 원본/raw는 joseon-assets reports/해당카드.\n- 단위+관련 UI·줍기·퀘스트 E2E·부팅/러너·문서 예산 합격 후 실행 가능한 커밋. 결과는 PD 확인, 신규 UI 후보를 임의로 main에 병합하지 않음. push 없음.\n\n## 소유 파일 / 자리\ncodex WT87 재사용: ui/inventory_ui.gd, ui/tooltip_content.gd, tests/test_item_ui.gd, tests/e2e/scenarios/icon_intake.gd, docs/design/ui_v2.md 및 이 카드 검수 문서·사진. 자산87은 검수 보고서만. 다른 자리/카드 편집 없음.\n\n## 왜 이 구조인가\n입력의 명시적 버림 지점에서만 차단하면, 동일 can_discard 계약으로 툴팁과 거래를 맞추면서 창 닫기 회수 안전망은 유지된다. 공통 _drop_held 전체를 금지하는 대안은 꽉 찬 가방의 자동 회수 실패 때 물건을 잃거나 커서를 남길 수 있으므로 기각한다.\n",
+  "game_base": "70a8afd68f4188852e4197bae4a2e55230b6870c",
+  "assets_base": "a9775d5e2f62069d700b7bf6c78a1409a3434b89",
+  "status": "in progress"
+}

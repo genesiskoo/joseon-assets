@@ -1,0 +1,55 @@
+{
+  "started": 1790511716.4726014,
+  "exit_code": 0,
+  "command": [
+    "C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+    "--windowed",
+    "--resolution",
+    "1280x720",
+    "--",
+    "--e2e=icon_intake",
+    "--e2e-shots",
+    "--icon-intake-seal-only",
+    "--quest-safety-before"
+  ],
+  "game_head": "70a8afd68f4188852e4197bae4a2e55230b6870c",
+  "stdout": "458_before_212156.log",
+  "stderr": "458_before_212156_errors.log",
+  "captures": [
+    {
+      "state": "seal_inventory",
+      "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_01_seal_inventory.png",
+      "mtime": 1790511721.0394104,
+      "sha256": "b506e1e4f8669ea7d378000bc734befbd0ac68c5dd6e550013e09581cb7b5e17",
+      "size": [
+        1280,
+        720
+      ],
+      "jpg_bytes": 153967
+    },
+    {
+      "state": "seal_vendor_refused",
+      "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_02_seal_vendor_refused.png",
+      "mtime": 1790511724.9180088,
+      "sha256": "0e87016ac5ffee77bd0ea00f243aec36f40d1e957ae9f5d2106f09dd46c8c676",
+      "size": [
+        1280,
+        720
+      ],
+      "jpg_bytes": 173084
+    },
+    {
+      "state": "seal_drop_recovered",
+      "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_03_seal_drop_recovered.png",
+      "mtime": 1790511727.4423604,
+      "sha256": "7cbbe27880abea907620d9b24208edfd69862e6aa3adf168a8837d961831b677",
+      "size": [
+        1280,
+        720
+      ],
+      "jpg_bytes": 155533
+    }
+  ]
+}

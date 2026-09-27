@@ -1,0 +1,366 @@
+{
+  "issue": 458,
+  "protected_definitions": 67,
+  "protected_png": 38,
+  "protected_file_count": 105,
+  "asset_bytes_unchanged": true,
+  "anchor_pixels": [
+    {
+      "shot": "seal_inventory",
+      "item": "satgat",
+      "rect": [
+        864,
+        400,
+        944,
+        480
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_inventory",
+      "item": "piju",
+      "rect": [
+        944,
+        400,
+        1024,
+        480
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_inventory",
+      "item": "injang",
+      "rect": [
+        1024,
+        400,
+        1064,
+        440
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_vendor_refused",
+      "item": "satgat",
+      "rect": [
+        864,
+        400,
+        944,
+        480
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_vendor_refused",
+      "item": "piju",
+      "rect": [
+        944,
+        400,
+        1024,
+        480
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_vendor_refused",
+      "item": "injang",
+      "rect": [
+        1024,
+        400,
+        1064,
+        440
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_drop_recovered",
+      "item": "satgat",
+      "rect": [
+        864,
+        400,
+        944,
+        480
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_drop_recovered",
+      "item": "piju",
+      "rect": [
+        944,
+        400,
+        1024,
+        480
+      ],
+      "identical": true
+    },
+    {
+      "shot": "seal_drop_recovered",
+      "item": "injang",
+      "rect": [
+        1024,
+        400,
+        1064,
+        440
+      ],
+      "identical": true
+    }
+  ],
+  "gallery": [
+    {
+      "file": "seal_drop_recovered_after.jpg",
+      "bytes": 156075,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "dd8be1596e6ae07ec596c3b3104be18d61b64b00fb332ddaceca510c5d1994da"
+    },
+    {
+      "file": "seal_drop_recovered_before.jpg",
+      "bytes": 155533,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "01b12da49f99a0215b6ea3e5b57b0b73be051efaeaca8a5a64753f2668614abb"
+    },
+    {
+      "file": "seal_inventory_after.jpg",
+      "bytes": 154063,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "3be6dbfbd923b1510fbfb2cb6c4988506594393afd65d47390e0bb9918dcd30d"
+    },
+    {
+      "file": "seal_inventory_before.jpg",
+      "bytes": 153967,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "9461690f84eda088b88430d10a0b33c9a2a4b9c812b7c1199fdcdaa7381036ce"
+    },
+    {
+      "file": "seal_vendor_refused_after.jpg",
+      "bytes": 172818,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "edfa1b31352ad1e3beac57ebdab9ab187a6e6c132c1b57c3127b02606b783f2a"
+    },
+    {
+      "file": "seal_vendor_refused_before.jpg",
+      "bytes": 173084,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "b8e39717f5cf06fcb9b1db6af83f031cb4de51ed8edaa5a0148cc136d194d288"
+    }
+  ],
+  "actual_windowed": {
+    "before": {
+      "checks": 70,
+      "stderr_errors": 0,
+      "meta": {
+        "started": 1790511716.4726014,
+        "exit_code": 0,
+        "command": [
+          "C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe",
+          "--path",
+          "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+          "--windowed",
+          "--resolution",
+          "1280x720",
+          "--",
+          "--e2e=icon_intake",
+          "--e2e-shots",
+          "--icon-intake-seal-only",
+          "--quest-safety-before"
+        ],
+        "game_head": "70a8afd68f4188852e4197bae4a2e55230b6870c",
+        "stdout": "458_before_212156.log",
+        "stderr": "458_before_212156_errors.log",
+        "captures": [
+          {
+            "state": "seal_inventory",
+            "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_01_seal_inventory.png",
+            "mtime": 1790511721.0394104,
+            "sha256": "b506e1e4f8669ea7d378000bc734befbd0ac68c5dd6e550013e09581cb7b5e17",
+            "size": [
+              1280,
+              720
+            ],
+            "jpg_bytes": 153967
+          },
+          {
+            "state": "seal_vendor_refused",
+            "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_02_seal_vendor_refused.png",
+            "mtime": 1790511724.9180088,
+            "sha256": "0e87016ac5ffee77bd0ea00f243aec36f40d1e957ae9f5d2106f09dd46c8c676",
+            "size": [
+              1280,
+              720
+            ],
+            "jpg_bytes": 173084
+          },
+          {
+            "state": "seal_drop_recovered",
+            "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_03_seal_drop_recovered.png",
+            "mtime": 1790511727.4423604,
+            "sha256": "7cbbe27880abea907620d9b24208edfd69862e6aa3adf168a8837d961831b677",
+            "size": [
+              1280,
+              720
+            ],
+            "jpg_bytes": 155533
+          }
+        ]
+      }
+    },
+    "after": {
+      "checks": 76,
+      "stderr_errors": 0,
+      "meta": {
+        "started": 1790511829.653873,
+        "exit_code": 0,
+        "command": [
+          "C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe",
+          "--path",
+          "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+          "--windowed",
+          "--resolution",
+          "1280x720",
+          "--",
+          "--e2e=icon_intake",
+          "--e2e-shots",
+          "--icon-intake-seal-only"
+        ],
+        "game_head": "70a8afd68f4188852e4197bae4a2e55230b6870c",
+        "stdout": "458_after_212349.log",
+        "stderr": "458_after_212349_errors.log",
+        "captures": [
+          {
+            "state": "seal_inventory",
+            "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_01_seal_inventory.png",
+            "mtime": 1790511834.1895833,
+            "sha256": "4f41a5d8835972e396fd81086779681ce01c59d56a1519dab80cb5893f308b92",
+            "size": [
+              1280,
+              720
+            ],
+            "jpg_bytes": 154063
+          },
+          {
+            "state": "seal_vendor_refused",
+            "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_02_seal_vendor_refused.png",
+            "mtime": 1790511838.334662,
+            "sha256": "d83a3b119350af8c3343b4d07be43a8c4c5e8e7d7a47c28203453b7952ffa398",
+            "size": [
+              1280,
+              720
+            ],
+            "jpg_bytes": 172818
+          },
+          {
+            "state": "seal_drop_recovered",
+            "source": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-87-ui-wood-skin/e2e/icon_intake_03_seal_drop_recovered.png",
+            "mtime": 1790511840.8594828,
+            "sha256": "95d1c881580ed18b27c0c8baac94204471cf715f8ff48b53eb054182fd62947d",
+            "size": [
+              1280,
+              720
+            ],
+            "jpg_bytes": 156075
+          }
+        ]
+      }
+    }
+  },
+  "input": "real marked pointer/click/key events; quest3 outside discard refusal and replace; Ctrl discard and sale refusal; normal3 potion explicit discard; full bag close drops same quest to floor and real Alt name-label pickup recovers it",
+  "scope": "two UI files and existing regression fixtures; item data/PNG/price rules unchanged",
+  "known_limitations": [
+    "봉밀굴 봉인 소비/개방 #169 대기",
+    "수하 보스 장산범/불가살이 #69 대기"
+  ],
+  "main_landed": false,
+  "validation": {
+    "unit_gd": 53,
+    "unit_item_ui_checks": 37,
+    "related_e2e": {
+      "icon_intake": 229,
+      "item_ui": 42,
+      "ui_tooltips": 97,
+      "ui_docks": 61,
+      "ui_windows": 60,
+      "hover_target": 45,
+      "vendor_quest": 36,
+      "pickup_equip": 37,
+      "loot_drop": 24,
+      "potion_tiers": 10,
+      "quest_journal": 48,
+      "boss_floor": 43
+    },
+    "related_checks": 732,
+    "runs": {
+      "unit": {
+        "mode": "unit",
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon\\tools\\test.ps1",
+          "-Unit"
+        ],
+        "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+        "started": 1790511949.8865776,
+        "elapsed": 329.4134783744812,
+        "exit_code": 0,
+        "raw_log": "458_unit_212549.log",
+        "raw_sha256": "c3ba06d449bbd45802b56d7c54573a3d88a1bd0b8ad3e9dd9e3c9c36d069f390"
+      },
+      "e2e": {
+        "mode": "e2e",
+        "command": [
+          "powershell.exe",
+          "-NoProfile",
+          "-ExecutionPolicy",
+          "Bypass",
+          "-File",
+          "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon\\tools\\test.ps1",
+          "-E2e",
+          "-Scenario",
+          "icon_intake,item_ui,ui_tooltips,ui_docks,ui_windows,hover_target,vendor_quest,pickup_equip,loot_drop,potion_tiers,quest_journal,boss_floor"
+        ],
+        "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+        "started": 1790512341.4388719,
+        "elapsed": 104.42734050750732,
+        "exit_code": 0,
+        "raw_log": "458_e2e_213221.log",
+        "raw_sha256": "8473fdea042cb326d82646bc5cb2e455448d66de0e10fe5fc44e7f5fbb362a92"
+      },
+      "gate": {
+        "mode": "gate",
+        "command": [
+          "C:\\Users\\FORYOUCOM\\miniconda3\\python.exe",
+          "C:\\workspace\\joseon\\tmp\\453_gate.py"
+        ],
+        "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+        "started": 1790512468.8602374,
+        "elapsed": 5.43155837059021,
+        "exit_code": 0,
+        "raw_log": "458_gate_213428.log",
+        "raw_sha256": "a7440afd30439838d4f60185846f1ffc6791a2880be6c140ada4c349160e56ee"
+      }
+    },
+    "scope": "53 unit +12 affected e2e +boot/runner; no fresh full-e2e/export claim"
+  },
+  "game_commit": "6587ad94cac01d1be26574659f4f456586ad4c9c",
+  "tested_base": "70a8afd68f4188852e4197bae4a2e55230b6870c",
+  "source_diff_sha256": "edfa1fb9b58a5412f5181518a8da4727203b06981e255cbf7d559900235b7c0e"
+}
