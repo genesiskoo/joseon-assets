@@ -286,7 +286,7 @@
     "봉밀굴 봉인 소비/개방 #169 대기",
     "수하 보스 장산범/불가살이 #69 대기"
   ],
-  "main_landed": false,
+  "main_landed": true,
   "validation": {
     "unit_gd": 53,
     "unit_item_ui_checks": 37,
@@ -362,5 +362,47 @@
   },
   "game_commit": "6587ad94cac01d1be26574659f4f456586ad4c9c",
   "tested_base": "70a8afd68f4188852e4197bae4a2e55230b6870c",
-  "source_diff_sha256": "edfa1fb9b58a5412f5181518a8da4727203b06981e255cbf7d559900235b7c0e"
+  "source_diff_sha256": "edfa1fb9b58a5412f5181518a8da4727203b06981e255cbf7d559900235b7c0e",
+  "landing": {
+    "approval": "PD 2026-09-27 승인 다음작업",
+    "game_main": "2ae2e1a007b05398ffd975f8d9f4c0505cd3e941",
+    "candidate": "6587ad94cac01d1be26574659f4f456586ad4c9c",
+    "same_runtime_after_doc_only_rebase": true,
+    "protected_main_exact_sha": 102,
+    "protected_main_crlf_only": [
+      "data/items/coin.tres",
+      "data/items/ident_scroll.tres",
+      "data/items/town_portal.tres"
+    ],
+    "protected_main_canonical_content_equal": 105,
+    "import_required": false,
+    "reason": "modified existing scripts only; no new imported assets/classes",
+    "run": {
+      "command": [
+        "C:\\Users\\FORYOUCOM\\miniconda3\\python.exe",
+        "tools/wt.py",
+        "land",
+        "--no-test",
+        "-m",
+        "PD 승인 퀘스트 물건 창 밖 버림 차단·툴팁 정합성, 단위53/관련12·732/실제76 PASS"
+      ],
+      "exit_code": 0,
+      "started": 1790516474.0329478,
+      "elapsed": 4.62485146522522,
+      "raw_log": "458_land_224114.log",
+      "raw_sha256": "d517829ca4de7f0411d91deb6a1ad1e7c751100d545501e8256394edbd65fa98"
+    },
+    "main_gate": {
+      "command": [
+        "C:\\Users\\FORYOUCOM\\miniconda3\\python.exe",
+        "C:\\workspace\\joseon\\tmp\\quest_guard_main_gate.py"
+      ],
+      "exit_code": 0,
+      "started": 1790516639.7450702,
+      "elapsed": 7.486996173858643,
+      "raw_log": "458_main_gate_224407.log",
+      "raw_sha256": "c8c16c38b88be5d6ed6bc1c52bd74792292ee9cbba49c6e84253bffea7dd7308"
+    },
+    "pushed": false
+  }
 }
