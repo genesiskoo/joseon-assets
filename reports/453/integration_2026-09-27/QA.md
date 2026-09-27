@@ -22,3 +22,7 @@ PD 「승인 다음」으로 #452 원화6종을 채택하고 게임 반입을 �
 최종 검증: 단위53종·러너/도구/문서층 PASS, 영향 관련 E2E11종 590검사 PASS(일반 icon_intake153검사). 전체97 시나리오를 이번 카드에서 재실행했다고 주장하지 않는다. 제품 동작 코드는 그대로이고 자원6·검수 대본만 변경했으므로 전체 단위와 해당 UI/상점/드랍 경로를 재검했다. 같은 테스트 대상의 빠른 부팅/러너 검사를 거쳐 wt.py land --no-test로 착륙한다. 검증 뒤 제품/검수 코드 수정은 없다.
 
 재현: `godot --path <자리> --windowed --resolution 1280x720 -- --e2e=icon_intake --e2e-shots --icon-intake-material-only`. 관련 검사: `tools/test.ps1 -E2e -Scenario 'icon_intake,item_ui,ui_tooltips,ui_docks,ui_windows,hover_target,vendor_quest,vendor_prices,shaman_heal,pickup_equip,loot_drop'`. 미push.
+
+## 최종 착륙 기록
+
+게임 main `03c8421657063b23d6a1158d17d96bf68446d3f0` 착륙 완료, 본진 임포트21초·부팅 SCRIPT ERROR0·오토로드10/10·주 장면OK. #453 완료, #274 핵심 잔여55. 자산 reports/453/integration_2026-09-27의 run_land.json과 raw로그에 재현 명령·실행시간·SHA가 있다. 최초 자산 Git 공백검사는 원문 Windows 로그의 CR 줄끝을 공백으로 판정해 종료2로 멈췄다. 전문은453_initial_diff_check.log로 보존했다. raw바이트를 고치지 않고 로그만 공백검사에서 제외했으며 소스·문서 공백검사와 Git blob/raw 동등성은 PASS다. 게임 시험 실패나 자동승인 거절은 없었다.
