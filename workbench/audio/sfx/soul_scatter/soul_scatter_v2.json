@@ -1,0 +1,67 @@
+{
+ "cue": "soul_scatter",
+ "v": 2,
+ "prompt": "A ghostly spirit dissolving into ink smoke: soft airy breathy whoosh rising and fading away, faint eerie shimmer, dark, close-up, isolated, no music, no voice, no words",
+ "seconds": 1.2,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-09-28 19:38",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.192018,
+ "lufs": "-17.8",
+ "peak": "-6.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0001,
+    0.0001
+   ],
+   "sample_peak_db": -5.83,
+   "file": "_raw/soul_scatter_v2.wav",
+   "duration": 1.2,
+   "lufs": "-17.8",
+   "true_peak": "-5.5"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 52568,
+   "at": 1.192,
+   "removed_ms": 8.0,
+   "floor_db": -87.0,
+   "jump_db": 22.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.18,
+   "why": "트루피크 여유 +0.2 LU",
+   "intake_i": [
+    -19.05,
+    -19.05
+   ],
+   "intake_tp": [
+    -3.97,
+    -4.15
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -6.26,
+   "lufs": "-17.8",
+   "true_peak": "-6.1"
+  },
+  "warn": []
+ }
+}
