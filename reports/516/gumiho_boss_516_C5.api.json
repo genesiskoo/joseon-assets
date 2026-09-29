@@ -1,0 +1,51 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_516_C5",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "5dc07b261e9bd54a99db5496d49d74bf25988cb58bd9d6cc2796564acf307acc.png"
+    },
+    "is_changed": [
+      "d657ca367095b99c9d2b1e70c44922f814d4ed42be4a98ac171ae49b11d65c75"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "3",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 5162501,
+      "model.size_preset": "(2K) 1728x2304 (3:4)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "Use the supplied full-body inn hostess image as the exact identity and clothing reference. One and only one adult Korean woman, same narrow amber eyes, black hair in a loose low knot and plain wooden pin, same faded deep-indigo work jeogori, dark brown chima, off-white collar and pale worn linen apron. Reveal that this ordinary Joseon jumak hostess is an ancient gumiho boss, but do not redesign her as royalty or a courtesan. She stands calmly in the now-empty dark wooden inn, still holding the small earthenware cup; her half-smile is intimate and predatory. From behind her body emerge exactly nine enormous separate fox tails, individually readable from root to tip, charcoal black with subtle deep-russet and gold rim light; they spread like a dark fan above and to both sides without hiding her face, apron, hands, hem or both cloth shoes. The room's shadows bend subtly toward her. Full head-to-toe character within frame, one face, two hands, two feet, no duplicated body. Dark Joseon fantasy boss concept, matte painted illustration, tactile cloth and wood, clear silhouette at isometric game scale, restrained warm lamp light, not photorealistic, no fox ears, no crown, no jewelry, no exposed skin, no Chinese or Japanese costume, no text or split panels."
+    }
+  }
+}
