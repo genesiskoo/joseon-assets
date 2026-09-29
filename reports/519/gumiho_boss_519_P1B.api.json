@@ -1,0 +1,51 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_519_P1B",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "a46d3fe84c60fbf7d93c5ceb81e6435a947d89ddcc63026de4f24fa2fe010980.png"
+    },
+    "is_changed": [
+      "d657ca367095b99c9d2b1e70c44922f814d4ed42be4a98ac171ae49b11d65c75"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "3",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 5191201,
+      "model.size_preset": "(2K) 2304x1728 (4:3)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "The reference is the same Korean gumiho who lived as an ordinary Joseon inn hostess. Keep her recognizable adult human face, narrow amber eyes, black hair with a plain wooden pin, faded deep-indigo work jeogori, off-white collar, dark brown chima and worn pale linen apron. Phase ONE of the final boss battle: entirely physical, feral predation, not a magic or fire phase. Her work clothes are still identifiable but loosened, dusty and lightly torn from transformation; covered body, no revealing costume. Her hair has escaped its knot in tangled strands, a few subtle russet-black fur patches grow on her wrists and upper back, nails have become dark sharp claws, canine teeth barely visible through a dangerous half-smile. Nine individual heavy charcoal fox tails grow naturally from her lower back and hips; their roots and nine separate tips must be readable, with some tails dragging and scraping the ground. No floating magical tail halo. One figure, one face, two arms, two legs, two feet, anatomically coherent hands, entire character and tails inside frame. Grounded dark Joseon fantasy game boss key art, matte painted texture, slightly inked edges, restrained earthy colors, tactile fur, cotton and stone; clear silhouette at small isometric game size. The underground Gumiwon boss chamber has rough stone and broken Joseon seal fragments, not a palace. No gold ornaments, no elaborate robe, no crown, no jewelry, no fox-ear costume, no kimono, no qipao, no fantasy armor, no extra limbs, no split panels, no text. No flames, spirit energy, glowing spell effects or blood spray; reserve supernatural light for later phases. Wide full-body frontal three-quarter view. She advances on two feet through the broken seal chamber, spine hunched, shoulders uneven, head angled down while amber eyes look up directly at the viewer. One clawed hand opens toward the viewer, the other pulls at her loosened apron cord; her jaw reveals only a hint of fang. Her nine tails are rough, heavy and low, sweeping dust and broken paper seals across the floor rather than forming a decorative fan. Distinct predatory walk stance, practical cloth shoes still visible, no cropping."
+    }
+  }
+}
