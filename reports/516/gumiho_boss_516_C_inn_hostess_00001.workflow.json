@@ -1,0 +1,360 @@
+{
+  "config": {},
+  "extra": {
+    "VHS_KeepIntermediate": true,
+    "VHS_MetadataImage": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "ds": {
+      "offset": [
+        1940.928669410151,
+        -96.66666666666674
+      ],
+      "scale": 0.5360294117647059
+    },
+    "frontendVersion": "1.54.15"
+  },
+  "groups": [],
+  "id": "745f0acb-85fe-4455-b8b8-5875bf15f808",
+  "last_link_id": 10,
+  "last_node_id": 9,
+  "links": [
+    [
+      6,
+      3,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      7,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      8,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      7,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "nodes": [
+    {
+      "flags": {},
+      "id": 2,
+      "inputs": [
+        {
+          "link": 10,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 6,
+      "outputs": [
+        {
+          "links": null,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "pos": [
+        1204,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImageAdvanced",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        560,
+        130
+      ],
+      "type": "SaveImageAdvanced",
+      "widgets_values": [
+        "gumiho_boss_516_C_inn_hostess",
+        "png",
+        "8-bit",
+        "sRGB"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "gumiho_boss_516_C_inn_hostess",
+        "format": "png",
+        "format.bit_depth": "8-bit",
+        "format.input_color_space": "sRGB"
+      }
+    },
+    {
+      "flags": {},
+      "id": 3,
+      "inputs": [],
+      "mode": 0,
+      "order": 0,
+      "outputs": [
+        {
+          "links": [
+            6
+          ],
+          "name": "IMAGE",
+          "type": "IMAGE"
+        },
+        {
+          "links": null,
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "pos": [
+        -370,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        580,
+        720
+      ],
+      "type": "LoadImage",
+      "widgets_values": [
+        "0eb4b6680500d4e0cb749b079e17dd95ad0fc8f61eb2d439d1055fe8e516afb2.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "0eb4b6680500d4e0cb749b079e17dd95ad0fc8f61eb2d439d1055fe8e516afb2.png",
+        "upload": "image"
+      }
+    },
+    {
+      "flags": {},
+      "id": 5,
+      "inputs": [
+        {
+          "link": 8,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 4,
+      "outputs": [
+        {
+          "links": null,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "pos": [
+        270,
+        1590
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        420,
+        480
+      ],
+      "type": "PreviewImage"
+    },
+    {
+      "bgcolor": "#000",
+      "color": "#222",
+      "flags": {},
+      "id": 6,
+      "inputs": [],
+      "mode": 0,
+      "order": 1,
+      "outputs": [],
+      "pos": [
+        270,
+        1310
+      ],
+      "properties": {},
+      "size": [
+        430,
+        220
+      ],
+      "type": "MarkdownNote",
+      "widgets_values": [
+        "Enable Node 2.0. If you can’t use the Painter node, use the [Partial Execution](https://docs.comfy.org/interface/features/partial-execution) feature on the Preview Image node. This way, you won’t need to run the entire workflow just to get the Painter preview working. With future updates, the preview can support live use.\n\nYou can run this workflow without updating it; if you want, you can use it to draw some marks on the input image."
+      ],
+      "widgets_values_named": {
+        "text": "Enable Node 2.0. If you can’t use the Painter node, use the [Partial Execution](https://docs.comfy.org/interface/features/partial-execution) feature on the Preview Image node. This way, you won’t need to run the entire workflow just to get the Painter preview working. With future updates, the preview can support live use.\n\nYou can run this workflow without updating it; if you want, you can use it to draw some marks on the input image."
+      }
+    },
+    {
+      "flags": {},
+      "id": 7,
+      "inputs": [
+        {
+          "link": 6,
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 3,
+      "outputs": [
+        {
+          "links": [
+            8,
+            9
+          ],
+          "name": "IMAGE",
+          "type": "IMAGE"
+        },
+        {
+          "links": null,
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "pos": [
+        258,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "Painter",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        450,
+        820
+      ],
+      "type": "Painter",
+      "widgets_values": [
+        "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+        512,
+        896,
+        "#000000"
+      ],
+      "widgets_values_named": {
+        "bg_color": "#000000",
+        "height": 896,
+        "mask": "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+        "width": 512
+      }
+    },
+    {
+      "bgcolor": "#653",
+      "color": "#432",
+      "flags": {},
+      "id": 8,
+      "inputs": [
+        {
+          "link": 9,
+          "name": "model.images.image_1",
+          "shape": 7,
+          "type": "IMAGE"
+        },
+        {
+          "link": null,
+          "name": "model.images.image_2",
+          "shape": 7,
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 5,
+      "outputs": [
+        {
+          "links": [
+            10
+          ],
+          "name": "IMAGE",
+          "type": "IMAGE"
+        }
+      ],
+      "pos": [
+        750,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "ByteDanceSeedreamNodeV3",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        400,
+        348
+      ],
+      "type": "ByteDanceSeedreamNodeV3",
+      "widgets_values": [
+        "Create a new Joseon dark-fantasy game character concept from the uploaded approved Gumiho identity. Preserve the SAME adult Korean womans recognizable facial structure, long black hair and quietly luminous amber eyes. Direction C — THE INN HOSTESS: in her human disguise she looks like a perfectly ordinary working woman of a small Joseon village inn, not nobility and not a fantasy sorceress. Simple faded deep-indigo cotton jeogori, smoke-brown chima, utilitarian apron tied at the waist, rolled sleeve from serving guests, hair gathered in a low loose knot with one plain wooden pin. No gold embroidery, no ornamental jewelry, no weapon, NO VISIBLE FOX TAILS OR EARS. Her power is intimate social attraction: she leans slightly across a low table and offers a plain ceramic cup with one hand, lets her other hand rest near her own throat, meets the viewer with steady golden eyes and a tiny private smile, as if she already knows a secret about them. Subtle asymmetry in the posture, relaxed shoulders and precise fingers; inviting at first glance, predatory when looked at twice. One single coherent concept sheet with a full-body three-quarter standing pose on the left and a larger portrait expression study on the right, BOTH clearly the same woman. Keep clothes historically evocative but not strict museum reconstruction. Matte illustrated H1-compatible Korean game art, grounded anatomy, charcoal dusk backdrop and narrow honey-colored side lighting. The audience should sense a fox demon WITHOUT seeing magic or a costume. No text or labels, no extra person, no glossy skin, no erotic exposure, no palace costume, no Chinese hanfu, no kimono, no Western fantasy armor, no cutesy anime style.",
+        "seedream 5.0 pro",
+        "(2K) 2304x1728 (4:3)",
+        2048,
+        2048,
+        "standard",
+        1704063583,
+        "randomize",
+        false,
+        true,
+        "randomize"
+      ],
+      "widgets_values_named": {
+        "control_after_generate": "randomize",
+        "control_after_generate#1": "randomize",
+        "model": "seedream 5.0 pro",
+        "model.height": 2048,
+        "model.prompt_optimization": "standard",
+        "model.seed": 1704063583,
+        "model.size_preset": "(2K) 2304x1728 (4:3)",
+        "model.thinking": true,
+        "model.watermark": false,
+        "model.width": 2048,
+        "prompt": "Create a new Joseon dark-fantasy game character concept from the uploaded approved Gumiho identity. Preserve the SAME adult Korean womans recognizable facial structure, long black hair and quietly luminous amber eyes. Direction C — THE INN HOSTESS: in her human disguise she looks like a perfectly ordinary working woman of a small Joseon village inn, not nobility and not a fantasy sorceress. Simple faded deep-indigo cotton jeogori, smoke-brown chima, utilitarian apron tied at the waist, rolled sleeve from serving guests, hair gathered in a low loose knot with one plain wooden pin. No gold embroidery, no ornamental jewelry, no weapon, NO VISIBLE FOX TAILS OR EARS. Her power is intimate social attraction: she leans slightly across a low table and offers a plain ceramic cup with one hand, lets her other hand rest near her own throat, meets the viewer with steady golden eyes and a tiny private smile, as if she already knows a secret about them. Subtle asymmetry in the posture, relaxed shoulders and precise fingers; inviting at first glance, predatory when looked at twice. One single coherent concept sheet with a full-body three-quarter standing pose on the left and a larger portrait expression study on the right, BOTH clearly the same woman. Keep clothes historically evocative but not strict museum reconstruction. Matte illustrated H1-compatible Korean game art, grounded anatomy, charcoal dusk backdrop and narrow honey-colored side lighting. The audience should sense a fox demon WITHOUT seeing magic or a costume. No text or labels, no extra person, no glossy skin, no erotic exposure, no palace costume, no Chinese hanfu, no kimono, no Western fantasy armor, no cutesy anime style."
+      }
+    },
+    {
+      "bgcolor": "#000",
+      "color": "#222",
+      "flags": {},
+      "id": 9,
+      "inputs": [],
+      "mode": 0,
+      "order": 2,
+      "outputs": [],
+      "pos": [
+        -870,
+        420
+      ],
+      "properties": {},
+      "size": [
+        450,
+        320
+      ],
+      "type": "MarkdownNote",
+      "widgets_values": [
+        "## Input Asset\n\n- [interior_college.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/interior_college.png)\n\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+      ],
+      "widgets_values_named": {
+        "text": "## Input Asset\n\n- [interior_college.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/interior_college.png)\n\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+      }
+    }
+  ],
+  "revision": 0,
+  "version": 0.4
+}
