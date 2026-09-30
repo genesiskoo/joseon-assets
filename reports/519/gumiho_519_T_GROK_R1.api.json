@@ -1,0 +1,37 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_519_T_GROK_R1",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "6d748254d22e02fea090868ca6a1ba255ec6b560d2ecf50deebbe265446f9dbd.png"
+    }
+  },
+  "8": {
+    "class_type": "GrokImageEditNodeV2",
+    "inputs": {
+      "prompt": "Use case: stylized-concept. Create one new knee-up, three-quarter revealed-form boss character concept for a Korean Joseon dark-fantasy isometric action RPG.\n\nThe attached two-panel illustration is a CHARACTER IDENTITY, GAZE, EXPRESSION AND ART-STYLE reference only. Preserve the adult Korean woman's recognizable face exactly: narrow almond-shaped amber-gold eyes with focused direct eye contact beneath slightly lowered upper eyelids, lowered chin, restrained knowing asymmetrical smile, black hair with loose face-framing strands and a plain wooden pin. Keep the intimate, confident expression and the economical hand near her chin. Her expression is mesmerizing and quietly predatory, never cute, vacant, screaming or snarling. Produce one continuous composition with one woman, not the reference's split panels or a duplicated face.\n\nRedesign her revealed-form costume with the bold flesh-and-monster contrast of late-1990s and early-2000s dark-fantasy boss art. The ordinary tavern hostess's clothing has become a radically asymmetric Joseon hanbok: one surviving faded-indigo sleeve, a recognizable pale collar edge, loosened goreum ties, and the side knot of her plain linen work apron. Narrow opaque indigo cloth crosses and covers the front chest; a secure opaque hip wrap anchors a heavy skirt panel. Broad exposed skin planes at the opposite shoulder, flank, abdomen and one thigh contrast with the narrow cloth and the dense hanging skirt. Design coherent cloth tension and folds, not random holes or a Western lingerie costume. The apron and brown skirt panel are saturated with dark-red blood and hang with real weight.\n\nKeep her beautiful face human. Dark organic discoloration marks the neck, exposed flank and wrists; fingertips are darkened with long physical claws. Fresh blood coats the claws, fingers and wrist, with smeared blood on the remaining cloth. Her inviting face remains composed despite the physical brutality of her hands. One hand rests lightly near the chin as in the reference; the other is held away from the torso with naturally separated long fingers. Natural adult human proportions, two human arms and legs, grounded posture and a subtly forward-leaning invitation, no giant or quadruped body.\n\nNine heavy charcoal-black physical fox tails grow from the lower back, surrounding her in asymmetric low-trailing, side-enclosing and raised rear curves. Dense matte fur, substantial roots and distinct tails; do not form a symmetrical decorative halo or cover the face. The tails claim the space around a calm human body.\n\nMatch the supplied matte hand-painted character style, large readable shapes and tactile cotton, wood, fur and skin. Dim wooden Joseon tavern background with minimal detail, cool shadows and restrained warm directional light. Cold human skin, deep indigo and brown cloth, black fur and visible dark-red blood. Keep eyes, face, neck, hands and costume overlaps readable. Phase-one physical menace, no glowing magic, fire, purple aura, crown, ornate queen dress, insect armor, scorpion limbs, extra limbs, text or watermark.",
+      "model": "grok-imagine-image-2.0",
+      "model.images.image_1": [
+        "3",
+        0
+      ],
+      "model.resolution": "2K",
+      "model.number_of_images": 1,
+      "model.quality": "medium",
+      "model.aspect_ratio": "2:3",
+      "seed": 5192301
+    }
+  }
+}
