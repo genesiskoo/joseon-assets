@@ -58,11 +58,12 @@
     }
   },
   "GPT25": {
-    "state": "awaiting_explicit_reference_usage_authorization",
+    "state": "cancelled_by_pd_platform_change",
     "generation_submitted": false,
     "moderation_result": "not_tested",
     "cost_without_reference": 1,
-    "project_id": "ff599057-39f5-4b5c-bec5-1ddf0f409739"
+    "project_id": "ff599057-39f5-4b5c-bec5-1ddf0f409739",
+    "cancel_reason_ko": "PD가 Comfy Cloud로 플랫폼을 변경했다. Higgsfield R1 작업은 제출하지 않았다. GPT2.5의 실제 Comfy R2 결과는 model_test_R2_report.json에 별도로 기록한다."
   },
   "review_ko": {
     "GROK": "눈빛·미소와 턱 근처 손 연기를 유지한다. 피부 노출·핏자국·긴 손톱이 강하게 나왔다. 양쪽 소매가 남아 R1의 한쪽 소매 지시와 다르다.",

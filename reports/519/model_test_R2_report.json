@@ -1,0 +1,122 @@
+{
+  "card": 519,
+  "date": "2026-09-30",
+  "revision": "R2",
+  "provider": "Comfy Cloud",
+  "source": "gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "prompt": "gumiho_model_test_R2.prompt.txt",
+  "prompt_file_sha256": "7761206a58ab9a81041d4b69c4bdda32181dab2f0fd9a78371fb4c566c8905f6",
+  "submitted_prompt_sha256": "2364177e41fec43a8e12bf6d20c3777f401f5b6490a1d7f3e5ac8296f7d507d8",
+  "jobs": {
+    "GPT25": {
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "source": "gumiho_C_gaze_pd_reference.png",
+      "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+      "prompt": "gumiho_model_test_R2.prompt.txt",
+      "prompt_file_sha256": "7761206a58ab9a81041d4b69c4bdda32181dab2f0fd9a78371fb4c566c8905f6",
+      "submitted_prompt_sha256": "2364177e41fec43a8e12bf6d20c3777f401f5b6490a1d7f3e5ac8296f7d507d8",
+      "seed": 5192301,
+      "deterministic_seed_guaranteed": false,
+      "requested_images": 1,
+      "requested_width": 1664,
+      "requested_height": 2496,
+      "state": "downloaded",
+      "prompt_id": "3e5d962e-1df4-4ee8-8941-c0c2c535ffea",
+      "status_response": {
+        "assigned_inference": "10.4.20.217:8080",
+        "created_at": "2026-09-30T08:23:11.05135Z",
+        "id": "3e5d962e-1df4-4ee8-8941-c0c2c535ffea",
+        "last_state_update": "2026-09-30T08:23:39.949477Z",
+        "status": "success",
+        "updated_at": "2026-09-30T08:23:39.949477Z"
+      },
+      "actual_dimensions": [
+        1664,
+        2496
+      ],
+      "output": "gumiho_519_T_GPT25_R2.png",
+      "output_sha256": "c2338b1917234a516128eb5bb4586b410c6011747d2fa337cab663f7c6b3f89c",
+      "output_bytes": 6053167
+    },
+    "GROK": {
+      "provider": "Comfy Cloud",
+      "model": "grok-imagine-image-2.0",
+      "source": "gumiho_C_gaze_pd_reference.png",
+      "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+      "prompt": "gumiho_model_test_R2.prompt.txt",
+      "prompt_file_sha256": "7761206a58ab9a81041d4b69c4bdda32181dab2f0fd9a78371fb4c566c8905f6",
+      "submitted_prompt_sha256": "2364177e41fec43a8e12bf6d20c3777f401f5b6490a1d7f3e5ac8296f7d507d8",
+      "seed": 5192301,
+      "deterministic_seed_guaranteed": false,
+      "requested_images": 1,
+      "requested_width": 1664,
+      "requested_height": 2496,
+      "state": "downloaded",
+      "prompt_id": "83c6e999-80cb-49a5-8ceb-ee29a0788c49",
+      "status_response": {
+        "assigned_inference": "10.4.24.87:8080",
+        "created_at": "2026-09-30T08:23:46.243553Z",
+        "id": "83c6e999-80cb-49a5-8ceb-ee29a0788c49",
+        "last_state_update": "2026-09-30T08:24:24.303932Z",
+        "status": "success",
+        "updated_at": "2026-09-30T08:24:24.303932Z"
+      },
+      "actual_dimensions": [
+        1664,
+        2496
+      ],
+      "output": "gumiho_519_T_GROK_R2.png",
+      "output_sha256": "6a4b504726b2abe85b9a09eb0ff622a8cd90616635cbcd7d25a8e06eafa21b72",
+      "output_bytes": 5255351
+    },
+    "SEEDREAM": {
+      "provider": "Comfy Cloud",
+      "model": "seedream 5.0 pro",
+      "source": "gumiho_C_gaze_pd_reference.png",
+      "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+      "prompt": "gumiho_model_test_R2.prompt.txt",
+      "prompt_file_sha256": "7761206a58ab9a81041d4b69c4bdda32181dab2f0fd9a78371fb4c566c8905f6",
+      "submitted_prompt_sha256": "2364177e41fec43a8e12bf6d20c3777f401f5b6490a1d7f3e5ac8296f7d507d8",
+      "seed": 5192301,
+      "deterministic_seed_guaranteed": false,
+      "requested_images": 1,
+      "requested_width": 1664,
+      "requested_height": 2496,
+      "state": "downloaded",
+      "prompt_id": "33d7683a-d26f-426a-8c4e-a1a871ab09cf",
+      "status_response": {
+        "assigned_inference": "10.4.53.81:8080",
+        "created_at": "2026-09-30T08:23:51.997498Z",
+        "id": "33d7683a-d26f-426a-8c4e-a1a871ab09cf",
+        "last_state_update": "2026-09-30T08:26:58.049668Z",
+        "status": "success",
+        "updated_at": "2026-09-30T08:26:58.049668Z"
+      },
+      "actual_dimensions": [
+        1664,
+        2496
+      ],
+      "output": "gumiho_519_T_SEEDREAM_R2.png",
+      "output_sha256": "dec7eab90b51559cee4a411cf9932e6a1ce4dfea158c932f712129967d0ce5b0",
+      "output_bytes": 3296854
+    }
+  },
+  "review_ko": {
+    "GPT25": "한쪽 열린 깃·겹친 섶·이어진 몸판과 소매, 허리말기와 모인 치마 주름이 가장 설득력 있다. 선택한 눈빛·작은 미소를 유지하며 손·앞치마에 유혈이 남았다. 복식 연결 구조의 현재 추천안이다.",
+    "GROK": "몸판의 띠 형태와 복부 구멍은 없어졌으나 깃이 정상인 채 한쪽 어깨만 팔구멍처럼 비었다. 저고리 전체가 어깨에서 내려오는 수정 요구를 일부 어겨 복식 기준안으로 추천하지 않는다.",
+    "SEEDREAM": "겹친 몸판·치마를 걷은 주름이 자연스럽고 선택한 눈빛·미소가 선명하다. 한쪽 대신 양쪽 어깨가 풀렸고 유혈·피부 타락이 약해졌다. 얼굴 연기의 비교 후보이다."
+  },
+  "recommendation_ko": "이번 출력에서는 GPT R2를 복식 구조 기준으로 추천한다. Seedream의 얼굴 연기와 비교하며 후속 유혈·꼬리 실루엣을 조정할 수 있다. PD 채택 전이다.",
+  "moderation_observation_ko": "GPT Image 2.5도 이번 R2 참조·수정문으로 생성 성공했다. 세 모델의 일반적인 검열 범위나 다른 프롬프트 결과를 이 1회로 확정하지 않는다.",
+  "unresolved_ko": "정확한 꼬리 9가닥·뿌리 연결, 손가락과 손톱 전체 구조, 후면·전신·도호 대비·아이소 가독성은 추가 검수 대상이다.",
+  "same_prompt_and_source": true,
+  "current_preview": "review_R2/model_compare_R2.jpg",
+  "before_after_preview": "review_R2/cloth_before_after_R2.jpg",
+  "before_after_scope_ko": "동일 Seedream 모델·입력·3/4 요청 구도에서 R1/R2를 비교한다. 독립 생성이므로 실제 카메라와 자세는 완전히 동일하지 않다.",
+  "higgsfield_plan": "cancelled_by_pd_platform_change",
+  "adopted_design": null,
+  "game_intake": false,
+  "main_merge": false
+}

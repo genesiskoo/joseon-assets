@@ -1,7 +1,7 @@
 {
   "provider": "Higgsfield",
   "model": "gpt_image_2_5",
-  "state": "awaiting_explicit_reference_usage_authorization",
+  "state": "cancelled_by_pd_platform_change",
   "generation_submitted": false,
   "model_content_moderation": "not_tested",
   "cost_preflight_without_reference": 1,
@@ -26,5 +26,6 @@
     "resolution": "2k",
     "quality": "medium",
     "folder_id": "ff599057-39f5-4b5c-bec5-1ddf0f409739"
-  }
+  },
+  "cancel_reason_ko": "PD가 Higgsfield 대신 Comfy Cloud로 생성하도록 지시했다. Higgsfield 작업은 제출하지 않고 취소한다."
 }

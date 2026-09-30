@@ -1,0 +1,33 @@
+{
+  "card": 519,
+  "date": "2026-09-30",
+  "status": "three_jobs_completed_design_unadopted",
+  "provider": "Comfy Cloud",
+  "pd_steering_ko": "higgsfield말고 comfy cloud로 만들어. 그리고 복식이 노출이 너무 부자연스럽다",
+  "source": "gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "prompt": "gumiho_model_test_R2.prompt.txt",
+  "prompt_file_sha256": "7761206a58ab9a81041d4b69c4bdda32181dab2f0fd9a78371fb4c566c8905f6",
+  "submitted_prompt_sha256": "2364177e41fec43a8e12bf6d20c3777f401f5b6490a1d7f3e5ac8296f7d507d8",
+  "models": [
+    "gpt-image-2.5-flare",
+    "grok-imagine-image-2.0",
+    "seedream 5.0 pro"
+  ],
+  "max_submitted_images": 3,
+  "costume_revision_ko": "A 풀린 겉섶·걷어 올린 치마. 완전한 저고리의 깃과 섶이 한쪽 어깨로 같이 내려오며 반대쪽 겹친 섶이 가슴을 덮는다. 한쪽 치마 자락을 허리말기에 끼워 주름의 무게와 함께 허벅지가 드러난다. 앞치마는 옆 매듭에서 비스듬히 처진다.",
+  "alternate_unsubmitted_ko": "B 옆선이 겨드랑이부터 밑단까지 연속으로 손상된 저고리·밀린 겹치마. 비교안으로 제안했지만 이번에는 제출하지 않는다.",
+  "rationale_ko": "노출의 양을 늘리거나 줄이는 대신, 한 벌의 옷이 풀리고 걷히는 원인을 먼저 고정한다. 가슴 아래 띠·복부 구멍을 남겨 노출 면만 조절하는 대안은 PD가 지적한 연결 구조 문제를 고치지 못한다. 같은 입력과 수정문으로 세 모델의 천 구조를 비교한다.",
+  "review_criteria_ko": [
+    "선택한 눈빛과 작은 미소 유지",
+    "깃·섶·소매·밑단이 한 벌로 연결",
+    "어깨 노출이 열린 깃과 연결",
+    "치마가 허리말기에 걸려 주름과 무게 유지",
+    "임의의 복부 구멍·가슴 띠 없음",
+    "유혈과 타락이 보스의 위협을 유지",
+    "꼬리·손·신체 구조 직접 확인"
+  ],
+  "proposal_source": "narrative-world garment consultation",
+  "adopted_design": null,
+  "game_intake": false
+}
