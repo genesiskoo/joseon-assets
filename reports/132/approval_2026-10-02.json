@@ -1,0 +1,58 @@
+{
+  "schema": "joseon.pd_adoption.v1",
+  "card": 132,
+  "date": "2026-10-02",
+  "decision": "approved_by_human",
+  "user_instruction_ko": "모두 채택하고 반입·병합",
+  "question_scope_ko": "#132 GLB7 / #274 오방옥20+호리병1 / #519 R4 구조 원화5 / #463 버전 표시",
+  "selected": [
+    {
+      "id": "bone_heap",
+      "source": "workbench/production/dungeon_props_132/models/bone_heap.glb",
+      "sha256": "3311ebe92829ec64601d21c16e48631da7bd60fbd517056131b7f7d18b066320",
+      "game_asset": "assets/models/props/dungeon_132/bone_heap.glb"
+    },
+    {
+      "id": "roots",
+      "source": "workbench/production/dungeon_props_132/models/roots.glb",
+      "sha256": "def749a69d2bf250fdf3c54c99f44a3a1f63771b513a2c48e098afd23404e585",
+      "game_asset": "assets/models/props/dungeon_132/roots.glb"
+    },
+    {
+      "id": "nest",
+      "source": "workbench/production/dungeon_props_132/models/nest.glb",
+      "sha256": "0d571ca7a637f4ed1c4618e00c208facd4327cbc604b932cbb678a57a6a8df14",
+      "game_asset": "assets/models/props/dungeon_132/nest.glb"
+    },
+    {
+      "id": "palisade",
+      "source": "workbench/production/dungeon_props_132/models/palisade.glb",
+      "sha256": "157f15d73a8cf209312bc9a9d9fca81972c2fbe81d23dcdc35c75cab41e2be73",
+      "game_asset": "assets/models/props/dungeon_132/palisade.glb"
+    },
+    {
+      "id": "seal_stone",
+      "source": "workbench/production/dungeon_props_132/models/seal_stone.glb",
+      "sha256": "141beacdf3c85f1bbcf89b7121d9505c948af70eb11ebe3966c23e46a2412ed8",
+      "game_asset": "assets/models/props/dungeon_132/seal_stone.glb"
+    },
+    {
+      "id": "pillar",
+      "source": "workbench/production/dungeon_props_132/models/pillar.glb",
+      "sha256": "10ebf0c6f64e9f56ff152de53d78457000ebeac53f72a6e63afe88f8f00f42bf",
+      "game_asset": "assets/models/props/dungeon_132/pillar.glb"
+    },
+    {
+      "id": "broken_statue",
+      "source": "workbench/production/dungeon_props_132/models/broken_statue.glb",
+      "sha256": "51b96d22b535c0681066fb8ed3184b2de707841a3b6cfb738fbf2de37b3abe2f",
+      "game_asset": "assets/models/props/dungeon_132/broken_statue.glb"
+    }
+  ],
+  "asset_copy_count": 7,
+  "runtime_placement_or_behavior_verified": false,
+  "remaining_scope_ko": "지역 배치·광량·클릭 동선은 환경 레인 #344/#533에서 검수한다. 둥지 중앙이 단순한 후보를 포함해 7종 모두 채택했다.",
+  "source_sha_preserved": true,
+  "native_source_and_failure_history_preserved": true,
+  "pushed": false
+}
