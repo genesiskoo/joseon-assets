@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "condition": "fixed60",
+  "label": "536_fixed60_1",
+  "command": [
+    "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-Command",
+    "[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false); & 'C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1' -E2e -Scenario balance_boss -FixedFps 60"
+  ],
+  "test_pid": 33296,
+  "exit_code": 0,
+  "interrupted": false,
+  "completed_utc": "2026-10-01T22:04:46.681498+00:00",
+  "godot_log_source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-536-balance-rng-replay\\logs\\godot.log",
+  "godot_copy_error": null,
+  "raw": {
+    "stdout": {
+      "file": "536_fixed60_1.stdout.raw.log",
+      "sha256": "580714c7d2e0806fdb0cbeff79e786307e9e7a21ca61b2450d4abf1a3872bf31",
+      "bytes": 52211
+    },
+    "stderr": {
+      "file": "536_fixed60_1.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "godot": {
+      "file": "536_fixed60_1.godot.raw.log",
+      "sha256": "8772bbafc5258dd588c3092b36d4c1f07640ae7787b68a4972c09086c8661ea6",
+      "bytes": 62675
+    }
+  }
+}
