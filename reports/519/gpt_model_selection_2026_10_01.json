@@ -9,15 +9,21 @@
   "selected_model_label": "GPT Image 2.5",
   "selected_generation_catalog": "P1-P5 R3",
   "model_selection_status": "approved_by_pd",
-  "concept_selection_status": "pending_pd_selection",
-  "selected_concept_ids": [],
-  "adopted_design": null,
-  "other_model_catalogs": "G1-G5 and S1-S5 retained as comparison history; not the active production model",
-  "recommended_but_not_selected": {
+  "concept_selection_status": "approved_by_pd",
+  "selected_concept_ids": [
+    "P1",
+    "P5"
+  ],
+  "adopted_design": {
     "costume": "P1",
     "low_human_pose": "P5",
-    "tavern_reveal": "P3"
+    "tavern_reveal_reference": "P3",
+    "form": "adult_human",
+    "combat_phase": "phase_1_physical",
+    "face_reference": "gumiho_C_gaze_pd_reference.png",
+    "structural_validation": "pending_turnaround_tail_roots_hands_feet_isometric_scale"
   },
+  "other_model_catalogs": "G1-G5 and S1-S5 retained as comparison history; not the active production model",
   "known_issue": "P4 shows a third foot/shoe; not a ready anatomical reference",
   "current_face_reference": "gumiho_C_gaze_pd_reference.png",
   "next_constraints_ko": [
@@ -28,5 +34,29 @@
   ],
   "new_generation_submitted_for_this_selection": false,
   "game_intake": false,
-  "main_landed": false
+  "main_landed": false,
+  "reference_concept_ids": [
+    "P3"
+  ],
+  "concept_user_instruction_ko": "전부 확인 채택한다.",
+  "concept_decision_date": "2026-10-01",
+  "concept_decision_context_ko": "5건 시각 보고 전체 채택에 따라 보고서 추천 P1 복식 + P5 낮은 인간형 자세를 채택하고 P3 접객 연출을 보조 참고로 둔다.",
+  "source_concepts": {
+    "P1": {
+      "path": "reports/519/batch_R3/P1.png",
+      "sha256": "e421b2748979a436b71fd25d9d7efc9ad173b22dc3af751b399b16a370c71d6f"
+    },
+    "P5": {
+      "path": "reports/519/batch_R3/P5.png",
+      "sha256": "2ae3f92b9e2ab42d3237b05aa71b3313e752668fecb60c01d3a807a246d8ebc6"
+    },
+    "P3": {
+      "path": "reports/519/batch_R3/P3.png",
+      "sha256": "1002e8c9171b22dcb47b3d22e14dfa5cc72917e294fa479f6896b057371ea32a"
+    }
+  },
+  "excluded_final_reference_ids": [
+    "P4"
+  ],
+  "approval_does_not_complete_ko": "원화方向 채택이며 9꼬리 연결·정면/측후면·아이소 검수·3D 제작·게임 반입·main 병합은 별도 진행 단계다."
 }
