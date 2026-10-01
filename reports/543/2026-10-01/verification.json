@@ -1,0 +1,76 @@
+{
+  "card": 543,
+  "asset_base": "ed1dd3771c2e3dd53929b7c87480be8ec0840324",
+  "tested_main": "37467dc5677237a12a1eabd320e417a3ecbb45a7",
+  "source_candidate": "29896f89197f6dc4b82667b673b5871ab8d0a58c",
+  "before_candidate": "850a0b8e66039556294bf02d56b11c05422d0411",
+  "before_e2e_passed": 115,
+  "before_e2e_total": 116,
+  "before_story_cutin_failures": 2,
+  "focused_checks": 26,
+  "runner_selftest_checks": 5,
+  "final_e2e_passed": 116,
+  "final_e2e_total": 116,
+  "focused_before_physics_tick": 60,
+  "focused_opened_physics_tick": 61,
+  "focused_escape_physics_tick": 63,
+  "original_failure_physics_tick_observed": false,
+  "cause_inference": "process-frame wait can finish before the physics encounter and Esc can reach the system menu",
+  "condition_wait_max_seconds": 1.0,
+  "real_encounter_signals": 1,
+  "runtime_or_art_changed": false,
+  "assertions_retained": 26,
+  "source_blobs_match_tested_main": true,
+  "credentials_found": 0,
+  "files": [
+    {
+      "path": "before_full_landing.stdout.raw.log",
+      "source": "C:/workspace/joseon/._tmp/543_integrated_before.stdout.raw.log",
+      "bytes": 100411,
+      "sha256": "8b5cfa24f319a150611955ef9c2a7c8a8476dfacaf8e6f46b7c1c4c7b698d0f9"
+    },
+    {
+      "path": "before_full_e2e.godot.raw.log",
+      "source": "C:/workspace/joseon/._tmp/543_integrated_before.godot.raw.log",
+      "bytes": 607643,
+      "sha256": "6d3d07a05a77de8698056f22f4d80cf2befab146fbb166e3f799c7b12eaf37b6"
+    },
+    {
+      "path": "focused_story_cutin.stdout.raw.log",
+      "source": "C:/workspace/joseon/._tmp/543_story_cutin_focused.stdout.raw.log",
+      "bytes": 584,
+      "sha256": "9df5c633cb473312be3bc7138df0a235f589321d88965bf9293ab4966a4e6625"
+    },
+    {
+      "path": "focused_story_cutin.godot.raw.log",
+      "source": "C:/workspace/joseon/._tmp/543_story_cutin_focused.godot.raw.log",
+      "bytes": 4173,
+      "sha256": "e2574a2ea43629c506fb247640710094a4c9569d0ae4de79b0a24fada351db39"
+    },
+    {
+      "path": "final_full_landing.stdout.raw.log",
+      "source": "._tmp/451_final_land_after543.raw.log",
+      "bytes": 101315,
+      "sha256": "7fb163797711abf228c04e9b6f0a5029c74b55fa9af7e231c5e1b5f4eeda9b8b"
+    },
+    {
+      "path": "final_full_e2e.godot.raw.log",
+      "source": "._tmp/451_full_after543_e2e_success_rngdiff.raw.log",
+      "bytes": 605305,
+      "sha256": "87e374f04756d93aef375b4f6331d77e5c33d40552059f2314d68dbcefb54613"
+    },
+    {
+      "path": "source/tests/e2e/scenarios/story_cutin.gd",
+      "source": "C:/Users/FORYOUCOM/.codex/worktrees/96-boss-opening-cutin/joseon/tests/e2e/scenarios/story_cutin.gd",
+      "bytes": 7649,
+      "sha256": "169870d4d617e476ee1fc34d15213c3e06677f82a62916dd5d63257ed9a0849d"
+    },
+    {
+      "path": "source/docs/design/story_cutin_543.md",
+      "source": "C:/Users/FORYOUCOM/.codex/worktrees/96-boss-opening-cutin/joseon/docs/design/story_cutin_543.md",
+      "bytes": 2386,
+      "sha256": "30a1a5a8be4183577db97c2127206de5c53a5a3f35ecf4cc8ca088b8395a14a7"
+    }
+  ],
+  "pushed": false
+}
