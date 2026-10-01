@@ -1,0 +1,49 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "519/R4_front_v2",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Edit the first reference into a corrected FRONT production reference of the same adult Korean Gumiho tavern hostess boss. Preserve her exact face, amber eyes, black updo, knowing smile, standing A-pose, two human arms/hands, two human legs/feet, existing natural indigo jeogori with the left shoulder slipped, opaque chest, pale bloodstained apron, brown chima and the painted matte dark-fantasy illustration style. Preserve full-body framing on a warm-gray plain background. The first image has TEN tails and is anatomically wrong. Completely replace its old tail fan with EXACTLY NINE physical tails. The second image is the same character's rear and shows the sacral/lower-back root attachment. The corrected FRONT has a visibly asymmetric count: FOUR distinct tail tips on the viewer's LEFT side, FIVE distinct tail tips on the viewer's RIGHT side, and ZERO tails at center above the head or between legs. Place each tip at a different height with a visible gap. Count them: left 1,2,3,4; right 1,2,3,4,5. Only one long clean body leads to each tip. All nine are rooted behind the lower waist and flow outward, never originating from shoulders or elbows; roots may be behind the skirt from this front view. Dark brown roots, dirty ivory length, aged red-brown tips. No duplicate little tips, no forked tails, no tenth tail, no tail hidden out of frame. Keep tips, hands and both feet entirely inside the image. Both hands retain five plausible fingers, both feet are distinct human feet. Same image size and cloth pattern as reference one, no new clothing exposure or accessory, no panel borders, captions, spell glows or extra objects.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "Custom",
+      "model.custom_width": 1536,
+      "model.custom_height": 2048,
+      "model.background": "opaque",
+      "model.quality": "high",
+      "n": 1,
+      "seed": 5194011,
+      "model.images.image_1": [
+        "21",
+        0
+      ],
+      "model.images.image_2": [
+        "22",
+        0
+      ]
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b0377a6237523b090a58ba16a2b35dead926ea541111e17b5096cdfc73993525.png"
+    }
+  },
+  "22": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "2ba2a0be6bce097b1208869cfa5b1fad8085d7791faf03a684ad1e4296b63d8e.png"
+    }
+  }
+}

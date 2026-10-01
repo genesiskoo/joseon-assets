@@ -1,0 +1,50 @@
+{
+  "card": 519,
+  "asset": "R4_low",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\reports\\519\\batch_R4_structure\\R4_front_v2.png",
+      "role": "Corrected SAME character front, with exactly NINE tails (4 left + 5 right). Preserve face, garment, body and tail count.",
+      "sha256": "c3512c7c8b005c2c747563f15af6e5143cf2eb16a0815537edce7fa3ae056c9f"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\workbench\\production\\gumiho_phase1_519\\refs\\P5_low_pose.png",
+      "role": "Approved P5 low HUMAN stance only; anatomical correction is mandatory, exactly two hands and two feet.",
+      "sha256": "2ae3f92b9e2ab42d3237b05aa71b3313e752668fecb60c01d3a807a246d8ebc6"
+    }
+  ],
+  "prompt_sha256": "743865b3a795356f32da8806555e88ddbacb3662c107f368f3634e246100ef20",
+  "width": 1536,
+  "height": 2048,
+  "background_requested": "opaque",
+  "quality": "high",
+  "seed": 5194004,
+  "workflow": "image_generate",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T07:39:29.417623+00:00",
+  "prompt_id": "c72acbb7-03f2-4002-bdef-40c8111b35e2",
+  "status_response": {
+    "assigned_inference": "10.4.52.84:8080",
+    "created_at": "2026-10-01T07:39:31.850625Z",
+    "id": "c72acbb7-03f2-4002-bdef-40c8111b35e2",
+    "last_state_update": "2026-10-01T07:40:32.950583Z",
+    "status": "success",
+    "updated_at": "2026-10-01T07:40:32.950583Z"
+  },
+  "actual_dimensions": [
+    1536,
+    2048
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "has_transparent_pixels": false,
+  "output": "R4_low.png",
+  "output_sha256": "d3f51ab797edfd31021e56166ecc27ba1eac5db14c1455640192860e78680e1f",
+  "output_bytes": 4901829
+}

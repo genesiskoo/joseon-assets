@@ -1,0 +1,47 @@
+{
+  "card": 519,
+  "revision": "R4_structure",
+  "status": "candidate_pending_pd",
+  "selected": [
+    {
+      "id": "R4_front_v2",
+      "raw_png": "reports/519/batch_R4_structure/R4_front_v2.png",
+      "sha256": "c3512c7c8b005c2c747563f15af6e5143cf2eb16a0815537edce7fa3ae056c9f"
+    },
+    {
+      "id": "R4_rear",
+      "raw_png": "reports/519/batch_R4_structure/R4_rear.png",
+      "sha256": "b7a087ff939f690d39d6a2ff100338eb58977333fccfa88508ff2663569877c8"
+    },
+    {
+      "id": "R4_side",
+      "raw_png": "reports/519/batch_R4_structure/R4_side.png",
+      "sha256": "c0be90330bc635e9975f26b71b10addb5842566cc793995c26b35c061cd77ca8"
+    },
+    {
+      "id": "R4_low_v2",
+      "raw_png": "reports/519/batch_R4_structure/R4_low_v2.png",
+      "sha256": "8efb95daa416958b70307b963e7782038931e6e0e5eaff479b3797da9ba98179"
+    },
+    {
+      "id": "R4_duo_v2",
+      "raw_png": "reports/519/batch_R4_structure/R4_duo_v2.png",
+      "sha256": "4e8fa954938e8673d6e32ccb8b83b11981955943711f7da9e24a39560b4258b7"
+    }
+  ],
+  "rejected_ten_tail_ids": [
+    "R4_front",
+    "R4_low",
+    "R4_duo"
+  ],
+  "existing_pd_adoption": {
+    "gaze": "C",
+    "costume": "P1",
+    "low_human_pose": "P5",
+    "hospitality_support": "P3"
+  },
+  "modeling_complete": false,
+  "rigging_complete": false,
+  "game_intake_complete": false,
+  "main_landed": false
+}

@@ -1,0 +1,50 @@
+{
+  "card": 519,
+  "asset": "R4_duo",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\reports\\519\\batch_R4_structure\\R4_front_v2.png",
+      "role": "Corrected SAME character front, with exactly NINE tails (4 left + 5 right). Preserve face, garment, body and tail count.",
+      "sha256": "c3512c7c8b005c2c747563f15af6e5143cf2eb16a0815537edce7fa3ae056c9f"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\workbench\\production\\gumiho_phase1_519\\refs\\H1_doho_catalog.png",
+      "role": "Only LEFT H1 is adopted Doho; ignore H2 and H3 and all catalog lettering.",
+      "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+    }
+  ],
+  "prompt_sha256": "6385f5a99cfec462677a012eb7f433ca533d78ec92e3cc98ee3f27053f67f495",
+  "width": 2048,
+  "height": 1536,
+  "background_requested": "opaque",
+  "quality": "high",
+  "seed": 5194005,
+  "workflow": "image_generate",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T07:52:33.619731+00:00",
+  "prompt_id": "01f2f091-1047-4b7c-a8fa-8b9bbee37c2e",
+  "status_response": {
+    "assigned_inference": "10.4.23.215:8080",
+    "created_at": "2026-10-01T07:52:36.284451Z",
+    "id": "01f2f091-1047-4b7c-a8fa-8b9bbee37c2e",
+    "last_state_update": "2026-10-01T07:53:08.190169Z",
+    "status": "success",
+    "updated_at": "2026-10-01T07:53:08.190169Z"
+  },
+  "actual_dimensions": [
+    2048,
+    1536
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "has_transparent_pixels": false,
+  "output": "R4_duo.png",
+  "output_sha256": "d0cfd10d743ead5a01d2442e7e852ef1213245c479bf401c4d661d8bb701ec23",
+  "output_bytes": 4573009
+}
