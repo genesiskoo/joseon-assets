@@ -128,5 +128,30 @@
   ],
   "source_game_commit": "2df0b3a0110c94e28e2dd1e8e350d1327cd90ff6",
   "failures_preserved": true,
-  "runtime_art_adopted_from_card": 534
+  "runtime_art_adopted_from_card": 534,
+  "final_landing_raw": [
+    {
+      "path": "reports/548/2026-10-02/final_landing/run_2.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/548/2026-10-02/final_landing/run_2.stdout.raw.log",
+      "sha256": "1256ca0f1594cf41ed155de70e88fb2acae7a6cd2146bdd40c17e3ce6f4e5313",
+      "bytes": 101391
+    }
+  ],
+  "main_landed_commit": "aae6925c",
+  "potion_intake_commit": "c055eeba",
+  "measurement_fix_card": 555,
+  "measurement_fix_commit": "00b7665c",
+  "full_regression": {
+    "passed": 117,
+    "total": 117,
+    "seconds": 1250.0
+  },
+  "first_full_failure_preserved": true,
+  "main_import_seconds": 29,
+  "main_boot_script_errors": 0,
+  "pushed": false
 }
