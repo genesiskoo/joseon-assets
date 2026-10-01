@@ -1,0 +1,223 @@
+{
+  "card": 274,
+  "model": "gpt-image-2.5-flare",
+  "report": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_grade4_shape_v2",
+  "jobs": [
+    {
+      "id": "obang_jade_red_grade_4_v3",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "quality": "high",
+      "seed": 2744300,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_red_grade_3.png",
+          "sha256": "372b596a51c7d4c438e2f91840b2673765d4c89e1e8420e439b0e5d15a60adb0",
+          "role": "Grade 3 style/material/color anchor; keep its family"
+        },
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_red_grade_4_v2.png",
+          "sha256": "30f199e074d9d9bbd127216febee0f4230faab5648a3c0e6785df98f9ebf1805",
+          "role": "Previous grade 4 color and painterly finish; silhouette is being refined"
+        }
+      ],
+      "prompt": "Create ONE isolated physical inventory icon for Joseon Hunters, a Korean dark-fantasy ARPG with Diablo II Resurrected tangible painted-object readability. Both supplied references are existing jade stones of the SAME color family. Keep their Korean dark-fantasy painting style, realistic waxy jade material, restrained saturation, directional broad physical highlights, thickness and dark readable contour.\nRefine ONLY the highest grade jade to look unmistakably more valuable and easier to recognize at 24 pixels. Grade 3 stays an oval cabochon. This grade 4 is a meticulously finished broad UPRIGHT OCTAGONAL PILLOW jade, about 0.88 as wide as tall, with four clearly chamfered corners, four long straight outer edges, one large softly domed central stone face and a broad polished beveled rim. The eight-sided OUTLINE must be obvious even as a tiny inventory icon and in grayscale. This is a solid traditional lapidary JADE stone with a softly domed face, NOT a diamond, a faceted modern crystal, a coin, ring, amulet or jewelry. Do not add triangular diamond cuts, a hole, metal setting, gold outline, wire, cords, inscriptions, runes or symbols. One single complete undamaged stone, no detached pieces. The finest controlled polish and clear rich stone depth, no cloudy inclusions obscuring the face. The actual stone occupies 78-84 percent of square height, all margins clearly empty and centered. Keep compact proportions and a shallow three-quarter angle similar to the reference.\nCOLOR: Deep cinnabar-red jade with subtle dark red-brown mineral clouds, restrained warm ivory edge reflections.\nNatural studio lighting only; no emissive glow, white aura, surrounding shadow, particles, sparks, lens flare or magical effects. Transparent background, no scenery, backdrop, text, labels, numbers, UI frame, people, hands or display stand. Return one 1024 square image.",
+      "contract": {
+        "production_key": "obang_jade_red_grade_4",
+        "color_family": "적옥",
+        "grade": 4,
+        "working_grade_name": "영롱한(카탈로그 설계명)",
+        "definition_state": "design_only",
+        "actual_item_id": null,
+        "provisional_output_px": [
+          80,
+          80
+        ],
+        "provisional_grid": [
+          1,
+          1
+        ],
+        "intake_dependency": 265,
+        "name_not_set_by_art": true,
+        "previous_selected_revision": "obang_jade_red_grade_4_v2",
+        "reason": "same-sized grade 3/4 must differ in silhouette at actual inner 24 pixels",
+        "state": "candidate_pending_visual_review"
+      }
+    },
+    {
+      "id": "obang_jade_black_grade_4_v2",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "quality": "high",
+      "seed": 2744301,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_black_grade_3.png",
+          "sha256": "ea3f8bdc4310cb78f8afbb1abb4c86b0e9a4f13780f0324697f6fa753dcb673d",
+          "role": "Grade 3 style/material/color anchor; keep its family"
+        },
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_black_grade_4.png",
+          "sha256": "d4f6d95b452c0479e7019e1aee2160f7f7568dee9ad66e861cbae63b1299bdce",
+          "role": "Previous grade 4 color and painterly finish; silhouette is being refined"
+        }
+      ],
+      "prompt": "Create ONE isolated physical inventory icon for Joseon Hunters, a Korean dark-fantasy ARPG with Diablo II Resurrected tangible painted-object readability. Both supplied references are existing jade stones of the SAME color family. Keep their Korean dark-fantasy painting style, realistic waxy jade material, restrained saturation, directional broad physical highlights, thickness and dark readable contour.\nRefine ONLY the highest grade jade to look unmistakably more valuable and easier to recognize at 24 pixels. Grade 3 stays an oval cabochon. This grade 4 is a meticulously finished broad UPRIGHT OCTAGONAL PILLOW jade, about 0.88 as wide as tall, with four clearly chamfered corners, four long straight outer edges, one large softly domed central stone face and a broad polished beveled rim. The eight-sided OUTLINE must be obvious even as a tiny inventory icon and in grayscale. This is a solid traditional lapidary JADE stone with a softly domed face, NOT a diamond, a faceted modern crystal, a coin, ring, amulet or jewelry. Do not add triangular diamond cuts, a hole, metal setting, gold outline, wire, cords, inscriptions, runes or symbols. One single complete undamaged stone, no detached pieces. The finest controlled polish and clear rich stone depth, no cloudy inclusions obscuring the face. The actual stone occupies 78-84 percent of square height, all margins clearly empty and centered. Keep compact proportions and a shallow three-quarter angle similar to the reference.\nCOLOR: Charcoal-black jade with broad cool gray side highlights and a restrained silvery natural edge reflection, so it remains visible against very dark cells; not a completely black unlit silhouette.\nNatural studio lighting only; no emissive glow, white aura, surrounding shadow, particles, sparks, lens flare or magical effects. Transparent background, no scenery, backdrop, text, labels, numbers, UI frame, people, hands or display stand. Return one 1024 square image.",
+      "contract": {
+        "production_key": "obang_jade_black_grade_4",
+        "color_family": "흑옥",
+        "grade": 4,
+        "working_grade_name": "영롱한(카탈로그 설계명)",
+        "definition_state": "design_only",
+        "actual_item_id": null,
+        "provisional_output_px": [
+          80,
+          80
+        ],
+        "provisional_grid": [
+          1,
+          1
+        ],
+        "intake_dependency": 265,
+        "name_not_set_by_art": true,
+        "previous_selected_revision": "obang_jade_black_grade_4",
+        "reason": "same-sized grade 3/4 must differ in silhouette at actual inner 24 pixels",
+        "state": "candidate_pending_visual_review"
+      }
+    },
+    {
+      "id": "obang_jade_blue_grade_4_v2",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "quality": "high",
+      "seed": 2744302,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_blue_grade_3.png",
+          "sha256": "789b8babd18ac9ab2e133f2d0cafd775415ecbe42b7fd07dddeb23eaab3c735e",
+          "role": "Grade 3 style/material/color anchor; keep its family"
+        },
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_blue_grade_4.png",
+          "sha256": "588531ac94c33545e9a5e742953cdd0de28ae0f4c97c4173dd8aa3be8d6dd5b8",
+          "role": "Previous grade 4 color and painterly finish; silhouette is being refined"
+        }
+      ],
+      "prompt": "Create ONE isolated physical inventory icon for Joseon Hunters, a Korean dark-fantasy ARPG with Diablo II Resurrected tangible painted-object readability. Both supplied references are existing jade stones of the SAME color family. Keep their Korean dark-fantasy painting style, realistic waxy jade material, restrained saturation, directional broad physical highlights, thickness and dark readable contour.\nRefine ONLY the highest grade jade to look unmistakably more valuable and easier to recognize at 24 pixels. Grade 3 stays an oval cabochon. This grade 4 is a meticulously finished broad UPRIGHT OCTAGONAL PILLOW jade, about 0.88 as wide as tall, with four clearly chamfered corners, four long straight outer edges, one large softly domed central stone face and a broad polished beveled rim. The eight-sided OUTLINE must be obvious even as a tiny inventory icon and in grayscale. This is a solid traditional lapidary JADE stone with a softly domed face, NOT a diamond, a faceted modern crystal, a coin, ring, amulet or jewelry. Do not add triangular diamond cuts, a hole, metal setting, gold outline, wire, cords, inscriptions, runes or symbols. One single complete undamaged stone, no detached pieces. The finest controlled polish and clear rich stone depth, no cloudy inclusions obscuring the face. The actual stone occupies 78-84 percent of square height, all margins clearly empty and centered. Keep compact proportions and a shallow three-quarter angle similar to the reference.\nCOLOR: Muted rich blue jade with slight cool teal undertone and blue-gray cloudy mineral depth, pale cool ivory edge reflections; retain a clearly blue rather than green family.\nNatural studio lighting only; no emissive glow, white aura, surrounding shadow, particles, sparks, lens flare or magical effects. Transparent background, no scenery, backdrop, text, labels, numbers, UI frame, people, hands or display stand. Return one 1024 square image.",
+      "contract": {
+        "production_key": "obang_jade_blue_grade_4",
+        "color_family": "청옥",
+        "grade": 4,
+        "working_grade_name": "영롱한(카탈로그 설계명)",
+        "definition_state": "design_only",
+        "actual_item_id": null,
+        "provisional_output_px": [
+          80,
+          80
+        ],
+        "provisional_grid": [
+          1,
+          1
+        ],
+        "intake_dependency": 265,
+        "name_not_set_by_art": true,
+        "previous_selected_revision": "obang_jade_blue_grade_4",
+        "reason": "same-sized grade 3/4 must differ in silhouette at actual inner 24 pixels",
+        "state": "candidate_pending_visual_review"
+      }
+    },
+    {
+      "id": "obang_jade_white_grade_4_v2",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "quality": "high",
+      "seed": 2744303,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_white_grade_3.png",
+          "sha256": "17dd02ac0229a03329798c0184d94e084f389c8258fec8864b3b90271478e98f",
+          "role": "Grade 3 style/material/color anchor; keep its family"
+        },
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_white_grade_4.png",
+          "sha256": "cfd920edbe04905c1c69668fd76412771746309aa57981a7146579b0d696d3c1",
+          "role": "Previous grade 4 color and painterly finish; silhouette is being refined"
+        }
+      ],
+      "prompt": "Create ONE isolated physical inventory icon for Joseon Hunters, a Korean dark-fantasy ARPG with Diablo II Resurrected tangible painted-object readability. Both supplied references are existing jade stones of the SAME color family. Keep their Korean dark-fantasy painting style, realistic waxy jade material, restrained saturation, directional broad physical highlights, thickness and dark readable contour.\nRefine ONLY the highest grade jade to look unmistakably more valuable and easier to recognize at 24 pixels. Grade 3 stays an oval cabochon. This grade 4 is a meticulously finished broad UPRIGHT OCTAGONAL PILLOW jade, about 0.88 as wide as tall, with four clearly chamfered corners, four long straight outer edges, one large softly domed central stone face and a broad polished beveled rim. The eight-sided OUTLINE must be obvious even as a tiny inventory icon and in grayscale. This is a solid traditional lapidary JADE stone with a softly domed face, NOT a diamond, a faceted modern crystal, a coin, ring, amulet or jewelry. Do not add triangular diamond cuts, a hole, metal setting, gold outline, wire, cords, inscriptions, runes or symbols. One single complete undamaged stone, no detached pieces. The finest controlled polish and clear rich stone depth, no cloudy inclusions obscuring the face. The actual stone occupies 78-84 percent of square height, all margins clearly empty and centered. Keep compact proportions and a shallow three-quarter angle similar to the reference.\nCOLOR: Warm ivory-white jade with subtle pale gray mineral depth and gentle cream highlights; maintain a dark contour and physical thickness, not a glowing white light or pure colorless crystal.\nNatural studio lighting only; no emissive glow, white aura, surrounding shadow, particles, sparks, lens flare or magical effects. Transparent background, no scenery, backdrop, text, labels, numbers, UI frame, people, hands or display stand. Return one 1024 square image.",
+      "contract": {
+        "production_key": "obang_jade_white_grade_4",
+        "color_family": "백옥",
+        "grade": 4,
+        "working_grade_name": "영롱한(카탈로그 설계명)",
+        "definition_state": "design_only",
+        "actual_item_id": null,
+        "provisional_output_px": [
+          80,
+          80
+        ],
+        "provisional_grid": [
+          1,
+          1
+        ],
+        "intake_dependency": 265,
+        "name_not_set_by_art": true,
+        "previous_selected_revision": "obang_jade_white_grade_4",
+        "reason": "same-sized grade 3/4 must differ in silhouette at actual inner 24 pixels",
+        "state": "candidate_pending_visual_review"
+      }
+    },
+    {
+      "id": "obang_jade_yellow_grade_4_v2",
+      "width": 1024,
+      "height": 1024,
+      "background": "transparent",
+      "quality": "high",
+      "seed": 2744304,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_yellow_grade_3.png",
+          "sha256": "7d042a227624a1880cb930ef4b26a268b3bdb9641997711670dd86590d435765",
+          "role": "Grade 3 style/material/color anchor; keep its family"
+        },
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_274\\reports\\274\\comfy_final_icons\\obang_jade_yellow_grade_4.png",
+          "sha256": "a2e8b9cd108e7b52f1ac5db4265b26593a6a85115dc5207a013f5ed2540a2a25",
+          "role": "Previous grade 4 color and painterly finish; silhouette is being refined"
+        }
+      ],
+      "prompt": "Create ONE isolated physical inventory icon for Joseon Hunters, a Korean dark-fantasy ARPG with Diablo II Resurrected tangible painted-object readability. Both supplied references are existing jade stones of the SAME color family. Keep their Korean dark-fantasy painting style, realistic waxy jade material, restrained saturation, directional broad physical highlights, thickness and dark readable contour.\nRefine ONLY the highest grade jade to look unmistakably more valuable and easier to recognize at 24 pixels. Grade 3 stays an oval cabochon. This grade 4 is a meticulously finished broad UPRIGHT OCTAGONAL PILLOW jade, about 0.88 as wide as tall, with four clearly chamfered corners, four long straight outer edges, one large softly domed central stone face and a broad polished beveled rim. The eight-sided OUTLINE must be obvious even as a tiny inventory icon and in grayscale. This is a solid traditional lapidary JADE stone with a softly domed face, NOT a diamond, a faceted modern crystal, a coin, ring, amulet or jewelry. Do not add triangular diamond cuts, a hole, metal setting, gold outline, wire, cords, inscriptions, runes or symbols. One single complete undamaged stone, no detached pieces. The finest controlled polish and clear rich stone depth, no cloudy inclusions obscuring the face. The actual stone occupies 78-84 percent of square height, all margins clearly empty and centered. Keep compact proportions and a shallow three-quarter angle similar to the reference.\nCOLOR: Warm muted honey-yellow jade, dark ochre cloudy stone inclusions, gentle pale ivory broad highlight; remain visibly yellow rather than brown pottery or a gold metal ingot.\nNatural studio lighting only; no emissive glow, white aura, surrounding shadow, particles, sparks, lens flare or magical effects. Transparent background, no scenery, backdrop, text, labels, numbers, UI frame, people, hands or display stand. Return one 1024 square image.",
+      "contract": {
+        "production_key": "obang_jade_yellow_grade_4",
+        "color_family": "황옥",
+        "grade": 4,
+        "working_grade_name": "영롱한(카탈로그 설계명)",
+        "definition_state": "design_only",
+        "actual_item_id": null,
+        "provisional_output_px": [
+          80,
+          80
+        ],
+        "provisional_grid": [
+          1,
+          1
+        ],
+        "intake_dependency": 265,
+        "name_not_set_by_art": true,
+        "previous_selected_revision": "obang_jade_yellow_grade_4",
+        "reason": "same-sized grade 3/4 must differ in silhouette at actual inner 24 pixels",
+        "state": "candidate_pending_visual_review"
+      }
+    }
+  ],
+  "scope": "Five highest-grade silhouette revisions only. Original 21 outputs are preserved for before/after."
+}

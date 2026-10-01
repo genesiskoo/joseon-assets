@@ -1,0 +1,4187 @@
+{
+  "schema": "joseon.item_art_candidate.v2",
+  "card": 274,
+  "date": "2026-10-01",
+  "status": "candidate_ready_not_approved_not_installed",
+  "definition_state": "design_only",
+  "candidate_ready": 21,
+  "approved_remaining": 25,
+  "approved_remaining_closed": false,
+  "pending_child": {
+    "card": 534,
+    "count": 4
+  },
+  "group_counts": {
+    "obang_jade": 20,
+    "horibyeong": 1
+  },
+  "approval_baseline": {
+    "latest_accepted_card": 496,
+    "accepted_count": 3,
+    "evidence_commit": "0e2f7820",
+    "legacy_remaining28_unchanged": true
+  },
+  "production_source": "Comfy Cloud GPT Image2.5 Flare high -> SplitImageWithAlpha RGB -> BiRefNet general alpha",
+  "paid_generation_by_worker": false,
+  "source_collection_by": "root",
+  "submissions_total": 28,
+  "successful_collected": 26,
+  "successful_selected": 21,
+  "successful_superseded": 5,
+  "initial_failed": [
+    {
+      "source_key": "obang_jade_red_grade_1",
+      "selected": false,
+      "status": "error",
+      "reason": "terminal RGBA4 sent to BiRefNet RGB3; retry inserts SplitImageWithAlpha",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1.history.json",
+      "history_sha256": "3b273a4966d38ce72e64eaae22faf24be69bfb8a3ebc5cc7036006cb159f59fd",
+      "history_preservation": "full original including execution error retained byte-for-byte",
+      "api_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1.api.json",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1.job.json",
+      "prompt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1.prompt.txt",
+      "replacement_source": "obang_jade_red_grade_1_v2"
+    },
+    {
+      "source_key": "obang_jade_red_grade_4",
+      "selected": false,
+      "status": "error",
+      "reason": "terminal RGBA4 sent to BiRefNet RGB3; retry inserts SplitImageWithAlpha",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4.history.json",
+      "history_sha256": "d3fcb42d567822c7adf4995a9313ab3408675151890621d0e60d3739bbe4519b",
+      "history_preservation": "full original including execution error retained byte-for-byte",
+      "api_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4.api.json",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4.job.json",
+      "prompt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4.prompt.txt",
+      "replacement_source": "obang_jade_red_grade_4_v2"
+    }
+  ],
+  "all_submissions": [
+    {
+      "source_key": "obang_jade_red_grade_1",
+      "production_key": "obang_jade_red_grade_1",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1.history.json",
+      "history_sha256": "3b273a4966d38ce72e64eaae22faf24be69bfb8a3ebc5cc7036006cb159f59fd",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1.job.json",
+      "job_id": "8c57c31d-b534-4144-bdce-8bd4e93c525c",
+      "status": "error",
+      "selected": false,
+      "generated_png_exists": false,
+      "clean_png_exists": false
+    },
+    {
+      "source_key": "obang_jade_red_grade_2",
+      "production_key": "obang_jade_red_grade_2",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2.history.json",
+      "history_sha256": "f199a7387885a46fe70d05267a408a1c8c79659b430586df75b68e3c9a2a9499",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2.job.json",
+      "job_id": "b0fce077-b4af-4b65-902a-d01657668b6e",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_red_grade_3",
+      "production_key": "obang_jade_red_grade_3",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3.history.json",
+      "history_sha256": "b6cda78eeb8706cd43c319955e40a422f258b403a01ebad42031e40a8b970cdc",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3.job.json",
+      "job_id": "fe9b380d-7a67-485a-9906-bf35e837555b",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_red_grade_4",
+      "production_key": "obang_jade_red_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4.history.json",
+      "history_sha256": "d3fcb42d567822c7adf4995a9313ab3408675151890621d0e60d3739bbe4519b",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4.job.json",
+      "job_id": "988f0aea-5e08-4540-a573-afca0d105c18",
+      "status": "error",
+      "selected": false,
+      "generated_png_exists": false,
+      "clean_png_exists": false
+    },
+    {
+      "source_key": "obang_jade_black_grade_1",
+      "production_key": "obang_jade_black_grade_1",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1.history.json",
+      "history_sha256": "caaae7323c6116529513f8024960595f0932fc8bafe42db00448d7128389949a",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1.job.json",
+      "job_id": "ec28762c-aebb-4dd0-b324-e7c715aa0e43",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_black_grade_2",
+      "production_key": "obang_jade_black_grade_2",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2.history.json",
+      "history_sha256": "6b30e4114f5dec02ba4d2b7298794367dec4dc321ce3f68003319f7505954b21",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2.job.json",
+      "job_id": "44d58249-ddcc-4eb9-a7b3-f147360f85d5",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_black_grade_3",
+      "production_key": "obang_jade_black_grade_3",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3.history.json",
+      "history_sha256": "b07fa7689537e4f60439abf4a30ec8edc3df49e936d1619265512423df0c7317",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3.job.json",
+      "job_id": "d0f82087-01c2-421c-ba39-bd920c6af73e",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_black_grade_4",
+      "production_key": "obang_jade_black_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_black_grade_4.history.json",
+      "history_sha256": "844612eae72cf3db926912719870071d568a970dd5b8a11f5d3875bb459d4c13",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_black_grade_4.job.json",
+      "job_id": "f281bf6c-738e-486c-84f3-41585997c0c7",
+      "status": "success",
+      "selected": false,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_blue_grade_1",
+      "production_key": "obang_jade_blue_grade_1",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1.history.json",
+      "history_sha256": "32bac131951b061b1b453c18adeb7900c17bcc3fe7378012837fe09140eefabb",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1.job.json",
+      "job_id": "ed6350fa-6031-4c53-b02e-07d2050cde88",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_blue_grade_2",
+      "production_key": "obang_jade_blue_grade_2",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2.history.json",
+      "history_sha256": "bd5c3734cbd3a5151f888b6cf44c0d8559a77ec30c265d61744858bcd059d408",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2.job.json",
+      "job_id": "b24ad5b2-2765-456c-ac7c-320cd3e34f13",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_blue_grade_3",
+      "production_key": "obang_jade_blue_grade_3",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3.history.json",
+      "history_sha256": "fa3ce9b8a346bf819f16689b1314617fff56b73d5c4447af64b07e57aefc8ffb",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3.job.json",
+      "job_id": "46b2dc21-aef2-40b2-8842-c2ecc59bc779",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_blue_grade_4",
+      "production_key": "obang_jade_blue_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_4.history.json",
+      "history_sha256": "35ef936fd9373097efd523fa3dd7fd80421781b5e5b7f5c956867fc09a72f401",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_4.job.json",
+      "job_id": "b7d501e6-bc32-419e-8866-a65496de676f",
+      "status": "success",
+      "selected": false,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_white_grade_1",
+      "production_key": "obang_jade_white_grade_1",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1.history.json",
+      "history_sha256": "4734e9a5de43bac66ace7fb9871a3d798c40c071b2d520663447f2f206a7cdfc",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1.job.json",
+      "job_id": "a116196c-e346-467d-8a79-f3c595b121cd",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_white_grade_2",
+      "production_key": "obang_jade_white_grade_2",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2.history.json",
+      "history_sha256": "f8ebdbb3a88050f89d17c8b989443ba9deb97c7596b7c580ad791d938ad40bb2",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2.job.json",
+      "job_id": "a0434686-b98c-40e4-b759-7bf8243d00ee",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_white_grade_3",
+      "production_key": "obang_jade_white_grade_3",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3.history.json",
+      "history_sha256": "fab29eb7524f82e4f91ae7b654c390079037c34b47956ea1105622c608802634",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3.job.json",
+      "job_id": "0f92c8fd-1ce2-4843-a4d3-9645d449e2a5",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_white_grade_4",
+      "production_key": "obang_jade_white_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_white_grade_4.history.json",
+      "history_sha256": "f5310976b2e930b12c8023c5d91f7d152d502cd254663314e1c8b647e1e0f666",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_white_grade_4.job.json",
+      "job_id": "ec8c7fde-1ac0-4091-aa60-cdda5348ac9d",
+      "status": "success",
+      "selected": false,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_yellow_grade_1",
+      "production_key": "obang_jade_yellow_grade_1",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1.history.json",
+      "history_sha256": "731ad42a32a485608753af8da95b34fb83d8b82e22c9e98dee049c140b3226bf",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1.job.json",
+      "job_id": "ff5893f4-2ecd-43ac-8133-859aaffbce14",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_yellow_grade_2",
+      "production_key": "obang_jade_yellow_grade_2",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2.history.json",
+      "history_sha256": "39b83e25e234fcf08a714ffa9ea6f9bcd76521f1afd0723e7cf52cc276d31fee",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2.job.json",
+      "job_id": "cb3ebfc3-1f7f-48a9-ac13-4bac61d4f8a2",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_yellow_grade_3",
+      "production_key": "obang_jade_yellow_grade_3",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3.history.json",
+      "history_sha256": "9f3bb2475d433fc14b72c6d58aae9dedce8af0d8b7851a36c11530b990574de1",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3.job.json",
+      "job_id": "6088e22a-7238-4e51-91d3-100fc168f1a4",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_yellow_grade_4",
+      "production_key": "obang_jade_yellow_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_4.history.json",
+      "history_sha256": "ae234a288c90edc0d2492957e896a9a4a44c64cdc542caed2d307d008787650e",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_4.job.json",
+      "job_id": "885afac0-811c-4eb7-ac2a-2a0a7176b2c1",
+      "status": "success",
+      "selected": false,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "horibyeong",
+      "production_key": "horibyeong",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/horibyeong.history.json",
+      "history_sha256": "ee1a1f18b83c6a7971dbb9ce5d50c0218d1064068e35a7ee12d97c6be621ed48",
+      "job_path": "reports/274/comfy_final_icons/horibyeong.job.json",
+      "job_id": "4ba721b7-5d4a-4c98-ad2a-a526cb4aa8bb",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_red_grade_1_v2",
+      "production_key": "obang_jade_red_grade_1",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2.history.json",
+      "history_sha256": "94564526a8076af770cf4ffe68d00df6abcca558292be4be96524d0be92db86f",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2.job.json",
+      "job_id": "135dedf4-7ef9-4a93-8de8-ad5e464f2eb4",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_red_grade_4_v2",
+      "production_key": "obang_jade_red_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4_v2.history.json",
+      "history_sha256": "e1b1d15203df7c5ab58e5af6a13bd35ec0989e9ebe83d8dffbccb1e6586bdc39",
+      "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_4_v2.job.json",
+      "job_id": "32f847fe-5b46-4f9e-9adc-5d078b44790c",
+      "status": "success",
+      "selected": false,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_red_grade_4_v3",
+      "production_key": "obang_jade_red_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3.history.json",
+      "history_sha256": "ae5204d6e4a17311eb9953cc26411136fccf3d44027fd0f4d53146f2ed7064f3",
+      "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3.job.json",
+      "job_id": "0909df8f-020b-4dd9-9d5e-1d47af0b1c34",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_black_grade_4_v2",
+      "production_key": "obang_jade_black_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2.history.json",
+      "history_sha256": "7be834965863a66f9994b8c119301e97644432c4c4005901bafca82bc3792884",
+      "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2.job.json",
+      "job_id": "613707c3-aab5-4538-bac6-3ba5b9d3d660",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_blue_grade_4_v2",
+      "production_key": "obang_jade_blue_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2.history.json",
+      "history_sha256": "803122e29858ab718f8bbaa0a4539c8b76808080b665fd4b7ab805548fc22b8b",
+      "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2.job.json",
+      "job_id": "b93b1630-3fe4-4c6e-b4cf-4b645cb19107",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_white_grade_4_v2",
+      "production_key": "obang_jade_white_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2.history.json",
+      "history_sha256": "4240bd4646075693169e94c2ce58bba47e6dfa282534cb747859147a84ae5d5d",
+      "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2.job.json",
+      "job_id": "118e80c5-6269-4933-9592-5083a198e729",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    },
+    {
+      "source_key": "obang_jade_yellow_grade_4_v2",
+      "production_key": "obang_jade_yellow_grade_4",
+      "plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2.history.json",
+      "history_sha256": "4e0be2cc0ed215a12f2ae8699f9fdee77bc5e0b8f67c85d4072aa65f032dc1db",
+      "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2.job.json",
+      "job_id": "512394c6-4663-4c57-870d-9b8ff05b319b",
+      "status": "success",
+      "selected": true,
+      "generated_png_exists": true,
+      "clean_png_exists": true
+    }
+  ],
+  "revision": {
+    "kind": "grade4_textonly_octagon",
+    "source_selection_path": "source_selection.json",
+    "source_selection_sha256": "6d95cd1f6037c8303730792952bfb566c66727dcd075852baa68eebdd4bdc201",
+    "before_snapshot_path": "reports/274/packing_final_2026-10-01/before_initial21/snapshot_manifest.json",
+    "before_snapshot_manifest_sha256": "d3675836d6d1d100c2e100bbba69e4e51ae60c8c2d57cbaff383ca0a86c0b55a",
+    "revised_grade4_count": 5,
+    "working_stage4_name": "영롱한",
+    "working_name_source": "D-084 item_catalog_v2 status line6; final data binding remains null",
+    "reference_images_uploaded": 0,
+    "blocked_reference_plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_shape_v2.json",
+    "blocked_reference_plan_sha256": "28f51544833c51a2be77ef9d243b8749974616913e334be146bb0206e885d83c",
+    "approval_rejection_path": "reports/274/comfy_grade4_textonly_v2/automatic_approval_rejection.raw.txt",
+    "approval_rejection_sha256": "4dc628438e85d4050e43361797b79d6ee44308f420657a500a1b145fd10b4bbf"
+  },
+  "manual_pixel_editing": false,
+  "manual_alpha_editing": false,
+  "production_alpha_thresholding": false,
+  "new_runtime_definitions": 0,
+  "existing_png_changed": 0,
+  "save_changes": 0,
+  "items": [
+    {
+      "production_key": "obang_jade_red_grade_1",
+      "working_label": "적옥 · 깨진",
+      "color_token": "red",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_red_grade_1_v2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_red_grade_1_v2.png",
+      "source_sha256": "9d8362185b95b9f40e673b9af15b99d96f479e9c0095245d824dc9c15481bb93",
+      "generated_path": "source/items/obang_jade_red_grade_1_v2_generated.png",
+      "generated_sha256": "be42624a1c06124210da3a22df3640e435ed9f8f4a5742f43531ca2b1f754515",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          263,
+          110,
+          767,
+          924
+        ],
+        "margins_ltrb": [
+          263,
+          110,
+          257,
+          100
+        ],
+        "nonzero": 319030,
+        "partial": 16873,
+        "opaque": 302157,
+        "content_aspect_ratio": 0.6191646191646192,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          105,
+          104,
+          1010,
+          984
+        ],
+        "margins_ltrb": [
+          105,
+          104,
+          14,
+          40
+        ],
+        "nonzero": 332850,
+        "partial": 332850,
+        "opaque": 0,
+        "content_aspect_ratio": 1.0284090909090908,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_red_grade_1.png",
+      "game_sha256": "5647f63d310203d123c8ef8e82574e20ea326f69e765c7e6d23d1c65203334dc",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          61,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          19,
+          6
+        ],
+        "nonzero": 2393,
+        "partial": 514,
+        "opaque": 1879,
+        "content_aspect_ratio": 0.6176470588235294,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        263,
+        110,
+        767,
+        924
+      ],
+      "resized_content_px": [
+        42,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6191646191646192,
+      "resized_aspect_ratio": 0.6176470588235294,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 332558,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "135dedf4-7ef9-4a93-8de8-ad5e464f2eb4",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2.api.json",
+        "api_sha256": "b16876a1502cb184a299b83d390d8fcdef28b6af0cf8309b12a793cd6f78bb3b",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2.job.json",
+        "job_sha256": "152364dbfa9686b1b8797629dc05dcfb10bfb91f245668c976d63316c48ebed4",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2.history.json",
+        "history_sha256": "94564526a8076af770cf4ffe68d00df6abcca558292be4be96524d0be92db86f",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_1_v2.prompt.txt",
+        "prompt_file_sha256": "e40751e445e193290fc2679898efab9259d2da7e3dbfa30869057bedb7fa3f72",
+        "execution_prompt_sha256": "08009eec46c7d7799d5e4d4a55edadbe8d9491470958b37d00b0068b1e2efc45",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_red_grade_2",
+      "working_label": "적옥 · 흠 있는",
+      "color_token": "red",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_red_grade_2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_red_grade_2.png",
+      "source_sha256": "5094981e9990a4ac82da017b2e143db70f159851bed51e29566954ee38fbdb2a",
+      "generated_path": "source/items/obang_jade_red_grade_2_generated.png",
+      "generated_sha256": "72d463617757bb53ba9753453d838fbec2354f54f7b4ea925019ba3a56b9a0f5",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          260,
+          108,
+          763,
+          920
+        ],
+        "margins_ltrb": [
+          260,
+          108,
+          261,
+          104
+        ],
+        "nonzero": 327282,
+        "partial": 20008,
+        "opaque": 307274,
+        "content_aspect_ratio": 0.6194581280788177,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          49,
+          35,
+          1012,
+          1024
+        ],
+        "margins_ltrb": [
+          49,
+          35,
+          12,
+          0
+        ],
+        "nonzero": 337989,
+        "partial": 337989,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9737108190091001,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_red_grade_2.png",
+      "game_sha256": "b1d1f0b0a55608ca79df22cf43b116162c3a29560483275088daf0922ff2a736",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          61,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          19,
+          6
+        ],
+        "nonzero": 2456,
+        "partial": 533,
+        "opaque": 1923,
+        "content_aspect_ratio": 0.6176470588235294,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        260,
+        108,
+        763,
+        920
+      ],
+      "resized_content_px": [
+        42,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6194581280788177,
+      "resized_aspect_ratio": 0.6176470588235294,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 337731,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "b0fce077-b4af-4b65-902a-d01657668b6e",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2.api.json",
+        "api_sha256": "2c8668d5ccdd4b87aa305e16cac52e06a981adcbfe798569b25d533fbac6178b",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2.job.json",
+        "job_sha256": "af25a527327fe70f9cfb18c1091a0916b559aeec02832d5df6f96450175e16cb",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2.history.json",
+        "history_sha256": "f199a7387885a46fe70d05267a408a1c8c79659b430586df75b68e3c9a2a9499",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_2.prompt.txt",
+        "prompt_file_sha256": "b7c3e534eb634818ebd25ef8da0229020fa27ab3520bb2a929bb84d182dce482",
+        "execution_prompt_sha256": "235513fa238f099a058d1f8e9618ae543fc405ce208c5dbabe58b654f1141190",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_red_grade_3",
+      "working_label": "적옥 · 온전한",
+      "color_token": "red",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_red_grade_3",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_red_grade_3.png",
+      "source_sha256": "372b596a51c7d4c438e2f91840b2673765d4c89e1e8420e439b0e5d15a60adb0",
+      "generated_path": "source/items/obang_jade_red_grade_3_generated.png",
+      "generated_sha256": "d2aadf3550176388f48d09708968191198168fbdd187c48381e0406defdaf658",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          271,
+          124,
+          752,
+          902
+        ],
+        "margins_ltrb": [
+          271,
+          124,
+          272,
+          122
+        ],
+        "nonzero": 296780,
+        "partial": 10950,
+        "opaque": 285830,
+        "content_aspect_ratio": 0.6182519280205655,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          57,
+          118,
+          916,
+          1024
+        ],
+        "margins_ltrb": [
+          57,
+          118,
+          108,
+          0
+        ],
+        "nonzero": 309102,
+        "partial": 309102,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9481236203090507,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_red_grade_3.png",
+      "game_sha256": "9604f289fc30010d4aebf638f6d28cbffd15fa9a0c29aaf7febafbcde2c21df1",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          61,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          19,
+          6
+        ],
+        "nonzero": 2434,
+        "partial": 493,
+        "opaque": 1941,
+        "content_aspect_ratio": 0.6176470588235294,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        271,
+        124,
+        752,
+        902
+      ],
+      "resized_content_px": [
+        42,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6182519280205655,
+      "resized_aspect_ratio": 0.6176470588235294,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 308897,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "fe9b380d-7a67-485a-9906-bf35e837555b",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3.api.json",
+        "api_sha256": "58c6db580dc842969a73b00e77630ebf8d4d98c293df497134cc93e485ee7508",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3.job.json",
+        "job_sha256": "d462d932b75bd3ef4424e512db5a8704059ccff113afd84f61ec7801af32fb20",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3.history.json",
+        "history_sha256": "b6cda78eeb8706cd43c319955e40a422f258b403a01ebad42031e40a8b970cdc",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_red_grade_3.prompt.txt",
+        "prompt_file_sha256": "866c9b6f2e7d18d64b0e77535cb41c56526461a7fa0b151c3d9cb742b143a2f3",
+        "execution_prompt_sha256": "780b9ccdcedca80537cb080f5540e7f409416895cc14c743a044eb900a4bfe57",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_red_grade_4",
+      "working_label": "적옥 · 영롱한",
+      "color_token": "red",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_red_grade_4_v3",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "source_plan_sha256": "8e2d262a8f6b8015cca305158f9cfd1064ec72cf961913a2f2c509a1396e7bf9",
+      "source_path": "source/items/obang_jade_red_grade_4_v3.png",
+      "source_sha256": "6aae16ff9e9528323bb91bd05dbfcdfc5424baf5d739aeb6992b6bdebb1d3de8",
+      "generated_path": "source/items/obang_jade_red_grade_4_v3_generated.png",
+      "generated_sha256": "13d6546baf546e91f33bb2c5922d86611de5d8fcacb4643ccc68b93bcd2ed6b2",
+      "clean_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3.png",
+      "generated_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          203,
+          130,
+          831,
+          891
+        ],
+        "margins_ltrb": [
+          203,
+          130,
+          193,
+          133
+        ],
+        "nonzero": 427186,
+        "partial": 9316,
+        "opaque": 417870,
+        "content_aspect_ratio": 0.8252299605781866,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          20,
+          1010,
+          1024
+        ],
+        "margins_ltrb": [
+          0,
+          20,
+          14,
+          0
+        ],
+        "nonzero": 434421,
+        "partial": 434421,
+        "opaque": 0,
+        "content_aspect_ratio": 1.0059760956175299,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_red_grade_4.png",
+      "game_sha256": "3d9f075174dc5de227a56be7233dec299798a1e2acb2d822a55e20f5b805f53f",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          12,
+          6,
+          68,
+          74
+        ],
+        "margins_ltrb": [
+          12,
+          6,
+          12,
+          6
+        ],
+        "nonzero": 3521,
+        "partial": 487,
+        "opaque": 3034,
+        "content_aspect_ratio": 0.8235294117647058,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        203,
+        130,
+        831,
+        891
+      ],
+      "resized_content_px": [
+        56,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.8252299605781866,
+      "resized_aspect_ratio": 0.8235294117647058,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 434282,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "0909df8f-020b-4dd9-9d5e-1d47af0b1c34",
+        "api_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3.api.json",
+        "api_sha256": "7cd2ee64e1429ffcbdfec3410eea30c299c4f8432d9ace596b23fe06c12da9dc",
+        "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3.job.json",
+        "job_sha256": "99d94e2dedca2e6a7282bd8704705905186048d4b025341657c99144e11c8b4a",
+        "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3.history.json",
+        "history_sha256": "ae5204d6e4a17311eb9953cc26411136fccf3d44027fd0f4d53146f2ed7064f3",
+        "prompt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_red_grade_4_v3.prompt.txt",
+        "prompt_file_sha256": "6be4dd9bfe486dc5e574fd5559f0e0851e4b56ddbb8404d1ff23cf4a97423294",
+        "execution_prompt_sha256": "745c19f7c9e47f676263cb167b461ee74b49a6149a59e001c8284b9c7df779b9",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_black_grade_1",
+      "working_label": "흑옥 · 깨진",
+      "color_token": "black",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_black_grade_1",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_black_grade_1.png",
+      "source_sha256": "d82430d25f690f74daffd7a9fd6c7cc61f016374e60a33f3a8ee9bf5341ba2f3",
+      "generated_path": "source/items/obang_jade_black_grade_1_generated.png",
+      "generated_sha256": "24f810775b3300717824969f8669bfd3fc6138601c8618acc4ce1357fa824490",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          263,
+          120,
+          785,
+          934
+        ],
+        "margins_ltrb": [
+          263,
+          120,
+          239,
+          90
+        ],
+        "nonzero": 316321,
+        "partial": 222077,
+        "opaque": 94244,
+        "content_aspect_ratio": 0.6412776412776413,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          49,
+          37,
+          1010,
+          984
+        ],
+        "margins_ltrb": [
+          49,
+          37,
+          14,
+          40
+        ],
+        "nonzero": 336237,
+        "partial": 336237,
+        "opaque": 0,
+        "content_aspect_ratio": 1.0147835269271384,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_black_grade_1.png",
+      "game_sha256": "2d1e8cb32bfd92f611a60ae5cb8810483eb26ae32ceb52f9b177a60f788db207",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          18,
+          6,
+          62,
+          74
+        ],
+        "margins_ltrb": [
+          18,
+          6,
+          18,
+          6
+        ],
+        "nonzero": 2398,
+        "partial": 1867,
+        "opaque": 531,
+        "content_aspect_ratio": 0.6470588235294118,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        263,
+        120,
+        785,
+        934
+      ],
+      "resized_content_px": [
+        44,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6412776412776413,
+      "resized_aspect_ratio": 0.6470588235294118,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 304240,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "ec28762c-aebb-4dd0-b324-e7c715aa0e43",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1.api.json",
+        "api_sha256": "af6cab4accc3f545fcc571ac0f24729ea8a850a7440ce19335593e6562534a6c",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1.job.json",
+        "job_sha256": "c20e24831c34b52fa089a95a135757b6325e95decb63c13a7607411bb0055c1f",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1.history.json",
+        "history_sha256": "caaae7323c6116529513f8024960595f0932fc8bafe42db00448d7128389949a",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_1.prompt.txt",
+        "prompt_file_sha256": "65ad4f81ed8e88648e89582f4aaa1b3e97614df6fdcb68b5cd95504c3888b830",
+        "execution_prompt_sha256": "bd3e9f5df59bb1e159d826ff5af1d32a873af96b1572947df3bc2ae3484b8330",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_black_grade_2",
+      "working_label": "흑옥 · 흠 있는",
+      "color_token": "black",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_black_grade_2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_black_grade_2.png",
+      "source_sha256": "e304efae64734e062f9eec15a8193f5e21416f79a31a7b0660360d6ea82853e3",
+      "generated_path": "source/items/obang_jade_black_grade_2_generated.png",
+      "generated_sha256": "4150554095a8720a62ad03f25505354b40d64499a93e50b232fdb024a10cd498",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          249,
+          119,
+          773,
+          920
+        ],
+        "margins_ltrb": [
+          249,
+          119,
+          251,
+          104
+        ],
+        "nonzero": 326751,
+        "partial": 284979,
+        "opaque": 41772,
+        "content_aspect_ratio": 0.6541822721598003,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          37,
+          1010,
+          927
+        ],
+        "margins_ltrb": [
+          0,
+          37,
+          14,
+          97
+        ],
+        "nonzero": 349302,
+        "partial": 349302,
+        "opaque": 0,
+        "content_aspect_ratio": 1.1348314606741574,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_black_grade_2.png",
+      "game_sha256": "77ac0b3ab84ab76838b43758ea1983b4c80201f38e430d71aa0611073165b9fa",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          18,
+          6,
+          62,
+          74
+        ],
+        "margins_ltrb": [
+          18,
+          6,
+          18,
+          6
+        ],
+        "nonzero": 2501,
+        "partial": 2201,
+        "opaque": 300,
+        "content_aspect_ratio": 0.6470588235294118,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        249,
+        119,
+        773,
+        920
+      ],
+      "resized_content_px": [
+        44,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6541822721598003,
+      "resized_aspect_ratio": 0.6470588235294118,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 324430,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "44d58249-ddcc-4eb9-a7b3-f147360f85d5",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2.api.json",
+        "api_sha256": "5c7f75fe9dd27e15314df0ede87b3432fe528314d1127bf38c20cb7fbadf3ea3",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2.job.json",
+        "job_sha256": "2acada2d76ff731179f4ba2dd5ac07d31e70c3c6bf458d510e57cf3eba6af96b",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2.history.json",
+        "history_sha256": "6b30e4114f5dec02ba4d2b7298794367dec4dc321ce3f68003319f7505954b21",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_2.prompt.txt",
+        "prompt_file_sha256": "d9300a7aea28f4d074d052e683a8d660f8ed4f6ef26e299b714f6fd31bb40277",
+        "execution_prompt_sha256": "7c063314d2854bb43310085f87b0aaa7c5395a12dcea63e64e2ccc65c89aec17",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_black_grade_3",
+      "working_label": "흑옥 · 온전한",
+      "color_token": "black",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_black_grade_3",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_black_grade_3.png",
+      "source_sha256": "ea3f8bdc4310cb78f8afbb1abb4c86b0e9a4f13780f0324697f6fa753dcb673d",
+      "generated_path": "source/items/obang_jade_black_grade_3_generated.png",
+      "generated_sha256": "6dab3318950325572ba311a16794a7035ea5a6073997c4d0844f20d2a79b529b",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          273,
+          127,
+          751,
+          912
+        ],
+        "margins_ltrb": [
+          273,
+          127,
+          273,
+          112
+        ],
+        "nonzero": 295164,
+        "partial": 34911,
+        "opaque": 260253,
+        "content_aspect_ratio": 0.6089171974522293,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          263,
+          32,
+          1012,
+          1006
+        ],
+        "margins_ltrb": [
+          263,
+          32,
+          12,
+          18
+        ],
+        "nonzero": 312272,
+        "partial": 312272,
+        "opaque": 0,
+        "content_aspect_ratio": 0.768993839835729,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_black_grade_3.png",
+      "game_sha256": "fb24562f1e9d926e1b25a552d9cd62b7de909fd1c883266e7adb26f8a889040b",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          60,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          20,
+          6
+        ],
+        "nonzero": 2367,
+        "partial": 672,
+        "opaque": 1695,
+        "content_aspect_ratio": 0.6029411764705882,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        273,
+        127,
+        751,
+        912
+      ],
+      "resized_content_px": [
+        41,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6089171974522293,
+      "resized_aspect_ratio": 0.6029411764705882,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 311182,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "d0f82087-01c2-421c-ba39-bd920c6af73e",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3.api.json",
+        "api_sha256": "76f94f5892ca330cc78eb8007198e30a691006bdf28b2258ec6b732370a9b3ec",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3.job.json",
+        "job_sha256": "73d21b1093a70820c2c58a5d90ff0677e9bb6a18a4727cad3a5782e6842f17b6",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3.history.json",
+        "history_sha256": "b07fa7689537e4f60439abf4a30ec8edc3df49e936d1619265512423df0c7317",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_black_grade_3.prompt.txt",
+        "prompt_file_sha256": "92d917c0b245d03d4eef7dca172bed285c88a3cc4c100eed8f3804d9cc3f4bb2",
+        "execution_prompt_sha256": "4d64e5bd6df7f9cd06102d8bd42e7123d290247fb285af32ab192bba39cbae00",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_black_grade_4",
+      "working_label": "흑옥 · 영롱한",
+      "color_token": "black",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_black_grade_4_v2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "source_plan_sha256": "8e2d262a8f6b8015cca305158f9cfd1064ec72cf961913a2f2c509a1396e7bf9",
+      "source_path": "source/items/obang_jade_black_grade_4_v2.png",
+      "source_sha256": "a704a27ea5786c27c97a1b00483c782a140fb3fa31f8c8d4fc3c906c43cc3eab",
+      "generated_path": "source/items/obang_jade_black_grade_4_v2_generated.png",
+      "generated_sha256": "8e7ada12c954ba310d4e13999fee169e80594c70b320d1e131f388c3bb4471ea",
+      "clean_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2.png",
+      "generated_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          214,
+          133,
+          813,
+          899
+        ],
+        "margins_ltrb": [
+          214,
+          133,
+          211,
+          125
+        ],
+        "nonzero": 409248,
+        "partial": 18727,
+        "opaque": 390521,
+        "content_aspect_ratio": 0.7819843342036553,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          95,
+          99,
+          944,
+          1024
+        ],
+        "margins_ltrb": [
+          95,
+          99,
+          80,
+          0
+        ],
+        "nonzero": 416669,
+        "partial": 416669,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9178378378378378,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_black_grade_4.png",
+      "game_sha256": "7df5ed4526acf6b3fba8bd7b0ad60a73fb720361876fda5f41a9d5a9cde8ae22",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          13,
+          6,
+          66,
+          74
+        ],
+        "margins_ltrb": [
+          13,
+          6,
+          14,
+          6
+        ],
+        "nonzero": 3339,
+        "partial": 528,
+        "opaque": 2811,
+        "content_aspect_ratio": 0.7794117647058824,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        214,
+        133,
+        813,
+        899
+      ],
+      "resized_content_px": [
+        53,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.7819843342036553,
+      "resized_aspect_ratio": 0.7794117647058824,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 416416,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "613707c3-aab5-4538-bac6-3ba5b9d3d660",
+        "api_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2.api.json",
+        "api_sha256": "1d703c9069b4a0a011cc1636453011b29cc66a8d4b6f5554d8948ae0f013ea0e",
+        "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2.job.json",
+        "job_sha256": "6b7ca9158f7bb093244f47517ea8b0f90e69751d1a501305d73186de3863be9b",
+        "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2.history.json",
+        "history_sha256": "7be834965863a66f9994b8c119301e97644432c4c4005901bafca82bc3792884",
+        "prompt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_black_grade_4_v2.prompt.txt",
+        "prompt_file_sha256": "9efd78ce8554bb692ce66ec75b32f7a13126e950391e2f43f93f5a3a7ce13ded",
+        "execution_prompt_sha256": "f271368d09b7a9869a5bef20aaffda8871bd0516043b5388e93b441b53d2160c",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_blue_grade_1",
+      "working_label": "청옥 · 깨진",
+      "color_token": "blue",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_blue_grade_1",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_blue_grade_1.png",
+      "source_sha256": "f4321785930426b3a5976e53c6b1a4400d9df43e06af0fdd99dd54b8537a6a88",
+      "generated_path": "source/items/obang_jade_blue_grade_1_generated.png",
+      "generated_sha256": "5a5ac1ae20c534effc4b840a67a5598c30e9f359bab6cf75d42111c0f1e22011",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          256,
+          118,
+          775,
+          916
+        ],
+        "margins_ltrb": [
+          256,
+          118,
+          249,
+          108
+        ],
+        "nonzero": 319040,
+        "partial": 217209,
+        "opaque": 101831,
+        "content_aspect_ratio": 0.650375939849624,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          0,
+          1023,
+          1024
+        ],
+        "margins_ltrb": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "nonzero": 615469,
+        "partial": 615469,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9990234375,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_blue_grade_1.png",
+      "game_sha256": "6ec731ab13e0f549563f1d32898c6beb10458b2f6cca0d0edac01413e407f991",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          18,
+          6,
+          62,
+          74
+        ],
+        "margins_ltrb": [
+          18,
+          6,
+          18,
+          6
+        ],
+        "nonzero": 2481,
+        "partial": 1937,
+        "opaque": 544,
+        "content_aspect_ratio": 0.6470588235294118,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        256,
+        118,
+        775,
+        916
+      ],
+      "resized_content_px": [
+        44,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.650375939849624,
+      "resized_aspect_ratio": 0.6470588235294118,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 586409,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "ed6350fa-6031-4c53-b02e-07d2050cde88",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1.api.json",
+        "api_sha256": "7a8fafa2be27691a118312f144b1221e0aa334f0086fc45ff06de413ef1b47a5",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1.job.json",
+        "job_sha256": "6193e48aee83d42636e79cbe8fa36369d784d24ea5b5fefd768a9c49c5a3d3e7",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1.history.json",
+        "history_sha256": "32bac131951b061b1b453c18adeb7900c17bcc3fe7378012837fe09140eefabb",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_1.prompt.txt",
+        "prompt_file_sha256": "55da48b23aa5db6dcb70223b502ae3b039da9513c3b8de82bb352603c32721a2",
+        "execution_prompt_sha256": "9e4efb0ef693a5fb6a7bf77c715956fc4cee4a885c8989e8108bac1cc92180a7",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_blue_grade_2",
+      "working_label": "청옥 · 흠 있는",
+      "color_token": "blue",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_blue_grade_2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_blue_grade_2.png",
+      "source_sha256": "b2fca571fa7fbe1eeb1eaca8c7df76c09ed08d2a69a7e4f5852f761c93f7ca3e",
+      "generated_path": "source/items/obang_jade_blue_grade_2_generated.png",
+      "generated_sha256": "4112f63702c30cd2d30aa2d4bd088507adb8227c3dc060902826731fd6f04142",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          242,
+          88,
+          782,
+          943
+        ],
+        "margins_ltrb": [
+          242,
+          88,
+          242,
+          81
+        ],
+        "nonzero": 366969,
+        "partial": 237608,
+        "opaque": 129361,
+        "content_aspect_ratio": 0.631578947368421,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          129,
+          57,
+          1010,
+          1024
+        ],
+        "margins_ltrb": [
+          129,
+          57,
+          14,
+          0
+        ],
+        "nonzero": 379576,
+        "partial": 379576,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9110651499482937,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_blue_grade_2.png",
+      "game_sha256": "0ae56ae2a72da19cec9c518e61d80c62001ef73523deb629a6435b826f150a82",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          18,
+          6,
+          61,
+          74
+        ],
+        "margins_ltrb": [
+          18,
+          6,
+          19,
+          6
+        ],
+        "nonzero": 2499,
+        "partial": 1905,
+        "opaque": 594,
+        "content_aspect_ratio": 0.6323529411764706,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        242,
+        88,
+        782,
+        943
+      ],
+      "resized_content_px": [
+        43,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.631578947368421,
+      "resized_aspect_ratio": 0.6323529411764706,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 367817,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "b24ad5b2-2765-456c-ac7c-320cd3e34f13",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2.api.json",
+        "api_sha256": "d397dbf242c1b2f42959757f6c29fbe8a84a364df90f49b874953950e5677aca",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2.job.json",
+        "job_sha256": "0363a0cad9d89473ec5a999c70621d31c596bc0782cf1105af482f716a6ba6eb",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2.history.json",
+        "history_sha256": "bd5c3734cbd3a5151f888b6cf44c0d8559a77ec30c265d61744858bcd059d408",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_2.prompt.txt",
+        "prompt_file_sha256": "9291d0608e25ab8ae0eb5bf90c52d2cfc99e5c23a0661f87f79511279736a6c7",
+        "execution_prompt_sha256": "a209f0fedd2e046d4a81bf0165481aac026bbc4705bae3b351a195e237330056",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_blue_grade_3",
+      "working_label": "청옥 · 온전한",
+      "color_token": "blue",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_blue_grade_3",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_blue_grade_3.png",
+      "source_sha256": "789b8babd18ac9ab2e133f2d0cafd775415ecbe42b7fd07dddeb23eaab3c735e",
+      "generated_path": "source/items/obang_jade_blue_grade_3_generated.png",
+      "generated_sha256": "a308d16be99360f767e7783966e85ed9876d62af4cdaffe24d66b4a55651770b",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          272,
+          112,
+          753,
+          909
+        ],
+        "margins_ltrb": [
+          272,
+          112,
+          271,
+          115
+        ],
+        "nonzero": 300226,
+        "partial": 29588,
+        "opaque": 270638,
+        "content_aspect_ratio": 0.6035131744040151,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          33,
+          17,
+          938,
+          1006
+        ],
+        "margins_ltrb": [
+          33,
+          17,
+          86,
+          18
+        ],
+        "nonzero": 317710,
+        "partial": 317710,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9150657229524772,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_blue_grade_3.png",
+      "game_sha256": "932199ebd6e01ec26f533b113486b6a23c05697e4f089414c861f2237c92a4a3",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          60,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          20,
+          6
+        ],
+        "nonzero": 2344,
+        "partial": 588,
+        "opaque": 1756,
+        "content_aspect_ratio": 0.6029411764705882,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        272,
+        112,
+        753,
+        909
+      ],
+      "resized_content_px": [
+        41,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6035131744040151,
+      "resized_aspect_ratio": 0.6029411764705882,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 317420,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "46b2dc21-aef2-40b2-8842-c2ecc59bc779",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3.api.json",
+        "api_sha256": "4f40086368dbf15df0a7475cec79f2bd5423055008e9cd1d8a57892c85ffad04",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3.job.json",
+        "job_sha256": "993f511bd9177e573f6fcbbd99818a6589da781443d6ceeb1612b46e79922306",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3.history.json",
+        "history_sha256": "fa3ce9b8a346bf819f16689b1314617fff56b73d5c4447af64b07e57aefc8ffb",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_blue_grade_3.prompt.txt",
+        "prompt_file_sha256": "a62b48af2dab395a0f7179cc44c290a09914a2547ac89b85ac080f529d4fd52e",
+        "execution_prompt_sha256": "52176c00f9d905b1deccf4213a8090e4da8b57b104b18239f8400051d4e1df21",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_blue_grade_4",
+      "working_label": "청옥 · 영롱한",
+      "color_token": "blue",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_blue_grade_4_v2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "source_plan_sha256": "8e2d262a8f6b8015cca305158f9cfd1064ec72cf961913a2f2c509a1396e7bf9",
+      "source_path": "source/items/obang_jade_blue_grade_4_v2.png",
+      "source_sha256": "46241b9d7c5070e817c4c3dcf12f311bcfc6b092ede4c0ef2d94d9c30a600b53",
+      "generated_path": "source/items/obang_jade_blue_grade_4_v2_generated.png",
+      "generated_sha256": "76bacc0f16d17fdfad44e46169b878f9d016a0c24469d71e2c3fd2480f383570",
+      "clean_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2.png",
+      "generated_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          177,
+          144,
+          860,
+          899
+        ],
+        "margins_ltrb": [
+          177,
+          144,
+          164,
+          125
+        ],
+        "nonzero": 461400,
+        "partial": 10501,
+        "opaque": 450899,
+        "content_aspect_ratio": 0.904635761589404,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          7,
+          1010,
+          1010
+        ],
+        "margins_ltrb": [
+          0,
+          7,
+          14,
+          14
+        ],
+        "nonzero": 469972,
+        "partial": 469972,
+        "opaque": 0,
+        "content_aspect_ratio": 1.0069790628115654,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_blue_grade_4.png",
+      "game_sha256": "ec4daff97ba52c2e3ef684b26b8ce799a963919382b6a010579cf2221cacc284",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          9,
+          6,
+          71,
+          74
+        ],
+        "margins_ltrb": [
+          9,
+          6,
+          9,
+          6
+        ],
+        "nonzero": 3902,
+        "partial": 512,
+        "opaque": 3390,
+        "content_aspect_ratio": 0.9117647058823529,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        177,
+        144,
+        860,
+        899
+      ],
+      "resized_content_px": [
+        62,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.904635761589404,
+      "resized_aspect_ratio": 0.9117647058823529,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 469879,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "b93b1630-3fe4-4c6e-b4cf-4b645cb19107",
+        "api_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2.api.json",
+        "api_sha256": "65adb77d3c428f14656522f7a149987c1142403db976e39fe216374e4b146ca6",
+        "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2.job.json",
+        "job_sha256": "2fe0a71f016e4b4e4f16ee4d77bfbbe4783e2db6755aa30ec1235d460d93588e",
+        "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2.history.json",
+        "history_sha256": "803122e29858ab718f8bbaa0a4539c8b76808080b665fd4b7ab805548fc22b8b",
+        "prompt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_blue_grade_4_v2.prompt.txt",
+        "prompt_file_sha256": "255659cd95dd26a4176b47347443416b13fc9fe0763ae67018eb85265918b796",
+        "execution_prompt_sha256": "aaee156dd881a201da69758fb43b5451e4a79bfc3c0fab246e05051f2073b167",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_white_grade_1",
+      "working_label": "백옥 · 깨진",
+      "color_token": "white",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_white_grade_1",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_white_grade_1.png",
+      "source_sha256": "b8a9543b87ab95ba6247fd883471257eff9e9e3529523021311d56d4ee4edb38",
+      "generated_path": "source/items/obang_jade_white_grade_1_generated.png",
+      "generated_sha256": "5e35ee96f4c4c1f89bfd21b7b82218b8e37fbc02592cf0de927b5ed92644a372",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          240,
+          102,
+          784,
+          923
+        ],
+        "margins_ltrb": [
+          240,
+          102,
+          240,
+          101
+        ],
+        "nonzero": 328515,
+        "partial": 19340,
+        "opaque": 309175,
+        "content_aspect_ratio": 0.6626065773447016,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          105,
+          95,
+          1012,
+          1000
+        ],
+        "margins_ltrb": [
+          105,
+          95,
+          12,
+          24
+        ],
+        "nonzero": 358251,
+        "partial": 358251,
+        "opaque": 0,
+        "content_aspect_ratio": 1.0022099447513813,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_white_grade_1.png",
+      "game_sha256": "b84cc74df0cfffb6b7d1e71e2820d1d3348fa572385e2764284725ed20e18296",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          17,
+          6,
+          62,
+          74
+        ],
+        "margins_ltrb": [
+          17,
+          6,
+          18,
+          6
+        ],
+        "nonzero": 2433,
+        "partial": 513,
+        "opaque": 1920,
+        "content_aspect_ratio": 0.6617647058823529,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        240,
+        102,
+        784,
+        923
+      ],
+      "resized_content_px": [
+        45,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6626065773447016,
+      "resized_aspect_ratio": 0.6617647058823529,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 357312,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "a116196c-e346-467d-8a79-f3c595b121cd",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1.api.json",
+        "api_sha256": "be8666545ad8d22a2cbcf05bd38bf4e1a62fcf244cabd35efbf56387e9472746",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1.job.json",
+        "job_sha256": "6c5195c957bb3e42c0c16d80bdb551d3fc0b24812dccadddf7668eb7a0437f79",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1.history.json",
+        "history_sha256": "4734e9a5de43bac66ace7fb9871a3d798c40c071b2d520663447f2f206a7cdfc",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_1.prompt.txt",
+        "prompt_file_sha256": "a4654f6cd482de72cba3dbe2a61e6f9c436328385397751b1f28090b80eb91cc",
+        "execution_prompt_sha256": "9ea1ea538bd9a6bbe0373e32d537bb3c70029f1ad2bc3a74f77c6bcbc39ea1d4",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_white_grade_2",
+      "working_label": "백옥 · 흠 있는",
+      "color_token": "white",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_white_grade_2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_white_grade_2.png",
+      "source_sha256": "6cf1732c0de77f42f97e7609b200bc762771e5135f61ba58aa766ffd926d3dfd",
+      "generated_path": "source/items/obang_jade_white_grade_2_generated.png",
+      "generated_sha256": "120ac1ffcf847f4c3327b3160297dad63eef9d50819e75d9e4eabea3c980c88d",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          244,
+          103,
+          775,
+          918
+        ],
+        "margins_ltrb": [
+          244,
+          103,
+          249,
+          106
+        ],
+        "nonzero": 338400,
+        "partial": 13039,
+        "opaque": 325361,
+        "content_aspect_ratio": 0.6515337423312884,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          233,
+          41,
+          1012,
+          952
+        ],
+        "margins_ltrb": [
+          233,
+          41,
+          12,
+          72
+        ],
+        "nonzero": 362064,
+        "partial": 362064,
+        "opaque": 0,
+        "content_aspect_ratio": 0.8551042810098792,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_white_grade_2.png",
+      "game_sha256": "f9732362f012379618b5694114ec4b27530123cdd97c1981275c056769f2a534",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          18,
+          6,
+          62,
+          74
+        ],
+        "margins_ltrb": [
+          18,
+          6,
+          18,
+          6
+        ],
+        "nonzero": 2514,
+        "partial": 485,
+        "opaque": 2029,
+        "content_aspect_ratio": 0.6470588235294118,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        244,
+        103,
+        775,
+        918
+      ],
+      "resized_content_px": [
+        44,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6515337423312884,
+      "resized_aspect_ratio": 0.6470588235294118,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 361451,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "a0434686-b98c-40e4-b759-7bf8243d00ee",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2.api.json",
+        "api_sha256": "fe560f35b927791004f090a582a769e4f5fdbafab4888271b3894fe3d6371461",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2.job.json",
+        "job_sha256": "ea7f7592b6fcb9781618c4d58412265f87648289845291b2e0956a8a69885b12",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2.history.json",
+        "history_sha256": "f8ebdbb3a88050f89d17c8b989443ba9deb97c7596b7c580ad791d938ad40bb2",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_2.prompt.txt",
+        "prompt_file_sha256": "1acf70b1c75d7278af435dbc52bdecd3ff12cb8cf933650e2a6c035e15d7a784",
+        "execution_prompt_sha256": "e282de2800f1df4b1da41dbe6e1249275f0fb5ea4ff5f27482349723e47c8897",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_white_grade_3",
+      "working_label": "백옥 · 온전한",
+      "color_token": "white",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_white_grade_3",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_white_grade_3.png",
+      "source_sha256": "17dd02ac0229a03329798c0184d94e084f389c8258fec8864b3b90271478e98f",
+      "generated_path": "source/items/obang_jade_white_grade_3_generated.png",
+      "generated_sha256": "7178ac166e31633b1a952ccc84b56878a97f9cebb6c593a10319e59fabbf21c9",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          286,
+          160,
+          735,
+          871
+        ],
+        "margins_ltrb": [
+          286,
+          160,
+          289,
+          153
+        ],
+        "nonzero": 251986,
+        "partial": 6517,
+        "opaque": 245469,
+        "content_aspect_ratio": 0.6315049226441631,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          273,
+          66,
+          1012,
+          984
+        ],
+        "margins_ltrb": [
+          273,
+          66,
+          12,
+          40
+        ],
+        "nonzero": 270569,
+        "partial": 270569,
+        "opaque": 0,
+        "content_aspect_ratio": 0.8050108932461874,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_white_grade_3.png",
+      "game_sha256": "bdc340863370992ff58ca4c5bf0840b1a09471ab82dd69b5aefac4497dfa8209",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          18,
+          6,
+          61,
+          74
+        ],
+        "margins_ltrb": [
+          18,
+          6,
+          19,
+          6
+        ],
+        "nonzero": 2482,
+        "partial": 470,
+        "opaque": 2012,
+        "content_aspect_ratio": 0.6323529411764706,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        286,
+        160,
+        735,
+        871
+      ],
+      "resized_content_px": [
+        43,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6315049226441631,
+      "resized_aspect_ratio": 0.6323529411764706,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 270341,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "0f92c8fd-1ce2-4843-a4d3-9645d449e2a5",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3.api.json",
+        "api_sha256": "0035b9dd278e673599667464cf55896e44912add1308c6e0d9a2780a1b1d466c",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3.job.json",
+        "job_sha256": "77c5f315f21eb13127609860496ee4f29de235f92ed10cc3931157f0e2e661b2",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3.history.json",
+        "history_sha256": "fab29eb7524f82e4f91ae7b654c390079037c34b47956ea1105622c608802634",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_white_grade_3.prompt.txt",
+        "prompt_file_sha256": "b8bdff369aae898448e83511450c472dd6acb7106f7097d46ba2cafa58d740fa",
+        "execution_prompt_sha256": "4622847b4538509684ab1f8966a9ee83b63859edc10522ea2db46b6b92e4139c",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_white_grade_4",
+      "working_label": "백옥 · 영롱한",
+      "color_token": "white",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_white_grade_4_v2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "source_plan_sha256": "8e2d262a8f6b8015cca305158f9cfd1064ec72cf961913a2f2c509a1396e7bf9",
+      "source_path": "source/items/obang_jade_white_grade_4_v2.png",
+      "source_sha256": "2a19cf077a51e5b15f6a7a6551b216fa64b6fc2dc4df7a8f8b4986d37d2fcc39",
+      "generated_path": "source/items/obang_jade_white_grade_4_v2_generated.png",
+      "generated_sha256": "4c054189c10453a815322557bba8bdafeff6bb6a1c59cdb25147e43624b1f7e4",
+      "clean_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2.png",
+      "generated_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          212,
+          129,
+          812,
+          909
+        ],
+        "margins_ltrb": [
+          212,
+          129,
+          212,
+          115
+        ],
+        "nonzero": 403574,
+        "partial": 8058,
+        "opaque": 395516,
+        "content_aspect_ratio": 0.7692307692307693,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          105,
+          71,
+          1012,
+          1024
+        ],
+        "margins_ltrb": [
+          105,
+          71,
+          12,
+          0
+        ],
+        "nonzero": 416128,
+        "partial": 416128,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9517313746065058,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_white_grade_4.png",
+      "game_sha256": "573772c41b4f57e6600e7d15bd3339afbe187ee46778bfd020e7f2c5cd4ec25a",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          14,
+          6,
+          66,
+          74
+        ],
+        "margins_ltrb": [
+          14,
+          6,
+          14,
+          6
+        ],
+        "nonzero": 3194,
+        "partial": 477,
+        "opaque": 2717,
+        "content_aspect_ratio": 0.7647058823529411,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        212,
+        129,
+        812,
+        909
+      ],
+      "resized_content_px": [
+        52,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.7692307692307693,
+      "resized_aspect_ratio": 0.7647058823529411,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 415892,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "118e80c5-6269-4933-9592-5083a198e729",
+        "api_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2.api.json",
+        "api_sha256": "17f7f73195b4876423df2c6d38cfc38cefe0113cc77b294336a54f663ce02f58",
+        "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2.job.json",
+        "job_sha256": "878734e684ad936567915bb0e3f1cb942047533d42b7804c0c01f28f1e9cd0be",
+        "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2.history.json",
+        "history_sha256": "4240bd4646075693169e94c2ce58bba47e6dfa282534cb747859147a84ae5d5d",
+        "prompt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_white_grade_4_v2.prompt.txt",
+        "prompt_file_sha256": "79d5ea9b202c00af49f4022be9408a93b4e2c190ea647ff1a96162820957521f",
+        "execution_prompt_sha256": "d2e79456f81d17e60e5846d92bd4d9e81cbdb6d6e9d34365d3d4e57c845a10f4",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_1",
+      "working_label": "황옥 · 깨진",
+      "color_token": "yellow",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_yellow_grade_1",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_yellow_grade_1.png",
+      "source_sha256": "f80aefdbdb20dd11447fafefe8c799b347f66db112eef6c5697b3ba117f5d32a",
+      "generated_path": "source/items/obang_jade_yellow_grade_1_generated.png",
+      "generated_sha256": "73bcdd4de6b62cd402924c8afc363ba12f50722c161c55922cc9b1661c5ae6c9",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          258,
+          76,
+          784,
+          945
+        ],
+        "margins_ltrb": [
+          258,
+          76,
+          240,
+          79
+        ],
+        "nonzero": 339663,
+        "partial": 11029,
+        "opaque": 328634,
+        "content_aspect_ratio": 0.6052934407364787,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          33,
+          33,
+          1012,
+          1024
+        ],
+        "margins_ltrb": [
+          33,
+          33,
+          12,
+          0
+        ],
+        "nonzero": 353429,
+        "partial": 353429,
+        "opaque": 0,
+        "content_aspect_ratio": 0.987891019172553,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_yellow_grade_1.png",
+      "game_sha256": "23533955dc823137b81a2c7e62db198022047e0a26aebe103d3dfe985857933f",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          60,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          20,
+          6
+        ],
+        "nonzero": 2253,
+        "partial": 478,
+        "opaque": 1775,
+        "content_aspect_ratio": 0.6029411764705882,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        258,
+        76,
+        784,
+        945
+      ],
+      "resized_content_px": [
+        41,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6052934407364787,
+      "resized_aspect_ratio": 0.6029411764705882,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 353089,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "ff5893f4-2ecd-43ac-8133-859aaffbce14",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1.api.json",
+        "api_sha256": "fa23e1ef322f528c48153a02a0d888cb0c32aae8c7d0fd731d3d13b53feb5454",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1.job.json",
+        "job_sha256": "901c1252bc818cfab43528b89498b06880d6d685d5aa9845900c936bda2ffee2",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1.history.json",
+        "history_sha256": "731ad42a32a485608753af8da95b34fb83d8b82e22c9e98dee049c140b3226bf",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_1.prompt.txt",
+        "prompt_file_sha256": "7c0721ca6cb44579c58fa628407587ddce2e673f869fefbe8b60db1f8c15a9c2",
+        "execution_prompt_sha256": "3fdca93ead8b02f1d708102d7ca648717c48556c4f0eb5cbff23526ec9bbe8a9",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_2",
+      "working_label": "황옥 · 흠 있는",
+      "color_token": "yellow",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_yellow_grade_2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_yellow_grade_2.png",
+      "source_sha256": "4bbb9262a4b6ad4ecb59c0aa2d76192cadd45f5b7adbbd0137dcff912d15e93f",
+      "generated_path": "source/items/obang_jade_yellow_grade_2_generated.png",
+      "generated_sha256": "0854333f20eb0c19db1f33b45f6f76bec6b6e50cc19b3368ef043af0779ecf08",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          254,
+          97,
+          767,
+          920
+        ],
+        "margins_ltrb": [
+          254,
+          97,
+          257,
+          104
+        ],
+        "nonzero": 334737,
+        "partial": 9127,
+        "opaque": 325610,
+        "content_aspect_ratio": 0.6233292831105711,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          145,
+          94,
+          1012,
+          984
+        ],
+        "margins_ltrb": [
+          145,
+          94,
+          12,
+          40
+        ],
+        "nonzero": 347655,
+        "partial": 347655,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9741573033707865,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_yellow_grade_2.png",
+      "game_sha256": "a91a705c6623fd2cad6f4b02675efd8c067e9d4f9072897cea2aa380539ebd1c",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          61,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          19,
+          6
+        ],
+        "nonzero": 2436,
+        "partial": 466,
+        "opaque": 1970,
+        "content_aspect_ratio": 0.6176470588235294,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        254,
+        97,
+        767,
+        920
+      ],
+      "resized_content_px": [
+        42,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6233292831105711,
+      "resized_aspect_ratio": 0.6176470588235294,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 347386,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "cb3ebfc3-1f7f-48a9-ac13-4bac61d4f8a2",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2.api.json",
+        "api_sha256": "c070958fd0e32aa20ca3f99904d6e8fd964c6132ae8d9782867a25a78f5f59ff",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2.job.json",
+        "job_sha256": "57aaf0b17a8c8abd3452bf83f00b9c8b96f6ec19b5b755d4462af6f2220f1d48",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2.history.json",
+        "history_sha256": "39b83e25e234fcf08a714ffa9ea6f9bcd76521f1afd0723e7cf52cc276d31fee",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_2.prompt.txt",
+        "prompt_file_sha256": "35ae7fcf72722549d1f0052bf30970785a82482634bc6522bc8c7b6491ca3092",
+        "execution_prompt_sha256": "4651443a8c2be7e23fad6c41d7d1600384b2f9ef6eb1623f79b94da5146fa80e",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_3",
+      "working_label": "황옥 · 온전한",
+      "color_token": "yellow",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_yellow_grade_3",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/obang_jade_yellow_grade_3.png",
+      "source_sha256": "7d042a227624a1880cb930ef4b26a268b3bdb9641997711670dd86590d435765",
+      "generated_path": "source/items/obang_jade_yellow_grade_3_generated.png",
+      "generated_sha256": "807557ed7b267cbad546853ec113dac367bccd1334b75e86d27ed756ae409601",
+      "clean_receipt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          265,
+          115,
+          752,
+          910
+        ],
+        "margins_ltrb": [
+          265,
+          115,
+          272,
+          114
+        ],
+        "nonzero": 306570,
+        "partial": 9489,
+        "opaque": 297081,
+        "content_aspect_ratio": 0.6125786163522012,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          137,
+          107,
+          1010,
+          992
+        ],
+        "margins_ltrb": [
+          137,
+          107,
+          14,
+          32
+        ],
+        "nonzero": 318374,
+        "partial": 318374,
+        "opaque": 0,
+        "content_aspect_ratio": 0.9864406779661017,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_yellow_grade_3.png",
+      "game_sha256": "8e694cf4ef2848d16dfbc7046fb75226a6c2bf1ade0d0b0f3d677bfd8eb3e02f",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          19,
+          6,
+          61,
+          74
+        ],
+        "margins_ltrb": [
+          19,
+          6,
+          19,
+          6
+        ],
+        "nonzero": 2427,
+        "partial": 461,
+        "opaque": 1966,
+        "content_aspect_ratio": 0.6176470588235294,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        265,
+        115,
+        752,
+        910
+      ],
+      "resized_content_px": [
+        42,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.6125786163522012,
+      "resized_aspect_ratio": 0.6176470588235294,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 318083,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "6088e22a-7238-4e51-91d3-100fc168f1a4",
+        "api_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3.api.json",
+        "api_sha256": "7ded06c8072c03e9621321a984e2b757bc086828d6aa980fa3c5d9be4520a5ec",
+        "job_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3.job.json",
+        "job_sha256": "dacbea80f89591f11c599a8e6f248cf9b64ebdf9a0d26a338b17bc0479ae0530",
+        "history_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3.history.json",
+        "history_sha256": "9f3bb2475d433fc14b72c6d58aae9dedce8af0d8b7851a36c11530b990574de1",
+        "prompt_path": "reports/274/comfy_final_icons/obang_jade_yellow_grade_3.prompt.txt",
+        "prompt_file_sha256": "52ada187d17bda970ab9440c24ecc99357d82ea20fb0f5afaf39bd137efe8d13",
+        "execution_prompt_sha256": "d00910966ba793190c4bd22cf7a58be391f51e3d792cf9105cdbb1b42d7eb5c4",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_4",
+      "working_label": "황옥 · 영롱한",
+      "color_token": "yellow",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "grid_source": "art spec provisional, verify against265",
+      "source_revision": "obang_jade_yellow_grade_4_v2",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan_grade4_textonly_v2.json",
+      "source_plan_sha256": "8e2d262a8f6b8015cca305158f9cfd1064ec72cf961913a2f2c509a1396e7bf9",
+      "source_path": "source/items/obang_jade_yellow_grade_4_v2.png",
+      "source_sha256": "7d0c2bbf3af7aa8988ed92323b866afeaf7113a221a4eff2515096dc4c249fa3",
+      "generated_path": "source/items/obang_jade_yellow_grade_4_v2_generated.png",
+      "generated_sha256": "2a3cb0493954ec92dd022272d5c6c6a60de8567b32ae4d7995005da1015b5f9f",
+      "clean_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2.png",
+      "generated_receipt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          172,
+          156,
+          851,
+          883
+        ],
+        "margins_ltrb": [
+          172,
+          156,
+          173,
+          141
+        ],
+        "nonzero": 419660,
+        "partial": 9711,
+        "opaque": 409949,
+        "content_aspect_ratio": 0.9339752407152683,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          0,
+          35,
+          1010,
+          1024
+        ],
+        "margins_ltrb": [
+          0,
+          35,
+          14,
+          0
+        ],
+        "nonzero": 425428,
+        "partial": 425428,
+        "opaque": 0,
+        "content_aspect_ratio": 1.0212335692618806,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/obang_jade_yellow_grade_4.png",
+      "game_sha256": "4a5a94c914b8d573653be2565df9ec100be4fdb7b02a6149f00132aa33929c81",
+      "packed_stats": {
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          8,
+          6,
+          72,
+          74
+        ],
+        "margins_ltrb": [
+          8,
+          6,
+          8,
+          6
+        ],
+        "nonzero": 3875,
+        "partial": 533,
+        "opaque": 3342,
+        "content_aspect_ratio": 0.9411764705882353,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        172,
+        156,
+        851,
+        883
+      ],
+      "resized_content_px": [
+        64,
+        68
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.9339752407152683,
+      "resized_aspect_ratio": 0.9411764705882353,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 425393,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "512394c6-4663-4c57-870d-9b8ff05b319b",
+        "api_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2.api.json",
+        "api_sha256": "1f960fc9235b7bc2bb53c574b4abea362ad26967b74c814531e852c11b100634",
+        "job_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2.job.json",
+        "job_sha256": "51bc189a33cb55cde32de76b8808ef72744bb79fabcac71f1c1a1bb3c85b8a03",
+        "history_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2.history.json",
+        "history_sha256": "4e0be2cc0ed215a12f2ae8699f9fdee77bc5e0b8f67c85d4072aa65f032dc1db",
+        "prompt_path": "reports/274/comfy_grade4_textonly_v2/obang_jade_yellow_grade_4_v2.prompt.txt",
+        "prompt_file_sha256": "c21a896698a67ef0fa7c3a6e7656257250384c31ff173c56fbc44cdf1c6f81eb",
+        "execution_prompt_sha256": "8664bae9330624bd737418aa13c13ab6693257fca95750f517836f91527a0d17",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    },
+    {
+      "production_key": "horibyeong",
+      "working_label": "호리병",
+      "color_token": null,
+      "art_quality_stage": null,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        160
+      ],
+      "provisional_grid": [
+        1,
+        2
+      ],
+      "grid_source": "item_system_v2 §11.1 provisional",
+      "source_revision": "horibyeong",
+      "source_plan_path": "workbench/production/item_icons_274_final/generation_plan.json",
+      "source_plan_sha256": "e749684444a154ed556d96cad6a3ee9608915b241df194f8afc402602070a863",
+      "source_path": "source/items/horibyeong.png",
+      "source_sha256": "83bc07fbd3dda4e1f140f96eff2bda3d1e0906806adcc4befa47597067dd345c",
+      "generated_path": "source/items/horibyeong_generated.png",
+      "generated_sha256": "28ab83dbe64384991d10f822db69cc54dfda12a49b842f42b90fa01777b18afb",
+      "clean_receipt_path": "reports/274/comfy_final_icons/horibyeong.png",
+      "generated_receipt_path": "reports/274/comfy_final_icons/horibyeong_raw.png",
+      "source_stats": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          182,
+          93,
+          865,
+          1459
+        ],
+        "margins_ltrb": [
+          182,
+          93,
+          159,
+          77
+        ],
+        "nonzero": 548569,
+        "partial": 19490,
+        "opaque": 529079,
+        "content_aspect_ratio": 0.5,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generated_stats": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "bbox": [
+          25,
+          37,
+          1008,
+          1536
+        ],
+        "margins_ltrb": [
+          25,
+          37,
+          16,
+          0
+        ],
+        "nonzero": 554313,
+        "partial": 554313,
+        "opaque": 0,
+        "content_aspect_ratio": 0.6557705136757839,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "game_path": "game/items/horibyeong.png",
+      "game_sha256": "349ab94716112ffa28b555454f854dba109c197b9f8d7133b4a3cd834153d258",
+      "packed_stats": {
+        "size": [
+          80,
+          160
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox": [
+          6,
+          12,
+          74,
+          148
+        ],
+        "margins_ltrb": [
+          6,
+          12,
+          6,
+          12
+        ],
+        "nonzero": 6017,
+        "partial": 1312,
+        "opaque": 4705,
+        "content_aspect_ratio": 0.5,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "source_crop_bbox": [
+        182,
+        93,
+        865,
+        1459
+      ],
+      "resized_content_px": [
+        68,
+        136
+      ],
+      "packing_padding_px": 6,
+      "packing_method": "premultiplied Lanczos, uniform contain, center padding; alpha unthresholded",
+      "source_content_aspect_ratio": 0.5,
+      "resized_aspect_ratio": 0.5,
+      "rgb_max_delta_raw_to_clean": 0,
+      "alpha_pixels_changed": 555050,
+      "cloud": {
+        "provider": "Comfy Cloud",
+        "model": "gpt-image-2.5-flare",
+        "job_id": "4ba721b7-5d4a-4c98-ad2a-a526cb4aa8bb",
+        "api_path": "reports/274/comfy_final_icons/horibyeong.api.json",
+        "api_sha256": "e8583f7b77b1f4b68b598a520d68208ec78907f39ae2b465feb8bcbc997637a7",
+        "job_path": "reports/274/comfy_final_icons/horibyeong.job.json",
+        "job_sha256": "b04cc6aa1c6396f0f3035b6e3bf84a3f7a845dcfe7c9933f54f2a890567835eb",
+        "history_path": "reports/274/comfy_final_icons/horibyeong.history.json",
+        "history_sha256": "ee1a1f18b83c6a7971dbb9ce5d50c0218d1064068e35a7ee12d97c6be621ed48",
+        "prompt_path": "reports/274/comfy_final_icons/horibyeong.prompt.txt",
+        "prompt_file_sha256": "63cd4c281d4a031ad814caece95c5d8bcbc763099a43f7cbde1601d6caa26e97",
+        "execution_prompt_sha256": "179b488620aa5b5b8dc9cb5b3a9a21b449b8a41655bfeb2fd020fd9e126e71a1",
+        "prompt_text_file_trailing_newline_preserved": true,
+        "reference_images": [],
+        "reference_images_uploaded": 0,
+        "graph_node_classes": {
+          "2": "SaveImageAdvanced",
+          "8": "OpenAIGPTImageNodeV2",
+          "3": "SaveImageAdvanced",
+          "10": "SplitImageWithAlpha",
+          "9": "BiRefNetRMBG"
+        },
+        "terminal_status": "success"
+      }
+    }
+  ],
+  "actual_ui": {
+    "source": "current UiSkin.item_slot/item_icon via distinct in-memory icons_a/qa274 paths",
+    "bag_cell": [
+      40,
+      40
+    ],
+    "bag_padding": 8,
+    "vendor_cell": [
+      48,
+      48
+    ],
+    "vendor_padding": 3,
+    "source_review_width": 80,
+    "horibyeong_bag_provisional_cell": [
+      40,
+      80
+    ],
+    "belt_role": false,
+    "itemdefs_not_loaded_for_candidates": true
+  },
+  "unresolved": [
+    "265 ItemDef/GemDef IDs",
+    "265 final grid confirmation",
+    "265 socket count",
+    "265 final data names",
+    "PD adoption"
+  ],
+  "source_docs": {
+    "docs/design/item_system_v2.md": "29518bfad62dc63089462e8c4367c6f42f60e34f129ecca4815a19a6fd9fa82f",
+    "docs/design/item_catalog_v2.md": "8f1d2cd958025f61f7850eca1fbcc08483ef872ab5dec66825c71ef6934055d5",
+    "ui/ui_skin.gd": "3d6083a719196ede5d7e87bad1b3e5f1a5b6599df99f72dc7084e343676b5dec",
+    "ui/inventory_ui.gd": "10a3d3b3da892e0eacc9aa4c3cb98d624810cc956952c020f231c2a2c1579fe4",
+    "ui/vendor_ui.gd": "9bc7a07b868d1aa4b1ab4e54a971ca1280f04576019768a7181d410501e57dfd"
+  },
+  "secret_scan": {
+    "text_files_checked": 119,
+    "image_metadata_checked": 54,
+    "findings": [],
+    "result": "PASS",
+    "matched_secret_values_not_recorded": true
+  },
+  "runtime_baseline_path": "reports/274/packing_final_2026-10-01/runtime_before.json",
+  "cloud_inputs_baseline_path": "reports/274/packing_final_2026-10-01/cloud_inputs_final.json"
+}
