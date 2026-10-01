@@ -1,0 +1,25 @@
+WARNING: SaveSystem: 같은 이름의 캐릭터가 있습니다
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:199)
+       [1] create_profile (res://core/save_system.gd:59)
+       [2] _run (res://tests/test_character_profiles.gd:107)
+WARNING: SaveSystem: 저장 파일이 손상되었습니다
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:199)
+       [1] read_checked (res://core/save_system.gd:155)
+       [2] save_now (res://core/save_system.gd:132)
+       [3] _run (res://tests/test_character_profiles.gd:110)
+WARNING: SaveSystem: 저장 파일이 손상되었습니다
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:199)
+       [1] select_profile (res://core/save_system.gd:44)
+       [2] _run (res://tests/test_character_profiles.gd:111)
+WARNING: SaveSystem: 저장 폴더를 만들지 못했습니다. 같은 자리에 파일이 있습니다
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:199)
+       [1] create_profile (res://core/save_system.gd:62)
+       [2] _run (res://tests/test_character_profiles.gd:115)

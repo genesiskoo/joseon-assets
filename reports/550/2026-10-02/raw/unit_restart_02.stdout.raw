@@ -1,0 +1,213 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+SCRIPT ERROR: Compile Error: Identifier not found: Audio
+   at: GDScript::reload (res://world/floor_item.gd:151)
+ERROR: Failed to load script "res://world/floor_item.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: Vfx
+   at: GDScript::reload (res://world/portal.gd:37)
+ERROR: Failed to load script "res://world/portal.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: EventBus
+   at: GDScript::reload (res://world/level.gd:77)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://tests/test_profiles_restart.gd:0)
+ERROR: Failed to load script "res://tests/test_profiles_restart.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev
+[Load] lv=1 gold=0 flags={ "opening_pending": false } portal=<null> wps=[]
+SCRIPT ERROR: Cannot call method 'has_method' on a null value.
+   at: load_area (res://world/main.gd:231)
+   GDScript backtrace (most recent call first):
+       [0] load_area (res://world/main.gd:231)
+       [1] start_game (res://world/main.gd:162)
+       [2] _run (res://tests/test_profiles_restart.gd:58)
+ERROR: Parameter "p_script->implicit_initializer" is null.
+   at: _super_implicit_constructor (modules/gdscript/gdscript.cpp:146)
+   GDScript backtrace (most recent call first):
+       [0] load_area (res://world/main.gd:230)
+       [1] _run (res://tests/test_profiles_restart.gd:66)
+SCRIPT ERROR: Invalid call. Nonexistent function '_ready'.
+   at: _ready (res://world/field_level.gd:49)
+   GDScript backtrace (most recent call first):
+       [0] _ready (res://world/field_level.gd:49)
+       [1] _swap_level (res://world/main.gd:262)
+       [2] load_area (res://world/main.gd:234)
+       [3] _run (res://tests/test_profiles_restart.gd:66)
+SCRIPT ERROR: Invalid call. Nonexistent function 'anchor' in base 'Nil'.
+   at: get_spawn (res://world/field_level.gd:330)
+   GDScript backtrace (most recent call first):
+       [0] get_spawn (res://world/field_level.gd:330)
+       [1] _swap_level (res://world/main.gd:263)
+       [2] load_area (res://world/main.gd:234)
+       [3] _run (res://tests/test_profiles_restart.gd:66)
+SCRIPT ERROR: Invalid call. Nonexistent function 'restore_actor' in base 'GDScript'.
+   at: _swap_level (res://world/main.gd:265)
+   GDScript backtrace (most recent call first):
+       [0] _swap_level (res://world/main.gd:265)
+       [1] load_area (res://world/main.gd:234)
+       [2] _run (res://tests/test_profiles_restart.gd:66)
+[Save] restart550 ??user://profiles_restart_550_1374109/session.json.characters/doho_15c46d4002c3096eca44cca0.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-550-character-profiles/profiles_restart_550_1374109/session.json.characters/doho_15c46d4002c3096eca44cca0.json)
+[Load] lv=1 gold=0 flags={ "opening_pending": false } portal=<null> wps=[]
+SCRIPT ERROR: Cannot call method 'has_method' on a null value.
+   at: load_area (res://world/main.gd:231)
+   GDScript backtrace (most recent call first):
+       [0] load_area (res://world/main.gd:231)
+       [1] start_game (res://world/main.gd:162)
+       [2] _run (res://tests/test_profiles_restart.gd:58)
+[Save] restart550 ??user://profiles_restart_550_1374109/session.json.characters/doho_52aed225f66909c8855f170f.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-550-character-profiles/profiles_restart_550_1374109/session.json.characters/doho_52aed225f66909c8855f170f.json)
+PROFILE_RESTART_WRITE fails=0 PASS
+ERROR: 6 RID allocations of type 'P11GodotBody3D' were leaked at exit.
+ERROR: 16 RID allocations of type 'P11GodotArea3D' were leaked at exit.
+ERROR: 7 RID allocations of type 'P12GodotShape3D' were leaked at exit.
+ERROR: 1 RID allocations of type 'N26RendererEnvironmentStorage11EnvironmentE' were leaked at exit.
+ERROR: 27 RID allocations of type 'N13RendererDummy15MaterialStorage13DummyMaterialE' were leaked at exit.
+ERROR: 1 RID allocations of type 'N13RendererDummy15MaterialStorage11DummyShaderE' were leaked at exit.
+ERROR: 16 RID allocations of type 'N13RendererDummy9DummyMeshE' were leaked at exit.
+ERROR: 8 RID allocations of type 'PN13RendererDummy14TextureStorage12DummyTextureE' were leaked at exit.
+ERROR: 40 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+ERROR: 38 RID allocations of type 'PN18TextServerAdvanced22ShapedTextDataAdvancedE' were leaked at exit.
+ERROR: 1 RID allocations of type 'PN18TextServerAdvanced12FontAdvancedE' were leaked at exit.
+ERROR: Pages in use exist at exit in PagedAllocator: N20RasterizerSceneDummy21GeometryInstanceDummyE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: 226 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 52 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+ERROR: Pages in use exist at exit in PagedAllocator: N12VariantPools11BucketSmallE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+SCRIPT ERROR: Compile Error: Identifier not found: Audio
+   at: GDScript::reload (res://world/floor_item.gd:151)
+ERROR: Failed to load script "res://world/floor_item.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: Vfx
+   at: GDScript::reload (res://world/portal.gd:37)
+ERROR: Failed to load script "res://world/portal.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: EventBus
+   at: GDScript::reload (res://world/level.gd:77)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://tests/test_profiles_restart.gd:0)
+ERROR: Failed to load script "res://tests/test_profiles_restart.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev
+[Load] lv=5 gold=5510 flags={ "opening_pending": false, "restart550": "RestartDohoA" } portal=<null> wps=[]
+ERROR: Parameter "p_script->implicit_initializer" is null.
+   at: _super_implicit_constructor (modules/gdscript/gdscript.cpp:146)
+   GDScript backtrace (most recent call first):
+       [0] load_area (res://world/main.gd:230)
+       [1] start_game (res://world/main.gd:162)
+       [2] _run (res://tests/test_profiles_restart.gd:81)
+SCRIPT ERROR: Invalid call. Nonexistent function '_ready'.
+   at: _ready (res://world/field_level.gd:49)
+   GDScript backtrace (most recent call first):
+       [0] _ready (res://world/field_level.gd:49)
+       [1] _swap_level (res://world/main.gd:262)
+       [2] load_area (res://world/main.gd:234)
+       [3] start_game (res://world/main.gd:162)
+       [4] _run (res://tests/test_profiles_restart.gd:81)
+SCRIPT ERROR: Invalid call. Nonexistent function 'anchor' in base 'Nil'.
+   at: get_spawn (res://world/field_level.gd:330)
+   GDScript backtrace (most recent call first):
+       [0] get_spawn (res://world/field_level.gd:330)
+       [1] _swap_level (res://world/main.gd:263)
+       [2] load_area (res://world/main.gd:234)
+       [3] start_game (res://world/main.gd:162)
+       [4] _run (res://tests/test_profiles_restart.gd:81)
+SCRIPT ERROR: Invalid call. Nonexistent function 'restore_actor' in base 'GDScript'.
+   at: _swap_level (res://world/main.gd:265)
+   GDScript backtrace (most recent call first):
+       [0] _swap_level (res://world/main.gd:265)
+       [1] load_area (res://world/main.gd:234)
+       [2] start_game (res://world/main.gd:162)
+       [3] _run (res://tests/test_profiles_restart.gd:81)
+[Load] lv=2 gold=5520 flags={ "opening_pending": false, "restart550": "RestartDohoB" } portal=<null> wps=[]
+SCRIPT ERROR: Cannot call method 'has_method' on a null value.
+   at: load_area (res://world/main.gd:231)
+   GDScript backtrace (most recent call first):
+       [0] load_area (res://world/main.gd:231)
+       [1] start_game (res://world/main.gd:162)
+       [2] _run (res://tests/test_profiles_restart.gd:81)
+PROFILE_RESTART_READ fails=0 PASS
+ERROR: 3 RID allocations of type 'P11GodotBody3D' were leaked at exit.
+ERROR: 8 RID allocations of type 'P11GodotArea3D' were leaked at exit.
+ERROR: 7 RID allocations of type 'P12GodotShape3D' were leaked at exit.
+ERROR: 1 RID allocations of type 'N26RendererEnvironmentStorage11EnvironmentE' were leaked at exit.
+ERROR: 17 RID allocations of type 'N13RendererDummy15MaterialStorage13DummyMaterialE' were leaked at exit.
+ERROR: 1 RID allocations of type 'N13RendererDummy15MaterialStorage11DummyShaderE' were leaked at exit.
+ERROR: 11 RID allocations of type 'N13RendererDummy9DummyMeshE' were leaked at exit.
+ERROR: 8 RID allocations of type 'PN13RendererDummy14TextureStorage12DummyTextureE' were leaked at exit.
+ERROR: 20 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+ERROR: 28 RID allocations of type 'PN18TextServerAdvanced22ShapedTextDataAdvancedE' were leaked at exit.
+ERROR: 1 RID allocations of type 'PN18TextServerAdvanced12FontAdvancedE' were leaked at exit.
+ERROR: Pages in use exist at exit in PagedAllocator: N20RasterizerSceneDummy21GeometryInstanceDummyE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: 165 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 52 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+ERROR: Pages in use exist at exit in PagedAllocator: N12VariantPools11BucketSmallE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+
+PROFILES_RESTART_TEST checks=2 fails=2 FAIL
