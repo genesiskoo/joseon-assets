@@ -1,0 +1,58 @@
+{
+  "asset": "seal_stone",
+  "source": "seal_stone_h31_raw_v1.glb",
+  "source_sha256": "3856550b074f50312b142d439197fd1517c7fe80d3a28c9b80273180c4b7bded",
+  "output": "workbench/production/dungeon_props_132/models/seal_stone.glb",
+  "output_sha256": "356818b567a97776a28c2e56035694ad0c3d36567c0dbe306d476309f4dbb252",
+  "triangles": 5840,
+  "raw_bounds": [
+    [
+      -0.49838483333587646,
+      -0.09758756309747696,
+      -0.5
+    ],
+    [
+      0.49838483333587646,
+      0.09758756309747696,
+      0.5
+    ]
+  ],
+  "scale": 1.805833443959285,
+  "target_axis_xyz": 0,
+  "target_axis_metres": 1.8,
+  "bounds_min": [
+    -0.9,
+    0.0,
+    -0.9029167219796425
+  ],
+  "bounds_max": [
+    0.9,
+    0.3524537703118217,
+    0.9029167219796425
+  ],
+  "dimensions_xyz": [
+    1.8,
+    0.3524537703118217,
+    1.805833443959285
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "before": [
+        2048,
+        2048
+      ],
+      "after": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "material": {
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "emission": 0.0
+  },
+  "raw_preserved": true,
+  "game_intake": false
+}

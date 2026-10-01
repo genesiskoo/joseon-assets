@@ -1,0 +1,60 @@
+{
+  "asset": "bone_heap",
+  "source": "bone_heap_h31_raw_v1.glb",
+  "source_sha256": "95618ad5a9dc66e746d4b98dbf5a960da5b7471676306966cbf20252f17198d8",
+  "output": "workbench/production/dungeon_props_132/models/bone_heap.glb",
+  "output_sha256": "3311ebe92829ec64601d21c16e48631da7bd60fbd517056131b7f7d18b066320",
+  "triangles": 7755,
+  "raw_bounds": [
+    [
+      -0.3803824484348297,
+      -0.19576814770698547,
+      -0.5
+    ],
+    [
+      0.3803824484348297,
+      0.19576814770698547,
+      0.5
+    ]
+  ],
+  "scale": 1.2770208173710957,
+  "target_axis_xyz": 0,
+  "target_axis_metres": 1.5,
+  "preparation_revision": 2,
+  "yaw_rotation_degrees": -90,
+  "bounds_min": [
+    -0.6385104086855479,
+    0.0,
+    -0.4857563052138649
+  ],
+  "bounds_max": [
+    0.6385104086855479,
+    0.5,
+    0.4857563052138649
+  ],
+  "dimensions_xyz": [
+    1.2770208173710957,
+    0.5,
+    0.9715126104277299
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "before": [
+        2048,
+        2048
+      ],
+      "after": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "material": {
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "emission": 0.0
+  },
+  "raw_preserved": true,
+  "game_intake": false
+}
