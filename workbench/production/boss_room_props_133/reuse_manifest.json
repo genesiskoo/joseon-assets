@@ -1,0 +1,452 @@
+{
+  "schema": "joseon.boss_room_props_reuse.v1",
+  "card": 133,
+  "recorded_at": "2026-10-01",
+  "status": "reuse_handoff_ready",
+  "consumer_card": 344,
+  "consumer_owner": "claude",
+  "game_base_head": "294260c2054431b696866d14a9ff88ab517bf5b1",
+  "asset_base_head": "f7d5b8f74ae79b6f17d3e02e75aa245b05dc53b1",
+  "scope": {
+    "new_images": 0,
+    "new_models": 0,
+    "paid_submissions": 0,
+    "runtime_files_changed": 0,
+    "actual_placement": "owned_by_344_not_delivered_by_133",
+    "lighting": "owned_by_344_not_delivered_by_133",
+    "heukrang_albedo": "excluded",
+    "ingame_render_claim": false
+  },
+  "provenance": {
+    "canonical_asset_checkout": "C:/workspace/joseon-assets",
+    "canonical_files": "read-only filesystem SHA verified; absent from asset base HEAD; not copied or claimed newly committed by133",
+    "game_source_paths": "tracked runtime at game_base_head; current file SHA recorded",
+    "model_measurement_space": "GLB node/root transforms applied before PropMeshes fitting and level placement, not placed-in-level dimensions",
+    "source_code_files": {
+      "world/prop_meshes.gd": {
+        "sha256": "312a5db43c9ae18078d783258f917157105d5e194ed3d52c133a9d9e854fce13",
+        "bytes": 52364
+      },
+      "actors/kill_fx.gd": {
+        "sha256": "6bd3901985792c57e1561b30681ddd3cdd1b00c77f8455dd32edbe73e46522ff",
+        "bytes": 23411
+      },
+      "world/town_dressing.gd": {
+        "sha256": "2a13da8c75f671c0276bf51ad5d238b0b7e09f7e64267a4a40883082d6ff3a38",
+        "bytes": 36539
+      },
+      "world/field_builder.gd": {
+        "sha256": "4b1ef8909e8c01c754cd01561065b3f43c082b8a27de3916b1da7a52422cc0da",
+        "bytes": 27235
+      },
+      "world/town_ground.gd": {
+        "sha256": "7e5f0ccca2c470d5f7a9c34b030b75bc7c5079c125f7955c673bfefb05acdca7",
+        "bytes": 13769
+      },
+      "core/vfx.gd": {
+        "sha256": "3dbfc6e8fa400397282f04336d2b8e15550f1efbbeb64ec288f364a1973a4232",
+        "bytes": 67433
+      },
+      "world/dungeon_builder.gd": {
+        "sha256": "dce75db7316ab3d2b993b254eb35eec39750085067f5312d93c9e1e04480a832",
+        "bytes": 43442
+      },
+      "data/dungeons/heukrang_gul.tres": {
+        "sha256": "edc7ecce3b42b70eac127a801db4ddcf957bbb3a2361e6516c888b8f5fe948d3",
+        "bytes": 2448
+      },
+      "docs/design/dungeon.md": {
+        "sha256": "b2cc6d8e55d5e05894af7072f31314c410b2d921b9080f549365894177ebf636",
+        "bytes": 57543
+      },
+      "docs/design/bosses_v2.md": {
+        "sha256": "6f84c61e8a99c41659143b6bc6387ec8a958a3e784dd4803b6c6400411cf5451",
+        "bytes": 41823
+      }
+    }
+  },
+  "reusable": [
+    {
+      "id": "chain_floor",
+      "status": "approved_existing_runtime",
+      "kind": "static_glb",
+      "canonical_asset_path": "workbench/production/art_514/glb_graded/chain.glb",
+      "game_path": "assets/models/props/chain.glb",
+      "sha256": "cba1428c4f157b259f67aee62b60ed1c7279604af44ace1561caacb7d837cc63",
+      "measured": {
+        "sha256": "cba1428c4f157b259f67aee62b60ed1c7279604af44ace1561caacb7d837cc63",
+        "bytes": 369720,
+        "triangles": 4370,
+        "dimensions_xyz": [
+          1.0,
+          0.16126900911331177,
+          1.0
+        ],
+        "aabb_min_xyz": [
+          -0.5,
+          0.0,
+          -0.5
+        ],
+        "aabb_max_xyz": [
+          0.5,
+          0.16126900911331177,
+          0.5
+        ],
+        "meshes": 1,
+        "skins": 0,
+        "animations": 0,
+        "images": [
+          {
+            "embedded": true,
+            "width": 1024,
+            "height": 1024,
+            "mime": "image/jpeg"
+          }
+        ],
+        "materials": [
+          {
+            "metallic": 0.0,
+            "roughness": 0.800000011920929,
+            "emissive": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "base_color_texture": {
+              "index": 0
+            }
+          }
+        ]
+      },
+      "consumer_api": "PropMeshes.instance(\"chain_floor\")",
+      "consumer_source": "world/prop_meshes.gd",
+      "fit_policy": "existing h uniform fitting; original surface materials preserved",
+      "constraints": [
+        "not hanging chain",
+        "no generic vertex material override",
+        "decorative non-collision placement outside stair/click/pounce routes"
+      ]
+    },
+    {
+      "id": "environment_ash_mask",
+      "status": "approved_existing_runtime_mask_only",
+      "kind": "procedural_texture_reuse",
+      "source": "actors/kill_fx.gd",
+      "consumer_api": "KillFx.stain_texture(i), i mod3",
+      "mask_width": 64,
+      "mask_height": 64,
+      "mask_variants": 3,
+      "color_rgba": [
+        0.08,
+        0.07,
+        0.065,
+        0.88
+      ],
+      "lifetime": "persistent until owning level teardown; visible after >20s",
+      "material": {
+        "metallic": 0,
+        "roughness": 1,
+        "emission": 0,
+        "collision": false,
+        "cast_shadow": false
+      },
+      "constraints": [
+        "never call KillFx.stain() for environment",
+        "never join combat blood_stain group or _stains pool",
+        "independent of blood setting",
+        "no influence on stain_count/cap32/made",
+        "local height only to avoid z-fighting; do not change global STAIN_Y"
+      ]
+    },
+    {
+      "id": "campfire_ash_mesh",
+      "status": "approved_existing_runtime_shape_and_palette",
+      "kind": "procedural_static_mesh_reuse",
+      "source": "world/town_dressing.gd",
+      "top_radius": 0.52,
+      "bottom_radius": 0.54,
+      "height": 0.04,
+      "local_y": 0.02,
+      "color_rgb": [
+        0.09,
+        0.085,
+        0.08
+      ],
+      "roughness": 1,
+      "collision": false,
+      "constraints": [
+        "separate level-owned decoration",
+        "do not copy entire campfire or add light automatically"
+      ]
+    },
+    {
+      "id": "localized_scorch",
+      "status": "approved_existing_runtime_local_mask",
+      "kind": "shader_mask_reuse",
+      "sources": [
+        "world/field_builder.gd",
+        "world/town_ground.gd"
+      ],
+      "field_source": {
+        "scope_mask": "md.r",
+        "blotch_smoothstep": [
+          0.5,
+          0.78
+        ],
+        "darken_strength": 0.6,
+        "ash_luma_mult": 0.66,
+        "ash_luma_rgb": [
+          1,
+          0.95,
+          0.9
+        ]
+      },
+      "town_source": {
+        "center": "fire_center",
+        "smoothstep": [
+          0.7,
+          1.8
+        ],
+        "grain_wobble": 0.35,
+        "darken_rgb": [
+          0.52,
+          0.47,
+          0.44
+        ]
+      },
+      "constraints": [
+        "local ground patches only",
+        "no global floor albedo replacement",
+        "preserve floor texture/theme tint/walkability"
+      ]
+    },
+    {
+      "id": "torch_embers",
+      "status": "approved_existing_runtime_loop",
+      "kind": "existing_gpu_particles",
+      "source": "core/vfx.gd",
+      "consumer_api": "Vfx.attach(\"torch_embers\", level_owned_parent)",
+      "preset": "embers",
+      "particles": 10,
+      "particle_life_seconds": 1.6,
+      "cue_scale": 0.45,
+      "loop": true,
+      "velocity": [
+        0.4,
+        0.9
+      ],
+      "spread": 25,
+      "gravity": 0.4,
+      "size": [
+        0.05,
+        0.08
+      ],
+      "grow": 0.5,
+      "alpha": 0.9,
+      "radius": 0.35,
+      "constraints": [
+        "level-owned parent for teardown",
+        "counts toward loop128",
+        "no unlimited new sources"
+      ]
+    },
+    {
+      "id": "torch_flame",
+      "status": "approved_existing_runtime_sheet",
+      "kind": "existing_sprite_sheet",
+      "image_path": "assets/vfx/torch_flame/torch_flame_sheet.png",
+      "image_sha256": "74c00a80199c39f5dbd0f42e161e7928d9396e43322f2701564a6bce9153ca02",
+      "meta_path": "assets/vfx/torch_flame/torch_flame_meta.json",
+      "meta_sha256": "56974a2f06f3d2b76aec277c7e7f526626553897149432484cdc8cf6e4e6cdaa",
+      "sheet_width": 295,
+      "sheet_height": 640,
+      "frame_width": 59,
+      "frame_height": 128,
+      "columns": 5,
+      "rows": 5,
+      "total_frames": 21,
+      "fps": 12,
+      "loop": true,
+      "meta_units": 0.55,
+      "loop_blend": 4,
+      "existing_cue_scale": 0.5,
+      "constraints": [
+        "unused grid4cells are not frames",
+        "meta units and cue scale are separate",
+        "level-owned parent; counts toward loop128"
+      ]
+    },
+    {
+      "id": "dungeon_dust",
+      "status": "approved_existing_runtime_ambient",
+      "kind": "existing_gpu_particles",
+      "source": "core/vfx.gd",
+      "consumer_api": "Vfx.attach(\"dungeon_dust\", level_owned_parent)",
+      "preset": "dust_float",
+      "particles": 24,
+      "particle_life_seconds": 4,
+      "cue_scale": 1,
+      "loop": true,
+      "constraints": [
+        "reuse existing ambient; duplicate placement not mandatory",
+        "loop128/level teardown"
+      ]
+    }
+  ],
+  "prohibited_reuse": [
+    {
+      "id": "KillFx.stain",
+      "reason": "combat API with 20s fade and shared cap32; cannot provide environmental lifetime"
+    },
+    {
+      "id": "burn_ash",
+      "reason": "1.3s death single-shot/18particles; attach forces looping, so never use as ambient"
+    },
+    {
+      "id": "hanging_chain_as_floor_glb",
+      "reason": "chain is procedural wall mesh; floor GLB consumer id chain_floor"
+    },
+    {
+      "id": "global_floor_albedo_change",
+      "reason": "localized mask reuse only"
+    },
+    {
+      "id": "central_seal_motif",
+      "reason": "Heukrang is bulgae, lore overrides concept ornament"
+    }
+  ],
+  "approved_direction_reference": {
+    "asset_path": "workbench/production/bg_concept_336/img/den_boss.png",
+    "sha256": "0d16078ab6b5800f9a494102a142c2e14694fef052f9060ef75ce99d2343a4ee",
+    "use": "room mood/material reference only; no central seal motif"
+  },
+  "optional_pending": [
+    {
+      "id": "bone_heap",
+      "depends_on_card": 132,
+      "status": "pending_pd",
+      "enabled": false,
+      "asset_worktree": "C:/workspace/joseon/._tmp/assets_132",
+      "asset_path": "workbench/production/dungeon_props_132/models/bone_heap.glb",
+      "sha256": "3311ebe92829ec64601d21c16e48631da7bd60fbd517056131b7f7d18b066320",
+      "measured": {
+        "sha256": "3311ebe92829ec64601d21c16e48631da7bd60fbd517056131b7f7d18b066320",
+        "bytes": 663164,
+        "triangles": 7755,
+        "dimensions_xyz": [
+          1.2770208173710957,
+          0.5,
+          0.9715126104277299
+        ],
+        "aabb_min_xyz": [
+          -0.6385104086855479,
+          0.0,
+          -0.4857563052138649
+        ],
+        "aabb_max_xyz": [
+          0.6385104086855479,
+          0.5,
+          0.4857563052138649
+        ],
+        "meshes": 1,
+        "skins": 0,
+        "animations": 0,
+        "images": [
+          {
+            "embedded": true,
+            "width": 1024,
+            "height": 1024,
+            "mime": "image/jpeg"
+          }
+        ],
+        "materials": [
+          {
+            "metallic": 0.0,
+            "roughness": 1.0,
+            "emissive": [
+              0,
+              0,
+              0
+            ],
+            "base_color_texture": {
+              "index": 0
+            }
+          }
+        ]
+      },
+      "delivery": "metadata only; no file copy/runtime intake before PD acceptance"
+    }
+  ],
+  "handoff_acceptance_344": {
+    "layout": {
+      "map": [
+        28,
+        28
+      ],
+      "combat_room": [
+        14,
+        13
+      ],
+      "pillars": 4,
+      "corridor_width": 3,
+      "must_preserve": [
+        "stairs",
+        "click_movement_routes",
+        "heukrang_pounce_clearance"
+      ]
+    },
+    "lore": {
+      "heukrang": "bulgae",
+      "central_seal_motif": false
+    },
+    "environment_ash": {
+      "persists_past_seconds": 20,
+      "blood_setting_dependency": false,
+      "combat_stain_pool_interference": 0,
+      "collision": false,
+      "roughness": 1
+    },
+    "fx": {
+      "level_exit_cleanup": true,
+      "global_loop_cap_unchanged": 128,
+      "torches_per_floor_cap_unchanged": 48,
+      "count_all_ambient_flame_embers_loops": true
+    },
+    "visual_validation": {
+      "before_after_camera": "same view/zoom/lighting-exposure/resolution/representative seed",
+      "run_on_344_after_placement": true,
+      "executed_in_133": false
+    },
+    "followup_tests": [
+      {
+        "kind": "e2e",
+        "name": "dungeon_layout"
+      },
+      {
+        "kind": "e2e",
+        "name": "boss_floor"
+      },
+      {
+        "kind": "e2e",
+        "name": "heukrang_pounce"
+      },
+      {
+        "kind": "unit",
+        "name": "test_vfx"
+      }
+    ],
+    "owner": "Claude344; root manages board handoff/landing/completion"
+  },
+  "verification_133": {
+    "godot_model_check": {
+      "command": "godot --headless -s tools/model_check.gd -- assets/models/props/chain.glb --kind=tile --height=.16127",
+      "exit_code": 0,
+      "result": "PASS",
+      "raw_path": "reports/133/chain_model_check.raw.log",
+      "raw_sha256": "e194d6380ab1d15ee07abde49ed2665305e60473a295a199f8198a91f3bd81a6"
+    },
+    "readonly_source_audit": "reports/133/source_audit_2026-10-01.json",
+    "model_measurements": "reports/133/source_measurements_2026-10-01.json",
+    "runtime_hash_baseline": "reports/133/runtime_baseline_2026-10-01.json"
+  }
+}
