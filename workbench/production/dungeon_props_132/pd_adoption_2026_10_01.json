@@ -1,0 +1,60 @@
+{
+  "card": 132,
+  "date": "2026-10-01",
+  "user_instruction_ko": "전부 확인 채택한다.",
+  "input_shape_status": "approved_by_pd",
+  "selected_inputs": [
+    {
+      "id": "bone_heap",
+      "path": "refs/bone_heap.png",
+      "sha256": "4c39bcab9e66dc9346055abc5f0992a45bc74b51174aa62ef9e6efbfa567d572"
+    },
+    {
+      "id": "roots",
+      "path": "refs/roots.png",
+      "sha256": "dc1b91de26cbe1d5ca99ca394fb98aa64c95db112639c96c54225e83c8edc0ec"
+    },
+    {
+      "id": "nest",
+      "path": "refs/nest.png",
+      "sha256": "2529afef2c17ce434d6ac8ac61abdb7a1ab53e78de62fae75ec52995efc9a435"
+    },
+    {
+      "id": "palisade",
+      "path": "refs/palisade.png",
+      "sha256": "525edcf0e4753ebee6e34970b758c3179fb8a0b0faa28a845c02d6bfc1347aae"
+    },
+    {
+      "id": "seal_stone",
+      "path": "refs/seal_stone.png",
+      "sha256": "727542de8c3a984580db696f0c95aeba26930f2ec900941a72bc341cb58d98dd"
+    },
+    {
+      "id": "pillar",
+      "path": "refs/pillar.png",
+      "sha256": "b2df514d719e57fda8bbbdaf990f8dd04b6cb30a5c5a7b8c95b7062a93c773eb"
+    },
+    {
+      "id": "broken_statue",
+      "path": "refs/broken_statue.png",
+      "sha256": "68b44613f8c2598ce74f257fe05d31c7a4353d514e17654b982c989eca3ef65c"
+    }
+  ],
+  "production_provider": "Comfy Cloud",
+  "production_reference": "D-095, docs/design/comfy_3d_pipeline.md, cards #531/#532",
+  "followup_conditions_ko": [
+    "봉인석 발광과 메시 형태 분리·광량 완화",
+    "석상 파손 형태 가독성",
+    "전투 바닥·클릭면·길폭 보존"
+  ],
+  "historical_tripo_quote": {
+    "date": "2026-09-25",
+    "credits_per_job": 40,
+    "max_credits_for_seven": 280,
+    "current_quote_verified": false
+  },
+  "generation_submitted": false,
+  "modeling_complete": false,
+  "game_intake": false,
+  "main_landed": false
+}
