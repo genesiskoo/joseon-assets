@@ -1,0 +1,16 @@
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (8.8초)
+== e2e (system_menu) ==
+E2E start: system_menu
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ system_menu
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-96-boss-opening-cutin/e2e/system_menu_01_menu.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-96-boss-opening-cutin/e2e/system_menu_02_settings.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-96-boss-opening-cutin/e2e/system_menu_03_settings_blood.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-96-boss-opening-cutin/e2e/system_menu_04_title_deulnyeok.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-96-boss-opening-cutin/e2e/system_menu_05_title_heukrang_gul.png
+E2E system_menu PASS (검사 44)
+E2E SUMMARY: 1/1 PASS
+  e2e  (22.1초) — 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-96-boss-opening-cutin\e2e
+전부 PASS
