@@ -1,0 +1,86 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "534/hp_potion_2_v2",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "9",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Create ONE new isolated inventory item icon for Joseon Hunters, a Korean dark fantasy ARPG with Diablo II Resurrected style physical item icons. Match the referenced approved potion's painted material detail, confident dark contours, three-quarter viewpoint, restrained realistic highlights, amber studio lighting and clear silhouette. A tangible Korean medicinal potion container, elegantly readable at 40 pixels. The entire object and its attached cord/tassel must fit inside the square, occupying 82-88 percent of height, on a genuinely transparent background with a clean alpha edge. No ground plane, backdrop, cast shadow on an invisible floor, text, labels, letters, numbers, UI frames, borders, rarity-color background, particle effects or magical glow. A superior potion must LOOK like a more carefully made valuable vessel by better proportions, cleaner material, stopper quality, restrained craftsmanship and shape; don't merely recolor the basic container. Clear filled silhouette, readable in grayscale and against dark-brown bag cells. Keep a readable rim/cork and a bold cord attachment, details secondary to the main shape. Only one object, one coherent bottle, no catalog sheet, no hand or person, no modern medical vial. Do not reproduce the basic vessel unchanged.\n\nREVISED ITEM — make these structural changes clearly, not tiny line decoration:\nMID HP potion: a squat wide-shouldered dark red-brown glazed ceramic medicine jar. The broad neck is 45 percent of body width, visibly wider than the basic folded-paper-mouth pot. A clean flat fitted ivory wooden stopper sits flush in a thick rolled pottery lip. One broad aged-bronze horizontal shoulder collar is 9 percent of object height and strongly visible at 40 pixels, plus a shorter compact red cord. Keep the lower body broad and simple, smooth good glaze and less distressed material than basic. This is mid-grade, below the taller richly detailed high-grade flask; no lotus relief on this mid-grade item.\nAt 40 pixels and in grayscale the revised object MUST have a distinctly different outline than the reference candidate. Use large strong construction features. Preserve one closed object and clean transparent alpha, no surrounding glow.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "Custom",
+      "model.custom_width": 1024,
+      "model.custom_height": 1024,
+      "model.background": "transparent",
+      "model.quality": "high",
+      "n": 1,
+      "seed": 5341201,
+      "model.images.image_1": [
+        "21",
+        0
+      ],
+      "model.images.image_2": [
+        "22",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "534/hp_potion_2_v2_raw",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SplitImageWithAlpha",
+    "inputs": {
+      "image": [
+        "8",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "BiRefNetRMBG",
+    "inputs": {
+      "image": [
+        "10",
+        0
+      ],
+      "model": "BiRefNet-general",
+      "mask_blur": 0,
+      "mask_offset": 0,
+      "invert_output": false,
+      "refine_foreground": false,
+      "background": "Alpha"
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "dbaae89f8e5ff2124fe1d3d8c007698a1a6bf1f186fe84e31ee469d743793398.png"
+    }
+  },
+  "22": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "909e07950c74c169b76d8d8168ebe679feaabc85e24fd3b6b1b8fae932fcc9c7.png"
+    }
+  }
+}

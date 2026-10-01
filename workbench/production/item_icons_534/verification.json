@@ -1,0 +1,314 @@
+{
+  "card": 534,
+  "status": "candidate_not_installed",
+  "definition_state": "existing",
+  "definitions": "HP40/80/140 and MP25/50/90; CONSUMABLE/tier1/max_stack10/1x1",
+  "original_and_clean_sha_preserved": true,
+  "approved_basic_source_sha_preserved": true,
+  "runtime_files_byte_match": 189,
+  "icons_a_png": 42,
+  "icons_h1_png": 22,
+  "manual_alpha_editing": false,
+  "manual_pixel_editing": false,
+  "alpha_thresholding": false,
+  "initial_sources_preserved": [
+    {
+      "id": "hp_potion_2",
+      "source_sha256": "206f3ab7d8fc768b40b6a1b967e9c20bd533d81a17721e715684cb227f9f0cf0",
+      "generated_sha256": "012dc3cb6e795c1dd261aa2b368ad037a03ee696187ccee3d4529dc298e210ed",
+      "game_sha256": "b19940866d93654f3fb1f7124d393f96e5cd8be86d3503ead72fde9536489508"
+    },
+    {
+      "id": "hp_potion_3",
+      "source_sha256": "e0fa26864def5a14c18c6de23ceb196288a354b3a6a3535e8a01db0ffb87d83c",
+      "generated_sha256": "128e18e696c488ca44592c74c0185e2820d67be849797e13e69cb6410abcc5d4",
+      "game_sha256": "8cb0319726a02cf4728b6ef29f87bc473a2c2e7e9b181a8a154d29ac11f73115"
+    },
+    {
+      "id": "mp_potion_2",
+      "source_sha256": "d325c2266bff0723c7d9ad9bd4844727130ac0a876b420bcd2580fcdbc576f3f",
+      "generated_sha256": "7dc87804e552c8f5e8c3cabca078aa7d85741be9c076b4a85877203a0b2f4f9b",
+      "game_sha256": "6fd08b794e90ade1cad34a8f5c76f36c6118fc46ec21fd49b25428b466f96f8d"
+    },
+    {
+      "id": "mp_potion_3",
+      "source_sha256": "243ac80c2bddb4f42610d709828bf3cd1150f7e89139d505458bec5d6b04ba76",
+      "generated_sha256": "fd1c4098d79ef4df42c4816435a707b849c5dc294723cb9c0b3839d899928a0b",
+      "game_sha256": "587ae0d42caef927201c68c8ce828f53f5c44d58b1a5368e6d8f50d1f5d3ffe9"
+    }
+  ],
+  "same_frame": [
+    {
+      "mode": "overview",
+      "title_basic2_hp3_pixels_changed": 0,
+      "regions": [
+        [
+          0,
+          0,
+          1280,
+          80
+        ],
+        [
+          0,
+          80,
+          431,
+          905
+        ],
+        [
+          860,
+          80,
+          1280,
+          495
+        ]
+      ]
+    },
+    {
+      "mode": "actual",
+      "title_basic2_hp3_pixels_changed": 0,
+      "regions": [
+        [
+          0,
+          0,
+          1280,
+          80
+        ],
+        [
+          0,
+          80,
+          431,
+          905
+        ],
+        [
+          860,
+          80,
+          1280,
+          495
+        ]
+      ]
+    }
+  ],
+  "comparison": "Initial vs corrected",
+  "alpha": [
+    {
+      "id": "hp_potion_2",
+      "rgb_max_delta": 0,
+      "rgb_pixels_changed": 0,
+      "alpha_pixels_changed": 498613,
+      "source_sha256": "4536f92e1046c0dd27a5fdfeaea09f71a123905f27dc4e8fec8e1601d3dc4d38",
+      "generated_sha256": "30aa20a656e5deff184fd584c25f11265c51d33e2f337f173f60f0c1ca1d2ad2",
+      "game_sha256": "2a2e52128603c8362f487874eaa76111d075dd58ba6012d8b6d3e1da60acf1d2",
+      "clean_alpha": [
+        0,
+        255
+      ],
+      "packed_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        124,
+        118,
+        897,
+        950
+      ],
+      "game_bbox": [
+        8,
+        6,
+        71,
+        74
+      ]
+    },
+    {
+      "id": "hp_potion_3",
+      "rgb_max_delta": 0,
+      "rgb_pixels_changed": 0,
+      "alpha_pixels_changed": 417294,
+      "source_sha256": "e0fa26864def5a14c18c6de23ceb196288a354b3a6a3535e8a01db0ffb87d83c",
+      "generated_sha256": "128e18e696c488ca44592c74c0185e2820d67be849797e13e69cb6410abcc5d4",
+      "game_sha256": "8cb0319726a02cf4728b6ef29f87bc473a2c2e7e9b181a8a154d29ac11f73115",
+      "clean_alpha": [
+        0,
+        255
+      ],
+      "packed_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        194,
+        52,
+        835,
+        969
+      ],
+      "game_bbox": [
+        16,
+        6,
+        64,
+        74
+      ]
+    },
+    {
+      "id": "mp_potion_2",
+      "rgb_max_delta": 0,
+      "rgb_pixels_changed": 0,
+      "alpha_pixels_changed": 330199,
+      "source_sha256": "0b55c8fb2611d75d9909c404fd4282b5dd318f37b31487a2e7ecf0add67c2d6b",
+      "generated_sha256": "b7ebe5a85734eb61519beeb87bc0e4bfe0126b22e770bfc49eb10bbaf01779ea",
+      "game_sha256": "7ff2c913ca168da36ddfcd90b8c5d8613c4d5c81ee29e6ff354ccd36573d01e2",
+      "clean_alpha": [
+        0,
+        255
+      ],
+      "packed_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        239,
+        69,
+        804,
+        966
+      ],
+      "game_bbox": [
+        18,
+        6,
+        61,
+        74
+      ]
+    },
+    {
+      "id": "mp_potion_3",
+      "rgb_max_delta": 0,
+      "rgb_pixels_changed": 0,
+      "alpha_pixels_changed": 365085,
+      "source_sha256": "aabfa58ac781689ad32f6947c0bba6cd74840ef86d2b032a3d4de0cdfe91a7bd",
+      "generated_sha256": "1acaf5014a21781c8359d3884f1164a330fc9d2b888b4afe915787ca58873737",
+      "game_sha256": "4235b62454e0d2bd7cbfb446866b43cb49986c9c16dc92e42ca05e585f6b5848",
+      "clean_alpha": [
+        0,
+        255
+      ],
+      "packed_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        223,
+        52,
+        850,
+        977
+      ],
+      "game_bbox": [
+        17,
+        6,
+        63,
+        74
+      ]
+    }
+  ],
+  "actual_ui": {
+    "bag": [
+      40,
+      8
+    ],
+    "vendor": [
+      48,
+      3
+    ],
+    "belt": [
+      42,
+      8
+    ],
+    "belt_stress": [
+      [
+        30,
+        8
+      ],
+      [
+        36,
+        8
+      ]
+    ]
+  },
+  "godot_ui_skin_modes": [
+    {
+      "mode": "overview",
+      "stdout_sha256": "7788bfe7c00f9196b07644dde44662d7c6245c9a7c36941633c2620023e80076",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "errors": 0
+    },
+    {
+      "mode": "actual",
+      "stdout_sha256": "46c15661b84b89dd4db2956e598e69ae53ff819a265d6afdc3c77f70b4667607",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "errors": 0
+    },
+    {
+      "mode": "belt_stress",
+      "stdout_sha256": "671772ac893ad98b3a4a4018fa223ae7fe59a3f011e6f913817bea1b072752ac",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "errors": 0
+    },
+    {
+      "mode": "black",
+      "stdout_sha256": "f1471bda4234371b7444bc493c1050ed40d40cc29a8496e7a324a85fc97c81ef",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "errors": 0
+    },
+    {
+      "mode": "grayscale",
+      "stdout_sha256": "cb7a572f7f6a31bbfecedea76a36ea14f0845f4293d3481e8db1000147d6dcbf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "errors": 0
+    }
+  ],
+  "fixture_resource_paths": "Unique qa534 paths with icons_a prefix; no loaded ItemDef icon replaced",
+  "qa_script_sha256": "1e021e222a7e5a5249b60a69b375e279335b433aa4bce87a0713e34036180e89",
+  "visual_review": {
+    "method": "All five Godot plates plus alpha-composited diagnostic inspected",
+    "clean_on_black_and_gray": "No visible background halo; clean RGB matches original",
+    "hp_stage3": "Neck metal and taller bottle remain different from paper-covered stage1/2",
+    "hp_stage1_2": "Corrected stage2 has flat wood cap and broad bronze shoulder instead of folded paper cap; shape remains visible at40/42",
+    "mp_stage2_3": "Corrected stage2 single rounded body and broad neck vs stage3 two bulbs/broad brass cap-band remain different at40/42; fine carving and small knots weaken at30/36",
+    "smallest_size_limit": "30px belt has only14px art height after padding8; do not expect cloud carving/cord/bead detail to carry grade by itself",
+    "approval": "PD visual decision required; no automatic adoption or runtime intake"
+  },
+  "packing_failure_raw": "reports/534/packing/packing_failed_relative_selection.txt",
+  "gallery": [
+    {
+      "filename": "overview.jpg",
+      "bytes": 138631,
+      "sha256": "9bf54cc4fe564500f80a779d5a38c207121eb6ecb9263d80ab3b687843ded5a1",
+      "round": "after"
+    },
+    {
+      "filename": "actual.jpg",
+      "bytes": 104919,
+      "sha256": "dba590d10a82a07963781f254cd2ee2aaeb7a172d778527b2aa0a959ea385425",
+      "round": "after"
+    },
+    {
+      "filename": "belt_stress.jpg",
+      "bytes": 105235,
+      "sha256": "bab5bea3b3524073b7aad63df7b5ff054e05cf8f19adb90594e6f121da3364a8",
+      "round": "after"
+    },
+    {
+      "filename": "alpha_comparison.jpg",
+      "bytes": 218943,
+      "sha256": "b036486804f5b25e63275a0b32def55bcc24a7ab45adb341377767473dfd0019"
+    },
+    {
+      "filename": "before_overview.jpg",
+      "bytes": 131134,
+      "sha256": "9edff7e920a094b9844354d8f90139f0ef317d99338124e05edb2e7c1a9c8878",
+      "round": "before"
+    },
+    {
+      "filename": "before_actual.jpg",
+      "bytes": 104440,
+      "sha256": "7b9969a8c5e67b3053bdc24d821060126a100a6338c1eeb25a4882343424950a",
+      "round": "before"
+    }
+  ]
+}
