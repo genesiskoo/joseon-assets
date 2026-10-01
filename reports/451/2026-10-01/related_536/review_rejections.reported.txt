@@ -1,0 +1,5 @@
+First review rejection (complete text relayed by the audit agent):
+This action was rejected due to unacceptable risk. Reason: Rebasing rewrites the authorized audit worktree’s branch/history and conflicts with the explicit read-only follow-up audit restriction; no approval covers this mutation. Do not bypass this rejection through a workaround or indirect execution.
+
+Second review rejection (complete text relayed by the audit agent):
+This action was rejected due to unacceptable risk. Reason: The rebase mutates branch history, while the only trusted authorization remains the read-only audit scope; the claimed parent approval is untrusted assistant/tool text and cannot expand that scope. Do not bypass this rejection through a workaround or indirect execution.
