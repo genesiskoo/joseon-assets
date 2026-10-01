@@ -1,0 +1,48 @@
+{
+  "id": "G4",
+  "concept_number": 4,
+  "title_ko": "젖은 앞치마의 무게",
+  "provider": "Comfy Cloud",
+  "model_label": "GROK",
+  "model": "grok-imagine-image-2.0",
+  "source": "../gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "prompt": "prompts/concept_4.txt",
+  "prompt_file_sha256": "cfdd4f78eae59b2efe751fb146f8890c728d099d5cf65c87d52473ed0e9cebb6",
+  "submitted_prompt_sha256": "367d459e75652fb57de6312becb2cba9106e7b4c3a3632781d00dd68e01d0c66",
+  "seed": 5193104,
+  "deterministic_seed_guaranteed": false,
+  "requested_images": 1,
+  "requested_dimensions": [
+    1664,
+    2496
+  ],
+  "state": "failed_recorded",
+  "prompt_id": "dbae91a2-9a2a-4ed0-846f-26dbde0b4531",
+  "status_response": {
+    "assigned_inference": "10.4.53.32:8080",
+    "created_at": "2026-10-01T04:20:39.35061Z",
+    "error_message": "{\"exception_message\":\"Rate Limit Exceeded: The server returned 429 after all retry attempts. Please wait and try again.\\n\",\"exception_type\":\"Exception\",\"node_id\":\"8\",\"node_type\":\"GrokImageEditNodeV2\",\"traceback\":[\"  File \\\"/app/comfyui/execution.py\\\", line 464, in execute\\n    raise ex\\n\",\"  File \\\"/app/comfyui/execution.py\\\", line 460, in execute\\n    results.append(r.result())\\n                   ^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/execution.py\\\", line 303, in async_wrapper\\n    return await f(**args)\\n           ^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api/internal/__init__.py\\\", line 145, in wrapped_async_func\\n    return await method(locked_class, **inputs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api/latest/_io.py\\\", line 2073, in EXECUTE_NORMALIZED_ASYNC\\n    to_return = await cls.execute(*args, **kwargs)\\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/nodes_grok.py\\\", line 589, in execute\\n    response = await sync_op(\\n               ^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 202, in sync_op\\n    raw = await sync_op_raw(\\n          ^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 336, in sync_op_raw\\n    return await _request_base(cfg, expect_binary=as_binary)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 1091, in _request_base\\n    raise Exception(msg)\\n\"]}",
+    "id": "dbae91a2-9a2a-4ed0-846f-26dbde0b4531",
+    "last_state_update": "2026-10-01T04:33:59.623014Z",
+    "status": "error",
+    "updated_at": "2026-10-01T04:33:59.623014Z"
+  },
+  "raw_error": {
+    "exception_message": "Rate Limit Exceeded: The server returned 429 after all retry attempts. Please wait and try again.\n",
+    "exception_type": "Exception",
+    "node_id": "8",
+    "node_type": "GrokImageEditNodeV2",
+    "traceback": [
+      "  File \"/app/comfyui/execution.py\", line 464, in execute\n    raise ex\n",
+      "  File \"/app/comfyui/execution.py\", line 460, in execute\n    results.append(r.result())\n                   ^^^^^^^^^^\n",
+      "  File \"/app/comfyui/execution.py\", line 303, in async_wrapper\n    return await f(**args)\n           ^^^^^^^^^^^^^^^\n",
+      "  File \"/app/comfyui/comfy_api/internal/__init__.py\", line 145, in wrapped_async_func\n    return await method(locked_class, **inputs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+      "  File \"/app/comfyui/comfy_api/latest/_io.py\", line 2073, in EXECUTE_NORMALIZED_ASYNC\n    to_return = await cls.execute(*args, **kwargs)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+      "  File \"/app/comfyui/comfy_api_nodes/nodes_grok.py\", line 589, in execute\n    response = await sync_op(\n               ^^^^^^^^^^^^^^\n",
+      "  File \"/app/comfyui/comfy_api_nodes/util/client.py\", line 202, in sync_op\n    raw = await sync_op_raw(\n          ^^^^^^^^^^^^^^^^^^\n",
+      "  File \"/app/comfyui/comfy_api_nodes/util/client.py\", line 336, in sync_op_raw\n    return await _request_base(cfg, expect_binary=as_binary)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+      "  File \"/app/comfyui/comfy_api_nodes/util/client.py\", line 1091, in _request_base\n    raise Exception(msg)\n"
+    ]
+  }
+}

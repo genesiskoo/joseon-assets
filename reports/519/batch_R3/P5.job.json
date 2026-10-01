@@ -1,0 +1,37 @@
+{
+  "id": "P5",
+  "concept_number": 5,
+  "title_ko": "낮은 인간형 포식 자세",
+  "provider": "Comfy Cloud",
+  "model_label": "GPT25",
+  "model": "gpt-image-2.5-flare",
+  "source": "../gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "prompt": "prompts/concept_5.txt",
+  "prompt_file_sha256": "25e44a451110f540a24d1d01a6ff691763ce944b01677b65e36d006d1c607d40",
+  "submitted_prompt_sha256": "2d9c02915e3e4ba2a73b3db23da374c0e10641193618db2d0f5cc138347e1fa9",
+  "seed": 5193105,
+  "deterministic_seed_guaranteed": false,
+  "requested_images": 1,
+  "requested_dimensions": [
+    1664,
+    2496
+  ],
+  "state": "downloaded",
+  "prompt_id": "2f7a4bd4-ac12-4a01-b11c-8910f460c0cf",
+  "status_response": {
+    "assigned_inference": "10.4.55.184:8080",
+    "created_at": "2026-10-01T04:20:41.775937Z",
+    "id": "2f7a4bd4-ac12-4a01-b11c-8910f460c0cf",
+    "last_state_update": "2026-10-01T04:31:47.903988Z",
+    "status": "success",
+    "updated_at": "2026-10-01T04:31:47.903988Z"
+  },
+  "actual_dimensions": [
+    1664,
+    2496
+  ],
+  "output": "P5.png",
+  "output_sha256": "2ae3f92b9e2ab42d3237b05aa71b3313e752668fecb60c01d3a807a246d8ebc6",
+  "output_bytes": 6235644
+}
