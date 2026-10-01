@@ -1,0 +1,32 @@
+{
+  "card": 519,
+  "date": "2026-10-01",
+  "source": "PD chat instruction",
+  "user_instruction_ko": "gpt로 가자",
+  "scope": "Gumiho concept-art production for card 519",
+  "selected_provider": "Comfy Cloud",
+  "selected_model": "gpt-image-2.5-flare",
+  "selected_model_label": "GPT Image 2.5",
+  "selected_generation_catalog": "P1-P5 R3",
+  "model_selection_status": "approved_by_pd",
+  "concept_selection_status": "pending_pd_selection",
+  "selected_concept_ids": [],
+  "adopted_design": null,
+  "other_model_catalogs": "G1-G5 and S1-S5 retained as comparison history; not the active production model",
+  "recommended_but_not_selected": {
+    "costume": "P1",
+    "low_human_pose": "P5",
+    "tavern_reveal": "P3"
+  },
+  "known_issue": "P4 shows a third foot/shoe; not a ready anatomical reference",
+  "current_face_reference": "gumiho_C_gaze_pd_reference.png",
+  "next_constraints_ko": [
+    "선택한 C 주모 눈빛·같은 인간형 유지",
+    "깃·섶·소매·허리·치마 연결을 유지한 자연스러운 복식",
+    "유혈·물리적 타락과 매혹 동시 유지",
+    "꼬리 아홉 가닥·뿌리·후면·아이소 검수 필요"
+  ],
+  "new_generation_submitted_for_this_selection": false,
+  "game_intake": false,
+  "main_landed": false
+}

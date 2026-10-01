@@ -1,5 +1,8 @@
 # #519 구미호 — R3 모델별 5종 / 총 15장
 
+**PD 채택 — 2026-10-01:** 구미호 후속 원화의 제작 모델은 **Comfy Cloud GPT Image 2.5 flare**로 고정했다. P1~P5 중 최종 컨셉은 아직 선택 전이다. P1 복식 + P5 낮은 자세는 추천 조합이며 확정안이 아니다. Grok·Seedream 산출물은 비교 기록으로 보존한다. [모델 채택 기록](../gpt_model_selection_2026_10_01.json).
+
+
 2026-10-01. Comfy Cloud에서 동일 눈빛 입력과 번호별 동일 프롬프트로 생성한 신규 컨셉아트다. P = GPT Image 2.5 flare, G = Grok Image 2.0, S = Seedream 5.0 Pro. 이전 R1/R2는 이 15장에 포함하지 않는다.
 
 | 번호 | 방향 |
