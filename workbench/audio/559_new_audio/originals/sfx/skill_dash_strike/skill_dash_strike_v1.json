@@ -1,0 +1,69 @@
+{
+ "cue": "skill_dash_strike",
+ "v": 1,
+ "prompt": "Rapid forward sword lunge, rushing air then sharp steel slash, compact dry close effect, no footsteps, no impact, no music or voice.",
+ "seconds": 0.7,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-02 21:02",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.673016,
+ "lufs": "-14.3",
+ "peak": "1.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 1,
+   "sub20_pct": 2.4,
+   "dc": [
+    0.0055,
+    0.0056
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/skill_dash_strike_v1.wav",
+   "duration": 0.68,
+   "lufs": "-14.3",
+   "true_peak": "1.5"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29680,
+   "at": 0.673,
+   "removed_ms": 7.0,
+   "floor_db": -58.2,
+   "jump_db": 18.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.0,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -16.99,
+    -16.99
+   ],
+   "intake_tp": [
+    1.75,
+    1.75
+   ]
+  },
+  "out": {
+   "over_full": 3,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.2,
+   "lufs": "-14.3",
+   "true_peak": "1.7"
+  },
+  "warn": [
+   "CLIP 1"
+  ]
+ }
+}

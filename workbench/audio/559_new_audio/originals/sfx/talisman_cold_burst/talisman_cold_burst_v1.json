@@ -1,0 +1,69 @@
+{
+ "cue": "talisman_cold_burst",
+ "v": 1,
+ "prompt": "Sudden localized freezing burst, crisp ice crack with a short crystalline tail and cold airy puff, clean game effect, no glass tinkling melody, no voice or music.",
+ "seconds": 0.8,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-02 21:02",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.79102,
+ "lufs": "-17.3",
+ "peak": "0.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 4,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/talisman_cold_burst_v1.wav",
+   "duration": 0.8,
+   "lufs": "-17.3",
+   "true_peak": "0.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34884,
+   "at": 0.791,
+   "removed_ms": 9.0,
+   "floor_db": -87.7,
+   "jump_db": 27.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.03,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -17.4,
+    -17.4
+   ],
+   "intake_tp": [
+    3.81,
+    3.78
+   ]
+  },
+  "out": {
+   "over_full": 4,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.09,
+   "lufs": "-17.3",
+   "true_peak": "0.8"
+  },
+  "warn": [
+   "CLIP 4"
+  ]
+ }
+}
