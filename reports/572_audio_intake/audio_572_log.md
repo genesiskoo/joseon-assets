@@ -28,4 +28,4 @@ Suno MP3 커버 이미지가 기본 FFmpeg 변환에서 Theora로 따라오는 �
 
 - 전체 회귀: 단위·도구·러너 자체검사 및 E2E 118/118 PASS (공유108 + 단독10). 독립 코드 검토 지적 없음. 초저역 과다 변주4개는 같은 큐의 새 생성 후보로 교체했다.
 
-- 최신 본진 병합 후 빠른 검사(부팅·러너 자체검사) 및 관련 E2E 5/5 PASS: audio_cues, boss_bulgasari, monster_motion_gallery, dialogue_band, story_cutin. 원본/선택 음원 보존 assets 커밋50ca164.
+- 최신 본진 병합 후 빠른 검사(부팅·러너 자체검사) 및 관련 E2E 5/5 PASS: audio_cues, boss_bulgasari, monster_motion_gallery, dialogue_band, story_cutin. 원본/선택 음원 보존 assets 커밋9b6e3cb3(옛 50ca164 — D-100으로 28MB wav 두 벌을 드라이브로 빼고 push 전에 다시 씀).
