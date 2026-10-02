@@ -1,0 +1,32 @@
+{
+  "card": 498,
+  "reviewer": "Codex visual inspection",
+  "scope": "Direct inspection of fourteen individual 1024px originals and approved slash/lunge/whirlwind sources; concept selection only",
+  "all_originals_directly_viewed": true,
+  "candidate_adoption": false,
+  "runtime_connected": false,
+  "native_size_review": "pending root native capture; do not treat source review as final small-slot approval",
+  "style_review": {
+    "status": "PASS",
+    "notes": "승인 도호의 검은 갓·남색 겹도포·흰깃·적갈색 띠와 먹붓/거친 마른붓 질감이 인물 후보에 유지됨. 부적 진/주머니 보완은 같은 남색·황토·적갈색·아이보리 무광 팔레트로 사물 모티브를 만듦. 새10종은 불투명 배경이라 기존 승인3종의 알파 외곽과 슬롯에서 다를 수 있음."
+  },
+  "selected_revisions": ["seal_array_v2", "blade_storm_v2", "breath_v2", "pouch_v2"],
+  "candidates": [
+    {"id": "leap_slash", "version": "round1", "source_status": "PASS_WITH_RESERVATIONS", "motif": "낮게 내린 몸/무릎과 오른쪽 수직 강타·지면 먼지가 착지 베기를 전달", "reservations": ["요청에 없는 장식 부적이 주변에 남아 있음", "칼끝과 지면 접점이 박힌 검처럼 읽히지 않는지 작은 슬롯에서 확인 필요"], "pair": "combo의 대각 강타와 수직 궤적 차이를 확인"},
+    {"id": "seal_array", "version": "revision1", "source_status": "PASS", "before_rejection": "인물/칼 휘두르기와 지면 부적이 함께 있어 사물 모티브를 흐림", "motif": "사람 없는 큰 지면 부적과 거친 먹 원. 종이가 지면에 붙은 대상으로 읽히며 공격 주문 광선/서양 마법진 없음", "reservations": ["지면 표식은 낮은 타원보다는 위에서 본 원에 가까움; 지면 부적의 식별은 유지됨"]},
+    {"id": "blade_storm", "version": "revision1", "source_status": "PASS", "before_rejection": "도호 주변 단일 정지 원이 기존 회오리와 혼동되고 장식 부적도 있음", "motif": "손과 연결된 검·오른쪽으로 뻗은 다리·옆으로 이어진 큰8자 두 회전. 기존 회오리의 단일 원과 구분되는 연속 회전", "reservations": ["30px에서는 두 고리의 가운데 교차가 합쳐질 가능성 확인 필요"]},
+    {"id": "breath", "version": "revision1", "source_status": "PASS", "before_rejection": "좌선 주변 부적/아이보리 궤적이 방어고리/부적 마법처럼 읽힘", "motif": "갓·좌우 대칭 도포·아랫배 손을 유지하고 주변 부적/고리를 제거. 조식은 내부 회복이며 공격/보호막 동작이 없음", "reservations": []},
+    {"id": "combo", "version": "round1", "source_status": "PASS_WITH_RESERVATIONS", "motif": "두 옅은 뒷궤적 뒤 강한 상단 내려베기의 끝이 지배. 원래 스킬의 셋째 평타 강화와 맞음", "reservations": ["세 타의 리듬은 큰 원화에서도 보조선으로 약하게 표현됨; 30px에서는 한 번의 큰베기로 읽힐 수 있음"]},
+    {"id": "pouch", "version": "revision1", "source_status": "PASS", "before_rejection": "작은 허리주머니보다 인물/검 휘두르기/날아가는 부적이 우세", "motif": "주머니 자체가 화면을 채우고 황토 종이다발이 빽빽하게 꽂힘. 사람/공격 궤적 없이 부적 수용량을 전달", "reservations": ["종이의 부적 붓표시는 약하지만 용량 모티브는 분명함"]},
+    {"id": "scatter", "version": "round1", "source_status": "PASS", "motif": "손의 한 기점에서 중앙 한 장과 좌우 두 장이 부채꼴로 퍼짐. 수직 부적 비와 진행방향/종이 덩어리로 구분", "reservations": ["작은크기에서 인물 얼굴보다 세종이 덩어리가 먼저 보이는지 확인"]},
+    {"id": "sword_mastery", "version": "round1", "source_status": "PASS_WITH_RESERVATIONS", "motif": "고정된 검자루·둥근 코등이·깨끗한 대각 철검. 동작궤적이 없어 찌르기의 밝은 직선 궤적과 구분", "reservations": ["요청한 손아귀 연구보다 얼굴/갓 면적이 큼; 30px에서 손아귀 식별 확인 필요"]},
+    {"id": "talisman_rain", "version": "round1", "source_status": "PASS", "motif": "다섯 직사각 부적과 길고 수직인 밝은 궤적. 부적 흩뿌리기의 세 갈래 전방 부채와 다른 위→아래 빗살", "reservations": ["도호 인물이 추가되었지만 수직 종이/궤적 모티브는 지배적"]},
+    {"id": "thrust", "version": "round1", "source_status": "PASS_WITH_RESERVATIONS", "motif": "고정된 어깨/손 뒤에서 우상단으로 뻗는 한 검과 좁은 직선 궤적. 검 숙련의 조용한 그립과 공격방향으로 구분", "reservations": ["요청에 없는 장식 부적이 주변에 남아 있음", "기존 돌진 베기와 인물/뻗은 검은 공유하므로 우상단 궤적 대 수평 몸 이동을 작은 슬롯에서 확인"]}
+  ],
+  "critical_pair_checks": [
+    {"pair": ["whirlwind", "blade_storm"], "source_result": "단일 순간 원 대 옆으로 이어진8자 연속 회전", "native_result": "pending"},
+    {"pair": ["scatter", "talisman_rain"], "source_result": "전방3갈래 종이 대 수직5개 빗살", "native_result": "pending"},
+    {"pair": ["sword_mastery", "thrust"], "source_result": "조용한 손아귀/철검 대 우상단 직선 공격궤적", "native_result": "pending"},
+    {"pair": ["lunge", "thrust"], "source_result": "낮은 수평 이동 몸 대 고정된 어깨에서 나가는 우상단 찌르기", "native_result": "pending"}
+  ]
+}

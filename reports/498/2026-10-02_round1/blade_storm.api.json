@@ -1,0 +1,39 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "498/blade_storm",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Paint one square skill illustration for Joseon Hunters, matching the supplied approved reference's ink contours, textured dry brushwork, matte chiaroscuro, dark navy, charcoal, muted russet and warm ivory palette. Use the reference for style and Doho identity only: make a completely new composition for the skill described below. Where Doho appears, preserve the same adult Korean man, black gat, navy layered robe, white collar and red-brown sash. Use one dominant silhouette and three or four broad value groups, readable at 30, 48 and 60 pixels. Quiet dark background, safe edge space. Render a painted source illustration, not a pixel grid. No UI frame, captions, counters, watermarks, numerals or readable letters. Sword motion is physical; elemental power requires visible paper talismans. Doho advances to the right while continuously spinning with one sword at waist height. Show a stepping leg and turning robe. Two broad incomplete ivory rotation arcs shift sideways along his path, forming an elongated corkscrew silhouette. Keep the body and physical sword clearly visible. No atmospheric tornado, stationary circular emblem, floating swords, or elemental magic.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "1024x1024",
+      "model.custom_width": 1024,
+      "model.custom_height": 1024,
+      "model.background": "opaque",
+      "model.quality": "high",
+      "n": 1,
+      "seed": 498103,
+      "model.images.image_1": [
+        "21",
+        0
+      ]
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "39c42f9a099f8b4dbb6e4ef1e0e5e90a3424b2326f611ae151dcb618f0e71535.png"
+    }
+  }
+}

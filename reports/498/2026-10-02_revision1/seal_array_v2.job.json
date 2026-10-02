@@ -1,0 +1,39 @@
+{
+  "card": 498,
+  "asset": "seal_array_v2",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [],
+  "prompt_sha256": "bf6d73fcdc02d1b227c5f45c291a7ba64e994297f3b0c40bbf59a57e795c518a",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "opaque",
+  "quality": "medium",
+  "seed": 498201,
+  "workflow": "image_generate",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-02T13:18:28.101012+00:00",
+  "prompt_id": "2e4329fd-4d11-4b54-ad32-517403f36b47",
+  "status_response": {
+    "assigned_inference": "10.4.55.145:8080",
+    "created_at": "2026-10-02T13:18:29.2605Z",
+    "id": "2e4329fd-4d11-4b54-ad32-517403f36b47",
+    "last_state_update": "2026-10-02T13:18:45.832872Z",
+    "status": "success",
+    "updated_at": "2026-10-02T13:18:45.832872Z"
+  },
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "has_transparent_pixels": false,
+  "output": "seal_array_v2.png",
+  "output_sha256": "89c087e9abd7a8ee6f3278cdbf204447497e8ffb468348369cfe91cb09757eb4",
+  "output_bytes": 2397647
+}

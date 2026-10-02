@@ -1,0 +1,11 @@
+# Immutable generation artifacts retain exact bytes across checkouts.
+* whitespace=cr-at-eol
+native_qa/*.raw.log -text -whitespace
+2026-10-02_round1/*.api.json -text
+2026-10-02_round1/*.history.json -text
+2026-10-02_round1/*.job.json -text
+2026-10-02_round1/*.prompt.txt -text
+2026-10-02_revision1/*.api.json -text
+2026-10-02_revision1/*.history.json -text
+2026-10-02_revision1/*.job.json -text
+2026-10-02_revision1/*.prompt.txt -text
