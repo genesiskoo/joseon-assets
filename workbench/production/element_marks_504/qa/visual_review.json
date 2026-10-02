@@ -1,0 +1,117 @@
+{
+  "card": 504,
+  "rounds": ["original", "revision1"],
+  "scope": "Direct inspection of ten preserved generation originals and five revision1 alpha derivatives; native-size evidence not reviewed by this agent",
+  "reviewer": "ui-design subagent",
+  "source_images_inspected": true,
+  "images_inspected": {"original_round": 5, "revision1_generation_raw": 5, "revision1_alpha_derivative": 5},
+  "native_capture_performed_by_this_agent": false,
+  "native_result_review_performed": false,
+  "game_integration_performed": false,
+  "overall_recommendation": "HOLD for both rounds until root native alpha-composited size review; no regeneration or source cleanup is authorized by this review",
+  "global_findings": [
+    {
+      "severity": "unconfirmed_alpha_compositing_risk",
+      "finding": "The source viewer shows a broad RGB halo, but low-alpha pixels contribute only 0.64-1.17 percent of the total alpha mass. The viewer's RGB appearance alone is not proof of visible glow in native alpha compositing.",
+      "evidence": "Alpha>=16 footprints remain close to the main marks; source_check.json records both pixel-count and alpha-weighted fringe fractions.",
+      "small_size_risk": "Check native 12/14/16/18/24px alpha-composited cells before calling the no-glow contract failed. No source cleanup or regeneration is justified by the viewer alone."
+    },
+    {
+      "severity": "source_preservation",
+      "finding": "This QA task applied no recolor, alpha threshold, glow removal, crop, or manual pixel correction. Revision1 alpha derivatives were already produced by the root Cloud pipeline and are separate from its opaque-black generation originals.",
+      "evidence": "The native helper loads the selected candidate PNG through Image.load_from_file and creates its ImageTexture directly. Raw revision1 output is preserved but is not a native-board input. Each raw/candidate pair has identical decoded RGB, different alpha, and a recorded file SHA-256."
+    },
+    {
+      "severity": "earlier_visual_verdict_correction",
+      "finding": "The earlier claim that the original soul crescent was absent is withdrawn. Original RGB appears solid, but original alpha already contains a substantial enclosed negative region.",
+      "evidence": "Original enclosed alpha<128 area totals 31198px; revision1 totals 26850px. At (400,760), (620,780), (500,800) original alpha is 0,1,0 despite near-white RGB; revision1 alpha is 0,0,0 with near-black RGB. source_check.json records these unchanged-source samples.",
+      "small_size_risk": "Both rounds retain only three enclosed negative pixels under descriptive Pillow 12px alpha reduction. This does not prove which is more readable with native sampling."
+    },
+    {
+      "severity": "comparison_limit",
+      "finding": "Revision1 has less alpha-weighted low-opacity fringe (0.23-0.52 percent versus original 0.64-1.17 percent), but cleaner RGB is not an automatic native readability improvement.",
+      "evidence": "Both candidate sets pass 1024 RGBA, transparent/nonempty alpha and neutral-white core checks. The descriptive all-white 12px fire/soul alpha-overlap metric rises from 0.490196 to 0.55102 in revision1, so source cleanup alone cannot establish a better distinction.",
+      "small_size_risk": "Compare actual white and gray native cells, including possible dark edge sampling from revision1 black RGB under transparent alpha."
+    }
+  ],
+  "items": [
+    {
+      "id": "fire",
+      "motif": "Three flame tongues with a broad heavy base are present.",
+      "findings": ["Apparent broad RGB halo requires native-alpha verification", "Alpha>0 footprint touches left/bottom edges, while alpha>=16 margins remain 50px or greater"],
+      "small_size_question": "Verify that three tongues remain separate at 12px, rather than one glowing rounded mass.",
+      "source_verdict": "motif recognizable; native compositing and 12px readability pending"
+    },
+    {
+      "id": "cold",
+      "motif": "Six substantial arms around a solid center are present.",
+      "findings": ["Apparent broad RGB halo requires native-alpha verification", "Alpha>0 footprint touches left/bottom edges, while alpha>=16 margins remain 65px or greater"],
+      "small_size_question": "Verify six gaps between the arms at 12px; the source is not intrinsically a thin-filament snowflake.",
+      "source_verdict": "motif recognizable; native compositing and 12px readability pending"
+    },
+    {
+      "id": "lightning",
+      "motif": "Single connected angular bolt with two bends is present.",
+      "findings": ["Apparent broad RGB halo requires native-alpha verification", "The bolt occupies a comparatively narrow horizontal extent"],
+      "small_size_question": "Check the lower taper at 12px and optical weight beside the wide fire/cold shapes.",
+      "source_verdict": "motif recognizable; native compositing and 12px optical weight pending"
+    },
+    {
+      "id": "sal",
+      "motif": "Heavy coiled stroke with an open outer gap is present.",
+      "findings": ["Apparent RGB halo in central negative space is not proof of visible alpha-composited glow", "The rounded inner curl may merge with the outer stroke when reduced"],
+      "small_size_question": "Verify an open curl and clear central negative space at 12px in both gray and white modes.",
+      "source_verdict": "motif recognizable at source size; native compositing and small-gap readability pending"
+    },
+    {
+      "id": "soul",
+      "motif": "Rounded single spirit droplet with a hooked upper tip and an internal alpha cutout is present.",
+      "findings": ["Apparent broad RGB halo requires native-alpha verification", "The RGB view hides the internal alpha cutout; the previous omission verdict is withdrawn"],
+      "small_size_question": "Compare its single hooked tip and internal alpha crescent directly with fire in all-white 12px mode.",
+      "source_verdict": "alpha motif includes a cutout; native crescent shape and fire/soul distinction remain pending"
+    }
+  ],
+  "revision1_items": [
+    {
+      "id": "fire",
+      "motif": "Broad base with three rising tongues and two deep notches; the central tongue is tallest.",
+      "comparison": "The main shape is slightly narrower than original. Alpha>=16 minimum margin is 70px, versus 50px originally. Low-alpha mass is 0.2273 percent, versus 0.7693 percent.",
+      "small_size_question": "Confirm that both tongue notches remain open at 12px. Pillow reduction contains one enclosed negative pixel at 12px, so do not assume the open-notch source topology survives native reduction.",
+      "source_verdict": "motif retained; native 12px tongue separation pending"
+    },
+    {
+      "id": "cold",
+      "motif": "Six thick connected arms with broad gaps and angular ends.",
+      "comparison": "The six-arm structure is close to original. Alpha>=16 minimum margin is 69px, versus 65px originally. Low-alpha mass is 0.5170 percent, versus 1.1656 percent.",
+      "small_size_question": "Confirm all six endpoints and gaps at 12px. No source-size thin-filament defect was found.",
+      "source_verdict": "motif retained; native six-arm legibility pending"
+    },
+    {
+      "id": "lightning",
+      "motif": "Single solid zigzag with two bends, a broad upper shoulder and a long pointed lower end.",
+      "comparison": "It remains narrow beside the other marks. The descriptive 12px alpha>=128 footprint occupies four columns and 15 pixels, versus four columns and 16 pixels originally.",
+      "small_size_question": "Check the lower point, both bends and optical weight on dark and soil backgrounds at 12px.",
+      "source_verdict": "motif retained; native narrow-stroke weight pending"
+    },
+    {
+      "id": "sal",
+      "motif": "One heavy coil, broad upper-right open gap and substantial negative space between the outer stroke and inner curl.",
+      "comparison": "Overall geometry stays close to original. The central space is connected to the exterior, so enclosed-hole count does not measure this motif's usable opening.",
+      "small_size_question": "Confirm an open coil and visible internal negative space at 12px, especially in gray and white modes.",
+      "source_verdict": "motif retained; native coil-opening legibility pending"
+    },
+    {
+      "id": "soul",
+      "motif": "One smooth hooked tip, rounded lower bulb and a broad internal crescent visible in both RGB and alpha.",
+      "comparison": "The crescent is explicit in revision1 RGB. Original alpha already had a cutout, so this is not evidence that the original motif failed. Revision1 outer contour is smoother than the other four brush-edged marks.",
+      "small_size_question": "Check the crescent and single tip against fire at 12px. Both rounds have three enclosed negative pixels in descriptive Pillow reduction; native sampling must decide the distinction.",
+      "source_verdict": "motif present; native cutout legibility, set cohesion and fire/soul distinction pending"
+    }
+  ],
+  "root_follow_up": [
+    "Run the same helper with --round=original and --round=revision1; each default output directory is unique and contains the same color, gray and white board layout.",
+    "Review actual 12/14/16/18/24px cells; the 80px context row is not evidence of small-size readability.",
+    "Make any acceptance or regeneration decision explicitly; this subagent has not regenerated images or accepted the set.",
+    "Keep source-size QA captions distinct from live-game before/after integration screenshots."
+  ]
+}

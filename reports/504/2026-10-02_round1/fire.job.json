@@ -1,0 +1,39 @@
+{
+  "card": 504,
+  "asset": "fire",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [],
+  "prompt_sha256": "16b49beb98f0b4d804b404f529e6288f61878e04d81d6a4213acd7d2c61ddde6",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "transparent",
+  "quality": "medium",
+  "seed": 504101,
+  "workflow": "image_generate",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-02T13:18:10.780144+00:00",
+  "prompt_id": "b5d12521-f555-4bfb-ae20-d4bcc10eeb60",
+  "status_response": {
+    "assigned_inference": "10.4.24.154:8080",
+    "created_at": "2026-10-02T13:18:11.891429Z",
+    "id": "b5d12521-f555-4bfb-ae20-d4bcc10eeb60",
+    "last_state_update": "2026-10-02T13:18:26.593266Z",
+    "status": "success",
+    "updated_at": "2026-10-02T13:18:26.593266Z"
+  },
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "has_transparent_pixels": true,
+  "output": "fire.png",
+  "output_sha256": "1257d8852c904e47ec889adb8c32c032c6017428a983fe26325043ee492a6836",
+  "output_bytes": 878583
+}

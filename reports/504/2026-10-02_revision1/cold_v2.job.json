@@ -1,0 +1,47 @@
+{
+  "card": 504,
+  "asset": "cold_v2",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_round1\\cold.png",
+      "role": "edit target; preserve the five-element shape identity while removing its incorrect halo and widening specified cutouts",
+      "sha256": "214ea18f9665bd6241bc21bb6ef00ed848efd3947626aa234c597ff08ea25c7e"
+    }
+  ],
+  "prompt_sha256": "40baaae0ba091eea64a214b08baf6b1632f7b58c36467fdc8c49c6a1981df746",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "opaque",
+  "quality": "medium",
+  "seed": 504202,
+  "workflow": "image_generate_clean",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-02T13:29:21.959175+00:00",
+  "prompt_id": "562f9af9-bb3a-4396-baa8-5338cf07cfae",
+  "status_response": {
+    "assigned_inference": "10.4.25.149:8080",
+    "created_at": "2026-10-02T13:29:23.103828Z",
+    "id": "562f9af9-bb3a-4396-baa8-5338cf07cfae",
+    "last_state_update": "2026-10-02T13:29:48.470809Z",
+    "status": "success",
+    "updated_at": "2026-10-02T13:29:48.470809Z"
+  },
+  "raw_output": "cold_v2_raw.png",
+  "raw_output_sha256": "27a783e8405c60c8cb978bb93a7b02bd59939985a99ca93409c98e405e1cc018",
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_transparent_pixels": true,
+  "output": "cold_v2.png",
+  "output_sha256": "b0e7a65bc3a23357dfd56d59b6af60125fe76068ab64394826456dd49a33e448",
+  "output_bytes": 476405
+}

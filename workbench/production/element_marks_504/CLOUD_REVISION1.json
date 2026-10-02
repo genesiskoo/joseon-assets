@@ -1,0 +1,97 @@
+{
+  "card": 504,
+  "report": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_revision1",
+  "model": "gpt-image-2.5-flare",
+  "jobs": [
+    {
+      "id": "fire_v2",
+      "prompt": "Edit this element mark into a clean, flat white Korean brush silhouette on a UNIFORM SOLID PURE BLACK background (#000000). One centered mark, exactly one shape, generous margin on all four sides. The mark itself is OPAQUE PURE WHITE (#ffffff), broad solid connected strokes with only lightly uneven hard brush edges. Remove ALL diffuse haze, backlight, colored fringing, soft glow, drop shadow, gray fog, sheen and surrounding particles. Black must begin immediately at its defined edge and remain uniform all the way to the image border. Keep the silhouette bold enough for twelve-pixel display. No embossed bevel, lighting, texture inside the shape, letters, numerals, calligraphy character, frame, card, background pattern or checkerboard. Keep a broad lower base and exactly three clearly separated rising flame tongues, the central one tallest. Two deep broad black notches separate the tongues. The complete flame stays inside the safe margins.",
+      "width": 1024,
+      "height": 1024,
+      "size_preset": "1024x1024",
+      "background": "opaque",
+      "quality": "medium",
+      "seed": 504201,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_round1\\fire.png",
+          "sha256": "1257d8852c904e47ec889adb8c32c032c6017428a983fe26325043ee492a6836",
+          "role": "edit target; preserve the five-element shape identity while removing its incorrect halo and widening specified cutouts"
+        }
+      ]
+    },
+    {
+      "id": "cold_v2",
+      "prompt": "Edit this element mark into a clean, flat white Korean brush silhouette on a UNIFORM SOLID PURE BLACK background (#000000). One centered mark, exactly one shape, generous margin on all four sides. The mark itself is OPAQUE PURE WHITE (#ffffff), broad solid connected strokes with only lightly uneven hard brush edges. Remove ALL diffuse haze, backlight, colored fringing, soft glow, drop shadow, gray fog, sheen and surrounding particles. Black must begin immediately at its defined edge and remain uniform all the way to the image border. Keep the silhouette bold enough for twelve-pixel display. No embossed bevel, lighting, texture inside the shape, letters, numerals, calligraphy character, frame, card, background pattern or checkerboard. Use exactly six thick brush arms at sixty degrees around one solid center. All six endpoints clearly distinct, all gaps between arms broad black. Remove the extra fine branches; no star glow or haze.",
+      "width": 1024,
+      "height": 1024,
+      "size_preset": "1024x1024",
+      "background": "opaque",
+      "quality": "medium",
+      "seed": 504202,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_round1\\cold.png",
+          "sha256": "214ea18f9665bd6241bc21bb6ef00ed848efd3947626aa234c597ff08ea25c7e",
+          "role": "edit target; preserve the five-element shape identity while removing its incorrect halo and widening specified cutouts"
+        }
+      ]
+    },
+    {
+      "id": "lightning_v2",
+      "prompt": "Edit this element mark into a clean, flat white Korean brush silhouette on a UNIFORM SOLID PURE BLACK background (#000000). One centered mark, exactly one shape, generous margin on all four sides. The mark itself is OPAQUE PURE WHITE (#ffffff), broad solid connected strokes with only lightly uneven hard brush edges. Remove ALL diffuse haze, backlight, colored fringing, soft glow, drop shadow, gray fog, sheen and surrounding particles. Black must begin immediately at its defined edge and remain uniform all the way to the image border. Keep the silhouette bold enough for twelve-pixel display. No embossed bevel, lighting, texture inside the shape, letters, numerals, calligraphy character, frame, card, background pattern or checkerboard. Keep one single angular bolt with exactly two bends and a long pointed lower end. Broad upper shoulder and solid zigzag, with a sharp edge and no electric corona.",
+      "width": 1024,
+      "height": 1024,
+      "size_preset": "1024x1024",
+      "background": "opaque",
+      "quality": "medium",
+      "seed": 504203,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_round1\\lightning.png",
+          "sha256": "55d4fbac52222508527c3ca59bed05dc612f9c2dee932fa5a6edcc7b7469d63d",
+          "role": "edit target; preserve the five-element shape identity while removing its incorrect halo and widening specified cutouts"
+        }
+      ]
+    },
+    {
+      "id": "sal_v2",
+      "prompt": "Edit this element mark into a clean, flat white Korean brush silhouette on a UNIFORM SOLID PURE BLACK background (#000000). One centered mark, exactly one shape, generous margin on all four sides. The mark itself is OPAQUE PURE WHITE (#ffffff), broad solid connected strokes with only lightly uneven hard brush edges. Remove ALL diffuse haze, backlight, colored fringing, soft glow, drop shadow, gray fog, sheen and surrounding particles. Black must begin immediately at its defined edge and remain uniform all the way to the image border. Keep the silhouette bold enough for twelve-pixel display. No embossed bevel, lighting, texture inside the shape, letters, numerals, calligraphy character, frame, card, background pattern or checkerboard. Use one thick curved stroke making about one and one-quarter turns. The large CENTRAL HOLE must be completely BLACK and the coil has a broad BLACK open gap at the upper right. The center must never fill in. No thin extra rings.",
+      "width": 1024,
+      "height": 1024,
+      "size_preset": "1024x1024",
+      "background": "opaque",
+      "quality": "medium",
+      "seed": 504204,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_round1\\sal.png",
+          "sha256": "4c24c1ed98fa437ce1ca342cfe1037c08bb876623e1350fff7247f357e918f27",
+          "role": "edit target; preserve the five-element shape identity while removing its incorrect halo and widening specified cutouts"
+        }
+      ]
+    },
+    {
+      "id": "soul_v2",
+      "prompt": "Edit this element mark into a clean, flat white Korean brush silhouette on a UNIFORM SOLID PURE BLACK background (#000000). One centered mark, exactly one shape, generous margin on all four sides. The mark itself is OPAQUE PURE WHITE (#ffffff), broad solid connected strokes with only lightly uneven hard brush edges. Remove ALL diffuse haze, backlight, colored fringing, soft glow, drop shadow, gray fog, sheen and surrounding particles. Black must begin immediately at its defined edge and remain uniform all the way to the image border. Keep the silhouette bold enough for twelve-pixel display. No embossed bevel, lighting, texture inside the shape, letters, numerals, calligraphy character, frame, card, background pattern or checkerboard. One rounded droplet with a single smooth hooked upper tip leaning right. Cut a LARGE clearly BLACK crescent-shaped opening inside its rounded lower bulb. The inner crescent must remain evident at twelve pixels. No extra flame tongues or outer glow.",
+      "width": 1024,
+      "height": 1024,
+      "size_preset": "1024x1024",
+      "background": "opaque",
+      "quality": "medium",
+      "seed": 504205,
+      "workflow": "image_generate_clean",
+      "references": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_round1\\soul.png",
+          "sha256": "874da2b100e6363986db019fa143936b2336033947fdfd1f4d1a540e445a1be9",
+          "role": "edit target; preserve the five-element shape identity while removing its incorrect halo and widening specified cutouts"
+        }
+      ]
+    }
+  ]
+}
