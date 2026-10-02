@@ -1,0 +1,67 @@
+{
+ "cue": "level_up",
+ "v": 3,
+ "prompt": "A satisfying short traditional Korean bronze bell reward accent, no melody. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 1.0,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:25",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.988005,
+ "lufs": "-29.8",
+ "peak": "-15.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -15.69,
+   "file": "_raw/level_up_v3.wav",
+   "duration": 1.0,
+   "lufs": "-29.8",
+   "true_peak": "-15.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 43571,
+   "at": 0.988,
+   "removed_ms": 12.0,
+   "floor_db": -93.3,
+   "jump_db": 37.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.01,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -32.87,
+    -32.87
+   ],
+   "intake_tp": [
+    -16.99,
+    -16.98
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -15.71,
+   "lufs": "-29.8",
+   "true_peak": "-15.4"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "cue": "whiff",
+ "v": 1,
+ "prompt": "A light rapid sword whoosh through empty air, no impact. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.576009,
+ "lufs": "-11.1",
+ "peak": "0.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 8,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    0.0002
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/whiff_v1.wav",
+   "duration": 0.6,
+   "lufs": "-11.1",
+   "true_peak": "0.6"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25402,
+   "at": 0.576,
+   "removed_ms": 24.0,
+   "floor_db": -90.3,
+   "jump_db": 57.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.44,
+   "why": "트루피크 여유 +0.4 LU",
+   "intake_i": [
+    -11.35,
+    -11.35
+   ],
+   "intake_tp": [
+    3.57,
+    3.13
+   ]
+  },
+  "out": {
+   "over_full": 5,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.26,
+   "lufs": "-11.1",
+   "true_peak": "0.3"
+  },
+  "warn": [
+   "CLIP 8"
+  ]
+ }
+}

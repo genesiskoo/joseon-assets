@@ -1,0 +1,67 @@
+{
+ "cue": "doho_die",
+ "v": 4,
+ "prompt": "One adult Korean male death gasp and final fading exhale, no words. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 1.4,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:24",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.347007,
+ "lufs": "-13.1",
+ "peak": "-1.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -1.02,
+   "file": "_raw/doho_die_v4.wav",
+   "duration": 1.36,
+   "lufs": "-13.1",
+   "true_peak": "-1.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 59403,
+   "at": 1.347,
+   "removed_ms": 13.0,
+   "floor_db": -90.0,
+   "jump_db": 38.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.07,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -13.16,
+    -13.16
+   ],
+   "intake_tp": [
+    1.22,
+    1.15
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -1.09,
+   "lufs": "-13.1",
+   "true_peak": "-1.1"
+  },
+  "warn": []
+ }
+}

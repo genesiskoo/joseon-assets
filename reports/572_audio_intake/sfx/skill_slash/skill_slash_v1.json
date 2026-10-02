@@ -1,0 +1,69 @@
+{
+ "cue": "skill_slash",
+ "v": 1,
+ "prompt": "One forceful sword draw and fast sweeping air cut, accented with a tiny plucked string snap, traditional Korean swordsman action game, dry short effect, no melody, no voice.. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.594014,
+ "lufs": "-8.7",
+ "peak": "0.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 3,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0009,
+    -0.0012
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_slash_v1.wav",
+   "duration": 0.6,
+   "lufs": "-8.7",
+   "true_peak": "0.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26196,
+   "at": 0.594,
+   "removed_ms": 6.0,
+   "floor_db": -80.9,
+   "jump_db": 25.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.06,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -11.62,
+    -11.62
+   ],
+   "intake_tp": [
+    1.68,
+    1.62
+   ]
+  },
+  "out": {
+   "over_full": 3,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.28,
+   "lufs": "-8.7",
+   "true_peak": "0.4"
+  },
+  "warn": [
+   "CLIP 3"
+  ]
+ }
+}

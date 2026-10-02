@@ -1,0 +1,67 @@
+{
+ "cue": "waypoint_wake",
+ "v": 2,
+ "prompt": "An ancient stone waypoint awakens, small resonant bronze chime and airy stone resonance. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 1.4,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.356009,
+ "lufs": "-26.3",
+ "peak": "-16.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -16.47,
+   "file": "_raw/waypoint_wake_v2.wav",
+   "duration": 1.36,
+   "lufs": "-26.3",
+   "true_peak": "-16.5"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 59800,
+   "at": 1.356,
+   "removed_ms": 4.0,
+   "floor_db": -78.4,
+   "jump_db": 28.9,
+   "channels": "L"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.21,
+   "why": "트루피크 여유 -0.2 LU",
+   "intake_i": [
+    -26.8,
+    -26.8
+   ],
+   "intake_tp": [
+    -15.35,
+    -15.14
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -16.23,
+   "lufs": "-26.3",
+   "true_peak": "-16.2"
+  },
+  "warn": []
+ }
+}

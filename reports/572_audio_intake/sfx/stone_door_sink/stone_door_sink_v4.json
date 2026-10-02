@@ -1,0 +1,67 @@
+{
+ "cue": "stone_door_sink",
+ "v": 4,
+ "prompt": "A heavy stone door slowly slides down for two seconds, muted gritty friction then a restrained dull final thud, gentle natural recording, no loud crack, no music or speech.",
+ "seconds": 2.5,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:26",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 2.47102,
+ "lufs": "-13.8",
+ "peak": "-0.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0005,
+    0.0002
+   ],
+   "sample_peak_db": -1.03,
+   "file": "_raw/stone_door_sink_v4.wav",
+   "duration": 2.48,
+   "lufs": "-13.8",
+   "true_peak": "-1.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 108972,
+   "at": 2.471,
+   "removed_ms": 9.0,
+   "floor_db": -87.9,
+   "jump_db": 26.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.06,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -14.58,
+    -14.62
+   ],
+   "intake_tp": [
+    1.3,
+    1.32
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -0.67,
+   "lufs": "-13.8",
+   "true_peak": "-0.7"
+  },
+  "warn": []
+ }
+}

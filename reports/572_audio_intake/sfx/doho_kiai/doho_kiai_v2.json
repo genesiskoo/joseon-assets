@@ -1,0 +1,69 @@
+{
+ "cue": "doho_kiai",
+ "v": 2,
+ "prompt": "One adult Korean male energetic martial arts exertion grunt, no words. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:21",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.578005,
+ "lufs": "-13.6",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 3,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/doho_kiai_v2.wav",
+   "duration": 0.6,
+   "lufs": "-13.6",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25490,
+   "at": 0.578,
+   "removed_ms": 22.0,
+   "floor_db": -89.0,
+   "jump_db": 43.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.06,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -13.66,
+    -13.66
+   ],
+   "intake_tp": [
+    3.0,
+    2.94
+   ]
+  },
+  "out": {
+   "over_full": 1,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.03,
+   "lufs": "-13.6",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 3"
+  ]
+ }
+}

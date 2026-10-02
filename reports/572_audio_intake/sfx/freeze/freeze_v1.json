@@ -1,0 +1,67 @@
+{
+ "cue": "freeze",
+ "v": 1,
+ "prompt": "A small localized ice frost burst, sharp crisp crack with tiny icy tail. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:21",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.595011,
+ "lufs": "-22.6",
+ "peak": "-2.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -2.76,
+   "file": "_raw/freeze_v1.wav",
+   "duration": 0.6,
+   "lufs": "-22.6",
+   "true_peak": "-2.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26240,
+   "at": 0.595,
+   "removed_ms": 5.0,
+   "floor_db": -87.6,
+   "jump_db": 18.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.03,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -22.6,
+    -22.6
+   ],
+   "intake_tp": [
+    0.61,
+    0.64
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    -0.0
+   ],
+   "sample_peak_db": -2.71,
+   "lufs": "-22.6",
+   "true_peak": "-2.3"
+  },
+  "warn": []
+ }
+}

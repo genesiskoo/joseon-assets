@@ -1,0 +1,8 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(audio_cues) → 공유(boss_bulgasari,monster_motion_gallery,dialogue_band,story_cutin)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (5.0초)
+== e2e (audio_cues · 단독(시간 민감 묶음) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\572-audio-intake\\joseon","--headless","--","--e2e=audio_cues"],"phase_arg":"audio_cues","phase_tokens":["audio_cues"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":29412,"launched_utc":"2026-10-02T20:05:00.3874638Z"}
+E2E start: audio_cues
+E2E ▶ audio_cues
+  · Music 플레이어 재생 중 3 (헤드리스 드라이버에 따라 0일 수 있음)

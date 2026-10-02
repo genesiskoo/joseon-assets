@@ -1,0 +1,67 @@
+{
+ "cue": "doho_levelup",
+ "v": 2,
+ "prompt": "One confident adult Korean male relieved exhalation, no words. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.594014,
+ "lufs": "-23.1",
+ "peak": "-8.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0002,
+    0.0002
+   ],
+   "sample_peak_db": -8.73,
+   "file": "_raw/doho_levelup_v2.wav",
+   "duration": 0.6,
+   "lufs": "-23.1",
+   "true_peak": "-8.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26196,
+   "at": 0.594,
+   "removed_ms": 6.0,
+   "floor_db": -87.3,
+   "jump_db": 30.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.07,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -23.12,
+    -23.18
+   ],
+   "intake_tp": [
+    -5.79,
+    -5.92
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -8.87,
+   "lufs": "-23.1",
+   "true_peak": "-8.9"
+  },
+  "warn": []
+ }
+}
