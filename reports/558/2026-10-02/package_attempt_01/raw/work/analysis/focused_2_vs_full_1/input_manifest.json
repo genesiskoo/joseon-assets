@@ -1,0 +1,113 @@
+{
+  "candidate": "f1bf88f05a8eb48dd7d12510011245f3f6631e76",
+  "scope": "completed declared runs only; no game/test launches or candidate writes",
+  "script_sha256": "a961d63a9b51c5be7bc2b05fcdc059d8e46ef0c8125200371119d98763a7c015",
+  "phase_archive_roots": [
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1415238741716_62096",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1426594457684_60640"
+  ],
+  "inputs": [
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1415238741716_62096\\phase_1_solo\\phase.json",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\focused_2\\phase_1_solo\\phase.json",
+      "bytes": 2007,
+      "sha256": "4c94646b7b0ac9b49e9d55c90398fcf80b85b3d7774a50b2ef26448009fa08b5"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1415238741716_62096\\phase_1_solo\\godot.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\focused_2\\phase_1_solo\\godot.raw.log",
+      "bytes": 63401,
+      "sha256": "cb60f07f8dabbfe51785e4dea3f7311002e4e983e9707385d4514f8dc8f6e779"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1415238741716_62096\\phase_1_solo\\console.merged.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\focused_2\\phase_1_solo\\console.merged.raw.log",
+      "bytes": 63823,
+      "sha256": "8d4e18116ce8e6199f142c673780c712523141da9168439d9d766993a9b15918"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\RUN.json",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\focused_2\\cohort_RUN.json",
+      "bytes": 814,
+      "sha256": "1dbfcb47b39563058e11dc9d564b5778b0be91db66f99c0a8bf1c7314d88494a"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\LAUNCH.json",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\focused_2\\cohort_LAUNCH.json",
+      "bytes": 708,
+      "sha256": "8ccf948122a5f2318cf00fba6134290fdf888594d75852d81209947396c40948"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\stdout.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\focused_2\\cohort_stdout.raw.log",
+      "bytes": 53356,
+      "sha256": "f4f2ce3fe6a2e424919d3a04718ecedecc7719378baa0c0fa7cc814642401b47"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\stderr.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\focused_2\\cohort_stderr.raw.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1426594457684_60640\\phase_1_shared\\phase.json",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\phase_1_shared\\phase.json",
+      "bytes": 2616,
+      "sha256": "ebb535f987e638632e152879ffda9e8d5f291999606e5a3a77e903c7df1c2c2d"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1426594457684_60640\\phase_1_shared\\godot.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\phase_1_shared\\godot.raw.log",
+      "bytes": 582044,
+      "sha256": "470fe8df9346ab774f228bdd7c010686958a845bcb699008316521e1345c9079"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1426594457684_60640\\phase_1_shared\\console.merged.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\phase_1_shared\\console.merged.raw.log",
+      "bytes": 588970,
+      "sha256": "6cae1ce1411b2b277c722aa5140392c14909ae1601b03c45fbabd7d83f80a810"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1426594457684_60640\\phase_2_solo\\phase.json",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\phase_2_solo\\phase.json",
+      "bytes": 2708,
+      "sha256": "3d935caae8fff1ff20c14c4aea3cfe2e4b87fc9c02ab209522c35c3c379413ae"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1426594457684_60640\\phase_2_solo\\godot.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\phase_2_solo\\godot.raw.log",
+      "bytes": 100691,
+      "sha256": "fe5a79cb936a859deed4ac17bea8f79253315af05a5b5abb099136f0fde4d335"
+    },
+    {
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1426594457684_60640\\phase_2_solo\\console.merged.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\phase_2_solo\\console.merged.raw.log",
+      "bytes": 101618,
+      "sha256": "e7f66265ba8daa830c1c7fafe57097a2a549a40a7a0de118f57fd1d44e8dea44"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\full_1\\RUN.json",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\cohort_RUN.json",
+      "bytes": 784,
+      "sha256": "ccb69529853c86beb2e4d3cbfcd0db4df0e9c40619d3cf75d6eb0325f201e8c6"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\full_1\\LAUNCH.json",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\cohort_LAUNCH.json",
+      "bytes": 677,
+      "sha256": "5d5c01cb41b77f8cfc09bfb4817c608e1d45f797bfcce5395b06fd080c418e30"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\full_1\\stdout.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\cohort_stdout.raw.log",
+      "bytes": 132550,
+      "sha256": "00416b4f6bccda20f261ab33f867ef067707ce00235b02a3282ec94fd898d741"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\full_1\\stderr.raw.log",
+      "copy": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\analysis\\focused_2_vs_full_1\\phase_evidence\\full_1\\cohort_stderr.raw.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

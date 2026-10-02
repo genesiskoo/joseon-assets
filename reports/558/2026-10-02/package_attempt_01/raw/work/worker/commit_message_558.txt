@@ -1,0 +1,16 @@
+test(#558): trace natural combat boundaries and preserve phase evidence
+
+Collect default-off, read-only battle events at real actor call sites. Keep
+signed64 RNG state text, relative event/tick/swing identity and raw counters;
+flush owned fixture lifetimes once and retain every failed or extra attempt.
+
+Preserve #553 slot phases and archive original Godot bytes immediately after
+each phase. Cross-check actual argv, raw ENV/FILE/ATTEMPT/TRIES and saved traces,
+and report event/tick/state separately from exact clock float observations.
+
+Validation: trace48, actual attack/RNG48, comparer42, replay42, PS guard41;
+full Unit/tools passed before refinements, followed by affected targeted checks.
+Actual default focused2/full1 cohort and official landing remain with root;
+#536 runtime timing policy and reproducibility objective remain unresolved.
+
+Agent: Codex (GPT-6)
