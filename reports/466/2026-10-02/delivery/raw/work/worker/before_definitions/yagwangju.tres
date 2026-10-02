@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://items/item_def.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/icons_h1/jade_charm.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = "yagwangju"
+display_name = "야광주"
+slot = 2
+size = Vector2i(1, 1)
+min_ilvl = 14
+price = 400
+weight = 5
+tier = 3
+item_type = &"amulet"
+req_level = 14
+icon = ExtResource("2")
+drop_model = "res://assets/models/props/paper_talisman.glb"
+drop_scale = 1.05
+drop_rot_deg = Vector3(0, 0, 0)
+drop_tint = Color(0.85, 0.95, 1.0, 1)
+glyph = "주"
+color = Color(0.8, 0.9, 1.0, 1)

@@ -1,0 +1,21 @@
+{
+  "card": 466,
+  "phase": "after",
+  "arguments": [
+    "powershell",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "C:\\workspace\\joseon\\._tmp\\capture_466_native.ps1",
+    "-Phase",
+    "after"
+  ],
+  "started": 1790952125.6338537,
+  "pid": 17948,
+  "existing_user_sha256": {
+    "icon_intake_01_466_armor.png": "bbf61ec56fd172cca2d441f4df38769885224888fb85084483fe523046a635a8",
+    "icon_intake_02_466_accessories.png": "06b7be30f4722b69c2ee3f4fa2c110e1515220aeb3580ed7655c2970d2c5ff15",
+    "icon_intake_03_466_gear_tomes.png": "49dbc143264c3d887a920948c60b84ab4af6a7db2f35733e7533413ebb2efb68"
+  }
+}

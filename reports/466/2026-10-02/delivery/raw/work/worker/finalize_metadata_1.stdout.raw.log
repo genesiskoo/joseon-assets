@@ -1,0 +1,69 @@
+{
+  "phase": "validated_waiting_root_after",
+  "items": 15,
+  "pngs_preserved": 1125,
+  "tests": {
+    "godot_import": {
+      "completed": true,
+      "approved_png_count": 15,
+      "before_review_jpg_count": 3,
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 9.794294357299805,
+      "raw_prefix": "C:\\workspace\\joseon\\._tmp\\intake_466_20261002\\worker\\intake_import_1"
+    },
+    "test_items": {
+      "passed": true,
+      "fails": 0,
+      "checks": null,
+      "checks_count_printed": false,
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 23.324029445648193,
+      "raw_prefix": "C:\\workspace\\joseon\\._tmp\\intake_466_20261002\\worker\\unit_items_1"
+    },
+    "test_item_ui": {
+      "passed": true,
+      "checks": 37,
+      "fails": 0,
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 1.4024653434753418,
+      "raw_prefix": "C:\\workspace\\joseon\\._tmp\\intake_466_20261002\\worker\\unit_item_ui_1"
+    },
+    "dedicated_after": {
+      "passed": true,
+      "checks": 316,
+      "scenarios_passed": 1,
+      "scenarios_total": 1,
+      "returncode": 0,
+      "script_errors": 0,
+      "elapsed_seconds": 31.338205337524414,
+      "semaphore": "existing tools/test.ps1 shared slots via run_466_helper.ps1",
+      "raw_prefix": "C:\\workspace\\joseon\\._tmp\\intake_466_20261002\\worker\\helper_after_1",
+      "exit_resource_report": "WARNING: 10 ObjectDB instances were leaked at exit (run with `--verbose` for details).\n   at: cleanup (core/object/object.cpp:2536)\nERROR: 5 resources still in use at exit (run with --verbose for details).\n   at: clear (core/io/resource.cpp:822)\n",
+      "exit_report_matches_before_and_original_branch": true,
+      "origin_of_exit_report": "unconfirmed; not investigated again"
+    },
+    "focused_related": {
+      "passed": true,
+      "scenarios_passed": 4,
+      "scenarios_total": 4,
+      "checks_by_scenario": {
+        "item_ui": 42,
+        "equipment_ui": 33,
+        "belt_unify": 15,
+        "vendor_prices": 12
+      },
+      "checks_total": 102,
+      "runner_selftest_passed": true,
+      "returncode": 0,
+      "stderr_bytes": 0,
+      "elapsed_seconds": 13.285667419433594,
+      "semaphore": "existing tools/test.ps1 -E2e -Scenario item_ui,equipment_ui,belt_unify,vendor_prices",
+      "raw_prefix": "C:\\workspace\\joseon\\._tmp\\intake_466_20261002\\worker\\focused_related_1"
+    }
+  },
+  "raw_receipt": "C:\\workspace\\joseon\\._tmp\\intake_466_20261002\\worker\\INTAKE_VALIDATION.json",
+  "main_landed": false
+}

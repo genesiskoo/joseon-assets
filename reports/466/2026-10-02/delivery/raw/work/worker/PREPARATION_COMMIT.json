@@ -1,0 +1,75 @@
+{
+  "card": 466,
+  "preparation_commit": "2e8af34945974d04a02aaf9bb8b5ca503c2fc4e2",
+  "committed_paths": [
+    "docs/art/466_item_icons/manifest.json",
+    "docs/design/item_icons_466.md",
+    "docs/design/item_icons_466_log.md",
+    "tests/e2e/helpers/approved_icons_466.gd",
+    "tests/e2e/helpers/approved_icons_466.gd.uid",
+    "tests/e2e/scenarios/icon_intake.gd"
+  ],
+  "blob_verification": {
+    "docs/art/466_item_icons/manifest.json": {
+      "git_sha256": "26be2027c31c3a8cdfa034213cff0117487be71c30edad6d8dae152483b146e4",
+      "working_sha256": "2106db13dc3723abba7e23537a46b8a2c4eafa2cd75549ecdf3aaa96a9393aa0",
+      "byte_exact": false,
+      "git_text_lf_normalization_only": true,
+      "blob_crlf": 0,
+      "working_crlf": 305
+    },
+    "docs/design/item_icons_466.md": {
+      "git_sha256": "3c71a0d23c240cc83b95c41ed093f32c23de6e8e751791ee5a6f108bf40fb427",
+      "working_sha256": "3c71a0d23c240cc83b95c41ed093f32c23de6e8e751791ee5a6f108bf40fb427",
+      "byte_exact": true,
+      "git_text_lf_normalization_only": false,
+      "blob_crlf": 0,
+      "working_crlf": 0
+    },
+    "docs/design/item_icons_466_log.md": {
+      "git_sha256": "2e765ece1afec2cbf212c2be2ed10fcdc4add372636f5d4997f03937801dfec8",
+      "working_sha256": "2e765ece1afec2cbf212c2be2ed10fcdc4add372636f5d4997f03937801dfec8",
+      "byte_exact": true,
+      "git_text_lf_normalization_only": false,
+      "blob_crlf": 0,
+      "working_crlf": 0
+    },
+    "tests/e2e/helpers/approved_icons_466.gd": {
+      "git_sha256": "6394a208b0cbda91d9d851b62ff39e5ab4a00e1220000b55a5a3123421d636d0",
+      "working_sha256": "6394a208b0cbda91d9d851b62ff39e5ab4a00e1220000b55a5a3123421d636d0",
+      "byte_exact": true,
+      "git_text_lf_normalization_only": false,
+      "blob_crlf": 0,
+      "working_crlf": 0
+    },
+    "tests/e2e/helpers/approved_icons_466.gd.uid": {
+      "git_sha256": "a70d8bd53e7002e867ce9989d8a9aeeeb38730599c239c5e7c42101ef061daf5",
+      "working_sha256": "a70d8bd53e7002e867ce9989d8a9aeeeb38730599c239c5e7c42101ef061daf5",
+      "byte_exact": true,
+      "git_text_lf_normalization_only": false,
+      "blob_crlf": 0,
+      "working_crlf": 0
+    },
+    "tests/e2e/scenarios/icon_intake.gd": {
+      "git_sha256": "44c1caeffb031c38e1575c658edbb314e98960a93b664cbe35549a95560291ef",
+      "working_sha256": "44c1caeffb031c38e1575c658edbb314e98960a93b664cbe35549a95560291ef",
+      "byte_exact": true,
+      "git_text_lf_normalization_only": false,
+      "blob_crlf": 0,
+      "working_crlf": 0
+    }
+  },
+  "new_manifest_json_semantically_identical": true,
+  "git_text_lf_normalization_only": true,
+  "clean": true,
+  "new_pngs_copied": 0,
+  "item_icons_changed": 0,
+  "existing_pngs_preserved": 1125,
+  "before_capture_pending": true,
+  "targeted_before_checks": 286,
+  "script_errors": 0,
+  "original_branch_checks": 86,
+  "exit_report_origin_unconfirmed": true,
+  "exit_reports_match_existing": "ObjectDB10/resources5",
+  "raw": "C:/workspace/joseon/._tmp/intake_466_20261002/worker"
+}
