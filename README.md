@@ -1,5 +1,9 @@
 # joseon-assets
 
+> **공개 쇼케이스 · Public showcase → [showcase/](showcase/)** — 홍보·SNS용 이미지·영상과 게임 화면의 변화 기록(2D 픽셀 → 3D 아이소메트릭). Promo images and videos, plus a visual history of the game (2D pixel → 3D isometric).
+>
+> [![조선헌터스 키 비주얼 · Joseon Hunters key visual](showcase/2026-09-29_vertical-slice/key_visual.jpg)](showcase/)
+
 ## 2026-09-17 H1 기준 정리
 
 현재 제작 기준은 [H1 승인본](sheets/approved-2026-09-17-h1/SELECTION.md)과 [최신 제작 갤러리](workbench/production/h1-style-expansion-2026-09-17/index.html)다. 이전 키아트·화풍 후보·구버전 일러스트100장은 [아카이브](archive/art-history-2026-09-17/index.html)에 보관한다. 아래 기존 목록의 구버전 경로도 아카이브 위치를 따른다.

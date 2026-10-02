@@ -15,7 +15,8 @@
 
 ## 촬영
 
-- [capture_1080.avi](capture_1080.avi) = main `bab6766f`를 **1080p로 다시 찍은 원본**(Movie Maker MJPEG + PCM, 4,019프레임 · 2분 14초) — #455 대본 `_slice_capture`, 검사 33 PASS. 장면 표식 = [capture_1080_out.log](capture_1080_out.log)의 `CAPTURE <장면> BEGIN/END <프레임>`. 스팀 페이지 트레일러 등에 다시 쓸 수 있다.
+- **공개(#575)**: 이미지 = [showcase/2026-09-29_vertical-slice](../../showcase/2026-09-29_vertical-slice/) · 영상(트레일러 2 + 장면 클립 8) = Release [`showcase-2026-09-29`](https://github.com/genesiskoo/joseon-assets/releases/tag/showcase-2026-09-29) · 원본 녹화 = 구글 드라이브 `내 드라이브/JoseonHunters_raw/2026-09-29_slice_capture_1080.avi`(비공개, 장면 표식 로그 같이).
+- capture_1080.avi(로컬, 추적 안 함) = main `bab6766f`를 **1080p로 다시 찍은 원본**(Movie Maker MJPEG + PCM, 4,019프레임 · 2분 14초) — #455 대본 `_slice_capture`, 검사 33 PASS. 장면 표식 = [capture_1080_out.log](capture_1080_out.log)의 `CAPTURE <장면> BEGIN/END <프레임>`. 스팀 페이지 트레일러 등에 다시 쓸 수 있다.
 - **#455 영상은 1080p가 아니라 1280×720이었다**(manifest는 1920×1080이라 적힘). Movie Maker는 `--resolution`을 무시하고 프로젝트 창 크기로 녹화한다 → `override.cfg`에 `[display] window/size/window_width_override=1920`·`window_height_override=1080`을 두고 찍었다(시작 때만 읽으므로 게임이 뜬 직후 지움). 명령:
   `godot --path <프로젝트> --windowed --position 0,0 --fixed-fps 30 --disable-vsync --write-movie capture_1080.avi -- --e2e=_slice_capture`
 - 편집 = [tools/edit.py](tools/edit.py) `plan.json out.mp4`(컷 = 장면 표식 + 장면 안 프레임, 라우드니스 2패스, x264 2패스 24M). 계획 = tools/plan_15.json · plan_full.json. tools/ 는 `joseon/tmp/ile_497/work`에서 돌린 그대로라 경로가 그 폴더 기준이다.
