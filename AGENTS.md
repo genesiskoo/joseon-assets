@@ -209,3 +209,7 @@ Retro Diffusion은 이 저장소에서 **MCP가 아니라 REST API**로 사용�
 - 캐릭터 공식 레퍼런스는 `sheets/`, 승인된 픽셀 결과는 `sprites/`, 승인된 맵 결과는 `maps/`에 둔다.
 - 새 결과는 `inbox/`에 임시 저장하고 같은 세션 안에 분류한다. 미승인 후보·프로브·테스트는 `workbench/`로 이동한다.
 - 정리 규칙과 현재 구조는 `README.md`, 정리 이력은 `docs/ASSET_CLEANUP_LOG_2026-06-07.md`를 따른다.
+- **이 저장소는 공개(public)다** — SNS·홍보용 이미지·영상 노출과 아트 변화 기록이 목적이다(PD 2026-10-03). 홍보 자료는 `showcase/<YYYY-MM-DD>_<이름>/`(jpg + README 한/영)와 `showcase/README.md` 타임라인, 영상은 `showcase-<날짜>` GitHub Release로 낸다.
+- **큰 원본은 git에 넣지 않는다**(PD 2026-10-03, 게임 #579): 파일 하나 10MB 이상이거나 카드 하나의 원본 합이 50MB 이상이면(trace·raw 로그 묶음·원본 녹화·영상·대량 오디오 후보) 공개해도 되는 것은 GitHub Release, 나머지는 구글 드라이브 `내 드라이브/JoseonHunters_raw/<카드>/`(비공개 — 이 PC의 `G:\내 드라이브`에 복사하면 올라간다)로 뺀다. `reports/<카드>/` git에는 README(어디에 뒀는지·크기·SHA256)·도구·로그 요약·작은 대조표만 남긴다. 커밋 전에 `git diff --cached --stat`로 크기를 본다. 이미 올라간 것은 그대로 둔다(이력 재작성 금지).
+- **커밋 검사 `.githooks/pre-commit`**(게임 #581): 아트 파일(png·jpg·jpeg·webp·psd·svg·glb·gltf·fbx·obj·blend 등)은 50MB, 그 밖(json·log·wav·mp3·mp4·avi·zip 등)은 10MB부터 커밋을 막는다. `core.hooksPath`가 이 저장소 공용 설정에 절대 경로(`C:/workspace/joseon-assets/.githooks`)로 걸려 있어 모든 작업 트리에 적용된다. 막히면 위 규칙대로 Release·드라이브로 옮긴다 — `--no-verify`로 넘기지 않는다(PD 허락 때만).
+- **아트 에셋은 main에 들어가면 바로 push한다**(PD 2026-10-03 상시 지시 — 「push는 PD 지시 때만」의 예외): 원화·컨셉·아이콘·시트·스프라이트·3D 모델·렌더·showcase 이미지, workbench 후보 기록 포함. 아트 변화 과정을 GitHub에서 그대로 보이게 하려는 것이다. 오디오·검증 기록만 담긴 커밋은 PD 지시 때 push하되, 아트를 push할 때 main에 함께 쌓여 있으면 같이 올라가도 된다(큰 원본은 커밋 검사가 막는다). push 전에 API 키·토큰이 없는지 본다.
