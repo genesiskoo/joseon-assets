@@ -1,0 +1,101 @@
+== test.ps1 자기검사 — 제한 시간 (#181, 부하에서 실제 걸린 초 #436) · e2e 칸 (#553) · -Export 스위치 (#376) · 단위 층 오류 줄 (#401) ==
+  ✓ 대조군: 멈추지 않는 대본은 그대로 — 종료 코드 3 · 출력 받음 · 1.5초
+  FAIL  ⏱ hang.gd 제한 시간 8초 넘음 — 멈춤 (실제 8.5초)
+        마지막 출력 (어디서 멈췄나):
+        Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+        HANG_FIXTURE waiting pid=51048
+        [DevMode] ON
+        [godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+  ✓ 넘으면 FAIL로 센다(→ 종료 코드 1) · 줄 = 「⏱ hang.gd 제한 시간 8초 넘음 — 멈춤 (실제 8.5초)」
+  ✓ 제한에서 끊음 — 8.5초 (제한 8초)
+  ✓ godot.exe(pid 51048)는 띄운 것(pid 27380, godot_child.cmd → cmd.exe)의 자식이었다 — 손자까지 죽여야 하는 경우
+  ✓ 자식까지 정리 — 띄운 것·godot.exe 둘 다 사라짐
+  ✓ 칸 풀림 — finally 뒤 큰 잠금·칸 ① 을 혼자(FileShare.None) 다시 잡음
+  FAIL  ⏱ python sleep 제한 시간 4초 넘음 — 멈춤 (실제 4.5초)
+        마지막 출력 (어디서 멈췄나):
+        PY_HANG
+  ✓ python 도 같은 길 — FAIL · 정리 · 끊기 전 출력 남음 (4.5초)
+-- 자리 간 e2e 칸 (#553) — 임시 폴더의 칸 파일로 --
+  ✓ 공유 둘이 같이 — 칸 ①·② · 큰 잠금(옛 이름 joseon-e2e.lock) 읽기 손잡이 둘 → 옛 test.ps1(쓰기)은 못 들어온다
+  ⏳ e2e 칸 2/2 참 — ① 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 · ② 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 — 빈 칸이 나면 이어서 돈다
+  ✓ 다 차면 기다린다 (1.6초) · 줄 = 「⏳ e2e 칸 2/2 참 — ① 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 · ② 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 — 빈 칸이 나면 이어서 돈다」
+  ✓ 칸 ① 이 비면 기다리던 쪽이 잡는다
+  ⏳ 단독(시험) — 공유 칸 1/2 아직 도는 중: ② 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)
+  ✓ 단독은 공유 칸 ② 가 끝나기를 기다린다 · 못 잡으면 문을 놓는다 · 줄 = 「⏳ 단독(시험) — 공유 칸 1/2 아직 도는 중: ② 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)」
+  ✓ 단독 = 문 + 큰 잠금 쓰기 손잡이(글 = 단독) — 옛 test.ps1 도 못 들어온다
+  ⏳ 다른 자리의 단독 차례 (558-combat-clock-trace\joseon · pid 23320 · 21:48 · 단독) — 끝나면 이어서 돈다
+  ✓ 단독이 도는 동안 공유는 기다린다 · 줄 = 「⏳ 다른 자리의 단독 차례 (558-combat-clock-trace\joseon · pid 23320 · 21:48 · 단독) — 끝나면 이어서 돈다」
+  ✓ 단독 풀림 — 큰 잠금·문·칸 다 빔 · 글을 지운다(문이 잠겼는데 글이 비면 「공유가 지나가는 찰나」)
+  ⏳ 다른 자리의 단독 차례 (558-combat-clock-trace\joseon · pid 23320 · 21:48 · 단독 대기(시험)) — 끝나면 이어서 돈다
+  ✓ 문이 잠긴 동안(단독이 기다리는 중) 새 공유는 빈 칸이 있어도 안 들어온다
+  ⏳ 단독 — 공유 칸 3/3 아직 도는 중: ① 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 · ② 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 · ③ 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)
+  ✓ N=3 공유 셋이 돌면 N=2 단독도 기다린다 · 줄 = 「⏳ 단독 — 공유 칸 3/3 아직 도는 중: ① 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 · ② 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 · ③ 558-combat-clock-trace\joseon · pid 23320 · 21:48 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)」
+  ⏳ 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 옛 것은 혼자 도는 줄 알고 돌아서 끝나면 이어서 돈다
+  ⏳ 단독 — 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 끝나면 혼자 돈다 (새 공유는 막아 둠)
+  ✓ 옛 test.ps1 이 큰 잠금을 쥐면 공유도 단독도 기다린다 · 줄 = 「⏳ 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 옛 것은 혼자 도는 줄 알고 돌아서 끝나면 이어서 돈다 | ⏳ 단독 — 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 끝나면 혼자 돈다 (새 공유는 막아 둠)」
+  ✓ 「비어 있으면 단독 먼저」 — 공유가 돌면 0.02초에 그만 · 문 놓음 · 다 비면 곧바로 잡음
+  ⏳ 옛 test.ps1 이 e2e 중 (?) — 옛 것은 혼자 도는 줄 알고 돌아서 끝나면 이어서 돈다
+  ✓ 다른 프로세스(pid 21964)가 큰 잠금을 쥔 동안 못 잡음 · 쥔 채 죽으면 OS 가 풀어 잡음
+  ✓ 나누기 8/8 — all = 공유(all − 단독 묶음) + 단독 묶음 · 이름 목록은 두 쪽으로 · 창 모드·칸 1개는 통째로 단독
+  ✓ FixedFps guard: default0 + only focused60; 10 cases
+  ✓ Actual phase tokens and skipped balance scenario are distinguished
+  ✓ Explicit balance token also respects actual scenario skip
+E2E_PHASE_RAW C:\Users\FORYOU~1\AppData\Local\Temp\joseon_timeout_selftest_23320\phase_558_first
+E2E_PHASE_RAW C:\Users\FORYOU~1\AppData\Local\Temp\joseon_timeout_selftest_23320\phase_558_second
+  ✓ Failed phase raw bytes stay intact when next phase rotates the source
+  ✓ 단독 묶음 10개가 러너 SCENARIOS 에 다 있다 (balance_room, balance_boss, hit_stagger, pack_perf, bodies_cap, gimmicks, item_showcase, footsteps, audio_cues, sfx_limiter)
+-- -Export 스위치 (#376) — 가짜 도구로 --
+  ✓ 스위치 → 층: (없음) = 단위·e2e · -Export = 내보내기 · -Export -Unit = 단위·내보내기 · -Export -E2e = e2e·내보내기 · -Unit = 단위 (기본에 내보내기 없음)
+  · 남은 PCK 지움 — C:\Users\FORYOU~1\AppData\Local\Temp\joseon_timeout_selftest_23320\export_out\game.pck
+  PASS  export_check.py  EXPORT_CHECK files=1 lines=1 changed=0 missing=0 extra=0 PASS (0.0초 — 제한 60초)
+  ✓ 대조군: 끝 줄 PASS + 종료 코드 0 → PASS · FAIL 안 늚 · 남은 PCK 지움 (0.0초)
+  FAIL  export_check.py  EXPORT_CHECK files=1 lines=1 changed=1 missing=0 extra=0 FAIL (0.0초 — 제한 60초)
+  ✓ 도구 FAIL(끝 줄 FAIL · 종료 코드 1) → FAIL로 센다(→ 종료 코드 1)
+  stub: no verdict line
+  FAIL  export_check.py  끝 줄 EXPORT_CHECK 없음 (종료 코드 0) — 판정 전에 끝났다 (0.0초 — 제한 60초)
+  FAIL  export_check.py  끝 줄은 PASS인데 종료 코드 1 (0.0초 — 제한 60초)
+  ✓ 판정 없는 초록 금지 — 끝 줄 없음(종료 코드 0) → FAIL · 끝 줄 PASS인데 종료 코드 1 → FAIL
+  EXPORT_HANG
+  FAIL  ⏱ export_check.py 제한 시간 4초 넘음 — 멈춤 (실제 4.6초)
+        마지막 출력 (어디서 멈췄나):
+        EXPORT_HANG
+  · 남은 PCK 지움 — C:\Users\FORYOU~1\AppData\Local\Temp\joseon_timeout_selftest_23320\export_out\game.pck
+  ✓ 멈추면 ⏱ FAIL · 자식 정리 · PCK 지움 (4.6초, 제한 4초)
+  ✓ 진짜 명령줄 test.ps1 -Export · 가짜 PASS → 종료 코드 0 · 내보내기 층만(단위·e2e 표식 없음) · PCK 지움 (0.4초)
+  ✓ 진짜 명령줄 test.ps1 -Export · 가짜 FAIL → 종료 코드 1 (도구 FAIL 이 test.ps1 종료 코드로) (0.4초)
+-- 단위 층 오류 줄·종료 코드 (#401·#368) — 가짜 단위 시험으로 --
+  ✓ 글자 규칙 19/19 — 센다: SCRIPT ERROR·Parse Error·Compile Error·Compilation failed(#368)·SHADER ERROR·줄 머리 ERROR:·USER ERROR·색 글자 / 안 센다: WARNING·at: 줄·문장 속·소문자 / 거른다: 허용 목록(전부·그 시험만) / 자리 = 역추적·at:
+  PASS  unit_clean.gd  UNIT_FAKE_TEST checks=1 fails=0 PASS  (1.4초)
+  ✓ 대조군: 오류 없는 가짜 시험 → PASS · FAIL 안 늚 (1.4초)
+  FAIL  unit_cut.gd  오류 줄 1 — 합격 줄이 있어도 FAIL (#401): SCRIPT ERROR: Cannot call method 'call' on a null value.  (unit_cut.gd:11)
+        합격 줄: UNIT_FAKE_TEST checks=2 fails=0 PASS  (1.5초)
+  ✓ #377 모양 — 절이 SCRIPT ERROR 로 끊겨도 합격 줄이 찍힌다 → FAIL 한 번 · 첫 오류 = 「SCRIPT ERROR: Cannot call method 'call' on a null value.  (unit_cut.gd:11)」
+  FAIL  unit_parse.gd  오류 줄 2 — 합격 줄이 있어도 FAIL (#401): SCRIPT ERROR: Parse Error: Unexpected "Indent" in class body.  (unit_broken.gd:3)
+        ERROR: Failed to load script "C:/Users/FORYOU~1/AppData/Local/Temp/joseon_timeout_selftest_23320/unit/unit_broken.gd" with error "Parse error".  (unit_parse.gd:4)
+        합격 줄: UNIT_FAKE_TEST checks=1 fails=0 PASS loaded=true  (1.4초)
+  ✓ 망가진 대본을 읽고 합격 줄 → FAIL 한 번 · 오류 줄 2 · 첫 오류 = 「SCRIPT ERROR: Parse Error: Unexpected "Indent" in class body.  (unit_broken.gd:3)」
+  PASS  unit_leak.gd  UNIT_FAKE_TEST checks=1 fails=0 PASS  (1.4초) · 허용 목록 오류 줄 1 거름
+  ✓ 허용 목록 줄만(판정 줄 뒤 종료 보고 「resources still in use at exit」 · ObjectDB 는 WARNING) → PASS · 거른 줄 1
+  PASS  unit_scoped.gd  UNIT_FAKE_TEST checks=1 fails=0 PASS  (1.4초) · 허용 목록 오류 줄 1 거름
+  FAIL  unit_other.gd  오류 줄 1 — 합격 줄이 있어도 FAIL (#401): ERROR: UNIT_SELFTEST_SCOPED probe  (unit_scoped.gd:3)
+        합격 줄: UNIT_FAKE_TEST checks=1 fails=0 PASS  (1.5초)
+  ✓ 그 시험에만 거르는 허용 줄 — 제 이름이면 PASS(거름 1) · 딴 이름이면 같은 줄로 FAIL
+  FAIL  unit_nopass.gd  — 첫 오류: ERROR: UNIT_FAKE failing check  (unit_nopass.gd:3)
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+ERROR: UNIT_FAKE failing check
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _init (C:/Users/FORYOU~1/AppData/Local/Temp/joseon_timeout_selftest_23320/unit/unit_nopass.gd:3)
+UNIT_FAKE_TEST checks=1 fails=1 FAIL
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+
+  ✓ 합격 줄 없음 + 오류 줄 → FAIL 은 한 번만(겹쳐 세지 않음)
+  FAIL  unit_pass_bad_exit.gd  합격 줄은 있는데 종료 코드 7 — FAIL (#368): UNIT_FAKE_TEST checks=1 fails=0 PASS
+        UNIT_FAKE_TEST checks=1 fails=0 PASS  (1.5초)
+  ✓ #368 — 오류 줄 0개 + 합격 줄만 있어도 종료 코드 7 ≠ 0 이면 FAIL 한 번(고치기 전엔 PASS 였다)
+  FAIL  unit_bare_compile_fail.gd  오류 줄 1 — 합격 줄이 있어도 FAIL (#401): Compilation failed: a dependency did not build
+        합격 줄: UNIT_FAKE_TEST checks=1 fails=0 PASS  (1.4초)
+  ✓ #368 — SCRIPT ERROR·줄 머리 ERROR: 없이 「Compilation failed」만 있어도 FAIL 한 번 · 첫 오류 = 「Compilation failed: a dependency did not build」
+TIMEOUT_SELFTEST PASS (확인 41/41)

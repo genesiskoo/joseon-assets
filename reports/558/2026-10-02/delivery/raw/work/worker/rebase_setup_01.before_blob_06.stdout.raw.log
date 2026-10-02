@@ -1,0 +1,295 @@
+extends RefCounted
+## #558 읽기 전용 전투 계측. 기본 꺼짐, 호출 위치에서 동기로 읽고 판 끝에만 저장한다.
+## 역할/생성순서와 상대 tick/swing이 비교 키다. instance/frame/epoch는 raw 증거로만 남긴다.
+## 왜 이 구조인가: 별도 스케줄러/신호 연결 없이 실제 경계를 읽어 선공권·RNG 소비 순서를 유지한다.
+## 수동 애니 구동이나 전역 FPS 강제는 실전 경로를 바꾸므로 쓰지 않는다.
+
+static var _enabled := false
+static var _generation := 0   # 진단 수명만. 게임/애니 카운터와 무관하다.
+static var _tree: SceneTree
+static var _meta: Dictionary = {}
+static var _events: Array[Dictionary] = []
+static var _bodies: Dictionary = {}
+static var _aliases: Dictionary = {}
+static var _tick0 := 0
+static var _frame0 := 0
+static var _epoch := 0.0
+static var _wall0 := 0
+static var _observe_usec := 0
+static var _directory := ""
+static var _last_summary: Dictionary = {}
+
+
+static func enabled() -> bool:
+	return _enabled
+
+
+static func requested() -> bool:
+	return OS.get_cmdline_user_args().has("--combat-trace")
+
+
+static func requested_directory() -> String:
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--combat-trace-dir="):
+			return arg.trim_prefix("--combat-trace-dir=")
+	return "user://combat_trace"
+
+
+static func decimal(value: int) -> String:
+	return str(value)   # signed64 → 문자열 직행. JSON 숫자/float를 경유하지 않는다.
+
+
+static func exact(value: float) -> String:
+	return "%.17f" % value
+
+
+static func vector(value: Vector3) -> Array[String]:
+	return [exact(value.x), exact(value.y), exact(value.z)]
+
+
+static func begin(tree: SceneTree, meta: Dictionary, directory: String) -> int:
+	if _enabled:
+		finish("replaced")
+	_generation += 1
+	_tree = tree
+	_meta = meta.duplicate(true)
+	_events = []
+	_bodies = {}
+	_aliases = {}
+	_tick0 = Engine.get_physics_frames()
+	_frame0 = Engine.get_process_frames()
+	_epoch = GameClock.now
+	_wall0 = Time.get_ticks_usec()
+	_observe_usec = 0
+	_directory = directory
+	_enabled = true
+	event("battle_begin", "BalanceCombatRng.begin", null)
+	return _generation
+
+
+static func owns(generation: int) -> bool:
+	return _enabled and generation > 0 and generation == _generation
+
+
+static func finish_owned(generation: int, reason: String, outcome: Dictionary = {}) -> Dictionary:
+	return finish(reason, outcome) if owns(generation) else {}
+
+
+## 바인딩은 기존 fixture가 정한 role/ordinal만 받는다. RNG·swing 상태를 바꾸지 않는다.
+static func bind_actor(actor: Node, role: String, ordinal: int, rng: RandomNumberGenerator, seed: int, initial: int) -> void:
+	if not _enabled or not is_instance_valid(actor):
+		return
+	var started := Time.get_ticks_usec()
+	var body := actor.get_parent() if role == "doho" else actor
+	var visual := body.get_node_or_null("Visual")
+	var swing0 := int(visual.get("_swing_no")) if visual != null else 0
+	var key := role + str(ordinal)
+	_bodies[key] = {"actor": weakref(actor), "body": weakref(body), "visual": weakref(visual) if visual != null else null,
+		"rng": rng, "seed": decimal(seed), "initial": decimal(initial), "swing0": swing0,
+		"hitstop0": int(visual.get("_hitstop_token")) if visual != null else 0,
+		"raw_actor_id": decimal(actor.get_instance_id()), "raw_body_id": decimal(body.get_instance_id())}
+	_aliases[actor.get_instance_id()] = key
+	_aliases[body.get_instance_id()] = key
+	_observe_usec += Time.get_ticks_usec() - started
+	event("body_bound", "BalanceCombatRng._bind_actor", actor, {"role": role, "ordinal": ordinal, "seed": decimal(seed), "initial": decimal(initial)})
+
+
+static func body_key(source: Node) -> String:
+	var node := source
+	while is_instance_valid(node):
+		if _aliases.has(node.get_instance_id()):
+			return String(_aliases[node.get_instance_id()])
+		node = node.get_parent()
+	return "unbound" if source != null else "fixture"
+
+
+static func relative_swing(source: Node, absolute: int) -> int:
+	var key := body_key(source)
+	return absolute - int(_bodies[key].swing0) if absolute >= 0 and _bodies.has(key) else -1
+
+
+static func relative_hitstop(source: Node, absolute: int) -> int:
+	var key := body_key(source)
+	return absolute - int(_bodies[key].hitstop0) if _bodies.has(key) else absolute
+
+
+static func rng_key(rng: RandomNumberGenerator) -> String:
+	for key in _bodies:
+		if _bodies[key].rng == rng:
+			return String(key)
+	return "unbound"
+
+
+## 예약 타깃과 현재 Combat.target이 다를 수 있으므로 실제 e의 위치·거리를 별도로 읽는다.
+static func attack_target(source: Node, target: Node) -> Dictionary:
+	var out := {"target": body_key(target), "valid": is_instance_valid(target)}
+	if not is_instance_valid(target):
+		return out
+	out["detached"] = not target.is_inside_tree()
+	if not target.is_inside_tree():
+		return out
+	if target is Node3D:
+		out["position"] = vector(target.global_position)
+		var key := body_key(source)
+		var body: Node3D = _bodies[key].body.get_ref() if _bodies.has(key) else null
+		if is_instance_valid(body) and body.is_inside_tree():
+			var flat: Vector3 = target.global_position - body.global_position
+			flat.y = 0.0
+			out["distance"] = exact(flat.length())
+	if "state" in target:
+		out["state"] = int(target.get("state"))
+	if target is CollisionObject3D:
+		out["collision_layer"] = target.collision_layer
+		out["collision_mask"] = target.collision_mask
+	return out
+
+
+static func _body_state(key: String) -> Dictionary:
+	if not _bodies.has(key):
+		return {}
+	var rec: Dictionary = _bodies[key]
+	var out := {"rng_state": decimal((rec.rng as RandomNumberGenerator).state)}
+	var actor: Node = rec.actor.get_ref()
+	var body: Node3D = rec.body.get_ref()
+	if not is_instance_valid(actor) or not is_instance_valid(body):
+		out["freed"] = true
+		return out
+	if not body.is_inside_tree():
+		out["detached"] = true
+		return out
+	out["position"] = vector(body.global_position)
+	out["node_process_priority"] = actor.process_priority
+	out["node_physics_priority"] = actor.process_physics_priority
+	if body is CharacterBody3D:
+		out["velocity"] = vector(body.velocity)
+		out["collision_layer"] = body.collision_layer
+		out["collision_mask"] = body.collision_mask
+		out["on_floor"] = body.is_on_floor()
+		var hits: Array[Dictionary] = []
+		for i in body.get_slide_collision_count():
+			var hit: KinematicCollision3D = body.get_slide_collision(i)
+			var collider := hit.get_collider() as Node
+			hits.append({"body": body_key(collider), "raw_name": String(collider.name) if is_instance_valid(collider) else "freed",
+				"normal": vector(hit.get_normal()), "position": vector(hit.get_position()), "depth": exact(hit.get_depth())})
+		out["slide_collisions"] = hits
+	var target: Node3D = actor.get("target") if key.begins_with("doho") else actor.get("_target")
+	if is_instance_valid(target):
+		out["target"] = body_key(target)
+		out["target_detached"] = not target.is_inside_tree()
+		if target.is_inside_tree():
+			out["target_position"] = vector(target.global_position)
+			var flat := target.global_position - body.global_position
+			flat.y = 0.0
+			out["target_distance"] = exact(flat.length())
+	else:
+		out["target"] = "none"
+	for field in ["hp", "max_hp", "mp", "max_mp", "_attack_timer", "_cooldown", "_state_timer", "_charge_cd"]:
+		if field in actor:
+			out[field] = exact(float(actor.get(field)))
+	# 절대 deadline/sentinel을 raw로 두고 실제 남은 시간만 비교한다. runtime 값은 건드리지 않는다.
+	var stagger_owner: Node = body if "_stagger_until" in body else actor
+	if "_stagger_until" in stagger_owner:
+		var deadline := float(stagger_owner.get("_stagger_until"))
+		out["raw_stagger_until"] = exact(deadline)
+		out["stagger_remaining"] = exact(maxf(0.0, deadline - GameClock.now))
+		out["stagger_future"] = deadline > GameClock.now
+	if "state" in actor:
+		out["state"] = int(actor.get("state"))
+	if "cooldowns" in actor:
+		var cds: Array[String] = []
+		for cd in actor.get("cooldowns"):
+			cds.append(exact(float(cd)))
+		out["cooldowns"] = cds
+		out["active_skill"] = int(actor.get("active_skill"))
+	var visual: Node = rec.visual.get_ref() if rec.visual != null else null
+	if is_instance_valid(visual):
+		var no := int(visual.get("_swing_no"))
+		out["swing"] = no - int(rec.swing0)
+		out["raw_swing"] = decimal(no)
+		var deadline := float(visual.get("_busy_until"))
+		out["raw_busy_until"] = exact(deadline)
+		out["busy_remaining"] = exact(maxf(0.0, deadline - GameClock.now))
+		out["busy_future"] = deadline > GameClock.now
+		out["committed"] = bool(visual.get("_committed"))
+		out["stopped"] = bool(visual.get("_stopped"))
+		var mixer := visual.get("_anim") as AnimationPlayer
+		if mixer != null:
+			out["clip"] = String(mixer.current_animation)
+			out["clip_position"] = exact(mixer.current_animation_position) if not String(mixer.current_animation).is_empty() else "not_playing"
+			out["clip_speed"] = exact(mixer.speed_scale)
+			out["mixer_callback_mode"] = int(mixer.callback_mode_process)
+			out["mixer_process_priority"] = mixer.process_priority
+			out["mixer_physics_priority"] = mixer.process_physics_priority
+	return out
+
+
+## phase는 호출자가 적은 경로와 실제 physics 여부 둘 다 보존한다. callback mode로 추정하지 않는다.
+static func event(kind: String, callsite: String, source: Node, fields: Dictionary = {}) -> void:
+	if not _enabled:
+		return
+	var started := Time.get_ticks_usec()
+	var key := body_key(source)
+	if source != null and key == "unbound":
+		return   # 지정 보스 층의 실제 4~6몸만. 다른 층/FX의 가짜 스트림은 만들지 않는다.
+	_events.append({"event_seq": _events.size() + 1, "kind": kind, "callsite": callsite, "body": key,
+		"tick": Engine.get_physics_frames() - _tick0, "process_frame": Engine.get_process_frames() - _frame0,
+		"physics": Engine.is_in_physics_frame(), "game_relative": exact(GameClock.now - _epoch),
+		"raw_physics_frame": decimal(Engine.get_physics_frames()), "raw_process_frame": decimal(Engine.get_process_frames()),
+		"raw_game_time": exact(GameClock.now), "state": _body_state(key), "fields": fields.duplicate(true)})
+	_observe_usec += Time.get_ticks_usec() - started
+
+
+static func snapshot() -> Dictionary:
+	var streams: Array[Dictionary] = []
+	var missing: Array[String] = []
+	for key in ["doho0", "heukrang0", "guard_bat1", "guard_bat2", "summon_bat1", "summon_bat2"]:
+		if not _bodies.has(key):
+			missing.append(key)
+			continue
+		var rec: Dictionary = _bodies[key]
+		streams.append({"body": key, "seed": rec.seed, "initial": rec.initial,
+			"final": decimal((rec.rng as RandomNumberGenerator).state), "raw_actor_id": rec.raw_actor_id,
+			"raw_body_id": rec.raw_body_id, "raw_swing_origin": decimal(int(rec.swing0))})
+	return {"schema": 1, "engine_pid": OS.get_process_id(), "raw_trace_generation": decimal(_generation), "battle": _meta.duplicate(true), "raw_epoch": exact(_epoch),
+		"raw_tick_origin": decimal(_tick0), "raw_process_origin": decimal(_frame0), "physics_hz": Engine.physics_ticks_per_second,
+		"time_scale": exact(Engine.time_scale), "streams": streams, "not_spawned": missing, "events": _events.duplicate(true)}
+
+
+## 정상 종료·timeout·중단·tree_exiting 모두 한 번만 저장한다. 출력 전에 disabled로 바꾼다.
+static func finish(reason: String, outcome: Dictionary = {}) -> Dictionary:
+	if not _enabled:
+		return {}
+	event("battle_end", "BalanceCombatRng.finish", null, {"reason": reason})
+	var document := snapshot()
+	document["reason"] = reason
+	document["outcome"] = outcome.duplicate(true)
+	document["overhead"] = {"observe_usec": decimal(_observe_usec), "wall_usec": decimal(Time.get_ticks_usec() - _wall0),
+		"event_count": _events.size(), "scope": "bind/event collection only; serialization measured separately; no zero-impact claim"}
+	_enabled = false
+	var serialize0 := Time.get_ticks_usec()
+	var content := JSON.stringify(document)
+	var serialization_usec := Time.get_ticks_usec() - serialize0
+	var dir := ProjectSettings.globalize_path(_directory)
+	var path := dir.path_join("trace_%d_Lv%d_attempt%d.json" % [OS.get_process_id(), int(_meta.get("level", 0)), int(_meta.get("attempt", 0))])
+	var saved := false
+	if DirAccess.make_dir_recursive_absolute(dir) == OK and not FileAccess.file_exists(path):
+		var file := FileAccess.open(path, FileAccess.WRITE)
+		if file != null:
+			file.store_string(content)
+			file.close()
+			saved = true
+	_last_summary = {"path": path, "saved": saved, "reason": reason, "events": _events.size(), "pid": OS.get_process_id(),
+		"level": int(_meta.get("level", 0)), "attempt": int(_meta.get("attempt", 0)), "observe_usec": decimal(_observe_usec),
+		"serialization_usec": decimal(serialization_usec)}
+	print("BALANCE_TRACE_FILE " + JSON.stringify(_last_summary))
+	if not saved:
+		push_error("CombatTrace: trace output failed or would overwrite an existing file: " + path)
+	_tree = null
+	_bodies = {}
+	_aliases = {}
+	_events = []
+	return document
+
+
+static func last_summary() -> Dictionary:
+	return _last_summary.duplicate(true)
