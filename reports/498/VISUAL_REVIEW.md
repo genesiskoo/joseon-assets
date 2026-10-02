@@ -20,3 +20,13 @@
 Native 검수 화면은 전체128, 이미지30/48/60, HUD30/p3·60/p5, 스킬48/p3을 나란히 보여 준다. `revisions`는 4개의 같은 슬롯 before/after만 담으며 새 반입 비교가 아니다. 패킹10종·원본14장·해시·RGBA128·기존3종은 `packing_qa.json` PASS, 독립 Godot 헤드리스 검증은 `native_qa/verify.raw.log`의 `GODOT_498_VERIFY_PASS`다. Native 캡처와 최종 PD 채택은 지휘 세션이 이어서 확인한다. 게임 반입 0종·전체 Unit/E2E 미실행(게임 코드 변경0)이다.
 
 Sandbox import/verify 중 나온 엔진 환경 오류는 `native_qa/import.raw.log`·`verify.raw.log`에 원문 보존했다. 루트 인증서 저장소, 분리된 user:// 편집기 디렉터리, Steam 설치 경로의 편집기 설정 저장 권한 메시지가 있으며 스크립트 파싱 오류는 없다. 실행 PASS와 이 원문을 함께 전달한다.
+
+Native 최초 시도에서 `overview`는 완료됐지만 `sizes_a`의 실제 `_draw`가 다음 오류로 끊겼다. 최초 콘솔·PNG는 지휘 세션의 `native_qa_root/original/`에 보존하며, 해당 `sizes_a` PNG와 뒤따른 CAPTURE_PASS는 무효다. 헤드리스 VERIFY는 그리기를 거치지 않아 이 오류를 검증하지 못했다. `indices` 조건식의 일반 배열→정수 배열 대입을 명시적인 `Array[int].assign()`로 고치고, 그리기 완료 표식과 런타임 Logger의 비경고 오류0을 확인한 뒤에만 PNG/PASS를 만들도록 보완했다. 지휘 세션이 새 `native_qa_root/original_attempt2/`에서 Native 네모드 재시도를 확인하기 전까지 작은 슬롯 검수는 완료로 판정하지 않는다.
+
+```text
+SCRIPT ERROR: Trying to assign an array of type "Array" to a variable of type "Array[int]".
+   at: Plate._draw_sizes (res://qa_godot.gd:54)
+   GDScript backtrace (most recent call first):
+       [0] _draw_sizes (res://qa_godot.gd:54)
+       [1] _draw (res://qa_godot.gd:31)
+```

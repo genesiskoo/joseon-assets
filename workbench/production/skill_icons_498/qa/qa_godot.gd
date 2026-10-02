@@ -5,12 +5,30 @@ const SKIN := preload("res://ui_skin_snapshot.gd")
 const REVISED := ["seal_array", "blade_storm", "breath", "pouch"]
 const MODES := ["overview", "sizes_a", "sizes_b", "revisions"]
 
+class DrawErrors extends Logger:
+	var count := 0
+	var mutex := Mutex.new()
+
+	func total() -> int:
+		mutex.lock()
+		var current := count
+		mutex.unlock()
+		return current
+
+	func _log_error(_function: String, _file: String, _line: int, _code: String, _rationale: String, _editor_notify: bool, error_type: int, _script_backtraces: Array[ScriptBacktrace]) -> void:
+		if error_type == ERROR_TYPE_WARNING:
+			return
+		mutex.lock()
+		count += 1
+		mutex.unlock()
+
 class Plate extends Node2D:
 
 	var font: Font
 	var rows: Array[Dictionary] = []
 	var before: Dictionary = {}
 	var mode := "overview"
+	var rendered := false
 
 	func label(at: Vector2, value: String, px: int = 16, bright: bool = false) -> void:
 		draw_string(font, at, value, HORIZONTAL_ALIGNMENT_LEFT, -1, px, Color("e5d5bd") if bright else Color("b9ad99"))
@@ -21,6 +39,7 @@ class Plate extends Node2D:
 		assert(SKIN.item_icon(self, rect, texture, 1.0, padding))
 
 	func _draw() -> void:
+		rendered = false
 		draw_rect(Rect2(0, 0, 1280, 720), Color("211d19"))
 		label(Vector2(24, 32), "#498 신규10종 후보 · " + mode + " · 게임 반입 0종", 22, true)
 		if mode == "overview":
@@ -46,12 +65,17 @@ class Plate extends Node2D:
 			label(Vector2(x, y + 150), row.spec.display_name, 17, true)
 			label(Vector2(x, y + 174), row.spec.id + " · " + row.spec.selected_version, 13)
 		label(Vector2(24, 702), "승인 아이콘은 원본128 그대로 · 신규는 1024→128 Lanczos · 색/알파/구도 편집 없음", 14)
+		rendered = true
 
 	func _draw_sizes() -> void:
 		var specs: Array = [[30, 0.0, false, 320.0, "이미지30"], [48, 0.0, false, 430.0, "이미지48"], [60, 0.0, false, 550.0, "이미지60"], [30, 3.0, true, 700.0, "HUD30/p3"], [60, 5.0, true, 835.0, "HUD60/p5"], [48, 3.0, true, 1000.0, "스킬48/p3"]]
 		for spec in specs:
 			label(Vector2(float(spec[3]) - 5, 67), String(spec[4]), 15, true)
-		var indices: Array[int] = [0, 1, 2, 3, 4, 5, 6] if mode == "sizes_a" else [0, 1, 2, 7, 8, 9, 10, 11, 12]
+		var indices: Array[int] = []
+		if mode == "sizes_a":
+			indices.assign([0, 1, 2, 3, 4, 5, 6])
+		else:
+			indices.assign([0, 1, 2, 7, 8, 9, 10, 11, 12])
 		var step: float = 80.0 if mode == "sizes_a" else 68.0
 		for i in indices.size():
 			var row: Dictionary = rows[indices[i]]
@@ -62,6 +86,7 @@ class Plate extends Node2D:
 				var side := float(spec[0])
 				icon(Rect2(float(spec[3]), y + (60.0 - side) * 0.5, side, side), row.texture, float(spec[1]), bool(spec[2]))
 		label(Vector2(24, 717), "현재 UiSkin/slot 스냅샷 · 선형 필터/알파 경계 크롭 · p=그림 여백 · 게임 미반입", 12)
+		rendered = true
 
 	func _draw_revisions() -> void:
 		label(Vector2(24, 59), "보완4의 같은 슬롯 비교 · 원본10의 나머지6장은 이 화면에 없음", 15)
@@ -82,6 +107,7 @@ class Plate extends Node2D:
 				icon(Rect2(float(setting[2]), top, side, side), before[uid], float(setting[1]), true)
 				icon(Rect2(float(setting[3]), top, side, side), row.texture, float(setting[1]), true)
 		label(Vector2(24, 705), "before=round1 · after=revision1 · 4보완을 후보로 선택 · 원본14 모두 보존 · 실제 신규 반입 0", 14)
+		rendered = true
 
 var pack_root := ""
 var out_dir := ""
@@ -132,6 +158,8 @@ func _launch() -> void:
 		return
 	assert(DisplayServer.get_name() != "headless", "Native capture requires window mode; use --verify-only for headless")
 	assert(DirAccess.make_dir_recursive_absolute(out_dir) == OK)
+	var draw_errors := DrawErrors.new()
+	OS.add_logger(draw_errors)
 	root.content_scale_mode = Window.CONTENT_SCALE_MODE_DISABLED
 	root.size = Vector2i(1280, 720)
 	root.title = "#498 skill icon candidates — native QA " + mode
@@ -141,9 +169,15 @@ func _launch() -> void:
 	await process_frame
 	await create_timer(0.4).timeout
 	await RenderingServer.frame_post_draw
+	var error_count := draw_errors.total()
+	OS.remove_logger(draw_errors)
+	if error_count > 0 or not plate.rendered:
+		print("GODOT_498_CAPTURE_FAIL mode=", mode, " draw_errors=", error_count, " rendered=", plate.rendered, "; PNG/PASS suppressed")
+		quit(1)
+		return
 	var capture := root.get_texture().get_image()
 	assert(capture.get_size() == Vector2i(1280, 720))
 	var output := out_dir.path_join("native_%s.png" % mode)
 	assert(capture.save_png(output) == OK)
-	print("GODOT_498_CAPTURE_PASS mode=", mode, " width1280/height720/UiSkinSnapshot/linear/intake0 output=", output)
+	print("GODOT_498_CAPTURE_PASS mode=", mode, " draw_errors0/rendered/width1280/height720/UiSkinSnapshot/linear/intake0 output=", output)
 	quit(0)

@@ -15,6 +15,8 @@ godot --headless --path workbench/production/skill_icons_498/qa -s res://qa_godo
 
 Native 캡처는 지휘 세션이 창 모드로 실행한다. `--mode`에 `overview`, `sizes_a`, `sizes_b`, `revisions`를 차례로 지정한다. 화면은 1280×720이며 캡처 후 종료한다. 출력은 `reports/498/native_qa/native_<mode>.png`; 마지막 줄의 PASS와 실제 파일을 함께 확인한다.
 
+헤드리스 `--verify-only`는 원본/텍스처/메타데이터를 읽으며 실제 `_draw` 완료를 검증하지 않는다. Native 캡처는 그리기 완료 표식과 그리기 중 런타임 오류0을 확인한 다음만 PNG/PASS를 출력한다. 최초 `sizes_a` 실패 결과는 `reports/498/native_qa_root/original/`에 지휘 세션이 보존하며 재시도는 새 `original_attempt2/`에 `--out=<절대경로>`로 분리한다.
+
 ```powershell
 godot --path C:/workspace/joseon/._tmp/assets_498/workbench/production/skill_icons_498/qa -s res://qa_godot.gd --log-file C:/workspace/joseon/._tmp/assets_498/reports/498/native_qa/capture_revisions.raw.log -- --mode=revisions
 python workbench/production/skill_icons_498/pack_candidates.py --compress-native
