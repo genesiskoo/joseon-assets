@@ -1,0 +1,73 @@
+{
+  "card": 554,
+  "date": "2026-10-02",
+  "human_approval_text_verbatim": "채택합치고 나머지 작업도 쭉 진행해\n",
+  "human_message_id": "01a0fc6d-8a5c-7ee0-92b7-3991c41dd617",
+  "source_thread_id": "01a0ab0c-798a-7282-8f8b-e183b8b90559",
+  "preceding_question_verbatim": "#554 UI 3종을 채택하고 합칠까요?",
+  "source_evidence": "C:/workspace/joseon/._tmp/adoption_554_20261002/resumed_worker/authorization_explicit_from_thread.json",
+  "scope": [
+    "반닫이 UI",
+    "호리병 UI",
+    "보부상 UI",
+    "독립 UI 컴포넌트·검수판 반입·병합"
+  ],
+  "ui_adopted": true,
+  "runtime_connected": false,
+  "main_landed": false,
+  "runtime_followups": {
+    "backends": [
+      265,
+      266,
+      267
+    ],
+    "in_game_coordinator": 273
+  },
+  "reviewed_candidate_commit": "d8257ab12423b594e3783033368d756bac8f5bf3",
+  "capture_commit": "9952b7b95927989d98e4cd44373a23a5c231f11f",
+  "rebased_main": "a92cf01e19f809b365b37439340e7a0f3bf67d34",
+  "sources_sha256": {
+    "ui/item_service_preview.gd": "68562e8a787e0a0fca1e06c86342157440b078483b75e6905885d92c41f4b5a1",
+    "ui/item_service_preview.tscn": "42e7a37e63631c730ac5cb757a96856b93c9e1b6f998fc5f57b4a050ed7fc99e",
+    "ui/item_service_preview.gd.uid": "278fad9983d753cb868b0718b3fbd7a38d3cb1d50aa7a194b4587536cce981e0",
+    "tools/item_service_viewer.gd": "2497358d49bdfd7b9a82b06286197dc1bc45ed11721e263b7863d47bcc950ff5",
+    "tools/item_service_viewer.tscn": "fff1d0b2281a296e76b98a2b56e5aec16d064c3d2cec99524f7e330355a363cd",
+    "tools/item_service_viewer.gd.uid": "ebcd1b5305025a1061b5a5c3031a5f48c56a1d840b3efa4d7979bc9e6a482f5b",
+    "tests/test_item_services_ui.gd": "4e47572950d4bf4bb05b1f8119f6651635ca49f69410a26da06510a6f947c916",
+    "tests/test_item_services_ui.gd.uid": "8523b5d4e08b904956a6734deeb6b43c16d8ef6fe80ae191eccf3a482ff39b75"
+  },
+  "before_review_sha256": {
+    "stash": "4d50ae2b5491ccdb48752118c28763800b85140994e94d5ad0ae678b48e38a91",
+    "cube": "af7347c9920d7edf0c25628c9ebb151983da8f1792027475ac1968586c4c7c3c",
+    "gamble": "0c303838f2a6099ce86eb7699c8e2998fe4b0d08f62af35f28d2515a48aae8a8"
+  },
+  "after_reviews": [
+    {
+      "kind": "stash",
+      "review": "after_stash.jpg",
+      "sha256": "4341e02edc57d18946895378d66758db0cdbe83cb38b8c0e811fa87d10659d4c",
+      "native_sha256": "6e29400057a17eca4cd93fe459309b6f2c95e68f9bf6e64c2ed9dfcd2ee2d5f2"
+    },
+    {
+      "kind": "cube",
+      "review": "after_cube.jpg",
+      "sha256": "3f084b0c88faa338a7775bbf4cf7795902215440c189c429d085bd58c5157444",
+      "native_sha256": "2f17b9f91e4075f8ed742923d029f3f08e2057fa1cf8340e05fa9dab3c5eeb6d"
+    },
+    {
+      "kind": "gamble",
+      "review": "after_gamble.jpg",
+      "sha256": "17f76710a5f535c5db4e0e9cce3e368321240b4f1944ada8985d093e64075506",
+      "native_sha256": "3932b686238ff050da09301fcdffabc8c12ecdf28e1f9f6bc3627824b39aed3c"
+    }
+  ],
+  "native_capture_count_before": 9,
+  "native_capture_count_after": 9,
+  "previous_rejection_evidence_preserved": [
+    "C:/workspace/joseon/._tmp/adoption_554_20261002/worker/REJECTION_01.raw.txt",
+    "C:/workspace/joseon/._tmp/adoption_554_20261002/worker/REJECTION_02.raw.txt"
+  ],
+  "source_pixels_modified_by_worker": false,
+  "paid_generations": 0,
+  "pushed": false
+}
