@@ -1,0 +1,67 @@
+{
+ "cue": "coin",
+ "v": 2,
+ "prompt": "Three old brass coins land together in a cloth pouch. Soft short metallic clinks and fabric, isolated.",
+ "seconds": 0.7,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:23",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.668005,
+ "lufs": "-21.9",
+ "peak": "-3.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -4.71,
+   "file": "_raw/coin_v2.wav",
+   "duration": 0.68,
+   "lufs": "-21.9",
+   "true_peak": "-3.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29459,
+   "at": 0.668,
+   "removed_ms": 12.0,
+   "floor_db": -90.8,
+   "jump_db": 15.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.07,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -21.92,
+    -21.92
+   ],
+   "intake_tp": [
+    -0.85,
+    -0.78
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -4.65,
+   "lufs": "-21.9",
+   "true_peak": "-3.7"
+  },
+  "warn": []
+ }
+}

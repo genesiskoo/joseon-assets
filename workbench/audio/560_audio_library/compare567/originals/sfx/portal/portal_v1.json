@@ -1,0 +1,67 @@
+{
+ "cue": "portal",
+ "v": 1,
+ "prompt": "A stone threshold opens with deep restrained air pressure and brief resonant stone vibration, sinister compact transition, no music.",
+ "seconds": 2.0,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:23",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.988005,
+ "lufs": "-29.5",
+ "peak": "-13.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 2.8,
+   "dc": [
+    0.0001,
+    0.0001
+   ],
+   "sample_peak_db": -12.99,
+   "file": "_raw/portal_v1.wav",
+   "duration": 2.0,
+   "lufs": "-29.8",
+   "true_peak": "-13.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 87671,
+   "at": 1.988,
+   "removed_ms": 12.0,
+   "floor_db": -92.9,
+   "jump_db": 33.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.1,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -29.82,
+    -29.98
+   ],
+   "intake_tp": [
+    -10.09,
+    -10.35
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.6,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -13.28,
+   "lufs": "-29.5",
+   "true_peak": "-13.3"
+  },
+  "warn": []
+ }
+}

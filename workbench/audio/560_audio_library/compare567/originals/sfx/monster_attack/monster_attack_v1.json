@@ -1,0 +1,67 @@
+{
+ "cue": "monster_attack",
+ "v": 1,
+ "prompt": "A hostile beast releases one harsh short low snarling breath while lunging, animalistic, close dry, no human words.",
+ "seconds": 1.0,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:23",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.992018,
+ "lufs": "-13.1",
+ "peak": "0.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.7,
+   "dc": [
+    -0.0007,
+    -0.0005
+   ],
+   "sample_peak_db": -0.03,
+   "file": "_raw/monster_attack_v1.wav",
+   "duration": 1.0,
+   "lufs": "-13.1",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 43748,
+   "at": 0.992,
+   "removed_ms": 8.0,
+   "floor_db": -90.6,
+   "jump_db": 25.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.39,
+   "why": "트루피크 여유 -0.4 LU",
+   "intake_i": [
+    -13.1,
+    -13.14
+   ],
+   "intake_tp": [
+    3.08,
+    3.43
+   ]
+  },
+  "out": {
+   "over_full": 10,
+   "sub20_pct": 0.2,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.34,
+   "lufs": "-13.1",
+   "true_peak": "0.4"
+  },
+  "warn": []
+ }
+}
