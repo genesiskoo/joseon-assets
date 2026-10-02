@@ -1,0 +1,69 @@
+{
+ "cue": "flesh_hit",
+ "v": 3,
+ "prompt": "One compact blade impact into a thick monster body. A sharp cutting transient then dense muted fleshy thud, short dry tail, isolated, no scream, no music.",
+ "seconds": 0.5,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:09",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.473016,
+ "lufs": "-22.1",
+ "peak": "-4.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 37.2,
+   "dc": [
+    0.0003,
+    0.001
+   ],
+   "sample_peak_db": -4.66,
+   "file": "_raw/flesh_hit_v3.wav",
+   "duration": 0.48,
+   "lufs": "-22.1",
+   "true_peak": "-4.5"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20860,
+   "at": 0.473,
+   "removed_ms": 7.0,
+   "floor_db": -77.6,
+   "jump_db": 30.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.89,
+   "why": "걸면 트루피크 여유가 0.9 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -22.29,
+    -22.63
+   ],
+   "intake_tp": [
+    -1.69,
+    -1.14
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 38.0,
+   "dc": [
+    0.0003,
+    0.001
+   ],
+   "sample_peak_db": -4.66,
+   "lufs": "-22.1",
+   "true_peak": "-4.5"
+  },
+  "warn": [
+   "SUB20 38%"
+  ]
+ }
+}

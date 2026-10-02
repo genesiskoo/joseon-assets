@@ -1,0 +1,67 @@
+{
+ "cue": "talisman_paper",
+ "v": 2,
+ "prompt": "One stiff paper talisman flicked sharply from fingers. Dry papery snap with very brief flutter through air, close isolated game effect, no voice, no music.",
+ "seconds": 0.5,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:09",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.455011,
+ "lufs": "-23.6",
+ "peak": "-4.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 4.5,
+   "dc": [
+    0.0002,
+    0.0002
+   ],
+   "sample_peak_db": -4.08,
+   "file": "_raw/talisman_paper_v2.wav",
+   "duration": 0.48,
+   "lufs": "-23.6",
+   "true_peak": "-4.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20066,
+   "at": 0.455,
+   "removed_ms": 25.0,
+   "floor_db": -84.0,
+   "jump_db": 36.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.05,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -24.25,
+    -24.25
+   ],
+   "intake_tp": [
+    -2.09,
+    -2.04
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.3,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -4.01,
+   "lufs": "-23.6",
+   "true_peak": "-4.0"
+  },
+  "warn": []
+ }
+}
