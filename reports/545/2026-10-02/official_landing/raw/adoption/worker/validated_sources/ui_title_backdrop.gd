@@ -1,0 +1,80 @@
+extends RefCounted
+## #545 배경·로고·국소 환경 FX. 입력/저장/게임 RNG와 분리한다.
+
+const MOTGOL := preload("res://assets/sprites/ui/title_545/motgol.png")
+const DUNGEON := preload("res://assets/sprites/ui/title_545/dungeon.png")
+const LOGO := preload("res://assets/sprites/ui/title_545/logo.png")
+var kind := "motgol"
+var static_fx := false
+var fx_enabled := true
+var elapsed := 0.0
+var _soft: GradientTexture2D
+
+
+func _init() -> void:
+	# 격리 작업 트리의 동일 구도 검수용 override.cfg. 제품 설정 화면에는 노출하지 않는다.
+	if ProjectSettings.get_setting("art_review/title_background", "") == "dungeon":
+		kind = "dungeon"
+	static_fx = bool(ProjectSettings.get_setting("art_review/title_static", false))
+	for arg in OS.get_cmdline_user_args():
+		if arg == "--title-background=dungeon":
+			kind = "dungeon"
+		elif arg == "--title-fx-static":
+			static_fx = true
+	_soft = GradientTexture2D.new()
+	_soft.width = 128
+	_soft.height = 128
+	_soft.fill = GradientTexture2D.FILL_RADIAL
+	_soft.fill_from = Vector2(0.5, 0.5)
+	_soft.fill_to = Vector2(1, 0.5)
+	var ramp := Gradient.new()
+	ramp.offsets = PackedFloat32Array([0.0, 0.4, 1.0])
+	ramp.colors = PackedColorArray([Color(1, 1, 1, 1), Color(1, 1, 1, 0.3), Color(1, 1, 1, 0)])
+	_soft.gradient = ramp
+
+
+func advance(delta: float) -> void:
+	if not static_fx:
+		elapsed = fmod(elapsed + delta, 120.0)
+
+
+func logo_rect(vp: Vector2) -> Rect2:
+	var width := clampf(vp.x * 0.34, 350.0, 640.0)
+	return Rect2(Vector2(vp.x * 0.07, vp.y * 0.19).round(), Vector2(width, width * LOGO.get_height() / LOGO.get_width()).round())
+
+
+func subtitle_at(vp: Vector2) -> Vector2:
+	return Vector2(vp.x * 0.07 + 2, logo_rect(vp).end.y + 26).round()
+
+
+func draw_logo(owner: CanvasItem, vp: Vector2) -> void:
+	owner.draw_texture_rect(LOGO, logo_rect(vp), false)
+
+
+func draw_backdrop(owner: CanvasItem, vp: Vector2) -> void:
+	var image := DUNGEON if kind == "dungeon" else MOTGOL
+	var image_size := image.get_size()
+	var scale := maxf(vp.x / image_size.x, vp.y / image_size.y)
+	var source_size := vp / scale
+	owner.draw_texture_rect_region(image, Rect2(Vector2.ZERO, vp), Rect2((image_size - source_size) * 0.5, source_size))
+	# 원화의 좌측 암부를 유지하면서 작은 화면의 버튼 뒤만 살짝 더 누른다.
+	var shade := PackedVector2Array([Vector2.ZERO, Vector2(vp.x * 0.43, 0), Vector2(vp.x * 0.43, vp.y), Vector2(0, vp.y)])
+	owner.draw_polygon(shade, PackedColorArray([Color(0.015, 0.014, 0.016, 0.16), Color(0.015, 0.014, 0.016, 0), Color(0.015, 0.014, 0.016, 0), Color(0.015, 0.014, 0.016, 0.16)]))
+	if not fx_enabled:
+		return
+	var phase := 3.0 if static_fx else elapsed
+	var lamps := [Vector2(0.624, 0.432), Vector2(0.943, 0.555), Vector2(0.854, 0.258)] if kind == "motgol" else [Vector2(0.711, 0.410), Vector2(0.840, 0.729)]
+	for index in lamps.size():
+		var center: Vector2 = lamps[index] * vp
+		var amount := 0.11 + 0.025 * sin(phase * 4.2 + index * 2.1) + 0.015 * sin(phase * 9.1 + index)
+		var extent := vp * Vector2(0.043, 0.083)
+		owner.draw_texture_rect(_soft, Rect2(center - extent * 0.5, extent), false, Color(1.0, 0.43, 0.12, amount))
+		for ember in 3:
+			var age := fmod(phase * 0.18 + ember * 0.31 + index * 0.13, 1.0)
+			var at := center + vp * Vector2(0.004 * sin(age * TAU + ember), -0.047 * age)
+			owner.draw_circle(at, maxf(0.8, vp.x / 1600.0), Color(1.0, 0.56, 0.26, 0.25 * sin(age * PI)))
+	# 낮은 안개 두 겹만 길 오른쪽으로 움직인다. 메뉴·로고 영역을 가로지르지 않는다.
+	for layer in 2:
+		var center := vp * Vector2(0.77 + 0.025 * sin(phase * 0.11 + layer * 2), 0.81 - layer * 0.17)
+		var extent := vp * Vector2(0.32, 0.12)
+		owner.draw_texture_rect(_soft, Rect2(center - extent * 0.5, extent), false, Color(0.52, 0.59, 0.63, 0.055))
