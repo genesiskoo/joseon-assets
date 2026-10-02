@@ -1,0 +1,361 @@
+{
+  "card": 504,
+  "schema_version": 1,
+  "review_date": "2026-10-02",
+  "scope": "root가 캡처한 native 원화 크기·틴트 검수판6장의 직접 검토. 실게임 반입 검수가 아니다.",
+  "reviewer": "ui-design subagent",
+  "capture_owner": "root",
+  "capture_performed_by_this_agent": false,
+  "new_generation_performed": false,
+  "source_or_capture_image_edit_performed": false,
+  "native_pngs_directly_inspected": 6,
+  "native_capture_technical_status": "SUCCESS — 두 라운드 returncode0, PNG6장1280×800, CAPTURES.json 해시 일치, stderr0바이트",
+  "source_sha_matches_existing_manifest": true,
+  "source_concept_review_status": "완료 — original5종 권장, PD 채택 미확정",
+  "recommended_round": "original",
+  "recommended_sources": [
+    {
+      "id": "fire",
+      "path": "reports/504/2026-10-02_round1/fire.png",
+      "sha256": "1257d8852c904e47ec889adb8c32c032c6017428a983fe26325043ee492a6836"
+    },
+    {
+      "id": "cold",
+      "path": "reports/504/2026-10-02_round1/cold.png",
+      "sha256": "214ea18f9665bd6241bc21bb6ef00ed848efd3947626aa234c597ff08ea25c7e"
+    },
+    {
+      "id": "lightning",
+      "path": "reports/504/2026-10-02_round1/lightning.png",
+      "sha256": "55d4fbac52222508527c3ca59bed05dc612f9c2dee932fa5a6edcc7b7469d63d"
+    },
+    {
+      "id": "sal",
+      "path": "reports/504/2026-10-02_round1/sal.png",
+      "sha256": "4c24c1ed98fa437ce1ca342cfe1037c08bb876623e1350fff7247f357e918f27"
+    },
+    {
+      "id": "soul",
+      "path": "reports/504/2026-10-02_round1/soul.png",
+      "sha256": "874da2b100e6363986db019fa143936b2336033947fdfd1f4d1a540e445a1be9"
+    }
+  ],
+  "revision1_disposition": "대안으로 원본·알파 추출본·기록 보존. native12px 식별 우위를 확인하지 못해 우선 선택하지 않는다.",
+  "pd_acceptance": "미확정",
+  "game_integrated": false,
+  "game_readability_verified": false,
+  "method": {
+    "image_format": "실제 native PNG6장을 원래1280×800 해상도로 직접 확인",
+    "modes": [
+      "color",
+      "gray",
+      "white"
+    ],
+    "sizes_px": [
+      12,
+      14,
+      16,
+      18,
+      24
+    ],
+    "context_size_px": 80,
+    "backgrounds": {
+      "dark_ui": [
+        0.05,
+        0.045,
+        0.06
+      ],
+      "representative_light_soil": [
+        0.62,
+        0.56,
+        0.46
+      ]
+    },
+    "sampling": "원본1024 전체 캔버스 → ImageTexture → Godot CanvasItem linear; 캡처 중 크롭·알파 보정·모양 수정 없음",
+    "interpretation": "이름과 위치가 고정된 정적판의 비교다. 전투 화면에서의 식별 결과를 주장하지 않는다."
+  },
+  "findings": [
+    {
+      "id": "halo",
+      "status": "native판에서 우려 해소",
+      "finding": "두 라운드의 색·회색·흰색 판에서 유의한 후광이나 뚜렷한 배경 누출이 보이지 않는다. 원본 RGB뷰의 겉보기 후광을 실제 원화 실패로 판단할 근거가 없다."
+    },
+    {
+      "id": "original_soul_cutout",
+      "status": "명확히 확인",
+      "finding": "original 혼불의 내부 초승달 홈이 native 합성에서 명확하다. 이전 RGB뷰 기반 홈 누락 판정은 철회한다. 단일 갈고리 끝과 홈이 불꽃의 갈래 모양과 구별되는 단서다."
+    },
+    {
+      "id": "round_selection",
+      "status": "original 권장",
+      "finding": "두 라운드의12px 식별은 비슷하고 revision1의 실용적 우위가 보이지 않는다. original의 거친 붓 가장자리가 원화 결을 유지하므로 original5종을 권장한다. revision1을 실패 판정하지 않는다."
+    },
+    {
+      "id": "lightning_12px",
+      "status": "실게임 확인점 유지",
+      "finding": "벼락은12px에서 두 라운드 모두 가장 좁고 광학적 무게가 약하다. 이 판에서 모양은 남지만 실제 피해 출력에서 충분한지는 확인하지 않았다."
+    },
+    {
+      "id": "gray_light_soil",
+      "status": "실게임 확인점 유지",
+      "finding": "기존 회색 틴트는 밝은 흙색 위에서 대비가 낮다. 작은 행에서 특히 약하며 두 라운드 공통이다. 원화 교체만으로 해소된다고 볼 수 없다."
+    }
+  ],
+  "per_mark": [
+    {
+      "id": "fire",
+      "native_observation": "넓은 바닥과 갈래 실루엣이 남는다.12px에서는 갈래 세부가 줄지만 혼불의 단일 끝과 형태가 다르다.",
+      "round_comparison": "revision1의 정돈된 외곽이12px 식별을 뚜렷하게 개선하지 않는다.",
+      "recommendation": "original"
+    },
+    {
+      "id": "cold",
+      "native_observation": "12px에서도 방사형 실루엣이 남아 불꽃·벼락·코일·혼불과 구별된다.80px 행의 두꺼운 여섯 팔이 명확하다.",
+      "round_comparison": "작은 행의 두 라운드는 거의 같다.",
+      "recommendation": "original"
+    },
+    {
+      "id": "lightning",
+      "native_observation": "좁은 꺾인 세로 모양이 남으며 두 라운드 모두12px 몸통과 끝이 가늘다.",
+      "round_comparison": "revision1도 좁은 몸통의 무게를 개선하지 않는다.",
+      "recommendation": "original; 실게임 출력에서 무게 확인"
+    },
+    {
+      "id": "sal",
+      "native_observation": "말린 코일과 내부 빈 공간이 보인다. 작은 흰색 행에서도 원형으로 말리는 단서가 남는다.",
+      "round_comparison": "revision1의 정돈된 경계가 작은 행에서 뚜렷한 구분 개선을 주지 않는다.",
+      "recommendation": "original"
+    },
+    {
+      "id": "soul",
+      "native_observation": "original에도 내부 초승달 홈이 있으며 단일 끝과 둥근 방울이 보인다.12px에서는 홈의 픽셀 수가 적어 세부가 줄어든다.",
+      "round_comparison": "revision1 홈도 보이지만 original 대비 식별 우위를 확인하지 못했다.80px 외곽은 revision1이 더 매끈하다.",
+      "recommendation": "original"
+    }
+  ],
+  "unverified_game_context": [
+    "실제 Label3D 외곽선 및 이미지 표식에 적용될 외곽선 처리",
+    "실제 피해 숫자 부모의 펀치·약점1.5배·거리·투명도",
+    "피해/HUD/캐릭터/툴팁 caller의 이미지 바인딩과 레이아웃",
+    "움직이는 전투 화면과 실제 지형 배경에서의 가독성"
+  ],
+  "runtime_evidence": [
+    {
+      "round": "original",
+      "native": true,
+      "game_integrated": false,
+      "run_returncodes": [
+        0
+      ],
+      "renderer": "gl_compatibility",
+      "display": "Windows",
+      "sizes_px": [
+        12,
+        14,
+        16,
+        18,
+        24
+      ],
+      "source_filename_suffix": "",
+      "source_directory": "C:/workspace/joseon/._tmp/assets_504/reports/504/2026-10-02_round1",
+      "sources": [
+        {
+          "id": "fire",
+          "path": "reports/504/2026-10-02_round1/fire.png",
+          "sha256": "1257d8852c904e47ec889adb8c32c032c6017428a983fe26325043ee492a6836"
+        },
+        {
+          "id": "cold",
+          "path": "reports/504/2026-10-02_round1/cold.png",
+          "sha256": "214ea18f9665bd6241bc21bb6ef00ed848efd3947626aa234c597ff08ea25c7e"
+        },
+        {
+          "id": "lightning",
+          "path": "reports/504/2026-10-02_round1/lightning.png",
+          "sha256": "55d4fbac52222508527c3ca59bed05dc612f9c2dee932fa5a6edcc7b7469d63d"
+        },
+        {
+          "id": "sal",
+          "path": "reports/504/2026-10-02_round1/sal.png",
+          "sha256": "4c24c1ed98fa437ce1ca342cfe1037c08bb876623e1350fff7247f357e918f27"
+        },
+        {
+          "id": "soul",
+          "path": "reports/504/2026-10-02_round1/soul.png",
+          "sha256": "874da2b100e6363986db019fa143936b2336033947fdfd1f4d1a540e445a1be9"
+        }
+      ],
+      "images": [
+        {
+          "mode": "color",
+          "path": "reports/504/native_qa_root/original/godot_504_color.png",
+          "sha256": "c8854ad605905ff23ba12c0d66de086fd6b80eb6cdc6627cb8e5afbb29f27b3a",
+          "capture_manifest_sha256_matches": true,
+          "size_px": [
+            1280,
+            800
+          ],
+          "capture_manifest_size_matches": true
+        },
+        {
+          "mode": "gray",
+          "path": "reports/504/native_qa_root/original/godot_504_gray.png",
+          "sha256": "b54312c3cd3fb796c105a178c7c012fce267c8123d8bf7cce10e9066209646a3",
+          "capture_manifest_sha256_matches": true,
+          "size_px": [
+            1280,
+            800
+          ],
+          "capture_manifest_size_matches": true
+        },
+        {
+          "mode": "white",
+          "path": "reports/504/native_qa_root/original/godot_504_white.png",
+          "sha256": "7504b9a497ab55d9cf19b0b000df007340ce686a27a00ef453a3ae4f5048e398",
+          "capture_manifest_sha256_matches": true,
+          "size_px": [
+            1280,
+            800
+          ],
+          "capture_manifest_size_matches": true
+        }
+      ],
+      "records": {
+        "CAPTURES.json": {
+          "path": "reports/504/native_qa_root/original/CAPTURES.json",
+          "sha256": "f356450d53f922c0fc8c5f50bc87713149981acfb96640e75eb82c9302c049b8",
+          "bytes": 1366
+        },
+        "native_capture.json": {
+          "path": "reports/504/native_qa_root/original/native_capture.json",
+          "sha256": "b576010a1bbc24fa4a96efed7b41d4425e840f24cfccd86e780a30a79076814f",
+          "bytes": 841
+        },
+        "all.LAUNCH.json": {
+          "path": "reports/504/native_qa_root/original/all.LAUNCH.json",
+          "sha256": "827509029a1af16233cfc375b99db9d6d49f65d96bc0f94d89695401148816da",
+          "bytes": 331
+        },
+        "all.stdout.raw.log": {
+          "path": "reports/504/native_qa_root/original/all.stdout.raw.log",
+          "sha256": "fbfb9be385e53a12bbd2caf1e7ec5b9bb092b7d40943880cbef143d3995ff4fb",
+          "bytes": 698
+        },
+        "all.stderr.raw.log": {
+          "path": "reports/504/native_qa_root/original/all.stderr.raw.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "round": "revision1",
+      "native": true,
+      "game_integrated": false,
+      "run_returncodes": [
+        0
+      ],
+      "renderer": "gl_compatibility",
+      "display": "Windows",
+      "sizes_px": [
+        12,
+        14,
+        16,
+        18,
+        24
+      ],
+      "source_filename_suffix": "_v2",
+      "source_directory": "C:/workspace/joseon/._tmp/assets_504/reports/504/2026-10-02_revision1",
+      "sources": [
+        {
+          "id": "fire",
+          "path": "reports/504/2026-10-02_revision1/fire_v2.png",
+          "sha256": "d66302618eb0eef12e504ff5a5d7eaafbe16ae09d9db0917b50159fc5d72804a"
+        },
+        {
+          "id": "cold",
+          "path": "reports/504/2026-10-02_revision1/cold_v2.png",
+          "sha256": "b0e7a65bc3a23357dfd56d59b6af60125fe76068ab64394826456dd49a33e448"
+        },
+        {
+          "id": "lightning",
+          "path": "reports/504/2026-10-02_revision1/lightning_v2.png",
+          "sha256": "b811e73fe46cae0a60852a65ffe33a1c5ebcd276c6066a3fa2dc6952ecaa8d6b"
+        },
+        {
+          "id": "sal",
+          "path": "reports/504/2026-10-02_revision1/sal_v2.png",
+          "sha256": "3df6294075f466cee3f94c6d3ad435890bd9816eaa0bf02d6365c793bab6a80b"
+        },
+        {
+          "id": "soul",
+          "path": "reports/504/2026-10-02_revision1/soul_v2.png",
+          "sha256": "ccaae5086addf1cc265cc54a25875c96fad84417d31197bbbf4217757ad2f082"
+        }
+      ],
+      "images": [
+        {
+          "mode": "color",
+          "path": "reports/504/native_qa_root/revision1/godot_504_color.png",
+          "sha256": "0425c6c8e06cd2f43a3e6a8a21bcd38ced5bfda6c3190a2f3282180a0ddd280b",
+          "capture_manifest_sha256_matches": true,
+          "size_px": [
+            1280,
+            800
+          ],
+          "capture_manifest_size_matches": true
+        },
+        {
+          "mode": "gray",
+          "path": "reports/504/native_qa_root/revision1/godot_504_gray.png",
+          "sha256": "796b7fb6ec3c6692b52bbde7fb574c2e598e14d9a8d5496441a6b992f51fe288",
+          "capture_manifest_sha256_matches": true,
+          "size_px": [
+            1280,
+            800
+          ],
+          "capture_manifest_size_matches": true
+        },
+        {
+          "mode": "white",
+          "path": "reports/504/native_qa_root/revision1/godot_504_white.png",
+          "sha256": "f14bb83c38acea6fe14ff2e22dc7863a75c3652836b5a01d508045be0ce5efd4",
+          "capture_manifest_sha256_matches": true,
+          "size_px": [
+            1280,
+            800
+          ],
+          "capture_manifest_size_matches": true
+        }
+      ],
+      "records": {
+        "CAPTURES.json": {
+          "path": "reports/504/native_qa_root/revision1/CAPTURES.json",
+          "sha256": "38555296a9fb2b56bbb2fcdbc7d8ba0a7f6a483df69b562e7a13329bec2e09cd",
+          "bytes": 1369
+        },
+        "native_capture.json": {
+          "path": "reports/504/native_qa_root/revision1/native_capture.json",
+          "sha256": "1531ad23c8e23d6a36c7eccad50a19b53b2c349bf8318f8d4e88ea744eb6ba8a",
+          "bytes": 851
+        },
+        "all.LAUNCH.json": {
+          "path": "reports/504/native_qa_root/revision1/all.LAUNCH.json",
+          "sha256": "e9f0b09a94d22be406e0d60f3fc5c17bd482b2a1f0e03b2d38b807be12487b76",
+          "bytes": 333
+        },
+        "all.stdout.raw.log": {
+          "path": "reports/504/native_qa_root/revision1/all.stdout.raw.log",
+          "sha256": "d3ec1578257fe7e0921107248e4613411f02a664bbe392509eb52ea904783ec0",
+          "bytes": 704
+        },
+        "all.stderr.raw.log": {
+          "path": "reports/504/native_qa_root/revision1/all.stderr.raw.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    }
+  ],
+  "follow_up": "이 기록을 원화 채택 참고로 사용한다. 원화·API/raw·native PNG/log를 보존하며 게임 반입과 실게임 검수는 별도 요청 단계다."
+}

@@ -1,8 +1,8 @@
-# #504 속성 표식 5종 — 원화 크기 검수 준비
+# #504 속성 표식 5종 — native 원화 크기 검수
 
 미채택 원화 후보다. 게임 한자 교체·게임 반입·실게임 before/after 사진은 이 폴더의 산출물이 아니다.
 
-두 라운드 모두 HOLD이며 native 알파 합성·실제 크기 검수를 기다린다. 생성 원본10장과 v2 알파 추출본5장을 보존하며, 이 검수 작업은 PNG의 색·알파·모양·여백을 변경하지 않는다.
+root가 두 라운드의 native 검수판 6장을 캡처했고 이 subagent도 모두 직접 검토했다. **original 5종을 권장한다.** 두 라운드의 12px 식별은 비슷하며 original의 거친 붓 가장자리가 원화 결을 유지한다. PD 채택은 아직 확정되지 않았고 실게임 반입·실게임 가독성 검수는 수행하지 않았다. 생성 원본 10장과 v2 알파 추출본 5장을 보존하며, 이 검수 작업은 PNG의 색·알파·모양·여백을 변경하지 않는다.
 
 - `original`: `reports/504/2026-10-02_round1/{fire,cold,lightning,sal,soul}.png` — 1024×1024 RGBA, alpha 0~254. 원본 자체가 검수판 입력이다.
 - `revision1`: `reports/504/2026-10-02_revision1/{fire,cold,lightning,sal,soul}_v2_raw.png` — 1024×1024 RGBA, alpha 255인 검은 배경 생성 원본5장. 검수판에는 넣지 않는다.
@@ -12,12 +12,26 @@
 
 ## 준비된 파일
 
-- `manifest.json`: 두 라운드·raw/알파 추출본 구분, PNG·프롬프트 SHA-256, 팔레트, 검수 크기/배경/모드, 미반입 상태.
+- `manifest.json`: 두 라운드·raw/알파 추출본 구분, PNG·프롬프트 SHA-256, 팔레트, 검수 크기/배경/모드, native 검수 완료·original 권장·미반입 상태.
 - `qa/source_check.json`: PNG15장의 크기·RGBA·알파 nonempty·threshold별 bbox·foreground RGB, 후보10장의 12/14/16/18/24px 알파 정량 검사, raw/추출본 RGB 일치 및 생성 기록 해시. Pillow 수치는 native 렌더의 시각 판정을 대신하지 않는다.
-- `qa/visual_review.json`: PNG15장을 직접 본 비교 의견과 알파 검증에 따른 정정. 두 라운드 모두 HOLD이며 이 subagent는 native 캡처를 수행하지 않았다.
+- `qa/visual_review.json`: PNG 15장의 사전 검토와 native 6판의 현재 결론을 단계별로 구분했다. 사전 HOLD 기록을 남기고 현재 original 권장안을 연결한다. 이 subagent는 native 캡처를 수행하지 않았다.
+- `qa/native_review.json`: 실제 native PNG 6장의 직접 검토, 각 PNG·receipt·raw log 해시, 캡처 입력의 source SHA, 모양별 관찰, 선택 권장안과 실게임 미검증 항목.
 - `qa/project.godot`: 독립 Godot 프로젝트 및 부모 프로젝트의 재귀 스캔을 막는 표식.
 - `qa/element_mark_board.gd`: 원본 `Image.load_from_file` → `ImageTexture`, CanvasItem 선형 필터로 그리는 독립 검수판. 게임 코드와 무관하다.
 - `qa/analyze_sources.py`: 두 라운드 측정·manifest 재생성기. PNG·프롬프트·API/job 기록에는 쓰지 않는다.
+
+## 실제 native 검수 근거와 결론
+
+캡처 위치는 `reports/504/native_qa_root/{original,revision1}/`다. 각 폴더의 `CAPTURES.json`, `native_capture.json`, `all.LAUNCH.json`, `all.stdout.raw.log`, `all.stderr.raw.log`를 그대로 보존했다. root 실행은 두 라운드 모두 returncode 0이고 stderr는 0바이트다. Windows / `gl_compatibility` native 출력 6장 모두 1280×800이며 실제 PNG SHA-256이 `CAPTURES.json`과 일치한다. 캡처 입력 10장의 현재 SHA도 기존 manifest와 일치한다.
+
+| 라운드 | 색 | 회색 | 모두 흰색 |
+|---|---|---|---|
+| original | [PNG](../../../reports/504/native_qa_root/original/godot_504_color.png) | [PNG](../../../reports/504/native_qa_root/original/godot_504_gray.png) | [PNG](../../../reports/504/native_qa_root/original/godot_504_white.png) |
+| revision1 | [PNG](../../../reports/504/native_qa_root/revision1/godot_504_color.png) | [PNG](../../../reports/504/native_qa_root/revision1/godot_504_gray.png) | [PNG](../../../reports/504/native_qa_root/revision1/godot_504_white.png) |
+
+두 라운드 모두 유의한 후광이 보이지 않는다. original 혼불의 내부 초승달 홈도 native 합성에서 명확하다. 따라서 1차 RGB 뷰 기반 후광 실패·혼불 홈 누락 의견을 최종 판정으로 사용하지 않는다. 12px 행의 식별은 두 라운드가 비슷하고 v2의 우위를 확인하지 못했다. original을 권장하며 revision1은 대안으로 보존한다. v2를 원화 실패로 판정하지 않는다.
+
+12px 벼락의 몸통은 두 라운드 모두 좁고 광학적 무게가 약하다. 기존 회색 틴트는 밝은 흙색 위에서 대비가 낮다. 이 판에는 실제 Label3D 외곽선과 피해 숫자 펀치·약점 크기·HUD/툴팁 이미지 바인딩이 없으므로 실게임에서 해소됐다고 주장하지 않는다. 이름과 위치가 고정된 정적 원화 비교판이며 전투 화면의 식별 시험이 아니다.
 
 ## 정량 측정 재실행
 
@@ -25,7 +39,9 @@
 python C:/workspace/joseon/._tmp/assets_504/workbench/production/element_marks_504/qa/analyze_sources.py
 ```
 
-후보10장은 1024/RGBA/투명·nonempty 알파/밝은 중성 foreground 기본 검사를 모두 통과했다. v2 raw의 불투명 검은 배경은 별도 보존 계약이므로 후보의 투명 검사와 섞지 않는다. 측정 실행 성공은 원화 수용이 아니며 시각 판정은 HOLD다.
+후보 10장은 1024/RGBA/투명·nonempty 알파/밝은 중성 foreground 기본 검사를 모두 통과했다. v2 raw의 불투명 검은 배경은 별도 보존 계약이므로 후보의 투명 검사와 섞지 않는다. `qa/source_check.json`의 HOLD는 native 전에 만든 사전 정량 단계 기록이다. 현재 시각 결론은 `qa/native_review.json`을 따른다. 측정 성공·native 권장안과 PD 채택은 각각 구분한다.
+
+이 측정기는 manifest까지 사전 단계로 재생성한다. 현재 원화 검수 근거는 `qa/native_review.json`에 별도로 보존했으며, 재측정 뒤에도 manifest의 native 근거 연결과 검토 단계 구분을 유지해야 한다. 이번 native 검수 작업에서는 측정기를 재실행하지 않았다.
 
 ## root용 native 캡처 CLI
 
@@ -41,7 +57,7 @@ godot --path C:/workspace/joseon/._tmp/assets_504/workbench/production/element_m
 
 다른 체크아웃에서 재현하려면 `--sources=<선택 라운드의 후보5 절대폴더>`를 추가한다. 파일명 suffix는 `--round`가 결정한다. `--out=<고유 절대폴더>`로 저장 위치를 지정할 수 있다. `--mode=color`, `gray`, `white`도 각각 지원한다.
 
-실제 표시 장치와 Compatibility 렌더러가 필요하다. `--headless`의 dummy display는 명시적으로 거부한다. root가 정상 native renderer로 캡처하며, 이 subagent는 창을 띄우거나 캡처하지 않았다.
+실제 표시 장치와 Compatibility 렌더러가 필요하다. `--headless`의 dummy display는 명시적으로 거부한다. root가 정상 native renderer로 캡처했고, 이 subagent는 창을 띄우거나 캡처하지 않았다.
 
 각 CLI는 같은 배치의 1280×800 PNG3과 `native_capture.json`을 선택 라운드의 출력 폴더에 저장한다. 제목과 receipt에 라운드를 적는다.
 
@@ -57,7 +73,7 @@ Label3D 외곽선·부모 피해 숫자 펀치·약점1.5배·실제 HUD/툴팁 
 
 ## 현재 리스크
 
-1차 RGB 뷰의 넓은 겉보기 후광만으로 실제 후광이나 no-glow 실패를 확정하지 않는다. alpha>=16 bbox는 주 모양 가까이에 잡힌다. 원본 불꽃·눈꽃의 alpha>0 bbox는 좌/하단 경계에 닿지만 alpha>=16 여백은 각각 최소50/65px다. v2 후보5장의 alpha>=16 최소 여백은 모두69px 이상이다.
+1차 RGB 뷰의 넓은 겉보기 후광만으로 실제 후광이나 no-glow 실패를 확정하지 않는다. native 6판에는 유의한 후광이 보이지 않는다. alpha>=16 bbox는 주 모양 가까이에 잡힌다. 원본 불꽃·눈꽃의 alpha>0 bbox는 좌/하단 경계에 닿지만 alpha>=16 여백은 각각 최소 50/65px다. v2 후보 5장의 alpha>=16 최소 여백은 모두 69px 이상이다.
 
 | 모양 | 1차 저알파 가중 총량 | v2 저알파 가중 총량 | 12px에서 확인할 것 |
 |---|---:|---:|---|
@@ -69,8 +85,8 @@ Label3D 외곽선·부모 피해 숫자 펀치·약점1.5배·실제 HUD/툴팁 
 
 여기서 저알파 총량은 alpha1~127 픽셀의 alpha 가중합을 전체 alpha 가중합으로 나눈 값이다. 낮아졌다는 사실만으로 native 축소 가독성이 좋아졌다고 판정하지 않는다.
 
-혼불 정정: 이전의 “1차 내부 홈 없음” 의견은 RGB 뷰만 보고 내린 오류였다. 원본도 alpha<128 내부 영역이31,198px 있으며 v2는26,850px다. 원본 `(400,760)`·`(620,780)`·`(500,800)`은 RGB가 거의 흰색이어도 alpha가0·1·0으로 내부를 비운다. v2의 해당 alpha는 모두0이다. 설명용 Pillow 12px 축소에서 두 라운드 모두 내부 빈 픽셀3개가 남는다. native 합성에서 실제 초승달 모양과 불꽃↔혼불 구분을 비교해야 한다. v2의 투명 영역에 남은 검은 RGB가 경계 샘플링에 영향을 주는지도 같은 판에서 본다.
+혼불 정정: 이전의 “1차 내부 홈 없음” 의견은 RGB 뷰만 보고 내린 오류였다. 원본도 alpha<128 내부 영역이 31,198px 있으며 v2는 26,850px다. 원본 `(400,760)`·`(620,780)`·`(500,800)`은 RGB가 거의 흰색이어도 alpha가 0·1·0으로 내부를 비운다. v2의 해당 alpha는 모두 0이다. 설명용 Pillow 12px 축소에서 두 라운드 모두 내부 빈 픽셀 3개가 남는다. 실제 native 합성에서도 original의 초승달 홈을 확인했고 작은 행의 불꽃↔혼불 구분은 두 라운드가 비슷했다. v2에서 뚜렷한 검은 배경 누출은 보이지 않았다.
 
-벼락은 설명용 Pillow 12px alpha>=128 영역이 두 라운드 모두 너비4픽셀로 좁다. v2 혼불의 외곽은 다른 네 붓 모양보다 매끈하다. 이 두 항목도 root가 실제12/14/16/18/24px 칸에서 판단한다.
+벼락은 설명용 Pillow 12px alpha>=128 영역이 두 라운드 모두 너비 4픽셀로 좁고 실제 native 12px 행에서도 무게가 약하다. v2 혼불의 외곽은 다른 네 붓 모양보다 매끈하다. native 실제 12/14/16/18/24px 행의 비교에서 v2를 더 나은 원화로 선택할 근거를 확인하지 못했다.
 
-native PNG/receipt와 시각 검토가 있어야 캡처 성공·축소 가독성 결과를 추가할 수 있다. 이 subagent는 helper와 정량 검사만 준비했으며 창 제어·캡처·유료 생성·게임 caller 수정은 하지 않았다. 실제 게임 반입과 before/after 검수는 원화 채택 이후 별도 단계다.
+native PNG/receipt와 6판 직접 검토 근거를 추가했다. 이 subagent는 창 제어·캡처·유료 생성·원본 청소·게임 caller 수정·게임 시험을 하지 않았다. 실제 게임 반입과 before/after 검수는 원화 채택 이후 별도 단계다.
