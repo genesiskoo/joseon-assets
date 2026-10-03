@@ -12,7 +12,7 @@
   "cloud_sync_verified_by_connector": false,
   "pd_adopted": false,
   "main_landed": false,
-  "full_gate_required": true,
+  "full_gate_required": false,
   "gallery": [
     {
       "file": "curve_after.jpg",
@@ -26,8 +26,10 @@
     },
     {
       "file": "thrust_after.jpg",
-      "bytes": 146349,
-      "sha256": "7c69dcc990a33471b5eec18d3d9607b751b3d33ab1f1e45452d40164d367ba2c"
+      "bytes": 135240,
+      "sha256": "e26102885cff16a7ce6b491d71e16cb165dc24fce76a563b7db4cd3c9988a047",
+      "source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T084157_126817Z_after\\shots\\anim_commit_05_thrust_hit.png",
+      "source_commit": "e42f139a0b7a0cfaaf2e40826f06088429dee75f"
     },
     {
       "file": "thrust_before.jpg",
@@ -96,5 +98,18 @@
       1,
       1
     ]
-  ]
+  ],
+  "first_native_thrust_after": {
+    "file": "thrust_after.jpg",
+    "bytes": 146349,
+    "sha256": "7c69dcc990a33471b5eec18d3d9607b751b3d33ab1f1e45452d40164d367ba2c"
+  },
+  "combined_candidate_commit": "e42f139a0b7a0cfaaf2e40826f06088429dee75f",
+  "combined_full_e2e": "121/121 PASS",
+  "combined_native_checks": 65,
+  "combined_raw_archive": "G:\\내 드라이브\\JoseonHunters_raw\\595\\2026-10-03_animation_clock\\declared_cohort_2_thrust_area",
+  "current_thrust_after_sha256": "e26102885cff16a7ce6b491d71e16cb165dc24fce76a563b7db4cd3c9988a047",
+  "current_thrust_after_native_source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T084157_126817Z_after\\shots\\anim_commit_05_thrust_hit.png",
+  "full_gate_passed": true,
+  "parent_536_complete": false
 }

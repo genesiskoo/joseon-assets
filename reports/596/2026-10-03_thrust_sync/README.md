@@ -6,4 +6,6 @@ thrust_before/after: 같은 anim_commit 무대/카메라의 피해 사진. befor
 
 JPG4 <=1280폭·300KB/장. FullPNG·실패/진단 원문·실제 엔진phase·전후ModelDef·도구는 `G:/내 드라이브/JoseonHunters_raw/596/2026-10-03_thrust_sync/`에 보존. 드라이브 로컬 readback SHA만 확인, cloudsync 미확인. 기존 전후모션 형상이 변하지 않고 준비 시간만 변한 이유·기각 대안은 thrust_sync_596.md §5.
 
-Game candidate: 0edc75a804f9c38a93e19781f5973ede01245c41. No paid generation. Game main not integrated. Four compact review images; raw104files11,213,718B preserved privately with readback SHA.
+시계595/관측 보수를 결합한 후보 `e42f139a`의 자연focused2회 각30·전체 `121/121 PASS`·실제창65/65도 확인했다. thrust_after는 그 최신 실제 창으로 갱신(같은 시나리오/카메라, main의 승인 그림자·스킬 아이콘 포함); 기존 before와 두 곡선은 원본 그대로다. 원문과 최초 after는 드라이브에 보존, 부모536 미완료·최종채택/착륙 전이다.
+
+Review commit 1b53c98729181a4c2773dcec7cd960df055b120d; tested runtime e42f139a0b7a0cfaaf2e40826f06088429dee75f. Natural focused2 ×30, full121/121, native65. Candidate only; PD adoption/game main/game push pending. Raw/failed attempts privately retained.
