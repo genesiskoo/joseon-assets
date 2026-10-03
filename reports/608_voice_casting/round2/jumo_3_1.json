@@ -1,0 +1,19 @@
+{
+  "role": "jumo",
+  "rank": 3,
+  "voice_id": "SReqjdBvPvCF6YZaqZet",
+  "name": "주모 · 농밀한 구미호 C",
+  "line": 0,
+  "file": "round2/audio/jumo_3_1.mp3",
+  "request": {
+    "text": "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "목이 좀 마르구려.",
+    "next_text": "국물이라도 한 그릇 주시오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  }
+}
