@@ -30,6 +30,7 @@ text=Path('C:/workspace/joseon/tmp/cast608_page.html').read_text(encoding='utf-8
 (site/'index.html').write_text(text,encoding='utf-8');(site/'list.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8');(site/'audio_manifest.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
 report=Path('C:/workspace/joseon-assets/reports/608_voice_casting');report.mkdir(parents=True,exist_ok=True)
 shutil.copytree(p,report,dirs_exist_ok=True)
+(report/'korean.json').write_text(json.dumps({'voices':[{k:v.get(k) for k in ['voice_id','name','language','locale','gender','age','description','preview_url','public_owner_id','category']} for v in json.loads((p/'korean.json').read_text(encoding='utf-8'))['voices'] if v.get('language')=='ko'],'scope':'language=ko 조회 첫1000개에서 주언어 ko 추출. 주 목록은 catalog.json 전체545개.'},ensure_ascii=False,indent=2),encoding='utf-8')
 (report/'account.json').write_text(json.dumps({'voices':[{'voice_id':v['voice_id'],'name':v['name'],'description':v.get('description'),'labels':v.get('labels'),'category':v.get('category'),'preview_url':v.get('preview_url')} for v in account],'has_more':False},ensure_ascii=False,indent=2),encoding='utf-8')
 for name in ['cast608_fetch.py','cast608_more.py','cast608_plan.py','cast608_generate.py','cast608_package.py','cast608_page.html']:shutil.copy2(Path('C:/workspace/joseon/tmp')/name,report/name)
 shutil.copy2(site/'audio_manifest.json',report/'audio_manifest.json')
