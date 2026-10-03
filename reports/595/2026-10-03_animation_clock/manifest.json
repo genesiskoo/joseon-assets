@@ -1,0 +1,72 @@
+{
+  "card": 595,
+  "main_landed": false,
+  "pd_adopted": false,
+  "fixed_fps": 0,
+  "before": {
+    "checks": 65,
+    "fails": 1
+  },
+  "first_candidate": {
+    "checks": 65,
+    "fails": 5
+  },
+  "calibrated_candidate": {
+    "checks": 65,
+    "fails": 1
+  },
+  "remaining_native_failure": "pre-existing skill_thrust gap6physicalticks",
+  "engine_unit_checks": 28,
+  "sampling_unit_checks": 11,
+  "numerical_criteria_unchanged": true,
+  "gallery": [
+    {
+      "path": "attack_before.jpg",
+      "source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T040053_172268Z_before\\shots\\anim_commit_01_attack_hit.png",
+      "source_sha256": "eacb2c1e43063052346b0c16a9f1470ee4289c40463e739b739c92547f4fe461",
+      "bytes": 160873,
+      "sha256": "157af6aa98373f37d0ef17d53c1787b09f1259c6cbe6bbfcceb000d804a7d963"
+    },
+    {
+      "path": "attack_after.jpg",
+      "source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T045149_623241Z_after\\shots\\anim_commit_01_attack_hit.png",
+      "source_sha256": "5fa3ccbf98ace8a438b06c947751bc80cbfad532d7edf9645b30316324aee7be",
+      "bytes": 159190,
+      "sha256": "587d6ea9285c9ccc89f9ce23f4f2f1b6cf3f0e74eaec361c48377bfe1c31e72b"
+    },
+    {
+      "path": "strike_before.jpg",
+      "source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T040053_172268Z_before\\shots\\anim_commit_02_slash_hit.png",
+      "source_sha256": "494ad4e5ebd2c78897d40ff0347f5997ad8f0893929780a85ea79e57f4b3f072",
+      "bytes": 160162,
+      "sha256": "86a60e75bfda9fc05e279d9bb46fb0fbc68ca0f2a16ead126e98c5bd1b3499e1"
+    },
+    {
+      "path": "strike_after.jpg",
+      "source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T045149_623241Z_after\\shots\\anim_commit_02_slash_hit.png",
+      "source_sha256": "860034c052fe5e3f1a321b942d1cc6a4c40e8e7de749cfb95ef470d93db7365f",
+      "bytes": 160399,
+      "sha256": "2f40ee6ff26ff38aa655a461af251804a9f039aada948bdf10921ecf2ebcd43f"
+    },
+    {
+      "path": "thrust_before.jpg",
+      "source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T040053_172268Z_before\\shots\\anim_commit_05_thrust_hit.png",
+      "source_sha256": "99e059b1cc54d20fb6134b662d125423560ff9cc81a4b4672dfc2267cf4a27c8",
+      "bytes": 159634,
+      "sha256": "92a16a9bbe68661c0972d4b28cc3f4b8ab352576f67f4bf63b54f7924d158eec"
+    },
+    {
+      "path": "thrust_after.jpg",
+      "source": "C:\\workspace\\joseon\\._tmp\\native_card_595\\20261003T045149_623241Z_after\\shots\\anim_commit_05_thrust_hit.png",
+      "source_sha256": "ffba609d7f26d45fdc803113e3beffeca503bde3c7f14f5352b08b1326fc232e",
+      "bytes": 160009,
+      "sha256": "dd572eb45b2da512f68bb6d72423e74554359bbc270a2c458de3385c6bbb7ec5"
+    }
+  ],
+  "cohort": "declared focused2+full1 pending at freeze",
+  "source_sha256": {
+    "actors/actor_visual.gd": "769c26c44cfcedac2644c1de732d48cad0683fdfb23acf349b664b3bbe2e0cee",
+    "tests/e2e/scenarios/anim_commit.gd": "8e8d26a1e6ef36e68ad783df8aaeb37e0d8912b21ec8768ec54f7d1b4c37033e",
+    "tests/fixtures/animation_tick_sample.gd": "178f09a5a5585695e0a62f2eec4454ba83fb66e23acd255957d8243d0c154323"
+  }
+}
