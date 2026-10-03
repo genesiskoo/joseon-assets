@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "shaman",
+    "rank": 3,
+    "voice_id": "ah4r1hZOydd3XWlHOm3Y",
+    "name": "Jian.K – Calm mid-low, trustworthy voice",
+    "scene": "봉인의 이상을 감지한 할매가 도호에게 조용하고 단호하게 경고한다.",
+    "line": 1,
+    "file": "audio/shaman_3_2.mp3",
+    "request": {
+      "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "무슨 일이 벌어진 게요?",
+      "next_text": "도사 양반밖에 없소.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "S6QA8dgKAPurrDz83fp5",
+    "history-item-id": "rLDimYWuSnad9kqUyMTZ",
+    "character-cost": "3"
+  }
+}

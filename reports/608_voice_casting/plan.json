@@ -1,0 +1,1538 @@
+{
+  "card": 608,
+  "generated_by": "codex",
+  "model": "eleven_v4",
+  "roles": [
+    {
+      "id": "doho",
+      "name": "도호",
+      "target": "30대 안팎의 중저음. 여유·능청은 있지만 가벼운 유튜버처럼 들리지 않는 떠돌이 검객.",
+      "lines": [
+        "산책 좀 했지.",
+        "도깨비도 이사를 다니는 줄은 몰랐구먼."
+      ],
+      "scenes": [
+        "촌장이 소탕을 끝낸 도호에게 고맙다고 말한다. 도호는 대수롭지 않게 받아넘긴다.",
+        "도깨비가 못골에 이사를 왔다며 말을 건다. 도호는 놀라기보다 슬쩍 농을 던진다."
+      ],
+      "previous": [
+        "베었구려! 못골이 오랜만에 숨을 쉬겠소.",
+        "오, 개 잡은 도사 양반이로군. 덕분에 눌러앉게 됐지."
+      ],
+      "next": [
+        "약소하지만… 받으시오.",
+        "장터 뒤 대장간 터가 마음에 들어서 말이야."
+      ],
+      "old": "Ir7oQcBXWiq4oFGROCfj",
+      "candidates": [
+        {
+          "voice_id": "YcKXQhCnoNmbyAdL8Shk",
+          "name": "Yeon Taek - The cool man",
+          "why": "차분하고 쿨한 결이 도호의 힘 뺀 능청에 가까운 후보.",
+          "risk": "너무 매끈하거나 현대적인 억양인지 확인.",
+          "description": "Butter-like but friendly voice. clam and cool.",
+          "preview_url": "https://api.us.elevenlabs.io/v1/voices/YcKXQhCnoNmbyAdL8Shk/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiI1MTA2ODkzOGRlOTI0ZTE3YmM2N2MyZTA5ZWRkOTYzZCIsImZpbGVuYW1lIjoiMTE1N2JmYTYtODk1MS00MTAzLWExMTMtZmYxZjM2YjJmNjhjLm1wMyIsInRpbWVzdGFtcCI6MTc5MTA1MDQwMDAwMDAwMH0%3D",
+          "labels": {
+            "language": "ko",
+            "use_case": "conversational",
+            "accent": "standard",
+            "gender": "male",
+            "age": "young",
+            "descriptive": "gentle"
+          },
+          "in_account": true,
+          "rank": 1
+        },
+        {
+          "voice_id": "rCm09Tf1yMYbOyCRLDyB",
+          "name": "Taek - Conversational, Engaging, Friendly",
+          "why": "중저음·자연스러운 속도·재치 있는 전달이라는 설명이 능청 대사에 맞음.",
+          "risk": "설명체·콘텐츠 진행자 느낌이 남는지 확인.",
+          "description": "Young adult, Male. Perfect for dynamic storytelling, casual history narration, and witty short-form content. Warm and engaging mid-low tone with natural pacing.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/d81c10d1b7b843288e24bb181db61a9a/voices/rCm09Tf1yMYbOyCRLDyB/CLNEiXiLyxveZxzPHGz9.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "young",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 2
+        },
+        {
+          "voice_id": "v1is6KLMuZWgumQgKSOi",
+          "name": "Professional K-Actor Lee (Narration & Ads)",
+          "why": "배우 기반의 정돈된 발음과 감정 깊이. 진지한 장면까지 맡길 대안.",
+          "risk": "도호보다 연령감이 높거나 광고체로 들리는지 확인.",
+          "description": "Professional actor with a smooth, trustworthy, and sophisticated Korean voice. Perfect for high-end commercials, deep documentaries, and captivating narrations. Min blends gentle warmth with gripping mystery, providing the emotional depth and precise diction your premium project deserves.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/a9e24fe91a74421fa4b8aef90ccfe5a0/voices/v1is6KLMuZWgumQgKSOi/MtuKbJgvILGkvpdWxLCm.mp3",
+          "labels": {
+            "language": "ko",
+            "use_case": "narrative_story",
+            "accent": "standard",
+            "gender": "male",
+            "age": "middle_aged",
+            "descriptive": "calm"
+          },
+          "in_account": true,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": "merchant",
+      "name": "김 영감",
+      "target": "사람 좋은 늙은 잡화상. 살짝 웃음 섞인 너스레·구수함. 촌장보다 밝고 말맛이 있어야 함.",
+      "lines": [
+        "도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까?",
+        "갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니."
+      ],
+      "scenes": [
+        "처음 온 도호를 보고 잡화상이 장난스럽게 말을 붙인다.",
+        "손님이 검 값을 깎자고 한다. 웃음은 있지만 장사 원칙은 단호하다."
+      ],
+      "previous": [
+        "물건 좀 봅시다.",
+        "검 값이 좀 세구려."
+      ],
+      "next": [
+        "물건 좀 봅시다.",
+        "알았수. 구경이나 해 보시오."
+      ],
+      "old": "AgA5UKT9OrVg7jxVBZd4",
+      "candidates": [
+        {
+          "voice_id": "PLfpgtLkFW07fDYbUiRJ",
+          "name": "Bongpal - Cheerful, Clear and Measured",
+          "why": "밝고 익살스러운 노인 목소리로 김 영감의 너스레에 우선 적합.",
+          "risk": "과한 만화 연기나 지나친 고음인지 확인.",
+          "description": "Bong pal - A cheerful and funny old man's voice",
+          "preview_url": "https://api.us.elevenlabs.io/v1/voices/PLfpgtLkFW07fDYbUiRJ/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiI1N2Q1ZGEwMTdhZGY0NGE1ODdiZTBlNjc0MWE1MjQ1YiIsImZpbGVuYW1lIjoiYjI3MGVjZjktYTU2ZC00NGMzLWIzYTgtNjViMWI1Y2FlYmRiLm1wMyIsInRpbWVzdGFtcCI6MTc5MTA1MDQwMDAwMDAwMH0%3D",
+          "labels": {
+            "language": "ko",
+            "use_case": "characters_animation",
+            "accent": "standard",
+            "gender": "male",
+            "age": "old",
+            "descriptive": "crisp"
+          },
+          "in_account": true,
+          "rank": 1
+        },
+        {
+          "voice_id": "5ON5Fnz24cnOozEQfGAm",
+          "name": "Namchun - Encouraging and Natural",
+          "why": "친절한 한국인 할아버지 결로 사람 좋은 잡화상에 맞음.",
+          "risk": "너무 순하고 느려서 능청이 약해지는지 확인.",
+          "description": "A kind and gentle Korean grandfather's voice. Works well for Narrations.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/0307ecff47b94ae080ef641cada7efda/voices/5ON5Fnz24cnOozEQfGAm/Y1YL92oBVchHaHsBH95L.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "old",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 2
+        },
+        {
+          "voice_id": "ZZ4xhVcc83kZBfNIlIIz",
+          "name": "Manbo - Encouraging, Clear and Measured",
+          "why": "유쾌한 캐릭터 목소리로 장사꾼의 말맛을 살리는 대안.",
+          "risk": "노인보다 중년처럼 들릴 수 있음.",
+          "description": "Middle aged male with a cheerful and funny character voice.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/user/hSWXaUomcSNh92DBdVimNedwBFB2/voices/ZZ4xhVcc83kZBfNIlIIz/c261B0jxbFyiSqRbrN6M.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": "elder",
+      "name": "촌장",
+      "target": "지치고 걱정 많은 촌로. 담백하고 사무적이며, 감사할 때도 과장하지 않는다.",
+      "lines": [
+        "떠돌이 도사가 웬일이오.",
+        "요괴병에 장정 셋을 잃었소."
+      ],
+      "scenes": [
+        "낯선 도호가 마을에 들어왔다. 촌장이 경계 섞인 담백한 질문을 건넨다.",
+        "촌장이 석 달간 마을을 덮친 역병의 피해를 설명한다. 슬픔을 꾹 누른다."
+      ],
+      "previous": [
+        "못골 촌장이시오?",
+        "못골 장터가 닫힌 지 석 달이오."
+      ],
+      "next": [
+        "못골 장터가 닫힌 지 석 달이오.",
+        "내가 가 보리다."
+      ],
+      "old": "AgA5UKT9OrVg7jxVBZd4",
+      "candidates": [
+        {
+          "voice_id": "nw7o9nqXCkQKoAs59z99",
+          "name": "Rei - Deep, Rich, Drama ",
+          "why": "나이 든 중저음과 차분한 무게로 지친 어른의 담백함을 시험.",
+          "risk": "오디오북처럼 지나치게 풍성한 낭독이 되는지 확인.",
+          "description": "A rich, professional, warm, and soothing deep male voice. Features a smooth mid-low register that inspires trust and calmness. Perfect for high-end audiobooks, documentaries, corporate explainers, and relaxing meditation guides.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/c63a71c0ba5c40f9b5c4e0cd0186bf4f/voices/nw7o9nqXCkQKoAs59z99/cKybYVNgvuttD0VM5dmt.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "old",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 1
+        },
+        {
+          "voice_id": "owbiGBW4rEJjmY5Xvwwx",
+          "name": "Daniel - Calm, Mature male, Deep",
+          "why": "성숙하고 깊은 저음·절제된 호흡으로 촌장의 책임감에 맞음.",
+          "risk": "연령감이 충분한지, 너무 든든해서 피로감이 사라지는지 확인.",
+          "description": "A mature male voice with a warm, deep, calm, and steady tone, conveying wisdom, trust, and quiet confidence.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/c30da5881682499c84b9a8bb46baa13c/voices/owbiGBW4rEJjmY5Xvwwx/907d4d45-802a-42f8-b8a7-85e7b6407890.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 2
+        },
+        {
+          "voice_id": "NpneagLVR101ytYGxUPX",
+          "name": "Joon-ho - Warm and Grounded",
+          "why": "차분하고 온화한 결. 과장하지 않는 마을 실무 책임자 대안.",
+          "risk": "김 영감과 대비될 만큼 진지하고 담백한지 확인.",
+          "description": "A mature Korean male voice with a rich, mellow timbre and a naturally reassuring tone, perfect for narration and guided experiences that call for steady warmth and quiet confidence.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/1da06ea679a54975ad96a2221fe6530d/voices/NpneagLVR101ytYGxUPX/S0Iijh8Y6LOpEWcbo1bh.mp3",
+          "labels": {
+            "language": "ko",
+            "use_case": "conversational",
+            "accent": "seoul",
+            "gender": "male",
+            "age": "middle_aged",
+            "descriptive": "pleasant"
+          },
+          "in_account": true,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": "shaman",
+      "name": "무당 할매",
+      "target": "나이 든 여성의 낮고 마른 결. 진중하고 근심 많은 해설자. 젊은 상담사·뉴스 낭독 느낌은 피한다.",
+      "lines": [
+        "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+        "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소."
+      ],
+      "scenes": [
+        "못골을 살필 도호가 뒤늦게 도착했다. 할매는 안도보다 걱정이 앞선다.",
+        "봉인의 이상을 감지한 할매가 도호에게 조용하고 단호하게 경고한다."
+      ],
+      "previous": [
+        "소문을 듣고 왔소.",
+        "무슨 일이 벌어진 게요?"
+      ],
+      "next": [
+        "봉인이 흔들리오.",
+        "도사 양반밖에 없소."
+      ],
+      "old": "UvkXHIJzOBYWOI51BDKp",
+      "candidates": [
+        {
+          "voice_id": "SrkN8J8D7m8bAtmS0uiq",
+          "name": "MJay",
+          "why": "노년 여성으로 분류된 목소리. 할매의 연령감부터 맞추는 우선 후보.",
+          "risk": "포근한 이야기꾼 성향이 강해 경고의 무게가 약할 수 있음.",
+          "description": "Soft, calm, warm Korean Storyteller, delivering serene emotional warmth to audiobooks, essays, and sleep stories.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/4873b728c8dc433984420a5d5b8d7e1c/voices/SrkN8J8D7m8bAtmS0uiq/7e6df15d-2654-4b88-a3c4-2380948a9a23.mp3",
+          "labels": {
+            "gender": "female",
+            "age": "old",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 1
+        },
+        {
+          "voice_id": "ZjAPD4f11zlnEnZpKDgo",
+          "name": "Haemi",
+          "why": "노년 여성·차분한 전달로 억지 할머니 연기 없이 자연스러움 비교.",
+          "risk": "설명에는 중년이라 표기와 실제 연령감이 다를 수 있음.",
+          "description": "A gentle, calm, and clear middle-aged woman’s voice, like one used in a spoken fairy tale.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/user/user_1401kdx2x8wsephaew7w0ze07p27/voices/ZjAPD4f11zlnEnZpKDgo/S3CxIYMRzXlf74FKeFaD.mp3",
+          "labels": {
+            "gender": "female",
+            "age": "old",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 2
+        },
+        {
+          "voice_id": "ah4r1hZOydd3XWlHOm3Y",
+          "name": "Jian.K – Calm mid-low, trustworthy voice",
+          "why": "중저음과 약한 허스키 결로 마르고 진중한 할매의 대안.",
+          "risk": "중년 목소리라 노년감이 부족할 수 있음.",
+          "description": " A calm mid-low narration voice with a subtle husky texture, ideal for economics, finance, history, documentaries, and storytelling. Clear, steady delivery designed for long-form explanatory and trust-focused narration.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/2219d0c328674eeeb19bbe35ce3a63ef/voices/ah4r1hZOydd3XWlHOm3Y/FSlEw4iriuOH4jDe2cZd.mp3",
+          "labels": {
+            "gender": "female",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": "jumo",
+      "name": "주모 / 구미호",
+      "target": "성숙한 중저음 여성. 평소엔 억척스럽고 정 많으며, 속내를 감출 때는 따뜻함이 살짝 걷힌다.",
+      "lines": [
+        "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+        "내가 들녘 옛 주막집서… 오래 일했지. 그 얘긴, 말은 못 하겠소."
+      ],
+      "scenes": [
+        "손님 끊긴 술청에 도호가 들른다. 주모는 일손을 움직이며 구수하게 권한다.",
+        "옛 주막 이야기를 묻자 주모가 말을 삼킨다. 친절하지만 쉽게 속을 보이지 않는다."
+      ],
+      "previous": [
+        "목이 좀 마르구려.",
+        "그 옛 주막집은 아는 곳이오?"
+      ],
+      "next": [
+        "국물이라도 한 그릇 주시오.",
+        "더 묻지는 않겠소."
+      ],
+      "old": "xi3rF0t7dg7uN2M0WUhr",
+      "candidates": [
+        {
+          "voice_id": "Kndx0DUJ5HQE1HQgiMY8",
+          "name": "Jin - Calm, low-pitched",
+          "why": "30대 중저음 여성. 젊고 밝은 기존 주모보다 성숙한 바탕을 시험.",
+          "risk": "억척스러운 생활감과 소문 줄의 말맛이 붙는지 확인.",
+          "description": "Korean woman in her 30s with a low-to-medium-pitched voice.\n",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/5ebca019390f44df9102d572ef84b583/voices/Kndx0DUJ5HQE1HQgiMY8/7f3c92c2-303f-48fd-b67d-a8f94b840d5b.mp3",
+          "labels": {
+            "gender": "female",
+            "age": "young",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 1
+        },
+        {
+          "voice_id": "UqW1DivwFt1NwUMSGnTn",
+          "name": "Suzie - Calm Korean ",
+          "why": "차분한 30대 여성. 평소의 정과 숨기는 속내 두 결을 비교하기 좋음.",
+          "risk": "너무 반듯한 상담·안내 말투인지 확인.",
+          "description": "A composed woman in her 30s speaking standard Seoul Korean. Suitable for audiobooks, documentaries, personal stories, educational content, and customer service.\n",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/9c4bd91321c543bca158a530dc692779/voices/UqW1DivwFt1NwUMSGnTn/x8H50JmiyLPG4A0X4MlO.mp3",
+          "labels": {
+            "gender": "female",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 2
+        },
+        {
+          "voice_id": "VFNaRkx6q2IQZn2mmwwg",
+          "name": "Shin rara",
+          "why": "약한 지역 억양과 감정 표현이라는 설명이 술청 주인의 생활감에 맞음.",
+          "risk": "실제 목록 메타데이터가 빈약해 샘플 발음부터 확인.",
+          "description": "A natural female voice with a slight regional accent, capable of clearly expressing emotion.\n",
+          "preview_url": "https://api.us.elevenlabs.io/v1/voices/VFNaRkx6q2IQZn2mmwwg/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiIzMjgxZGZjOTFkOTY0MjgwODQzN2I2ODI2N2ZmZGUyOCIsImZpbGVuYW1lIjoiNTEyMTM1ODMtMmM1OS00NmE1LTliOWEtZmE2NmJkYjhhMWI0Lm1wMyIsInRpbWVzdGFtcCI6MTc5MTA1MDQwMDAwMDAwMH0%3D",
+          "labels": {
+            "gender": "female",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": "iksoe",
+      "name": "억쇠",
+      "target": "발보다 입이 바쁜 장돌뱅이. 친근하고 재빠른 중년 남성, 사투리는 양념 수준.",
+      "lines": [
+        "뭐가 들었는지는 나도 몰라유. 열어봐야 알지.",
+        "손해 봐도 내 탓은 마슈, 도사 양반. 운도 실력이랑께."
+      ],
+      "scenes": [
+        "억쇠가 보따리를 펼쳐 보이며 도호의 호기심을 자극한다.",
+        "도호가 손해 볼까 망설이자 억쇠가 능청스럽게 책임을 피한다."
+      ],
+      "previous": [
+        "그 보따리엔 뭐가 들었수?",
+        "손해 보면 어쩔 거요?"
+      ],
+      "next": [
+        "일단 하나 열어 봅시다.",
+        "그 말이 더 수상하구려."
+      ],
+      "old": null,
+      "candidates": [
+        {
+          "voice_id": "TRO4gatqxbbwLXHLDLSk",
+          "name": "Jae-seong - Diplomatic and Measured",
+          "why": "충청도 억양의 젊은 아저씨로 유·슈 말끝의 장돌뱅이 맛을 시험.",
+          "risk": "말이 너무 느리거나 지역 억양이 과하면 부적합.",
+          "description": "충청도 억양의 젊은 아저씨",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/0307ecff47b94ae080ef641cada7efda/voices/TRO4gatqxbbwLXHLDLSk/Ep16vO2pZWK5hVxdrBWe.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 1
+        },
+        {
+          "voice_id": "ZZ4xhVcc83kZBfNIlIIz",
+          "name": "Manbo - Encouraging, Clear and Measured",
+          "why": "유쾌한 중년 캐릭터 결이 발 빠른 말장사 역할에 맞음.",
+          "risk": "김 영감 후보와 겹치므로 동시에 채택하지 않는 방향.",
+          "description": "Middle aged male with a cheerful and funny character voice.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/user/hSWXaUomcSNh92DBdVimNedwBFB2/voices/ZZ4xhVcc83kZBfNIlIIz/c261B0jxbFyiSqRbrN6M.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 2
+        },
+        {
+          "voice_id": "TKUGUd5JWceSqSPVPjha",
+          "name": "DaeBuHo - Calm & Friendly",
+          "why": "40~50대 지역 억양으로 친근한 장사꾼의 생활감 대안.",
+          "risk": "경상도 결이라 유·슈 말끝과 충돌하는지 확인.",
+          "description": "A male voice in his 40s–50s with a Gyeongsang dialect, carrying a mature and regionally distinctive tone.",
+          "preview_url": "https://api.us.elevenlabs.io/v1/voices/TKUGUd5JWceSqSPVPjha/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiI3NjE1ZmFhMjM0ZmI0MjI4OWFjZThkNzViM2UwMjMyMyIsImZpbGVuYW1lIjoiUTRPS0JLVU1rSVIzUWk3RWt2aU8ubXAzIiwidGltZXN0YW1wIjoxNzkxMDUwNDAwMDAwMDAwfQ%3D%3D",
+          "labels": {
+            "gender": "male",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "id": "dokkaebi",
+      "name": "도깨비",
+      "target": "털북숭이 거한의 거친 중저음. 반말·능청은 있지만 우스꽝스러운 괴물은 아니다.",
+      "lines": [
+        "오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지.",
+        "물건을 맡기면 다른 물건으로 바꿔 줘. 값은 그때그때 달라."
+      ],
+      "scenes": [
+        "새로 못골에 눌러앉은 거한이 도호를 보고 웃으며 말을 건다.",
+        "도깨비가 자기 거래 규칙을 자신 있게 설명한다. 장난은 있지만 신용은 지킨다."
+      ],
+      "previous": [
+        "이 터엔 누구요?",
+        "무슨 일을 하는 게요?"
+      ],
+      "next": [
+        "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "맡긴 건 제대로 돌려주는 거겠지?"
+      ],
+      "old": null,
+      "candidates": [
+        {
+          "voice_id": "wzMVIc8FAFmgMxFpN0uM",
+          "name": "Deokpal - Measured and Diplomatic",
+          "why": "거칠고 남성적인 한국어 결로 거한의 바탕을 먼저 맞춤.",
+          "risk": "거칠기만 하고 능청·친근함이 없는지 확인.",
+          "description": "A masculine and rough Korean male voice. Great for Narrations.",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/user/hSWXaUomcSNh92DBdVimNedwBFB2/voices/wzMVIc8FAFmgMxFpN0uM/96c69dba-7767-4987-9969-4ebbb30cc249.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "middle_aged",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 1
+        },
+        {
+          "voice_id": "UmYoqGlufKxhJ6NCx5Mv",
+          "name": "Jang Ho - Serious, Husky and Measured",
+          "why": "허스키하고 야성적인 결. 오래 산 도깨비의 질감을 시험.",
+          "risk": "너무 늙거나 험악해져 신용 있는 장사꾼 느낌을 잃는지 확인.",
+          "description": "Husky and wild male voice",
+          "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/user/hSWXaUomcSNh92DBdVimNedwBFB2/voices/UmYoqGlufKxhJ6NCx5Mv/9f686726-70f4-4a1d-b4a2-dbaef066af7e.mp3",
+          "labels": {
+            "gender": "male",
+            "age": "old",
+            "language": "ko"
+          },
+          "in_account": false,
+          "rank": 2
+        },
+        {
+          "voice_id": "ibCGc01503OQd2R6i1n1",
+          "name": "Marcus - Deep steady Baritone(Stoic)",
+          "why": "깊은 허스키 바리톤으로 큰 몸의 무게를 살릴 대안.",
+          "risk": "차분한 낭독 성향이라 반말의 자연스러움 확인.",
+          "description": "Deep, Husky Baritone for Professional Narrations. Master of Meditation and Luxury Branding. (EN/KR)",
+          "preview_url": "https://api.us.elevenlabs.io/v1/voices/ibCGc01503OQd2R6i1n1/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiIwNjhmNTVlZjNhMzk0YzMzYTNjNTE2NjgwMzNmMTY5YSIsImZpbGVuYW1lIjoiNHBQRExSSndDeWpHTGZCRHVoZXEubXAzIiwidGltZXN0YW1wIjoxNzkxMDUwNDAwMDAwMDAwfQ%3D%3D",
+          "labels": {
+            "language": "ko",
+            "use_case": "narrative_story",
+            "accent": "seoul",
+            "gender": "male",
+            "age": "middle_aged",
+            "descriptive": "calm"
+          },
+          "in_account": true,
+          "rank": 3
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "role": "doho",
+      "rank": 1,
+      "voice_id": "YcKXQhCnoNmbyAdL8Shk",
+      "name": "Yeon Taek - The cool man",
+      "scene": "촌장이 소탕을 끝낸 도호에게 고맙다고 말한다. 도호는 대수롭지 않게 받아넘긴다.",
+      "line": 0,
+      "file": "audio/doho_1_1.mp3",
+      "request": {
+        "text": "산책 좀 했지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "베었구려! 못골이 오랜만에 숨을 쉬겠소.",
+        "next_text": "약소하지만… 받으시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "doho",
+      "rank": 1,
+      "voice_id": "YcKXQhCnoNmbyAdL8Shk",
+      "name": "Yeon Taek - The cool man",
+      "scene": "도깨비가 못골에 이사를 왔다며 말을 건다. 도호는 놀라기보다 슬쩍 농을 던진다.",
+      "line": 1,
+      "file": "audio/doho_1_2.mp3",
+      "request": {
+        "text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "오, 개 잡은 도사 양반이로군. 덕분에 눌러앉게 됐지.",
+        "next_text": "장터 뒤 대장간 터가 마음에 들어서 말이야.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "doho",
+      "rank": 2,
+      "voice_id": "rCm09Tf1yMYbOyCRLDyB",
+      "name": "Taek - Conversational, Engaging, Friendly",
+      "scene": "촌장이 소탕을 끝낸 도호에게 고맙다고 말한다. 도호는 대수롭지 않게 받아넘긴다.",
+      "line": 0,
+      "file": "audio/doho_2_1.mp3",
+      "request": {
+        "text": "산책 좀 했지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "베었구려! 못골이 오랜만에 숨을 쉬겠소.",
+        "next_text": "약소하지만… 받으시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "doho",
+      "rank": 2,
+      "voice_id": "rCm09Tf1yMYbOyCRLDyB",
+      "name": "Taek - Conversational, Engaging, Friendly",
+      "scene": "도깨비가 못골에 이사를 왔다며 말을 건다. 도호는 놀라기보다 슬쩍 농을 던진다.",
+      "line": 1,
+      "file": "audio/doho_2_2.mp3",
+      "request": {
+        "text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "오, 개 잡은 도사 양반이로군. 덕분에 눌러앉게 됐지.",
+        "next_text": "장터 뒤 대장간 터가 마음에 들어서 말이야.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "doho",
+      "rank": 3,
+      "voice_id": "v1is6KLMuZWgumQgKSOi",
+      "name": "Professional K-Actor Lee (Narration & Ads)",
+      "scene": "촌장이 소탕을 끝낸 도호에게 고맙다고 말한다. 도호는 대수롭지 않게 받아넘긴다.",
+      "line": 0,
+      "file": "audio/doho_3_1.mp3",
+      "request": {
+        "text": "산책 좀 했지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "베었구려! 못골이 오랜만에 숨을 쉬겠소.",
+        "next_text": "약소하지만… 받으시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "doho",
+      "rank": 3,
+      "voice_id": "v1is6KLMuZWgumQgKSOi",
+      "name": "Professional K-Actor Lee (Narration & Ads)",
+      "scene": "도깨비가 못골에 이사를 왔다며 말을 건다. 도호는 놀라기보다 슬쩍 농을 던진다.",
+      "line": 1,
+      "file": "audio/doho_3_2.mp3",
+      "request": {
+        "text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "오, 개 잡은 도사 양반이로군. 덕분에 눌러앉게 됐지.",
+        "next_text": "장터 뒤 대장간 터가 마음에 들어서 말이야.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "doho",
+      "rank": 0,
+      "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 0,
+      "file": "audio/doho_0_1.mp3",
+      "request": {
+        "text": "산책 좀 했지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "베었구려! 못골이 오랜만에 숨을 쉬겠소.",
+        "next_text": "약소하지만… 받으시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "doho",
+      "rank": 0,
+      "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 1,
+      "file": "audio/doho_0_2.mp3",
+      "request": {
+        "text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "오, 개 잡은 도사 양반이로군. 덕분에 눌러앉게 됐지.",
+        "next_text": "장터 뒤 대장간 터가 마음에 들어서 말이야.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 1,
+      "voice_id": "PLfpgtLkFW07fDYbUiRJ",
+      "name": "Bongpal - Cheerful, Clear and Measured",
+      "scene": "처음 온 도호를 보고 잡화상이 장난스럽게 말을 붙인다.",
+      "line": 0,
+      "file": "audio/merchant_1_1.mp3",
+      "request": {
+        "text": "도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까?",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "물건 좀 봅시다.",
+        "next_text": "물건 좀 봅시다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 1,
+      "voice_id": "PLfpgtLkFW07fDYbUiRJ",
+      "name": "Bongpal - Cheerful, Clear and Measured",
+      "scene": "손님이 검 값을 깎자고 한다. 웃음은 있지만 장사 원칙은 단호하다.",
+      "line": 1,
+      "file": "audio/merchant_1_2.mp3",
+      "request": {
+        "text": "갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "검 값이 좀 세구려.",
+        "next_text": "알았수. 구경이나 해 보시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 2,
+      "voice_id": "5ON5Fnz24cnOozEQfGAm",
+      "name": "Namchun - Encouraging and Natural",
+      "scene": "처음 온 도호를 보고 잡화상이 장난스럽게 말을 붙인다.",
+      "line": 0,
+      "file": "audio/merchant_2_1.mp3",
+      "request": {
+        "text": "도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까?",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "물건 좀 봅시다.",
+        "next_text": "물건 좀 봅시다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 2,
+      "voice_id": "5ON5Fnz24cnOozEQfGAm",
+      "name": "Namchun - Encouraging and Natural",
+      "scene": "손님이 검 값을 깎자고 한다. 웃음은 있지만 장사 원칙은 단호하다.",
+      "line": 1,
+      "file": "audio/merchant_2_2.mp3",
+      "request": {
+        "text": "갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "검 값이 좀 세구려.",
+        "next_text": "알았수. 구경이나 해 보시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 3,
+      "voice_id": "ZZ4xhVcc83kZBfNIlIIz",
+      "name": "Manbo - Encouraging, Clear and Measured",
+      "scene": "처음 온 도호를 보고 잡화상이 장난스럽게 말을 붙인다.",
+      "line": 0,
+      "file": "audio/merchant_3_1.mp3",
+      "request": {
+        "text": "도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까?",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "물건 좀 봅시다.",
+        "next_text": "물건 좀 봅시다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 3,
+      "voice_id": "ZZ4xhVcc83kZBfNIlIIz",
+      "name": "Manbo - Encouraging, Clear and Measured",
+      "scene": "손님이 검 값을 깎자고 한다. 웃음은 있지만 장사 원칙은 단호하다.",
+      "line": 1,
+      "file": "audio/merchant_3_2.mp3",
+      "request": {
+        "text": "갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "검 값이 좀 세구려.",
+        "next_text": "알았수. 구경이나 해 보시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 0,
+      "voice_id": "AgA5UKT9OrVg7jxVBZd4",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 0,
+      "file": "audio/merchant_0_1.mp3",
+      "request": {
+        "text": "도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까?",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "물건 좀 봅시다.",
+        "next_text": "물건 좀 봅시다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "merchant",
+      "rank": 0,
+      "voice_id": "AgA5UKT9OrVg7jxVBZd4",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 1,
+      "file": "audio/merchant_0_2.mp3",
+      "request": {
+        "text": "갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "검 값이 좀 세구려.",
+        "next_text": "알았수. 구경이나 해 보시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 1,
+      "voice_id": "nw7o9nqXCkQKoAs59z99",
+      "name": "Rei - Deep, Rich, Drama ",
+      "scene": "낯선 도호가 마을에 들어왔다. 촌장이 경계 섞인 담백한 질문을 건넨다.",
+      "line": 0,
+      "file": "audio/elder_1_1.mp3",
+      "request": {
+        "text": "떠돌이 도사가 웬일이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 촌장이시오?",
+        "next_text": "못골 장터가 닫힌 지 석 달이오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 1,
+      "voice_id": "nw7o9nqXCkQKoAs59z99",
+      "name": "Rei - Deep, Rich, Drama ",
+      "scene": "촌장이 석 달간 마을을 덮친 역병의 피해를 설명한다. 슬픔을 꾹 누른다.",
+      "line": 1,
+      "file": "audio/elder_1_2.mp3",
+      "request": {
+        "text": "요괴병에 장정 셋을 잃었소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 장터가 닫힌 지 석 달이오.",
+        "next_text": "내가 가 보리다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 2,
+      "voice_id": "owbiGBW4rEJjmY5Xvwwx",
+      "name": "Daniel - Calm, Mature male, Deep",
+      "scene": "낯선 도호가 마을에 들어왔다. 촌장이 경계 섞인 담백한 질문을 건넨다.",
+      "line": 0,
+      "file": "audio/elder_2_1.mp3",
+      "request": {
+        "text": "떠돌이 도사가 웬일이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 촌장이시오?",
+        "next_text": "못골 장터가 닫힌 지 석 달이오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 2,
+      "voice_id": "owbiGBW4rEJjmY5Xvwwx",
+      "name": "Daniel - Calm, Mature male, Deep",
+      "scene": "촌장이 석 달간 마을을 덮친 역병의 피해를 설명한다. 슬픔을 꾹 누른다.",
+      "line": 1,
+      "file": "audio/elder_2_2.mp3",
+      "request": {
+        "text": "요괴병에 장정 셋을 잃었소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 장터가 닫힌 지 석 달이오.",
+        "next_text": "내가 가 보리다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 3,
+      "voice_id": "NpneagLVR101ytYGxUPX",
+      "name": "Joon-ho - Warm and Grounded",
+      "scene": "낯선 도호가 마을에 들어왔다. 촌장이 경계 섞인 담백한 질문을 건넨다.",
+      "line": 0,
+      "file": "audio/elder_3_1.mp3",
+      "request": {
+        "text": "떠돌이 도사가 웬일이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 촌장이시오?",
+        "next_text": "못골 장터가 닫힌 지 석 달이오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 3,
+      "voice_id": "NpneagLVR101ytYGxUPX",
+      "name": "Joon-ho - Warm and Grounded",
+      "scene": "촌장이 석 달간 마을을 덮친 역병의 피해를 설명한다. 슬픔을 꾹 누른다.",
+      "line": 1,
+      "file": "audio/elder_3_2.mp3",
+      "request": {
+        "text": "요괴병에 장정 셋을 잃었소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 장터가 닫힌 지 석 달이오.",
+        "next_text": "내가 가 보리다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 0,
+      "voice_id": "AgA5UKT9OrVg7jxVBZd4",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 0,
+      "file": "audio/elder_0_1.mp3",
+      "request": {
+        "text": "떠돌이 도사가 웬일이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 촌장이시오?",
+        "next_text": "못골 장터가 닫힌 지 석 달이오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "elder",
+      "rank": 0,
+      "voice_id": "AgA5UKT9OrVg7jxVBZd4",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 1,
+      "file": "audio/elder_0_2.mp3",
+      "request": {
+        "text": "요괴병에 장정 셋을 잃었소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "못골 장터가 닫힌 지 석 달이오.",
+        "next_text": "내가 가 보리다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 1,
+      "voice_id": "SrkN8J8D7m8bAtmS0uiq",
+      "name": "MJay",
+      "scene": "못골을 살필 도호가 뒤늦게 도착했다. 할매는 안도보다 걱정이 앞선다.",
+      "line": 0,
+      "file": "audio/shaman_1_1.mp3",
+      "request": {
+        "text": "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "소문을 듣고 왔소.",
+        "next_text": "봉인이 흔들리오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 1,
+      "voice_id": "SrkN8J8D7m8bAtmS0uiq",
+      "name": "MJay",
+      "scene": "봉인의 이상을 감지한 할매가 도호에게 조용하고 단호하게 경고한다.",
+      "line": 1,
+      "file": "audio/shaman_1_2.mp3",
+      "request": {
+        "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "무슨 일이 벌어진 게요?",
+        "next_text": "도사 양반밖에 없소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 2,
+      "voice_id": "ZjAPD4f11zlnEnZpKDgo",
+      "name": "Haemi",
+      "scene": "못골을 살필 도호가 뒤늦게 도착했다. 할매는 안도보다 걱정이 앞선다.",
+      "line": 0,
+      "file": "audio/shaman_2_1.mp3",
+      "request": {
+        "text": "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "소문을 듣고 왔소.",
+        "next_text": "봉인이 흔들리오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 2,
+      "voice_id": "ZjAPD4f11zlnEnZpKDgo",
+      "name": "Haemi",
+      "scene": "봉인의 이상을 감지한 할매가 도호에게 조용하고 단호하게 경고한다.",
+      "line": 1,
+      "file": "audio/shaman_2_2.mp3",
+      "request": {
+        "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "무슨 일이 벌어진 게요?",
+        "next_text": "도사 양반밖에 없소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 3,
+      "voice_id": "ah4r1hZOydd3XWlHOm3Y",
+      "name": "Jian.K – Calm mid-low, trustworthy voice",
+      "scene": "못골을 살필 도호가 뒤늦게 도착했다. 할매는 안도보다 걱정이 앞선다.",
+      "line": 0,
+      "file": "audio/shaman_3_1.mp3",
+      "request": {
+        "text": "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "소문을 듣고 왔소.",
+        "next_text": "봉인이 흔들리오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 3,
+      "voice_id": "ah4r1hZOydd3XWlHOm3Y",
+      "name": "Jian.K – Calm mid-low, trustworthy voice",
+      "scene": "봉인의 이상을 감지한 할매가 도호에게 조용하고 단호하게 경고한다.",
+      "line": 1,
+      "file": "audio/shaman_3_2.mp3",
+      "request": {
+        "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "무슨 일이 벌어진 게요?",
+        "next_text": "도사 양반밖에 없소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 0,
+      "voice_id": "UvkXHIJzOBYWOI51BDKp",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 0,
+      "file": "audio/shaman_0_1.mp3",
+      "request": {
+        "text": "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "소문을 듣고 왔소.",
+        "next_text": "봉인이 흔들리오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "shaman",
+      "rank": 0,
+      "voice_id": "UvkXHIJzOBYWOI51BDKp",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 1,
+      "file": "audio/shaman_0_2.mp3",
+      "request": {
+        "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "무슨 일이 벌어진 게요?",
+        "next_text": "도사 양반밖에 없소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 1,
+      "voice_id": "Kndx0DUJ5HQE1HQgiMY8",
+      "name": "Jin - Calm, low-pitched",
+      "scene": "손님 끊긴 술청에 도호가 들른다. 주모는 일손을 움직이며 구수하게 권한다.",
+      "line": 0,
+      "file": "audio/jumo_1_1.mp3",
+      "request": {
+        "text": "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "목이 좀 마르구려.",
+        "next_text": "국물이라도 한 그릇 주시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 1,
+      "voice_id": "Kndx0DUJ5HQE1HQgiMY8",
+      "name": "Jin - Calm, low-pitched",
+      "scene": "옛 주막 이야기를 묻자 주모가 말을 삼킨다. 친절하지만 쉽게 속을 보이지 않는다.",
+      "line": 1,
+      "file": "audio/jumo_1_2.mp3",
+      "request": {
+        "text": "내가 들녘 옛 주막집서… 오래 일했지. 그 얘긴, 말은 못 하겠소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "그 옛 주막집은 아는 곳이오?",
+        "next_text": "더 묻지는 않겠소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 2,
+      "voice_id": "UqW1DivwFt1NwUMSGnTn",
+      "name": "Suzie - Calm Korean ",
+      "scene": "손님 끊긴 술청에 도호가 들른다. 주모는 일손을 움직이며 구수하게 권한다.",
+      "line": 0,
+      "file": "audio/jumo_2_1.mp3",
+      "request": {
+        "text": "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "목이 좀 마르구려.",
+        "next_text": "국물이라도 한 그릇 주시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 2,
+      "voice_id": "UqW1DivwFt1NwUMSGnTn",
+      "name": "Suzie - Calm Korean ",
+      "scene": "옛 주막 이야기를 묻자 주모가 말을 삼킨다. 친절하지만 쉽게 속을 보이지 않는다.",
+      "line": 1,
+      "file": "audio/jumo_2_2.mp3",
+      "request": {
+        "text": "내가 들녘 옛 주막집서… 오래 일했지. 그 얘긴, 말은 못 하겠소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "그 옛 주막집은 아는 곳이오?",
+        "next_text": "더 묻지는 않겠소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 3,
+      "voice_id": "VFNaRkx6q2IQZn2mmwwg",
+      "name": "Shin rara",
+      "scene": "손님 끊긴 술청에 도호가 들른다. 주모는 일손을 움직이며 구수하게 권한다.",
+      "line": 0,
+      "file": "audio/jumo_3_1.mp3",
+      "request": {
+        "text": "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "목이 좀 마르구려.",
+        "next_text": "국물이라도 한 그릇 주시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 3,
+      "voice_id": "VFNaRkx6q2IQZn2mmwwg",
+      "name": "Shin rara",
+      "scene": "옛 주막 이야기를 묻자 주모가 말을 삼킨다. 친절하지만 쉽게 속을 보이지 않는다.",
+      "line": 1,
+      "file": "audio/jumo_3_2.mp3",
+      "request": {
+        "text": "내가 들녘 옛 주막집서… 오래 일했지. 그 얘긴, 말은 못 하겠소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "그 옛 주막집은 아는 곳이오?",
+        "next_text": "더 묻지는 않겠소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 0,
+      "voice_id": "xi3rF0t7dg7uN2M0WUhr",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 0,
+      "file": "audio/jumo_0_1.mp3",
+      "request": {
+        "text": "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "목이 좀 마르구려.",
+        "next_text": "국물이라도 한 그릇 주시오.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "jumo",
+      "rank": 0,
+      "voice_id": "xi3rF0t7dg7uN2M0WUhr",
+      "name": "기존 배정 (동일 문장 재생성)",
+      "line": 1,
+      "file": "audio/jumo_0_2.mp3",
+      "request": {
+        "text": "내가 들녘 옛 주막집서… 오래 일했지. 그 얘긴, 말은 못 하겠소.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "그 옛 주막집은 아는 곳이오?",
+        "next_text": "더 묻지는 않겠소.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "iksoe",
+      "rank": 1,
+      "voice_id": "TRO4gatqxbbwLXHLDLSk",
+      "name": "Jae-seong - Diplomatic and Measured",
+      "scene": "억쇠가 보따리를 펼쳐 보이며 도호의 호기심을 자극한다.",
+      "line": 0,
+      "file": "audio/iksoe_1_1.mp3",
+      "request": {
+        "text": "뭐가 들었는지는 나도 몰라유. 열어봐야 알지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "그 보따리엔 뭐가 들었수?",
+        "next_text": "일단 하나 열어 봅시다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "iksoe",
+      "rank": 1,
+      "voice_id": "TRO4gatqxbbwLXHLDLSk",
+      "name": "Jae-seong - Diplomatic and Measured",
+      "scene": "도호가 손해 볼까 망설이자 억쇠가 능청스럽게 책임을 피한다.",
+      "line": 1,
+      "file": "audio/iksoe_1_2.mp3",
+      "request": {
+        "text": "손해 봐도 내 탓은 마슈, 도사 양반. 운도 실력이랑께.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "손해 보면 어쩔 거요?",
+        "next_text": "그 말이 더 수상하구려.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "iksoe",
+      "rank": 2,
+      "voice_id": "ZZ4xhVcc83kZBfNIlIIz",
+      "name": "Manbo - Encouraging, Clear and Measured",
+      "scene": "억쇠가 보따리를 펼쳐 보이며 도호의 호기심을 자극한다.",
+      "line": 0,
+      "file": "audio/iksoe_2_1.mp3",
+      "request": {
+        "text": "뭐가 들었는지는 나도 몰라유. 열어봐야 알지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "그 보따리엔 뭐가 들었수?",
+        "next_text": "일단 하나 열어 봅시다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "iksoe",
+      "rank": 2,
+      "voice_id": "ZZ4xhVcc83kZBfNIlIIz",
+      "name": "Manbo - Encouraging, Clear and Measured",
+      "scene": "도호가 손해 볼까 망설이자 억쇠가 능청스럽게 책임을 피한다.",
+      "line": 1,
+      "file": "audio/iksoe_2_2.mp3",
+      "request": {
+        "text": "손해 봐도 내 탓은 마슈, 도사 양반. 운도 실력이랑께.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "손해 보면 어쩔 거요?",
+        "next_text": "그 말이 더 수상하구려.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "iksoe",
+      "rank": 3,
+      "voice_id": "TKUGUd5JWceSqSPVPjha",
+      "name": "DaeBuHo - Calm & Friendly",
+      "scene": "억쇠가 보따리를 펼쳐 보이며 도호의 호기심을 자극한다.",
+      "line": 0,
+      "file": "audio/iksoe_3_1.mp3",
+      "request": {
+        "text": "뭐가 들었는지는 나도 몰라유. 열어봐야 알지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "그 보따리엔 뭐가 들었수?",
+        "next_text": "일단 하나 열어 봅시다.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "iksoe",
+      "rank": 3,
+      "voice_id": "TKUGUd5JWceSqSPVPjha",
+      "name": "DaeBuHo - Calm & Friendly",
+      "scene": "도호가 손해 볼까 망설이자 억쇠가 능청스럽게 책임을 피한다.",
+      "line": 1,
+      "file": "audio/iksoe_3_2.mp3",
+      "request": {
+        "text": "손해 봐도 내 탓은 마슈, 도사 양반. 운도 실력이랑께.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "손해 보면 어쩔 거요?",
+        "next_text": "그 말이 더 수상하구려.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "dokkaebi",
+      "rank": 1,
+      "voice_id": "wzMVIc8FAFmgMxFpN0uM",
+      "name": "Deokpal - Measured and Diplomatic",
+      "scene": "새로 못골에 눌러앉은 거한이 도호를 보고 웃으며 말을 건다.",
+      "line": 0,
+      "file": "audio/dokkaebi_1_1.mp3",
+      "request": {
+        "text": "오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "이 터엔 누구요?",
+        "next_text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "dokkaebi",
+      "rank": 1,
+      "voice_id": "wzMVIc8FAFmgMxFpN0uM",
+      "name": "Deokpal - Measured and Diplomatic",
+      "scene": "도깨비가 자기 거래 규칙을 자신 있게 설명한다. 장난은 있지만 신용은 지킨다.",
+      "line": 1,
+      "file": "audio/dokkaebi_1_2.mp3",
+      "request": {
+        "text": "물건을 맡기면 다른 물건으로 바꿔 줘. 값은 그때그때 달라.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "무슨 일을 하는 게요?",
+        "next_text": "맡긴 건 제대로 돌려주는 거겠지?",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "dokkaebi",
+      "rank": 2,
+      "voice_id": "UmYoqGlufKxhJ6NCx5Mv",
+      "name": "Jang Ho - Serious, Husky and Measured",
+      "scene": "새로 못골에 눌러앉은 거한이 도호를 보고 웃으며 말을 건다.",
+      "line": 0,
+      "file": "audio/dokkaebi_2_1.mp3",
+      "request": {
+        "text": "오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "이 터엔 누구요?",
+        "next_text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "dokkaebi",
+      "rank": 2,
+      "voice_id": "UmYoqGlufKxhJ6NCx5Mv",
+      "name": "Jang Ho - Serious, Husky and Measured",
+      "scene": "도깨비가 자기 거래 규칙을 자신 있게 설명한다. 장난은 있지만 신용은 지킨다.",
+      "line": 1,
+      "file": "audio/dokkaebi_2_2.mp3",
+      "request": {
+        "text": "물건을 맡기면 다른 물건으로 바꿔 줘. 값은 그때그때 달라.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "무슨 일을 하는 게요?",
+        "next_text": "맡긴 건 제대로 돌려주는 거겠지?",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "dokkaebi",
+      "rank": 3,
+      "voice_id": "ibCGc01503OQd2R6i1n1",
+      "name": "Marcus - Deep steady Baritone(Stoic)",
+      "scene": "새로 못골에 눌러앉은 거한이 도호를 보고 웃으며 말을 건다.",
+      "line": 0,
+      "file": "audio/dokkaebi_3_1.mp3",
+      "request": {
+        "text": "오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "이 터엔 누구요?",
+        "next_text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    },
+    {
+      "role": "dokkaebi",
+      "rank": 3,
+      "voice_id": "ibCGc01503OQd2R6i1n1",
+      "name": "Marcus - Deep steady Baritone(Stoic)",
+      "scene": "도깨비가 자기 거래 규칙을 자신 있게 설명한다. 장난은 있지만 신용은 지킨다.",
+      "line": 1,
+      "file": "audio/dokkaebi_3_2.mp3",
+      "request": {
+        "text": "물건을 맡기면 다른 물건으로 바꿔 줘. 값은 그때그때 달라.",
+        "model_id": "eleven_v4",
+        "language_code": "ko",
+        "previous_text": "무슨 일을 하는 게요?",
+        "next_text": "맡긴 건 제대로 돌려주는 거겠지?",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75
+        }
+      }
+    }
+  ],
+  "basis": "후보 순위는 등록자 설명과 인물 사양에 따른 가안. 실제 생성 대사를 듣고 PD가 최종 판단."
+}

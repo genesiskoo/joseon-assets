@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "doho",
+    "rank": 3,
+    "voice_id": "v1is6KLMuZWgumQgKSOi",
+    "name": "Professional K-Actor Lee (Narration & Ads)",
+    "scene": "촌장이 소탕을 끝낸 도호에게 고맙다고 말한다. 도호는 대수롭지 않게 받아넘긴다.",
+    "line": 0,
+    "file": "audio/doho_3_1.mp3",
+    "request": {
+      "text": "산책 좀 했지.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "베었구려! 못골이 오랜만에 숨을 쉬겠소.",
+      "next_text": "약소하지만… 받으시오.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "54VHaU19u0ZWT6cNrWMt",
+    "history-item-id": "ftEfOxrnY0odsfIjAgQp",
+    "character-cost": "1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "shaman",
+    "rank": 3,
+    "voice_id": "ah4r1hZOydd3XWlHOm3Y",
+    "name": "Jian.K – Calm mid-low, trustworthy voice",
+    "scene": "못골을 살필 도호가 뒤늦게 도착했다. 할매는 안도보다 걱정이 앞선다.",
+    "line": 0,
+    "file": "audio/shaman_3_1.mp3",
+    "request": {
+      "text": "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "소문을 듣고 왔소.",
+      "next_text": "봉인이 흔들리오.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "K497nCOKyTjyd3tu9Rsg",
+    "history-item-id": "v6zWjS0NXll3cXdvvjY6",
+    "character-cost": "3"
+  }
+}

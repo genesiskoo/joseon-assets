@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "merchant",
+    "rank": 3,
+    "voice_id": "ZZ4xhVcc83kZBfNIlIIz",
+    "name": "Manbo - Encouraging, Clear and Measured",
+    "scene": "손님이 검 값을 깎자고 한다. 웃음은 있지만 장사 원칙은 단호하다.",
+    "line": 1,
+    "file": "audio/merchant_3_2.mp3",
+    "request": {
+      "text": "갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "검 값이 좀 세구려.",
+      "next_text": "알았수. 구경이나 해 보시오.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "5uI74AatkPjZoRkTc6DK",
+    "history-item-id": "Ifi4GCltsLbHdZODS25v",
+    "character-cost": "4"
+  }
+}

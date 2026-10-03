@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "dokkaebi",
+    "rank": 1,
+    "voice_id": "wzMVIc8FAFmgMxFpN0uM",
+    "name": "Deokpal - Measured and Diplomatic",
+    "scene": "도깨비가 자기 거래 규칙을 자신 있게 설명한다. 장난은 있지만 신용은 지킨다.",
+    "line": 1,
+    "file": "audio/dokkaebi_1_2.mp3",
+    "request": {
+      "text": "물건을 맡기면 다른 물건으로 바꿔 줘. 값은 그때그때 달라.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "무슨 일을 하는 게요?",
+      "next_text": "맡긴 건 제대로 돌려주는 거겠지?",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "U8ibIJh4VcpVoJk4FR4e",
+    "history-item-id": "wftH6XSxMgMhJFiDMSwl",
+    "character-cost": "4"
+  }
+}
