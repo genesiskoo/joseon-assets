@@ -1,0 +1,16 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(footsteps)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (5.8초)
+== e2e (footsteps · 단독(시간 민감 묶음) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\597-dungeon-footsteps\\joseon","--headless","--","--e2e=footsteps"],"phase_arg":"footsteps","phase_tokens":["footsteps"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":44152,"launched_utc":"2026-10-03T07:06:42.7076796Z"}
+E2E start: footsteps
+E2E ▶ footsteps
+  · step_dirt 15번 (14.8칸 달림), 그때 클립 ["run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run"]
+  · 마을(흙) 발소리 간격 0.254, 0.267, 0.268, 0.252, 0.275, 0.261, 0.274, 0.263, 0.261, 0.261, 0.267, 0.271, 0.260, 0.263 (기대 0.265초)
+  · step_stone 9번 (9.9칸 달림), 그때 클립 ["run", "run", "run", "run", "run", "run", "run", "run", "run"]
+  · 던전(돌) 발소리 간격 0.265, 0.258, 0.277, 0.254, 0.261, 0.272, 0.261, 0.275 (기대 0.265초)
+E2E footsteps PASS (검사 13)
+E2E SUMMARY: 1/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\597-dungeon-footsteps\joseon\tmp\e2e_raw\20261003T0706366740859_26368\phase_1_solo
+  e2e  (11.8초) — 제한 3600초
+전부 PASS
