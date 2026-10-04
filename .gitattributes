@@ -4,3 +4,7 @@
 # #618 capture logs retain their original bytes.
 reports/618/**/stdout.raw.log -text
 reports/618/**/stderr.raw.log -text
+
+reports/266/**/stdout.raw.log -text
+
+reports/266/**/stderr.raw.log -text
