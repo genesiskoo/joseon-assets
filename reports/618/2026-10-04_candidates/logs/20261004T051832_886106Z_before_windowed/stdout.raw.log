@@ -1,0 +1,66 @@
+  · 자리 간 e2e 칸 3개 (#553 ? -Slots · JOSEON_E2E_SLOTS) · 판 단독(hit_feel,aoe_skills_2,vfx_cues,system_menu)
+  ? 단독(창 모드) ? 공유 칸 1/3 아직 도는 중: ① 208-sal · pid 70628 · 14:15 · 공유 ? 끝나면 혼자 돈다 (새 공유는 막아 둠)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (11.2초)
+== e2e (hit_feel,aoe_skills_2,vfx_cues,system_menu · 단독(창 모드) ? 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\618-damage-numbers\\joseon","--","--e2e=hit_feel,aoe_skills_2,vfx_cues,system_menu","--e2e-shots"],"phase_arg":"hit_feel,aoe_skills_2,vfx_cues,system_menu","phase_tokens":["hit_feel","aoe_skills_2","vfx_cues","system_menu"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":58352,"launched_utc":"2026-10-04T05:36:58.7069878Z"}
+E2E start: hit_feel, aoe_skills_2, vfx_cues, system_menu
+  · 거름 켬 (창 모드) ? 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ hit_feel
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/hit_feel_01_four_kinds.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/hit_feel_02_crit_moment.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/hit_feel_03_kill_moment.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/hit_feel_04_stacked.png
+E2E hit_feel PASS (검사 27)
+E2E ▶ aoe_skills_2
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 트임 3.6 · 화면 위쪽 (-0.707107, 0.0, -0.707107)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_01_thrust_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_02_thrust_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_03_thrust_end.png
+  · 찌르기 요약 ? 맞음 3/7 [0, 1, 4] · 죽음 3 · 막타 [&"slashed"] · 칼이 닿기까지 0.33초 · 동작 0.63초
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_04_storm_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_05_storm_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_06_storm_end.png
+  · 칼바람 요약 ? 바퀴 9(누른 동안 9) · 박자 0.298초 · 도력 18.0 · 맞힌 합 28 · 맞음 7/7 · 죽음 4 [&"cleave", &"slide"] · 앞으로 6.5u · 뗀 뒤 0.23초에 섬
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_07_scatter_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_08_scatter_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_09_scatter_end.png
+  · 흩뿌리기 요약 ? 장당 맞힌 수 [3, 1, 1] · 맞음 3/7 · 죽음 2 [&"ash"]
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_10_rain_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_11_rain_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/aoe_skills_2_12_rain_end.png
+  · 부적 비 요약 ? 6장 · 맞음 7/7 · 죽음 4 [&"ash"] · 버티는 몸 타는 중 3
+  · 거름: 표식 없는 마우스 이벤트 78개 막음 (#369 ? 창 모드면 진짜 커서, --e2e-gate 헤드리스면 대본이 표식 없이 넣은 것)
+E2E aoe_skills_2 PASS (검사 68)
+E2E ▶ vfx_cues
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_01_drop_beam.png
+  · 선딜 시트 pos=(44.5, 0.030391, 56.5) 적=(44.5, 0.000391, 56.5) 화면=(593.7165, 331.6754) visible=true frame=10/23
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_02_windup.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_03_windup_open.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_04_swing.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_05_hit.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_06_talisman.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_07_slash.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_08_slash_left.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_09_dash.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_10_whirl.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_11_levelup.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_12_levelup_write.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_13_levelup_hold.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_14_levelup_burst.png
+  · 레벨업 道: 발 위 4.30 · 칸 15장 · 흩어짐 0.33(1.55초) · 사라짐 2.03초
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/vfx_cues_15_portal.png
+  · 루프 103 · 단발 2
+E2E vfx_cues PASS (검사 74)
+E2E ▶ system_menu
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/system_menu_01_menu.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/system_menu_02_settings.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/system_menu_03_settings_blood.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/system_menu_04_title_deulnyeok.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-618-damage-numbers/e2e/system_menu_05_title_heukrang_gul.png
+E2E system_menu PASS (검사 69)
+E2E SUMMARY: 4/4 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\618-damage-numbers\joseon\tmp\e2e_raw\20261004T0518334803742_32408\phase_1_solo
+  e2e  (57.7초) ? 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-618-damage-numbers\e2e
+전부 PASS
