@@ -1,0 +1,925 @@
+{
+  "card": 626,
+  "candidate_only": true,
+  "game_intake": false,
+  "tool": "Codex builtin image_gen",
+  "model_version": "not exposed by tool",
+  "native_count": 24,
+  "native_bytes": 36413809,
+  "native_max_bytes": 3224786,
+  "native_sizes": [
+    [
+      1254,
+      1254
+    ]
+  ],
+  "candidate_exports": [
+    {
+      "set": "A",
+      "material": "stone_large",
+      "kind": "textures",
+      "revision": 2,
+      "file": "A/textures/stone_large.png",
+      "native_file": "native/A/stone_large_r2.png",
+      "source_sha256": "8beb6cf3e876d26a5cd0fb158115084728635e55fea120fb4b1e43eb7d5199f1",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "b69669424bc0739a0a0fbd000709197acc802207040ef9326e324e3547593071",
+      "export_bytes": 1197337,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "dirt",
+      "kind": "textures",
+      "revision": 2,
+      "file": "A/textures/dirt.png",
+      "native_file": "native/A/dirt_r2.png",
+      "source_sha256": "8744fabe4f025802dcd0ba91305be6ae569ae1de94060ed3c33e47d2070bf75a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "71e10caf4abe1b27113be41254e1b552aa736680794a6798f172dc8a0e9c8b52",
+      "export_bytes": 1025357,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "stone_large",
+      "kind": "textures",
+      "revision": 2,
+      "file": "B/textures/stone_large.png",
+      "native_file": "native/B/stone_large_r2.png",
+      "source_sha256": "8c499f6241a263a716e70acacf0240a924509e0dad09b5c4cb0593dc4aca61bc",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "a07cfa52b617773e3c56982deac945c8a808f520a091bdfa1a4b355ed9ad700b",
+      "export_bytes": 1330295,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "dirt",
+      "kind": "textures",
+      "revision": 2,
+      "file": "B/textures/dirt.png",
+      "native_file": "native/B/dirt_r2.png",
+      "source_sha256": "9120a6f377e214fecfbc4e829c88a75a5a45777eb6283f35274b2cd6dd8a8ac3",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "c056aaf8baa96f95c4c7a870712cfe1ee9ebfc4841a06415a804787cfdc0dae4",
+      "export_bytes": 1048902,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "beom_root_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "A/decals/beom_root_scatter.png",
+      "native_file": "native/A/beom_root_scatter_r1.png",
+      "source_sha256": "65648d6359479a0e69b7fcdd4c95707aa2099d6852f9d94c6b92f07eee17289e",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "a9b74c41a0dfdc7d8de8435877331aeb7fc285ef1bd9734c0560b91b4ea85d10",
+      "export_bytes": 265058,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "bone_grit",
+      "kind": "textures",
+      "revision": 1,
+      "file": "A/textures/bone_grit.png",
+      "native_file": "native/A/bone_grit_r1.png",
+      "source_sha256": "694f280a34fc99727619f7bfec7bde64f511347f0da58164bd92c9597f46beb9",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "cc763cf44832a386f6c1f562ba34673ec998d6f2b3196e4143575d3c6018b6ba",
+      "export_bytes": 1106850,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "bongmil_seal_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "A/decals/bongmil_seal_scatter.png",
+      "native_file": "native/A/bongmil_seal_scatter_r1.png",
+      "source_sha256": "5806d68306093778a9d67f2c1c34bc32846bc36eaf4138a29a48605330ed6867",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "8bc58f30287e1c5518d80a4def8fc8c3c37391ec7f05b3c9e120a4f0381be961",
+      "export_bytes": 326627,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "damp_organic",
+      "kind": "textures",
+      "revision": 1,
+      "file": "A/textures/damp_organic.png",
+      "native_file": "native/A/damp_organic_r1.png",
+      "source_sha256": "5f315ce7cd4324de98d57d406e3cc177fba319a26d5c3a316d394eac0f34ca6f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "867563efce9ec985e50c2e14f0ae6e1300ea09555083b461bcb2d851dbf9c4f6",
+      "export_bytes": 1134270,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "heukrang_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "A/decals/heukrang_scatter.png",
+      "native_file": "native/A/heukrang_scatter_r1.png",
+      "source_sha256": "ff7ef083f6a172306c7fb31bab37cafe4793828fd0f23300f5e5fb5a67ffad75",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "6df4ff80b94afc105842834a9a5d1218b5b3246488a3b8e54c4470b5462682dc",
+      "export_bytes": 127412,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "mine_cinder",
+      "kind": "textures",
+      "revision": 1,
+      "file": "A/textures/mine_cinder.png",
+      "native_file": "native/A/mine_cinder_r1.png",
+      "source_sha256": "96f0083bbb67c9541578be1bf56dcd82b22ecb9001df87dff2caaa60190e0b43",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "f41356787d6f5ae724fdf7d2ff51d88380b6402fb7caf9804f141e97594c1b2b",
+      "export_bytes": 1146864,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "mine_scrap_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "A/decals/mine_scrap_scatter.png",
+      "native_file": "native/A/mine_scrap_scatter_r1.png",
+      "source_sha256": "cbef7686995fefc5e98dc156f7c6469d7c016d30f9a5e34f39dfcb597770c0b3",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "a07f79b0ff447933015c0e81b11780f7b9021c49c4292874d360e73a708f42ab",
+      "export_bytes": 182048,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "A",
+      "material": "stone_small",
+      "kind": "textures",
+      "revision": 1,
+      "file": "A/textures/stone_small.png",
+      "native_file": "native/A/stone_small_r1.png",
+      "source_sha256": "d2b07440fd115a1c071c2948e500e205c7e3f5ad1485103e4f80494ea2c301bb",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "5727574af08d99a5303b409e735acc20b0382e08a38b4328f10e1bd55c207617",
+      "export_bytes": 1089320,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "beom_root_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "B/decals/beom_root_scatter.png",
+      "native_file": "native/B/beom_root_scatter_r1.png",
+      "source_sha256": "bb9b284b0e4006f2a6b7b711b6bd9f8610b3d941f85ca2339e5b60d198f1bcfc",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "c9da099a7da59d19037c40e79c30cb493d244cc9382e3969f80adc5cb95f2503",
+      "export_bytes": 316418,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "bone_grit",
+      "kind": "textures",
+      "revision": 1,
+      "file": "B/textures/bone_grit.png",
+      "native_file": "native/B/bone_grit_r1.png",
+      "source_sha256": "e747cdb78408f486662b5b6f74bb1883508c251427dadac844511134d90a5721",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "67db681f68adab2aed9eb0dea347cdaeeac2f2b521ff00797ddeb8d9866be265",
+      "export_bytes": 1078268,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "bongmil_seal_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "B/decals/bongmil_seal_scatter.png",
+      "native_file": "native/B/bongmil_seal_scatter_r1.png",
+      "source_sha256": "280dc777adcb460b059105f1ccac1740d4af7be0b0b19e677a6a95615ea57b90",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "b34a4e549701818bc0479b60ba97bc20d98445f8490fd04d1beaa4385568c44c",
+      "export_bytes": 276209,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "damp_organic",
+      "kind": "textures",
+      "revision": 1,
+      "file": "B/textures/damp_organic.png",
+      "native_file": "native/B/damp_organic_r1.png",
+      "source_sha256": "2f226a0b9e956d9cc5e92f08e30cfaf4ad17c687610bfa5b92e5c0722dee393a",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "2c2423386eed1ef838db030da4ae1ac392b903b78f383cbe9b6c9940190ee1a8",
+      "export_bytes": 1094362,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "heukrang_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "B/decals/heukrang_scatter.png",
+      "native_file": "native/B/heukrang_scatter_r1.png",
+      "source_sha256": "fd5cf3acceb623955b8b8f7696ee9db3b5b302f900a1da595244126a6ce36749",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "f82c10fe842cfc559efcc46d768986a6f61a7ba48250aed38cce69b1100e261d",
+      "export_bytes": 137549,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "mine_cinder",
+      "kind": "textures",
+      "revision": 1,
+      "file": "B/textures/mine_cinder.png",
+      "native_file": "native/B/mine_cinder_r1.png",
+      "source_sha256": "dc62348467250dd292f9bf5a644db541ac4372c932707968b03c5943e3d4ad5f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "9c9fd0f2bd665a0d1e58fd55fbddaa09e1c7dcd8c3b777abf8d8e371cd80835e",
+      "export_bytes": 1171607,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "mine_scrap_scatter",
+      "kind": "decals",
+      "revision": 1,
+      "file": "B/decals/mine_scrap_scatter.png",
+      "native_file": "native/B/mine_scrap_scatter_r1.png",
+      "source_sha256": "16d51a15a35f4fed59f5f2ae1e737a26d8524a28bb1e48378443567835f4f4a3",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGBA",
+      "export_sha256": "8ba8a9843de1a18d49f1991447f95948000d1df3baa460cdca88d3007a717b93",
+      "export_bytes": 165954,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    },
+    {
+      "set": "B",
+      "material": "stone_small",
+      "kind": "textures",
+      "revision": 1,
+      "file": "B/textures/stone_small.png",
+      "native_file": "native/B/stone_small_r1.png",
+      "source_sha256": "45a6d1695de396c26e49f9def8573497085bce5a98f38945f7bd2f6fdbe71ff7",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "export_size": [
+        1024,
+        1024
+      ],
+      "export_mode": "RGB",
+      "export_sha256": "038bceea5d9503fc1ec7eb03d39ec6a82f27f5fb9a66bf1c01070c21aa6142f9",
+      "export_bytes": 1087276,
+      "operation": "Mechanical Pillow LANCZOS resize only; no repaint, color grade, lighting or seam modification."
+    }
+  ],
+  "reviews": [
+    {
+      "file": "01_materials_ab.jpg",
+      "size": [
+        1280,
+        598
+      ],
+      "bytes": 137462,
+      "sha256": "3edc54e532d7b560407b6832f750e11993541684facb8342bd06feb41fad098a",
+      "sources": [
+        "A/textures/stone_large.png",
+        "A/textures/dirt.png",
+        "B/textures/stone_large.png",
+        "B/textures/dirt.png",
+        "A/textures/bone_grit.png",
+        "A/textures/damp_organic.png",
+        "A/textures/mine_cinder.png",
+        "A/textures/stone_small.png",
+        "B/textures/bone_grit.png",
+        "B/textures/damp_organic.png",
+        "B/textures/mine_cinder.png",
+        "B/textures/stone_small.png"
+      ],
+      "operation": "Layout/compression, cyclic offsets, alpha proof compositing only; no retouch."
+    },
+    {
+      "file": "02_heukrang_beom_ab.jpg",
+      "size": [
+        1280,
+        1370
+      ],
+      "bytes": 288804,
+      "sha256": "355951163578b425359bfc53f6bea61c795b109148da9215983f58896ea4a1e7",
+      "sources": [
+        "A/textures/dirt.png",
+        "A/decals/heukrang_scatter.png",
+        "B/textures/dirt.png",
+        "B/decals/heukrang_scatter.png",
+        "A/textures/damp_organic.png",
+        "A/decals/beom_root_scatter.png",
+        "B/textures/damp_organic.png",
+        "B/decals/beom_root_scatter.png"
+      ],
+      "operation": "Layout/compression, cyclic offsets, alpha proof compositing only; no retouch."
+    },
+    {
+      "file": "03_mine_bongmil_ab.jpg",
+      "size": [
+        1280,
+        1370
+      ],
+      "bytes": 270725,
+      "sha256": "a8dd2811e65cf5eaf43b3d5dfa1e9571f040845194a5e98a4d7506667032a2d7",
+      "sources": [
+        "A/textures/mine_cinder.png",
+        "A/decals/mine_scrap_scatter.png",
+        "B/textures/mine_cinder.png",
+        "B/decals/mine_scrap_scatter.png",
+        "A/textures/stone_large.png",
+        "A/decals/bongmil_seal_scatter.png",
+        "B/textures/stone_large.png",
+        "B/decals/bongmil_seal_scatter.png"
+      ],
+      "operation": "Layout/compression, cyclic offsets, alpha proof compositing only; no retouch."
+    },
+    {
+      "file": "04_alpha_decals.jpg",
+      "size": [
+        1280,
+        765
+      ],
+      "bytes": 154246,
+      "sha256": "b7f8b031b4d2b686f3345c4626db4575aef0005663aa67c1c9211079261e650c",
+      "sources": [
+        "A/decals/beom_root_scatter.png",
+        "A/decals/bongmil_seal_scatter.png",
+        "A/decals/heukrang_scatter.png",
+        "A/decals/mine_scrap_scatter.png",
+        "B/decals/beom_root_scatter.png",
+        "B/decals/bongmil_seal_scatter.png",
+        "B/decals/heukrang_scatter.png",
+        "B/decals/mine_scrap_scatter.png"
+      ],
+      "operation": "Layout/compression, cyclic offsets, alpha proof compositing only; no retouch."
+    },
+    {
+      "file": "05_half_offset_seams.jpg",
+      "size": [
+        1280,
+        598
+      ],
+      "bytes": 136489,
+      "sha256": "fafc53529043682146e2b9fb8cc8579503c70500bc9557f8b7ee4621b2e07b95",
+      "sources": [
+        "A/textures/stone_large.png",
+        "A/textures/dirt.png",
+        "B/textures/stone_large.png",
+        "B/textures/dirt.png",
+        "A/textures/bone_grit.png",
+        "A/textures/damp_organic.png",
+        "A/textures/mine_cinder.png",
+        "A/textures/stone_small.png",
+        "B/textures/bone_grit.png",
+        "B/textures/damp_organic.png",
+        "B/textures/mine_cinder.png",
+        "B/textures/stone_small.png"
+      ],
+      "operation": "Layout/compression, cyclic offsets, alpha proof compositing only; no retouch."
+    },
+    {
+      "file": "06_style_before_after_repeat.jpg",
+      "size": [
+        1280,
+        1020
+      ],
+      "bytes": 285621,
+      "sha256": "94924521d1ec0d7ab0cfbd6b54960f4a7789f35f8b753eeabe9aa845d1329361",
+      "sources": [
+        "native/A/stone_large_r1.png",
+        "A/textures/stone_large.png",
+        "native/B/stone_large_r1.png",
+        "B/textures/stone_large.png"
+      ],
+      "operation": "Layout/compression, cyclic offsets, alpha proof compositing only; no retouch."
+    }
+  ],
+  "floor_metrics": [
+    {
+      "set": "A",
+      "material": "stone_large",
+      "rgb_mean": [
+        86.497,
+        80.79,
+        69.9
+      ],
+      "s_mean": 0.19190136030608523,
+      "v_mean": 0.3392045039756623,
+      "wrap_mae_x": 3.4827473958333335,
+      "wrap_mae_y": 4.728515625,
+      "internal_neighbor_mae_x": 1.8315663566104594,
+      "internal_neighbor_mae_y": 1.9378341122922775,
+      "ratio_x": 1.9015130864702,
+      "ratio_y": 2.440103409783929,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "A",
+      "material": "dirt",
+      "rgb_mean": [
+        87.281,
+        78.858,
+        65.346
+      ],
+      "s_mean": 0.24918054692885458,
+      "v_mean": 0.3423081566305722,
+      "wrap_mae_x": 2.6611328125,
+      "wrap_mae_y": 2.1341145833333335,
+      "internal_neighbor_mae_x": 1.2366275532543174,
+      "internal_neighbor_mae_y": 1.256110754724666,
+      "ratio_x": 2.1519274784852924,
+      "ratio_y": 1.69898599729856,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "B",
+      "material": "stone_large",
+      "rgb_mean": [
+        81.575,
+        77.356,
+        69.145
+      ],
+      "s_mean": 0.15150611727845437,
+      "v_mean": 0.31990531098608876,
+      "wrap_mae_x": 4.066731770833333,
+      "wrap_mae_y": 4.154947916666667,
+      "internal_neighbor_mae_x": 2.4507018903755293,
+      "internal_neighbor_mae_y": 2.5656311094819158,
+      "ratio_x": 1.6594151197272606,
+      "ratio_y": 1.6194642718943668,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "B",
+      "material": "dirt",
+      "rgb_mean": [
+        83.758,
+        77.643,
+        65.749
+      ],
+      "s_mean": 0.21341606962914575,
+      "v_mean": 0.32862787059709125,
+      "wrap_mae_x": 2.5986328125,
+      "wrap_mae_y": 2.41796875,
+      "internal_neighbor_mae_x": 1.2727065895853698,
+      "internal_neighbor_mae_y": 1.3272461255702184,
+      "ratio_x": 2.041816105742486,
+      "ratio_y": 1.821793790478145,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "A",
+      "material": "bone_grit",
+      "rgb_mean": [
+        85.669,
+        77.625,
+        64.077
+      ],
+      "s_mean": 0.25026537577311203,
+      "v_mean": 0.33596705268411065,
+      "wrap_mae_x": 2.7893880208333335,
+      "wrap_mae_y": 2.6702473958333335,
+      "internal_neighbor_mae_x": 1.5189530766332682,
+      "internal_neighbor_mae_y": 1.5417955385508308,
+      "ratio_x": 1.8363885387532584,
+      "ratio_y": 1.731907590252311,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "A",
+      "material": "damp_organic",
+      "rgb_mean": [
+        88.153,
+        80.322,
+        65.115
+      ],
+      "s_mean": 0.25923071094587735,
+      "v_mean": 0.3457156985413796,
+      "wrap_mae_x": 3.1337890625,
+      "wrap_mae_y": 3.1702473958333335,
+      "internal_neighbor_mae_x": 1.6362366736925709,
+      "internal_neighbor_mae_y": 1.6327650878747149,
+      "ratio_x": 1.9152419163346543,
+      "ratio_y": 1.9416433015234782,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "A",
+      "material": "mine_cinder",
+      "rgb_mean": [
+        75.074,
+        69.668,
+        62.396
+      ],
+      "s_mean": 0.1662133908739276,
+      "v_mean": 0.29442532483269185,
+      "wrap_mae_x": 3.4524739583333335,
+      "wrap_mae_y": 3.0670572916666665,
+      "internal_neighbor_mae_x": 1.6553405781606387,
+      "internal_neighbor_mae_y": 1.7235612170087977,
+      "ratio_x": 2.085657781777821,
+      "ratio_y": 1.7794884576188577,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "A",
+      "material": "stone_small",
+      "rgb_mean": [
+        91.924,
+        83.863,
+        68.595
+      ],
+      "s_mean": 0.2515139897664388,
+      "v_mean": 0.3605071086509556,
+      "wrap_mae_x": 2.669921875,
+      "wrap_mae_y": 2.9215494791666665,
+      "internal_neighbor_mae_x": 1.4923345094086022,
+      "internal_neighbor_mae_y": 1.4946176100724993,
+      "ratio_x": 1.7890907555693156,
+      "ratio_y": 1.9547136735696238,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "B",
+      "material": "bone_grit",
+      "rgb_mean": [
+        77.253,
+        73.26,
+        65.95
+      ],
+      "s_mean": 0.1453013289208506,
+      "v_mean": 0.30305317523432695,
+      "wrap_mae_x": 3.255859375,
+      "wrap_mae_y": 2.4596354166666665,
+      "internal_neighbor_mae_x": 1.5119504011893126,
+      "internal_neighbor_mae_y": 1.4852748757738676,
+      "ratio_x": 2.1534167869785374,
+      "ratio_y": 1.656013615247569,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "B",
+      "material": "damp_organic",
+      "rgb_mean": [
+        77.565,
+        71.926,
+        60.946
+      ],
+      "s_mean": 0.21238451939003133,
+      "v_mean": 0.3042650035783355,
+      "wrap_mae_x": 3.15625,
+      "wrap_mae_y": 2.6692708333333335,
+      "internal_neighbor_mae_x": 1.4659841866243075,
+      "internal_neighbor_mae_y": 1.4867506974991853,
+      "ratio_x": 2.152990481614835,
+      "ratio_y": 1.7953721749202651,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "B",
+      "material": "mine_cinder",
+      "rgb_mean": [
+        71.459,
+        68.549,
+        62.419
+      ],
+      "s_mean": 0.12448794795017618,
+      "v_mean": 0.2802697649189071,
+      "wrap_mae_x": 3.5152994791666665,
+      "wrap_mae_y": 4.773111979166667,
+      "internal_neighbor_mae_x": 1.747560343862007,
+      "internal_neighbor_mae_y": 1.8880790643328447,
+      "ratio_x": 2.0115468352858468,
+      "ratio_y": 2.5280254780290425,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    },
+    {
+      "set": "B",
+      "material": "stone_small",
+      "rgb_mean": [
+        85.202,
+        79.634,
+        69.206
+      ],
+      "s_mean": 0.1861909454944088,
+      "v_mean": 0.3341406504313151,
+      "wrap_mae_x": 3.1624348958333335,
+      "wrap_mae_y": 3.2447916666666665,
+      "internal_neighbor_mae_x": 1.469834114837895,
+      "internal_neighbor_mae_y": 1.4920990397930922,
+      "ratio_x": 2.151559052758897,
+      "ratio_y": 2.174648987855805,
+      "assessment": "Diagnostic numbers, not a mathematical seamlessness certification. Review cyclic offset and repeated previews."
+    }
+  ],
+  "alpha_metrics": [
+    {
+      "set": "A",
+      "material": "beom_root_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.05655479431152344,
+      "bbox_alpha16": [
+        135,
+        271,
+        923,
+        805
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 662,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    },
+    {
+      "set": "A",
+      "material": "bongmil_seal_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.09384632110595703,
+      "bbox_alpha16": [
+        100,
+        250,
+        940,
+        788
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 408,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    },
+    {
+      "set": "A",
+      "material": "heukrang_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.029763221740722656,
+      "bbox_alpha16": [
+        200,
+        337,
+        854,
+        712
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 261,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    },
+    {
+      "set": "A",
+      "material": "mine_scrap_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.051018714904785156,
+      "bbox_alpha16": [
+        120,
+        323,
+        899,
+        720
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 211,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    },
+    {
+      "set": "B",
+      "material": "beom_root_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.07110977172851562,
+      "bbox_alpha16": [
+        94,
+        245,
+        947,
+        810
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 805,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    },
+    {
+      "set": "B",
+      "material": "bongmil_seal_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.0832509994506836,
+      "bbox_alpha16": [
+        148,
+        297,
+        885,
+        772
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 282,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    },
+    {
+      "set": "B",
+      "material": "heukrang_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.03225231170654297,
+      "bbox_alpha16": [
+        187,
+        292,
+        870,
+        731
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 191,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    },
+    {
+      "set": "B",
+      "material": "mine_scrap_scatter",
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "border_alpha_max": 0,
+      "active_alpha16_fraction": 0.045566558837890625,
+      "bbox_alpha16": [
+        143,
+        322,
+        925,
+        749
+      ],
+      "bright_saturated_alpha_ge128": 0,
+      "bright_saturated_alpha_1_127": 131,
+      "assessment": "Native partial-alpha color fringes retained; tested over white/black and earth. No alpha thresholding or semantic pixel repair."
+    }
+  ],
+  "material_span_recommended_units": 2.5,
+  "texel_density_recommended_px_per_unit": 409.6,
+  "card195_span_alternative_units": 3,
+  "card195_density_alternative_px_per_unit": 341.3333333333333,
+  "density_note": "#120 band400~900. 3m is below band;2.5m recommendation must be evaluated in #195. No engine density test has been run for these candidates."
+}
