@@ -1,0 +1,1922 @@
+{
+  "card": 613,
+  "generated_by": "codex",
+  "count": 237,
+  "speaker_counts": {
+    "shaman": 53,
+    "doho": 38,
+    "dokkaebi": 67,
+    "elder": 26,
+    "jumo": 40,
+    "merchant": 13
+  },
+  "checks": [
+    "237 WAV PCM16 mono44100, -18 LUFS +/-1.1, true peak <= -1.5",
+    "237 listen MP3 decode, -20 LUFS +/-1.1, true peak <= -1.5, HTTP200",
+    "game WAV SHA256 matches manifest"
+  ],
+  "preview_files": [
+    {
+      "id": "EV_SHAMAN_QUEST_1",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 4.48
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_2",
+      "loudness": [
+        -20.0,
+        -3.6
+      ],
+      "duration": 5.28
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 6.16
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3B",
+      "loudness": [
+        -20.4,
+        -5.0
+      ],
+      "duration": 5.6
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3C",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 4.64
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_4",
+      "loudness": [
+        -20.5,
+        -4.6
+      ],
+      "duration": 8.48
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_5",
+      "loudness": [
+        -20.4,
+        -5.4
+      ],
+      "duration": 1.52
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_6",
+      "loudness": [
+        -20.5,
+        -5.3
+      ],
+      "duration": 8.0
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_7",
+      "loudness": [
+        -20.0,
+        -3.8
+      ],
+      "duration": 1.52
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_8",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 3.12
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_9",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 2.32
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_1",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 7.12
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_2",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 3.28
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_3",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 5.44
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_4",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 5.6
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_5",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 5.12
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_6",
+      "loudness": [
+        -20.1,
+        -4.2
+      ],
+      "duration": 5.12
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_7",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 7.92
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_8",
+      "loudness": [
+        -20.0,
+        -3.8
+      ],
+      "duration": 2.88
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_9",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 8.72
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_10",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 2.08
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_11",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 5.6
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_12",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 5.44
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_13",
+      "loudness": [
+        -20.0,
+        -4.1
+      ],
+      "duration": 3.92
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_14",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 1.36
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET2_1",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 4.88
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET2_2",
+      "loudness": [
+        -19.9,
+        -3.9
+      ],
+      "duration": 6.0
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 2.64
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_2",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 5.84
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_3",
+      "loudness": [
+        -20.4,
+        -5.4
+      ],
+      "duration": 2.72
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_4",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 6.56
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_5",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 6.0
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_6",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 5.04
+    },
+    {
+      "id": "NPC_DOKKAEBI_CRAFT_1",
+      "loudness": [
+        -20.5,
+        -5.4
+      ],
+      "duration": 2.56
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_1",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 4.08
+    },
+    {
+      "id": "NPC_DOKKAEBI_ASK_1",
+      "loudness": [
+        -20.5,
+        -5.3
+      ],
+      "duration": 2.64
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_1",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 7.84
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_2",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 4.08
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_3",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 6.4
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_MOKRO",
+      "loudness": [
+        -20.0,
+        -4.1
+      ],
+      "duration": 7.12
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_1",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 8.4
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 6.32
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_3",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 5.04
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_4",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 6.4
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_5",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 7.2
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_6",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 7.04
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_7",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 8.0
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_8",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 6.16
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_1",
+      "loudness": [
+        -20.1,
+        -4.3
+      ],
+      "duration": 4.0
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_2",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 3.12
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_3",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 2.96
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_UNIQUE_1",
+      "loudness": [
+        -20.4,
+        -5.1
+      ],
+      "duration": 6.64
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_UNIQUE_2",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 4.16
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_UNIQUE_3",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 6.08
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 4.48
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_2",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 2.88
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_3",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 4.24
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_1",
+      "loudness": [
+        -19.9,
+        -4.0
+      ],
+      "duration": 5.84
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_2",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 4.96
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_3",
+      "loudness": [
+        -20.0,
+        -3.9
+      ],
+      "duration": 4.56
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_1",
+      "loudness": [
+        -20.4,
+        -5.8
+      ],
+      "duration": 4.72
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_2",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 4.96
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_3",
+      "loudness": [
+        -20.5,
+        -5.1
+      ],
+      "duration": 4.16
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 3.12
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 4.8
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_3",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 3.76
+    },
+    {
+      "id": "NPC_DOKKAEBI_EMPTY_1",
+      "loudness": [
+        -20.5,
+        -6.6
+      ],
+      "duration": 3.28
+    },
+    {
+      "id": "NPC_DOKKAEBI_EMPTY_2",
+      "loudness": [
+        -20.5,
+        -4.7
+      ],
+      "duration": 4.16
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_DONE_1",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 5.84
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_DONE_2",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 4.56
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_NONE_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 5.12
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_NONE_2",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 5.04
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G05_ELSE",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 4.4
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G06_RULE",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 6.16
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G06_ELSE",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 4.4
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G07_ELSE",
+      "loudness": [
+        -20.0,
+        -4.1
+      ],
+      "duration": 4.48
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G08_ELSE",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 4.56
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G09_RULE",
+      "loudness": [
+        -20.4,
+        -4.8
+      ],
+      "duration": 4.48
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G09_ELSE",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 4.48
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G10_RULE",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 4.64
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G10_ELSE",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 4.32
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G11_ELSE",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 4.4
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G12_ELSE",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 4.56
+    },
+    {
+      "id": "NPC_ELDER_FIRST_1",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 2.0
+    },
+    {
+      "id": "NPC_ELDER_FIRST_2",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 2.64
+    },
+    {
+      "id": "NPC_ELDER_AFTER_1",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 4.0
+    },
+    {
+      "id": "NPC_ELDER_THANKS_NUDGE",
+      "loudness": [
+        -19.9,
+        -4.2
+      ],
+      "duration": 5.04
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_DONE_1",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 4.72
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_DONE_2",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 1.28
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_ACTIVE_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 4.64
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_ACTIVE_2",
+      "loudness": [
+        -20.4,
+        -5.8
+      ],
+      "duration": 3.68
+    },
+    {
+      "id": "NPC_ELDER_OFFER_AGAIN",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 2.96
+    },
+    {
+      "id": "NPC_ELDER_ACTIVE_1",
+      "loudness": [
+        -20.0,
+        -4.1
+      ],
+      "duration": 4.24
+    },
+    {
+      "id": "NPC_ELDER_ACTIVE_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 3.92
+    },
+    {
+      "id": "NPC_ELDER_OFFER_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 3.6
+    },
+    {
+      "id": "NPC_ELDER_OFFER_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 5.44
+    },
+    {
+      "id": "NPC_ELDER_OFFER_3",
+      "loudness": [
+        -20.0,
+        -3.8
+      ],
+      "duration": 5.52
+    },
+    {
+      "id": "NPC_ELDER_OFFER_4",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 2.88
+    },
+    {
+      "id": "NPC_ELDER_GREET_1",
+      "loudness": [
+        -20.5,
+        -6.1
+      ],
+      "duration": 2.0
+    },
+    {
+      "id": "NPC_ELDER_GREET_2",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 2.72
+    },
+    {
+      "id": "NPC_ELDER_GREET_3",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 2.72
+    },
+    {
+      "id": "NPC_ELDER_GREET_4",
+      "loudness": [
+        -20.0,
+        -4.1
+      ],
+      "duration": 3.76
+    },
+    {
+      "id": "NPC_ELDER_ACCEPT_1",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 3.28
+    },
+    {
+      "id": "NPC_ELDER_REPORT_1",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 6.48
+    },
+    {
+      "id": "NPC_ELDER_REPORT_2",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 1.76
+    },
+    {
+      "id": "NPC_ELDER_REPORT_3",
+      "loudness": [
+        -20.4,
+        -5.1
+      ],
+      "duration": 2.72
+    },
+    {
+      "id": "NPC_ELDER_THANKS_1",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 2.72
+    },
+    {
+      "id": "NPC_ELDER_AFTER_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 8.4
+    },
+    {
+      "id": "NPC_ELDER_THANKS_FULL",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 3.52
+    },
+    {
+      "id": "NPC_ELDER_VOUCH_1",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 7.2
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 5.92
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_2",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 9.36
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_3",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 3.36
+    },
+    {
+      "id": "NPC_JUMO_FIRST_1",
+      "loudness": [
+        -20.5,
+        -7.4
+      ],
+      "duration": 7.28
+    },
+    {
+      "id": "NPC_JUMO_FIRST_2",
+      "loudness": [
+        -20.0,
+        -3.9
+      ],
+      "duration": 3.36
+    },
+    {
+      "id": "NPC_JUMO_FIRST_3",
+      "loudness": [
+        -20.4,
+        -8.1
+      ],
+      "duration": 3.36
+    },
+    {
+      "id": "NPC_JUMO_MAIN_1",
+      "loudness": [
+        -20.4,
+        -7.4
+      ],
+      "duration": 5.28
+    },
+    {
+      "id": "NPC_JUMO_MAIN_2",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 4.4
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3",
+      "loudness": [
+        -20.4,
+        -6.6
+      ],
+      "duration": 6.24
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3B",
+      "loudness": [
+        -20.4,
+        -6.0
+      ],
+      "duration": 6.72
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3C",
+      "loudness": [
+        -20.4,
+        -7.1
+      ],
+      "duration": 7.92
+    },
+    {
+      "id": "NPC_JUMO_MAIN_4",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 3.2
+    },
+    {
+      "id": "NPC_JUMO_MAIN_4B",
+      "loudness": [
+        -20.5,
+        -7.2
+      ],
+      "duration": 6.48
+    },
+    {
+      "id": "NPC_JUMO_MAIN_5",
+      "loudness": [
+        -20.5,
+        -6.9
+      ],
+      "duration": 7.68
+    },
+    {
+      "id": "NPC_JUMO_MAIN_6",
+      "loudness": [
+        -20.4,
+        -6.5
+      ],
+      "duration": 10.4
+    },
+    {
+      "id": "NPC_JUMO_MAIN_7",
+      "loudness": [
+        -20.0,
+        -5.6
+      ],
+      "duration": 3.28
+    },
+    {
+      "id": "NPC_JUMO_MAIN_8",
+      "loudness": [
+        -20.3,
+        -6.9
+      ],
+      "duration": 5.12
+    },
+    {
+      "id": "NPC_JUMO_MAIN_9",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 3.52
+    },
+    {
+      "id": "NPC_JUMO_MAIN_10",
+      "loudness": [
+        -20.4,
+        -6.5
+      ],
+      "duration": 9.04
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_DONE_1",
+      "loudness": [
+        -20.4,
+        -8.7
+      ],
+      "duration": 0.96
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_DONE_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 5.92
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_1",
+      "loudness": [
+        -20.4,
+        -5.5
+      ],
+      "duration": 5.76
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_HEUK",
+      "loudness": [
+        -20.4,
+        -7.7
+      ],
+      "duration": 6.24
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_BEOM",
+      "loudness": [
+        -20.4,
+        -8.1
+      ],
+      "duration": 6.08
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_SOE",
+      "loudness": [
+        -20.4,
+        -6.5
+      ],
+      "duration": 6.56
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_3",
+      "loudness": [
+        -20.5,
+        -5.3
+      ],
+      "duration": 4.48
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_4",
+      "loudness": [
+        -20.5,
+        -5.0
+      ],
+      "duration": 2.16
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_5",
+      "loudness": [
+        -20.4,
+        -8.2
+      ],
+      "duration": 2.08
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_1",
+      "loudness": [
+        -20.5,
+        -5.7
+      ],
+      "duration": 4.88
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_3",
+      "loudness": [
+        -20.4,
+        -5.8
+      ],
+      "duration": 6.56
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_4",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 2.64
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_HEUK",
+      "loudness": [
+        -20.4,
+        -5.6
+      ],
+      "duration": 5.2
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_BEOM_SOE",
+      "loudness": [
+        -20.5,
+        -6.6
+      ],
+      "duration": 9.84
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_HEUK_SOE",
+      "loudness": [
+        -20.5,
+        -7.2
+      ],
+      "duration": 8.32
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_HEUK_BEOM",
+      "loudness": [
+        -20.4,
+        -6.6
+      ],
+      "duration": 7.6
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_END",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 3.76
+    },
+    {
+      "id": "NPC_JUMO_GREET_1",
+      "loudness": [
+        -20.5,
+        -7.0
+      ],
+      "duration": 3.6
+    },
+    {
+      "id": "NPC_JUMO_GREET_2",
+      "loudness": [
+        -20.5,
+        -5.6
+      ],
+      "duration": 3.84
+    },
+    {
+      "id": "NPC_JUMO_GREET_3",
+      "loudness": [
+        -20.5,
+        -6.0
+      ],
+      "duration": 3.52
+    },
+    {
+      "id": "NPC_JUMO_BUSY_1",
+      "loudness": [
+        -20.5,
+        -6.5
+      ],
+      "duration": 4.72
+    },
+    {
+      "id": "NPC_JUMO_BUSY_2",
+      "loudness": [
+        -20.5,
+        -6.3
+      ],
+      "duration": 4.88
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_1",
+      "loudness": [
+        -20.5,
+        -5.5
+      ],
+      "duration": 6.88
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_2",
+      "loudness": [
+        -20.5,
+        -8.6
+      ],
+      "duration": 5.28
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_3",
+      "loudness": [
+        -20.4,
+        -5.4
+      ],
+      "duration": 8.08
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_4",
+      "loudness": [
+        -20.4,
+        -6.5
+      ],
+      "duration": 7.84
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_5",
+      "loudness": [
+        -20.5,
+        -6.1
+      ],
+      "duration": 7.68
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_6",
+      "loudness": [
+        -20.5,
+        -6.4
+      ],
+      "duration": 6.24
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_7",
+      "loudness": [
+        -20.5,
+        -7.3
+      ],
+      "duration": 3.84
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_8",
+      "loudness": [
+        -20.4,
+        -8.2
+      ],
+      "duration": 6.24
+    },
+    {
+      "id": "NPC_JUMO_OFFER_1",
+      "loudness": [
+        -20.5,
+        -5.3
+      ],
+      "duration": 5.92
+    },
+    {
+      "id": "NPC_JUMO_OFFER_2",
+      "loudness": [
+        -20.5,
+        -6.4
+      ],
+      "duration": 8.56
+    },
+    {
+      "id": "NPC_JUMO_OFFER_3",
+      "loudness": [
+        -20.4,
+        -5.0
+      ],
+      "duration": 2.88
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_1",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 4.64
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_2",
+      "loudness": [
+        -20.0,
+        -3.6
+      ],
+      "duration": 3.6
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_3",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 1.84
+    },
+    {
+      "id": "NPC_MERCHANT_ACTIVE_1",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 4.32
+    },
+    {
+      "id": "NPC_MERCHANT_ACTIVE_2",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 4.08
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_1",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 4.8
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_1",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 3.92
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 5.04
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_3",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 5.28
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_4",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 6.56
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_5",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 4.96
+    },
+    {
+      "id": "NPC_MERCHANT_VOUCH_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 8.56
+    },
+    {
+      "id": "NPC_MERCHANT_HINT_G08_1",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 9.28
+    },
+    {
+      "id": "NPC_MERCHANT_HINT_G08_2",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 10.0
+    },
+    {
+      "id": "NPC_MERCHANT_HINT_G08_3",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 2.88
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_1",
+      "loudness": [
+        -20.5,
+        -5.0
+      ],
+      "duration": 4.8
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_2",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 5.12
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3",
+      "loudness": [
+        -20.5,
+        -5.2
+      ],
+      "duration": 6.16
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3B",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 5.84
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3C",
+      "loudness": [
+        -20.4,
+        -5.2
+      ],
+      "duration": 4.48
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_4",
+      "loudness": [
+        -20.5,
+        -4.7
+      ],
+      "duration": 8.4
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_5",
+      "loudness": [
+        -20.5,
+        -5.4
+      ],
+      "duration": 1.52
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_6",
+      "loudness": [
+        -20.5,
+        -4.7
+      ],
+      "duration": 8.08
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_7",
+      "loudness": [
+        -20.0,
+        -3.9
+      ],
+      "duration": 1.6
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_8",
+      "loudness": [
+        -19.9,
+        -3.9
+      ],
+      "duration": 3.12
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_9",
+      "loudness": [
+        -20.5,
+        -6.8
+      ],
+      "duration": 2.0
+    },
+    {
+      "id": "NPC_SHAMAN_HEAL_INTRO_1",
+      "loudness": [
+        -20.5,
+        -4.6
+      ],
+      "duration": 5.6
+    },
+    {
+      "id": "NPC_SHAMAN_PROGRESS_1",
+      "loudness": [
+        -20.4,
+        -6.4
+      ],
+      "duration": 4.16
+    },
+    {
+      "id": "NPC_SHAMAN_PROGRESS_2",
+      "loudness": [
+        -20.5,
+        -5.0
+      ],
+      "duration": 3.84
+    },
+    {
+      "id": "NPC_SHAMAN_NUDGE_1",
+      "loudness": [
+        -20.5,
+        -5.4
+      ],
+      "duration": 4.16
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_1",
+      "loudness": [
+        -20.0,
+        -3.9
+      ],
+      "duration": 0.88
+    },
+    {
+      "id": "NPC_SHAMAN_PROXY_1",
+      "loudness": [
+        -20.4,
+        -5.8
+      ],
+      "duration": 4.4
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_2",
+      "loudness": [
+        -20.0,
+        -3.9
+      ],
+      "duration": 2.16
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_3",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 4.64
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_3",
+      "loudness": [
+        -20.5,
+        -6.1
+      ],
+      "duration": 4.88
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_2",
+      "loudness": [
+        -20.5,
+        -6.9
+      ],
+      "duration": 4.4
+    },
+    {
+      "id": "NPC_SHAMAN_TAVERN_1",
+      "loudness": [
+        -20.4,
+        -5.9
+      ],
+      "duration": 6.08
+    },
+    {
+      "id": "NPC_SHAMAN_TAVERN_2",
+      "loudness": [
+        -20.5,
+        -5.7
+      ],
+      "duration": 5.76
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_1",
+      "loudness": [
+        -20.4,
+        -5.7
+      ],
+      "duration": 12.88
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_2",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 12.8
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_4",
+      "loudness": [
+        -20.0,
+        -4.0
+      ],
+      "duration": 7.36
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_1",
+      "loudness": [
+        -20.5,
+        -5.0
+      ],
+      "duration": 9.6
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_2",
+      "loudness": [
+        -20.0,
+        -3.7
+      ],
+      "duration": 4.24
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_3",
+      "loudness": [
+        -20.5,
+        -5.6
+      ],
+      "duration": 0.96
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_1",
+      "loudness": [
+        -20.5,
+        -4.7
+      ],
+      "duration": 6.88
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 0.88
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_3",
+      "loudness": [
+        -20.5,
+        -4.7
+      ],
+      "duration": 7.76
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_HAND_1",
+      "loudness": [
+        -20.4,
+        -4.7
+      ],
+      "duration": 9.76
+    },
+    {
+      "id": "NPC_SHAMAN_WARN_1",
+      "loudness": [
+        -20.5,
+        -4.5
+      ],
+      "duration": 7.12
+    },
+    {
+      "id": "NPC_SHAMAN_WARN_2",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 2.64
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_1",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 3.76
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_2",
+      "loudness": [
+        -20.4,
+        -5.0
+      ],
+      "duration": 8.24
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_3",
+      "loudness": [
+        -20.1,
+        -4.3
+      ],
+      "duration": 2.24
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_1",
+      "loudness": [
+        -19.9,
+        -4.2
+      ],
+      "duration": 3.6
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_2",
+      "loudness": [
+        -20.4,
+        -4.7
+      ],
+      "duration": 6.32
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_3",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 2.8
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_1",
+      "loudness": [
+        -20.4,
+        -4.6
+      ],
+      "duration": 4.16
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_2",
+      "loudness": [
+        -20.4,
+        -4.8
+      ],
+      "duration": 8.56
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_3",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 3.92
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_1",
+      "loudness": [
+        -20.4,
+        -5.6
+      ],
+      "duration": 3.76
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_2",
+      "loudness": [
+        -20.4,
+        -4.8
+      ],
+      "duration": 6.96
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_3",
+      "loudness": [
+        -20.0,
+        -4.3
+      ],
+      "duration": 2.08
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_1",
+      "loudness": [
+        -20.4,
+        -6.3
+      ],
+      "duration": 5.92
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_2",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 6.32
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_3",
+      "loudness": [
+        -20.4,
+        -4.9
+      ],
+      "duration": 6.88
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_4",
+      "loudness": [
+        -20.5,
+        -4.9
+      ],
+      "duration": 6.48
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_4",
+      "loudness": [
+        -20.5,
+        -4.6
+      ],
+      "duration": 3.84
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_3",
+      "loudness": [
+        -19.9,
+        -4.2
+      ],
+      "duration": 4.16
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_1",
+      "loudness": [
+        -20.4,
+        -6.1
+      ],
+      "duration": 2.24
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_2",
+      "loudness": [
+        -20.5,
+        -6.2
+      ],
+      "duration": 2.0
+    },
+    {
+      "id": "NPC_SHAMAN_IDENTIFY_1",
+      "loudness": [
+        -20.4,
+        -7.9
+      ],
+      "duration": 3.76
+    },
+    {
+      "id": "NPC_SHAMAN_IDENTIFY_2",
+      "loudness": [
+        -20.5,
+        -4.8
+      ],
+      "duration": 7.36
+    },
+    {
+      "id": "NPC_SHAMAN_HINT_MANSA_1",
+      "loudness": [
+        -20.5,
+        -4.7
+      ],
+      "duration": 9.52
+    },
+    {
+      "id": "NPC_SHAMAN_HINT_MANSA_2",
+      "loudness": [
+        -20.5,
+        -4.7
+      ],
+      "duration": 6.16
+    },
+    {
+      "id": "NPC_SHAMAN_HINT_MANSA_3",
+      "loudness": [
+        -20.0,
+        -4.2
+      ],
+      "duration": 3.76
+    }
+  ],
+  "engine_checks": [
+    "AUDIO_TEST fails=0 PASS",
+    "CAST613_ENGINE_PASS resources=237 play_id=237 stop=PASS, clean exit",
+    "browser jumo and dokkaebi actual MP3 readyState4"
+  ],
+  "e2e_audio_cues": "Not run: project exclusive slot queued behind 307-boss-greetings. Only own waiting runner cancelled. Existing runtime unchanged; all 237 resources/play IDs/stop independently checked."
+}

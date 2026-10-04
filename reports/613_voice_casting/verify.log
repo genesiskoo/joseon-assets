@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "C:\workspace\joseon\tmp\audio613\verify.py", line 15, in <module>
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:results=list(pool.map(verify,rows))
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\workspace\joseon\tmp\audio613\verify.py", line 12, in verify
+    f=site/r['file'];info=ai.ffprobe(str(f));loud=ai.out_loudness(str(f));assert abs(loud[0]+20)<1.1,(r['id'],loud);assert loud[1]<=-1.5,(r['id'],loud);assert info['dur']>.2
+                                                                                 ^^^^^^^^^^^^^^^^^^^
+AssertionError: ('EV_SHAMAN_QUEST_2', (-21.2, -4.8))
