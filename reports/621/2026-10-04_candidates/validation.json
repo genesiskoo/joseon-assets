@@ -1,0 +1,21 @@
+{
+  "card": 621,
+  "status": "PASS",
+  "checks": "source/prompt/input/export hashes, sizes/alpha, scope/JPG/storage budgets + manual visual review",
+  "native_count": 16,
+  "candidate_count": 14,
+  "native_bytes": 46536327,
+  "all_card_bytes_before_validation": 48476770,
+  "review_jpg_count": 5,
+  "pd_adopted": false,
+  "game_intake": false,
+  "recommended_mix": {
+    "blink": "A_blink_r1",
+    "light_step": "B_light_step_r1",
+    "clone": "A_clone_r2",
+    "hide": "A_hide_r1",
+    "iron_body": "A_iron_body_r1",
+    "first_cut": "B_first_cut_r1",
+    "thunder_lore": "B_thunder_lore_r2"
+  }
+}

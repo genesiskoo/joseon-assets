@@ -1,0 +1,91 @@
+{
+  "card": 621,
+  "source_base": "5997d62",
+  "source_branch": "codex/621-missing-skill-icons",
+  "pd_adopted": false,
+  "game_intake": false,
+  "native_tool": "image_gen_builtin",
+  "model": "builtin-default-version-not-exposed",
+  "anchor": "H1/D-072, adopted #498 icons",
+  "native_size_requested": [
+    1280,
+    1280
+  ],
+  "exports": [
+    128,
+    64,
+    40
+  ],
+  "actual_game_cell": 40,
+  "actual_game_inner_approx": 34,
+  "candidate_sets": {
+    "A": "인물·동작 중심",
+    "B": "단순한 큰 형태·상징 중심"
+  },
+  "references": [
+    {
+      "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+      "role": "H1 LEFT only character identity and shared matte ink style",
+      "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+      "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+      "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+      "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+      "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\pouch.png",
+      "role": "adopted #498 paper/cloth material and yellow talisman color, thunder_lore only",
+      "sha256": "faf4dcb84e2244f3c7c7fc4d992ccec88bbb7dc0e41cccff36b25b76dae3544f"
+    }
+  ],
+  "skills": {
+    "blink": {
+      "ko": "축지법",
+      "meaning": "걸어서 닿는 땅을 접는 순간 이동, 먹 번짐 사라짐/나타남",
+      "A": "One H1 Doho figure arriving from a short folded earthen strip: solid gat/face and leading boot on right, trailing coat dissolves into a single broad black ink smear on left. A clear broken gap in the ground indicates teleportation. No second complete figure, no clones standing together, no running stride, no energy portal. Large diagonal spatial fold, readable boot/hat silhouette.",
+      "B": "Close-up of a single black Korean wrapped boot stepping out of a sharply folded charcoal ground plane. Two widely separated pale footprint marks are linked by one short broken black ink stroke, clear negative gap between departure and arrival. A corner of navy robe and dull-red sash identifies Doho. Prioritize folded-ground discontinuity, not speed lines, no duplicate people or portal ring."
+    },
+    "light_step": {
+      "ko": "경공",
+      "meaning": "몸이 가벼워지는 패시브 이동·회피, 별도 인게임 이펙트 없음",
+      "A": "Lower body of H1 Doho in a light forward stride, one wrapped black boot barely touching a narrow stone edge, the other heel raised, large navy robe hem and restrained red sash streaming back. A short ivory dry-brush motion dash near the feet indicates light movement. A single continuous ground plane, no teleport gap, no duplicated footprint trail, no jump spell or floating magical symbols.",
+      "B": "One large wrapped black boot balanced only on its toe upon a thin horizontal stone edge, nearly all weight lifted. Soft short ivory brush curve and small navy/red cloth corner create lightness. A simple readable toe-and-stone silhouette at 34 pixels; no cracked teleporting ground, no wings, no spell, no levitating orb."
+    },
+    "clone": {
+      "ko": "분신술",
+      "meaning": "먹으로 된 도호 분신들이 적을 끌고 칼질",
+      "A": "Exactly THREE distinct H1 Doho bust/torso silhouettes arranged as a shallow triangle: central solid navy swordsman, two dark ink copies behind left and right with clearly separate black gats, heads, robe shapes and sword handles. Give ink copies large soft dissolving edges but visible silhouettes. The central collar/face is light, copies muted ivory collars. Read as simultaneous multiple swordsmen, not one figure with motion blur. No fourth figure, no monsters, no body fusion.",
+      "B": "Three clearly separated black gat-and-shoulder silhouettes aligned diagonally, each with a short ivory collar and restrained sword silhouette. One central H1 face and two ink-only duplicates. Large spacing between hats for readability at 34 pixels; black and ivory brush masses, navy only in main body, no circular magic symbol or summoned beast."
+    },
+    "hide": {
+      "ko": "은형술",
+      "meaning": "한 명의 몸을 먹으로 흩어 숨김, 공격하면 해제",
+      "A": "One H1 Doho head and shoulders, visible sly eye and black gat on right, the LEFT half of face/shoulder dissolves into charcoal dry-brush ink and negative dark background. Exactly one continuous partial figure. A subtle ivory edge of collar reveals fading body. Disappearance/invisibility rather than travel: no ground trail, no two figures, no extra gats, no hood, no mask, no magical bubble.",
+      "B": "One black gat with a partly visible H1 eye under its brim; the navy shoulder and ivory collar are fading into an intentionally large empty ink-black patch. A single diagonal torn-ink edge erases the torso. Dominant half-figure/empty-space contrast, subtle silhouette, no new costume, no clones, no footprints, no skeleton or ghost face."
+    },
+    "iron_body": {
+      "ko": "금강불괴",
+      "meaning": "몸이 쇠처럼 단단한 패시브 물리 막이·경직 감소, 새 갑옷/인게임 FX 없음",
+      "A": "H1 Doho from waist-up with two crossed braced forearms in existing plain black wrapped bracers and navy sleeves, calm unflinching gaze under gat. Large broad angular dark-brush planes make his stance feel immovable, one short chipped ivory impact mark at forearms. The normal human body is resilient; no metal skin, new armor, shield, magic barrier, golden aura or changed outfit. Strong compact defensive silhouette, not seated meditation.",
+      "B": "Close-up of H1 navy sleeve, plain black wrapped forearm and clenched bare human fist in a firm braced posture. A small dull-steel fragment glances away from the forearm, one quiet ivory impact slash conveys durability. Broad solid dark body mass, no added metal armor or metal fist, no big weapon crossing the icon, no magical sparks or glowing shield."
+    },
+    "first_cut": {
+      "ko": "첫 칼",
+      "meaning": "H1 어깨 위 검으로 쉬다가 내리치는 첫 한 칼, 발도 아님",
+      "A": "H1 Doho close-up with confident resting expression, right hand gripping a single sword casually on his shoulder, poised for his FIRST sudden downward cut. One short broad ivory diagonal cut-mark in lower foreground suggests the imminent heavy first stroke without becoming a projectile. Gat/face and shoulder-held sword are dominant, empty dark pause above. No drawing from sheath, no multiple swords, no multi-hit V mark or spinning ring.",
+      "B": "Tight dramatic crop of H1 sword hand and a single blade beginning to descend from the shoulder, H1 eye/gat behind it and one strong short vertical ivory dry-brush slash. Emphasize one decisive first overhead cut after waiting, not a forward thrust or spinning combo. Navy, ivory collar and red sash corner; no blade drawn from scabbard, no beam, no duplicated blade."
+    },
+    "thunder_lore": {
+      "ko": "벽력부 익히기",
+      "meaning": "벽력부를 익히는 패시브, 괴황지 부적·붉은 글, 벼락 발사 도술 아님",
+      "A": "One large muted yellow Korean talisman paper laid diagonally, a traditional black brush touching its surface to write a few bold red abstract talisman strokes. Small dark inkstone corner, no extra objects. Read as learning/writing a paper talisman; paper is broad and readable at 34 pixels. No actual lightning bolt, electricity, caster, orb, beam or lightning in sky. Red marks are decorative talisman strokes only, no title letters.",
+      "B": "A single upright muted yellow talisman sheet with three bold linked red brush-seal strokes, held at one bottom corner by two ordinary ink-stained fingertips. Slight curled paper edge, dark ink background, strong simple yellow rectangle/red marks. One tiny dark brush tip nearby indicates learned craft. No flying papers, pouch, lightning bolt, projected energy, magic circle or written label."
+    }
+  }
+}
