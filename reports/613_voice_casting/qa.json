@@ -1918,5 +1918,12 @@
     "CAST613_ENGINE_PASS resources=237 play_id=237 stop=PASS, clean exit",
     "browser jumo and dokkaebi actual MP3 readyState4"
   ],
-  "e2e_audio_cues": "Not run: project exclusive slot queued behind 307-boss-greetings. Only own waiting runner cancelled. Existing runtime unchanged; all 237 resources/play IDs/stop independently checked."
+  "e2e_audio_cues": "Not run: project exclusive slot queued behind 307-boss-greetings. Only own waiting runner cancelled. Existing runtime unchanged; all 237 resources/play IDs/stop independently checked.",
+  "landing": {
+    "main_commit": "62602941",
+    "main_import": "PASS 50 sec",
+    "main_boot": "SCRIPT ERROR 0, autoloads10/10, main OK",
+    "site_gate": "boot PASS, runner selftest5/5 PASS",
+    "cache_repair": "RoomProps registered after headless editor scan; no source code change"
+  }
 }

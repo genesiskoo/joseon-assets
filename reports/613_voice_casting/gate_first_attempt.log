@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\FORYOUCOM\.codex\worktrees\613-final-cast\joseon\tools\wt.py", line 995, in site_gate
+    raise WtError(gate_failure(label, st_text, errs2, miss, root, out))
+wt.WtError: 뜻 충돌(rebase 뒤 컴파일): world/dungeon_level.gd:323 · Parse Error: Identifier "RoomProps" not declared in the current scope.
+  ⚠ 러너 자기검사 PASS 5/5 · 오류 줄 2 (7초) — e2e 전에 멈췄다 · main 은 그대로 · 전체 시험 안 돎
+      world/dungeon_level.gd:324 · Parse Error: Identifier "RoomProps" not declared in the current scope.
+  → 이 자리에서 고쳐 커밋한 뒤 다시 land — 두 쪽 커밋 보기: git log --oneline -8 -- world/dungeon_level.gd. 오류 줄 다시 보기 = godot --headless --path C:/Users/FORYOUCOM/.codex/worktrees/613-final-cast/joseon -- --e2e-selftest
