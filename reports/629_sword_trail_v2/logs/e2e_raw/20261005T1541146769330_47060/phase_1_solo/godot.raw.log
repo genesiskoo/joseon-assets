@@ -1,0 +1,956 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E start: balance_room, balance_boss, hit_stagger, pack_perf, bodies_cap, gimmicks, item_showcase, footsteps, audio_cues, sfx_limiter
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ balance_room
+  · 명중 확정 끔 — 이 대본은 명중 굴림을 실전 그대로 쓴다 (#342)
+[Dev] item 화염부 world=(32.5, 0.0, 70.5) screen=(-1072.484, 3072.227)
+[Dev] item 빙결부 world=(33.5, 0.0, 69.5) screen=(-979.9173, 3072.227)
+[Field] deulnyeok seed=355022911 128x128 props=2252 packs=18 enemies=77 waypoint=(62, 65) roster=bandit,bat,talisman_master elites=["13:파란×4@구간3"]
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs Down_cave dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Dev] interact FloorItem world=(32.5, 0.0, 70.5) screen=(1519.384, 1142.938)
+[Dev] interact @Area3D@834 world=(33.5, 0.0, 69.5) screen=(1611.95, 1142.938)
+[Dev] interact PusJar world=(95.5, 0.0, 103.5) screen=(2907.884, 3708.197)
+[Dev] interact @Area3D@1061 world=(101.5, 0.0, 105.5) screen=(3093.018, 3921.969)
+[Dev] interact @Area3D@1062 world=(98.5, 0.0, 107.5) screen=(2861.601, 3895.247)
+[Dev] interact LootChest world=(27.5, 0.0, 70.5) screen=(1287.967, 1009.331)
+[Dev] interact @Area3D@1063 world=(94.5, 0.0, 100.5) screen=(3000.451, 3601.312)
+[Dev] interact @Area3D@1064 world=(55.5, 0.0, 52.5) screen=(3417.001, 1276.545)
+[Dev] interact LootPot world=(46.5, 0.0, 68.5) screen=(2259.917, 1463.595)
+[Dev] interact @Area3D@1065 world=(73.5, 0.0, 47.5) screen=(4481.519, 1623.924)
+[Dev] interact @Area3D@1066 world=(90.5, 0.0, 47.5) screen=(5268.335, 2078.189)
+[Dev] interact @Area3D@1067 world=(111.5, 0.0, 49.5) screen=(6147.719, 2692.782)
+[Dev] interact @Area3D@1068 world=(101.5, 0.0, 101.5) screen=(3278.151, 3815.083)
+[Dev] interact @Area3D@1069 world=(86.5, 0.0, 76.5) screen=(3740.984, 2746.225)
+[Dev] interact @Area3D@1070 world=(53.5, 0.0, 52.5) screen=(3324.434, 1223.102)
+[Dev] interact @Area3D@1071 world=(87.5, 0.0, 95.5) screen=(2907.884, 3280.654)
+[Dev] interact @Area3D@1072 world=(26.5, 0.0, 66.5) screen=(1426.817, 875.7234)
+[Dev] interact @Area3D@1073 world=(17.5, 0.0, 60.5) screen=(1287.967, 474.9016)
+[Dev] interact @Area3D@1074 world=(86.5, 0.0, 22.5) screen=(6240.286, 1303.266)
+[Dev] interact @Area3D@1075 world=(59.5, 0.0, 65.5) screen=(3000.451, 1730.81)
+[Dev] interact @Area3D@1076 world=(18.5, 0.0, 74.5) screen=(686.2832, 875.7234)
+[Dev] interact @Area3D@1077 world=(44.5, 0.0, 69.5) screen=(2121.067, 1436.874)
+[Dev] interact @Area3D@1078 world=(73.5, 0.0, 49.5) screen=(4388.952, 1677.367)
+[Dev] interact @Area3D@1079 world=(88.5, 0.0, 52.5) screen=(4944.352, 2158.353)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.5, 0.0, 50.5) cell=(16, 50)
+[Click] world=(16.17001, 0.0, 50.82999) cell=(16, 50)
+[Click] world=(15.51004, 0.0, 51.48996) cell=(15, 51)
+[Click] world=(14.97553, 0.0, 52.1759) cell=(14, 52)
+[Click] world=(15.31924, 0.0, 53.04364) cell=(15, 53)
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(14.90386, 0.0, 53.41199) screen=(705.7064, 313.9254)
+[Kill] +6 xp (lv 1, 12/20)
+[Dev] item 엽전 world=(15.65623, 0.0, 53.77673) screen=(723.6472, 343.7762)
+[Dev] item 무명띠 world=(15.65623, 0.0, 53.77673) screen=(723.6472, 343.7762)
+[Dev] item 미식별 철검 world=(15.65623, 0.0, 53.77673) screen=(723.6472, 343.7762)
+[Loot] 첫 매직 보장 — bandit (iron_sword ilvl 1) · 회차 1
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Audio] missing cue: drop_magic (파일 규약 design/audio.md §3)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.5, 0.0, 58.5) cell=(34, 58)
+[Click] world=(34.07203, 0.0, 58.51288) cell=(34, 58)
+[Click] world=(33.0715, 0.0, 58.5168) cell=(33, 58)
+[Click] world=(32.12415, 0.0, 58.5048) cell=(32, 58)
+[Click] world=(31.56583, 0.0, 58.50117) cell=(31, 58)
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 엽전 world=(31.21584, 0.0, 58.50047) screen=(698.9604, 378.0539)
+  · 걸어감 2.3초 · 처치 3 · 18.9초 · 생명 110→77 (최저 77) · 적 공격 23 (명중 11) · Lv1
+E2E balance_room PASS (검사 8)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ balance_boss
+  · 명중 확정 끔 — 이 대본은 명중 굴림을 실전 그대로 쓴다 (#342)
+  · BALANCE_REPLAY_ENV {"engine":{"build":"steam","hash":"ed1daf0bf001b61586d9930840f2f1394092c079","hex":263938,"major":4,"minor":7,"patch":2,"status":"stable","string":"4.7.2-stable (steam)","timestamp":0},"physics_hz":60,"pid":39960,"scenario":"balance_boss","schema":2,"time_scale":"1.00000000000000000","unconsumed_cli":[],"user_cli":["--e2e=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,footsteps,audio_cues,sfx_limiter"],"user_dir":"C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454"}
+  · 흑랑 RNG Lv3 판1 doho0 seed=23271941 initial=3718673984595126131
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@1471 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@1472 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@1473 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@1474 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@1475 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@1476 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@1477 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@1478 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@1479 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 RNG Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107
+  · 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052
+  · 흑랑 RNG Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+[Audio] BGM boss → boss.ogg
+  · 흑랑 파수2 Lv3 판1 entered tick=1327 game=22.1167 state=0 XZ=(20.5000,15.5000) pack=25 target=none path=0/0 level_current=false rng=3841642673449239052
+  · 흑랑 층경계 Lv3 판1 entered tick=1327 physics=false XYZ=(23.5000,0.0500,23.5000) current_floor=2 queued_levels=1 queued_colliders=36 stale_collisions=1 collisions=FloorBody:current=false:queued=true
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+  · 흑랑 파수2 Lv3 판1 sample tick=1327 game=22.1167 state=0 XZ=(20.5000,15.5000) pack=25 target=none path=0/0 level_current=false rng=3841642673449239052
+  · 흑랑 층경계 Lv3 판1 physics_after_1 tick=1328 physics=true XYZ=(23.5000,0.0004,23.5000) current_floor=2 queued_levels=0 queued_colliders=0 stale_collisions=0 collisions=
+  · 흑랑 층경계 Lv3 판1 physics_after_2 tick=1329 physics=true XYZ=(23.5000,0.0004,23.5000) current_floor=2 queued_levels=0 queued_colliders=0 stale_collisions=0 collisions=FloorBody:current=true:queued=false
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 파수2 Lv3 판1 before_V tick=1333 game=22.2000 state=1 XZ=(20.5000,15.8000) pack=25 target=(23.5000,23.5000) path=0/8 level_current=true rng=3841642673449239052
+[Dev] near boss hp=195/195
+  · 흑랑 준비 key=86 physics=5 expected=5
+  · 흑랑 파수2 Lv3 판1 after_V tick=1339 game=22.3000 state=1 XZ=(20.5000,16.2500) pack=25 target=(10.5000,8.5000) path=1/8 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 46/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1358 game=22.6333 state=1 XZ=(20.0261,16.2497) pack=25 target=(10.5000,8.5000) path=0/16 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1389 game=23.1500 state=1 XZ=(19.5141,14.0445) pack=25 target=(10.5000,8.5000) path=0/14 level_current=true rng=3841642673449239052
+[Click] world=(8.833332, 0.0, 8.5) cell=(8, 8)
+  · 흑랑 파수2 Lv3 판1 sample tick=1420 game=23.6667 state=1 XZ=(19.5003,11.7197) pack=25 target=(10.3667,8.5000) path=1/12 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1451 game=24.1833 state=1 XZ=(19.2680,9.4751) pack=25 target=(10.3667,8.5000) path=1/10 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 43/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1482 game=24.7000 state=1 XZ=(17.3488,8.5444) pack=25 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1513 game=25.2167 state=5 XZ=(16.9488,8.5419) pack=25 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1544 game=25.7333 state=5 XZ=(11.6177,8.5080) pack=25 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 40/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1575 game=26.2500 state=4 XZ=(11.6177,8.5080) pack=25 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1606 game=26.7667 state=1 XZ=(12.0717,8.5012) pack=25 target=(10.3667,8.5000) path=1/3 level_current=true rng=3841642673449239052
+[Click] world=(8.726665, 0.0, 8.5) cell=(8, 8)
+  · 흑랑 파수2 Lv3 판1 sample tick=1637 game=27.2833 state=1 XZ=(11.6192,8.5000) pack=25 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 37/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1668 game=27.8000 state=1 XZ=(11.5660,8.5000) pack=25 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1699 game=28.3167 state=3 XZ=(11.5660,8.5000) pack=25 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1730 game=28.8333 state=4 XZ=(11.5660,8.5000) pack=25 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 34/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1761 game=29.3500 state=1 XZ=(11.5507,8.4998) pack=25 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1792 game=29.8667 state=1 XZ=(11.5507,8.4998) pack=25 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1823 game=30.3833 state=1 XZ=(11.5507,8.4998) pack=25 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Click] world=(8.633332, 0.0, 8.5) cell=(8, 8)
+  · 흑랑 파수2 Lv3 판1 sample tick=1854 game=30.9000 state=3 XZ=(11.5507,8.4998) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 32/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1885 game=31.4167 state=4 XZ=(11.4288,8.4998) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1916 game=31.9333 state=1 XZ=(11.4287,8.4997) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=1947 game=32.4500 state=1 XZ=(11.4287,8.4997) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Click] world=(8.553332, 0.0, 8.5) cell=(8, 8)
+[Skill] 참격 → mp 29/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1978 game=32.9667 state=1 XZ=(11.4287,8.4997) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2009 game=33.4833 state=3 XZ=(11.4287,8.4997) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 RNG Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430
+  · 흑랑 RNG Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375
+  · 흑랑 파수2 Lv3 판1 sample tick=2040 game=34.0000 state=4 XZ=(11.4279,8.4975) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Click] world=(8.473332, 0.0, 8.5) cell=(8, 8)
+[Skill] 참격 → mp 26/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2071 game=34.5167 state=1 XZ=(11.4279,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2102 game=35.0333 state=1 XZ=(11.4279,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2133 game=35.5500 state=1 XZ=(11.4279,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2164 game=36.0667 state=3 XZ=(11.4279,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 24/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2195 game=36.5833 state=4 XZ=(11.4279,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2226 game=37.1000 state=1 XZ=(11.4254,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2257 game=37.6167 state=1 XZ=(11.4254,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2288 game=38.1333 state=1 XZ=(11.4254,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 21/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2319 game=38.6500 state=3 XZ=(11.4254,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2350 game=39.1667 state=5 XZ=(11.4254,8.5053) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2381 game=39.6833 state=1 XZ=(11.4518,8.5048) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2412 game=40.2000 state=1 XZ=(11.4222,8.5042) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 19/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2443 game=40.7167 state=1 XZ=(11.4222,8.5042) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2474 game=41.2333 state=1 XZ=(11.4222,8.5042) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2505 game=41.7500 state=5 XZ=(11.4222,8.5042) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 16/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2536 game=42.2667 state=4 XZ=(11.4222,8.5042) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2567 game=42.7833 state=1 XZ=(11.4110,8.5023) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2598 game=43.3000 state=1 XZ=(11.4110,8.5023) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2629 game=43.8167 state=1 XZ=(11.4110,8.5023) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 13/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2660 game=44.3333 state=3 XZ=(11.4110,8.5023) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2691 game=44.8500 state=4 XZ=(11.4110,8.5023) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2722 game=45.3667 state=1 XZ=(11.4056,8.4996) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2753 game=45.8833 state=1 XZ=(11.4056,8.4996) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 11/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2784 game=46.4000 state=1 XZ=(11.4056,8.4996) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Kill] +7 xp (lv 4, 6/160)
+[LevelUp] lv=4 stat_pts=5 skill_pts=2
+[Dev] item 엽전 world=(8.161827, 0.0, 8.496411) screen=(547.3752, 290.3196)
+  · 흑랑 파수2 Lv3 판1 sample tick=2815 game=46.9167 state=3 XZ=(11.4056,8.4996) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2846 game=47.4333 state=4 XZ=(11.4056,8.4996) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2877 game=47.9500 state=1 XZ=(11.3987,8.4960) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 8/50
+  · 흑랑 파수2 Lv3 판1 sample tick=2908 game=48.4667 state=1 XZ=(11.3987,8.4960) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2939 game=48.9833 state=1 XZ=(11.3987,8.4960) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=2970 game=49.5000 state=3 XZ=(11.3924,8.4696) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 6/50
+  · 흑랑 파수2 Lv3 판1 sample tick=3001 game=50.0167 state=4 XZ=(11.3924,8.4696) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=3032 game=50.5333 state=1 XZ=(11.3155,8.3734) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Kill] +168 xp (lv 5, 14/224)
+[LevelUp] lv=5 stat_pts=10 skill_pts=3
+[Dev] item 탕약 — 쌍화탕 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 탕약 — 쌍화탕 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 영약 — 생맥산 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 식별부 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 흠 있는 백옥 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 흑랑 이빨 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 흑랑 이빨 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 수복 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 미식별 무명 도포 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 미식별 환도 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 미식별 옥패 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Loot] 보스 전용 유니크 — boss_heukrang 첫 처치 → u_heukrang_fang (회차 1)
+[Dev] item 흑랑의 봉인패 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Dev] item 엽전 world=(8.875813, 0.0, 8.509176) screen=(579.83, 309.7395)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "opening_pending": false, "story": { "entered/motgol": true, "entered/heukrang_gul": true }, "quest": { "heukrang_clear": { "state": "none", "left": 20, "barked": false }, "heukrang_seal": { "state": "killed" }, "heukrang_thanks": { "state": "killed" } }, "seal:boss_heukrang": 1, "boss_killed_heukrang_gul": true }
+  · 흑랑 입력 Lv3 판1 polls=283 physics_interval=6 valid=true
+  · 흑랑 Lv3 처치 · 28.3초 · 2페이즈 11.3초 · 생명 130→55 (최저 37 = 28%) · 탕약 3/3 · 적 공격 35 (명중 21)
+  · 흑랑 파수2 Lv3 판1 finish tick=3037 game=50.6000 state=1 XZ=(11.1706,8.3358) pack=25 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · BALANCE_REPLAY_CLOCK {"attempt":1,"dt_sample_count":56,"level":3,"physics_count":1719,"physics_dt_max":"0.01666666666666667","physics_dt_min":"0.01666666666666667","physics_hz":60,"process_count":3674,"process_dt_max":"0.14878933333333422","process_dt_min":"0.00017887499416247","time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"22.11666666666669200","level":3,"physics_count":10,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3,"process_dt":"0.14878933333333422","sample":1,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"22.63333333333332900","level":3,"physics_count":41,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":53,"process_dt":"0.00757575757575758","sample":2,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"23.14999999999996700","level":3,"physics_count":72,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":120,"process_dt":"0.00833333333333333","sample":3,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"23.66666666666660400","level":3,"physics_count":103,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":190,"process_dt":"0.00846500000000097","sample":4,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"24.18333333333324100","level":3,"physics_count":134,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":257,"process_dt":"0.00740740740740741","sample":5,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"24.69999999999987800","level":3,"physics_count":165,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":326,"process_dt":"0.00757575757575758","sample":6,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"25.21666666666651600","level":3,"physics_count":196,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":392,"process_dt":"0.00820378787878888","sample":7,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"25.73333333333315300","level":3,"physics_count":227,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":459,"process_dt":"0.00909090909090909","sample":8,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"26.24999999999979000","level":3,"physics_count":258,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":526,"process_dt":"0.00757575757575758","sample":9,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"26.76666666666642800","level":3,"physics_count":289,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":593,"process_dt":"0.00833333333333333","sample":10,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"27.28333333333306500","level":3,"physics_count":320,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":660,"process_dt":"0.00833333333333333","sample":11,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"27.79999999999970200","level":3,"physics_count":351,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":732,"process_dt":"0.00740740740740741","sample":12,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"28.31666666666634000","level":3,"physics_count":382,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":797,"process_dt":"0.00833333333333333","sample":13,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"28.83333333333297700","level":3,"physics_count":413,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":866,"process_dt":"0.01217833333333438","sample":14,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"29.34999999999961400","level":3,"physics_count":444,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":933,"process_dt":"0.00694444444444444","sample":15,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"29.86666666666625100","level":3,"physics_count":475,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1000,"process_dt":"0.00833333333333333","sample":16,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"30.38333333333288900","level":3,"physics_count":506,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1066,"process_dt":"0.00833333333333333","sample":17,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"30.89999999999952600","level":3,"physics_count":537,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1134,"process_dt":"0.00757575757575758","sample":18,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"31.41666666666616300","level":3,"physics_count":568,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1201,"process_dt":"0.00757575757575758","sample":19,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"31.93333333333280100","level":3,"physics_count":599,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1270,"process_dt":"0.00757575757575758","sample":20,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"32.44999999999944200","level":3,"physics_count":630,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1337,"process_dt":"0.00757575757575758","sample":21,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"32.96666666666607900","level":3,"physics_count":661,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1403,"process_dt":"0.00757575757575758","sample":22,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"33.48333333333271600","level":3,"physics_count":692,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1469,"process_dt":"0.00757575757575758","sample":23,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"33.99999999999935300","level":3,"physics_count":723,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1532,"process_dt":"0.00833333333333333","sample":24,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"34.51666666666599100","level":3,"physics_count":754,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1598,"process_dt":"0.00833333333333333","sample":25,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"35.03333333333262800","level":3,"physics_count":785,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1665,"process_dt":"0.00833333333333333","sample":26,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"35.54999999999926500","level":3,"physics_count":816,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1732,"process_dt":"0.00757575757575758","sample":27,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"36.06666666666590300","level":3,"physics_count":847,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1797,"process_dt":"0.00830909090909203","sample":28,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"36.58333333333254000","level":3,"physics_count":878,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1864,"process_dt":"0.00757575757575758","sample":29,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"37.09999999999917700","level":3,"physics_count":909,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1932,"process_dt":"0.00833333333333333","sample":30,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"37.61666666666581400","level":3,"physics_count":940,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2000,"process_dt":"0.00757575757575758","sample":31,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"38.13333333333245200","level":3,"physics_count":971,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2067,"process_dt":"0.00833333333333333","sample":32,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"38.64999999999908900","level":3,"physics_count":1002,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2133,"process_dt":"0.00778672727272728","sample":33,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"39.16666666666572600","level":3,"physics_count":1033,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2199,"process_dt":"0.00795724242424243","sample":34,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"39.68333333333236400","level":3,"physics_count":1064,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2266,"process_dt":"0.00757575757575758","sample":35,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"40.19999999999900100","level":3,"physics_count":1095,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2332,"process_dt":"0.00757575757575758","sample":36,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"40.71666666666563800","level":3,"physics_count":1126,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2398,"process_dt":"0.00757575757575758","sample":37,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"41.23333333333227600","level":3,"physics_count":1157,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2465,"process_dt":"0.00830724242424243","sample":38,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"41.74999999999891300","level":3,"physics_count":1188,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2531,"process_dt":"0.00757575757575758","sample":39,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"42.26666666666555000","level":3,"physics_count":1219,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2599,"process_dt":"0.00833333333333333","sample":40,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"42.78333333333218700","level":3,"physics_count":1250,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2665,"process_dt":"0.00828812121212235","sample":41,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"43.29999999999882500","level":3,"physics_count":1281,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2732,"process_dt":"0.00757575757575758","sample":42,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"43.81666666666546200","level":3,"physics_count":1312,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2799,"process_dt":"0.00833333333333333","sample":43,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"44.33333333333209900","level":3,"physics_count":1343,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2865,"process_dt":"0.00833333333333333","sample":44,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"44.84999999999873700","level":3,"physics_count":1374,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2932,"process_dt":"0.00757575757575758","sample":45,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"45.36666666666537400","level":3,"physics_count":1405,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2998,"process_dt":"0.00833333333333333","sample":46,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"45.88333333333201100","level":3,"physics_count":1436,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3065,"process_dt":"0.00775100000000000","sample":47,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"46.39999999999864900","level":3,"physics_count":1467,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3131,"process_dt":"0.00775100000000000","sample":48,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"46.91666666666528600","level":3,"physics_count":1498,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3194,"process_dt":"0.00775100000000000","sample":49,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"47.43333333333192300","level":3,"physics_count":1529,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3262,"process_dt":"0.00757575757575758","sample":50,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"47.94999999999856000","level":3,"physics_count":1560,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3329,"process_dt":"0.00775100000000000","sample":51,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"48.46666666666519800","level":3,"physics_count":1591,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3397,"process_dt":"0.00775100000000000","sample":52,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"48.98333333333183500","level":3,"physics_count":1622,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3463,"process_dt":"0.00757575757575758","sample":53,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"49.49999999999847200","level":3,"physics_count":1653,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3531,"process_dt":"0.00775100000000000","sample":54,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"50.01666666666511000","level":3,"physics_count":1684,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3599,"process_dt":"0.00775100000000000","sample":55,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"50.53333333333174700","level":3,"physics_count":1715,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3668,"process_dt":"0.00833333333333333","sample":56,"time_scale":"1.00000000000000000"}
+  · 흑랑 RNG Lv3 판1 doho0 seed=23271941 initial=3718673984595126131 final=210160255614176275
+  · 흑랑 RNG Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107 final=9053088838582101655
+  · 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052 final=3841642673449239052
+  · 흑랑 RNG Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808 final=-7353103892174485600
+  · 흑랑 RNG Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430 final=-7559868052669486168
+  · 흑랑 RNG Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375 final=481403823597241650
+  · BALANCE_REPLAY_ATTEMPT {"attacks":35,"attempt":1,"boss_hp":"-4.00000000000000000","guards":2,"hits":21,"hp":"55.00000000000207500","hp0":"130.00000000000000000","hp_min":"37.00000000000000000","input_polls":283,"input_ticks_ok":true,"level":3,"max_hp":"130.00000000000000000","phase2":"11.29999999999936100","potions":3,"sec":"28.29999999999839500","summoned":2,"used":3,"win":true}
+  · 흑랑 재생 Lv3 판1 win=true attacks=35 hits=21 guards=2 summoned=2
+  · BALANCE_REPLAY_TRIES {"level":3,"tries":["처치"]}
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+  · 흑랑 RNG Lv5 판1 doho0 seed=25271947 initial=5600093101942189313
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@1984 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@1985 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@1986 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@1987 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@1988 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@1989 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@1990 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@1991 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@1992 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 RNG Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289
+  · 흑랑 RNG Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234
+  · 흑랑 RNG Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+[Audio] BGM boss → boss.ogg
+  · 흑랑 파수2 Lv5 판1 entered tick=3054 game=50.9000 state=0 XZ=(20.5000,15.5000) pack=31 target=none path=0/0 level_current=false rng=5723061790796302234
+  · 흑랑 층경계 Lv5 판1 entered tick=3054 physics=false XYZ=(23.5000,0.0500,23.5000) current_floor=2 queued_levels=1 queued_colliders=36 stale_collisions=1 collisions=FloorBody:current=false:queued=true
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+  · 흑랑 파수2 Lv5 판1 sample tick=3054 game=50.9000 state=0 XZ=(20.5000,15.5000) pack=31 target=none path=0/0 level_current=false rng=5723061790796302234
+  · 흑랑 층경계 Lv5 판1 physics_after_1 tick=3055 physics=true XYZ=(23.5000,0.0004,23.5000) current_floor=2 queued_levels=0 queued_colliders=0 stale_collisions=0 collisions=
+  · 흑랑 층경계 Lv5 판1 physics_after_2 tick=3056 physics=true XYZ=(23.5000,0.0004,23.5000) current_floor=2 queued_levels=0 queued_colliders=0 stale_collisions=0 collisions=FloorBody:current=true:queued=false
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 파수2 Lv5 판1 before_V tick=3060 game=50.9833 state=1 XZ=(20.5000,15.8000) pack=31 target=(23.5000,23.5000) path=0/8 level_current=true rng=5723061790796302234
+[Dev] near boss hp=195/195
+  · 흑랑 준비 key=86 physics=5 expected=5
+  · 흑랑 파수2 Lv5 판1 after_V tick=3066 game=51.0833 state=1 XZ=(20.5000,16.2500) pack=31 target=(10.5000,8.5000) path=1/8 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 45/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3085 game=51.4167 state=1 XZ=(20.0261,16.2497) pack=31 target=(10.5000,8.5000) path=0/16 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3116 game=51.9333 state=1 XZ=(19.5141,14.0445) pack=31 target=(10.5000,8.5000) path=0/14 level_current=true rng=5723061790796302234
+[Click] world=(8.833332, 0.0, 8.5) cell=(8, 8)
+  · 흑랑 파수2 Lv5 판1 sample tick=3147 game=52.4500 state=1 XZ=(19.5003,11.7197) pack=31 target=(10.3667,8.5000) path=1/12 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3178 game=52.9667 state=1 XZ=(19.2680,9.4751) pack=31 target=(10.3667,8.5000) path=1/10 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 42/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3209 game=53.4833 state=1 XZ=(17.3488,8.5444) pack=31 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3240 game=54.0000 state=5 XZ=(16.9488,8.5419) pack=31 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3271 game=54.5167 state=5 XZ=(11.6177,8.5080) pack=31 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 38/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3302 game=55.0333 state=4 XZ=(11.6177,8.5080) pack=31 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3333 game=55.5500 state=1 XZ=(12.0717,8.5012) pack=31 target=(10.3667,8.5000) path=1/3 level_current=true rng=5723061790796302234
+[Click] world=(8.726665, 0.0, 8.5) cell=(8, 8)
+  · 흑랑 파수2 Lv5 판1 sample tick=3364 game=56.0667 state=1 XZ=(11.6192,8.5000) pack=31 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 35/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3395 game=56.5833 state=1 XZ=(11.5660,8.5000) pack=31 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3426 game=57.1000 state=3 XZ=(11.5660,8.5000) pack=31 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3457 game=57.6167 state=4 XZ=(11.5660,8.5000) pack=31 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 32/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3488 game=58.1333 state=1 XZ=(11.5507,8.4998) pack=31 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3519 game=58.6500 state=1 XZ=(11.5507,8.4998) pack=31 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3550 game=59.1667 state=1 XZ=(11.5507,8.4998) pack=31 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Click] world=(8.633332, 0.0, 8.5) cell=(8, 8)
+  · 흑랑 파수2 Lv5 판1 sample tick=3581 game=59.6833 state=3 XZ=(11.5507,8.4998) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 29/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3612 game=60.2000 state=4 XZ=(11.4288,8.4998) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3643 game=60.7167 state=1 XZ=(11.4287,8.4997) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3674 game=61.2333 state=1 XZ=(11.4287,8.4997) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3705 game=61.7500 state=1 XZ=(11.4287,8.4997) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 26/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3736 game=62.2667 state=3 XZ=(11.4287,8.4997) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3767 game=62.7833 state=4 XZ=(11.4287,8.4997) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3798 game=63.3000 state=1 XZ=(11.4288,8.4995) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Click] world=(8.553332, 0.0, 8.5) cell=(8, 8)
+[Skill] 참격 → mp 22/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3829 game=63.8167 state=1 XZ=(11.4288,8.4995) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3860 game=64.3333 state=1 XZ=(11.4288,8.4995) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3891 game=64.8500 state=3 XZ=(11.4288,8.4995) pack=31 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Click] world=(8.473332, 0.0, 8.5) cell=(8, 8)
+[Skill] 참격 → mp 19/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3922 game=65.3667 state=4 XZ=(11.3506,8.4996) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 RNG Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612
+  · 흑랑 RNG Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557
+  · 흑랑 파수2 Lv5 판1 sample tick=3953 game=65.8833 state=1 XZ=(11.2281,8.4509) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3984 game=66.4000 state=1 XZ=(10.7502,8.5025) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=4015 game=66.9167 state=1 XZ=(10.7502,8.5025) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 16/50
+  · 흑랑 파수2 Lv5 판1 sample tick=4046 game=67.4333 state=3 XZ=(10.7502,8.5025) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=4077 game=67.9500 state=5 XZ=(10.7502,8.5025) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+  · 흑랑 파수2 Lv5 판1 sample tick=4108 game=68.4667 state=1 XZ=(10.7501,8.5055) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+  · 흑랑 파수2 Lv5 판1 sample tick=4139 game=68.9833 state=1 XZ=(10.7501,8.5055) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+[Skill] 참격 → mp 13/50
+  · 흑랑 파수2 Lv5 판1 sample tick=4170 game=69.5000 state=1 XZ=(10.7501,8.5055) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+[Kill] +7 xp (lv 5, 7/224)
+[Dev] item 탕약 — 쌍화탕 world=(7.981067, 0.0, 8.5) screen=(541.9282, 287.3669)
+  · 흑랑 파수2 Lv5 판1 sample tick=4201 game=70.0167 state=3 XZ=(10.7501,8.5055) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+  · 흑랑 파수2 Lv5 판1 sample tick=4232 game=70.5333 state=5 XZ=(10.7501,8.5055) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+  · 흑랑 파수2 Lv5 판1 sample tick=4263 game=71.0500 state=1 XZ=(10.7720,8.5076) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+[Skill] 참격 → mp 10/50
+  · 흑랑 파수2 Lv5 판1 sample tick=4294 game=71.5667 state=1 XZ=(10.7500,8.5081) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+  · 흑랑 파수2 Lv5 판1 sample tick=4325 game=72.0833 state=1 XZ=(10.7500,8.5081) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+  · 흑랑 파수2 Lv5 판1 sample tick=4356 game=72.6000 state=1 XZ=(10.7500,8.5081) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+[Skill] 참격 → mp 7/50
+  · 흑랑 파수2 Lv5 판1 sample tick=4387 game=73.1167 state=5 XZ=(10.7500,8.5081) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+  · 흑랑 파수2 Lv5 판1 sample tick=4418 game=73.6333 state=4 XZ=(10.7500,8.5081) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · 흑랑 파수2 Lv5 판1 sample tick=4449 game=74.1500 state=1 XZ=(10.7501,8.5103) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · 흑랑 파수2 Lv5 판1 sample tick=4480 game=74.6667 state=1 XZ=(10.7501,8.5103) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=6331231839291702372
+[Skill] 참격 → mp 4/50
+  · 흑랑 파수2 Lv5 판1 sample tick=4511 game=75.1833 state=1 XZ=(10.7501,8.5103) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=6331231839291702372
+[Kill] +168 xp (lv 5, 175/224)
+[Dev] item 미식별 삿갓 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 탕약 — 쌍화탕 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 영약 — 생맥산 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 영약 — 생맥산 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 식별부 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 깨진 흑옥 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 흑랑 이빨 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 흑랑 이빨 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 강녕 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 미식별 환도 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 미식별 은가락지 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 미식별 옥패 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Loot] 보스 전용 유니크 — boss_heukrang 첫 처치 → u_heukrang_fang (회차 1)
+[Dev] item 흑랑의 봉인패 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Dev] item 엽전 world=(8.575592, 0.0, 8.5) screen=(569.4448, 303.2534)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "opening_pending": false, "story": { "entered/motgol": true, "entered/heukrang_gul": true }, "quest": { "heukrang_clear": { "state": "none", "left": 20, "barked": false }, "heukrang_seal": { "state": "killed" }, "heukrang_thanks": { "state": "killed" } }, "seal:boss_heukrang": 1, "boss_killed_heukrang_gul": true }
+  · 흑랑 입력 Lv5 판1 polls=246 physics_interval=6 valid=true
+  · 흑랑 Lv5 처치 · 24.6초 · 2페이즈 14.8초 · 생명 150→52 (최저 47 = 31%) · 탕약 3/3 · 적 공격 31 (명중 19)
+  · 흑랑 파수2 Lv5 판1 finish tick=4542 game=75.6833 state=3 XZ=(10.7501,8.5103) pack=31 target=(10.1000,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · BALANCE_REPLAY_CLOCK {"attempt":1,"dt_sample_count":48,"level":5,"physics_count":1503,"physics_dt_max":"0.01666666666666667","physics_dt_min":"0.01666666666666667","physics_hz":60,"process_count":3213,"process_dt_max":"0.12863433333333335","process_dt_min":"0.00099924242424243","time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"50.89999999999839300","level":5,"physics_count":16,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3,"process_dt":"0.12372966666666518","sample":1,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"51.41666666666503000","level":5,"physics_count":47,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":59,"process_dt":"0.00757575757575758","sample":2,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"51.93333333333166700","level":5,"physics_count":78,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":124,"process_dt":"0.00757575757575758","sample":3,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"52.44999999999830500","level":5,"physics_count":109,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":191,"process_dt":"0.00775100000000000","sample":4,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"52.96666666666494200","level":5,"physics_count":140,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":258,"process_dt":"0.00775100000000000","sample":5,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"53.48333333333157900","level":5,"physics_count":171,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":324,"process_dt":"0.00775100000000000","sample":6,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"53.99999999999821700","level":5,"physics_count":202,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":391,"process_dt":"0.00757575757575758","sample":7,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"54.51666666666485400","level":5,"physics_count":233,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":457,"process_dt":"0.00775100000000000","sample":8,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"55.03333333333149100","level":5,"physics_count":264,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":527,"process_dt":"0.00833333333333333","sample":9,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"55.54999999999812800","level":5,"physics_count":295,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":596,"process_dt":"0.00714285714285714","sample":10,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"56.06666666666476600","level":5,"physics_count":326,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":662,"process_dt":"0.00775100000000000","sample":11,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"56.58333333333140300","level":5,"physics_count":357,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":729,"process_dt":"0.00757575757575758","sample":12,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"57.09999999999804000","level":5,"physics_count":388,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":796,"process_dt":"0.00757575757575758","sample":13,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"57.61666666666467800","level":5,"physics_count":419,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":863,"process_dt":"0.00775100000000000","sample":14,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"58.13333333333131500","level":5,"physics_count":450,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":931,"process_dt":"0.00833333333333333","sample":15,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"58.64999999999795200","level":5,"physics_count":481,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":998,"process_dt":"0.00757575757575758","sample":16,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"59.16666666666459000","level":5,"physics_count":512,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1065,"process_dt":"0.00782039393939618","sample":17,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"59.68333333333122700","level":5,"physics_count":543,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1136,"process_dt":"0.00757575757575758","sample":18,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"60.19999999999786400","level":5,"physics_count":574,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1202,"process_dt":"0.00775100000000000","sample":19,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"60.71666666666450100","level":5,"physics_count":605,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1270,"process_dt":"0.00740740740740741","sample":20,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"61.23333333333113900","level":5,"physics_count":636,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1334,"process_dt":"0.00775100000000000","sample":21,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"61.74999999999777600","level":5,"physics_count":667,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1401,"process_dt":"0.00775100000000000","sample":22,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"62.26666666666441300","level":5,"physics_count":698,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1467,"process_dt":"0.00833333333333333","sample":23,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"62.78333333333105100","level":5,"physics_count":729,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1537,"process_dt":"0.00833333333333333","sample":24,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"63.29999999999768800","level":5,"physics_count":760,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1605,"process_dt":"0.00757575757575758","sample":25,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"63.81666666666432500","level":5,"physics_count":791,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1674,"process_dt":"0.00757575757575758","sample":26,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"64.33333333333097000","level":5,"physics_count":822,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1740,"process_dt":"0.00775100000000000","sample":27,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"64.84999999999760700","level":5,"physics_count":853,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1807,"process_dt":"0.00775100000000000","sample":28,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"65.36666666666424400","level":5,"physics_count":884,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1873,"process_dt":"0.00775100000000000","sample":29,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"65.88333333333088100","level":5,"physics_count":915,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":1940,"process_dt":"0.00775100000000000","sample":30,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"66.39999999999751900","level":5,"physics_count":946,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2006,"process_dt":"0.00775100000000000","sample":31,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"66.91666666666415600","level":5,"physics_count":977,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2073,"process_dt":"0.00775100000000000","sample":32,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"67.43333333333079300","level":5,"physics_count":1008,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2140,"process_dt":"0.00775100000000000","sample":33,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"67.94999999999743100","level":5,"physics_count":1039,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2208,"process_dt":"0.00833333333333333","sample":34,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"68.46666666666406800","level":5,"physics_count":1070,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2274,"process_dt":"0.00775100000000000","sample":35,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"68.98333333333070500","level":5,"physics_count":1101,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2344,"process_dt":"0.00757575757575758","sample":36,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"69.49999999999734300","level":5,"physics_count":1132,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2410,"process_dt":"0.00775100000000000","sample":37,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"70.01666666666398000","level":5,"physics_count":1163,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2478,"process_dt":"0.00833333333333333","sample":38,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"70.53333333333061700","level":5,"physics_count":1194,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2544,"process_dt":"0.00775100000000000","sample":39,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"71.04999999999725400","level":5,"physics_count":1225,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2613,"process_dt":"0.00757575757575758","sample":40,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"71.56666666666389200","level":5,"physics_count":1256,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2678,"process_dt":"0.00775100000000000","sample":41,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"72.08333333333052900","level":5,"physics_count":1287,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2745,"process_dt":"0.00775100000000000","sample":42,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"72.59999999999716600","level":5,"physics_count":1318,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2813,"process_dt":"0.00757575757575758","sample":43,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"73.11666666666380400","level":5,"physics_count":1349,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2882,"process_dt":"0.00757575757575758","sample":44,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"73.63333333333044100","level":5,"physics_count":1380,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":2947,"process_dt":"0.00775100000000000","sample":45,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"74.14999999999707800","level":5,"physics_count":1411,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3014,"process_dt":"0.00775100000000000","sample":46,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"74.66666666666371600","level":5,"physics_count":1442,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3081,"process_dt":"0.00775100000000000","sample":47,"time_scale":"1.00000000000000000"}
+  · BALANCE_REPLAY_DT {"attempt":1,"game_time":"75.18333333333035300","level":5,"physics_count":1473,"physics_dt":"0.01666666666666667","physics_hz":60,"process_count":3148,"process_dt":"0.00757575757575758","sample":48,"time_scale":"1.00000000000000000"}
+  · 흑랑 RNG Lv5 판1 doho0 seed=25271947 initial=5600093101942189313 final=-6694804097080234621
+  · 흑랑 RNG Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289 final=6682229980841271739
+  · 흑랑 RNG Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234 final=6331231839291702372
+  · 흑랑 RNG Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990 final=3762080897362809509
+  · 흑랑 RNG Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612 final=1660210958701875916
+  · 흑랑 RNG Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557 final=1002189368153405969
+  · BALANCE_REPLAY_ATTEMPT {"attacks":31,"attempt":1,"boss_hp":"-1.00000000000000000","guards":2,"hits":19,"hp":"51.57142857142854100","hp0":"150.00000000000000000","hp_min":"46.99999999999998600","input_polls":246,"input_ticks_ok":true,"level":5,"max_hp":"150.00000000000000000","phase2":"14.79999999999916600","potions":3,"sec":"24.59999999999860900","summoned":2,"used":3,"win":true}
+  · 흑랑 재생 Lv5 판1 win=true attacks=31 hits=19 guards=2 summoned=2
+  · BALANCE_REPLAY_TRIES {"level":5,"tries":["처치"]}
+  · Lv5 목표 대조(이 판 — 판정은 25판 표 §9.7): 24.6초 (15~30) · 탕약 3 (1 안팎) · 최저 생명 31% (35~60)
+E2E balance_boss PASS (검사 30)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ hit_stagger
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@2472 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@2473 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@2474 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@2475 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@2476 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@2477 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@2478 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@2479 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@2480 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Click] world=(51.5, 0.000391, 56.5) cell=(51, 56)
+  · 넉백 실측 0.22유닛 (bandit def.knockback 0.35)
+  · 보스 넉백 실측 0.08유닛 (def.knockback 0.10)
+E2E hit_stagger PASS (검사 20)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ pack_perf
+[Dev] item 화염부 world=(32.5, 0.0, 70.5) screen=(-1072.484, 3072.227)
+[Dev] item 빙결부 world=(33.5, 0.0, 69.5) screen=(-979.9173, 3072.227)
+[Field] deulnyeok seed=355022911 128x128 props=2252 packs=18 enemies=77 waypoint=(62, 65) roster=bandit,bat,talisman_master elites=["13:파란×4@구간3"]
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs Down_cave dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Dev] interact FloorItem world=(32.5, 0.0, 70.5) screen=(1519.384, 1142.938)
+[Dev] interact @Area3D@3150 world=(33.5, 0.0, 69.5) screen=(1611.95, 1142.938)
+[Dev] interact PusJar world=(95.5, 0.0, 103.5) screen=(2907.884, 3708.197)
+[Dev] interact @Area3D@3377 world=(101.5, 0.0, 105.5) screen=(3093.018, 3921.969)
+[Dev] interact @Area3D@3378 world=(98.5, 0.0, 107.5) screen=(2861.601, 3895.247)
+[Dev] interact LootChest world=(27.5, 0.0, 70.5) screen=(1287.967, 1009.331)
+[Dev] interact @Area3D@3379 world=(94.5, 0.0, 100.5) screen=(3000.451, 3601.312)
+[Dev] interact @Area3D@3380 world=(55.5, 0.0, 52.5) screen=(3417.001, 1276.545)
+[Dev] interact LootPot world=(46.5, 0.0, 68.5) screen=(2259.917, 1463.595)
+[Dev] interact @Area3D@3381 world=(73.5, 0.0, 47.5) screen=(4481.519, 1623.924)
+[Dev] interact @Area3D@3382 world=(90.5, 0.0, 47.5) screen=(5268.335, 2078.189)
+[Dev] interact @Area3D@3383 world=(111.5, 0.0, 49.5) screen=(6147.719, 2692.782)
+[Dev] interact @Area3D@3384 world=(101.5, 0.0, 101.5) screen=(3278.151, 3815.083)
+[Dev] interact @Area3D@3385 world=(86.5, 0.0, 76.5) screen=(3740.984, 2746.225)
+[Dev] interact @Area3D@3386 world=(53.5, 0.0, 52.5) screen=(3324.434, 1223.102)
+[Dev] interact @Area3D@3387 world=(87.5, 0.0, 95.5) screen=(2907.884, 3280.654)
+[Dev] interact @Area3D@3388 world=(26.5, 0.0, 66.5) screen=(1426.817, 875.7234)
+[Dev] interact @Area3D@3389 world=(17.5, 0.0, 60.5) screen=(1287.967, 474.9016)
+[Dev] interact @Area3D@3390 world=(86.5, 0.0, 22.5) screen=(6240.286, 1303.266)
+[Dev] interact @Area3D@3391 world=(59.5, 0.0, 65.5) screen=(3000.451, 1730.81)
+[Dev] interact @Area3D@3392 world=(18.5, 0.0, 74.5) screen=(686.2832, 875.7234)
+[Dev] interact @Area3D@3393 world=(44.5, 0.0, 69.5) screen=(2121.067, 1436.874)
+[Dev] interact @Area3D@3394 world=(73.5, 0.0, 49.5) screen=(4388.952, 1677.367)
+[Dev] interact @Area3D@3395 world=(88.5, 0.0, 52.5) screen=(4944.352, 2158.353)
+[Dev] removed 77 enemies
+[Dev] removed 0 enemies
+[Audio] 전투 밀집 — 노리는 무게 10 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+  · 성능 | N=10(산 10) process 9.80ms + physics 4.62ms = 14.42ms/프레임
+[Dev] removed 10 enemies
+  · 성능 | N=20(산 20) process 9.21ms + physics 10.58ms = 19.79ms/프레임
+[Dev] removed 20 enemies
+  · 성능 | N=30(산 30) process 8.33ms + physics 13.20ms = 21.52ms/프레임
+[Dev] removed 30 enemies
+  · 성능 | N=40(산 40) process 9.25ms + physics 18.44ms = 27.69ms/프레임
+[Dev] removed 40 enemies
+  · 성능 | N=60(산 60) process 11.21ms + physics 22.53ms = 33.73ms/프레임
+  · ── 표 (§8 잴 것 「밀도: 동시 적 수 ↔ 프레임」)
+  · 표 | N=10(산 10) process 9.80ms + physics 4.62ms = 14.42ms/프레임
+  · 표 | N=20(산 20) process 9.21ms + physics 10.58ms = 19.79ms/프레임
+  · 표 | N=30(산 30) process 8.33ms + physics 13.20ms = 21.52ms/프레임
+  · 표 | N=40(산 40) process 9.25ms + physics 18.44ms = 27.69ms/프레임
+  · 표 | N=60(산 60) process 11.21ms + physics 22.53ms = 33.73ms/프레임
+  · 표 | 예산 8.0ms 안에 드는 가장 큰 N = 0 (동시 추적 적 상한 후보 — 판정 필요)
+[Dev] removed 60 enemies
+  · 12몸 무리 — 시작 평균 거리 3.21u → 5초 뒤 2.60u · 제자리 4/12
+[Dev] removed 12 enemies
+E2E pack_perf PASS (검사 8)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ bodies_cap
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@4312 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@4313 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@4314 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@4315 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@4316 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@4317 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@4318 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@4319 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@4320 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Kill] +8 xp (lv 1, 8/20)
+[Audio] 전투 밀집 — 노리는 무게 6 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+  · 몸 36(먹지네 마디 16 · 황충 4 · 어미 · 일으키는 자) — 0.5초에 70프레임 (평균 7.1ms)
+[Kill] +10 xp (lv 1, 18/20)
+[Kill] +10 xp (lv 2, 8/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+[Kill] +10 xp (lv 2, 18/57)
+[Dev] item 괴황지 world=(23.1, 0.0, 46.5) screen=(806.6199, 279.8565)
+[Kill] +10 xp (lv 2, 28/57)
+[Dev] item 빙결부 world=(24.4, 0.0, 46.5) screen=(863.7891, 309.5955)
+  · 동시 몸 최고 36 / 상한 36
+[Dev] removed 39 enemies
+E2E bodies_cap PASS (검사 13)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ gimmicks
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@4822 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@4823 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@4824 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@4825 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@4826 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@4827 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@4828 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@4829 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@4830 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+  · 밀치기 실측 0.800u (정격 0.8)
+[Click] world=(22.5, 0.0, 52.5) cell=(22, 52)
+[Dev] removed 1 enemies
+[Dev] removed 1 enemies
+[Kill] +8 xp (lv 1, 8/20)
+[Dev] item 귀환부 world=(24.47501, 0.0, 49.5) screen=(731.4098, 396.7473)
+[Kill] +0 xp (lv 1, 8/20)
+[Dev] removed 3 enemies
+[Kill] +8 xp (lv 1, 16/20)
+[Dev] item 엽전 world=(24.76522, 0.0, 49.96957) screen=(723.1086, 417.0496)
+[Dev] item 무명띠 world=(24.76522, 0.0, 49.96957) screen=(723.1086, 417.0496)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Quest] heukrang_clear 싹쓸이 완료 (none → killed)
+[Dev] removed 1 enemies
+[Dev] removed 1 enemies
+[Audio] 전투 밀집 — 노리는 무게 5 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+[Kill] +0 xp (lv 1, 16/20)
+[Kill] +14 xp (lv 2, 10/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+[Dev] item 엽전 world=(23.7372, 0.0, 49.51848) screen=(696.4063, 377.5259)
+[Dev] item 누비옷 world=(23.7372, 0.0, 49.51848) screen=(696.4063, 377.5259)
+[Dev] item 영약 — 생맥산 world=(23.7372, 0.0, 49.51848) screen=(696.4063, 377.5259)
+[Dev] removed 5 enemies
+[Click] world=(22.5, 0.0, 54.5) cell=(22, 54)
+[Dev] removed 1 enemies
+  · 몸 36 동시 — 0.5초에 69프레임 (평균 7.2ms)
+[Kill] +7 xp (lv 2, 17/57)
+[Dev] item 엽전 world=(22.50376, 0.0, 50.88449) screen=(576.0948, 381.0682)
+[Dev] item 묵함 world=(22.50376, 0.0, 50.88449) screen=(576.0948, 381.0682)
+[Dev] item 괴황지 world=(22.50376, 0.0, 50.88449) screen=(576.0948, 381.0682)
+[Kill] +7 xp (lv 2, 24/57)
+[Dev] item 엽전 world=(22.5, 0.0, 48.10543) screen=(704.545, 306.7074)
+[Dev] item 환도 world=(22.5, 0.0, 48.10543) screen=(704.545, 306.7074)
+[Dev] removed 38 enemies
+E2E gimmicks PASS (검사 33)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ item_showcase
+  · 바닥 한 줄 6칸: (1.272792, 0.0, 3.687006) → (5.798276, 0.0, 0.858578) (화면 (574.5455, 465.8325) → (914.9091, 511.1803))
+  · 더미(한 자리) (3.252691, 0.0, 1.141421) → 화면 (784.0001, 450.7165)
+  · 더미 여섯 다시 쌓기 중앙값 0.21ms [0.31 0.21 0.20 0.21 0.21 0.24 0.22]
+  · 무리(튀어나옴) (4.666904, 0.0, 1.424264) → 화면 (836.3637, 496.0643)
+[Click] world=(3.252691, 0.0, 1.141421) cell=(3, 1)
+[Click] world=(3.252691, 0.0, 1.141421) cell=(3, 1)
+[Click] world=(3.252691, 0.0, 1.141421) cell=(3, 1)
+  · 150개 한 점: 다시 쌓기 중앙값 6.32ms [6.69 6.32 6.75 5.88 6.31 6.25 6.96] · 가만히 있는 프레임 중앙값 0.484ms [0.46 0.52 0.48 0.50 0.46]
+E2E item_showcase PASS (검사 1704)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ footsteps
+[Click] world=(10.5, 0.0, 11.5) cell=(10, 11)
+  · step_dirt 15번 (14.8칸 달림), 그때 클립 ["run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run"]
+  · 마을(흙) 발소리 간격 0.262, 0.266, 0.277, 0.263, 0.263, 0.265, 0.250, 0.281, 0.264, 0.251, 0.277, 0.265, 0.266, 0.265 (기대 0.265초)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@5851 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@5852 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@5853 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@5854 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@5855 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@5856 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@5857 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@5858 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@5859 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Click] world=(35.5, 0.0, 56.5) cell=(35, 56)
+  · step_stone 9번 (9.9칸 달림), 그때 클립 ["run", "run", "run", "run", "run", "run", "run", "run", "run"]
+  · 던전(돌) 발소리 간격 0.273, 0.272, 0.267, 0.275, 0.262, 0.263, 0.250, 0.265 (기대 0.265초)
+E2E footsteps PASS (검사 13)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ audio_cues
+[Audio] BGM boss → boss.ogg
+[Audio] BGM town → town.ogg
+[Click] world=(3.99961, 0.0, 0.99961) cell=(3, 0)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@6222 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@6223 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@6224 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@6225 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@6226 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@6227 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@6228 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@6229 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@6230 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+  · Music 플레이어 재생 중 3 (헤드리스 드라이버에 따라 0일 수 있음)
+[Audio] BGM town → town.ogg
+[Audio] BGM dungeon → dungeon_3.ogg
+[Audio] BGM dungeon → dungeon_4.ogg
+[Audio] BGM dungeon → dungeon_1.ogg
+[Audio] BGM dungeon → dungeon_4.ogg
+[Audio] BGM dungeon → dungeon_3.ogg
+[Audio] BGM dungeon → dungeon_1.ogg
+[Audio] BGM dungeon → dungeon_2.ogg
+[Audio] BGM dungeon → dungeon_1.ogg
+[Audio] BGM dungeon → dungeon_2.ogg
+  · 곡 순환 9곡: dungeon_3 → dungeon_4 → dungeon_1 → dungeon_4 → dungeon_3 → dungeon_1 → dungeon_2 → dungeon_1 → dungeon_2
+[Click] world=(49.49961, 0.0, 56.49961) cell=(49, 56)
+  · 보통 타격 8번 피치×귀 피로: 0.973×1.0, 1.041×1.0, 1.023×1.0, 0.989×1.0, 0.954×1.0, 1.041×0.8, 0.980×0.8, 1.050×0.8
+  · 치명 8번 피치×귀 피로: 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(48.86258, 0.0, 56.5) screen=(660.2343, 352.7066)
+[Dev] item 탕약 — 쌍화탕 world=(48.86258, 0.0, 56.5) screen=(660.2343, 352.7066)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Quest] heukrang_clear 싹쓸이 완료 (none → killed)
+[Dev] item 철검 world=(48.36662, 0.0, 57.7) screen=(584.4599, 376.0539)
+[Dev] item  (철검) world=(48.36662, 0.0, 57.7) screen=(584.4599, 376.0539)
+[Audio] missing cue: drop_rare (파일 규약 design/audio.md §3)
+[Skill] 참격 → mp 46/50
+  · 참격: 시전 → 타격 겹 0.62초 (칼이 닿는 시각 0.60초)
+[Skill] 참격 → mp 46/50
+  · 참격: 시전 → 타격 겹 0.62초 (칼이 닿는 시각 0.60초)
+[Skill] 돌진베기 → mp 44/50
+  · 돌진베기: 시전 → 타격 겹 0.55초 (칼이 닿는 시각 0.55초)
+[Skill] 회오리베기 → mp 42/50
+  · 회오리베기: 시전 → 타격 겹 0.47초 (칼이 닿는 시각 0.45초)
+  · 앞 절 소리가 끝남 true (재생 중 0)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — bandit_attack ×1 (버림 누계 157)
+[Skill] 회오리베기 → mp 42/50
+[Audio] 전투 밀집 — 노리는 무게 5 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+[Kill] +6 xp (lv 1, 12/20)
+[Dev] item 탕약 — 쌍화탕 world=(49.84911, 0.0, 56.83485) screen=(680.0431, 381.4358)
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 엽전 world=(48.64906, 0.0, 57.64869) screen=(586.8334, 371.1156)
+[Kill] +6 xp (lv 2, 4/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+[Dev] item 미식별 무명띠 world=(47.66828, 0.0, 57.2019) screen=(562.1184, 332.9691)
+[Kill] +6 xp (lv 2, 10/57)
+[Dev] item 엽전 world=(47.67723, 0.0, 55.79378) screen=(627.705, 295.5811)
+[Kill] +6 xp (lv 2, 16/57)
+[Dev] item 엽전 world=(48.64906, 0.0, 55.35839) screen=(692.8359, 309.9156)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — drop ×1 (버림 누계 158)
+  · 동시 처치 5: 빼앗김 0 · 같은 큐 상한에 버림 1 · 동시 재생 최고 40/64 · 울림/호출 kill_extra 5/5 · blood_splat 5/5 · body_fall 5/5 · 막타 5번 실시간 폭 70 ms
+[Audio] missing cue: no_such_cue_zzz (파일 규약 design/audio.md §3)
+[Kill] +100 xp (lv 3, 50/104)
+[LevelUp] lv=3 stat_pts=10 skill_pts=2
+  · 레벨업 추임새 doho_levelup = 레벨업 607 ms 뒤
+  · 앞 절 전투 밀집 곡: 긴장 (셈 2.29초)
+[Audio] 전투 밀집 끝 — 무게 ≤ 2가 6초 → dungeon
+[Audio] BGM dungeon → dungeon_2.ogg
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:killed)
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@6578 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@6579 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@6580 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@6581 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@6582 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@6583 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@6584 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@6585 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@6586 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+E2E audio_cues PASS (검사 122)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ sfx_limiter
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@7020 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@7021 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@7022 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@7023 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@7024 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@7025 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@7026 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@7027 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@7028 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+  · stop_music 뒤에도 돌던 음악 플레이어: town.ogg -35.9 dB
+  · 소리 하나(enemy_die_1.wav): 끔 -1.521 · 켬 -1.521 dBFS
+[Kill] +6 xp (lv 1, -99994/20)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Quest] heukrang_clear 싹쓸이 완료 (none → killed)
+  · normal 끔: 봉우리 +5.37 dBFS · 1.0 넘는 표본 45 · 몸통 400 ms -13.5 dBFS · 울린 겹 6 · 동시에 울던 SFX 플레이어 5/64
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 엽전 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+  · normal 켬: 봉우리 -1.00 dBFS · 들어온 +5.37 dBFS → 넘침 3 ppm (한계 130 ppm) · 1.0 넘는 표본 0 · 몸통 400 ms -17.1 dBFS · 울린 겹 6 · 동시에 울던 SFX 플레이어 5/64
+[Kill] +6 xp (lv 1, -99994/20)
+  · crit 끔: 봉우리 +4.45 dBFS · 1.0 넘는 표본 175 · 몸통 400 ms -11.4 dBFS · 울린 겹 8 · 동시에 울던 SFX 플레이어 7/64
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 미식별 무명띠 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+  · crit 켬: 봉우리 -1.00 dBFS · 들어온 +4.45 dBFS → 넘침 2 ppm (한계 105 ppm) · 1.0 넘는 표본 0 · 몸통 400 ms -15.5 dBFS · 울린 겹 8 · 동시에 울던 SFX 플레이어 7/64
+  · 치명 막타 뒤 남는 줄어듦 -0.39 dB (기준음 -20.00 → -20.39 dBFS, 릴리스 0.20초)
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 엽전 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Kill] +6 xp (lv 1, -99988/20)
+[Dev] item 엽전 world=(44.28756, 0.0, 55.8) screen=(616.2826, 292.8849)
+[Kill] +6 xp (lv 1, -99982/20)
+[Dev] item 엽전 world=(45.5, 0.0, 57.9) screen=(575.2031, 381.3981)
+[Dev] item 묵함 world=(45.5, 0.0, 57.9) screen=(575.2031, 381.3981)
+  · triple 끔: 봉우리 +14.96 dBFS · 1.0 넘는 표본 3159 · 몸통 400 ms -6.2 dBFS · 울린 겹 19 · 동시에 울던 SFX 플레이어 16/64
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 미식별 무명옷 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Dev] item 영약 — 생맥산 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Dev] item 괴황지 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Kill] +6 xp (lv 1, -99988/20)
+[Kill] +6 xp (lv 1, -99982/20)
+[Dev] item 엽전 world=(45.5, 0.0, 57.9) screen=(575.2031, 381.3981)
+[Dev] item 식별부 world=(45.5, 0.0, 57.9) screen=(575.2031, 381.3981)
+  · triple 켬: 봉우리 -1.00 dBFS · 들어온 +14.96 dBFS → 넘침 14 ppm (한계 630 ppm) · 1.0 넘는 표본 0 · 몸통 400 ms -13.0 dBFS · 울린 겹 19 · 동시에 울던 SFX 플레이어 16/64
+  · 엔진 넘침 한계 — 봉우리에서 시작하는 165 Hz +10.5 dB: 들어온 +10.50 dBFS → 넘침 275 ppm (+0.0024 dB, 한계 329 ppm · 옛 판정 200 ppm이면 FAIL)
+E2E sfx_limiter PASS (검사 11)
+E2E SUMMARY: 10/10 PASS
+  E2E balance_room PASS (검사 8)
+  E2E balance_boss PASS (검사 30)
+  E2E hit_stagger PASS (검사 20)
+  E2E pack_perf PASS (검사 8)
+  E2E bodies_cap PASS (검사 13)
+  E2E gimmicks PASS (검사 33)
+  E2E item_showcase PASS (검사 1704)
+  E2E footsteps PASS (검사 13)
+  E2E audio_cues PASS (검사 122)
+  E2E sfx_limiter PASS (검사 11)

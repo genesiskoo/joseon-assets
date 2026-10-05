@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon",
+      "--headless",
+      "--",
+      "--e2e=sword_trail_v2"
+    ],
+    "phase_arg": "sword_trail_v2",
+    "phase_tokens": [
+      "sword_trail_v2"
+    ],
+    "skip": [],
+    "exclusive": false,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 44584,
+    "launched_utc": "2026-10-05T14:44:22.4762970Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_sec": 4.7424689,
+  "archived_utc": "2026-10-05T14:44:27.2854836Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-d454\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\tmp\\e2e_raw\\20261005T1444165596229_35304\\phase_1_shared\\godot.raw.log",
+    "bytes": 1753,
+    "sha256": "64eb86d8470589567b0f237264ba534da0eac9038d9347c01d243b69abc68c98"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}
