@@ -35,7 +35,7 @@
     {
       "number": 1,
       "name": "농묵 · 묵직한 장단",
-      "status": "candidate_pending_pd",
+      "status": "adopted_main_asset",
       "original_path": "C:\\workspace\\joseon-assets\\workbench\\production\\title_669_ink\\raw\\01_nongmuk.png",
       "original_bytes": 2643660,
       "original_sha256": "5e5aa39a5482633729ab286394fb9a31e274d5e2588538b44d68b899b45a0001",
@@ -50,12 +50,18 @@
       "review_file": "01_nongmuk.jpg",
       "review_bytes": 272635,
       "review_sha256": "5c2754a3dece4cf68c7cd7dd022f1ab82babed6a6aef48af70c9b7a6f8832290",
-      "jpeg_quality": 92
+      "jpeg_quality": 92,
+      "official_path": "branding/title/2026-10-06_ink/title_nongmuk_v1.png",
+      "approved_for": [
+        "opening_cinematic",
+        "title_screen",
+        "marketing_assets"
+      ]
     },
     {
       "number": 2,
       "name": "갈필 · 빠른 잔심",
-      "status": "candidate_pending_pd",
+      "status": "adopted_main_asset",
       "original_path": "C:\\workspace\\joseon-assets\\workbench\\production\\title_669_ink\\raw\\02_galpil.png",
       "original_bytes": 2033405,
       "original_sha256": "5d9655e7ef4371a21e5239c8b5e832f5c5b353619fea22dea60b592b546dc016",
@@ -70,12 +76,18 @@
       "review_file": "02_galpil.jpg",
       "review_bytes": 175140,
       "review_sha256": "d5d2c3b6915c4a1d1e3f7d1d3db4ccd08d0b4bf56ee652c0c52a2e75309b321c",
-      "jpeg_quality": 92
+      "jpeg_quality": 92,
+      "official_path": "branding/title/2026-10-06_ink/title_galpil_v1.png",
+      "approved_for": [
+        "opening_cinematic",
+        "title_screen",
+        "marketing_assets"
+      ]
     },
     {
       "number": 3,
       "name": "번짐 · 젖은 호흡",
-      "status": "candidate_pending_pd",
+      "status": "retained_unselected_candidate",
       "original_path": "C:\\workspace\\joseon-assets\\workbench\\production\\title_669_ink\\raw\\03_wet_bloom.png",
       "original_bytes": 2754405,
       "original_sha256": "4336e7283730ba388dc45dffca003fa7504186061a96e3b16be05cdc754d9ff7",
@@ -95,7 +107,7 @@
     {
       "number": 4,
       "name": "담묵 · 먹의 층",
-      "status": "candidate_pending_pd",
+      "status": "retained_unselected_candidate",
       "original_path": "C:\\workspace\\joseon-assets\\workbench\\production\\title_669_ink\\raw\\04_dammuk_layers.png",
       "original_bytes": 2129913,
       "original_sha256": "1ad9f043caffbea3c5ba6f08b819af987f09b39918266201e2fe9edcd7ee6da7",
@@ -115,7 +127,7 @@
     {
       "number": 5,
       "name": "여백 · 엇박의 멋",
-      "status": "candidate_pending_pd",
+      "status": "retained_unselected_candidate",
       "original_path": "C:\\workspace\\joseon-assets\\workbench\\production\\title_669_ink\\raw\\05_ma_space.png",
       "original_bytes": 2689140,
       "original_sha256": "0c302142120ab18a4affc0cfc552c1462a8a40baa3aab7cb5ca9d2f550102544",
@@ -132,5 +144,15 @@
       "review_sha256": "1c2b29bd2bc390343c13587a6592dc34df6758639094bf8e5b9b1d459ed03f47",
       "jpeg_quality": 92
     }
-  ]
+  ],
+  "adoption": {
+    "date": "2026-10-06",
+    "approved_candidates": [
+      1,
+      2
+    ],
+    "official_directory": "C:/workspace/joseon-assets/branding/title/2026-10-06_ink",
+    "reference_set": "title_ink_2026_10_06",
+    "runtime_integrated": false
+  }
 }

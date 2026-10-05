@@ -4,6 +4,10 @@
 >
 > [![조선헌터스 키 비주얼 · Joseon Hunters key visual](showcase/2026-09-29_vertical-slice/key_visual.jpg)](showcase/)
 
+## 공식 메인 타이틀 · 2026-10-06
+
+[농묵·갈필 두 마스터](branding/title/2026-10-06_ink/README.md)는 PD 채택 메인 에셋이다. 오프닝 시네마틱·타이틀 화면·마케팅에 사용한다. 참조 세트 title_ink_2026_10_06, 원본·프롬프트·승인 SHA 보관.
+
 ## 2026-09-17 H1 기준 정리
 
 현재 제작 기준은 [H1 승인본](sheets/approved-2026-09-17-h1/SELECTION.md)과 [최신 제작 갤러리](workbench/production/h1-style-expansion-2026-09-17/index.html)다. 이전 키아트·화풍 후보·구버전 일러스트100장은 [아카이브](archive/art-history-2026-09-17/index.html)에 보관한다. 아래 기존 목록의 구버전 경로도 아카이브 위치를 따른다.
@@ -16,6 +20,7 @@
 
 ```
 joseon-assets/
+├── branding/        # 승인 메인 타이틀·브랜드 마스터
 ├── sheets/          # 공식 캐릭터 레퍼런스 시트 (Pixellab cref 입력용)
 ├── archive/art-history-2026-09-17/concept/         # 컨셉아트 및 일러스트
 ├── archive/art-history-2026-09-17/magazine/        # 매거진·카드 스타일 프로모 이미지
