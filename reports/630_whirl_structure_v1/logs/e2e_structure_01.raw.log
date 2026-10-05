@@ -1,0 +1,14 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(whirl_structure_v1)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (5.9초)
+== e2e (whirl_structure_v1 · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\630-whirl-structure\\joseon","--headless","--","--e2e=whirl_structure_v1"],"phase_arg":"whirl_structure_v1","phase_tokens":["whirl_structure_v1"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":5184,"launched_utc":"2026-10-05T22:24:34.2288948Z"}
+E2E start: whirl_structure_v1
+E2E ▶ whirl_structure_v1
+  ✗ 이동 뒤 다음 바퀴 펄스
+  ✗ 엔진 ERROR 51건 — 대본은 끝까지 돌았어도 신호·호출이 조용히 실패했을 수 있다: Lambda capture at index 0 was freed. Passed "null" instead. (e2e.gd:70)
+E2E whirl_structure_v1 FAIL (검사 66, 실패 2)
+E2E SUMMARY: 0/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\630-whirl-structure\joseon\tmp\e2e_raw\20261005T2224281593738_44800\phase_1_shared
+  e2e  (15.0초) — 제한 3600초
+실패 1

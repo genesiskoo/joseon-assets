@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\FORYOUCOM\.codex\worktrees\630-whirl-structure\joseon\._tmp\630_whirl_structure\encode_video.py", line 111, in <module>
+    assert int(stream["nb_frames"]) == (720 if "_whirl_" in file["file"] or "_storm_" in file["file"] else 1440)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
