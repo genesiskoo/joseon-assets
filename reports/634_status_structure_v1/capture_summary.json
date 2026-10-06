@@ -1,0 +1,21 @@
+{
+  "game_commit": "507ce464",
+  "before_baseline": "d66e6e8abde89e0cceb001bb036d62966e534cfc",
+  "before_capture_head": "8914e7c0633dfb45b8450f9c3218081cf46cc51a",
+  "source_files_before": 146,
+  "source_files_after": 147,
+  "save_isolation": "video634_capture.json selected BEFORE Main instantiate; active_profile empty; no reset_game/shared save_e2e",
+  "status_end": "burn/chill/frozen native expiry; sal actual salpuri input240 first mask32 snapshot242",
+  "after_phase": "after02",
+  "capture_sha256": "5ae9b40f12e7d9a5f34542a280b5160f94d8f359768dd0cc95801ad2dc10d41e",
+  "capture_checks": {
+    "before": 37,
+    "after": 37,
+    "fails": 0
+  },
+  "normal_speed": 1.0,
+  "recorded_fps": 60,
+  "frame_mapping": "AVI zero-based N=Engine process counter N; trim [BEGIN,END) 360 frames,800 audio samples per video frame",
+  "audio": "Existing independent Audio RNG changes per-take variant/pitch. A/B and actual reel use the same AFTER native source audio; full-engine movies retain their own native audio. Source audio SHA comparison included.",
+  "errors": "All capture raw preserved. Existing post-PASS teardown ObjectDB/resource warnings classified separately; initial fixture/manager/E2E failures are also retained."
+}
