@@ -1,0 +1,16 @@
+{
+  "format": "source PCM s16le stereo 48000Hz; exactly 800 samples per 60fps frame",
+  "before_segment_sha256": {
+    "fire": "929454683010eb8a810635060d40c496f43e02eb3a88ef61e4c1128cea6ee847",
+    "cold": "882086cef721ed51bc5df6125a1ec050b03d4658f11e8814dbf0079e602dc91c",
+    "lightning": "d33ebc5c447f9239eee72414e1fa13af271cb33310defd984692b7de507cf591",
+    "sal": "f838f5e56f6df6f21bfb464c8a9e13a1a6d0c837bd498ee1e18f6d3c6e8731f1"
+  },
+  "after_segment_sha256": {
+    "fire": "0faafef65dc62b107b074b272b141c017c7ff9975c5761b06210e54e02342264",
+    "cold": "4b60e407cf2062cceaa7c411a9fe299c7cc668240adf322d63ef1440f3b67637",
+    "lightning": "7e619a38fb291d81a4a3b03dae8133e7039e9843bd72f52a262f0c66c89fd04a",
+    "sal": "56e95dc1d3328f6b4b28c2d34e6beed89cbeea43073d96661d1a7f57f77a59db"
+  },
+  "identical": false
+}

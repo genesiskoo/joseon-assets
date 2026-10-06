@@ -1,0 +1,88 @@
+{
+  "card": 672,
+  "phase": "after01",
+  "provisional": true,
+  "fps": 60,
+  "speed": 1.0,
+  "windows": [
+    {
+      "label": "fire",
+      "start_frame_zero_based": 96,
+      "end_frame_exclusive": 456,
+      "frames": 360,
+      "start_sample": 76800,
+      "end_sample_exclusive": 364800
+    },
+    {
+      "label": "cold",
+      "start_frame_zero_based": 586,
+      "end_frame_exclusive": 946,
+      "frames": 360,
+      "start_sample": 468800,
+      "end_sample_exclusive": 756800
+    },
+    {
+      "label": "lightning",
+      "start_frame_zero_based": 1076,
+      "end_frame_exclusive": 1436,
+      "frames": 360,
+      "start_sample": 860800,
+      "end_sample_exclusive": 1148800
+    },
+    {
+      "label": "sal",
+      "start_frame_zero_based": 1566,
+      "end_frame_exclusive": 1926,
+      "frames": 360,
+      "start_sample": 1252800,
+      "end_sample_exclusive": 1540800
+    }
+  ],
+  "audio": {
+    "format": "source PCM s16le stereo 48000Hz; exactly 800 samples per 60fps frame",
+    "before_segment_sha256": {
+      "fire": "929454683010eb8a810635060d40c496f43e02eb3a88ef61e4c1128cea6ee847",
+      "cold": "882086cef721ed51bc5df6125a1ec050b03d4658f11e8814dbf0079e602dc91c",
+      "lightning": "d33ebc5c447f9239eee72414e1fa13af271cb33310defd984692b7de507cf591",
+      "sal": "f838f5e56f6df6f21bfb464c8a9e13a1a6d0c837bd498ee1e18f6d3c6e8731f1"
+    },
+    "after_segment_sha256": {
+      "fire": "0faafef65dc62b107b074b272b141c017c7ff9975c5761b06210e54e02342264",
+      "cold": "4b60e407cf2062cceaa7c411a9fe299c7cc668240adf322d63ef1440f3b67637",
+      "lightning": "7e619a38fb291d81a4a3b03dae8133e7039e9843bd72f52a262f0c66c89fd04a",
+      "sal": "56e95dc1d3328f6b4b28c2d34e6beed89cbeea43073d96661d1a7f57f77a59db"
+    },
+    "identical": false,
+    "difference_reason": "Existing core/audio.gd independently randomizes sound variant/pitch RNG, and native impact cue times intentionally follow the changed flight speeds; semantic combat RNG remains exact. Comparison and actual reel share the same AFTER native audio; each full-engine movie retains its original native audio."
+  },
+  "file": {
+    "file": "after01_actual_smoke_60fps.mp4",
+    "bytes": 4143928,
+    "sha256": "a7899ea844b5461ad6c27fcff5b2ede7369b5fc6f0c301765a7aee5821a55418",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuvj420p",
+          "color_range": "pc",
+          "r_frame_rate": "60/1",
+          "nb_frames": "1440"
+        },
+        {
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "nb_frames": "1126"
+        }
+      ],
+      "format": {
+        "duration": "24.000000",
+        "size": "4143928"
+      }
+    },
+    "whole_decode_exit": 0
+  }
+}

@@ -1,0 +1,19 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(talisman_throw,element_flight_v1,status_structure_v1)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (6.1초)
+== e2e (talisman_throw,element_flight_v1,status_structure_v1 · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\672-element-flight\\joseon","--headless","--","--e2e=talisman_throw,element_flight_v1,status_structure_v1"],"phase_arg":"talisman_throw,element_flight_v1,status_structure_v1","phase_tokens":["talisman_throw","element_flight_v1","status_structure_v1"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":32432,"launched_utc":"2026-10-06T12:53:05.0815588Z"}
+E2E start: talisman_throw, element_flight_v1, status_structure_v1
+E2E ▶ talisman_throw
+  · 무대 = 방 [P: (15, 43), S: (14, 13)]
+  · 판 1(화염부): 발사 ID 509524054497 → 자연 사망에서 기록 [{ "enemy_id": 503450704352, "shot_id": 509524054497, "ended": "burst", "live_before_free": true }]
+  · 판 2(빙결부): 발사 ID 540863895802 → 자연 사망에서 기록 [{ "enemy_id": 533465143574, "shot_id": 540863895802, "ended": "burst", "live_before_free": true }, { "enemy_id": 535511964128, "shot_id": 540863895802, "ended": "burst", "live_before_free": true }]
+E2E talisman_throw PASS (검사 56)
+E2E ▶ element_flight_v1
+E2E element_flight_v1 PASS (검사 45)
+E2E ▶ status_structure_v1
+E2E status_structure_v1 PASS (검사 36)
+E2E SUMMARY: 3/3 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\672-element-flight\joseon\tmp\e2e_raw\20261006T1252588618043_2444\phase_1_shared
+  e2e  (42.0초) — 제한 3600초
+전부 PASS
