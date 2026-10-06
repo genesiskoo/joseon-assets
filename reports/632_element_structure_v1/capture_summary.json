@@ -1,0 +1,16 @@
+{
+  "game_commit": "d66e6e8a",
+  "before_baseline": "8914e7c0633dfb45b8450f9c3218081cf46cc51a",
+  "after_phase": "after04",
+  "capture_sha256": "4d33ee22239e582f68be253ddb73cd826fb40fd588408ec11d9801f6c83cf07f",
+  "capture_checks": {
+    "before": 47,
+    "after": 47,
+    "fails": 0
+  },
+  "normal_speed": 1.0,
+  "recorded_fps": 60,
+  "frame_mapping": "AVI zero-based N=Engine process counter N; trim [BEGIN,END) 180 frames,800 audio samples per video frame",
+  "audio": "Existing independent Audio RNG changes per-take variant/pitch. A/B and actual reel use the same AFTER native source audio; full-engine movies retain their own native audio. Source audio SHA comparison included.",
+  "errors": "All capture raw preserved. Existing post-PASS teardown ObjectDB/resource warnings classified separately; initial fixture/manager/E2E failures are also retained."
+}
