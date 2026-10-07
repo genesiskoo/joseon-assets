@@ -1,0 +1,29 @@
+{
+  "method": "Blender Eevee procedural bounded 3D participating media with animated periodic 4D noise; no fluid solver/bake/cache",
+  "blender": "5.2.2 LTS",
+  "hardware": "NVIDIA GeForce RTX 4070, OpenGL 4.6 NVIDIA 595.79 (verified before production)",
+  "seed": 680,
+  "size": 384,
+  "samples_requested": 64,
+  "frames_raw": 28,
+  "loop_period_frames": 24,
+  "fps": 24,
+  "loop_overlap_frames": 4,
+  "render_records": [
+    {
+      "effect": "fire",
+      "index": 6,
+      "seconds": 3.774,
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\previews\\fire_preview.png",
+      "bytes": 53337
+    },
+    {
+      "effect": "sal",
+      "index": 6,
+      "seconds": 3.296,
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\previews\\sal_preview.png",
+      "bytes": 71004
+    }
+  ],
+  "elapsed_seconds": 7.499
+}

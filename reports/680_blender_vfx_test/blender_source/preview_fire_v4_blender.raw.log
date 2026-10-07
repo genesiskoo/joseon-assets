@@ -1,0 +1,28 @@
+C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\source\make_blender_vfx.py:212: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\source\make_blender_vfx.py:117: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+RENDER_SETTINGS {"taa_render_samples": 64, "volumetric_samples": 64, "volumetric_tile_size": "2", "volumetric_shadow_samples": 16, "use_volumetric_shadows": true}
+00:00.531  reports          | WARNING Path 'E:\SteamLibrary\steamapps\common\Blender\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+00:00.531  reports          | WARNING Path 'E:\SteamLibrary\steamapps\common\Blender\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:02.609  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\previews\fire_preview.png'
+Info: Saved as "fire_jet.blend"
+FRAME_RENDER {"effect": "fire", "index": 6, "seconds": 2.028, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\previews\\fire_preview.png", "bytes": 55242}
+INFO Draco is available, use library at E:\SteamLibrary\steamapps\common\Blender\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at E:\SteamLibrary\steamapps\common\Blender\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+20:25:24 | INFO: Starting glTF 2.0 export
+20:25:24 | INFO: Extracting primitive: Icosphere
+20:25:24 | INFO: Primitives created: 1
+20:25:24 | INFO: Finished glTF 2.0 export in 0.00682830810546875 s
+
+MESH_EXPORT {"name": "ember", "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\staged\\assets\\vfx\\blender_hybrid\\ember.glb", "vertices": 12, "triangles": 20, "blender_axis_bounds": [[-0.024149473756551743, 0.024149473756551743], [-0.022967280820012093, 0.022967280820012093], [-0.07500000298023224, 0.07500000298023224]], "gltf_axis_bounds": [[-0.024149473756551743, 0.024149473756551743], [-0.07500000298023224, 0.07500000298023224], [-0.022967280820012093, 0.022967280820012093]], "long_axis": "glTF +Y; Blender +Z", "bytes": 2064}
+20:25:24 | INFO: Starting glTF 2.0 export
+20:25:24 | INFO: Extracting primitive: Icosphere.001
+20:25:24 | INFO: Primitives created: 1
+20:25:24 | INFO: Finished glTF 2.0 export in 0.0026383399963378906 s
+
+MESH_EXPORT {"name": "drop", "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\staged\\assets\\vfx\\blender_hybrid\\drop.glb", "vertices": 42, "triangles": 80, "blender_axis_bounds": [[-0.03328702598810196, 0.03328702598810196], [-0.034999996423721313, 0.034999996423721313], [-0.06499999761581421, 0.08999999612569809]], "gltf_axis_bounds": [[-0.03328702598810196, 0.03328702598810196], [-0.06499999761581421, 0.08999999612569809], [-0.034999996423721313, 0.034999996423721313]], "long_axis": "glTF +Y; Blender +Z", "bytes": 3740}
+PRODUCER_DONE {"mode": "preview", "seconds": 2.228, "frames": 1}
+
+Blender quit
