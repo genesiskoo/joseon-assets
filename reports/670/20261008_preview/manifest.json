@@ -141,5 +141,46 @@
       "bytes": 473409,
       "sha256": "0d711c3c220958a58e985bd21409b4adac3b95bf5d5e0ec6e41814da7e6cf477"
     }
-  ]
+  ],
+  "movie_mode_comparison": {
+    "source_commit": "7d187989b3816a3aff9eb5f344ece0385d608333",
+    "engine": "Godot 4.7.2.stable.steam.ed1daf0bf",
+    "resolution": [
+      1280,
+      720
+    ],
+    "fixed_fps": 30,
+    "boot_only": {
+      "quit_after_frames": 60,
+      "exit_code": 0,
+      "objects": 3,
+      "resources": 2
+    },
+    "old_scenario": {
+      "id": "aoe_skills_2",
+      "checks": 68,
+      "exit_code": 0,
+      "objects": 11,
+      "resources": 6
+    },
+    "raw_files": [
+      {
+        "file": "baseline_boot_raw.log",
+        "bytes": 1109,
+        "sha256": "02d0fd37cd50ee5d32ffd02d8a09d2f45e62529f2ac61c566d983dfc2b59aac2"
+      },
+      {
+        "file": "baseline_scenario_raw.log",
+        "bytes": 15852,
+        "sha256": "313cda826ef4d01619c12c3ca84a7d3ca284ea477896b1e839aa2e1f2f7ff43a"
+      }
+    ],
+    "limitations": "Candidate and old scenarios use different fixtures and check counts. Counts do not establish the cause of shutdown warnings or a product regression. Ordinary focused execution retains its separately recorded 3/2 shutdown diagnostics.",
+    "old_wrapper_retry": "An earlier combined recording passed 2/2 scenarios but PowerShell Stop handling of native stderr terminated its wrapper with exit1 and truncated the shutdown diagnostic; it is not used for the resource-count comparison."
+  },
+  "exit_diagnostics": {
+    "objectdb_instances": 17,
+    "resources_in_use": 9,
+    "baseline_comparison": "Measured: old aoe_skills_2 MovieWriter 11/6; fixtures differ, causality unresolved."
+  }
 }
