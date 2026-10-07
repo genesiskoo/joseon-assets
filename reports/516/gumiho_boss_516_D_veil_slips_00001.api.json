@@ -1,0 +1,82 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_516_D_veil_slips",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "f438039c2e234b69e47306122f7576cd7b260113038cd82ff49b13f909abd0c8.png"
+    },
+    "is_changed": [
+      "967962d9e64b8078297b3e332b6c6bd66c283a84e94288b703d4cdf51585a774"
+    ]
+  },
+  "5": {
+    "_meta": {
+      "title": "이미지 미리보기"
+    },
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "7",
+        0
+      ]
+    }
+  },
+  "7": {
+    "_meta": {
+      "title": "Painter"
+    },
+    "class_type": "Painter",
+    "inputs": {
+      "bg_color": "#000000",
+      "height": 1728,
+      "image": [
+        "3",
+        0
+      ],
+      "mask": "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+      "width": 2304
+    },
+    "is_changed": [
+      "7e5d9d16ed6e913904aa6ce43bea7fd9804996f4930f5334022d626a2f12e76f"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "7",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 865037901,
+      "model.size_preset": "(2K) 2304x1728 (4:3)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "Create a striking ORIGINAL final-boss reveal concept for a Korean dark Joseon fantasy game, using the uploaded B design sheet as the EXACT same woman, face, plain clothes and painterly style. Direction D — THE VEIL SLIPS: she is still the ordinary village woman in the faded oxblood cotton jeogori, patched charcoal chima and cheap apron. Do NOT replace these with robes, regalia, armor or jewelry. The disguise breaks only in her body language and shadow: long black hair loosens; she turns toward us with a slow, knowing half-smile and unwavering molten-amber eyes; one relaxed hand beckons while the other is beginning to become a dark claw. From behind her lower back, NINE individually distinct fox tails unfold in a wide, uneven fan, soot-black at the roots and faded bone-gold at the tips. The tails and their shadows become a terrifying boss-scale silhouette, with readable negative space between each tail; a few tiny sparks of foxfire and drifting black ink, no bright spell explosion. Keep her human face recognizably identical to the woman in the input. Make the contrast between ordinary work clothes and monstrous tails the unforgettable idea. One single full-body three-quarter character concept illustration, all head, feet and tails in frame. Pose is alluring through a slight backward lean, direct eye contact and small inviting gesture, not through exposed skin. Matte Korean illustrated RPG concept art, dimensional layered cotton for future 3D modeling, charcoal twilight neutral backdrop, muted oxblood / soot / antique gold palette. No captions, no text, no second figure, no ornate red gown, no royal hair ornaments, no Western fantasy costume, no Chinese imperial styling, no kimono, no cartoon fox ears, no extra limbs, no fused tails."
+    }
+  }
+}

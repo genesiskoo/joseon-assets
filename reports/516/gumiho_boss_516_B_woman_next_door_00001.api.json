@@ -1,0 +1,82 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_516_B_woman_next_door",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "0eb4b6680500d4e0cb749b079e17dd95ad0fc8f61eb2d439d1055fe8e516afb2.png"
+    },
+    "is_changed": [
+      "6ead555321cd1f70c5dff02a69a213bc3607feb49b5c4725bca180a891676685"
+    ]
+  },
+  "5": {
+    "_meta": {
+      "title": "이미지 미리보기"
+    },
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "7",
+        0
+      ]
+    }
+  },
+  "7": {
+    "_meta": {
+      "title": "Painter"
+    },
+    "class_type": "Painter",
+    "inputs": {
+      "bg_color": "#000000",
+      "height": 896,
+      "image": [
+        "3",
+        0
+      ],
+      "mask": "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+      "width": 512
+    },
+    "is_changed": [
+      "7e5d9d16ed6e913904aa6ce43bea7fd9804996f4930f5334022d626a2f12e76f"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "7",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 1761225724,
+      "model.size_preset": "(2K) 2304x1728 (4:3)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "Redesign the uploaded approved Gumiho woman as a RADICALLY UNDERSTATED human disguise for a dark Joseon fantasy game. Keep her recognizable Korean face, long black hair and unusual warm amber eyes, but remove the regal styling. Direction B — THE WOMAN NEXT DOOR: an ordinary adult village woman who has lived among the townspeople for years. Faded oxblood cotton jeogori with a practical white collar, worn charcoal-brown chima, patched hem, simple tied apron, inexpensive wooden hairpin, almost no jewelry, no crown, no ornate embroidery, no weapon visible, NO VISIBLE TAILS OR FOX EARS. Her beauty is unsettling rather than glamorous: a tiny half-smile that stops before it reaches her eyes, head tilted as if listening to one person in a crowded market, torso turned away while her chin and gaze draw the viewer closer. One hand lightly gathers her sleeve, the other makes a small inviting gesture. Show a compelling game character concept sheet: one full-length three-quarter standing pose on the left and a larger face-and-shoulders expression study of THE SAME WOMAN on the right. The full-body design must be readable at isometric game-camera distance. A very faint nine-tail shape exists only as an ambiguous shadow on the ground, easy to miss. Korean Joseon everyday clothes and mannerisms, grounded proportions, matte painterly line-and-brush treatment matching the uploaded reference and the dark game style. Restrained dusk lighting, soot charcoal, faded red and warm skin tones; sparse neutral backdrop. Her allure comes ONLY from expression, eye contact, restrained posture and hand movement, never exposed skin or glamorous costume. No text, labels, typography, extra characters, royal dress, Chinese hanfu, Japanese kimono, Western fantasy armor, modern fashion, cutesy anime or cartoon fox ears."
+    }
+  }
+}
