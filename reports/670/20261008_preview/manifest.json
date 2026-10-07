@@ -1,0 +1,145 @@
+{
+  "fps": 30,
+  "resolution": [
+    1280,
+    720
+  ],
+  "game_audio": true,
+  "master": {
+    "file": "capture_master.ogv",
+    "bytes": 10239020,
+    "sha256": "64fe18101b41b4f59d8d2f124681a70ca57d3dd56c6a24c79cc04389bf152d53",
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "theora",
+          "codec_long_name": "Theora",
+          "codec_type": "video",
+          "codec_tag_string": "[0][0][0][0]",
+          "codec_tag": "0x0000",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 1280,
+          "coded_height": 720,
+          "has_b_frames": 0,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": -99,
+          "chroma_location": "center",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/30",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1251,
+          "duration": "41.700000",
+          "extradata_size": 3306,
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "vorbis",
+          "codec_long_name": "Vorbis",
+          "codec_type": "audio",
+          "codec_tag_string": "[0][0][0][0]",
+          "codec_tag": "0x0000",
+          "mime_codec_string": "vorbis",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 2001600,
+          "duration": "41.700000",
+          "bit_rate": "160000",
+          "extradata_size": 4326,
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\670-preview\\reports\\670\\20261008_preview\\capture_master.ogv",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "ogg",
+        "format_long_name": "Ogg",
+        "start_time": "0.000000",
+        "duration": "41.700000",
+        "size": "10239020",
+        "bit_rate": "1964320",
+        "probe_score": 100
+      }
+    },
+    "release_url": "https://github.com/genesiskoo/joseon-assets/releases/download/art-670-20261008-preview/capture_master.ogv"
+  },
+  "clips": [
+    {
+      "file": "single_boss.mp4",
+      "seconds": 5.5,
+      "source_frames": {
+        "BEGIN": 254,
+        "END": 419
+      },
+      "bytes": 964943,
+      "sha256": "bbb45223c4b8cf59ed1f3fb12327e1b3e51440af02db8f7a2eebfe81a34f7a0a"
+    },
+    {
+      "file": "packed_three.mp4",
+      "seconds": 2.566666666666667,
+      "source_frames": {
+        "BEGIN": 436,
+        "END": 513
+      },
+      "bytes": 473409,
+      "sha256": "0d711c3c220958a58e985bd21409b4adac3b95bf5d5e0ec6e41814da7e6cf477"
+    }
+  ]
+}
