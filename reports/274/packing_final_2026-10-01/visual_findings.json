@@ -1,0 +1,42 @@
+{
+  "card": 274,
+  "status": "manual_visual_review_candidate_needs_PD",
+  "reviewed_plates": [
+    "godot_actual",
+    "godot_grayscale",
+    "godot_black",
+    "godot_horibyeong"
+  ],
+  "grading_policy": "better material/form/craftsmanship at higher quality; never just brighter or flashier",
+  "positive_observations": [
+    "All five colors share an upright oval stone family. Stage1 missing edges and stage2 diagonal cracks are readable at source80/vendor48.",
+    "Stage3/4 are intact; stage4 favors a smoother edge, cleaner face and broader controlled natural highlights rather than glow or decorative fittings.",
+    "Black jade retains gray edge/face highlights against dark and black cells. Clean cutouts have no rectangular visible background.",
+    "The gourd retains both lobes, stopper and complete indigo cord/loop; brown gourd and blue cord remain distinct in the provisional1x2 bag slot."
+  ],
+  "limitations": [
+    {
+      "scope": "all jade at current bag40 padding8",
+      "finding": "UiSkin fits visible content to inner24px height. Material and crack detail shrinks, especially stage3 versus4.",
+      "severity": "PD visual judgement; not a packing or rendering failure",
+      "runtime_change_made": false
+    },
+    {
+      "scope": "grayscale diagnostic",
+      "finding": "Damage/outline are readable but intact stage3/4 differentiation is subdued at bag size. Grayscale preserves no color-family information.",
+      "runtime_change_made": false
+    }
+  ],
+  "grade_name_4": null,
+  "grade_name_4_candidates": [
+    "맑은",
+    "영롱한"
+  ],
+  "unresolved_bindings": [
+    "265 ItemDef/GemDef IDs",
+    "265 grid confirmation",
+    "265 socket data",
+    "PD art adoption"
+  ],
+  "automated_PASS_scope": "source SHA/RGB/alpha/margins/aspect/runtime preservation and actual UI render; not PD preference or implemented gem/cube mechanics"
+}

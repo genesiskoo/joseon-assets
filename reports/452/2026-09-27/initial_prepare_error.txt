@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\workspace\joseon\tmp\452_prepare.py", line 31, in <module>
+    assert digest==hashlib.sha256((main/rel).read_bytes()).hexdigest(),rel
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: data/items/coin.tres

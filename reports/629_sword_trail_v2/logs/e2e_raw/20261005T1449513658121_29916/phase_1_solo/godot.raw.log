@@ -1,0 +1,770 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.329 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E start: sword_trail_v2, vfx_cues, skill_tiers, attack_chain, aoe_skills, aoe_skills_2, invisible_sword, weapon_visibility, vfx_cap_blood, pack_perf
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ sword_trail_v2
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@535 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@536 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@537 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@538 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@539 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@540 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@541 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@542 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@543 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+  · 검광 치명: 피해 8 · 그림 true · 금니 true · 표본 9
+  · 검광 일반: 피해 5 · 그림 true · 금니 false · 표본 9
+  · 검광 빗나감: 피해 0 · 그림 true · 금니 false · 표본 9
+  · 검광 사거리 밖: 피해 0 · 그림 true · 금니 false · 표본 9
+  · 검광 면역: 피해 0 · 그림 true · 금니 false · 표본 9
+E2E sword_trail_v2 PASS (검사 93)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ vfx_cues
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@911 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@912 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@913 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@914 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@915 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@916 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@917 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@918 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@919 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Dev] item 철검 world=(45.5, 0.0, 58.0) screen=(570.5748, 384.0701)
+[Dev] item 목검 world=(47.0, 0.0, 56.5) screen=(709.4249, 384.0702)
+[Audio] missing cue: drop_magic (파일 규약 design/audio.md §3)
+  · 선딜 시트 pos=(44.5, 0.030391, 56.5) 적=(44.5, 0.000391, 56.5) 화면=(593.7165, 331.6754) visible=true frame=9/23
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(44.23503, 0.0, 56.5) screen=(581.4528, 310.1862)
+[Dev] item 철검 world=(44.23503, 0.0, 56.5) screen=(581.4528, 310.1862)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Quest] heukrang_clear 싹쓸이 완료 (none → killed)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — enemy_hurt ×1 (버림 누계 1)
+[Kill] +6 xp (lv 1, 12/20)
+[Dev] item 엽전 world=(46.86666, 0.0, 56.5) screen=(703.2535, 380.5072)
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 엽전 world=(45.8273, 0.0, 57.85886) screen=(592.2555, 389.0447)
+[Dev] item 철검 world=(45.8273, 0.0, 57.85886) screen=(592.2555, 389.0447)
+[Dev] item 귀환부 world=(45.8273, 0.0, 57.85886) screen=(592.2555, 389.0447)
+[Kill] +6 xp (lv 2, 4/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+[Dev] item 은가락지 world=(44.42463, 0.0, 57.3601) screen=(550.4196, 338.2357)
+[Dev] item 탕약 — 쌍화탕 world=(44.42463, 0.0, 57.3601) screen=(550.4196, 338.2357)
+[Kill] +6 xp (lv 2, 10/57)
+[Dev] item 엽전 world=(44.42463, 0.0, 55.6399) screen=(630.0366, 292.2693)
+[Kill] +6 xp (lv 2, 16/57)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — drop ×4 (버림 누계 5)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — body_fall ×2 (버림 누계 7)
+  · 처치 5연속: 동시 단발 최고 19/24 · body_fall 5 · hit_spark 0
+[Skill] 참격 → mp 46/50
+[Skill] 참격 → mp 46/50
+[Skill] 돌진베기 → mp 44/50
+[Skill] 회오리베기 → mp 42/50
+[Kill] +100 xp (lv 4, 50/160)
+[LevelUp] lv=4 stat_pts=10 skill_pts=2
+  · 레벨업 道: 발 위 4.30 · 칸 15장 · 흩어짐 0.34(1.55초) · 사라짐 2.03초
+  · 흑랑 포효: 怒 발 위 2.74 · 먹 파문 시트 4장(바깥 흰 테 + 검은 먹 · 안쪽 흰 테 + 검은 먹) · 카메라 킥 0.2 · 怒 사라짐 1.43초
+  · 포효 怒 높이: 몸 꼭대기 흑랑 1.74 · 구미호 2.17 · 장산범 2.10 · 불가살이 2.33 (+1.0 = 怒 가운데)
+[Dev] item 철검 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Dev] item  (철검) world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Dev] item 목검 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Dev] item 엽전 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Audio] missing cue: drop_rare (파일 규약 design/audio.md §3)
+[Dev] item 서당 훈장 회초리 world=(47.0, 0.0, 56.5) screen=(570.575, 303.9059)
+[Audio] missing cue: drop_unique (파일 규약 design/audio.md §3)
+[Dev] item 흑랑의 봉인패 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Dev] item 서당 훈장 회초리 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+  · 寶(유니크 + 봉인 조각 한 무리): 寶 1번 · 착지 큐 1번 · 유니크가 앉은 뒤 1.75초에 사라짐
+[Dev] item 장산범의 봉인고리 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Dev] item 서당 훈장 회초리 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Dev] item 서당 훈장 회초리 world=(47.1, 0.0, 57.9) screen=(510.4065, 343.9881)
+[Dev] interact Portal world=(48.5, 0.0, 56.5) screen=(640.0, 311.9219)
+[Portal] opened heukrang_gul 1층 pos=(48.5, 0.0, 56.5)
+[Vfx] missing cue: no_such_cue_zzz (큐 표 design/vfx.md §2)
+  · 루프 103 · 단발 2
+E2E vfx_cues PASS (검사 151)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ skill_tiers
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@1436 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@1437 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@1438 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@1439 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@1440 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@1441 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@1442 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@1443 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@1444 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Skill] 회오리베기 → mp 42/50
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — enemy_hurt ×5 · hit ×4 (버림 누계 16)
+[Audio] 전투 밀집 — 노리는 무게 8 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+  · Lv1: 반경 2.50 → 2.50(배수 1.00) · 타수 1 · 이펙트 등급 0(화면 판단)
+[Skill] 회오리베기 → mp 41/50
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — hit ×13 · enemy_hurt ×13 (버림 누계 42)
+  · Lv5: 반경 2.50 → 3.50(배수 1.40) · 타수 1 · 이펙트 등급 1(화면 판단)
+[Skill] 회오리베기 → mp 40/50
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — hit ×13 · enemy_hurt ×13 (버림 누계 68)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — hit ×13 · enemy_hurt ×13 (버림 누계 94)
+  · Lv10: 반경 2.50 → 3.50(배수 1.40) · 타수 2 · 이펙트 등급 2(화면 판단)
+E2E skill_tiers PASS (검사 72)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ attack_chain
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@2061 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@2062 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@2063 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@2064 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@2065 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@2066 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@2067 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@2068 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@2069 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+  · ① 칸 [0, 1, 2, 0, 1] · 클립 ["attack", "attack2", "attack3", "attack", "attack2"] · 섞기 ["0.12", "0.10", "0.10", "0.10", "0.10"]
+E2E attack_chain PASS (검사 21)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ aoe_skills
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@2437 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@2438 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@2439 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@2440 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@2441 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@2442 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@2443 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@2444 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@2445 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 도호 (47.32843, 0.0, 59.32843) (화면 아래 4.0u) · 트임 4.0
+[Skill] 도약 베기 → mp 41/50
+[Kill] +4 xp (lv 9, 4/540)
+[Dev] item 엽전 world=(45.72031, 0.0, 56.74587) screen=(685.1002, 322.6816)
+[Kill] +4 xp (lv 9, 8/540)
+[Dev] item 엽전 world=(43.61969, 0.0, 57.3155) screen=(561.5121, 281.7713)
+[Dev] item 빙결부 world=(43.61969, 0.0, 57.3155) screen=(561.5121, 281.7713)
+[Kill] +4 xp (lv 9, 12/540)
+[Dev] item 은가락지 world=(44.23391, 0.0, 55.32987) screen=(681.8422, 245.1255)
+[Dev] item 탕약 — 쌍화탕 world=(44.23391, 0.0, 55.32987) screen=(681.8422, 245.1255)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — drop ×2 (버림 누계 96)
+  · 도약 베기 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&""] · 죽음 [&"gibs", &"slide", &"cleave"] · 경직 [0.6, 0.6, 0.6]
+[Seal] 부적 진 화염부 → (44.5, 0.0, 56.5) 반경 2.00 · 6.0초 · 굴림 2.8~4.2 (아낌 false)
+[Skill] 부적 진 → mp 44/50
+[Audio] 전투 밀집 — 노리는 무게 6 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+[Kill] +4 xp (lv 9, 16/540)
+[Kill] +4 xp (lv 9, 20/540)
+[Dev] item 엽전 world=(43.62128, 0.0, 57.32251) screen=(561.2617, 282.0011)
+[Dev] item 탕약 — 쌍화탕 world=(43.62128, 0.0, 57.32251) screen=(561.2617, 282.0011)
+[Kill] +4 xp (lv 9, 24/540)
+[Dev] item 엽전 world=(44.22705, 0.0, 55.32775) screen=(681.6229, 244.8853)
+[Dev] item 식별부 world=(44.22705, 0.0, 55.32775) screen=(681.6229, 244.8853)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — drop ×1 (버림 누계 97)
+  · fire 진 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&"fire"] · 죽음 [&"ash"] · 틱 5
+[Seal] 부적 진 빙결부 → (44.5, 0.0, 56.5) 반경 2.00 · 6.0초 · 굴림 1.4~2.1 (아낌 false)
+[Skill] 부적 진 → mp 44/50
+[Kill] +4 xp (lv 9, 28/540)
+[Kill] +4 xp (lv 9, 32/540)
+[Dev] item 엽전 world=(43.61969, 0.0, 57.3155) screen=(561.5121, 281.7713)
+[Dev] item 미식별 패랭이 world=(43.61969, 0.0, 57.3155) screen=(561.5121, 281.7713)
+[Kill] +4 xp (lv 9, 36/540)
+  · cold 진 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&"cold"] · 죽음 [&"shatter"] · 틱 10
+E2E aoe_skills PASS (검사 66)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ aoe_skills_2
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@2931 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@2932 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@2933 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@2934 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@2935 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@2936 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@2937 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@2938 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@2939 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 트임 3.6 · 화면 위쪽 (-0.707107, 0.0, -0.707107)
+[Skill] 찌르기 → mp 45/50
+[Kill] +1 xp (lv 15, 1/1162)
+[Dev] item 엽전 world=(44.5, 0.0, 56.5) screen=(640.0, 298.6191)
+[Kill] +1 xp (lv 15, 2/1162)
+[Kill] +1 xp (lv 15, 3/1162)
+[Dev] item 엽전 world=(45.41924, 0.0, 57.41924) screen=(640.0, 347.7459)
+  · 찌르기 요약 — 맞음 3/7 [0, 1, 4] · 죽음 3 · 막타 [&"slashed"] · 칼이 닿기까지 0.33초 · 동작 0.63초
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — hit ×1 · enemy_hurt ×1 (버림 누계 99)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — enemy_hurt ×4 · hit ×3 (버림 누계 106)
+[Audio] 전투 밀집 — 노리는 무게 7 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+[Kill] +1 xp (lv 15, 4/1162)
+[Dev] item 무명띠 world=(44.12313, 0.0, 56.11534) screen=(640.3605, 278.2699)
+[Kill] +1 xp (lv 15, 5/1162)
+[Kill] +1 xp (lv 15, 6/1162)
+[Dev] item 엽전 world=(45.79058, 0.0, 55.73469) screen=(735.1533, 312.655)
+[Dev] item 영약 — 생맥산 world=(45.79058, 0.0, 55.73469) screen=(735.1533, 312.655)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — hit ×3 · enemy_hurt ×3 (버림 누계 112)
+[Kill] +1 xp (lv 15, 7/1162)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — hit ×1 · enemy_hurt ×1 (버림 누계 114)
+  · 칼바람 요약 — 바퀴 9(누른 동안 9) · 박자 0.300초 · 도력 18.0 · 맞힌 합 28 · 맞음 7/7 · 죽음 4 [&"slide", &"cleave"] · 앞으로 6.4u · 뗀 뒤 0.23초에 섬
+[Talisman] 화염부 → 적 (45.41924, 0.0, 57.41924) (배율 1.28 · 아낌 false · 흩뿌리기 { "n": 3, "ratio": 0.4, "arc": 50.0, "radius_mult": 1.0, "grade": 0 })
+[Kill] +1 xp (lv 15, 8/1162)
+[Dev] item 엽전 world=(44.16354, 0.0, 57.7557) screen=(566.3091, 323.1825)
+[Dev] item 탕약 — 쌍화탕 world=(44.16354, 0.0, 57.7557) screen=(566.3091, 323.1825)
+[Kill] +1 xp (lv 15, 9/1162)
+[Dev] item 짚신 world=(45.7557, 0.0, 56.16354) screen=(713.6909, 323.1825)
+[Dev] item 영약 — 생맥산 world=(45.7557, 0.0, 56.16354) screen=(713.6909, 323.1825)
+[Dev] item 빙결부 world=(45.7557, 0.0, 56.16354) screen=(713.6909, 323.1825)
+[Dev] item 귀환부 world=(43.5, 0.0, 59.5) screen=(452.0606, 347.3853)
+[Loot] 항아리 지역 2 → 귀환부
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — drop ×2 (버림 누계 116)
+  · 흩뿌리기 요약 — 장당 맞힌 수 [3, 1, 1] · 맞음 3/7 · 죽음 2 [&"ash"]
+[Rain] 부적 비 화염부 × 6 → (44.5, 0.0, 56.5) 반경 4.00 · 한 장 배율 0.81 (아낌 0)
+[Skill] 부적 비 → mp 38/50
+[Kill] +1 xp (lv 15, 10/1162)
+[Dev] item 엽전 world=(44.16354, 0.0, 57.7557) screen=(566.3091, 323.1825)
+[Kill] +1 xp (lv 15, 11/1162)
+[Dev] item 엽전 world=(45.7557, 0.0, 56.16354) screen=(713.6909, 323.1825)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — enemy_hurt ×4 (버림 누계 120)
+[Kill] +1 xp (lv 15, 12/1162)
+[Dev] item 탕약 — 쌍화탕 world=(44.50305, 0.0, 56.50305) screen=(640.0, 298.782)
+[Kill] +1 xp (lv 15, 13/1162)
+[Dev] item 엽전 world=(43.57771, 0.0, 55.57771) screen=(640.0, 249.3294)
+[Dev] item 짚신 world=(43.57771, 0.0, 55.57771) screen=(640.0, 249.3294)
+  · 부적 비 요약 — 6장 · 맞음 7/7 · 죽음 4 [&"ash"] · 버티는 몸 타는 중 3
+E2E aoe_skills_2 PASS (검사 68)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ invisible_sword
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@3537 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@3538 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@3539 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@3540 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@3541 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@3542 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@3543 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@3544 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@3545 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Skill] 참격 → mp 46/50
+[Skill] 참격 → mp 44/50
+[Skill] 참격 → mp 42/50
+[Skill] 참격 → mp 40/50
+  · ① 순서(시작 뒤 초) 평타 0.00 → 참격 0.60 → 평타 1.93 → 참격 2.53 → 평타 3.87 → 참격 4.47 → 평타 5.80 → 참격 6.40
+[Skill] 참격 → mp 46/50
+[Skill] 참격 → mp 46/50
+[Skill] 돌진베기 → mp 44/50
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(24.5, 0.0, 49.5) screen=(695.0999, 375.7997)
+[Dev] item 탕약 — 쌍화탕 world=(24.5, 0.0, 49.5) screen=(695.0999, 375.7997)
+[Skill] 회오리베기 → mp 42/50
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 21 (heukrang_clear:none)
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@3766 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@3767 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@3768 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@3769 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@3770 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@3771 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@3772 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@3773 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@3774 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+  · ④ 옛 자리 ↔ 새 자리 24.0유닛 · 층 이동 뒤 피해 0 (옛 자리 허수아비 0) · 곁들이 []
+[Dev] removed 21 enemies
+[Dev] interact Portal world=(23.5, 0.0, 49.5) screen=(686.2831, 338.7484)
+[Portal] opened heukrang_gul 1층 pos=(23.5, 0.0, 49.5)
+[Click] world=(23.5, 0.0, 49.5) cell=(23, 49)
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(579.8315, 279.835)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Portal] travel → motgol 0층 portal={ "area": &"heukrang_gul", "floor": 1, "pos": (23.5, 0.0, 49.5), "returned": false }
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2181.236, -532.4963)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1107.462, 327.9336)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(468.7516, 108.8176)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1098.205, 151.572)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1139.86, 400.0815)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(994.0676, 281.1711)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(450.2382, 194.3264)
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(579.8315, 279.835)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@4303 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@4304 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@4305 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@4306 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@4307 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@4308 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@4309 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@4310 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@4311 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Skill] 회오리베기 → mp 42/50
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@4837 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@4838 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@4839 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@4840 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@4841 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@4842 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@4843 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@4844 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@4845 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -0
+  · ② 평타 — 시작 뒤 0.22초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@5210 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@5211 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@5212 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@5213 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@5214 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@5215 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@5216 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@5217 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@5218 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Skill] 참격 → mp 46/50
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -0
+  · ② 참격 — 시작 뒤 0.32초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@5583 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@5584 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@5585 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@5586 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@5587 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@5588 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@5589 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@5590 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@5591 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Skill] 회오리베기 → mp 42/50
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -0
+  · ② 회오리 — 시작 뒤 0.17초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@5956 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@5957 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@5958 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@5959 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@5960 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@5961 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@5962 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@5963 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@5964 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Skill] 돌진베기 → mp 44/50
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -0
+  · ② 돌진 · 떠나기 전 — 시작 뒤 0.12초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@6329 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@6330 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@6331 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@6332 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@6333 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@6334 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@6335 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@6336 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@6337 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Skill] 돌진베기 → mp 44/50
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -0
+  · ② 돌진 · 도약 중 — 시작 뒤 0.47초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@6702 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@6703 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@6704 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@6705 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@6706 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@6707 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@6708 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@6709 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@6710 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+[Talisman] 화염부 → 적 (23.7, 0.0, 49.5) (배율 1.20 · 아낌 false · 흩뿌리기 {  })
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -0
+  · ② 부적 시전 — 시작 뒤 0.27초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+  · 거름: 표식 없는 마우스 이벤트 29개 막음 (#369 — 창 모드면 진짜 커서, --e2e-gate 헤드리스면 대본이 표식 없이 넣은 것)
+E2E invisible_sword PASS (검사 68)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ weapon_visibility
+[Click] world=(-2.497946, 0.0, -4.497946) cell=(-3, -5)
+E2E weapon_visibility PASS (검사 25)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ vfx_cap_blood
+[Kill] +120 xp (lv 3, 43/104)
+[LevelUp] lv=3 stat_pts=10 skill_pts=2
+[Dev] item 미식별 짚신 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 탕약 — 쌍화탕 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 탕약 — 쌍화탕 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 탕약 — 쌍화탕 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 식별부 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 깨진 황옥 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 흑랑 이빨 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 수복 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 미식별 무명옷 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 미식별 전대 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 미식별 옥패 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Loot] 보스 전용 유니크 — boss_heukrang 첫 처치 → u_heukrang_fang (회차 1)
+[Dev] item 흑랑의 봉인패 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Dev] item 엽전 world=(4.0, 0.0, 1.0) screen=(825.1334, 450.8736)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Boss] killed area= level=1 flags={ "opening_pending": false, "story": { "entered/motgol": true }, "seal:boss_heukrang": 1, "quest": { "heukrang_seal": { "state": "killed" }, "heukrang_thanks": { "state": "killed" } }, "boss_killed_": true }
+[Kill] +6 xp (lv 3, 49/104)
+  · #395 (고친 뒤) — 둘째 킬 직전 살아 있는 단발 22/24(장식성 패딩 17개) · 새로 생겼나=true · 킬 뒤 살아있는 단발 24 · 피 전용 4/24
+E2E vfx_cap_blood PASS (검사 3)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ pack_perf
+[Dev] item 화염부 world=(32.5, 0.0, 70.5) screen=(-1074.367, 3069.089)
+[Dev] item 빙결부 world=(33.5, 0.0, 69.5) screen=(-981.8005, 3069.089)
+[Field] deulnyeok seed=355022911 128x128 props=2252 packs=18 enemies=77 waypoint=(62, 65) roster=bandit,bat,talisman_master elites=["13:파란×4@구간3"]
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-d454/save_e2e.json)
+[Dev] stairs Down_cave dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Dev] interact FloorItem world=(32.5, 0.0, 70.5) screen=(1519.384, 1142.938)
+[Dev] interact @Area3D@7891 world=(33.5, 0.0, 69.5) screen=(1611.95, 1142.938)
+[Dev] interact PusJar world=(95.5, 0.0, 103.5) screen=(2907.884, 3708.197)
+[Dev] interact @Area3D@8118 world=(101.5, 0.0, 105.5) screen=(3093.018, 3921.969)
+[Dev] interact @Area3D@8119 world=(98.5, 0.0, 107.5) screen=(2861.601, 3895.247)
+[Dev] interact LootChest world=(27.5, 0.0, 70.5) screen=(1287.967, 1009.331)
+[Dev] interact @Area3D@8120 world=(94.5, 0.0, 100.5) screen=(3000.451, 3601.312)
+[Dev] interact @Area3D@8121 world=(55.5, 0.0, 52.5) screen=(3417.001, 1276.545)
+[Dev] interact LootPot world=(46.5, 0.0, 68.5) screen=(2259.917, 1463.595)
+[Dev] interact @Area3D@8122 world=(73.5, 0.0, 47.5) screen=(4481.519, 1623.924)
+[Dev] interact @Area3D@8123 world=(90.5, 0.0, 47.5) screen=(5268.335, 2078.189)
+[Dev] interact @Area3D@8124 world=(111.5, 0.0, 49.5) screen=(6147.719, 2692.782)
+[Dev] interact @Area3D@8125 world=(101.5, 0.0, 101.5) screen=(3278.151, 3815.083)
+[Dev] interact @Area3D@8126 world=(86.5, 0.0, 76.5) screen=(3740.984, 2746.225)
+[Dev] interact @Area3D@8127 world=(53.5, 0.0, 52.5) screen=(3324.434, 1223.102)
+[Dev] interact @Area3D@8128 world=(87.5, 0.0, 95.5) screen=(2907.884, 3280.654)
+[Dev] interact @Area3D@8129 world=(26.5, 0.0, 66.5) screen=(1426.817, 875.7234)
+[Dev] interact @Area3D@8130 world=(17.5, 0.0, 60.5) screen=(1287.967, 474.9016)
+[Dev] interact @Area3D@8131 world=(86.5, 0.0, 22.5) screen=(6240.286, 1303.266)
+[Dev] interact @Area3D@8132 world=(59.5, 0.0, 65.5) screen=(3000.451, 1730.81)
+[Dev] interact @Area3D@8133 world=(18.5, 0.0, 74.5) screen=(686.2832, 875.7234)
+[Dev] interact @Area3D@8134 world=(44.5, 0.0, 69.5) screen=(2121.067, 1436.874)
+[Dev] interact @Area3D@8135 world=(73.5, 0.0, 49.5) screen=(4388.952, 1677.367)
+[Dev] interact @Area3D@8136 world=(88.5, 0.0, 52.5) screen=(4944.352, 2158.353)
+[Dev] removed 77 enemies
+[Dev] removed 0 enemies
+[Audio] 전투 밀집 — 노리는 무게 10 ≥ 5 → dungeon_tense
+[Audio] BGM dungeon_tense → dungeon_tense.ogg
+  · 성능 | N=10(산 10) process 34.76ms + physics 8.38ms = 43.14ms/프레임
+[Dev] removed 10 enemies
+  · 성능 | N=20(산 20) process 20.90ms + physics 3.21ms = 24.11ms/프레임
+[Dev] removed 20 enemies
+  · 성능 | N=30(산 30) process 27.29ms + physics 5.10ms = 32.39ms/프레임
+[Dev] removed 30 enemies
+  · 성능 | N=40(산 40) process 22.86ms + physics 6.82ms = 29.68ms/프레임
+[Dev] removed 40 enemies
+  · 성능 | N=60(산 60) process 20.59ms + physics 10.70ms = 31.29ms/프레임
+  · ── 표 (§8 잴 것 「밀도: 동시 적 수 ↔ 프레임」)
+  · 표 | N=10(산 10) process 34.76ms + physics 8.38ms = 43.14ms/프레임
+  · 표 | N=20(산 20) process 20.90ms + physics 3.21ms = 24.11ms/프레임
+  · 표 | N=30(산 30) process 27.29ms + physics 5.10ms = 32.39ms/프레임
+  · 표 | N=40(산 40) process 22.86ms + physics 6.82ms = 29.68ms/프레임
+  · 표 | N=60(산 60) process 20.59ms + physics 10.70ms = 31.29ms/프레임
+  · 표 | 예산 8.0ms 안에 드는 가장 큰 N = 0 (동시 추적 적 상한 후보 — 판정 필요)
+[Dev] removed 60 enemies
+  · 12몸 무리 — 시작 평균 거리 3.07u → 5초 뒤 2.37u · 제자리 3/12
+[Dev] removed 12 enemies
+  · 거름: 표식 없는 마우스 이벤트 125개 막음 (#369 — 창 모드면 진짜 커서, --e2e-gate 헤드리스면 대본이 표식 없이 넣은 것)
+E2E pack_perf PASS (검사 8)
+E2E SUMMARY: 10/10 PASS
+  E2E sword_trail_v2 PASS (검사 93)
+  E2E vfx_cues PASS (검사 151)
+  E2E skill_tiers PASS (검사 72)
+  E2E attack_chain PASS (검사 21)
+  E2E aoe_skills PASS (검사 66)
+  E2E aoe_skills_2 PASS (검사 68)
+  E2E invisible_sword PASS (검사 68)
+  E2E weapon_visibility PASS (검사 25)
+  E2E vfx_cap_blood PASS (검사 3)
+  E2E pack_perf PASS (검사 8)

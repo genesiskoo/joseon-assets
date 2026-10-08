@@ -1,0 +1,381 @@
+extends PanelUi
+## #550: 생성·선택·설정·크레딧. 원화/로고는 부모 #545가 독립 반입한다.
+signal create_requested(display_name: String)
+signal profile_chosen(id: String)
+signal settings_requested
+
+const H1_KEYART := preload("res://assets/sprites/ui/title_h1_keyart.png")
+<<<<<<< HEAD
+const BUILD_INFO = preload("res://core/build_info.gd")
+const BTN := Vector2(300, 46)
+var _version_label: Label
+=======
+const DOHO_FIGURE := preload("res://assets/sprites/ui/doho_figure.png")
+const DOHO_FACE := preload("res://assets/sprites/ui/doho_face.png")
+const PROFILES = preload("res://core/character_profiles.gd")
+const CREDITS = preload("res://core/credits.gd")
+const BTN := Vector2(300, 46)
+const MENU_LABELS := ["캐릭터 생성", "기존 캐릭터로 플레이", "설정", "크레딧"]
+const PAGE_ROWS := 6
+enum Screen { MENU, CREATE, SELECT, CREDITS }
+var screen: Screen = Screen.MENU
+var name_input: LineEdit
+var license_view: RichTextLabel
+var _profiles: Array[Dictionary] = []
+var _selected_id := ""
+var _page := 0
+var _error := ""
+var _settings_active := false
+>>>>>>> 153eacb7 (feat(#550): add safe character profiles and title menus)
+
+
+func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
+	z_index = 240
+	super._ready()
+	title = ""
+	toggle_action = ""
+	closable_by_esc = false
+<<<<<<< HEAD
+	_version_label = Label.new()
+	_version_label.name = "BuildVersion"
+	_version_label.text = BUILD_INFO.label()
+	_version_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_version_label.add_theme_font_override("font", _font)
+	_version_label.add_theme_font_size_override("font_size", FONT_MIN)
+	_version_label.add_theme_color_override("font_color", UiSkin.TEXT_DIM)
+	add_child(_version_label)
+	_version_label.minimum_size_changed.connect(_layout_version_label)
+	get_viewport().size_changed.connect(_layout_version_label)
+	_layout_version_label()
+
+
+func _layout_version_label() -> void:
+	var extent := _version_label.get_minimum_size().ceil()
+	_version_label.size = extent
+	_version_label.position = (get_viewport_rect().size - Vector2(24, 20) - extent).round()
+=======
+	name_input = LineEdit.new()
+	name_input.name = "CharacterName"
+	name_input.placeholder_text = "이름을 지어 주세요"
+	name_input.max_length = 12
+	name_input.add_theme_font_override("font", _font)
+	name_input.add_theme_font_size_override("font_size", 20)
+	var entry_style: StyleBox = UiSkin._style("slot")
+	if entry_style:
+		entry_style = entry_style.duplicate() as StyleBox
+		entry_style.content_margin_left = 14
+		entry_style.content_margin_right = 14
+		entry_style.content_margin_top = 10
+		entry_style.content_margin_bottom = 8
+		name_input.add_theme_stylebox_override("normal", entry_style)
+		var focus_style: StyleBox = entry_style.duplicate() as StyleBox
+		if focus_style is StyleBoxTexture:
+			focus_style.modulate_color = Color(1.2, 1.12, 0.93)
+		name_input.add_theme_stylebox_override("focus", focus_style)
+	name_input.add_theme_color_override("font_color", UiSkin.TEXT)
+	name_input.add_theme_color_override("font_placeholder_color", UiSkin.TEXT_SOFT)
+	name_input.add_theme_color_override("caret_color", UiSkin.TEXT_BRIGHT)
+	name_input.text_submitted.connect(func(_value: String) -> void: _create())
+	name_input.text_changed.connect(func(_value: String) -> void: _error = ""; queue_redraw())
+	add_child(name_input)
+	license_view = RichTextLabel.new()
+	license_view.name = "Licenses"
+	license_view.bbcode_enabled = false
+	license_view.selection_enabled = true
+	license_view.add_theme_font_override("normal_font", _font)
+	license_view.add_theme_font_size_override("normal_font_size", 14)
+	add_child(license_view)
+	get_viewport().size_changed.connect(_layout_children)
+	_layout_children()
+>>>>>>> 153eacb7 (feat(#550): add safe character profiles and title menus)
+
+
+func panel_rect() -> Rect2:
+	return Rect2(Vector2.ZERO, get_viewport_rect().size)
+
+
+func footer_rect() -> Rect2:
+	var r := super.footer_rect()
+	r.position.y = get_viewport_rect().size.y - 68.0   # 손상 저장 안내는 하단 버전 행 위에 둔다 (#463).
+	return r
+
+
+func _btn_rect(i: int) -> Rect2:
+	var vp := get_viewport_rect().size
+	return Rect2(Vector2(vp.x * 0.07, vp.y * 0.53 + i * 58.0), BTN)
+
+
+func dialog_rect() -> Rect2:
+	var vp := get_viewport_rect().size
+	var size := Vector2(minf(940.0, vp.x - 64.0), minf(568.0, vp.y - 80.0))
+	return Rect2((vp - size) * 0.5, size)
+
+
+func name_rect() -> Rect2:
+	var r := dialog_rect()
+	return Rect2(r.position + Vector2(r.size.x * 0.47, 230), Vector2(r.size.x * 0.43, 48))
+
+
+func confirm_rect() -> Rect2:
+	var r := dialog_rect()
+	return Rect2(Vector2(r.end.x - 314, r.end.y - 76), Vector2(264, 42))
+
+
+func back_rect() -> Rect2:
+	var r := dialog_rect()
+	return Rect2(Vector2(r.position.x + 44, r.end.y - 76), Vector2(180, 42))
+
+
+func selection_row_rect(index: int) -> Rect2:
+	var r := dialog_rect()
+	return Rect2(r.position + Vector2(44, 116 + index * 55), Vector2(r.size.x * 0.50, 50))
+
+
+func page_rect(direction: int) -> Rect2:
+	var r := dialog_rect()
+	return Rect2(r.position + Vector2(44 + direction * 112, 453), Vector2(98, 32))
+
+
+func license_button_rect() -> Rect2:
+	var r := dialog_rect()
+	return Rect2(Vector2(r.end.x - 314, r.end.y - 76), Vector2(264, 42))
+
+
+func _layout_children() -> void:
+	if name_input == null:
+		return
+	var nr := name_rect()
+	name_input.position = nr.position
+	name_input.size = nr.size
+	name_input.visible = visible and screen == Screen.CREATE and not _settings_active
+	var r := dialog_rect()
+	license_view.position = r.position + Vector2(48, 108)
+	license_view.size = r.size - Vector2(96, 210)
+	if screen != Screen.CREDITS or not visible or _settings_active:
+		license_view.visible = false
+	queue_redraw()
+
+
+func set_open(open: bool) -> void:
+	var was_open := visible
+	super.set_open(open)
+	if open and not was_open:
+		_menu()
+	_layout_children()
+
+
+func _menu() -> void:
+	screen = Screen.MENU
+	_error = ""
+	_settings_active = false
+	_selected_id = SaveSystem.active_profile_id
+	_refresh_profiles()
+	_layout_children()
+
+
+func _refresh_profiles() -> void:
+	_profiles = SaveSystem.profiles()
+	if not SaveSystem.last_error.is_empty():
+		_error = SaveSystem.last_error
+	if not _profiles.any(func(info: Dictionary) -> bool: return info.id == _selected_id and info.valid):
+		_selected_id = ""
+		for info in _profiles:
+			if info.valid:
+				_selected_id = String(info.id)
+				break
+	_page = clampi(_page, 0, maxi(0, floori(float(_profiles.size() - 1) / PAGE_ROWS)))
+
+
+func _has_save() -> bool:
+	return _profiles.any(func(info: Dictionary) -> bool: return info.valid)
+
+
+func _open_creation(hint: String = "") -> void:
+	screen = Screen.CREATE
+	_error = hint
+	name_input.text = ""
+	_layout_children()
+	name_input.grab_focus()
+
+
+func _open_selection() -> void:
+	_error = ""
+	_refresh_profiles()
+	if _profiles.is_empty() and _error.is_empty():
+		_open_creation("저장된 캐릭터가 없습니다. 첫 여정을 만들어 주세요")
+		return
+	screen = Screen.SELECT
+	_layout_children()
+
+
+func _create() -> void:
+	var display_name := name_input.text.strip_edges()
+	_error = PROFILES.name_error(display_name)
+	if _error.is_empty():
+		create_requested.emit(display_name)
+	queue_redraw()
+
+
+func show_msg(value: String) -> void:
+	_error = value
+	super.show_msg(value)
+
+
+func settings_closed() -> void:
+	_settings_active = false
+	_layout_children()
+
+
+func _input(event: InputEvent) -> void:
+	if visible and _settings_active:
+		return
+	if visible and event.is_action_pressed("ui_cancel") and not event.is_echo() and screen != Screen.MENU:
+		_menu()
+		get_viewport().set_input_as_handled()
+		return
+	# 실제 LineEdit/RichTextLabel의 GUI 입력을 먼저 살린다. 월드는 타이틀·트리 정지로 계속 막힌다.
+	if visible and event is InputEventMouse:
+		if (screen == Screen.CREATE and name_rect().has_point(event.position)) or (license_view.visible and license_view.get_global_rect().has_point(event.position)):
+			_mouse = event.position
+			_update_capture()
+			return
+	super._input(event)
+
+
+func _on_click(pos: Vector2, button: int) -> void:
+	if button != MOUSE_BUTTON_LEFT or _settings_active:
+		return
+	if screen == Screen.MENU:
+		if _btn_rect(0).has_point(pos):
+			_open_creation()
+		elif _btn_rect(1).has_point(pos):
+			_open_selection()
+		elif _btn_rect(2).has_point(pos):
+			_settings_active = true
+			_layout_children()
+			settings_requested.emit()
+		elif _btn_rect(3).has_point(pos):
+			screen = Screen.CREDITS
+			_error = ""
+			_layout_children()
+		return
+	if back_rect().has_point(pos):
+		_menu()
+		return
+	if screen == Screen.CREATE and confirm_rect().has_point(pos):
+		_create()
+	elif screen == Screen.SELECT:
+		for row in mini(PAGE_ROWS, _profiles.size() - _page * PAGE_ROWS):
+			var info := _profiles[_page * PAGE_ROWS + row]
+			if selection_row_rect(row).has_point(pos):
+				if info.valid:
+					_selected_id = String(info.id)
+					_error = ""
+				else:
+					_error = String(info.error)
+				return
+		if confirm_rect().has_point(pos) and not _selected_id.is_empty():
+			profile_chosen.emit(_selected_id)
+		elif page_rect(0).has_point(pos) and _page > 0:
+			_page -= 1
+		elif page_rect(1).has_point(pos) and (_page + 1) * PAGE_ROWS < _profiles.size():
+			_page += 1
+	elif screen == Screen.CREDITS and license_button_rect().has_point(pos):
+		license_view.visible = not license_view.visible
+		if license_view.visible:
+			license_view.text = CREDITS.license_text()
+	queue_redraw()
+
+
+func _draw_backdrop(vp: Vector2) -> void:
+	draw_texture_rect(H1_KEYART, Rect2(Vector2.ZERO, vp), false)
+	var shade := PackedVector2Array([Vector2(0, 0), Vector2(vp.x * 0.43, 0), Vector2(vp.x * 0.43, vp.y), Vector2(0, vp.y)])
+	var ink := PackedColorArray([Color(0.01, 0.01, 0.015, 0.82), Color(0.01, 0.01, 0.015, 0.18), Color(0.01, 0.01, 0.015, 0.18), Color(0.01, 0.01, 0.015, 0.82)])
+	draw_polygon(shade, ink)
+	draw_rect(Rect2(0, vp.y * 0.79, vp.x, vp.y * 0.21), Color(0.01, 0.01, 0.015, 0.28))
+
+
+func _draw_logo(vp: Vector2) -> void:
+	var logo_at := Vector2(vp.x * 0.07, vp.y * 0.23).round()
+	draw_string_outline(_title_font, logo_at, "조선헌터스", HORIZONTAL_ALIGNMENT_LEFT, -1, 54, 3, Color(0, 0, 0, 0.9))
+	draw_string(_title_font, logo_at, "조선헌터스", HORIZONTAL_ALIGNMENT_LEFT, -1, 54, Color(0.95, 0.85, 0.62))
+	text(logo_at + Vector2(2, 32), "봉인이 무너진 못골, 떠돌이 도사 도호", FONT_M, UiSkin.TEXT_SOFT)
+
+
+func _draw_figure(rect: Rect2) -> void:
+	var size := DOHO_FIGURE.get_size()
+	var scale := minf(rect.size.x / size.x, rect.size.y / size.y)
+	var fitted := size * scale
+	draw_texture_rect(DOHO_FIGURE, Rect2(rect.get_center() - fitted * 0.5, fitted), false)
+
+
+func _draw_dialog() -> void:
+	var r := dialog_rect()
+	UiSkin.screen_backdrop(self, panel_rect(), 0.58)
+	UiSkin.panel(self, r)
+	var label: String = {Screen.CREATE: "새 여정의 이름", Screen.SELECT: "캐릭터 선택", Screen.CREDITS: "만든 사람들"}.get(screen, "")
+	draw_string(_title_font, (r.position + Vector2(44, 64)).round(), label, HORIZONTAL_ALIGNMENT_LEFT, -1, 29, UiSkin.TEXT)
+	draw_button(back_rect(), "돌아가기", true)
+	if screen == Screen.CREATE:
+		_draw_figure(Rect2(r.position + Vector2(52, 108), Vector2(r.size.x * 0.31, r.size.y - 202)))
+		var x := name_rect().position.x
+		text(Vector2(x, r.position.y + 153), "도호 · 떠돌이 도사", 24, UiSkin.TEXT)
+		text(Vector2(x, r.position.y + 190), "칼과 부적을 들고 봉인 아래로 내려갑니다", 16, UiSkin.TEXT_SOFT)
+		text(Vector2(x, r.position.y + 224), "이름", 16)
+		text(Vector2(x, r.position.y + 305), "한글·영문·숫자 3~12자", 14, UiSkin.TEXT_SOFT)
+		text(Vector2(x, r.position.y + 347), "캐릭터마다 별도의 여정으로 저장됩니다", 15, UiSkin.TEXT_SOFT)
+		draw_button(confirm_rect(), "여정 시작", true)
+	elif screen == Screen.SELECT:
+		for row in mini(PAGE_ROWS, _profiles.size() - _page * PAGE_ROWS):
+			var info := _profiles[_page * PAGE_ROWS + row]
+			var rr := selection_row_rect(row)
+			UiSkin.slot(self, rr, info.id == _selected_id)
+			draw_texture_rect(DOHO_FACE, Rect2(rr.position + Vector2(5, 4), Vector2(42, 42)), false, Color(1, 1, 1, 1 if info.valid else 0.35))
+			text(rr.position + Vector2(58, 21), fit_text(String(info.name), rr.size.x - 155, 17), 17, UiSkin.TEXT if info.valid else UiSkin.TEXT_SOFT)
+			text(rr.position + Vector2(58, 42), String(info.location), 14, UiSkin.TEXT_SOFT)
+			text(rr.position + Vector2(rr.size.x - 75, 21), "Lv. %d" % int(info.level) if info.valid else "확인 필요", 14, UiSkin.TEXT_SOFT)
+		var chosen: Dictionary = {}
+		for info in _profiles:
+			if info.id == _selected_id and info.valid:
+				chosen = info
+				break
+		var right := Vector2(r.position.x + r.size.x * 0.64, r.position.y + 110)
+		_draw_figure(Rect2(right + Vector2(-28, 0), Vector2(r.size.x * 0.26, 245)))
+		if not chosen.is_empty():
+			text(right + Vector2(-2, 282), fit_text(String(chosen.name), r.size.x * 0.25, 22), 22)
+			text(right + Vector2(-2, 312), "도호 · Lv. %d" % int(chosen.level), 16, UiSkin.TEXT_SOFT)
+			text(right + Vector2(-2, 342), fit_text(String(chosen.location), r.size.x * 0.25, 15), 15, UiSkin.TEXT_SOFT)
+		else:
+			text(right + Vector2(-2, 282), "캐릭터를 골라 주세요", 16, UiSkin.TEXT_SOFT)
+		if _profiles.size() > PAGE_ROWS:
+			draw_button(page_rect(0), "이전", _page > 0)
+			draw_button(page_rect(1), "다음", (_page + 1) * PAGE_ROWS < _profiles.size())
+			text(page_rect(1).end + Vector2(12, -10), "%d / %d" % [_page + 1, ceili(float(_profiles.size()) / PAGE_ROWS)], 14)
+		draw_button(confirm_rect(), "선택한 여정 이어가기", not chosen.is_empty())
+	elif screen == Screen.CREDITS:
+		if not license_view.visible:
+			var y := r.position.y + 128
+			for line in CREDITS.LINES:
+				text(Vector2(r.position.x + 48, y), String(line), 17)
+				y += 36
+		draw_button(license_button_rect(), "제작진 보기" if license_view.visible else "라이선스 원문 보기", true)
+	if not _error.is_empty():
+		var error_y := 96.0 if screen == Screen.SELECT else r.size.y - 96.0
+		text(r.position + Vector2(44, error_y), fit_text(_error, r.size.x - 88, 15), 15, Color(1.0, 0.67, 0.43))
+
+
+func _draw() -> void:
+	if not visible:
+		return
+	var vp := get_viewport_rect().size
+	_draw_backdrop(vp)
+	if screen == Screen.MENU:
+		_draw_logo(vp)
+		for i in MENU_LABELS.size():
+			draw_button(_btn_rect(i), MENU_LABELS[i], true)
+		text(Vector2(vp.x * 0.07, vp.y - 25), "봉인 아래로 내려가는 첫 막", FONT_S, UiSkin.TEXT_SOFT)
+		if not _error.is_empty():
+			draw_footer(fit_text(_error, vp.x * 0.8, FONT_M), FONT_M, Color(1.0, 0.65, 0.42))
+	else:
+		_draw_dialog()

@@ -1,0 +1,28 @@
+{
+  "captured_at": "2026-09-16T23:06:52.465Z",
+  "operation": "tools/call",
+  "tool": "meshy_retexture",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"task_id\": \"01a0ac79-1ba0-7329-98a7-b4326c93ba13\",\n  \"status\": \"PENDING\",\n  \"message\": \"Retexture task created successfully. Task ID: 01a0ac79-1ba0-7329-98a7-b4326c93ba13\",\n  \"estimated_time\": \"2-3 minutes\"\n}"
+      }
+    ],
+    "structuredContent": {
+      "task_id": "01a0ac79-1ba0-7329-98a7-b4326c93ba13",
+      "status": "PENDING",
+      "message": "Retexture task created successfully. Task ID: 01a0ac79-1ba0-7329-98a7-b4326c93ba13",
+      "estimated_time": "2-3 minutes"
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

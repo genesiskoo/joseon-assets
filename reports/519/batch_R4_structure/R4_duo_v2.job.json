@@ -1,0 +1,50 @@
+{
+  "card": 519,
+  "asset": "R4_duo_v2",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\reports\\519\\batch_R4_structure\\R4_duo.png",
+      "role": "Keep composition, face and clothing; its TEN tail tips are an error to replace.",
+      "sha256": "d0cfd10d743ead5a01d2442e7e852ef1213245c479bf401c4d661d8bb701ec23"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\reports\\519\\batch_R4_structure\\R4_front_v2.png",
+      "role": "Corrected same character with EXACTLY NINE tails: FOUR left + FIVE right.",
+      "sha256": "c3512c7c8b005c2c747563f15af6e5143cf2eb16a0815537edce7fa3ae056c9f"
+    }
+  ],
+  "prompt_sha256": "cf0f458e25fee1462f912fba54780a405a8cfafc3e167a4fc00e468f4f5194a3",
+  "width": 2048,
+  "height": 1536,
+  "background_requested": "opaque",
+  "quality": "high",
+  "seed": 5194105,
+  "workflow": "image_generate",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T08:10:14.357837+00:00",
+  "prompt_id": "42a3e2e9-18c8-45ec-a96d-0f505dd31517",
+  "status_response": {
+    "assigned_inference": "10.4.68.140:8080",
+    "created_at": "2026-10-01T08:10:17.374778Z",
+    "id": "42a3e2e9-18c8-45ec-a96d-0f505dd31517",
+    "last_state_update": "2026-10-01T08:11:11.834919Z",
+    "status": "success",
+    "updated_at": "2026-10-01T08:11:11.834919Z"
+  },
+  "actual_dimensions": [
+    2048,
+    1536
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "has_transparent_pixels": false,
+  "output": "R4_duo_v2.png",
+  "output_sha256": "4e8fa954938e8673d6e32ccb8b83b11981955943711f7da9e24a39560b4258b7",
+  "output_bytes": 4330076
+}

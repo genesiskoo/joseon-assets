@@ -1,0 +1,48 @@
+{
+    "schema":  1,
+    "launch":  {
+                   "schema":  1,
+                   "fixed_fps":  0,
+                   "exe":  "godot",
+                   "argv":  [
+                                "--path",
+                                "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon",
+                                "--headless",
+                                "--",
+                                "--e2e=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,footsteps,audio_cues,sfx_limiter"
+                            ],
+                   "phase_arg":  "balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,footsteps,audio_cues,sfx_limiter",
+                   "phase_tokens":  [
+                                        "balance_room",
+                                        "balance_boss",
+                                        "hit_stagger",
+                                        "pack_perf",
+                                        "bodies_cap",
+                                        "gimmicks",
+                                        "item_showcase",
+                                        "footsteps",
+                                        "audio_cues",
+                                        "sfx_limiter"
+                                    ],
+                   "skip":  [
+
+                            ],
+                   "exclusive":  true,
+                   "contains_balance_boss":  true,
+                   "combat_trace":  false,
+                   "launcher_pid":  39092,
+                   "launched_utc":  "2026-10-02T16:06:56.1447864Z"
+               },
+    "runtime_pid":  57412,
+    "exit_code":  0,
+    "timed_out":  false,
+    "elapsed_sec":  182.669346,
+    "archived_utc":  "2026-10-02T16:09:58.8379175Z",
+    "godot_log":  {
+                      "source":  "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-558-combat-clock-trace\\logs\\godot.log",
+                      "archive":  "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1606521156703_33024\\phase_1_solo\\godot.raw.log",
+                      "bytes":  100401,
+                      "sha256":  "a91e88a0423525bbef8f9ae95023b2ec89a117bbb7de9d8ffbd432f774ad5f43"
+                  },
+    "console_format":  "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

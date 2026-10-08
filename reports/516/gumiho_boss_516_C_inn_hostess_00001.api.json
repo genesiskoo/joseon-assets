@@ -1,0 +1,82 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_516_C_inn_hostess",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "0eb4b6680500d4e0cb749b079e17dd95ad0fc8f61eb2d439d1055fe8e516afb2.png"
+    },
+    "is_changed": [
+      "6ead555321cd1f70c5dff02a69a213bc3607feb49b5c4725bca180a891676685"
+    ]
+  },
+  "5": {
+    "_meta": {
+      "title": "이미지 미리보기"
+    },
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "7",
+        0
+      ]
+    }
+  },
+  "7": {
+    "_meta": {
+      "title": "Painter"
+    },
+    "class_type": "Painter",
+    "inputs": {
+      "bg_color": "#000000",
+      "height": 896,
+      "image": [
+        "3",
+        0
+      ],
+      "mask": "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+      "width": 512
+    },
+    "is_changed": [
+      "7e5d9d16ed6e913904aa6ce43bea7fd9804996f4930f5334022d626a2f12e76f"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "7",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 1704063583,
+      "model.size_preset": "(2K) 2304x1728 (4:3)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "Create a new Joseon dark-fantasy game character concept from the uploaded approved Gumiho identity. Preserve the SAME adult Korean womans recognizable facial structure, long black hair and quietly luminous amber eyes. Direction C — THE INN HOSTESS: in her human disguise she looks like a perfectly ordinary working woman of a small Joseon village inn, not nobility and not a fantasy sorceress. Simple faded deep-indigo cotton jeogori, smoke-brown chima, utilitarian apron tied at the waist, rolled sleeve from serving guests, hair gathered in a low loose knot with one plain wooden pin. No gold embroidery, no ornamental jewelry, no weapon, NO VISIBLE FOX TAILS OR EARS. Her power is intimate social attraction: she leans slightly across a low table and offers a plain ceramic cup with one hand, lets her other hand rest near her own throat, meets the viewer with steady golden eyes and a tiny private smile, as if she already knows a secret about them. Subtle asymmetry in the posture, relaxed shoulders and precise fingers; inviting at first glance, predatory when looked at twice. One single coherent concept sheet with a full-body three-quarter standing pose on the left and a larger portrait expression study on the right, BOTH clearly the same woman. Keep clothes historically evocative but not strict museum reconstruction. Matte illustrated H1-compatible Korean game art, grounded anatomy, charcoal dusk backdrop and narrow honey-colored side lighting. The audience should sense a fox demon WITHOUT seeing magic or a costume. No text or labels, no extra person, no glossy skin, no erotic exposure, no palace costume, no Chinese hanfu, no kimono, no Western fantasy armor, no cutesy anime style."
+    }
+  }
+}

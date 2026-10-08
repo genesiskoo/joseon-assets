@@ -1,0 +1,7 @@
+This is the verbatim tool-observed packaging error, not original captured stderr bytes. No game/test was rerun and all already copied files are preserved in this attempt folder.
+
+Traceback (most recent call last):
+  File "C:\workspace\joseon\._tmp\package_verified_card_delivery.py", line 81, in <module>
+    assert source.suffix.lower() in allowed, f'Unexpected evidence file: {source}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Unexpected evidence file: C:\workspace\joseon\._tmp\trace_558_20261002\worker\docs_record_01\empty.ignore

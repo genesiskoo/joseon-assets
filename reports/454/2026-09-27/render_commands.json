@@ -1,0 +1,65 @@
+[
+  {
+    "mode": "before",
+    "command": [
+      "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+      "--windowed",
+      "--resolution",
+      "1280x720",
+      "-s",
+      "C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454\\qa_godot.gd",
+      "--",
+      "--root=C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454",
+      "--mode=before",
+      "--out=C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454\\qa"
+    ],
+    "returncode": 0,
+    "seconds": 3.126,
+    "raw_sha256": "9a977fffeb43ff7f977d56caf40f03b5b684d8fe92f5b3bc310281750ac3a9fe",
+    "capture_sha256": "19fc9a4154a46102e86709855c8786b3e2ab9cf60a8af8c5b38ab6c39ff96633"
+  },
+  {
+    "mode": "after",
+    "command": [
+      "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+      "--windowed",
+      "--resolution",
+      "1280x720",
+      "-s",
+      "C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454\\qa_godot.gd",
+      "--",
+      "--root=C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454",
+      "--mode=after",
+      "--out=C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454\\qa"
+    ],
+    "returncode": 0,
+    "seconds": 2.981,
+    "raw_sha256": "aa2aa01c82fe3e4a9b4451280f4c788bc1747673808951c493daff0a08ba317c",
+    "capture_sha256": "488c2672f12f5c250443671441cef8554047bb36a4b7cf42e114e75b1e60bb49"
+  },
+  {
+    "mode": "sizes",
+    "command": [
+      "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+      "--windowed",
+      "--resolution",
+      "1280x720",
+      "-s",
+      "C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454\\qa_godot.gd",
+      "--",
+      "--root=C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454",
+      "--mode=sizes",
+      "--out=C:\\workspace\\joseon\\._tmp\\assets_87\\workbench\\production\\item_icons_454\\qa"
+    ],
+    "returncode": 0,
+    "seconds": 2.917,
+    "raw_sha256": "4873e767a20d1415de7c55f1dc923904b69b5ff793ba5822eacbc6e69e8d1a30",
+    "capture_sha256": "8eb6c644f04408b204d01aead342e9db11ed9af5a1cf43c9da91c0d21b99d005"
+  }
+]

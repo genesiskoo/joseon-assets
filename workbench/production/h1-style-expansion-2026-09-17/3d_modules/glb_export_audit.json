@@ -1,0 +1,466 @@
+{
+  "method": "Independent glTF 2.0 binary readback; CCW face cross products vs supplied normals; report count and SHA256 comparison",
+  "candidate_count": 18,
+  "all_pass": true,
+  "assets": [
+    {
+      "file": "models/brazier.glb",
+      "sha256": "b113591491a77b7323a8de7f271c2b0b373b30b4134bf913c462ee84074fa5a7",
+      "bytes": 16792,
+      "triangles": 100,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 0,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/door_frame.glb",
+      "sha256": "f62550f098634bd4db0d694174162082885888a5c3b861a0452025c182a850bd",
+      "bytes": 860780,
+      "triangles": 68,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/floor.glb",
+      "sha256": "90a56695aac08d446cbabceaaf93f4593c57e05185d64288deb03860dd8130e2",
+      "bytes": 809132,
+      "triangles": 12,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/market_bay.glb",
+      "sha256": "40176b4e92849bb6e825c134cf7e641ad05512422ee32c2123bdafaca743de69",
+      "bytes": 3090756,
+      "triangles": 452,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 2,
+      "atlas_uv_checks": [
+        {
+          "material": "h1_atlas_plaster",
+          "uv_min": [
+            0.004999999888241291,
+            0.5049999952316284
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.9950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        },
+        {
+          "material": "h1_atlas_wood",
+          "uv_min": [
+            0.004999999888241291,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        },
+        {
+          "material": "h1_atlas_paper",
+          "uv_min": [
+            0.5049999952316284,
+            0.5049999952316284
+          ],
+          "uv_max": [
+            0.9950000047683716,
+            0.9950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        },
+        {
+          "material": "h1_atlas_roof",
+          "uv_min": [
+            0.5049999952316284,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.9950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        },
+        {
+          "material": "h1_atlas_roof_rib",
+          "uv_min": [
+            0.5049999952316284,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.9950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        }
+      ],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/onggi_jar.glb",
+      "sha256": "52db80e4b80dacaa36b89367077f5914f3af6286ca3b69d1f7c68c62b4033c1e",
+      "bytes": 45084,
+      "triangles": 288,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 0,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/paper_sliding_door.glb",
+      "sha256": "38458904e8da1f4f82e57751cbcb416a1e08bee5b8b1fffb69bb1ec90aa530e2",
+      "bytes": 2198220,
+      "triangles": 192,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [
+        {
+          "material": "h1_atlas_paper",
+          "uv_min": [
+            0.5049999952316284,
+            0.5049999952316284
+          ],
+          "uv_max": [
+            0.9950000047683716,
+            0.9950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        },
+        {
+          "material": "h1_atlas_wood",
+          "uv_min": [
+            0.004999999888241291,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        }
+      ],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/pillar.glb",
+      "sha256": "f706c8583e5c343c45f085c77b18abb0fccbed93ef9f7f89cc193b0124893cb5",
+      "bytes": 1667896,
+      "triangles": 68,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 2,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/seal_door.glb",
+      "sha256": "5e27cf71b3b5f03dcbed55a5cf90821bd4ddd091b1a80a43487b79aaba128bb0",
+      "bytes": 894956,
+      "triangles": 268,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/square_paper_lantern.glb",
+      "sha256": "667ad6b39b8fd4ecd5db9185896f65bb86525b85819376e6bccb458eeada218a",
+      "bytes": 2182004,
+      "triangles": 96,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [
+        {
+          "material": "h1_atlas_paper",
+          "uv_min": [
+            0.5049999952316284,
+            0.5049999952316284
+          ],
+          "uv_max": [
+            0.9950000047683716,
+            0.9950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        },
+        {
+          "material": "h1_atlas_wood",
+          "uv_min": [
+            0.004999999888241291,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        }
+      ],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/stairs_down.glb",
+      "sha256": "2f367c5c57e5ea7294a9bab364a8591fee9cfc11cde4964145150456a8a5f759",
+      "bytes": 4780884,
+      "triangles": 487,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [
+        "material_0"
+      ],
+      "pass": true
+    },
+    {
+      "file": "models/stairs_up.glb",
+      "sha256": "bf2718df807bee6eb9f1add5a502890eca4ba1d11980a24bde7216055ac4327a",
+      "bytes": 4687912,
+      "triangles": 488,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [
+        "material_0"
+      ],
+      "pass": true
+    },
+    {
+      "file": "models/wall_corner.glb",
+      "sha256": "f090ed2530fbcbd0c3f077a8794b5cace38523449bc1d2986dea4335229f8e3c",
+      "bytes": 1661544,
+      "triangles": 26,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 2,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/wall_straight.glb",
+      "sha256": "f5ff141b8dd3d7fb90ee8c6e9c01845fd9247b39719170864ad7b1ea9a746d2c",
+      "bytes": 853692,
+      "triangles": 20,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "models/wood_crate.glb",
+      "sha256": "bb5bb755228488ce874e69b65cdd3cc86f2d52b891f0ed19b1124620f706c10f",
+      "bytes": 2182824,
+      "triangles": 108,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [
+        {
+          "material": "h1_atlas_wood",
+          "uv_min": [
+            0.004999999888241291,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        }
+      ],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "props/bandit_club.glb",
+      "sha256": "75bc7ac8917aa9923f4884b1d55e6e586741a55460bcdbc3f33f78ad2a637dd3",
+      "bytes": 2204244,
+      "triangles": 240,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [
+        {
+          "material": "h1_atlas_wood",
+          "uv_min": [
+            0.004999999888241291,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        }
+      ],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "props/doho_scabbard.glb",
+      "sha256": "e801510cc887acdee88ca91b2b58d6c0342eca2add6d68e3b49a2ec36c1b94e2",
+      "bytes": 2198508,
+      "triangles": 204,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [
+        {
+          "material": "h1_atlas_dark_wood",
+          "uv_min": [
+            0.004999999888241291,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        }
+      ],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "props/doho_sword.glb",
+      "sha256": "71dc18da3ce310197a630356dd13c110d4112952359e7af71b14e26309d7c33d",
+      "bytes": 2208388,
+      "triangles": 250,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 1,
+      "atlas_uv_checks": [
+        {
+          "material": "h1_atlas_dark_wood",
+          "uv_min": [
+            0.004999999888241291,
+            0.004999999888241291
+          ],
+          "uv_max": [
+            0.4950000047683716,
+            0.4950000047683716
+          ],
+          "contained_in_assigned_quadrant": true
+        }
+      ],
+      "double_sided_materials": [],
+      "pass": true
+    },
+    {
+      "file": "props/paper_talisman.glb",
+      "sha256": "871cb174d3363244b563b798ec58edff5970bf00aebf54c58b27d51fe90532c7",
+      "bytes": 40704,
+      "triangles": 240,
+      "triangle_report_matches": true,
+      "hash_report_matches": true,
+      "gltf_ccw_normal_disagreements": 0,
+      "degenerate_triangles": 0,
+      "triangles_without_normals": 0,
+      "external_dependencies": [],
+      "embedded_images": 0,
+      "atlas_uv_checks": [],
+      "double_sided_materials": [
+        "talisman_paper",
+        "talisman_ink",
+        "talisman_stamp"
+      ],
+      "pass": true
+    }
+  ]
+}

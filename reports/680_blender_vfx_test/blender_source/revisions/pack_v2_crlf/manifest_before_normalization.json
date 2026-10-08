@@ -1,0 +1,697 @@
+{
+  "schema": 1,
+  "card": 680,
+  "method": "Blender Eevee procedural bounded 3D participating media with animated periodic 4D noise; no fluid solver/bake/cache",
+  "seed": 680,
+  "hardware": "NVIDIA GeForce RTX 4070, OpenGL 4.6 NVIDIA 595.79 (verified before production)",
+  "blender": "5.2.2 LTS",
+  "render_settings": {
+    "engine": "BLENDER_EEVEE",
+    "size": [
+      384,
+      384
+    ],
+    "rgba": 8,
+    "taa_render_samples": 64,
+    "volumetric_samples": 64,
+    "volumetric_tile_size": 2,
+    "volumetric_shadow_samples": 16,
+    "use_volumetric_shadows": true,
+    "fps": 24,
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast"
+  },
+  "source_variants": {
+    "fire": "source/make_blender_vfx.py (v4 density only correction)",
+    "sal": "source/make_blender_vfx_v3.py (same sal fields in final source)"
+  },
+  "timings": {
+    "full_56_frames_seconds": 52.899,
+    "fire_v4_28_frames_seconds": 33.377
+  },
+  "deliverables": [
+    {
+      "effect": "fire",
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\staged\\assets\\vfx\\blender_fire_jet\\blender_fire_jet_sheet.png",
+      "bytes": 408838,
+      "sha256": "541e0c24aaa0ebc1f50fda9e5f054d1bad5fbb2b92f340b1c06077ffa8478ddc",
+      "seam_z": 0.718,
+      "alpha_max_min": 75,
+      "edge_alpha": 0,
+      "fw": 312,
+      "fh": 90,
+      "common_crop": [
+        13,
+        149,
+        325,
+        239
+      ],
+      "anchor": [
+        0.96682564,
+        0.47777778
+      ],
+      "source_alpha_union": [
+        21,
+        157,
+        317,
+        231
+      ]
+    },
+    {
+      "effect": "sal",
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\staged\\assets\\vfx\\blender_sal_mist\\blender_sal_mist_sheet.png",
+      "bytes": 805362,
+      "sha256": "4c5564b2c2fb1e2c7ede0469d662cc6ac11b092729b8803e651ced85351dcd9a",
+      "seam_z": 0.956,
+      "alpha_max_min": 77,
+      "edge_alpha": 0,
+      "fw": 292,
+      "fh": 158,
+      "common_crop": [
+        46,
+        113,
+        338,
+        271
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "source_alpha_union": [
+        54,
+        121,
+        307,
+        261
+      ]
+    }
+  ],
+  "preserved_report_files": [
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\full_blender.raw.log",
+      "bytes": 18533,
+      "sha256": "987bd39be9cb4dba13c5ef59a270efa0745c845a8b3b75168010f39a2c191daf"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\full_fire_render_report.json",
+      "bytes": 6559,
+      "sha256": "62d4d71c223900a8f4dee6ce4742cf13f443d13381f155e57f4995b1a930f30a"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\full_fire_v4_blender.raw.log",
+      "bytes": 9778,
+      "sha256": "882a0e062fd771b4cd7c23918040c294ae3c7dee144959e9246c79c1e84dc745"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\full_render_report.json",
+      "bytes": 12597,
+      "sha256": "0442dcc00ffdb0d72686afc9f4caee4e0fb8d8147e61581fa5c150afd56e613a"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\packing_revision2_verification.raw.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\pack_atlases.raw.log",
+      "bytes": 141,
+      "sha256": "a60150b8581d00e3280443d2254b60ea12c646ba3968feb0e51359c76813d0d1"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\pack_atlases_revision2.raw.log",
+      "bytes": 912,
+      "sha256": "3b592852fdfe71f3b44c825d66d2f56ba679f92235f67e871faedfea7c2ea00e"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\pack_atlases_v4.raw.log",
+      "bytes": 653,
+      "sha256": "dd495f686bf0ef12c0d1529bc33dfb7c56d90c5f79833808eeb80511e7df0af8"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\pack_report.json",
+      "bytes": 1209,
+      "sha256": "ed3e4ce7a0425de49d32f158a5f527a959bd55f58f693ebf63c13297e51ed6b9"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_blender.raw.log",
+      "bytes": 3482,
+      "sha256": "692199236e410373eff7724e1b60b964ffdf8f240577f8e9e393a3892244e9fd"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_fire_render_report.json",
+      "bytes": 688,
+      "sha256": "572c3aff457e704495504ca30a440851bea9854c0ed5597ff24cc15e508cffa3"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_fire_v4_blender.raw.log",
+      "bytes": 3299,
+      "sha256": "b08148ed6a00f719c6af3ef07caa618014afccd1ef095b0ba6d8a5cd33bd93ca"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_render_report.json",
+      "bytes": 905,
+      "sha256": "875bdf5f2e03be45bdb3369e98f03db628cddc17bab2594f4bb7d14421cf01a7"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_v1_render_report.json",
+      "bytes": 908,
+      "sha256": "39b3ef4017be7905e0e5f768f67429703ec2883ab6808f3f8b2279ecf622fd6c"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_v2_blender.raw.log",
+      "bytes": 3480,
+      "sha256": "0a54a73e8fdcf0002c8f62682906e5ccba1cf769f3c37910f2a5e66d3df17d1c"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_v2_render_report.json",
+      "bytes": 906,
+      "sha256": "cc0aadf29fb16a4037361878be5df6e200bb21dc20a006370a2ef3fe4052bb7d"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_v3_blender.raw.log",
+      "bytes": 3472,
+      "sha256": "3032e7f338e5cda7be23a8d10a05db56456f953db873ce3154c65b2c5a46abf3"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\preview_v3_render_report.json",
+      "bytes": 905,
+      "sha256": "875bdf5f2e03be45bdb3369e98f03db628cddc17bab2594f4bb7d14421cf01a7"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\blends\\fire_jet.blend",
+      "bytes": 114035,
+      "sha256": "930bbc325a70d450fde6cf26b883ebbc824fd9b8266bab37162d9c67ab50d754"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\blends\\sal_mist.blend",
+      "bytes": 124211,
+      "sha256": "05d61eb83352fff57f5073716f8c9c0ee9b81d4792eeb69bc9a205b6e456389e"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\fire_contact.jpg",
+      "bytes": 43354,
+      "sha256": "1fa83f2a484b41276f52c0d1c89dc6f58258ad9c79483477aaf86ce20e01d3bb"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\fire_preview.png",
+      "bytes": 55242,
+      "sha256": "d961951f2787a8d022309981a6961fe227983092ae8b1c5dd25a94c49ca3bedb"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\fire_preview_v1.png",
+      "bytes": 56935,
+      "sha256": "65611d8bcd47a0dd36b717339f45f42377d3be18fa207da70416d04c02139000"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\fire_preview_v2.png",
+      "bytes": 55972,
+      "sha256": "113bdc80855cc54604d172d184bc74c958f63fb7dd50949ae74f939aabdba578"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\fire_preview_v3.png",
+      "bytes": 53337,
+      "sha256": "f5d0d3a8337b8d093fbfb82223026b7f67b769fd7dcc4f64eaa6bd4d1b75469b"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\fire_preview_v4.png",
+      "bytes": 55242,
+      "sha256": "d961951f2787a8d022309981a6961fe227983092ae8b1c5dd25a94c49ca3bedb"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\sal_contact.jpg",
+      "bytes": 42863,
+      "sha256": "010fb444e898fa48f328fa9fe6759e37e489bf964b10f921c47a774544606427"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\sal_preview.png",
+      "bytes": 71004,
+      "sha256": "6ca3f3302cc4ce047d9199feb52f9c9e07921495b7ea8d6b6a3e7a52cc4e9930"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\sal_preview_v1.png",
+      "bytes": 112041,
+      "sha256": "d4832fad23ce78424e36d54d16df3ecfd3df4c760ce73e93844b69c927de4163"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\sal_preview_v2.png",
+      "bytes": 117326,
+      "sha256": "29e249ffda95365d20f53757bcd35c6ccec2b5a6921974ec2c24aabd8fc921eb"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\previews\\sal_preview_v3.png",
+      "bytes": 71004,
+      "sha256": "6ca3f3302cc4ce047d9199feb52f9c9e07921495b7ea8d6b6a3e7a52cc4e9930"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\finalize_report.py",
+      "bytes": 6625,
+      "sha256": "6fa6f57b30656d8a63a224c55bdc15b1738aefe3fc338e4a399f3a9496157aca"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\finalize_report_v2.py",
+      "bytes": 5708,
+      "sha256": "ce93d470b4f16bdc2fdd3a8e2b9361280cfca66d6fb4a017bc7fc6663d3259cd"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\make_blender_vfx.py",
+      "bytes": 17416,
+      "sha256": "290045d572c71e5335a8f454395c4c5379ee756812dd6b4064a3abbc8efde279"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\make_blender_vfx_v1.py",
+      "bytes": 14835,
+      "sha256": "d4e16d83cc1b8eef7e9f1b93f9733fb0e5cb7c527ebaf3fd9e3cecbdb79ca0d7"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\make_blender_vfx_v2.py",
+      "bytes": 15058,
+      "sha256": "1581db4e8f3d970b31097f1614583cc15e2302d99f326b2a067f45823f6e744e"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\make_blender_vfx_v3.py",
+      "bytes": 17360,
+      "sha256": "483ebc467840b0dcd088cf4276e58484f20cabe620e50ac99c75ab4896abaa79"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\pack_atlases.py",
+      "bytes": 6730,
+      "sha256": "e21178162092a953f1750eec616f6c84318fa6cbe3fa76bc2f0619facafe9a67"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\source\\revise_packing_v2.py",
+      "bytes": 3387,
+      "sha256": "e8d9c3dabfd3856bb8aabf48fa7962589b653210e61528c277227f295790eca5"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\staged\\assets\\vfx\\blender_fire_jet\\blender_fire_jet_meta.json",
+      "bytes": 2604,
+      "sha256": "a477aaa8fc73169163787ad367b692b091158cccbd9994c585fd0e78cea18fb9"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\staged\\assets\\vfx\\blender_fire_jet\\blender_fire_jet_sheet.png",
+      "bytes": 408838,
+      "sha256": "541e0c24aaa0ebc1f50fda9e5f054d1bad5fbb2b92f340b1c06077ffa8478ddc"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\staged\\assets\\vfx\\blender_hybrid\\drop.glb",
+      "bytes": 3740,
+      "sha256": "b77fe14b40658647f5d48e5b942234ae947cae099cc0b79d0a42b11fe44da5d4"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\staged\\assets\\vfx\\blender_hybrid\\ember.glb",
+      "bytes": 2064,
+      "sha256": "fd548dca6b4e18ce98af43ad665a7a974764f3e39d2ef988530d72cd6759b099"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\staged\\assets\\vfx\\blender_sal_mist\\blender_sal_mist_meta.json",
+      "bytes": 2607,
+      "sha256": "d8da47be73d05ab5d813e448fb37e1d937517af340c7838ae8c8045ddadbb764"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\staged\\assets\\vfx\\blender_sal_mist\\blender_sal_mist_sheet.png",
+      "bytes": 805362,
+      "sha256": "4c5564b2c2fb1e2c7ede0469d662cc6ac11b092729b8803e651ced85351dcd9a"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\manifest.json",
+      "bytes": 25075,
+      "sha256": "b1cee1bcbe0a77f264b7b05f1c952b032974418ad126ae8057697fcb9f613e10"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\pack_report.json",
+      "bytes": 718,
+      "sha256": "10036f7a83bbe5b150a14d2cd4594a0ec7ff2af01c6b1fe300c8755f992134d3"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\README.md",
+      "bytes": 3370,
+      "sha256": "431312039bf91d4dec8b1e2f3741839dcf2667059281bd2c07ae92d510598b12"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\previews\\fire_contact.jpg",
+      "bytes": 31662,
+      "sha256": "66931cd7ca407c853fe4b0640fa9721bca1a0d48cc38fbc78d16d772b2a60dd6"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\previews\\sal_contact.jpg",
+      "bytes": 32311,
+      "sha256": "16d376b7baeeb6551f7eb52efb299fabe6138969a0814ce59c2e76924e0ac7d0"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\source\\finalize_report.py",
+      "bytes": 6625,
+      "sha256": "6fa6f57b30656d8a63a224c55bdc15b1738aefe3fc338e4a399f3a9496157aca"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\source\\pack_atlases.py",
+      "bytes": 5026,
+      "sha256": "2a939ce4b0e23ebbdba8f63da5af783ffed5e65904d04ca7026f574c240ce5f6"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\staged\\assets\\vfx\\blender_fire_jet\\blender_fire_jet_meta.json",
+      "bytes": 2391,
+      "sha256": "2d1495877998e29adee4b857bb53239c84be4b48931832e5f6af59bafd90b845"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\staged\\assets\\vfx\\blender_fire_jet\\blender_fire_jet_sheet.png",
+      "bytes": 537497,
+      "sha256": "780a75054670588782ab154d4392bbdd5fa58b802f27eb0874021fb1a5247099"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\staged\\assets\\vfx\\blender_hybrid\\drop.glb",
+      "bytes": 3740,
+      "sha256": "b77fe14b40658647f5d48e5b942234ae947cae099cc0b79d0a42b11fe44da5d4"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\staged\\assets\\vfx\\blender_hybrid\\ember.glb",
+      "bytes": 2064,
+      "sha256": "fd548dca6b4e18ce98af43ad665a7a974764f3e39d2ef988530d72cd6759b099"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\staged\\assets\\vfx\\blender_sal_mist\\blender_sal_mist_meta.json",
+      "bytes": 2384,
+      "sha256": "190a0a8877a3f43b173099d96487e58bb42457d13e82cc7b22955063bcd01ef4"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\reports\\680_blender_vfx_test\\blender_source\\revisions\\pack_v1\\staged\\assets\\vfx\\blender_sal_mist\\blender_sal_mist_sheet.png",
+      "bytes": 928475,
+      "sha256": "1921f13f60c7177783f91284210fba92dcbe6c5399e88bd5a095f66662b68f63"
+    }
+  ],
+  "ignored_intermediate_frames": [
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0000.png",
+      "bytes": 55251,
+      "sha256": "f7ed1a9009c14f558e989201311ad42b905092ddfb0bbc47b114d44d5cea273a"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0001.png",
+      "bytes": 55353,
+      "sha256": "e60b91567acbb593bddaf31e1a652d9879ac2b19abbb5dc4a9c4570877751832"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0002.png",
+      "bytes": 54541,
+      "sha256": "24c9c4c22a5c771b603bd90fcf354a156a732a0cf4e7e4b193df691421b54ae8"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0003.png",
+      "bytes": 55053,
+      "sha256": "ecba03b0b66ab32ab0072019550003d44dbb1280ddfac9968e61df61d3356e5f"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0004.png",
+      "bytes": 55088,
+      "sha256": "ee021fb058bdf40c17683c452782fe9f9a702e60acc4119e0418cd887d1bce13"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0005.png",
+      "bytes": 54919,
+      "sha256": "7dad5a47912a538c006803a54e13e920a900c83cfcbd73beed50c5017a3799a0"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0006.png",
+      "bytes": 55242,
+      "sha256": "7c33fe4c8c35ffe1bc0ec8b5b80dbe9e85a83c03d62416507a43ec3298dc3a7b"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0007.png",
+      "bytes": 55141,
+      "sha256": "3b90f0621e657751a11a3335ba2230a45f7f3693fa853162232fcddf9e4dde75"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0008.png",
+      "bytes": 55358,
+      "sha256": "f548cefe845aa5931f7fbec0a24cb8b31221c08236ad4c1f2dd854d8c8181fe6"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0009.png",
+      "bytes": 55840,
+      "sha256": "36149a07678bb1719336277fbfbc89000f84a87c526d5fd67caf64738dc5f679"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0010.png",
+      "bytes": 54562,
+      "sha256": "fc55908d39a10a1e341cdcb758c0e8b705bf54957c3f2e429b087ab24a3b5184"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0011.png",
+      "bytes": 54255,
+      "sha256": "6dacc5518eab8eeb9e551b5c1174f0b29ef263e8c1b1e2e69e75350b3b8d5faa"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0012.png",
+      "bytes": 54831,
+      "sha256": "f594c357277ce9884e5ac37989ae3989e6b2a4d1e2c84c8ae1599cc45105b7c4"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0013.png",
+      "bytes": 55287,
+      "sha256": "c7c1dc6373909cabf55241fd9c11a713476ee348beb6493602ca7b227123838a"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0014.png",
+      "bytes": 55304,
+      "sha256": "900b2713a78eb23dc834efea918d0243a3c9035e988e246e83b930cce9dff01c"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0015.png",
+      "bytes": 54746,
+      "sha256": "7672ffe791884706eaf8d42d091ddec751c95b82cd2fdfc88a16b04f64d9b66e"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0016.png",
+      "bytes": 55141,
+      "sha256": "c7e0c80adb790829b7b611710fdbe37b4812b4c07547f1f0446a3fe645712a18"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0017.png",
+      "bytes": 55646,
+      "sha256": "83a98e460ef647ab69e236b39efa4c40ba02800e115acc2b57d3132fd1ded466"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0018.png",
+      "bytes": 55044,
+      "sha256": "f99c22f07860dee7aa0f6677b7c0ac224a13dbc34b27b1c9067fac94d94c6a51"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0019.png",
+      "bytes": 55733,
+      "sha256": "427fa30c3c981ccff6d46d5f0693d667b41fe314ca1169fe089ad804c4841a43"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0020.png",
+      "bytes": 55272,
+      "sha256": "36e2e8ac592a30331328f627c4fda74e8d1d569f40a7e1feec76b7747b05f711"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0021.png",
+      "bytes": 55249,
+      "sha256": "766568dc1aaf0d4a31b5e3772f811e6756a1250a5a4ecfc461a6d9e2d6299010"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0022.png",
+      "bytes": 55092,
+      "sha256": "6a852a7101697fecb7a368690b4c93f3858160257ab39b1e08b3d18020edd3d4"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0023.png",
+      "bytes": 54917,
+      "sha256": "56e85e5214c6ab0238158ea413a5407f890773817dd4bbc3d94c3bbea24feaae"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0024.png",
+      "bytes": 55251,
+      "sha256": "2536cf9ba054c2d9e2c7f9dc3fbb187404827fdf9c5f9477adbd0cc100b6a795"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0025.png",
+      "bytes": 55353,
+      "sha256": "1eb02bd3fb5ac00c0c9c940d9e6b7dd9167eb7f0194d5047a33d33f72caa1ce5"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0026.png",
+      "bytes": 54541,
+      "sha256": "75b956167ed55a6b7d3c56611b682c000b0a02bf7d20343684f204d60f74751a"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0027.png",
+      "bytes": 55053,
+      "sha256": "f53cf4ccbb5b3200ce4e2e6ae4ba0c3c0f5cfc9e4c47c2d965216b060f86ab4a"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0000.png",
+      "bytes": 72618,
+      "sha256": "c068960adc96e2a17f441bf3b344ef555f13003647831f00297693102a9fe540"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0001.png",
+      "bytes": 72486,
+      "sha256": "e2a57ef64412ffa77d6e2e31e3b009dbf8334c89511426b43bcd6bf86f2528ba"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0002.png",
+      "bytes": 72903,
+      "sha256": "7b2f8068dadab18c75feb1f57138f05fe7393b26e00b2706ad3ed18647bbb6cb"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0003.png",
+      "bytes": 73244,
+      "sha256": "d45666aeb47e43810bfcdfa133ed55c0cd7c17dd9ca8fe93bcc6e4ee7f099995"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0004.png",
+      "bytes": 76194,
+      "sha256": "ce7567baa5b9a481110166a09823d94ef4edc06642f97ccc5195df7cbdf7729b"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0005.png",
+      "bytes": 73570,
+      "sha256": "4aa3f6d14484777c2771c5c226da1f8e6da205a2400f9a7ce8eb09793ef907d5"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0006.png",
+      "bytes": 71004,
+      "sha256": "1abe857e98684f9ec74ff14b718e2590784384740ccc25e8b9c90615892d8704"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0007.png",
+      "bytes": 74683,
+      "sha256": "898461baeabb0754144e2a390faec5519b23de4fb0f07eb0e0f8667fcbfcd29d"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0008.png",
+      "bytes": 75483,
+      "sha256": "bc9fe4df39246abaf0ce8b228b31898ae530079b427b338d01769d49648c3183"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0009.png",
+      "bytes": 74580,
+      "sha256": "37bb21a6e95c4d4bbc0cea559bd6ea7c1cbc5e09ac8f53c3803951d3770d78e3"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0010.png",
+      "bytes": 74249,
+      "sha256": "cffc32ba45fdcea0b730343ca29bcb5e8417fa1e172e3414cc0e3961baa2496d"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0011.png",
+      "bytes": 73930,
+      "sha256": "25a276e9ecce2b4beb6bf2693684e04da56ab3cf68ba3f71eec59080beb03c29"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0012.png",
+      "bytes": 72752,
+      "sha256": "ae6dd1cb08b4f0048c1d8fd8ab1352218d94102d1becf087dbab192316052c46"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0013.png",
+      "bytes": 73108,
+      "sha256": "bb27d5357da3a8f3d627c3c5e6b0c640a49adbedb9afccb30fdf47fddbcb358c"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0014.png",
+      "bytes": 71265,
+      "sha256": "bf404bf5adb00daeae4df8f61ac41404b74dd6bbd33cff6506075d0a063ec40c"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0015.png",
+      "bytes": 71036,
+      "sha256": "4d37845739911c6172374c40654cc9de249369a44e6aab89980b3d464434fde0"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0016.png",
+      "bytes": 74456,
+      "sha256": "fc22ae5d34928adef355e6324f837589010a0ee6e956d93f5ea7de609c4da753"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0017.png",
+      "bytes": 76027,
+      "sha256": "ad9bd9b8ead15cfc65215b9204ea9eb7c9838eeb65d72e63e032ec74a11af978"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0018.png",
+      "bytes": 75979,
+      "sha256": "3672ae5fce20588b7bd41768416a0368d2ac93fb99f8657787ba721a03400f8b"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0019.png",
+      "bytes": 74540,
+      "sha256": "1477040ab3555bd132101d7256da704abaad632354699a5f013233c00d486c70"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0020.png",
+      "bytes": 76637,
+      "sha256": "fbe83ad9d0b3d0a3f77fd77dd7e293f240005cebed9ed47de89dfc983fd403c3"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0021.png",
+      "bytes": 72213,
+      "sha256": "17098c5273f09713a94fe66c250187d7e82f60574910a2be5ff7ddb6e13b8bc2"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0022.png",
+      "bytes": 71808,
+      "sha256": "874cc589fe0b26bc03f3381bf4b7cacba9ca344a441a0e98be3a77cc083010a9"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0023.png",
+      "bytes": 73009,
+      "sha256": "362b36fb5cdbd3206697070039a87f8b1d7b1daa6acd6d9d5b8ce38509679885"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0024.png",
+      "bytes": 72618,
+      "sha256": "5c440ac6dc93c7516d3c488e157f5ed0e3efe379c78f6b32550ea2a5abc9d3cf"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0025.png",
+      "bytes": 72486,
+      "sha256": "a01b168a4012f5d2af6b04826e8ee9b06e7a041e23160ccd4401d0cd71469828"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0026.png",
+      "bytes": 72903,
+      "sha256": "5a1c7821710a77a922499d098111d747b1640ce246c1ed4939e8ad01f37fb6e3"
+    },
+    {
+      "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\sal\\f_0027.png",
+      "bytes": 73244,
+      "sha256": "7ecca592c6ad48426592308b70ea52a90dfa843df727ec09092e27b6c47fbe3e"
+    }
+  ],
+  "report_bytes_before_manifest": 3934665,
+  "packing_revision": 2,
+  "previous_revision_snapshot": "revisions/pack_v1",
+  "crop_proofs": [
+    {
+      "effect": "fire",
+      "24_cells_byte_exact_crop": true,
+      "anchor_pixel_error": [
+        3.200000264769187e-07,
+        1.9999998812636477e-07
+      ],
+      "common_crop": [
+        13,
+        149,
+        325,
+        239
+      ]
+    },
+    {
+      "effect": "sal",
+      "24_cells_byte_exact_crop": true,
+      "anchor_pixel_error": [
+        0.0,
+        0.0
+      ],
+      "common_crop": [
+        46,
+        113,
+        338,
+        271
+      ]
+    }
+  ],
+  "original_raw_56_sha_unchanged": true,
+  "packing_change": "Fixed alpha>2 union over all28 originalframes,8pixelmargin; sal symmetric about192,192. Pixel-exact crop; no source re-render/color/alpha/gain changes."
+}

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://items/item_def.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/icons_h1/jade_charm.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = "myeongdu"
+display_name = "명두"
+slot = 2
+size = Vector2i(1, 1)
+min_ilvl = 8
+price = 150
+weight = 5
+tier = 2
+item_type = &"amulet"
+req_level = 8
+icon = ExtResource("2")
+drop_model = "res://assets/models/props/paper_talisman.glb"
+drop_scale = 1.05
+drop_rot_deg = Vector3(0, 0, 0)
+drop_tint = Color(0.95, 0.82, 0.5, 1)
+glyph = "명"
+color = Color(0.88, 0.74, 0.42, 1)

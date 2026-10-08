@@ -1,0 +1,41 @@
+{
+  "card": 534,
+  "asset": "hp_potion_3_rank_v3",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [],
+  "prompt_sha256": "73550a0f1dca63738c400e4d14e682134edd4523d17e4d0720412c610f25bb0c",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "transparent",
+  "quality": "high",
+  "seed": 5343002,
+  "workflow": "image_generate_clean",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T18:04:40.518146+00:00",
+  "prompt_id": "cfbe37ff-6d74-4fe3-93bd-b19b84c0f7ad",
+  "status_response": {
+    "assigned_inference": "10.4.2.91:8080",
+    "created_at": "2026-10-01T18:04:41.943464Z",
+    "id": "cfbe37ff-6d74-4fe3-93bd-b19b84c0f7ad",
+    "last_state_update": "2026-10-01T18:05:26.059533Z",
+    "status": "success",
+    "updated_at": "2026-10-01T18:05:26.059533Z"
+  },
+  "raw_output": "hp_potion_3_rank_v3_raw.png",
+  "raw_output_sha256": "79a821bcfba55ee81d89413f9bc2fc1ba8ba951e1ff535f5c27246f075e3ff0b",
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_transparent_pixels": true,
+  "output": "hp_potion_3_rank_v3.png",
+  "output_sha256": "9149ecc4a6aa705294487ffd5d53ad33bc5c4b60323c9a885c3f38b3713d01de",
+  "output_bytes": 1481403
+}

@@ -1,0 +1,454 @@
+extends Node
+## E2eRunner — 오토로드. `--e2e=<이름|all>` 인자가 있을 때만 깨어나 시나리오를 차례로 돌리고 종료 코드를 남긴다. 사양 design/testing.md.
+## 평소 실행에서는 _ready에서 바로 잠든다(비용 0). 저장은 `user://save_e2e.json`으로 분리해 PD 저장을 건드리지 않는다.
+
+const SCENARIOS := {
+	"character_profiles": "res://tests/e2e/scenarios/character_profiles.gd",
+	"_slice_capture": "res://tests/e2e/scenarios/_slice_capture.gd",
+	"quest_journal": "res://tests/e2e/scenarios/quest_journal.gd",
+	"hud_orb_fx": "res://tests/e2e/scenarios/hud_orb_fx.gd",
+	"npc_hover_view": "res://tests/e2e/scenarios/npc_hover_view.gd",
+	"elite_ui_view": "res://tests/e2e/scenarios/elite_ui_view.gd",
+	"hud_hierarchy_view": "res://tests/e2e/scenarios/hud_hierarchy_view.gd",
+	"pickup_feedback_view": "res://tests/e2e/scenarios/pickup_feedback_view.gd",
+	"icon_intake": "res://tests/e2e/scenarios/icon_intake.gd",
+	"automap": "res://tests/e2e/scenarios/automap.gd",
+	"pickup_equip": "res://tests/e2e/scenarios/pickup_equip.gd",
+	"equipment_ui": "res://tests/e2e/scenarios/equipment_ui.gd",
+	"inactive_gear": "res://tests/e2e/scenarios/inactive_gear.gd",
+	"portal_roundtrip": "res://tests/e2e/scenarios/portal_roundtrip.gd",
+	"waypoint": "res://tests/e2e/scenarios/waypoint.gd",
+	"vendor_quest": "res://tests/e2e/scenarios/vendor_quest.gd",
+	"vendor_prices": "res://tests/e2e/scenarios/vendor_prices.gd",
+	"chief_quest": "res://tests/e2e/scenarios/chief_quest.gd",
+	"shaman_heal": "res://tests/e2e/scenarios/shaman_heal.gd",
+	"save_continue": "res://tests/e2e/scenarios/save_continue.gd",
+	"bodies_cap": "res://tests/e2e/scenarios/bodies_cap.gd",
+	"boss_floor": "res://tests/e2e/scenarios/boss_floor.gd",
+	"boss_bulgasari": "res://tests/e2e/scenarios/boss_bulgasari.gd",
+	"bulgasari_path": "res://tests/e2e/scenarios/bulgasari_path.gd",
+	"boss_jangsanbeom": "res://tests/e2e/scenarios/boss_jangsanbeom.gd",
+	"heukrang_look": "res://tests/e2e/scenarios/heukrang_look.gd",
+	"heukrang_pounce": "res://tests/e2e/scenarios/heukrang_pounce.gd",
+	"visual_swap": "res://tests/e2e/scenarios/visual_swap.gd",
+	"run_upright": "res://tests/e2e/scenarios/run_upright.gd",
+	"teleport_settle": "res://tests/e2e/scenarios/teleport_settle.gd",
+	"hit_stagger": "res://tests/e2e/scenarios/hit_stagger.gd",
+	"hit_feel": "res://tests/e2e/scenarios/hit_feel.gd",
+	"element_affix": "res://tests/e2e/scenarios/element_affix.gd",
+	"affix_combat": "res://tests/e2e/scenarios/affix_combat.gd",
+	"attack_chain": "res://tests/e2e/scenarios/attack_chain.gd",
+	"aspd_steps": "res://tests/e2e/scenarios/aspd_steps.gd",
+	"skill_then_attack": "res://tests/e2e/scenarios/skill_then_attack.gd",
+	"anim_commit": "res://tests/e2e/scenarios/anim_commit.gd",
+	"invisible_sword": "res://tests/e2e/scenarios/invisible_sword.gd",
+	"heavy_react": "res://tests/e2e/scenarios/heavy_react.gd",
+	"pack_ai": "res://tests/e2e/scenarios/pack_ai.gd",
+	"kill_slump": "res://tests/e2e/scenarios/kill_slump.gd",
+	"kill_bisect": "res://tests/e2e/scenarios/kill_bisect.gd",
+	"slice_deaths": "res://tests/e2e/scenarios/slice_deaths.gd",
+	"monster_motion_gallery": "res://tests/e2e/scenarios/monster_motion_gallery.gd",
+	"element_status": "res://tests/e2e/scenarios/element_status.gd",
+	"element_ui": "res://tests/e2e/scenarios/element_ui.gd",
+	"talisman_targeting": "res://tests/e2e/scenarios/talisman_targeting.gd",
+	"talisman_throw": "res://tests/e2e/scenarios/talisman_throw.gd",
+	"talisman_aoe": "res://tests/e2e/scenarios/talisman_aoe.gd",
+	"loot_drop": "res://tests/e2e/scenarios/loot_drop.gd",
+	"potion_icons": "res://tests/e2e/scenarios/potion_icons.gd",
+	"potion_tiers": "res://tests/e2e/scenarios/potion_tiers.gd",
+	"loot_props": "res://tests/e2e/scenarios/loot_props.gd",
+	"elite_pack": "res://tests/e2e/scenarios/elite_pack.gd",
+	"elite_slots": "res://tests/e2e/scenarios/elite_slots.gd",
+	"flee_chase": "res://tests/e2e/scenarios/flee_chase.gd",
+	"verify_flows": "res://tests/e2e/scenarios/verify_flows.gd",
+	"balance_room": "res://tests/e2e/scenarios/balance_room.gd",
+	"balance_boss": "res://tests/e2e/scenarios/balance_boss.gd",
+	"player_death": "res://tests/e2e/scenarios/player_death.gd",
+	"wall_cutaway": "res://tests/e2e/scenarios/wall_cutaway.gd",
+	"floor_seams": "res://tests/e2e/scenarios/floor_seams.gd",
+	"char_light": "res://tests/e2e/scenarios/char_light.gd",
+	"town_layout": "res://tests/e2e/scenarios/town_layout.gd",
+	"town_approach": "res://tests/e2e/scenarios/town_approach.gd",
+	"audio_cues": "res://tests/e2e/scenarios/audio_cues.gd",
+	"sfx_limiter": "res://tests/e2e/scenarios/sfx_limiter.gd",
+	"ui_windows": "res://tests/e2e/scenarios/ui_windows.gd",
+	"story_cutin": "res://tests/e2e/scenarios/story_cutin.gd",
+	"dialogue_band": "res://tests/e2e/scenarios/dialogue_band.gd",
+	"dialogue_event": "res://tests/e2e/scenarios/dialogue_event.gd",
+	"ui_docks": "res://tests/e2e/scenarios/ui_docks.gd",
+	"ui_tooltips": "res://tests/e2e/scenarios/ui_tooltips.gd",
+	"belt_unify": "res://tests/e2e/scenarios/belt_unify.gd",
+	"item_ui": "res://tests/e2e/scenarios/item_ui.gd",
+	"skill_picker": "res://tests/e2e/scenarios/skill_picker.gd",
+	"skill_icons": "res://tests/e2e/scenarios/skill_icons.gd",
+	"vfx_cues": "res://tests/e2e/scenarios/vfx_cues.gd",
+	"vfx_cap_blood": "res://tests/e2e/scenarios/vfx_cap_blood.gd",
+	"skill_area": "res://tests/e2e/scenarios/skill_area.gd",
+	"skill_tiers": "res://tests/e2e/scenarios/skill_tiers.gd",
+	"aoe_skills": "res://tests/e2e/scenarios/aoe_skills.gd",
+	"aoe_skills_2": "res://tests/e2e/scenarios/aoe_skills_2.gd",
+	"build_changers": "res://tests/e2e/scenarios/build_changers.gd",
+	"footsteps": "res://tests/e2e/scenarios/footsteps.gd",
+	"dungeon_layout": "res://tests/e2e/scenarios/dungeon_layout.gd",
+	"beomgul_walk": "res://tests/e2e/scenarios/beomgul_walk.gd",
+	"mine_walk": "res://tests/e2e/scenarios/mine_walk.gd",
+	"bongmil_walk": "res://tests/e2e/scenarios/bongmil_walk.gd",
+	"town_exits": "res://tests/e2e/scenarios/town_exits.gd",
+	"field_layout": "res://tests/e2e/scenarios/field_layout.gd",
+	"field2_layout": "res://tests/e2e/scenarios/field2_layout.gd",
+	"gate_hover": "res://tests/e2e/scenarios/gate_hover.gd",
+	"pack_density": "res://tests/e2e/scenarios/pack_density.gd",
+	"pack_perf": "res://tests/e2e/scenarios/pack_perf.gd",
+	"slice_loop": "res://tests/e2e/scenarios/slice_loop.gd",
+	"plaza_light": "res://tests/e2e/scenarios/plaza_light.gd",
+	"town_tour": "res://tests/e2e/scenarios/town_tour.gd",
+	"aoe_field": "res://tests/e2e/scenarios/aoe_field.gd",
+	"long_body": "res://tests/e2e/scenarios/long_body.gd",
+	"named_imugi": "res://tests/e2e/scenarios/named_imugi.gd",
+	"serpent_models": "res://tests/e2e/scenarios/serpent_models.gd",
+	"gimmicks": "res://tests/e2e/scenarios/gimmicks.gd",
+	"pus_jar": "res://tests/e2e/scenarios/pus_jar.gd",
+	"roles": "res://tests/e2e/scenarios/roles.gd",
+	"roster_swap": "res://tests/e2e/scenarios/roster_swap.gd",
+	"gimmicks_m10": "res://tests/e2e/scenarios/gimmicks_m10.gd",
+	"behaviors_m9": "res://tests/e2e/scenarios/behaviors_m9.gd",
+	"female_f1": "res://tests/e2e/scenarios/female_f1.gd",
+	"female_float": "res://tests/e2e/scenarios/female_float.gd",
+	"m14_models": "res://tests/e2e/scenarios/m14_models.gd",
+	"leader_options": "res://tests/e2e/scenarios/leader_options.gd",
+	"surround": "res://tests/e2e/scenarios/surround.gd",
+	"item_showcase": "res://tests/e2e/scenarios/item_showcase.gd",
+	"weapon_visibility": "res://tests/e2e/scenarios/weapon_visibility.gd",
+	"first_magic": "res://tests/e2e/scenarios/first_magic.gd",
+	"hover_target": "res://tests/e2e/scenarios/hover_target.gd",
+	"system_menu": "res://tests/e2e/scenarios/system_menu.gd",
+	"_prop_lineup": "res://tests/e2e/scenarios/_prop_lineup.gd",
+	"_hover_probe": "res://tests/e2e/scenarios/_hover_probe.gd",
+}
+
+## 러너 자기검사 (#95) — 일부러 망가뜨린 대본을 돌려 **판정이 맞게 나오는지** 본다. `--e2e-selftest`.
+## [대본, 기대 판정(PASS=true), FAIL 사유에 들어 있어야 할 글자]. 판정은 실제 실행과 **같은 함수**(_run_scenario)가 내린다 — 자기검사가 딴 길을 타면 의미가 없다.
+## 사유까지 맞춰 보는 이유(#175): 규칙이 여럿이라, 딴 이유로 빨개진 대본은 그 규칙을 검사한 게 아니다.
+const SELFTEST := {
+	"abort_mid": ["res://tests/e2e/selftest/abort_mid.gd", false, "SCRIPT ERROR"],
+	"no_checks": ["res://tests/e2e/selftest/no_checks.gd", false, "검사 0"],
+	"clean": ["res://tests/e2e/selftest/clean.gd", true, ""],
+	"signal_call": ["res://tests/e2e/selftest/signal_call.gd", false, "엔진 ERROR"],
+	# #369 — 창 모드 거름(InputGate)을 헤드리스에서 강제로 켜 본다. 러너의 장치라 여기서 잰다(창 없이 늘 돈다).
+	"real_mouse_gate": ["res://tests/e2e/selftest/real_mouse_gate.gd", true, ""],
+}
+
+## 판정에 넣지 않는 오류 (#175) — [오류 문장에 든 글자, 이유]. 여기 없는 ERROR 줄은 전부 FAIL 사유다.
+## 넣는 기준 = 게임이 틀린 게 아니라 엔진·실행 환경이 내는 소리. 이유를 못 적으면 넣지 말고 원인을 고친다(새 카드). 사양 design/testing.md #175 절.
+const ERROR_IGNORE := [
+	["resources still in use at exit", "종료 정리 보고(ResourceCache) — 마지막 판정 뒤 quit 때라 판정 창에 원래 안 들어온다. 표에는 경계를 적어 둔다"],
+]
+
+var active: bool = false
+var shots: bool = false
+var selftest: bool = false
+var _names: Array[String] = []
+## `--e2e-skip=a,b` — 이 이름은 돌리지 않는다 (#553). test.ps1 이 착륙 시험을 공유 칸(`--e2e=all --e2e-skip=<단독 묶음>`)과
+## 단독(`--e2e=<단독 묶음>`)으로 나눌 때 쓴다 — all 목록을 test.ps1 이 따로 들고 있지 않아도 대본이 빠지지 않는다.
+var _skip: Array[String] = []
+var _finished: bool = false
+var _tap := ErrorTap.new(ERROR_IGNORE)
+## 창 모드 거름 (#369) — 러너가 켜질 때만 만든다(평소 실행엔 노드 0). 자기검사 대본이 이 이름으로 찾아 강제로 켠다.
+var gate: InputGate = null
+## 거름 기본값 = 창 모드면 켬, 헤드리스면 끔(`--e2e-gate`면 켬). 러너가 대본마다 끝에 이 값으로 되돌린다.
+var gate_default: bool = false
+
+
+## 시나리오 도중의 오류를 센다. 엔진 로거(Godot 4.5+ `OS.add_logger`)로 오류 자체를 엿듣는다. 로거는 다른 스레드에서도 불리므로 뮤텍스로 감싼다.
+## - SCRIPT ERROR (#95): GDScript는 런타임 오류를 잡을 수 없고, 코루틴이 오류로 끊기면 기다리던 쪽(_run_one)은 **그냥 재개된다**
+##   — 그래서 검사 12개 중 2개만 돌고 죽어도 PASS였다(실측 2회: #85·#109).
+## - ERROR 줄 (#175): 엔진 `ERR_PRINT`·`push_error`·셰이더 오류. 신호에 걸린 함수의 인자 타입이 틀리면 엔진은 그 연결만 건너뛰고
+##   ERROR 줄을 찍는다 — 대본은 끝까지 돌고 검사도 초록이라 #164의 서낭단 소리가 죽은 채 e2e 22/22가 통과했다.
+## - WARNING은 세지 않는다. `ERROR_IGNORE` 표에 든 것도.
+class ErrorTap extends Logger:
+	var _ignore: Array = []
+	var _script: int = 0
+	var _script_first: String = ""
+	var _engine: int = 0
+	var _engine_first: String = ""
+	var _mu := Mutex.new()
+
+	func _init(ignore: Array) -> void:
+		_ignore = ignore
+
+	func reset() -> void:
+		_mu.lock()
+		_script = 0
+		_script_first = ""
+		_engine = 0
+		_engine_first = ""
+		_mu.unlock()
+
+	func snapshot() -> Dictionary:
+		_mu.lock()
+		var d := {"script": _script, "script_first": _script_first, "engine": _engine, "engine_first": _engine_first}
+		_mu.unlock()
+		return d
+
+	func _log_error(function: String, file: String, line: int, code: String, rationale: String, _editor_notify: bool, error_type: int, script_backtraces: Array[ScriptBacktrace]) -> void:
+		if error_type == ERROR_TYPE_WARNING:
+			return
+		var msg: String = rationale if rationale != "" else code
+		for rule in _ignore:
+			if msg.contains(rule[0]):
+				return
+		_mu.lock()
+		if error_type == ERROR_TYPE_SCRIPT:
+			_script += 1
+			if _script_first == "":
+				_script_first = "%s (%s:%d)" % [msg, file.get_file(), line]
+		else:
+			_engine += 1
+			if _engine_first == "":
+				var kind := "push_error: " if function.ends_with("push_error") else ("셰이더: " if error_type == ERROR_TYPE_SHADER else "")
+				_engine_first = "%s%s (%s)" % [kind, msg, _where(file, line, script_backtraces)]
+		_mu.unlock()
+
+	## 오류를 부른 GDScript 줄 — 엔진 오류의 file·line은 엔진 소스(`object.cpp:1311`)라 고칠 곳을 못 알려 준다.
+	## 스크립트 역추적(디버그 빌드는 늘 쌓인다)의 첫 칸을 쓰고, 없으면 엔진 줄.
+	static func _where(file: String, line: int, backtraces: Array[ScriptBacktrace]) -> String:
+		for bt in backtraces:
+			if bt != null and bt.get_frame_count() > 0:
+				return "%s:%d" % [bt.get_frame_file(0).get_file(), bt.get_frame_line(0)]
+		return "%s:%d" % [file.get_file(), line]
+
+
+## 창 모드 거름 (#369) — 창 모드에서는 **대본이 넣은** 포인터 이벤트만 게임에 닿게 한다. 사양 design/testing.md #369 절.
+## 창 모드에는 진짜 OS 커서가 창 위에 있다 — 움직이거나(PD 손) 창이 뜨고 겹침이 바뀌어 윈도가 헛 움직임을 보내면
+## `UiTooltip`·`PanelUi`의 `_mouse`를 덮어 툴팁 사진이 안 찍혔다(ui_tooltips 창 모드 106검사 중 22 실패, main에서도).
+## 표식 = `E2e.INJECT_DEVICE`(대본의 마우스 이벤트는 전부 `E2e.mouse_event()`를 지난다). 키는 안 거른다 — 사양의 「키」.
+class InputGate extends Node:
+	var active: bool = false
+	## 막은 이벤트 수 — 러너가 대본마다 늘어난 만큼을 보고한다(창 모드).
+	var blocked: int = 0
+	var _rebound: Array = []  # [액션, 원래 이벤트, 바꿔 건 이벤트]
+
+	func _init() -> void:
+		name = "E2eInputGate"
+		process_mode = Node.PROCESS_MODE_ALWAYS  # 게임이 멈춰도 거른다
+
+	func _ready() -> void:
+		# `_input`이 있으면 엔진이 READY 때 입력 처리를 켠다 — 꺼진 거름은 아예 안 불리게(헤드리스 = 전과 같다)
+		set_process_input(active)
+
+	## 루트 **맨 끝 자식**으로 들어가 거기 머문다. `_input`은 트리 순서의 역순(맨 끝 노드가 맨 먼저)이라
+	## 맨 끝이라야 게임보다 먼저 받는다. 러너(오토로드)는 주 장면보다 앞이라 러너 자신은 이 자리가 안 된다.
+	func install(root: Window) -> void:
+		root.add_child(self)
+		root.child_entered_tree.connect(_on_root_child)
+
+	## 뒤에 루트로 들어온 노드가 있으면 다시 맨 끝으로 — 루트가 자식을 붙이는 도중엔 못 옮겨서 다음 틈에.
+	func _on_root_child(n: Node) -> void:
+		if n != self and is_inside_tree():
+			get_parent().move_child.call_deferred(self, -1)
+
+	func set_active(on: bool) -> void:
+		if on == active:
+			return
+		active = on
+		set_process_input(on)
+		_rebind_mouse_actions(on)
+
+	func _input(event: InputEvent) -> void:
+		if active and is_pointer(event) and event.device != E2e.INJECT_DEVICE:
+			blocked += 1
+			get_viewport().set_input_as_handled()  # _input(뒤 노드들)·GUI·_unhandled_input·피킹 전부 안 닿는다
+
+	## 포인터 = 마우스 움직임·버튼·휠 + 터치·제스처(터치패드·터치 화면도 PD 손이다). 대본은 마우스만 넣는다.
+	static func is_pointer(event: InputEvent) -> bool:
+		return event is InputEventMouse or event is InputEventScreenTouch or event is InputEventScreenDrag or event is InputEventGesture
+
+	## 마우스 버튼에 걸린 액션(primary_action·secondary_action …)을 켜진 동안 주입 장치에만 걸리게 바꿔 건다 — 끄면 되돌린다.
+	## 왜: 진짜 클릭은 뷰포트보다 앞, Input 싱글턴에서 액션 누름을 먼저 바꾼다. 도호는 클릭을 `Input.is_action_pressed`로
+	## 읽으니 `_input`에서 막아도 걷는다. 바꿔 걸면 진짜 클릭(device 32)은 어느 액션에도 안 걸린다.
+	func _rebind_mouse_actions(on: bool) -> void:
+		if not on:
+			for r in _rebound:
+				InputMap.action_erase_event(r[0], r[2])
+				InputMap.action_add_event(r[0], r[1])
+			_rebound.clear()
+			return
+		for action in InputMap.get_actions():
+			for ev in InputMap.action_get_events(action):
+				if ev is InputEventMouseButton:
+					var mine := ev.duplicate() as InputEventMouseButton
+					mine.device = E2e.INJECT_DEVICE
+					InputMap.action_erase_event(action, ev)
+					InputMap.action_add_event(action, mine)
+					_rebound.append([action, ev, mine])
+
+
+func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
+	for a in OS.get_cmdline_user_args() + OS.get_cmdline_args():
+		if a.begins_with("--e2e="):
+			active = true
+			var v: String = a.substr(6)
+			if v == "all" or v == "":
+				for k in SCENARIOS:
+					if not String(k).begins_with("_"):
+						_names.append(k)
+			else:
+				for k in v.split(","):
+					_names.append(k.strip_edges())
+		elif a.begins_with("--e2e-skip="):
+			for k in a.substr(11).split(","):
+				if k.strip_edges() != "":
+					_skip.append(k.strip_edges())
+		elif a == "--e2e-shots":
+			shots = true
+		elif a == "--e2e-selftest":
+			active = true
+			selftest = true
+		elif a == "--e2e-gate":
+			gate_default = true  # 창 모드 거름을 헤드리스에서도 켠다 (#369) — 대본이 표식 없는 마우스를 넣는지 창 없이 본다
+	if not active:
+		return
+	if not _skip.is_empty():
+		var kept: Array[String] = []
+		for n in _names:
+			if not _skip.has(n):
+				kept.append(n)
+		_names = kept
+	DevMode.is_active = true
+	SaveSystem.save_path = "user://save_e2e.json"
+	SaveSystem.delete_save()
+	OS.add_logger(_tap)
+	gate = InputGate.new()
+	gate_default = gate_default or DisplayServer.get_name() != "headless"
+	if selftest:
+		_run_selftest.call_deferred()
+	else:
+		_run_all.call_deferred()
+
+
+func _run_all() -> void:
+	# Main이 _ready를 끝내고 마을이 서기까지
+	await get_tree().process_frame
+	await get_tree().process_frame
+	var main: Node = get_tree().current_scene
+	print("E2E start: %s" % [", ".join(_names)])
+	if not _skip.is_empty():
+		var unknown: Array[String] = []
+		for k in _skip:
+			if not SCENARIOS.has(k):
+				unknown.append(k)
+		print("E2E skip: %s (단독 묶음 — 다른 실행이 따로 돈다, #553)%s" % [", ".join(_skip), "" if unknown.is_empty() else " · 없는 이름 %s" % ", ".join(unknown)])
+	_install_gate()
+	var total_fail := 0
+	var results: Array[String] = []
+	for name in _names:
+		if not SCENARIOS.has(name):
+			print("E2E %s FAIL (없는 시나리오)" % name)
+			results.append("E2E %s FAIL (없는 시나리오)" % name)
+			total_fail += 1
+			continue
+		var r: Dictionary = await _run_scenario(main, name, SCENARIOS[name])
+		results.append(r.line)
+		if not r.ok:
+			total_fail += 1
+	print("E2E SUMMARY: %d/%d PASS" % [results.size() - total_fail, results.size()])
+	for r in results:
+		print("  " + r)
+	get_tree().quit(1 if total_fail > 0 else 0)
+
+
+## 대본 하나를 돌리고 판정한다. 실제 실행과 자기검사가 **이 한 곳**을 같이 쓴다.
+## FAIL 조건 = 검사 실패 · 시간 초과 · **SCRIPT ERROR(대본이나 게임 코드)** · **엔진 ERROR 줄(#175)** · **검사 0**(아무것도 안 봤으면 초록일 수 없다).
+func _run_scenario(main: Node, name: String, path: String) -> Dictionary:
+	var tools := E2e.new(get_tree(), main, name, shots)
+	var script: GDScript = load(path)
+	if script == null or not script.can_instantiate():
+		var bad := "E2E %s FAIL (시나리오 스크립트 컴파일 실패)" % name
+		print(bad)
+		return {"ok": false, "line": bad, "fails": ["시나리오 스크립트 컴파일 실패"]}
+	var sc: E2eScenario = script.new()
+	sc.setup(tools)
+	_tap.reset()  # 게임 재시작 중 오류도 이 대본의 몫으로 센다 — 출발점이 깨졌으면 그 위의 검사도 못 믿는다
+	_reset_game(main)
+	await get_tree().process_frame
+	print("E2E ▶ %s" % name)
+	# 시험 전용 명중 확정 (#342) — 도호의 공격은 늘 맞는다(명중 상한 0.95의 5%에 검사가 떨어지지 않게). 대본이 정하고, 끝나면 끈다.
+	DamageCalc.sure_hit = sc.sure_hit()
+	Enemy.knockdown_on = sc.knockdown_on()   # 넘어짐 스위치 (#425) — 게임 기본 끔, 넘어짐을 재는 대본만 켠다. 끝나면 끈다
+	if not DamageCalc.sure_hit:
+		print("  · 명중 확정 끔 — 이 대본은 명중 굴림을 실전 그대로 쓴다 (#342)")
+	_finished = false
+	var blocked0 := gate.blocked
+	_run_one(sc)
+	var limit: float = sc.timeout_sec()   # 기본 60초, 판을 여러 번 도는 대본만 늘린다
+	var elapsed := 0.0
+	while not _finished and elapsed < limit:
+		await get_tree().process_frame
+		elapsed += get_process_delta_time()
+	DamageCalc.sure_hit = false
+	Enemy.knockdown_on = false
+	# 창 모드 거름 (#369) — 대본이 켜고 끈 것(자기검사)을 기본값으로. 창 모드면 진짜 커서가 끼어든 만큼을 한 줄로.
+	var blocked := gate.blocked - blocked0
+	gate.set_active(gate_default)
+	if gate_default and blocked > 0:
+		print("  · 거름: 표식 없는 마우스 이벤트 %d개 막음 (#369 — 창 모드면 진짜 커서, --e2e-gate 헤드리스면 대본이 표식 없이 넣은 것)" % blocked)
+	var extra: Array[String] = []
+	if not _finished:
+		extra.append("시간 초과 %.0fs" % limit)
+	var err := _tap.snapshot()
+	if err.script > 0:
+		extra.append("SCRIPT ERROR %d건 — 대본이 중간에 끊겼을 수 있다: %s" % [err.script, err.script_first])
+	if err.engine > 0:
+		extra.append("엔진 ERROR %d건 — 대본은 끝까지 돌았어도 신호·호출이 조용히 실패했을 수 있다: %s" % [err.engine, err.engine_first])
+	if tools.checks == 0:
+		extra.append("검사 0 — 아무것도 확인하지 않았다")
+	for m in extra:
+		tools.fails.append(m)
+		print("  ✗ %s" % m)
+	var ok := tools.fails.is_empty()
+	var line := "E2E %s %s (검사 %d%s)" % [name, "PASS" if ok else "FAIL", tools.checks, "" if ok else ", 실패 %d" % tools.fails.size()]
+	print(line)
+	return {"ok": ok, "line": line, "fails": tools.fails}
+
+
+func _run_one(sc: E2eScenario) -> void:
+	await sc.run()
+	_finished = true
+
+
+## 러너 자기검사 (#95). 망가진 대본은 FAIL, 멀쩡한 대본은 PASS로 나와야 러너를 믿을 수 있다.
+## FAIL이어야 하는 대본은 **그 이유로** FAIL이어야 한다(#175) — 사유 글자가 안 맞으면 판정 불일치로 센다.
+## ⚠ abort_mid·signal_call은 **일부러** SCRIPT ERROR·ERROR 줄을 낸다 — test.ps1·CI는 이 실행의 출력에서 오류 줄을 세지 않는다.
+func _run_selftest() -> void:
+	await get_tree().process_frame
+	await get_tree().process_frame
+	var main: Node = get_tree().current_scene
+	_install_gate()
+	var bad := 0
+	for name in SELFTEST:
+		var r: Dictionary = await _run_scenario(main, "selftest_" + name, SELFTEST[name][0])
+		var want: bool = SELFTEST[name][1]
+		var why: String = SELFTEST[name][2]
+		var fails: Array = r.fails
+		var why_ok: bool = why == "" or fails.any(func(f: String) -> bool: return f.contains(why))
+		var agree: bool = r.ok == want and why_ok
+		var want_s := "PASS" if want else "FAIL(%s)" % why
+		print("  %s %s — 기대 %s · 판정 %s%s" % ["✓" if agree else "✗", name, want_s, "PASS" if r.ok else "FAIL", "" if why_ok else " — 사유가 다르다: %s" % "; ".join(fails)])
+		if not agree:
+			bad += 1
+	print("E2E_SELFTEST %s (판정 일치 %d/%d)" % ["PASS" if bad == 0 else "FAIL", SELFTEST.size() - bad, SELFTEST.size()])
+	get_tree().quit(1 if bad > 0 else 0)
+
+
+## 시나리오마다 같은 출발점 — 본문은 E2e.reset_game(대본 안에서 판을 다시 하는 restart()와 한 곳).
+func _reset_game(main: Node) -> void:
+	E2e.reset_game(get_tree(), main)
+
+
+## 창 모드 거름을 루트 맨 끝에 붙이고 기본값으로 켠다/끈다 (#369). 주 장면(Main)이 선 뒤에 — 그래야 Main 뒤, 맨 끝이다.
+func _install_gate() -> void:
+	gate.install(get_tree().root)
+	gate.set_active(gate_default)
+	if gate_default:
+		print("  · 거름 켬 (%s) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)" % ("헤드리스 --e2e-gate" if DisplayServer.get_name() == "headless" else "창 모드"))

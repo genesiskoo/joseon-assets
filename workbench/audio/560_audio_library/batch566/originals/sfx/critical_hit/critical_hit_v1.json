@@ -1,0 +1,69 @@
+{
+ "cue": "critical_hit",
+ "v": 1,
+ "prompt": "One devastating blade strike into a large monster. Crisp cutting snap followed by deep dense body thud, controlled bass, short dry decay, no explosion, no voice, no music.",
+ "seconds": 0.7,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:09",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.67,
+ "lufs": "-11.4",
+ "peak": "0.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 672,
+   "sub20_pct": 6.6,
+   "dc": [
+    -0.0036,
+    -0.0038
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/critical_hit_v1.wav",
+   "duration": 0.68,
+   "lufs": "-11.4",
+   "true_peak": "0.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29547,
+   "at": 0.67,
+   "removed_ms": 10.0,
+   "floor_db": -88.8,
+   "jump_db": 40.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -5.96,
+   "why": "걸면 트루피크 여유가 6.0 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -11.53,
+    -11.93
+   ],
+   "intake_tp": [
+    3.19,
+    8.75
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 7.5,
+   "dc": [
+    -0.0036,
+    -0.0038
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-11.4",
+   "true_peak": "0.3"
+  },
+  "warn": [
+   "CLIP 672"
+  ]
+ }
+}

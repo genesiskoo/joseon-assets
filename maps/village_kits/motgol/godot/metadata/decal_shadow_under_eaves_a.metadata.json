@@ -1,0 +1,39 @@
+﻿{
+    "asset_id":  "decal_shadow_under_eaves_a",
+    "type":  "decal",
+    "category":  "decals",
+    "raw":  "generated/raw/decal_shadow_under_eaves_a.raw.png",
+    "processed":  "processed/decals/decal_shadow_under_eaves_a.png",
+    "canvas":  {
+                   "height":  256,
+                   "width":  256
+               },
+    "source_bbox":  {
+                        "y":  514,
+                        "width":  779,
+                        "height":  255,
+                        "x":  234
+                    },
+    "placed_rect":  {
+                        "y":  90,
+                        "width":  236,
+                        "height":  77,
+                        "x":  10
+                    },
+    "anchor_px":  {
+                      "y":  128,
+                      "x":  128
+                  },
+    "godot":  {
+                  "sprite_position":  {
+                                          "y":  -128,
+                                          "x":  -128
+                                      },
+                  "collision":  "manual_footprint_only",
+                  "y_sort":  "root_y",
+                  "root_position_is_anchor":  true,
+                  "sprite_centered":  false
+              },
+    "chroma_key":  "green",
+    "roof_split":  false
+}

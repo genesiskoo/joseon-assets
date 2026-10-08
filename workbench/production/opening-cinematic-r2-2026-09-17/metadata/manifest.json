@@ -1,0 +1,336 @@
+{
+  "date": "2026-09-17",
+  "version": "r2",
+  "status": "eight_second_review_cut_complete",
+  "scope": "OP11 A/B/C source shots and an eight-second edited scene",
+  "authorization": "User: 제작해; scope confirmed: 도호 8초 장면을 먼저 보고 방향 결정",
+  "asset_root": "C:/workspace/joseon-assets/workbench/production/opening-cinematic-r2-2026-09-17",
+  "plan": "C:/workspace/joseon/docs/design/opening_cinematic_revised_2026-09-17.md",
+  "image_tool": "built-in ImageGen, actual backend model ID not exposed",
+  "style_note": "Latest NPC B preference from STYLE_BIBLE v3; NPC_B_expressive used as rendering reference and prior Doho as costume/identity reference. New keyframes remain candidates.",
+  "keyframe_prompts": {
+    "A": "Create ONE cinematic start-frame image for an 8-second Joseon Hunters sequence, wide 16:9. This is a storyboard production keyframe, NOT a poster or a contact sheet.\nREFERENCE ROLES: first supplied image (NPC SET B) is ONLY the rendering/style authority: fine assured drawn contours, expressive mature Korean faces, broad matte shadow planes, simplified cloth and architecture, no photographic pores. Do not copy any of its three people or text. Second supplied image (Doho) is the protagonist identity and COSTUME reference: one adult male wandering swordsman, black gat, indigo/navy robe, white crossed collar, muted red sash, blue round ornaments, one sword, no scarf. Preserve recognizable facial identity and adult age while translating him to the SET B drawing style.\nSHOT A BEFORE THE ACTION: cool dawn at the FIRST CLOSED SHOP on the outer approach to fictional Motgol market. A plain weathered brown wooden double shutter with four vertical panels, two horizontal cross rails and one simple dark metal ring fills the right third. Its plaster-and-timber facade recedes toward screen right; the stone walking path continues right past it into the market. No written signs or letters.\nDoho occupies the left third, shown FULL BODY from the entire uncropped black gat to BOTH boots and their ground shadows, at least 6 percent head and foot margin. He is roughly two ordinary steps from the closed shutter, moving left-to-right; body and face turn three-quarter toward the shutter so his expression will remain visible. Frame the real gap to the door, the paving and the route onward. A natural poised walking start, front foot weighted, trailing heel slightly raised. The empty anatomical LEFT hand hangs at his side, ready later to knock on the door. His anatomical RIGHT hand grips the ONE sword hilt beside his RIGHT shoulder; the blade lies behind the upper back toward his LEFT. Use the reference shoulder-sword configuration, not a weapon-drawing pose. All sword parts inside the image; no spare sword or scabbard that could read as a second blade.\nGrounded 40mm-like waist-height camera on the street side, steady three-quarter view; no extreme perspective. Door and Doho share a single ground plane and believable scale. Soft cool ambient dawn, weak warm light from upper screen right, matte skin/cloth/wood/stone, restrained metal highlight only. Background simplified and subordinate. No additional people. No magic, combat, mist covering feet, motion blur, text, borders, logos, collage or decorative inset. The keyframe must make the upcoming APPROACH AND KNOCK physically possible.",
+    "B": "Edit the supplied Joseon Hunters keyframe into the next shot of the SAME moment. Same one Doho, exact face and clothes, same sword, same shop wood, light and matte drawn style. Do NOT redesign or add characters.\nTime has advanced only enough for Doho to walk up to the closed shutter. He now stands an arm's length from the exact same RIGHT-side shutter and has stopped. His empty anatomical LEFT hand is loosely closed, knuckles poised about 8 centimeters in FRONT OF an unadorned WOODEN panel at chest height, ready for ONE knock but NOT touching yet. His right hand still grips the one sword beside his right shoulder, blade resting behind his shoulders. Both arms must be clearly distinct; show the left elbow, forearm, fist and the tiny air gap to the wood. He looks at the closed panel with a neutral curious expression, lips fully closed; not smiling yet.\nChange framing to a closer eye-level medium shot from the SAME street-side camera axis, Doho on left half, door on right half; show entire black gat, right-hand grip, whole sword, face, torso, left forearm and door contact area. Same plain shutter cross rails and metal ring below the knock point, same panel proportions. Door remains closed. Keep realistic physical reach and natural wrist geometry. Broad matte values and fine drawn contours continue on skin, robes and wood, with cool dawn and restrained warm light from screen right. Wide16:9 full image, no text, no inset, no added props, no repeated sword, no motion blur.",
+    "B_revision": "Edit this exact frame with TWO surgical adjustments only: 1) pull the camera back just enough (roughly 12 percent wider framing) to show the complete top of the black gat with visible sky margin. Retain same camera angle and all sword/face/door proportions. 2) Move the raised LEFT fist and forearm back toward Doho by about 10 centimeters so the knuckles are visibly poised BEFORE contact with the wooden shutter, ready to knock. Do not change the door, ring, palette, face identity, wardrobe or the RIGHT-hand sword grip. Same one Doho, same exact drawn matte image style, widescreen16:9. The target remains a medium shot of Doho and this same door, not a full-body distant shot. No text or border.",
+    "C": "Create the next start frame of the SAME Joseon Hunters shop scene, using the two supplied frames as strict continuity references. First image is the close view of Doho and the exact wooden shutter. Second image gives the full body, boots, ground plane and wider location. Same one actor, face, clothing, door rails, ring, camera axis and dawn light; maintain the shared matte drawn style. No other characters.\nThis is SHOT C, immediately AFTER one unanswered knock. Doho is still standing near the SAME closed shutter, with his empty LEFT hand now LOWERED naturally beside his thigh. His RIGHT hand holds the single sword in the same shoulder pose. His face is neutral, lips closed, looking at the closed door; do NOT pre-render the smile or departure because those actions must happen in the video.\nPull back to a medium-wide FULL FIGURE composition. Include the entire gat, whole sword and both boots with clear floor shadows and 6 percent margins. Doho stands left of center at the shop; the wooden door remains behind and to his screen RIGHT. The paved walking path in FRONT of this facade must have obvious clear space extending toward screen right so he can turn and walk onward PAST the closed shop, not through the door. Widen on the same street side, do not reverse the angle or place the door on the left. His feet are planted in a relaxed stance just after waiting, preparing to leave. His head can turn toward the neighboring shutter in the subsequent video.\nCool dawn with weak warm light from upper screen right. Broad matte values, precise drawn contours, simplified subordinate background. Match black gat, indigo robe, white collar, muted red sash, blue ornaments, no scarf. Do not duplicate ornaments or add another sword. 16:9 single full-frame image; no inset, no panel, text, border, logo, motion blur or fog obscuring the feet."
+  },
+  "selected_keyframes": {
+    "A": "keyframes/OP11A_v001.png",
+    "B": "keyframes/OP11B_v002.png",
+    "C": "keyframes/OP11C_v001.png"
+  },
+  "requests": {
+    "A": {
+      "model": "seedance_2_5",
+      "mode": "omni_reference",
+      "duration": 4,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": false,
+      "bitrate_mode": "standard",
+      "count": 1,
+      "use_unlim": false,
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "5aa1e51f-a754-486a-a28d-88ed48fcd64d"
+        }
+      ],
+      "prompt": "A four-second cinematic action shot. Match the start frame's SAME Doho, shop, light and drawn matte style. Doho physically WALKS across the stone ground diagonally toward screen RIGHT to the closed wooden shop door. Two purposeful normal walking steps, real alternating boots lifting and planting, pelvis and shoulders transferring weight, robe reacting to each step. Cover the visible gap rather than walking in place or sliding the backdrop. Begin movement promptly after a very brief opening beat and reach the door within the first 2.5 seconds. Then plant both feet within arm's reach, turn his attention to the shutter and begin raising his empty LEFT hand toward the wood; finish before the knock. RIGHT hand keeps the ONE sword resting behind his shoulders in the original grip; left hand performs the free-arm action. The camera stays on the street side and gently reframes only if necessary to keep both feet and the door contact area visible. Keep the whole gat and blade inside frame. Door stays closed. No talking, no smile yet, no extra people, no text, no cut. Prioritize unmistakable locomotion and arrival over a static portrait."
+    },
+    "B": {
+      "model": "seedance_2_5",
+      "mode": "omni_reference",
+      "duration": 4,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": false,
+      "bitrate_mode": "standard",
+      "count": 1,
+      "use_unlim": false,
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "1fe373b6-08e8-45d2-9c04-b37579a3a59a"
+        }
+      ],
+      "prompt": "Four-second cinematic action shot of this EXACT Doho at this EXACT closed shutter. His LEFT fist is poised before contact. Within the first second he extends that forearm and the LEFT knuckles make ONE clear physical knock against the wooden door panel just beyond the jamb, not the metal ring. At the contact instant the knuckles stop against the wood; wrist and elbow absorb the tiny impact. Then he withdraws that hand toward his body and lowers it, and waits facing the STILL CLOSED door. The entire knock-and-withdraw action completes within the first two seconds; leave a clear quiet beat of unanswered waiting afterward. Exactly ONE knock, not a loop or drumming. Keep his RIGHT hand and the one sword in their shoulder grip; no weapon movement or second blade. Eyes stay on the door, lips closed, no smile yet. Natural-speed acting, same matte drawn identity, light, panel rails and ring position. Steady camera with a slight motivated push only; the action of the left hand must be unmistakable. No door opening, no dialogue or text, no cut."
+    },
+    "C": {
+      "model": "seedance_2_5",
+      "mode": "omni_reference",
+      "duration": 5,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": false,
+      "bitrate_mode": "standard",
+      "count": 1,
+      "use_unlim": false,
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "1d0c5c52-1b0c-4e69-a6e6-0827d0277bf9"
+        }
+      ],
+      "prompt": "Five-second continuous cinematic shot, the same Doho has just received no answer at this closed shop. Make a COMPLETE readable reaction-and-departure. During seconds 0–0.8 he looks from the closed door toward the next closed shop farther to screen RIGHT. During seconds 0.8–1.6 one eyebrow lifts and one corner of his CLOSED mouth forms a brief wry half-smile, with a tiny knowing head tilt: nobody is here, so he moves on. Then during seconds 1.6–4.6 he turns his torso toward screen RIGHT and ACTUALLY WALKS onward along the paved street IN FRONT OF the building, past the shut door, using three natural grounded steps. Show boots lifting and planting, pelvis shifting, robe and left arm swinging with his gait. Cover at least one body-width of real ground; not walking in place, not backdrop sliding, no slow motion. Finish with forward momentum carrying him toward the right side of frame. Keep the wooden door behind him shut. His RIGHT hand keeps the same ONE sword in the shoulder grip, and his LEFT hand stays empty and swings naturally. Same face, full gat, robe colors, door, matte drawn style and dawn light. Camera stays on the same street side and follows only after he begins walking; keep feet readable. No teeth, speech, extra people, text, combat or cuts."
+    }
+  },
+  "jobs": [
+    {
+      "index": 1,
+      "shot": "OP11A",
+      "job_id": "ba555676-e4b6-4320-90f5-836ede966f98"
+    },
+    {
+      "index": 2,
+      "shot": "OP11B",
+      "job_id": "1ff808bd-8212-4359-b65e-659437515fe4"
+    },
+    {
+      "index": 3,
+      "shot": "OP11C",
+      "job_id": "93331d47-7870-44b3-afab-684375fa2d36"
+    }
+  ],
+  "latest_status": {
+    "jobs": [
+      {
+        "index": 1,
+        "job_id": "ba555676-e4b6-4320-90f5-836ede966f98",
+        "status": "completed",
+        "type": "video",
+        "model": "seedance_2_5",
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_200326_ba555676-e4b6-4320-90f5-836ede966f98.mp4",
+        "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/5aa1e51f-a754-486a-a28d-88ed48fcd64d.jpg"
+      },
+      {
+        "index": 2,
+        "job_id": "1ff808bd-8212-4359-b65e-659437515fe4",
+        "status": "completed",
+        "type": "video",
+        "model": "seedance_2_5",
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_200723_1ff808bd-8212-4359-b65e-659437515fe4.mp4",
+        "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/1fe373b6-08e8-45d2-9c04-b37579a3a59a.jpg"
+      },
+      {
+        "index": 3,
+        "job_id": "93331d47-7870-44b3-afab-684375fa2d36",
+        "status": "completed",
+        "type": "video",
+        "model": "seedance_2_5",
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_201006_93331d47-7870-44b3-afab-684375fa2d36.mp4",
+        "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/1d0c5c52-1b0c-4e69-a6e6-0827d0277bf9.jpg"
+      }
+    ],
+    "summary": {
+      "total": 3,
+      "completed": 3,
+      "failed": 0,
+      "active": 0,
+      "errors": 0
+    },
+    "all_terminal": true
+  },
+  "video_estimate_credits": 84.5,
+  "actual_video_credits": null,
+  "balance_before": {
+    "credits": 2824,
+    "subscription_plan_type": "ultra",
+    "pricing_url": "https://higgsfield.ai/mcp-pricing",
+    "free_trial": {
+      "status": null,
+      "eligible": false,
+      "offered_kind": null,
+      "kind": null,
+      "trial_credits": null,
+      "ends_at": null,
+      "unlim_available": false,
+      "unlim_remaining": null,
+      "unlim_expires_at": null
+    },
+    "free_gens": [
+      {
+        "job_set_types": [
+          "hf_mult_motion_control",
+          "hf_mult_replace_object"
+        ],
+        "remaining": 1,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": 30
+      },
+      {
+        "job_set_types": [
+          "viral_hub_video"
+        ],
+        "remaining": 1,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": null
+      }
+    ]
+  },
+  "imagegen_calls": 4,
+  "editing": {
+    "tool": "Higgsedit 0.14.0 via Higgsfield sandbox_exec",
+    "status": "rendered_and_verified",
+    "duration_seconds": 8,
+    "fps": 24,
+    "frames": 192,
+    "width": 1280,
+    "height": 720,
+    "audio_tracks": 0,
+    "speed": 1,
+    "segments": [
+      {
+        "shot": "A",
+        "from_frame": 48,
+        "to_frame_exclusive": 96,
+        "timeline_start_frame": 0,
+        "duration_frames": 48
+      },
+      {
+        "shot": "B",
+        "from_frame": 0,
+        "to_frame_exclusive": 18,
+        "timeline_start_frame": 48,
+        "duration_frames": 18
+      },
+      {
+        "shot": "B",
+        "from_frame": 42,
+        "to_frame_exclusive": 72,
+        "timeline_start_frame": 66,
+        "duration_frames": 30
+      },
+      {
+        "shot": "C",
+        "from_frame": 18,
+        "to_frame_exclusive": 114,
+        "timeline_start_frame": 96,
+        "duration_frames": 96
+      }
+    ],
+    "render_result": {
+      "ok": true,
+      "diagnostics": [],
+      "fallbacks": [],
+      "backend": "cpu"
+    },
+    "video": "edit/doho_revised_8s_v001.mp4",
+    "project_archive": "edit/doho_revised_8s_v001_project.zip",
+    "note": "Elided one second of held hand-to-door contact in B. Three source shots, four timeline segments. No speed ramp or generated intermediate frames."
+  },
+  "game_imported": false,
+  "balance_after": {
+    "credits": 2739.5,
+    "subscription_plan_type": "ultra",
+    "pricing_url": "https://higgsfield.ai/mcp-pricing",
+    "free_trial": {
+      "status": null,
+      "eligible": false,
+      "offered_kind": null,
+      "kind": null,
+      "trial_credits": null,
+      "ends_at": null,
+      "unlim_available": false,
+      "unlim_remaining": null,
+      "unlim_expires_at": null
+    },
+    "free_gens": [
+      {
+        "job_set_types": [
+          "hf_mult_motion_control",
+          "hf_mult_replace_object"
+        ],
+        "remaining": 1,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": 30
+      },
+      {
+        "job_set_types": [
+          "viral_hub_video"
+        ],
+        "remaining": 1,
+        "parameters": {
+          "resolution": [
+            "480p",
+            "720p"
+          ]
+        },
+        "max_duration": null
+      }
+    ]
+  },
+  "observed_balance_delta": 84.5,
+  "billing_note": "Three completed jobs estimated 84.5 credits; balance changed 2824 to 2739.5. This is an observed aggregate delta, not a per-job ledger. One 26-credit correction request returned a transport error with no job ID; acceptance/billing remains unconfirmed; not resubmitted.",
+  "unconfirmed_retry": {
+    "shot": "OP11B_v002",
+    "status": "submission_outcome_unknown",
+    "job_id": null,
+    "estimate_credits": 26,
+    "params": {
+      "model": "seedance_2_5",
+      "mode": "omni_reference",
+      "duration": 4,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio": false,
+      "bitrate_mode": "standard",
+      "count": 1,
+      "use_unlim": false,
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "1fe373b6-08e8-45d2-9c04-b37579a3a59a"
+        }
+      ],
+      "prompt": "A four-second film shot, using this exact start image and character. The action is one CRISP KNOCK with a clearly visible RECOIL, then unanswered waiting. Doho's LEFT fist first pulls back from the door by about 20 centimeters, then briskly taps the wooden panel ONCE. Immediately upon touching the wood, the fist BOUNCES BACK toward his chest by about 15 centimeters in a quick elastic recoil. This is a light tap, not a punch or a push. The hand never rests against the wood. After the recoil he lowers his left hand all the way to his side and waits, looking at the closed door with a neutral expression. Complete pullback, one tap, recoil and hand-lowering within the first two seconds; the remaining time is the unanswered look. Natural quick wrist-and-elbow movement, no slow motion. RIGHT hand keeps one sword on the shoulder, no grip change; exact same face, gat, clothes, wooden door rails and single ring. Keep the camera still so the left fist's forward-and-back motion is clear. Door remains completely closed. No second tap, no door opening, no smile, dialogue, teeth, text, extra person or cut."
+    },
+    "raw_error": "failed to serialize JavaScript value: expected value at line 1 column 1",
+    "resubmitted": false
+  },
+  "outputs": [
+    {
+      "media_id": "6d60768a-687d-4bac-b402-e819e2e805d0",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/6d60768a-687d-4bac-b402-e819e2e805d0.mp4",
+      "confirmed": true
+    },
+    {
+      "media_id": "79e7c2e7-d6ce-4d00-af5b-407020d85b40",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/79e7c2e7-d6ce-4d00-af5b-407020d85b40.zip",
+      "confirmed": true
+    }
+  ],
+  "qa": {
+    "technical": "pass",
+    "review_status": "candidate_for_user_direction",
+    "methods": [
+      "full decode all source clips and final",
+      "4fps source frame review",
+      "final overview at 2fps and exact cut boundary frames",
+      "ffprobe frame count and archive CRC"
+    ],
+    "normal_speed_visual_playback_reviewed": false,
+    "limitations": [
+      "Knock remains softer than intended; 2.75-second edit elides held contact and introduces a small pose/camera jump.",
+      "Wry half-smile is subtle, not clearly readable at full-body size.",
+      "B to C framing widens and the apparent distance from the door changes.",
+      "End is a departure in progress, not a completely empty frame.",
+      "Warm dawn art was generated with the NPC B test brief; newer D-070 game-tone direction is not implemented in this candidate."
+    ]
+  }
+}

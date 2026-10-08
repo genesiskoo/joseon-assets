@@ -1,0 +1,39 @@
+﻿{
+    "asset_id":  "building_magistrate_a",
+    "type":  "building",
+    "category":  "buildings",
+    "raw":  "generated/raw/building_magistrate_a.raw.png",
+    "processed":  "processed/buildings/building_magistrate_a.png",
+    "canvas":  {
+                   "height":  512,
+                   "width":  512
+               },
+    "source_bbox":  {
+                        "y":  231,
+                        "width":  1109,
+                        "height":  742,
+                        "x":  71
+                    },
+    "placed_rect":  {
+                        "y":  98,
+                        "width":  471,
+                        "height":  315,
+                        "x":  20
+                    },
+    "anchor_px":  {
+                      "y":  375,
+                      "x":  256
+                  },
+    "godot":  {
+                  "sprite_position":  {
+                                          "y":  -375,
+                                          "x":  -256
+                                      },
+                  "collision":  "manual_footprint_only",
+                  "y_sort":  "root_y",
+                  "root_position_is_anchor":  true,
+                  "sprite_centered":  false
+              },
+    "chroma_key":  "green",
+    "roof_split":  false
+}

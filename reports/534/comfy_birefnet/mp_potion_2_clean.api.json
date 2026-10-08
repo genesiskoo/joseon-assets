@@ -1,0 +1,36 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "534/mp_potion_2_clean",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "BiRefNetRMBG",
+    "inputs": {
+      "image": [
+        "21",
+        0
+      ],
+      "model": "BiRefNet-general",
+      "mask_blur": 0,
+      "mask_offset": 0,
+      "invert_output": false,
+      "refine_foreground": false,
+      "background": "Alpha"
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "1d6444ce2fa1170aa186f1dfff4a10f8b7f56d0e7cc1670e1388e519cd9932f4.png"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "card": 132,
+  "asset": "palisade",
+  "provider": "Comfy Cloud",
+  "node": "TripoImageToModelNodeV2",
+  "model": "v3.1-20260211",
+  "source": "workbench/production/dungeon_props_132/refs/palisade.png",
+  "source_sha256": "525edcf0e4753ebee6e34970b758c3179fb8a0b0faa28a845c02d6bfc1347aae",
+  "face_limit": 6000,
+  "estimated_usd": 0.3,
+  "estimate_source": "live node price_badge on 2026-10-01",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T06:39:53.555063+00:00",
+  "prompt_id": "71b01a26-4b17-425f-b3f7-c31cf6e9bf9f",
+  "status_response": {
+    "assigned_inference": "10.4.53.31:8080",
+    "created_at": "2026-10-01T06:39:55.940513Z",
+    "id": "71b01a26-4b17-425f-b3f7-c31cf6e9bf9f",
+    "last_state_update": "2026-10-01T06:48:30.017583Z",
+    "status": "success",
+    "updated_at": "2026-10-01T06:48:30.017583Z"
+  },
+  "output": "palisade_h31_raw_v1.glb",
+  "output_sha256": "901578fa71987b08e6811b525d35622239a9f0d6f784305aee95d84a03b0a193",
+  "output_bytes": 1222012
+}

@@ -1,0 +1,29 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(skill_area)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (4.6초)
+== e2e (skill_area · 단독(창 모드) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\630-whirl-structure\\joseon","--","--e2e=skill_area","--e2e-shots"],"phase_arg":"skill_area","phase_tokens":["skill_area"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":21284,"launched_utc":"2026-10-05T22:37:24.9826642Z"}
+E2E start: skill_area
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ skill_area
+  · 참격: 반지름 2.20 · 각 120° · 칼이 닿는 시각 0.60초
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_01_slash_cast.png
+  · slash 타격 관측 physics=true · 물리시간 0.61666666666666448 · 실제틱 0.01666666666666667
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_02_slash_impact.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_03_slash_after.png
+  · 회오리베기: 반지름 2.50 · 칼이 닿는 시각 0.45초
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_04_whirl_cast.png
+  · whirl 타격 관측 physics=true · 물리시간 0.46666666666666501 · 실제틱 0.01666666666666667
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_05_whirl_impact.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_06_whirl_after.png
+  · 돌진베기: 길이 5.00 (벽에서 끊김 반영) · 반폭 1.10 · 칼이 닿는 시각 0.55초
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_07_dash_cast.png
+  · dash 타격 관측 physics=true · 물리시간 0.54999999999999849 · 실제틱 0.01666666666666667
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_08_dash_impact.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure/e2e/skill_area_09_dash_after.png
+E2E skill_area PASS (검사 93)
+E2E SUMMARY: 1/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\630-whirl-structure\joseon\tmp\e2e_raw\20261005T2237203376077_10852\phase_1_solo
+  e2e  (11.8초) — 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-630-whirl-structure\e2e
+전부 PASS

@@ -1,0 +1,82 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_516_A_seal_empress",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "d4524b4c6789855a804c3ac9b67124f69b58af7c7b1de17a26d459b2f045272a.png"
+    },
+    "is_changed": [
+      "62042344a397ce39de0c3ab4fbdc37132e6f34074ecb8628c41e0ac63bb5f8e0"
+    ]
+  },
+  "5": {
+    "_meta": {
+      "title": "이미지 미리보기"
+    },
+    "class_type": "PreviewImage",
+    "inputs": {
+      "images": [
+        "7",
+        0
+      ]
+    }
+  },
+  "7": {
+    "_meta": {
+      "title": "Painter"
+    },
+    "class_type": "Painter",
+    "inputs": {
+      "bg_color": "#000000",
+      "height": 896,
+      "image": [
+        "3",
+        0
+      ],
+      "mask": "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+      "width": 1024
+    },
+    "is_changed": [
+      "7e5d9d16ed6e913904aa6ce43bea7fd9804996f4930f5334022d626a2f12e76f"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "7",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 42,
+      "model.size_preset": "(2K) 2304x1728 (4:3)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "Create ONE new full-body character concept illustration of the final boss Gumiho for a dark Joseon fantasy isometric action RPG. Use the uploaded image as the exact approved identity and style reference: the SAME adult Korean woman, same recognizable face, long black hair, amber-gold eyes, Korean crimson and near-black layered hanbok with restrained antique-gold embroidery, and NINE separate natural golden fox tails. Direction A — The Seal Empress: a calm, terrifying sovereign who has just broken an ancient Joseon stone seal. Retain her elegant face and hanbok construction but elevate the silhouette for a final boss: a tall dark outer robe with broad Korean sleeves, cracked bronze seal rings and hanging talisman strips around her waist, one hand lifting a small ember of foxfire, the other revealing long dark claw-like nails. Arrange all nine large tails in a readable halo behind her, with soot-dark roots and warm gold tips; leave dark negative spaces between individual tails. Expression: cold, predatory, composed. Matte painterly Korean game concept art matching the reference, charcoal and oxblood palette with selective muted gold and ember orange. Strong readable silhouette at game camera distance, realistic cloth layering suitable for later 3D modeling. Full figure and all tails visible, centered against a simple deep charcoal background, cinematic rim light, no environment, no text, no captions, no contact sheet. Avoid Western fantasy armor, Chinese imperial dress, Japanese kimono, glossy anime, cute fox ears, exaggerated sexualization, extra limbs or fused tails."
+    }
+  }
+}

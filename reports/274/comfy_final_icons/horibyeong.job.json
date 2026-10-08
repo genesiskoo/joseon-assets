@@ -1,0 +1,41 @@
+{
+  "card": 274,
+  "asset": "horibyeong",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [],
+  "prompt_sha256": "179b488620aa5b5b8dc9cb5b3a9a21b449b8a41655bfeb2fd020fd9e126e71a1",
+  "width": 1024,
+  "height": 1536,
+  "background_requested": "transparent",
+  "quality": "high",
+  "seed": 2744021,
+  "workflow": "image_generate_clean",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T08:37:37.152875+00:00",
+  "prompt_id": "4ba721b7-5d4a-4c98-ad2a-a526cb4aa8bb",
+  "status_response": {
+    "assigned_inference": "10.4.15.167:8080",
+    "created_at": "2026-10-01T08:37:39.690874Z",
+    "id": "4ba721b7-5d4a-4c98-ad2a-a526cb4aa8bb",
+    "last_state_update": "2026-10-01T08:38:37.225203Z",
+    "status": "success",
+    "updated_at": "2026-10-01T08:38:37.225203Z"
+  },
+  "raw_output": "horibyeong_raw.png",
+  "raw_output_sha256": "28ab83dbe64384991d10f822db69cc54dfda12a49b842f42b90fa01777b18afb",
+  "actual_dimensions": [
+    1024,
+    1536
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_transparent_pixels": true,
+  "output": "horibyeong.png",
+  "output_sha256": "83bc07fbd3dda4e1f140f96eff2bda3d1e0906806adcc4befa47597067dd345c",
+  "output_bytes": 2011485
+}

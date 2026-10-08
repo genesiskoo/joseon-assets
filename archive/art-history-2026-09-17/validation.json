@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "moved_original_files": 142,
+  "archived_images": 100,
+  "all_moved_file_hashes_match": true,
+  "protected_files": 54,
+  "all_protected_file_hashes_match": true,
+  "current_h1_images": 23,
+  "current_h1_reference_paths_exist": true,
+  "public_urls_unchanged": true,
+  "html_pages": 6,
+  "local_links_checked": 411,
+  "missing_local_links": 0,
+  "browser_archive_render_and_return_to_current_gallery": "PASS",
+  "prior_untracked_metadata_preserved_as_untracked": [
+    {
+      "repo": "art",
+      "path": "art-direction/manifests/generations.csv"
+    },
+    {
+      "repo": "art",
+      "path": "art-direction/manifests/reference-sets.yaml"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+	"bag_cell": [
+		40,
+		40
+	],
+	"bag_padding": 8,
+	"candidate_count": 21,
+	"canvas_size": [
+		1280,
+		960
+	],
+	"card": 274,
+	"definition_binding": "design_only; null IDs; no ItemDef/GemDef creation",
+	"displayed_count": 20,
+	"filter": "linear",
+	"memory_resource_paths": [
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_red_grade_1.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_red_grade_2.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_red_grade_3.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_red_grade_4.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_black_grade_1.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_black_grade_2.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_black_grade_3.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_black_grade_4.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_blue_grade_1.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_blue_grade_2.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_blue_grade_3.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_blue_grade_4.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_white_grade_1.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_white_grade_2.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_white_grade_3.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_white_grade_4.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_yellow_grade_1.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_yellow_grade_2.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_yellow_grade_3.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_obang_jade_yellow_grade_4.png",
+		"res://assets/sprites/ui/icons_a/qa274/candidate_horibyeong.png"
+	],
+	"mode": "grayscale",
+	"runtime_itemdefs_modified": 0,
+	"runtime_png_modified": 0,
+	"sprite_source": "Comfy clean; mechanical crop/premultiplied resize/pad only",
+	"ui_functions": [
+		"UiSkin.item_slot",
+		"UiSkin.item_icon"
+	],
+	"ui_skin_source": "res://ui/ui_skin.gd",
+	"vendor_cell": [
+		48,
+		48
+	],
+	"vendor_padding": 3
+}

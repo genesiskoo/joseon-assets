@@ -1,0 +1,905 @@
+{
+  "card": 630,
+  "game_commit": "8914e7c0633dfb45b8450f9c3218081cf46cc51a",
+  "capture_source_hashes": {
+    "actors/actor_visual.gd": "6415a7fb122209c234c9641c168b46fa1f2d64c5e787306cdd216df123c5bd52",
+    "actors/player_combat.gd": "7bbf50d134fffa96ad37831a550509b47bfbe42c0c17d033ca8c779c8ae18837",
+    "actors/sword_trail.gd": "5d14ab15db6726248a245a30108a33d016e809f574677ef6ae8185ed0e34c476",
+    "core/vfx.gd": "f79be8ca46465370dc88700d588dc701112f0c4d586094d10b2f936815f0d3c0",
+    "core/vfx_meshes.gd": "b52a5c2b307c07b5bd190cc587549fcba03c6bf92e433055bee6632584795289",
+    "core/vfx_whirl.gd": "c7326ea0aade6b91e671715d40bb55a8fe92a54d787de52bb50ebea53533d6aa",
+    "core/vfx_whirl.gd.uid": "69d65a539eb25d7b141b3cad164696e3c4a126e40b9f53bba7c4b0463ac066b1",
+    "data/skills/blade_storm.tres": "2c1cc49e12a429a31c31b03219ad8e553c78fdc946867ad5c97d8730dc629906",
+    "data/skills/whirl.tres": "e5e80cc39c0a6c5a940a7ae2a9aa0d4bc2d3061778cff21ac61ac4796a6b69af"
+  },
+  "runtime_hashes_match": true,
+  "full_suite": {
+    "complete": true,
+    "unit_names": [
+      "test_affix_combat.gd",
+      "test_affixes.gd",
+      "test_animation_clock.gd",
+      "test_animation_sample.gd",
+      "test_animation_tick_sample.gd",
+      "test_aoe_field.gd",
+      "test_aoe_skills_2.gd",
+      "test_aoe_skills.gd",
+      "test_area_title.gd",
+      "test_aspd_steps.gd",
+      "test_asset_spec.gd",
+      "test_attack_chain.gd",
+      "test_attack_seam.gd",
+      "test_audio.gd",
+      "test_automap_data.gd",
+      "test_balance_rng.gd",
+      "test_balance.gd",
+      "test_beomgul.gd",
+      "test_body_arts.gd",
+      "test_body_navigation.gd",
+      "test_bongmil.gd",
+      "test_boss_uniques.gd",
+      "test_build_changers.gd",
+      "test_build_info.gd",
+      "test_bulgasari.gd",
+      "test_char_light.gd",
+      "test_character_profiles.gd",
+      "test_combat_trace.gd",
+      "test_combinations.gd",
+      "test_combo_codex.gd",
+      "test_cursor_pick.gd",
+      "test_damage_calc.gd",
+      "test_damage_popup.gd",
+      "test_data_index.gd",
+      "test_death_pick.gd",
+      "test_dialogue_band.gd",
+      "test_dialogue.gd",
+      "test_doho_moves.gd",
+      "test_dungeon_gen.gd",
+      "test_element_affixes.gd",
+      "test_elites.gd",
+      "test_enemy_ai.gd",
+      "test_enemy_cadence.gd",
+      "test_enemy_moves.gd",
+      "test_export_safety.gd",
+      "test_field_gen.gd",
+      "test_float_motion.gd",
+      "test_floor_label_stack.gd",
+      "test_footsteps.gd",
+      "test_game_clock.gd",
+      "test_hit_area.gd",
+      "test_hit_blood.gd",
+      "test_hud_resource_text.gd",
+      "test_ink_dissolve.gd",
+      "test_ink_wipe.gd",
+      "test_item_dictionary.gd",
+      "test_item_services_ui.gd",
+      "test_item_ui.gd",
+      "test_item_usage.gd",
+      "test_items.gd",
+      "test_jangsanbeom.gd",
+      "test_kill_fx.gd",
+      "test_knock_distance.gd",
+      "test_loot_sim.gd",
+      "test_loot.gd",
+      "test_mine.gd",
+      "test_models.gd",
+      "test_monster_data.gd",
+      "test_named.gd",
+      "test_pack_density.gd",
+      "test_player_resource_clock.gd",
+      "test_potion_regen.gd",
+      "test_profiles_restart.gd",
+      "test_progression.gd",
+      "test_pus_jar.gd",
+      "test_quad_family.gd",
+      "test_quest_journal.gd",
+      "test_quests.gd",
+      "test_recipes.gd",
+      "test_role_stats.gd",
+      "test_room_props.gd",
+      "test_roster.gd",
+      "test_sal.gd",
+      "test_save.gd",
+      "test_sets.gd",
+      "test_sockets.gd",
+      "test_stash.gd",
+      "test_stat_caps.gd",
+      "test_status.gd",
+      "test_surround.gd",
+      "test_sword_trail.gd",
+      "test_talismans.gd",
+      "test_title_first_launch.gd",
+      "test_town_gate.gd",
+      "test_town.gd",
+      "test_vfx_whirl.gd",
+      "test_vfx_world_glyph.gd",
+      "test_vfx.gd"
+    ],
+    "settings_phases": [
+      "write",
+      "read"
+    ],
+    "tool_names": [
+      "motion_audit.gd --selftest",
+      "look_audit.gd --selftest",
+      "robe_probe.gd --selftest",
+      "dungeon_stats.gd --selftest",
+      "unit_verdict.py --selftest",
+      "e2e_shards.py --selftest",
+      "vfx_sheet.py --selftest",
+      "audio_intake.py --selftest",
+      "portrait_intake.py --selftest",
+      "board.py --selftest",
+      "sfx_gen.py --selftest",
+      "balance_replay.py --selftest",
+      "combat_trace_compare.py --selftest",
+      "wt.py --selftest",
+      "doc_budget.py --selftest",
+      "albedo_ops.py --selftest",
+      "comfy_char.py --selftest",
+      "anim_retime.py --selftest",
+      "glb_pose.py --selftest",
+      "quad_gait.py --selftest",
+      "item_dictionary.py --selftest",
+      "export_check.py --selftest",
+      "build.py --selftest"
+    ],
+    "tool_skips": [],
+    "e2e_phases": [
+      [
+        10,
+        10
+      ],
+      [
+        131,
+        131
+      ]
+    ],
+    "e2e_aggregate": [
+      141,
+      141
+    ],
+    "e2e_scenarios": {
+      "balance_room": {
+        "pass": true,
+        "checks": 8
+      },
+      "balance_boss": {
+        "pass": true,
+        "checks": 30
+      },
+      "hit_stagger": {
+        "pass": true,
+        "checks": 20
+      },
+      "pack_perf": {
+        "pass": true,
+        "checks": 8
+      },
+      "bodies_cap": {
+        "pass": true,
+        "checks": 13
+      },
+      "gimmicks": {
+        "pass": true,
+        "checks": 33
+      },
+      "item_showcase": {
+        "pass": true,
+        "checks": 1704
+      },
+      "footsteps": {
+        "pass": true,
+        "checks": 13
+      },
+      "audio_cues": {
+        "pass": true,
+        "checks": 122
+      },
+      "sfx_limiter": {
+        "pass": true,
+        "checks": 11
+      },
+      "vfx_ramp_gallery": {
+        "pass": true,
+        "checks": 18
+      },
+      "character_profiles": {
+        "pass": true,
+        "checks": 38
+      },
+      "quest_journal": {
+        "pass": true,
+        "checks": 56
+      },
+      "hud_orb_fx": {
+        "pass": true,
+        "checks": 32
+      },
+      "npc_hover_view": {
+        "pass": true,
+        "checks": 77
+      },
+      "elite_ui_view": {
+        "pass": true,
+        "checks": 6
+      },
+      "hud_hierarchy_view": {
+        "pass": true,
+        "checks": 120
+      },
+      "pickup_feedback_view": {
+        "pass": true,
+        "checks": 3
+      },
+      "icon_intake": {
+        "pass": true,
+        "checks": 315
+      },
+      "automap": {
+        "pass": true,
+        "checks": 50
+      },
+      "pickup_equip": {
+        "pass": true,
+        "checks": 37
+      },
+      "equipment_ui": {
+        "pass": true,
+        "checks": 33
+      },
+      "inactive_gear": {
+        "pass": true,
+        "checks": 50
+      },
+      "sockets": {
+        "pass": true,
+        "checks": 16
+      },
+      "glyph_combo": {
+        "pass": true,
+        "checks": 26
+      },
+      "combination": {
+        "pass": true,
+        "checks": 26
+      },
+      "portal_roundtrip": {
+        "pass": true,
+        "checks": 18
+      },
+      "waypoint": {
+        "pass": true,
+        "checks": 12
+      },
+      "vendor_quest": {
+        "pass": true,
+        "checks": 54
+      },
+      "vendor_prices": {
+        "pass": true,
+        "checks": 12
+      },
+      "stash_roundtrip": {
+        "pass": true,
+        "checks": 50
+      },
+      "chief_quest": {
+        "pass": true,
+        "checks": 71
+      },
+      "boss_greetings": {
+        "pass": true,
+        "checks": 36
+      },
+      "shaman_heal": {
+        "pass": true,
+        "checks": 30
+      },
+      "respec": {
+        "pass": true,
+        "checks": 64
+      },
+      "save_continue": {
+        "pass": true,
+        "checks": 14
+      },
+      "held_save": {
+        "pass": true,
+        "checks": 27
+      },
+      "boss_floor": {
+        "pass": true,
+        "checks": 46
+      },
+      "boss_bulgasari": {
+        "pass": true,
+        "checks": 52
+      },
+      "bulgasari_path": {
+        "pass": true,
+        "checks": 15
+      },
+      "boss_uniques": {
+        "pass": true,
+        "checks": 37
+      },
+      "boss_jangsanbeom": {
+        "pass": true,
+        "checks": 42
+      },
+      "heukrang_look": {
+        "pass": true,
+        "checks": 4
+      },
+      "heukrang_pounce": {
+        "pass": true,
+        "checks": 11
+      },
+      "visual_swap": {
+        "pass": true,
+        "checks": 65
+      },
+      "run_upright": {
+        "pass": true,
+        "checks": 16
+      },
+      "teleport_settle": {
+        "pass": true,
+        "checks": 10
+      },
+      "hit_feel": {
+        "pass": true,
+        "checks": 27
+      },
+      "element_affix": {
+        "pass": true,
+        "checks": 7
+      },
+      "affix_combat": {
+        "pass": true,
+        "checks": 40
+      },
+      "attack_chain": {
+        "pass": true,
+        "checks": 21
+      },
+      "sword_trail_v2": {
+        "pass": true,
+        "checks": 93
+      },
+      "whirl_structure_v1": {
+        "pass": true,
+        "checks": 69
+      },
+      "aspd_steps": {
+        "pass": true,
+        "checks": 27
+      },
+      "skill_then_attack": {
+        "pass": true,
+        "checks": 64
+      },
+      "anim_commit": {
+        "pass": true,
+        "checks": 65
+      },
+      "player_resource_clock": {
+        "pass": true,
+        "checks": 73
+      },
+      "invisible_sword": {
+        "pass": true,
+        "checks": 68
+      },
+      "heavy_react": {
+        "pass": true,
+        "checks": 97
+      },
+      "pack_ai": {
+        "pass": true,
+        "checks": 46
+      },
+      "kill_slump": {
+        "pass": true,
+        "checks": 51
+      },
+      "kill_bisect": {
+        "pass": true,
+        "checks": 68
+      },
+      "slice_deaths": {
+        "pass": true,
+        "checks": 111
+      },
+      "monster_motion_gallery": {
+        "pass": true,
+        "checks": 71
+      },
+      "element_status": {
+        "pass": true,
+        "checks": 78
+      },
+      "element_ui": {
+        "pass": true,
+        "checks": 13
+      },
+      "element_sal": {
+        "pass": true,
+        "checks": 42
+      },
+      "talisman_targeting": {
+        "pass": true,
+        "checks": 75
+      },
+      "talisman_throw": {
+        "pass": true,
+        "checks": 56
+      },
+      "talisman_aoe": {
+        "pass": true,
+        "checks": 16
+      },
+      "loot_drop": {
+        "pass": true,
+        "checks": 24
+      },
+      "potion_icons": {
+        "pass": true,
+        "checks": 57
+      },
+      "potion_tiers": {
+        "pass": true,
+        "checks": 10
+      },
+      "loot_props": {
+        "pass": true,
+        "checks": 19
+      },
+      "elite_pack": {
+        "pass": true,
+        "checks": 52
+      },
+      "elite_slots": {
+        "pass": true,
+        "checks": 31
+      },
+      "flee_chase": {
+        "pass": true,
+        "checks": 35
+      },
+      "verify_flows": {
+        "pass": true,
+        "checks": 16
+      },
+      "player_death": {
+        "pass": true,
+        "checks": 27
+      },
+      "wall_cutaway": {
+        "pass": true,
+        "checks": 17
+      },
+      "floor_seams": {
+        "pass": true,
+        "checks": 3
+      },
+      "char_light": {
+        "pass": true,
+        "checks": 102
+      },
+      "town_layout": {
+        "pass": true,
+        "checks": 68
+      },
+      "town_approach": {
+        "pass": true,
+        "checks": 140
+      },
+      "bgm_hooks": {
+        "pass": true,
+        "checks": 23
+      },
+      "ui_windows": {
+        "pass": true,
+        "checks": 65
+      },
+      "story_cutin": {
+        "pass": true,
+        "checks": 32
+      },
+      "dialogue_band": {
+        "pass": true,
+        "checks": 78
+      },
+      "dialogue_event": {
+        "pass": true,
+        "checks": 50
+      },
+      "dialogue_choices": {
+        "pass": true,
+        "checks": 46
+      },
+      "ui_docks": {
+        "pass": true,
+        "checks": 61
+      },
+      "ui_tooltips": {
+        "pass": true,
+        "checks": 108
+      },
+      "belt_unify": {
+        "pass": true,
+        "checks": 15
+      },
+      "item_ui": {
+        "pass": true,
+        "checks": 42
+      },
+      "skill_picker": {
+        "pass": true,
+        "checks": 191
+      },
+      "skill_icons": {
+        "pass": true,
+        "checks": 81
+      },
+      "vfx_cues": {
+        "pass": true,
+        "checks": 151
+      },
+      "area_title": {
+        "pass": true,
+        "checks": 70
+      },
+      "ink_transition": {
+        "pass": true,
+        "checks": 62
+      },
+      "vfx_cap_blood": {
+        "pass": true,
+        "checks": 3
+      },
+      "hit_blood": {
+        "pass": true,
+        "checks": 73
+      },
+      "skill_area": {
+        "pass": true,
+        "checks": 93
+      },
+      "skill_tiers": {
+        "pass": true,
+        "checks": 72
+      },
+      "aoe_skills": {
+        "pass": true,
+        "checks": 66
+      },
+      "aoe_skills_2": {
+        "pass": true,
+        "checks": 68
+      },
+      "build_changers": {
+        "pass": true,
+        "checks": 88
+      },
+      "body_arts": {
+        "pass": true,
+        "checks": 66
+      },
+      "dungeon_layout": {
+        "pass": true,
+        "checks": 34
+      },
+      "beomgul_walk": {
+        "pass": true,
+        "checks": 46
+      },
+      "mine_walk": {
+        "pass": true,
+        "checks": 66
+      },
+      "bongmil_walk": {
+        "pass": true,
+        "checks": 110
+      },
+      "room_props": {
+        "pass": true,
+        "checks": 78
+      },
+      "town_exits": {
+        "pass": true,
+        "checks": 8
+      },
+      "field_layout": {
+        "pass": true,
+        "checks": 32
+      },
+      "field2_layout": {
+        "pass": true,
+        "checks": 20
+      },
+      "gate_hover": {
+        "pass": true,
+        "checks": 6
+      },
+      "pack_density": {
+        "pass": true,
+        "checks": 2
+      },
+      "slice_loop": {
+        "pass": true,
+        "checks": 29
+      },
+      "plaza_light": {
+        "pass": true,
+        "checks": 8
+      },
+      "town_tour": {
+        "pass": true,
+        "checks": 2
+      },
+      "aoe_field": {
+        "pass": true,
+        "checks": 20
+      },
+      "long_body": {
+        "pass": true,
+        "checks": 13
+      },
+      "named_imugi": {
+        "pass": true,
+        "checks": 13
+      },
+      "named_gaksi": {
+        "pass": true,
+        "checks": 19
+      },
+      "serpent_models": {
+        "pass": true,
+        "checks": 18
+      },
+      "pus_jar": {
+        "pass": true,
+        "checks": 15
+      },
+      "roles": {
+        "pass": true,
+        "checks": 24
+      },
+      "roster_swap": {
+        "pass": true,
+        "checks": 19
+      },
+      "gimmicks_m10": {
+        "pass": true,
+        "checks": 23
+      },
+      "behaviors_m9": {
+        "pass": true,
+        "checks": 13
+      },
+      "female_f1": {
+        "pass": true,
+        "checks": 7
+      },
+      "female_float": {
+        "pass": true,
+        "checks": 5
+      },
+      "yeogung_attacks": {
+        "pass": true,
+        "checks": 11
+      },
+      "nachalnyeo_attacks": {
+        "pass": true,
+        "checks": 16
+      },
+      "m14_models": {
+        "pass": true,
+        "checks": 13
+      },
+      "leader_options": {
+        "pass": true,
+        "checks": 20
+      },
+      "surround": {
+        "pass": true,
+        "checks": 7
+      },
+      "weapon_visibility": {
+        "pass": true,
+        "checks": 25
+      },
+      "first_magic": {
+        "pass": true,
+        "checks": 18
+      },
+      "hover_target": {
+        "pass": true,
+        "checks": 45
+      },
+      "system_menu": {
+        "pass": true,
+        "checks": 56
+      }
+    }
+  },
+  "windowed": {
+    "latest_per_scenario": {
+      "whirl_structure_v1": {
+        "pass": true,
+        "checks": 69,
+        "console": "test_windowed_final.raw.log"
+      },
+      "skill_tiers": {
+        "pass": true,
+        "checks": 72,
+        "console": "test_windowed_final.raw.log"
+      },
+      "aoe_skills_2": {
+        "pass": true,
+        "checks": 68,
+        "console": "test_windowed_final.raw.log"
+      },
+      "skill_area": {
+        "pass": true,
+        "checks": 93,
+        "console": "test_skill_area_windowed_final.raw.log"
+      },
+      "vfx_cues": {
+        "pass": true,
+        "checks": 151,
+        "console": "test_windowed_final.raw.log"
+      },
+      "pack_perf": {
+        "pass": true,
+        "checks": 8,
+        "console": "test_windowed_final.raw.log"
+      }
+    },
+    "passed": 6,
+    "total": 6,
+    "runs": [
+      {
+        "console": "test_windowed_01.raw.log",
+        "complete_pass": false,
+        "summaries": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "console": "test_windowed_final.raw.log",
+        "complete_pass": false,
+        "summaries": [
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "console": "test_skill_area_windowed_final.raw.log",
+        "complete_pass": true,
+        "summaries": [
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "phase_originals": [
+    {
+      "phase": "20261005T2224281593738_44800/phase_1_shared",
+      "consoles": [
+        "e2e_structure_01.raw.log"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_sec": 14.9882117,
+      "original_bytes": 15892,
+      "original_sha256": "b1a3c4651472f92811f688503e466e74a3b2855e95034ff9c57dac8eff2bf429",
+      "phase_json_bytes": 1246,
+      "phase_json_sha256": "87b91a6b891de1a17f900a5d1feefe0dae6b2e3644a99323fa25887daca68ff2"
+    },
+    {
+      "phase": "20261005T2226506676189_10652/phase_1_shared",
+      "consoles": [
+        "e2e_structure_02.raw.log"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_sec": 14.8939362,
+      "original_bytes": 4037,
+      "original_sha256": "85932498aaa18471caa29335f5dbffc480aa7dc061dff9f688c0f9c192edf091",
+      "phase_json_bytes": 1246,
+      "phase_json_sha256": "fd0bde0b8f799c1880cf10eaea6abf2f801b03231a53e6944ff0c64641d5af98"
+    },
+    {
+      "phase": "20261005T2229153414425_37532/phase_1_shared",
+      "consoles": [
+        "e2e_structure_03.raw.log"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_sec": 14.6508383,
+      "original_bytes": 3968,
+      "original_sha256": "d6ec366e5a53a0924e5b2961bb64bfe6a1bc803de74b801b23e124df0c2771ee",
+      "phase_json_bytes": 1246,
+      "phase_json_sha256": "9a71c675c1665be1e98b8972a90d24dad8d1d9105b3c4ac2569ec57bd740d606"
+    },
+    {
+      "phase": "20261005T2232318298981_26136/phase_1_solo",
+      "consoles": [
+        "test_windowed_01.raw.log"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_sec": 5.7454143,
+      "original_bytes": 1422,
+      "original_sha256": "f4a83d2ad0bdb949748e13bed0a2fc24317ec2999039e399721687a7fb926d1e",
+      "phase_json_bytes": 1408,
+      "phase_json_sha256": "5aeb1078cfcc66a4e2bcfbdc3d2d24d2256ca851812d935d796796791da20819"
+    },
+    {
+      "phase": "20261005T2233326065607_46548/phase_1_solo",
+      "consoles": [
+        "test_windowed_final.raw.log"
+      ],
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_sec": 110.7568964,
+      "original_bytes": 36493,
+      "original_sha256": "d3ac20bdf937aed025bb11e28a0971215c25c74ffdbf968585510f074fe0086c",
+      "phase_json_bytes": 1461,
+      "phase_json_sha256": "7741e5cac40b9e59cfd2e73a0e2fd0dcc01af1a97a3f985bf8cfc1770854d662"
+    },
+    {
+      "phase": "20261005T2237203376077_10852/phase_1_solo",
+      "consoles": [
+        "test_skill_area_windowed_final.raw.log"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_sec": 11.7783692,
+      "original_bytes": 5538,
+      "original_sha256": "d7c6a549775f9312d6ef1350d0d6a96428a3cad869c7dd14b88e94df065edb2b",
+      "phase_json_bytes": 1220,
+      "phase_json_sha256": "28d5505d8bd89c4e34a5ee49f297567929fc21004191bb4d27918a7216afe150"
+    },
+    {
+      "phase": "20261005T2247018510911_48840/phase_1_solo",
+      "consoles": [
+        "test_all_final.raw.log"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_sec": 197.016871,
+      "original_bytes": 101838,
+      "original_sha256": "f214db5d0e8766960ade863716acf5362bd21432a7aef21ba935d6ca3a205cf6",
+      "phase_json_bytes": 1622,
+      "phase_json_sha256": "6111d0dfa4a5210f76b6415900ddf027db1d3f374a377d7f3e2140b8a8761f5c"
+    },
+    {
+      "phase": "20261005T2247018510911_48840/phase_2_shared",
+      "consoles": [
+        "test_all_final.raw.log"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_sec": 1228.0397807,
+      "original_bytes": 733211,
+      "original_sha256": "29bbecdff615284cdef150e381efae48758b03d5d8145d69bb2ac55523dd931c",
+      "phase_json_bytes": 1560,
+      "phase_json_sha256": "552692fd03d20fadcd68c571bbb0490bec2d02f46d59fc6c3c6530fcbd82d7d5"
+    }
+  ],
+  "raw_phase_storage": "uncompressed",
+  "complete": true
+}

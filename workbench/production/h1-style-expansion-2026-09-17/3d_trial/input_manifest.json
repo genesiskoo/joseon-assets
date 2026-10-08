@@ -1,0 +1,36 @@
+{
+  "prepared_at": "2026-09-17T07:37:28.3809748+09:00",
+  "authorization": "PD approved full H1 expansion; parent authorized one initial generation per character, then rigging and isolated test, no main-game intake.",
+  "generation_count_limit_per_character": 1,
+  "ai_model": "latest (official live schema resolves this to Meshy 7; enables remove_lighting forwarding in MCP 0.5.1)",
+  "requested_height": {
+    "doho": 1.7,
+    "merchant": 1.6
+  },
+  "sources": [
+    {
+      "name": "doho_front.png",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-ebad1a1c-e64e-49c9-b94d-c6f7eddd4d87.png",
+      "copied_to": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\doho_front.png",
+      "sha256": "CF4AFD24933B4BDD578FBA410B539C7CC89F73AFBF631BC5D82ED2AFD44E1D1A"
+    },
+    {
+      "name": "doho_back.png",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-c86f4c22-12c0-49f7-9591-9fa35ab49a0e.png",
+      "copied_to": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\doho_back.png",
+      "sha256": "CCD6F65B9F922944DC9E8FC3D83444853D94094C076E1EE82D37507B954355E9"
+    },
+    {
+      "name": "merchant_front.png",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-5fb42af1-d867-4c6e-b380-31c038ea9bec.png",
+      "copied_to": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\merchant_front.png",
+      "sha256": "D90490F35980BCE6635720FA1153AEF0D7493AC55E1D136DFBDCF114764C98E5"
+    },
+    {
+      "name": "merchant_back.png",
+      "source": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-a0ad8aa1-f850-41e9-ad84-8e6859eee529.png",
+      "copied_to": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\merchant_back.png",
+      "sha256": "33708FDD143CEEE29EF572BA5CB01C26B901B8991DD9151139AFACA4B0D5ADD9"
+    }
+  ]
+}

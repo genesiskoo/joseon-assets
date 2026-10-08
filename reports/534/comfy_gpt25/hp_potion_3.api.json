@@ -1,0 +1,39 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "534/hp_potion_3",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Create ONE new isolated inventory item icon for Joseon Hunters, a Korean dark fantasy ARPG with Diablo II Resurrected style physical item icons. Match the referenced approved potion's painted material detail, confident dark contours, three-quarter viewpoint, restrained realistic highlights, amber studio lighting and clear silhouette. A tangible Korean medicinal potion container, elegantly readable at 40 pixels. The entire object and its attached cord/tassel must fit inside the square, occupying 82-88 percent of height, on a genuinely transparent background with a clean alpha edge. No ground plane, backdrop, cast shadow on an invisible floor, text, labels, letters, numbers, UI frames, borders, rarity-color background, particle effects or magical glow. A superior potion must LOOK like a more carefully made valuable vessel by better proportions, cleaner material, stopper quality, restrained craftsmanship and shape; don't merely recolor the basic container. Clear filled silhouette, readable in grayscale and against dark-brown bag cells. Keep a readable rim/cork and a bold cord attachment, details secondary to the main shape. Only one object, one coherent bottle, no catalog sheet, no hand or person, no modern medical vial. Do not reproduce the basic vessel unchanged.\n\nITEM:\nHIGH health potion: create the finest vessel in the approved brown/red health-potion family, a sealed slightly taller rounded Korean medicinal ceramic flask, dark oxblood brown glaze with broad polished highlights, a distinct short sculpted neck and firmly fitted ivory/aged-brass stopper. Red braided cord tied in a beautiful compact knot with a shorter deliberate tassel. Restrained shallow lotus-relief band formed into the body and one slim warm brass neck fitting, not a bulky gold crown. Exceptionally careful pottery and rich material, visibly more valuable than basic and mid-grade while remaining an ordinary tangible consumable. Wide rounded silhouette fits a 1x1 inventory cell, no ceremonial stand or base.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "Custom",
+      "model.custom_width": 1024,
+      "model.custom_height": 1024,
+      "model.background": "transparent",
+      "model.quality": "high",
+      "n": 1,
+      "seed": 5341002,
+      "model.images.image_1": [
+        "21",
+        0
+      ]
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "dbaae89f8e5ff2124fe1d3d8c007698a1a6bf1f186fe84e31ee469d743793398.png"
+    }
+  }
+}

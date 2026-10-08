@@ -1,0 +1,66 @@
+reports/133/chain_model_check.exit.json:1: trailing whitespace.
++{
+reports/133/chain_model_check.exit.json:2: trailing whitespace.
++  "command": "godot --headless -s tools/model_check.gd -- assets/models/props/chain.glb --kind=tile --height=.16127",
+reports/133/chain_model_check.exit.json:3: trailing whitespace.
++  "working_directory": "C:/Users/FORYOUCOM/.codex/worktrees/133-boss-props-handoff/joseon",
+reports/133/chain_model_check.exit.json:4: trailing whitespace.
++  "exit_code": 0,
+reports/133/chain_model_check.exit.json:5: trailing whitespace.
++  "raw_path": "reports/133/chain_model_check.raw.log"
+reports/133/chain_model_check.exit.json:6: trailing whitespace.
++}
+reports/133/chain_model_check.raw.log:1: trailing whitespace.
++Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+reports/133/chain_model_check.raw.log:2: trailing whitespace.
++
+reports/133/chain_model_check.raw.log:3: trailing whitespace.
++== model_check assets/models/props/chain.glb
+reports/133/chain_model_check.raw.log:4: trailing whitespace.
++노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+reports/133/chain_model_check.raw.log:5: trailing whitespace.
++삼각형 4370
+reports/133/chain_model_check.raw.log:6: trailing whitespace.
++AABB: 키 0.16 · 너비 1.00 · 깊이 1.00 · 발 y=0.00 · 중심 x=0.00 z=0.00
+reports/133/chain_model_check.raw.log:7: trailing whitespace.
++텍스처: Material_0_albedo 1024x1024
+reports/133/chain_model_check.raw.log:8: trailing whitespace.
++RESULT PASS
+reports/133/chain_model_check.raw.log:9: trailing whitespace.
++[DevMode] ON
+reports/133/chain_model_check.raw.log:10: trailing whitespace.
++[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+reports/133/doc_budget.raw.log:1: trailing whitespace.
++  PASS  AGENTS.md                            25,504 B / 예산 26,000
+reports/133/doc_budget.raw.log:2: trailing whitespace.
++  PASS  docs/DECISIONS.md                    16,723 B / 예산 22,000
+reports/133/doc_budget.raw.log:3: trailing whitespace.
++  PASS  docs/STATE.md                        15,133 B / 예산 16,000
+reports/133/doc_budget.raw.log:4: trailing whitespace.
++  PASS  세 문서 합                               57,360 B / 예산 70,000
+reports/133/doc_budget.raw.log:5: trailing whitespace.
++  PASS  STATE 줄 길이 ≤ 300자                    전부 안
+reports/133/doc_budget.raw.log:6: trailing whitespace.
++  PASS  .claude/agents/card-worker.md        4,612 B / 예산 8,000
+reports/133/doc_budget.raw.log:7: trailing whitespace.
++  PASS  docs/art 그림·영상 ≤ 2MB                 전부 안 · 400KB 넘는 옛 파일 89개(규약 전 것, 손대지 않음)
+reports/133/doc_budget.raw.log:8: trailing whitespace.
++  WARN  docs/design/item_system_v2.md 119,401 B > 60,000 (규칙/기록 가르기 #414·#415)
+reports/133/doc_budget.raw.log:9: trailing whitespace.
++  WARN  docs/design/monster_motion_v2.md 65,002 B > 60,000 (규칙/기록 가르기 #414·#415)
+reports/133/doc_budget.raw.log:10: trailing whitespace.
++  WARN  docs/design/monster_new_types_rules_2026-09-23.md 82,237 B > 60,000 (규칙/기록 가르기 #414·#415)
+reports/133/doc_budget.raw.log:11: trailing whitespace.
++  WARN  docs/design/monsters_v2.md 146,758 B > 60,000 (규칙/기록 가르기 #414·#415)
+reports/133/doc_budget.raw.log:12: trailing whitespace.
++  WARN  docs/design/testing.md 71,528 B > 60,000 (규칙/기록 가르기 #414·#415)
+reports/133/game_diff_check.exit.json:1: trailing whitespace.
++{
+reports/133/game_diff_check.exit.json:2: trailing whitespace.
++  "command": "git diff --cached --check",
+reports/133/game_diff_check.exit.json:3: trailing whitespace.
++  "repository": "game",
+reports/133/game_diff_check.exit.json:4: trailing whitespace.
++  "exit_code": 0
+reports/133/game_diff_check.exit.json:5: trailing whitespace.
++}

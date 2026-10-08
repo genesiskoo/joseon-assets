@@ -1,0 +1,19 @@
+  ⏳ 다른 자리가 e2e 중 (C:\workspace\joseon\.claude\worktrees\agent-a8d5a9fea2319310d · pid 18028 · 05:36) — 끝나면 이어서 돈다
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (10.9초)
+== e2e (system_menu,ui_windows,save_continue,story_cutin) ==
+E2E start: system_menu, ui_windows, save_continue, story_cutin
+E2E ▶ system_menu
+E2E system_menu PASS (검사 43)
+E2E ▶ ui_windows
+E2E ui_windows PASS (검사 65)
+E2E ▶ save_continue
+E2E save_continue PASS (검사 12)
+E2E ▶ story_cutin
+  · 컷인 조우 before tick=1199 intro=false signals=0 visible=false kind= paused=true menu=false distance=4.000
+  · 컷인 조우 after tick=1200 delta=1 opened=true intro=true signals=1 visible=true kind=boss paused=true menu=false
+  · 컷인 Esc tick=1202 intro=true signals=1 visible=false paused=false menu=false
+E2E story_cutin PASS (검사 26)
+E2E SUMMARY: 4/4 PASS
+  e2e  (49.3초) — 제한 3600초
+전부 PASS

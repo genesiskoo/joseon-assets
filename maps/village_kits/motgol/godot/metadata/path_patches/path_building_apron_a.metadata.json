@@ -1,0 +1,25 @@
+﻿{
+    "asset_id":  "path_building_apron_a",
+    "asset_type":  "ground_overlay",
+    "role":  "building entrance wear apron",
+    "texture_path":  "res://maps/village_kits/motgol/processed/path_patches/path_building_apron_a.png",
+    "canvas_size":  [
+                        512,
+                        256
+                    ],
+    "branch_openings":  [
+
+                        ],
+    "z_index":  -90,
+    "y_sort_enabled":  false,
+    "collision_enabled":  false,
+    "rotation_allowed":  true,
+    "texture_filter":  "nearest",
+    "source_model":  "gpt-image-2",
+    "source_method":  "built-in image_gen, chroma-key removal, local matte color normalization",
+    "base_terrain_family":  "motgol normalized-base-v2",
+    "import_notes":  "Keep lossless. Place over BaseTerrain/SecondaryTerrain. Branch endpoints are alpha-faded; overlap connected pieces by about 24 px.",
+    "branch_edge_fade_px":  20,
+    "baked_alpha_scale":  0.68,
+    "recommended_overlap_px":  24
+}

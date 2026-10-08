@@ -1,0 +1,378 @@
+{
+  "card": 625,
+  "candidate_only": true,
+  "adopted": false,
+  "game_intake": false,
+  "modeling_started": false,
+  "native_tool": "Codex builtin image_gen",
+  "model_version": "not exposed by tool",
+  "native": [
+    {
+      "candidate": "A",
+      "kind": "concept",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bytes": 2043719,
+      "sha256": "b0efd654b453990564bf40d2de0baa0cc7a73959e4625e400a0bb632c5dd139f"
+    },
+    {
+      "candidate": "B",
+      "kind": "concept",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bytes": 2039867,
+      "sha256": "87cf7d7b519746e54390f7034f704b7745459d5be6cdec62e6d0473dd22371a8"
+    },
+    {
+      "candidate": "A",
+      "kind": "front",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1687370,
+      "sha256": "80c72f3fb584aecc39f6ccbbb8520000ed72121a4f19a0e4b62161dfc5c2d9fd"
+    },
+    {
+      "candidate": "B",
+      "kind": "front",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1686390,
+      "sha256": "b1088205ad34c7f89f591f18dd1a57377a461115fd645dc50a93b8dc55847521"
+    },
+    {
+      "candidate": "A",
+      "kind": "left",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1627743,
+      "sha256": "230a38eda88adef552788979742df4a5849ea0d888adc62689a3db3591d9eac6"
+    },
+    {
+      "candidate": "A",
+      "kind": "back",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1721640,
+      "sha256": "2209d2d97e95fb816e5efdaea159ee37dcca3e45960e65b05093c6f145c3b133"
+    },
+    {
+      "candidate": "B",
+      "kind": "left",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1624842,
+      "sha256": "05e0dd52582b6bb590e0f0ff4f447024beec8d7cc80c867a9f20a4119a202f91"
+    },
+    {
+      "candidate": "B",
+      "kind": "back",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1703360,
+      "sha256": "927d66c1876f3a4b8b8dcace3f5b692ff7d854ee3c7e5b67456babda25a25342"
+    },
+    {
+      "candidate": "A",
+      "kind": "right",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1641538,
+      "sha256": "2e2482d359aaa17f30ad7306147658b279446a85f6d5a5463297a2c6e8a86740"
+    },
+    {
+      "candidate": "A",
+      "kind": "neutral",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 2435550,
+      "sha256": "db8ef898626a9cee2f572b70a73aac1345152a2426c09a8f6cda45614a64914f"
+    },
+    {
+      "candidate": "B",
+      "kind": "right",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "bytes": 1612947,
+      "sha256": "05b39da4f6c89e44cc649101459409602c663967a13fbc63acb19eb39be954c0"
+    },
+    {
+      "candidate": "B",
+      "kind": "neutral",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 2459277,
+      "sha256": "e1f7790d3a690b74674d430b785647c8d1e5c4035272da2e50ddf2f9d00a18cd"
+    },
+    {
+      "candidate": "A",
+      "kind": "neutral_r2",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 2272308,
+      "sha256": "e9bafa6ffc7b096011f801bdf2091d5edc3cc19b591d16c338bfdb2e0ca1d295"
+    },
+    {
+      "candidate": "A",
+      "kind": "botjim",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 1964127,
+      "sha256": "38058e2d026400bd635dfe254c54eecb3c10a0c1f4fe1b05bba795ff98b39e3a"
+    },
+    {
+      "candidate": "B",
+      "kind": "neutral_r2",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 2362187,
+      "sha256": "204d88a1e938136e235a88d413276cc54ecb0e9d0d2d3b10ba3eee717b715614"
+    },
+    {
+      "candidate": "B",
+      "kind": "botjim",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 1888474,
+      "sha256": "37f5c8fed7c16dc03473f68c15b7bd86d2ef987b13c13dbf00517bdcaa6bd4db"
+    },
+    {
+      "candidate": "A",
+      "kind": "neutral_r3",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 2234886,
+      "sha256": "14d0e072d5068c55ad8cd1f42269e396283af4a8bc920e1e455b08f5a7b280d2"
+    },
+    {
+      "candidate": "B",
+      "kind": "smile",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 2257776,
+      "sha256": "b400532d813b5fbf5cbc58159ce223734d0c04a3489e0824087ac1c76a1f1eba"
+    },
+    {
+      "candidate": "A",
+      "kind": "smile",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 2162323,
+      "sha256": "5ca0117fca6842deb3a25130dc38ec05be7862609fd12da7924ea0ec82c427cc"
+    }
+  ],
+  "raw_plus_review_bytes": 38643737,
+  "portrait_qc": {
+    "A": {
+      "neutral_kind": "neutral_r3",
+      "outside_face_alpha_iou": 0.997641286425027,
+      "outside_face_silhouette_difference_fraction": 0.0023587135749730255,
+      "outside_face_mean_rgb_difference_0_255": 6.091091607050891,
+      "face_roi": [
+        280,
+        210,
+        655,
+        645
+      ],
+      "geometric_alignment_gate": true,
+      "pixel_identical": false,
+      "neutral_r3": {
+        "top_used_y": 115,
+        "headroom_fraction": 0.07486979166666667,
+        "headroom_8pct_plus_minus_1_5pct": true,
+        "transparent_corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "alpha_min": 0,
+        "alpha_max": 254
+      },
+      "smile": {
+        "top_used_y": 115,
+        "headroom_fraction": 0.07486979166666667,
+        "headroom_8pct_plus_minus_1_5pct": true,
+        "transparent_corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "alpha_min": 0,
+        "alpha_max": 254
+      }
+    },
+    "B": {
+      "neutral_kind": "neutral_r2",
+      "outside_face_alpha_iou": 0.9981114006807382,
+      "outside_face_silhouette_difference_fraction": 0.0018885993192617472,
+      "outside_face_mean_rgb_difference_0_255": 6.530958246051877,
+      "face_roi": [
+        280,
+        250,
+        650,
+        680
+      ],
+      "geometric_alignment_gate": true,
+      "pixel_identical": false,
+      "neutral_r2": {
+        "top_used_y": 107,
+        "headroom_fraction": 0.06966145833333333,
+        "headroom_8pct_plus_minus_1_5pct": true,
+        "transparent_corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "alpha_min": 0,
+        "alpha_max": 254
+      },
+      "smile": {
+        "top_used_y": 107,
+        "headroom_fraction": 0.06966145833333333,
+        "headroom_8pct_plus_minus_1_5pct": true,
+        "transparent_corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "alpha_min": 0,
+        "alpha_max": 254
+      }
+    }
+  },
+  "reviews": [
+    {
+      "file": "01_eoksoe_ab_concepts.jpg",
+      "bytes": 224919,
+      "sha256": "fd5c48aa388b3d80a27057818a6c95a94ee7178869802937874860559f41ccfc",
+      "sources": [
+        "workbench/production/eoksoe_625/A/concept.png",
+        "workbench/production/eoksoe_625/B/concept.png"
+      ],
+      "layout_only_no_source_retouch": true
+    },
+    {
+      "file": "02_A_four_views.jpg",
+      "bytes": 136791,
+      "sha256": "cf32f30802e4df3f7c6d1aae2334f594caa2af13e676f22a4b997c12ec01b702",
+      "sources": [
+        "workbench/production/eoksoe_625/A/modeling/front.png",
+        "workbench/production/eoksoe_625/A/modeling/left.png",
+        "workbench/production/eoksoe_625/A/modeling/back.png",
+        "workbench/production/eoksoe_625/A/modeling/right.png"
+      ],
+      "layout_only_no_source_retouch": true
+    },
+    {
+      "file": "03_B_four_views.jpg",
+      "bytes": 126567,
+      "sha256": "ff6329845e38bec528c206187a3ea9176969f7265bf65a256a3151480232f900",
+      "sources": [
+        "workbench/production/eoksoe_625/B/modeling/front.png",
+        "workbench/production/eoksoe_625/B/modeling/left.png",
+        "workbench/production/eoksoe_625/B/modeling/back.png",
+        "workbench/production/eoksoe_625/B/modeling/right.png"
+      ],
+      "layout_only_no_source_retouch": true
+    },
+    {
+      "file": "04_A_expressions.jpg",
+      "bytes": 297267,
+      "sha256": "554313357618825b927a3242142400eac94384ee28b376a7d34d06dacbdca375",
+      "sources": [
+        "workbench/production/eoksoe_625/A/archive/neutral_r1.png",
+        "workbench/production/eoksoe_625/A/portrait/neutral_r3.png",
+        "workbench/production/eoksoe_625/A/portrait/smile_r1.png"
+      ],
+      "layout_only_no_source_retouch": true
+    },
+    {
+      "file": "05_B_expressions.jpg",
+      "bytes": 256816,
+      "sha256": "bdd18d701ae594347e30370e06bdf56e73d64a787547a2b62692dba62d4624dc",
+      "sources": [
+        "workbench/production/eoksoe_625/B/archive/neutral_r1.png",
+        "workbench/production/eoksoe_625/B/portrait/neutral_r2.png",
+        "workbench/production/eoksoe_625/B/portrait/smile_r1.png"
+      ],
+      "layout_only_no_source_retouch": true
+    },
+    {
+      "file": "06_botjim_ab_props.jpg",
+      "bytes": 175053,
+      "sha256": "93366a76491311e743cf011a1798e5d684c6c11f00ed2c4a18aac25e3f31816b",
+      "sources": [
+        "workbench/production/eoksoe_625/A/props/botjim.png",
+        "workbench/production/eoksoe_625/B/props/botjim.png"
+      ],
+      "layout_only_no_source_retouch": true
+    }
+  ],
+  "manual_tpose_inspection": "front/back horizontal arms, anatomical left/right true profiles with foreshortened arms; hat, vest, trousers and footwear checked; images do not establish a geometrically exact 3D turnaround",
+  "limits": [
+    "neutral/smile have minor coloring differences outside face; alpha/shape metrics are recorded",
+    "no 3D mesh or rig/animation validation yet",
+    "PD adoption required before game intake",
+    "literal 8% headroom is checked here with a ±1.5 percentage point tolerance, not claimed exact"
+  ]
+}

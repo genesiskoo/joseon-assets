@@ -1,0 +1,7 @@
+[gd_scene format=3]
+
+[node name="LightRadius" type="OmniLight3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0)
+light_color = Color(0.98, 0.92, 0.82, 1)
+light_energy = 2.2
+omni_range = 9.0

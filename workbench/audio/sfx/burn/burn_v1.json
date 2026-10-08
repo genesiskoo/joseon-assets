@@ -1,0 +1,70 @@
+{
+ "cue": "burn",
+ "v": 1,
+ "prompt": "A body catching fire and burning away to ash: sudden low whoosh of flame igniting, crackling embers, a soft crumbling of ash at the end, close-up, dry, isolated, no music, no voice",
+ "seconds": 1.2,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-09-28 19:38",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.159002,
+ "lufs": "-23.5",
+ "peak": "-1.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 118,
+   "sub20_pct": 87.1,
+   "dc": [
+    0.0048,
+    0.0023
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/burn_v1.wav",
+   "duration": 1.2,
+   "lufs": "-24.0",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 51112,
+   "at": 1.159,
+   "removed_ms": 41.0,
+   "floor_db": -83.8,
+   "jump_db": 33.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 3.6,
+   "why": "트루피크 여유 +3.6 LU",
+   "intake_i": [
+    -24.96,
+    -24.55
+   ],
+   "intake_tp": [
+    2.03,
+    -1.16
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 43.3,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -1.82,
+   "lufs": "-23.5",
+   "true_peak": "-1.8"
+  },
+  "warn": [
+   "CLIP 118",
+   "SUB20 43%"
+  ]
+ }
+}

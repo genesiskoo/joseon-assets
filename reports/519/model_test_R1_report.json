@@ -1,0 +1,81 @@
+{
+  "card": 519,
+  "date": "2026-09-30",
+  "source": "gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "source_selected_by_pd": "눈빛이나 느낌은 이게 가장 좋음",
+  "prompt": "gumiho_model_test_R1.prompt.txt",
+  "jobs": {
+    "GROK": {
+      "provider": "Comfy Cloud",
+      "model": "grok-imagine-image-2.0",
+      "source": "gumiho_C_gaze_pd_reference.png",
+      "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+      "seed": 5192301,
+      "requested_images": 1,
+      "requested_aspect_ratio": "2:3",
+      "requested_resolution": "2K",
+      "state": "downloaded",
+      "prompt_id": "8eb31ae7-96a4-4377-a102-9546a86d1a7e",
+      "status_response": {
+        "assigned_inference": "10.4.4.34:8080",
+        "created_at": "2026-09-30T06:58:58.621666Z",
+        "id": "8eb31ae7-96a4-4377-a102-9546a86d1a7e",
+        "last_state_update": "2026-09-30T06:59:28.578564Z",
+        "status": "success",
+        "updated_at": "2026-09-30T06:59:28.578564Z"
+      },
+      "output": "gumiho_519_T_GROK_R1.png",
+      "output_sha256": "1070f966e4b2066352005c837625ea578d6c84c57d9115866bce03e13a500753",
+      "prompt_file_sha256": "ff402d99ae9b38929b5ca78647a9bd0465cf9eeb28b645cb437425709c6a58b9",
+      "submitted_prompt_sha256": "dfa77abe6104990707b9e0b4ccde39a1d017c1a0433cd920434bb1e2bb9e44f2",
+      "submission_prompt_file_sha256": "ff402d99ae9b38929b5ca78647a9bd0465cf9eeb28b645cb437425709c6a58b9"
+    },
+    "SEEDREAM": {
+      "provider": "Comfy Cloud",
+      "model": "seedream 5.0 pro",
+      "source": "gumiho_C_gaze_pd_reference.png",
+      "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+      "seed": 5192301,
+      "requested_images": 1,
+      "requested_aspect_ratio": "2:3",
+      "requested_resolution": "2K",
+      "state": "downloaded",
+      "prompt_id": "9e2f351e-da12-4341-b99f-f37e07a4cefb",
+      "status_response": {
+        "assigned_inference": "10.4.20.219:8080",
+        "created_at": "2026-09-30T06:59:04.779606Z",
+        "id": "9e2f351e-da12-4341-b99f-f37e07a4cefb",
+        "last_state_update": "2026-09-30T07:01:37.761837Z",
+        "status": "success",
+        "updated_at": "2026-09-30T07:01:37.761837Z"
+      },
+      "output": "gumiho_519_T_SEEDREAM_R1.png",
+      "output_sha256": "9741e71e779bdcd2be48898739f8df77662f43e99c561ed2c94860ca6ca70903",
+      "prompt_file_sha256": "ff402d99ae9b38929b5ca78647a9bd0465cf9eeb28b645cb437425709c6a58b9",
+      "submitted_prompt_sha256": "dfa77abe6104990707b9e0b4ccde39a1d017c1a0433cd920434bb1e2bb9e44f2",
+      "submission_prompt_file_sha256": "ff402d99ae9b38929b5ca78647a9bd0465cf9eeb28b645cb437425709c6a58b9"
+    }
+  },
+  "GPT25": {
+    "state": "cancelled_by_pd_platform_change",
+    "generation_submitted": false,
+    "moderation_result": "not_tested",
+    "cost_without_reference": 1,
+    "project_id": "ff599057-39f5-4b5c-bec5-1ddf0f409739",
+    "cancel_reason_ko": "PD가 Comfy Cloud로 플랫폼을 변경했다. Higgsfield R1 작업은 제출하지 않았다. GPT2.5의 실제 Comfy R2 결과는 model_test_R2_report.json에 별도로 기록한다."
+  },
+  "review_ko": {
+    "GROK": "눈빛·미소와 턱 근처 손 연기를 유지한다. 피부 노출·핏자국·긴 손톱이 강하게 나왔다. 양쪽 소매가 남아 R1의 한쪽 소매 지시와 다르다.",
+    "SEEDREAM": "얼굴 형태·눈매가 참조에 더 가깝고 한쪽 소매·앞치마 매듭이 잘 남았다. Grok보다 유혈이 절제됐고 검은 피부 변질이 더 또렷하다.",
+    "shared_unresolved": "정확한 아홉 꼬리의 뿌리·가닥 수와 손톱 길이, 아이소 판독·3D 구조는 미검증. 두 장은 모델 테스트이며 본색 디자인 채택이 아니다."
+  },
+  "reproducibility_ko": "동일 얼굴 입력·동일 프롬프트·2K 2:3 각 1장. Grok 노드의 seed는 재실행 제어이며 결과가 비결정적이라는 스키마 설명을 따른다. 이 1회 결과로 모델의 일반적인 성향이나 검열 범위를 확정하지 않는다.",
+  "historical_previews": "historical_review_jpg/manifest.json",
+  "current_preview": "review_current/model_compare_R1.jpg",
+  "adopted_revealed_form": null,
+  "game_intake": false,
+  "prompt_file_sha256": "ff402d99ae9b38929b5ca78647a9bd0465cf9eeb28b645cb437425709c6a58b9",
+  "submitted_prompt_sha256": "dfa77abe6104990707b9e0b4ccde39a1d017c1a0433cd920434bb1e2bb9e44f2",
+  "prompt_hash_note_ko": "보존본은 LF로 저장한다. prompt_file_sha256은 보존 파일 바이트, submission_prompt_file_sha256은 최초 제출 당시 파일 바이트, submitted_prompt_sha256은 실제 API 그래프의 UTF-8 문자열 기준이다."
+}

@@ -1,0 +1,30 @@
+  PASS  AGENTS.md                            25,771 B / 예산 26,000
+  PASS  docs/DECISIONS.md                    18,255 B / 예산 22,000
+  PASS  docs/STATE.md                        14,776 B / 예산 16,000
+  PASS  세 문서 합                               58,802 B / 예산 70,000
+  PASS  STATE 줄 길이 ≤ 300자                    전부 안
+  PASS  .claude/agents/card-worker.md        4,733 B / 예산 8,000
+  PASS  docs/art 그림·영상 ≤ 2MB                 전부 안 · 400KB 넘는 옛 파일 89개(규약 전 것, 손대지 않음)
+  WARN  docs/design/item_system_v2.md 120,036 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monster_motion_v2.md 65,002 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monster_new_types_rules_2026-09-23.md 82,237 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monsters_v2.md 146,758 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/npcs_v2.md 78,073 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/quest_rework_dialogue_2026-10-01.md 71,627 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/testing.md 72,614 B > 60,000 (규칙/기록 가르기 #414·#415)
+[codex/466-approved-item-icons 3f82e617] docs(#466): preserve before and after icon review
+ 6 files changed, 127 insertions(+), 2 deletions(-)
+ create mode 100644 docs/art/466_item_icons/466_accessories_after.jpg
+ create mode 100644 docs/art/466_item_icons/466_armor_after.jpg
+ create mode 100644 docs/art/466_item_icons/466_gear_tomes_after.jpg
+ create mode 100644 docs/art/466_item_icons/README.md
+{
+  "commit": "3f82e617e8f6d32cde38fb0d4f00268417cd4ec8",
+  "clean": true,
+  "files": 6,
+  "JPG6_blob_verified": true,
+  "game_changes": 0,
+  "additional_tests": 0,
+  "main_landed": false,
+  "receipt": "C:\\workspace\\joseon\\._tmp\\intake_466_20261002\\worker\\VISUAL_GALLERY_COMMIT.json"
+}

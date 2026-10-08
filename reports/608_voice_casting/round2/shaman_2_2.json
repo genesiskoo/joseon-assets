@@ -1,0 +1,19 @@
+{
+  "role": "shaman",
+  "rank": 2,
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "name": "무당 할매 · 거친 노파 B",
+  "line": 1,
+  "file": "round2/audio/shaman_2_2.mp3",
+  "request": {
+    "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "무슨 일이 벌어진 게요?",
+    "next_text": "도사 양반밖에 없소.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  }
+}

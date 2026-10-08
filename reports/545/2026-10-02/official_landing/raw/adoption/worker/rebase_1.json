@@ -1,0 +1,35 @@
+{
+  "label": "rebase",
+  "args": [
+    "git",
+    "rebase",
+    "main"
+  ],
+  "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\545-title-redesign\\joseon",
+  "before_head": "dee170c97d9efb5ac3514cfd42eea7d7b19029d8",
+  "before_main": "2f0fa1548a3f91e83d6b03d8f78cde1d9b2bd847",
+  "started_at_epoch": 1790933192.9979117,
+  "preserved_bitmaps_before": {
+    "assets/sprites/ui/title_545/motgol.png": {
+      "bytes": 2027299,
+      "sha256": "7be70f3edf62496febd086b02ff8647182bc6089c557553007b19e233d46b02e"
+    },
+    "assets/sprites/ui/title_545/dungeon.png": {
+      "bytes": 2211657,
+      "sha256": "b429ec5429a802df401ec09011a04bde08c3d773947a6f005a1882f0aecfc7a7"
+    },
+    "assets/sprites/ui/title_545/logo.png": {
+      "bytes": 828918,
+      "sha256": "7d46106e309231f396ee7aa8f63b0e48a10b5d6d6089c2803df0ba73c55ae2e4"
+    },
+    "assets/portraits/idle/doho_h1_idle_frame0_alpha.png": {
+      "bytes": 285320,
+      "sha256": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f"
+    }
+  },
+  "returncode": 1,
+  "elapsed_seconds": 0.5863444805145264,
+  "after_head": "2afab4c27f54ed1c0054264f43a9ddf251e371af",
+  "after_main": "2f0fa1548a3f91e83d6b03d8f78cde1d9b2bd847",
+  "after_status": "A  core/character_profiles.gd\nA  core/character_profiles.gd.uid\nA  core/credits.gd\nA  core/credits.gd.uid\nM  core/save_system.gd\nA  docs/design/character_profiles_550.md\nA  docs/design/character_profiles_550_log.md\nM  tests/e2e/e2e.gd\nM  tests/e2e/e2e_runner.gd\nA  tests/e2e/scenarios/character_profiles.gd\nA  tests/e2e/scenarios/character_profiles.gd.uid\nUU tests/e2e/scenarios/system_menu.gd\nM  tests/e2e/scenarios/ui_windows.gd\nA  tests/test_character_profiles.gd\nA  tests/test_character_profiles.gd.uid\nA  tests/test_profiles_restart.gd\nA  tests/test_profiles_restart.gd.uid\nM  tests/test_title_first_launch.gd\nUU ui/system_menu.gd\nUU ui/title_ui.gd\nM  world/main.gd"
+}

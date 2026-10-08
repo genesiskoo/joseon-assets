@@ -1,0 +1,10 @@
+SCRIPT ERROR: Parse Error: Cannot infer the type of "c" variable because the value doesn't have a set type.
+   at: GDScript::reload (C:/workspace/joseon/._tmp/assets_464/workbench/production/item_icons_491/qa_godot.gd:90)
+SCRIPT ERROR: Parse Error: Cannot infer the type of "v" variable because the value doesn't have a set type.
+   at: GDScript::reload (C:/workspace/joseon/._tmp/assets_464/workbench/production/item_icons_491/qa_godot.gd:91)
+ERROR: Failed to load script "C:/workspace/joseon/._tmp/assets_464/workbench/production/item_icons_491/qa_godot.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+ERROR: Parameter "RenderingServer::get_singleton()" is null.
+   at: ~CompressedTexture2D (scene/resources/compressed_texture.cpp:464)
+WARNING: 2 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

@@ -1,0 +1,163 @@
+{
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "frames": 900,
+  "seconds": 30.0,
+  "audio": "source game music and effects; 25ms fades at cuts; no new soundtrack",
+  "sources_manifest": "C:\\workspace\\joseon-assets\\reports\\455\\final\\manifest.json",
+  "cuts": [
+    {
+      "label": "못골 보행",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\01_motgol_walk.mp4",
+      "source_sha256": "c8b3fe68549c6f817c1d4b08ef4148f8bf707b2fff3b258387d46078f2f40563",
+      "source_from_frame": 120,
+      "duration_frames": 90,
+      "timeline_from_frame": 0,
+      "timeline_to_frame": 90
+    },
+    {
+      "label": "할매 의뢰",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\02_dialogue_quest.mp4",
+      "source_sha256": "352eac0aa47c85c1bfd2e669faa24724458c99d3359d5f5d703fc950d6173069",
+      "source_from_frame": 24,
+      "duration_frames": 90,
+      "timeline_from_frame": 90,
+      "timeline_to_frame": 180
+    },
+    {
+      "label": "들녘 탐험",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\03_field_exploration.mp4",
+      "source_sha256": "7b96cfb0e1e0337ade4e81e29d9093cd9a721f47d7f130d8e48d7b03e2e72fe7",
+      "source_from_frame": 45,
+      "duration_frames": 60,
+      "timeline_from_frame": 180,
+      "timeline_to_frame": 240
+    },
+    {
+      "label": "굴 입장",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\04_cave_entry.mp4",
+      "source_sha256": "bbda32a42245f718fcdb9bb08f7a1a254ceb61584c08594e28cfd4aad1957ec3",
+      "source_from_frame": 75,
+      "duration_frames": 60,
+      "timeline_from_frame": 240,
+      "timeline_to_frame": 300
+    },
+    {
+      "label": "회오리·처치",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\05_dungeon_combat.mp4",
+      "source_sha256": "51aee342591559b6549789c1798a129d930c6d0999e2e14f53e06591b38e9e93",
+      "source_from_frame": 270,
+      "duration_frames": 90,
+      "timeline_from_frame": 300,
+      "timeline_to_frame": 390
+    },
+    {
+      "label": "다음 적 전투",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\05_dungeon_combat.mp4",
+      "source_sha256": "51aee342591559b6549789c1798a129d930c6d0999e2e14f53e06591b38e9e93",
+      "source_from_frame": 585,
+      "duration_frames": 90,
+      "timeline_from_frame": 390,
+      "timeline_to_frame": 480
+    },
+    {
+      "label": "검술 성장",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\08_skills_equipment.mp4",
+      "source_sha256": "ff81b7e1879f9292ee4d645e7cc1b00c8d3af3fc6e0223c3403d4bc8b3e4a0c3",
+      "source_from_frame": 24,
+      "duration_frames": 45,
+      "timeline_from_frame": 480,
+      "timeline_to_frame": 525
+    },
+    {
+      "label": "장비와 능력",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\08_skills_equipment.mp4",
+      "source_sha256": "ff81b7e1879f9292ee4d645e7cc1b00c8d3af3fc6e0223c3403d4bc8b3e4a0c3",
+      "source_from_frame": 195,
+      "duration_frames": 45,
+      "timeline_from_frame": 525,
+      "timeline_to_frame": 570
+    },
+    {
+      "label": "흑랑 전투·처치",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\06_heukrang_boss.mp4",
+      "source_sha256": "2098c3526a989216635b56758384d7f8c1f6067692ff21afe67c33bf2ebb72a6",
+      "source_from_frame": 600,
+      "duration_frames": 240,
+      "timeline_from_frame": 570,
+      "timeline_to_frame": 810
+    },
+    {
+      "label": "흑랑 송곳니 식별·옵션",
+      "source": "C:\\workspace\\joseon-assets\\reports\\455\\final\\07_loot_inventory.mp4",
+      "source_sha256": "ae14bce32942750c0786284ece586dcad62589bd3511a2214d07eb67a94450df",
+      "source_from_frame": 240,
+      "duration_frames": 90,
+      "timeline_from_frame": 810,
+      "timeline_to_frame": 900
+    }
+  ],
+  "output": "C:\\workspace\\joseon-assets\\reports\\456\\joseon_hunters_vertical_slice_30s.mp4",
+  "sha256": "b8d68fabe03f13430eafdfae0d31ab6d15de1235a207dabea8e6eaf97d16dff1",
+  "bytes": 12807038,
+  "verification": {
+    "decoded_video_frames": 900,
+    "duration_seconds": 30.0,
+    "audio_present_and_non_silent": true
+  },
+  "command": [
+    "C:\\Users\\FORYOUCOM\\miniconda3\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-y",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\01_motgol_walk.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\02_dialogue_quest.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\03_field_exploration.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\04_cave_entry.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\05_dungeon_combat.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\05_dungeon_combat.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\08_skills_equipment.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\08_skills_equipment.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\06_heukrang_boss.mp4",
+    "-i",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\07_loot_inventory.mp4",
+    "-filter_complex_script",
+    "C:\\workspace\\joseon-assets\\reports\\456\\filter_graph.txt",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-frames:v",
+    "900",
+    "-t",
+    "30",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "fast",
+    "-crf",
+    "18",
+    "-pix_fmt",
+    "yuv420p",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "192k",
+    "-ar",
+    "48000",
+    "-movflags",
+    "+faststart",
+    "C:\\workspace\\joseon-assets\\reports\\456\\joseon_hunters_vertical_slice_30s.mp4"
+  ]
+}

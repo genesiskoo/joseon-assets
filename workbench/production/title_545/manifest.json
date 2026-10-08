@@ -1,0 +1,71 @@
+{
+  "card": 545,
+  "status": "adopted_and_game_landed",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "entries": [
+    {
+      "id": "motgol",
+      "source": "reports/545/batch_A/A_motgol.png",
+      "source_sha256": "5177f2017597109e308e347301b873b01d414cc5897527d440f9f7d9c123c41f",
+      "source_crop": null,
+      "game_asset": "assets/sprites/ui/title_545/motgol.png",
+      "game_sha256": "7be70f3edf62496febd086b02ff8647182bc6089c557553007b19e233d46b02e",
+      "pixels_preserved": true,
+      "game_png_metadata_stripped": true,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "alpha_nonzero_fraction": 1.0,
+      "native_source_preserved": true
+    },
+    {
+      "id": "dungeon",
+      "source": "reports/545/batch_A/B_dungeon_gate.png",
+      "source_sha256": "4356e2d8ad191dd39982c18cbc49eae50010c25512e91fc25e4252c690d4f19f",
+      "source_crop": null,
+      "game_asset": "assets/sprites/ui/title_545/dungeon.png",
+      "game_sha256": "b429ec5429a802df401ec09011a04bde08c3d773947a6f005a1882f0aecfc7a7",
+      "pixels_preserved": true,
+      "game_png_metadata_stripped": true,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "alpha_nonzero_fraction": 1.0,
+      "native_source_preserved": true
+    },
+    {
+      "id": "logo",
+      "source": "reports/545/batch_A/logo_01.png",
+      "source_sha256": "766ab51f865899c8a35044b414fbe675d56f3981f36d23cbc3b4718b851f3ca7",
+      "source_crop": [
+        107,
+        244,
+        1422,
+        600
+      ],
+      "game_asset": "assets/sprites/ui/title_545/logo.png",
+      "game_sha256": "7d46106e309231f396ee7aa8f63b0e48a10b5d6d6089c2803df0ba73c55ae2e4",
+      "pixels_preserved": true,
+      "game_png_metadata_stripped": true,
+      "dimensions": [
+        1315,
+        356
+      ],
+      "alpha_nonzero_fraction": 0.1365,
+      "native_source_preserved": true
+    }
+  ],
+  "secret_hits": 0,
+  "manual_pixel_or_alpha_editing": false,
+  "art_adopted": true,
+  "selected_background": "motgol",
+  "logo_adopted": true,
+  "alternate_background_use": "dungeon_debug_comparison_only",
+  "approval": "reports/545/adoption_2026-10-02.json",
+  "main_landed": true,
+  "main_landed_commit": "c3e5be29e5d4a433f147bfc69783c6ac2a7cf586",
+  "landing_receipt": "reports/545/2026-10-02/official_landing/PRESERVATION.json"
+}

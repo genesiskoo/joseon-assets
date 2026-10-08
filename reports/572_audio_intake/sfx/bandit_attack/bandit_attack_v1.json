@@ -1,0 +1,69 @@
+{
+ "cue": "bandit_attack",
+ "v": 1,
+ "prompt": "One adult male bandit exertion grunt, no words, dry close. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:19",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.588005,
+ "lufs": "-14.9",
+ "peak": "0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 6,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/bandit_attack_v1.wav",
+   "duration": 0.6,
+   "lufs": "-14.9",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25931,
+   "at": 0.588,
+   "removed_ms": 12.0,
+   "floor_db": -92.3,
+   "jump_db": 24.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.04,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -14.92,
+    -14.92
+   ],
+   "intake_tp": [
+    3.01,
+    3.05
+   ]
+  },
+  "out": {
+   "over_full": 3,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.08,
+   "lufs": "-14.9",
+   "true_peak": "0.1"
+  },
+  "warn": [
+   "CLIP 6"
+  ]
+ }
+}

@@ -1,0 +1,1427 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E start: automap, pickup_equip, portal_roundtrip, waypoint, vendor_quest, save_continue, boss_floor, visual_swap, run_upright, hit_stagger, hit_feel, element_affix, attack_chain, heavy_react, kill_launch, kill_bisect, element_status, loot_drop, verify_flows, balance_room, balance_boss, player_death, wall_cutaway, floor_seams, char_light, town_layout, town_approach, audio_cues, sfx_limiter, ui_windows, dialogue_band, ui_docks, ui_tooltips, skill_picker, skill_icons, vfx_cues, footsteps, dungeon_layout, town_exits, field_layout, slice_loop, plaza_light, town_tour, aoe_field, item_showcase, first_magic
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ automap
+[Click] world=(-2.499363, 0.0, 2.500637) cell=(-3, 2)
+[Skill] 참격 → mp 46/50
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Dev] removed 54 enemies
+[Click] world=(88.5, 0.0, 3.500002) cell=(88, 3)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Click] world=(40.5, 0.0, 55.5) cell=(40, 55)
+[Click] world=(36.33801, 0.0, 54.49961) cell=(36, 54)
+[Click] world=(35.38278, 0.0, 50.42884) cell=(35, 50)
+[Click] world=(35.4882, 0.0, 46.34485) cell=(35, 46)
+[Click] world=(31.49911, 0.0, 43.35093) cell=(31, 43)
+[Click] world=(27.35615, 0.0, 44.4371) cell=(27, 44)
+[Click] world=(23.37507, 0.0, 48.57385) cell=(23, 48)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+[Dev] near boss hp=195/195
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Field] deulnyeok seed=2003693712 128x128 props=2321 packs=16 enemies=60 waypoint=(60, 60) roster=bandit,bat,talisman_master
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(60.5, 0.0, 60.5) screen=(3278.151, 1623.924)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E automap PASS (검사 50)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ pickup_equip
+[Dev] item 장검 world=(1.9, 0.0, 1.0) screen=(727.9384, 397.4098)
+[Dev] item 누비옷 world=(1.711841, 0.0, 1.824379) screen=(681.0747, 414.4106)
+[Dev] item 짚신 world=(1.184631, 0.0, 2.48548) screen=(626.0757, 417.9883)
+[Dev] item 은가락지 world=(0.42279, 0.0, 2.852363) screen=(573.8345, 407.4345)
+[Dev] item 탕약 world=(-0.42279, 0.0, 2.852363) screen=(534.6982, 384.8393)
+[Dev] item 식별부 world=(-1.184631, 0.0, 2.48548) screen=(516.4183, 354.6782)
+[Dev] item 무명띠 world=(-1.711841, 0.0, 1.824379) screen=(522.6152, 322.9248)
+[Dev] item 엽전 world=(-1.9, 0.0, 1.0) screen=(552.0616, 295.8683)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Dev] item 환도 world=(46.9, 0.0, 57.1) screen=(677.0266, 397.4309)
+[Click] world=(46.9, 0.642429, 57.1) cell=(46, 57)
+E2E pickup_equip PASS (검사 27)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ portal_roundtrip
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Dev] interact Portal world=(46.5, 0.0, 57.5) screen=(639.9998, 365.3647)
+[Portal] opened heukrang_gul 1층 pos=(46.5, 0.0, 57.5)
+[Click] world=(48.7, 0.0, 59.7) cell=(48, 59)
+[Click] world=(46.5, 0.0, 57.5) cell=(46, 57)
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(579.8315, 279.835)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Portal] travel → motgol 0층 portal={ "area": &"heukrang_gul", "floor": 1, "pos": (46.5, 0.0, 57.5), "returned": false }
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2181.236, -532.4963)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1107.462, 327.9336)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(468.7516, 108.8176)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1098.205, 151.572)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(450.2382, 194.3264)
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(579.8315, 279.835)
+[Click] world=(1.199998, 0.0, 4.8) cell=(1, 4)
+[Click] world=(-1.2, 0.0, 2.4) cell=(-2, 2)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Dev] interact Portal world=(46.5, 0.0, 57.5) screen=(593.7166, 287.8516)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Portal] travel → heukrang_gul 1층 portal={ "area": &"heukrang_gul", "floor": 1, "pos": (46.5, 0.0, 57.5), "returned": true }
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(547.4333, 255.7866)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(362.2998, -1614.715)
+[Dev] interact Portal world=(46.5, 0.0, 57.5) screen=(593.7166, 287.8516)
+[Click] world=(46.5, 0.0, 57.5) cell=(46, 57)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Portal] travel → motgol 0층 portal=<null>
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2181.236, -532.4963)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1107.462, 327.9336)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(468.7516, 108.8176)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1098.205, 151.572)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(450.2382, 194.3264)
+E2E portal_roundtrip PASS (검사 18)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ waypoint
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Dev] removed 54 enemies
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(4620.368, -652.7427)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(547.4333, 261.1302)
+[Click] world=(62.5, 0.0, 65.5) cell=(62, 65)
+[Waypoint] activated deulnyeok:0
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Waypoint] travel → motgol:0
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2324.714, -471.0371)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1250.94, 389.393)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(612.2299, 170.277)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1241.684, 213.0314)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(593.7167, 255.7858)
+[Click] world=(-4.2, 0.0, 2.2) cell=(-5, 2)
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Waypoint] travel → deulnyeok:0
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(4620.368, -652.7427)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(547.4333, 261.1302)
+E2E waypoint PASS (검사 12)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ vendor_quest
+[Click] world=(5.4, 0.0, -2.4) cell=(5, -3)
+[Vendor] buy 탕약 price=15 gold=85
+[Vendor] sell 귀환부 +10 gold=95
+[Click] world=(-5.6, 0.0, 0.4) cell=(-6, 0)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] flags={ "boss_quest": "killed" }
+[Click] world=(-5.6, 0.0, 0.4) cell=(-6, 0)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+E2E vendor_quest PASS (검사 22)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ save_continue
+[Kill] +100 xp (lv 3, 23/104)
+[LevelUp] lv=3 stat_pts=10 skill_pts=2
+[Dev] gold=500
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Load] lv=3 gold=500 flags={ "boss_quest": "accepted" } portal=<null> wps=[]
+E2E save_continue PASS (검사 12)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ boss_floor
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+[Dev] near boss hp=195/195
+E2E boss_floor PASS (검사 11)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ visual_swap
+[Click] world=(4.049217, 0.0, 1.049217) cell=(4, 1)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+E2E visual_swap PASS (검사 59)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ run_upright
+[Click] world=(10.5, 0.0, 11.5) cell=(10, 11)
+  · 달린 시간 1.50초 · 7.2칸 · 갱신 194(달리기 클립 194) · 머리−골반 최저 +0.442 (0.2 미만 0번) · 몸 뼈 최대 어긋남 0.0cm ()
+  · 옷 뼈 최대 흔들림(애니와 벌어진 각): Hem_L 28.3°, Hem_R 27.9°, Sleeve_L 82.8°, Sleeve_R 33.4°, SashTail 48.2°
+  · 순간이동 7.2칸 → 8번 잼 · 옷 뼈 최대 2.1° (Sleeve_R) · 몸 뼈 최대 0.0cm
+E2E run_upright PASS (검사 16)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ hit_stagger
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Click] world=(51.5, 0.000391, 56.5) cell=(51, 56)
+  · 넉백 실측 0.27유닛 (bandit def.knockback 0.35)
+  · 보스 넉백 실측 0.03유닛 (def.knockback 0.10)
+E2E hit_stagger PASS (검사 20)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ hit_feel
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Kill] +6 xp (lv 1, 6/20)
+[Kill] +6 xp (lv 1, 12/20)
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 엽전 world=(46.5, 0.0, 58.1) screen=(612.2299, 413.4637)
+[Dev] item 미식별 짚신 world=(46.5, 0.0, 58.1) screen=(612.2299, 413.4637)
+[Kill] +6 xp (lv 2, 4/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+[Dev] item 엽전 world=(46.9, 0.0, 58.1) screen=(630.7433, 424.1523)
+[Dev] item 미식별 옥패 world=(46.9, 0.0, 58.1) screen=(630.7433, 424.1523)
+[Audio] missing cue: drop_magic (파일 규약 design/audio.md §3)
+E2E hit_feel PASS (검사 27)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ element_affix
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+E2E element_affix PASS (검사 7)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ attack_chain
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+  · ① 칸 [0, 1, 2, 0, 1] · 클립 ["attack", "attack2", "attack3", "attack", "attack2"] · 섞기 ["0.25", "0.10", "0.10", "0.10", "0.10"]
+E2E attack_chain PASS (검사 21)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ heavy_react
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+  · ① 평타 1타: 뜬 높이 0.00 · 앞 0.18 · 옆 0.00 · 밀림 속도 3.67 · 반응 0.35초 · 클립 hit · 공격 0
+  · ② 평타 3타: 뜬 높이 0.00 · 앞 0.32 · 옆 0.00 · 밀림 속도 5.50 · 반응 0.35초 · 클립 hit · 공격 0
+  · ③ 강타(참격): 뜬 높이 0.52 · 앞 1.40 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.47초 · 클립 hit, die, idle · 공격 0
+  · ④ 회오리: 뜬 높이 0.47 · 앞 1.20 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.43초 · 클립 hit, die, idle · 공격 0
+  · ⑤ 돌진베기: 뜬 높이 0.00 · 앞 0.16 · 옆 0.00 · 밀림 속도 3.67 · 반응 0.33초 · 클립 hit · 공격 0
+  · ⑥ 부적술사 강타: 뜬 높이 0.52 · 앞 1.40 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.47초 · 클립 hit, die, idle · 공격 0
+  · ⑦ 박쥐 강타: 뜬 높이 0.69 · 앞 1.96 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.53초 · 클립  · 공격 0
+  · ⑧ 흑랑 강타(제외): 뜬 높이 0.00 · 앞 0.10 · 옆 0.00 · 밀림 속도 1.33 · 반응 0.15초 · 클립 hit · 공격 0
+  · ⑨ 쿨다운 3.0초: 넘어져 있는 1.45초 + 쿨다운 = 한 판 4.45초 중 33%가 누움 (쿨다운 0이면 강타 쿨 1.5초에 걸려 97%)
+  · ⑫ 돌진베기 넘어뜨리기 시험: 적 3.60u에서 맞아 4.90u에 누움 · 도호는 5.00u에 섬 → 사이 0.10u (겹침 문턱 0.80u) · 날아가는 내내 가장 가까웠던 거리 0.10u
+  · ── 표 | 타격 · 적 | 뜬 높이 | 앞 거리 | 밀림 속도 | 반응 | 클립
+  · 표 | ① 평타 1타 · 산적 | 0.00 | 0.18 | 3.67 | 0.35초 | hit
+  · 표 | ② 평타 3타 · 산적 | 0.00 | 0.32 | 5.50 | 0.35초 | hit
+  · 표 | ③ 강타(참격) · 산적 | 0.52 | 1.40 | 0.00 | 1.47초 | hit, die, idle
+  · 표 | ④ 회오리 · 산적 | 0.47 | 1.20 | 0.00 | 1.43초 | hit, die, idle
+  · 표 | ⑤ 돌진베기 · 산적 | 0.00 | 0.16 | 3.67 | 0.33초 | hit
+  · 표 | ⑥ 강타 · 부적술사 | 0.52 | 1.40 | 0.00 | 1.47초 | hit, die, idle
+  · 표 | ⑦ 강타 · 박쥐 | 0.69 | 1.96 | 0.00 | 1.53초 | (없음)
+  · 표 | ⑧ 강타 · 흑랑(제외) | 0.00 | 0.10 | 1.33 | 0.15초 | hit
+  · §6.6 구현 있음(2단계 판정선) · 넘어짐 = 날아감 + 누움 0.5초 + 일어남 0.45초 · 쿨다운 3.0초
+E2E heavy_react PASS (검사 97)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ kill_launch
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Kill] +6 xp (lv 1, 6/20)
+  · ① 평타 막타: 이동 0.00 · 누운 골반 0.19
+[Kill] +6 xp (lv 1, 12/20)
+[Dev] item 엽전 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 상품 무명띠 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 엽전 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 영약 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+  · ② 강타 막타: 멈춤 0.22초(게임) · 계산 2.24 + 미끄러짐 0.30 → 실측 앞 2.54 · 옆 0.00 · 누운 골반 0.11
+[Kill] +6 xp (lv 2, 4/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+[Dev] item 엽전 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 옥패 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Kill] +6 xp (lv 2, 10/57)
+[Dev] item 엽전 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 영약 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+  · ③ 돌진베기: 넘침 0 → 앞 2.38 · 넘침 최대 → 앞 3.42
+[Kill] +6 xp (lv 2, 16/57)
+[Kill] +6 xp (lv 2, 22/57)
+[Kill] +6 xp (lv 2, 28/57)
+[Dev] item 무명옷 world=(43.6, 0.0, 56.5) screen=(601.9543, 313.9227)
+[Kill] +6 xp (lv 2, 34/57)
+  · ⑤ 벽 앞: 벽까지 1.10 · 계산 3.12 → 가장 멀리 0.79 · 누운 자리 0.55 · 피 튐 크기 1.30 (보통 1.00)
+[Kill] +5 xp (lv 2, 39/57)
+[Dev] item 엽전 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 은가락지 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+  · ⑥ 박쥐 평타: 이동 0.00 · 모델 높이 0.88 → 0.19
+[Kill] +5 xp (lv 2, 44/57)
+[Dev] item 무명옷 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 탕약 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 식별부 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Kill] +120 xp (lv 4, 3/160)
+[LevelUp] lv=4 stat_pts=15 skill_pts=3
+[Dev] item 엽전 world=(44.5, 0.0, 54.5) screen=(732.5665, 290.5451)
+[Dev] item 미식별 무명 도포 world=(44.5, 0.0, 54.5) screen=(732.5665, 290.5451)
+[Dev] item 미식별 장검 world=(44.5, 0.0, 54.5) screen=(732.5665, 290.5451)
+[Dev] item 엽전 world=(44.5, 0.0, 54.5) screen=(732.5665, 290.5451)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Boss] killed area= level=1 flags={ "boss_quest": "killed", "boss_killed_": true }
+[Kill] +6 xp (lv 4, 9/160)
+[Dev] item 엽전 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+[Dev] item 무명옷 world=(43.6, 0.0, 56.5) screen=(598.3447, 319.9387)
+  · 시체 11 · 핏자국 19 (상한 32)
+E2E kill_launch PASS (검사 66)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ kill_bisect
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(22.5, 0.0, 49.5) screen=(681.6547, 368.0373)
+  · ① 평타 치명 (게임 75.5초에 막타 · +0.22초 갈라짐): 윗몸 옆으로 0.41 · 아랫몸 75° · 뿜음 4
+[Kill] +6 xp (lv 1, 12/20)
+[Dev] item 탕약 world=(22.5, 0.0, 51.1) screen=(607.6014, 410.7915)
+[Kill] +6 xp (lv 1, 18/20)
+  · ③ 강타 치명 (게임 77.5초에 막타): 윗몸 1.09u (계획 1.09) · 막타 방향 성분 0.78 · 최고 +0.11
+[Kill] +6 xp (lv 2, 4/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+[Dev] item 엽전 world=(19.5, 0.0, 49.5) screen=(681.6547, 368.0476)
+  · ⑦ 평타 (게임 79.5초에 막타): 칼 방향 (0.757965, 0.42944, -0.490989) · 칼끝 속도 (33.63464, 1.139097, -13.94698) → 단면 1.8° · 윗몸 계획 0.45u
+[Kill] +6 xp (lv 2, 10/57)
+[Dev] item 미식별 짚신 world=(25.5, 0.0, 34.5) screen=(681.6549, 368.0562)
+  · ⑦ 회오리베기 (게임 81.3초에 막타): 칼 방향 (-0.665481, 0.287291, -0.688911) · 칼끝 속도 (2.381347, -6.288931, -29.55576) → 단면 12.0° · 윗몸 계획 1.20u
+[Kill] +6 xp (lv 2, 16/57)
+  · ⑦ 참격 (게임 83.5초에 막타): 칼 방향 (-0.06531, -0.461736, -0.88461) · 칼끝 속도 (9.659663, -28.27179, -21.60569) → 단면 40.0° · 윗몸 계획 1.20u
+[Kill] +6 xp (lv 2, 22/57)
+[Dev] item 엽전 world=(22.5, 0.0, 47.9) screen=(-1003.059, 1233.813)
+[Dev] item 탕약 world=(22.5, 0.0, 47.9) screen=(-1003.059, 1233.813)
+[Kill] +6 xp (lv 2, 28/57)
+[Dev] item 영약 world=(22.5, 0.0, 47.9) screen=(-999.0527, 1227.135)
+[Kill] +6 xp (lv 2, 34/57)
+[Dev] item 철검 world=(22.5, 0.0, 47.9) screen=(-998.7938, 1226.703)
+[Kill] +5 xp (lv 2, 39/57)
+[Dev] item 은가락지 world=(22.5, 0.0, 47.9) screen=(-1003.059, 1233.812)
+[Kill] +120 xp (lv 3, 102/104)
+[LevelUp] lv=3 stat_pts=10 skill_pts=2
+[Dev] item 엽전 world=(22.5, 0.0, 51.1) screen=(-1147.375, 1313.003)
+[Dev] item 미식별 무명옷 world=(22.5, 0.0, 51.1) screen=(-1147.375, 1313.003)
+[Dev] item 미식별 은가락지 world=(22.5, 0.0, 51.1) screen=(-1147.375, 1313.003)
+[Dev] item 엽전 world=(22.5, 0.0, 51.1) screen=(-1147.375, 1313.003)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Boss] killed area= level=1 flags={ "boss_quest": "killed", "boss_killed_": true }
+[Kill] +6 xp (lv 4, 4/160)
+[LevelUp] lv=4 stat_pts=15 skill_pts=3
+[Dev] item 엽전 world=(22.5, 0.0, 47.9) screen=(-999.3692, 1227.662)
+  · 무대 17곳 · 단면 기울기 평타 1.8° · 회오리 12.0° · 참격 40.0° · 시체 11 · 핏자국 16
+E2E kill_bisect PASS (검사 61)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ element_status
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+  · 무대 = 방 [P: (15, 43), S: (14, 13)], 가로 11.0u
+[Dev] 한기 3초 → 산적
+  · 한기 이동 실측 2.27 / 3.50 = ×0.65 (사양 ×0.65)
+[Dev] 빙결 → 산적 (얼음)
+[Dev] 빙결 → 산적 (안 얼어 한기로)
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 은가락지 world=(18.5, 0.0, 50.5) screen=(686.2831, 424.1523)
+[Dev] item 탕약 world=(18.5, 0.0, 50.5) screen=(686.2831, 424.1523)
+[Kill] +6 xp (lv 1, 12/20)
+[Dev] item 엽전 world=(18.5, 0.0, 48.5) screen=(778.8499, 370.7094)
+[Dev] item 탕약 world=(18.5, 0.0, 48.5) screen=(778.8499, 370.7094)
+[Dev] removed 2 enemies
+[Dev] removed 0 enemies
+[Dev] 화상 3/초 × 2초 → 산적
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 상품 목검 world=(18.49029, 0.0, 49.07759) screen=(751.6677, 385.8839)
+[Dev] removed 3 enemies
+[Dev] removed 0 enemies
+[Click] world=(27.5, 0.0, 49.5) cell=(27, 49)
+[Dev] 도호 빙결 요청 → 한기 3.0초
+[Click] world=(27.5, 0.0, 49.5) cell=(27, 49)
+E2E element_status PASS (검사 78)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ loot_drop
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Dev] item 철검 world=(46.9, 0.0, 57.9) screen=(639.9998, 418.8081)
+[Dev] item 누비옷 world=(46.9, 0.0, 57.9) screen=(639.9998, 418.8081)
+[Dev] item 은가락지 world=(46.9, 0.0, 57.9) screen=(639.9998, 418.8081)
+[Dev] item 탕약 world=(46.9, 0.0, 57.9) screen=(639.9998, 418.8081)
+[Dev] item 엽전 world=(46.9, 0.0, 57.9) screen=(639.9998, 418.8081)
+[Dev] item 철검 world=(44.3, 0.0, 58.1) screen=(510.4065, 354.6765)
+[Dev] item 철검 world=(45.5, 0.0, 58.1) screen=(565.9465, 386.7422)
+[Dev] item  (철검) world=(46.7, 0.0, 58.1) screen=(621.4866, 418.808)
+[Audio] missing cue: drop_rare (파일 규약 design/audio.md §3)
+E2E loot_drop PASS (검사 16)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ verify_flows
+[Click] world=(-5.6, 0.0, 0.4) cell=(-6, 0)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+[Kill] +168 xp (lv 3, 91/104)
+[LevelUp] lv=3 stat_pts=10 skill_pts=2
+[Dev] item 엽전 world=(9.868139, 0.0, 9.478042) screen=(656.4791, -397.588)
+[Dev] item 미식별 환도 world=(9.868139, 0.0, 9.478042) screen=(656.4791, -397.588)
+[Dev] item 미식별 목검 world=(9.868139, 0.0, 9.478042) screen=(656.4791, -397.588)
+[Dev] item 엽전 world=(9.868139, 0.0, 9.478042) screen=(656.4791, -397.588)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "boss_quest": "killed", "boss_killed_heukrang_gul": true }
+  ✗ 피격 → hit 클립 재생 (attack)
+[Kill] +6 xp (lv 3, 97/104)
+E2E verify_flows FAIL (검사 13, 실패 1)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ balance_room
+  · 명중 확정 끔 — 이 대본은 명중 굴림을 실전 그대로 쓴다 (#342)
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(32.5, 0.0, 54.5) cell=(32, 54)
+[Click] world=(31.625, 0.0, 54.5) cell=(31, 54)
+[Click] world=(30.69168, 0.0, 54.5) cell=(30, 54)
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(29.54481, 0.0, 54.50081) screen=(694.4592, 375.4715)
+[Dev] item 영약 world=(29.54481, 0.0, 54.50081) screen=(694.4592, 375.4715)
+[Dev] item 귀환부 world=(29.54481, 0.0, 54.50081) screen=(694.4592, 375.4715)
+[Dev] item 미식별 은가락지 world=(29.54481, 0.0, 54.50081) screen=(694.4592, 375.4715)
+[Loot] 첫 매직 보장 — bandit (silver_ring ilvl 1) · 회차 1
+[Click] world=(30.14983, 0.0, 54.49553) cell=(30, 54)
+[Click] world=(30.16386, 0.0, 54.49822) cell=(30, 54)
+[Kill] +6 xp (lv 1, 12/20)
+[Click] world=(33.5, 0.0, 42.5) cell=(33, 42)
+[Click] world=(33.5, 0.0, 42.5) cell=(33, 42)
+[Click] world=(33.5, 0.0, 42.5) cell=(33, 42)
+[Click] world=(33.5, 0.0, 42.5) cell=(33, 42)
+[Click] world=(33.5, 0.0, 42.5) cell=(33, 42)
+[Click] world=(33.04627, 0.0, 42.95373) cell=(33, 42)
+[Click] world=(32.96906, 0.0, 43.67599) cell=(32, 43)
+[Click] world=(33.16014, 0.0, 44.46151) cell=(33, 44)
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 은가락지 world=(32.68197, 0.0, 45.44511) screen=(655.8508, 295.8067)
+  · 걸어감 4.3초 · 처치 3 · 14.9초 · 생명 110→71 (최저 71) · 적 공격 25 (명중 13) · Lv1
+E2E balance_room PASS (검사 8)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ balance_boss
+  · 명중 확정 끔 — 이 대본은 명중 굴림을 실전 그대로 쓴다 (#342)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+[Dev] near boss hp=195/195
+[Skill] 참격 → mp 46/50
+[Click] world=(7.828465, 0.000934, 9.383943) cell=(7, 9)
+[Click] world=(8.162446, 0.000934, 9.450831) cell=(8, 9)
+[Skill] 참격 → mp 43/50
+[Click] world=(8.074336, 0.000934, 9.448238) cell=(8, 9)
+[Click] world=(8.028508, 0.000934, 9.447315) cell=(8, 9)
+[Skill] 참격 → mp 40/50
+[Click] world=(7.943174, 0.000934, 9.444826) cell=(7, 9)
+[Skill] 참격 → mp 37/50
+[Skill] 참격 → mp 34/50
+[Click] world=(7.831747, 0.000934, 9.44136) cell=(7, 9)
+[Skill] 참격 → mp 31/50
+[Click] world=(7.745497, 0.000934, 9.438524) cell=(7, 9)
+[Skill] 참격 → mp 28/50
+[Click] world=(7.59411, 0.000934, 9.4332) cell=(7, 9)
+[Skill] 참격 → mp 25/50
+[Skill] 참격 → mp 22/50
+[Skill] 참격 → mp 19/50
+[Skill] 참격 → mp 16/50
+[Skill] 참격 → mp 13/50
+[Kill] +168 xp (lv 5, 7/224)
+[LevelUp] lv=5 stat_pts=10 skill_pts=3
+[Dev] item 엽전 world=(7.694666, 0.0, 9.439952) screen=(574.4349, 303.1672)
+[Dev] item 무명옷 world=(7.694666, 0.0, 9.439952) screen=(574.4349, 303.1672)
+[Dev] item 미식별 목검 world=(7.694666, 0.0, 9.439952) screen=(574.4349, 303.1672)
+[Dev] item 미식별 짚신 world=(7.694666, 0.0, 9.439952) screen=(574.4349, 303.1672)
+[Dev] item 엽전 world=(7.694666, 0.0, 9.439952) screen=(574.4349, 303.1672)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "boss_quest": "killed", "boss_killed_heukrang_gul": true }
+  · 흑랑 Lv3 처치 · 18.3초 · 2페이즈 9.9초 · 생명 130→67 (최저 39 = 30%) · 탕약 3/3 · 적 공격 30 (명중 19)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+[Dev] near boss hp=195/195
+[Skill] 참격 → mp 45/50
+[Click] world=(7.828465, 0.000934, 8.616055) cell=(7, 8)
+[Click] world=(8.141342, 0.000934, 8.549788) cell=(8, 8)
+[Skill] 참격 → mp 42/50
+[Click] world=(7.954664, 0.000934, 8.555281) cell=(7, 8)
+[Skill] 참격 → mp 38/50
+[Click] world=(7.845093, 0.000934, 8.558858) cell=(7, 8)
+[Click] world=(7.845093, 0.000934, 8.558858) cell=(7, 8)
+[Skill] 참격 → mp 35/50
+[Skill] 참격 → mp 31/50
+[Click] world=(7.769954, 0.000934, 8.561488) cell=(7, 8)
+[Skill] 참격 → mp 28/50
+[Click] world=(7.69186, 0.000934, 8.564385) cell=(7, 8)
+[Skill] 참격 → mp 24/50
+[Skill] 참격 → mp 21/50
+[Skill] 참격 → mp 17/50
+[Skill] 참격 → mp 14/50
+[Skill] 참격 → mp 10/50
+[Kill] +168 xp (lv 5, 168/224)
+[Dev] item 엽전 world=(7.701353, 0.0, 8.571416) screen=(565.1602, 304.4279)
+[Dev] item 미식별 철검 world=(7.701353, 0.0, 8.571416) screen=(565.1602, 304.4279)
+[Dev] item 미식별 미투리 world=(7.701353, 0.0, 8.571416) screen=(565.1602, 304.4279)
+[Dev] item 미식별 누비옷 world=(7.701353, 0.0, 8.571416) screen=(565.1602, 304.4279)
+[Dev] item 엽전 world=(7.701353, 0.0, 8.571416) screen=(565.1602, 304.4279)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "boss_quest": "killed", "boss_killed_heukrang_gul": true }
+  · 흑랑 Lv5 처치 · 15.9초 · 2페이즈 8.1초 · 생명 150→66 (최저 46 = 31%) · 탕약 2/3 · 적 공격 27 (명중 17)
+  · Lv5 목표 대조(이 판 — 판정은 25판 표 §9.7): 15.9초 (15~30) · 탕약 2 (1 안팎) · 최저 생명 31% (35~60)
+E2E balance_boss PASS (검사 20)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ player_death
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -20
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Click] world=(2.999607, 0.0, 0.999607) cell=(2, 0)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Click] world=(48.49961, 0.0, 56.49961) cell=(48, 56)
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -18
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -16
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+E2E player_death PASS (검사 27)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ wall_cutaway
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+  · stand=(48, 51) wall=(49, 52) player=(48.5, 0.000391, 51.5) 후보 116칸
+E2E wall_cutaway PASS (검사 17)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ floor_seams
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+  · 헤드리스 — 밝기 실측 생략
+E2E floor_seams PASS (검사 3)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ char_light
+  · 마을: 키 0.450 오는 쪽 (0.067, 0.643, 0.763) · 보조 0.060 오는 쪽 (-0.079, 0.423, -0.903) (카메라 자리 (0.577, 0.577, 0.577))
+  · 헤드리스 — town 스윕 [0.45, 0.15, 0.8] 픽셀 실측 생략 (배우 4명 · glTF 기본값 금속 재질 0)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+  · 던전 1층: 키 0.350 오는 쪽 (0.067, 0.643, 0.763) · 보조 0.047 오는 쪽 (-0.079, 0.423, -0.903) (카메라 자리 (0.577, 0.577, 0.577))
+  · 헤드리스 — dungeon 스윕 [0.35, 0.8, 1.5] 픽셀 실측 생략 (배우 5명 · glTF 기본값 금속 재질 0)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+  · 보스 층: 키 0.350 오는 쪽 (0.067, 0.643, 0.763) · 보조 0.047 오는 쪽 (-0.079, 0.423, -0.903) (카메라 자리 (0.577, 0.577, 0.577))
+E2E char_light PASS (검사 96)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ town_layout
+  · 광장→입구 내비 경로 41.1u
+  · 갈대 154포기
+  · 돌담 마디 59 · 바위 90 · 울타리 마디 1
+E2E town_layout PASS (검사 59)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ town_approach
+[Click] world=(-1.5, 0.0, -1.5) cell=(-2, -2)
+[Click] world=(-1.5, 0.0, -4.499999) cell=(-2, -5)
+[Click] world=(-2.5, 0.0, -4.499999) cell=(-3, -5)
+[Click] world=(-2.500001, 0.0, -6.5) cell=(-3, -7)
+[Click] world=(-4.500001, 0.0, -8.499999) cell=(-5, -9)
+[Click] world=(-6.5, 0.0, -9.499999) cell=(-7, -10)
+[Click] world=(-8.500002, 0.0, -11.5) cell=(-9, -12)
+[Click] world=(-10.0, 0.0, -13.0) cell=(-11, -14)
+[Click] world=(-8.5, 0.0, -16.5) cell=(-9, -17)
+[Click] world=(-7.5, 0.0, -19.5) cell=(-8, -20)
+[Click] world=(-5.5, 0.0, -21.5) cell=(-6, -22)
+[Click] world=(-3.5, 0.0, -21.5) cell=(-4, -22)
+[Click] world=(-1.5, 0.0, -23.5) cell=(-2, -24)
+[Click] world=(1.5, 0.0, -23.5) cell=(1, -24)
+[Click] world=(0.499998, 0.0, -26.5) cell=(0, -27)
+[Click] world=(0.5, 0.0, -27.5) cell=(0, -28)
+[Click] world=(0.0, 0.0, -28.6) cell=(0, -29)
+  · 문턱까지 클릭 주행 9.62s (캡처·입력 대기 포함)
+[Click] world=(-0.000002, 0.0, -31.0) cell=(-1, -32)
+[Click] world=(0.499999, 0.0, -27.5) cell=(0, -28)
+[Click] world=(1.5, 0.0, -24.5) cell=(1, -25)
+[Click] world=(1.5, 0.0, -23.5) cell=(1, -24)
+[Click] world=(-1.5, 0.0, -22.5) cell=(-2, -23)
+[Click] world=(-3.500002, 0.0, -21.5) cell=(-4, -22)
+[Click] world=(-6.5, 0.0, -19.5) cell=(-7, -20)
+[Click] world=(-7.500002, 0.0, -19.5) cell=(-8, -20)
+[Click] world=(-8.5, 0.0, -16.5) cell=(-9, -17)
+[Click] world=(-9.5, 0.0, -13.5) cell=(-10, -14)
+[Click] world=(-10.0, 0.0, -13.0) cell=(-10, -13)
+[Click] world=(-7.500002, 0.0, -11.5) cell=(-8, -12)
+[Click] world=(-6.500001, 0.0, -9.499999) cell=(-7, -10)
+[Click] world=(-4.5, 0.0, -7.499999) cell=(-5, -8)
+[Click] world=(-2.499998, 0.0, -6.5) cell=(-3, -7)
+[Click] world=(-2.500002, 0.0, -4.500002) cell=(-3, -5)
+[Click] world=(-1.5, 0.0, -1.5) cell=(-2, -2)
+[Click] world=(-2.000002, 0.0, 0.999998) cell=(-3, 0)
+[Click] world=(-4.500001, 0.0, -1.5) cell=(-5, -2)
+[Click] world=(-5.0, 0.0, -2.799999) cell=(-5, -3)
+[Click] world=(-7.500001, 0.0, -2.5) cell=(-8, -3)
+[Click] world=(-10.5, 0.0, -2.500001) cell=(-11, -3)
+[Click] world=(-12.8, 0.0, -2.799999) cell=(-13, -3)
+[Click] world=(-12.5, 0.0, -5.499998) cell=(-13, -6)
+[Click] world=(-12.8, 0.000002, -8.999998) cell=(-13, -9)
+[Click] world=(-12.5, 0.0, -5.499998) cell=(-13, -6)
+[Click] world=(-12.5, 0.0, -2.5) cell=(-13, -3)
+[Click] world=(-12.5, 0.0, 0.499998) cell=(-13, 0)
+[Click] world=(-12.5, 0.0, 3.5) cell=(-13, 3)
+[Click] world=(-12.5, 0.0, 6.5) cell=(-13, 6)
+[Click] world=(-12.5, 0.0, 9.5) cell=(-13, 9)
+[Click] world=(-12.5, 0.0, 11.5) cell=(-13, 11)
+[Click] world=(-9.5, 0.0, 11.5) cell=(-10, 11)
+[Click] world=(-6.500001, 0.0, 11.5) cell=(-7, 11)
+[Click] world=(-8.500002, 0.0, 9.499998) cell=(-9, 9)
+[Click] world=(-11.5, 0.0, 9.5) cell=(-12, 9)
+[Click] world=(-11.5, 0.0, 6.5) cell=(-12, 6)
+[Click] world=(-11.5, 0.0, 3.499998) cell=(-12, 3)
+[Click] world=(-11.5, 0.0, 0.5) cell=(-12, 0)
+[Click] world=(-9.5, 0.0, -1.5) cell=(-10, -2)
+[Click] world=(-6.500002, 0.0, -1.500005) cell=(-7, -2)
+[Click] world=(-3.500002, 0.0, 0.5) cell=(-4, 0)
+[Click] world=(-0.499999, 0.0, 1.5) cell=(-1, 1)
+[Click] world=(0.000002, 0.0, 1.000002) cell=(0, 1)
+[Click] world=(1.5, 0.0, 3.5) cell=(1, 3)
+[Click] world=(4.499998, 0.0, 3.5) cell=(4, 3)
+[Click] world=(7.499998, 0.0, 5.5) cell=(7, 5)
+[Click] world=(8.5, 0.0, 5.5) cell=(8, 5)
+[Click] world=(9.5, 0.0, 8.500002) cell=(9, 8)
+[Click] world=(11.2, 0.0, 10.6) cell=(11, 10)
+[Click] world=(16.4, 0.0, 11.4) cell=(16, 11)
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Dev] removed 54 enemies
+[Click] world=(2.5, 0.0, 64.5) cell=(2, 64)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(1959.075, -1115.024)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(885.3018, -254.594)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(246.5916, -473.7099)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(876.0451, -430.9556)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(228.0781, -388.2012)
+E2E town_approach PASS (검사 134)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ audio_cues
+[Click] world=(4.049217, 0.0, 1.049217) cell=(4, 1)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+  · Music 플레이어 재생 중 3 (헤드리스 드라이버에 따라 0일 수 있음)
+[Audio] BGM dungeon → dungeon_2.ogg
+[Audio] BGM dungeon → dungeon_1.ogg
+[Audio] BGM dungeon → dungeon_3.ogg
+[Audio] BGM dungeon → dungeon_4.ogg
+[Audio] BGM dungeon → dungeon_3.ogg
+[Audio] BGM dungeon → dungeon_2.ogg
+[Audio] BGM dungeon → dungeon_4.ogg
+[Audio] BGM dungeon → dungeon_1.ogg
+  · 곡 순환 9곡: dungeon_1 → dungeon_2 → dungeon_1 → dungeon_3 → dungeon_4 → dungeon_3 → dungeon_2 → dungeon_4 → dungeon_1
+[Click] world=(49.49961, 0.0, 56.49961) cell=(49, 56)
+  · 보통 타격 8번 피치×귀 피로: 0.990×1.0, 0.944×1.0, 1.021×1.0, 0.956×1.0, 1.022×1.0, 0.989×0.8, 1.021×0.8, 0.975×0.8
+  · 치명 8번 피치×귀 피로: 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0, 1.000×1.0
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 철검 world=(48.41662, 0.0, 57.7) screen=(584.4597, 376.0537)
+[Dev] item  (철검) world=(48.41662, 0.0, 57.7) screen=(584.4597, 376.0537)
+[Audio] missing cue: no_such_cue_zzz (파일 규약 design/audio.md §3)
+[Kill] +100 xp (lv 2, 50/57)
+[LevelUp] lv=2 stat_pts=5 skill_pts=1
+  · 레벨업 추임새 doho_levelup = 레벨업 615 ms 뒤
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+E2E audio_cues PASS (검사 57)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ sfx_limiter
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+  · stop_music 뒤에도 돌던 음악 플레이어: town.ogg -40.0 dB
+  · 소리 하나(enemy_die_1.wav): 끔 -1.500 · 켬 -1.500 dBFS
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 엽전 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Dev] item 무명 도포 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+  · normal 끔: 봉우리 +3.41 dBFS · 1.0 넘는 표본 276 · 몸통 400 ms -9.5 dBFS · 울린 겹 5 · 동시에 울던 SFX 플레이어 5/12
+[Kill] +6 xp (lv 1, -99994/20)
+  · normal 켬: 봉우리 -1.00 dBFS · 들어온 +3.41 dBFS → 넘침 2 ppm (한계 80 ppm) · 1.0 넘는 표본 0 · 몸통 400 ms -13.1 dBFS · 울린 겹 5 · 동시에 울던 SFX 플레이어 5/12
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 탕약 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+  · crit 끔: 봉우리 +8.25 dBFS · 1.0 넘는 표본 1320 · 몸통 400 ms -7.4 dBFS · 울린 겹 8 · 동시에 울던 SFX 플레이어 7/12
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 엽전 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+  · crit 켬: 봉우리 -1.00 dBFS · 들어온 +8.25 dBFS → 넘침 5 ppm (한계 227 ppm) · 1.0 넘는 표본 0 · 몸통 400 ms -13.6 dBFS · 울린 겹 8 · 동시에 울던 SFX 플레이어 7/12
+  · 치명 막타 뒤 남는 줄어듦 -0.56 dB (기준음 -20.00 → -20.56 dBFS, 릴리스 0.20초)
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 상품 목검 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Dev] item 탕약 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Kill] +6 xp (lv 1, -99988/20)
+[Kill] +6 xp (lv 1, -99982/20)
+[Dev] item 엽전 world=(45.5, 0.0, 57.9) screen=(575.2031, 381.3981)
+  · triple 끔: 봉우리 +10.03 dBFS · 1.0 넘는 표본 1983 · 몸통 400 ms -5.8 dBFS · 울린 겹 16 · 동시에 울던 SFX 플레이어 12/12
+[Kill] +6 xp (lv 1, -99994/20)
+[Dev] item 엽전 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Dev] item 탕약 world=(46.71244, 0.0, 55.8) screen=(728.5139, 357.681)
+[Kill] +6 xp (lv 1, -99988/20)
+[Dev] item 엽전 world=(44.28756, 0.0, 55.8) screen=(616.2826, 292.8849)
+[Kill] +6 xp (lv 1, -99982/20)
+  · triple 켬: 봉우리 -1.00 dBFS · 들어온 +10.53 dBFS → 넘침 7 ppm (한계 331 ppm) · 1.0 넘는 표본 0 · 몸통 400 ms -13.9 dBFS · 울린 겹 16 · 동시에 울던 SFX 플레이어 12/12
+  · 엔진 넘침 한계 — 봉우리에서 시작하는 165 Hz +10.5 dB: 들어온 +10.50 dBFS → 넘침 275 ppm (+0.0024 dB, 한계 329 ppm · 옛 판정 200 ppm이면 FAIL)
+E2E sfx_limiter PASS (검사 11)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ ui_windows
+[Dev] item 환도 world=(1.3, 0.0, 2.3) screen=(640.0, 413.4636)
+[Click] world=(5.4, 0.0, -2.4) cell=(5, -3)
+[Click] world=(-5.6, 0.0, 0.4) cell=(-6, 0)
+[Click] world=(2.0, 0.0, -5.6) cell=(2, -6)
+[Click] world=(-4.2, 0.0, 2.2) cell=(-5, 2)
+E2E ui_windows PASS (검사 32)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ dialogue_band
+[Click] world=(5.4, 0.0, -2.4) cell=(5, -3)
+[Dev] 한기 3초 → 산적
+[Dev] 빙결 → 산적 (얼음)
+[Dev] 화상 3/초 × 2초 → 산적
+  · 이름표 글꼴 = 궁서
+E2E dialogue_band PASS (검사 70)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ ui_docks
+  · none camera settled, player x=640.00
+  · right camera settled, player x=424.00
+[Click] world=(0.857147, 0.644249, 0.725593) cell=(0, 0)
+  · right after pickup camera settled, player x=424.00
+  · left camera settled, player x=856.00
+[Click] world=(0.989948, 0.0, 0.01005) cell=(0, 0)
+  · left after movement camera settled, player x=857.40
+  · both camera settled, player x=640.26
+  · skills and bag camera settled, player x=640.15
+  · Esc restores center camera settled, player x=640.08
+[Click] world=(5.4, 0.0, -2.4) cell=(5, -3)
+  · dialog alone camera settled, player x=641.40
+  · vendor and bag camera settled, player x=640.58
+  · after vendor close camera settled, player x=640.32
+[Click] world=(-4.2, 0.0, 2.2) cell=(-5, 2)
+  · waypoint alone camera settled, player x=854.54
+  · waypoint and bag camera settled, player x=639.74
+  · final center camera settled, player x=639.85
+E2E ui_docks PASS (검사 60)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ ui_tooltips
+E2E ui_tooltips PASS (검사 106)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ skill_picker
+[Save] skill_picker_e2e → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Load] lv=6 gold=0 flags={  } portal=<null> wps=[]
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] item 탕약 world=(-0.9, 0.0, 1.000007) screen=(382.3446, 319.9393)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Death] 도호 사망 → 1.2s 뒤 마을 복귀, 엽전 -0
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E skill_picker PASS (검사 123)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ skill_icons
+[Skill] 회오리베기 → mp 42/50
+E2E skill_icons PASS (검사 48)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ vfx_cues
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Dev] item 철검 world=(45.5, 0.0, 58.0) screen=(570.5748, 384.0701)
+[Dev] item 목검 world=(47.0, 0.0, 56.5) screen=(709.4249, 384.0702)
+  · 선딜 시트 pos=(44.5, 0.030391, 56.5) 적=(44.5, 0.000391, 56.5) 화면=(593.7165, 331.6754) visible=true frame=6/23
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(44.25538, 0.0, 56.5) screen=(582.3948, 310.73)
+[Dev] item 무명 도포 world=(44.25538, 0.0, 56.5) screen=(582.3948, 310.73)
+[Skill] 참격 → mp 46/50
+[Skill] 참격 → mp 46/50
+[Skill] 돌진베기 → mp 44/50
+[Skill] 회오리베기 → mp 42/50
+[Kill] +100 xp (lv 4, 50/160)
+[LevelUp] lv=4 stat_pts=5 skill_pts=1
+  · 레벨업 道: 발 위 4.30 · 칸 15장 · 흩어짐 0.38(1.55초) · 사라짐 2.02초
+[Dev] interact Portal world=(48.5, 0.0, 56.5) screen=(640.0018, 311.9229)
+[Portal] opened heukrang_gul 1층 pos=(48.5, 0.0, 56.5)
+[Vfx] missing cue: no_such_cue_zzz (큐 표 design/vfx.md §2)
+  · 루프 100 · 단발 2
+E2E vfx_cues PASS (검사 70)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ footsteps
+[Click] world=(10.5, 0.0, 11.5) cell=(10, 11)
+  · step_dirt 15번 (14.7칸 달림), 그때 클립 ["run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run", "run"]
+  · 마을(흙) 발소리 간격 0.214, 0.203, 0.215, 0.215, 0.199, 0.215, 0.215, 0.220, 0.211, 0.202, 0.217, 0.202, 0.215, 0.222 (기대 0.212초)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Click] world=(35.5, 0.0, 56.5) cell=(35, 56)
+  · step_stone 9번 (9.9칸 달림), 그때 클립 ["run", "run", "run", "run", "run", "run", "run", "run", "run"]
+  · 던전(돌) 발소리 간격 0.228, 0.215, 0.202, 0.219, 0.202, 0.216, 0.218, 0.218 (기대 0.212초)
+E2E footsteps PASS (검사 13)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ dungeon_layout
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+  · 1층 격자 64x64 · 방 6 (한 변 8~14) · 걷는 칸 882(복도 126) · 적 18 { "bandit": 14, "talisman_master": 3, "bat": 1 } · 보스 0 · 횃불 48 · 소품 9
+  · 1층 모양 갈래 { "bandit_v2": 5, "bandit_v2_dagger": 9 } · 두 갈래가 같이 있는 방 3곳 [1, 2, 4]
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+  · 2층 격자 28x28 · 방 2 (한 변 7~14) · 걷는 칸 274(복도 45) · 적 2 { "bat": 2 } · 보스 1 · 횃불 16 · 소품 2
+  · 2층 모양 갈래 {  } · 두 갈래가 같이 있는 방 0곳 []
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(778.8501, 2206.452)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+E2E dungeon_layout PASS (검사 34)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ town_exits
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+E2E town_exits PASS (검사 8)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ field_layout
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+  · 자리 10곳 · 모닥불 3 · 자리 둘레 소품 78
+  · 들녘 모양 갈래 { "bandit_v2_dagger": 27, "bandit_v2": 22 } · 산적 있는 무리 15 중 두 갈래가 섞인 무리 13
+  · 들녘 적 54 { 1: 16, 2: 20, 3: 18 } · 장식 2209 · 무리 15 · 서낭단 (62, 65)
+E2E field_layout PASS (검사 24)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ slice_loop
+[Click] world=(16.4, 0.0, 11.4) cell=(16, 11)
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_2.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Dev] removed 54 enemies
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(4620.368, -652.7427)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(547.4333, 261.1302)
+[Click] world=(62.5, 0.0, 65.5) cell=(62, 65)
+[Waypoint] activated deulnyeok:0
+[Click] world=(88.5, 0.0, 3.5) cell=(88, 3)
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Click] world=(7.500002, 0.0, 23.5) cell=(7, 23)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+[Dev] near boss hp=195/195
+[Kill] +168 xp (lv 3, 91/104)
+[LevelUp] lv=3 stat_pts=10 skill_pts=2
+[Dev] item 예도 world=(7.7, 0.0, 8.5) screen=(510.4066, 270.8231)
+[Dev] item 미식별 옥패 world=(7.7, 0.0, 8.5) screen=(510.4066, 270.8231)
+[Dev] item 미식별 무명옷 world=(7.7, 0.0, 8.5) screen=(510.4066, 270.8231)
+[Dev] item 엽전 world=(7.7, 0.0, 8.5) screen=(510.4066, 270.8231)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "boss_quest": "killed", "boss_killed_heukrang_gul": true }
+[Dev] removed 3 enemies
+[Dev] interact Portal world=(9.5, 0.0, 7.5) screen=(640.0, 258.4793)
+[Portal] opened heukrang_gul 2층 pos=(9.5, 0.0, 7.5)
+[Click] world=(9.5, 0.0, 7.5) cell=(9, 7)
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(579.8315, 279.835)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Portal] travel → motgol 0층 portal={ "area": &"heukrang_gul", "floor": 2, "pos": (9.5, 0.0, 7.5), "returned": false }
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2181.236, -532.4963)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1107.462, 327.9336)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(468.7516, 108.8176)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1098.205, 151.572)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(450.2382, 194.3264)
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(579.8315, 279.835)
+[Load] lv=3 gold=0 flags={ "boss_killed_heukrang_gul": true, "boss_quest": "killed" } portal={ "area": &"heukrang_gul", "floor": 2, "pos": (9.5, 0.0, 7.5), "returned": false } wps=["deulnyeok:0"]
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(519.6633, 319.9171)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Portal world=(-1.2, 0.0, 2.4) screen=(519.6633, 319.9171)
+E2E slice_loop PASS (검사 27)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ plaza_light
+  · 환경광 0.18 · 해 0.33 · 등롱 2.20/4.6 · 플레이어 빛 1.40/4.5 · 캐릭터 빛 0.45
+E2E plaza_light PASS (검사 8)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ town_tour
+E2E town_tour PASS (검사 2)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ aoe_field
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] removed 18 enemies
+[Dev] 장판 dev_test 반경 2.2 · 8.0초 · 틱 0.5초 · 예고 0.0초 (살아 있는 판 1)
+[Dev] 장판 틱 dev_test #1 → Player
+[Dev] 장판 틱 dev_test #2 → Player
+[Dev] 장판 틱 dev_test #3 → Player
+[Dev] 장판 dev_test 반경 2.2 · 8.0초 · 틱 0.5초 · 예고 0.0초 (살아 있는 판 2)
+[Dev] 장판 dev_test 반경 2.2 · 8.1초 · 틱 0.5초 · 예고 0.0초 (살아 있는 판 2)
+[Dev] 장판 틱 dev_test #1 → Player
+[Dev] 장판 틱 dev_test #2 → Player
+[Dev] 장판 틱 dev_test #3 → Player
+[Dev] 장판 틱 dev_test #4 → Player
+[Dev] 장판 틱 dev_test #5 → Player
+[Dev] 장판 틱 dev_test #6 → Player
+[Dev] 장판 틱 dev_test #7 → Player
+[Dev] 장판 틱 dev_test #8 → Player
+[Dev] 장판 틱 dev_test #9 → Player
+[Dev] 장판 틱 dev_test #10 → Player
+[Dev] 장판 지움 1
+[Dev] 장판 dev_burst 반경 3.0 · 0.5초 · 틱 0.0초 · 예고 0.6초 (살아 있는 판 1)
+[Dev] 장판 틱 dev_burst #1 → Player
+[Dev] 장판 dev_test 반경 2.2 · 8.0초 · 틱 0.5초 · 예고 0.0초 (살아 있는 판 1)
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat
+[Audio] BGM boss → boss.ogg
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+E2E aoe_field PASS (검사 20)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ item_showcase
+  · 세트 칸 건너뜀 — 정의 색인 res://data/sets/_index.tres 없음 (#264 뒤에 켜진다)
+  · 유니크 칸 건너뜀 — 정의 색인 res://data/uniques/_index.tres 없음 (#263 뒤에 켜진다)
+  · 바닥 한 줄 4칸: (0.106066, 0.0, 4.853732) → (4.985103, 0.0, -0.025305) (화면 (466.5454, 465.8325) → (918.1818, 465.8325))
+E2E item_showcase PASS (검사 249)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ first_magic
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Audio] BGM dungeon → dungeon_1.ogg
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Kill] +6 xp (lv 1, 6/20)
+[Dev] item 엽전 world=(6.5, 0.0, 95.5) screen=(-841.0675, 1145.631)
+[Dev] item 미식별 은가락지 world=(6.5, 0.0, 95.5) screen=(-841.0675, 1145.631)
+[Loot] 첫 매직 보장 — bandit (silver_ring ilvl 1) · 회차 1
+[Kill] +6 xp (lv 1, 12/20)
+[Save] e2e first_magic → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Load] lv=1 gold=0 flags={  } portal=<null> wps=[]
+[Field] deulnyeok seed=355022911 128x128 props=2209 packs=15 enemies=54 waypoint=(62, 65) roster=bandit,bat,talisman_master
+[Save] level 못골 들녘 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs CaveEntrance dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
+[Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
+[Kill] +6 xp (lv 1, 18/20)
+[Dev] item 영약 world=(6.5, 0.0, 95.5) screen=(-841.0675, 1145.631)
+[Dev] item 미식별 무명옷 world=(6.5, 0.0, 95.5) screen=(-841.0675, 1145.631)
+[Loot] 첫 매직 보장 — bandit (cotton_robe ilvl 13) · 회차 2
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=18 roster=bandit,bat,talisman_master
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-245-skill-picker/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+E2E first_magic PASS (검사 18)
+E2E SUMMARY: 45/46 PASS
+  E2E automap PASS (검사 50)
+  E2E pickup_equip PASS (검사 27)
+  E2E portal_roundtrip PASS (검사 18)
+  E2E waypoint PASS (검사 12)
+  E2E vendor_quest PASS (검사 22)
+  E2E save_continue PASS (검사 12)
+  E2E boss_floor PASS (검사 11)
+  E2E visual_swap PASS (검사 59)
+  E2E run_upright PASS (검사 16)
+  E2E hit_stagger PASS (검사 20)
+  E2E hit_feel PASS (검사 27)
+  E2E element_affix PASS (검사 7)
+  E2E attack_chain PASS (검사 21)
+  E2E heavy_react PASS (검사 97)
+  E2E kill_launch PASS (검사 66)
+  E2E kill_bisect PASS (검사 61)
+  E2E element_status PASS (검사 78)
+  E2E loot_drop PASS (검사 16)
+  E2E verify_flows FAIL (검사 13, 실패 1)
+  E2E balance_room PASS (검사 8)
+  E2E balance_boss PASS (검사 20)
+  E2E player_death PASS (검사 27)
+  E2E wall_cutaway PASS (검사 17)
+  E2E floor_seams PASS (검사 3)
+  E2E char_light PASS (검사 96)
+  E2E town_layout PASS (검사 59)
+  E2E town_approach PASS (검사 134)
+  E2E audio_cues PASS (검사 57)
+  E2E sfx_limiter PASS (검사 11)
+  E2E ui_windows PASS (검사 32)
+  E2E dialogue_band PASS (검사 70)
+  E2E ui_docks PASS (검사 60)
+  E2E ui_tooltips PASS (검사 106)
+  E2E skill_picker PASS (검사 123)
+  E2E skill_icons PASS (검사 48)
+  E2E vfx_cues PASS (검사 70)
+  E2E footsteps PASS (검사 13)
+  E2E dungeon_layout PASS (검사 34)
+  E2E town_exits PASS (검사 8)
+  E2E field_layout PASS (검사 24)
+  E2E slice_loop PASS (검사 27)
+  E2E plaza_light PASS (검사 8)
+  E2E town_tour PASS (검사 2)
+  E2E aoe_field PASS (검사 20)
+  E2E item_showcase PASS (검사 249)
+  E2E first_magic PASS (검사 18)

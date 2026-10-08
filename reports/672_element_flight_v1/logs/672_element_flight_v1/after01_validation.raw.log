@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\FORYOUCOM\.codex\worktrees\672-element-flight\joseon\._tmp\672_element_flight_v1\validate_flight_capture.py", line 52, in <module>
+    for field in equality: assert old[field]==r[field],(label,field)
+                                  ^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('fire', 'camera_frames')

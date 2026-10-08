@@ -1,0 +1,55 @@
+{
+    "date":  "2026-09-17",
+    "title":  "NPC B 세트 기반 공통 화풍 확장",
+    "user_feedback":  "B세트가 전체적으로 괜찮은데?",
+    "user_clarification":  "이전 NPC 시트 — B1·B2·B3",
+    "preferred_source":  "workbench/production/npc-variants-2026-09-17/NPC_B_expressive.png",
+    "preference_status":  "preferred direction for follow-up; not a final replacement of character canon or game assets",
+    "not_selected":  "S2 셀 애니형을 뜻하지 않음. 이전 제작자 추천 B1+C2+B3도 채택된 것으로 간주하지 않음.",
+    "tool":  "built-in image_gen",
+    "model":  "not exposed by built-in tool",
+    "records":  [
+                    {
+                        "id":  "B-PC",
+                        "filename":  "B_PC_trio.png",
+                        "title":  "B 화풍 주인공 3인방",
+                        "source":  "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-8202daac-0c43-4b56-a9f4-a7698c790c83.png",
+                        "key":  "pc",
+                        "qa":  "도호·귀새·청연의 복식과 식별 소품을 유지하면서 B 세트의 가는 선·매트한 음영·성숙한 눈매로 맞춘 후보. 도호 검 끝이 왼쪽 프레임에 걸리고 작은 얼굴 인셋에서 모자가 잘리므로 무기/모자 전체 구조 제작 참조로는 쓰지 않는다. 의복 문양은 여전히 많다.",
+                        "prompt":  "Use case: stylized-concept.\nCreate a 1536x1024 landscape character catalogue sheet for Joseon Hunters, a witty Korean folk-fantasy action RPG. Three full-body protagonists, one clear face/hat inset for each, neutral warm ivory background, generous margins, elegant restrained catalogue layout.\n\nREFERENCE ROLES ARE CRITICAL. Image 1, marked SET B with three NPCs, is the SOLE RENDERING-STYLE AUTHORITY: hand-drawn mature Korean fantasy character illustration, expressive designed faces, tapering dark contours, subtle angular anatomical planes, broad matte tonal shading, controlled fine hair lines, crisp flowing cloth folds and subdued color. Extend this exact artist\u0027s treatment to the three younger adult protagonists. Images 2, 3, 4 supply COSTUME, HAIR, PROP AND IDENTITY information only; redraw them in image 1\u0027s medium. The old protagonist rendering must not override SET B. Keep the protagonists youthful adults while sharing SET B\u0027s eye/nose/mouth construction and natural head proportions. No oversized glossy doll eyes.\n\nLeft, DOHO: lean young adult male wandering Taoist swordsman. Black wide-brim cylindrical-crown heukrip with blue round front ornament and bead cords, tousled black hair, knowing lopsided smile and slightly lifted eyebrow. Navy layered dopo with ivory collar, muted red sash, blue round waist medallion, black loose trousers and laced boots. One sword carried loosely down beside his leg. No scarf. Give him the same lively facial asymmetry as the B shaman without copying her features or age.\nCenter, GWISAE: agile adult woman with high black ponytail, ivory Korean gaksi mask with circular red forehead/cheek marks, black/crimson short divided outer coat, purple inner, trousers and boots. Curved dagger, red ribbon and exactly two spare masks at left hip. Long legs clearly visible below the split coat. Portrait inset shows her mask on her face.\nRight, CHEONGYEON: composed adult woman with long black hair and small braids, black-and-gold Korean headpiece. Ivory and pale celadon long wide-sleeved hanbok with restrained gold bird embroidery, black celestial folding fan, brass bell bundle, jade charm and paper seals. Quiet observant expression with a slightly amused mouth. Match SET B\u0027s drawn flesh and eyes, not airbrushed beauty rendering.\n\nPreserve distinct silhouettes and adult ages; use the same contour weight, skin shading and cloth finish across all three. Simplify repetitive embroidery to let expressions and silhouettes lead. Show complete hats, weapons and shoes; avoid crowding. Full-body figures occupy lower two-thirds, small face insets above each character. Small clean title \"B-PC\" and labels \"DOHO\", \"GWISAE\", \"CHEONGYEON\". No NPCs on this sheet. No scenic background. No chibi, no rounded children\u0027s-animation treatment, no photographic skin, no heavy grunge, no gloss, no bloom or halo.",
+                        "reference_assets":  [
+                                                 "C:/workspace/joseon-assets/workbench/production/npc-variants-2026-09-17/NPC_B_expressive.png",
+                                                 "C:/workspace/joseon-assets/workbench/production/artwork-sequence-2026-09-17/01_doho_D03_master.png",
+                                                 "C:/workspace/joseon-assets/workbench/production/artwork-sequence-2026-09-17/02_gwisae_G02_master.png",
+                                                 "C:/workspace/joseon-assets/workbench/production/artwork-sequence-2026-09-17/03_cheongyeon_C01_master.png"
+                                             ],
+                        "output_path":  "workbench/production/npc-b-style-followup-2026-09-17/B_PC_trio.png",
+                        "review_status":  "candidate",
+                        "width":  1536,
+                        "height":  1024,
+                        "sha256":  "A486D4010011E1D38C287198BED3A643E20FFEC64FFCCD969487FA52BA6D55D4",
+                        "generated_at":  "2026-09-17T04:47:36.4320233+09:00",
+                        "timestamp_basis":  "Original generated PNG LastWriteTime; server generation timestamp not exposed."
+                    },
+                    {
+                        "id":  "B-WORLD",
+                        "filename":  "B_WORLD_motgol.png",
+                        "title":  "B NPC·도호·못골 통합 장면",
+                        "source":  "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-0db68aa7-7218-4b6d-bd78-db690e530bc5.png",
+                        "key":  "world",
+                        "qa":  "B1의 둥근 얼굴, B2의 가는 얼굴과 능청 미소, B3의 각진 얼굴과 엄격한 표정이 유지됨. 도호·NPC·배경에 선과 무광 명암을 공유. 배경은 채도/대비가 낮지만 석재·기와·식생의 디테일 밀도는 후속 축소 검수 대상. B2 부채의 펼친 무늬는 새 생성 디테일로 미확정.",
+                        "prompt":  "Use case: stylized-concept.\nCreate a finished 16:9 landscape scene, about 1672x941, for Joseon Hunters, a Korean folk-fantasy adventure with witty adult characters.\n\nINPUT 1 is the user\u0027s preferred NPC SET B. It is the exact NPC identity reference AND the controlling art style for the ENTIRE image, including Doho and the background. Preserve B1 merchant\u0027s round generous face, grey curled moustache and goatee; B2 shaman\u0027s slender face, raised eyebrow, shrewd asymmetrical smile, swept grey high bun and pointed hairpin; B3 elder\u0027s broad shoulders, angular stern face, deep brow and long white beard. Preserve their distinct temperaments. Do not turn B2 into a round cheerful grandmother or B3 into a smiling thin grandfather.\nINPUT 2 is the follow-up protagonist sheet. Use only its leftmost DOHO character for costume, youthful adult identity and the SET-B-compatible rendering. Do not include Gwisae or Cheongyeon in this scene. Input 1 remains the style authority.\n\nScene: Motgol, fictional Korean lakeside village, calm afternoon. A relaxed conversation beside a low stone well with a small carved Korean dragon-head water spout. A timber shop with folded canopy and a few baskets at left, quiet tiled wooden houses and a small pond pavilion behind. Simple organized background masses, a few broad roof-tile rows, restrained trees. Hand-drawn architecture and painted surfaces use the same controlled lines and matte tonal shading as the people, not realistic game-render scenery.\n\nFour full-body people, all hat crowns, shoes and hand-held props safely inside the frame with generous side margins. Merchant B1 at left in dark brown vest and ivory clothes, ledger tucked under one arm, free palm open as he talks. Doho left of center, black wide-brim heukrip, blue bead cords, navy layered dopo, ivory collar, muted red sash and blue round waist charm, dark boots, one sheathed sword held vertically down beside his own leg. Relaxed knowing smile aimed at B2. B2 right of center in brick-red jeogori, ochre waist sash, dark teal skirt, a partly opened fan and brass bell bundle; poised, sly, visibly grey-haired mature woman exactly like the first sheet. B3 at right in plain charcoal-grey robe and ivory sash, both hands resting on a wooden staff, quietly unimpressed stern expression. Give the conversation natural body turns while keeping all faces readable.\n\nRendering: mature expressive Korean fantasy illustration, fine tapered dark linework, designed facial anatomy, narrow lively eyes, controlled broad face shadows, matte muted colors, flowing crisp cloth folds, a little drawn hair detail. Unified face treatment across Doho and all NPCs. The hero\u0027s costume can be more elaborate, but do not add his ornaments to villagers. Shared soft daylight and grounding shadows. Foreground figures lead; background contrast and detail are lower. Ivory, charcoal, navy, umber, restrained brick red and teal. Crisp readable illustration, no coarse texture overlays, no photographic elderly skin, no round children\u0027s animation, no golden glow, no heavy horror, no modern objects, no captions or watermarks.",
+                        "reference_assets":  [
+                                                 "C:/workspace/joseon-assets/workbench/production/npc-variants-2026-09-17/NPC_B_expressive.png",
+                                                 "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab0c-798a-7282-8f8b-e183b8b90559/exec-8202daac-0c43-4b56-a9f4-a7698c790c83.png"
+                                             ],
+                        "output_path":  "workbench/production/npc-b-style-followup-2026-09-17/B_WORLD_motgol.png",
+                        "review_status":  "candidate",
+                        "width":  1672,
+                        "height":  941,
+                        "sha256":  "F4BA0AC02DB1CCD9D7488282AC6381CAD04C4620A562DD8FD5242696FB7607B4",
+                        "generated_at":  "2026-09-17T04:49:48.3356905+09:00",
+                        "timestamp_basis":  "Original generated PNG LastWriteTime; server generation timestamp not exposed."
+                    }
+                ]
+}

@@ -1,0 +1,76 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.329 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -8.0) screen=(1149.117, 68.73624)
+[Dev] interact Merchant world=(5.0, 0.0, 1.0) screen=(963.9835, 394.7372)
+[Dev] interact Shaman world=(-6.0, 0.0, -2.0) screen=(593.7167, 20.63687)
+[Dev] interact Elder world=(6.0, 0.0, -3.0) screen=(1195.4, 314.5728)
+[Dev] interact Waypoint world=(-5.0, 0.0, 5.0) screen=(316.0165, 234.4085)
+E2E start: portal_roundtrip, vendor_quest
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -8.0) screen=(1149.117, 68.73624)
+[Dev] interact Merchant world=(5.0, 0.0, 1.0) screen=(963.9835, 394.7372)
+[Dev] interact Shaman world=(-6.0, 0.0, -2.0) screen=(593.7167, 20.63687)
+[Dev] interact Elder world=(6.0, 0.0, -3.0) screen=(1195.4, 314.5728)
+[Dev] interact Waypoint world=(-5.0, 0.0, 5.0) screen=(316.0165, 234.4085)
+E2E ▶ portal_roundtrip
+[Dungeon] depth=1 seed=3720087968 rooms=7 up=(17, 37) down=(31, 5) enemies=13
+[Save] level 봉밀굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(17.5, 0.0, 37.5) screen=(593.7167, 335.9507)
+[Dev] stairs StairsDown dir=1 world=(31.5, 0.0, 5.5) screen=(2722.751, -145.0353)
+[Dev] removed 13 enemies
+[Dev] interact Portal world=(18.5, 0.0, 38.5) screen=(593.7167, 338.6431)
+[Portal] opened depth=1 pos=(18.5, 0.0, 38.5)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/e2e/portal_roundtrip_01_portal_open.png
+[Click] world=(18.5, 0.0, 38.5) cell=(18, 38)
+[Dev] interact Portal world=(2.0, 0.0, 6.0) screen=(579.8317, 279.835)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Portal] travel → depth=0 portal={ "depth": 1, "pos": (18.5, 0.0, 38.5), "returned": false }
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -8.0) screen=(1135.232, -99.60887)
+[Dev] interact Merchant world=(5.0, 0.0, 1.0) screen=(950.0984, 226.3921)
+[Dev] interact Shaman world=(-6.0, 0.0, -2.0) screen=(579.8317, -147.7082)
+[Dev] interact Elder world=(6.0, 0.0, -3.0) screen=(1181.515, 146.2277)
+[Dev] interact Waypoint world=(-5.0, 0.0, 5.0) screen=(302.1315, 66.06337)
+[Dev] interact Portal world=(2.0, 0.0, 6.0) screen=(579.8317, 279.835)
+[Click] world=(2.0, 0.0, 6.0) cell=(2, 6)
+[Dungeon] depth=1 seed=3720087968 rooms=7 up=(17, 37) down=(31, 5) enemies=13
+[Dev] interact Portal world=(18.5, 0.0, 38.5) screen=(547.4333, 314.5729)
+[Save] level 봉밀굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Portal] travel → depth=1 portal={ "depth": 1, "pos": (18.5, 0.0, 38.5), "returned": true }
+[Dev] stairs StairsUp dir=-1 world=(17.5, 0.0, 37.5) screen=(547.4333, 309.2293)
+[Dev] stairs StairsDown dir=1 world=(31.5, 0.0, 5.5) screen=(2676.468, -171.7568)
+[Dev] interact Portal world=(18.5, 0.0, 38.5) screen=(547.4333, 314.5729)
+[Click] world=(18.5, 0.0, 38.5) cell=(18, 38)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Portal] travel → depth=0 portal=<null>
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -8.0) screen=(1135.232, -99.60887)
+[Dev] interact Merchant world=(5.0, 0.0, 1.0) screen=(950.0984, 226.3921)
+[Dev] interact Shaman world=(-6.0, 0.0, -2.0) screen=(579.8317, -147.7082)
+[Dev] interact Elder world=(6.0, 0.0, -3.0) screen=(1181.515, 146.2277)
+[Dev] interact Waypoint world=(-5.0, 0.0, 5.0) screen=(302.1315, 66.06337)
+E2E portal_roundtrip PASS (검사 12)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -8.0) screen=(1149.117, 68.73624)
+[Dev] interact Merchant world=(5.0, 0.0, 1.0) screen=(963.9835, 394.7372)
+[Dev] interact Shaman world=(-6.0, 0.0, -2.0) screen=(593.7167, 20.63687)
+[Dev] interact Elder world=(6.0, 0.0, -3.0) screen=(1195.4, 314.5728)
+[Dev] interact Waypoint world=(-5.0, 0.0, 5.0) screen=(316.0165, 234.4085)
+E2E ▶ vendor_quest
+[Click] world=(5.0, 0.0, 1.0) cell=(5, 1)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/e2e/vendor_quest_01_dialog.png
+[Vendor] buy 탕약 price=15 gold=85
+[Vendor] sell 귀환부 +10 gold=95
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/e2e/vendor_quest_02_vendor.png
+[Click] world=(6.0, 0.0, -3.0) cell=(6, -3)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+[Dev] flags={ "boss_quest": "killed" }
+[Click] world=(6.0, 0.0, -3.0) cell=(6, -3)
+[Save] quest → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/save_e2e.json)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/e2e/vendor_quest_03_quest_done.png
+E2E vendor_quest PASS (검사 22)
+E2E SUMMARY: 2/2 PASS
+  E2E portal_roundtrip PASS (검사 12)
+  E2E vendor_quest PASS (검사 22)

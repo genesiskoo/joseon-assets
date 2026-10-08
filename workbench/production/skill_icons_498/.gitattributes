@@ -1,0 +1,8 @@
+# Preserve source briefs/requests and the hashed read-only UI snapshot byte for byte.
+* whitespace=cr-at-eol
+BRIEF.md -text
+CLOUD_CONFIG.json -text
+CLOUD_REVISION1.json -text
+PLAN.json -text
+PROMPTS.md -text
+qa/ui_skin_snapshot.gd -text

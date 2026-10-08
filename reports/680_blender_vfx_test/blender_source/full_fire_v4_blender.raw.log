@@ -1,0 +1,68 @@
+C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\source\make_blender_vfx.py:212: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\source\make_blender_vfx.py:117: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+RENDER_SETTINGS {"taa_render_samples": 64, "volumetric_samples": 64, "volumetric_tile_size": "2", "volumetric_shadow_samples": 16, "use_volumetric_shadows": true}
+00:00.500  reports          | WARNING Path 'E:\SteamLibrary\steamapps\common\Blender\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+00:00.500  reports          | WARNING Path 'E:\SteamLibrary\steamapps\common\Blender\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:02.610  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0000.png'
+Info: Saved as "fire_jet.blend"
+FRAME_RENDER {"effect": "fire", "index": 0, "seconds": 2.053, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0000.png", "bytes": 55251}
+00:04.063  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0001.png'
+FRAME_RENDER {"effect": "fire", "index": 1, "seconds": 1.448, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0001.png", "bytes": 55353}
+00:05.297  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0002.png'
+FRAME_RENDER {"effect": "fire", "index": 2, "seconds": 1.241, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0002.png", "bytes": 54541}
+00:06.469  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0003.png'
+FRAME_RENDER {"effect": "fire", "index": 3, "seconds": 1.174, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0003.png", "bytes": 55053}
+00:07.610  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0004.png'
+FRAME_RENDER {"effect": "fire", "index": 4, "seconds": 1.143, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0004.png", "bytes": 55088}
+00:08.703  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0005.png'
+FRAME_RENDER {"effect": "fire", "index": 5, "seconds": 1.09, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0005.png", "bytes": 54919}
+00:09.782  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0006.png'
+FRAME_RENDER {"effect": "fire", "index": 6, "seconds": 1.082, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0006.png", "bytes": 55242}
+00:10.782  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0007.png'
+FRAME_RENDER {"effect": "fire", "index": 7, "seconds": 0.994, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0007.png", "bytes": 55141}
+00:11.969  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0008.png'
+FRAME_RENDER {"effect": "fire", "index": 8, "seconds": 1.18, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0008.png", "bytes": 55358}
+00:13.360  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0009.png'
+FRAME_RENDER {"effect": "fire", "index": 9, "seconds": 1.398, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0009.png", "bytes": 55840}
+00:14.469  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0010.png'
+FRAME_RENDER {"effect": "fire", "index": 10, "seconds": 1.102, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0010.png", "bytes": 54562}
+00:15.657  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0011.png'
+FRAME_RENDER {"effect": "fire", "index": 11, "seconds": 1.189, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0011.png", "bytes": 54255}
+00:16.735  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0012.png'
+FRAME_RENDER {"effect": "fire", "index": 12, "seconds": 1.09, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0012.png", "bytes": 54831}
+00:17.860  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0013.png'
+FRAME_RENDER {"effect": "fire", "index": 13, "seconds": 1.113, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0013.png", "bytes": 55287}
+00:18.953  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0014.png'
+FRAME_RENDER {"effect": "fire", "index": 14, "seconds": 1.104, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0014.png", "bytes": 55304}
+00:20.094  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0015.png'
+FRAME_RENDER {"effect": "fire", "index": 15, "seconds": 1.13, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0015.png", "bytes": 54746}
+00:21.219  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0016.png'
+FRAME_RENDER {"effect": "fire", "index": 16, "seconds": 1.123, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0016.png", "bytes": 55141}
+00:22.297  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0017.png'
+FRAME_RENDER {"effect": "fire", "index": 17, "seconds": 1.077, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0017.png", "bytes": 55646}
+00:23.485  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0018.png'
+FRAME_RENDER {"effect": "fire", "index": 18, "seconds": 1.193, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0018.png", "bytes": 55044}
+00:24.625  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0019.png'
+FRAME_RENDER {"effect": "fire", "index": 19, "seconds": 1.135, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0019.png", "bytes": 55733}
+00:25.735  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0020.png'
+FRAME_RENDER {"effect": "fire", "index": 20, "seconds": 1.113, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0020.png", "bytes": 55272}
+00:26.813  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0021.png'
+FRAME_RENDER {"effect": "fire", "index": 21, "seconds": 1.074, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0021.png", "bytes": 55249}
+00:27.938  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0022.png'
+FRAME_RENDER {"effect": "fire", "index": 22, "seconds": 1.14, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0022.png", "bytes": 55092}
+00:29.047  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0023.png'
+FRAME_RENDER {"effect": "fire", "index": 23, "seconds": 1.099, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0023.png", "bytes": 54917}
+00:30.110  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0024.png'
+FRAME_RENDER {"effect": "fire", "index": 24, "seconds": 1.064, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0024.png", "bytes": 55251}
+00:31.469  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0025.png'
+FRAME_RENDER {"effect": "fire", "index": 25, "seconds": 1.354, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0025.png", "bytes": 55353}
+00:32.657  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0026.png'
+FRAME_RENDER {"effect": "fire", "index": 26, "seconds": 1.198, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0026.png", "bytes": 54541}
+00:33.828  render           | Saved: 'C:\workspace\joseon-assets\workbench\vfx\680_blender_vfx_test\frames\fire\f_0027.png'
+FRAME_RENDER {"effect": "fire", "index": 27, "seconds": 1.172, "path": "C:\\workspace\\joseon-assets\\workbench\\vfx\\680_blender_vfx_test\\frames\\fire\\f_0027.png", "bytes": 55053}
+PRODUCER_DONE {"mode": "full", "seconds": 33.377, "frames": 28}
+
+Blender quit

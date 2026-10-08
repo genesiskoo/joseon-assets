@@ -1,0 +1,21 @@
+{
+  "game_commit": "8d8cb26ba10a31f2922f55862216037d1b86b382",
+  "before_baseline": "507ce46480ae5d0b1c9a20664d844173a65b7413",
+  "before_capture_head": "d66e6e8abde89e0cceb001bb036d62966e534cfc",
+  "source_files_before": 147,
+  "source_files_after": 148,
+  "save_isolation": "video672_capture.json selected BEFORE Main instantiate; active_profile empty; no reset_game/shared save_e2e",
+  "status_end": "actual native fire/cold/sal duration and complete ticks unchanged; native swept player impacts have one proved unadvanced initial sample; status traces exact after this observed phase; no generic timing tolerance",
+  "after_phase": "after01",
+  "capture_sha256": "5ef2977764f17386c37b4ea36b77f5ca1b283e82028de0c59f85517526dbe92e",
+  "capture_checks": {
+    "before": 47,
+    "after": 47,
+    "fails": 0
+  },
+  "normal_speed": 1.0,
+  "recorded_fps": 60,
+  "frame_mapping": "AVI zero-based N=Engine process counter N; trim [BEGIN,END) 360 frames,800 audio samples per video frame",
+  "audio": "A/B visibly labels AFTER AUDIO; this track belongs only to AFTER impacts because BEFORE flight timing intentionally differs. Actual AFTER and full-engine BEFORE/AFTER each retain their own native synchronized sound. Independent Audio RNG also changes variant/pitch; PCM SHA provided.",
+  "errors": "All capture raw preserved. Existing post-PASS teardown ObjectDB/resource warnings classified separately; initial fixture/manager/E2E failures are also retained."
+}

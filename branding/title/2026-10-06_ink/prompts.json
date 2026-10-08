@@ -1,0 +1,88 @@
+{
+  "card": 669,
+  "generator": "built-in image_gen",
+  "backend_model": "not exposed by tool",
+  "style_reference": [
+    "C:/workspace/joseon-assets/workbench/production/title_668/raw/01_ink_groove.png"
+  ],
+  "approved_assets": [
+    {
+      "id": "joseon_hunters_title_nongmuk_v1",
+      "name": "농묵 · 묵직한 장단",
+      "source_card": 669,
+      "source_candidate": 1,
+      "official_path": "branding/title/2026-10-06_ink/title_nongmuk_v1.png",
+      "source_path": "workbench/production/title_669_ink/raw/01_nongmuk.png",
+      "sha256": "5e5aa39a5482633729ab286394fb9a31e274d5e2588538b44d68b899b45a0001",
+      "bytes": 2643660,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "has_alpha": false,
+      "background_included": true,
+      "palette": "black ink on warm light hanji",
+      "status": "adopted_main_asset",
+      "approved": true,
+      "approved_for": [
+        "opening_cinematic",
+        "title_screen",
+        "marketing_assets"
+      ],
+      "approval_date": "2026-10-06",
+      "runtime_integrated": false,
+      "prompt_path": "branding/title/2026-10-06_ink/prompts/title_nongmuk_v1.txt",
+      "prompt_sha256": "e546071d6673560885385c2fdf4e5e3b266ddca09925557f6760f19474b3c507"
+    },
+    {
+      "id": "joseon_hunters_title_galpil_v1",
+      "name": "갈필 · 빠른 잔심",
+      "source_card": 669,
+      "source_candidate": 2,
+      "official_path": "branding/title/2026-10-06_ink/title_galpil_v1.png",
+      "source_path": "workbench/production/title_669_ink/raw/02_galpil.png",
+      "sha256": "5d9655e7ef4371a21e5239c8b5e832f5c5b353619fea22dea60b592b546dc016",
+      "bytes": 2033405,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "has_alpha": false,
+      "background_included": true,
+      "palette": "warm ivory inverted ink on charcoal",
+      "status": "adopted_main_asset",
+      "approved": true,
+      "approved_for": [
+        "opening_cinematic",
+        "title_screen",
+        "marketing_assets"
+      ],
+      "approval_date": "2026-10-06",
+      "runtime_integrated": false,
+      "prompt_path": "branding/title/2026-10-06_ink/prompts/title_galpil_v1.txt",
+      "prompt_sha256": "1cf6135d019d8bd28b12f74260d6d2d09df13eca7c8c366ae8b4da37c539e51e"
+    }
+  ],
+  "prompts": [
+    {
+      "number": 1,
+      "id": "nongmuk",
+      "name": "농묵 · 묵직한 장단",
+      "prompt": "Use case: logo-brand.\nAsset type: second-round Korean title logo concept for Joseon Hunters, a dark fantasy action RPG with Korean hip-hop / fusion gugak swagger.\nInput image 1 role: STYLE REFERENCE, the user-selected direction. Take its broad ONE-LINE Korean brush wordmark, vigorous forward energy, thick confident strokes, subtly syncopated rhythm, long low flourish and tiny vermilion seal. Create a new related concept, not an unrelated redesign. No metal, no geometric sans, no two-line lockup.\nText (verbatim): \"조선헌터스\". EXACTLY FIVE Hangul syllable blocks: 조 / 선 / 헌 / 터 / 스. Correct clean Hangul anatomy is essential. Keep ㅎ and its counter in 헌, ㄴ batchim in 헌 and 선, ㅌ in 터 and the ㅅ branches legible. No alternate spelling or secondary text.\nPrimary request: evolve reference 1 into an exceptional Korean ink-brush logo that makes the physical behavior of ink a beautiful graphic signature. Restrained Korean hip-hop confidence and fusion-gugak strong/weak rhythm through lettering. Serious dark-fantasy title identity.\nComposition/framing: polished landscape 3:2 presentation, one large single-line centered logo roughly 82% image width, comfortable margins, no cropped strokes, no title labels or explanatory captions. Extremely subtle paper texture. One tiny textless vermilion seal at the right end only.\nConstraints: preserve immediately readable five-syllable title. Ink flourishes and texture must never obscure the letters. The lettering remains the subject; no character, scenery, instruments, microphones, headphones, fashion accessories, sword pictures, dragons, fire, smoke illustration, graffiti tags, UI, mockup, watermark, or extra symbols.\nDirection: Switch the presentation to clean warm off-white hanji paper so REAL BLACK INK is visible. The title is intensely black, heavy, wet Korean calligraphy. Broad thick strokes with rich pooled carbon-black ink at starts and crossings, luxurious organic black-to-slate variation within the ink, rounded pressure transitions leading into fast sharp tapered exits. Strong low rising baseline, short syncopated differences in syllable height. A single black broad but controlled underline accelerates at its tip. Full dark wet strokes, a few subtle pooling rims, minimal texture loss, very little splatter. Readable open counters and distinct syllable spacing even with this weight. Keep the swagger and almost-horizontal silhouette of the reference. Restrained, powerful ink presence.",
+      "reference_path": "C:/workspace/joseon-assets/workbench/production/title_668/raw/01_ink_groove.png",
+      "source_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a10cad-6a2c-7261-92f2-f056fe761a48/exec-65151b5f-6b39-49b4-854a-1d4147206205.png",
+      "status": "adopted_main_asset"
+    },
+    {
+      "number": 2,
+      "id": "galpil",
+      "name": "갈필 · 빠른 잔심",
+      "prompt": "Use case: logo-brand.\nAsset type: second-round Korean title logo concept for Joseon Hunters, a dark fantasy action RPG with Korean hip-hop / fusion gugak swagger.\nInput image 1 role: STYLE REFERENCE, the user-selected direction. Take its broad ONE-LINE Korean brush wordmark, vigorous forward energy, thick confident strokes, subtly syncopated rhythm, long low flourish and tiny vermilion seal. Create a new related concept, not an unrelated redesign. No metal, no geometric sans, no two-line lockup.\nText (verbatim): \"조선헌터스\". EXACTLY FIVE Hangul syllable blocks: 조 / 선 / 헌 / 터 / 스. Correct clean Hangul anatomy is essential. Keep ㅎ and its counter in 헌, ㄴ batchim in 헌 and 선, ㅌ in 터 and the ㅅ branches legible. No alternate spelling or secondary text.\nPrimary request: evolve reference 1 into an exceptional Korean ink-brush logo that makes the physical behavior of ink a beautiful graphic signature. Restrained Korean hip-hop confidence and fusion-gugak strong/weak rhythm through lettering. Serious dark-fantasy title identity.\nComposition/framing: polished landscape 3:2 presentation, one large single-line centered logo roughly 82% image width, comfortable margins, no cropped strokes, no title labels or explanatory captions. Extremely subtle paper texture. One tiny textless vermilion seal at the right end only.\nConstraints: preserve immediately readable five-syllable title. Ink flourishes and texture must never obscure the letters. The lettering remains the subject; no character, scenery, instruments, microphones, headphones, fashion accessories, sword pictures, dragons, fire, smoke illustration, graffiti tags, UI, mockup, watermark, or extra symbols.\nDirection: Preserve reference's clean near-black charcoal background and warm ivory ink inversion. Intensify the beautiful DRY-BRUSH character: coarse bristle tracks, sparse streaks of black paper showing through each broad ivory stroke, small branching fibers at the fast stroke tips. The major stroke skeleton remains thick and completely readable. Five syllables tilt forward cohesively, subtle alternating height like a musical groove. One exceptionally long low dry-brush sweep travels from below 조 through beneath 스; its tail breaks into just a few fine parallel bristle streaks. Make this bold and spirited, premium Korean brush-lettering, not scratched grunge or distressed printed font. Use crisp warm ivory and charcoal, one tiny red blank seal. The roughness belongs inside and at the tips of strokes, not across missing letter anatomy.",
+      "reference_path": "C:/workspace/joseon-assets/workbench/production/title_668/raw/01_ink_groove.png",
+      "source_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a10cad-6a2c-7261-92f2-f056fe761a48/exec-7d576497-4eee-47c6-9500-11494d746a8b.png",
+      "status": "adopted_main_asset"
+    }
+  ]
+}

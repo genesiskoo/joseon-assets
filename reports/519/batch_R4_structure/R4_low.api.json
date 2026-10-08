@@ -1,0 +1,49 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "519/R4_low",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Create a finished production reference illustration for Joseon Hunters, a Korean dark-fantasy isometric ARPG. One consistently recognizable adult Korean woman, the tavern hostess who is secretly the Gumiho phase-one boss. Preserve the approved face: narrow amber eyes meeting the viewer with a knowing quietly seductive smile, composed predatory confidence; adult age around 30. Human face, human ears, human hands and human feet. Ordinary worn indigo long-sleeved jeogori, one left shoulder naturally slipped from the existing overlapping neckline, an intact modest inner chest layer, pale stained apron tied around the waist, brown chima opening through natural movement and seams. Copy the approved P1 silhouette and cloth construction. The cloth must look physically wearable: continuous collar, overlapping front panels, connected sleeves, a plausible waist tie and complete skirt; opaque fabric. Worn cuffs and hem, dried blood on fingers, old blood staining at apron and hem, subtle dark corrupted skin at wrists and ankles. She is a dangerous boss rather than an armored noblewoman. Exactly TWO arms, TWO hands, TWO legs, TWO feet. Exactly NINE distinct physical fox tails, naturally rooted in a compact fan at the lower back/sacrum behind the waist, each has one visible distinct tip, dark brown at roots grading to dirty ivory and aged red-brown tips. No extra limbs, no paw feet, no wolf head, no animal legs, no horns, no spell effects. Match the H1 Korean concept-art family: confident drawn contours, restrained painterly matte surfaces, large readable cloth planes, dark navy/brown/ivory palette with amber eyes and restrained blood accents. Neutral dark warm-gray studio background, soft even descriptive light, no dramatic fog hiding anatomy. Full figure entirely inside the image, including all fingertips, feet and tail tips. No captions, symbols, layout frames, montage panels, watermarks, decorative modern lingerie or arbitrary holes cut into fabric. Reference images specify face/costume/pose; do not copy their backgrounds or multiple-panel compositions.\n\nVIEW REQUIREMENT:\nOne three-quarter isometric full-body view of the SAME boss, in the approved P5 low HUMAN predatory stance: one knee flexed forward, the other knee low, torso poised upright, one open hand near the floor and the other lifted naturally. Keep both two hands and both two feet clearly visible and human, elbows free of tails. The alluring calm amber-eye expression remains the primary impression. Nine physical tails behind the body frame the silhouette without concealing the hands or feet. Grounded plausible joints, readable full body, no elongated monster torso, no third foot.\nThe FIRST attached image is the corrected nine-tail front of this SAME character. Maintain that exact face, outfit and nine-tail body across views. Other references are only their explicitly named pose/hero roles.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "Custom",
+      "model.custom_width": 1536,
+      "model.custom_height": 2048,
+      "model.background": "opaque",
+      "model.quality": "high",
+      "n": 1,
+      "seed": 5194004,
+      "model.images.image_1": [
+        "21",
+        0
+      ],
+      "model.images.image_2": [
+        "22",
+        0
+      ]
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "e5d1590ac4abf9afda4fea0dbe6be7818a754a26381254efbf082dde2022ec66.png"
+    }
+  },
+  "22": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "36e71589c65e810ecebfc9b529bf46752e13476561c74b62412f62b5eb250536.png"
+    }
+  }
+}

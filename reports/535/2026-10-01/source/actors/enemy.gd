@@ -1,0 +1,2171 @@
+class_name Enemy
+extends CharacterBody3D
+## Enemy — 적 공통 본체. 종별 차이는 전부 EnemyDef(데이터)와 behavior 분기. 사양 design/combat_v2.md §1.
+## 왜 한 스크립트인가: 3종은 "접근/거리유지/돌진" 이동 정책과 "근접/투사체/접촉" 공격 정책의 조합이라
+## 상태머신 하나 + 데이터로 표현 가능. 종마다 스크립트를 두면 스탯 스케일·사망·피해 처리가 3중복. 보스는 별도 클래스(P3).
+## 죽음·넘어짐 **안무**(주저앉음·두 동강·윗몸 미끄러짐·재·박살·흩어짐·피 튐·시체 8초 — #472)는 actors/enemy_death.gd(EnemyDeath, #420), 어떤 죽음인지 고르는
+## 규칙은 actors/death_pick.gd(DeathPick) — 여기는 상태기·이동·공격·피격 판정·신호·드랍.
+
+const PROJECTILE_SCENE := preload("res://actors/projectile.tscn")
+## 상태 효과 틀 — 화상·한기·빙결 (D-081 E2 #202, elements_v2 §3.3·§7.2).
+const STATUS := preload("res://core/status_effects.gd")
+const REPATH_SEC := 0.3
+## 적끼리 밀어내는 거리·세기 (겹침 방지, design/combat_v2.md §1 "스폰"). 충돌 마스크가 몸을 막고, 이건 길찾기가 같은 칸으로 몰아넣는 걸 부드럽게 푼다.
+const SEPARATION_RADIUS := 1.1
+const SEPARATION_PUSH := 2.5
+## 넉백 지속(초, §6.3). 경직(0.35)보다 짧게 — 밀리다 멈춘 뒤에도 잠깐 굳어 있어야 때린 맛이 난다.
+const KNOCK_SEC := 0.12
+## 물러나기 · 버팀 (#381, design/monsters_v2.md §4.4) — 물러나는 갈래(거리 두고 쏘기 · 돌진의 뒤로 빼기)가 붙잡히거나 맞으면 그 자리에서 받아친다.
+## 붙음 = 도호가 이 거리 안(도호 칼 사거리 StatsCalc.BASE_ATTACK_RANGE 1.6 + 닿는 여유 PlayerCombat.LAND_RANGE_SLACK 0.6 = 칼이 닿는 거리).
+const HOLD_RANGE := 2.2
+## 버티는 시간(게임 초) — 그동안은 물러나지 않고 제 공격(쏘기 · 짧은 돌진)으로 받아친다. 붙어 있거나 또 맞으면 다시 채운다 = 다시 물러나기까지의 쿨.
+## 물러나는 빠르기(느린 뒷걸음 · 상한)는 데이터 쪽 — EnemyDef.retreat_speed_mult · EnemyDef.RETREAT_CAP.
+const HOLD_SEC := 2.5
+## 받아치는 짧은 돌진(박쥐) = 도호 자리보다 이만큼 더 — 8칸 돌진으로 빠져나가 다시 멀어지지 않게.
+const LUNGE_PAST := 1.0
+## 공통 AI (보드 #288, design/monsters_v2.md §4.3 · §13.4.1) — 놓침 · 두리번 · 흩어짐 · 목표 한 겹.
+## 놓침: 목표가 이 거리(칸) 밖이면 「안 보인다」 — 안 보인 채 LOSE_SEC초면 놓친다(숨으면 곧바로). 보스는 거리로는 안 놓친다.
+const LOSE_RANGE := 20.0
+const LOSE_SEC := 6.0
+## 놓친 뒤 마지막 본 자리까지 걷는 시간 상한(길이 막혀도 두리번으로 넘어간다) · 닿음 = 이 거리 안.
+const LOST_WALK_MAX := 8.0
+const LOST_ARRIVE := 0.6
+## 두리번: 제자리에서 몸을 ±SEARCH_SWING_DEG 돌린다(한 번 오가는 데 SEARCH_PERIOD초) — SEARCH_SEC초 뒤 그 자리에서 쉰다(IDLE).
+const SEARCH_SEC := 3.0
+const SEARCH_SWING_DEG := 70.0
+const SEARCH_PERIOD := 1.5
+## 흩어짐 (우두머리가 죽으면 — 무뢰배·짐승 하수인): 도호 반대쪽 ± SCATTER_SPREAD_DEG(몸 난수)로 물러나는 걸음(retreat_speed) SCATTER_SEC초 → 쫓기.
+const SCATTER_SEC := 2.5
+const SCATTER_SPREAD_DEG := 40.0
+## 목표 한 겹: 분신(이 무리에 든 Node3D — #251)은 거리 × DECOY_DIST_MULT로 센다(가까운 분신 먼저) · HIDDEN_GROUP(은형 — #251)에 든 몸은 안 보인다.
+const DECOY_GROUP := &"decoy"
+const HIDDEN_GROUP := &"ai_hidden"
+const DECOY_DIST_MULT := 0.7
+
+## 새 상태는 **뒤로만** 붙인다 (#288 — LOST 놓침 · SEARCH 두리번 · SCATTER 흩어짐 · #326 — SUBMERGE 잠수(예고 → 사라짐) · EMERGE 솟음 · #295 — BACK 물고 빠지기의 물러남). 대본·시험이 값으로 읽는다.
+enum State { IDLE, CHASE, KEEP, WINDUP, ATTACK, DASH, DEAD, LOST, SEARCH, SCATTER, SUBMERGE, EMERGE, BUSY, BACK }
+
+## 깼다 (#288 — 쉬는·놓친 몸 → 쫓기, `wake`). by_pack = 무리 신호로 깼나(제 발로 깬 몸만 무리에 알린다). 무리가 깰 때 소리·표시(§6.7)가 받을 자리.
+signal woke(by_pack: bool)
+
+@export var def: EnemyDef
+## 강함 기준 = 지역 레벨 (D-077 디아2 MonLvl, design/areas_v2.md §3). 스폰하는 레벨이 AreaDef.level_at(층)을 넣는다.
+@export var area_level: int = 1
+## 이 개체의 모양 — 스폰하는 층이 고른 갈래(EnemyDef.pick_model, #225 몽둥이·단도 산적). 안 넣으면(시험·소환) def.model.
+## 처치 연출이 읽는 모델 값(die_*·bisect)도 여기서 읽는다 — 갈래마다 GLB가 다를 수 있다.
+var model: ModelDef
+## 첫 매직 보장 몸 (item_system_v2 §15.6, #374) — 스폰하는 층(들녘 FieldLevel)이 첫 두 무리의 첫 몸에 켠다. 겉모습·수치는 같고,
+## 쓰러질 때 제 드랍 뒤에 그 회차의 보장이 남았으면 매직 이상 장비 하나를 더 떨군다(_drop_first_magic).
+var first_magic: bool = false
+
+var hp: float
+var max_hp: float
+## 방금 받은 타격이 치명이었나 — 때린 쪽(PlayerCombat)이 같은 길이로 멈추려고 읽는다 (game_feel_v2 §2 ⑤).
+var last_hit_crit: bool = false
+## 치명 멈춤·킥 (§2 ④⑥). 전투 감각 상수는 쓰는 곳에 둔다(공용 추출 금지 규약).
+const CRIT_STOP := 0.16
+const CRIT_KICK := 0.14
+## 처치 일격 (§3) — 사다리에서 치명 위 칸.
+const KILL_STOP := 0.22
+const KILL_KICK := 0.16
+## 방금 받은 타격으로 죽었나 — 때린 쪽이 같은 길이로 멈추고 연속 처치를 센다.
+var last_hit_kill: bool = false
+## 방금 받은 타격의 가장 큰 조각 속성 (DamageCalc.roll_hit element — 물리 = &"", D-081 §3.4). 죽음 종류는 death_element().
+var last_hit_element: StringName = &""
+var state: State = State.IDLE
+var _rng := RandomNumberGenerator.new()
+## 도호 = 때리는 쪽 (넉백·막타 방향·드랍 ctx·이름표 거리·물러나는 빠르기 상한·버팀 거리). AI가 쫓고 치는 쪽은 `_target`(#288).
+var _player: Node3D
+## 목표 (#288 §13.4.1) — 쫓기·바라보기·치기가 보는 것: 도호 또는 분신(DECOY_GROUP). REPATH_SEC마다 다시 고른다(`_update_target`).
+var _target: Node3D
+var _retarget_timer: float = 0.0
+## 놓침 (#288): 마지막으로 본 목표 자리(INF = 아직 못 봄) · 안 보인 채 흐른 게임 초.
+var _last_seen: Vector3 = Vector3.INF
+var _unseen: float = 0.0
+## 두리번 시작 때 바라보던 쪽 · 두리번이 흐른 시간 / 흩어지는 쪽(흩어지는 순간 도호 반대 ± 40° — 수평 단위 벡터).
+var _search_yaw0: float = 0.0
+var _search_t: float = 0.0
+var _scatter_dir: Vector3 = Vector3.FORWARD
+var _level: Level
+var _path: PackedVector3Array
+var _path_i: int = 0
+var _repath_timer: float = 0.0
+var _cooldown: float = 0.0
+var _state_timer: float = 0.0
+var _dash_dir: Vector3
+var _dash_left: float = 0.0
+var _dash_hit: bool = false
+## 버팀이 남은 시간(게임 초, #381) — 0보다 크면 물러나지 않는다. 다음 돌진이 받아치는 짧은 돌진인가(선딜을 걸 때 켜고 돌진이 가져간다).
+var _hold_left: float = 0.0
+var _lunge: bool = false
+## 이동 속도 배수 (보스 2페이즈 등). 한기는 여기 섞지 않고 따로 곱한다(_move_mult) — 2페이즈가 덮어쓰니까(§7).
+var speed_mult: float = 1.0
+## 상태 효과 (E2 #202) — _ready에서 몸 종류(_status_kind)로 만든다. 시계 = 물리 delta(게임 시간).
+var _status: STATUS
+## 막타 순간 얼어 있었나 — _die()가 상태를 걷기 전에 적어 둔다. 죽은 뒤 is_frozen()이 이 값을 답한다(#185 박살).
+var _died_frozen: bool = false
+## 피격 경직 끝나는 시각 (combat_v2 §6.2, 시계 = GameClock.now #234). IDLE/CHASE/KEEP/ATTACK에서만 먹는다 — 선딜·돌진은 그대로 진행(적 공격이 무한히 끊기지 않게).
+var _stagger_until: float = 0.0
+## 넉백 (combat_v2 §6.3): 맞은 방향으로 미는 초기 속도와 끝나는 시각(GameClock.now). 경직이 속도를 0으로 둔 뒤 이 값이 덮어쓴다. 거리는 틱마다 GameClock.ramp_step 적분(#324).
+var _knock_vel: Vector3 = Vector3.ZERO
+var _knock_until: float = 0.0
+
+## 넘어짐 (combat_v2 §6.6, #145) — **죽지 않은** 적이 강한 기술(SkillDef.knockdown = 강타·회오리)에 맞은 반응.
+## 죽음 연출(위 Corpse·KillFx)과 다른 길이다: 막타면 죽음이 먼저 읽히고 이 길은 돌지 않는다.
+enum Down { NONE, FLY, LIE, RISE }
+var down: Down = Down.NONE
+## 이번 넘어짐의 계산 거리 · 실제로 간 거리(벽이면 짧다). e2e·진단용.
+var down_dist: float = 0.0
+var down_reach: float = 0.0
+## 넘어짐의 값(DOWN_* — 거리·체공·정점·누움·일어남)과 안무(start_knockdown …)는 EnemyDeath(#420).
+var _down_from: Vector3 = Vector3.ZERO
+var _down_to: Vector3 = Vector3.ZERO
+var _down_air: float = 0.0
+var _down_apex: float = 0.0
+## 다시 넘어지기까지 남은 시간(초, 게임 시간 — 벽시계로 재면 프레임이 몰릴 때 어긋난다 #324). EnemyDef.knockdown_cd에서 채운다.
+var _down_cd: float = 0.0
+var _down_tw: Tween
+## 넘어짐 스위치 (PD 2026-09-24, 보드 #425) — **끔**: 강타·회오리(SkillDef.knockdown)도 살아 있는 적에겐 보통 경직(§6.2)·밀림(§6.3)만 준다.
+## 기능(판정 _knocks_down · 안무 EnemyDeath · 데이터 SkillDef.knockdown · EnemyDef.knockdown_cd)과 시험은 그대로 둔다 — 다시 쓰려면 true 한 줄.
+## e2e는 러너가 대본마다 E2eScenario.knockdown_on()으로 건다(넘어짐을 재는 heavy_react · pack_ai · element_status만 켠다).
+static var knockdown_on: bool = false
+
+## 시체 (보드 #183 → #472, game_feel_v2 §10): FLY = 막타 멈춤 + 무너지는 중(이름은 옛 날아감 — 날아가지 않는다, #472) · LIE = 누워 있음(8초) · SINK = 가라앉는 중.
+## e2e·dev·훅(EnemyHook.CORPSE_LIE)이 값으로 읽는다. 아래 칸들은 EnemyDeath(#420)가 채운다. 재·박살·흩어짐도 이 시간표를 돈다(몸만 숨김 · 시체 명단 밖).
+enum Corpse { NONE, FLY, LIE, SINK }
+var corpse: Corpse = Corpse.NONE
+## 막타 정보 — receive_attack이 채우고 _die가 읽는다(보스가 _die를 덮어 쓰므로 인자 대신 칸으로 넘긴다): 방향 · 넘친 피해 배율(상한 1.5)과 비율(상한 없음) ·
+## 치명 · 기술 막타인가(blow.skill) · 면 갈래 힌트(SkillDef.cut) · 칼 궤적(PlayerCombat._land가 blow.blade로 싣는다).
+var _kill_dir: Vector3 = Vector3.ZERO
+var _kill_over: float = 1.0
+var _kill_over_raw: float = 0.0
+var _kill_crit: bool = false
+var _kill_skill: bool = false
+var _kill_cut_hint: StringName = &""
+var _kill_blade: Dictionary = {}
+## 기술·치명이 아니어도 베임 막타인가 (#480 — 망나니 칼 처형 · 평타 두 동강 %, EnemyDeath.note_kill이 채운다).
+var _kill_cleave: bool = false
+## 고른 죽음 (#472 — DeathPick, EnemyDeath.decide): 규칙의 답(kind — 자리만 둔 그을림·역병·조각조각 포함) · 지금 도는 안무(play) ·
+## 자른 면 갈래(cut — 두 동강만: 가로 h · 사선 d · 세로 v) · 갈래(variant — 비틀림 −1·0·+1 · 세로 두 쪽 같이/한쪽 먼저) · 몸 종류(set). e2e·dev가 읽는다.
+var death_kind: StringName = &""
+var death_play: StringName = &""
+var death_cut: StringName = &""
+var death_variant: int = 0
+var death_set: StringName = &""
+## 재·흩어짐이 스러진 정도(0 → 1.25, InkDissolve.amount) · 박살이면 부서진 순간 1. e2e·dev가 읽는다.
+var death_dissolve: float = 0.0
+## 막타 순간 발밑(가라앉는 깊이·착지 높이 기준) · 죽음 안무 트윈 · 안무 칸(EnemyDeath만 쓴다 — 비틀림·스러지는 재질·박살 떨림·미끄러짐·세로 두 쪽).
+var _death_from: Vector3 = Vector3.ZERO
+var _corpse_tw: Tween
+var _dfx: Dictionary = {}
+
+## 두 동강 (보드 #184 → #472, game_feel_v2 §10.8): 갈랐나 · 자른 면(월드, 막타 순간) · 윗몸(굳힌 사본 — 이 노드의 자식이라 1구로 세고 같이 가라앉는다 · 세로면 법선 쪽 반) ·
+## 윗몸 가슴 한가운데(단면 중심)의 출발·도착(월드) · 아랫몸이 무너진 쪽. e2e·dev가 읽는다.
+var bisected: bool = false
+var cut_plane: Plane = Plane()
+var upper: Node3D
+var upper_from: Vector3 = Vector3.ZERO
+var upper_to: Vector3 = Vector3.ZERO
+var lower_dir: Vector3 = Vector3.ZERO
+## 두 동강의 길 (이 노드 기준 — 적 본체는 돌지 않는다): 윗몸 단면 중심 출발·도착 · 가는 쪽 · 기우는 각(라디안) · 처음 자리 /
+## 아랫몸 발뒤꿈치 축 · 회전축 · 처음 자리 · 지금 변환(피 뿜는 자리).
+var _up_c0: Vector3 = Vector3.ZERO
+var _up_c1: Vector3 = Vector3.ZERO
+var _up_dir: Vector3 = Vector3.FORWARD
+var _up_tilt: float = 0.0
+var _up_base: Transform3D = Transform3D.IDENTITY
+var _low_pivot: Vector3 = Vector3.ZERO
+var _low_axis: Vector3 = Vector3.RIGHT
+var _low_base: Transform3D = Transform3D.IDENTITY
+var _low_xf: Transform3D = Transform3D.IDENTITY
+
+## 등급 · 정예 (design/monsters_v2.md §6 · §13.7, 보드 #290) — 스폰하는 쪽(EliteSpawner)이 트리에 넣기 전에 set_rank로 채운다.
+## 배수는 몸(인스턴스)에만 — def는 층의 같은 종이 함께 쓰는 리소스라 안 고친다. 잡몹 = 곱 1 · 더하기 0(숫자·난수 그대로).
+var rank: EliteRules.Rank = EliteRules.Rank.NORMAL
+## 붙은 파란 강화 하나 또는 금색 옵션(굴린 차례) — 하수인은 우두머리의 첫 옵션.
+var elite_mods: Array[EliteDef] = []
+## 같은 무리 (0 = 무리 없음) · 하수인이 따르는 우두머리 · 우두머리의 굴린 이름. 무리 어그로·흩어짐(M2 #288)이 읽는다.
+var pack_id: int = 0
+var leader: Enemy
+var rolled_name: String = ""
+## 이 몸에 꽂힌 훅 (EnemyHook — 순서대로). 몸 기믹(def.gimmick) + 강화·옵션(EliteDef.effect).
+var hooks: Array[EnemyHook] = []
+## 갈라진 몸 (D-089 §1.4 · §1.5 ⑪, #326 — EnemyKin이 채운다): 세대(0 원본 · 1 반쪽·새끼 — 기믹이 안 붙는다) · 낳은 수(까는 자) · 경험치 얹기(새끼 하나 +0.2) ·
+## 경험치·드랍을 주나(반쪽·새끼 = 아니오) · 피해·크기 배수(반쪽 0.7 · 새끼 0.6 — 등급 배수 _m과 따로 곱한다, 충돌 캡슐도 크기를 따른다).
+var gen: int = 0
+var spawned: int = 0
+var xp_bonus: float = 0.0
+var gives_reward: bool = true
+## 이 몸이 일으킨 시체 수 (일으키는 자 — hooks/role_raise.gd → raise_corpse, #328).
+var raised: int = 0
+## 오라가 씌운 일시 값 (D-089 §2.2 ① 뿌리는 자 「역병 기운」 · 지키는 자 막이 — hooks/role_spread.gd · role_guard.gd, #328): 열쇠 → {left(남은 초), res{막이 더하기 %}, dmg(곱)}.
+## 오라 틱이 3초씩 다시 채운다 — 오라 몸이 죽으면 더 안 채워져 3초 뒤 걷힌다. hit_target(막이) · _dmg_k(피해)가 읽는다. 세이브엔 없다(적은 저장하지 않는다).
+var _buffs: Dictionary = {}
+var dmg_scale: float = 1.0
+var size_scale: float = 1.0
+## 다음 한 대를 바꾸는 기믹 값 (#326 — 몸통 훑기 hooks/sweep.gd · 솟은 뒤 훑기): windup(선딜) · range(사거리) · fan_deg(앞 부채꼴) · mult(피해 배수).
+## 선딜을 걸 때 읽고(부채 예고 FanTelegraph) 한 대가 나가면 비운다. 근접 틀만.
+var strike_mod: Dictionary = {}
+## 잠수 (§1.4, #326 — hooks/dive.gd가 submerge()로 건다): 값 · 단계(0 예고 · 1 사라짐) · 숨었나(맞지 않는다 · 충돌 0 · 안 보임 · 커서·판 대상에서 빠진다).
+var _sub: Dictionary = {}
+var _sub_phase: int = 0
+var _hidden: bool = false
+## 잠복 (#330 네임드 이무기 — 깊은 소): 숨은 채(맞지 않는다 · 충돌 0 · 안 보임 · 커서·판 대상에서 빠진다) 제자리에 쉬다가 목표가 눈(aggro_range) 안에 오면
+## 잠수 기믹의 솟음으로 드러난다(wake → surface → _emerge). 잠복 중엔 중력·AI·분리·훅 시계가 서고, 드러날 때부터 훅 시계가 흐른다(첫 잠수 = interval 뒤).
+## 명단 몸엔 없다 — NamedSpawner(opts.lurk)가 켠다.
+var _lurking: bool = false
+## 네임드 보장 유니크 (#330 — _drop_named): 이 몸이 떨군 지정 유니크(캐릭터 첫 처치만), 아니면 null. e2e·dev 진단.
+var named_unique: ItemInstance = null
+## 솟은 뒤 물 위로 올라오는 시간(초) — 그 뒤 곧바로 훑기 선딜.
+const EMERGE_SEC := 0.2
+## 부채꼴 예고 (선딜 동안 발밑) · 긴 몸의 꼬리 (EnemyDef.Body.SERPENT — SerpentTail, 시각만).
+var _fan: FanTelegraph
+var _tail: SerpentTail
+## 훅이 몸을 붙든 상태 BUSY (#296 — 숨어 있기 · 시체 먹기 · 끌어당김 예고 · 벽 박힘): hold()가 채운다 — kind · to(걸어갈 자리) · arrive · done(다 되면 부르는 Callable) · sec.
+var _busy: Dictionary = {}
+## 돌진이 어떻게 끝났나 (#296 벽 박힘 훅이 읽고 비운다): &"wall"(벽에 정면으로 박힘) · &"hit"(부딪침) · &"spent"(길이 다 감).
+var dash_end: StringName = &""
+## 우두머리 호령 (#296 hooks/command.gd — 반경 안 하수인에 건다): {"dmg": 피해 곱, "move": 이동 곱}. 비면 1.
+var aura: Dictionary = {}
+## M9 행동 틀 칸 (#295 — EnemyMoves만 쓴다): 문 수 · 흔들림 위상·시계 · 둘레 도는 방향 · 한 대의 갈래 · 부풂 링·그림 · 제 발로 터졌나. 옛 셋은 비어 있다.
+var moves: Dictionary = {}
+## 포위 자리 (§4.3 ⑦, #296 — Surround): 목표 둘레 8자리 중 이 몸의 자리, 없으면 −1. 자리 주인끼리는 서로 안 민다.
+var _slot: int = -1
+## 포위는 목표에게서 이만큼 안에서만 · 자리 반지름 = 사거리 × K (사거리 안 · 몸이 닿지 않는 거리 이상) · 자리에 닿는 여유(길 점은 PATH_ARRIVE).
+const SURROUND_RANGE := 6.0
+const SURROUND_RADIUS_K := 0.8
+const SLOT_ARRIVE := 0.12
+const PATH_ARRIVE := 0.35
+## 등급 + 강화·옵션을 합친 배수 한 벌 (EliteRules.compose) — 쓰는 곳이 곱한다.
+var _m: Dictionary = EliteRules.compose(EliteRules.Rank.NORMAL, [])
+## 이름표 (#290 최소 표시 — Alt를 누르는 동안, 등급 있는 몸에만). 호버 띠·발밑 원은 #293.
+## 한 몸의 줄(이름 · 옵션)은 라벨 **하나**에 줄바꿈으로 쌓는다 — 글꼴 줄 간격이 나누니 한 몸 안에서 안 겹친다(라벨 둘을 세로로 띄우면
+## 아이소 카메라에서 세로 간격이 cos 35°로 줄어 겹쳤다). 머리 위 자리부터 위로 자란다(§13.7).
+## 머리 위 생명 숫자는 없다 (PD 2026-09-23, #382) — 생명은 호버 띠(#81 ui/hover_tip.gd)·보스 바로 본다.
+var _name_label: Label3D
+var _rank_ring: MeshInstance3D   # #293 정예 먹 원 — 몸과 함께 움직이고 등급을 바꾸면 한 개만 남긴다
+const NAME_LABEL_RANGE := 14.0
+const NAME_FONT_SIZE := 26
+const NAME_PIXEL_SIZE := 0.01
+## 머리 위 자리 = 몸 키 × 크기 + 이만큼 — 맨 아래 줄의 한가운데가 선다(옛 생명 숫자의 한가운데, #382 전/후 같은 높이).
+const NAME_LABEL_LIFT := 0.35
+
+@onready var _visual: ActorVisual = $Visual
+@onready var _body_mesh: MeshInstance3D = $Visual/Body
+
+
+func _ready() -> void:
+	add_to_group("enemy")
+	collision_layer = 4      # enemy
+	collision_mask = 1 | 2 | 4   # world + player + enemy (적끼리 겹치지 않게 서로 막는다)
+	_rng.randomize()
+	if model == null:
+		model = def.model
+	# 네임드 (monsters_v2 §7.1, #330): 변종 데이터가 네임드(drop_class NAMED)면 등급도 네임드 — 굴림 없음(강화·옵션·굴린 이름 없음) · 레벨 +2 · 넘어뜨림 면역.
+	# 스폰하는 쪽(NamedSpawner)이 set_rank를 안 불러도 선다(시험·dev 소환). 보스는 제 _ready가 BOSS를 먼저 넣는다
+	if def.drop_class == EnemyDef.DropClass.NAMED and rank == EliteRules.Rank.NORMAL:
+		rank = EliteRules.Rank.NAMED
+	_m = EliteRules.compose(rank, elite_mods)
+	max_hp = def.max_hp * DamageCalc.level_hp_mult(monster_level()) * float(_m.hp)
+	hp = max_hp
+	_status = STATUS.new(_status_kind(), def.can_freeze)
+	_apply_visual()
+	_build_hooks()
+	_apply_rank_look()
+	if not _visual.model_changed.is_connected(_on_model_changed):
+		_visual.model_changed.connect(_on_model_changed)
+	# 긴 몸 (D-089 §1.3, #326): 꼬리 마디는 시각만 — 충돌은 위 머리 캡슐 하나. 머리 모델에 마디 메시가 있으면 그것을 잇는다(#332), 없으면 캡슐
+	if def.body == EnemyDef.Body.SERPENT:
+		_tail = SerpentTail.new()
+		_tail.name = "Tail"
+		add_child(_tail)
+		_tail.setup(self, def, body_scale(), model)
+
+
+## 이 몸의 난수(_rng — 훅의 자리·확률 · 밀어내기 · 도호에게 한 대)를 시드로 고정한다 — e2e·시험 전용(#423 결정성). 게임은 부르지 않는다(_ready의 randomize 그대로).
+## _ready가 randomize하므로 트리에 넣기 전에 불렀으면 ready 뒤에 한 번 더 심는다.
+func seed_rng(s: int) -> void:
+	_rng.seed = s
+	if not is_node_ready():
+		ready.connect(func() -> void: _rng.seed = s, CONNECT_ONE_SHOT)
+
+
+# ---------- 등급 · 정예 · 훅 (monsters_v2 §6 · §13.7, 보드 #290) ----------
+
+## 등급을 입힌다. 트리에 넣기 전에 부르면 _ready가 한 번에 입히고, 이미 서 있으면 지금 다시 잰다(생명은 비율 그대로).
+## mods = 파란 강화 하나 또는 금색 옵션(굴린 차례) · p_name = 우두머리의 굴린 이름.
+func set_rank(r: int, mods: Array = [], p_name: String = "") -> void:
+	rank = r as EliteRules.Rank
+	elite_mods.clear()
+	for x in mods:
+		if x is EliteDef:
+			elite_mods.append(x)
+	rolled_name = p_name
+	_m = EliteRules.compose(rank, elite_mods)
+	if not is_node_ready() or def == null:
+		return
+	var ratio := hp / max_hp if max_hp > 0.0 else 1.0
+	max_hp = def.max_hp * DamageCalc.level_hp_mult(monster_level()) * float(_m.hp)
+	hp = max_hp * ratio
+	_build_hooks()
+	_apply_rank_look()
+
+
+## 몬스터 레벨 = 지역(무리·층) 레벨 + 등급 가산(하수인·파란 +1 · 금색 +2 · 보스 0 — §6.5 · §13.7). 생명·피해·경험치 곡선이 읽는다.
+## area_level은 그대로 둔다 — 드랍 ilvl 가산은 드랍 원천(Loot.SOURCES)이 따로 더한다(둘 다 더하면 두 번 센다).
+func monster_level() -> int:
+	return area_level + int(_m.level)
+
+
+## 합친 배수 한 칸 (e2e·훅·진단): hp · dmg · acc · xp · stagger · knock · size · freeze · move · cd · windup · def · alpha · level.
+func rank_mult(key: String) -> Variant:
+	return _m.get(key)
+
+
+## 이 몸의 한 대 (피해 범위) = 변종 × 레벨 곡선 × 등급·옵션 배수. 죽을 때 터짐 같은 훅이 읽는다(Vector2 = 32비트 — 굴림엔 _dmg_k를 쓴다).
+func attack_damage() -> Vector2:
+	var k := _dmg_k()
+	return Vector2(def.dmg_min * k, def.dmg_max * k)
+
+
+## 피해 곱 = 레벨 곡선 × 등급·옵션 × 갈라진 몸 배수(반쪽 0.7 · 새끼 0.6, #326 — 원본은 1) × 오라(역병 기운 ×1.1, #328 — 없으면 1)
+## (64비트 그대로 — 잡몹은 옛 식 def.dmg × 레벨 곡선과 비트까지 같다).
+func _dmg_k() -> float:
+	return DamageCalc.level_dmg_mult(monster_level()) * float(_m.dmg) * dmg_scale * _buff_dmg() * aura_mult("dmg")
+
+
+## 우두머리 호령 곱 한 칸 (#296 — dmg · move). 걸린 게 없으면 1.
+func aura_mult(key: String) -> float:
+	return float(aura.get(key, 1.0))
+
+
+func attack_accuracy() -> float:
+	return def.accuracy + float(_m.acc)
+
+
+## 회피 = 도호 명중 굴림의 과녁 (receive_attack). 페이즈로 바뀌는 보스가 덮는다(장산범 P3 +15 — 털이 칼을 흘림, bosses_v2 §2.3 · #494).
+func evasion() -> float:
+	return def.evasion
+
+
+## 공격 속성 몫 = 변종 몫 + 강화·옵션 몫(속성마다 큰 것 — 불붙은 = 불 0.5).
+func attack_shares() -> Dictionary:
+	var sh := def.attack_shares()
+	var add: Dictionary = _m.shares
+	if add.is_empty():
+		return sh
+	var out := sh.duplicate()
+	for k in add:
+		out[k] = maxf(float(out.get(k, 0.0)), float(add[k]))
+	return out
+
+
+## 모양 크기 = 변종 크기 × 등급·옵션 크기 × 갈라진 몸 크기(#326 — 반쪽 0.7 · 새끼 0.6, 이것만 충돌 캡슐도 줄인다) (등급 크기는 충돌 캡슐·판정 높이 그대로 — §13.7).
+func body_scale() -> float:
+	return def.size_mult * float(_m.size) * size_scale
+
+
+## 첫 줄 이름 (§6.6) — 파란 = 「질긴 산적」 · 우두머리 = 굴린 이름 · 그 밖 = 변종 이름. 호버 띠(#293)가 읽는다.
+func shown_name() -> String:
+	return EliteRules.shown_name(rank, def.display_name, elite_mods, rolled_name)
+
+
+## 둘째 줄 (우두머리·하수인 = 옵션 이름 「불붙은 · 힘센」).
+func rank_line() -> String:
+	return EliteRules.rank_line(rank, elite_mods)
+
+
+func name_color() -> Color:
+	return EliteRules.name_color(rank)
+
+
+## 붙은 강화·옵션 id (굴린 차례) — e2e·dev·진단.
+func elite_ids() -> PackedStringArray:
+	var out := PackedStringArray()
+	for m in elite_mods:
+		out.append(String(m.id))
+	return out
+
+
+## 생명을 되찾는다 (흡혈하는 — 훅). 최대 생명까지 · 죽은 몸은 안 된다 · 초록 숫자.
+func heal(amount: float) -> void:
+	if state == State.DEAD or amount <= 0.0:
+		return
+	var before := hp
+	hp = minf(max_hp, hp + amount)
+	if hp > before and is_inside_tree():
+		DamagePopup.spawn(get_parent(), global_position, "+%d" % int(round(hp - before)), Color(0.45, 0.95, 0.5))
+
+
+## 훅을 다시 꽂는다 — 몸 기믹(def.gimmick, M10) → 역할(def.role → RoleDef.effect, #328) → 강화·옵션(EliteDef.effect, 굴린 차례). 모르는 id는 알리고 건너뛴다(켜지지 않은 단계의 데이터).
+func _build_hooks() -> void:
+	var list: Array = []
+	# 갈라진 몸(gen > 0 — 반쪽·새끼·일으킨 몸, #326 · #328)엔 몸 기믹·역할이 안 붙는다: 반쪽은 다시 안 나뉘고 새끼는 알을 못 까고 일으킨 몸은 일으킬 줄 모른다(§1.4 · §2.2)
+	if def.gimmick != &"" and gen == 0:
+		_add_hook(list, def.gimmick, def.gimmick_params, EnemyHook.ORDER_GIMMICK, def)
+	if def.role != &"" and gen == 0:
+		var rd := RoleRules.get_def(def.role)
+		if rd == null:
+			push_warning("Enemy %s: 역할 %s 없음 — data/roles에 없다" % [def.id, def.role])
+		elif rd.effect != &"":
+			var rp := rd.params.duplicate()
+			rp.merge(def.role_params, true)
+			_add_hook(list, rd.effect, rp, EnemyHook.ORDER_ROLE, rd)
+	for i in elite_mods.size():
+		var m := elite_mods[i]
+		if m.effect != &"":
+			_add_hook(list, m.effect, m.params, EnemyHook.ORDER_ELITE + i, m)
+	hooks.assign(EnemyHooks.sorted(list))
+
+
+func _add_hook(list: Array, id: StringName, params: Dictionary, order: int, source: Resource) -> void:
+	var h := EnemyHooks.make(id, params, order, source)
+	if h == null:
+		push_warning("Enemy %s: 훅 %s 없음 — EnemyHooks.PATHS에 등록 안 됨(켜지지 않은 단계?)" % [def.id, id])
+		return
+	list.append(h)
+
+
+func _hooks_attack(atk: Dictionary) -> void:
+	for h in hooks:
+		h.on_attack(self, atk)
+
+
+func _hooks_hit(hit: Dictionary) -> void:
+	for h in hooks:
+		h.on_hit(self, hit)
+
+
+func _hooks_death() -> void:
+	for h in hooks:
+		h.on_death(self)
+
+
+func _hooks_tick(delta: float) -> void:
+	for h in hooks:
+		h.tick(self, delta)
+		if state == State.DEAD:
+			return
+
+
+## 도호에게 닿은 한 대를 알린다 (LAND — 흡혈·액·도력 먹기). 칼·돌진은 _land_on_player가, 부적 투사체는 명중할 때 부른다.
+func attack_landed(atk: Dictionary, dealt: int) -> void:
+	if hooks.is_empty() or state == State.DEAD:
+		return
+	atk["phase"] = EnemyHook.Phase.LAND
+	atk["dealt"] = dealt
+	_hooks_attack(atk)
+
+
+# ---------- 역할 · 오라 값 (D-089 §2, 보드 #328 — 훅 actors/hooks/role_*.gd가 부른다) ----------
+
+## 이 몸의 역할 (RoleDef — 없으면 null). 호버 띠·역할 표식(#293)이 읽는다.
+func role_def() -> RoleDef:
+	return RoleRules.get_def(def.role) if (def != null and def.role != &"") else null
+
+
+## 오라 값을 씌운다 — sec초, 다시 부르면 시간을 새로 채운다(같은 열쇠는 덮는다). data = {res: {phys·fire·cold·lightning·sal: 더하기 %}, dmg: 곱}. 죽은 몸엔 안 붙는다.
+func set_buff(key: StringName, data: Dictionary, sec: float) -> void:
+	if state == State.DEAD or sec <= 0.0:
+		return
+	_buffs[key] = {"left": sec, "res": data.get("res", {}), "dmg": float(data.get("dmg", 1.0))}
+
+
+func has_buff(key: StringName) -> bool:
+	return _buffs.has(key)
+
+
+## 남은 시간(초) — 없으면 0.
+func buff_left(key: StringName) -> float:
+	return float((_buffs[key] as Dictionary).left) if _buffs.has(key) else 0.0
+
+
+## 게임 시간으로 흘린다(넘어져 있어도 — 상태 효과와 같은 결). 다 되면 걷힌다.
+func _tick_buffs(delta: float) -> void:
+	if _buffs.is_empty():
+		return
+	for k in _buffs.keys():
+		var b: Dictionary = _buffs[k]
+		b["left"] = float(b.left) - delta
+		if float(b.left) <= 0.0:
+			_buffs.erase(k)
+
+
+## 오라 피해 곱 (없으면 1).
+func _buff_dmg() -> float:
+	var m := 1.0
+	for b in _buffs.values():
+		m *= float((b as Dictionary).dmg)
+	return m
+
+
+## 오라 막이 더하기를 표에 얹는다 (hit_target).
+func _buff_res(res: Dictionary) -> void:
+	for b in _buffs.values():
+		var add: Dictionary = (b as Dictionary).res
+		for k in add:
+			res[k] = float(res.get(k, 0.0)) + float(add[k])
+
+
+## 쉬고 있나 (아직 안 깼다 — 봉화 소집의 대상, hooks/role_beacon.gd).
+func is_idle() -> bool:
+	return state == State.IDLE
+
+
+## 곁의 일으킬 수 있는 시체 (일으키는 자 §2.2 ② — hooks/role_raise.gd): **같은 무리**(pack_id ≠ 0) · 누워 있음(LIE — 무너지는 중·가라앉는 중은 아님) ·
+## 재(불 막타) · 얼어 박살 · 넋(원혼)은 시체가 없다 · 수평 반경 안. 가까운 순.
+func raisable_corpses(radius: float) -> Array:
+	var out: Array = []
+	if pack_id == 0:
+		return out
+	for c in EnemyDeath.corpses():
+		var ce := c as Enemy
+		if ce == null or ce == self or ce.pack_id != pack_id or ce.corpse != Corpse.LIE or ce.def == null:
+			continue
+		var el := ce.death_element()
+		if el == &"fire" or el == &"cold" or ce.def.resolved_hit_material() == &"soul":
+			continue
+		var d := Vector2(ce.global_position.x - global_position.x, ce.global_position.z - global_position.z).length()
+		if d > radius:
+			continue
+		out.append([d, ce])
+	out.sort_custom(func(a: Array, b: Array) -> bool: return float(a[0]) < float(b[0]))
+	var bodies: Array = []
+	for row in out:
+		bodies.append(row[1])
+	return bodies
+
+
+## 시체 하나를 일으킨다 (§2.2 ②): 그 변종·모양으로 세대 1 몸 — 생명 = 시체 최대 생명 × hp_ratio · 경험치 0 · 드랍 0 · 기믹·역할 없음 · 같은 무리 · 곧바로 쫓는다.
+## 시체는 곧 가라앉는다(EnemyDeath.take_corpse). 못 세우면(트리 밖 · 상한) null.
+func raise_corpse(c: Enemy, hp_ratio: float) -> Node:
+	if c == null or not is_instance_valid(c) or not is_inside_tree() or not c.is_inside_tree():
+		return null
+	var pos := Vector3(c.global_position.x, global_position.y, c.global_position.z)
+	var kin := EnemyKin.spawn(self, {"pos": pos, "def": c.def, "model": c.model, "max_hp": c.max_hp, "hp": hp_ratio, "gen": 1, "reward": false})
+	if kin == null:
+		return null
+	EnemyDeath.take_corpse(c)
+	raised += 1
+	return kin
+
+
+## 등급 겉모습 (최소 표시 — 호버 띠·발밑 먹 원·강화 틴트는 #293): 모양 크기 · 투명 · Alt 이름표.
+func _apply_rank_look() -> void:
+	var s := body_scale()
+	if not is_equal_approx(s, 1.0) or _visual.scale != Vector3.ONE:
+		_visual.scale = Vector3.ONE * s
+	_apply_alpha()
+	_sync_rank_ring()
+	if EliteRules.is_ranked(rank):
+		if _name_label == null:
+			_name_label = Label3D.new()
+			_name_label.name = "NameLabel"
+			_name_label.pixel_size = NAME_PIXEL_SIZE
+			_name_label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
+			_name_label.no_depth_test = true
+			_name_label.font_size = NAME_FONT_SIZE
+			_name_label.outline_size = 6
+			# 아래 끝이 원점 — 줄이 늘면 위로 자란다(첫 줄 = 이름 · 맨 아래 = 옵션)
+			_name_label.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
+			_name_label.visible = false
+			add_child(_name_label)
+		var line := rank_line()
+		_name_label.text = shown_name() + ("\n" + line if line != "" else "")
+		_name_label.modulate = name_color()
+		# 머리 위 자리에 맨 아래 줄의 한가운데가 서고 위로 쌓인다(아래 맞춤 + 반 줄 아래) — 오프셋은 라벨 평면의 픽셀이라 카메라 기울기에 안 줄어든다
+		_name_label.position = Vector3(0.0, def.height * s + NAME_LABEL_LIFT, 0.0)
+		_name_label.offset = Vector2(0.0, -_label_half_px(_name_label))
+	elif _name_label != null:
+		_name_label.queue_free()
+		_name_label = null
+	set_process(_name_label != null)
+
+
+## 정예 발밑의 얇은 먹 원(#293). 골격/사망 처리와 분리된 지속 표시라 VFX 시트가 오면 이 노드만 갈아 끼운다.
+func _sync_rank_ring() -> void:
+	var tint := Color.TRANSPARENT
+	match rank:
+		EliteRules.Rank.ELITE:
+			tint = ItemInstance.RARITY_COLORS[ItemInstance.Rarity.MAGIC]
+		EliteRules.Rank.LEADER:
+			tint = name_color()
+		EliteRules.Rank.NAMED:
+			tint = Color(0.62, 0.16, 0.14)
+	if tint.a <= 0.0:
+		if is_instance_valid(_rank_ring):
+			remove_child(_rank_ring)
+			_rank_ring.queue_free()
+			_rank_ring = null
+		return
+	if not is_instance_valid(_rank_ring):
+		_rank_ring = VfxMeshes.elite_ink_ring(tint)
+		_rank_ring.name = "EliteInkRing"
+		_rank_ring.rotation.x = -PI * 0.5
+		_rank_ring.position.y = 0.035
+		add_child(_rank_ring)
+	var mat := _rank_ring.material_override as ShaderMaterial
+	var pigment := tint.darkened(0.35)
+	mat.set_shader_parameter("pigment", Color(pigment.r, pigment.g, pigment.b, 0.62))
+	_rank_ring.scale = Vector3.ONE * maxf(1.0, def.radius * 2.0) * body_scale()
+	_rank_ring.visible = state != State.DEAD and not _hidden
+
+
+## 투명 (넋 나간 — §6.2): 몸의 메시마다 transparency = 1 − alpha. 은형 셰이더가 생기면 갈음. 불투명(1)이면 아무것도 안 건드린다.
+func _apply_alpha() -> void:
+	var a := float(_m.alpha)
+	if a >= 1.0:
+		return
+	for mi in _visual.find_children("*", "MeshInstance3D", true, false):
+		(mi as MeshInstance3D).transparency = 1.0 - a
+
+
+## 모델이 바뀌면(드물다) 새 메시에도 투명을 다시.
+func _on_model_changed(_loaded: bool) -> void:
+	_apply_alpha()
+
+
+## Alt를 누르는 동안 이름표 (등급 있는 몸만 _process가 돈다 — set_process). 아이템 이름표와 같은 키(디아2 Alt).
+## 물리 틱이 없는 프레임·AI를 세운 몸(e2e 사진)에서도 맞게 여기서 정한다.
+func _process(_delta: float) -> void:
+	if _name_label == null:
+		set_process(false)
+		return
+	var p := _attacker()
+	var d := INF
+	if p != null:
+		d = Vector2(p.global_position.x - global_position.x, p.global_position.z - global_position.z).length()
+	_name_label.visible = state != State.DEAD and not _hidden and Input.is_key_pressed(KEY_ALT) and d <= NAME_LABEL_RANGE
+
+
+## 라벨 한 줄 높이의 절반(픽셀) — 이름표 맨 아래 줄의 한가운데를 머리 위 자리에 세울 때. 글꼴을 안 줬으면 테마 기본 글꼴.
+static func _label_half_px(l: Label3D) -> float:
+	var f: Font = l.font if l.font != null else ThemeDB.fallback_font
+	return f.get_height(l.font_size) * 0.5 if f != null else 0.0
+
+
+## 3D 모델(model = 고른 갈래 또는 def.model의 GLB)이 있으면 ActorVisual이 캡슐을 숨기고 모델을 쓴다. 없으면 종별 색·크기 캡슐(플레이스홀더).
+## 충돌 캡슐·이름표 높이는 모델과 무관하게 def.height를 따른다(전투 판정은 데이터가 정본).
+func _apply_visual() -> void:
+	var mesh := CapsuleMesh.new()
+	mesh.radius = def.radius
+	mesh.height = def.height
+	var mat := StandardMaterial3D.new()
+	mat.albedo_color = def.color
+	mat.roughness = 0.9
+	_body_mesh.mesh = mesh
+	_body_mesh.material_override = mat
+	_body_mesh.position.y = def.height * 0.5 + def.float_height   # 떠다님 몸은 뜬 높이만큼 띄운다 (#295, §12.3 — 충돌은 땅에 그대로)
+	_visual.albedo_tint = def.model_tint   # 변종 틴트 (#299 — 소복 귀신 셋이 한 모델을 색으로 가른다)
+	_visual.apply_model(model)
+	# 씬의 CapsuleShape3D는 인스턴스 간 공유 리소스 → 복제하지 않으면 마지막 스폰된 종의 크기가 전부에 적용됨(실측: 산적이 0.4u 잠김)
+	# 갈라진 몸(size_scale — 반쪽 0.7 · 새끼 0.6, #326)은 충돌 캡슐도 줄인다(황충 0.5 → 반쪽 0.35, §5.2). 등급 크기(_m.size)는 그대로(§13.7)
+	var shape := ($Collision.shape as CapsuleShape3D).duplicate() as CapsuleShape3D
+	shape.radius = def.radius * size_scale
+	shape.height = def.height * size_scale
+	$Collision.shape = shape
+	$Collision.position.y = def.height * size_scale * 0.5
+
+
+func _physics_process(delta: float) -> void:
+	if state == State.DEAD:
+		return
+	# 상태 효과 (E2 #202): 게임 시간으로 흘린다 — 넘어져 있어도 흐른다(화상 틱·한기 시간은 몸에 붙은 것). 화상 틱으로 죽었으면 여기서 끝
+	if _tick_status(delta):
+		return
+	_tick_buffs(delta)   # 오라 값 (#328) — 같은 시계
+	# 훅 틱 (#290 — 축지·호령·무리 부르기·기믹): 얼었거나 넘어졌는지는 훅이 본다. 훅이 죽였으면 끝. 잠복 중(#330)엔 훅 시계도 선다
+	if not hooks.is_empty() and not _lurking:
+		_hooks_tick(delta)
+		if state == State.DEAD:
+			return
+	var frozen := is_frozen()
+	if not frozen:
+		_cooldown = maxf(0.0, _cooldown - delta)   # 빙결 중엔 쿨도 선다 (§7.2)
+	_down_cd = maxf(0.0, _down_cd - delta)
+	_hold_left = maxf(0.0, _hold_left - delta)   # 버팀 (#381) — 게임 시간
+	# 넘어져 있는 동안은 AI도 물리도 쉰다 (§6.6) — 자리는 트윈이 옮긴다(포물선). 공격·이동·분리·밀림 없음.
+	# 넘어진 몸은 얼지 않는다(apply_freeze → 한기) — 여기와 아래 빙결 멈춤이 겹치지 않는다
+	if down != Down.NONE:
+		velocity = Vector3.ZERO
+		_visual.set_moving(false, 0.0)
+		return
+	_attacker()   # 도호 (때리는 쪽)
+	if _level == null:
+		_level = get_tree().get_first_node_in_group("level") as Level
+	# 목표 한 겹 (#288): 도호·분신 중 하나(숨은 몸·쓰러진 몸 빼고) — 없으면(숨음) 거리 INF로 흘려 쫓던 몸이 놓친다
+	_update_target(delta)
+	if _player == null and _target == null:
+		return   # 도호도 분신도 없는 장면(도구·시험) — 전처럼 쉰다
+	# 이름은 옛것 그대로(보스·근접 쿨 기다림이 같은 인자를 쓴다) — 값은 **목표까지**
+	var to_player := Vector3.ZERO
+	var dist := INF
+	if _target != null:
+		to_player = _target.global_position - global_position
+		to_player.y = 0.0
+		dist = to_player.length()
+	# 잠복 (#330): 중력·AI·분리 없이 제자리(물속 — 충돌 0이라 중력을 주면 바닥을 뚫는다) — 목표가 눈 안에 오면 솟는다(wake → surface). 드러난 다음 틱부터 보통 흐름
+	if _lurking:
+		velocity = Vector3.ZERO
+		if _target != null and dist <= def.aggro_range:
+			wake()
+		return
+	# 빙결 (§3.3): 이동·공격·바라보기·분리·넉백이 전부 선다(쿨다운도 위에서 멈췄다) — 중력만
+	if frozen:
+		_hold_frozen(delta)
+		return
+	# 도호가 쓰러졌으면 시체를 때리지 않는다 (combat_v2 §8): 그 자리에 서서 바라만 본다. 층이 바뀌며 사라지므로 되돌릴 상태 없음.
+	if _player != null and _player.has_method("is_dead") and _player.is_dead():
+		if state != State.DEAD:
+			state = State.IDLE
+		velocity.x = 0.0
+		velocity.z = 0.0
+		velocity.y = 0.0 if is_on_floor() else velocity.y - 20.0 * delta
+		move_and_slide()
+		_visual.set_moving(false, 0.0)
+		return
+
+	# 피격 경직(combat_v2 §6.2): 선딜·돌진·잠수(#326)가 아닐 때 맞으면 stagger_sec 동안 제자리(상태는 유지, 플레이어만 바라본다)
+	var staggered := GameClock.now < _stagger_until and state != State.WINDUP and state != State.DASH and not is_submerged()
+	if staggered:
+		velocity.x = 0.0
+		velocity.z = 0.0
+		_face(to_player, delta)
+	else:
+		_tick_state(delta, dist, to_player)
+	# 분리(밀어내기) = 걷는 상태만 — 놓쳐 걷는 몸 · 흩어지는 몸 · 물고 빠지는 몸도 (#288 · #295 · 두리번은 서 있다)
+	if (state == State.CHASE or state == State.KEEP or state == State.LOST or state == State.SCATTER or state == State.BACK) and not staggered:
+		_apply_separation()
+	# 넉백(§6.3): 경직·분리보다 뒤에 와서 수평 속도를 덮어쓴다. 이 틱의 거리 = 선형 감속(1→0)을 틱 창 [now−δ, now]에 적분한 몫 × 처음 속도
+	# (GameClock.ramp_step, #324 — 틱마다 k를 샘플하던 옛 식은 위상에 따라 0.86~1.14배로 흔들렸다). move_and_slide는 velocity × delta만큼 옮기니
+	# 거리 ÷ delta를 속도로 준다. 같은 틱 안에서 걸린 밀림은 다음 틱부터. 벽은 move_and_slide가 막는다.
+	var knock_s := GameClock.ramp_step(_knock_until, KNOCK_SEC, delta)
+	var knocking := knock_s > 0.0
+	if knocking:
+		velocity.x = _knock_vel.x * knock_s / delta
+		velocity.z = _knock_vel.z * knock_s / delta
+	if not is_on_floor():
+		velocity.y -= 20.0 * delta
+	else:
+		velocity.y = 0.0
+	move_and_slide()
+	var _hspeed := Vector2(velocity.x, velocity.z).length()
+	if state == State.DASH and _visual.has_pounce():
+		_visual.hold_air()   # 덮치기 뜬 몸 (#506 — 돌진 동안 걷기·달리기 클립으로 안 바꾼다. 클립 없는 몸은 아래 옛 길)
+	else:
+		# 밀리는 동안은 걷는 게 아니다 — 피격 클립을 걷기로 갈아치우지 않게 moving=false
+		_visual.set_moving(not knocking and _hspeed > ActorVisual.MOVE_EPS, _hspeed)
+
+
+## 상태기 한 틱 (경직이 아닐 때만).
+func _tick_state(delta: float, dist: float, to_player: Vector3) -> void:
+	# 놓침 (#288 §13.4.1): 깨어 있는 동안(쫓기 · 거리 두기 · 선딜 · 공격 · 돌진) 보이면 본 자리를 적고, 안 보이면 안 보인 시간을 쌓는다.
+	# 놓치는 건 쫓기 · 거리 두기에서만 — 하던 한 대는 끝까지 한다. 안 보인 채 6초면(숨으면 곧바로) 놓친다. 물고 빠지는 몸(BACK, #295)도 본다(빠지고 나면 쫓기에서 놓친다)
+	if state == State.CHASE or state == State.KEEP or state == State.WINDUP or state == State.ATTACK or state == State.DASH or state == State.BACK:
+		_watch(delta, dist)
+		if (state == State.CHASE or state == State.KEEP) and (_target == null or _unseen >= LOSE_SEC):
+			_lose()
+			return
+	match state:
+		State.IDLE:
+			velocity = Vector3.ZERO
+			if dist <= def.aggro_range:
+				wake()   # 반경 — 무리에도 알린다 (#288)
+		State.LOST:
+			_tick_lost(delta, dist)
+		State.SEARCH:
+			_tick_search(delta, dist)
+		State.SCATTER:
+			_tick_scatter(delta)
+		State.CHASE:
+			_tick_chase(delta, dist, to_player)
+		State.KEEP:
+			_tick_keep(delta, dist, to_player)
+		State.WINDUP:
+			velocity = Vector3.ZERO
+			if _target == null:
+				_cancel_attack()   # 선딜 중에 목표가 숨었다(#288) — 허공에 치지 않는다. 다음 틱 쫓기가 놓친다
+				return
+			_surround_keep()
+			_face(to_player)
+			_state_timer -= delta
+			if _state_timer <= 0.0:
+				_do_attack(to_player)
+		State.ATTACK:
+			velocity = Vector3.ZERO
+			_surround_keep()
+			_state_timer -= delta
+			if _state_timer <= 0.0:
+				state = State.CHASE
+		State.DASH:
+			_tick_dash(delta)
+		State.SUBMERGE:
+			_tick_submerge(delta)
+		State.EMERGE:
+			_tick_emerge(delta, to_player)
+		State.BUSY:
+			_tick_busy(delta)
+		State.BACK:
+			EnemyMoves.tick_back(self, delta, to_player)   # 물고 빠지기의 물러남 (#295)
+
+
+## 가까운 적들에게서 멀어지는 방향을 속도에 더한다 (O(n²) — 층당 20마리 가정, 상한 EnemyKin.MAX_BODIES 36).
+func _apply_separation() -> void:
+	var push := Vector3.ZERO
+	for n in get_tree().get_nodes_in_group("enemy"):
+		if n == self or not (n is Node3D):
+			continue
+		if "state" in n and n.state == State.DEAD:
+			continue   # 시체(#183 — 8초 남는다)는 밀지 않는다
+		if n is Enemy and (n as Enemy).is_hidden():
+			continue   # 잠수해 사라진 몸(#326)은 자리가 없다
+		if _slot >= 0 and n is Enemy and (n as Enemy)._slot >= 0 and (n as Enemy)._target == _target \
+				and (n.state == State.CHASE or n.state == State.WINDUP or n.state == State.ATTACK):
+			continue   # 포위 자리 주인끼리는 안 민다 (#296) — 자리 간격(≈0.8u)이 밀어내기 반경(1.45)보다 촘촘하다
+		var d: Vector3 = global_position - (n as Node3D).global_position
+		d.y = 0.0
+		var len := d.length()
+		if len < 0.001:
+			d = Vector3(_rng.randf_range(-1, 1), 0, _rng.randf_range(-1, 1))
+			len = 0.001
+		var other_r: float = (n.def.radius if "def" in n and n.def else 0.35)
+		var reach: float = SEPARATION_RADIUS + other_r
+		if len < reach:
+			# 큰 몸은 덜 밀린다 (§1.5 ⑩, #326) — 가중 = 상대 반경 ÷ 내 반경(산적 0.35가 두억시니 0.65를 밀면 ×0.54, 거꾸로는 ×1.86). 같은 몸끼리는 1
+			push += d / len * (1.0 - len / reach) * clampf(other_r / maxf(def.radius, 0.05), 0.4, 2.5)
+	if push.length_squared() > 0.0001:
+		velocity.x += push.x * SEPARATION_PUSH
+		velocity.z += push.z * SEPARATION_PUSH
+
+
+# ---------- 이동 정책 ----------
+
+func _tick_chase(delta: float, dist: float, to_player: Vector3) -> void:
+	# M9 행동 틀 셋 (#295 — 물고 빠지기 · 떠다님 · 날아와 터지기)은 EnemyMoves가 맡는다
+	if EnemyMoves.owns(def.behavior):
+		EnemyMoves.tick_chase(self, delta, dist, to_player)
+		return
+	match def.behavior:
+		EnemyDef.Behavior.MELEE:
+			if dist <= def.attack_range:
+				# 한 대 → 쿨 → 선딜 → 한 대 = 주기 쿨 + 선딜 (combat_v2 §7.2, #373 — 전엔 쿨을 안 봐 선딜 + 멈춤 0.25였다).
+				# 쿨이 남았으면 사거리 안에서 선다. 도호가 사거리 밖으로 물러나면 아래 길찾기로 쫓는다 — 쿨이 남아도.
+				_surround_keep()   # 자리에 서서 치는 동안도 포위 자리를 갱신한다 (#296)
+				if _cooldown <= 0.0:
+					_begin_windup()
+				else:
+					_wait_cooldown(delta, to_player)
+				return
+		EnemyDef.Behavior.RANGED:
+			if dist <= def.keep_distance_max:
+				state = State.KEEP
+				return
+		EnemyDef.Behavior.DASH:
+			if dist >= def.keep_distance_min and dist <= def.keep_distance_max and _cooldown <= 0.0:
+				_begin_windup()
+				_pounce_windup()
+				return
+			if dist < def.keep_distance_min and _cooldown <= 0.0:
+				if _may_retreat(dist):
+					# 너무 가까우면 물러나 돌진 거리 확보 — 느린 뒷걸음 (#381)
+					_retreat(to_player, delta)
+				else:
+					# 붙잡혔다(버팀, #381) — 물러나지 않고 제자리에서 선딜 → 도호 자리까지만 짧게 들이받는다
+					_lunge = true
+					_begin_windup()
+					_pounce_windup()
+				return
+	_approach(delta, dist)
+
+
+## 쫓아간다 — 목표가 보이면 목표 자리 · 안 보이면(20칸 밖, 놓치기 전 6초) 마지막 본 자리로 (#288) — 붙어 치는 몸은 목표 둘레 8자리 중 제 자리로 (§4.3 ⑦, #296).
+## 자리로 갈 땐 닿는 여유를 좁힌다(SLOT_ARRIVE) — 길의 여유 0.35로 서면 자리(사거리 × 0.8) + 0.35가 사거리 밖이라 치지 못한다. 물고 빠지기(#295)도 이 길로 들어온다.
+func _approach(delta: float, dist: float) -> void:
+	var goal := _surround_goal(_chase_point(), dist)
+	_follow_path_to(goal, delta, SLOT_ARRIVE if _slot >= 0 else PATH_ARRIVE)
+
+
+## 포위 (§4.3 ⑦, #296 — Surround): 붙어 치는 몸(근접 틀 · 보스 아님)이 목표를 보고 SURROUND_RANGE 안이면 목표 둘레 8자리 중 제 자리(선 쪽에서 가까운 빈 자리 · 걷는 칸만)로.
+## 자리를 못 받으면(좁은 복도 · 9번째) 목표 자리로 곧장 = 줄 선다 — 자리가 비면(주인이 죽거나 떠나 Surround.STALE_SEC 갱신 없음) 다음 틱에 받는다.
+func _surround_goal(fallback: Vector3, dist: float) -> Vector3:
+	_surround_keep(dist)
+	return Surround.slot_pos(_target.global_position, _slot, surround_radius()) if _slot >= 0 else fallback
+
+
+## 자리를 맡거나 갱신한다 — 걷는 틱(_surround_goal)뿐 아니라 선딜 · 공격 · 쿨 기다림 틱에도(자리가 묵지 않게 — Surround.STALE_SEC 0.4 < 선딜 + 공격 0.55,
+## 자리 없이 치던 몸도 빈자리가 나면 받는다). 조건 밖(붙어 치는 틀 · 물고 빠지기(#295) 아님 · 보스 · 목표 없음 · 안 보임 · 멀다)이면 −1.
+func _surround_keep(dist: float = -1.0) -> void:
+	if (def.behavior != EnemyDef.Behavior.MELEE and def.behavior != EnemyDef.Behavior.SKIRMISH) or rank == EliteRules.Rank.BOSS or _target == null or _unseen > 0.0:
+		_slot = -1
+		return
+	var d := dist if dist >= 0.0 else _flat_to(_target)
+	if d > SURROUND_RANGE:
+		_slot = -1
+		return
+	_slot = Surround.claim(_target.get_instance_id(), get_instance_id(), _target.global_position, global_position, surround_radius(), Surround.now(), _walkable)
+
+
+## 포위 반지름 = 사거리 × 0.8 — 사거리 안(자리에 서면 곧 친다) · 몸이 겹치지 않는 거리 이상.
+func surround_radius() -> float:
+	return clampf(def.attack_range * SURROUND_RADIUS_K, def.radius * body_scale() + 0.45, def.attack_range)
+
+
+## 포위 자리 번호 (e2e·진단) — 없으면 −1.
+func surround_slot() -> int:
+	return _slot
+
+
+## 걷는 칸인가 (Surround 콜백) — 층이 없으면(시험 장면) 다 걷는다.
+func _walkable(pos: Vector3) -> bool:
+	return _level == null or _level.is_cell_walkable(Level.world_to_cell(pos))
+
+
+func _tick_keep(delta: float, dist: float, to_player: Vector3) -> void:
+	# 원거리: 사거리 안이면 쏘고, 너무 가까우면 물러난다 — 붙잡혔거나 맞았으면 물러나지 않고 제자리에서 쏜다(버팀, #381)
+	if dist < def.keep_distance_min and _may_retreat(dist):
+		_retreat(to_player, delta)
+	elif dist > def.keep_distance_max + 1.0:
+		state = State.CHASE
+	else:
+		velocity.x = 0.0
+		velocity.z = 0.0
+		_face(to_player)
+		if _cooldown <= 0.0:
+			_begin_windup()
+
+
+func _tick_dash(delta: float) -> void:
+	# 한기(§3.3)는 돌진에도 — 길이는 그대로, 느리게. 등급·옵션 이동 배수(날랜·날쌘)도 따로 곱한다(#290)
+	var spd := def.dash_speed * _move_mult() * float(_m.move) * aura_mult("move")
+	var step := spd * delta
+	velocity.x = _dash_dir.x * spd
+	velocity.z = _dash_dir.z * spd
+	_dash_left -= step
+	# 접촉 판정: 슬라이드 충돌 중 도호 · 분신(#288 — 부딪친 몸이 맞는다) · 벽에 정면으로 박힘(#296 벽 박힘 훅 — 지난 틱 부딪친 면이 돌진 반대를 본다, 바닥·몸은 아님)
+	var walled := false
+	if not _dash_hit:
+		for i in get_slide_collision_count():
+			var col := get_slide_collision(i)
+			var c := col.get_collider()
+			if c and (c.is_in_group("player") or c.is_in_group(DECOY_GROUP)):
+				_dash_hit = true
+				_deal_melee(&"dash", c)
+			elif c and not c.is_in_group("enemy") and absf(col.get_normal().y) < 0.5 and col.get_normal().dot(_dash_dir) < -0.7:
+				walled = true
+	if _dash_left <= 0.0 or (get_slide_collision_count() > 0 and not _dash_hit and velocity.length() < 0.1) or walled:
+		dash_end = &"hit" if _dash_hit else (&"wall" if walled else &"spent")
+		_end_dash()
+
+
+func _end_dash() -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	_cooldown = def.attack_cooldown * _atk_mult() * float(_m.cd)
+	state = State.ATTACK
+	_state_timer = 0.4  # 착지 후 잠깐 멈춤
+	_visual.play_land()   # 덮치던 몸이면 착지 클립 (#506 — 아니면 아무 일 없다)
+
+
+## 돌진 선딜의 그림 (#506, monster_motion_v2 §4.7): 덮치기 클립이 있는 몸은 _begin_windup이 튼 공격 클립을 같은 틱에 웅크림으로 갈아
+## 선딜 끝에 뛰어오른다(ActorVisual.play_pounce). 없는 몸(박쥐·두 발 창)은 공격 클립 그대로. 흑랑·장산범 돌격은 제 선딜에서 부른다(Boss).
+func _pounce_windup() -> void:
+	if state == State.WINDUP:
+		_visual.play_pounce(_state_timer)
+
+
+## 길 위 다음 점까지 걷는다. arrive = 점에 닿은 것으로 치는 거리(길 점 = 0.35 · 포위 자리 = SLOT_ARRIVE, #296).
+func _follow_path_to(target: Vector3, delta: float, arrive: float = PATH_ARRIVE) -> void:
+	_repath_timer -= delta
+	if _repath_timer <= 0.0 or _path.is_empty():
+		_repath_timer = REPATH_SEC
+		# #535 실제 충돌 반경(갈라진 몸 크기까지 반영)을 길찾기에 전달한다.
+		var body_radius := ($Collision.shape as CapsuleShape3D).radius
+		_path = _level.find_path(global_position, target, body_radius) if _level else PackedVector3Array([target])
+		_path_i = 0
+	if _path_i >= _path.size():
+		velocity.x = 0.0
+		velocity.z = 0.0
+		return
+	var wp := _path[_path_i]
+	var to_wp := wp - global_position
+	to_wp.y = 0.0
+	if to_wp.length() < (arrive if _path_i == _path.size() - 1 else PATH_ARRIVE):
+		_path_i += 1
+		return
+	_move_dir(to_wp.normalized(), delta)
+
+
+# ---------- 공통 AI — 깨기 · 무리 어그로 · 목표 한 겹 · 놓침 · 흩어짐 (보드 #288, monsters_v2 §4.3 · §13.4.1) ----------
+## 들어오는 문 = 함수 하나씩: 깨기 `wake`(반경 · 칼 · 부적 · 무리 신호) · 놓치기 `_lose` · 흩어지기 `scatter` — 문이 하나라 무리 신호가 한 번씩만 난다.
+
+## 깨운다 — 쉬는(IDLE)·놓친(LOST · SEARCH) 몸 → 쫓기. 이미 싸우는 몸(쫓기 · 선딜 · 공격 · 돌진 · 흩어짐 · 죽음)은 그대로(false).
+## 제 발로 깬 몸(by_pack 거짓)만 무리(pack_id ≠ 0)에 한 번 알린다 — 받은 몸은 다시 알리지 않는다.
+## seen = 알린 몸이 마지막으로 본 목표 자리 — 받은 몸이 목표를 못 고르면(숨음) 거기로 간다.
+func wake(by_pack: bool = false, seen: Vector3 = Vector3.INF) -> bool:
+	if state != State.IDLE and state != State.LOST and state != State.SEARCH:
+		return false
+	# 잠복 (#330): 걸어 나오는 대신 목표 곁에 솟는다(잠수 기믹의 솟음 + 훑기) — 깨어남 신호·무리 신호는 그대로
+	if _lurking:
+		if is_inside_tree():
+			_update_target(0.0, true)
+		if _target != null:
+			_last_seen = _target.global_position
+		elif seen.is_finite():
+			_last_seen = seen
+		surface()
+		woke.emit(by_pack)
+		if not by_pack:
+			_alert_pack()
+		return true
+	state = State.CHASE
+	_unseen = 0.0
+	_path = PackedVector3Array()
+	_repath_timer = 0.0
+	if is_inside_tree():
+		_update_target(0.0, true)
+	if _target != null:
+		_last_seen = _target.global_position
+	elif seen.is_finite():
+		_last_seen = seen
+	woke.emit(by_pack)
+	if not by_pack:
+		_alert_pack()
+	return true
+
+
+## 무리 어그로 (§4.3 ②) — 같은 무리의 쉬는·놓친 몸을 깨운다. 거리 제한 없음(무리는 붙어 선다). 옆 무리 · 무리 없는 몸(0)은 모른다.
+func _alert_pack() -> void:
+	if pack_id == 0 or not is_inside_tree():
+		return
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var m := n as Enemy
+		if m == null or m == self or m.pack_id != pack_id or m.is_queued_for_deletion():
+			continue
+		m.wake(true, _last_seen)
+
+
+## 지금 목표 (e2e·진단) — 도호 · 분신 · 없음(숨음).
+func target() -> Node3D:
+	return _target if is_instance_valid(_target) else null
+
+
+## REPATH_SEC마다 목표를 다시 고른다 — 지금 목표가 숨거나 쓰러지거나 사라졌으면 곧바로(force도).
+func _update_target(delta: float, force: bool = false) -> void:
+	_retarget_timer -= delta
+	if not force and _retarget_timer > 0.0 and _target_ok(_target):
+		return
+	_retarget_timer = REPATH_SEC
+	_target = _pick_target()
+
+
+## 목표 고르기 (§4.3 ④) — 도호와 분신(DECOY_GROUP) 중 가까운 것, 분신은 거리 × DECOY_DIST_MULT로 센다(분신 먼저). 숨은 몸 · 쓰러진 몸은 빠진다.
+func _pick_target() -> Node3D:
+	var best: Node3D = null
+	var best_d := INF
+	var p := _attacker() if is_inside_tree() else _player
+	if _target_ok(p):
+		best = p
+		best_d = _flat_to(p)
+	if is_inside_tree():
+		for n in get_tree().get_nodes_in_group(DECOY_GROUP):
+			var d := n as Node3D
+			if not _target_ok(d):
+				continue
+			var w := _flat_to(d) * DECOY_DIST_MULT
+			if w < best_d:
+				best_d = w
+				best = d
+	return best
+
+
+## 목표가 될 수 있나 — 트리에 있고 · 숨지 않았고(HIDDEN_GROUP — 은형) · 쓰러지지 않았다.
+static func _target_ok(n: Node3D) -> bool:
+	if not is_instance_valid(n) or not n.is_inside_tree() or n.is_queued_for_deletion():
+		return false
+	if n.is_in_group(HIDDEN_GROUP):
+		return false
+	return not (n.has_method("is_dead") and n.is_dead())
+
+
+func _flat_to(n: Node3D) -> float:
+	return Vector2(n.global_position.x - global_position.x, n.global_position.z - global_position.z).length()
+
+
+## 보이나 — 목표가 있고 LOSE_RANGE 안(보스는 거리 무관 — 제 층을 끝까지 쫓는다).
+func _sees(dist: float) -> bool:
+	return _target != null and (dist <= LOSE_RANGE or not _loses_by_distance())
+
+
+func _loses_by_distance() -> bool:
+	return rank != EliteRules.Rank.BOSS
+
+
+## 깨어 있는 몸의 눈 — 보이면 본 자리를 적고 안 보인 시간을 0으로, 안 보이면 안 보인 시간을 쌓는다(놓치는 판정은 _tick_state).
+func _watch(delta: float, dist: float) -> void:
+	if _sees(dist):
+		_last_seen = _target.global_position
+		_unseen = 0.0
+	else:
+		_unseen += delta
+
+
+## 쫓아갈 자리 — 보이면 목표 자리, 안 보이면 마지막 본 자리(아직 못 봤으면 목표 자리).
+func _chase_point() -> Vector3:
+	if _target != null and (_unseen <= 0.0 or not _last_seen.is_finite()):
+		return _target.global_position
+	return _last_seen if _last_seen.is_finite() else global_position
+
+
+## 놓쳤다 → 마지막 본 자리까지 걷는다(LOST). 처음 선 자리는 적지 않는다(되돌아가기 없음).
+func _lose() -> void:
+	state = State.LOST
+	_slot = -1
+	_state_timer = LOST_WALK_MAX
+	_path = PackedVector3Array()
+	_repath_timer = 0.0
+	_lunge = false
+	if not _last_seen.is_finite():
+		_last_seen = global_position
+	velocity.x = 0.0
+	velocity.z = 0.0
+
+
+## 놓친 몸 한 틱 — 다시 보이면 깨고(무리에도), 마지막 본 자리에 닿거나 LOST_WALK_MAX가 지나면 두리번.
+func _tick_lost(delta: float, dist: float) -> void:
+	if _sees(dist):
+		wake()
+		return
+	_state_timer -= delta
+	var to := _last_seen - global_position
+	to.y = 0.0
+	if to.length() <= LOST_ARRIVE or _state_timer <= 0.0:
+		_begin_search()
+		return
+	_follow_path_to(_last_seen, delta)
+
+
+func _begin_search() -> void:
+	state = State.SEARCH
+	_state_timer = SEARCH_SEC
+	_search_t = 0.0
+	_search_yaw0 = _visual.rotation.y
+	velocity.x = 0.0
+	velocity.z = 0.0
+
+
+## 두리번 한 틱 — 제자리에서 몸을 좌우로. 다시 보이면 깨고, SEARCH_SEC이 지나면 그 자리에서 쉰다(처음 선 자리로 돌아가지 않는다).
+func _tick_search(delta: float, dist: float) -> void:
+	if _sees(dist):
+		wake()
+		return
+	velocity.x = 0.0
+	velocity.z = 0.0
+	_search_t += delta
+	_state_timer -= delta
+	var yaw := _search_yaw0 + deg_to_rad(SEARCH_SWING_DEG) * sin(TAU * _search_t / SEARCH_PERIOD)
+	_face(Vector3(sin(yaw), 0.0, cos(yaw)), delta)
+	if _state_timer <= 0.0:
+		state = State.IDLE
+
+
+## 흩어진다 (§4.3 ⑤) — 우두머리를 잃은 무뢰배·짐승 하수인(`_scatter_minions`). 선딜·돌진을 끊고 sec초 도호 반대쪽(± SCATTER_SPREAD_DEG, 몸 난수)으로
+## 물러나는 걸음(retreat_speed — §4.4 느린 뒷걸음·상한) → 쫓기로 돌아온다. 흩어지는 동안 치지 않는다 · 맞아도 계속(경직은 먹는다) · 넘어뜨리면 끝난다.
+## 누워 있는 몸 · 죽은 몸은 안 흩어진다(false) — 일어나 그대로 싸운다.
+func scatter(sec: float = SCATTER_SEC) -> bool:
+	if state == State.DEAD or down != Down.NONE or is_submerged():
+		return false
+	_cancel_attack()
+	_hold_left = 0.0
+	_slot = -1
+	state = State.SCATTER
+	_state_timer = sec
+	# 달아날 쪽은 흩어지는 순간 한 번 정한다(곧게 흩어진다 — 매 틱 도호 반대로 다시 재면 가까운 몸이 도호 둘레를 나선으로 돈다)
+	var p := _attacker() if is_inside_tree() else _player
+	var away := (global_position - p.global_position) if p != null else Vector3.ZERO
+	away.y = 0.0
+	if away.length_squared() < 0.0001:
+		var ry := _visual.rotation.y
+		away = -Vector3(sin(ry), 0.0, cos(ry))
+	_scatter_dir = away.normalized().rotated(Vector3.UP, deg_to_rad(_rng.randf_range(-SCATTER_SPREAD_DEG, SCATTER_SPREAD_DEG)))
+	return true
+
+
+func _tick_scatter(delta: float) -> void:
+	_state_timer -= delta
+	if _state_timer <= 0.0:
+		state = State.CHASE   # 돌아온다
+		_path = PackedVector3Array()
+		velocity.x = 0.0
+		velocity.z = 0.0
+		return
+	var spd := retreat_speed()
+	velocity.x = _scatter_dir.x * spd
+	velocity.z = _scatter_dir.z * spd
+	_face(_scatter_dir, delta)
+
+
+## 우두머리가 쓰러졌다 — 따르던 하수인 중 흩어지는 몸(EnemyDef.flees_on_leader_death — 무뢰배·짐승)만. 역병 든 자·요괴·원혼은 그대로 싸운다.
+func _scatter_minions() -> void:
+	if rank != EliteRules.Rank.LEADER or not is_inside_tree():
+		return
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var m := n as Enemy
+		if m == null or m == self or m.state == State.DEAD or m.is_queued_for_deletion():
+			continue
+		# 따르던 우두머리가 이 몸인가 — 먼저 쓰러져 풀린 다른 우두머리(해제된 참조)와 견주지 않게 살아 있는지부터
+		if not is_instance_valid(m.leader) or m.leader != self:
+			continue
+		if m.def != null and m.def.flees_on_leader_death:
+			m.scatter()
+
+
+# ---------- 물러나기 · 버팀 (보드 #381, monsters_v2 §4.4) ----------
+
+## 지금 물러나도 되나 — 버티는 중이면 아니다. 도호가 칼 거리(HOLD_RANGE) 안까지 붙었으면 지금부터 버틴다(붙잡힘).
+func _may_retreat(dist: float) -> bool:
+	if _hold_left > 0.0:
+		return false
+	if dist <= HOLD_RANGE:
+		_start_hold()
+		return false
+	return true
+
+
+## 버팀을 건다(이미 남았으면 긴 쪽). 받아치기 = 그 몸이 가진 공격 그대로 — 쿨은 당기지 않는다(§4.4 대안 ③).
+func _start_hold() -> void:
+	_hold_left = maxf(_hold_left, HOLD_SEC)
+
+
+## 버티는 중인가 (e2e·진단).
+func is_holding() -> bool:
+	return state != State.DEAD and _hold_left > 0.0
+
+
+## 도호까지 수평 거리 (때린 쪽을 모르면 INF).
+func _player_dist() -> float:
+	var p := _attacker()
+	if p == null:
+		return INF
+	return Vector2(p.global_position.x - global_position.x, p.global_position.z - global_position.z).length()
+
+
+## 물러나기 한 틱 — 도호 반대쪽으로 느린 뒷걸음(retreat_speed). 등을 보이고 걷는다(뒷걸음 클립 없음 — 걷는 쪽을 본다).
+func _retreat(to_player: Vector3, delta: float) -> void:
+	var dir := -to_player.normalized()
+	var spd := retreat_speed()
+	velocity.x = dir.x * spd
+	velocity.z = dir.z * spd
+	_face(dir, delta)
+
+
+## 물러나는 빠르기 = 데이터 뒷걸음(EnemyDef.retreat_speed) × _move_dir과 같은 곱(2페이즈 · 한기 · 등급·옵션),
+## 상한 = 도호 지금 이동 × EnemyDef.RETREAT_CAP (날랜·날쌘 정예도 쫓으면 잡힌다). e2e flee_chase가 실측과 대조한다.
+func retreat_speed() -> float:
+	var spd := def.retreat_speed() * speed_mult * _move_mult() * float(_m.move) * aura_mult("move")
+	var p := _attacker()
+	if p != null and "move_speed" in p:
+		spd = minf(spd, float(p.move_speed) * EnemyDef.RETREAT_CAP)
+	return spd
+
+
+## 이동 = 종 속도 × speed_mult(보스 2페이즈) × 상태(한기 — 따로 곱한다, 덮어쓰지 않는다 §7) × 등급·옵션(날랜·날쌘 — speed_mult를 안 건드린다, §13.4) × 호령(#296).
+func _move_dir(dir: Vector3, delta: float) -> void:
+	var spd := def.move_speed * speed_mult * _move_mult() * float(_m.move) * aura_mult("move")
+	velocity.x = dir.x * spd
+	velocity.z = dir.z * spd
+	_face(dir, delta)
+
+
+func _face(dir: Vector3, delta: float = 0.05) -> void:
+	if dir.length_squared() < 0.0001:
+		return
+	_visual.rotation.y = lerp_angle(_visual.rotation.y, atan2(dir.x, dir.z), clampf(12.0 * delta, 0.0, 1.0))
+
+
+## 근접 쿨 기다림 (#373, combat_v2 §7.2) — 다음 한 대까지 제자리: 걷지 않고 도호 쪽으로 몸만 돌린다(디아2 — 붙은 적은 다음 한 대까지 선다).
+## 상태는 쫓기 그대로라 경직·넉백·분리 밀기(몰린 몸이 둘레로 퍼진다)는 전과 같다. 길은 버린다 — 다시 쫓을 때 새로 찾는다(묵은 길을 걷지 않게).
+func _wait_cooldown(delta: float, to_player: Vector3) -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	_path = PackedVector3Array()
+	_face(to_player, delta)
+
+
+# ---------- 공격 정책 ----------
+
+func _begin_windup() -> void:
+	# 한기(§3.3)면 선딜이 길다 — 텔레그래프 링·단발 잠금도 같은 길이로. 등급·옵션 선딜 배수(날랜) · WINDUP 훅(강타 기믹)도 여기서(#290)
+	var windup := def.windup * _atk_mult() * float(_m.windup)
+	if not hooks.is_empty():
+		var atk := {"phase": EnemyHook.Phase.WINDUP, "kind": _attack_kind(), "windup": windup, "target": _target}
+		_hooks_attack(atk)
+		windup = float(atk.windup)
+	# 기믹의 한 대 (#326 — 몸통 훑기 훅이 방금 얹었거나 솟음이 얹은 strike_mod): 선딜 길이 + 발밑 부채꼴 예고
+	if not strike_mod.is_empty():
+		windup = float(strike_mod.get("windup", windup))
+		var fan := float(strike_mod.get("fan_deg", 0.0))
+		if fan > 0.0:
+			_clear_fan()
+			_fan = FanTelegraph.spawn(self, float(strike_mod.get("range", def.attack_range)), fan, windup)
+	state = State.WINDUP
+	_state_timer = windup
+	velocity.x = 0.0
+	velocity.z = 0.0
+	Audio.play("%s_attack" % def.id, global_position, "enemy_attack")
+	Vfx.play("enemy_windup", global_position, {"life": windup + 0.1, "scale": def.radius + 0.35})   # 발밑 붉은 링 = 텔레그래프 (vfx.md §2)
+	_visual.play_windup(windup)   # 클립 타격 = 선딜 끝 (#503 — ModelDef.attack_fit, 끈 모델은 옛 길 play_once 1배속)
+
+
+func _do_attack(to_player: Vector3) -> void:
+	EnemyMoves.note_strike(self)   # 물고 빠지기가 문 수 (#295)
+	# 한 대의 갈래 — 새 틀(#295)도 옛 셋 중 하나로 낸다: 물고 빠지기·떠다님 스침 = 근접 · 떠다님 쏘기 = 쏘기 · 날아와 터지기 = 터짐(EnemyMoves.strike_of)
+	match EnemyMoves.strike_of(self):
+		EnemyDef.Behavior.MELEE:
+			# 기믹의 한 대 (#326 몸통 훑기 · 솟은 뒤 훑기): 사거리 · 앞 부채꼴은 strike_mod — 비면 데이터 그대로(옛 식 그대로)
+			var reach := float(strike_mod.get("range", def.attack_range)) + 0.3
+			var fan := float(strike_mod.get("fan_deg", 0.0))
+			var cast: Variant = strike_mod.get("cast", null)
+			if cast is Callable:
+				(cast as Callable).call()   # 기믹이 닿는 한 대 대신 하는 것 (#296 살 토하기 = 앞에 살 웅덩이) — 닿는 한 대는 없다
+			elif to_player.length() <= reach and (fan <= 0.0 or _in_fan(to_player, fan)):
+				_deal_melee()
+			strike_mod = {}
+			_clear_fan()
+			_cooldown = def.attack_cooldown * _atk_mult() * float(_m.cd)
+			state = State.ATTACK
+			_state_timer = 0.25
+		EnemyDef.Behavior.RANGED:
+			_shoot(to_player)
+			_cooldown = def.attack_cooldown * _atk_mult() * float(_m.cd)
+			state = State.KEEP if def.behavior == EnemyDef.Behavior.RANGED else State.CHASE   # 떠다님 쏘기 손잡이(#295)는 쫓기에서 거리를 잰다
+		EnemyDef.Behavior.BURST:
+			EnemyMoves.burst(self)   # 부풂 끝 = 터짐 — 제 발로 죽는다 (#295)
+		EnemyDef.Behavior.DASH:
+			_dash_dir = to_player.normalized()
+			# 받아치는 돌진(버팀, #381)은 도호 자리를 LUNGE_PAST만큼만 지나 멈춘다 — 8칸 돌진으로 빠져나가 다시 멀어지지 않게
+			_dash_left = minf(def.dash_length, to_player.length() + LUNGE_PAST) if _lunge else def.dash_length
+			_lunge = false
+			_dash_hit = false
+			state = State.DASH
+			Vfx.play("%s_dash" % def.id, global_position, {"dir": -_dash_dir}, "enemy_dash")
+
+
+## 공격 속성 (D-081 §5.3): 피해는 합계 그대로, 공격 속성 몫만큼 — 막는 쪽(도호)이 조각으로 나눈다.
+## 한 대 = STRIKE 훅이 고칠 수 있는 사전(_strike_atk) → 도호가 받은 피해 → LAND 훅(#290). kind = &"melee" · &"dash".
+## 맞는 몸 = victim(돌진이 부딪친 몸) 아니면 목표(#288 — 도호 또는 분신). 받을 줄 모르는 몸(receive_attack 없음)이면 아무 일 없다.
+func _deal_melee(kind: StringName = &"melee", victim: Node = null) -> void:
+	var v: Node = victim if victim != null else _target
+	if is_instance_valid(v) and v.has_method("receive_attack"):
+		_land_on_player(_strike_atk(kind), v)
+
+
+func _shoot(to_player: Vector3) -> void:
+	var atk := _strike_atk(&"shot")
+	var pair := _share_pair(atk.shares)
+	var n := maxi(1, int(atk.shots))
+	for i in n:
+		# 여러 발(EA1 옵션)은 부채꼴 — 한 발이면 도호 쪽 곧게(지금 그대로)
+		var dir := to_player.normalized()
+		if n > 1:
+			dir = dir.rotated(Vector3.UP, deg_to_rad(float(atk.spread_deg) * (float(i) - float(n - 1) * 0.5)))
+		var p := PROJECTILE_SCENE.instantiate()
+		get_parent().add_child(p)
+		if i == 0:
+			Audio.play("shoot", global_position)
+		p.global_position = global_position + Vector3(0, def.height * 0.6, 0) + dir * 0.5
+		Vfx.play("talisman_shot", p.global_position, {"dir": dir})
+		p.setup(to_player if n == 1 else dir, def.projectile_speed, float(atk.dmg_min), float(atk.dmg_max), float(atk.accuracy), pair[0], pair[1])
+		if not hooks.is_empty():
+			p.shooter = self   # 명중하면 LAND 훅(흡혈 등)을 부르게
+			p.atk = atk.duplicate()
+
+
+## 이 몸의 한 대 (§13.7) — 피해(레벨·등급·옵션 배수) · 명중 · 속성 몫 · 발 수. STRIKE 훅이 고친다.
+func _strike_atk(kind: StringName) -> Dictionary:
+	var k := _dmg_k()
+	var atk := {"phase": EnemyHook.Phase.STRIKE, "kind": kind, "dmg_min": def.dmg_min * k, "dmg_max": def.dmg_max * k, "accuracy": attack_accuracy(),
+		"shares": attack_shares(), "shots": 1, "spread_deg": 0.0, "target": _target, "dealt": 0}
+	if not hooks.is_empty():
+		_hooks_attack(atk)
+	# 기믹의 한 대 배수 (#326 몸통 훑기 ×1.3) — 근접만
+	if kind == &"melee" and not strike_mod.is_empty():
+		var mult := float(strike_mod.get("mult", 1.0))
+		atk.dmg_min = float(atk.dmg_min) * mult
+		atk.dmg_max = float(atk.dmg_max) * mult
+	return atk
+
+
+## 한 대를 도호에게(victim = 분신이면 분신에게, #288) — 받은 피해(빗나감 0)를 LAND 훅에 알린다(atk.target = 맞은 몸). 반환 = 준 피해.
+func _land_on_player(atk: Dictionary, victim: Node = null) -> int:
+	var v: Node = victim if victim != null else _player
+	atk["target"] = v
+	var pair := _share_pair(atk.shares)
+	var ret: Variant = v.receive_attack(_rng, float(atk.dmg_min), float(atk.dmg_max), float(atk.accuracy), 1.0, pair[0], pair[1])
+	var dealt := int(ret) if ret is int else 0
+	attack_landed(atk, dealt)
+	return dealt
+
+
+## 속성 몫 사전 → 도호 받기의 (속성, 몫) 한 쌍. 도호 받기는 속성 하나를 받는다 — 둘이면 큰 것(금지 표가 둘이 되는 짝을 막는다, §13.7).
+static func _share_pair(shares: Dictionary) -> Array:
+	var best: StringName = &""
+	var val := 0.0
+	for k in shares:
+		if float(shares[k]) > val:
+			best = k
+			val = float(shares[k])
+	return [best, val]
+
+
+## 지금 공격의 갈래 (WINDUP 훅용): 쏘기 · 돌진 · 터짐(#295) · 칼(물고 빠지기·떠다님 스침도).
+func _attack_kind() -> StringName:
+	match EnemyMoves.strike_of(self):
+		EnemyDef.Behavior.RANGED:
+			return &"shot"
+		EnemyDef.Behavior.DASH:
+			return &"dash"
+		EnemyDef.Behavior.BURST:
+			return &"burst"
+	return &"melee"
+
+
+# ---------- 기믹 이음매 (D-089 §1.3 · §1.4, 보드 #326 — 훅 actors/hooks/*.gd가 부른다) ----------
+
+## 숨었나 (잠수 사라짐 단계) — 맞지 않고(receive_attack·receive_spell 0) · 충돌 0 · 안 보임 · 커서에 안 잡힘(CursorPick.live_enemy) · 판(AoeField) 대상에서 빠짐 · 밀어내기에서 빠짐.
+func is_hidden() -> bool:
+	return _hidden
+
+
+## 잠수 중인가 (예고 → 사라짐 → 솟음).
+func is_submerged() -> bool:
+	return state == State.SUBMERGE or state == State.EMERGE
+
+
+## 잠복 (#330 — NamedSpawner opts.lurk): 숨어 제자리에 쉰다. 트리에 선 뒤에 부른다(몸·꼬리를 숨긴다) · 쉬는 몸만.
+func lurk() -> void:
+	if state != State.IDLE or _lurking:
+		return
+	_lurking = true
+	_set_hidden(true)
+
+
+func is_lurking() -> bool:
+	return _lurking
+
+
+## 드러남 (#330): 잠수 기믹(hooks/dive.gd emerge_params)의 솟음과 같은 길 — 목표에게서 near~far 칸에 솟고(_emerge_spot) EMERGE_SEC 뒤 훑기 한 대.
+## 잠수 훅이 없는 몸이면 훑기 없이 기본 3~6칸에 솟는다. 잠복 중이 아니면 false.
+func surface() -> bool:
+	if not _lurking:
+		return false
+	_lurking = false
+	_sub = {}
+	for h in hooks:
+		if h.has_method("emerge_params"):
+			_sub = h.call("emerge_params")
+			break
+	_sub_phase = 1
+	_emerge()
+	return true
+
+
+## 긴 몸의 꼬리 (없으면 null) — e2e·시험.
+func tail() -> SerpentTail:
+	return _tail
+
+
+## 잠수 (hooks/dive.gd): params = warn(예고 초) · hide(사라짐 초) · near·far(솟는 자리 = 목표에게서 이 칸 사이) · sweep(솟은 뒤 한 대 = strike_mod 값).
+## 쫓기·거리 두기·쉼·한 대 뒤에서만 — 선딜·돌진·넘어짐·빙결·죽음 중엔 아니오(false). 예고 동안은 맞는다(경직·넉백 없이), 사라진 동안은 안 맞는다.
+func submerge(params: Dictionary) -> bool:
+	if state != State.CHASE and state != State.KEEP and state != State.IDLE and state != State.ATTACK:
+		return false
+	if down != Down.NONE or is_frozen() or _lurking:
+		return false   # 잠복(#330) 중엔 이미 숨어 있다 — 드러나는 길은 wake → surface
+	_sub = params.duplicate()
+	_sub_phase = 0
+	state = State.SUBMERGE
+	_state_timer = maxf(float(_sub.get("warn", 1.0)), 0.0)
+	_path = PackedVector3Array()
+	_lunge = false
+	velocity.x = 0.0
+	velocity.z = 0.0
+	_stagger_until = 0.0
+	_knock_until = 0.0
+	# 바닥 물결 = 발밑 붉은 링(텔레그래프, vfx.md §2 — 물결 시트는 이무기 모델 #332 뒤)
+	Vfx.play("enemy_windup", global_position, {"life": _state_timer + 0.1, "scale": def.radius + 0.6})
+	return true
+
+
+func _tick_submerge(delta: float) -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	_state_timer -= delta
+	if _state_timer > 0.0:
+		return
+	if _sub_phase == 0:
+		_sub_phase = 1
+		_set_hidden(true)
+		_state_timer = maxf(float(_sub.get("hide", 0.8)), 0.0)
+		Audio.play("%s_dive" % def.id, global_position, "enemy_attack")
+	else:
+		_emerge()
+
+
+## 솟음 — 자리를 옮기고 드러난다(꼬리는 새 자리 뒤로 모인다) → EMERGE_SEC 뒤 훑기 선딜.
+func _emerge() -> void:
+	var at := _emerge_spot()
+	global_position = Vector3(at.x, global_position.y, at.z)
+	_set_hidden(false)
+	if _tail:
+		_tail.reset_to(global_position, _visual.rotation.y)
+	state = State.EMERGE
+	_state_timer = EMERGE_SEC
+	_path = PackedVector3Array()
+	Vfx.play("enemy_windup", global_position, {"life": 0.4, "scale": def.radius + 0.6})
+	Audio.play("%s_emerge" % def.id, global_position, "enemy_attack")
+
+
+func _tick_emerge(delta: float, to_player: Vector3) -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	if to_player.length_squared() > 0.0001:
+		_visual.rotation.y = atan2(to_player.x, to_player.z)   # 솟는 순간 목표를 본다 — 부채가 목표를 향한다
+	_state_timer -= delta
+	if _state_timer > 0.0:
+		return
+	if _target == null:
+		state = State.CHASE
+		return
+	var sweep: Variant = _sub.get("sweep", null)
+	if sweep is Dictionary and not (sweep as Dictionary).is_empty():
+		strike_mod = (sweep as Dictionary).duplicate()
+	_begin_windup()
+
+
+## 솟는 자리 (§1.4 · §7): 목표(도호·분신)에게서 near~far 칸 — 걷는 칸이고 **도호를 벽에 가두지 않는 곳**(목표 뒤 한 칸 = 물러설 자리가 걷는 칸). 16번 굴려 못 찾으면 제자리.
+## 층이 없으면(시험) 첫 굴림 그대로.
+func _emerge_spot() -> Vector3:
+	var tgt: Node3D = _target if _target_ok(_target) else _attacker()
+	if tgt == null:
+		return global_position
+	var near := float(_sub.get("near", 3.0))
+	var far := float(_sub.get("far", 6.0))
+	var p := tgt.global_position
+	var lvl: Level = _level if _level != null else (get_tree().get_first_node_in_group("level") as Level)
+	for i in 16:
+		var ang := _rng.randf_range(0.0, TAU)
+		var dir := Vector3(cos(ang), 0.0, sin(ang))
+		var cand := p + dir * _rng.randf_range(near, far)
+		if lvl == null:
+			return cand
+		var c := Level.world_to_cell(cand)
+		if not lvl.is_cell_walkable(c):
+			continue
+		var snapped := Level.cell_to_world(c)
+		var offset := Vector3(snapped.x - p.x, 0.0, snapped.z - p.z)
+		var dist := offset.length()
+		if dist < near or dist > far:
+			continue   # 셀 중심으로 옮긴 최종 자리도 3~6칸이어야 한다 (#449).
+		if not lvl.is_cell_walkable(Level.world_to_cell(p - offset.normalized())):
+			continue   # 최종 방향 반대쪽에 도호가 물러설 한 칸을 남긴다.
+		return snapped
+	return global_position
+
+
+## 숨김 — 충돌 0(커서 레이·판 대상·분리에서 빠진다) · 몸·꼬리 안 보임 · 이름표 숨김.
+func _set_hidden(h: bool) -> void:
+	_hidden = h
+	if is_instance_valid(_rank_ring):
+		_rank_ring.visible = not h and state != State.DEAD
+	collision_layer = 0 if h else 4
+	collision_mask = 0 if h else (1 | 2 | 4)
+	_visual.visible = not h
+	if _tail:
+		_tail.visible = not h
+	if _name_label:
+		_name_label.visible = false
+
+
+## 앞 부채꼴 안인가 (몸이 보는 쪽 ± fan_deg/2).
+func _in_fan(to: Vector3, fan_deg: float) -> bool:
+	var f := Vector3(sin(_visual.rotation.y), 0.0, cos(_visual.rotation.y))
+	var t := Vector3(to.x, 0.0, to.z)
+	if t.length_squared() < 0.0001:
+		return true
+	return rad_to_deg(f.angle_to(t.normalized())) <= fan_deg * 0.5 + 0.001
+
+
+func _clear_fan() -> void:
+	if _fan != null and is_instance_valid(_fan):
+		_fan.queue_free()
+	_fan = null
+
+
+# ---------- 붙듦 BUSY (#296 — 훅 넷이 나눠 쓰는 상태 하나: 숨어 있기 · 시체 먹기 · 끌어당김 예고 · 벽 박힘) ----------
+## 훅이 몸을 붙든다: sec초(< 0 = 훅이 풀 때까지) 서 있거나(opts.to 없음) 어느 자리로 걷는다(opts.to — arrive 안에 닿으면 끝). 끝나면(시간 · 닿음) opts.done을 부른다.
+## 끊기면(넘어뜨림 = EnemyDeath가 쫓기로 · 죽음 · 훅의 release(false)) done은 안 부른다 — 훅은 busy_kind()로 제 붙듦이 살아 있는지 본다.
+## 선딜 · 돌진 · 넘어짐 · 빙결 · 잠수 · 죽음 중엔 못 붙든다(false). 붙든 동안 = 반경 어그로 · 무리 신호로 안 깬다(wake는 쉬는·놓친 몸만) · 밀어내기 안 함 · 맞는다(경직도).
+func hold(sec: float, opts: Dictionary = {}) -> bool:
+	if state == State.DEAD or state == State.WINDUP or state == State.DASH or down != Down.NONE or is_frozen() or is_submerged():
+		return false
+	_cancel_attack()
+	_hold_left = 0.0
+	_slot = -1
+	state = State.BUSY
+	_busy = opts.duplicate()
+	_busy["sec"] = sec
+	_state_timer = sec
+	_path = PackedVector3Array()
+	_repath_timer = 0.0
+	velocity.x = 0.0
+	velocity.z = 0.0
+	return true
+
+
+## 붙듦을 푼다 → 쫓기. done = 다 된 것으로(opts.done을 부른다) · 아니면 끊긴 것으로.
+func release(done: bool = false) -> void:
+	if state != State.BUSY:
+		return
+	var cb: Variant = _busy.get("done", null)
+	_busy = {}
+	state = State.CHASE
+	_path = PackedVector3Array()
+	velocity.x = 0.0
+	velocity.z = 0.0
+	if done and cb is Callable and (cb as Callable).is_valid():
+		(cb as Callable).call()
+
+
+## 지금 붙든 훅의 kind (붙들리지 않았으면 &"").
+func busy_kind() -> StringName:
+	return StringName(_busy.get("kind", &"")) if state == State.BUSY else &""
+
+
+func _tick_busy(delta: float) -> void:
+	if _busy.has("to"):
+		var to: Vector3 = _busy.to
+		var d := to - global_position
+		d.y = 0.0
+		if d.length() <= float(_busy.get("arrive", 0.6)):
+			release(true)
+			return
+		_follow_path_to(to, delta)
+	else:
+		velocity.x = 0.0
+		velocity.z = 0.0
+	if float(_busy.get("sec", -1.0)) >= 0.0:
+		_state_timer -= delta
+		if _state_timer <= 0.0:
+			release(true)
+
+
+# ---------- 피격 / 사망 ----------
+
+## 플레이어 공격을 받는다. attacker_rng로 명중·피해를 굴려 팝업까지 처리. 반환 = 실제 피해(빗나감 0) — 타격 흡혈용.
+## blow = 무엇으로 쳤나 (#183 → #472, 비면 평타): {"skill": 기술 막타 = 베임 계열, "cut": 면 갈래 힌트(SkillDef.cut), "blade": 칼 궤적, "dir": 막타 방향(돌진 = 앞으로),
+##   "launch"·"knockdown": 살아 있는 몸 넘어뜨림(#145, 스위치 끔 #425)}. 막타 정보는 막타일 때만 읽는다(EnemyDeath.note_kill).
+##   회초리 옵션(#377 — PlayerCombat._land가 싣는다): "stagger_add" 경직 +초 · "knock"(3타 ×1.5 × 밀치기)은 살아 있을 때 경직·밀림에서 읽는다.
+## adds = 도호 칼의 추가 속성 (D-081 §5.2, E4 #204 — StatsCalc.weapon_adds): {&"fire": Vector2(최소, 최대), …} → roll_hit atk.adds. 힘·스킬 배수·치명 안 붙음. 비면 물리만.
+## mods = 공격의 곱 칸 (#377 — StatsCalc.hit_mods): {"crit_mult": 치명 배수, "demon_pct": 퇴마 %} → roll_hit atk. 비면 1.5 · 0(옛 결과 그대로).
+func receive_attack(rng: RandomNumberGenerator, dmg_min: float, dmg_max: float, mult: float, accuracy: float, str_pct: float = 0.0, crit_chance: float = 0.0, blow: Dictionary = {}, adds: Dictionary = {}, mods: Dictionary = {}) -> int:
+	if state == State.DEAD or _hidden:
+		return 0   # 잠수해 사라진 몸(#326)은 맞지 않는다 — 빗나감 숫자도 없다
+	_attacker()   # 물리 틱 전에 맞아도(방금 스폰) 때린 쪽 방향을 알게
+	if rng.randf() > DamageCalc.hit_chance(accuracy, evasion()) and not DamageCalc.sure_hit:   # sure_hit = e2e 전용 명중 확정 (#342)
+		DamagePopup.miss(self, def.height)
+		Audio.play("whiff", global_position)
+		Vfx.play("whiff", global_position + Vector3(0, def.height * 0.5, 0))
+		return 0
+	var r := DamageCalc.roll_hit(rng, {"phys_min": dmg_min, "phys_max": dmg_max, "mult": mult, "str_pct": str_pct, "crit_chance": crit_chance, "adds": adds,
+		"crit_mult": float(mods.get("crit_mult", DamageCalc.CRIT_MULT)), "demon_pct": float(mods.get("demon_pct", 0.0)), "chill_mult": float(mods.get("chill_mult", 1.0))}, hit_target())
+	last_hit_element = r.element   # 물리 조각 + 속성 조각 (D-081 E1) + 도호 칼의 추가 속성(adds, E4 #204)
+	last_hit_crit = r.crit
+	var frozen := is_frozen()   # 빙결 중 맞으면 피해는 그대로, 경직·넉백·피격 클립 없음 (§3.3)
+	var hp_before := hp
+	hp -= r.amount
+	var killed := hp <= 0.0
+	# 처형 (power_feel_v2 §3.2, #480 — 망나니 칼 blow.cull_pct, PlayerCombat._hit_blow가 싣는다): 이 칼에 살아남았어도 생명이 최대의 % 밑이면 목이 떨어진다.
+	# 남은 생명을 이 한 대에 얹는다(숫자·처치 몫이 한 번에) · 막타 = 베임(blow.cull → EnemyDeath.note_kill). 보스는 빼고(cull_immune).
+	if DamageCalc.culls(hp, max_hp, float(blow.get("cull_pct", 0.0))) and not cull_immune():
+		r.amount = int(r.amount) + ceili(hp)
+		hp = 0.0
+		killed = true
+		blow = blow.duplicate()
+		blow["cull"] = true
+	last_hit_kill = killed
+	if killed:
+		EnemyDeath.note_kill(self, float(r.amount) - hp_before, r.crit, blow)
+	elif r.chill_sec > 0.0:
+		apply_chill(r.chill_sec)   # 타격의 한기 (E2) — 서리막이는 roll_hit이 이미 곱했다
+	# 타격음 (design/audio.md §2): 닿는 소리 + 종별 피격음(없으면 공용)
+	# 치명·처치 일격은 사다리 꼭대기 — 보통 타격과 같은 hit·hurt 파일이라도 흔들지 않고 귀 피로로 줄이지 않는다 (game_feel_v2 §6.1)
+	var pitch: float = Audio.PITCH_FIXED if (r.crit or killed) else Audio.PITCH_AUTO
+	Audio.play("hit_crit" if r.crit else "hit", global_position, "hit", pitch)
+	Audio.play("%s_hurt" % def.id, global_position, "enemy_hurt", pitch)
+	# 같은 프레임에 그림 (vfx.md §2): 닿은 자리 먹 튐 + 종별 피격(없으면 공용)
+	var hit_pos := global_position + Vector3(0, def.height * 0.55, 0)
+	Vfx.play("hit_crit" if r.crit else "hit", hit_pos, {"dir": (global_position - _player.global_position).normalized() if _player else Vector3.UP})
+	Vfx.play("%s_hurt" % def.id, hit_pos, {}, "enemy_hurt")
+	# 숫자 크기 = 비중(이번 타격이 최대 생명의 몇 %를 깎았나), 처치 일격은 붉은금 (game_feel_v2 §1, 보드 #98)
+	DamagePopup.hit(self, r.amount, max_hp, r.crit, hp <= 0.0, def.height, r)
+	# 타격감 (combat_v2 §6): 카메라 킥(치명은 더 세게). 플래시·히트스톱은 피격 클립 뒤에(아래).
+	var cam := get_viewport().get_camera_3d()
+	if cam and cam.has_method("kick"):
+		cam.kick(KILL_KICK if killed else (CRIT_KICK if r.crit else 0.05), (global_position - _player.global_position) if _player else Vector3.ZERO)
+	# 치명 = 다른 종류의 사건 (game_feel_v2 §2): 저역 한 겹 · 화면 금 비네트 · 발밑 링. 숫자·멈춤은 위·아래에서.
+	# 처치 일격 (§3): 죽는 소리 위에 한 겹 더(뼈·천 찢김). 소리는 #114 배치 전까지 무음.
+	if killed:
+		Audio.play("kill_extra", global_position)
+	if r.crit:
+		Audio.play("hit_crit_low", global_position)
+		Vfx.play("crit_flash", global_position)
+		Vfx.play("crit_ring", global_position + Vector3(0, 0.05, 0))
+	EventBus.damage_dealt.emit(_player, self, r.amount)
+	wake()   # 쉬는·놓친 몸이 맞으면 깬다 — 무리에도 알린다 (#288 §4.3 ②)
+	# 물러나는 구간(거리 두기 안쪽)에서 한 대 맞았다 — 물러나기를 멈추고 그 자리에서 받아친다(버팀, #381). 명중만(빗나감은 위에서 돌아갔다)
+	if not killed and def.retreats() and _player_dist() < def.keep_distance_min:
+		_start_hold()
+	if hp <= 0.0:
+		_die()
+	elif frozen:
+		# 얼어 있다 (§3.3, E2 #202): 피해·소리·피 튐은 그대로 받되 경직·넉백·피격 클립은 없다 — 강한 기술이어도 넘어지지 않는다(§7.2, 얼린 채 멈춤)
+		pass
+	elif down != Down.NONE:
+		# 이미 누워 있다 (§6.6): 피해·소리·피 튐은 그대로 받되 피격 클립·밀림은 없다(누운 자세 유지) — 다시 안 날아간다
+		pass
+	elif _knocks_down(blow):
+		# 강한 기술 (§6.6): 움찔·밀림 대신 날아가 넘어졌다 일어난다. 선딜·돌진 중이어도 먹는다 — 크게 치면 하던 짓을 멈춘다(쿨다운이 연타를 막는다)
+		EnemyDeath.start_knockdown(self, blow, r.crit)
+	elif state != State.WINDUP and state != State.DASH:
+		# 경직(combat_v2 §6.2): 이동·다음 공격 시작을 stagger_sec 동안 멈추고 피격 클립(빠르게)만 보인다. 순서: 클립 → 플래시·히트스톱
+		# 등급·옵션 배수(§4.3 ⑧ — 파란 ×0.5 · 금색 ×0.3 · 돌살갗 0 = 움찔하지 않는다, #290)
+		# 넉백(§6.3)과 떠다님 몸 움찔(#502)이 같은 쪽 = 때린 쪽 반대
+		var away := global_position - (_player.global_position if _player else global_position - Vector3.FORWARD)
+		away.y = 0.0
+		var stag := def.stagger_sec * float(_m.stagger)
+		if stag > 0.0:
+			# 맞은 적 경직 +초 (회초리 stagger_add, item_system_v2 §7.6 #377) — 배수 안에서 더한다: 움찔하지 않는 몸(0)은 0 그대로 · 파란 ×0.5면 더함도 절반
+			stag += float(blow.get("stagger_add", 0.0)) * float(_m.stagger)
+			_stagger_until = maxf(_stagger_until, GameClock.now + stag)
+			_visual.play_hit(stag, away)
+		# 넉백(§6.3): 때린 쪽 반대로 짧게 민다. 경직과 같은 조건이라 선딜·돌진 중인 적은 안 밀린다.
+		var knock := def.knockback * float(_m.knock)
+		if knock > 0.0 and away.length() > 0.001:
+			# blow.knock = 평타 3타 보너스(PlayerCombat.FINISHER_KNOCK ×1.5, combat_v2 §6.5) × 밀치기 옵션(회초리 +50%, #377) — 치명 ×1.6과 곱한다
+			var dist_k := knock * (1.6 if r.crit else 1.0) * float(blow.get("knock", 1.0))
+			_knock_vel = away.normalized() * (2.0 * dist_k / KNOCK_SEC)
+			_knock_until = GameClock.now + KNOCK_SEC
+	# 처치 = 완전 흰 실루엣 3프레임 + 가장 긴 멈춤(§3). 치명으로 죽여도 처치가 위다.
+	_visual.flash(0.05 if killed else 0.08, killed)
+	_visual.hit_stop(KILL_STOP if killed else (CRIT_STOP if r.crit else 0.07))
+	# 맞았다 훅 (#290 — 벼락 두른·축지하는·흐려짐·숨어 있기). 죽었으면 on_death가 이미 돌았다
+	if not killed and not hooks.is_empty():
+		_hooks_hit({"amount": r.amount, "crit": r.crit, "element": r.element, "blow": blow})
+	return r.amount
+
+
+# ---------- 넘어짐 (보드 #145, combat_v2 §6.6) ----------
+
+## 지금 넘어져 있나 (날아감·누움·일어남 어느 토막이든). e2e·다른 코드가 읽는 하나의 물음.
+func is_downed() -> bool:
+	return down != Down.NONE
+
+
+## 이 타격이 살아 있는 이 적을 넘어뜨리나 (§6.6 ①): 스위치가 켜져 있다(knockdown_on — 지금 끔, #425) · 기술 중 `SkillDef.knockdown`(강타·회오리) ·
+## 면역이 아니다(knockdown_immune — 흑랑 무게 0 · 우두머리 · 네임드, #288) · 다시 넘어뜨리기 쿨다운이 지났다.
+func _knocks_down(blow: Dictionary) -> bool:
+	if not knockdown_on or not bool(blow.get("knockdown", false)) or is_submerged():
+		return false   # 스위치 끔(#425) → 보통 경직·밀림 · 잠수 예고 중(#326)은 선딜처럼 반응 없이 이어진다
+	return not knockdown_immune() and _down_cd <= 0.0
+
+
+## 처형을 안 받는 몸 (power_feel_v2 §3.2, #480 — 망나니 칼): 보스(제 연출 · 긴 싸움은 끝까지). 네임드·정예·하수인은 받는다.
+func cull_immune() -> bool:
+	return is_in_group("boss") or rank == EliteRules.Rank.BOSS
+
+
+## 넘어뜨림 면역 (monsters_v2 §4.3 ⑥ · §13.4.1, #288) — 등급 보스 · 네임드 · 우두머리 + 넉백 배수 0(돌살갗 — 나눠 받은 하수인까지)
+## + 무게 0(EnemyDef.launch_mult — 흑랑, 돌격 연출 보호). 면역인 몸은 **보통 경직만**: 선딜·돌진 중엔 반응 없이 한 대가 나가고, 그 밖엔 경직·넉백 × 등급 배수.
+func knockdown_immune() -> bool:
+	if rank == EliteRules.Rank.BOSS or rank == EliteRules.Rank.NAMED or rank == EliteRules.Rank.LEADER:
+		return true
+	return def.launch_mult <= 0.0 or float(_m.knock) <= 0.0
+
+
+## 이 적이 맞는 쪽의 표 = DamageCalc.roll_hit의 tgt (방어 + 막이, D-081 §3.1). 일시 변화(불가살이 달아오름 물리 −50 등)는 E2가 여기서 더한다.
+## 등급·옵션(#290): 방어 × def(사나운 ×0.5) · 막이 + res(돌살갗 물리 +40 · 금줄 두른 +40 · 불붙은 불 +50 …). 잡몹 = ×1 · +0.
+## demon = 퇴마 대상(요괴·원혼 — EnemyDef.is_demon, #377): 도호의 퇴마 %가 굴림에 곱해진다(DamageCalc.demon_mult).
+func hit_target() -> Dictionary:
+	var res := def.resists()
+	var add: Dictionary = _m.res
+	for k in add:
+		res[k] = float(res.get(k, 0.0)) + float(add[k])
+	_buff_res(res)   # 오라 (#328 — 역병 기운 불 −25 · 살 +75 · 지키는 자 다섯 칸 +15)
+	return {"def": def.defense * float(_m.def), "res": res, "demon": def.is_demon()}
+
+
+## 빙결 중인가 (D-081 §3.3, E2 #202). 죽은 뒤엔 "얼어 있던 채 죽었나" — 막타 규칙(§3.4)의 "빙결 중" 분기(#185 박살).
+func is_frozen() -> bool:
+	if state == State.DEAD:
+		return _died_frozen
+	return _status != null and _status.is_frozen()
+
+
+func is_chilled() -> bool:
+	return state != State.DEAD and _status != null and _status.is_chilled()
+
+
+func is_burning() -> bool:
+	return state != State.DEAD and _status != null and _status.is_burning()
+
+
+## 상태 비트 (core/status_effects.gd CHILL·FROZEN·BURN). 죽으면 0.
+func status_mask() -> int:
+	return _status.mask() if (_status != null and state != State.DEAD) else 0
+
+
+# ---------- 상태 효과 (D-081 E2 #202, design/elements_v2.md §3.3·§7.2) ----------
+## 거는 곳 = 타격의 한기(receive_attack ← roll_hit chill_sec) · 부적(E3 빙결부·화염부) · 지금은 개발 키(J·Z·P)·e2e.
+## 규칙·시간은 STATUS 한 벌 — 여기는 AI(이동·공격·빙결 멈춤)와 몸(틴트·애니 멈춤)에 잇기만 한다.
+
+## 몸 종류 — 보스는 보스판(Boss가 덮는다). 네임드는 아직 없다(§7.2).
+func _status_kind() -> int:
+	return STATUS.Kind.ENEMY
+
+
+## 한기 sec초 (서리막이를 이미 곱한 시간 — roll_hit chill_sec). 길면 덮는다. 보스판은 StatusEffects가 시간을 절반으로(§3.3).
+func apply_chill(sec: float) -> void:
+	if state == State.DEAD or _status == null or sec <= 0.0:
+		return
+	var before := _status.mask()
+	_status.chill(sec)
+	_after_status(before)
+
+
+## 빙결 요청 (빙결부 — E3). 시간 = base × (1 − 서리막이). 얼면 true — 선딜·돌진이 끊기고(→ 쫓기) 진행 중인 경직·넉백도 끊긴다.
+## 얼지 않는 몸(보스)·얼어 있는 중·풀린 지 2초 안·**넘어져 있는 중**(§6.6 #145 — 날아가는·누운 몸을 얼려 세우지 않는다)이면 한기(시간 × 2)로 바뀌고 false (§3.3·§7.2).
+func apply_freeze(base_sec: float = DamageCalc.FREEZE_SEC) -> bool:
+	if state == State.DEAD or _status == null:
+		return false
+	var before := _status.mask()
+	# 파란·금색 = 빙결 시간 ×0.5 (§6.2 · §6.3, #290) — 잡몹 ×1
+	var froze := _status.freeze(DamageCalc.freeze_sec(_res(&"cold"), base_sec) * float(_m.freeze), down == Down.NONE)
+	if froze:
+		_cancel_attack()
+		_stagger_until = 0.0
+		_knock_until = 0.0
+		velocity.x = 0.0
+		velocity.z = 0.0
+	_after_status(before)
+	return froze
+
+
+## 화상 (화염부 — E3): 초당 dps를 sec초, 불막이가 걸릴 때 초당 피해를 깎는다. 센 것(초당 × 남은 시간)이 덮는다. 걸리면 한 번 깜빡.
+func apply_burn(dps: float, sec: float) -> bool:
+	if state == State.DEAD or _status == null:
+		return false
+	var before := _status.mask()
+	var took := _status.burn(dps * DamageCalc.res_scale(_res(&"fire")), sec)
+	if took:
+		_visual.blink(STATUS.TINT_BURN, STATUS.BURN_BLINK_SEC)
+	_after_status(before)
+	return took
+
+
+## 도사 부적이 닿았다 (D-081 §3.1 「부적」 · §5.1, E3 #203 — elements_v2 §7.3). **명중 굴림 없음 · 치명 없음** — 칼이 아니라 기운이라 닿으면 맞는다.
+## 조각 = element 하나 · lo~hi = 정기·부적 피해 배율까지 곱한 굴림(ItemDef.talisman_roll) → DamageCalc.roll_hit의 도호 추가 속성 길(물리 0)이라 막이만 곱한다.
+## effects = {"burn": Vector2(초당, 초)} 화상(불막이가 초당을 깎는다) · {"freeze": 초} 빙결(서리막이가 시간을 · 얼 수 없는 몸은 한기 — apply_freeze).
+## 칼과 달리 경직·밀림·넘어뜨림은 없다(빙결이 멈추게 한다) — 번쩍임·숫자·피격음만. 막타면 제자리에 쓰러진다(blow 없음 = 기술 막타 아님). 반환 = 깎은 생명.
+## 정예(#290)는 칼과 같은 길을 탄다: 막이 더하기·빙결 ×0.5 = hit_target()·apply_freeze · 맞았다 훅(on_hit) = 끝에서 _hooks_hit · 죽음 훅 = _die.
+## mods = 던지는 순간의 곱 칸 (#377 — StatsCalc.hit_mods, TalismanShot이 싣는다): 퇴마 % — 이 몸이 요괴·원혼이면 부적 굴림(roll_hit)과
+## 화상 초당에 × (1 + %) (부적 피해 %가 곱하는 두 곳과 같다 · 빙결 시간엔 안). 치명 배수는 안 읽는다(부적 치명 없음). 막타면 처치 시 생명·도력도 든다(_die → enemy_died).
+## mods.talisman_chill_mult = 부적 한기 시간 배수(빙결부 익히기 +5%/점, #477 StatsCalc.talisman_mods) → roll_hit chill_mult. 칼의 chill_mult(이무기 비늘)는 안 읽는다.
+## effects.field = 바닥 진의 틱(부적 진, #477) — 화상 틱처럼 조용히: 맞은 몸 신음·피격 먹 튐·카메라 킥 없음(숫자·번쩍임은 그대로). 막타는 여느 때처럼 요란하다.
+func receive_spell(rng: RandomNumberGenerator, element: StringName, lo: float, hi: float, effects: Dictionary = {}, mods: Dictionary = {}) -> int:
+	if state == State.DEAD or _hidden:
+		return 0
+	_attacker()
+	var adds := {}
+	if hi > 0.0:
+		adds[element] = Vector2(minf(lo, hi), hi)
+	var tgt := hit_target()
+	var demon_pct := float(mods.get("demon_pct", 0.0))
+	var atk := {"adds": adds, "demon_pct": demon_pct}
+	if mods.has("talisman_chill_mult"):
+		atk["chill_mult"] = float(mods.talisman_chill_mult)
+	var r := DamageCalc.roll_hit(rng, atk, tgt)
+	last_hit_element = r.element
+	last_hit_crit = false
+	var hp_before := hp
+	hp -= r.amount
+	var killed := hp <= 0.0
+	last_hit_kill = killed
+	if killed:
+		EnemyDeath.note_kill(self, float(r.amount) - hp_before, false, {})
+	# 닿는 소리(불 터짐·서리 터짐)는 부적이 한 번 낸다(TalismanShot) — 여기는 맞은 몸의 신음만(터짐에 여럿이 맞아도 소리가 쌓이지 않게)
+	# 바닥 진 틱(effects.field, #477)은 막타가 아니면 신음·먹 튐·킥 없이 — 초마다 무리 전부가 신음하지 않게(화상 틱 _take_dot과 같은 결)
+	var loud := killed or not bool(effects.get("field", false))
+	var pitch: float = Audio.PITCH_FIXED if killed else Audio.PITCH_AUTO
+	if loud:
+		Audio.play("%s_hurt" % def.id, global_position, "enemy_hurt", pitch)
+		Vfx.play("%s_hurt" % def.id, global_position + Vector3(0, def.height * 0.55, 0), {}, "enemy_hurt")
+	DamagePopup.hit(self, r.amount, max_hp, false, killed, def.height, r)
+	var cam := get_viewport().get_camera_3d()
+	if loud and cam and cam.has_method("kick"):
+		cam.kick(KILL_KICK if killed else 0.04, (global_position - _player.global_position) if _player else Vector3.ZERO)
+	if killed:
+		Audio.play("kill_extra", global_position)
+	EventBus.damage_dealt.emit(_player, self, r.amount)
+	wake()   # 부적에 맞아도 깬다 — 무리에도 알린다 (#288 — 멀리서 한 마리를 쳐도 무리가 안다)
+	if killed:
+		_die()
+	else:
+		if r.chill_sec > 0.0:
+			apply_chill(r.chill_sec)   # 한기 조각의 한기 (§3.3) — 서리막이는 roll_hit이 이미 곱했다
+		var burn: Variant = effects.get("burn")
+		if burn is Vector2 and (burn as Vector2).x > 0.0:
+			# 화상 초당 × 퇴마 (#377 — 요괴·원혼만, 사람·짐승 1배)
+			apply_burn((burn as Vector2).x * DamageCalc.demon_mult(demon_pct, bool(tgt.demon)), (burn as Vector2).y)
+		var freeze := float(effects.get("freeze", 0.0))
+		if freeze > 0.0:
+			apply_freeze(freeze)
+	_visual.flash(0.05 if killed else 0.08, killed)
+	if killed:
+		_visual.hit_stop(KILL_STOP)
+	# 맞았다 훅 (#290 — 벼락 두른·축지하는 …): 부적에 맞아도 칼에 맞은 것처럼 반응한다(상태를 입힌 뒤라 훅이 빙결을 본다). 죽었으면 on_death가 이미 돌았다
+	if not killed and not hooks.is_empty():
+		_hooks_hit({"amount": r.amount, "crit": false, "element": r.element, "blow": {}})
+	return r.amount
+
+
+## 한 물리 틱 — 시간을 흘리고 화상 틱을 먹인다. 화상으로 죽었으면 true.
+func _tick_status(delta: float) -> bool:
+	if _status == null:
+		return false
+	var before := _status.mask()
+	var dmg := _status.advance(delta)
+	if _status.ticks > 0:
+		_visual.blink(STATUS.TINT_BURN, STATUS.BURN_BLINK_SEC)   # 주황 깜빡 = 틱 (§6 최소 표시)
+	if dmg > 0:
+		_take_dot(dmg, &"fire")
+		if state == State.DEAD:
+			return true
+	_after_status(before)
+	return false
+
+
+## 시간 피해 한 틱 (§3.1 — 화상, 살은 E8): 명중·방어 없이 생명만 깎는다. 경직·넉백·히트스톱·카메라 킥·연속 처치 없음(§7).
+## 죽이면 막타 = 이 틱(§3.4 "마지막 틱") — 제자리에서 쓰러진다(기술 막타가 아니다). 틱 숫자는 E5가 신호로 받는다.
+func _take_dot(amount: int, element: StringName) -> void:
+	var hp_before := hp
+	hp -= amount
+	EventBus.status_tick.emit(self, amount, element)
+	if hp <= 0.0:
+		last_hit_element = element
+		last_hit_crit = false
+		last_hit_kill = true
+		EnemyDeath.note_kill(self, float(amount) - hp_before, false, {})
+		_die()
+
+
+## 상태 비트가 바뀌었으면 몸에 입히고 알린다.
+func _after_status(before: int) -> void:
+	if _status.mask() != before:
+		_status_look()
+
+
+## 최소 표시 (§6): 빙결 = 청백 + 애니 멈춤 · 한기 = 옅은 청 · 화상 = 틱마다 주황 깜빡(_tick_status). 제대로 된 이펙트는 E6(#206).
+func _status_look() -> void:
+	_visual.set_anim_frozen(_status.is_frozen())
+	_visual.set_tint(_status.tint())
+	EventBus.status_changed.emit(self, _status.mask())
+
+
+## 얼어 있는 틱 — 제자리(중력만). 걷기 클립으로 바꾸지 않는다(set_moving 안 부름) — 선 자세 그대로 굳는다.
+func _hold_frozen(delta: float) -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	velocity.y = 0.0 if is_on_floor() else velocity.y - 20.0 * delta
+	move_and_slide()
+
+
+## 빙결이 선딜·돌진을 끊는다 (§3.3) — 풀리면 쫓기부터. 쿨은 안 준다(공격이 안 나갔다).
+func _cancel_attack() -> void:
+	EnemyMoves.cancel(self)   # 날아와 터지기의 부풂(#295) — 깔아 둔 링을 걷고 몸 크기를 되돌린다
+	_lunge = false   # 받아치는 돌진(#381)도 선딜과 같이 끊긴다
+	if state == State.WINDUP or state == State.DASH:
+		state = State.CHASE
+		_state_timer = 0.0
+		_dash_left = 0.0
+		strike_mod = {}   # 끊긴 훑기(#326)는 예고와 함께 지운다 — 다음 선딜이 다시 얹는다
+		_clear_fan()
+		_visual.cancel_pounce()   # 웅크림·뜬 몸 잠금을 푼다 (#506 — 풀리면 대기·걷기로 섞어 돌아간다)
+
+
+## 죽으면 상태를 걷는다 — 틴트·애니 멈춤을 풀어 die 클립이 돈다. 얼어 있었는지는 먼저 적어 둔다(is_frozen → death_element).
+func _end_status() -> void:
+	_died_frozen = _status != null and _status.is_frozen()
+	if _status == null:
+		return
+	var had := _status.mask()
+	_status.clear()
+	_visual.clear_status_look()
+	if had != 0:
+		EventBus.status_changed.emit(self, 0)
+
+
+func _move_mult() -> float:
+	return _status.move_mult() if _status != null else 1.0
+
+
+## 공격 시간 배수(≥ 1) — 쿨·선딜을 줄 때 곱한다(§7).
+func _atk_mult() -> float:
+	return _status.attack_time_mult() if _status != null else 1.0
+
+
+## 지금 막이 한 칸 (hit_target — 일시 변화가 생기면 그것까지).
+func _res(k: StringName) -> float:
+	var res: Dictionary = hit_target().get("res", {})
+	return float(res.get(k, 0.0))
+
+
+## 막타 죽음 속성 (D-080 · D-081 §3.4 — #185 계약): 보스 → &""(제 연출) · 빙결 중 → &"cold"(얼어 박살) · 가장 큰 속성 조각 · 물리 &"".
+## 처치 일격이면 last_hit_element가 막타다 — #185가 _die에서 읽는다.
+func death_element() -> StringName:
+	return DamageCalc.death_element(is_in_group("boss"), is_frozen(), last_hit_element)
+
+
+## 드랍 굴림의 ctx (item_system_v2 §19 · Loot.roll_drops · Loot.enemy_drops): 지역 레벨 · 원천 · 등급 · 회차 · 도호의 좋은 물건·엽전 % (플레이어 옵션).
+## 원천 = 등급(하수인 · 파란 · 금색 — 스폰 때 붙는 것, #290) 아니면 변종 데이터(EnemyDef.drop_class). ilvl 가산은 원천이 한다 —
+## area_level에는 등급 레벨을 안 더했다(monster_level과 따로 — 두 번 세지 않게, monsters_v2 §13.7). rank = 굴림 수 · 보장(#291, §10.1).
+func drop_ctx() -> Dictionary:
+	var stats: Dictionary = {}
+	if _player and "combat" in _player:
+		stats = _player.combat.stats
+	var ctx := {"area_level": area_level, "drop_class": EliteRules.drop_source(rank, def.drop_source()), "rank": int(rank), "run": GameState.run,
+		"mf": float(stats.get("mf_pct", 0.0)), "gold_pct": float(stats.get("gold_pct", 0.0))}
+	return Loot.with_def(ctx, def, GameState.first_kill_pending(def.id))   # 편향 · 첫 처치 물건 · 보스 재료 (item_system_v2 §15.7, #269)
+
+
+## 드랍 (items_v2.md §1 채널 · item_system_v2 §6 등급·원천 · monsters_v2 §6.5 등급 줄). 위치는 발밑 주변 산포 — 레벨이 걷는 셀로 보정한다.
+## 몸 하나가 떨구는 것 = Loot.enemy_drops(ctx.rank — #291 한 곳): 채널 표를 도는 번 수 = 파란 한 마리마다 2 · 금색 3 · 그 밖 1(잡몹 = 지금 그대로)
+## · 파란 = 무드랍 없음(다 비면 엽전 1) · 금색 = 장비 1 보장(매직 이상 50%). 좋은 물건 배수·ilvl 가산은 원천 줄(Loot.SOURCES)이 붙인다.
+func _drop_loot() -> void:
+	# 시체 가슴에서 튀어나온다 — 착지 자리(부채꼴)는 Level이 정한다 (game_feel_v2 §4.1)
+	var chest := global_position + Vector3(0.0, def.height * 0.55, 0.0)
+	var ctx := drop_ctx()
+	for it in Loot.enemy_drops(_rng, ctx):
+		EventBus.loot_dropped.emit(it, chest)
+	if rank == EliteRules.Rank.NAMED:
+		_drop_named(ctx, chest)
+
+
+## 네임드 보장 (monsters_v2 §6.5 네임드 줄 · §7.1 · D-084, #330): 장비 2(하나는 매직 이상) + 30% 하나 더 · 캐릭터 첫 처치면 지정 유니크(EnemyDef.first_kill_unique — 이무기 비늘).
+## 첫 처치 기록 = GameState.first_kills(보스 전용 유니크와 같은 칸 — 굴린 뒤에 적는다, 이번 처치가 첫 처치로 읽히게) · 처치 플래그 named_killed_<id>(퀘스트·보장용, §7.1 — 다시 서는 건 안 막는다).
+func _drop_named(ctx: Dictionary, chest: Vector3) -> void:
+	var first := GameState.first_kill_pending(def.id)
+	var r := Loot.named_drops(_rng, def.first_kill_unique, ctx, first)
+	GameState.note_first_kill(def.id)
+	GameState.flags["named_killed_%s" % def.id] = true
+	named_unique = r.unique
+	for it in r.items:
+		EventBus.loot_dropped.emit(it, chest)
+	if DevMode.is_active:
+		print("[Loot] 네임드 — %s %s → %s · 장비 %d (회차 %d)" % [def.id, "첫 처치" if first else "재처치", named_unique.unique_id if named_unique else "없음", (r.items as Array).size() - (1 if named_unique else 0), GameState.run])
+
+
+func _die() -> void:
+	_end_status()   # 상태를 걷는다(틴트·애니 멈춤) — 얼어 있었는지는 적어 둔다: 이 뒤 death_element()가 cold를 답한다(E2 #202 → #185)
+	state = State.DEAD
+	if is_instance_valid(_rank_ring):
+		_rank_ring.visible = false
+	collision_layer = 0
+	collision_mask = 0
+	if _name_label:
+		_name_label.visible = false
+	# 넘어져 있는 중에 죽으면 그 시간표를 걷고 죽음 연출에 넘긴다 (§6.6 경계 — 죽음이 먼저 읽힌다)
+	if _down_tw and _down_tw.is_valid():
+		_down_tw.kill()
+	down = Down.NONE
+	_visual.pose_clear()
+	_clear_fan()
+	# 몸에 붙은 바닥 예고(끌어당김 선 · 털 낚아채기 선 — FanTelegraph.spawn_line)도 죽음과 함께 걷는다: 제 수명(선딜)까지 남아
+	# 시체 곁 바닥에 붉은 띠로 떠 있었다(#494 장산범 처치 사진 — 도호 옆 붉은 평행사변형)
+	for c in get_children():
+		if c is FanTelegraph and not c.is_queued_for_deletion():
+			c.queue_free()
+	strike_mod = {}
+	if _hidden:
+		_set_hidden(false)   # 있을 수 없는 길(숨은 몸은 안 맞는다)이지만 시체는 보이게
+	# 경험치 = 변종 × 몬스터 레벨 곡선 × 레벨 차 보정(D-093 §1, #474 — 센 적은 더·너무 약한 적은 덜) × 등급 배수(하수인 ×1.5 · 파란 ×3 · 금색 ×5 — §6.5, #290) × (1 + 새끼 얹기 xp_bonus, #326). 반쪽·새끼(gives_reward ×) = 0
+	var mlv := monster_level()
+	var xp := int(round(def.xp * DamageCalc.level_xp_mult(mlv) * DamageCalc.level_diff_xp_mult(mlv, int(GameState.character.level)) * float(_m.xp) * (1.0 + xp_bonus))) if gives_reward else 0
+	# 날아와 터지기가 제 발로 터져 죽으면 처치가 아니다 (#295) — 경험치·처치 몫(PlayerCombat.kill_reward)·죽는 소리가 이 신호 하나를 듣는다
+	if not EnemyMoves.burst_self(self):
+		EventBus.enemy_died.emit(self, xp)
+	# 우두머리가 쓰러지면 무뢰배·짐승 하수인은 흩어진다 (#288 §4.3 ⑤ — 2.5초 뒤 돌아온다)
+	_scatter_minions()
+	Vfx.play("%s_die" % def.id, global_position + Vector3(0, def.height * 0.4, 0), {"scale": maxf(0.6, def.radius * 2.0)}, "enemy_die")
+	# 죽었다 훅 (#290 — 불붙은 터짐 · #326 나뉨) — 드랍·시체보다 먼저. 날아와 터지기의 반만 터짐·꺼짐(#295)도
+	EnemyMoves.on_die(self)
+	if not hooks.is_empty():
+		_hooks_death()
+	# 반쪽·새끼(#326)는 드랍 0
+	if gives_reward:
+		_drop_loot()
+		if first_magic:
+			_drop_first_magic()
+	# 처치 연출 (#183 → #472 D-093, game_feel_v2 §10.1): 막타가 죽음 하나를 고른다(DeathPick — 보스 → 속성 → 넋 → 큰 막타 = 베임 · 평타 = 주저앉음, 최근과 같은 모습은 피함)
+	# → 피가 있는 죽음이면 피 튐 → 두 동강(가로·사선·세로 · 윗몸 미끄러짐)이면 두 벌, 아니면 제자리(주저앉음·떨어짐·베여 쓰러짐·재·박살·흩어짐·보스) → 8초 누움 → 가라앉음.
+	# 날아가 쓰러짐은 없다(#472). 안무 = EnemyDeath(#420). 막타 정보 없이 죽었으면(dev·시험 경로) decide가 평타 기본값으로 채운다.
+	EnemyDeath.decide(self)
+	if EnemyDeath.bleeds(self):
+		EnemyDeath.blood_burst(self)
+	if EnemyDeath.splits(self):
+		EnemyDeath.start_bisect(self)
+	else:
+		_start_corpse()
+
+
+# ---------- 처치 연출 2차 (보드 #183, game_feel_v2 §10.6) — 안무는 EnemyDeath(#420), 여기는 이음매 ----------
+
+## 때린 쪽 (막타 방향의 출발점). 물리 틱 전에 맞아도(방금 스폰·AI를 끈 허수아비) 찾는다.
+func _attacker() -> Node3D:
+	if _player == null or not is_instance_valid(_player):
+		_player = get_tree().get_first_node_in_group("player") as Node3D
+	return _player
+
+
+## 시체의 시간표 (§10.2) — 안무는 EnemyDeath.start_corpse(#420). Boss가 재정의해 먹으로 스러짐(#281)을 덧붙인다(super 호출) — 그래서 메서드로 남는다.
+func _start_corpse() -> void:
+	EnemyDeath.start_corpse(self)
+
+
+## 지금 윗몸 단면 중심(월드) — e2e가 "윗몸이 궤적 방향으로 갔나"를 잰다. 두 동강이 아니면 발밑.
+func upper_center() -> Vector3:
+	return EnemyDeath.upper_center(self)
+
+
+## 시체가 먹혔다 (#296 hooks/devour.gd — 아귀) → 곧 가라앉는다. 훅이 EnemyDeath(Enemy 형을 적는 스크립트)를 안 부르게 여기서.
+func sink_corpse() -> void:
+	if state == State.DEAD:
+		EnemyDeath.consume(self)
+
+
+## 지금 누워 있거나 무너지는 시체 수 (e2e·dev) — 재·박살·흩어짐은 시체가 없어 안 센다. 시체 명단은 EnemyDeath(#420).
+static func corpse_count() -> int:
+	return EnemyDeath.corpse_count()
+
+
+# ---------- 첫 매직 보장 (보드 #374, item_system_v2 §15.6) ----------
+
+## 보장 몸이 쓰러진 뒤: 그 회차에 매직 이상 장비가 아직 안 떨어졌으면 하나 더 — 제 드랍(_drop_loot)이 이미 끝났으니, 제 굴림에 매직이
+## 있었으면 GameState가 그 드랍에서 이미 적어 두어 여기서 건너뛴다. 떨군 것도 loot_dropped로 지나가 GameState가 이 회차를 적는다.
+func _drop_first_magic() -> void:
+	if not GameState.first_magic_pending():
+		return
+	var it := Loot.first_magic_item(_rng, drop_ctx())
+	if it:
+		EventBus.loot_dropped.emit(it, global_position + Vector3(0.0, def.height * 0.55, 0.0))
+	if DevMode.is_active:
+		print("[Loot] 첫 매직 보장 — %s (%s ilvl %d) · 회차 %d" % [def.id, it.def.id if it else "없음", it.ilvl if it else 0, GameState.run])

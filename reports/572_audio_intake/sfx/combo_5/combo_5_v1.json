@@ -1,0 +1,69 @@
+{
+ "cue": "combo_5",
+ "v": 1,
+ "prompt": "A weighty short steel snap marking a five-hit sword combo, no melody. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:19",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.588005,
+ "lufs": "-17.1",
+ "peak": "0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 1,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/combo_5_v1.wav",
+   "duration": 0.6,
+   "lufs": "-17.1",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25931,
+   "at": 0.588,
+   "removed_ms": 12.0,
+   "floor_db": -94.7,
+   "jump_db": 24.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.01,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -18.61,
+    -18.61
+   ],
+   "intake_tp": [
+    0.79,
+    0.8
+   ]
+  },
+  "out": {
+   "over_full": 1,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.03,
+   "lufs": "-17.1",
+   "true_peak": "0.1"
+  },
+  "warn": [
+   "CLIP 1"
+  ]
+ }
+}

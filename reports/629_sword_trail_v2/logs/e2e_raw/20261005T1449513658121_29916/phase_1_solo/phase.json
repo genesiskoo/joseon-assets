@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon",
+      "--",
+      "--e2e=sword_trail_v2,vfx_cues,skill_tiers,attack_chain,aoe_skills,aoe_skills_2,invisible_sword,weapon_visibility,vfx_cap_blood,pack_perf"
+    ],
+    "phase_arg": "sword_trail_v2,vfx_cues,skill_tiers,attack_chain,aoe_skills,aoe_skills_2,invisible_sword,weapon_visibility,vfx_cap_blood,pack_perf",
+    "phase_tokens": [
+      "sword_trail_v2",
+      "vfx_cues",
+      "skill_tiers",
+      "attack_chain",
+      "aoe_skills",
+      "aoe_skills_2",
+      "invisible_sword",
+      "weapon_visibility",
+      "vfx_cap_blood",
+      "pack_perf"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 44200,
+    "launched_utc": "2026-10-05T14:49:57.3359780Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_sec": 163.2878022,
+  "archived_utc": "2026-10-05T14:52:40.6665550Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-d454\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\tmp\\e2e_raw\\20261005T1449513658121_29916\\phase_1_solo\\godot.raw.log",
+    "bytes": 59170,
+    "sha256": "e9f2484235ed23373817f99447a0c372fb5aeb6994eee6a0be72ea99b40ae309"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

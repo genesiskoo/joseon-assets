@@ -1,0 +1,360 @@
+{
+  "config": {},
+  "extra": {
+    "VHS_KeepIntermediate": true,
+    "VHS_MetadataImage": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "ds": {
+      "offset": [
+        1940.928669410151,
+        -96.66666666666674
+      ],
+      "scale": 0.5360294117647059
+    },
+    "frontendVersion": "1.54.15"
+  },
+  "groups": [],
+  "id": "745f0acb-85fe-4455-b8b8-5875bf15f808",
+  "last_link_id": 10,
+  "last_node_id": 9,
+  "links": [
+    [
+      6,
+      3,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      7,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      10,
+      8,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      7,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "nodes": [
+    {
+      "flags": {},
+      "id": 2,
+      "inputs": [
+        {
+          "link": 10,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 6,
+      "outputs": [
+        {
+          "links": null,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "pos": [
+        1204,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImageAdvanced",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        560,
+        130
+      ],
+      "type": "SaveImageAdvanced",
+      "widgets_values": [
+        "gumiho_boss_516_D_veil_slips",
+        "png",
+        "8-bit",
+        "sRGB"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "gumiho_boss_516_D_veil_slips",
+        "format": "png",
+        "format.bit_depth": "8-bit",
+        "format.input_color_space": "sRGB"
+      }
+    },
+    {
+      "flags": {},
+      "id": 3,
+      "inputs": [],
+      "mode": 0,
+      "order": 0,
+      "outputs": [
+        {
+          "links": [
+            6
+          ],
+          "name": "IMAGE",
+          "type": "IMAGE"
+        },
+        {
+          "links": null,
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "pos": [
+        -370,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        580,
+        720
+      ],
+      "type": "LoadImage",
+      "widgets_values": [
+        "f438039c2e234b69e47306122f7576cd7b260113038cd82ff49b13f909abd0c8.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "f438039c2e234b69e47306122f7576cd7b260113038cd82ff49b13f909abd0c8.png",
+        "upload": "image"
+      }
+    },
+    {
+      "flags": {},
+      "id": 5,
+      "inputs": [
+        {
+          "link": 8,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 4,
+      "outputs": [
+        {
+          "links": null,
+          "name": "images",
+          "type": "IMAGE"
+        }
+      ],
+      "pos": [
+        270,
+        1590
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        420,
+        480
+      ],
+      "type": "PreviewImage"
+    },
+    {
+      "bgcolor": "#000",
+      "color": "#222",
+      "flags": {},
+      "id": 6,
+      "inputs": [],
+      "mode": 0,
+      "order": 1,
+      "outputs": [],
+      "pos": [
+        270,
+        1310
+      ],
+      "properties": {},
+      "size": [
+        430,
+        220
+      ],
+      "type": "MarkdownNote",
+      "widgets_values": [
+        "Enable Node 2.0. If you can’t use the Painter node, use the [Partial Execution](https://docs.comfy.org/interface/features/partial-execution) feature on the Preview Image node. This way, you won’t need to run the entire workflow just to get the Painter preview working. With future updates, the preview can support live use.\n\nYou can run this workflow without updating it; if you want, you can use it to draw some marks on the input image."
+      ],
+      "widgets_values_named": {
+        "text": "Enable Node 2.0. If you can’t use the Painter node, use the [Partial Execution](https://docs.comfy.org/interface/features/partial-execution) feature on the Preview Image node. This way, you won’t need to run the entire workflow just to get the Painter preview working. With future updates, the preview can support live use.\n\nYou can run this workflow without updating it; if you want, you can use it to draw some marks on the input image."
+      }
+    },
+    {
+      "flags": {},
+      "id": 7,
+      "inputs": [
+        {
+          "link": 6,
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 3,
+      "outputs": [
+        {
+          "links": [
+            8,
+            9
+          ],
+          "name": "IMAGE",
+          "type": "IMAGE"
+        },
+        {
+          "links": null,
+          "name": "MASK",
+          "type": "MASK"
+        }
+      ],
+      "pos": [
+        258,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "Painter",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        450,
+        820
+      ],
+      "type": "Painter",
+      "widgets_values": [
+        "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+        2304,
+        1728,
+        "#000000"
+      ],
+      "widgets_values_named": {
+        "bg_color": "#000000",
+        "height": 1728,
+        "mask": "c77611181821f9c5cfd519b9e7d1d9f66a1b50c6d7871b6e7d8485b8212facdf.png [input]",
+        "width": 2304
+      }
+    },
+    {
+      "bgcolor": "#653",
+      "color": "#432",
+      "flags": {},
+      "id": 8,
+      "inputs": [
+        {
+          "link": 9,
+          "name": "model.images.image_1",
+          "shape": 7,
+          "type": "IMAGE"
+        },
+        {
+          "link": null,
+          "name": "model.images.image_2",
+          "shape": 7,
+          "type": "IMAGE"
+        }
+      ],
+      "mode": 0,
+      "order": 5,
+      "outputs": [
+        {
+          "links": [
+            10
+          ],
+          "name": "IMAGE",
+          "type": "IMAGE"
+        }
+      ],
+      "pos": [
+        750,
+        420
+      ],
+      "properties": {
+        "Node name for S&R": "ByteDanceSeedreamNodeV3",
+        "cnr_id": "comfy-core",
+        "ver": "0.34.0"
+      },
+      "size": [
+        400,
+        348
+      ],
+      "type": "ByteDanceSeedreamNodeV3",
+      "widgets_values": [
+        "Create a striking ORIGINAL final-boss reveal concept for a Korean dark Joseon fantasy game, using the uploaded B design sheet as the EXACT same woman, face, plain clothes and painterly style. Direction D — THE VEIL SLIPS: she is still the ordinary village woman in the faded oxblood cotton jeogori, patched charcoal chima and cheap apron. Do NOT replace these with robes, regalia, armor or jewelry. The disguise breaks only in her body language and shadow: long black hair loosens; she turns toward us with a slow, knowing half-smile and unwavering molten-amber eyes; one relaxed hand beckons while the other is beginning to become a dark claw. From behind her lower back, NINE individually distinct fox tails unfold in a wide, uneven fan, soot-black at the roots and faded bone-gold at the tips. The tails and their shadows become a terrifying boss-scale silhouette, with readable negative space between each tail; a few tiny sparks of foxfire and drifting black ink, no bright spell explosion. Keep her human face recognizably identical to the woman in the input. Make the contrast between ordinary work clothes and monstrous tails the unforgettable idea. One single full-body three-quarter character concept illustration, all head, feet and tails in frame. Pose is alluring through a slight backward lean, direct eye contact and small inviting gesture, not through exposed skin. Matte Korean illustrated RPG concept art, dimensional layered cotton for future 3D modeling, charcoal twilight neutral backdrop, muted oxblood / soot / antique gold palette. No captions, no text, no second figure, no ornate red gown, no royal hair ornaments, no Western fantasy costume, no Chinese imperial styling, no kimono, no cartoon fox ears, no extra limbs, no fused tails.",
+        "seedream 5.0 pro",
+        "(2K) 2304x1728 (4:3)",
+        2048,
+        2048,
+        "standard",
+        865037901,
+        "randomize",
+        false,
+        true,
+        "randomize"
+      ],
+      "widgets_values_named": {
+        "control_after_generate": "randomize",
+        "control_after_generate#1": "randomize",
+        "model": "seedream 5.0 pro",
+        "model.height": 2048,
+        "model.prompt_optimization": "standard",
+        "model.seed": 865037901,
+        "model.size_preset": "(2K) 2304x1728 (4:3)",
+        "model.thinking": true,
+        "model.watermark": false,
+        "model.width": 2048,
+        "prompt": "Create a striking ORIGINAL final-boss reveal concept for a Korean dark Joseon fantasy game, using the uploaded B design sheet as the EXACT same woman, face, plain clothes and painterly style. Direction D — THE VEIL SLIPS: she is still the ordinary village woman in the faded oxblood cotton jeogori, patched charcoal chima and cheap apron. Do NOT replace these with robes, regalia, armor or jewelry. The disguise breaks only in her body language and shadow: long black hair loosens; she turns toward us with a slow, knowing half-smile and unwavering molten-amber eyes; one relaxed hand beckons while the other is beginning to become a dark claw. From behind her lower back, NINE individually distinct fox tails unfold in a wide, uneven fan, soot-black at the roots and faded bone-gold at the tips. The tails and their shadows become a terrifying boss-scale silhouette, with readable negative space between each tail; a few tiny sparks of foxfire and drifting black ink, no bright spell explosion. Keep her human face recognizably identical to the woman in the input. Make the contrast between ordinary work clothes and monstrous tails the unforgettable idea. One single full-body three-quarter character concept illustration, all head, feet and tails in frame. Pose is alluring through a slight backward lean, direct eye contact and small inviting gesture, not through exposed skin. Matte Korean illustrated RPG concept art, dimensional layered cotton for future 3D modeling, charcoal twilight neutral backdrop, muted oxblood / soot / antique gold palette. No captions, no text, no second figure, no ornate red gown, no royal hair ornaments, no Western fantasy costume, no Chinese imperial styling, no kimono, no cartoon fox ears, no extra limbs, no fused tails."
+      }
+    },
+    {
+      "bgcolor": "#000",
+      "color": "#222",
+      "flags": {},
+      "id": 9,
+      "inputs": [],
+      "mode": 0,
+      "order": 2,
+      "outputs": [],
+      "pos": [
+        -870,
+        420
+      ],
+      "properties": {},
+      "size": [
+        450,
+        320
+      ],
+      "type": "MarkdownNote",
+      "widgets_values": [
+        "## Input Asset\n\n- [interior_college.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/interior_college.png)\n\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+      ],
+      "widgets_values_named": {
+        "text": "## Input Asset\n\n- [interior_college.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/interior_college.png)\n\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+      }
+    }
+  ],
+  "revision": 0,
+  "version": 0.4
+}

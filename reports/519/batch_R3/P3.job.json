@@ -1,0 +1,37 @@
+{
+  "id": "P3",
+  "concept_number": 3,
+  "title_ko": "피 묻은 술잔",
+  "provider": "Comfy Cloud",
+  "model_label": "GPT25",
+  "model": "gpt-image-2.5-flare",
+  "source": "../gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "prompt": "prompts/concept_3.txt",
+  "prompt_file_sha256": "bc1192120faf4631bf3577d79526b54edcfc2532f4f49ea78bdd6f72d67a82ce",
+  "submitted_prompt_sha256": "fb4e9f5a13ed70c603cf61bfd5a166960f75357eb6c54f628f8907bde38a5a5e",
+  "seed": 5193103,
+  "deterministic_seed_guaranteed": false,
+  "requested_images": 1,
+  "requested_dimensions": [
+    1664,
+    2496
+  ],
+  "state": "downloaded",
+  "prompt_id": "75f8a2f1-3d85-4234-b4b1-6590801334f2",
+  "status_response": {
+    "assigned_inference": "10.4.9.4:8080",
+    "created_at": "2026-10-01T04:20:34.165103Z",
+    "id": "75f8a2f1-3d85-4234-b4b1-6590801334f2",
+    "last_state_update": "2026-10-01T04:26:49.325573Z",
+    "status": "success",
+    "updated_at": "2026-10-01T04:26:49.325573Z"
+  },
+  "actual_dimensions": [
+    1664,
+    2496
+  ],
+  "output": "P3.png",
+  "output_sha256": "1002e8c9171b22dcb47b3d22e14dfa5cc72917e294fa479f6896b057371ea32a",
+  "output_bytes": 5869490
+}

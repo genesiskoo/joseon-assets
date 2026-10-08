@@ -1,0 +1,224 @@
+{
+  "card": 487,
+  "parent_card": 274,
+  "status": "candidate_not_installed",
+  "definition_state": "design_only",
+  "intake_predecessor": 272,
+  "method": "native image_gen; common alpha16/8percent/Lanczos ratio packing",
+  "logical_cell_px": 40,
+  "output_scale": 2,
+  "source_docs": {
+    "docs/design/item_catalog_v2.md": "fcebfd01517b72401332f456e4265c515e005f45dec793a4aa98c1fdfc3ed25d",
+    "docs/design/item_system_v2.md": "c3e6da09e8f3b82aa647ecc58885bf24d9251fbc01df36040bff8a815540069b"
+  },
+  "items": [
+    {
+      "item_id": "ungeom",
+      "display_name": "운검",
+      "grid_w": 1,
+      "grid_h": 3,
+      "output_width": 80,
+      "output_height": 240,
+      "definition_state": "design_only",
+      "planned_definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/464-t2-armor-art/joseon/data/items/ungeom.tres",
+      "planned_tier": 3,
+      "planned_slot": 0,
+      "base_id": null,
+      "reference_id": "bongukgeom",
+      "reference_display_name": "본국검",
+      "reference_path": "C:/Users/FORYOUCOM/.codex/worktrees/464-t2-armor-art/joseon/assets/sprites/ui/icons_a/items/bongukgeom.png",
+      "reference_status": "current_approved_T2_game_icon",
+      "reference_sha256": "a502fcd664d01b9ea23bd69e406d1638dfaf54ba1ded81fbeb0011bdf87d2bd2",
+      "note": "궁중호위·쪽빛/담청옥/정제된쇠",
+      "intake_predecessor": 272,
+      "source_path": "source/items/ungeom.png",
+      "source_size": [
+        724,
+        2172
+      ],
+      "source_sha256": "fb27b457d99dd30fa6d74d39d0bd745bd37b5ec9e0b9f668c202e5b779840172",
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        254,
+        36,
+        563,
+        2136
+      ],
+      "game_path": "game/items/ungeom.png",
+      "game_sha256": "a9ca0d8393779772a9fe1bc0b12d0e1e737623c06b81a17b45812d8a2c2ae825",
+      "game_size": [
+        80,
+        240
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        23,
+        6,
+        57,
+        234
+      ]
+    },
+    {
+      "item_id": "keun_kal",
+      "display_name": "환두대도",
+      "grid_w": 1,
+      "grid_h": 3,
+      "output_width": 80,
+      "output_height": 240,
+      "definition_state": "design_only",
+      "planned_definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/464-t2-armor-art/joseon/data/items/keun_kal.tres",
+      "planned_tier": 3,
+      "planned_slot": 0,
+      "base_id": null,
+      "reference_id": "ssangsudo",
+      "reference_display_name": "쌍수도",
+      "reference_path": "C:/Users/FORYOUCOM/.codex/worktrees/464-t2-armor-art/joseon/assets/sprites/ui/icons_a/items/ssangsudo.png",
+      "reference_status": "current_approved_T2_game_icon",
+      "reference_sha256": "7ec7ef39c99ca93cdd4f676ece3be297031b274967c3bb7ecfd117d74da05762",
+      "note": "빈고리꼭지·넓은날·갈색가죽",
+      "intake_predecessor": 272,
+      "source_path": "source/items/keun_kal.png",
+      "source_size": [
+        724,
+        2172
+      ],
+      "source_sha256": "203101fec644283b41fa804f3d1e0369833d85ab21de45d61d8f63792f6b198d",
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        258,
+        18,
+        466,
+        2154
+      ],
+      "game_path": "game/items/keun_kal.png",
+      "game_sha256": "9f94c5d31c6a46e892fe7dd6b3c2342347324113341e7a066bf52be0e1f1df74",
+      "game_size": [
+        80,
+        240
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        29,
+        6,
+        51,
+        234
+      ]
+    },
+    {
+      "item_id": "chilseonggeom",
+      "display_name": "칠성검",
+      "grid_w": 1,
+      "grid_h": 3,
+      "output_width": 80,
+      "output_height": 240,
+      "definition_state": "design_only",
+      "planned_definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/464-t2-armor-art/joseon/data/items/chilseonggeom.tres",
+      "planned_tier": 3,
+      "planned_slot": 0,
+      "base_id": null,
+      "reference_id": "saingeom",
+      "reference_display_name": "사인검",
+      "reference_path": "C:/Users/FORYOUCOM/.codex/worktrees/464-t2-armor-art/joseon/assets/sprites/ui/icons_a/items/saingeom.png",
+      "reference_status": "current_approved_T2_game_icon",
+      "reference_sha256": "cdc15252a160994a9061c0a11fb05d8ba99e495abb966bc3bcfc50bfc9e49ed8",
+      "note": "칠성7점의 금속새김·밝은쇠",
+      "intake_predecessor": 272,
+      "source_path": "source/items/chilseonggeom_v2.png",
+      "source_size": [
+        724,
+        2172
+      ],
+      "source_sha256": "e6be59e10e1fd8cea3e27dad5d7a8bf59be9768ddae090b5c1f9bccca8fe69d0",
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        270,
+        13,
+        492,
+        2145
+      ],
+      "game_path": "game/items/chilseonggeom.png",
+      "game_sha256": "92f4e5a34b6df3083c3f4a1be616263d66abd491da9e2de7027813c09e5a14f6",
+      "game_size": [
+        80,
+        240
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        28,
+        6,
+        52,
+        234
+      ]
+    },
+    {
+      "item_id": "u_yongcheon",
+      "display_name": "운룡검",
+      "grid_w": 1,
+      "grid_h": 3,
+      "output_width": 80,
+      "output_height": 240,
+      "definition_state": "design_only",
+      "planned_definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/464-t2-armor-art/joseon/data/uniques/u_yongcheon.tres",
+      "planned_tier": 3,
+      "planned_slot": 0,
+      "base_id": "ungeom",
+      "reference_id": "ungeom",
+      "reference_display_name": "운검",
+      "reference_path": "C:/workspace/joseon/._tmp/assets_464/workbench/production/item_icons_487/game/items/ungeom.png",
+      "reference_status": "same_batch_planned_T3_base_candidate",
+      "reference_sha256": "a9ca0d8393779772a9fe1bc0b12d0e1e737623c06b81a17b45812d8a2c2ae825",
+      "note": "운검끝칼·유백실/옥금/구름새김",
+      "intake_predecessor": 272,
+      "source_path": "source/items/u_yongcheon.png",
+      "source_size": [
+        724,
+        2172
+      ],
+      "source_sha256": "2b4b4887ce1d6cdd146353adf1b0af16923bb704e223955bc2a876fc1d38b5df",
+      "source_alpha": [
+        0,
+        255
+      ],
+      "source_bbox": [
+        251,
+        33,
+        485,
+        2143
+      ],
+      "game_path": "game/items/u_yongcheon.png",
+      "game_sha256": "a3db42bd06333b033bd515a69089629dba21b13d76a90b2eeb7b43826fbb7017",
+      "game_size": [
+        80,
+        240
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        27,
+        6,
+        52,
+        234
+      ]
+    }
+  ]
+}

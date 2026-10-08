@@ -1,0 +1,162 @@
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (4.5초)
+== e2e (balance_boss) ==
+E2E start: balance_boss
+E2E ▶ balance_boss
+  · 명중 확정 끔 — 이 대본은 명중 굴림을 실전 그대로 쓴다 (#342)
+  · 흑랑 RNG Lv3 판1 doho0 seed=23271941 initial=3718673984595126131
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 RNG Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107
+  · 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052
+  · 흑랑 RNG Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808
+  · 흑랑 파수2 Lv3 판1 entered tick=28 game=0.4667 state=0 XZ=(20.5000,15.5000) pack=6 target=none path=0/0 level_current=false rng=3841642673449239052
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 파수2 Lv3 판1 before_V tick=33 game=0.5333 state=1 XZ=(20.5000,15.7250) pack=6 target=(23.5000,23.5000) path=0/8 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=36 game=0.6000 state=1 XZ=(20.5000,16.0250) pack=6 target=(23.5000,23.5000) path=0/8 level_current=true rng=3841642673449239052
+  · 흑랑 준비 key=86 physics=5 expected=5
+  · 흑랑 파수2 Lv3 판1 after_V tick=39 game=0.6333 state=1 XZ=(20.5000,16.1750) pack=6 target=(10.5000,8.5000) path=0/8 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=66 game=1.1000 state=1 XZ=(19.7245,15.8200) pack=6 target=(10.5000,8.5000) path=0/16 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=97 game=1.6167 state=1 XZ=(19.5052,13.5196) pack=6 target=(10.5000,8.5000) path=1/14 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=128 game=2.1333 state=1 XZ=(19.5002,11.1947) pack=6 target=(10.3667,8.5000) path=0/11 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=159 game=2.6500 state=1 XZ=(18.9431,9.0626) pack=6 target=(10.3667,8.5000) path=1/10 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=190 game=3.1667 state=3 XZ=(17.3488,8.5444) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=221 game=3.6833 state=5 XZ=(15.5488,8.5330) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=252 game=4.2000 state=4 XZ=(11.6177,8.5080) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=283 game=4.7167 state=1 XZ=(12.1878,8.5080) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=314 game=5.2333 state=1 XZ=(11.6720,8.5001) pack=6 target=(10.3667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=345 game=5.7500 state=1 XZ=(11.5660,8.5000) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=376 game=6.2667 state=3 XZ=(11.5660,8.5000) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=407 game=6.7833 state=5 XZ=(11.5660,8.5000) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=438 game=7.3000 state=1 XZ=(11.5893,8.4999) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=469 game=7.8167 state=1 XZ=(11.5502,8.4998) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=499 game=8.3167 state=1 XZ=(11.5502,8.4998) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=529 game=8.8167 state=1 XZ=(11.5502,8.4998) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=559 game=9.3167 state=3 XZ=(11.5502,8.4998) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=589 game=9.8167 state=4 XZ=(11.4291,8.4998) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=619 game=10.3167 state=1 XZ=(11.4284,8.4991) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=649 game=10.8167 state=1 XZ=(11.4284,8.4991) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=679 game=11.3167 state=1 XZ=(11.4284,8.4991) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=709 game=11.8167 state=3 XZ=(11.4284,8.4991) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 RNG Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430
+  · 흑랑 RNG Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375
+  · 흑랑 파수2 Lv3 판1 sample tick=739 game=12.3167 state=4 XZ=(10.8191,8.5068) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=769 game=12.8167 state=1 XZ=(10.7497,8.4746) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=799 game=13.3167 state=1 XZ=(10.7497,8.4746) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=829 game=13.8167 state=1 XZ=(10.7497,8.4746) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=859 game=14.3167 state=3 XZ=(10.7497,8.4746) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=889 game=14.8167 state=5 XZ=(10.7497,8.4746) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=919 game=15.3167 state=1 XZ=(10.7715,8.4723) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=949 game=15.8167 state=1 XZ=(10.7497,8.4727) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=980 game=16.3333 state=1 XZ=(10.7497,8.4727) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=1011 game=16.8500 state=1 XZ=(10.7497,8.4727) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=1042 game=17.3667 state=3 XZ=(10.7497,8.4727) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=1073 game=17.8833 state=4 XZ=(10.7497,8.4727) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1104 game=18.4000 state=1 XZ=(10.7495,8.4711) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1135 game=18.9167 state=1 XZ=(10.7495,8.4711) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1166 game=19.4333 state=1 XZ=(10.7495,8.4711) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1197 game=19.9500 state=3 XZ=(10.7495,8.4711) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1228 game=20.4667 state=4 XZ=(10.7495,8.4711) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+  · 흑랑 파수2 Lv3 판1 sample tick=1259 game=20.9833 state=1 XZ=(10.7495,8.4698) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+  · 흑랑 파수2 Lv3 판1 sample tick=1290 game=21.5000 state=1 XZ=(10.7495,8.4698) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+  · 흑랑 파수2 Lv3 판1 sample tick=1321 game=22.0167 state=1 XZ=(10.7495,8.4698) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+  · 흑랑 파수2 Lv3 판1 sample tick=1352 game=22.5333 state=3 XZ=(10.7495,8.4698) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+  · 흑랑 파수2 Lv3 판1 sample tick=1383 game=23.0500 state=4 XZ=(10.7495,8.4698) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1414 game=23.5667 state=1 XZ=(10.7493,8.4688) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1445 game=24.0833 state=1 XZ=(10.7493,8.4688) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1476 game=24.6000 state=1 XZ=(10.7493,8.4688) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1507 game=25.1167 state=3 XZ=(10.7493,8.4688) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1538 game=25.6333 state=4 XZ=(10.7493,8.4688) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1569 game=26.1500 state=1 XZ=(10.7494,8.4676) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1600 game=26.6667 state=1 XZ=(10.7494,8.4676) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1631 game=27.1833 state=1 XZ=(10.7494,8.4676) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1662 game=27.7000 state=3 XZ=(10.7494,8.4676) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1693 game=28.2167 state=4 XZ=(10.7494,8.4676) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=1286086405583097886
+  · 흑랑 Lv3 처치 · 27.9초 · 2페이즈 11.2초 · 생명 130→34 (최저 34 = 26%) · 탕약 3/3 · 적 공격 41 (명중 25)
+  · 흑랑 파수2 Lv3 판1 finish tick=1710 game=28.5000 state=1 XZ=(10.7493,8.4663) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=1286086405583097886
+  · 흑랑 RNG Lv3 판1 doho0 seed=23271941 initial=3718673984595126131 final=210160255614176275
+  · 흑랑 RNG Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107 final=9053088838582101655
+  · 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052 final=1286086405583097886
+  · 흑랑 RNG Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808 final=-4334644856633984577
+  · 흑랑 RNG Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430 final=-7559868052669486168
+  · 흑랑 RNG Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375 final=481403823597241650
+  · 흑랑 재생 Lv3 판1 win=true attacks=41 hits=25 guards=2 summoned=2
+  · 흑랑 RNG Lv5 판1 doho0 seed=25271947 initial=5600093101942189313
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 RNG Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289
+  · 흑랑 RNG Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234
+  · 흑랑 RNG Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990
+  · 흑랑 파수2 Lv5 판1 entered tick=1727 game=28.7833 state=0 XZ=(20.5000,15.5000) pack=12 target=none path=0/0 level_current=false rng=5723061790796302234
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 파수2 Lv5 판1 before_V tick=1732 game=28.8500 state=1 XZ=(20.5000,15.7250) pack=12 target=(23.5000,23.5000) path=0/8 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1734 game=28.9000 state=1 XZ=(20.5000,15.9500) pack=12 target=(23.5000,23.5000) path=0/8 level_current=true rng=5723061790796302234
+  · 흑랑 준비 key=86 physics=5 expected=5
+  · 흑랑 파수2 Lv5 판1 after_V tick=1738 game=28.9500 state=1 XZ=(20.5000,16.1750) pack=12 target=(10.5000,8.5000) path=0/8 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1765 game=29.4167 state=1 XZ=(19.7245,15.8200) pack=12 target=(10.5000,8.5000) path=0/16 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1796 game=29.9333 state=1 XZ=(19.5052,13.5196) pack=12 target=(10.5000,8.5000) path=1/14 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1827 game=30.4500 state=1 XZ=(19.5002,11.1947) pack=12 target=(10.3667,8.5000) path=0/11 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1858 game=30.9667 state=1 XZ=(18.9431,9.0626) pack=12 target=(10.3667,8.5000) path=1/10 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1889 game=31.4833 state=3 XZ=(17.3488,8.5444) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1920 game=32.0000 state=5 XZ=(15.5488,8.5330) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1951 game=32.5167 state=4 XZ=(11.6177,8.5080) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1982 game=33.0333 state=1 XZ=(12.1878,8.5080) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2013 game=33.5500 state=1 XZ=(11.6720,8.5001) pack=12 target=(10.3667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2044 game=34.0667 state=1 XZ=(11.5660,8.5000) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2075 game=34.5833 state=3 XZ=(11.5660,8.5000) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2106 game=35.1000 state=5 XZ=(11.5660,8.5000) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2137 game=35.6167 state=1 XZ=(11.5893,8.4999) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2168 game=36.1333 state=1 XZ=(11.5502,8.4998) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2199 game=36.6500 state=1 XZ=(11.5502,8.4998) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2230 game=37.1667 state=1 XZ=(11.5502,8.4998) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2261 game=37.6833 state=5 XZ=(11.5502,8.4998) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2292 game=38.2000 state=4 XZ=(11.4291,8.4998) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2323 game=38.7167 state=1 XZ=(11.4284,8.4991) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2354 game=39.2333 state=1 XZ=(11.4284,8.4991) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2385 game=39.7500 state=1 XZ=(11.4284,8.4991) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2416 game=40.2667 state=3 XZ=(11.4284,8.4991) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2447 game=40.7833 state=4 XZ=(11.4284,8.4991) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2478 game=41.3000 state=1 XZ=(11.4285,8.4985) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2509 game=41.8167 state=1 XZ=(11.4285,8.4985) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2540 game=42.3333 state=1 XZ=(11.4285,8.4985) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2571 game=42.8500 state=3 XZ=(11.4285,8.4985) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2602 game=43.3667 state=4 XZ=(11.4285,8.4985) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 RNG Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612
+  · 흑랑 RNG Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557
+  · 흑랑 파수2 Lv5 판1 sample tick=2633 game=43.8833 state=1 XZ=(11.4278,8.4860) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2664 game=44.4000 state=1 XZ=(11.4278,8.4860) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2695 game=44.9167 state=1 XZ=(11.4278,8.4860) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2726 game=45.4333 state=3 XZ=(11.4278,8.4860) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2757 game=45.9500 state=4 XZ=(11.4278,8.4860) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2788 game=46.4667 state=1 XZ=(11.4263,8.4854) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2819 game=46.9833 state=1 XZ=(11.4263,8.4854) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2850 game=47.5000 state=1 XZ=(11.4263,8.4854) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2881 game=48.0167 state=3 XZ=(11.4263,8.4854) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2912 game=48.5333 state=5 XZ=(11.4263,8.4854) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2943 game=49.0500 state=1 XZ=(11.4238,8.4859) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2974 game=49.5667 state=1 XZ=(11.4238,8.4859) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3005 game=50.0833 state=1 XZ=(11.4238,8.4859) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3036 game=50.6000 state=1 XZ=(11.4238,8.4859) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3067 game=51.1167 state=5 XZ=(11.4238,8.4859) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3098 game=51.6333 state=4 XZ=(11.4238,8.4859) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3129 game=52.1500 state=1 XZ=(11.4136,8.4871) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3160 game=52.6667 state=1 XZ=(11.4136,8.4871) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3191 game=53.1833 state=1 XZ=(11.4136,8.4871) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3222 game=53.7000 state=3 XZ=(11.4136,8.4871) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3253 game=54.2167 state=4 XZ=(11.4136,8.4871) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3284 game=54.7333 state=1 XZ=(11.4095,8.4890) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3315 game=55.2500 state=1 XZ=(11.4095,8.4890) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3346 game=55.7667 state=1 XZ=(11.4095,8.4890) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=3377 game=56.2833 state=3 XZ=(11.4095,8.4890) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 Lv5 처치 · 27.8초 · 2페이즈 14.6초 · 생명 150→64 (최저 41 = 27%) · 탕약 3/3 · 적 공격 32 (명중 21)
+  · 흑랑 파수2 Lv5 판1 finish tick=3404 game=56.7333 state=4 XZ=(11.4095,8.4890) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 RNG Lv5 판1 doho0 seed=25271947 initial=5600093101942189313 final=-1456016979007014311
+  · 흑랑 RNG Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289 final=-4915985485660836923
+  · 흑랑 RNG Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234 final=5723061790796302234
+  · 흑랑 RNG Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990 final=2395616564710220186
+  · 흑랑 RNG Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612 final=8077224405062169234
+  · 흑랑 RNG Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557 final=1002189368153405969
+  · 흑랑 재생 Lv5 판1 win=true attacks=32 hits=21 guards=2 summoned=2
+  · Lv5 목표 대조(이 판 — 판정은 25판 표 §9.7): 27.8초 (15~30) · 탕약 3 (1 안팎) · 최저 생명 27% (35~60)
+E2E balance_boss PASS (검사 28)
+E2E SUMMARY: 1/1 PASS
+  e2e  (61.3초) — 제한 3600초
+전부 PASS

@@ -1,0 +1,598 @@
+{
+  "active_images": 24,
+  "archived_rejected_images": 3,
+  "generated_final_images": 20,
+  "reused_images": 4,
+  "pixel_edits_local": false,
+  "unique_character_view_pairs": 24,
+  "per_character_view_dimensions_equal": true,
+  "visual_qa": "root + independent agent inspection passed; 3D untested",
+  "checks": [
+    {
+      "file": "archive/rejected/doho_right_r1.png",
+      "sha256": "59c7522532ac8d9d11f587b0a7c2cebcc4debe01ec8cf4ed5b4c198be59da51b",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "archive/rejected/merchant_right_r1.png",
+      "sha256": "36f90ee8f02f150bcca79e59623837c79a7246cd4e4fe5787bee3f73128f70c4",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "shaman/01_front.png",
+      "sha256": "35ae2c996fec0d74ad5844dc95e36ad51ad0a5587e56ec7d2b19cddab0b63d57",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "elder/01_front.png",
+      "sha256": "6edbf7e1224e6945648a29c51b239c463b508969549a274e866493f577328562",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "bandit/01_front.png",
+      "sha256": "937cf52592e32cf75015ee6bb83ada47742ff5fe4d379c58481d09a225d71743",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "talisman_master/01_front.png",
+      "sha256": "851021e05e4a72f72df6c8a1529745ca73a90d5e79fca3fee1dac3770d79a68f",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "shaman/03_back.png",
+      "sha256": "a582f607bcb0a4f762808cebb0c18b770f8934c41eccbbbfa1e00036e7b533e2",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "elder/03_back.png",
+      "sha256": "1fb74101e331061949dc215050011bc2f91b3e8785049c97228c7c4c69cfdcd1",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "bandit/03_back.png",
+      "sha256": "136299624063b0f9bf29d33000818ded062bf0d0b50cc20fcabec089ce77359d",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "talisman_master/03_back.png",
+      "sha256": "a7993647ad4208874748974ca5bcb6f1737174d6058f19ce3c6bb9bb9e79d1ac",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "doho/01_front.png",
+      "sha256": "cf4afd24933b4bdd578fba410b539c7cc89f73afbf631bc5d82ed2afd44e1d1a",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "doho/03_back.png",
+      "sha256": "ccd6f65b9f922944dc9e8fc3d83444853d94094c076e1ee82d37507b954355e9",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "merchant/01_front.png",
+      "sha256": "d90490f35980bce6635720fa1153aef0d7493ac55e1d136dfbdcf114764c98e5",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "merchant/03_back.png",
+      "sha256": "33708fdd143ceee29ef572ba5cb01c26b901b8991dd9151139afaca4b0d5add9",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "doho/04_right.png",
+      "sha256": "bc1b129e04ca42f73d3b8e2dacf0ec234a38e6bdde508c6c15c6099bfde9482f",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "merchant/04_right.png",
+      "sha256": "34333c2de9f06e31b364c75820b62ff8e23c176d2d039ca6427d7e691066aa46",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "doho/02_left.png",
+      "sha256": "d1979385edfc00f3c83430956a6a931020b05b860c177bef125ff133c681e1e0",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "merchant/02_left.png",
+      "sha256": "8e4b1c57b9c4703d4b2df93ccb75d78fa6a0be91274a2b5bc23062d8dfa299bc",
+      "copy_hash_matches": true,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "shaman/04_right.png",
+      "sha256": "29a7e0612dc053b67dee143296c464d92fec100565b75e1438b0fcf403beef8d",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "elder/02_left.png",
+      "sha256": "790742a1ff33a6e8b76161db91a09965def9f6e9349decfd6f8a5b2d9e796ca2",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "elder/04_right.png",
+      "sha256": "4193cea308853a1503b48cfaaa283562211300ba9b68c891befda7a0e3073ebe",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "archive/rejected/shaman_left_r1.png",
+      "sha256": "74a0b6189b9246fb5ce20cb3b88600a63f6ac6ef2d4c9d32075b4292d1ee30db",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "bandit/02_left.png",
+      "sha256": "a1ac00f05d06bd155fdfb6713ad95db1ecf9d361fdaf78c53a639d7c05d897b2",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "bandit/04_right.png",
+      "sha256": "09b14bd1aa54cbfe1a38f700c5703abd6cf228db1f45a95932b74e6bae3ee1a4",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "talisman_master/02_left.png",
+      "sha256": "49b9f47b58b6f6252099e6ae3d1fab495f4dbb457ac15d340dd4a751d5821b09",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "talisman_master/04_right.png",
+      "sha256": "5520cc68069e3e2d49e08d6c5a4ef26a5341a4a7caa6ea987d0cfc5e84b3dc87",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "file": "shaman/02_left.png",
+      "sha256": "9a0961715b685dd56160f4f212f5004f44f8585f8b965886972000801d585e2e",
+      "copy_hash_matches": true,
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "archives": [
+    {
+      "file": "downloads/doho_4views.zip",
+      "entries": 5,
+      "sha256": "29921b6e77c75434582d9a255eba15bf52fb592f9f3f60fd7cc594b26686ce85",
+      "crc_and_content_hashes": true
+    },
+    {
+      "file": "downloads/merchant_4views.zip",
+      "entries": 5,
+      "sha256": "5c13f40f89286c0fb547919a5dd76b39d12cd10d6469dde86b357a6206892222",
+      "crc_and_content_hashes": true
+    },
+    {
+      "file": "downloads/shaman_4views.zip",
+      "entries": 5,
+      "sha256": "06012faba3b7af157dce15157af79b239191aebcbf7507bc7b020363ab330513",
+      "crc_and_content_hashes": true
+    },
+    {
+      "file": "downloads/elder_4views.zip",
+      "entries": 5,
+      "sha256": "9b77aa0e5f7393de25baf78d79eccc423c0e4d261c793d3a7bed22a0ea52ccb5",
+      "crc_and_content_hashes": true
+    },
+    {
+      "file": "downloads/bandit_4views.zip",
+      "entries": 5,
+      "sha256": "58445b4658821d1a5b53377b9b8072cc3a6d2671ce57381e1223ed1f3bc14798",
+      "crc_and_content_hashes": true
+    },
+    {
+      "file": "downloads/talisman_master_4views.zip",
+      "entries": 5,
+      "sha256": "aae13d46c0f7cc26ade3e7011d52f7d0d67bafde7e680a7a4af987449eb20831",
+      "crc_and_content_hashes": true
+    },
+    {
+      "file": "downloads/H1_TPOSE_6_CHARACTERS.zip",
+      "entries": 26,
+      "sha256": "33acc0670b50770e2670a39b04f7c79a6dfadbcba99f24ddabe0125b2af9cc55",
+      "crc_and_content_hashes": true
+    }
+  ],
+  "local_links": [
+    {
+      "url": "downloads/H1_TPOSE_6_CHARACTERS.zip",
+      "exists": true
+    },
+    {
+      "url": "../index.html",
+      "exists": true
+    },
+    {
+      "url": "downloads/doho_4views.zip",
+      "exists": true
+    },
+    {
+      "url": "doho/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "doho/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "doho/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "doho/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "doho/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "doho/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "doho/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "doho/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "doho/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "doho/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "doho/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "doho/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "downloads/merchant_4views.zip",
+      "exists": true
+    },
+    {
+      "url": "merchant/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "merchant/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "downloads/shaman_4views.zip",
+      "exists": true
+    },
+    {
+      "url": "shaman/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "shaman/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "downloads/elder_4views.zip",
+      "exists": true
+    },
+    {
+      "url": "elder/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "elder/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "elder/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "elder/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "elder/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "elder/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "elder/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "elder/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "elder/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "elder/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "elder/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "elder/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "downloads/bandit_4views.zip",
+      "exists": true
+    },
+    {
+      "url": "bandit/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "bandit/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "downloads/talisman_master_4views.zip",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/01_front.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/02_left.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/03_back.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "talisman_master/04_right.png",
+      "exists": true
+    },
+    {
+      "url": "../16_bat_input.png",
+      "exists": true
+    },
+    {
+      "url": "../18_heukrang_input.png",
+      "exists": true
+    },
+    {
+      "url": "README.md",
+      "exists": true
+    },
+    {
+      "url": "PROMPTS.md",
+      "exists": true
+    },
+    {
+      "url": "manifest.json",
+      "exists": true
+    },
+    {
+      "url": "validation.json",
+      "exists": true
+    }
+  ],
+  "pending_3d": [
+    "Occluded limbs",
+    "Skirt legs and sleeve armpits",
+    "Thin cords, mask and talismans",
+    "Hands and weapon grip",
+    "Cloth and hair continuity between views"
+  ]
+}

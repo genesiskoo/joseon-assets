@@ -1,0 +1,69 @@
+{
+ "cue": "talisman_master_attack",
+ "v": 4,
+ "prompt": "A sinister adult male short attack exertion grunt with paper snap, no words. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:25",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.595011,
+ "lufs": "-11.4",
+ "peak": "0.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 127,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0006,
+    -0.0004
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/talisman_master_attack_v4.wav",
+   "duration": 0.6,
+   "lufs": "-11.4",
+   "true_peak": "0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26240,
+   "at": 0.595,
+   "removed_ms": 5.0,
+   "floor_db": -90.2,
+   "jump_db": 14.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.46,
+   "why": "트루피크 여유 -0.5 LU",
+   "intake_i": [
+    -11.41,
+    -11.41
+   ],
+   "intake_tp": [
+    3.17,
+    3.63
+   ]
+  },
+  "out": {
+   "over_full": 138,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.64,
+   "lufs": "-11.4",
+   "true_peak": "0.6"
+  },
+  "warn": [
+   "CLIP 127"
+  ]
+ }
+}

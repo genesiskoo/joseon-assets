@@ -1,0 +1,67 @@
+{
+ "cue": "equip",
+ "v": 2,
+ "prompt": "A steel sword seated into a leather belt sheath, short metal touch and leather scrape, dry close isolated.",
+ "seconds": 0.7,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:23",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.67102,
+ "lufs": "-17.5",
+ "peak": "-6.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -7.2,
+   "file": "_raw/equip_v2.wav",
+   "duration": 0.68,
+   "lufs": "-17.5",
+   "true_peak": "-7.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29592,
+   "at": 0.671,
+   "removed_ms": 9.0,
+   "floor_db": -90.5,
+   "jump_db": 28.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.05,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -17.6,
+    -17.6
+   ],
+   "intake_tp": [
+    -4.07,
+    -4.12
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -7.15,
+   "lufs": "-17.5",
+   "true_peak": "-6.9"
+  },
+  "warn": []
+ }
+}

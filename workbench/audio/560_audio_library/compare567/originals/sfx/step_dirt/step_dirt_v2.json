@@ -1,0 +1,67 @@
+{
+ "cue": "step_dirt",
+ "v": 2,
+ "prompt": "One leather sandal footstep onto damp dirt with tiny gravel movement, soft grounded crunch, dry isolated.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:23",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.593016,
+ "lufs": "-51.6",
+ "peak": "-26.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -26.97,
+   "file": "_raw/step_dirt_v2.wav",
+   "duration": 0.6,
+   "lufs": "-51.6",
+   "true_peak": "-26.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26152,
+   "at": 0.593,
+   "removed_ms": 7.0,
+   "floor_db": -94.0,
+   "jump_db": 26.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.07,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -51.7,
+    -51.7
+   ],
+   "intake_tp": [
+    -23.93,
+    -24.0
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -27.05,
+   "lufs": "-51.6",
+   "true_peak": "-26.9"
+  },
+  "warn": []
+ }
+}

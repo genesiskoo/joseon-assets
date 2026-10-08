@@ -1,0 +1,18 @@
+{
+ "cue": "equip",
+ "v": 2,
+ "prompt": "Strapping on gear: a leather strap pulled tight with a buckle click, a short cloth shift and one small metal clink, close-up, crisp, short, dry, isolated, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "duration": 0.68,
+ "lufs": "-22.3",
+ "peak": "-3.3",
+ "made": "2026-09-18 09:35",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "channels": 2,
+ "note": "pcm_44100 = 16-bit 스테레오 인터리브(실측) — 모노 포장 오류를 헤더만 재작성으로 교정"
+}

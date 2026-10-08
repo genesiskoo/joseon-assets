@@ -1,0 +1,17 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(sword_trail_v2)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (5.9초)
+== e2e (sword_trail_v2 · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon","--headless","--","--e2e=sword_trail_v2"],"phase_arg":"sword_trail_v2","phase_tokens":["sword_trail_v2"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":30296,"launched_utc":"2026-10-05T14:47:00.5238063Z"}
+E2E start: sword_trail_v2
+E2E ▶ sword_trail_v2
+  · 검광 치명: 피해 8 · 그림 true · 금니 true · 표본 9
+  · 검광 일반: 피해 5 · 그림 true · 금니 false · 표본 9
+  · 검광 빗나감: 피해 0 · 그림 true · 금니 false · 표본 9
+  · 검광 사거리 밖: 피해 0 · 그림 true · 금니 false · 표본 9
+  · 검광 면역: 피해 0 · 그림 true · 금니 false · 표본 9
+E2E sword_trail_v2 PASS (검사 93)
+E2E SUMMARY: 1/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\tmp\e2e_raw\20261005T1446545511589_43416\phase_1_shared
+  e2e  (9.1초) — 제한 3600초
+전부 PASS

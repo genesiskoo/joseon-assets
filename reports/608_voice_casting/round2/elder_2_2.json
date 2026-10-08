@@ -1,0 +1,19 @@
+{
+  "role": "elder",
+  "rank": 2,
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "name": "촌장 · 늙은 어른의 무게 B",
+  "line": 1,
+  "file": "round2/audio/elder_2_2.mp3",
+  "request": {
+    "text": "요괴병에 장정 셋을 잃었소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "못골 장터가 닫힌 지 석 달이오.",
+    "next_text": "내가 가 보리다.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  }
+}

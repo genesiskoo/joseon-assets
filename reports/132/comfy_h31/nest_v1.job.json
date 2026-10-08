@@ -1,0 +1,35 @@
+{
+  "card": 132,
+  "asset": "nest",
+  "provider": "Comfy Cloud",
+  "node": "TripoImageToModelNodeV2",
+  "model": "v3.1-20260211",
+  "source": "workbench/production/dungeon_props_132/refs/nest.png",
+  "source_sha256": "2529afef2c17ce434d6ac8ac61abdb7a1ab53e78de62fae75ec52995efc9a435",
+  "face_limit": 6000,
+  "estimated_usd": 0.3,
+  "estimate_source": "live node price_badge on 2026-10-01",
+  "deterministic_seed_guaranteed": false,
+  "state": "failed_recorded",
+  "submitted_at": "2026-10-01T06:39:49.359230+00:00",
+  "prompt_id": "14dc27f7-748c-40b6-9bdf-8b117d18c8aa",
+  "status_response": {
+    "assigned_inference": "10.4.43.209:8080",
+    "created_at": "2026-10-01T06:39:52.41382Z",
+    "error_message": "{\"exception_message\":\"Rate Limit Exceeded: The server returned 429 after all retry attempts. Please wait and try again.\\n\",\"exception_type\":\"Exception\",\"node_id\":\"8\",\"node_type\":\"TripoImageToModelNodeV2\",\"traceback\":[\"  File \\\"/app/comfyui/execution.py\\\", line 464, in execute\\n    raise ex\\n\",\"  File \\\"/app/comfyui/execution.py\\\", line 460, in execute\\n    results.append(r.result())\\n                   ^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/execution.py\\\", line 303, in async_wrapper\\n    return await f(**args)\\n           ^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api/internal/__init__.py\\\", line 145, in wrapped_async_func\\n    return await method(locked_class, **inputs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api/latest/_io.py\\\", line 2073, in EXECUTE_NORMALIZED_ASYNC\\n    to_return = await cls.execute(*args, **kwargs)\\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/nodes_tripo.py\\\", line 679, in execute\\n    *await image_to_model(\\n     ^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/nodes_tripo.py\\\", line 560, in image_to_model\\n    response = await sync_op(\\n               ^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 202, in sync_op\\n    raw = await sync_op_raw(\\n          ^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 336, in sync_op_raw\\n    return await _request_base(cfg, expect_binary=as_binary)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 1091, in _request_base\\n    raise Exception(msg)\\n\"]}",
+    "id": "14dc27f7-748c-40b6-9bdf-8b117d18c8aa",
+    "last_state_update": "2026-10-01T06:46:08.449828Z",
+    "status": "error",
+    "updated_at": "2026-10-01T06:46:08.449828Z"
+  },
+  "raw_error": {
+    "assigned_inference": "10.4.43.209:8080",
+    "created_at": "2026-10-01T06:39:52.41382Z",
+    "error_message": "{\"exception_message\":\"Rate Limit Exceeded: The server returned 429 after all retry attempts. Please wait and try again.\\n\",\"exception_type\":\"Exception\",\"node_id\":\"8\",\"node_type\":\"TripoImageToModelNodeV2\",\"traceback\":[\"  File \\\"/app/comfyui/execution.py\\\", line 464, in execute\\n    raise ex\\n\",\"  File \\\"/app/comfyui/execution.py\\\", line 460, in execute\\n    results.append(r.result())\\n                   ^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/execution.py\\\", line 303, in async_wrapper\\n    return await f(**args)\\n           ^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api/internal/__init__.py\\\", line 145, in wrapped_async_func\\n    return await method(locked_class, **inputs)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api/latest/_io.py\\\", line 2073, in EXECUTE_NORMALIZED_ASYNC\\n    to_return = await cls.execute(*args, **kwargs)\\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/nodes_tripo.py\\\", line 679, in execute\\n    *await image_to_model(\\n     ^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/nodes_tripo.py\\\", line 560, in image_to_model\\n    response = await sync_op(\\n               ^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 202, in sync_op\\n    raw = await sync_op_raw(\\n          ^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 336, in sync_op_raw\\n    return await _request_base(cfg, expect_binary=as_binary)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n\",\"  File \\\"/app/comfyui/comfy_api_nodes/util/client.py\\\", line 1091, in _request_base\\n    raise Exception(msg)\\n\"]}",
+    "id": "14dc27f7-748c-40b6-9bdf-8b117d18c8aa",
+    "last_state_update": "2026-10-01T06:46:08.449828Z",
+    "status": "error",
+    "updated_at": "2026-10-01T06:46:08.449828Z"
+  },
+  "history_available": false
+}

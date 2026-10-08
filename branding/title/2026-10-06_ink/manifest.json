@@ -1,0 +1,71 @@
+{
+  "card": 669,
+  "date": "2026-10-06",
+  "approved_by": "PD / user in this chat",
+  "instruction_verbatim": "1,2 메인에셋으로 채택한다. 오프닝시네마틱 비디오 생성할때나 타이틀화면 및 각종 마켓팅에셋으로 활용할거니까 그렇게 기록하고 저장해둬",
+  "scope": "adopt the second-round concepts 1 and 2 as official main title/brand masters for opening cinematics, title screens and marketing",
+  "master_policy": "preserve approved PNG bytes; background is included; overlays and output sizes are versioned derivatives, do not overwrite masters",
+  "video_policy": "use approved lettering in postproduction; generated clips stay free of invented title lettering",
+  "reference_set": "title_ink_2026_10_06",
+  "runtime_integrated": false,
+  "assets": [
+    {
+      "id": "joseon_hunters_title_nongmuk_v1",
+      "name": "농묵 · 묵직한 장단",
+      "source_card": 669,
+      "source_candidate": 1,
+      "official_path": "branding/title/2026-10-06_ink/title_nongmuk_v1.png",
+      "source_path": "workbench/production/title_669_ink/raw/01_nongmuk.png",
+      "sha256": "5e5aa39a5482633729ab286394fb9a31e274d5e2588538b44d68b899b45a0001",
+      "bytes": 2643660,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "has_alpha": false,
+      "background_included": true,
+      "palette": "black ink on warm light hanji",
+      "status": "adopted_main_asset",
+      "approved": true,
+      "approved_for": [
+        "opening_cinematic",
+        "title_screen",
+        "marketing_assets"
+      ],
+      "approval_date": "2026-10-06",
+      "runtime_integrated": false,
+      "prompt_path": "branding/title/2026-10-06_ink/prompts/title_nongmuk_v1.txt",
+      "prompt_sha256": "e546071d6673560885385c2fdf4e5e3b266ddca09925557f6760f19474b3c507"
+    },
+    {
+      "id": "joseon_hunters_title_galpil_v1",
+      "name": "갈필 · 빠른 잔심",
+      "source_card": 669,
+      "source_candidate": 2,
+      "official_path": "branding/title/2026-10-06_ink/title_galpil_v1.png",
+      "source_path": "workbench/production/title_669_ink/raw/02_galpil.png",
+      "sha256": "5d9655e7ef4371a21e5239c8b5e832f5c5b353619fea22dea60b592b546dc016",
+      "bytes": 2033405,
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "has_alpha": false,
+      "background_included": true,
+      "palette": "warm ivory inverted ink on charcoal",
+      "status": "adopted_main_asset",
+      "approved": true,
+      "approved_for": [
+        "opening_cinematic",
+        "title_screen",
+        "marketing_assets"
+      ],
+      "approval_date": "2026-10-06",
+      "runtime_integrated": false,
+      "prompt_path": "branding/title/2026-10-06_ink/prompts/title_galpil_v1.txt",
+      "prompt_sha256": "1cf6135d019d8bd28b12f74260d6d2d09df13eca7c8c366ae8b4da37c539e51e"
+    }
+  ]
+}

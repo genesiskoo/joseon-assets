@@ -1,0 +1,45 @@
+{
+  "card": 498,
+  "asset": "pouch",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+      "role": "approved A brush illustration style and Doho identity; new skill composition required",
+      "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+    }
+  ],
+  "prompt_sha256": "a5fec2972788294b88a3e671aeee0511c3b46bded3b175e600f610658d4514a8",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "opaque",
+  "quality": "high",
+  "seed": 498106,
+  "workflow": "image_generate",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-02T13:10:58.768864+00:00",
+  "prompt_id": "e4eb4944-5b0b-4b2c-af37-b2836decf886",
+  "status_response": {
+    "assigned_inference": "10.4.47.178:8080",
+    "created_at": "2026-10-02T13:10:59.88225Z",
+    "id": "e4eb4944-5b0b-4b2c-af37-b2836decf886",
+    "last_state_update": "2026-10-02T13:11:47.843176Z",
+    "status": "success",
+    "updated_at": "2026-10-02T13:11:47.843176Z"
+  },
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "has_transparent_pixels": false,
+  "output": "pouch.png",
+  "output_sha256": "ec80665c879e94151e7b27013ecc5a87760ff4cc80a3c7f9810f118d51d3773f",
+  "output_bytes": 2295162
+}

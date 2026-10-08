@@ -1,0 +1,69 @@
+{
+ "cue": "hit_crit",
+ "v": 1,
+ "prompt": "One powerful critical sword strike, crisp steel crack and deep compact flesh impact, satisfying and heavy without explosion, clean dry game effect, no voice or music.",
+ "seconds": 0.7,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-02 21:02",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.665011,
+ "lufs": "-12.1",
+ "peak": "0.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 130,
+   "sub20_pct": 21.4,
+   "dc": [
+    -0.0006,
+    -0.0003
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/hit_crit_v1.wav",
+   "duration": 0.68,
+   "lufs": "-12.1",
+   "true_peak": "0.5"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29327,
+   "at": 0.665,
+   "removed_ms": 15.0,
+   "floor_db": -90.0,
+   "jump_db": 44.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -2.89,
+   "why": "걸면 트루피크 여유가 2.9 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -12.2,
+    -12.34
+   ],
+   "intake_tp": [
+    3.48,
+    6.23
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 26.9,
+   "dc": [
+    -0.0006,
+    -0.0003
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-12.1",
+   "true_peak": "0.5"
+  },
+  "warn": [
+   "CLIP 130"
+  ]
+ }
+}

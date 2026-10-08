@@ -1,0 +1,24 @@
+{
+  "format": "source PCM s16le stereo 48000Hz; exactly 800 samples per 60fps frame",
+  "before_segment_sha256": {
+    "fire_low": "96618b78aa98b0189c81202abadaf6a36f5e2acb71a659de8f470e4bba0c8e0e",
+    "fire_strong": "bd919937e90f2185d0813076f528c411b78d99c0c209a47c47e8d7c3b3c79b48",
+    "cold_low": "74817a153bba1529e7c163022cb5a908e188fae797db4c4a304e25b10801aaf9",
+    "cold_strong": "fd8a1d0aa2de828cb7160933fa8786e32fc2f4efe955b23310dec8a05fd367f9",
+    "lightning_low": "95d113cb65edee0f4a4827b4ab9a4571a67137896d3516415af6678918d577c7",
+    "lightning_strong": "54788c96b011873e740460d906733c7c7dd84fc82324d26eb3d62d49856ce495",
+    "sal_low": "7c05dff70dcbd806e4a6d0b3d7db9753c74b6a1510a8bb465c2ac8a8248dd6a8",
+    "sal_strong": "518c2052dbc9babbf6eaf4259b64d391aa83237957e3a60271a090eb6421b8ee"
+  },
+  "after_segment_sha256": {
+    "fire_low": "0372a2f770f1703947a011d54fa3d2ac9e220c6541999f73316116b0eeb864b4",
+    "fire_strong": "a8f395b732adeee8c44a6211fe14dc26d7e44b7b03014849de23ad1bb0b7bd6e",
+    "cold_low": "6422f084755cbd1a38edcae5dbcc5a2d6ece0ccec4c58281755b70e365a238a5",
+    "cold_strong": "2433bf43084e35f80ba6d826724e8942e37611bbefe9a5e95e9499c3517d57e7",
+    "lightning_low": "3daaf8a5e30402d305125bc9dacb8b17e3481743b2c1bb6764ea171c602bbd84",
+    "lightning_strong": "ae7241c75191446157c6d808e861238a0b5a19d6555e7f9e1bfcf6e0067f9ab4",
+    "sal_low": "d02109d652d3f38288950c189b58f55bc16e65fd228ea02a62b248429c6e2090",
+    "sal_strong": "107acf46a05a4b2c041129203fe5619accf2dacfddd6651616c0288582b4e109"
+  },
+  "identical": false
+}

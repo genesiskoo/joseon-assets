@@ -1,0 +1,14 @@
+{
+  "test": "Same walk50/attack50 poses, camera and lighting; all meshes overridden in-memory with uniform roughness1 metallic0 gray material, no texture or normal maps. No source assets modified.",
+  "images": [
+    "diagnostic_clay_walk_50.png",
+    "diagnostic_clay_attack_50.png"
+  ],
+  "observations": {
+    "walk50": "The small high-contrast white triangles on the upper front robe no longer stand out as separate triangular holes in clay. The corresponding panel surfaces appear continuous at this view.",
+    "attack50": "The high-contrast white marks disappear. Broad polygonal/faceted shading on the left front flap remains even without a normal map, evidencing coarse geometry/normals; robe layers still overlap."
+  },
+  "conclusion": "The white color contrast is material/texture-dependent; these two clay views do not establish actual triangle holes or weight-driven interpenetration at the marked spots. Earlier categorical labeling of those white triangles as penetration is retracted. Coarse geometry/faceted shading and cloth layer overlap remain separate observations, but intersection-free motion cannot be certified from two views.",
+  "next_if_needed": "Read-only UV/base-color sampling or isolated-layer/depth diagnostics would be needed to distinguish painted white patches versus exposed light inner cloth; no further tests executed.",
+  "weight_verdict": "No evidence that local weight smoothing solves the marks; keep rejected candidate rejected. Do not modify weights solely to fix the white patches."
+}

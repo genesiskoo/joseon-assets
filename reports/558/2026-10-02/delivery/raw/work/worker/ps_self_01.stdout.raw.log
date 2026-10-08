@@ -1,0 +1,41 @@
+== test.ps1 자기검사 — 제한 시간 (#181, 부하에서 실제 걸린 초 #436) · e2e 칸 (#553) · -Export 스위치 (#376) · 단위 층 오류 줄 (#401) ==
+  ✓ 대조군: 멈추지 않는 대본은 그대로 — 종료 코드 3 · 출력 받음 · 2.7초
+  FAIL  ⏱ hang.gd 제한 시간 8초 넘음 — 멈춤 (실제 8.6초)
+        마지막 출력 (어디서 멈췄나):
+        Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+        HANG_FIXTURE waiting pid=2068
+        [DevMode] ON
+        [godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+  ✓ 넘으면 FAIL로 센다(→ 종료 코드 1) · 줄 = 「⏱ hang.gd 제한 시간 8초 넘음 — 멈춤 (실제 8.6초)」
+  ✓ 제한에서 끊음 — 8.6초 (제한 8초)
+  ✓ godot.exe(pid 2068)는 띄운 것(pid 61636, godot_child.cmd → cmd.exe)의 자식이었다 — 손자까지 죽여야 하는 경우
+  ✓ 자식까지 정리 — 띄운 것·godot.exe 둘 다 사라짐
+  ✓ 칸 풀림 — finally 뒤 큰 잠금·칸 ① 을 혼자(FileShare.None) 다시 잡음
+  FAIL  ⏱ python sleep 제한 시간 4초 넘음 — 멈춤 (실제 4.7초)
+        마지막 출력 (어디서 멈췄나):
+        PY_HANG
+  ✓ python 도 같은 길 — FAIL · 정리 · 끊기 전 출력 남음 (4.7초)
+-- 자리 간 e2e 칸 (#553) — 임시 폴더의 칸 파일로 --
+  ✓ 공유 둘이 같이 — 칸 ①·② · 큰 잠금(옛 이름 joseon-e2e.lock) 읽기 손잡이 둘 → 옛 test.ps1(쓰기)은 못 들어온다
+  ⏳ e2e 칸 2/2 참 — ① 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 · ② 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 — 빈 칸이 나면 이어서 돈다
+  ✓ 다 차면 기다린다 (1.6초) · 줄 = 「⏳ e2e 칸 2/2 참 — ① 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 · ② 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 — 빈 칸이 나면 이어서 돈다」
+  ✓ 칸 ① 이 비면 기다리던 쪽이 잡는다
+  ⏳ 단독(시험) — 공유 칸 1/2 아직 도는 중: ② 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)
+  ✓ 단독은 공유 칸 ② 가 끝나기를 기다린다 · 못 잡으면 문을 놓는다 · 줄 = 「⏳ 단독(시험) — 공유 칸 1/2 아직 도는 중: ② 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)」
+  ✓ 단독 = 문 + 큰 잠금 쓰기 손잡이(글 = 단독) — 옛 test.ps1 도 못 들어온다
+  ⏳ 다른 자리의 단독 차례 (558-combat-clock-trace\joseon · pid 56880 · 21:14 · 단독) — 끝나면 이어서 돈다
+  ✓ 단독이 도는 동안 공유는 기다린다 · 줄 = 「⏳ 다른 자리의 단독 차례 (558-combat-clock-trace\joseon · pid 56880 · 21:14 · 단독) — 끝나면 이어서 돈다」
+  ✓ 단독 풀림 — 큰 잠금·문·칸 다 빔 · 글을 지운다(문이 잠겼는데 글이 비면 「공유가 지나가는 찰나」)
+  ⏳ 다른 자리의 단독 차례 (558-combat-clock-trace\joseon · pid 56880 · 21:14 · 단독 대기(시험)) — 끝나면 이어서 돈다
+  ✓ 문이 잠긴 동안(단독이 기다리는 중) 새 공유는 빈 칸이 있어도 안 들어온다
+  ⏳ 단독 — 공유 칸 3/3 아직 도는 중: ① 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 · ② 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 · ③ 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)
+  ✓ N=3 공유 셋이 돌면 N=2 단독도 기다린다 · 줄 = 「⏳ 단독 — 공유 칸 3/3 아직 도는 중: ① 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 · ② 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 · ③ 558-combat-clock-trace\joseon · pid 56880 · 21:14 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)」
+  ⏳ 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 옛 것은 혼자 도는 줄 알고 돌아서 끝나면 이어서 돈다
+  ⏳ 단독 — 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 끝나면 혼자 돈다 (새 공유는 막아 둠)
+  ✓ 옛 test.ps1 이 큰 잠금을 쥐면 공유도 단독도 기다린다 · 줄 = 「⏳ 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 옛 것은 혼자 도는 줄 알고 돌아서 끝나면 이어서 돈다 | ⏳ 단독 — 옛 test.ps1 이 e2e 중 (old-site · pid 1 · 05:00) — 끝나면 혼자 돈다 (새 공유는 막아 둠)」
+  ✓ 「비어 있으면 단독 먼저」 — 공유가 돌면 0.02초에 그만 · 문 놓음 · 다 비면 곧바로 잡음
+  ⏳ 옛 test.ps1 이 e2e 중 (?) — 옛 것은 혼자 도는 줄 알고 돌아서 끝나면 이어서 돈다
+  ✓ 다른 프로세스(pid 24600)가 큰 잠금을 쥔 동안 못 잡음 · 쥔 채 죽으면 OS 가 풀어 잡음
+  ✓ 나누기 8/8 — all = 공유(all − 단독 묶음) + 단독 묶음 · 이름 목록은 두 쪽으로 · 창 모드·칸 1개는 통째로 단독
+  ✓ FixedFps guard: default0 + only focused60; 10 cases
+  ✓ Actual phase tokens and skipped balance scenario are distinguished

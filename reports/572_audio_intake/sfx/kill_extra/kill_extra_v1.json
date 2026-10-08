@@ -1,0 +1,67 @@
+{
+ "cue": "kill_extra",
+ "v": 1,
+ "prompt": "A dense brief sword finishing impact into flesh, dry wet thud. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:21",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.583016,
+ "lufs": "-40.5",
+ "peak": "-22.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 24.7,
+   "dc": [
+    -0.0009,
+    -0.0008
+   ],
+   "sample_peak_db": -22.35,
+   "file": "_raw/kill_extra_v1.wav",
+   "duration": 0.6,
+   "lufs": "-40.5",
+   "true_peak": "-22.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25711,
+   "at": 0.583,
+   "removed_ms": 17.0,
+   "floor_db": -94.0,
+   "jump_db": 33.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.16,
+   "why": "트루피크 여유 +0.2 LU",
+   "intake_i": [
+    -40.65,
+    -40.65
+   ],
+   "intake_tp": [
+    -19.87,
+    -20.03
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -22.54,
+   "lufs": "-40.5",
+   "true_peak": "-22.2"
+  },
+  "warn": []
+ }
+}

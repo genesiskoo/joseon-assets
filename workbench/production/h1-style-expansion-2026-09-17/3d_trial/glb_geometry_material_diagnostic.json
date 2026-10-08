@@ -1,0 +1,317 @@
+[
+  {
+    "file": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/raw/H1_doho_raw.glb",
+    "sha256": "ead428c50e991a3c8a89e04d64aa5f9e0eea3513e3ff43cfc681fd05d10a9c5f",
+    "byte_length": 3372928,
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8,
+          "baseColorTexture": {
+            "index": 0,
+            "texCoord": 0
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 17926,
+        "triangles": 10827,
+        "aligned": 10827,
+        "opposed": 0,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": 0.8481874017583126,
+        "max_dot": 0.9999999999993295
+      }
+    ],
+    "bones": [],
+    "animations": [],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  },
+  {
+    "file": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/raw/H1_merchant_raw.glb",
+    "sha256": "e12f5d5e339124070b769aac3d3720dd9e7bc1ff2661a039283e0b35ef19cbed",
+    "byte_length": 4367344,
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8,
+          "baseColorTexture": {
+            "index": 0,
+            "texCoord": 0
+          }
+        },
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 19229,
+        "triangles": 10620,
+        "aligned": 10620,
+        "opposed": 0,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": 0.8209885340190953,
+        "max_dot": 0.9999999999992688
+      }
+    ],
+    "bones": [],
+    "animations": [],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  },
+  {
+    "file": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/rigged/H1_doho_rigged.glb",
+    "sha256": "6b01f29b1670f34a21ca403495e99d6262205e652ae8d98564b66dfbe02f426a",
+    "byte_length": 7123784,
+    "materials": [
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 0
+        },
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          },
+          "KHR_materials_ior": {
+            "ior": 1.4500000476837158
+          }
+        },
+        "name": "Material_1",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          }
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 18068,
+        "triangles": 10827,
+        "aligned": 10827,
+        "opposed": 0,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": 0.91464016035223,
+        "max_dot": 0.9999999999998803
+      }
+    ],
+    "bones": [
+      24
+    ],
+    "animations": [
+      "Armature|clip0|baselayer"
+    ],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  },
+  {
+    "file": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/rigged/H1_merchant_rigged.glb",
+    "sha256": "5b1e09f5ec7e4ffe6696bff1344070552b7dfd82265d94c4a82960ecb77a73dd",
+    "byte_length": 7525504,
+    "materials": [
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 0
+        },
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularColorFactor": [
+              2,
+              2,
+              2
+            ]
+          },
+          "KHR_materials_ior": {
+            "ior": 1.4500000476837158
+          }
+        },
+        "name": "Material_1",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          }
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 19467,
+        "triangles": 10620,
+        "aligned": 10620,
+        "opposed": 0,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": 0.8619183713212302,
+        "max_dot": 0.9999999999979688
+      }
+    ],
+    "bones": [
+      24
+    ],
+    "animations": [
+      "Armature|clip0|baselayer"
+    ],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  },
+  {
+    "file": "./references/CURRENT_REFERENCE_NOT_H1.glb",
+    "sha256": "a3fc7dd875610abc2929b04b4098cb9a330b11eca44c5c91efa7d5a6464c9e7d",
+    "byte_length": 3395672,
+    "materials": [
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 0
+        },
+        "name": "Material_1",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          }
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 15922,
+        "triangles": 11368,
+        "aligned": 11361,
+        "opposed": 7,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": -0.8984343179445927,
+        "max_dot": 0.9999999999998437
+      }
+    ],
+    "bones": [
+      26
+    ],
+    "animations": [
+      "walk",
+      "run",
+      "idle",
+      "hit",
+      "die",
+      "attack4",
+      "attack3",
+      "attack2",
+      "attack"
+    ],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  },
+  {
+    "file": "./assets/models/tilekit_stone/floor.glb",
+    "sha256": "c4b393d6964e80cc3c3f01b4f1cd68c42b4e226e0d3ff94c7c5cdba6f855e9e6",
+    "byte_length": 809096,
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 1
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 36,
+        "triangles": 12,
+        "aligned": 0,
+        "opposed": 12,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": -1,
+        "max_dot": -0.9999999997671551
+      }
+    ],
+    "bones": [],
+    "animations": [],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  },
+  {
+    "file": "./assets/models/tilekit_stone/wall.glb",
+    "sha256": "2ab7bd3248996eb0e59517f7e694fec566803cfc97e55b4c58c8381241b335a1",
+    "byte_length": 853656,
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 1
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 60,
+        "triangles": 20,
+        "aligned": 0,
+        "opposed": 20,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": -1,
+        "max_dot": -0.9999999997671551
+      }
+    ],
+    "bones": [],
+    "animations": [],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  }
+]

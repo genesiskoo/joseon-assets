@@ -1,0 +1,20 @@
+{
+  "mode": "e2e",
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon\\tools\\test.ps1",
+    "-E2e",
+    "-Scenario",
+    "icon_intake,item_ui,ui_tooltips,ui_docks,ui_windows,hover_target,vendor_quest,pickup_equip,loot_drop,potion_tiers,quest_journal,boss_floor"
+  ],
+  "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\87-ui-wood-skin\\joseon",
+  "started": 1790510773.6100116,
+  "elapsed": 102.66885280609131,
+  "exit_code": 0,
+  "raw_log": "457_e2e_210613.log",
+  "raw_sha256": "05d9728e2a7e530a6f458b41dc0df2057e4a8c8bc2eda9dd204db37060fe67be"
+}

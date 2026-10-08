@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-09-16T22:41:53.940Z",
+  "operation": "tools/call",
+  "tool": "meshy_get_task_status",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"id\": \"01a0ac5f-0684-77fa-95b0-a2399bc3e6a7\",\n  \"type\": \"multi-image-to-3d\",\n  \"name\": \"\",\n  \"art_style\": \"\",\n  \"object_prompt\": \"\",\n  \"style_prompt\": \"\",\n  \"negative_prompt\": \"\",\n  \"texture_prompt\": \"Faithfully preserve the supplied character front and back. Korean manhwa game art, matte hand-painted cloth, broad readable color masses, restrained small pattern detail, no glossy skin or metal, no baked directional lighting. Preserve the black gat, Korean collar, sleeve and layered garment structure. Hands remain empty. No weapon fused into the body.\",\n  \"texture_image_url\": \"\",\n  \"text_style_prompt\": \"\",\n  \"image_style_url\": \"\",\n  \"status\": \"FAILED\",\n  \"created_at\": 1789598310521,\n  \"progress\": 1,\n  \"started_at\": 1789598310563,\n  \"finished_at\": 1789598401137,\n  \"expires_at\": 1789857601137,\n  \"task_error\": {\n    \"type\": \"service_unavailable\",\n    \"message\": \"The generation service is temporarily unavailable. Please retry.\"\n  },\n  \"model_url\": \"\",\n  \"model_urls\": {},\n  \"thumbnail_url\": \"\",\n  \"texture_urls\": null,\n  \"remove_lighting\": true,\n  \"consumed_credits\": 0\n}"
+      }
+    ],
+    "structuredContent": {
+      "outcome": "FAILED",
+      "task_id": "01a0ac5f-0684-77fa-95b0-a2399bc3e6a7",
+      "status": "FAILED",
+      "progress": 1,
+      "consumed_credits": 0,
+      "error_message": "The generation service is temporarily unavailable. Please retry."
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

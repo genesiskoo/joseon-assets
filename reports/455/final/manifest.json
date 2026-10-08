@@ -1,0 +1,140 @@
+{
+  "source_commit": "9ce4583322e5f6c3bf3c0f108c4590fa79efde11",
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "game_audio": true,
+  "command": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\455-slice-capture\\joseon",
+    "--windowed",
+    "--resolution",
+    "1920x1080",
+    "--position",
+    "0,0",
+    "--fixed-fps",
+    "30",
+    "--disable-vsync",
+    "--write-movie",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+    "--",
+    "--e2e=_slice_capture"
+  ],
+  "setup": "E2E Lv6 prepared character; sure-hit enabled; separate save; normal enemy stats",
+  "clips": [
+    {
+      "id": "01_motgol_walk",
+      "label": "못골 보행",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\01_motgol_walk.mp4",
+      "seconds": 12.433,
+      "source_begin_frame": 39,
+      "source_end_frame": 412,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+      "bytes": 10037128,
+      "sha256": "c8b3fe68549c6f817c1d4b08ef4148f8bf707b2fff3b258387d46078f2f40563"
+    },
+    {
+      "id": "02_dialogue_quest",
+      "label": "무당 할매 대화와 의뢰",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\02_dialogue_quest.mp4",
+      "seconds": 21.0,
+      "source_begin_frame": 447,
+      "source_end_frame": 1077,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+      "bytes": 5695815,
+      "sha256": "352eac0aa47c85c1bfd2e669faa24724458c99d3359d5f5d703fc950d6173069"
+    },
+    {
+      "id": "03_field_exploration",
+      "label": "못골 들녘 탐험",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\03_field_exploration.mp4",
+      "seconds": 7.367,
+      "source_begin_frame": 1131,
+      "source_end_frame": 1352,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+      "bytes": 2940904,
+      "sha256": "7b96cfb0e1e0337ade4e81e29d9093cd9a721f47d7f130d8e48d7b03e2e72fe7"
+    },
+    {
+      "id": "04_cave_entry",
+      "label": "흑랑 굴 입장",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\04_cave_entry.mp4",
+      "seconds": 7.533,
+      "source_begin_frame": 50,
+      "source_end_frame": 276,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\cave_retake.avi",
+      "bytes": 2616699,
+      "sha256": "bbda32a42245f718fcdb9bb08f7a1a254ceb61584c08594e28cfd4aad1957ec3"
+    },
+    {
+      "id": "05_dungeon_combat",
+      "label": "던전 전투",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\05_dungeon_combat.mp4",
+      "seconds": 24.1,
+      "source_begin_frame": 1644,
+      "source_end_frame": 2367,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+      "bytes": 13658260,
+      "sha256": "51aee342591559b6549789c1798a129d930c6d0999e2e14f53e06591b38e9e93"
+    },
+    {
+      "id": "06_heukrang_boss",
+      "label": "흑랑 보스전",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\06_heukrang_boss.mp4",
+      "seconds": 29.867,
+      "source_begin_frame": 2414,
+      "source_end_frame": 3310,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+      "bytes": 11858003,
+      "sha256": "2098c3526a989216635b56758384d7f8c1f6067692ff21afe67c33bf2ebb72a6"
+    },
+    {
+      "id": "07_loot_inventory",
+      "label": "유니크 드랍과 가방",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\07_loot_inventory.mp4",
+      "seconds": 12.167,
+      "source_begin_frame": 3345,
+      "source_end_frame": 3710,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+      "bytes": 3233231,
+      "sha256": "ae14bce32942750c0786284ece586dcad62589bd3511a2214d07eb67a94450df"
+    },
+    {
+      "id": "08_skills_equipment",
+      "label": "스킬 트리와 장비",
+      "path": "C:\\workspace\\joseon-assets\\reports\\455\\final\\08_skills_equipment.mp4",
+      "seconds": 11.1,
+      "source_begin_frame": 3754,
+      "source_end_frame": 4087,
+      "source_file": "C:\\workspace\\joseon-assets\\reports\\455\\final\\capture_master.avi",
+      "bytes": 2307149,
+      "sha256": "ff81b7e1879f9292ee4d645e7cc1b00c8d3af3fc6e0223c3403d4bc8b3e4a0c3"
+    }
+  ],
+  "retake_command": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\455-slice-capture\\joseon",
+    "--windowed",
+    "--resolution",
+    "1920x1080",
+    "--fixed-fps",
+    "30",
+    "--disable-vsync",
+    "--write-movie",
+    "C:\\workspace\\joseon-assets\\reports\\455\\final\\cave_retake.avi",
+    "--",
+    "--e2e=_slice_capture",
+    "--capture-only=cave"
+  ],
+  "validation": {
+    "window_capture_checks": 33,
+    "headless_checks": 32,
+    "runner_selftest": 5,
+    "decoded_audio_video": 8,
+    "non_silent_audio": 8
+  }
+}

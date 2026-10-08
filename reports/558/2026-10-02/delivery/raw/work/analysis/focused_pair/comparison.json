@@ -1,0 +1,898 @@
+{
+  "schema": 1,
+  "comparison": "all raw-manifest attempts when provenance supplied; trace-only completeness unchecked; no fixed14 rows/tolerance normalization",
+  "left_files": [
+    {
+      "file": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_1\\traces\\phase_1_26024\\trace_65412_Lv3_attempt1.json",
+      "sha256": "2c0ea5b3d83673d3bd031a87273ba0c15e7866ed57924fbd86a465bcbf10aa96",
+      "level": 3,
+      "attempt": 1,
+      "reason": "finished"
+    },
+    {
+      "file": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_1\\traces\\phase_1_26024\\trace_65412_Lv5_attempt1.json",
+      "sha256": "11d219bfb437fdbb0e97a7b97e4e3a11e06dda8a8aedb5189c0aa7d90915d769",
+      "level": 5,
+      "attempt": 1,
+      "reason": "finished"
+    }
+  ],
+  "right_files": [
+    {
+      "file": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\traces\\phase_1_62096\\trace_53444_Lv3_attempt1.json",
+      "sha256": "dc5cdc10be8eeadc812bbea4d2563bdff456d5f5f71ed9093e0059cae3a71eb7",
+      "level": 3,
+      "attempt": 1,
+      "reason": "finished"
+    },
+    {
+      "file": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\traces\\phase_1_62096\\trace_53444_Lv5_attempt1.json",
+      "sha256": "da610c60b321c3ea35344549df955c37b1c96f91bd06e02933eb980875acabb5",
+      "level": 5,
+      "attempt": 1,
+      "reason": "finished"
+    }
+  ],
+  "left_provenance": [
+    {
+      "phase": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1351502942221_26024\\phase_1_solo\\phase.json",
+      "phase_sha256": "95f04380addc880a4743b7acd044e7722e5179e57083246a5ae8ab2b18706a0a",
+      "godot_sha256": "79fcc7f8896957a233ca734841d5bd25f4c390f8764e150c7c8633ca04b76827",
+      "exit_code": 0,
+      "timed_out": false,
+      "runtime_pid": 65412,
+      "launch": {
+        "schema": 1,
+        "fixed_fps": 0,
+        "exe": "godot",
+        "argv": [
+          "--path",
+          "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon",
+          "--headless",
+          "--",
+          "--e2e=balance_boss",
+          "--combat-trace",
+          "--combat-trace-dir=C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_1\\traces\\phase_1_26024"
+        ],
+        "phase_arg": "balance_boss",
+        "phase_tokens": [
+          "balance_boss"
+        ],
+        "skip": [],
+        "exclusive": true,
+        "contains_balance_boss": true,
+        "combat_trace": true,
+        "launcher_pid": 48644,
+        "launched_utc": "2026-10-02T14:12:42.8594774Z"
+      },
+      "raw_rows": {
+        "BALANCE_REPLAY_ENV": [
+          {
+            "raw_line": 24,
+            "row": {
+              "engine": {
+                "build": "steam",
+                "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+                "hex": 263938,
+                "major": 4,
+                "minor": 7,
+                "patch": 2,
+                "status": "stable",
+                "string": "4.7.2-stable (steam)",
+                "timestamp": 0
+              },
+              "physics_hz": 60,
+              "pid": 65412,
+              "scenario": "balance_boss",
+              "schema": 2,
+              "time_scale": "1.00000000000000000",
+              "unconsumed_cli": [],
+              "user_cli": [
+                "--e2e=balance_boss",
+                "--combat-trace",
+                "--combat-trace-dir=C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_1\\traces\\phase_1_26024"
+              ],
+              "user_dir": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-558-combat-clock-trace"
+            }
+          }
+        ],
+        "BALANCE_TRACE_FILE": [
+          {
+            "raw_line": 223,
+            "row": {
+              "attempt": 1,
+              "events": 32001,
+              "level": 3,
+              "observe_usec": "1937278",
+              "path": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_1\\traces\\phase_1_26024/trace_65412_Lv3_attempt1.json",
+              "pid": 65412,
+              "reason": "finished",
+              "saved": true,
+              "serialization_usec": "1006851"
+            }
+          },
+          {
+            "raw_line": 425,
+            "row": {
+              "attempt": 1,
+              "events": 28663,
+              "level": 5,
+              "observe_usec": "1772061",
+              "path": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_1\\traces\\phase_1_26024/trace_65412_Lv5_attempt1.json",
+              "pid": 65412,
+              "reason": "finished",
+              "saved": true,
+              "serialization_usec": "902449"
+            }
+          }
+        ],
+        "BALANCE_REPLAY_ATTEMPT": [
+          {
+            "raw_line": 224,
+            "row": {
+              "attacks": 41,
+              "attempt": 1,
+              "boss_hp": "-3.00000000000000000",
+              "guards": 2,
+              "hits": 25,
+              "hp": "34.00000000000000000",
+              "hp0": "130.00000000000000000",
+              "hp_min": "32.00000000000000000",
+              "input_polls": 277,
+              "input_ticks_ok": true,
+              "level": 3,
+              "max_hp": "130.00000000000000000",
+              "phase2": "11.20000000000016400",
+              "potions": 3,
+              "sec": "27.69999999999967600",
+              "summoned": 2,
+              "used": 3,
+              "win": true
+            }
+          },
+          {
+            "raw_line": 426,
+            "row": {
+              "attacks": 33,
+              "attempt": 1,
+              "boss_hp": "-1.00000000000000000",
+              "guards": 2,
+              "hits": 21,
+              "hp": "68.00000000000000000",
+              "hp0": "150.00000000000000000",
+              "hp_min": "47.00000000000000000",
+              "input_polls": 257,
+              "input_ticks_ok": true,
+              "level": 5,
+              "max_hp": "150.00000000000000000",
+              "phase2": "14.79999999999916200",
+              "potions": 3,
+              "sec": "25.69999999999854300",
+              "summoned": 2,
+              "used": 3,
+              "win": true
+            }
+          }
+        ],
+        "BALANCE_REPLAY_TRIES": [
+          {
+            "raw_line": 226,
+            "row": {
+              "level": 3,
+              "tries": [
+                "처치"
+              ]
+            }
+          },
+          {
+            "raw_line": 428,
+            "row": {
+              "level": 5,
+              "tries": [
+                "처치"
+              ]
+            }
+          }
+        ]
+      },
+      "incomplete_levels": [],
+      "hard_kill_limit": "a killed process may lose its active in-memory trace; raw failure/timeout is preserved"
+    }
+  ],
+  "right_provenance": [
+    {
+      "phase": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1415238741716_62096\\phase_1_solo\\phase.json",
+      "phase_sha256": "4c94646b7b0ac9b49e9d55c90398fcf80b85b3d7774a50b2ef26448009fa08b5",
+      "godot_sha256": "cb60f07f8dabbfe51785e4dea3f7311002e4e983e9707385d4514f8dc8f6e779",
+      "exit_code": 0,
+      "timed_out": false,
+      "runtime_pid": 53444,
+      "launch": {
+        "schema": 1,
+        "fixed_fps": 0,
+        "exe": "godot",
+        "argv": [
+          "--path",
+          "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon",
+          "--headless",
+          "--",
+          "--e2e=balance_boss",
+          "--combat-trace",
+          "--combat-trace-dir=C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\traces\\phase_1_62096"
+        ],
+        "phase_arg": "balance_boss",
+        "phase_tokens": [
+          "balance_boss"
+        ],
+        "skip": [],
+        "exclusive": true,
+        "contains_balance_boss": true,
+        "combat_trace": true,
+        "launcher_pid": 39436,
+        "launched_utc": "2026-10-02T14:15:27.8720180Z"
+      },
+      "raw_rows": {
+        "BALANCE_REPLAY_ENV": [
+          {
+            "raw_line": 24,
+            "row": {
+              "engine": {
+                "build": "steam",
+                "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+                "hex": 263938,
+                "major": 4,
+                "minor": 7,
+                "patch": 2,
+                "status": "stable",
+                "string": "4.7.2-stable (steam)",
+                "timestamp": 0
+              },
+              "physics_hz": 60,
+              "pid": 53444,
+              "scenario": "balance_boss",
+              "schema": 2,
+              "time_scale": "1.00000000000000000",
+              "unconsumed_cli": [],
+              "user_cli": [
+                "--e2e=balance_boss",
+                "--combat-trace",
+                "--combat-trace-dir=C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\traces\\phase_1_62096"
+              ],
+              "user_dir": "C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-558-combat-clock-trace"
+            }
+          }
+        ],
+        "BALANCE_TRACE_FILE": [
+          {
+            "raw_line": 223,
+            "row": {
+              "attempt": 1,
+              "events": 32109,
+              "level": 3,
+              "observe_usec": "1935241",
+              "path": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\traces\\phase_1_62096/trace_53444_Lv3_attempt1.json",
+              "pid": 53444,
+              "reason": "finished",
+              "saved": true,
+              "serialization_usec": "985044"
+            }
+          },
+          {
+            "raw_line": 415,
+            "row": {
+              "attempt": 1,
+              "events": 27405,
+              "level": 5,
+              "observe_usec": "1657705",
+              "path": "C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\traces\\phase_1_62096/trace_53444_Lv5_attempt1.json",
+              "pid": 53444,
+              "reason": "finished",
+              "saved": true,
+              "serialization_usec": "836352"
+            }
+          }
+        ],
+        "BALANCE_REPLAY_ATTEMPT": [
+          {
+            "raw_line": 224,
+            "row": {
+              "attacks": 41,
+              "attempt": 1,
+              "boss_hp": "-3.00000000000000000",
+              "guards": 2,
+              "hits": 25,
+              "hp": "34.00000000000000000",
+              "hp0": "130.00000000000000000",
+              "hp_min": "32.00000000000000000",
+              "input_polls": 277,
+              "input_ticks_ok": true,
+              "level": 3,
+              "max_hp": "130.00000000000000000",
+              "phase2": "11.20000000000016400",
+              "potions": 3,
+              "sec": "27.69999999999967600",
+              "summoned": 2,
+              "used": 3,
+              "win": true
+            }
+          },
+          {
+            "raw_line": 416,
+            "row": {
+              "attacks": 28,
+              "attempt": 1,
+              "boss_hp": "-1.00000000000000000",
+              "guards": 2,
+              "hits": 18,
+              "hp": "53.00000000000000000",
+              "hp0": "150.00000000000000000",
+              "hp_min": "51.00000000000000000",
+              "input_polls": 246,
+              "input_ticks_ok": true,
+              "level": 5,
+              "max_hp": "150.00000000000000000",
+              "phase2": "14.69999999999916800",
+              "potions": 3,
+              "sec": "24.59999999999860500",
+              "summoned": 2,
+              "used": 2,
+              "win": true
+            }
+          }
+        ],
+        "BALANCE_REPLAY_TRIES": [
+          {
+            "raw_line": 226,
+            "row": {
+              "level": 3,
+              "tries": [
+                "처치"
+              ]
+            }
+          },
+          {
+            "raw_line": 418,
+            "row": {
+              "level": 5,
+              "tries": [
+                "처치"
+              ]
+            }
+          }
+        ]
+      },
+      "incomplete_levels": [],
+      "hard_kill_limit": "a killed process may lose its active in-memory trace; raw failure/timeout is preserved"
+    }
+  ],
+  "left_provenance_status": "verified actual argv/ENV/FILE/ATTEMPT/TRIES and saved raw bytes",
+  "right_provenance_status": "verified actual argv/ENV/FILE/ATTEMPT/TRIES and saved raw bytes",
+  "battles": [
+    {
+      "level": 3,
+      "attempt": 1,
+      "event_order": {
+        "index": 6,
+        "left": [
+          "player_physics",
+          "Player._physics_process",
+          "doho0",
+          true
+        ],
+        "right": [
+          "resource_process_before",
+          "PlayerCombat._process",
+          "doho0",
+          false
+        ]
+      },
+      "relative_physics_ticks": {
+        "index": 6,
+        "left": 2,
+        "right": 1
+      },
+      "relative_game_float17": {
+        "index": 6,
+        "left": "0.03333333333333335",
+        "right": "0.01666666666666666"
+      },
+      "state_or_payload": {
+        "index": 2,
+        "left": {
+          "state": {
+            "_attack_timer": "0.00000000000000000",
+            "active_skill": 0,
+            "busy_future": false,
+            "busy_remaining": "0.00000000000000000",
+            "clip": "idle",
+            "clip_position": "0.09878966666666664",
+            "clip_speed": "1.00000000000000000",
+            "collision_layer": 2,
+            "collision_mask": 1,
+            "committed": false,
+            "cooldowns": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ],
+            "hp": "130.00000000000000000",
+            "max_hp": "130.00000000000000000",
+            "max_mp": "50.00000000000000000",
+            "mixer_callback_mode": 1,
+            "mixer_physics_priority": 0,
+            "mixer_process_priority": 0,
+            "mp": "50.00000000000000000",
+            "node_physics_priority": 0,
+            "node_process_priority": 0,
+            "on_floor": true,
+            "position": [
+              "0.00000000000000000",
+              "0.00039062649011612",
+              "1.00000000000000000"
+            ],
+            "rng_state": "3718673984595126131",
+            "slide_collisions": [
+              {
+                "body": "unbound",
+                "depth": "0.00012250046711415",
+                "normal": [
+                  "0.00000000000000000",
+                  "1.00000000000000000",
+                  "0.00000000000000000"
+                ],
+                "position": [
+                  "0.00000000000000000",
+                  "0.00000000000000000",
+                  "1.00000000000000000"
+                ]
+              }
+            ],
+            "stagger_future": false,
+            "stagger_remaining": "0.00000000000000000",
+            "stopped": false,
+            "swing": 0,
+            "target": "none",
+            "velocity": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ]
+          },
+          "fields": {
+            "delta": "0.08212299999999992"
+          }
+        },
+        "right": {
+          "state": {
+            "_attack_timer": "0.00000000000000000",
+            "active_skill": 0,
+            "busy_future": false,
+            "busy_remaining": "0.00000000000000000",
+            "clip": "idle",
+            "clip_position": "0.10000000000000006",
+            "clip_speed": "1.00000000000000000",
+            "collision_layer": 2,
+            "collision_mask": 1,
+            "committed": false,
+            "cooldowns": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ],
+            "hp": "130.00000000000000000",
+            "max_hp": "130.00000000000000000",
+            "max_mp": "50.00000000000000000",
+            "mixer_callback_mode": 1,
+            "mixer_physics_priority": 0,
+            "mixer_process_priority": 0,
+            "mp": "50.00000000000000000",
+            "node_physics_priority": 0,
+            "node_process_priority": 0,
+            "on_floor": true,
+            "position": [
+              "0.00000000000000000",
+              "0.00039062649011612",
+              "1.00000000000000000"
+            ],
+            "rng_state": "3718673984595126131",
+            "slide_collisions": [
+              {
+                "body": "unbound",
+                "depth": "0.00012250046711415",
+                "normal": [
+                  "0.00000000000000000",
+                  "1.00000000000000000",
+                  "0.00000000000000000"
+                ],
+                "position": [
+                  "0.00000000000000000",
+                  "0.00000000000000000",
+                  "1.00000000000000000"
+                ]
+              }
+            ],
+            "stagger_future": false,
+            "stagger_remaining": "0.00000000000000000",
+            "stopped": false,
+            "swing": 0,
+            "target": "none",
+            "velocity": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ]
+          },
+          "fields": {
+            "delta": "0.08333333333333333"
+          }
+        }
+      },
+      "rng_streams": null,
+      "not_spawned_same": true,
+      "outcome_exact_same": true,
+      "left_outcome": {
+        "attacks": 41,
+        "boss_hp": "-3.00000000000000000",
+        "guards": 2,
+        "hits": 25,
+        "hp": "34.00000000000000000",
+        "hp0": "130.00000000000000000",
+        "hp_min": "32.00000000000000000",
+        "input_polls": 277,
+        "input_ticks_ok": true,
+        "max_hp": "130.00000000000000000",
+        "phase2": "11.20000000000016400",
+        "sec": "27.69999999999967600",
+        "summoned": 2,
+        "used": 3,
+        "win": true
+      },
+      "right_outcome": {
+        "attacks": 41,
+        "boss_hp": "-3.00000000000000000",
+        "guards": 2,
+        "hits": 25,
+        "hp": "34.00000000000000000",
+        "hp0": "130.00000000000000000",
+        "hp_min": "32.00000000000000000",
+        "input_polls": 277,
+        "input_ticks_ok": true,
+        "max_hp": "130.00000000000000000",
+        "phase2": "11.20000000000016400",
+        "sec": "27.69999999999967600",
+        "summoned": 2,
+        "used": 3,
+        "win": true
+      },
+      "left_event_count": 32001,
+      "right_event_count": 32109,
+      "first_event_tick_state_left": {
+        "event_seq": 3,
+        "kind": "resource_process_before",
+        "body": "doho0",
+        "callsite": "PlayerCombat._process",
+        "tick": 0,
+        "physics": false
+      },
+      "first_event_tick_state_right": {
+        "event_seq": 3,
+        "kind": "resource_process_before",
+        "body": "doho0",
+        "callsite": "PlayerCombat._process",
+        "tick": 0,
+        "physics": false
+      },
+      "first_clock_float_left": {
+        "event_seq": 7,
+        "kind": "player_physics",
+        "body": "doho0",
+        "callsite": "Player._physics_process",
+        "tick": 2,
+        "physics": true
+      },
+      "first_clock_float_right": {
+        "event_seq": 7,
+        "kind": "resource_process_before",
+        "body": "doho0",
+        "callsite": "PlayerCombat._process",
+        "tick": 1,
+        "physics": false
+      },
+      "clock_float_only": false,
+      "left_overhead": {
+        "event_count": 32001,
+        "observe_usec": "1937278",
+        "scope": "bind/event collection only; serialization measured separately; no zero-impact claim",
+        "wall_usec": "28967451"
+      },
+      "right_overhead": {
+        "event_count": 32109,
+        "observe_usec": "1935241",
+        "scope": "bind/event collection only; serialization measured separately; no zero-impact claim",
+        "wall_usec": "28571843"
+      },
+      "causation": "not established; event/tick/state and float-only observations are reported separately"
+    },
+    {
+      "level": 5,
+      "attempt": 1,
+      "event_order": {
+        "index": 24,
+        "left": [
+          "hitstop_restore",
+          "ActorVisual.hit_stop.timeout",
+          "doho0",
+          false
+        ],
+        "right": [
+          "player_physics",
+          "Player._physics_process",
+          "doho0",
+          true
+        ]
+      },
+      "relative_physics_ticks": {
+        "index": 24,
+        "left": 8,
+        "right": 9
+      },
+      "relative_game_float17": {
+        "index": 24,
+        "left": "0.13333333333332575",
+        "right": "0.14999999999999147"
+      },
+      "state_or_payload": {
+        "index": 3,
+        "left": {
+          "state": {
+            "_attack_timer": "0.00000000000000000",
+            "active_skill": 0,
+            "busy_future": false,
+            "busy_remaining": "0.00000000000000000",
+            "clip": "idle",
+            "clip_position": "0.00000000000000000",
+            "clip_speed": "0.00000000000000000",
+            "collision_layer": 2,
+            "collision_mask": 1,
+            "committed": false,
+            "cooldowns": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ],
+            "hp": "150.00000000000000000",
+            "max_hp": "150.00000000000000000",
+            "max_mp": "50.00000000000000000",
+            "mixer_callback_mode": 1,
+            "mixer_physics_priority": 0,
+            "mixer_process_priority": 0,
+            "mp": "50.00000000000000000",
+            "node_physics_priority": 0,
+            "node_process_priority": 0,
+            "on_floor": true,
+            "position": [
+              "-0.35085099935531616",
+              "0.00039062649011612",
+              "1.00000000000000000"
+            ],
+            "rng_state": "5600093101942189313",
+            "slide_collisions": [
+              {
+                "body": "unbound",
+                "depth": "0.00012250046711415",
+                "normal": [
+                  "0.00000000000000000",
+                  "1.00000000000000000",
+                  "0.00000000000000000"
+                ],
+                "position": [
+                  "-0.35085099935531616",
+                  "0.00000000000000000",
+                  "1.00000000000000000"
+                ]
+              }
+            ],
+            "stagger_future": false,
+            "stagger_remaining": "0.00000000000000000",
+            "stopped": true,
+            "swing": 0,
+            "target": "none",
+            "velocity": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ]
+          },
+          "fields": {
+            "delta": "0.13791999999999999"
+          }
+        },
+        "right": {
+          "state": {
+            "_attack_timer": "0.00000000000000000",
+            "active_skill": 0,
+            "busy_future": false,
+            "busy_remaining": "0.00000000000000000",
+            "clip": "idle",
+            "clip_position": "0.00000000000000000",
+            "clip_speed": "0.00000000000000000",
+            "collision_layer": 2,
+            "collision_mask": 1,
+            "committed": false,
+            "cooldowns": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ],
+            "hp": "150.00000000000000000",
+            "max_hp": "150.00000000000000000",
+            "max_mp": "50.00000000000000000",
+            "mixer_callback_mode": 1,
+            "mixer_physics_priority": 0,
+            "mixer_process_priority": 0,
+            "mp": "50.00000000000000000",
+            "node_physics_priority": 0,
+            "node_process_priority": 0,
+            "on_floor": true,
+            "position": [
+              "-0.35085099935531616",
+              "0.00039062649011612",
+              "1.00000000000000000"
+            ],
+            "rng_state": "5600093101942189313",
+            "slide_collisions": [
+              {
+                "body": "unbound",
+                "depth": "0.00012250046711415",
+                "normal": [
+                  "0.00000000000000000",
+                  "1.00000000000000000",
+                  "0.00000000000000000"
+                ],
+                "position": [
+                  "-0.35085099935531616",
+                  "0.00000000000000000",
+                  "1.00000000000000000"
+                ]
+              }
+            ],
+            "stagger_future": false,
+            "stagger_remaining": "0.00000000000000000",
+            "stopped": true,
+            "swing": 0,
+            "target": "none",
+            "velocity": [
+              "0.00000000000000000",
+              "0.00000000000000000",
+              "0.00000000000000000"
+            ]
+          },
+          "fields": {
+            "delta": "0.03448000000000000"
+          }
+        }
+      },
+      "rng_streams": {
+        "index": 1,
+        "left": {
+          "body": "heukrang0",
+          "seed": "25272956",
+          "initial": "7546605312432368990",
+          "final": "5809462751283931051"
+        },
+        "right": {
+          "body": "heukrang0",
+          "seed": "25272956",
+          "initial": "7546605312432368990",
+          "final": "-6589652745790130156"
+        }
+      },
+      "not_spawned_same": true,
+      "outcome_exact_same": false,
+      "left_outcome": {
+        "attacks": 33,
+        "boss_hp": "-1.00000000000000000",
+        "guards": 2,
+        "hits": 21,
+        "hp": "68.00000000000000000",
+        "hp0": "150.00000000000000000",
+        "hp_min": "47.00000000000000000",
+        "input_polls": 257,
+        "input_ticks_ok": true,
+        "max_hp": "150.00000000000000000",
+        "phase2": "14.79999999999916200",
+        "sec": "25.69999999999854300",
+        "summoned": 2,
+        "used": 3,
+        "win": true
+      },
+      "right_outcome": {
+        "attacks": 28,
+        "boss_hp": "-1.00000000000000000",
+        "guards": 2,
+        "hits": 18,
+        "hp": "53.00000000000000000",
+        "hp0": "150.00000000000000000",
+        "hp_min": "51.00000000000000000",
+        "input_polls": 246,
+        "input_ticks_ok": true,
+        "max_hp": "150.00000000000000000",
+        "phase2": "14.69999999999916800",
+        "sec": "24.59999999999860500",
+        "summoned": 2,
+        "used": 2,
+        "win": true
+      },
+      "left_event_count": 28663,
+      "right_event_count": 27405,
+      "first_event_tick_state_left": {
+        "event_seq": 4,
+        "kind": "resource_process_before",
+        "body": "doho0",
+        "callsite": "PlayerCombat._process",
+        "tick": 0,
+        "physics": false
+      },
+      "first_event_tick_state_right": {
+        "event_seq": 4,
+        "kind": "resource_process_before",
+        "body": "doho0",
+        "callsite": "PlayerCombat._process",
+        "tick": 0,
+        "physics": false
+      },
+      "first_clock_float_left": {
+        "event_seq": 25,
+        "kind": "hitstop_restore",
+        "body": "doho0",
+        "callsite": "ActorVisual.hit_stop.timeout",
+        "tick": 8,
+        "physics": false
+      },
+      "first_clock_float_right": {
+        "event_seq": 25,
+        "kind": "player_physics",
+        "body": "doho0",
+        "callsite": "Player._physics_process",
+        "tick": 9,
+        "physics": true
+      },
+      "clock_float_only": false,
+      "left_overhead": {
+        "event_count": 28663,
+        "observe_usec": "1772061",
+        "scope": "bind/event collection only; serialization measured separately; no zero-impact claim",
+        "wall_usec": "26543878"
+      },
+      "right_overhead": {
+        "event_count": 27405,
+        "observe_usec": "1657705",
+        "scope": "bind/event collection only; serialization measured separately; no zero-impact claim",
+        "wall_usec": "25395483"
+      },
+      "causation": "not established; event/tick/state and float-only observations are reported separately"
+    }
+  ],
+  "parent_536_complete": false,
+  "interpretation": "diagnostic report; no automatic reproduction or root-cause claim"
+}

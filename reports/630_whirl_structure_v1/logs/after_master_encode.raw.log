@@ -1,0 +1,53 @@
+[aist#0:1/pcm_s16le @ 000001277433b100] Guessed Channel Layout: stereo
+Input #0, avi, from 'C:\Users\FORYOUCOM\.codex\worktrees\630-whirl-structure\joseon\._tmp\630_whirl_structure\after.avi':
+  Duration: 00:00:38.22, start: 0.000000, bitrate: 36439 kb/s
+  Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj420p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 1:1 DAR 16:9], 34895 kb/s, 60 fps, 60 tbr, 60 tbn
+  Stream #0:1: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mjpeg (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (pcm_s16le (native) -> aac (native))
+Press [q] to stop, [?] for help
+[swscaler @ 000001277439d6c0] deprecated pixel format used, make sure you did set range correctly
+[libx264 @ 0000012774342100] using SAR=1/1
+[libx264 @ 0000012774342100] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000012774342100] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000012774342100] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=22 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=24.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\FORYOUCOM\.codex\worktrees\630-whirl-structure\joseon\._tmp\630_whirl_structure\deliverables\630_whirl_structure_after_engine_capture_60fps.mp4':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(pc, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 60 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+frame=  301 fps=0.0 q=32.0 size=     768KiB time=00:00:04.98 bitrate=1262.6kbits/s speed=9.87x elapsed=0:00:00.50    
+frame=  662 fps=650 q=32.0 size=    1792KiB time=00:00:11.00 bitrate=1334.6kbits/s speed=10.8x elapsed=0:00:01.01    
+frame= 1031 fps=667 q=32.0 size=    3072KiB time=00:00:17.15 bitrate=1467.4kbits/s speed=11.1x elapsed=0:00:01.54    
+frame= 1388 fps=674 q=32.0 size=    4096KiB time=00:00:23.10 bitrate=1452.6kbits/s speed=11.2x elapsed=0:00:02.05    
+frame= 1723 fps=670 q=32.0 size=    5376KiB time=00:00:28.68 bitrate=1535.4kbits/s speed=11.2x elapsed=0:00:02.57    
+frame= 2044 fps=663 q=32.0 size=    6656KiB time=00:00:34.03 bitrate=1602.1kbits/s speed=  11x elapsed=0:00:03.08    
+[mp4 @ 0000012774340dc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000012774340cc0] video:7962KiB audio:760KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.695125%
+frame= 2293 fps=663 q=-1.0 Lsize=    8783KiB time=00:00:38.18 bitrate=1884.4kbits/s speed=  11x elapsed=0:00:03.45    
+[libx264 @ 0000012774342100] frame I:10    Avg QP:20.49  size: 57999
+[libx264 @ 0000012774342100] frame P:610   Avg QP:24.02  size:  7998
+[libx264 @ 0000012774342100] frame B:1673  Avg QP:26.57  size:  1610
+[libx264 @ 0000012774342100] consecutive B-frames:  1.2%  2.6%  5.6% 90.5%
+[libx264 @ 0000012774342100] mb I  I16..4: 19.2% 77.8%  3.0%
+[libx264 @ 0000012774342100] mb P  I16..4:  0.2%  2.6%  0.5%  P16..4: 24.7%  3.9%  2.8%  0.0%  0.0%    skip:65.4%
+[libx264 @ 0000012774342100] mb B  I16..4:  0.1%  0.2%  0.3%  B16..8:  1.6%  0.7%  0.3%  direct: 1.0%  skip:95.9%  L0:37.6% L1:47.3% BI:15.1%
+[libx264 @ 0000012774342100] 8x8 transform intra:68.0% inter:70.0%
+[libx264 @ 0000012774342100] coded y,uvDC,uvAC intra: 68.3% 52.8% 10.7% inter: 5.6% 5.1% 0.0%
+[libx264 @ 0000012774342100] i16 v,h,dc,p: 73% 16%  8%  3%
+[libx264 @ 0000012774342100] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 11% 15% 34%  4%  5%  3% 13%  3% 13%
+[libx264 @ 0000012774342100] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  9% 22% 19%  7%  9%  6% 14%  5%  9%
+[libx264 @ 0000012774342100] i8c dc,h,v,p: 61% 20% 16%  3%
+[libx264 @ 0000012774342100] Weighted P-Frames: Y:5.2% UV:3.8%
+[libx264 @ 0000012774342100] ref P L0: 69.7% 30.3%
+[libx264 @ 0000012774342100] ref B L0: 85.8% 14.2%
+[libx264 @ 0000012774342100] ref B L1: 94.9%  5.1%
+[libx264 @ 0000012774342100] kb/s:1706.61
+[aac @ 0000012774365c40] Qavg: 711.547

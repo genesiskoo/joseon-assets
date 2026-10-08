@@ -1,0 +1,107 @@
+{
+  "captured_at": "2026-09-17T07:35:02.8379141+09:00",
+  "purpose": "Isolated trial setup. Current character model is an assembly reference, NOT an H1 result.",
+  "main_project": "C:\\workspace\\joseon",
+  "camera": {
+    "ortho": 11.0,
+    "pitch": 35.264,
+    "viewport": [
+      1280,
+      720
+    ],
+    "distance": 30.0,
+    "yaw": 45.0
+  },
+  "sources": [
+    {
+      "source": "C:\\workspace\\joseon\\actors\\actor_visual.gd",
+      "snapshot": "actors/actor_visual.gd",
+      "sha256": "78F6A3FE9C3C294FFCDA2E6A61CA04EB8EFD2565901EB3F658567129AA51234D"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\actors\\model_def.gd",
+      "snapshot": "actors/model_def.gd",
+      "sha256": "3B79017517D3F0B3B2D99156E4B764203DF47B133CC37D72D87292182B11925C"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\world\\iso_camera.gd",
+      "snapshot": "world/iso_camera.gd",
+      "sha256": "BAE01F78B7AC6060D6985607C7F5757A32E30964ECC1E7BAD4B2BA9DCCAB2618"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\world\\torch.gd",
+      "snapshot": "world/torch.gd",
+      "sha256": "E09359ABEDAA4F7DA9DAB235A05E41C1E60A2085FE7CA5CD1D5F117113905F31"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\tools\\model_check.gd",
+      "snapshot": "tools/model_check.gd",
+      "sha256": "1A3D05195B7F9E64AA040EB35677784AE4003B0D7660D7A8600266C376882760"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\tools\\retarget_mixamo.gd",
+      "snapshot": "tools/retarget_mixamo.gd",
+      "sha256": "B75FC2A15C0FF3954494262B39F86829EF486181250E8010DCDCF7D9225E9C9C"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\floor.glb",
+      "snapshot": "assets/models/tilekit_stone/floor.glb",
+      "sha256": "C4B393D6964E80CC3C3F01B4F1CD68C42B4E226E0D3FF94C7C5CDBA6F855E9E6"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\wall.glb",
+      "snapshot": "assets/models/tilekit_stone/wall.glb",
+      "sha256": "2AB7BD3248996EB0E59517F7E694FEC566803CFC97E55B4C58C8381241B335A1"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\stairs_up.glb",
+      "snapshot": "assets/models/tilekit_stone/stairs_up.glb",
+      "sha256": "4FCAB9EE58D781CF7669CCDA18CE63BCD373D32C9FD2588262D9815FD60937D5"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\stairs_down.glb",
+      "snapshot": "assets/models/tilekit_stone/stairs_down.glb",
+      "sha256": "A1CA3BC8598E6CDD1361A5E1FB95BAE2623F54A266749931D010B9E0C060DBCF"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\floor_floor_tex_raw.png",
+      "snapshot": "assets/models/tilekit_stone/floor_floor_tex_raw.png",
+      "sha256": "B787BC35DA78E21794224FA7A8E991E6CEB5499624CC38A0252C9C163F6C2FAB"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\wall_wall_tex_raw.png",
+      "snapshot": "assets/models/tilekit_stone/wall_wall_tex_raw.png",
+      "sha256": "D1D9685BE41804BE835EF1A815DBFB2866E65A651C68710D8FD20755A17A2148"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\stairs_up_0.png",
+      "snapshot": "assets/models/tilekit_stone/stairs_up_0.png",
+      "sha256": "E4E356AEDB3AA339E4731371BA1023F47470DC8D50C9DA04CF0ECE9AD91BF575"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\tilekit_stone\\stairs_down_0.png",
+      "snapshot": "assets/models/tilekit_stone/stairs_down_0.png",
+      "sha256": "8CFCCFC10B850BE3EF284617B8A7030BEB970A948280AF224C526CCF3D02B7B2"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\world\\dungeon_level.tscn",
+      "snapshot": "references/current_dungeon_environment.tres (exact Environment property block)",
+      "sha256": "1E80F0C818FE3AC45B6E7A8CDD5268EBC4A797A4C090A2F48FFC426AB7022A82"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\actors\\player.tscn",
+      "snapshot": "references/current_player_light.tscn (exact light property block)",
+      "sha256": "A791311162001EC1EA5874FA53E0DE668051319C0ABFBF740E0D98B658F048FE"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\data\\models\\doho.tres",
+      "snapshot": "references/current_doho.tres",
+      "sha256": "5FBD869CCCED9A272CAA0A9C12F46B58638C9D23174534157F2AE47748568735"
+    },
+    {
+      "source": "C:\\workspace\\joseon\\assets\\models\\doho\\doho.glb",
+      "snapshot": "references/CURRENT_REFERENCE_NOT_H1.glb",
+      "sha256": "A3FC7DD875610ABC2929B04B4098CB9A330B11ECA44C5C91EFA7D5A6464C9E7D"
+    }
+  ]
+}

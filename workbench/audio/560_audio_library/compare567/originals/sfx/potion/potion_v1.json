@@ -1,0 +1,67 @@
+{
+ "cue": "potion",
+ "v": 1,
+ "prompt": "A small ceramic medicine flask uncorks then a quick liquid sip, restrained natural close sound, no speech.",
+ "seconds": 1.2,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:23",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.183016,
+ "lufs": "-23.7",
+ "peak": "-4.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -4.46,
+   "file": "_raw/potion_v1.wav",
+   "duration": 1.2,
+   "lufs": "-23.7",
+   "true_peak": "-4.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 52171,
+   "at": 1.183,
+   "removed_ms": 17.0,
+   "floor_db": -93.1,
+   "jump_db": 31.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.15,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -23.75,
+    -23.75
+   ],
+   "intake_tp": [
+    -1.12,
+    -1.27
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -4.6,
+   "lufs": "-23.7",
+   "true_peak": "-4.3"
+  },
+  "warn": []
+ }
+}

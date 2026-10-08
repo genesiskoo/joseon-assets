@@ -1,0 +1,30 @@
+{
+  "label": "unit_1",
+  "mode": "unit",
+  "exit": 0,
+  "command": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\555-anim-sampler\\joseon",
+    "--headless",
+    "-s",
+    "tests/test_animation_sample.gd"
+  ],
+  "files": [
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\555-anim-sampler\\joseon\\._tmp\\555\\unit_1.stdout.raw.log",
+      "bytes": 216,
+      "sha256": "2bcf998f580965fcab2f0f100c8c78072e58f23fbb4817398503aeb2fb2641b2"
+    },
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\555-anim-sampler\\joseon\\._tmp\\555\\unit_1.stderr.raw.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\555-anim-sampler\\joseon\\._tmp\\555\\unit_1.godot.raw.log",
+      "bytes": 211,
+      "sha256": "27b14e37e02dbd0216a527be442e7e36efb755e5c5118c1b8d1ceb871befe703"
+    }
+  ]
+}

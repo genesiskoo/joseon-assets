@@ -1,0 +1,17 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(character_profiles,system_menu,save_continue,ui_windows)
+  ⏳ 다른 자리의 단독 차례 (528-drop-switches · pid 20812 · 18:33 · 단독(시간 민감 묶음)) — 끝나면 이어서 돈다
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (4.7초)
+== e2e (character_profiles,system_menu,save_continue,ui_windows · 공유 칸 ②/3) ==
+E2E start: character_profiles, system_menu, save_continue, ui_windows
+E2E ▶ character_profiles
+E2E character_profiles PASS (검사 38)
+E2E ▶ system_menu
+E2E system_menu PASS (검사 56)
+E2E ▶ save_continue
+E2E save_continue PASS (검사 12)
+E2E ▶ ui_windows
+E2E ui_windows PASS (검사 65)
+E2E SUMMARY: 4/4 PASS
+  e2e  (37.2초) — 제한 3600초
+전부 PASS

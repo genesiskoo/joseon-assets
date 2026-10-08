@@ -1,0 +1,16 @@
+{
+  "id": "iron_sword",
+  "issue": 102,
+  "tool": "built-in imagegen",
+  "model_version": "not exposed by tool",
+  "prompt": "Recompose this exact Korean iron sword into a STRICTLY VERTICAL UPRIGHT inventory illustration: blade point at TOP CENTER, pommel at BOTTOM CENTER, no diagonal tilt. Preserve the short dark leather wrapped grip, plain rounded brass pommel, small brass oval guard, broad straight double edged silver-grey blade and short angular wedge tip exactly as this reference. The grip is short, about a QUARTER of the item's length; blade about three quarters. Broad light bevels and darker single central plane must remain visible at 24px. Shape should occupy a very tall narrow bounding box, overall width including guard about 18 percent of total height, so it fits a 1x3-cell inventory slot. This is an orientation/layout revision of the given sword, not a redesign. No tassel or sheath. Accepted H1 Korean dark fantasy item style: confident dark ink contour, three broad matte painted value planes, restrained aged materials. Complete isolated single object in square 1024x1024 canvas, full point and pommel with 7 percent clear top/bottom margin. Genuine transparent RGBA background outside object. No ground shadow, no background, no lighting halo, no rim glow, no sparkles, no text, no frame, no extra object. Keep the sword VERTICAL, centered and tall.",
+  "references": [
+    "C:\\workspace\\joseon-assets\\workbench\\ui\\icons_readability_102\\rejected\\diagonal_swords\\iron_sword.png"
+  ],
+  "generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-c4ff2835-fa4e-44a6-aa88-79e93f64e95c.png",
+  "source": "sources/iron_sword.png",
+  "revision": 2,
+  "status": "candidate_pending_review",
+  "supersedes": "rejected/diagonal_swords/iron_sword.png",
+  "reason": "Diagonal blade only used about 24px of a 1x3 inventory slot. Upright composition uses the tall content region."
+}

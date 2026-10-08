@@ -1,0 +1,69 @@
+{
+ "cue": "enemy_hurt",
+ "v": 6,
+ "prompt": "One dark fantasy beast brief low pain growl, no words. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:26",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.582018,
+ "lufs": "-8.4",
+ "peak": "0.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 184,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0009,
+    -0.0011
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/enemy_hurt_v6.wav",
+   "duration": 0.6,
+   "lufs": "-8.4",
+   "true_peak": "0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25667,
+   "at": 0.582,
+   "removed_ms": 18.0,
+   "floor_db": -86.3,
+   "jump_db": 34.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.28,
+   "why": "트루피크 여유 -0.3 LU",
+   "intake_i": [
+    -8.41,
+    -8.41
+   ],
+   "intake_tp": [
+    3.19,
+    3.47
+   ]
+  },
+  "out": {
+   "over_full": 135,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.47,
+   "lufs": "-8.4",
+   "true_peak": "0.5"
+  },
+  "warn": [
+   "CLIP 184"
+  ]
+ }
+}

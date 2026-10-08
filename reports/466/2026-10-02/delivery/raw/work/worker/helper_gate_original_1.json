@@ -1,0 +1,44 @@
+{
+  "card": 466,
+  "requested": [
+    "powershell",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "C:/workspace/joseon/._tmp/run_466_helper.ps1",
+    "-Phase",
+    "original"
+  ],
+  "args": [
+    "powershell",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "C:/workspace/joseon/._tmp/run_466_helper.ps1",
+    "-Phase",
+    "original"
+  ],
+  "cwd": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\466-approved-item-icons\\joseon",
+  "before_head": "a823f323e50ce0fc2bf43d7e90c323d27ed72edb",
+  "before_main": "705a28d3c2923185d30a2beb4600f2321f687303",
+  "before_preservation": {
+    "png_preserved_count": 1125,
+    "png_changed": [],
+    "production_gd_changed": [],
+    "definition_changed": []
+  },
+  "started_at_epoch": 1790948222.0775645,
+  "returncode": 0,
+  "elapsed_seconds": 154.06459736824036,
+  "after_head": "a823f323e50ce0fc2bf43d7e90c323d27ed72edb",
+  "after_main": "705a28d3c2923185d30a2beb4600f2321f687303",
+  "after_status": "M tests/e2e/scenarios/icon_intake.gd\n?? docs/art/466_item_icons/\n?? docs/design/item_icons_466.md\n?? docs/design/item_icons_466_log.md\n?? tests/e2e/helpers/",
+  "after_preservation": {
+    "png_preserved_count": 1125,
+    "png_changed": [],
+    "production_gd_changed": [],
+    "definition_changed": []
+  }
+}

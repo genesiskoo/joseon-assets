@@ -1,0 +1,51 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_516_C3",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "22ea7f7d9ec3bd1cd7f7244e4992eab68c77ddfca9c031c998d4dfb5660d0594.png"
+    },
+    "is_changed": [
+      "d657ca367095b99c9d2b1e70c44922f814d4ed42be4a98ac171ae49b11d65c75"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "3",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 5162301,
+      "model.size_preset": "(2K) 1728x2304 (3:4)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "Use the supplied image as the exact identity and garment reference. One and only one adult Korean woman, the same face, narrow amber eyes, subtle asymmetric smile, black hair in a loose low knot with a plain wooden hairpin. Preserve her ordinary Joseon inn hostess work clothes: faded deep-indigo cotton jeogori with the same off-white collar and side tie, worn dark brown chima, simple pale linen apron, no jewelry or ornament. A quiet, unnervingly alluring expression conveyed only through her eyes, small smile and economical gesture; believable commoner, not a court lady or courtesan. Dark Joseon fantasy game key art, matte hand-painted illustration, controlled warm lantern light against cool shadows, restrained saturation, tactile wood and cloth, clear readable silhouette for a 3D isometric action RPG. Anatomically coherent hands. Single uninterrupted image, no split panels, no lettering, no border, no duplicate face, no fox ears, no tails, no elaborate headdress, no exposed skin, no Chinese or Japanese costume, no modern objects, no shiny photorealistic skin. Full-length alternate concept, three-quarter side view at the threshold of a modest Joseon jumak on a rainy night. She lifts a plain paper lantern in one hand and makes a slight inviting gesture with the other, glancing back over her shoulder as if she has already recognized the traveler. Her posture is graceful but entirely plausible for a working innkeeper. Show her whole figure, apron and hem, both simple shoes and wet stone ground with breathing room around her. Keep clothing identical to the reference."
+    }
+  }
+}

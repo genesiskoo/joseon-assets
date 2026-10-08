@@ -1,0 +1,7 @@
+warning: unable to access 'C:\Users\FORYOUCOM/.config/git/ignore': Permission denied
+warning: unable to access 'C:\Users\FORYOUCOM/.config/git/ignore': Permission denied
+Traceback (most recent call last):
+  File "C:\workspace\joseon\._tmp\summarize_554_resumed.py", line 25, in <module>
+    assert not status and head == records['rebase']['after']['head']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

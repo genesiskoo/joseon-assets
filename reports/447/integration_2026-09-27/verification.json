@@ -1,0 +1,272 @@
+{
+  "issue": 447,
+  "files": [
+    {
+      "item_id": "satgat",
+      "sha256": "9eb58a538cda3b133a8b6241c42510ff36e97f40d1a0db9bb3cd356875fc6534",
+      "size": [
+        160,
+        160
+      ],
+      "alpha_bbox": [
+        13,
+        25,
+        147,
+        134
+      ],
+      "non_icon_fields_preserved": true
+    },
+    {
+      "item_id": "piju",
+      "sha256": "aac97ddaeccc3fd3c4b0cf82e73f15912a5937cd13c81179a7c7162a81bd38ac",
+      "size": [
+        160,
+        160
+      ],
+      "alpha_bbox": [
+        13,
+        13,
+        147,
+        147
+      ],
+      "non_icon_fields_preserved": true
+    },
+    {
+      "item_id": "injang",
+      "sha256": "bf1f69fc6f37e339accda2f04b0cfd6ade26bf4f25128862fe5828da2e383833",
+      "size": [
+        80,
+        80
+      ],
+      "alpha_bbox": [
+        17,
+        6,
+        62,
+        74
+      ],
+      "non_icon_fields_preserved": true
+    },
+    {
+      "item_id": "yedo",
+      "sha256": "a89a9eb1ab0c204049780f55bfa1ae30cd85398a201f8a3103d8c8b6a2b76389",
+      "size": [
+        80,
+        240
+      ],
+      "alpha_bbox": [
+        25,
+        6,
+        55,
+        234
+      ],
+      "non_icon_fields_preserved": true
+    },
+    {
+      "item_id": "mituri",
+      "sha256": "f221a81c11636591ce05412ce647aa86443fbeb4ed0137fd766efec83920e361",
+      "size": [
+        160,
+        160
+      ],
+      "alpha_bbox": [
+        13,
+        38,
+        147,
+        122
+      ],
+      "non_icon_fields_preserved": true
+    },
+    {
+      "item_id": "jeondae",
+      "sha256": "fa70629d671276a07d30aa241e36dfc89d0827aa42f17b18ce5453853993af00",
+      "size": [
+        160,
+        80
+      ],
+      "alpha_bbox": [
+        6,
+        21,
+        154,
+        59
+      ],
+      "non_icon_fields_preserved": true
+    }
+  ],
+  "approved_anchor_pixels": [
+    {
+      "item_id": "paeraengi",
+      "rect": [
+        864,
+        400,
+        944,
+        480
+      ],
+      "pixels_identical": true
+    },
+    {
+      "item_id": "leather_shoes",
+      "rect": [
+        944,
+        400,
+        1024,
+        480
+      ],
+      "pixels_identical": true
+    },
+    {
+      "item_id": "cotton_belt",
+      "rect": [
+        1184,
+        360,
+        1264,
+        400
+      ],
+      "pixels_identical": true
+    }
+  ],
+  "previous_439_assets_unchanged": [
+    {
+      "destination": "assets/sprites/ui/icons_a/items/hwando.png",
+      "sha256": "c1ace29103958c0e20fc0be08aee98c160f311a7e9b0e4b5be79616c0bde0955",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/cotton_dopo.png",
+      "sha256": "34386c757755fa6bd3a86c8de26bb40a8b503fe6b8c19bcadd2bec380a519afc",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/leather_shoes.png",
+      "sha256": "f7f7a268d61ce49eaafd040e5523ceb90daf68c6932b1e3e67ed9d4a7c79cf6f",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/paeraengi.png",
+      "sha256": "1869a36d7ecc1078e43e3f4764bb950bf32a658896f5f57d7a1edf12826d2b95",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/mukham.png",
+      "sha256": "a2f1b74b5af17e7dc81017bb24389774d603834dd55e612d55750a32ba0163fd",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/cotton_belt.png",
+      "sha256": "3eac917b39e5a2046a951c25c968526a14e16ab93276c0c3d56801dd7105b73c",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/silver_ring.png",
+      "sha256": "fe95b45cb6a56d1e70b386fe95d53f4f15ada35015048e246222cc02c4143794",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/jade_charm.png",
+      "sha256": "bc69b0dff090761634d334b2a61d9c746d373fc037af76d2c0164e8dc732c7ac",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/hp_potion.png",
+      "sha256": "dcc9619870e8b5f18e37c0bd68f39f7a5596190a216686e966fb0ed8a671e596",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/mp_potion.png",
+      "sha256": "4d76548f31a878b4283672555b79b0205d16ef21fdec1e0f89e972e42b1a7b77",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/talisman_fire.png",
+      "sha256": "dd87f7e8fdbb659209c44b490679ebe782a09754be28d761acd1124aae4bfed1",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/slash.png",
+      "sha256": "98cd399c0cd4a51361a949f249af489dd73c69df9980b8c15df473035146357e",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/lunge.png",
+      "sha256": "8e977e7a9889d52c5c8ff1688261a94c33bd9e96820ae84bea19a19f6bbde4a8",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/whirlwind.png",
+      "sha256": "8c02840033563ef0e5b3635168a6ce2e0a8cd89f36b49adea4288acdb2a62219",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/fire_talisman.png",
+      "sha256": "13f5ee44d0919a5e32aebe2fb559a5a5143772e3f7475e0359a37bbfb3607ca9",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/frost_talisman.png",
+      "sha256": "5e2f6baccba8d54924497e3fefdac597990a8c1d5f16def927202d6eed294022",
+      "unchanged": true
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/power_shield.png",
+      "sha256": "5d53828584088ae909d59b398069d11a9a0c6da924ad68ffba8f75e9d77f2873",
+      "unchanged": true
+    }
+  ],
+  "gallery": [
+    {
+      "file": "t1_held_after.jpg",
+      "bytes": 156838,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "t1_held_before.jpg",
+      "bytes": 156127,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "t1_inventory_after.jpg",
+      "bytes": 155899,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "t1_inventory_before.jpg",
+      "bytes": 155433,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "t1_vendor_tooltip_after.jpg",
+      "bytes": 158133,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "t1_vendor_tooltip_before.jpg",
+      "bytes": 157666,
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "engine": "Godot 4.7.2 stable Steam / Forward+ / Vulkan / RTX 4070",
+  "screens": [
+    "bag+9slots+rarity/unidentified",
+    "held sword",
+    "merchant+stock6+stamp tooltip"
+  ],
+  "input": "E2e genuine marked InputEvents; equipment swaps, held restore, merchant dialogue, buy/sell",
+  "production_changes": "6 PNG + 6 ItemDef.icon; no non-icon field or renderer changes"
+}

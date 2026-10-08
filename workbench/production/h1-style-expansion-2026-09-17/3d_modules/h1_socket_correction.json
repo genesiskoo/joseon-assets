@@ -1,0 +1,232 @@
+{
+  "bone": "RightHand",
+  "caveat": "Right thumb selection=0 in helper report; fist geometry and selected frames remain visual candidates. Capsule clearance is not exact skinned mesh collision or full body/sleeve contact approval.",
+  "fist_geometry_applied": true,
+  "hand_contact_visual_approved": false,
+  "main_modeldef_modified": false,
+  "measurement": "reference_actor/H1_doho_fist_fist.json; h1_active_guides rig_fix.py --fist=both --palm=down candidate; unmodified tools/weapon_socket.gd exact transform inversion",
+  "measurement_sha256": "2bef5051a2fc0f7537ed89cfd366e7480cf0428e69f2521123413362f4b12961",
+  "model": "res://reference_actor/H1_doho_preserved.glb",
+  "position": [
+    0.0053,
+    0.0703,
+    0.026
+  ],
+  "rotation_degrees": [
+    1.8,
+    -174.82,
+    97.77
+  ],
+  "samples": [
+    {
+      "action": "idle",
+      "blade_tip_above_ground": true,
+      "clip": "idle",
+      "forearm_blade_angle_deg": 119.017658212116,
+      "grip": [
+        -0.112571999430656,
+        0.893732786178589,
+        0.616535782814026
+      ],
+      "grip_to_tip_length": 0.800000131130219,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.12,
+      "tip": [
+        0.24778987467289,
+        1.59815895557404,
+        0.734532475471497
+      ],
+      "torso_axis_min_distance": 0.392492324113846,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "idle",
+      "blade_tip_above_ground": true,
+      "clip": "idle",
+      "forearm_blade_angle_deg": 110.453215709946,
+      "grip": [
+        -0.174531236290932,
+        0.968426167964935,
+        0.593959450721741
+      ],
+      "grip_to_tip_length": 0.799999952316284,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.45,
+      "tip": [
+        0.232064083218575,
+        1.63417911529541,
+        0.771309971809387
+      ],
+      "torso_axis_min_distance": 0.402532041072845,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "idle",
+      "blade_tip_above_ground": true,
+      "clip": "idle",
+      "forearm_blade_angle_deg": 121.874548757014,
+      "grip": [
+        -0.136046051979065,
+        0.929143607616425,
+        0.626032471656799
+      ],
+      "grip_to_tip_length": 0.799999892711639,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.78,
+      "tip": [
+        0.200946092605591,
+        1.65452814102173,
+        0.641949653625488
+      ],
+      "torso_axis_min_distance": 0.363132238388062,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "walk",
+      "blade_tip_above_ground": true,
+      "clip": "walk",
+      "forearm_blade_angle_deg": 86.912217414688,
+      "grip": [
+        -0.127884790301323,
+        0.900130689144135,
+        0.522113084793091
+      ],
+      "grip_to_tip_length": 0.800000071525574,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.12,
+      "tip": [
+        0.666204750537872,
+        0.917908728122711,
+        0.617537558078766
+      ],
+      "torso_axis_min_distance": 0.314937919378281,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "walk",
+      "blade_tip_above_ground": true,
+      "clip": "walk",
+      "forearm_blade_angle_deg": 103.390895730801,
+      "grip": [
+        -0.128447160124779,
+        0.845194876194,
+        0.511661291122437
+      ],
+      "grip_to_tip_length": 0.800000131130219,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.45,
+      "tip": [
+        0.670177936553955,
+        0.844664990901947,
+        0.46478059887886
+      ],
+      "torso_axis_min_distance": 0.286591798067093,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "walk",
+      "blade_tip_above_ground": true,
+      "clip": "walk",
+      "forearm_blade_angle_deg": 85.9117176446862,
+      "grip": [
+        -0.311429917812347,
+        0.869235575199127,
+        0.186826899647713
+      ],
+      "grip_to_tip_length": 0.800000071525574,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.78,
+      "tip": [
+        0.24846613407135,
+        0.391301780939102,
+        0.500029385089874
+      ],
+      "torso_axis_min_distance": 0.244851410388947,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "attack",
+      "blade_tip_above_ground": true,
+      "clip": "attack",
+      "forearm_blade_angle_deg": 87.1689027538862,
+      "grip": [
+        -0.496268302202225,
+        0.963028907775879,
+        0.0830840915441513
+      ],
+      "grip_to_tip_length": 0.800000131130219,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.12,
+      "tip": [
+        -0.751442551612854,
+        1.36214029788971,
+        0.727751791477203
+      ],
+      "torso_axis_min_distance": 0.489232778549194,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "attack",
+      "blade_tip_above_ground": true,
+      "clip": "attack",
+      "forearm_blade_angle_deg": 52.1621820121441,
+      "grip": [
+        0.391815215349197,
+        1.09385740756989,
+        -0.0441297106444836
+      ],
+      "grip_to_tip_length": 0.800000131130219,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.45,
+      "tip": [
+        0.374346613883972,
+        1.72748672962189,
+        -0.532196164131165
+      ],
+      "torso_axis_min_distance": 0.482043117284775,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    },
+    {
+      "action": "attack",
+      "blade_tip_above_ground": true,
+      "clip": "attack",
+      "forearm_blade_angle_deg": 97.4864704008916,
+      "grip": [
+        -0.149513974785805,
+        0.958082556724548,
+        0.533009827136993
+      ],
+      "grip_to_tip_length": 0.800000190734863,
+      "method": "33 blade samples against Hips-neck segment radius .18; conservative diagnostic capsule, not exact skinned mesh collision",
+      "phase": 0.78,
+      "tip": [
+        0.526840806007385,
+        1.33907806873322,
+        0.33965277671814
+      ],
+      "torso_axis_min_distance": 0.257935255765915,
+      "torso_proxy_clear": true,
+      "torso_proxy_radius": 0.18
+    }
+  ],
+  "sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749",
+  "source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/H1_doho_preserved.glb",
+  "weapon_socket_roundtrip_angle_deg": 0.0,
+  "weapon_socket_roundtrip_position_m": 0.0,
+  "visual_sample_review": {
+    "reviewed_images": 9,
+    "model_sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749",
+    "finding": "H1 socket follows the fist candidate; attack samples show blade extending away from hand/body. Idle blade overlaps forearm in projection; walk 78% hides blade behind garment/body, so exact skin clearance is unresolved.",
+    "finger_contact_final_approval": false,
+    "full_clip_collision_test_performed": false,
+    "exact_skinned_mesh_collision_test_performed": false
+  }
+}

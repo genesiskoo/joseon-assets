@@ -1,0 +1,14 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(body_arts)
+  ⏳ 다른 자리의 단독 차례 (663-hud-art\joseon · pid 15688 · 00:32 · 단독(시간 민감 묶음)) — 끝나면 이어서 돈다
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (5.9초)
+== e2e (body_arts · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon","--headless","--","--e2e=body_arts"],"phase_arg":"body_arts","phase_tokens":["body_arts"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":31252,"launched_utc":"2026-10-05T15:36:13.4785264Z"}
+E2E start: body_arts
+E2E ▶ body_arts
+  · 벽 너머 짝 = (39.5, 0.0, 51.5) → (37.0, 0.0, 51.5) (2.5u · 길 10.1)
+E2E body_arts PASS (검사 66)
+E2E SUMMARY: 1/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\tmp\e2e_raw\20261005T1534021526965_36208\phase_1_shared
+  e2e  (13.3초) — 제한 3600초
+전부 PASS

@@ -1,0 +1,92 @@
+{
+  "card": 519,
+  "date": "2026-10-01",
+  "revision": "R3",
+  "status": "generated_15_pending_pd_selection",
+  "provider": "Comfy Cloud",
+  "requested_images": 15,
+  "requested_per_model": 5,
+  "models": {
+    "GPT25": {
+      "model": "gpt-image-2.5-flare",
+      "prefix": "P"
+    },
+    "GROK": {
+      "model": "grok-imagine-image-2.0",
+      "prefix": "G"
+    },
+    "SEEDREAM": {
+      "model": "seedream 5.0 pro",
+      "prefix": "S"
+    }
+  },
+  "source": "../gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "dimensions": [
+    1664,
+    2496
+  ],
+  "concepts": [
+    {
+      "number": 1,
+      "title_ko": "풀린 깃의 초대",
+      "prompt": "prompts/concept_1.txt",
+      "prompt_file_sha256": "9384bc38b853df14706912f07a1c2303ce8459ce9d2a41d2bc82b3da43cd7bdf",
+      "submitted_prompt_sha256": "6e4cd0dd2a96b04c6603d4e667ad0489512bd44f29822d32b8dd327e743cbc76",
+      "seed": 5193101
+    },
+    {
+      "number": 2,
+      "title_ko": "포식 직후의 옆선",
+      "prompt": "prompts/concept_2.txt",
+      "prompt_file_sha256": "7b6f7e3bd13b22518a0b9495912b8f6b07798679bdd7ad00c5b847daff1e2b78",
+      "submitted_prompt_sha256": "ec30abf1f9f7493b407cff3404088be3c413a9feede22659a7c33c55eb801514",
+      "seed": 5193102
+    },
+    {
+      "number": 3,
+      "title_ko": "피 묻은 술잔",
+      "prompt": "prompts/concept_3.txt",
+      "prompt_file_sha256": "bc1192120faf4631bf3577d79526b54edcfc2532f4f49ea78bdd6f72d67a82ce",
+      "submitted_prompt_sha256": "fb4e9f5a13ed70c603cf61bfd5a166960f75357eb6c54f628f8907bde38a5a5e",
+      "seed": 5193103
+    },
+    {
+      "number": 4,
+      "title_ko": "젖은 앞치마의 무게",
+      "prompt": "prompts/concept_4.txt",
+      "prompt_file_sha256": "cfdd4f78eae59b2efe751fb146f8890c728d099d5cf65c87d52473ed0e9cebb6",
+      "submitted_prompt_sha256": "367d459e75652fb57de6312becb2cba9106e7b4c3a3632781d00dd68e01d0c66",
+      "seed": 5193104
+    },
+    {
+      "number": 5,
+      "title_ko": "낮은 인간형 포식 자세",
+      "prompt": "prompts/concept_5.txt",
+      "prompt_file_sha256": "25e44a451110f540a24d1d01a6ff691763ce944b01677b65e36d006d1c607d40",
+      "submitted_prompt_sha256": "2d9c02915e3e4ba2a73b3db23da374c0e10641193618db2d0f5cc138347e1fa9",
+      "seed": 5193105
+    }
+  ],
+  "spec_ko": "선택한 눈빛·주모=구미호 정체와 인간형 P1 물리전을 유지한다. 동작·실루엣·노출 원인을 다섯 방향으로 나누고 같은 방향 번호는 세 모델에 정확히 같은 수정문을 넣는다. 모든 모델은 각 방향별 신규 1장씩, 기존 R2 그림은 15장에 포함하지 않는다.",
+  "rationale_ko": "같은 자세의 무작위 변형 5장보다 의상 손상/여밈과 중심 동작을 함께 바꾼 5방향이 선택 근거를 만든다. 같은 번호의 프롬프트와 얼굴 참조를 모델 간 고정해 모델 차이도 비교한다. 근거 없는 어깨/복부 구멍과 가슴 띠를 만드는 대안은 이전 PD 피드백에 어긋나 배제한다.",
+  "review_criteria_ko": [
+    "선택한 얼굴·눈빛 유지",
+    "그림당 사람 1명, 인간 다리/팔",
+    "깃·섶·소매·밑단·치마 지지 구조",
+    "매혹과 물리적 타락·유혈 동시 판독",
+    "다섯 동작/실루엣 차이",
+    "꼬리 뭉침·수·뿌리 가림은 별도 표시",
+    "전신·발 잘림과 손 변형 확인"
+  ],
+  "paid_execution_owner": "root",
+  "planning_consultant": "narrative-world",
+  "adopted_design": null,
+  "game_intake": false,
+  "actual_images": 15,
+  "successful_per_model": {
+    "GPT25": 5,
+    "GROK": 5,
+    "SEEDREAM": 5
+  }
+}

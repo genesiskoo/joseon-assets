@@ -1,0 +1,22 @@
+{
+  "file_paths": [
+    "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\doho_front.png",
+    "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\doho_back.png"
+  ],
+  "ai_model": "latest",
+  "model_type": "standard",
+  "pose_mode": "t-pose",
+  "enable_pbr": false,
+  "topology": "triangle",
+  "target_polycount": 11000,
+  "should_remesh": true,
+  "should_texture": true,
+  "texture_prompt": "Faithfully preserve the supplied character front and back. Korean manhwa game art, matte hand-painted cloth, broad readable color masses, restrained small pattern detail, no glossy skin or metal, no baked directional lighting. Preserve the black gat, Korean collar, sleeve and layered garment structure. Hands remain empty. No weapon fused into the body.",
+  "texture_resolution": "2k",
+  "remove_lighting": true,
+  "image_enhancement": false,
+  "target_formats": [
+    "glb"
+  ],
+  "response_format": "json"
+}

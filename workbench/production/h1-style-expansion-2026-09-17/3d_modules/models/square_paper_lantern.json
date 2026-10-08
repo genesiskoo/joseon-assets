@@ -1,0 +1,77 @@
+{
+  "aabb_position": [
+    -0.189999997615814,
+    0.0,
+    -0.189999997615814
+  ],
+  "aabb_size": [
+    0.379999995231628,
+    0.629999995231628,
+    0.379999995231628
+  ],
+  "contract": "0.38 x 0.63 x 0.38; square timber-and-paper lantern; base center; light separate; no emissive baked albedo",
+  "cw_winding_normal_disagreements": 0,
+  "degenerate_triangles": 0,
+  "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+  "file": "models/square_paper_lantern.glb",
+  "id": "square_paper_lantern",
+  "is_game_intake": false,
+  "materials": [
+    {
+      "color": [
+        0.810000002384186,
+        0.759999990463257,
+        0.649999976158142,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_paper",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.850000023841858,
+        0.800000011920929,
+        0.730000019073486,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_wood",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "color": [
+        0.119999997317791,
+        0.109999999403954,
+        0.100000001490116,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "matte_iron",
+      "roughness": 0.899999976158142,
+      "texture_size": []
+    }
+  ],
+  "sha256": "667ad6b39b8fd4ecd5db9185896f65bb86525b85819376e6bccb458eeada218a",
+  "triangles": 96,
+  "under_500_triangles": true,
+  "vertex_aabb_position": [
+    -0.189999997615814,
+    0.0,
+    -0.189999997615814
+  ],
+  "vertex_aabb_size": [
+    0.379999995231628,
+    0.629999995231628,
+    0.379999995231628
+  ],
+  "atlas": "textures/atlas_layout.json"
+}

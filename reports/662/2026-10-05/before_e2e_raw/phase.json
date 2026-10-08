@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\662-portrait-bca-first\\joseon",
+      "--",
+      "--e2e=dialogue_band",
+      "--e2e-shots"
+    ],
+    "phase_arg": "dialogue_band",
+    "phase_tokens": [
+      "dialogue_band"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 29652,
+    "launched_utc": "2026-10-05T06:53:36.6054096Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_sec": 21.8308569,
+  "archived_utc": "2026-10-05T06:53:58.4907276Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-662-portrait-bca-first\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\662-portrait-bca-first\\joseon\\tmp\\e2e_raw\\20261005T0653318199531_44404\\phase_1_solo\\godot.raw.log",
+    "bytes": 3343,
+    "sha256": "ab667a38fd4ad4f8abff848d74509896ca5cb63b3d1ed4c8d7753f4df48c6a44"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

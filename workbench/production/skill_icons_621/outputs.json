@@ -1,0 +1,1106 @@
+{
+  "card": 621,
+  "outputs": {
+    "A_blink_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_blink_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 3046128,
+      "native_sha256": "8f497170dc87127961f88c3cc23a847ee57df85f85b81ee318a9cf114385b7d5",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_blink_r1_128.png",
+          "sha256": "b5fef57266be9d7cad80d1515da9610c15f6c1ab7e26d690337f60ad6c76008a"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_blink_r1_64.png",
+          "sha256": "2619c4b8813ab551178f4fcf9c011120f4b491e8395fe779ba8a883dd166a50a"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_blink_r1_40.png",
+          "sha256": "c687f0c19d439d579e97b89ffcbac6bb2e513e4f6ccdd3e0a7f4d1617ba974b7"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_blink_r1.txt",
+      "prompt_sha256": "f7b63a2afb7db3bbd4f00baf1b42a5cd9a2c6ee3b4b70321d58b5ca9f215c3d6",
+      "generated_utc": "2026-10-04T04:43:09.007963+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "B_blink_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_blink_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2929009,
+      "native_sha256": "02c93dfb167a0a5c23a15d84a010470603c1c5be5e731d4f5f35edd5143ba763",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_blink_r1_128.png",
+          "sha256": "878cbda9bdece9ef6054d7521b757a15821d4485498b093849446d61d914afb5"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_blink_r1_64.png",
+          "sha256": "1b7a6377a89f05ad91110344f3d3182b7a040e9f503bfd1fb68bb1291b90cc28"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_blink_r1_40.png",
+          "sha256": "d3dc315284b7c1e65ac8c2bffc1603348b952c86493525a9eb3324123cdc8a99"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_blink_r1.txt",
+      "prompt_sha256": "da8c6cc23505966604adc0d57f6603bc7df5adecbeefe6f099e86d11e947b691",
+      "generated_utc": "2026-10-04T04:44:07.555049+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "A_light_step_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_light_step_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2811576,
+      "native_sha256": "71e0bb01d84356d0d37e84700ca36af7d781f88d4d98ba2aab72c1bc1d9b1510",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_light_step_r1_128.png",
+          "sha256": "d8b7e8eab87e8c2f8d5def34e610bcfca393ef673b0985df8a80739bdfd811db"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_light_step_r1_64.png",
+          "sha256": "10777ff003b064d58818498a8c06698d76f0fc4169ace8a11c0df98b468f408c"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_light_step_r1_40.png",
+          "sha256": "9a0c7b3bab1cd26aa6ca289630abac81f73103c3c1167d5bd1a79c5be6f1f261"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_light_step_r1.txt",
+      "prompt_sha256": "4e22ffde8686ed3b54fbe827932d0d3ec6c95dec76237fb4c8273fa933f38d37",
+      "generated_utc": "2026-10-04T04:44:58.140607+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "B_light_step_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_light_step_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2828336,
+      "native_sha256": "4a2eca73b46cc352c0efe812a61fdef9d4789348f331805240a7d9924758bc66",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_light_step_r1_128.png",
+          "sha256": "694eea3eb40ad8f62f7e05ffe54a488d4359ae1c139b3386be7f2d6743fdcbe7"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_light_step_r1_64.png",
+          "sha256": "0dc6a0b9aa49ff2737f2a06485e0f10a24c467858194469dd1e605747d641639"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_light_step_r1_40.png",
+          "sha256": "9ddb2db8c845972d189214cb514eed3199bb68d77212f3aa5eddb9c833f676b2"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_light_step_r1.txt",
+      "prompt_sha256": "dffd4168ce0c9b0d740d0640cde94b4c7fb5e097dd13c896e4894fd9cd590ec3",
+      "generated_utc": "2026-10-04T04:45:43.995301+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "A_clone_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_clone_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 3106364,
+      "native_sha256": "57b90f98344ceef49dfc785d244351167b8ab835667f08487245e75ad61207c9",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_clone_r1_128.png",
+          "sha256": "3df9d840bb3bb6e1e0d23698f89a8456da097c8f83e5a467e7232f4bc71d5392"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_clone_r1_64.png",
+          "sha256": "ae88582c27f558bd9a8db92eb94e7101abdfd26fab86fb0f51f89352ca84850b"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_clone_r1_40.png",
+          "sha256": "915e902f75b33b51f8184848021f15ccf9dfed18ccec6c8878992f78499cd9af"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_clone_r1.txt",
+      "prompt_sha256": "0e992bd658cb798bc4c02644eb4630dc1002c42f36908173374b50cb58feeefe",
+      "generated_utc": "2026-10-04T04:46:39.372384+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "superseded_revision_preserved",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": false
+    },
+    "B_clone_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_clone_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 3094293,
+      "native_sha256": "76cec7243a94d8c08b6a23b4e4f95f538e408361982fd7b56da9ee82389b1214",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_clone_r1_128.png",
+          "sha256": "337dc47041d6759b167f61187c0e7036c39f3652e07a0192f54c0c86b74dba10"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_clone_r1_64.png",
+          "sha256": "d3713200f498800bd94fdec07dbe62fc85778b3706a3649cff36d142b10c5e5f"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_clone_r1_40.png",
+          "sha256": "580b58117efb2fd477c5d682debe9c0a6c1f242fd423ebaf026ab9c60e6f9c06"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_clone_r1.txt",
+      "prompt_sha256": "fa004832ccc10c3c72b17fb0579fb28e561a9291a9456a7c6cd6807864496185",
+      "generated_utc": "2026-10-04T04:48:01.829753+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "A_clone_r2": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_clone_r2.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2912429,
+      "native_sha256": "8a8d4f443627c2a203cf9cb6b8a2a7317ffe3aa46689ab8bdab8be93f8d0bdb5",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_clone_r2_128.png",
+          "sha256": "40f9a2d1fbbbe1c1c8c134577f99435cd9739fa73ab1c5fcb531b13a81247cd9"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_clone_r2_64.png",
+          "sha256": "72f7a19aa7c614ac6e5a64d5d3c728c216719b217506c7003bec74e97227b219"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_clone_r2_40.png",
+          "sha256": "075f7a9fd216084bcd8aaa38cdbfb8b958c1a7abf702a78712063cd621222251"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\a622\\workbench\\production\\skill_icons_621\\raw\\A_clone_r1.png",
+          "role": "edit_target",
+          "sha256": "57b90f98344ceef49dfc785d244351167b8ab835667f08487245e75ad61207c9"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_clone_r2.txt",
+      "prompt_sha256": "5e547e5f5e71144c99aff4a7cd02403f9971fc9d38b6c33ab525b113bbba9aae",
+      "generated_utc": "2026-10-04T04:53:40.621816+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "A_hide_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_hide_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 3033257,
+      "native_sha256": "46ac762effa90900811dec6af8b2667f67a4328c47d573043383e7ac4a28dbb4",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_hide_r1_128.png",
+          "sha256": "fe82f7f947e57498a6599dbf677add3888a7abbf8586d36f959b6d3fd520a9a4"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_hide_r1_64.png",
+          "sha256": "015ba984f6a290bf8d482050f44604604a3ee3fe6b13379b09f2a593860d3a33"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_hide_r1_40.png",
+          "sha256": "3f3e2126bae1d423e7e02644093efb8897104ff75c4e789cffca0230fec12a85"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_hide_r1.txt",
+      "prompt_sha256": "b64b53b5b23c34aef9fa93a11c0284c933420340d34956433df95bcca3b02431",
+      "generated_utc": "2026-10-04T04:54:40.346941+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "B_hide_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_hide_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2542689,
+      "native_sha256": "d3df4bc3e0e8b2a7df2ce7123e27596ca2909bad01db9e8162b4e2308ada2e12",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_hide_r1_128.png",
+          "sha256": "b83f934e14abc49db4f025d2e3066e4a47c7761fc17a196069768198b316a837"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_hide_r1_64.png",
+          "sha256": "a2959adbe78ea6160db71860af3f516ae88cef6b7765c21bc9872d9218a55327"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_hide_r1_40.png",
+          "sha256": "6cd086ec71ca76b9fbeadbd7e19587876bca056b2fc3cb01416d490abcdd02bd"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_hide_r1.txt",
+      "prompt_sha256": "1f98edd4226d05c7d4337cdd083c721c11b67f1e86fed4f62f2f67e2f41dc034",
+      "generated_utc": "2026-10-04T04:55:26.160375+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "A_iron_body_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_iron_body_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2896739,
+      "native_sha256": "789e4fe6b491dfc6f8901c614788baafbef4ce28ee2b5e4d257d6dd51d783713",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_iron_body_r1_128.png",
+          "sha256": "63935dcc4da642dd23c57702e1a2917f2edfa35549c44e58dd8ebcae0b2cebe3"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_iron_body_r1_64.png",
+          "sha256": "28c55612489542ffd6ce0a0b9a0021884275e66005b3ae66564ca90ac47a149c"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_iron_body_r1_40.png",
+          "sha256": "761586f9835772b6cb37d2e6e9339b7d9c517bf25baf08e728118a920aec3daf"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_iron_body_r1.txt",
+      "prompt_sha256": "2b993b564f840cb1e25082f9072c1a12c07aa06902794fdb2346af6dd13fe08b",
+      "generated_utc": "2026-10-04T04:56:09.538023+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "B_iron_body_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_iron_body_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2881480,
+      "native_sha256": "2b622b512fac7fe8d263c26ebaf45c6ddc0d908377c5178a71260c8f6a67d516",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_iron_body_r1_128.png",
+          "sha256": "a5b8d442b4f3966639e83a02a9fb14f508c7db8f8bb63540ad13ed147b0a79f0"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_iron_body_r1_64.png",
+          "sha256": "261264f3c5f5736d721bd194397be149dfa542b07ed57de83414cc33832ca6e7"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_iron_body_r1_40.png",
+          "sha256": "15d221d79747ca2be5941a369a720be9da538aa6175eee9dc811666e2b03e1b8"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_iron_body_r1.txt",
+      "prompt_sha256": "faf4d960eaea25d701b0f8d126a41c013972398a3b2ec2fb4fa0ac3832bdcab7",
+      "generated_utc": "2026-10-04T04:56:48.074837+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "A_first_cut_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_first_cut_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2807001,
+      "native_sha256": "c15f936730c928d5adf0e2016f7cae30ad17b55b79c13a214638256332713423",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_first_cut_r1_128.png",
+          "sha256": "537ac164c2caf5a375e78cfca1eeb557318d1882183b9b267d9d815c06a2d86d"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_first_cut_r1_64.png",
+          "sha256": "4ee729ffa752357a09f9dfd1a8ad28eac223af6b8ac9429fd3d5dd000ac7721c"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_first_cut_r1_40.png",
+          "sha256": "379c531883edcc95c66359e5f89b7a62ca700ca7d1c6e96df65a22e0d5816602"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_first_cut_r1.txt",
+      "prompt_sha256": "67bedb700e937479dae54ec46b578332069a014b1a0c3a9f5df35d4d1d706597",
+      "generated_utc": "2026-10-04T04:57:38.679015+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "B_first_cut_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_first_cut_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2921480,
+      "native_sha256": "7ae91ff52a43a2efdc547683a4e3fe9a662c0fe9ab3a5bace5391cd03e6190ab",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_first_cut_r1_128.png",
+          "sha256": "5dfa8a30c6b74abf18cd60debfde00e673aa001bd4258960bb817176cb0f5d21"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_first_cut_r1_64.png",
+          "sha256": "a78fc3e25589f1c7135f603e5a06a424ef7903796a72d3d5dec81fd095561ab3"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_first_cut_r1_40.png",
+          "sha256": "dbc15ac0d635bba1f1bb34421afa89dfc5bb4cb6426262687d50ec0369e59926"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_first_cut_r1.txt",
+      "prompt_sha256": "ae66dd23c01c4d7612a2d5f0c2e78ad86cdbe4b22fc565e15c6b2a3660363759",
+      "generated_utc": "2026-10-04T04:58:21.960902+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "A_thunder_lore_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/A_thunder_lore_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 3061880,
+      "native_sha256": "aa9215b41ef54d7b4029412979f765e2249bd78473eb0786dffdbd52582fdb72",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_thunder_lore_r1_128.png",
+          "sha256": "005eb13e3c0b97adeab6c4e7ff5f3d76ed6171016bd779fc54a61646f85cdf02"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_thunder_lore_r1_64.png",
+          "sha256": "e3e9550e83cbab4e00bcf53f30e12d4514ac3aaa2d8dd8b29ff36dc869513782"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/A_thunder_lore_r1_40.png",
+          "sha256": "a81fc863366c0e717027dbab231ba70d834f9b4e3aae682f262756ed13c62d9f"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\pouch.png",
+          "role": "adopted #498 paper/cloth material and yellow talisman color, thunder_lore only",
+          "sha256": "faf4dcb84e2244f3c7c7fc4d992ccec88bbb7dc0e41cccff36b25b76dae3544f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/A_thunder_lore_r1.txt",
+      "prompt_sha256": "8fd5203c5b4b8556775c5a2e5d5f8b022d14fbba095afeb87d012e6ef5168b67",
+      "generated_utc": "2026-10-04T04:59:13.117835+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    },
+    "B_thunder_lore_r1": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_thunder_lore_r1.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2902272,
+      "native_sha256": "47c3836daddd71f109f77f4416ed84b63a096887268829f5f596a12e1a5b13ca",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_thunder_lore_r1_128.png",
+          "sha256": "f33ae2d8f4d68cdff9328c5490c7e30d180b0d009b93ef226af77205d25480bc"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_thunder_lore_r1_64.png",
+          "sha256": "61ffa01cecf794ebaafa91780069ef7edb8bf8ae3c82bdeae8b92ae466bc872d"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_thunder_lore_r1_40.png",
+          "sha256": "5129c1628a535a7f8e683472c97dd931658076e35bea8c6aa2cc1776a149d90b"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon-assets\\sheets\\approved-2026-09-17-h1\\K2_H_doho_hero_options.png",
+          "role": "H1 LEFT only character identity and shared matte ink style",
+          "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved existing skill icon brush density, palette, square-edge treatment; do not copy attack pose",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\breath.png",
+          "role": "adopted #498 body-art icon contrast, no frame and no spell effect",
+          "sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f"
+        },
+        {
+          "path": "C:\\workspace\\joseon-assets\\workbench\\production\\skill_icons_498\\game\\pouch.png",
+          "role": "adopted #498 paper/cloth material and yellow talisman color, thunder_lore only",
+          "sha256": "faf4dcb84e2244f3c7c7fc4d992ccec88bbb7dc0e41cccff36b25b76dae3544f"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_thunder_lore_r1.txt",
+      "prompt_sha256": "c36918dc6fcbb21ab641952d641b16407e26b535b9e1a7a0cd075433c2c6421b",
+      "generated_utc": "2026-10-04T04:59:50.126772+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "superseded_revision_preserved",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": false
+    },
+    "B_thunder_lore_r2": {
+      "tool": "image_gen_builtin",
+      "model": "builtin-default-version-not-exposed",
+      "native_path": "workbench/production/skill_icons_621/raw/B_thunder_lore_r2.png",
+      "native_size": [
+        1254,
+        1254
+      ],
+      "native_bytes": 2761394,
+      "native_sha256": "3fa1818ee6a73ecf805eb551fe9029b30f61be2f7f10610b353206c32ecdd849",
+      "exports": [
+        {
+          "size": [
+            128,
+            128
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_thunder_lore_r2_128.png",
+          "sha256": "76bd06b5b10c953502f98d52dc41e3be2ca9310b16b83572d6de77c600c5b745"
+        },
+        {
+          "size": [
+            64,
+            64
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_thunder_lore_r2_64.png",
+          "sha256": "95d4dcb07a8dce54da67f0bd1f71c039376bb2a925567c0d687e1880fb45d8fd"
+        },
+        {
+          "size": [
+            40,
+            40
+          ],
+          "path": "workbench/production/skill_icons_621/exports/B_thunder_lore_r2_40.png",
+          "sha256": "fafbe9bccf4fe978591e3944ed229f422b99be8caf374108039da593b8b3cf69"
+        }
+      ],
+      "actual_inputs": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\a622\\workbench\\production\\skill_icons_621\\raw\\B_thunder_lore_r1.png",
+          "role": "edit_target",
+          "sha256": "47c3836daddd71f109f77f4416ed84b63a096887268829f5f596a12e1a5b13ca"
+        }
+      ],
+      "prompt_path": "workbench/production/skill_icons_621/prompts/B_thunder_lore_r2.txt",
+      "prompt_sha256": "95f4f55658d55202fc4590d1c63857913ff274881c26ffadec9845af75e9e25b",
+      "generated_utc": "2026-10-04T05:01:21.164269+00:00",
+      "pd_adopted": false,
+      "game_intake": false,
+      "visual_review": "manual_meaning_body_count_costume_and_128_64_40_34_readability_reviewed",
+      "native_mode": "RGB",
+      "native_alpha_extrema": null,
+      "export_alpha_extrema": [
+        255,
+        255
+      ],
+      "selected_local_revision": true
+    }
+  },
+  "candidate_packs": {
+    "A": {
+      "blink": "workbench/production/skill_icons_621/exports/A_blink_r1_128.png",
+      "light_step": "workbench/production/skill_icons_621/exports/A_light_step_r1_128.png",
+      "clone": "workbench/production/skill_icons_621/exports/A_clone_r2_128.png",
+      "hide": "workbench/production/skill_icons_621/exports/A_hide_r1_128.png",
+      "iron_body": "workbench/production/skill_icons_621/exports/A_iron_body_r1_128.png",
+      "first_cut": "workbench/production/skill_icons_621/exports/A_first_cut_r1_128.png",
+      "thunder_lore": "workbench/production/skill_icons_621/exports/A_thunder_lore_r1_128.png"
+    },
+    "B": {
+      "blink": "workbench/production/skill_icons_621/exports/B_blink_r1_128.png",
+      "light_step": "workbench/production/skill_icons_621/exports/B_light_step_r1_128.png",
+      "clone": "workbench/production/skill_icons_621/exports/B_clone_r1_128.png",
+      "hide": "workbench/production/skill_icons_621/exports/B_hide_r1_128.png",
+      "iron_body": "workbench/production/skill_icons_621/exports/B_iron_body_r1_128.png",
+      "first_cut": "workbench/production/skill_icons_621/exports/B_first_cut_r1_128.png",
+      "thunder_lore": "workbench/production/skill_icons_621/exports/B_thunder_lore_r2_128.png"
+    }
+  },
+  "recommended_mix": {
+    "blink": "A_blink_r1",
+    "light_step": "B_light_step_r1",
+    "clone": "A_clone_r2",
+    "hide": "A_hide_r1",
+    "iron_body": "A_iron_body_r1",
+    "first_cut": "B_first_cut_r1",
+    "thunder_lore": "B_thunder_lore_r2"
+  },
+  "pd_adopted": false,
+  "game_intake": false,
+  "review_caveats": {
+    "small_size": "Fine fabric and ink speckles reduce back-clone and folded-ground readability at 34px; actual game skill-tree/HUD review required after PD adoption.",
+    "body_art": "White dry-brush accents are icon symbolism only, not approval for new passive game FX, attack spells, projectiles or armor.",
+    "A_thunder_lore": "Writing pose includes a portrait rather than isolated tools; B R2 omits portrait for smaller-size distinction.",
+    "B_style": "Large forms emphasized, but clone/iron-body/first-cut still have character portraits; not every B asset is a pure glyph.",
+    "B_thunder_lore_r2": "Three ink-stained fingertips visible; tiny brush tip requested in edit is not distinct. Paper and red marks remain dominant.",
+    "native": "Actual native output 1254x1254, mechanically exported to 128/64/40; 34px shown in review only. Exact backend model version is not exposed."
+  }
+}

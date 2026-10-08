@@ -1,0 +1,2958 @@
+{
+  "card": 572,
+  "generated_by": "codex",
+  "voice_model": "eleven_v4",
+  "voice_cast": {
+    "doho": "Ir7oQcBXWiq4oFGROCfj",
+    "elder": "AgA5UKT9OrVg7jxVBZd4",
+    "merchant": "AgA5UKT9OrVg7jxVBZd4",
+    "shaman": "UvkXHIJzOBYWOI51BDKp",
+    "jumo": "xi3rF0t7dg7uN2M0WUhr"
+  },
+  "dialogue_source_sha256": {
+    "data\\dialogue\\event\\shaman_quest.dialogue": "e8895a31ec4553baf410a4b101ce93d470112901dba9957ab682dc0a4ad0a29e",
+    "data\\dialogue\\npc\\elder.dialogue": "119fbf5f862f00132470cd4467cf185e0d6f752cdb9147b23ce6d47eee832615",
+    "data\\dialogue\\npc\\jumo.dialogue": "6b36fb33dd7da25013f4fa05eeffb33e11a8876c29e115990d85eabe2c1d7920",
+    "data\\dialogue\\npc\\merchant.dialogue": "3125105540a9347d7c3c968608fd3c562c79c285e7cb60e1a7b94930a479e0fe",
+    "data\\dialogue\\npc\\shaman.dialogue": "e22decda59d4d870f389df957fb84629d8f9a0eeb06eca19ac4bf908f1d4177d"
+  },
+  "files": [
+    {
+      "target": "assets/audio/sfx/combat/bandit_attack_1.wav",
+      "sha256": "e998b27cdfd5936c1d9e4a104ca0e40ba7dd071a06de0d9db82682d8faef1573",
+      "source_sha256": "492f6bce66c9744210a0de1d2714b35e5704d648c7466f7262744e0fb3de60f7",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/bandit_attack/bandit_attack_v3.wav",
+      "loudness": [
+        -22.1,
+        -1.5
+      ],
+      "duration": 0.287868
+    },
+    {
+      "target": "assets/audio/sfx/combat/bandit_attack_2.wav",
+      "sha256": "e998b27cdfd5936c1d9e4a104ca0e40ba7dd071a06de0d9db82682d8faef1573",
+      "source_sha256": "492f6bce66c9744210a0de1d2714b35e5704d648c7466f7262744e0fb3de60f7",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/bandit_attack/bandit_attack_v3.wav",
+      "loudness": [
+        -22.1,
+        -1.5
+      ],
+      "duration": 0.287868
+    },
+    {
+      "target": "assets/audio/sfx/combat/bat_attack_1.wav",
+      "sha256": "4f2e1d5f633c0198b58c0bd4470a6d162823ddd54bf25976939015ffa3faa441",
+      "source_sha256": "5c608745a34d8b6b1b0cbea0dc373046defc4d9bc096635d6701a1f6a2c78bff",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/bat_attack/bat_attack_v2.wav",
+      "loudness": [
+        -22.2,
+        -1.5
+      ],
+      "duration": 0.486213
+    },
+    {
+      "target": "assets/audio/sfx/combat/bat_attack_2.wav",
+      "sha256": "82dae24d23c2f4c3cbcd20707f32c4ae740cb0d223f056ddaf8cd47548f4889d",
+      "source_sha256": "c2276e6979f907f6ca02f9a0608f761d3bac06207d059d2664908c53bb8e2b9e",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/bat_attack/bat_attack_v1.wav",
+      "loudness": [
+        -24.2,
+        -1.5
+      ],
+      "duration": 0.456327
+    },
+    {
+      "target": "assets/audio/sfx/combat/bisect_1.wav",
+      "sha256": "487133a367e4e1dbdf36218e1de1347fe71f5e60846158a1e62fd7d992cf4c9c",
+      "source_sha256": "224c55aaa236c8a5acb4b0bdcff0500bb8f63e2fe6ae95c11cb2e11c6cb2c809",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/bisect/bisect_v2.wav",
+      "loudness": [
+        -18.9,
+        -1.5
+      ],
+      "duration": 0.37449
+    },
+    {
+      "target": "assets/audio/sfx/combat/blood_splat_1.wav",
+      "sha256": "66b3302e29db472bbd7efb056e1a8a7ba960068f20d537dd76bcfa94911ff798",
+      "source_sha256": "9629bb727dc25d4144d034cd985d4578ade22eddd69135bfa6b6746b8bf1228f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/blood_splat/blood_splat_v2.wav",
+      "loudness": [
+        -24.9,
+        -1.5
+      ],
+      "duration": 0.481383
+    },
+    {
+      "target": "assets/audio/sfx/combat/body_fall_1.wav",
+      "sha256": "c1fef0bdd3b89baaa80298d021610dfb9cf7c753269962ab797ea78c5ced2ec4",
+      "source_sha256": "6b6a5c22266ab821795182e602d340862439d250c4c7a71f46d3a247bdba0343",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/body_fall/body_fall_v2.wav",
+      "loudness": [
+        -22.0,
+        -1.5
+      ],
+      "duration": 0.504331
+    },
+    {
+      "target": "assets/audio/sfx/combat/boss_die_1.wav",
+      "sha256": "3852582734c12ec2c94ae48328f94eb4b49d1a587a12026078899b779ed51bb8",
+      "source_sha256": "cd6e369ffee5fa6a279fc83e8671a53fe298c01fdf2275efb9a57d0824af2109",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/boss_die/boss_die_v3.wav",
+      "loudness": [
+        -16.0,
+        -2.9
+      ],
+      "duration": 1.305828
+    },
+    {
+      "target": "assets/audio/sfx/combat/boss_heukrang_attack_1.wav",
+      "sha256": "b1d36f2e7a750663f9740ebe396289b759c6c5465bbe1e9a6796473868d93273",
+      "source_sha256": "62aaa5943fb8f0ff4472bec7bfb2422e35ed85ddcb99ad931f267e151769137f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/boss_heukrang_attack/boss_heukrang_attack_v4.wav",
+      "loudness": [
+        -16.0,
+        -2.3
+      ],
+      "duration": 0.989048
+    },
+    {
+      "target": "assets/audio/sfx/combat/boss_heukrang_attack_2.wav",
+      "sha256": "b1d36f2e7a750663f9740ebe396289b759c6c5465bbe1e9a6796473868d93273",
+      "source_sha256": "62aaa5943fb8f0ff4472bec7bfb2422e35ed85ddcb99ad931f267e151769137f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/boss_heukrang_attack/boss_heukrang_attack_v4.wav",
+      "loudness": [
+        -16.0,
+        -2.3
+      ],
+      "duration": 0.989048
+    },
+    {
+      "target": "assets/audio/sfx/combat/boss_heukrang_attack_3.wav",
+      "sha256": "b1d36f2e7a750663f9740ebe396289b759c6c5465bbe1e9a6796473868d93273",
+      "source_sha256": "62aaa5943fb8f0ff4472bec7bfb2422e35ed85ddcb99ad931f267e151769137f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/boss_heukrang_attack/boss_heukrang_attack_v4.wav",
+      "loudness": [
+        -16.0,
+        -2.3
+      ],
+      "duration": 0.989048
+    },
+    {
+      "target": "assets/audio/sfx/combat/boss_roar_1.wav",
+      "sha256": "19b550183654b96f4e5f30861cd118dcc558cc78f963c4d314d3bd1df5141440",
+      "source_sha256": "8fa8cd51729f1c6e6e3fe0fd89662b053eb450a9646bec23c9183abaed514c68",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/boss_roar/boss_roar_v8.wav",
+      "loudness": [
+        -22.0,
+        -1.5
+      ],
+      "duration": 0.993311
+    },
+    {
+      "target": "assets/audio/sfx/combat/boss_roar_2.wav",
+      "sha256": "5c1902b22e5497ca91f698559e20a56160f7fedc4abcf35f33f1619d2def9b3c",
+      "source_sha256": "3a7ac5b78864d334e581f8501716a704ff69326f5289bcbd2cd32ddc6edf83a6",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/boss_roar/boss_roar_v7.wav",
+      "loudness": [
+        -17.9,
+        -1.5
+      ],
+      "duration": 0.931701
+    },
+    {
+      "target": "assets/audio/sfx/combat/burn_1.wav",
+      "sha256": "41585f31a066ffb0787c36c1b231ca36c8eacfb43c1a111fe2805b0c18824d34",
+      "source_sha256": "b0ca57c74b44b89b331519b022de90845ea2ef19a57c5c7b7c53dd7d9b632ba4",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/burn/burn_v1.wav",
+      "loudness": [
+        -23.3,
+        -1.7
+      ],
+      "duration": 0.18873
+    },
+    {
+      "target": "assets/audio/sfx/combat/combo_3_1.wav",
+      "sha256": "ece2d16f1764adafcb00353f175b1f93e6f33553c72606f4cf8b089e2518e311",
+      "source_sha256": "7ee56d14f0a8e86eb49b984b5c6340eeca3e055ddac38560dc47f95d58952f0d",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/combo_3/combo_3_v1.wav",
+      "loudness": [
+        -23.0,
+        -1.6
+      ],
+      "duration": 0.284467
+    },
+    {
+      "target": "assets/audio/sfx/combat/combo_5_1.wav",
+      "sha256": "0a900f7fb45410a289c6536a990cbf9c6542f83ce5d61994d609e929cb44a37d",
+      "source_sha256": "ad1f6fa3332898da752b2bb97fb883cce118d9253306081bfb863b4b164c3032",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/combo_5/combo_5_v2.wav",
+      "loudness": [
+        -19.8,
+        -1.5
+      ],
+      "duration": 0.22254
+    },
+    {
+      "target": "assets/audio/sfx/combat/combo_8_1.wav",
+      "sha256": "b5647e9dd08865e56eb110b91910037b3f8a816a58060cdc83220d05403aaf62",
+      "source_sha256": "bf43a0ac940d94451eb95f273aea0dc30d9499d7e86140f87c1b0d767aff842d",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/combo_8/combo_8_v2.wav",
+      "loudness": [
+        -22.8,
+        -1.5
+      ],
+      "duration": 0.317846
+    },
+    {
+      "target": "assets/audio/sfx/combat/doho_die_1.wav",
+      "sha256": "d4ec22a8e47531a3cae57a384f96632aee00d206661b2c63864303efc37c491b",
+      "source_sha256": "87e1851ef0a84c06925ac5ef2d9115fdbe9e29bfcbcb1dc2bef8fc5626825832",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/doho_die/doho_die_v3.wav",
+      "loudness": [
+        -16.0,
+        -2.4
+      ],
+      "duration": 0.986803
+    },
+    {
+      "target": "assets/audio/sfx/combat/doho_hurt_1.wav",
+      "sha256": "f362120f19878a1c9b13e01af0497cff1d13b764794fa16182dbf2bbe4e55787",
+      "source_sha256": "4dac0a64293eb46dff9b431c3ce030fe0600adb3d23ce8b8dd8de26df8249495",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/doho_hurt/doho_hurt_v3.wav",
+      "loudness": [
+        -16.7,
+        -1.5
+      ],
+      "duration": 0.461814
+    },
+    {
+      "target": "assets/audio/sfx/combat/doho_hurt_2.wav",
+      "sha256": "e20eb4919e3d17e63ac8830502e04bdc4b44da015c00cef8aa97f41bf65db257",
+      "source_sha256": "0bb90d0d44e486d0add3e0d8f629174580bab85dedaab7f0c248c6b7c3cc41d0",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/doho_hurt/doho_hurt_v4.wav",
+      "loudness": [
+        -18.5,
+        -1.5
+      ],
+      "duration": 0.526984
+    },
+    {
+      "target": "assets/audio/sfx/combat/doho_kiai_1.wav",
+      "sha256": "0186a1bd7bc88556d0508c77e010fc1a43ec5c554e1153f1dfe6ddb78e1150ff",
+      "source_sha256": "fae6cdf9dab6f4f1dda39bbc157ec9b3ea27d6508a21cc395d8d4c5c615f671f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/doho_kiai/doho_kiai_v1.wav",
+      "loudness": [
+        -19.2,
+        -1.5
+      ],
+      "duration": 0.443719
+    },
+    {
+      "target": "assets/audio/sfx/combat/doho_kiai_2.wav",
+      "sha256": "0186a1bd7bc88556d0508c77e010fc1a43ec5c554e1153f1dfe6ddb78e1150ff",
+      "source_sha256": "fae6cdf9dab6f4f1dda39bbc157ec9b3ea27d6508a21cc395d8d4c5c615f671f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/doho_kiai/doho_kiai_v1.wav",
+      "loudness": [
+        -19.2,
+        -1.5
+      ],
+      "duration": 0.443719
+    },
+    {
+      "target": "assets/audio/sfx/combat/doho_kiai_3.wav",
+      "sha256": "0186a1bd7bc88556d0508c77e010fc1a43ec5c554e1153f1dfe6ddb78e1150ff",
+      "source_sha256": "fae6cdf9dab6f4f1dda39bbc157ec9b3ea27d6508a21cc395d8d4c5c615f671f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/doho_kiai/doho_kiai_v1.wav",
+      "loudness": [
+        -19.2,
+        -1.5
+      ],
+      "duration": 0.443719
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_attack_1.wav",
+      "sha256": "fe271b2aad838973220149deadda135a5206a9a86f9020cdac866c1cd68c016e",
+      "source_sha256": "0ecff8e9c193aa7e84505c2bb900e1ac66d29c34e602c5327ce3bc2e334e0cf6",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/monster_attack/monster_attack_v1.wav",
+      "loudness": [
+        -18.0,
+        -1.5
+      ],
+      "duration": 0.975964
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_attack_2.wav",
+      "sha256": "fe271b2aad838973220149deadda135a5206a9a86f9020cdac866c1cd68c016e",
+      "source_sha256": "0ecff8e9c193aa7e84505c2bb900e1ac66d29c34e602c5327ce3bc2e334e0cf6",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/monster_attack/monster_attack_v1.wav",
+      "loudness": [
+        -18.0,
+        -1.5
+      ],
+      "duration": 0.975964
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_attack_3.wav",
+      "sha256": "fe271b2aad838973220149deadda135a5206a9a86f9020cdac866c1cd68c016e",
+      "source_sha256": "0ecff8e9c193aa7e84505c2bb900e1ac66d29c34e602c5327ce3bc2e334e0cf6",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/monster_attack/monster_attack_v1.wav",
+      "loudness": [
+        -18.0,
+        -1.5
+      ],
+      "duration": 0.975964
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_die_1.wav",
+      "sha256": "3ede50bbab99e5fbe4b1d8fd61b6e4369d073a0dfce49e3ae0a28185d5886910",
+      "source_sha256": "09ace0cd820cf35f1f3515e22374f04a48b5a9c5f7a233a3b03f91689b5d789e",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/enemy_die/enemy_die_v6.wav",
+      "loudness": [
+        -20.8,
+        -1.5
+      ],
+      "duration": 0.716576
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_die_2.wav",
+      "sha256": "3ede50bbab99e5fbe4b1d8fd61b6e4369d073a0dfce49e3ae0a28185d5886910",
+      "source_sha256": "09ace0cd820cf35f1f3515e22374f04a48b5a9c5f7a233a3b03f91689b5d789e",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/enemy_die/enemy_die_v6.wav",
+      "loudness": [
+        -20.8,
+        -1.5
+      ],
+      "duration": 0.716576
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_hurt_1.wav",
+      "sha256": "59bd9f650879f95427d9b35b22fd747cc780d618b0ff14ad9471d5d22fa577a4",
+      "source_sha256": "7bca2a3b514972bcb8b679e2924505b764732adea7b42cab96b8f5973a750f14",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/enemy_hurt/enemy_hurt_v5.wav",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 0.591066
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_hurt_2.wav",
+      "sha256": "59bd9f650879f95427d9b35b22fd747cc780d618b0ff14ad9471d5d22fa577a4",
+      "source_sha256": "7bca2a3b514972bcb8b679e2924505b764732adea7b42cab96b8f5973a750f14",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/enemy_hurt/enemy_hurt_v5.wav",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 0.591066
+    },
+    {
+      "target": "assets/audio/sfx/combat/enemy_hurt_3.wav",
+      "sha256": "59bd9f650879f95427d9b35b22fd747cc780d618b0ff14ad9471d5d22fa577a4",
+      "source_sha256": "7bca2a3b514972bcb8b679e2924505b764732adea7b42cab96b8f5973a750f14",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/enemy_hurt/enemy_hurt_v5.wav",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 0.591066
+    },
+    {
+      "target": "assets/audio/sfx/combat/freeze_1.wav",
+      "sha256": "5f511a8d72c88d536bff840dbeb19e0a4450bda62126ad9152304ecd7c70bc44",
+      "source_sha256": "ea7ba695a788d6b02035a49e6c58ecedf3e26c1547d27cf4b28ddc3d18899346",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/freeze/freeze_v1.wav",
+      "loudness": [
+        -24.7,
+        -1.5
+      ],
+      "duration": 0.554444
+    },
+    {
+      "target": "assets/audio/sfx/combat/hit_1.wav",
+      "sha256": "ffe7bbbbe037e16ae6308d97729520837a2fa464890afe33b5ff4706ec967009",
+      "source_sha256": "0226b859899fabe7fe7707119347b9f7446a11f8e8d0734ad78d867cd82bf78f",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/hit/hit_v1.wav",
+      "loudness": [
+        -23.8,
+        -1.5
+      ],
+      "duration": 0.365918
+    },
+    {
+      "target": "assets/audio/sfx/combat/hit_2.wav",
+      "sha256": "e6432a2dd90192ea15d92b2d6baea3b1d68cfb3f976b00d2b6d58ff890c59f28",
+      "source_sha256": "5d461fbb0efd6cd3cb31ae0d4f513d1846dd1c27d7dca3557c6ccae6fe68b304",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/hit/hit_v3.wav",
+      "loudness": [
+        -22.3,
+        -1.5
+      ],
+      "duration": 0.31712
+    },
+    {
+      "target": "assets/audio/sfx/combat/hit_3.wav",
+      "sha256": "ffe7bbbbe037e16ae6308d97729520837a2fa464890afe33b5ff4706ec967009",
+      "source_sha256": "0226b859899fabe7fe7707119347b9f7446a11f8e8d0734ad78d867cd82bf78f",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/hit/hit_v1.wav",
+      "loudness": [
+        -23.8,
+        -1.5
+      ],
+      "duration": 0.365918
+    },
+    {
+      "target": "assets/audio/sfx/combat/hit_4.wav",
+      "sha256": "ffe7bbbbe037e16ae6308d97729520837a2fa464890afe33b5ff4706ec967009",
+      "source_sha256": "0226b859899fabe7fe7707119347b9f7446a11f8e8d0734ad78d867cd82bf78f",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/hit/hit_v1.wav",
+      "loudness": [
+        -23.8,
+        -1.5
+      ],
+      "duration": 0.365918
+    },
+    {
+      "target": "assets/audio/sfx/combat/hit_crit_1.wav",
+      "sha256": "22c03f42b2db14048b882e76c70748330110c673d3b9928f7ad51eba5e9076ec",
+      "source_sha256": "f395b6022d8aeb0ac72fc14a935944fa630ea7e5b07eccaa450a29067b579b13",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/hit_crit/hit_crit_v2.wav",
+      "loudness": [
+        -23.8,
+        -1.5
+      ],
+      "duration": 0.340612
+    },
+    {
+      "target": "assets/audio/sfx/combat/hit_crit_2.wav",
+      "sha256": "22c03f42b2db14048b882e76c70748330110c673d3b9928f7ad51eba5e9076ec",
+      "source_sha256": "f395b6022d8aeb0ac72fc14a935944fa630ea7e5b07eccaa450a29067b579b13",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/hit_crit/hit_crit_v2.wav",
+      "loudness": [
+        -23.8,
+        -1.5
+      ],
+      "duration": 0.340612
+    },
+    {
+      "target": "assets/audio/sfx/combat/hit_crit_low_1.wav",
+      "sha256": "63e283cdeadc75101e07247d60e019243a479b5fc19174f41d960ae52efcf580",
+      "source_sha256": "a95aa16d6cf73eddeefad10bf78ea080728956ac17dd940b4def9bd4378c6971",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/hit_crit_low/hit_crit_low_v1.wav",
+      "loudness": [
+        -20.8,
+        -1.5
+      ],
+      "duration": 0.295941
+    },
+    {
+      "target": "assets/audio/sfx/combat/kill_extra_1.wav",
+      "sha256": "aefab4bf0f1d20068cb567b4ccdcce9e944682177b8ed3d51b026194f67a6010",
+      "source_sha256": "dc6e6ba70dadcb97043d4c5cc9ed3c6aeea1b8434505984729401ccac2606637",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/kill_extra/kill_extra_v1.wav",
+      "loudness": [
+        -22.0,
+        -1.5
+      ],
+      "duration": 0.152268
+    },
+    {
+      "target": "assets/audio/sfx/combat/player_die_1.wav",
+      "sha256": "ee3d7e71acc5ed144c90f4687dc5ecac18d0d155b4437b40448d969b0b219408",
+      "source_sha256": "4f94e0f01e57ba6c429792e4c87962894545457ab3bde3bb19034d7cf969bbb6",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/player_die/player_die_v1.wav",
+      "loudness": [
+        -17.8,
+        -1.5
+      ],
+      "duration": 0.556531
+    },
+    {
+      "target": "assets/audio/sfx/combat/player_hurt_1.wav",
+      "sha256": "cf747f3f826243b68fdd2117f9e1c0c36edb076c721f363c20aa83ae06316462",
+      "source_sha256": "391c8dea1096f2366cd52d8a44b03d518f06e77851332c789cc57cc8cad1cd25",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/player_hurt/player_hurt_v1.wav",
+      "loudness": [
+        -20.6,
+        -1.5
+      ],
+      "duration": 0.329048
+    },
+    {
+      "target": "assets/audio/sfx/combat/player_hurt_2.wav",
+      "sha256": "cf747f3f826243b68fdd2117f9e1c0c36edb076c721f363c20aa83ae06316462",
+      "source_sha256": "391c8dea1096f2366cd52d8a44b03d518f06e77851332c789cc57cc8cad1cd25",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/player_hurt/player_hurt_v1.wav",
+      "loudness": [
+        -20.6,
+        -1.5
+      ],
+      "duration": 0.329048
+    },
+    {
+      "target": "assets/audio/sfx/combat/player_hurt_3.wav",
+      "sha256": "cf747f3f826243b68fdd2117f9e1c0c36edb076c721f363c20aa83ae06316462",
+      "source_sha256": "391c8dea1096f2366cd52d8a44b03d518f06e77851332c789cc57cc8cad1cd25",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/player_hurt/player_hurt_v1.wav",
+      "loudness": [
+        -20.6,
+        -1.5
+      ],
+      "duration": 0.329048
+    },
+    {
+      "target": "assets/audio/sfx/combat/shatter_1.wav",
+      "sha256": "7abdd9298d769e4df8bd4566801aef6dd837cea1917bf076793e2837c4110947",
+      "source_sha256": "a7d4142e1059bc4f0932f7c8eccc50213da968c92504ceddc962bea0ef035bf2",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/shatter/shatter_v1.wav",
+      "loudness": [
+        -33.2,
+        -1.5
+      ],
+      "duration": 0.581383
+    },
+    {
+      "target": "assets/audio/sfx/combat/shoot_1.wav",
+      "sha256": "1523d4e2ecc195efad837d153a93b7432a30b2d4d9f4cd75ffdcc2fb72bafd58",
+      "source_sha256": "ae478d3b1ec4abf56f912775bc78894e9372b15594a15ad104d80c0fd2cf93a9",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/shoot/shoot_v2.wav",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 0.247438
+    },
+    {
+      "target": "assets/audio/sfx/combat/shoot_2.wav",
+      "sha256": "1523d4e2ecc195efad837d153a93b7432a30b2d4d9f4cd75ffdcc2fb72bafd58",
+      "source_sha256": "ae478d3b1ec4abf56f912775bc78894e9372b15594a15ad104d80c0fd2cf93a9",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/shoot/shoot_v2.wav",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 0.247438
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_dash_strike_1.wav",
+      "sha256": "982b4b3e5e4ed11813aada9167df9220994a6837e3e8021809cedf47d0ff8c41",
+      "source_sha256": "f59847f52a057d989d79284cd91d246912742f0096d766373b1003ff7ee4c403",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_dash_strike/skill_dash_strike_v1.wav",
+      "loudness": [
+        -16.0,
+        -2.1
+      ],
+      "duration": 0.363923
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_dash_strike_2.wav",
+      "sha256": "982b4b3e5e4ed11813aada9167df9220994a6837e3e8021809cedf47d0ff8c41",
+      "source_sha256": "f59847f52a057d989d79284cd91d246912742f0096d766373b1003ff7ee4c403",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_dash_strike/skill_dash_strike_v1.wav",
+      "loudness": [
+        -16.0,
+        -2.1
+      ],
+      "duration": 0.363923
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_dash_strike_3.wav",
+      "sha256": "982b4b3e5e4ed11813aada9167df9220994a6837e3e8021809cedf47d0ff8c41",
+      "source_sha256": "f59847f52a057d989d79284cd91d246912742f0096d766373b1003ff7ee4c403",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_dash_strike/skill_dash_strike_v1.wav",
+      "loudness": [
+        -16.0,
+        -2.1
+      ],
+      "duration": 0.363923
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_dash_strike_impact_1.wav",
+      "sha256": "0e43140bf54e09f492d58a770431d7458434904234bfd6bbc8f6f9cb1afff6dc",
+      "source_sha256": "00dbbe3f76c883ebbdfe1a8e3eb448cbf3d8b0f4800579b5d0e02563b9d84875",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_dash_strike_impact/skill_dash_strike_impact_v6.wav",
+      "loudness": [
+        -19.5,
+        -1.5
+      ],
+      "duration": 0.340567
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_dash_strike_impact_2.wav",
+      "sha256": "0e43140bf54e09f492d58a770431d7458434904234bfd6bbc8f6f9cb1afff6dc",
+      "source_sha256": "00dbbe3f76c883ebbdfe1a8e3eb448cbf3d8b0f4800579b5d0e02563b9d84875",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_dash_strike_impact/skill_dash_strike_impact_v6.wav",
+      "loudness": [
+        -19.5,
+        -1.5
+      ],
+      "duration": 0.340567
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_slash_1.wav",
+      "sha256": "dca8544fbd2a6096416d6f213c4c8211c0f49bd0ae7540a881f33bdbfb5f5d48",
+      "source_sha256": "7dce74acb1a98d79c8723eae3cfc198038298b8d3c457d7fff3f0eaad677e50a",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_slash/skill_slash_v4.wav",
+      "loudness": [
+        -16.0,
+        -2.6
+      ],
+      "duration": 0.464059
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_slash_2.wav",
+      "sha256": "dca8544fbd2a6096416d6f213c4c8211c0f49bd0ae7540a881f33bdbfb5f5d48",
+      "source_sha256": "7dce74acb1a98d79c8723eae3cfc198038298b8d3c457d7fff3f0eaad677e50a",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_slash/skill_slash_v4.wav",
+      "loudness": [
+        -16.0,
+        -2.6
+      ],
+      "duration": 0.464059
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_slash_3.wav",
+      "sha256": "dca8544fbd2a6096416d6f213c4c8211c0f49bd0ae7540a881f33bdbfb5f5d48",
+      "source_sha256": "7dce74acb1a98d79c8723eae3cfc198038298b8d3c457d7fff3f0eaad677e50a",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_slash/skill_slash_v4.wav",
+      "loudness": [
+        -16.0,
+        -2.6
+      ],
+      "duration": 0.464059
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_slash_impact_1.wav",
+      "sha256": "9726dcc3386cdb8751de52658600f56d396f6985009bfcc508b487ad4f4973e1",
+      "source_sha256": "144dcfbb44bfafd012f403c7d1e6c4913f2a9b9b7ab2ceb9bc862fce6bbba0c2",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_slash_impact/skill_slash_impact_v7.wav",
+      "loudness": [
+        -21.6,
+        -1.7
+      ],
+      "duration": 0.497959
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_slash_impact_2.wav",
+      "sha256": "9726dcc3386cdb8751de52658600f56d396f6985009bfcc508b487ad4f4973e1",
+      "source_sha256": "144dcfbb44bfafd012f403c7d1e6c4913f2a9b9b7ab2ceb9bc862fce6bbba0c2",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_slash_impact/skill_slash_impact_v7.wav",
+      "loudness": [
+        -21.6,
+        -1.7
+      ],
+      "duration": 0.497959
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_slash_impact_3.wav",
+      "sha256": "9726dcc3386cdb8751de52658600f56d396f6985009bfcc508b487ad4f4973e1",
+      "source_sha256": "144dcfbb44bfafd012f403c7d1e6c4913f2a9b9b7ab2ceb9bc862fce6bbba0c2",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_slash_impact/skill_slash_impact_v7.wav",
+      "loudness": [
+        -21.6,
+        -1.7
+      ],
+      "duration": 0.497959
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_whirl_1.wav",
+      "sha256": "826743638f42c18888a21b2fe6f973faa6c6553bccada606de3a1076497a1cad",
+      "source_sha256": "c6c4da8767c35875bc02a6c7b6e6ce4626b9a61b415870a28d75b44719c957a1",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/skill_whirl/skill_whirl_v1.wav",
+      "loudness": [
+        -16.0,
+        -5.2
+      ],
+      "duration": 1.194059
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_whirl_2.wav",
+      "sha256": "c58e4f3aeb4d569d3e1e5d0a6c01452f6eafb6d185af13db088eb3e3abda4864",
+      "source_sha256": "044fe6d509518dcc2648fd25cdbefe18fce8a2dc8d6d4938cc0ad265ddfc9ecc",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/skill_whirl/skill_whirl_v2.wav",
+      "loudness": [
+        -17.2,
+        -1.5
+      ],
+      "duration": 1.165193
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_whirl_impact_1.wav",
+      "sha256": "d5b4853c7a3656ef631b7007001c65cf3c78edb855d05db872b1a070235686f5",
+      "source_sha256": "6a2bc0b00b0a79a091dc092b219b89fdac1ac2ae9182d519afbbe6bfbaf8649d",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_whirl_impact/skill_whirl_impact_v1.wav",
+      "loudness": [
+        -16.0,
+        -1.9
+      ],
+      "duration": 0.427642
+    },
+    {
+      "target": "assets/audio/sfx/combat/skill_whirl_impact_2.wav",
+      "sha256": "d5b4853c7a3656ef631b7007001c65cf3c78edb855d05db872b1a070235686f5",
+      "source_sha256": "6a2bc0b00b0a79a091dc092b219b89fdac1ac2ae9182d519afbbe6bfbaf8649d",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/skill_whirl_impact/skill_whirl_impact_v1.wav",
+      "loudness": [
+        -16.0,
+        -1.9
+      ],
+      "duration": 0.427642
+    },
+    {
+      "target": "assets/audio/sfx/combat/soul_scatter_1.wav",
+      "sha256": "eceb46d8df66d33bb7432d60ed9abc90bd4f3fe4c5c3efacb99f1ce15c7dae82",
+      "source_sha256": "c5dbe09d83821f5118d5091ca6526eae89e28469d4c7b9cd3b4c4e6f4eb6988a",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/soul_scatter/soul_scatter_v1.wav",
+      "loudness": [
+        -16.0,
+        -3.4
+      ],
+      "duration": 0.566349
+    },
+    {
+      "target": "assets/audio/sfx/combat/step_stone_1.wav",
+      "sha256": "ab5334132d2829acb86fea250b8ff49a1f22a5a939d30b61c87bdeb1ff1bbbf9",
+      "source_sha256": "48899fc4076230f4b9f7c975ccfc4cae51ae715a5d6585a0b7c9a0cfc8904e52",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/step_stone/step_stone_v1.wav",
+      "loudness": [
+        -20.0,
+        -1.5
+      ],
+      "duration": 0.572063
+    },
+    {
+      "target": "assets/audio/sfx/combat/step_stone_2.wav",
+      "sha256": "ab5334132d2829acb86fea250b8ff49a1f22a5a939d30b61c87bdeb1ff1bbbf9",
+      "source_sha256": "48899fc4076230f4b9f7c975ccfc4cae51ae715a5d6585a0b7c9a0cfc8904e52",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/step_stone/step_stone_v1.wav",
+      "loudness": [
+        -20.0,
+        -1.5
+      ],
+      "duration": 0.572063
+    },
+    {
+      "target": "assets/audio/sfx/combat/step_stone_3.wav",
+      "sha256": "ab5334132d2829acb86fea250b8ff49a1f22a5a939d30b61c87bdeb1ff1bbbf9",
+      "source_sha256": "48899fc4076230f4b9f7c975ccfc4cae51ae715a5d6585a0b7c9a0cfc8904e52",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/step_stone/step_stone_v1.wav",
+      "loudness": [
+        -20.0,
+        -1.5
+      ],
+      "duration": 0.572063
+    },
+    {
+      "target": "assets/audio/sfx/combat/step_stone_4.wav",
+      "sha256": "ab5334132d2829acb86fea250b8ff49a1f22a5a939d30b61c87bdeb1ff1bbbf9",
+      "source_sha256": "48899fc4076230f4b9f7c975ccfc4cae51ae715a5d6585a0b7c9a0cfc8904e52",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/step_stone/step_stone_v1.wav",
+      "loudness": [
+        -20.0,
+        -1.5
+      ],
+      "duration": 0.572063
+    },
+    {
+      "target": "assets/audio/sfx/combat/sword_swing_1.wav",
+      "sha256": "3161e02498b753a9719f3f8331a2c6d8df9fe93c3a9a6f176ddfac6a67289c9b",
+      "source_sha256": "63205ed629a422c683bcd7fabb8506bf9fa43dd5e1f599965f6ad72f05d02601",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/sword_swing/sword_swing_v2.wav",
+      "loudness": [
+        -22.6,
+        -1.7
+      ],
+      "duration": 0.245306
+    },
+    {
+      "target": "assets/audio/sfx/combat/sword_swing_2.wav",
+      "sha256": "3161e02498b753a9719f3f8331a2c6d8df9fe93c3a9a6f176ddfac6a67289c9b",
+      "source_sha256": "63205ed629a422c683bcd7fabb8506bf9fa43dd5e1f599965f6ad72f05d02601",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/sword_swing/sword_swing_v2.wav",
+      "loudness": [
+        -22.6,
+        -1.7
+      ],
+      "duration": 0.245306
+    },
+    {
+      "target": "assets/audio/sfx/combat/sword_swing_3.wav",
+      "sha256": "3161e02498b753a9719f3f8331a2c6d8df9fe93c3a9a6f176ddfac6a67289c9b",
+      "source_sha256": "63205ed629a422c683bcd7fabb8506bf9fa43dd5e1f599965f6ad72f05d02601",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/sword_swing/sword_swing_v2.wav",
+      "loudness": [
+        -22.6,
+        -1.7
+      ],
+      "duration": 0.245306
+    },
+    {
+      "target": "assets/audio/sfx/combat/sword_swing_4.wav",
+      "sha256": "3161e02498b753a9719f3f8331a2c6d8df9fe93c3a9a6f176ddfac6a67289c9b",
+      "source_sha256": "63205ed629a422c683bcd7fabb8506bf9fa43dd5e1f599965f6ad72f05d02601",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/sword_swing/sword_swing_v2.wav",
+      "loudness": [
+        -22.6,
+        -1.7
+      ],
+      "duration": 0.245306
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_cold_burst_1.wav",
+      "sha256": "ad7fd7b7453e51c83a0cb300b7589f73cc96fd37a9c2c89469da57536d37b1d4",
+      "source_sha256": "552a0a338e5f75154a735877d49ca6c21acc3691da990fdc5339db5d0a9febf4",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/talisman_cold_burst/talisman_cold_burst_v3.wav",
+      "loudness": [
+        -26.2,
+        -1.5
+      ],
+      "duration": 0.566508
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_cold_burst_2.wav",
+      "sha256": "ad7fd7b7453e51c83a0cb300b7589f73cc96fd37a9c2c89469da57536d37b1d4",
+      "source_sha256": "552a0a338e5f75154a735877d49ca6c21acc3691da990fdc5339db5d0a9febf4",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/talisman_cold_burst/talisman_cold_burst_v3.wav",
+      "loudness": [
+        -26.2,
+        -1.5
+      ],
+      "duration": 0.566508
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_fire_hit_1.wav",
+      "sha256": "5132019f6046c1b926faba06ee5053db12d268af7a4a30d79dd511db7c145b7a",
+      "source_sha256": "61128bbd2f12bf42ccaa6783a20212b69d96a5296b1ec88680fcc1566085661a",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/talisman_fire_hit/talisman_fire_hit_v2.wav",
+      "loudness": [
+        -21.5,
+        -1.5
+      ],
+      "duration": 0.446553
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_master_attack_1.wav",
+      "sha256": "c05faf81c47ea82afa8f259ee4f037b9434a3a5c0eb79f494fa23252a8c67154",
+      "source_sha256": "27325075954269a696daf308eaee367c5eac9ae052feb0469d2091e51f713df7",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/talisman_master_attack/talisman_master_attack_v7.wav",
+      "loudness": [
+        -16.0,
+        -2.1
+      ],
+      "duration": 0.365465
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_master_attack_2.wav",
+      "sha256": "c05faf81c47ea82afa8f259ee4f037b9434a3a5c0eb79f494fa23252a8c67154",
+      "source_sha256": "27325075954269a696daf308eaee367c5eac9ae052feb0469d2091e51f713df7",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/talisman_master_attack/talisman_master_attack_v7.wav",
+      "loudness": [
+        -16.0,
+        -2.1
+      ],
+      "duration": 0.365465
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_throw_1.wav",
+      "sha256": "2ef6ae2aac7bfba8025bb613041711ff9559ede6095e21984493f86b65a525bb",
+      "source_sha256": "61997695603d39ff9a9df9f3636d03e1ae659a65e54ea8548b0d5ece11618b3f",
+      "source": "C:/workspace/joseon/tmp/audio566/sfx/talisman_paper/talisman_paper_v1.wav",
+      "loudness": [
+        -26.8,
+        -1.5
+      ],
+      "duration": 0.114921
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_throw_2.wav",
+      "sha256": "daaeb41376a022834564e79e4b901866f9f0db560ad9fa24b678d06e1f598f6f",
+      "source_sha256": "08c573dffd53c0b08830153a918bba846b2495fe3977d156e2982f56e9bceff2",
+      "source": "C:/workspace/joseon/tmp/audio566/sfx/talisman_paper/talisman_paper_v3.wav",
+      "loudness": [
+        -26.5,
+        -1.5
+      ],
+      "duration": 0.441202
+    },
+    {
+      "target": "assets/audio/sfx/combat/talisman_throw_3.wav",
+      "sha256": "62a43e8d49f776aa214dea15f3e7d928df53a98a2f20b723ea2bf97b8d118dd3",
+      "source_sha256": "403e99879ff600b48751861b899feb54039fbf28d3b35acab22f9e0ac96073e0",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/talisman_throw/talisman_throw_v1.wav",
+      "loudness": [
+        -28.2,
+        -1.5
+      ],
+      "duration": 0.387574
+    },
+    {
+      "target": "assets/audio/sfx/combat/whiff_1.wav",
+      "sha256": "1c281fae770c0be77f2a83ca63049419347dfc48e6137b5fc5b077b0f96a7a46",
+      "source_sha256": "7e447ec0749ee08641b746cbf82f6afd94bb5cffd6e3f8af2be0dcd7b04e540f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/whiff/whiff_v2.wav",
+      "loudness": [
+        -29.5,
+        -1.7
+      ],
+      "duration": 0.571247
+    },
+    {
+      "target": "assets/audio/sfx/combat/whiff_2.wav",
+      "sha256": "1c281fae770c0be77f2a83ca63049419347dfc48e6137b5fc5b077b0f96a7a46",
+      "source_sha256": "7e447ec0749ee08641b746cbf82f6afd94bb5cffd6e3f8af2be0dcd7b04e540f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/whiff/whiff_v2.wav",
+      "loudness": [
+        -29.5,
+        -1.7
+      ],
+      "duration": 0.571247
+    },
+    {
+      "target": "assets/audio/sfx/ui/coin_1.wav",
+      "sha256": "c70ab00ed458cfdfaa46ce0501bf63911dba9d6ad75f22ee65e23cbbda7fa88a",
+      "source_sha256": "3469a43e737da5da68111a738265a1a7cb162845993dfe48b64709ef84043209",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/coin/coin_v1.wav",
+      "loudness": [
+        -20.4,
+        -1.5
+      ],
+      "duration": 0.545465
+    },
+    {
+      "target": "assets/audio/sfx/ui/coin_2.wav",
+      "sha256": "d9952d75968b5af0494ad0ef415572c70608547c92e3149c250e2dc16d372bc4",
+      "source_sha256": "2a35be172c4dfe27bac090c68d68664faf22e44e67590361e3beda777381f7a3",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/coin/coin_v2.wav",
+      "loudness": [
+        -23.5,
+        -1.7
+      ],
+      "duration": 0.504717
+    },
+    {
+      "target": "assets/audio/sfx/ui/equip_1.wav",
+      "sha256": "deb45f9a67b9486f04b4dba81503d5eacd54ac89b239c536f7f9a295ab9040ca",
+      "source_sha256": "1c7fb7cd8bba7ba36fa0c7b5d2865488db4cbe364c82fdfd4a40ef15c3d93264",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/equip/equip_v2.wav",
+      "loudness": [
+        -16.0,
+        -2.5
+      ],
+      "duration": 0.596576
+    },
+    {
+      "target": "assets/audio/sfx/ui/equip_2.wav",
+      "sha256": "cdbcba4847af315a3a56786a8e054739747a2ace2c3c965d508f82e5924cf3fd",
+      "source_sha256": "6999df5570b3c1cf5a65bc5c7eca83881c5d41c892d75523ceb366f295905d9f",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/equip/equip_v1.wav",
+      "loudness": [
+        -22.7,
+        -1.5
+      ],
+      "duration": 0.233537
+    },
+    {
+      "target": "assets/audio/sfx/ui/ui_close_1.wav",
+      "sha256": "564b555c643b1d15e790bcdd3c6490ae977f0d207817ea8ab3cd1155e0ea6079",
+      "source_sha256": "1993cedb6d23f5f1978037dd77cc9042a8eda3ae60d7dd14aaf23244b4195335",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/ui_close/ui_close_v1.wav",
+      "loudness": [
+        -20.9,
+        -1.5
+      ],
+      "duration": 0.300612
+    },
+    {
+      "target": "assets/audio/sfx/ui/ui_open_1.wav",
+      "sha256": "fbc83452a754f818ce7307652c9a6dfd4338006ebb3b98ec2fb402f1e8546593",
+      "source_sha256": "940d09d36687c34b26bd78929e3a421cefe1aba99effbf49ef59b68266bbbec5",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/ui_open/ui_open_v2.wav",
+      "loudness": [
+        -24.1,
+        -1.5
+      ],
+      "duration": 0.41068
+    },
+    {
+      "target": "assets/audio/sfx/world/doho_levelup_1.wav",
+      "sha256": "6365e4adeac79f56aa759b5660abda60bf1010f39d10218c6280b196afa63f26",
+      "source_sha256": "d0223648af312e755143d04f75d506cd82349bfcd36cf4343345d2aa2b32ea8b",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/doho_levelup/doho_levelup_v1.wav",
+      "loudness": [
+        -18.3,
+        -1.5
+      ],
+      "duration": 0.565079
+    },
+    {
+      "target": "assets/audio/sfx/world/drop_1.wav",
+      "sha256": "59ca1422a8a52c9135abf3776600eadf711f2d4fbe9895b445a3bb60be15221f",
+      "source_sha256": "57c39d737d50fbc108ed07ba846436a33f2476c563ce1bfabd28342e10c2de47",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/drop/drop_v2.wav",
+      "loudness": [
+        -24.1,
+        -1.5
+      ],
+      "duration": 0.403741
+    },
+    {
+      "target": "assets/audio/sfx/world/drop_2.wav",
+      "sha256": "59ca1422a8a52c9135abf3776600eadf711f2d4fbe9895b445a3bb60be15221f",
+      "source_sha256": "57c39d737d50fbc108ed07ba846436a33f2476c563ce1bfabd28342e10c2de47",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/drop/drop_v2.wav",
+      "loudness": [
+        -24.1,
+        -1.5
+      ],
+      "duration": 0.403741
+    },
+    {
+      "target": "assets/audio/sfx/world/level_up_1.wav",
+      "sha256": "602cc0ff18a1848b8a2e33af2b4cf70a9b07e8f715afb362c93ddbae453396a3",
+      "source_sha256": "82964e1b9f03139c4a899c3e8db60d8fa1922918db339f95b45a2228e64e544f",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/level_up/level_up_v3.wav",
+      "loudness": [
+        -16.0,
+        -1.8
+      ],
+      "duration": 0.398662
+    },
+    {
+      "target": "assets/audio/sfx/world/pickup_1.wav",
+      "sha256": "deb45f9a67b9486f04b4dba81503d5eacd54ac89b239c536f7f9a295ab9040ca",
+      "source_sha256": "1c7fb7cd8bba7ba36fa0c7b5d2865488db4cbe364c82fdfd4a40ef15c3d93264",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/equip/equip_v2.wav",
+      "loudness": [
+        -16.0,
+        -2.5
+      ],
+      "duration": 0.596576
+    },
+    {
+      "target": "assets/audio/sfx/world/pickup_2.wav",
+      "sha256": "cdbcba4847af315a3a56786a8e054739747a2ace2c3c965d508f82e5924cf3fd",
+      "source_sha256": "6999df5570b3c1cf5a65bc5c7eca83881c5d41c892d75523ceb366f295905d9f",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/equip/equip_v1.wav",
+      "loudness": [
+        -22.7,
+        -1.5
+      ],
+      "duration": 0.233537
+    },
+    {
+      "target": "assets/audio/sfx/world/pickup_coin_1.wav",
+      "sha256": "c70ab00ed458cfdfaa46ce0501bf63911dba9d6ad75f22ee65e23cbbda7fa88a",
+      "source_sha256": "3469a43e737da5da68111a738265a1a7cb162845993dfe48b64709ef84043209",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/coin/coin_v1.wav",
+      "loudness": [
+        -20.4,
+        -1.5
+      ],
+      "duration": 0.545465
+    },
+    {
+      "target": "assets/audio/sfx/world/pickup_coin_2.wav",
+      "sha256": "d9952d75968b5af0494ad0ef415572c70608547c92e3149c250e2dc16d372bc4",
+      "source_sha256": "2a35be172c4dfe27bac090c68d68664faf22e44e67590361e3beda777381f7a3",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/coin/coin_v2.wav",
+      "loudness": [
+        -23.5,
+        -1.7
+      ],
+      "duration": 0.504717
+    },
+    {
+      "target": "assets/audio/sfx/world/portal_open_1.wav",
+      "sha256": "1db269b85d9a965b96000d877cb87f1464b46b43aa7f67f6dae72d132e4697f5",
+      "source_sha256": "4abc32fa8e6b19ca98a8a96a0c7fd9447370afd65902e96f0cb022b84eed718c",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/portal/portal_v1.wav",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 1.558571
+    },
+    {
+      "target": "assets/audio/sfx/world/portal_open_2.wav",
+      "sha256": "1db269b85d9a965b96000d877cb87f1464b46b43aa7f67f6dae72d132e4697f5",
+      "source_sha256": "4abc32fa8e6b19ca98a8a96a0c7fd9447370afd65902e96f0cb022b84eed718c",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/portal/portal_v1.wav",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 1.558571
+    },
+    {
+      "target": "assets/audio/sfx/world/portal_use_1.wav",
+      "sha256": "1db269b85d9a965b96000d877cb87f1464b46b43aa7f67f6dae72d132e4697f5",
+      "source_sha256": "4abc32fa8e6b19ca98a8a96a0c7fd9447370afd65902e96f0cb022b84eed718c",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/portal/portal_v1.wav",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 1.558571
+    },
+    {
+      "target": "assets/audio/sfx/world/potion_1.wav",
+      "sha256": "db6adbad73a28d3430d9606839bf69cb67c712f2e2d50b39240179b4b3522d10",
+      "source_sha256": "ff89fb7e0eb23948791bbc0d0cb60ee2f747cb8117fde0cf7d2a53717e01fc94",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/potion/potion_v1.wav",
+      "loudness": [
+        -23.9,
+        -1.5
+      ],
+      "duration": 0.18288
+    },
+    {
+      "target": "assets/audio/sfx/world/revive_1.wav",
+      "sha256": "35a52816ef1e9cb1146e8dcc9d52a5309e058c1bad990da938cb4ccbe43d5215",
+      "source_sha256": "68f5eef8d12f68b381a78dfc13d58fb78158929bcfef4b32573c82fb9d8cada8",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/revive/revive_v3.wav",
+      "loudness": [
+        -16.0,
+        -3.4
+      ],
+      "duration": 0.937982
+    },
+    {
+      "target": "assets/audio/sfx/world/seal_release_1.wav",
+      "sha256": "5509c16a37dbca3328aa307441dcf45530a03ad31ca89c8419731967b474ddc4",
+      "source_sha256": "43ab6bfc721ca000615cad01a03da1379dc89a0f5cd31294a0c71d4d046164de",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/seal_release/seal_release_v1.wav",
+      "loudness": [
+        -18.4,
+        -1.5
+      ],
+      "duration": 1.327823
+    },
+    {
+      "target": "assets/audio/sfx/world/stairs_1.wav",
+      "sha256": "328ce96abdd1e151ab4e0cf203f561b72db021f754fb26e310ab30d07ea22b8f",
+      "source_sha256": "82b70c3c33b552e38ae3651e7fadd5f86ce409d927c3b7431e16cb7205651493",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/stairs/stairs_v1.wav",
+      "loudness": [
+        -26.5,
+        -1.5
+      ],
+      "duration": 0.2378
+    },
+    {
+      "target": "assets/audio/sfx/world/step_dirt_1.wav",
+      "sha256": "9e8b9a0726afb2eaa956be3c770d08f745c8d8545e5b226c923e05578f066a94",
+      "source_sha256": "d8ab9e146a31d9a352f3132c40b26d7bf02d6cc73ade07770fba8efd6058f8c4",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/step_dirt/step_dirt_v2.wav",
+      "loudness": [
+        -29.0,
+        -1.5
+      ],
+      "duration": 0.292449
+    },
+    {
+      "target": "assets/audio/sfx/world/step_dirt_2.wav",
+      "sha256": "6dd01b9836c343376a4e6965e495d89383ab16baf455ce2aeaa3b2b4ff2ca1c8",
+      "source_sha256": "490376aebc4f7f30aeaf727b21c28d6082caa7da76a55b1a1f388f1897c1fdf7",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/step_dirt/step_dirt_v1.wav",
+      "loudness": [
+        -27.1,
+        -1.7
+      ],
+      "duration": 0.405873
+    },
+    {
+      "target": "assets/audio/sfx/world/step_dirt_3.wav",
+      "sha256": "d96ac470c3d4a8c683267f513a20864a4dbe44eb58824ea5d4a578dfefb17148",
+      "source_sha256": "352e0c06ab1fedf6b87a3c79d8d4da74379c2b0fb1303f6b45dd2eb6b7d4f593",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/step_dirt/step_dirt_v1.wav",
+      "loudness": [
+        -28.8,
+        -1.5
+      ],
+      "duration": 0.149955
+    },
+    {
+      "target": "assets/audio/sfx/world/step_dirt_4.wav",
+      "sha256": "a045ff687c1ebbc04c67d3058213940059fc3ca11653a390beed24b4f5ffef64",
+      "source_sha256": "66525dd26930c97cf04ccc2e9e58aaa01783701724e3bc3e8720e7dd4849ba6d",
+      "source": "C:/workspace/joseon/tmp/audio559/sfx/step_dirt/step_dirt_v2.wav",
+      "loudness": [
+        -23.7,
+        -1.5
+      ],
+      "duration": 0.23542
+    },
+    {
+      "target": "assets/audio/sfx/world/stone_door_sink_1.wav",
+      "sha256": "d52f44ea1edd271c98308548fc4e977a0874b5dbf9604afc045e8407b38c1fe1",
+      "source_sha256": "ff2de1a65c259cd6f282a3209297c092bb026a0049effe9ec7eda78fd88e144c",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/stone_door_sink/stone_door_sink_v4.wav",
+      "loudness": [
+        -17.3,
+        -1.5
+      ],
+      "duration": 2.471066
+    },
+    {
+      "target": "assets/audio/sfx/world/waypoint_use_1.wav",
+      "sha256": "0640d14c5df5b96fdbaa2ce855ae49d1be0b6b47c06586d254dfe93e9c4740b5",
+      "source_sha256": "da195d458e2fe6c521804203b4df0594ed1586d949e9b5f942307f48715058df",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/waypoint_use/waypoint_use_v2.wav",
+      "loudness": [
+        -19.7,
+        -1.5
+      ],
+      "duration": 0.309478
+    },
+    {
+      "target": "assets/audio/sfx/world/waypoint_wake_1.wav",
+      "sha256": "fb5ad5eec5d30997f4b267e26be4949fe7a0fb3619984df0d40adde2d4b085c3",
+      "source_sha256": "677ec9790adbfd66e25dc014269a14c44960c3a1badd2e06c5ded65b88ad73ae",
+      "source": "C:/workspace/joseon/tmp/audio572/sfx/waypoint_wake/waypoint_wake_v1.wav",
+      "loudness": [
+        -16.9,
+        -1.5
+      ],
+      "duration": 1.308209
+    },
+    {
+      "target": "assets/audio/amb/amb_town.ogg",
+      "sha256": "9f4f88e76ea8a5f03d469c70ddd2a9e0815113cacc3d4821a8d7fc53dc419679",
+      "source_sha256": "544b03434e15c25ecd9e50de3855802931926950d2081c8c9084c5606daae17b",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/ambient_village/ambient_village_v1.wav",
+      "loudness": [
+        -24.6,
+        -2.1
+      ],
+      "duration": 12.0
+    },
+    {
+      "target": "assets/audio/amb/amb_dungeon.ogg",
+      "sha256": "84417afc693d46e60b9d5f5f9a0e438d902c9d7b7caf2cd3dc3dcfa2b7c58f88",
+      "source_sha256": "1f15401082d5153a44183da75e3d75f40f5ec6b6a1237b803866b9289df9b25e",
+      "source": "C:/workspace/joseon/tmp/audio567/sfx/ambient_cave/ambient_cave_v1.wav",
+      "loudness": [
+        -23.7,
+        -6.0
+      ],
+      "duration": 12.0
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_1.wav",
+      "sha256": "63362c45870a59b1ed11b31a02af6b3bd349a7937f4310b95006438b4d20a0f7",
+      "source_sha256": "df515ae95148b5e3fa08304594320c5c27d3844f3cfdd17f71fcca033982c19e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/EV_SHAMAN_QUEST_1.mp3",
+      "loudness": [
+        -18.0,
+        -2.3
+      ],
+      "duration": 4.24
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_2.wav",
+      "sha256": "fdd3e3048358eddb4b8fd0a79a85872432cda223134b2d3fa974e625770355b1",
+      "source_sha256": "5cc096177699b89570563bdd6f1f3f07abe11d184b569cd61ae207f82f4e0645",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/EV_SHAMAN_QUEST_2.mp3",
+      "loudness": [
+        -21.0,
+        -1.5
+      ],
+      "duration": 4.48
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_3.wav",
+      "sha256": "dd4a9c0637673669722b5ab86a286903fa27d411958568fe535cbe80f4a0ed5f",
+      "source_sha256": "743fbe080475ecec4f542a48da06c6e8bef70ba48f414b9d6fc791a260a3064f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/EV_SHAMAN_QUEST_3.mp3",
+      "loudness": [
+        -18.1,
+        -2.9
+      ],
+      "duration": 4.88
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_3B.wav",
+      "sha256": "aedb42ab69a7f125c70a09363e82d56d7cbf52a5ffa9c264cbdf8dd4088c959c",
+      "source_sha256": "eaf8410bd31cdb07765a3461a2156f24382130a93cfb5fd4216cdf8766d89cf0",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/EV_SHAMAN_QUEST_3B.mp3",
+      "loudness": [
+        -17.9,
+        -3.0
+      ],
+      "duration": 5.12
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_3C.wav",
+      "sha256": "d63cfdf678951eb8a314b6f36591fa96d1b1c4334af1866345b17f18da73d0cb",
+      "source_sha256": "326da462a64fc6f17de5848cdc94cb801ac3e11c79bd2a0ae80ac42481525f13",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/EV_SHAMAN_QUEST_3C.mp3",
+      "loudness": [
+        -17.3,
+        -4.8
+      ],
+      "duration": 4.16
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_4.wav",
+      "sha256": "a3482026b26dcb324f079d544c78472fb2925aca3606f84eba23f090c2416db8",
+      "source_sha256": "561d4ef94abe9970f6156d7cf91fe868449f18a19eb8c38928cd1ccef4ce7df2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/EV_SHAMAN_QUEST_4.mp3",
+      "loudness": [
+        -18.5,
+        -1.5
+      ],
+      "duration": 7.52
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_5.wav",
+      "sha256": "56bfeda0879b76f054631c502aba8c8d037045d639bb15990ef17dc0a7099eee",
+      "source_sha256": "2449f27d92ab1755d1507d43d06338e9ce7da4da243f472561e8d4b46a41fed5",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/EV_SHAMAN_QUEST_5.mp3",
+      "loudness": [
+        -18.0,
+        -3.5
+      ],
+      "duration": 1.76
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_6.wav",
+      "sha256": "bb062d4aacb4cfb54a2f454202c35fe0a9e4283ad98f529612b32eae3072981c",
+      "source_sha256": "214a2f26742a2f585f20215bf0660f41ecb456952e7682b3f47b79887e7f4785",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/EV_SHAMAN_QUEST_6.mp3",
+      "loudness": [
+        -18.1,
+        -1.5
+      ],
+      "duration": 6.32
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_7.wav",
+      "sha256": "0f9bc1ce15917260451c184b910538b4bc9740c79383f8f06ef2ee3de17f5386",
+      "source_sha256": "8687a5402a6294df627891f9c549c7d93d7a98971739385277d9589503580646",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/EV_SHAMAN_QUEST_7.mp3",
+      "loudness": [
+        -19.7,
+        -1.5
+      ],
+      "duration": 1.68
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_8.wav",
+      "sha256": "f55e8bfe28b0278d5ce4ed78eaccb1e2b6782e13dc3832c44bca2d09c274bbee",
+      "source_sha256": "8db2a346960804a82190f4401544880dab89f3be39af066735511b37d02e7518",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/EV_SHAMAN_QUEST_8.mp3",
+      "loudness": [
+        -17.7,
+        -4.2
+      ],
+      "duration": 2.4
+    },
+    {
+      "target": "assets/audio/voice/EV_SHAMAN_QUEST_9.wav",
+      "sha256": "58512d51a4468b4e8ec2164f6cc23337e85f8401f65599e4dcc78fc934909f9a",
+      "source_sha256": "b88eee11c95d97c743ff9a23457bd019198dc6e1263f83f9ee57e18b84842866",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/EV_SHAMAN_QUEST_9.mp3",
+      "loudness": [
+        -23.0,
+        -1.5
+      ],
+      "duration": 2.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_FIRST_1.wav",
+      "sha256": "c811b5b7c8e9f6bd6c39360ad10c5add4177eb5d64c01399ea3e0466898246f3",
+      "source_sha256": "cf6cf89f451969fd2be46364fd583cbfd11f54570bfbb93ee71d878ebd918716",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_FIRST_1.mp3",
+      "loudness": [
+        -18.7,
+        -1.5
+      ],
+      "duration": 1.92
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_FIRST_2.wav",
+      "sha256": "0c4668d479cf56c8b2c0384d580c54a197c930df93ea54299f8613b8f001b9d2",
+      "source_sha256": "07d58d6ca51a2b75170a1770b8db5d405f96c092432160cb617dcd40b2f55e79",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_FIRST_2.mp3",
+      "loudness": [
+        -19.5,
+        -1.5
+      ],
+      "duration": 2.72
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_AFTER_1.wav",
+      "sha256": "8730a7c4df8f407dcb62653a3903b5b7cf2f05505ac32dbfe6bb86f2be0a031c",
+      "source_sha256": "f9a7ef8fb1128e6144a160cccd3ff18c95cc5a82396784a0e9873f9f71e26ef4",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_AFTER_1.mp3",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 3.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_THANKS_NUDGE.wav",
+      "sha256": "305676db713625772b99079bcd0f4e43cfe56c40f4839c4c943fcdc848011823",
+      "source_sha256": "8f7b1cb5c1562a5569014dbfc0ada6bbcd8b041256c07c84949ead03a738d5b1",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_THANKS_NUDGE.mp3",
+      "loudness": [
+        -20.2,
+        -1.5
+      ],
+      "duration": 4.64
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_CLEAR_DONE_1.wav",
+      "sha256": "458c34e3ac4ebc034bc4bba4890cc3bd0eb35f83af7b69c6a9b574d8d2b71fc7",
+      "source_sha256": "bbcd59dabe1b4ad4d89b659308441026badb43143e736fc711802452b2231874",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_CLEAR_DONE_1.mp3",
+      "loudness": [
+        -22.3,
+        -1.5
+      ],
+      "duration": 4.48
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_CLEAR_DONE_2.wav",
+      "sha256": "2801e0a8002a13bc868cd2385a9a247559cd041c92afbaf83f17d6e153606cf6",
+      "source_sha256": "4d11edb9feead9fcb8ad64dcc396e6ec68d8335c4ad5c152de4bf3a45ef821ac",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_ELDER_CLEAR_DONE_2.mp3",
+      "loudness": [
+        -18.3,
+        -1.5
+      ],
+      "duration": 1.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_CLEAR_ACTIVE_1.wav",
+      "sha256": "c712827c99a306f2877763fbd8a86a0c2dd406e2d30e7a080c9f7ff4125bcd2a",
+      "source_sha256": "01e02b1259f47986870e89cd1c74fb3eba897d79bb5c47368c52f944f32d7042",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_CLEAR_ACTIVE_1.mp3",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 4.32
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_CLEAR_ACTIVE_2.wav",
+      "sha256": "7c1b6362afee15e36e2471972d7b92cc81002aab2913bf42a5d7cda064c856aa",
+      "source_sha256": "40d58c583296ac971451a11ce659521ed75a6c0f08fb357c37ccc53cd0a9fb56",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_CLEAR_ACTIVE_2.mp3",
+      "loudness": [
+        -20.4,
+        -1.5
+      ],
+      "duration": 3.36
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_OFFER_AGAIN.wav",
+      "sha256": "5a9b6fa1c7a13c103951780e77691e3cf7b08cbfab27c3a9ba7dad99d5ceeda6",
+      "source_sha256": "a1acfe3e7b09d35b2c9a0332f02a3f88640bad2aada08117bedfcddc810ad843",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_OFFER_AGAIN.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 2.56
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_ACTIVE_1.wav",
+      "sha256": "3b978af8bce3e6fc8290d692fedcc0ce746a23a02bb88ee259df9af01dd9f93b",
+      "source_sha256": "31913e1d6672a7ffc46f80180f3abcebe27877f73a1935647455fd9572ebce69",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_ACTIVE_1.mp3",
+      "loudness": [
+        -22.5,
+        -1.5
+      ],
+      "duration": 4.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_ACTIVE_2.wav",
+      "sha256": "272fcc54129ab1cc0fa1665301c51afb0d38070a889749c0270064917f696977",
+      "source_sha256": "e3c002212830bee2aad61106aecea4c3124508c02fdd9b82d2aef037350202bb",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_ACTIVE_2.mp3",
+      "loudness": [
+        -19.7,
+        -1.5
+      ],
+      "duration": 3.84
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_OFFER_1.wav",
+      "sha256": "28733db450d6bedd58fa6a8b6a96f466c3d53d35bf8e08804d0413ed97958fa9",
+      "source_sha256": "3bab0c51854a8fa2359f0a3def37e00c072fe21b1e2b5d851085725a514799f3",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_OFFER_1.mp3",
+      "loudness": [
+        -18.9,
+        -1.5
+      ],
+      "duration": 3.2
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_OFFER_2.wav",
+      "sha256": "08e2f873308be2c92487e84488f3458f1c3d55895ed59806a88fefe0bef4cc74",
+      "source_sha256": "451a1f70726a753322b7f7ac4ffce38e9022e4979b0f265466f9ef1c4d0000ba",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_OFFER_2.mp3",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 5.36
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_OFFER_3.wav",
+      "sha256": "7b5c3efb039efecf3144dcaf1a5d65adf9dab2952c2bb14dae3f0d1d330920d3",
+      "source_sha256": "cc747e17211a71d13df7a04a94dc3841e9d9fa8b886f9da9d0d16bd6419cbcaa",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_OFFER_3.mp3",
+      "loudness": [
+        -23.1,
+        -1.5
+      ],
+      "duration": 4.72
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_OFFER_4.wav",
+      "sha256": "1de5c9bfa6d982224993ab0aeec2a91226f536537b9f419a914e232c1b603242",
+      "source_sha256": "6979090c2618425a8f22565a9ebdfec144ee7c10afa89537f0d3594ccdf1cb9d",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_ELDER_OFFER_4.mp3",
+      "loudness": [
+        -19.3,
+        -1.5
+      ],
+      "duration": 2.96
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_GREET_1.wav",
+      "sha256": "03aa98078fa6ece1b31b7dbb044100166558e1beda26bcd9103261d2cafa8f25",
+      "source_sha256": "44e670b6cc5de559e9284f35004b1ba19a42ff651558ace57ac61547b53c1cc2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_GREET_1.mp3",
+      "loudness": [
+        -18.0,
+        -1.6
+      ],
+      "duration": 1.76
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_GREET_2.wav",
+      "sha256": "106e8fd822f54e22c119b044d9a8b65cfabb54138fb1eb9ac6a3be960cdb1d09",
+      "source_sha256": "4add29b617380162f93238fe14219d7c8b1db22a195f37e60b4efbb4e6712223",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_GREET_2.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 2.72
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_GREET_3.wav",
+      "sha256": "ec41d61a1c2d1151468fb7f034c98b2511f5d5521643699c40e283024fa63a98",
+      "source_sha256": "91340cde342a3e9daf106d70eb7e582be975ef0650d962da5cf417878379d009",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_GREET_3.mp3",
+      "loudness": [
+        -18.4,
+        -1.5
+      ],
+      "duration": 2.64
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_GREET_4.wav",
+      "sha256": "1c21dd5531cf971e78134639ac2a5d5247803979809d3f9cab3a6608a065f4e1",
+      "source_sha256": "228bd8f374c15dc39c5a5e6e95e7baf34c91ce566f413fe5c640dca07575f18e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_GREET_4.mp3",
+      "loudness": [
+        -20.8,
+        -1.5
+      ],
+      "duration": 3.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_ACCEPT_1.wav",
+      "sha256": "db4a30ef1be96a0340908b8b32b33c38f5f84543d3a3998d5482564783237ff2",
+      "source_sha256": "554ab3f576cd8f14e6ad880f940220c1393a521c1bb529605e1d89e2c75b4fe7",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_ACCEPT_1.mp3",
+      "loudness": [
+        -19.9,
+        -1.5
+      ],
+      "duration": 2.96
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_REPORT_1.wav",
+      "sha256": "127d708379a069bf3333b03083fbe13efdbcd34de01b97deaded1807f32d5483",
+      "source_sha256": "ab797e8e8eb35499270030b2c51facb2835ac89f983355d9e7428808472994a5",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_REPORT_1.mp3",
+      "loudness": [
+        -20.0,
+        -1.5
+      ],
+      "duration": 6.24
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_REPORT_2.wav",
+      "sha256": "ff1b724d6316e252df060211ff80d4621e3c0e3983abb902a130bb9536641906",
+      "source_sha256": "04d96d38d2bc129bf9d7178b2b41c7057181fa5823fea5175aee36e0015dc4df",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_ELDER_REPORT_2.mp3",
+      "loudness": [
+        -18.0,
+        -2.0
+      ],
+      "duration": 1.76
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_REPORT_3.wav",
+      "sha256": "d295f6f0beeebd5e4c191e2bdb6205302018b4e92a69a99a2943bb114e296eaa",
+      "source_sha256": "94d2225ff66b1c16b98e108ab8ccd4892f2c2bf1c972b1eb14d3ab971779bb83",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_REPORT_3.mp3",
+      "loudness": [
+        -19.1,
+        -1.5
+      ],
+      "duration": 2.64
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_THANKS_1.wav",
+      "sha256": "8257f45c56dd50353ea74d5e7375f9479598614e84cd9952d41f730c8f13053e",
+      "source_sha256": "52dbca997141adee9dd3e38dcec524ebf4cdb47b945ef36b3209e32e838436e9",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_THANKS_1.mp3",
+      "loudness": [
+        -21.2,
+        -1.5
+      ],
+      "duration": 2.4
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_AFTER_2.wav",
+      "sha256": "a34ca33b5e389adf842772ce38b99f3f59e9a437f407381a7ac9cf65b8d7e4b7",
+      "source_sha256": "8602a95a1af2716bf0b83a8e2bdaa1c2e03caf33862dc80aab32d06efaf4da61",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_AFTER_2.mp3",
+      "loudness": [
+        -21.1,
+        -1.5
+      ],
+      "duration": 7.12
+    },
+    {
+      "target": "assets/audio/voice/NPC_ELDER_VOUCH_1.wav",
+      "sha256": "5cd467de30df8791008b2b0ef25432cd52f5b322f550b2c0a38d2aa8fc22f2ed",
+      "source_sha256": "c3d382f361567e2ccda5c149757f776c808921ba76a4e91a222d9d0cb8e04b05",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/elder/NPC_ELDER_VOUCH_1.mp3",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 6.8
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_FIRST_1.wav",
+      "sha256": "752b0a901a4d84dbb372dd9826fbe8f5c4b5de50665f38bf1b35baab22f09ad9",
+      "source_sha256": "5187faf29ec318f63135d0cedd6e378855ad8213e7c7c9b63e8d2b4de666232a",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_FIRST_1.mp3",
+      "loudness": [
+        -20.1,
+        -1.5
+      ],
+      "duration": 6.48
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_FIRST_2.wav",
+      "sha256": "16f10d19193605adaef110a6539727a6082ef23f4b6ee8602941222fd2afce84",
+      "source_sha256": "f5d9175b98b71afcc22145d9ca097e2425f4dd63a4e84ac5631884fe699da330",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_FIRST_2.mp3",
+      "loudness": [
+        -17.8,
+        -2.2
+      ],
+      "duration": 3.04
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_FIRST_3.wav",
+      "sha256": "93cf6331db2feaf8a085f8c6de42adb2ff09f0795f7c56d595bbcf4c2f48a6ff",
+      "source_sha256": "3e69ea2750d1d5061f1111f3da78fd5cf2fd2e5b667762fda8f399f38ea4688f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_FIRST_3.mp3",
+      "loudness": [
+        -18.4,
+        -1.5
+      ],
+      "duration": 3.04
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_1.wav",
+      "sha256": "0551d2c2f1b1f63acdcf4b9c9d67bdb60c3744a9c922eaf5f53f56f222a6dfd8",
+      "source_sha256": "c808672e528b764b353ba93065e8b5997bbae7ed6b995397dcc6045f8b05658b",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_1.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 4.72
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_2.wav",
+      "sha256": "44a6e835e4ab37457a28e67dc452a86f5c42f32f938152368703fef201ecf891",
+      "source_sha256": "9659e8f8ef99d803222703b6e2b360e2e32c991a5c769eff3b65765277071eab",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_MAIN_2.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 4.16
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_3.wav",
+      "sha256": "82c391bcec587fdbb45e73e9252fb9221336b5b1f93abf5b95604a66ffbc3bec",
+      "source_sha256": "e60130dd9fa160c4c2136dfca8dc0a1842330a6d9eaa88ce74c07022794f3615",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_3.mp3",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 5.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_3B.wav",
+      "sha256": "c0fab3cb42297d43ffe5487082e7c7dd3f9e8a421b28e6688501ac0ebae74706",
+      "source_sha256": "d5d204dc488cfdd2c63cdb61970bec0a804626cc313b2c9ca730c6f20aa04eb0",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_3B.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 5.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_3C.wav",
+      "sha256": "63ab5267e5006afb53687d2374b383a1b34907e1b6ecfd04b4fff548558aaea6",
+      "source_sha256": "24798d18d28f4a402e718147fc4bfd6fe29dc763c56790e8a9f11ee45c7bb14c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_3C.mp3",
+      "loudness": [
+        -19.0,
+        -1.5
+      ],
+      "duration": 6.48
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_4.wav",
+      "sha256": "c2bd5c0728198e8b77289b293cd5c1829054f3be37e8eaee6792ea9115582692",
+      "source_sha256": "59d770cb926591330fb960ab10661e06e1a6186a2987c48d8db821cf289e390c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_MAIN_4.mp3",
+      "loudness": [
+        -17.9,
+        -1.5
+      ],
+      "duration": 3.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_4B.wav",
+      "sha256": "605925baf72643d712475af97ed0ca8b87b79562417103dce9f3379d3e7c3130",
+      "source_sha256": "f45f01b1444210fb972fb53b61e779e567307547987385837d8dd076ff2a8ed6",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_4B.mp3",
+      "loudness": [
+        -21.3,
+        -1.5
+      ],
+      "duration": 5.44
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_5.wav",
+      "sha256": "9d3b80c33e532d7e8b3a6a2f8cb235ba3d25a5f4e37df2160622d84357e08e14",
+      "source_sha256": "6d28a35b8bc12ee4c91765fc8826b14be10b2de5279fb427bd8956ea575d4bf9",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_5.mp3",
+      "loudness": [
+        -18.6,
+        -1.5
+      ],
+      "duration": 6.32
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_6.wav",
+      "sha256": "dc61535697f245a3d273d5db94c4361a9e0cbad90afd824b519c094db3b1f1e5",
+      "source_sha256": "95726d3430acad79809ac59ed6775056a6afca62f0332ca1b148788ea6d4c5fd",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_6.mp3",
+      "loudness": [
+        -19.5,
+        -1.5
+      ],
+      "duration": 7.92
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_7.wav",
+      "sha256": "e68d4e8001d9142ba36a82f3bc87117b710e98f343b4a8a775693a6ff117f1ad",
+      "source_sha256": "56156080425d40a598fdff9c12ca51f473bc626eaca223b565cf2f03a5f514c6",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_MAIN_7.mp3",
+      "loudness": [
+        -18.2,
+        -1.6
+      ],
+      "duration": 3.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_8.wav",
+      "sha256": "7982b22dbb30ebe8b09382dbc0680c0008e225cffd11d8779ff7eaac65ca5886",
+      "source_sha256": "bfdbd23b2401640360c4370dd6cc4429356f2d90c418e104d836143b4977c99f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_8.mp3",
+      "loudness": [
+        -18.0,
+        -1.5
+      ],
+      "duration": 4.48
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_9.wav",
+      "sha256": "a8a2d2cf6fb3112fadc071e381c036cd591dd20f728af96f99cbed1eb8f45f29",
+      "source_sha256": "73fa2d9073a25f42fc2d9d9e27c27bccd1c6d32a947bf84fc94b5ba2e7f4da57",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_MAIN_9.mp3",
+      "loudness": [
+        -18.3,
+        -1.5
+      ],
+      "duration": 3.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_MAIN_10.wav",
+      "sha256": "9ee39caccb03d13cd8e85b1231600954488aac15ab1af0ff8e39f1dfd4733254",
+      "source_sha256": "df5403a83e4b38e0e3ec12c64d3d1f376f28b7ead9309fd729266a3f1b2da9f3",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_MAIN_10.mp3",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 8.16
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_GAKSI_DONE_1.wav",
+      "sha256": "bd3d5854a9e2264c9c5e48c00328f0e99a221f4cbf081a87dc87bd5c772aa7c3",
+      "source_sha256": "854eb52019365e06013a673d1f7ba762789fe5f562f186ceea128cb81b681fd0",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_GAKSI_DONE_1.mp3",
+      "loudness": [
+        -18.5,
+        -1.5
+      ],
+      "duration": 1.12
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_GAKSI_DONE_2.wav",
+      "sha256": "1870020b0ec86ce933a126c12906ba45f5d1bc27ee88f6571afd2a75c4e443c5",
+      "source_sha256": "45a06263e3cfe3169ccf95390c951796c8052c01e7a84638c2150a4da985c6aa",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_GAKSI_DONE_2.mp3",
+      "loudness": [
+        -20.8,
+        -1.5
+      ],
+      "duration": 5.2
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS2_1.wav",
+      "sha256": "e542affcb2efa6b943ef50e28281b35603e60bcae852cdc8d9a6644969a9daae",
+      "source_sha256": "374a85ec2bafb69ac7defd123d05c67d4e53444fd0651432df952efcc107562c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS2_1.mp3",
+      "loudness": [
+        -20.0,
+        -1.5
+      ],
+      "duration": 5.12
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS2_LAST_HEUK.wav",
+      "sha256": "1ad6d2dffba8660fe028e6e632008178723160fa1734ee725c2a10cab753969b",
+      "source_sha256": "bd7387d52e7bcd47751ef57d42fb3a0b4d063e82ae8d019d3f81e94c16f41ded",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS2_LAST_HEUK.mp3",
+      "loudness": [
+        -18.5,
+        -1.5
+      ],
+      "duration": 5.52
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS2_LAST_BEOM.wav",
+      "sha256": "358f8c263f4ad07dbba6afb0995b10db273f1640cc69c6eb8e71ff98cad582e2",
+      "source_sha256": "ab482b7413796507018899936a5fb354e3d35b6a822abf6d47d7cbc5bed5f0c8",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS2_LAST_BEOM.mp3",
+      "loudness": [
+        -18.6,
+        -1.5
+      ],
+      "duration": 5.52
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS2_LAST_SOE.wav",
+      "sha256": "94e4fec2a0cc95cc759a34f895c14e533c828044079449cdacf9506bf90f8712",
+      "source_sha256": "359227f6844f81c0214806234e4866f73fd2d274cb167daee8fd34f2895dac5a",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS2_LAST_SOE.mp3",
+      "loudness": [
+        -19.6,
+        -1.5
+      ],
+      "duration": 6.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS2_3.wav",
+      "sha256": "5de08ef238dccf9e122c1b353b92472fc16cc57b6c71e265f45ecddc236e91bc",
+      "source_sha256": "8b28af695120ba7e2f2b9c5a86fd77455c186a5e68676542b2a1ad3d0c997660",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS2_3.mp3",
+      "loudness": [
+        -20.1,
+        -1.5
+      ],
+      "duration": 4.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS2_4.wav",
+      "sha256": "73d1bf2b20db8325bc0f5aa46f5cc5d7da25f085674b135ed0751638a5a64733",
+      "source_sha256": "6342bb1edb5708eef2e6ddad26bb4445528e27724715578f1521a33681e0d4a2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_NEWS2_4.mp3",
+      "loudness": [
+        -19.6,
+        -1.5
+      ],
+      "duration": 2.24
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS2_5.wav",
+      "sha256": "f84d324b2ec92022e72414c5941dee3746ae95dc0fe22c55dc25818691cd04a9",
+      "source_sha256": "eded3042c67a272e697310c566fae7d79cd35db3e9941dfe6ee91b4ea592ec18",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS2_5.mp3",
+      "loudness": [
+        -19.1,
+        -1.5
+      ],
+      "duration": 1.92
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_1.wav",
+      "sha256": "a595ec6d770055965cd719edd7683375bbd014a86216bb801d8e08eb48066e51",
+      "source_sha256": "a4a37a9aad6fad04f1b994a0d9e38de0a2a0781f4cdfaea61f63bd855c2209ea",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS1_1.mp3",
+      "loudness": [
+        -19.5,
+        -1.5
+      ],
+      "duration": 4.56
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_3.wav",
+      "sha256": "7506b4d117a8a92c6e6375f00d178e9a30e48b0d68af5eec1d8658e6cd11f430",
+      "source_sha256": "92330a3e1f77add4123c26fe82fa741879c429ccc04d8a9d628495d101b3dcfb",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS1_3.mp3",
+      "loudness": [
+        -19.9,
+        -1.5
+      ],
+      "duration": 5.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_4.wav",
+      "sha256": "e59d3f9c84984a408901bdd4db8f6f02bd8063c43ba924e19c82b8083792745e",
+      "source_sha256": "a240c181e5e2692be4bc102ba699c5ad32494aa27c39a722ed14d467d4549b8e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_NEWS1_4.mp3",
+      "loudness": [
+        -18.7,
+        -1.5
+      ],
+      "duration": 2.32
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_HEUK.wav",
+      "sha256": "d0bd05a57b1ff7941ebad5543f13257fa35b24cc19260c0629638a5d68fe6152",
+      "source_sha256": "2a97dafe9b59669135a5b494d1c16cbb59ee06c54b27a8776ec3973c266be6f6",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS1_HEUK.mp3",
+      "loudness": [
+        -19.9,
+        -1.5
+      ],
+      "duration": 4.72
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_LEFT_BEOM_SOE.wav",
+      "sha256": "d362a9e81da58d79667019a1e8be174f8dcdeb59f3f99273f8667353dd2bc2ed",
+      "source_sha256": "de5183d16426a6841e356899bcd3b279927792ca502be9b24f4fbdfc30055517",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS1_LEFT_BEOM_SOE.mp3",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 8.24
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_LEFT_HEUK_SOE.wav",
+      "sha256": "2bdb7133052be2aff33c8d8fe4b9ed9ac9f552392de46130d45ca72c8c3e11c7",
+      "source_sha256": "2fd5e21392d1fd2dc9c681dadba7b6f0cfb023815180eb820d96c525f6ef2b1e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS1_LEFT_HEUK_SOE.mp3",
+      "loudness": [
+        -20.2,
+        -1.5
+      ],
+      "duration": 7.84
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_LEFT_HEUK_BEOM.wav",
+      "sha256": "64b9ebe300173ce7646660f133a498281bd7322282c2503f846552f882cb5a15",
+      "source_sha256": "13514b9e1bf0b3a116f54d2b927538b4482bf7225e72b83e36ca27ed4b434228",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_NEWS1_LEFT_HEUK_BEOM.mp3",
+      "loudness": [
+        -19.8,
+        -1.5
+      ],
+      "duration": 7.12
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_NEWS1_END.wav",
+      "sha256": "df6ef74ec7a7d59ed110abf1d917605aeb892f2876df20927f76bbadcb34638d",
+      "source_sha256": "bf1acb5ac4810a09644fe38db47ff93519bbf07ce7ef68344917bc003a61033a",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_NEWS1_END.mp3",
+      "loudness": [
+        -19.2,
+        -1.5
+      ],
+      "duration": 4.08
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_GREET_1.wav",
+      "sha256": "3a17900606a593b162f4112cefd38c7e6e1fd7ebdd69a137b88ecdf1ad2565b9",
+      "source_sha256": "9b4a23312616a809f0dc23f937a6b7220b5858353b05c5872dfc7f91c9d5063b",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_GREET_1.mp3",
+      "loudness": [
+        -17.8,
+        -1.9
+      ],
+      "duration": 3.2
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_GREET_2.wav",
+      "sha256": "d893c2028dbd1d93e01fc5b3e178bda94fab0760b0bb34e1c17ecb14992eff76",
+      "source_sha256": "0d74f676c4dd7009eecd97b9c5be74991994859a98308c697605858504fb9c38",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_GREET_2.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 3.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_GREET_3.wav",
+      "sha256": "bbbe1b9190a27c29944711f17cb21edcd0e16f7637eb78befd9d9faa89837bc2",
+      "source_sha256": "70c7caf891712fcd81bcfa157a3fab6049d72b020935d3769798c864a0011206",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_GREET_3.mp3",
+      "loudness": [
+        -18.2,
+        -1.5
+      ],
+      "duration": 3.2
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_BUSY_1.wav",
+      "sha256": "ee0f7c0b851c829d99fb8e040dbf242bf009920dd38b6abe08940452cea6295c",
+      "source_sha256": "e7f4eeaf7a1df2f66c4f5a510aeebfef1fd0942b51c234bb0cd83c317c193cc2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_BUSY_1.mp3",
+      "loudness": [
+        -19.8,
+        -1.5
+      ],
+      "duration": 4.16
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_BUSY_2.wav",
+      "sha256": "0e89714fe04476f9b5e8af7b4db236b581218a68e0534ba97f943ee31c386b53",
+      "source_sha256": "c67cb9c25f54e9026613b87884e9086dcd5c901b726511e288ac53e9ca8a4b5e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_BUSY_2.mp3",
+      "loudness": [
+        -19.3,
+        -1.5
+      ],
+      "duration": 4.72
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_1.wav",
+      "sha256": "3b6f4815c2feb6188b9639d8161f1adfa42635f43b8a94760b7a3c24c425a527",
+      "source_sha256": "2696d62d3e3d22408c8a2bd6450ff3ecf337120d8906968089827081494edd7c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_1.mp3",
+      "loudness": [
+        -19.5,
+        -1.5
+      ],
+      "duration": 6.48
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_2.wav",
+      "sha256": "5805c1b910c3e949d3cd50c048cafc79308298b691c097c0f5267eba71351dc0",
+      "source_sha256": "90793e5fee7de63695f0ae8f445b03971853d7b1a2a2f8477348d88f92db52c3",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_2.mp3",
+      "loudness": [
+        -18.6,
+        -1.5
+      ],
+      "duration": 4.88
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_3.wav",
+      "sha256": "8ca1ea82dd3ae5e53249ed0bab75e05f6dd201dd1b780392542e84eec52d61b8",
+      "source_sha256": "211d11eb22ef3811096383758ca569c79457117fd58857172ff03162cbc4a280",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_3.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 6.64
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_4.wav",
+      "sha256": "7d0d8bcaf1544f0baf076d673a2687eadbd1e0c354e76894d686fff10b7e228f",
+      "source_sha256": "d54d392cccce707816b72e19230c289fdc9d1184a6bc7a22f0dd5135aa12ceb3",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_4.mp3",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 7.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_5.wav",
+      "sha256": "49905f158b5a7a115b02247f115bae33761cc6c0c6ff0c3d9d22f09b7ac6cb53",
+      "source_sha256": "cc80f1399b6acc75a1ae5d48b658976b358bf17035ec6e6e5998b5198c79b38b",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_5.mp3",
+      "loudness": [
+        -18.7,
+        -1.5
+      ],
+      "duration": 7.04
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_6.wav",
+      "sha256": "110610f13a9919bfb9647245b19a303c10ceae6392e79c72f45f071ae76a90e8",
+      "source_sha256": "53e83e8a2dce8998a6495dfc31de9aec330944095ed994797406e7dd6e1058c6",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_6.mp3",
+      "loudness": [
+        -20.7,
+        -1.5
+      ],
+      "duration": 5.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_7.wav",
+      "sha256": "e7f44e0e492768c7871e921595f70d28e3cf0960ed6e7889c332b6fe735b0d61",
+      "source_sha256": "561a118e3e1072428679692c4839907012a81113b7bc560315533c1dc5b78c0c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_7.mp3",
+      "loudness": [
+        -19.3,
+        -1.5
+      ],
+      "duration": 3.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_RUMOR_8.wav",
+      "sha256": "78bc3b9eb633f7a40782d1f6a3dafb73eb90c901f4e61ef5b986442b9d47000a",
+      "source_sha256": "f93d05576cc4c8197a876cecf594c84ac2b58988920fda2c63e36717b76944ef",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_RUMOR_8.mp3",
+      "loudness": [
+        -20.2,
+        -1.5
+      ],
+      "duration": 5.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_OFFER_1.wav",
+      "sha256": "cbbb5012fcba4f91fc56791076abd5eb9eb68e13a02a381df545882eafb3a088",
+      "source_sha256": "d7e52c794c45808637b2f4fb0cea34e61ad912119fa1163bf8d01879c0841932",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_OFFER_1.mp3",
+      "loudness": [
+        -18.6,
+        -1.5
+      ],
+      "duration": 5.04
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_OFFER_2.wav",
+      "sha256": "6798bb281c8eb88e1ae787d8e52772824972da64ad021e59baf3f0ef760e3d9d",
+      "source_sha256": "ee908bf387104407669f10c41d24a6b6b3e15a09e2e1d3a658811bcee8d0bcfc",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/jumo/NPC_JUMO_OFFER_2.mp3",
+      "loudness": [
+        -21.0,
+        -1.5
+      ],
+      "duration": 7.12
+    },
+    {
+      "target": "assets/audio/voice/NPC_JUMO_OFFER_3.wav",
+      "sha256": "82e93c12b6a46c41306d9f43d4a5477db9952a5af10cefbe4adf4e81dfbd1f58",
+      "source_sha256": "162bc341c8669f060cac3657a26e02560f700228c87240804abd166a87b4c0e9",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_JUMO_OFFER_3.mp3",
+      "loudness": [
+        -20.1,
+        -1.5
+      ],
+      "duration": 2.96
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_FIRST_1.wav",
+      "sha256": "25e6b63848ea50533f1cbed616d046d92577dccd9a02eb9fd59e976f4b6115fc",
+      "source_sha256": "e46e4d3d138a4f8af22c63f1f155dc2b6c739f568eef7218f2ee036362fb120a",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_FIRST_1.mp3",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 4.4
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_FIRST_2.wav",
+      "sha256": "ae3e626e3449716b1f3fe657797ae78abc1d3d231a8e6d38347be27bc9bc57ee",
+      "source_sha256": "63efd6392dc9e3620c0efed125ec982e400e1b88b3d5353c468c84b297482a01",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_MERCHANT_FIRST_2.mp3",
+      "loudness": [
+        -21.3,
+        -1.5
+      ],
+      "duration": 3.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_FIRST_3.wav",
+      "sha256": "643c60e7f7b6556cc137f72d1b4624167e362b80940612fc2f79146751a92815",
+      "source_sha256": "bdff1bf90575d3b8319a13188d8014eef923fcfd1ca65545f79e4eadd39cc6b9",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_FIRST_3.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 1.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_ACTIVE_1.wav",
+      "sha256": "973940e76da1b3e51da51d697215b966fcb095f9c0406c8e04a9e62c7de4c468",
+      "source_sha256": "1ba6104a4d7c7504e01dbe37a52392f95ef62b66b0afc7b13756a8bc9345815f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_ACTIVE_1.mp3",
+      "loudness": [
+        -19.8,
+        -1.5
+      ],
+      "duration": 3.84
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_ACTIVE_2.wav",
+      "sha256": "e2f7e76bba2877c35155adfad6728394a572a8ae9f0ad1da07748a1d20f28c9e",
+      "source_sha256": "51470be83e007aaa8a9b58ca0fa5003288cc9678801fa48a99473ce795d01f57",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_ACTIVE_2.mp3",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 3.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_AFTER_1.wav",
+      "sha256": "067ede8f32a2685bcd572e64426b9d1fb3cadb05c125a8104a16bdc3fff98275",
+      "source_sha256": "edb0b4f8ccc0adacf6d0803849016acf5f1cfd52b9551807ea1bfef74edbc23c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_AFTER_1.mp3",
+      "loudness": [
+        -20.5,
+        -1.5
+      ],
+      "duration": 4.56
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_GREET_1.wav",
+      "sha256": "1136d4185b6575302e9115e75920e768ca8325c4d94c2420cf19e98210d0e24c",
+      "source_sha256": "567a46cb3462a516df01b52755980baee86e681070f9e093309cc96d06f982b6",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_GREET_1.mp3",
+      "loudness": [
+        -20.8,
+        -1.5
+      ],
+      "duration": 3.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_GREET_2.wav",
+      "sha256": "ce2bb3ad8fefe1bbe2b38b0498b48097c858a33e4a4e337c0d5d1f85e7df2f60",
+      "source_sha256": "c109c4941ee1bb2230eeab0567fce381609977910751f1cf2500d414689853e4",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_GREET_2.mp3",
+      "loudness": [
+        -19.0,
+        -1.5
+      ],
+      "duration": 4.32
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_GREET_3.wav",
+      "sha256": "4f7a5cda3d61e2c1bdbb4a76bf4667078c7e805e814ddc418b77c158f83f56a4",
+      "source_sha256": "da62b51dd98bfe773c27b89cc2fd656ec0194782658b9dcbe43038c56872cbec",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_GREET_3.mp3",
+      "loudness": [
+        -20.8,
+        -1.5
+      ],
+      "duration": 4.64
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_GREET_4.wav",
+      "sha256": "457ed1b95bc6a63751a4f78da2bcfea10837c4f061d6d4ea6eb771d718012eec",
+      "source_sha256": "ac172135758c9b467c6705225c4123e2cf15488a045c41497fd6ca7eefe50547",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_GREET_4.mp3",
+      "loudness": [
+        -18.7,
+        -1.5
+      ],
+      "duration": 6.08
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_GREET_5.wav",
+      "sha256": "6bb18e023a52faca113251807107dbe683b10319319b31b9c16aa07d681b62f1",
+      "source_sha256": "8e2ba0f56ab76fe73286f4fa66e5c15685f02efb4080ba1b36604d461fbafded",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_GREET_5.mp3",
+      "loudness": [
+        -18.6,
+        -1.5
+      ],
+      "duration": 4.72
+    },
+    {
+      "target": "assets/audio/voice/NPC_MERCHANT_VOUCH_1.wav",
+      "sha256": "654230280d75783d8b599d5cdaac7406ce2447b8c5adb673b8d616b416bc9267",
+      "source_sha256": "8b037c314109ed8b774efb091ea9d360671ecf5e29c46707223347777d5d45a8",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/merchant/NPC_MERCHANT_VOUCH_1.mp3",
+      "loudness": [
+        -19.9,
+        -1.5
+      ],
+      "duration": 8.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_1.wav",
+      "sha256": "e7b95a4981f46bd4d61cafa45b6d6c648369a4912b3815a178909a4f2119e7db",
+      "source_sha256": "31524845bdef834b95543b91768c88431d1212a5458c330f3fd188c6995983e1",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_OFFER_1.mp3",
+      "loudness": [
+        -18.8,
+        -1.5
+      ],
+      "duration": 4.4
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_2.wav",
+      "sha256": "35302792a3b768558ac0ff6de22ea0d2546684733bfa5e7811af36ad73e8ca3d",
+      "source_sha256": "53dfeb0f1e75bb0d5ccfd90d62405498fba13885bc3eb1fc4730806709614eb7",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_OFFER_2.mp3",
+      "loudness": [
+        -20.6,
+        -1.5
+      ],
+      "duration": 4.56
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_3.wav",
+      "sha256": "892f3614c68edec19756a34e2ea05862a22ea1a9521bbb24bf8fe744e809e6e7",
+      "source_sha256": "190dfd28de93aa18f8fb52e4f706d8fe88e0be83084a41784cac59c2e368fc87",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_OFFER_3.mp3",
+      "loudness": [
+        -18.3,
+        -2.9
+      ],
+      "duration": 4.96
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_3B.wav",
+      "sha256": "1e65a947e495f89211c7c4684bd33a7f2b150f2e9a44e04ab22b63b38251c296",
+      "source_sha256": "ec8c9d4246f5d888ba6b03bc082e4f5a1395b894d77aabda5a1dcab9f3d36287",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_OFFER_3B.mp3",
+      "loudness": [
+        -17.8,
+        -1.5
+      ],
+      "duration": 5.12
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_3C.wav",
+      "sha256": "f0ed262a6cd75795d285154e1803201d92bda7b8f432014c76471892168df89e",
+      "source_sha256": "5d54dee08c2ac9837da5ae742b98940930bc59f90e02f6281b21528fa3d17059",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_OFFER_3C.mp3",
+      "loudness": [
+        -17.2,
+        -3.7
+      ],
+      "duration": 4.16
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_4.wav",
+      "sha256": "82060b012df42801fea93d762e1f9203a9aeabf04a6ff19b489cf00b712d8eb1",
+      "source_sha256": "e3f8d0802ca4bf82a62aed550f74e668a784f25a2896adbea0a6de5ece5f2db5",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_OFFER_4.mp3",
+      "loudness": [
+        -18.1,
+        -2.0
+      ],
+      "duration": 7.36
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_5.wav",
+      "sha256": "f976b5985703eb64ff968ecdb27d07f0b9dcd595db67b552d7db729fdbc9cfaa",
+      "source_sha256": "64b7a571aea245a9ecf14962561bb6231df127f303712e8304df73c443d1f30c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_OFFER_5.mp3",
+      "loudness": [
+        -18.0,
+        -2.1
+      ],
+      "duration": 1.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_6.wav",
+      "sha256": "78cdec2ddb466c3af76037b1fa1b5e7ee7842094095656e956194f19f31d0768",
+      "source_sha256": "1f57c510bfa00b774a4a932d90f36476cffaa22f6de0a38d5b490f023ce65d07",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_OFFER_6.mp3",
+      "loudness": [
+        -17.5,
+        -1.9
+      ],
+      "duration": 6.16
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_7.wav",
+      "sha256": "b467b11a8c6e19d8e90ffa181740e342d984447d5c47371cc2332bdddf031f33",
+      "source_sha256": "e2e98856ec8271bb54f31af003af32d15060ef01219571251f10c381b9e2482a",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_OFFER_7.mp3",
+      "loudness": [
+        -19.8,
+        -1.5
+      ],
+      "duration": 1.76
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_8.wav",
+      "sha256": "e7fa277d6fcf0e36d235f900c93c5b192a36f84a5e314470bbfe2f767ac19b53",
+      "source_sha256": "37497d44eea179478e05272a0a27abb123be8c473da79538e6da564fb930b1a5",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_OFFER_8.mp3",
+      "loudness": [
+        -17.7,
+        -3.4
+      ],
+      "duration": 2.48
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_OFFER_9.wav",
+      "sha256": "2e6c65d2cfcecdb81c875974ae5d9929ad5e5a63e09c3e9e13b087f21ce1b442",
+      "source_sha256": "13af630fda7409b40634062bb3d7c35d0cf8f19244c652c432f78ed3fd49ee0e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_OFFER_9.mp3",
+      "loudness": [
+        -19.4,
+        -1.5
+      ],
+      "duration": 2.16
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_HEAL_INTRO_1.wav",
+      "sha256": "5ca02f9e9b666458da6e4195b00df786700f4d70508060eadfd25f111606f391",
+      "source_sha256": "a8c046e8ce5e810233896a7b43a72712747b674eb3ad96586b81b2305e816b3e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_HEAL_INTRO_1.mp3",
+      "loudness": [
+        -17.1,
+        -2.1
+      ],
+      "duration": 5.12
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_PROGRESS_1.wav",
+      "sha256": "f8a7b019b12a8c8e572b01e4df9e10deef941b2d582045fcc10e0815a64c6787",
+      "source_sha256": "e5c6b065d9abdd32ca53a5d63cb43c0c33fe662a585454fab26046c79c964265",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_PROGRESS_1.mp3",
+      "loudness": [
+        -18.6,
+        -2.6
+      ],
+      "duration": 3.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_PROGRESS_2.wav",
+      "sha256": "9ffc49e2f2dfcdee796dde2b516df75e32891a10ae3c826a929645d3f4b70a42",
+      "source_sha256": "6a26cd5be52ccacf2610b9b8eb236043e84a32f5eeddaf9e24d4d64124ed37b2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_PROGRESS_2.mp3",
+      "loudness": [
+        -18.7,
+        -2.8
+      ],
+      "duration": 3.36
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_NUDGE_1.wav",
+      "sha256": "97805127ef9f0376c0870cf916f75493bfda51f35ba529a83a8e38631835f65c",
+      "source_sha256": "a3817ea132a2b79fa6f0e26c453aee227d936b675df29b57b2e4bb9660d8978f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_NUDGE_1.mp3",
+      "loudness": [
+        -17.9,
+        -2.2
+      ],
+      "duration": 3.84
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_DONE_1.wav",
+      "sha256": "121c46eb3dbeaf36d64e6f4cbda17cfba7a1cfd6553cc899462cf7ec022e7df3",
+      "source_sha256": "cbb69ed86823fbb7748df11295037963dc3b13df8a9b73f376e88751148781c9",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_DONE_1.mp3",
+      "loudness": [
+        -18.6,
+        -1.5
+      ],
+      "duration": 1.04
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_PROXY_1.wav",
+      "sha256": "297951463c2694230e0cadb573ada2a86ab3ac701f3b5bc977d52f3ddd397d37",
+      "source_sha256": "dd581ed02207d8b355530a145a229c3ae86765cffee6da68f4fcad60d121a563",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_PROXY_1.mp3",
+      "loudness": [
+        -17.3,
+        -2.3
+      ],
+      "duration": 3.76
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_DONE_2.wav",
+      "sha256": "8839c61d95b0f5407ecb55a61b99a5a12e5d04e375ea2da55f881c508c2ab75b",
+      "source_sha256": "cddd8bb9ac5aa55dd4037f208ce5b2a498f328edfcbe7cb68c18c9d75d60a59c",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_DONE_2.mp3",
+      "loudness": [
+        -17.8,
+        -1.5
+      ],
+      "duration": 2.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_DONE_3.wav",
+      "sha256": "ee176ade1a6bfbcda30c855a0c7ceeceafc622edf708b4f53fd83eeb5e5d2ec2",
+      "source_sha256": "790b50c9038a000b86aeb2a069676effc7a6c39db17a76e9f1b0b71f05186916",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_DONE_3.mp3",
+      "loudness": [
+        -20.2,
+        -1.5
+      ],
+      "duration": 3.92
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_REPORT_3.wav",
+      "sha256": "29ff3198c629d5afcd8ae892789e81e82ccd14ded3b7da44c1b98f74f3b9b806",
+      "source_sha256": "5319e342c929657c15447a3b11a9f6162542e5bf24fb1a01d29ba194ff24c50a",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_REPORT_3.mp3",
+      "loudness": [
+        -17.1,
+        -3.1
+      ],
+      "duration": 4.4
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_REPORT_2.wav",
+      "sha256": "1a302449ffd45f9b551e739aee9662a5f6b82e018a487a7c3a7bf338d60d0241",
+      "source_sha256": "1e2d9636a5f3cdfb60be43fd3ac6cb916a6fdd12b8dc595ac8b6a4b744710911",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_REPORT_2.mp3",
+      "loudness": [
+        -17.8,
+        -2.2
+      ],
+      "duration": 4.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_TAVERN_1.wav",
+      "sha256": "77815a67f3e57d895287121560f8efe6ae89483991805dad5ed231d4d8bf138b",
+      "source_sha256": "8f7821385a32c1c35bdc69e5e2fb1d0047b82f6cb82011e23721862b6485e35f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_TAVERN_1.mp3",
+      "loudness": [
+        -19.2,
+        -1.5
+      ],
+      "duration": 5.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_TAVERN_2.wav",
+      "sha256": "e290beb58e9fe122e840ff4ad9370fc944b67c6f66c609c908cb75dfbbbb4804",
+      "source_sha256": "120cc4394dd390bdf2fb86ec58db460126b6be53ed7a214bba393be08f462d76",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_TAVERN_2.mp3",
+      "loudness": [
+        -18.9,
+        -1.5
+      ],
+      "duration": 5.28
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LORE_1.wav",
+      "sha256": "78b44a66a3b1ea5742884f041c0f94bbd982bb1fdc0e05c9926084eac94c24d5",
+      "source_sha256": "80dd0a7ace9c8d462ea5453b52a2e767817e717af3b331d7d56f54c725df7787",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LORE_1.mp3",
+      "loudness": [
+        -17.9,
+        -2.1
+      ],
+      "duration": 10.8
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LORE_2.wav",
+      "sha256": "fb29732ce2c78b76eaec646867629fbd1fb4462d44a838c84b60ebcd545d1167",
+      "source_sha256": "402bf9347303a525932f90fc71c14b96f9f6076748001af7e390ba8e9a94a49e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LORE_2.mp3",
+      "loudness": [
+        -18.5,
+        -2.4
+      ],
+      "duration": 9.44
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LORE_4.wav",
+      "sha256": "30d639dee7a86db845c32fa89c0fbb3bef37f905409c3f9b7eb4a706eeb5d329",
+      "source_sha256": "acc123a22190f06f62e1988057a3891f88ba78efe29e26d1920cac40f779d391",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_AFTER_LORE_4.mp3",
+      "loudness": [
+        -19.7,
+        -1.5
+      ],
+      "duration": 8.64
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_SRC_1.wav",
+      "sha256": "d9c8b2952a2de90272d36db7f54c07d570a03ad2addea7e1e0a9434be9622fca",
+      "source_sha256": "4c13a63a47a5972c93e1312c34eba414925f0145da482fdf82a43e72581447c6",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_SRC_1.mp3",
+      "loudness": [
+        -17.4,
+        -1.7
+      ],
+      "duration": 8.32
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_SRC_2.wav",
+      "sha256": "11b0efba0fac241c8d97e3c17eac7c3ba8f26460970988b67bf8fc4a13a1efbb",
+      "source_sha256": "d06121f5d647a272d39a7575a372d629d349a271535778919142b4efdd00ddcd",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_AFTER_SRC_2.mp3",
+      "loudness": [
+        -17.6,
+        -2.0
+      ],
+      "duration": 4.24
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_SRC_3.wav",
+      "sha256": "464a1250bdd5a1861ba9a4d3a1409af8341e11163dbecf6390ebe39f51cb3660",
+      "source_sha256": "701ee5f921b0f0a47922e2e1259f4f48844a0ae46a8b61ded2a8b05d34d030f2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_SRC_3.mp3",
+      "loudness": [
+        -18.0,
+        -4.6
+      ],
+      "duration": 1.04
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_ALL_1.wav",
+      "sha256": "88b5688a6c25196959d707831b9d11309faf173bf96a2b45054c64b44f802396",
+      "source_sha256": "c9fe9144163052fded2416de418b810fcbdd29bd8c1217f0654ec14d628d8d54",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_ALL_1.mp3",
+      "loudness": [
+        -17.4,
+        -1.9
+      ],
+      "duration": 6.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_ALL_2.wav",
+      "sha256": "080ec423e895044eac0c4109befe96a6ac1adea9629273cdb435741a6ae6579d",
+      "source_sha256": "150ab026a68e41b30fd60bd8702d9525ecf96ce4b86b06edf0d1ca42903315c2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_AFTER_ALL_2.mp3",
+      "loudness": [
+        -17.9,
+        -3.4
+      ],
+      "duration": 0.88
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_ALL_3.wav",
+      "sha256": "8ba4a6d7478fd46878ef5077c984b3706c8550312a349f83601054799a0d0087",
+      "source_sha256": "3775939ff1dc5bd6ab5b8df65bb8a1324c00d6d0f4095cee605df17ebb03f67a",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_ALL_3.mp3",
+      "loudness": [
+        -18.3,
+        -1.6
+      ],
+      "duration": 6.24
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_HAND_1.wav",
+      "sha256": "ad5d49444f9a8365801ad2ca50c5418d6a9b89fd585e5fd2c419c65ac86b1fca",
+      "source_sha256": "dd8ca674861179b94753a43bf3f3c9ea3c9670c742c7c4239f8697eac2330624",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_HAND_1.mp3",
+      "loudness": [
+        -17.4,
+        -1.5
+      ],
+      "duration": 7.84
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_WARN_1.wav",
+      "sha256": "34398f6bcc9b34161e15ae47e4aa4c56584a4972635f362eae906c5a51da3fa1",
+      "source_sha256": "c38610153c00860315e9b9035923e0b7663709da7fb756a36620f33a47f6c45d",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_WARN_1.mp3",
+      "loudness": [
+        -17.4,
+        -3.3
+      ],
+      "duration": 5.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_WARN_2.wav",
+      "sha256": "df7058190c691163b58379def7a2107363ce0f29942a48d359c08e6a9e6e304f",
+      "source_sha256": "5142766bf2d8cbac239f999b825f9b5d5b525520b5ca5944d2af0f441f857c9f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_WARN_2.mp3",
+      "loudness": [
+        -18.2,
+        -1.5
+      ],
+      "duration": 2.88
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_HEUK_1.wav",
+      "sha256": "220c358f7d68b250aee6dea515bbe257efc0e870121e208c6bc8492256c77eed",
+      "source_sha256": "c934779b6c8b649636bf512ad8b12f9cac5fa0de9ac685f669bffc18193a8595",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LAST_HEUK_1.mp3",
+      "loudness": [
+        -17.8,
+        -2.8
+      ],
+      "duration": 2.96
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_HEUK_2.wav",
+      "sha256": "1250fda6f24e090c491715b5bd4c8cf66dd6df77415f56c876239e48d731539d",
+      "source_sha256": "30aec69cbce2f0611526107f02d62b6164e5bac97deb339a3236993bed878fcc",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LAST_HEUK_2.mp3",
+      "loudness": [
+        -18.1,
+        -3.4
+      ],
+      "duration": 6.64
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_HEUK_3.wav",
+      "sha256": "c1d4009ad39cfa3bdcd615749740529a45991c8fa7e0087479f5e8f75b38ec17",
+      "source_sha256": "3227eda693edcfdeaa83e6a07290a2c0aef63e07a102a26b305a2280ba4f0fc7",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_AFTER_LAST_HEUK_3.mp3",
+      "loudness": [
+        -19.9,
+        -1.5
+      ],
+      "duration": 2.32
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_BEOM_1.wav",
+      "sha256": "97db94454e96563c82caf3ed9ec14598300ab8e559ec15038fab03af7c6d3413",
+      "source_sha256": "e7a1b114685bba344ffa0d40e69d384c5d5c44f79476b905dfb3f2837efaa446",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LAST_BEOM_1.mp3",
+      "loudness": [
+        -17.7,
+        -4.2
+      ],
+      "duration": 3.04
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_BEOM_2.wav",
+      "sha256": "4f99c107bb48aaa942f04c7b6f5febab1760df6603ced887640b943aeb37fc2f",
+      "source_sha256": "df134016b1db9ddd073234ff319fd4b87c9d39d024b9b20842fda5a075feb106",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LAST_BEOM_2.mp3",
+      "loudness": [
+        -17.6,
+        -3.2
+      ],
+      "duration": 5.36
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_BEOM_3.wav",
+      "sha256": "9a3b9641577fada5b72d452acb1faa7d76b2f3d928a2940b7e00a663e459a9b0",
+      "source_sha256": "fefaaf5a3445e0f83a0d335ed0bd58d4bf903020f1a282ee048ffc7b2a919ae5",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_AFTER_LAST_BEOM_3.mp3",
+      "loudness": [
+        -18.5,
+        -1.5
+      ],
+      "duration": 2.96
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_SOE_1.wav",
+      "sha256": "65f058fcbc543567d593109a23b092506a2b1deac989f95636934486a2b7799c",
+      "source_sha256": "b9509d712e572725ff22fcbc2726427b47048ebf70f53f4148e741842608ac6e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LAST_SOE_1.mp3",
+      "loudness": [
+        -17.3,
+        -2.7
+      ],
+      "duration": 3.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_SOE_2.wav",
+      "sha256": "778f8d09620f61ff2a32c4fa6f2ba3a9ca4829bb4d6841916362cd971684b536",
+      "source_sha256": "dab70f4a5e624597d510d4483e7a883f0c72077261eaa839433bfb2f59d048c2",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_AFTER_LAST_SOE_2.mp3",
+      "loudness": [
+        -18.1,
+        -1.8
+      ],
+      "duration": 6.96
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_AFTER_LAST_SOE_3.wav",
+      "sha256": "38f84ec06850306be0c2ef99c2781bfb07d998eb0e5a708a50b26231dee31855",
+      "source_sha256": "296ef6e2313bfabba8cf8a5db3bfe97c85fdb5f4c6e6efd4891dc1c8906dfb5e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_AFTER_LAST_SOE_3.mp3",
+      "loudness": [
+        -20.9,
+        -1.5
+      ],
+      "duration": 4.24
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_SMELL_1.wav",
+      "sha256": "b7bf1f9315522e191e74f26093e31c756b26f7594de3ffe39fbf7b551644467a",
+      "source_sha256": "f216c7b09516a90a020ae856a2905df498def97a253c3d0dec8449c928eb6b8f",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_SMELL_1.mp3",
+      "loudness": [
+        -17.1,
+        -1.8
+      ],
+      "duration": 3.68
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_SMELL_2.wav",
+      "sha256": "d5a3cc81e1236788d6a09c0bf0403931448dff2dddf6dbe9057a25c4986beb72",
+      "source_sha256": "37cbc85469e556a6df97d80c39cbc406ee3227595c954e8aab0f9d463e1ff67e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_SMELL_2.mp3",
+      "loudness": [
+        -17.0,
+        -3.0
+      ],
+      "duration": 5.76
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_SMELL_3.wav",
+      "sha256": "38278e554a1511811e4e8bf10430be9174e8313d9e94dcaed4f3e2b89af0463f",
+      "source_sha256": "9933b144a37bfcecb00b2e274b2892f243492cdabe7d735e680f85e60188266b",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/doho/NPC_SHAMAN_SMELL_3.mp3",
+      "loudness": [
+        -17.8,
+        -2.0
+      ],
+      "duration": 2.24
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_GREET_1.wav",
+      "sha256": "6d61ee12c24df85796a63bc83e4f7943dc2d5efff998e32c2a96aead85600574",
+      "source_sha256": "c278390c34c375be3ffe8f441d0dbba49b4aee6fc238ca7d12db97e12110179d",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_GREET_1.mp3",
+      "loudness": [
+        -18.8,
+        -4.1
+      ],
+      "duration": 5.36
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_GREET_2.wav",
+      "sha256": "b3e12d44e58533b86ef1ac4b69da02c67a3f28c75f54775ed0dd78b098c7f67e",
+      "source_sha256": "d18e2e9096891e86ced7d89132489d5642ed0af9d4952cba20262c20cb88501d",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_GREET_2.mp3",
+      "loudness": [
+        -18.0,
+        -1.8
+      ],
+      "duration": 6.0
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_GREET_3.wav",
+      "sha256": "fd5aea5518567024b41ef1a6565a78137656ecc1082fdde47444f7275f2eeadb",
+      "source_sha256": "2c0f6b067ecd1df26612394605c3e8d341034c88759b34ccf61712f84e261e48",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_GREET_3.mp3",
+      "loudness": [
+        -17.8,
+        -3.0
+      ],
+      "duration": 5.92
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_GREET_4.wav",
+      "sha256": "4daaffc8f35a7183d1046a84b223b29889f8dec7046c73aec28ccd00be7f3133",
+      "source_sha256": "c5d1b6bd65b9ae46cb12b57e0a36b7070f3bf7f77332a7820d22f53021ba17f9",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_GREET_4.mp3",
+      "loudness": [
+        -17.2,
+        -2.1
+      ],
+      "duration": 6.08
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_REPEAT_4.wav",
+      "sha256": "9d4a1bcf1f5c13a4c615b9f037f013aa888da48078236992d02552253f4644db",
+      "source_sha256": "69ebb528bcbf1f980c922a0e2a5a936d36d544b403ac535757eaa53bcd36308e",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_REPEAT_4.mp3",
+      "loudness": [
+        -18.0,
+        -2.9
+      ],
+      "duration": 3.44
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_REPEAT_3.wav",
+      "sha256": "752a53635b50327a722b1c1bad9146ec70b65ca455d429e2e658e13403e55041",
+      "source_sha256": "2073dc1bd02e26a48a01a62f4f48332bcfa5eb4f1c1a74b63fecf0fca81dad92",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_REPEAT_3.mp3",
+      "loudness": [
+        -18.1,
+        -3.0
+      ],
+      "duration": 3.76
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_REPEAT_1.wav",
+      "sha256": "d1a83fbf92265b2e6bfdf8c608551514e376214a5625af4b00cebebb7a9e493a",
+      "source_sha256": "9d2faf01eb2d24f584528297d1ebb8bf301a1d8fbb03331a2dc9f7c13d0b1f6b",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_REPEAT_1.mp3",
+      "loudness": [
+        -17.5,
+        -3.4
+      ],
+      "duration": 2.08
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_REPEAT_2.wav",
+      "sha256": "948561bebdb65447a2e75776fb25ae6de8188455966175deed0049df8ef85dcd",
+      "source_sha256": "85bd9d2377f53dd0680d1a7b7159cd6acba3759bc6a36e4981276075d32c0e19",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_REPEAT_2.mp3",
+      "loudness": [
+        -18.0,
+        -1.9
+      ],
+      "duration": 1.84
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_IDENTIFY_1.wav",
+      "sha256": "b55e94149ffcf9a804e3155df1bdf914070023ad6ece5f5a4a454e3c91e6c5fe",
+      "source_sha256": "5bb11d877dd578b3352cfd12d6caa1158bb748693e3631f7f6bd7651dc2cf0bd",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_IDENTIFY_1.mp3",
+      "loudness": [
+        -18.4,
+        -4.4
+      ],
+      "duration": 3.6
+    },
+    {
+      "target": "assets/audio/voice/NPC_SHAMAN_IDENTIFY_2.wav",
+      "sha256": "2e1a77168684e4c5419a5a58edcb5ba9315cbe310cd62195dcf0ac1bda278bc7",
+      "source_sha256": "2896c0ec60ccd606fe753d461cfac858c8c35ea3f2a154aa1fee0f98b2fa1b99",
+      "source": "C:/workspace/joseon/tmp/audio572/voice/shaman/NPC_SHAMAN_IDENTIFY_2.mp3",
+      "loudness": [
+        -17.6,
+        -2.8
+      ],
+      "duration": 6.8
+    },
+    {
+      "target": "assets/audio/bgm/opening.ogg",
+      "sha256": "231f47418585b9df3b4d5c5dbac30fde0f05d94edf9c2f5b6ed2c96635bd95d5",
+      "source_sha256": "da1c46f41bf443ad8467b7afc2c660dcf1609ac8fb2ca944fd96d956319d7912",
+      "source": "C:/workspace/joseon-assets/workbench/audio/560_audio_library/new_audio/opening/opening_A1.mp3",
+      "loudness": [
+        -18.0,
+        -4.3
+      ],
+      "duration": 168.8
+    }
+  ]
+}

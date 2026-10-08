@@ -1,0 +1,69 @@
+{
+ "cue": "armor_hit",
+ "v": 3,
+ "prompt": "One sword strike against old iron armor. Brief dull metallic clank with a heavy compact thud, short dry tail, no prolonged ringing, no voice, no music.",
+ "seconds": 0.5,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:09",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.473016,
+ "lufs": "-16.7",
+ "peak": "-0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 1,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0003,
+    -0.0004
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/armor_hit_v3.wav",
+   "duration": 0.48,
+   "lufs": "-16.7",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20860,
+   "at": 0.473,
+   "removed_ms": 7.0,
+   "floor_db": -93.5,
+   "jump_db": 17.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.09,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -16.83,
+    -16.83
+   ],
+   "intake_tp": [
+    2.97,
+    2.88
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.07,
+   "lufs": "-16.7",
+   "true_peak": "-0.1"
+  },
+  "warn": [
+   "CLIP 1"
+  ]
+ }
+}

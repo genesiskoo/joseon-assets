@@ -1,0 +1,7 @@
+warning: in the working copy of 'docs/design/item_icons_466.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/design/item_icons_466_log.md', LF will be replaced by CRLF the next time Git touches it
+Traceback (most recent call last):
+  File "C:\workspace\joseon\._tmp\commit_466_review_preparation.py", line 64, in <module>
+    assert git('show', head + ':' + path) == (WT / path).read_bytes(), path
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: docs/art/466_item_icons/manifest.json

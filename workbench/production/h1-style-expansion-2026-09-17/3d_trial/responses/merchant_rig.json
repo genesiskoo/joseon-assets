@@ -1,0 +1,28 @@
+{
+  "captured_at": "2026-09-16T22:52:33.128Z",
+  "operation": "tools/call",
+  "tool": "meshy_rig",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"task_id\": \"01a0ac6b-f8dd-759f-b6cb-a94809c93847\",\n  \"status\": \"PENDING\",\n  \"message\": \"Rigging task created successfully. Task ID: 01a0ac6b-f8dd-759f-b6cb-a94809c93847\",\n  \"estimated_time\": \"2-3 minutes\"\n}"
+      }
+    ],
+    "structuredContent": {
+      "task_id": "01a0ac6b-f8dd-759f-b6cb-a94809c93847",
+      "status": "PENDING",
+      "message": "Rigging task created successfully. Task ID: 01a0ac6b-f8dd-759f-b6cb-a94809c93847",
+      "estimated_time": "2-3 minutes"
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "jumo",
+    "rank": 2,
+    "voice_id": "UqW1DivwFt1NwUMSGnTn",
+    "name": "Suzie - Calm Korean ",
+    "scene": "옛 주막 이야기를 묻자 주모가 말을 삼킨다. 친절하지만 쉽게 속을 보이지 않는다.",
+    "line": 1,
+    "file": "audio/jumo_2_2.mp3",
+    "request": {
+      "text": "내가 들녘 옛 주막집서… 오래 일했지. 그 얘긴, 말은 못 하겠소.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "그 옛 주막집은 아는 곳이오?",
+      "next_text": "더 묻지는 않겠소.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "uFVOShyXwWpOVqnRgFJj",
+    "history-item-id": "i6J3fIXtpvRpZbNyQAYv",
+    "character-cost": "4"
+  }
+}

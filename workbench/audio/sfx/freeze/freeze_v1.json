@@ -1,0 +1,67 @@
+{
+ "cue": "freeze",
+ "v": 1,
+ "prompt": "Ice rapidly forming over a body: sharp crystalline crackle and creak of frost spreading and hardening, close-up, crisp, short, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-09-28 19:38",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.476009,
+ "lufs": "-35.0",
+ "peak": "-9.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": -9.88,
+   "file": "_raw/freeze_v1.wav",
+   "duration": 0.48,
+   "lufs": "-35.0",
+   "true_peak": "-9.6"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20992,
+   "at": 0.476,
+   "removed_ms": 4.0,
+   "floor_db": -82.7,
+   "jump_db": 16.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.01,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -35.58,
+    -35.58
+   ],
+   "intake_tp": [
+    -8.9,
+    -8.91
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -9.88,
+   "lufs": "-35.0",
+   "true_peak": "-9.6"
+  },
+  "warn": []
+ }
+}

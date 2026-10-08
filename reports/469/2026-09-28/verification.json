@@ -1,0 +1,48 @@
+{
+  "card": 469,
+  "status": "candidate_not_installed",
+  "items": 4,
+  "existing_game_png": 42,
+  "runtime_files_byte_match": 109,
+  "target_definition_hashes_match": true,
+  "original_hashes_preserved": true,
+  "godot_ui_skin_modes": [
+    {
+      "mode": "forty",
+      "stdout_sha256": "11f8d51cc0c110abdae135437fa1d22d95020a2be9fd2b414a825223941f8253",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mode": "sizes",
+      "stdout_sha256": "e31f48cbdac95bc0405b9b4505388c00bd53cc734a9cdb485d05cdc04eb758ec",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mode": "black_sizes",
+      "stdout_sha256": "03109f1f83e729bf4d7eae0f65c839c11f5b7c1090a2ae3670ebaa5aacb6dac0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "gallery": [
+    {
+      "filename": "overview.jpg",
+      "bytes": 79989,
+      "sha256": "4bc5338ab32234e77488a5c03cd064b9b4e03f24653970ea19a579c3d2e0080f"
+    },
+    {
+      "filename": "godot_forty.jpg",
+      "bytes": 51375,
+      "sha256": "66a60e747346bc0666d9abf47329b93a62fded38649990a1a75f1fc63efac873"
+    },
+    {
+      "filename": "godot_sizes.jpg",
+      "bytes": 55099,
+      "sha256": "283c7399214d85e39ee2aee30fa7b44ca5b4c1e38598c7cd1d074bd505232fb1"
+    },
+    {
+      "filename": "godot_black_sizes.jpg",
+      "bytes": 56869,
+      "sha256": "f5fc85f5e885dceb673b27da08520078ad2df15f6a7b0d526c6c7644d0db598a"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-09-16T22:51:06.017Z",
+  "operation": "tools/call",
+  "tool": "meshy_get_task_status",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"01a0ac66-fc84-77fb-b5a2-97f040907d92\",\"type\":\"multi-image-to-3d\",\"name\":\"\",\"art_style\":\"\",\"object_prompt\":\"\",\"style_prompt\":\"\",\"negative_prompt\":\"\",\"texture_prompt\":\"Faithfully preserve the supplied character front and back. Korean manhwa game art, matte hand-painted cloth, broad readable color masses, restrained small pattern detail, no glossy skin or metal, no baked directional lighting. Preserve the black gat, Korean collar, sleeve and layered garment structure. Hands remain empty. No weapon fused into the body.\",\"texture_image_url\":\"\",\"text_style_prompt\":\"\",\"image_style_url\":\"\",\"status\":\"SUCCEEDED\",\"created_at\":1789598828321,\"progress\":100,\"started_at\":1789598828365,\"finished_at\":1789599053328,\"expires_at\":1789858253328,\"task_error\":null,\"model_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac66-fc84-77fb-b5a2-97f040907d92/output/model.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"model_urls\":{\"glb\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac66-fc84-77fb-b5a2-97f040907d92/output/model.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\"},\"thumbnail_url\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac66-fc84-77fb-b5a2-97f040907d92/output/preview.png?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\",\"texture_urls\":[{\"base_color\":\"https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac66-fc84-77fb-b5a2-97f040907d92/output/texture_0.png?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]\"}],\"remove_lighting\":true,\"consumed_credits\":30}"
+      }
+    ],
+    "structuredContent": {
+      "outcome": "SUCCEEDED",
+      "task_id": "01a0ac66-fc84-77fb-b5a2-97f040907d92",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "model_urls": {
+        "glb": "https://assets.meshy.ai/24bcf863-d360-4d71-95f2-e72662b5d1f0/tasks/01a0ac66-fc84-77fb-b5a2-97f040907d92/output/model.glb?[REDACTED_TEMPORARY_DOWNLOAD_QUERY]"
+      },
+      "consumed_credits": 30
+    }
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

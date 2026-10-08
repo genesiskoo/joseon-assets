@@ -1,0 +1,102 @@
+{
+  "card": 545,
+  "included_feature_card": 550,
+  "validated_source_head": "09c7a4fd196921a407b111988f1d0d59c921228b",
+  "validated_base_main": "2f0fa1548a3f91e83d6b03d8f78cde1d9b2bd847",
+  "results": {
+    "unit_character_profiles": {
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 1.6689655780792236,
+      "runtime_script_errors": 0,
+      "existing_allowed_exit_resource_lines": [],
+      "checks": 36
+    },
+    "unit_title_first_launch": {
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 5.511539697647095,
+      "runtime_script_errors": 0,
+      "existing_allowed_exit_resource_lines": [
+        "ERROR: 6 resources still in use at exit (run with --verbose for details)."
+      ]
+    },
+    "unit_save": {
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 2.1244606971740723,
+      "runtime_script_errors": 0,
+      "existing_allowed_exit_resource_lines": []
+    },
+    "restart_write": {
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 6.555636167526245,
+      "runtime_script_errors": 0,
+      "existing_allowed_exit_resource_lines": []
+    },
+    "restart_read": {
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 5.460132837295532,
+      "runtime_script_errors": 0,
+      "existing_allowed_exit_resource_lines": []
+    },
+    "focus_e2e": {
+      "passed": true,
+      "exit_code": 0,
+      "elapsed_seconds": 132.68391752243042,
+      "runtime_script_errors": 0,
+      "existing_allowed_exit_resource_lines": [],
+      "scenarios_passed": 4,
+      "scenarios_total": 4,
+      "checks_by_scenario": {
+        "character_profiles": 38,
+        "system_menu": 56,
+        "save_continue": 12,
+        "ui_windows": 65
+      },
+      "assertion_total": 171,
+      "runner_checks": 5
+    }
+  },
+  "source_sha256": {
+    "ui/title_ui.gd": "284e84ab2173df66ff38257310e90167af57760973400ba535987d97cf2b049b",
+    "ui/system_menu.gd": "8effab261b4ea0de832c7f4ed81eadc76f6b7846c3730c5bb924e91bbdda04b4",
+    "ui/title_backdrop.gd": "7e8599edf95a2b92990cc87a3e9a937b1edcfc6a46b02c677f7aa9932d68565b",
+    "core/character_profiles.gd": "26f0bc9df513a050aa07fd4757178841e0c720e0e6576299b3dc4a46a706b7bc",
+    "core/credits.gd": "0aaac25366ee971c8f7785d1ab62044adf369a2886391510e17ddfc0bdca9606",
+    "core/save_system.gd": "9a0a70efb7c535944e2dda0feeec7a03b6ce114c44d44b0a5ad1637d243cf1ea",
+    "world/main.gd": "93512ca4a43c4af1fb6edb5fee4c7fdba389b5db731d00ad166561f913dc3504",
+    "tests/e2e/scenarios/character_profiles.gd": "dd53620710c8e8f2fc0bcbb961f3d870e8f0a82f9289ad19ce847a0c2becff1e",
+    "tests/e2e/scenarios/system_menu.gd": "426cc302b81029490ee08ac3f7aa5de425b9dfb4b35e01bd1fe336cc73c46d2e",
+    "tests/e2e/scenarios/save_continue.gd": "f98b5822f824e7d79cb1a0aac57bf2467542e83adbae352474475ce8b27047be",
+    "tests/e2e/scenarios/ui_windows.gd": "7f6e3db920dd49009431bcf99fbafd4f87a574c3438bdde64d4e933c4045b26e",
+    "tests/e2e/e2e.gd": "8e565bb823f11d2f1566b3dbfc469d0567d7b6990ca3c8cf861c4ebaf7decde6",
+    "tests/e2e/e2e_runner.gd": "12e1d593b409972fffbf868a8e6692b52f6a0ffd26fa8b6256acb6723d5b820b",
+    "tests/test_character_profiles.gd": "9b307a650b331f05b3f652b83b344ed9aa8ee30852c978259e5e6f19f5a699ce",
+    "tests/test_profiles_restart.gd": "37c9f626009ccd566d9aa2e28f6bd26cb5083b5defbc076eede8738cb2109749",
+    "tests/test_title_first_launch.gd": "89cdbd7243de29c6906682327bf52177d9165721c860f08538b08750cbca76ea",
+    "tests/test_save.gd": "7ff2db8187f3527f2357cfc897fd074f8f0f9aa25a0e04c7e9185339c88d1c58",
+    "tools/test.ps1": "bcd47bace7700c74ad1c9bdacc77b59e051848d62278b846e81d4f9fc5ae2250"
+  },
+  "bitmap_preservation_matches": 4,
+  "default_background": "motgol",
+  "production_override_does_not_change_default": true,
+  "full_gate_pending_root": true,
+  "main_landed": false,
+  "approved_capture_source_reuse": {
+    "same_as_final_approved_capture": true,
+    "comparison": "whole production TitleUi file, whole title backdrop file, reused original Doho alpha PNG",
+    "sha256": {
+      "ui/title_ui.gd": "284e84ab2173df66ff38257310e90167af57760973400ba535987d97cf2b049b",
+      "ui/title_backdrop.gd": "7e8599edf95a2b92990cc87a3e9a937b1edcfc6a46b02c677f7aa9932d68565b",
+      "assets/portraits/idle/doho_h1_idle_frame0_alpha.png": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f"
+    },
+    "footer_included_in_identical_title_ui": true,
+    "preserved_capture_runs": 5,
+    "preserved_native_images": 25,
+    "new_capture_not_required_for_unchanged_render_sources": true,
+    "full_landing_regression_pending_root": true
+  }
+}

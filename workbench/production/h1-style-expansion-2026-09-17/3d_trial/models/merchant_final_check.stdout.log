@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+== model_check C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/H1_merchant.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 24: Hips, LeftUpLeg, LeftLeg, LeftFoot, LeftToeBase, RightUpLeg…
+삼각형 10620
+AABB: 키 1.60 · 너비 1.42 · 깊이 0.46 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: merchant_retexture_01_base_color 2048x2048
+클립 3: attack(1.54s), idle(1.88s), walk(1.08s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → (없음)
+  die    → (없음)
+  타격 프레임(오른손 속도 피크) → attack_impact = {"attack": 0.40}
+RESULT PASS

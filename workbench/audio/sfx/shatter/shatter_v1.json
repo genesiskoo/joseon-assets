@@ -1,0 +1,67 @@
+{
+ "cue": "shatter",
+ "v": 1,
+ "prompt": "A frozen body shattering into ice shards: sharp glassy ice break with small shards scattering and tinkling on a stone floor, close-up, loud, crisp, short, dry, isolated, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-09-28 19:38",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.672018,
+ "lufs": "-34.2",
+ "peak": "-17.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": -18.12,
+   "file": "_raw/shatter_v1.wav",
+   "duration": 0.68,
+   "lufs": "-34.2",
+   "true_peak": "-18.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29636,
+   "at": 0.672,
+   "removed_ms": 8.0,
+   "floor_db": -79.0,
+   "jump_db": 24.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.07,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -34.2,
+    -34.2
+   ],
+   "intake_tp": [
+    -15.09,
+    -15.02
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -18.11,
+   "lufs": "-34.2",
+   "true_peak": "-17.9"
+  },
+  "warn": []
+ }
+}

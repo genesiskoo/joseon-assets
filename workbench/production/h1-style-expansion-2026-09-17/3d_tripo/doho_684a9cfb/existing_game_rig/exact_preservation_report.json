@@ -1,0 +1,25 @@
+{
+  "output": "C:\\workspace\\joseon\\tmp\\doho_existing_rig_transfer\\doho_existing_rig_new_visual_exact_anims.glb",
+  "method": "New mesh/material/skin appended to original GLB; original skeleton nodes and animation JSON/accessors/buffer bytes kept exactly. No animation re-export quantization.",
+  "original_animation_names": [
+    "walk",
+    "run",
+    "idle",
+    "hit",
+    "die",
+    "attack4",
+    "attack3",
+    "attack2",
+    "attack"
+  ],
+  "animation_count": 9,
+  "animation_json_exact": true,
+  "original_binary_prefix_exact": true,
+  "bone_node_rest_exact": true,
+  "animation_tolerance": "0: original float bytes and samplers unchanged",
+  "mesh_nodes_modified": [
+    26
+  ],
+  "source_sha256": "a3fc7dd875610abc2929b04b4098cb9a330b11eca44c5c91efa7d5a6464c9e7d",
+  "output_sha256": "6566f0d8e9f94fb861ff556d7b68b62e6dd06c515eb5c684aae6d6a6f0891dff"
+}

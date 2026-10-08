@@ -1,0 +1,67 @@
+{
+ "cue": "hit",
+ "v": 3,
+ "prompt": "One weighty sword hit into a monster body, tight wet thud with a short steel bite, punchy midrange, dry close recording, no voice, no music, no long tail.",
+ "seconds": 0.5,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-02 21:02",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.468005,
+ "lufs": "-23.2",
+ "peak": "-4.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 39.2,
+   "dc": [
+    0.0007,
+    0.0004
+   ],
+   "sample_peak_db": -3.42,
+   "file": "_raw/hit_v3.wav",
+   "duration": 0.48,
+   "lufs": "-23.1",
+   "true_peak": "-3.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20639,
+   "at": 0.468,
+   "removed_ms": 12.0,
+   "floor_db": -89.7,
+   "jump_db": 38.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 2.17,
+   "why": "트루피크 여유 +2.2 LU",
+   "intake_i": [
+    -23.82,
+    -24.01
+   ],
+   "intake_tp": [
+    -0.82,
+    -3.18
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 10.2,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -4.93,
+   "lufs": "-23.2",
+   "true_peak": "-4.9"
+  },
+  "warn": []
+ }
+}

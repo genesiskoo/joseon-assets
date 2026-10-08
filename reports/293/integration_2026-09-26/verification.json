@@ -1,0 +1,95 @@
+{
+  "card": 293,
+  "baseline_commit": "75a8b37d",
+  "candidate_commit": "830b090d",
+  "scenario": "elite_ui_view",
+  "seed": 29320260926,
+  "resolution": [
+    1280,
+    720
+  ],
+  "unit_suites": 52,
+  "e2e_checks": {
+    "elite_ui_view": 6,
+    "elite_pack": 52,
+    "item_showcase": 1395,
+    "hover_target": 45,
+    "pickup_equip": 37,
+    "element_ui": 4,
+    "ui_windows": 63
+  },
+  "e2e_total": 1602,
+  "gate": "SCRIPT ERROR0 / autoload10 / runner5",
+  "images": [
+    {
+      "path": "blue_before.jpg",
+      "state": "blue",
+      "version": "before",
+      "bytes": 115028,
+      "sha256": "de632da92afbd928db0443b57200d1ca6c436c1c4d52d65d35a43be4be3d20e5"
+    },
+    {
+      "path": "blue_after.jpg",
+      "state": "blue",
+      "version": "after",
+      "bytes": 113418,
+      "sha256": "f1babd3cde478097caed0e3f761ff9127e7365741e1ee1c29e6c550565bd353f"
+    },
+    {
+      "path": "blue_hover_before.jpg",
+      "state": "blue_hover",
+      "version": "before",
+      "bytes": 113955,
+      "sha256": "6642d1e5df91fed032e87e90e09aa537671697cdd50b6e74d781f64ff52c6637"
+    },
+    {
+      "path": "blue_hover_after.jpg",
+      "state": "blue_hover",
+      "version": "after",
+      "bytes": 116412,
+      "sha256": "eda3d277eefe4cd52d0b96892cc6c8162e78f687f52d63ab30433a77715058d7"
+    },
+    {
+      "path": "gold_hover_before.jpg",
+      "state": "gold_hover",
+      "version": "before",
+      "bytes": 116461,
+      "sha256": "bc7ad6022540e641d1ec1198914ff6a80786fa9bb8edf75199285ecdde5dc963"
+    },
+    {
+      "path": "gold_hover_after.jpg",
+      "state": "gold_hover",
+      "version": "after",
+      "bytes": 116398,
+      "sha256": "d8cef298de3777df4ce31ec27e4fcdb9fefcb1cda0ad21edccd53a038ce08b39"
+    },
+    {
+      "path": "boss_hover_before.jpg",
+      "state": "boss_hover",
+      "version": "before",
+      "bytes": 119287,
+      "sha256": "a732fe0483a7d514ab0de0ffef52e74937cacc37059d050c654936aa97e6ea9e"
+    },
+    {
+      "path": "boss_hover_after.jpg",
+      "state": "boss_hover",
+      "version": "after",
+      "bytes": 120551,
+      "sha256": "dbccde03777dcda6543d2e485f1021b4a7ec9614d68697756268300261d52133"
+    },
+    {
+      "path": "floor_hover_before.jpg",
+      "state": "floor_hover",
+      "version": "before",
+      "bytes": 116354,
+      "sha256": "a6bb178103896e9b7baff159b9917a9234a6798ed4510b9e157c69483b34ef43"
+    },
+    {
+      "path": "floor_hover_after.jpg",
+      "state": "floor_hover",
+      "version": "after",
+      "bytes": 114110,
+      "sha256": "64c47d830db7a26b21ce8cbe820b437acc49761de8de8d40d0f8f2b736505a10"
+    }
+  ]
+}

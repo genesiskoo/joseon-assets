@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "label": "selftest_corrected",
+      "command": [
+        "C:\\Users\\FORYOUCOM\\miniconda3\\python.exe",
+        "tools/balance_replay.py",
+        "--selftest"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "file": "selftest_corrected.stdout.raw.log",
+        "sha256": "639af4982fedfc6d21a70981c63b9365d6c2599138bac80a7b3ace76ef52cd43",
+        "bytes": 44
+      },
+      "stderr": {
+        "file": "selftest_corrected.stderr.raw.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    {
+      "label": "compare_corrected",
+      "command": [
+        "C:\\Users\\FORYOUCOM\\miniconda3\\python.exe",
+        "tools/balance_replay.py",
+        "--compare",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\._tmp\\536_fixed60\\536_fixed60_1.result.json",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\._tmp\\536_fixed60\\536_fixed60_2.result.json",
+        "--out",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\._tmp\\536_fixed60\\comparison_corrected.json"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "file": "compare_corrected.stdout.raw.log",
+        "sha256": "129f73c5b6e6e295981d73e762031fef480139ad3a86cd77d07c206c8d670fdb",
+        "bytes": 98
+      },
+      "stderr": {
+        "file": "compare_corrected.stderr.raw.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

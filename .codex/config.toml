@@ -1,0 +1,5 @@
+[mcp_servers.pixellab]
+url = "https://api.pixellab.ai/mcp"
+bearer_token_env_var = "PIXELLAB_API_TOKEN"
+startup_timeout_sec = 30
+tool_timeout_sec = 120

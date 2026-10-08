@@ -1,0 +1,34 @@
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (3.7초)
+== e2e (icon_intake,equipment_ui,inactive_gear,ui_tooltips,item_ui,pickup_equip,vendor_quest,belt_unify) ==
+E2E start: icon_intake, equipment_ui, inactive_gear, ui_tooltips, item_ui, pickup_equip, vendor_quest, belt_unify
+E2E ▶ icon_intake
+E2E icon_intake PASS (검사 64)
+E2E ▶ equipment_ui
+E2E equipment_ui PASS (검사 33)
+E2E ▶ inactive_gear
+  · 툴팁 줄 [name] 장검
+  · 툴팁 줄 [base] 피해 8~14
+  · 툴팁 줄 [base] 공격 속도 느림
+  · 툴팁 줄 [req] 요구 레벨 5
+  · 툴팁 줄 [req] 요구 힘 30
+  · 툴팁 줄 [inactive] 요구치 부족 — 꺼짐
+  · 툴팁 줄 [hint] 좌클릭: 벗어서 들기
+  · 툴팁 줄 [hint] 우클릭 / Shift+클릭: 가방으로 벗기
+  · 좌판 ilvl — 못골 들녘 1회차: 무리 레벨 1~3 · max_area_level 3 · 좌판 장비 ilvl [3, 3, 3, 3] · dev G ilvl 들머리 1 / 끝 무리 3
+  · 좌판 ilvl — 정령재 1회차: 무리 레벨 4~7 · max_area_level 7 · 좌판 장비 ilvl [7, 7, 7, 7] · dev G ilvl 들머리 4 / 끝 무리 7
+  · 좌판 ilvl — 정령재 2회차: 무리 레벨 4~7 · max_area_level 7 · 좌판 장비 ilvl [19, 19, 19, 19] · dev G ilvl 들머리 16 / 끝 무리 19
+E2E inactive_gear PASS (검사 50)
+E2E ▶ ui_tooltips
+E2E ui_tooltips PASS (검사 97)
+E2E ▶ item_ui
+E2E item_ui PASS (검사 42)
+E2E ▶ pickup_equip
+E2E pickup_equip PASS (검사 37)
+E2E ▶ vendor_quest
+E2E vendor_quest PASS (검사 36)
+E2E ▶ belt_unify
+E2E belt_unify PASS (검사 15)
+E2E SUMMARY: 8/8 PASS
+  e2e  (34.2초) — 제한 3600초
+전부 PASS

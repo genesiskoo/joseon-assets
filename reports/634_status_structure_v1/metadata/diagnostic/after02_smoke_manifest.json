@@ -1,0 +1,88 @@
+{
+  "card": 634,
+  "phase": "after02",
+  "provisional": true,
+  "fps": 60,
+  "speed": 1.0,
+  "windows": [
+    {
+      "label": "burn",
+      "start_frame_zero_based": 96,
+      "end_frame_exclusive": 456,
+      "frames": 360,
+      "start_sample": 76800,
+      "end_sample_exclusive": 364800
+    },
+    {
+      "label": "chill",
+      "start_frame_zero_based": 586,
+      "end_frame_exclusive": 946,
+      "frames": 360,
+      "start_sample": 468800,
+      "end_sample_exclusive": 756800
+    },
+    {
+      "label": "frozen",
+      "start_frame_zero_based": 1076,
+      "end_frame_exclusive": 1436,
+      "frames": 360,
+      "start_sample": 860800,
+      "end_sample_exclusive": 1148800
+    },
+    {
+      "label": "sal",
+      "start_frame_zero_based": 1566,
+      "end_frame_exclusive": 1926,
+      "frames": 360,
+      "start_sample": 1252800,
+      "end_sample_exclusive": 1540800
+    }
+  ],
+  "audio": {
+    "format": "source PCM s16le stereo 48000Hz; exactly 800 samples per 60fps frame",
+    "before_segment_sha256": {
+      "burn": "f4b2b1818765dc06d6688824e4436ed985e28d7efbbdafac60a8c5f2d2c7a0d6",
+      "chill": "9c6edd6cbecb7c95afaf3d3969cc78bd26c4388c6ffe9e465a45b306cb4be5bf",
+      "frozen": "8282b04c4245eebbb9cf82418b358bc62908b7239f845ca260324dd928f72270",
+      "sal": "edadef32e1b606bb20e6570b014c20d1ca0665756dbd3f029514a2cef726d8f7"
+    },
+    "after_segment_sha256": {
+      "burn": "2c483954c535a67fd055f72ee813fc7b58666d7f8dd66954e7b2a564de03091c",
+      "chill": "1ead7d70b888cd05bb9ade8dc47a50054e5b1016aaa45caa903af091d357b66b",
+      "frozen": "e0f7af02d19c5dd0c129f491ee1ef2c3bf55195487dd296bfd363b21e7ae7f6b",
+      "sal": "e9fc0e14e5cfdd31749aa37886565bb31a9fadd6c082792056d03aada46f3fa4"
+    },
+    "identical": false,
+    "difference_reason": "Existing core/audio.gd independently randomizes sound variant/pitch RNG; capture combat RNG remains exact. Comparison and actual reel share the same AFTER native audio; each full-engine movie retains its original native audio."
+  },
+  "file": {
+    "file": "after02_actual_smoke_60fps.mp4",
+    "bytes": 4193578,
+    "sha256": "f1ba935d692113cf0933bfcf8afc6934e87848a353956a3a58203cd5e332bd5c",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuvj420p",
+          "color_range": "pc",
+          "r_frame_rate": "60/1",
+          "nb_frames": "1440"
+        },
+        {
+          "codec_name": "aac",
+          "r_frame_rate": "0/0",
+          "nb_frames": "1126"
+        }
+      ],
+      "format": {
+        "duration": "24.000000",
+        "size": "4193578"
+      }
+    },
+    "whole_decode_exit": 0
+  }
+}

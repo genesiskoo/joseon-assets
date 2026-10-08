@@ -1,0 +1,49 @@
+{
+	"aabb_position": [
+		-0.5,
+		-0.100000001490116,
+		-0.5
+	],
+	"aabb_size": [
+		1.0,
+		0.100000001490116,
+		1.0
+	],
+	"contract": "1 x 1 tile; top Y=0; exact source normals/UV/albedo retained; winding corrected",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "source winding corrected",
+	"file": "models/floor.glb",
+	"id": "floor",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"cull_mode": 0,
+			"name": "material_0",
+			"roughness": 1.0,
+			"texture_size": [
+				1024,
+				1024
+			]
+		}
+	],
+	"sha256": "90a56695aac08d446cbabceaaf93f4593c57e05185d64288deb03860dd8130e2",
+	"triangles": 12,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.5,
+		-0.100000001490116,
+		-0.5
+	],
+	"vertex_aabb_size": [
+		1.0,
+		0.100000001490116,
+		1.0
+	]
+}

@@ -1,0 +1,14 @@
+# === Secrets — NEVER commit ===
+.env
+.env.*
+!.env.example
+*.key
+*.secret
+
+# === Retro Diffusion API examples (cloned tooling, not tracked here) ===
+/tools/
+
+# === Python ===
+.venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,31 @@
+{
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "state": "cancelled_by_pd_platform_change",
+  "generation_submitted": false,
+  "model_content_moderation": "not_tested",
+  "cost_preflight_without_reference": 1,
+  "media_id": "3df55e5f-f0c5-483f-b921-81aa7b2b3e60",
+  "project": {
+    "project_id": "ff599057-39f5-4b5c-bec5-1ddf0f409739",
+    "default_folder_id": "ff599057-39f5-4b5c-bec5-1ddf0f409739",
+    "workspace_id": "1ae511f9-3c08-4ca2-91bb-eb2d4d992cd3",
+    "name": "조선헌터스 구미호 원화"
+  },
+  "params": {
+    "model": "gpt_image_2_5",
+    "prompt": "Use case: stylized-concept. Create one new knee-up, three-quarter revealed-form boss character concept for a Korean Joseon dark-fantasy isometric action RPG.\n\nThe attached two-panel illustration is a CHARACTER IDENTITY, GAZE, EXPRESSION AND ART-STYLE reference only. Preserve the adult Korean woman's recognizable face exactly: narrow almond-shaped amber-gold eyes with focused direct eye contact beneath slightly lowered upper eyelids, lowered chin, restrained knowing asymmetrical smile, black hair with loose face-framing strands and a plain wooden pin. Keep the intimate, confident expression and the economical hand near her chin. Her expression is mesmerizing and quietly predatory, never cute, vacant, screaming or snarling. Produce one continuous composition with one woman, not the reference's split panels or a duplicated face.\n\nRedesign her revealed-form costume with the bold flesh-and-monster contrast of late-1990s and early-2000s dark-fantasy boss art. The ordinary tavern hostess's clothing has become a radically asymmetric Joseon hanbok: one surviving faded-indigo sleeve, a recognizable pale collar edge, loosened goreum ties, and the side knot of her plain linen work apron. Narrow opaque indigo cloth crosses and covers the front chest; a secure opaque hip wrap anchors a heavy skirt panel. Broad exposed skin planes at the opposite shoulder, flank, abdomen and one thigh contrast with the narrow cloth and the dense hanging skirt. Design coherent cloth tension and folds, not random holes or a Western lingerie costume. The apron and brown skirt panel are saturated with dark-red blood and hang with real weight.\n\nKeep her beautiful face human. Dark organic discoloration marks the neck, exposed flank and wrists; fingertips are darkened with long physical claws. Fresh blood coats the claws, fingers and wrist, with smeared blood on the remaining cloth. Her inviting face remains composed despite the physical brutality of her hands. One hand rests lightly near the chin as in the reference; the other is held away from the torso with naturally separated long fingers. Natural adult human proportions, two human arms and legs, grounded posture and a subtly forward-leaning invitation, no giant or quadruped body.\n\nNine heavy charcoal-black physical fox tails grow from the lower back, surrounding her in asymmetric low-trailing, side-enclosing and raised rear curves. Dense matte fur, substantial roots and distinct tails; do not form a symmetrical decorative halo or cover the face. The tails claim the space around a calm human body.\n\nMatch the supplied matte hand-painted character style, large readable shapes and tactile cotton, wood, fur and skin. Dim wooden Joseon tavern background with minimal detail, cool shadows and restrained warm directional light. Cold human skin, deep indigo and brown cloth, black fur and visible dark-red blood. Keep eyes, face, neck, hands and costume overlaps readable. Phase-one physical menace, no glowing magic, fire, purple aura, crown, ornate queen dress, insect armor, scorpion limbs, extra limbs, text or watermark.",
+    "medias": [
+      {
+        "role": "image",
+        "value": "3df55e5f-f0c5-483f-b921-81aa7b2b3e60"
+      }
+    ],
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "resolution": "2k",
+    "quality": "medium",
+    "folder_id": "ff599057-39f5-4b5c-bec5-1ddf0f409739"
+  },
+  "cancel_reason_ko": "PD가 Higgsfield 대신 Comfy Cloud로 생성하도록 지시했다. Higgsfield 작업은 제출하지 않고 취소한다."
+}

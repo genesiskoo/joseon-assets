@@ -1,0 +1,5 @@
+SCRIPT ERROR: Trying to assign an array of type "Array" to a variable of type "Array[int]".
+   at: Plate._draw_sizes (res://qa_godot.gd:54)
+   GDScript backtrace (most recent call first):
+       [0] _draw_sizes (res://qa_godot.gd:54)
+       [1] _draw (res://qa_godot.gd:31)

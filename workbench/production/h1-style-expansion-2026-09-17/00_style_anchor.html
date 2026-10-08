@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H1 공통 스타일 기준표 · 조선헌터스</title>
+  <style>
+    :root { color-scheme: dark; --bg:#17191c; --panel:#212429; --line:#414449; --text:#e9e5dd; --muted:#b4b3b0; --blue:#8faac1; --red:#b57465; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif; font-size:15px; line-height:1.65; }
+    main { width:min(1256px,calc(100% - 64px)); margin:0 auto; padding:40px 0 30px; }
+    p,h1,h2,h3 { margin:0; }
+    .eyebrow { color:var(--blue); font-size:12px; font-weight:700; letter-spacing:.1em; }
+    h1 { margin:8px 0 10px; font-size:clamp(28px,3.2vw,42px); line-height:1.2; letter-spacing:-.055em; }
+    .lead { color:var(--muted); max-width:830px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 26px; }
+    .chip { padding:4px 10px; border:1px solid var(--line); border-radius:4px; font-size:12px; }
+    .chip.active { border-color:#708ca3; color:#c5d9e9; }
+    .visual-grid { display:grid; grid-template-columns:minmax(240px,.88fr) minmax(0,1.45fr); gap:20px; align-items:start; }
+    figure { margin:0; }
+    .reference,.detail,.card { background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    .crop { position:relative; overflow:hidden; background:#363330; }
+    .crop img { position:absolute; display:block; max-width:none; height:auto; }
+    /* 원본 1536×1024. PNG는 편집하지 않고 왼쪽 H1 영역만 표시한다. */
+    .whole { aspect-ratio:486 / 918; }
+    .whole img { width:316.049383%; left:-4.938272%; top:-6.971678%; }
+    .face { aspect-ratio:138 / 153; }
+    .face img { width:1113.043478%; left:-141.304348%; top:-79.738562%; }
+    .robe { aspect-ratio:395 / 500; }
+    .robe img { width:388.860759%; left:-19.240506%; top:-49%; }
+    figcaption { padding:14px 17px 16px; color:var(--muted); font-size:13px; }
+    figcaption strong { display:block; color:var(--text); font-size:15px; margin-bottom:3px; }
+    .details { display:grid; gap:18px; }
+    .detail { display:grid; grid-template-columns:40% 60%; }
+    .detail .crop { align-self:start; }
+    .detail-copy { padding:22px 23px; }
+    h2 { font-size:20px; line-height:1.4; letter-spacing:-.025em; }
+    h3 { font-size:16px; line-height:1.45; letter-spacing:-.025em; }
+    .detail-copy p { color:var(--muted); font-size:14px; margin-top:10px; }
+    .rule-list { margin:11px 0 0; padding-left:18px; color:var(--muted); font-size:14px; }
+    .rule-list li { margin:5px 0; }
+    strong { color:var(--text); }
+    .section { margin-top:30px; }
+    .section > p { margin-top:7px; color:var(--muted); }
+    .palette { display:grid; grid-template-columns:2.5fr 1.2fr 1fr 1fr .65fr; margin-top:16px; border-radius:6px; overflow:hidden; border:1px solid var(--line); }
+    .swatch { min-height:100px; padding:16px 13px; display:flex; flex-direction:column; justify-content:flex-end; gap:2px; color:#f1eee7; text-shadow:0 1px 3px #000; }
+    .swatch b { font-size:14px; }
+    .swatch span { font-size:12px; }
+    .navy { background:#252b3b; }
+    .ink { background:#252525; }
+    .ivory { background:#c7bdab; color:#272722; text-shadow:none; }
+    .sash { background:#783f36; }
+    .jade { background:#436a86; }
+    .note { margin-top:9px; font-size:12px; color:var(--muted); }
+    .two-up { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:16px; }
+    .card { padding:22px; }
+    .card p { margin-top:9px; color:var(--muted); font-size:14px; }
+    .card .label { display:block; color:var(--blue); font-size:12px; font-weight:700; margin-bottom:7px; }
+    .card.scene .label { color:#d6b092; }
+    .table-wrap { margin-top:15px; border:1px solid var(--line); border-radius:6px; overflow:auto; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th,td { text-align:left; vertical-align:top; padding:14px 17px; border-bottom:1px solid var(--line); }
+    th { color:var(--text); background:#2a2e33; font-size:13px; }
+    td { color:var(--muted); }
+    tbody tr:last-child td { border-bottom:0; }
+    td:first-child { width:19%; min-width:116px; color:var(--text); font-weight:700; }
+    .source-role { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:16px; }
+    .source-role div { border-top:2px solid #5c7180; padding:12px 14px 0; }
+    .source-role b { font-size:14px; display:block; }
+    .source-role span { font-size:13px; color:var(--muted); display:block; margin-top:4px; }
+    .qa { padding:20px 22px; background:#20262b; border-left:3px solid var(--blue); margin-top:28px; }
+    .qa p { color:var(--muted); font-size:14px; margin-top:8px; }
+    footer { margin-top:26px; border-top:1px solid var(--line); padding-top:15px; font-size:12px; color:var(--muted); }
+    a { color:#b3d2e9; text-underline-offset:3px; }
+    @media(max-width:900px) {
+      main { width:calc(100% - 32px); padding-top:25px; }
+      .visual-grid { grid-template-columns:minmax(190px,.85fr) minmax(0,1.2fr); gap:14px; }
+      .detail { grid-template-columns:1fr; }
+      .detail .crop { width:100%; }
+      .detail.face-detail .crop { width:60%; margin:0 auto; }
+      .detail-copy { padding:18px; }
+      .source-role { grid-template-columns:1fr; }
+    }
+    @media(max-width:600px) {
+      .visual-grid { grid-template-columns:1fr; }
+      .reference { width:min(100%,390px); margin:0 auto; }
+      .detail { grid-template-columns:40% 60%; }
+      .detail.face-detail .crop { width:100%; }
+      .detail-copy { padding:15px; }
+      .two-up { grid-template-columns:1fr; }
+      .palette { grid-template-columns:repeat(5,1fr); }
+      .swatch { padding:12px 7px; }
+      .swatch b { font-size:12px; }
+      .swatch span { font-size:11px; }
+    }
+    @media print {
+      :root { color-scheme:light; }
+      body { background:white; color:#17191c; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+      main { width:100%; padding:0; }
+      .lead,.note,footer,.section>p,.qa p,.source-role span { color:#42484e; }
+      .reference,.detail,.card,table,.qa { break-inside:avoid; }
+      .section { break-inside:avoid; }
+      .section>h2,.qa h3,.source-role b { color:#17191c; }
+      a { color:#2c536e; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">JOSEON HUNTERS · ART DIRECTION / 00</p>
+    <h1>H1 공통 스타일 기준표</h1>
+    <p class="lead">도호의 능청과 겹옷 실루엣을 중심으로, PC·NPC·배경을 같은 선·명암·재질로 연결한다.</p>
+    <div class="meta">
+      <span class="chip active">승인 원본: 왼쪽 H1</span>
+      <span class="chip">도호 외형 D-071 · 공통 화풍 D-072</span>
+      <span class="chip">어두운 게임 톤 D-070</span>
+      <span class="chip">2026-09-17</span>
+    </div>
+  </header>
+
+  <section class="visual-grid" aria-label="H1 승인 원본과 부분 확대">
+    <figure class="reference">
+      <div class="crop whole"><img src="references/H1_approved_board.png" alt="승인 보드 왼쪽 H1: 검을 어깨에 건 도호의 전신. 남색 겹도포와 붉은 허리끈, 푸른 패, 흑립." width="1536" height="1024"></div>
+      <figcaption><strong>H1 · 능청 검객</strong>흑립부터 신발까지 큰 형태를 먼저 읽힌다. 남색 자락이 벌어지며 바지와 다리의 동세가 드러난다. 검·얼굴·흰 동정이 시선의 중심이다.</figcaption>
+    </figure>
+    <div class="details">
+      <article class="detail face-detail">
+        <div class="crop face"><img src="references/H1_approved_board.png" alt="H1 얼굴 확대: 절제한 눈코입, 가는 윤곽선, 큰 명암면과 능청스러운 미소." width="1536" height="1024"></div>
+        <div class="detail-copy">
+          <p class="eyebrow">01 / 선 · 얼굴</p>
+          <h2>작은 선, 큰 명암면</h2>
+          <ul class="rule-list">
+            <li>눈·코·입은 짧고 절제된 선으로 형태를 잡는다.</li>
+            <li>광대·턱·목은 큰 면으로 나누고 피부 광택을 억제한다.</li>
+            <li>한쪽 입꼬리와 여유 있는 눈매로 도호의 능청을 남긴다.</li>
+            <li>NPC는 얼굴형·백발·수염·표정으로 연령을 구분한다.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="detail">
+        <div class="crop robe"><img src="references/H1_approved_board.png" alt="H1 겹도포 확대: 남색의 큰 면, 소매와 허리의 주요 주름, 붉은 매듭과 푸른 패." width="1536" height="1024"></div>
+        <div class="detail-copy">
+          <p class="eyebrow">02 / 형태 · 재질</p>
+          <h2>겹옷의 구조를 먼저</h2>
+          <ul class="rule-list">
+            <li>어깨·팔꿈치·허리의 주요 주름으로 옷의 무게를 보인다.</li>
+            <li>동정·겹소매·매듭·자락의 연결을 명확히 한다.</li>
+            <li>문양은 천의 큰 면보다 약하게 읽힌다.</li>
+            <li>천·목재·석재는 무광의 큰 면을 공유하고 결·이음새만 재질에 맞게 구분한다.</li>
+          </ul>
+          <p>검의 얇은 하이라이트와 작은 장식만 제한적으로 반짝인다.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="color-title">
+    <h2 id="color-title">색의 관계</h2>
+    <p>큰 남색·먹색 덩어리 위에 흰 동정으로 얼굴을 받치고, 붉은 끈과 작은 푸른 패로 시선을 정리한다.</p>
+    <div class="palette" aria-label="도호 H1의 색 관계 설명">
+      <div class="swatch navy"><b>남색</b><span>겹도포의 큰 면</span></div>
+      <div class="swatch ink"><b>먹색</b><span>갓·바지·신발</span></div>
+      <div class="swatch ivory"><b>흰 동정</b><span>얼굴 주변 명도</span></div>
+      <div class="swatch sash"><b>붉은 끈</b><span>허리의 방향성</span></div>
+      <div class="swatch jade"><b>푸른 패</b><span>작은 초점</span></div>
+    </div>
+    <p class="note">위 색칸은 관계 설명용이며 승인 팔레트의 수치나 면적 비율이 아니다. 최종 고유색은 승인 원본과 매체별 실제 렌더를 대조한다.</p>
+  </section>
+
+  <section class="section" aria-labelledby="light-title">
+    <h2 id="light-title">제작 시트와 통합 장면</h2>
+    <div class="two-up">
+      <article class="card">
+        <span class="label">제작 시트 / 구조 확인</span>
+        <h3>밝고 중립적인 조명</h3>
+        <p>얼굴·옷의 고유색·손·소품이 분명하게 보이도록 한다. 같은 축척의 정측후면과 빈손 중립 자세를 사용한다. 검은 별도 소품으로 제작한다.</p>
+        <p>밝은 시트는 검사와 3D 입력을 위한 것이다. 장면 그림자·국소광·림라이트를 기본 텍스처에 굽지 않는다.</p>
+      </article>
+      <article class="card scene">
+        <span class="label">통합 장면 / 게임 정합</span>
+        <h3>낮은 환경광과 제한된 국소광</h3>
+        <p>D-070의 조선 다크 판타지를 유지한다. 실제 카메라 크기에서 얼굴·손·검·이동면을 읽을 수 있도록 명암을 배치한다.</p>
+        <p>주인공은 실루엣과 얼굴 주변 대비로 먼저 보이게 한다. 낮은 채도에서도 표정·직업·생활감은 남긴다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="hierarchy-title">
+    <h2 id="hierarchy-title">PC·NPC·배경의 시선 순서</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th scope="col">역할</th><th scope="col">먼저 읽힐 것</th><th scope="col">공통 묘사 기준</th></tr></thead>
+      <tbody>
+        <tr><td>PC</td><td>독자적인 실루엣, 무기, 얼굴 주변 대비, 대표 소품</td><td>H1의 선과 큰 명암면을 공유하며 각 인물의 복식·표정·식별색을 보존한다.</td></tr>
+        <tr><td>NPC</td><td>직업 소품, 체형, 얼굴형, 연령과 능청</td><td>주름 수와 사진 질감에 기대지 않는다. 도호의 얼굴·남색 옷·붉은 끈을 복제하지 않는다.</td></tr>
+        <tr><td>배경·소품</td><td>이동면, 출입구, 상호작용 지점</td><td>인물보다 대비와 잔디테일을 낮춘다. 목재·석재·종이·기와를 같은 무광 면과 선으로 묘사한다.</td></tr>
+        <tr><td>적·보스</td><td>위협의 방향, 공격 실루엣, 종별 식별점</td><td>같은 화풍과 재질을 쓰되 적의 색·체형·소품으로 구분한다. 구미호의 얼굴 연속성을 유지한다.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="section" aria-labelledby="identity-title">
+    <h2 id="identity-title">확장 시 보존할 정체성</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th scope="col">승인 인물</th><th scope="col">보존점</th></tr></thead>
+      <tbody>
+        <tr><td>도호 H1</td><td>무수염의 능청 얼굴, 흑립, 남색 겹도포, 벌어진 자락과 바지, 흰 동정, 붉은 끈, 푸른 패, 검. 목도리 없음. 어깨 위 검은 연출 포즈다.</td></tr>
+        <tr><td>귀새 G02</td><td>각시탈, 포니테일, 흑홍 분할복과 보라 내의, 곡단검, 홍사, 여분 탈. 기동형 실루엣을 유지한다.</td></tr>
+        <tr><td>청연 C01</td><td>상아색·옅은 청록의 긴 한복과 넓은 소매, 부채, 방울, 옥패. 차분한 인상을 유지한다.</td></tr>
+        <tr><td>NPC B1/B2/B3</td><td>상인: 넉넉한 체형·장부. 무당: 가는 얼굴·능청·방울/부채. 촌장: 각진 얼굴·백수염·지팡이.</td></tr>
+        <tr><td>구미호 F01/F03</td><td>같은 성인 얼굴·흑발·금안·붉은 한복. F01은 인간형, F03은 황금빛 아홉 꼬리를 전개한 변신형이다.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="source-role" aria-label="참조 이미지의 역할">
+      <div><b>H1 = 공통 화풍</b><span>선·얼굴의 묘사법·큰 명암면·재질 처리</span></div>
+      <div><b>각 승인 캐릭터 = 정체성</b><span>얼굴·의상·색·소품·전후 형태의 연속성</span></div>
+      <div><b>현재 게임 = 표시 제약</b><span>카메라·인물 크기·재질·조명·가독성</span></div>
+    </div>
+  </section>
+
+  <aside class="qa" aria-label="생성 후 확인 순서">
+    <h3>생성 후 확인 순서</h3>
+    <p>승인 원본의 얼굴·전신 대조 → PC·NPC·배경 나란히 비교 → 실제 표시 크기로 축소 확인 → 손·검·사지·의상 연결·프레이밍 확인 → 결함 보정 후 다시 대조.</p>
+    <p><strong>H1은 세 열 보드의 왼쪽 인물이다.</strong> H2·H3·R1·R2를 혼합하거나 R2/D03의 촘촘한 자수를 자동 추가하지 않는다. 원화 합격과 실제 3D·인게임 합격은 각각 기록한다.</p>
+  </aside>
+
+  <footer>
+    <p>출처: <a href="references/H1_approved_board.png">H1 승인 보드 원본</a> · <a href="00_style_anchor.md">텍스트 기준표</a></p>
+    <p>이 페이지의 세 이미지는 동일한 원본 PNG를 CSS 표시 영역으로 확대해 보여준다. 원본 픽셀의 재생성·리터칭·색보정은 없다.</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+[
+  {
+    "file": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/H1_doho_preserved.glb",
+    "sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749",
+    "byte_length": 7875840,
+    "materials": [
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 1
+        },
+        "name": "Material_1",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 1,
+          "roughnessFactor": 1
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 18080,
+        "triangles": 10827,
+        "aligned": 10827,
+        "opposed": 0,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": 0.2759851107903527,
+        "max_dot": 1.0000000000000002
+      }
+    ],
+    "bones": [
+      24
+    ],
+    "animations": [
+      "attack",
+      "idle",
+      "walk"
+    ],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  }
+]

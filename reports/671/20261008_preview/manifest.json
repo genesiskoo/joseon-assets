@@ -1,0 +1,208 @@
+{
+  "fps": 30,
+  "resolution": [
+    1280,
+    720
+  ],
+  "game_audio": true,
+  "master": {
+    "file": "capture_master.ogv",
+    "bytes": 9130896,
+    "sha256": "f8baf55b64477529f7bd928de6f464716fe8c53c5553e0ad0fc9485104fea98c",
+    "probe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "theora",
+          "codec_long_name": "Theora",
+          "codec_type": "video",
+          "codec_tag_string": "[0][0][0][0]",
+          "codec_tag": "0x0000",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 1280,
+          "coded_height": 720,
+          "has_b_frames": 0,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": -99,
+          "chroma_location": "center",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/30",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1255,
+          "duration": "41.833333",
+          "extradata_size": 3306,
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "vorbis",
+          "codec_long_name": "Vorbis",
+          "codec_type": "audio",
+          "codec_tag_string": "[0][0][0][0]",
+          "codec_tag": "0x0000",
+          "mime_codec_string": "vorbis",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 2008000,
+          "duration": "41.833333",
+          "bit_rate": "160000",
+          "extradata_size": 4326,
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\671-preview\\reports\\671\\20261008_preview\\capture_master.ogv",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "ogg",
+        "format_long_name": "Ogg",
+        "start_time": "0.000000",
+        "duration": "41.833333",
+        "size": "9130896",
+        "bit_rate": "1746147",
+        "probe_score": 100
+      }
+    }
+  },
+  "clips": [
+    {
+      "file": "talisman_fire.mp4",
+      "seconds": 1.1,
+      "source_frames": {
+        "BEGIN": 23,
+        "END": 56
+      },
+      "bytes": 145234,
+      "sha256": "8eb2890e2cc0a3d2ce32edac39d7147595aed30e2d8e22b12eed73192c9fdb88"
+    },
+    {
+      "file": "ammo_zero.mp4",
+      "seconds": 0.4666666666666667,
+      "source_frames": {
+        "BEGIN": 140,
+        "END": 154
+      },
+      "bytes": 96489,
+      "sha256": "78f6dce3fb48993620bb68d5550dccf24c032729d5b6ed37c39b4389d4890e10"
+    },
+    {
+      "file": "rain_fire.mp4",
+      "seconds": 2.966666666666667,
+      "source_frames": {
+        "BEGIN": 902,
+        "END": 991
+      },
+      "bytes": 476654,
+      "sha256": "362683a1e8150889cf08fa57e442a936ba5d25d6c0a14edef482d14dfa1dc0a6"
+    },
+    {
+      "file": "seal_fire.mp4",
+      "seconds": 0.8666666666666667,
+      "source_frames": {
+        "BEGIN": 1083,
+        "END": 1109
+      },
+      "bytes": 164181,
+      "sha256": "d69a1466cf7727f0b41fc272a0b910a758268d10aa8f7005d6dd43c8b42d2955"
+    }
+  ],
+  "scenario": "talisman_targeting",
+  "scenario_checks": 147,
+  "source_state": "#671 uncommitted working candidate with #670 ec187232 dependency; production landing pending PD review",
+  "exit_diagnostics": {
+    "objectdb_instances": 13,
+    "resources_in_use": 7,
+    "baseline_comparison": "Measured: old talisman_targeting MovieWriter 22/11; fixtures differ, causality unresolved."
+  },
+  "movie_mode_comparison": {
+    "source_commit": "7d187989b3816a3aff9eb5f344ece0385d608333",
+    "engine": "Godot 4.7.2.stable.steam.ed1daf0bf",
+    "resolution": [
+      1280,
+      720
+    ],
+    "fixed_fps": 30,
+    "boot_only": {
+      "quit_after_frames": 60,
+      "exit_code": 0,
+      "objects": 3,
+      "resources": 2
+    },
+    "old_scenario": {
+      "id": "talisman_targeting",
+      "checks": 75,
+      "exit_code": 0,
+      "objects": 22,
+      "resources": 11
+    },
+    "raw_files": [
+      {
+        "file": "baseline_boot_raw.log",
+        "bytes": 1109,
+        "sha256": "02d0fd37cd50ee5d32ffd02d8a09d2f45e62529f2ac61c566d983dfc2b59aac2"
+      },
+      {
+        "file": "baseline_scenario_raw.log",
+        "bytes": 16960,
+        "sha256": "716c3c36b0e32e7b4fbbb37c468635292aadb2d7e600277dc736007a923b20e1"
+      }
+    ],
+    "limitations": "Candidate and old scenarios use different fixtures and check counts. Counts do not establish the cause of shutdown warnings or a product regression. Ordinary focused execution retains its separately recorded 3/2 shutdown diagnostics.",
+    "old_wrapper_retry": "An earlier combined recording passed 2/2 scenarios but PowerShell Stop handling of native stderr terminated its wrapper with exit1 and truncated the shutdown diagnostic; it is not used for the resource-count comparison."
+  }
+}

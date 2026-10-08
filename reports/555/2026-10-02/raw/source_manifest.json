@@ -1,0 +1,37 @@
+{
+  "base": "826bdecf1fecf0da3c4f0763eebc6c6ef470f40b",
+  "scope_ok": true,
+  "sources": [
+    {
+      "path": "docs/design/animation_sample_555.md",
+      "bytes": 2140,
+      "sha256": "3a2b368ee1894b805e34a9df7c8e37f0c359f8f578241b001afdb52880bc5926",
+      "git_blob": "42d617ef85d8da60b0f35cbcb8d9fb3c23143ce7"
+    },
+    {
+      "path": "docs/design/animation_sample_555_log.md",
+      "bytes": 3778,
+      "sha256": "61b3b17073f1464b30e40809f4fc7a70f5c7178f1bb906dfe8155f98d751fc1e",
+      "git_blob": "35fa749bd52a3d7b3c15284b4f0ce25684aeadbf"
+    },
+    {
+      "path": "tests/e2e/scenarios/anim_commit.gd",
+      "bytes": 53405,
+      "sha256": "7897c0866211c9a309faa8b014bffe1c0012e600e483b548d5cbc2fcb44a5ab7",
+      "git_blob": "6176a32c559e95046c096fd988b38ccd0f313e0b"
+    },
+    {
+      "path": "tests/fixtures/animation_speed_sample.gd",
+      "bytes": 1254,
+      "sha256": "d0530fddbca4f44cfc4d8053e3bafbb4b3103adda27decf9148be7189533ed79",
+      "git_blob": "afb7732000764b5eeb3198e24ddc4af13f558f89"
+    },
+    {
+      "path": "tests/test_animation_sample.gd",
+      "bytes": 4725,
+      "sha256": "53cd86635fe7a3c3e360f8e520af7a57435a1091c0a02d8bee03af26f54f2eb7",
+      "git_blob": "fd14a3c2d6505b90d8b983062b163440b13614ff"
+    }
+  ],
+  "game_paths_unchanged": true
+}

@@ -1,0 +1,98 @@
+{
+  "card": 487,
+  "status": "candidate_not_installed",
+  "definition_state": "design_only",
+  "intake_predecessor": 272,
+  "items": 4,
+  "planned_footprints": "1x3 x4; no T3 runtime definitions",
+  "existing_game_png": 42,
+  "preserved_h1_png": 19,
+  "runtime_files_byte_match": 154,
+  "original_hashes_preserved": true,
+  "v1_source_prompt_packing_preserved": true,
+  "selected_constellation_version": "v2",
+  "manual_visual_checks": {
+    "card": 487,
+    "method": "manual inspection of native image_gen originals and edited result before packaging",
+    "chilseonggeom_v1_blade_gold_dots": 8,
+    "chilseonggeom_v2_blade_gold_dots": 7,
+    "v2_dots_handle": 3,
+    "v2_dots_bowl": 4,
+    "ring_pommel_open": true,
+    "u_yongcheon_ivory_grip_jade_cloud_pommel": true,
+    "external_spell_effects": false,
+    "text_or_logo": false,
+    "note": "Seven-dot count is a visual inspection, not an automatic image-recognition test. Final actual UiSkin screenshots are separately verified."
+  },
+  "ring_hole_sample": {
+    "point": [
+      360,
+      105
+    ],
+    "rgba": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "godot_ui_skin_modes": [
+    {
+      "mode": "forty",
+      "stdout_sha256": "1d2116c49e5d04ba9c2369c89bd2a3f289669ed84a9c7dbf99ff2c88da4635fb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mode": "sizes",
+      "stdout_sha256": "686120af690f948302ac292a9017aef19085541c054e67a79ce59f7e38fb32cf",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mode": "black_sizes",
+      "stdout_sha256": "e13f7d6ce9a57955c33a1d4fdd6ba102d4e0876e74474713676fe7b950dca507",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mode": "base_compare",
+      "stdout_sha256": "71887cc72be6b79889385249a65a804f8574275db4a165ec9cbea6b81e574956",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "mode": "constellation_pair",
+      "stdout_sha256": "1d0d8bece7ccbbe98b11fb19fef57873d0c2aa7b1208650e95dcbbad1b66905e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "gallery": [
+    {
+      "filename": "overview.jpg",
+      "bytes": 90133,
+      "sha256": "9a8c0c6d7dd0bef6273098aa5bc1663ae17011df8428372c340b3371baff0054"
+    },
+    {
+      "filename": "godot_forty.jpg",
+      "bytes": 55751,
+      "sha256": "1a43acceff42c12d998472f5935f10daec76bd283a51b7e378895af5fc50dccf"
+    },
+    {
+      "filename": "godot_sizes.jpg",
+      "bytes": 60425,
+      "sha256": "b380bd2e841f1d7c6d58abbe9b3b4298109e543ad81062dda054bc64ef4ca050"
+    },
+    {
+      "filename": "godot_black_sizes.jpg",
+      "bytes": 61716,
+      "sha256": "50f1a85e8af96ab7d32972092b315c5981c22bba8c4fb307340028be549e2aef"
+    },
+    {
+      "filename": "godot_base_compare.jpg",
+      "bytes": 75832,
+      "sha256": "342bba9f07d3f431f52023f41e93c09b556cb0ea65ff14d6bb1c4b308a7f85c7"
+    },
+    {
+      "filename": "godot_constellation_pair.jpg",
+      "bytes": 77497,
+      "sha256": "b301c3d3314b5f29f483feb1b8d62a7d7bfceab367d62e37fe01b4eedfdc05a6"
+    }
+  ]
+}

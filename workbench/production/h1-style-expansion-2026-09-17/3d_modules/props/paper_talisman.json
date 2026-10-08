@@ -1,0 +1,70 @@
+{
+	"aabb_position": [
+		-0.0399999991059303,
+		-0.319999992847443,
+		0.0
+	],
+	"aabb_size": [
+		0.0799999982118607,
+		0.319999992847443,
+		0.00000999999974737875
+	],
+	"contract": "Zero-thickness double-sided XY sheet .08 x .32; top-edge pinch origin; extends -Y; +Z front; matte vertex-region colors, abstract marks; no paper simulation",
+	"cw_winding_normal_disagreements": 0,
+	"degenerate_triangles": 0,
+	"derivation": "procedural candidate with matte materials; existing stone textures only where present",
+	"file": "props/paper_talisman.glb",
+	"id": "paper_talisman",
+	"is_game_intake": false,
+	"materials": [
+		{
+			"color": [
+				0.579999923706055,
+				0.519999980926514,
+				0.389999985694885,
+				1.0
+			],
+			"cull_mode": 2,
+			"name": "talisman_paper",
+			"roughness": 1.0,
+			"texture_size": []
+		},
+		{
+			"color": [
+				0.069999985396862,
+				0.0649999976158142,
+				0.0549999885261059,
+				1.0
+			],
+			"cull_mode": 2,
+			"name": "talisman_ink",
+			"roughness": 1.0,
+			"texture_size": []
+		},
+		{
+			"color": [
+				0.310000002384186,
+				0.0899999961256981,
+				0.0599999949336052,
+				1.0
+			],
+			"cull_mode": 2,
+			"name": "talisman_stamp",
+			"roughness": 1.0,
+			"texture_size": []
+		}
+	],
+	"sha256": "871cb174d3363244b563b798ec58edff5970bf00aebf54c58b27d51fe90532c7",
+	"triangles": 240,
+	"under_500_triangles": true,
+	"vertex_aabb_position": [
+		-0.0399999991059303,
+		-0.319999992847443,
+		0.0
+	],
+	"vertex_aabb_size": [
+		0.0799999982118607,
+		0.319999992847443,
+		0.0
+	]
+}

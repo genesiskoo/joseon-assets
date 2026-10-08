@@ -1,0 +1,67 @@
+{
+ "cue": "combo_3",
+ "v": 1,
+ "prompt": "A small crisp steel accent marking a three-hit sword combo, no melody. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:19",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.592018,
+ "lufs": "-31.6",
+ "peak": "-12.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": -13.77,
+   "file": "_raw/combo_3_v1.wav",
+   "duration": 0.6,
+   "lufs": "-31.6",
+   "true_peak": "-12.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26108,
+   "at": 0.592,
+   "removed_ms": 8.0,
+   "floor_db": -94.7,
+   "jump_db": 20.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.03,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -31.76,
+    -31.76
+   ],
+   "intake_tp": [
+    -10.2,
+    -10.23
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    -0.0
+   ],
+   "sample_peak_db": -13.82,
+   "lufs": "-31.6",
+   "true_peak": "-12.4"
+  },
+  "warn": []
+ }
+}
