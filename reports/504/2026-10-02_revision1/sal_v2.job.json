@@ -1,0 +1,47 @@
+{
+  "card": 504,
+  "asset": "sal_v2",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_504\\reports\\504\\2026-10-02_round1\\sal.png",
+      "role": "edit target; preserve the five-element shape identity while removing its incorrect halo and widening specified cutouts",
+      "sha256": "4c24c1ed98fa437ce1ca342cfe1037c08bb876623e1350fff7247f357e918f27"
+    }
+  ],
+  "prompt_sha256": "b1313b56c04e5b5471bc8d42eee3e3049feef00de6ee4b1f1ab2b5534362f19c",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "opaque",
+  "quality": "medium",
+  "seed": 504204,
+  "workflow": "image_generate_clean",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-02T13:30:23.482171+00:00",
+  "prompt_id": "1c7fc5f3-e47a-4345-afc6-03bedee4e24f",
+  "status_response": {
+    "assigned_inference": "10.4.22.24:8080",
+    "created_at": "2026-10-02T13:30:24.622814Z",
+    "id": "1c7fc5f3-e47a-4345-afc6-03bedee4e24f",
+    "last_state_update": "2026-10-02T13:30:53.128246Z",
+    "status": "success",
+    "updated_at": "2026-10-02T13:30:53.128246Z"
+  },
+  "raw_output": "sal_v2_raw.png",
+  "raw_output_sha256": "0fa9d9f6c475cd82e3ec59c00ba213e54d68126b746b20d9458e6ab46564cd0e",
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_transparent_pixels": true,
+  "output": "sal_v2.png",
+  "output_sha256": "3df6294075f466cee3f94c6d3ad435890bd9816eaa0bf02d6365c793bab6a80b",
+  "output_bytes": 476388
+}

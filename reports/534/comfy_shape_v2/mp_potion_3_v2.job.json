@@ -1,0 +1,52 @@
+{
+  "card": 534,
+  "asset": "mp_potion_3_v2",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_534\\workbench\\production\\item_icons_534\\refs\\mp_potion_basic.png",
+      "role": "Approved BASIC MP potion; preserve the family language but create a clearly better-grade new object.",
+      "sha256": "b87f9c4219b163468825bb27a5c0fa674c6767a0fa2dbbf8d70fffcfb1304a17"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_534\\reports\\534\\comfy_birefnet\\mp_potion_3_clean.png",
+      "role": "Earlier candidate; retain painted material family, improve silhouette for small UI readability.",
+      "sha256": "243ac80c2bddb4f42610d709828bf3cd1150f7e89139d505458bec5d6b04ba76"
+    }
+  ],
+  "prompt_sha256": "18d9f3d4cb86e720d2c0d689ab80da376b9574e74c116c807c8da26160765aa5",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "transparent",
+  "quality": "high",
+  "seed": 5341204,
+  "workflow": "image_generate_clean",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T08:23:38.970790+00:00",
+  "prompt_id": "507537c9-7969-45c1-a46e-4bf6b27c18c1",
+  "status_response": {
+    "assigned_inference": "10.4.21.206:8080",
+    "created_at": "2026-10-01T08:23:41.439738Z",
+    "id": "507537c9-7969-45c1-a46e-4bf6b27c18c1",
+    "last_state_update": "2026-10-01T08:24:10.36402Z",
+    "status": "success",
+    "updated_at": "2026-10-01T08:24:10.36402Z"
+  },
+  "raw_output": "mp_potion_3_v2_raw.png",
+  "raw_output_sha256": "1acaf5014a21781c8359d3884f1164a330fc9d2b888b4afe915787ca58873737",
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_transparent_pixels": true,
+  "output": "mp_potion_3_v2.png",
+  "output_sha256": "aabfa58ac781689ad32f6947c0bba6cd74840ef86d2b032a3d4de0cdfe91a7bd",
+  "output_bytes": 1383124
+}

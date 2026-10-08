@@ -1,0 +1,19 @@
+; #498 isolated native QA; nested-project marker keeps scripts outside the game import.
+config_version=5
+
+[application]
+config/name="Joseon Hunters Icon QA 498"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Godot/app_userdata/JoseonHuntersIconQA498"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="disabled"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=1

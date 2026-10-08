@@ -1,0 +1,50 @@
+{
+  "card": 680,
+  "intermediates": [
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\._tmp\\680_blender_vfx_test\\capture\\before.avi",
+      "bytes": 143539458,
+      "sha256": "f288238ef8191f81e92dbcda3f6cb355efe852011de2abdb8fade1b0d66a8ac9",
+      "git": "ignored local intermediate",
+      "shareable_fullengine": "680_blender_vfx_before_engine_capture_60fps.mp4",
+      "rejected_after02_qa_clip": null,
+      "note": null
+    },
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\._tmp\\680_blender_vfx_test\\capture\\after01.avi",
+      "bytes": 143526280,
+      "sha256": "7def8e60eb4b6af83a3db80edab0a5e734cf204bc3003c0106b066e065cd6b52",
+      "git": "ignored local intermediate",
+      "shareable_fullengine": "680_blender_vfx_rejected_after01_engine_capture_60fps.mp4",
+      "rejected_after02_qa_clip": null,
+      "note": null
+    },
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\._tmp\\680_blender_vfx_test\\capture\\after02.avi",
+      "bytes": 143519640,
+      "sha256": "1262edef1521014716a323f9d08187d66ab1a12117e4166906a26ec4dba4a199",
+      "git": "ignored local intermediate",
+      "shareable_fullengine": null,
+      "rejected_after02_qa_clip": "680_blender_vfx_rejected_after02_fire_AB_60fps.mp4",
+      "note": null
+    },
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\._tmp\\680_blender_vfx_test\\capture\\after03.avi",
+      "bytes": 143527190,
+      "sha256": "d3f592f5f8d1b013a5e3ce84ad970b8d1b8bb95ee0bee4f561ce36e8bbc26eb2",
+      "git": "ignored local intermediate",
+      "shareable_fullengine": null,
+      "rejected_after02_qa_clip": null,
+      "note": "AFTER03 same final visual rejected as final provenance due newly-introduced metadata CRLF/Git LF mismatch; AFTER04 preserves same content with LF source bytes"
+    },
+    {
+      "path": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\._tmp\\680_blender_vfx_test\\capture\\after04.avi",
+      "bytes": 143522928,
+      "sha256": "ce45f728f07dbdf1b10dc72b155a7f50ede45f4889a7a7eade6702589b3daf2f",
+      "git": "ignored local intermediate",
+      "shareable_fullengine": "680_blender_vfx_after_engine_capture_60fps.mp4",
+      "rejected_after02_qa_clip": null,
+      "note": null
+    }
+  ]
+}

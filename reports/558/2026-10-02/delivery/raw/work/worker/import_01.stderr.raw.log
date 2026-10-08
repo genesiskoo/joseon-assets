@@ -1,0 +1,12 @@
+SCRIPT ERROR: Parse Error: Cannot infer the type of "hit" variable because the value doesn't have a set type.
+   at: GDScript::reload (res://core/combat_trace.gd:121)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://actors/enemy.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://tests/e2e/e2e.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://tests/e2e/e2e_scenario.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://tests/e2e/e2e_runner.gd:0)
+ERROR: Failed to load script "res://tests/e2e/e2e_runner.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)

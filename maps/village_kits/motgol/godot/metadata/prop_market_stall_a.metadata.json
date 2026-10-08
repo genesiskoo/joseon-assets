@@ -1,0 +1,39 @@
+﻿{
+    "asset_id":  "prop_market_stall_a",
+    "type":  "prop",
+    "category":  "props",
+    "raw":  "generated/raw/prop_market_stall_a.raw.png",
+    "processed":  "processed/props/prop_market_stall_a.png",
+    "canvas":  {
+                   "height":  256,
+                   "width":  256
+               },
+    "source_bbox":  {
+                        "y":  181,
+                        "width":  882,
+                        "height":  804,
+                        "x":  213
+                    },
+    "placed_rect":  {
+                        "y":  20,
+                        "width":  236,
+                        "height":  215,
+                        "x":  10
+                    },
+    "anchor_px":  {
+                      "y":  201,
+                      "x":  128
+                  },
+    "godot":  {
+                  "sprite_position":  {
+                                          "y":  -201,
+                                          "x":  -128
+                                      },
+                  "collision":  "manual_footprint_only",
+                  "y_sort":  "root_y",
+                  "root_position_is_anchor":  true,
+                  "sprite_centered":  false
+              },
+    "chroma_key":  "green",
+    "roof_split":  false
+}

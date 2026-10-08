@@ -1,0 +1,29 @@
+# #128 내장 image_gen 프롬프트
+
+도구: builtin image_gen. 모델 버전은 반환값에 노출되지 않으면 미확인으로 기록한다.
+
+## A — H1 재질 정합
+
+Use case: style-transfer.
+Asset type: target art paintover for the Korean dark-fantasy isometric action RPG Joseon Hunters, ticket #128. This is an ART TARGET, not a claim of an implemented screenshot.
+Primary request: transform the actual clean game screenshot (image 1) into one coherent H1 matte hand-painted game environment, while retaining its exact orthographic isometric camera, framing, ground plane, layout, object footprints, actor locations, actor sizes and travel routes. One single full scene, requested 1536x864 landscape 16:9. No sheet, no split view.
+Input images:
+1. EDIT TARGET and strict camera/layout/on-screen-scale reference: latest actual game plaza after NPC emission and player pose/sword/robe corrections.
+2. SUPPORTING material/architecture reference only: H1 Motgol modules. Use the Korean construction language and restrained matte material groups, but much less tiny grain/detail than this close-up prop sheet. Never copy its arrangement or relative sizes.
+3. SUPPORTING shared style and Doho identity reference: ONLY the LEFTMOST approved H1 figure; ignore H2 and H3 completely. Its neutral-background brightness is not the scene lighting.
+
+Composition constraints: reproduce image 1's exact small playable plaza. Keep Doho near the screen center-left of the roofed stone well, the elderly woman at upper left in a dull red top and dark teal skirt, the older merchant by the lower-right narrow stall, and the older village elder farther right in black and muted off-white. Exactly these four existing people, at their original relative sizes and positions. Keep the shrine-stone mound to the left, the well above/right of Doho, the narrow market stall below/right of the well, existing cropped houses at the outer edges, existing lantern posts/jars/crates, the pond edge at lower right and the route spaces. Do not add people, giant gates, distant skyline, temple complexes or new paths. Never zoom the camera, enlarge the hero, move the well, widen the stall or turn this into an isolated floating diorama.
+Doho: youthful Korean male, black gat with wide brim, broad split navy layered robe, restrained dull-red sash, tiny blue pendant, sword casually carried at the shoulder, empty scabbard at left hip. No scarf, no beard, no extra sword. Preserve the most recent relaxed game pose in image 1. He is the visual focal point through local value separation, readable hat/shoulder/sword/feet and broad navy garment planes, not through scaling or glowing.
+Environment treatment: refine the existing simple house forms into economical Joseon hanok forms in the SAME footprint, with legible shallow eaves, charcoal blue-grey roof masses, weathered matte timber posts, warm-grey plaster, dull ivory paper lattice. The well remains one roofed stone well, its broad stone shapes readable. Quiet compacted earth with a few broad low-contrast worn patches leading through existing walkable routes. No blanket cobblestones, no noisy speckles. Jars and crates remain grouped at existing edges, not across the central walking area.
+Style/medium: grounded stylized 3D isometric game art with H1 controlled fine ink contours, a few broad matte shadow planes and restrained hand-painted material detail. PC, NPC, ground, buildings and props share one drawing/material language. Do not render NPCs as luminous white cutouts. No photographic pores/grime, western comic exaggeration, cute toy miniatures, pixel art or saturated cel-anime village.
+Lighting A: quiet overcast late afternoon in dark Joseon fantasy. Weak cool neutral ambient, one soft upper-left directional source, very small contained warm amber pools at the EXISTING paper lanterns. Charcoal, deep navy, soot brown, muted mineral grey, dull ivory, sparse dull-red/teal identity accents. Playable ground and all four actors remain readable. Broad diffuse material shading; skin/cloth/wood/stone stay matte. No golden sunlight, full-body rim light, glowing edges, glossy roof tiles, overcast white glare or heavy fog.
+Output constraints: no UI, no HUD, no names, no floating labels, no border, no palette chips, no text, no watermarks. Preserve scene framing right to the image edges. Keep visual complexity plausible for the current game camera. This is candidate A: matte material unification.
+
+## B — A의 조명/명암 비교
+
+Use case: lighting-weather.
+Asset type: candidate B lighting-only comparison for ticket #128, Joseon Hunters H1 plaza art target.
+Image 1 is the sole EDIT TARGET: candidate A. Keep ALL composition, orthographic camera, character count/positions/sizes/faces/costumes/poses, house/roof/well/stall/pond/shrine geometry, prop positions, open walking routes, contour drawing and material detail EXACTLY the same.
+Change ONLY illumination and value grouping: make background roof and wall groups roughly 10-15% darker and slightly cooler than A, keep the playable central dirt ground readable, and give the existing lanterns slightly more distinct but tightly contained amber light on nearby ground/paper. Preserve the protagonist's face/hat/shoulder/sword/feet and navy robe readability. The player must not become a black silhouette. No additional lights, no extra props, no new fog or particles, no sunset shafts. Do not make the whole scene blue.
+Retain H1 fine controlled ink contours and broad matte material shadows. Wood/cloth/stone/skin remain dry and matte, no glossy flecks, no bloom outside actual lanterns, no rim lighting. Same four people, no extra weapons or redesign.
+One single full landscape scene, requested 1536x864, same aspect ratio and crop as input. No words, labels, UI, frame or comparative panels. B tests a darker surrounding value with more local lantern contrast; it is not a redesign.

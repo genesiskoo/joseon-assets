@@ -1,0 +1,30 @@
+WARNING: SaveSystem: 같은 이름의 캐릭터가 있습니다
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:194)
+       [1] create_profile (res://core/save_system.gd:59)
+       [2] _run (res://tests/test_character_profiles.gd:107)
+WARNING: SaveSystem: 저장 파일이 손상되었습니다
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:194)
+       [1] read_checked (res://core/save_system.gd:150)
+       [2] save_now (res://core/save_system.gd:132)
+       [3] _run (res://tests/test_character_profiles.gd:110)
+WARNING: SaveSystem: 저장 파일이 손상되었습니다
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:194)
+       [1] select_profile (res://core/save_system.gd:44)
+       [2] _run (res://tests/test_character_profiles.gd:111)
+ERROR: Could not create directory: 'C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-550-character-profiles/profile_unit_550_2337896/occupied/save.json.characters'.
+   at: make_dir_recursive (core/io/dir_access.cpp:179)
+   GDScript backtrace (most recent call first):
+       [0] create_profile (res://core/save_system.gd:60)
+       [1] _run (res://tests/test_character_profiles.gd:115)
+WARNING: SaveSystem: 캐릭터 저장 폴더를 만들지 못했습니다 (오류 20)
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _failed (res://core/save_system.gd:194)
+       [1] create_profile (res://core/save_system.gd:62)
+       [2] _run (res://tests/test_character_profiles.gd:115)

@@ -1,0 +1,194 @@
+{
+  "recorded_at": "2026-09-17T08:58:57.4571449+09:00",
+  "status": "technical_trial_complete_visual_acceptance_pending",
+  "main_game_intake": false,
+  "authorization": [
+    "PD approved sequential H1 expansion in docs/design/h1_style_expansion_2026-09-17.md; parent authorized one initial generation each, rigging and isolated trial.",
+    "Both initial generations definitively failed service_unavailable with 0 credits. Parent explicitly authorized one same-input retry each; both succeeded.",
+    "Parent authorized one merchant retexture to fix albedo artifacts while preserving geometry. New-image transfer was rejected by automatic approval review before execution.",
+    "After checking approval evidence, a safer official request using only the existing Meshy task ID and nonsensitive text (no image/file/URL upload) was approved and executed once."
+  ],
+  "generation_attempts_per_character": 2,
+  "successful_generations_per_character": 1,
+  "retexture_attempts": 1,
+  "rejected_image_retexture_executed": false,
+  "rejected_image_retexture_credits": 0,
+  "balance_before": 2623,
+  "balance_after": 2543,
+  "total_consumed_credits": 80.0,
+  "tasks": [
+    {
+      "character": "doho",
+      "operation": "initial_generation",
+      "task_id": "01a0ac5f-0684-77fa-95b0-a2399bc3e6a7",
+      "created_response_at": "2026-09-16T22:38:28.909Z",
+      "last_status_at": "2026-09-16T22:41:53.94Z",
+      "status": "FAILED",
+      "progress": 1,
+      "consumed_credits": 0,
+      "error_message": "The generation service is temporarily unavailable. Please retry.",
+      "create_response": "responses/doho_generate.json",
+      "status_response": "responses/doho_status_01.json"
+    },
+    {
+      "character": "merchant",
+      "operation": "initial_generation",
+      "task_id": "01a0ac5f-3915-7562-a73a-8a09560b3d54",
+      "created_response_at": "2026-09-16T22:38:38.003Z",
+      "last_status_at": "2026-09-16T22:41:58.906Z",
+      "status": "FAILED",
+      "progress": 1,
+      "consumed_credits": 0,
+      "error_message": "The generation service is temporarily unavailable. Please retry.",
+      "create_response": "responses/merchant_generate.json",
+      "status_response": "responses/merchant_status_01.json"
+    },
+    {
+      "character": "doho",
+      "operation": "authorized_generation_retry",
+      "task_id": "01a0ac66-dc88-75d1-adfc-f1d91363e6fc",
+      "created_response_at": "2026-09-16T22:46:58.655Z",
+      "last_status_at": "2026-09-16T22:52:44.267Z",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 30,
+      "error_message": null,
+      "create_response": "responses/doho_generate_retry.json",
+      "status_response": "responses/doho_status_retry_02.json"
+    },
+    {
+      "character": "merchant",
+      "operation": "authorized_generation_retry",
+      "task_id": "01a0ac66-fc84-77fb-b5a2-97f040907d92",
+      "created_response_at": "2026-09-16T22:47:06.69Z",
+      "last_status_at": "2026-09-16T22:51:06.017Z",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 30,
+      "error_message": null,
+      "create_response": "responses/merchant_generate_retry.json",
+      "status_response": "responses/merchant_status_retry_01.json"
+    },
+    {
+      "character": "doho",
+      "operation": "rigging",
+      "task_id": "01a0ac6d-15ac-77d0-b303-e2cd71747547",
+      "created_response_at": "2026-09-16T22:53:46.083Z",
+      "last_status_at": "2026-09-16T22:56:13.115Z",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 5,
+      "error_message": null,
+      "create_response": "responses/doho_rig.json",
+      "status_response": "responses/doho_rig_status_01.json"
+    },
+    {
+      "character": "merchant",
+      "operation": "rigging",
+      "task_id": "01a0ac6b-f8dd-759f-b6cb-a94809c93847",
+      "created_response_at": "2026-09-16T22:52:33.128Z",
+      "last_status_at": "2026-09-16T22:53:57.212Z",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 5,
+      "error_message": null,
+      "create_response": "responses/merchant_rig.json",
+      "status_response": "responses/merchant_rig_status_01.json"
+    },
+    {
+      "character": "merchant",
+      "operation": "text_only_retexture",
+      "task_id": "01a0ac79-1ba0-7329-98a7-b4326c93ba13",
+      "created_response_at": "2026-09-16T23:06:52.465Z",
+      "last_status_at": "2026-09-16T23:09:25.39Z",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 10,
+      "error_message": null,
+      "create_response": "responses/merchant_retexture_text.json",
+      "status_response": "responses/merchant_retexture_status_01.json"
+    }
+  ],
+  "input_hash_checks": [
+    {
+      "name": "doho_front.png",
+      "original": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-ebad1a1c-e64e-49c9-b94d-c6f7eddd4d87.png",
+      "copy": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\doho_front.png",
+      "sha256": "CF4AFD24933B4BDD578FBA410B539C7CC89F73AFBF631BC5D82ED2AFD44E1D1A",
+      "original_and_copy_match": true
+    },
+    {
+      "name": "doho_back.png",
+      "original": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-c86f4c22-12c0-49f7-9591-9fa35ab49a0e.png",
+      "copy": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\doho_back.png",
+      "sha256": "CCD6F65B9F922944DC9E8FC3D83444853D94094C076E1EE82D37507B954355E9",
+      "original_and_copy_match": true
+    },
+    {
+      "name": "merchant_front.png",
+      "original": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-5fb42af1-d867-4c6e-b380-31c038ea9bec.png",
+      "copy": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\merchant_front.png",
+      "sha256": "D90490F35980BCE6635720FA1153AEF0D7493AC55E1D136DFBDCF114764C98E5",
+      "original_and_copy_match": true
+    },
+    {
+      "name": "merchant_back.png",
+      "original": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a0ab0c-798a-7282-8f8b-e183b8b90559\\exec-a0ad8aa1-f850-41e9-ad84-8e6859eee529.png",
+      "copy": "C:\\workspace\\joseon-assets\\workbench\\production\\h1-style-expansion-2026-09-17\\3d_trial\\inputs\\merchant_back.png",
+      "sha256": "33708FDD143CEEE29EF572BA5CB01C26B901B8991DD9151139AFACA4B0D5ADD9",
+      "original_and_copy_match": true
+    }
+  ],
+  "local_fist_postprocess": {
+    "grip_report": "fist/H1_doho_fist_fist.json",
+    "full_visual_approval": false,
+    "final": "H1_doho.glb",
+    "proof": "fist/H1_doho_preserved.glb.fist-transfer.json",
+    "clips_materials_skin_images_preserved": true,
+    "socket": "fist/H1_doho_socket.json",
+    "updated_normal_vertices": 262,
+    "grip_correction_and_socket_alignment_passed": true,
+    "source": "pre_fist/H1_doho.glb",
+    "additional_credits": 0,
+    "changed_position_vertices": 180,
+    "normal_seam_duplicate_vertices": 12
+  },
+  "visual_gate": {
+    "remaining": [
+      "Coarse finger tips and exact thumb contact need final visual approval; right separate thumb selection was 0",
+      "Robe/sleeve deformation and overlap need production weighting review",
+      "Merchant face and shoe interpretation changed in text-only retexture",
+      "Merchant uses combat idle as a technical probe, not final NPC performance",
+      "PC emphasis at the real game camera needs PD selection among candidates"
+    ],
+    "approved": false,
+    "passed": [
+      "Local fist correction and measured H1 socket improve handle contact and blade direction",
+      "All three original clip times and original materials/images/skin data preserved"
+    ]
+  },
+  "response_redaction": {
+    "report": "response_redaction.json",
+    "input_art_and_game_hash_checks_are_separate": true,
+    "private_raw_responses_excluded_from_package": true
+  },
+  "contract_gate": {
+    "actual_textures": 2048,
+    "note": "Later 11k ordering instructions and Doho 2K measurements are not a clear permanent NPC/texture budget exception. model_check uses a generic 12k warning and does not enforce texture cap.",
+    "merchant_current_height": 1.5,
+    "merchant_triangle_limit": 8000,
+    "doho_triangles": 10827,
+    "approved": false,
+    "merchant_trial_height": 1.6,
+    "trial_override_source": "Parent explicitly requested ~11000 triangles / 1024-2048 texture and NPCheight1.6 for this isolated trial",
+    "doho_triangle_limit": 12000,
+    "merchant_triangles": 10620,
+    "texture_limit": 1024,
+    "doho_missing_full_contract_clips": [
+      "hit",
+      "die"
+    ],
+    "reference": "docs/design/art_3d_pipeline.md 2.1/2.2 and data/models/merchant.tres",
+    "permanent_exception_found": false
+  }
+}

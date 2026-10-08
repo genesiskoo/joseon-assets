@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "manifest": "manifests/godot.json",
+  "assets": [
+    {
+      "id": "cutscene.title.trio",
+      "source": "concept/keyart_trio_v2.png",
+      "target": "assets/cutscenes/stills/title.png",
+      "sha256": "4f5b9572dd1448120f37b77007c925f3f54b630a292c6801390a01e00f6495e1",
+      "status": "published"
+    },
+    {
+      "id": "map.prototype.field-map2",
+      "source": "maps/map2.png",
+      "target": "assets/maps/_temp/map2.png",
+      "sha256": "a61583e5638a8f09d5c8e867669d9600b0d9d9aa9b0f04f089808706e61f3f18",
+      "status": "published"
+    }
+  ]
+}

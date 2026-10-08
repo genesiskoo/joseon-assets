@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://items/item_def.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/icons_h1/cotton_robe.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = "hakchangui"
+display_name = "학창의"
+slot = 1
+size = Vector2i(2, 3)
+min_ilvl = 9
+price = 280
+weight = 6
+tier = 2
+item_type = &"armor"
+req_level = 9
+req_spi = 35
+implicit = {"spi": 4.0, "mp_flat": 10.0}
+max_sockets = 3
+defense = 4.0
+armor_kind = &"po"
+icon = ExtResource("2")
+drop_model = "res://assets/models/props/folded_robe.glb"
+drop_scale = 0.33
+drop_rot_deg = Vector3(0, 0, 0)
+drop_tint = Color(0.96, 0.96, 0.96, 1)
+glyph = "포"
+color = Color(0.92, 0.92, 0.9, 1)

@@ -1,0 +1,67 @@
+{
+ "cue": "skill_slash_impact",
+ "v": 7,
+ "prompt": "A small close blade cutting into soft material, short crisp slice followed by a muted body thud. Clean dry recording, no distortion, no music. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:27",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.595011,
+ "lufs": "-31.3",
+ "peak": "-14.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": -14.84,
+   "file": "_raw/skill_slash_impact_v7.wav",
+   "duration": 0.6,
+   "lufs": "-31.3",
+   "true_peak": "-14.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26240,
+   "at": 0.595,
+   "removed_ms": 5.0,
+   "floor_db": -88.1,
+   "jump_db": 17.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.17,
+   "why": "트루피크 여유 +0.2 LU",
+   "intake_i": [
+    -31.35,
+    -31.35
+   ],
+   "intake_tp": [
+    -11.3,
+    -11.47
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -14.68,
+   "lufs": "-31.3",
+   "true_peak": "-14.4"
+  },
+  "warn": []
+ }
+}

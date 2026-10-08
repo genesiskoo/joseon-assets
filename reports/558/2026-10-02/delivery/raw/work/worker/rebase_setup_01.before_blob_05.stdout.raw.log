@@ -1,0 +1,1962 @@
+class_name PlayerCombat
+extends Node
+
+const TRACE := preload("res://core/combat_trace.gd")
+## PlayerCombat — 도호의 전투: 타깃 잡기(적 클릭) → 접근 → 자동공격, 우클릭 스킬(스킬 트리 액티브 · F1~F8 단축키), 생명/도력, 피격·사망, 소비 아이템.
+## Player(이동)와 분리한 이유: 이동은 레벨·길찾기 관심사, 전투는 스탯·스킬·타깃 관심사.
+## 모든 수치는 StatsCalc가 만든 `stats` 사전 하나에서 읽는다(캐릭터 4스탯 + 장비 어픽스, design/items_v2.md §1).
+## 사양 design/combat_v2.md.
+
+## 기합·신음 확률 (audio.md §2, #66). 매 타격마다 나면 금세 질린다 — PD 귀 판정 레버.
+const KIAI_CHANCE := 0.35
+const HURT_VOICE_CHANCE := 0.5
+const REPATH_SEC := 0.25
+## 타격감 (combat_v2 §6): 명중 시 공격자 애니 정지 시간 · 임팩트 시점 사거리 여유(타깃이 살짝 밀려나도 맞음).
+const HIT_STOP := 0.07
+## 치명 때 공격자 멈춤 = 피격자와 같은 길이(Enemy.CRIT_STOP). 짧으면 칼이 먼저 빠져나가 "쿵"이 안 된다.
+const HIT_STOP_CRIT := 0.16
+## 처치 일격 멈춤 = 피격자와 같은 길이(Enemy.KILL_STOP).
+const HIT_STOP_KILL := 0.22
+## 연속 처치 (game_feel_v2 §3): 앞 처치에서 이 초 안에 또 죽이면 이어진다. 이 칸에서만 소리가 난다.
+const STREAK_GAP := 3.0
+const STREAK_MARKS := [3, 5, 8]
+const LAND_RANGE_SLACK := 0.6
+## 피격 경직(combat_v2 §6.2): 맞으면 이만큼 제자리에 멈추고 피격 클립(2.5배속)의 움찔만 보인 뒤 이동을 잇는다.
+## 실제 길이 = stagger_sec() — 경직 −% 옵션(소나무의·바위의 · 이름 없는 장수, 상한 60 → 0.12초)을 곱한다 (#377).
+const STAGGER := 0.3
+## 회오리 원형 검광은 칼이 닿기 이만큼(초) 먼저 퍼지기 시작한다 — 고리가 벤 자리를 "지나가며" 피해와 겹친다
+const WHIRL_RING_LEAD := 0.04
+## 참격 반달 검광도 칼이 닿기 이만큼(초) 앞 (#385) — 전에는 시전 0초에 터져 0.39초 시트가 칼이 닿는 0.68초 전에 사라졌다
+const SLASH_ARC_LEAD := 0.04
+## 회오리 잔상(등급 1)이 첫 고리 뒤 이만큼(초) 늦게 뜬다 — 겹치는 두 고리가 아니라 "번지며 뒤따라오는" 잔상으로 읽히게.
+const WHIRL_AFTERIMAGE_LEAD := 0.09
+## 10레벨 둘째 바퀴 판정(§2.1 "두 바퀴, 바퀴마다 판정") — 몸을 다시 감는 새 동작은 없어(#473 범위 밖) 애니를 다시 틀지 않는다.
+## 자리 = ModelDef.second_hit(원본 클립 비율 — 벤 뒤 몸이 한 번 더 도는 봉우리)를 지나는 **애니 틱**(ActorVisual.on_swing_ratio, #493) —
+## 칼질 시간을 다시 짜도(매듭) 같은 자세에 오고, 휘두름이 끊기면 첫 판정처럼 같이 버린다(#424·#403). 그 자리가 없는 모델(캡슐)만
+## 첫 바퀴가 닿은 뒤 이만큼(초) 늦게 타이머로(#473 옛 길). `_hit_enemies`를 두 번째로 부르면 `_swing()`이 같은 클립을
+## 처음부터 다시 틀며 ActorVisual의 애니 마킹(`_begin_swing`→`_drop_marks`→`seek(0, true)`)과 겹쳐 아직 안 문 둘째 표까지
+## 쓸어버리는 실측(폭주 재귀 — 대본이 SCRIPT ERROR 2000+줄로 끊김, #473)이 있었다 — 그래서 둘째 판정은 `_land_area`를
+## 직접 부른다(새 휘두름을 안 연다 — 지금 휘두름에 표 하나를 더 걸 뿐).
+const WHIRL_SECOND_SPIN_GAP := 0.22
+## 이펙트 등급(SkillDef.tier_fx, D-093 §2.1) 0·1·2 → 크기 배수 — 참격·돌진베기는 "등급에 따라 크기·굵기만"(카드 #473),
+## 회오리는 등급별로 잔상·파문을 **더한다**(등급 자체의 크기는 판정 반경을 그대로 따른다 — #385 「판정 = 그림」).
+const FX_GRADE_SCALE := [1.0, 1.15, 1.3]
+## 평타 순환의 마지막 칸(3타) 넉백 배율 (combat_v2 §6.5, #141) — Enemy 넉백(def.knockback × 치명 1.6)에 곱한다.
+## 피해·명중·치명은 그대로라 밸런스 불변. 3타가 막타여도 평타 막타는 주저앉음(#472 — blow.skill 없음). 연격 1점부터는 셋째 타 막타 = 베임(#478, _finisher_blow).
+const FINISHER_KNOCK := 1.5
+## 상태 효과 틀 (D-081 E2 #202, elements_v2 §3.3·§7.2).
+const STATUS := preload("res://core/status_effects.gd")
+## 도사 부적 (D-081 §5.1, E3 #203 — elements_v2 §7.3): 던진 부적 한 장 · 공용 쿨(던지는 동작 — 다섯 장을 한 번에 쏟지 못하게).
+const TALISMAN_SHOT := preload("res://actors/talisman_shot.gd")
+const TALISMAN_CD := 1.0
+## 부적이 손을 떠나는 자리 — 발 위 높이 · 앞으로 (도호 쪽 → 겨눈 곳).
+const TALISMAN_HAND_Y := 1.15
+const TALISMAN_HAND_FWD := 0.45
+## 커서 밑 적 한 판정 (#383, combat_v2 §9) — 좌클릭 타깃·누른 채 다시 잡기·우클릭 겨눔·부적 겨눔이 호버와 같은 답을 쓴다.
+const CURSOR_PICK := preload("res://actors/cursor_pick.gd")
+## 고름독 (#331) — 평타가 닿는 순간 칼끝 부채꼴(사거리 + 여유 · JAR_ARC_DEG) · 범위기 영역 안 옹기를 깬다.
+const PUS_JAR := preload("res://actors/pus_jar.gd")
+const JAR_ARC_DEG := 100.0
+## 칼 스킬(부채·회오리)이 겨눈 적에게 닿는다고 볼 거리 여유 — range + 적 반경에서 이만큼 안쪽까지 다가간 뒤 친다(시전 순간 적이 반 발 물러나도 부채 안).
+const SKILL_REACH_MARGIN := 0.25
+## 도약 베기 착지 · 부적 진 자리 셈 (#477, power_feel_v2 §2.2 — 순수 셈, 단위 test_aoe_skills). class_name 없이 preload(§8-2).
+const SKILL_SPOT := preload("res://actors/skill_spot.gd")
+## 도약 베기 착지 곁들이 (#477) — 흙먼지 크기(돌진베기 1.1보다 크게 — 무릎 꿇으며 내려앉는다) · 카메라 킥 · 떠나는 자리 먼지.
+const LEAP_DUST := 1.5
+const LEAP_TAKEOFF_DUST := 0.7
+const LEAP_KICK := 0.12
+## 부적 진 (#477, power_feel_v2 §2.2 · skills_v2 §5.3): 동시에 설 수 있는 진 수(셋째를 치면 가장 오래된 진이 걷힌다) · 불 진 틱(초당 굴림) ·
+## 한기 진 틱(한기를 거는 박자) · 한기 진 피해 박자(틱 몇 번마다 = 1.5초) · 한기 한 번의 길이(초, 틱보다 길어 진 안에선 늘 느리다).
+const SEAL_MAX := 2
+const SEAL_FIRE_TICK := 1.0
+const SEAL_COLD_TICK := 0.5
+const SEAL_COLD_HIT_EVERY := 3
+const SEAL_CHILL_SEC := 1.0
+## 진이 쓰는 부적 속성 → 장판 종류(AoeField.kind). 벽력(낙뢰 진)은 EA 2차 — 여기 없으면 부적 진에 안 쓴다.
+const SEAL_KINDS := {&"fire": &"seal_fire", &"cold": &"seal_cold"}
+## 진의 그림 (AoeField look) — 먹 판 위에 속성 빛 · 테두리 = 부적 표식 색(Vfx.TALISMAN_FIRE·TALISMAN_COLD와 같은 값) · 불은 빨리 돈다.
+const SEAL_LOOK := {
+	&"fire": {"color": Color(0.32, 0.08, 0.03), "rim": Color(1.0, 0.55, 0.25), "alpha": 0.6, "glow": 1.4, "swirl": 0.3},
+	&"cold": {"color": Color(0.1, 0.17, 0.26), "rim": Color(0.75, 0.9, 1.0), "alpha": 0.55, "glow": 1.0, "swirl": 0.08},
+}
+## 진 가운데 불씨·서리 가루 (부적 꼬리 큐 talisman_<속성>_trail을 이 배로 — 진이 서 있는 동안 돈다).
+const SEAL_MOTE_SCALE := 1.6
+## 부적 진을 못 칠 때 알림 간격(초, 게임 시계) — 우클릭을 누른 채면 프레임마다 시전을 시도한다.
+const SEAL_MSG_GAP := 1.5
+## 찌르기 (#478, power_feel_v2 §2.2): 띠가 도호 앞 이만큼에서 시작한다(등 뒤는 안 찌른다 — 띠 끝은 둥글어 시작을 발밑에 두면 등 뒤 몸도 걸린다).
+const PIERCE_START := 0.3
+## 칼바람 (#478): 시전 소리(휙)를 몇 바퀴마다 다시 낼까 — 한 바퀴 0.3초라 바퀴마다면 겹쳐 시끄럽다. 먹 고리·파문 박자도 이것(등급 0 = 고리 두 바퀴마다).
+const STORM_WHOOSH_EVERY := 2
+## 칼바람 한 바퀴가 맞혔을 때 카메라 킥(회오리 0.10보다 작게 — 초에 세 번 넘게 온다).
+const STORM_KICK := 0.04
+## 칼바람 바퀴 시계가 밀렸을 때(느린 프레임) 따라잡는 한도(초) — 이보다 늦으면 지금부터 다시 센다.
+const STORM_CATCHUP := 0.05
+## 부적 비 (#478, skills_v2 §5.3): 한 번에 뿌리는 최대 장수(「칸의 장수만큼(최대 15)」) · 한 장이 떨어지는 시간(바닥 예고 → 도장) · 떠나는 높이.
+const RAIN_MAX := 15
+const RAIN_FALL := 0.3
+const RAIN_HEIGHT := 6.0
+## 판 바꾸는 줄 (power_feel_v2 §3.2, #480) — 처치 시 불씨(도깨비불 kill_burn): 쓰러진 자리에서 이만큼(+ 몸) 안 · 이만큼의 적에게 · 화상 이만큼 초.
+const KILL_BURN_RADIUS := 2.5
+const KILL_BURN_TARGETS := 3
+const KILL_BURN_SEC := 2.0
+## 참격 검기(본국검 slash_wave): 참격 반경 너머로 더 가는 길이 · 반폭 · 막타 면 갈래(날아가는 칼바람 = 가로). 몸·날기는 SwordWave(class_name 없이 preload, §8-2).
+const WAVE_REACH := 5.0
+const WAVE_HALF_WIDTH := 0.5
+const WAVE_CUT := &"h"
+const SWORD_WAVE := preload("res://actors/sword_wave.gd")
+
+var hp: float
+var max_hp: float
+var mp: float
+var max_mp: float
+## StatsCalc.compute 결과. HUD·툴팁도 이걸 읽는다.
+var stats: Dictionary = {}
+var target: Enemy
+## Shift+클릭 타깃: 쫓아가지 않고 사거리 안에 들어오면만 친다.
+var hold_position: bool = false
+## 좌클릭을 누르고 있나 (#383, combat_v2 §9 ②) — Player가 프레임마다 채운다. 켜져 있으면 칼이 빌 때마다(휘두름 간격 끝 · 타깃이 사거리 밖 ·
+## 타깃 없음) 커서 밑 적(GameState.hover)을 타깃으로 잡는다. 커서가 빈 땅이면 치던 적 그대로(싸움 잠금).
+var retarget_hold: bool = false
+## 우클릭 스킬이 다가가는 적 (§9 ③) — 칼 스킬이 안 닿는 적을 겨누면 걸어가 닿는 순간 친다(디아2 근접 스킬). 평타 타깃(target)과 따로다.
+## 새 좌클릭·바닥 클릭·순간이동·대화 띠·사망이 끊는다(clear_target · cancel_skill_approach).
+var skill_target: Enemy = null
+## 액티브 칸 = 스킬 트리(GameState.skill_tree, D-083)의 액티브를 데이터 순서대로. active_skill·cooldowns가 이 인덱스를 쓴다.
+## 패시브는 여기 없다 — StatsCalc 보너스로 들어간다(recompute_stats).
+var skills: Array[SkillDef] = []
+## 연속 처치 사슬 (§3).
+var kill_streak: int = 0
+var _last_kill_at: float = -999.0
+var active_skill: int = 0
+var cooldowns: Array[float] = []
+## 적의 공격이 도호에게 닿은 횟수(빗나감 포함)와 그중 맞은 횟수 — 새 판마다 0. e2e 밸런스가 "적이 덤볐나"를 잰다(#97).
+var attacks_received: int = 0
+var hits_received: int = 0
+## 마지막 스킬 시전의 판정 영역 (HitArea 사전, #385) — 판정과 바닥 그림(Vfx.play_area)이 같이 받은 그 사전. e2e·dev가 읽는다.
+var last_area: Dictionary = {}
+
+var _rng := RandomNumberGenerator.new()
+## 판 세대 (#156) — reset_session(새로 시작·이어하기·e2e 리셋)이 올린다. 칼이 닿는 순간을 기다리는 예약(타격·범위기·부적·검광)은
+## 걸 때의 세대를 들고 가서, 그사이 새 판이 열렸으면 버린다 — 「저장 후 타이틀 → 이어하기」로 층이 바뀌어도 옛 판의 칼이 새 층을 치지 않게.
+var _session_generation := 0
+var _prev_skill_keys: Array[bool] = []
+## 벨트 숫자키 1~6 (Inventory.BELT_MAX, item_system_v2 §4.5) — 막힌 칸의 키는 use_belt가 거른다.
+var _prev_belt_keys: Array[bool] = [false, false, false, false, false, false]
+var _attack_timer: float = 0.0
+var _repath_timer: float = 0.0
+var _skill_repath: float = 0.0
+var _dead: bool = false
+## 마지막 휘두르기의 "칼이 닿는 시각"(초, 시전 순간부터). 회오리는 원형 검광·카메라 킥을 이 시각에 맞춘다(#140).
+var _last_swing_delay: float = 0.0
+## 상태 효과 (E2 #202): 도호 = 얼지 않는 몸 — 빙결 요청은 한기(시간 × 2). 한기 = 이동 ×0.75 · 공속 ×0.85. 화상·살은 EA 도호에게 안 온다(살 = E8).
+## 시계 = 물리 delta(게임 시간). 새 판·사망·부활에서 걷는다. 저장하지 않는다.
+var _status: STATUS = STATUS.new(STATUS.Kind.PLAYER, false)
+## 부적 공용 쿨 남은 시간(초, E3 #203) — 0이면 던질 수 있다. 새 판에서 걷는다.
+var talisman_cd: float = 0.0
+## 마지막으로 띄운 부적 (e2e·dev — 날아가는 중인지·어떻게 끝났는지). 끝나면 해제된다(is_instance_valid로 본다).
+var last_talisman: Node = null
+## 마지막으로 친 부적 진 (AoeField — e2e·dev, #477). 걷히면 해제된다(is_instance_valid로 본다).
+var last_seal: Node = null
+var _seal_msg_at: float = -999.0
+## 마지막 한 벌 (#478 — e2e·dev): 부적 흩뿌리기면 던진 가운데 + 곁 부적 · 부적 비면 떨어진 부적(떨어질 때마다 더한다). 끝난 부적은 해제된다.
+var last_volley: Array = []
+## 부적 비 (#478): 마지막 비에서 떨어진 장수 · 뿌릴 장수 (e2e·dev).
+var rain_dropped: int = 0
+var rain_total: int = 0
+## 칼바람 (#478 — Kind.STORM, 누른 채 도는 휠윈드): 우클릭을 누르고 있나(Player가 프레임마다) · 걸어가는 자리(커서 — Player.storm_steer가 프레임마다) ·
+## 이번 칼바람의 바퀴 수 · 맞힌 수(바퀴마다 맞은 적 수의 합) · 쓴 도력 (e2e·dev). _storm_i = 도는 스킬 칸(−1 = 안 돈다).
+var storm_held: bool = false
+var storm_goal: Vector3 = Vector3.ZERO
+var storm_revs: int = 0
+var storm_hits: int = 0
+var storm_mp_used: float = 0.0
+var _storm_i: int = -1
+var _storm_mult: float = 1.0
+var _storm_tier_lv: int = 1
+var _storm_cost: float = 0.0
+## 지금 바퀴가 끝나는 시각(게임 시계) — 바퀴는 끝까지 돈다(#424 동작 커밋과 같은 말). 클립이 없어도 이 시계로 돈다.
+var _storm_until: float = 0.0
+## 마지막 참격 검기 (SwordWave — e2e·dev, #480) · 마지막 처치의 불씨가 옮겨붙은 수(도깨비불, #480 — e2e·dev).
+var last_wave: Node = null
+var last_embers: int = 0
+
+@onready var _player: CharacterBody3D = get_parent()
+
+
+func _ready() -> void:
+	_rng.randomize()
+	skills = GameState.skill_tree.actives()
+	cooldowns.resize(skills.size())
+	cooldowns.fill(0.0)
+	_prev_skill_keys.resize(SkillTreeDef.HOTKEYS)
+	_prev_skill_keys.fill(false)
+	# 처치 시 생명·도력 (#377) — 적이 쓰러지는 길(칼·부적·화상)이 전부 이 신호 하나를 지난다
+	if not EventBus.enemy_died.is_connected(_on_enemy_died):
+		EventBus.enemy_died.connect(_on_enemy_died)
+	bind_inventory()
+	recompute_stats()
+	hp = max_hp
+	mp = max_mp
+	_emit_stats()
+
+
+## GameState.inventory가 바뀌면(새 캐릭터·불러오기) 다시 묶는다.
+func bind_inventory() -> void:
+	var inv := GameState.inventory
+	if inv and not inv.changed.is_connected(recompute_stats):
+		inv.changed.connect(recompute_stats)
+
+
+## 4스탯 + 장비 → 파생. 최대 생명이 늘면 현재 생명도 그만큼 늘린다(디아2식).
+func recompute_stats() -> void:
+	var old_max_hp := max_hp
+	var equipped: Array[ItemInstance] = GameState.inventory.equipped_items() if GameState.inventory else ([] as Array[ItemInstance])
+	# 패시브 칸(검 숙련·조식 …)은 장비 옵션과 같은 합으로 (skills_v2 §8). 패시브를 찍은 뒤에도 이 함수를 부른다.
+	stats = StatsCalc.compute(GameState.character, equipped, 0.0, Progression.passive_bonuses(GameState.character, GameState.skill_tree))
+	# 벨트 부적 상한 + 부적 꽂이 (E3 #203) — 가방은 캐릭터를 모르니 합(켜진 장비 + 패시브)을 숫자 하나로 넘긴다
+	if GameState.inventory:
+		GameState.inventory.talisman_stack_bonus = roundi(float(stats.get("talisman_stack", 0.0)))
+	max_hp = stats.max_hp
+	max_mp = stats.max_mp
+	if old_max_hp > 0.0 and not _dead:
+		hp = clampf(hp + (max_hp - old_max_hp), 1.0, max_hp)
+	mp = minf(mp, max_mp)
+	_apply_to_player()
+	_emit_stats()
+
+
+func _apply_to_player() -> void:
+	if _player == null or not stats.has("move_speed"):
+		return
+	if "move_speed" in _player:
+		_player.move_speed = float(stats.move_speed) * _status.move_mult()   # 한기면 ×0.75 (E2)
+	var light := _player.get_node_or_null("LightRadius") as OmniLight3D
+	if light:
+		light.omni_range = stats.light_radius
+	# 무기 칸 보이기/숨기기 (#430, PD 2026-09-24 「숨겨」 — equipment_slots_v2 §3.5·§4.7): 이 함수 하나가 알림 자리다 —
+	# recompute_stats()는 장비 끼우기·빼기(Inventory.changed) · 세이브 불러오기 · 새 판 · 레벨업·힘 찍기(요구치 충족) 전부에서 불린다.
+	var visual := _player.get_node_or_null("Visual") as ActorVisual
+	if visual:
+		var weapon: ItemInstance = GameState.inventory.equipment.get("weapon") if GameState.inventory else null
+		visual.set_weapon_active(weapon != null and not (stats.inactive as Array).has(weapon))
+
+
+## 칼 피해 % = 힘 1%/pt + 검 숙련 칼 피해 % (StatsCalc str_pct, skills_v2 §5.1).
+func str_pct() -> float:
+	return float(stats.get("str_pct", stats.get("str", 0.0)))
+
+
+func crit_chance() -> float:
+	return float(stats.get("crit_chance", 0.0))
+
+
+## 평타 휘두름 간격(초) = 1 / 공속 — 한기면 공속 ×0.85(간격 ÷ 0.85, E2). 공속이 곧 휘두르는 속도라 애니도 같이 느려진다.
+func attack_interval() -> float:
+	return 1.0 / float(stats.attack_speed) * _status.attack_time_mult()
+
+
+func _process(delta: float) -> void:
+	if TRACE.enabled():
+		TRACE.event("resource_process_before", "PlayerCombat._process", self, {"delta": TRACE.exact(delta)})
+	for i in cooldowns.size():
+		cooldowns[i] = maxf(0.0, cooldowns[i] - delta)
+	talisman_cd = maxf(0.0, talisman_cd - delta)
+	if not _dead:
+		var regen_changed := false
+		if mp < max_mp:
+			mp = minf(max_mp, mp + float(stats.get("mp_regen", 1.0)) * delta)
+			regen_changed = true
+		var hp_regen := float(stats.get("hp_regen", 0.0))
+		if hp_regen > 0.0 and hp < max_hp:
+			hp = minf(max_hp, hp + hp_regen * delta)
+			regen_changed = true
+		if regen_changed:
+			_emit_stats_throttled(delta)
+	if TRACE.enabled():
+		TRACE.event("resource_process_after", "PlayerCombat._process", self, {"delta": TRACE.exact(delta)})
+	# 엣지 폴링 (player.gd와 같은 이유: 주입 입력은 just_pressed 스탬프를 놓침). F1~F8 = 단축키 칸(skills_v2 §4.5).
+	for i in _prev_skill_keys.size():
+		var now := Input.is_action_pressed("skill_%d" % (i + 1))
+		if now and not _prev_skill_keys[i] and not GameState.skill_keys_captured():
+			select_hotkey(i)
+		_prev_skill_keys[i] = now
+	for i in _prev_belt_keys.size():
+		var now_b := Input.is_action_pressed("belt_%d" % (i + 1))
+		if now_b and not _prev_belt_keys[i]:
+			use_belt(i)
+		_prev_belt_keys[i] = now_b
+
+
+func _physics_process(delta: float) -> void:
+	if TRACE.enabled():
+		TRACE.event("combat_physics", "PlayerCombat._physics_process", self, {"delta": TRACE.exact(delta)})
+	if _dead:
+		return
+	_tick_status(delta)
+	_attack_timer = maxf(0.0, _attack_timer - delta)
+	# 칼바람 (#478): 도는 동안은 평타·다가가기 없음 — 바퀴가 끝날 때마다 이어 돌지 멈출지만 본다(걸음은 Player._tick_storm)
+	if _storm_i >= 0:
+		_tick_storm()
+		return
+	# 동작 커밋 (#424 ①, combat_v2 §9.2): 평타·스킬·부적 동작이 끝날 때까지 다가가기·돌아보기·다시 잡기·새 휘두름 없음 — 칼은 끝까지.
+	# 그새 들어온 명령은 Player 버퍼(한 칸)에 있다가 동작이 끝나는 틱에 Player._physics_process(이 노드보다 먼저 돈다)가 푼다
+	if _player.motion_locked():
+		return
+	# 우클릭 스킬이 적에게 다가가는 중이면 그게 먼저다 (§9 ③) — 닿으면 치고, 평타는 다음 틱부터
+	if _tick_skill_approach(delta):
+		return
+	if target == null or not is_instance_valid(target) or target.state == Enemy.State.DEAD:
+		target = null
+	# 좌클릭 누른 채 = 칼이 빌 때마다 커서 밑 적 (§9 ②) — 휘두르는 중인 칼은 앞 적에게 끝까지 간다(다음 칼부터 새 적)
+	if retarget_hold:
+		_retarget_from_hover()
+	if target == null:
+		return
+	var to_t := target.global_position - _player.global_position
+	to_t.y = 0.0
+	var dist := to_t.length()
+	if dist > float(stats.attack_range):
+		if hold_position:
+			_player.face_toward(target.global_position)
+			return
+		_repath_timer -= delta
+		if _repath_timer <= 0.0:
+			_repath_timer = REPATH_SEC
+			_player.move_to(target.global_position)
+	else:
+		_player.stop_moving()
+		_player.face_toward(target.global_position)
+		if _attack_timer <= 0.0:
+			_attack_timer = attack_interval()   # 한기면 ÷0.85 (E2)
+			var delay := _swing()
+			_strike(target, _finisher_mult(), delay, true, _finisher_blow())
+
+
+## 휘두르기 시작(combat_v2 §6): 공격 애니를 공속에 맞춰 재생하고 "칼이 닿는 시각"(초)을 돌려준다. 한 번의 시전에 한 번만 부른다.
+## skill = 도력을 쓰는 휘두름(참격·돌진베기) → 검광 칼끝이 도력 청으로 물든다 (vfx.md §4 "도력 청색 한 점", #59).
+## skill_def를 주면 그 스킬 전용 동작(SkillDef.anim)을 쓴다 — 없거나 클립이 없으면 기본 공격으로 되돌아간다(보드 #67).
+## skill이면 평타 타이머를 그 동작이 끝날 때까지 민다(_hold_attack, #387) — 사거리 안 평타 타깃이 있어도 스킬 동작이 끝까지 간다.
+func _swing(skill: bool = false, skill_def: SkillDef = null) -> float:
+	# 휘두름 소리 (audio.md §2.3, #384): 평타 = sword_swing · 스킬 = 제 시전 소리 skill_<id>가 **갈음**한다(휙이 두 번 나지 않게).
+	# 스킬 파일이 없으면 sword_swing으로 대신 — 누른 순간의 대답은 비지 않는다. 칼이 닿는 순간의 겹은 _skill_impact.
+	# 같은 동작을 빌려 쓰는 스킬은 그 스킬 소리를 빌린다(SkillDef.sfx_as — 도약 베기 = 돌진베기, #477)
+	if skill_def != null:
+		Audio.play(AudioLib.skill_cue(skill_def.id), null, AudioLib.skill_cue(skill_def.sfx_as) if skill_def.sfx_as != "" else "sword_swing")
+	else:
+		Audio.play("sword_swing")
+	# 기합 (audio.md §2, 보드 #66 — D-076 ② 가사 없는 소리는 효과음): 매번 지르면 시끄럽다 → 셋 중 하나꼴
+	if randf() < KIAI_CHANCE:
+		Audio.play("doho_kiai")
+	var delay: float = -1.0
+	var motion := 0.0   # 이 휘두름의 동작 길이(초) — 스킬이면 평타가 그만큼 기다린다 (#387)
+	var v: ActorVisual = _player.visual()
+	if skill_def != null and skill_def.anim != "":
+		delay = v.play_skill(skill_def.anim, skill_def.anim_speed)
+		if delay >= 0.0:
+			# play_skill이 트는 길이와 같은 셈 — 제 클립 ÷ 배율(거기서처럼 0.25~4배로 묶는다)
+			motion = v.clip_length_of(skill_def.anim) / clampf(skill_def.anim_speed, 0.25, 4.0)
+	if delay < 0.0:
+		# 평타 — 순환을 센다(§6.5). 스킬이 제 클립 없이 평타로 되돌아온 휘두름은 세지 않는다(스킬은 순환을 끊지도 세지도 않는다)
+		# 공속 = 휘두르는 속도라 한기(공속 ×0.85, E2)면 애니도 같이 느려진다
+		delay = v.play_attack(attack_interval(), not skill)
+		motion = attack_interval()
+	_last_swing_delay = delay
+	if skill:
+		_hold_attack(motion)   # 평타가 스킬 동작을 덮지 않게 (combat_v2 §9.1) — 평타 휘두름은 호출자가 간격을 이미 걸었다
+	# 검광 리본 (vfx.md sword_trail, #46): 휘두르는 창 = 임팩트까지 + 0.15s (클립 없으면 0.4s)
+	var def: Dictionary = Vfx.CUES["sword_trail"]
+	var color: Color = def["color"]
+	var tip: Color = def.get("tip_color", color) if skill else color
+	Vfx.play("sword_trail", _player.global_position, {"color": tip})
+	v.start_trail((delay if delay > 0.0 else 0.25) + 0.15, color, tip)
+	return delay
+
+
+## 평타가 지금 동작을 덮지 않게 — 휘두름 타이머를 sec초 뒤까지 민다(줄이지는 않는다). 스킬 휘두름(_swing)과 부적 던지기(throw_talisman, #203)가 같이 쓴다.
+## 이 타이머가 도는 동안 사거리 안 타깃은 「칼이 나가는 중」(_swinging_at_target) — 좌클릭 누른 채 다시 잡기도 동작이 끝난 뒤 다음 칼부터(§9 ②).
+## 우클릭 누른 채 되풀이 시전(hold_cast, §9 ③)은 이 타이머를 안 본다 — 쿨다운·도력만. 사양 combat_v2 §9.1 (#387).
+func _hold_attack(sec: float) -> void:
+	_attack_timer = maxf(_attack_timer, sec)
+
+
+## 이펙트 등급(0·1·2) → 크기 배수 (D-093 §2.1, FX_GRADE_SCALE).
+func _fx_grade_scale(grade: int) -> float:
+	return FX_GRADE_SCALE[clampi(grade, 0, FX_GRADE_SCALE.size() - 1)]
+
+
+## 회오리 둘째 판정 자리 (#493 — WHIRL_SECOND_SPIN_GAP 주석) = 방금 튼 제 동작 클립의 비율(시간 왜곡 뒤 0~1 — ActorVisual.warped_ratio).
+## ModelDef.second_hit가 없거나 · 제 클립이 안 돌거나(클립 없는 스킬이 평타로 되돌아온 휘두름) · 칼이 곧바로 닿은 휘두름이면 −1(옛 타이머).
+func _whirl_second_ratio(v: ActorVisual, s: SkillDef) -> float:
+	if v == null or v.model == null or s == null or s.anim == "" or _last_swing_delay <= 0.0:
+		return -1.0
+	if v.current_clip() != s.anim or not v.model.second_hit.has(s.anim):
+		return -1.0
+	return v.warped_ratio(s.anim, float(v.model.second_hit[s.anim]))
+
+
+## 카메라 한 번 툭 (combat_v2 §6 타격감). 스킬은 "닿는다"보다 "터진다"가 먼저 읽혀야 한다.
+func _kick(amount: float) -> void:
+	var cam := get_viewport().get_camera_3d()
+	if cam and cam.has_method("kick"):
+		cam.kick(amount)
+
+
+## 적 한 마리 타격 예약 (자동공격). 칼이 닿는 순간 `_land` — **애니 재생 위치**가 impact를 지나는 틱(ActorVisual.on_impact, #424 ②):
+## 명중·피격 멈춤이 있어도 칼과 같은 프레임. delay = 옛 예약 시각(안전판 — 클립이 없으면 0 = 즉시 · 휘두름이 끊기면 그 시각에).
+## blow = 무엇으로 쳤나 — 기술 막타면 베임 계열(#472, Enemy.receive_attack·_blow · 죽음 고르기 DeathPick). 평타는 빈 사전 = 주저앉음.
+## 트리 멈춤을 따른다(#156) — Esc 메뉴 동안은 애니가 서니 칼이 닿지 않고(안전판 타이머도 process_always 끔), 닫으면 이어서. 새 판이면 버린다(_session_generation).
+func _strike(e: Enemy, mult: float, delay: float, check_range: bool, blow: Dictionary = {}) -> void:
+	_player.visual().on_impact(_land_if_current.bind(_session_generation, e, mult, check_range, blow), delay)
+
+
+## 예약 타격이 닿는 순간 — 걸 때의 판이면 `_land`. e는 형 없이 받는다(그사이 해제된 적 — `_land`가 거른다).
+func _land_if_current(generation: int, e, mult: float, check_range: bool, blow: Dictionary) -> void:
+	if TRACE.enabled():
+		TRACE.event("impact_generation_check", "PlayerCombat._land_if_current", self, {"raw_generation": generation, "raw_current_generation": _session_generation, "applies": generation == _session_generation})
+	if generation == _session_generation:
+		_land(e, mult, check_range, blow)
+
+
+## 자동공격 한 대의 blow (§6.5): 방금 휘두른 평타가 순환의 마지막 칸(3타)이면 넉백 ×FINISHER_KNOCK, 아니면 빈 사전.
+## 연격 0점이면 skill을 안 넣으므로 3타가 막타여도 평타 막타 = 주저앉음(치명이면 베임 — 죽음 고르기 DeathPick, #472).
+## 연격 (#478, skills_v2 §5.1): 1점부터 셋째 타 막타 = 베임 계열(skill · 면 힌트 세로 — 상단 내려치기, 「날아감」의 D-093 갈음) · 셋째 타 경직 +초(stagger_add).
+func _finisher_blow() -> Dictionary:
+	if not _player.visual().is_chain_finisher():
+		return {}
+	var b := {"knock": FINISHER_KNOCK}
+	if float(stats.get("chain3_dmg_pct", 0.0)) > 0.0:
+		b["skill"] = true
+		b["cut"] = &"v"
+	var st := float(stats.get("chain3_stagger", 0.0))
+	if st > 0.0:
+		b["stagger_add"] = st   # _hit_blow가 회초리 옵션(stagger_add)과 합한다
+	return b
+
+
+## 자동공격 한 대의 피해 배수 — 연격 (#478): 방금 휘두른 평타가 셋째 타면 1 + chain3_dmg_pct %(10%/점), 아니면 1. 연격 0점 = 1(옛 결과·난수 그대로).
+func _finisher_mult() -> float:
+	var pct := float(stats.get("chain3_dmg_pct", 0.0))
+	if pct <= 0.0 or not _player.visual().is_chain_finisher():
+		return 1.0
+	return 1.0 + pct * 0.01
+
+
+## 스킬의 막타 정보 (game_feel_v2 §10.1, #472 — 날아감 없음): skill = 참 → 기술 막타 = 베임 계열(두 동강·윗몸 미끄러짐 · 가를 수 없는 몸은 베여 쓰러짐).
+## cut = 칼 궤적을 못 잴 때의 면 갈래(SkillDef.cut — 사선·가로·세로·찌름) · launch = 살아 있는 적을 넘어뜨릴 때 거리 배율(#145, 스위치 끔 #425).
+## 방향은 비워 두면 도호 → 적(회오리 = 바깥으로), 돌진만 앞으로를 넣는다. 평타는 빈 사전 → 주저앉음.
+func _blow(s: SkillDef, dir: Vector3 = Vector3.ZERO) -> Dictionary:
+	if s == null:
+		return {}
+	# knockdown = 살아 있는 적도 날아가 넘어지는 기술인가 (combat_v2 §6.6, #145 — 강타·회오리). 거리는 launch_mult를 쓴다.
+	var b := {"skill": true, "cut": s.cut, "launch": s.launch_mult, "knockdown": s.knockdown}
+	if dir.length_squared() > 0.0001:
+		b["dir"] = dir
+	# 짧은 경직 (#477 — 도약 베기: 넘어뜨림(#425 끔) 대신 살아 있는 몸의 경직 +초, Enemy가 경직에 더한다 · 회초리 옵션과 합 _hit_blow)
+	if s.stagger_add > 0.0:
+		b["stagger_add"] = s.stagger_add
+	return b
+
+
+## 칼이 닿는 순간. 그 사이 타깃이 죽었거나(자동공격은) 사거리+여유 밖이면 헛스윙. 맞으면 히트스톱·타격 흡혈.
+# 층 이동/사망 중 적이 먼저 해제될 수 있다. 아래 유효성 검사 전에 타입 변환으로 실패하지 않도록 Variant로 받는다.
+func _land(e, mult: float, check_range: bool, blow: Dictionary = {}) -> int:
+	if TRACE.enabled():
+		TRACE.event("impact_range_check", "PlayerCombat._land", self, {"actual_target": TRACE.attack_target(self, e if is_instance_valid(e) else null), "check_range": check_range, "range": TRACE.exact(float(stats.attack_range) + LAND_RANGE_SLACK), "mult": TRACE.exact(mult)})
+	if _dead:
+		return 0
+	if check_range:
+		_strike_jars(e)   # 고름독 (#331) — 평타가 닿는 순간 칼끝 부채꼴 안 옹기도 깨진다(적이 그 사이 죽어 헛스윙이어도)
+	if e == null or not is_instance_valid(e) or e.state == Enemy.State.DEAD:
+		return 0
+	if check_range:
+		var to_e: Vector3 = e.global_position - _player.global_position
+		to_e.y = 0.0
+		if to_e.length() > float(stats.attack_range) + LAND_RANGE_SLACK:
+			return 0
+	blow = _hit_blow(blow, _player.visual().blade_motion())
+	# 칼의 속성 옵션(불씨 붙은·서리 서린 …, E4 #204)도 이 한 곳에서 — 모든 스킬이 _land를 지난다. 옵션 없는 칼 = 빈 사전(난수 그대로)
+	# 치명 배수(급소)·퇴마도 여기서 (#377, StatsCalc.hit_mods) — 옵션 없으면 1.5 · 0 = 옛 결과 그대로
+	var dealt: int = e.receive_attack(_rng, stats.dmg_min, stats.dmg_max, mult, stats.accuracy, str_pct(), crit_chance(), blow, StatsCalc.weapon_adds(stats), StatsCalc.hit_mods(stats))
+	if dealt > 0:
+		# 치명은 때린 쪽도 같은 길이로 멈춘다 — 둘이 같이 멈춰야 "쿵"이 된다 (game_feel_v2 §2 ⑤)
+		# 칼바람(#478 blow.no_stop)은 도호가 안 멈춘다 — 초에 세 바퀴 넘게 도는데 바퀴마다 멈추면 도는 몸이 끊긴다(디아2 휠윈드도 그렇다). 맞은 적은 제 멈춤 그대로
+		if not bool(blow.get("no_stop", false)):
+			_player.visual().hit_stop(HIT_STOP_KILL if e.last_hit_kill else (HIT_STOP_CRIT if e.last_hit_crit else HIT_STOP))
+		if e.last_hit_kill:
+			_count_kill()
+		if float(stats.get("life_on_hit", 0.0)) > 0.0:
+			heal(float(stats.life_on_hit), false)
+	return dealt
+
+
+## 고름독 (#331): 평타 칼끝 부채꼴(사거리 + 여유 · JAR_ARC_DEG) 안 옹기를 깬다 — 방향 = 타깃 쪽, 타깃이 사라졌으면 보는 쪽. 형 없는 e(해제됐을 수 있다).
+func _strike_jars(e) -> void:
+	var dir: Vector3 = _player.facing()
+	if e != null and is_instance_valid(e):
+		var to_e: Vector3 = e.global_position - _player.global_position
+		to_e.y = 0.0
+		if to_e.length_squared() > 0.0001:
+			dir = to_e.normalized()
+	PUS_JAR.strike_area(get_tree(), HitArea.fan(_player.global_position, dir, float(stats.attack_range) + LAND_RANGE_SLACK, JAR_ARC_DEG))
+
+
+## 칼이 닿는 순간의 blow — 들어온 blow는 여러 적이 같이 쓸 수 있으니 고칠 게 있으면 복사해서 싣는다(없으면 그대로):
+## ① 칼 궤적 (#184 → #472) — 막타가 두 동강이면 이 궤적이 면 갈래(가로·사선·세로)와 기울기를 정한다
+## ② 회초리 옵션 (item_system_v2 §7.6, #377) — 맞은 적 경직 +초(stagger_add) · 밀치기 +%(knock_pct → blow.knock에 곱 — 3타 ×1.5와 곱한다).
+##    Enemy가 **살아 있는 몸의 경직·밀림**에서만 읽는다 — 넘어짐 거리는 그대로, 부적은 이 길을 안 지난다(부적엔 경직·밀림이 없다).
+## ③ 망나니 칼 (power_feel_v2 §3.2, #480) — 처형 %(cull_pct → Enemy.receive_attack) · 평타 막타 두 동강 %(bisect_pct → EnemyDeath.note_kill). 칼이 닿는 길만(부적 없음).
+## 칼 궤적이 이미 실린 blow(검기 — blade = {} 「궤적 없음」, _launch_wave)는 덮지 않는다: 날아가는 칼바람의 면은 SkillDef.cut 힌트(가로)가 정한다.
+func _hit_blow(blow: Dictionary, bm: Dictionary) -> Dictionary:
+	var add_stag := float(stats.get("stagger_add", 0.0))
+	var knock_pct := float(stats.get("knock_pct", 0.0))
+	var cull := float(stats.get("cull_pct", 0.0))
+	var bisect := float(stats.get("bisect_pct", 0.0))
+	if bm.is_empty() and add_stag == 0.0 and knock_pct == 0.0 and cull == 0.0 and bisect == 0.0:
+		return blow
+	var out := blow.duplicate()
+	if cull > 0.0:
+		out["cull_pct"] = cull
+	if bisect > 0.0:
+		out["bisect_pct"] = bisect
+	if not bm.is_empty() and not blow.has("blade"):
+		out["blade"] = bm
+	if add_stag != 0.0:
+		out["stagger_add"] = float(out.get("stagger_add", 0.0)) + add_stag   # 스킬의 짧은 경직(도약 베기 #477)과 합
+	if knock_pct != 0.0:
+		out["knock"] = float(out.get("knock", 1.0)) * (1.0 + knock_pct * 0.01)
+	return out
+
+
+## 처치 시 생명·도력 (item_system_v2 §7.3 · §7.6, #377) — 적이 쓰러질 때마다 한 번. 칼 막타(_land) · 부적 막타(Enemy.receive_spell) ·
+## 화상 틱 막타가 전부 Enemy._die → EventBus.enemy_died 한 길을 지나므로 여기 하나에 단다(경험치가 들어오는 그 처치 — world/main.gd와 같은 신호).
+## 부적 처치도 든다: 처치 시 도력은 부적 도호의 연료 줄(§7.4)이라 부적으로 잡은 적이 빠지면 제 빌드에서 죽은 옵션이 된다.
+func _on_enemy_died(enemy: Node, _xp: int) -> void:
+	kill_reward()
+	_spread_embers(enemy)   # 도깨비불 (#480) — 옵션이 없으면 아무 일 없음
+
+
+## 처치 한 번의 몫 — 생명은 heal 한 길(살의 「받는 회복 절반」 E8이 붙을 자리) · 도력은 최대까지. 숫자 팝업 없음(타격 흡혈과 같다). 쓰러져 있으면 없음.
+func kill_reward() -> void:
+	if _dead:
+		return
+	var life := float(stats.get("life_on_kill", 0.0))
+	var mana := float(stats.get("mp_on_kill", 0.0))
+	if mana > 0.0:
+		mp = minf(max_mp, mp + mana)
+	if life > 0.0:
+		heal(life, false)
+	elif mana > 0.0:
+		_emit_stats()
+
+
+## 처치 시 불씨 (power_feel_v2 §3.2, #480 — 도깨비불 kill_burn = 화상 초당): 쓰러진 자리에서 KILL_BURN_RADIUS(+ 몸) 안 살아 있는 적 KILL_BURN_TARGETS에
+## 화상 KILL_BURN_SEC초 — 안 타는 몸부터 · 가까운 차례(무리 안으로 번진다). 화상 막타 = 재(#472)이고 그 처치가 이 신호를 다시 지나 또 번진다(무리가 타들어 간다).
+## 불막이는 Enemy.apply_burn이 깎고 더 센 화상은 안 덮는다(StatusEffects) — 안 옮겨붙은 몸은 세지 않고 다음 몸으로. 그림 = 쓰러진 자리 → 몸 불꽃 줄(dash_trail 빌림) + 화염부 닿음.
+func _spread_embers(dead: Node) -> void:
+	var dps := float(stats.get("kill_burn", 0.0))
+	if dps <= 0.0 or _dead or not is_instance_valid(dead) or not (dead is Enemy):
+		return
+	var from: Vector3 = (dead as Enemy).global_position
+	var cands: Array = []
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var e := n as Enemy
+		if e == null or e == dead or e.state == Enemy.State.DEAD or e.is_hidden():
+			continue
+		var d := Vector2(e.global_position.x - from.x, e.global_position.z - from.z).length()
+		if d <= KILL_BURN_RADIUS + e.def.radius:
+			cands.append([1 if e.is_burning() else 0, d, e])
+	cands.sort_custom(func(a: Array, b: Array) -> bool: return int(a[0]) < int(b[0]) or (int(a[0]) == int(b[0]) and float(a[1]) < float(b[1])))
+	var lit := 0
+	var at := from + Vector3(0.0, 0.6, 0.0)
+	for c in cands:
+		if lit >= KILL_BURN_TARGETS:
+			break
+		var e: Enemy = c[2]
+		if not e.apply_burn(dps, KILL_BURN_SEC):
+			continue
+		lit += 1
+		var to := e.global_position + Vector3(0.0, e.def.height * 0.55, 0.0)
+		Vfx.play("dash_trail", at, {"to": to, "color": Vfx.TALISMAN_FIRE, "scale": 0.25})
+		Vfx.play("talisman_fire_hit", to, {"scale": 0.6})
+	last_embers = lit
+	if lit > 0:
+		Audio.play("talisman_fire_hit", from, "hit")
+
+
+## 연속 처치 세기 (§3). 창(3초)이 아니라 **사슬**이다 — 앞 처치에서 3초 안이면 이어지고, 넘으면 1부터.
+## 소리만 낸다: 숫자·화면은 치명·희귀 드랍이 쓰는 칸이라 여기서 쓰면 꼭대기가 흐려진다.
+func _count_kill() -> void:
+	var now := GameClock.now   # 게임 시계(#234) — 슬로모·녹화에서 사슬이 벽시계로 끊기지 않게
+	kill_streak = kill_streak + 1 if now - _last_kill_at <= STREAK_GAP else 1
+	_last_kill_at = now
+	if kill_streak in STREAK_MARKS:
+		Audio.play("combo_%d" % kill_streak, _player.global_position)
+		EventBus.kill_streak.emit(kill_streak)
+
+
+## 화면 좌표 밑 적(몸 안 → 몸 둘레 12px, CursorPick — §9 ①)을 타깃으로 잡고 true. 없으면 false(호출자가 이동 처리).
+## 게임의 클릭은 Player가 호버(GameState.hover — 적·아이템·NPC 순서까지 같은 판정)로 정한다. 이건 적만 보는 지름길(시험·도구).
+func try_pick_enemy(screen_pos: Vector2) -> bool:
+	var e := CURSOR_PICK.enemy_at(get_viewport().get_camera_3d(), screen_pos, true)
+	if e == null:
+		return false
+	set_target(e)
+	return true
+
+
+func set_target(e: Enemy) -> void:
+	if e != target:
+		_player.visual().reset_chain()   # 타깃이 바뀌면 평타 순환은 1타부터 (§6.5) — 같은 적을 다시 누르면 이어 간다
+	target = e
+	_repath_timer = 0.0
+
+
+## F1~F8·벨트 숫자키 엣지의 「직전 상태」를 지금 키로 (#156 — Esc 메뉴에서 돌아올 때 Player.menu_pause_ended가 부른다).
+func sync_key_edges() -> void:
+	for i in _prev_skill_keys.size():
+		_prev_skill_keys[i] = Input.is_action_pressed("skill_%d" % (i + 1))
+	for i in _prev_belt_keys.size():
+		_prev_belt_keys[i] = Input.is_action_pressed("belt_%d" % (i + 1))
+
+
+## 타깃·스킬 다가가기 둘 다 놓는다 (바닥 클릭·순간이동·대화 띠 — 도호를 세우는 쪽).
+func clear_target() -> void:
+	target = null
+	skill_target = null
+
+
+## 우클릭 스킬의 다가가기만 끊는다 — 새 좌클릭(새 명령)이 부른다. 평타 타깃은 그 좌클릭이 정한다.
+func cancel_skill_approach() -> void:
+	skill_target = null
+
+
+## 지금 칼이 타깃에게 나가는 중인가 — 사거리 안에서 휘두름 간격이 안 끝났다. 이때는 커서 밑이 다른 적이어도 안 바꾼다(다음 칼부터, §9 ②).
+func _swinging_at_target() -> bool:
+	if target == null or _attack_timer <= 0.0:
+		return false
+	var d := target.global_position - _player.global_position
+	d.y = 0.0
+	return d.length() <= float(stats.attack_range)
+
+
+## 좌클릭 누른 채 (§9 ②): 커서 밑 살아 있는 적이 지금 타깃과 다르고 칼이 비었으면 그 적으로. 커서 밑이 빈 땅·아이템·창이면 그대로(싸움 잠금).
+func _retarget_from_hover() -> void:
+	if hold_position:
+		return   # Shift 제자리 공격은 그대로 (§9 ⑤)
+	var h := CURSOR_PICK.live_enemy(GameState.hover)
+	if h == null or h == target or _swinging_at_target():
+		return
+	set_target(h)
+
+
+## dev/접근성: 가장 가까운 살아있는 적을 타깃.
+func target_nearest() -> bool:
+	var best: Enemy = null
+	var best_d := 1e9
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var e := n as Enemy
+		if e == null or e.state == Enemy.State.DEAD:
+			continue
+		var d := e.global_position.distance_to(_player.global_position)
+		if d < best_d:
+			best_d = d
+			best = e
+	if best:
+		set_target(best)
+	return best != null
+
+
+# ---------- 스킬 ----------
+
+func skill_level(i: int) -> int:
+	return Progression.skill_level(GameState.character, skills[i].id)
+
+
+## F키 칸 i(0부터)에 묶인 액티브의 skills 인덱스. 빈칸·모르는 id = -1 (skills_v2 §4.5 — 묶음은 GameState.character.hotkeys).
+func hotkey_skill(i: int) -> int:
+	var hk: Array = GameState.character.get("hotkeys", [])
+	var id: String = String(hk[i]) if i >= 0 and i < hk.size() else ""
+	if id == "":
+		return -1
+	for k in skills.size():
+		if skills[k].id == id:
+			return k
+	return -1
+
+
+## F키 칸 i를 누름 → 묶인 액티브를 우클릭 스킬로. 빈칸이면 아무 일 없음, 안 배웠으면 알림.
+func select_hotkey(i: int) -> void:
+	var k := hotkey_skill(i)
+	if k < 0:
+		return
+	if not select_skill(k):
+		EventBus.ui_message.emit("아직 배우지 않았다: %s" % skills[k].display_name)
+
+
+## 우클릭 스킬을 액티브 k로 — F키·HUD 미니·스킬 고르기 창·술법 창 우클릭이 전부 이 길 (skills_v2 §8.3, #245). 안 배운 칸이면 false.
+## **고르기만** 한다: 시전하지 않고, 동작 중(#424)이어도 휘두르던 칼은 끝까지. 바뀌면 손을 뗀 우클릭이 버퍼에 남긴 시전은 버린다
+## (Player.drop_released_cast — 바꾸기는 시전 명령이 아니다, 동작 뒤 새 스킬이 저절로 나가지 않게). 우클릭을 누르고 있으면 누른 채 규칙이 새 스킬로 잇는다.
+func select_skill(k: int) -> bool:
+	if k < 0 or k >= skills.size() or skill_level(k) <= 0:
+		return false
+	if k != active_skill:
+		active_skill = k
+		if _player != null:
+			_player.drop_released_cast()
+	_emit_stats()
+	return true
+
+
+## 액티브 i의 피해 배수(레벨 + 시너지). 창·툴팁이 시전과 같은 값을 보이게 한 곳에서.
+func skill_mult_at(i: int, lv: int) -> float:
+	return Progression.skill_mult(skills[i], lv, GameState.character)
+
+
+func active_mp_cost() -> float:
+	return Progression.skill_mp(skills[active_skill], maxi(1, skill_level(active_skill)))
+
+
+## 지금 우클릭 스킬을 쓸 수 있나 — 배웠고 · 쿨다운 끝 · 도력 넉넉 (cast_active가 거르는 것과 같은 셈).
+func skill_ready() -> bool:
+	if _dead or active_skill >= skills.size():
+		return false
+	var lv := skill_level(active_skill)
+	return lv > 0 and cooldowns[active_skill] <= 0.0 and mp >= Progression.skill_mp(skills[active_skill], lv)
+
+
+## 스킬 s가 지금 자리에서 적 e에게 닿나 (§9 ③). 칼 스킬(참격 부채·회오리) = range + 적 반경 − SKILL_REACH_MARGIN 안(_hit_enemies와 같은 거리 셈).
+## 돌진베기 같은 나머지 = 늘 참 — 제 사거리로 그쪽을 향한다(다가가지 않는다).
+## 레벨 계단(D-093 §2.1, #473)의 자란 반경은 **여기선 안 본다** — 우클릭을 누른 채 다가가는 매 프레임(hold_cast·
+## _tick_skill_approach) `Progression.effective_level` + `SkillDef.tier_radius`를 새로 불렀더니, 실제 등록 순서로
+## 대본 30여 개를 먼저 돌린 뒤(anim_commit 자체 주석 "한 점 최고속은 흔들린다" — 회오리처럼 평평한 클립) 회오리 타이밍
+## 검사가 클립 2.7%를 최고속으로 잘못 짚어 착륙이 두 번 떨어졌다(#473, 이분(bisect)으로 이 줄까지 좁힘 — 반경 값 자체는
+## 1레벨과 똑같은데도 그랬다). range는 1레벨 값 그대로 두고, 실제 판정(맞고 안 맞고)은 cast_active가 이미 단계 반경으로
+## 정확히 잰다 — 이 함수는 "다가갈까 말까"만 정해 5·10레벨에서 가끔 한 걸음 더 다가간 뒤 칠 수 있다(체감만, 판정은 그대로).
+## 찌르기(#478 PIERCE)도 같은 셈 — range = 찌르는 길이(1레벨 값, 위 까닭 그대로)라 적이 길이 + 몸 − 여유 안에 들 때까지 걸어간다.
+func skill_reaches(s: SkillDef, e: Enemy) -> bool:
+	if s.kind != SkillDef.Kind.ARC and s.kind != SkillDef.Kind.WHIRL and s.kind != SkillDef.Kind.PIERCE:
+		return true
+	var d := e.global_position - _player.global_position
+	d.y = 0.0
+	return d.length() <= s.range + e.def.radius - SKILL_REACH_MARGIN
+
+
+## 우클릭을 누르고 있는 프레임마다 (Player, §9 ③ — 누른 첫 프레임도). 스킬이 준비됐을 때만 움직인다:
+## 커서 밑 적 e가 있으면 그 적 몸 쪽으로 시전 — 칼 스킬이 안 닿으면 걸어가서(skill_target) · 없으면 다가가던 적 그대로 · 그것도 없으면 바닥(ground) 쪽으로.
+## in_place = Shift+우클릭 — 다가가지 않고 그 자리에서 그쪽으로 (디아2 제자리 시전).
+func hold_cast(e: Enemy, ground: Variant, in_place: bool = false) -> void:
+	if not skill_ready():
+		return   # 쿨다운·도력 — 누른 채면 준비되는 대로 다시 온다
+	var s := skills[active_skill]
+	if e != null:
+		if in_place or skill_reaches(s, e):
+			skill_target = null
+			cast_active(e.global_position)
+		elif e != skill_target:
+			skill_target = e
+			_skill_repath = 0.0
+		return
+	if skill_target != null and is_instance_valid(skill_target) and skill_target.state != Enemy.State.DEAD:
+		return   # 커서가 빈 땅으로 미끄러져도 다가가던 적 그대로 (좌클릭 싸움 잠금과 같은 규칙)
+	if ground is Vector3:
+		cast_active(ground)
+
+
+## 스킬 다가가기 한 틱 (§9 ③). 다가가는 중이면 true — 그 틱은 평타를 쉰다. 닿으면 멈춰 서서 그 적 쪽으로 시전.
+func _tick_skill_approach(delta: float) -> bool:
+	if skill_target == null:
+		return false
+	if not is_instance_valid(skill_target) or skill_target.state == Enemy.State.DEAD or not skill_ready():
+		skill_target = null   # 적이 쓰러졌거나 그 사이 스킬을 못 쓰게 됐다(F키로 바꾼 스킬이 쿨다운 등) — 평타로 돌아간다
+		return false
+	if skill_reaches(skills[active_skill], skill_target):
+		var e := skill_target
+		skill_target = null
+		_player.stop_moving()
+		cast_active(e.global_position)
+		return true
+	_skill_repath -= delta
+	if _skill_repath <= 0.0:
+		_skill_repath = REPATH_SEC
+		_player.move_to(skill_target.global_position)
+	return true
+
+
+## 우클릭: 현재 스킬을 월드 지점 방향으로 시전 — 커서 밑 적의 발(몸 쪽) 또는 커서 밑 바닥(§9 ③ · Player → hold_cast가 고른다).
+## 배수·도력은 스킬 레벨에 따라 (progression_v2.md). 쿨다운·도력·안 배움이면 조용히 거른다.
+func cast_active(cursor_world: Vector3) -> void:
+	if TRACE.enabled():
+		TRACE.event("cast_attempt", "PlayerCombat.cast_active", self, {"point": TRACE.vector(cursor_world)})
+	if _dead or active_skill >= skills.size():
+		if TRACE.enabled():
+			TRACE.event("cast_rejected", "PlayerCombat.cast_active", self, {"reason": "dead_or_missing_skill"})
+		return
+	if _player.motion_locked():
+		# 동작 중 — 지금 동작(평타·스킬·부적)을 덮지 않고 끝난 뒤 한 번 (#424 ①, Player 버퍼 한 칸 — 마지막 입력이 이긴다)
+		_player.queue_command({"kind": "cast_point", "point": cursor_world})
+		if TRACE.enabled():
+			TRACE.event("cast_rejected", "PlayerCombat.cast_active", self, {"reason": "queued_motion_locked"})
+		return
+	var s := skills[active_skill]
+	var lv := skill_level(active_skill)
+	if lv <= 0:
+		if TRACE.enabled():
+			TRACE.event("cast_rejected", "PlayerCombat.cast_active", self, {"reason": "unlearned"})
+		return
+	var cost := Progression.skill_mp(s, lv)
+	var mult := skill_mult_at(active_skill, lv)   # 시너지 포함 (skills_v2 §4.4)
+	if cooldowns[active_skill] > 0.0 or mp < cost:
+		if TRACE.enabled():
+			TRACE.event("cast_rejected", "PlayerCombat.cast_active", self, {"reason": "cooldown_or_mp", "cooldown_blocked": cooldowns[active_skill] > 0.0, "mp_blocked": mp < cost, "cost": TRACE.exact(cost)})
+		return
+	# 레벨 계단(D-093 §2.1, #473) — 장비 +스킬 포함 실효 레벨(오늘은 아이템 옵션이 없어 찍은 점수와 같다, #253이 잇는다).
+	# 피해 배수·도력(mult·cost 위)은 안 건드린다 — 반경·부채각·타수·이펙트 등급만 이 레벨로 갈아 낀다.
+	var tier_lv := Progression.effective_level(GameState.character, s.id)
+	# 장비의 계단 +칸 (power_feel_v2 §3.2, #480 — 이무기 비늘 회오리 · 축지 짚신 도약 베기): 모양 레벨만 다음 칸 문턱으로(피해·도력은 위 lv 그대로)
+	tier_lv = s.tier_bump(tier_lv, tier_steps(s.id))
+	# 칼바람 (#478) = 누른 채 도는 스킬 — 도력은 바퀴마다 떼므로 아래 한 번 떼기로 안 간다. 시작 조건은 위와 같다(도력 ≥ 툴팁 값 · 쿨 0)
+	if s.kind == SkillDef.Kind.STORM:
+		_start_storm(active_skill, s, lv, mult, tier_lv, cursor_world)
+		if TRACE.enabled():
+			TRACE.event("cast_success", "PlayerCombat.cast_active", self, {"skill": String(s.id), "kind": "storm"})
+		return
+	# 부적 진 (#477)·부적 비 (#478) = 벨트의 익힌 부적이 있어야 친다 — 도력·쿨을 쓰기 **전에** 거른다(못 치면 아무것도 안 쓴다)
+	var seal_i := -1
+	if s.kind == SkillDef.Kind.TRAP or s.kind == SkillDef.Kind.RAIN:
+		seal_i = _seal_ready()
+		if seal_i < 0:
+			if TRACE.enabled():
+				TRACE.event("cast_rejected", "PlayerCombat.cast_active", self, {"reason": "missing_talisman"})
+			return
+	var origin := _player.global_position
+	var dir := cursor_world - origin
+	dir.y = 0.0
+	if dir.length_squared() < 0.01:
+		dir = _player.facing()
+	dir = dir.normalized()
+	mp -= cost
+	cooldowns[active_skill] = s.cooldown
+	if TRACE.enabled():
+		TRACE.event("cast_success", "PlayerCombat.cast_active", self, {"skill": String(s.id), "cost": TRACE.exact(cost), "mult": TRACE.exact(mult)})
+	_player.stop_moving()   # 시전 = 새 명령 — 걷던 길은 놓는다(동작 중엔 어차피 선다, #424 ①). 누른 채 이동이면 동작 뒤 다시 잡는다
+	_player.face_toward(origin + dir)
+	var generation := _session_generation   # 검광·고리 예약도 판을 넘기지 않고 멈춤을 따른다 (#156)
+	match s.kind:
+		SkillDef.Kind.ARC:
+			var radius := s.tier_radius(s.range, tier_lv)
+			var arc_deg := s.tier_arc(s.arc_deg, tier_lv)
+			var grade := s.tier_fx(tier_lv)
+			_hit_enemies(origin, dir, radius, arc_deg, mult, s)
+			var fan: Dictionary = last_area   # 참격 부채 — 검기(#480)는 이 안을 건너뛴다(칼이 이미 벤 몸)
+			# 반달 검광 = 칼이 닿기 SLASH_ARC_LEAD초 앞, 시전 자리·방향 (#385). 등급이 오르면 커지고 굵어진다(#473 — 부채각 자체를
+			# 그림이 다시 그리진 않는다, "새 검기 발사체는 만들지 말 것"). 때 = 애니 재생 위치(#424 ② — 칼과 같은 시계)
+			var arc_at := origin + dir * 0.9 + Vector3(0, 0.9, 0)
+			var arc_scale := radius * 0.7 * _fx_grade_scale(grade)
+			var arc_fx := func() -> void:
+				if generation == _session_generation and not _dead:
+					Vfx.play("slash_arc", arc_at, {"dir": dir, "scale": arc_scale})
+			_player.visual().on_impact(arc_fx, _last_swing_delay, SLASH_ARC_LEAD)
+			# 참격 검기 (#480 — 본국검 slash_wave %): 칼이 닿는 순간 도호 자리에서 앞으로 칼바람 한 줄(계단의 「검기 발사체 없음」은 레벨 모양 얘기 — 이건 장비 줄)
+			var wave_pct := float(stats.get("slash_wave", 0.0))
+			if wave_pct > 0.0:
+				var wave_mult := mult * wave_pct * 0.01
+				var wave_fx := func() -> void:
+					if generation == _session_generation and not _dead and is_instance_valid(_player):
+						_launch_wave(origin, dir, radius, wave_mult, s, fan)
+				_player.visual().on_impact(wave_fx, _last_swing_delay)
+		SkillDef.Kind.WHIRL:
+			# 몸이 실제로 한 바퀴 도는 전용 동작(skill_whirl, #140) — 전에는 평타를 틀고 모델을 통째로 돌렸다(판처럼 돈다).
+			var radius := s.tier_radius(s.range, tier_lv)
+			var hits := maxi(1, s.tier_hit_count(tier_lv))
+			var grade := s.tier_fx(tier_lv)
+			_hit_enemies(origin, dir, radius, 360.0, mult, s)
+			# 원형 검광·카메라 킥 = **칼이 닿는 순간**. 전에는 시전하자마자 터져서, 몸이 돌기도 전에 "끝났다"로 읽혔다.
+			# 먹 고리 = **한 겹 · 판정 경계**(opts.radius = 판정 반지름) · **시전 자리**(= 판정 자리) (#385). 등급 1(5레벨)은
+			# WHIRL_AFTERIMAGE_LEAD초 늦게 뜨는 잔상 한 겹을 더한다(§2.1 "먹 회오리 잔상").
+			var afterimage_fx := func() -> void:
+				if generation == _session_generation and not _dead:
+					Vfx.play("whirl_ring", origin, {"radius": radius})
+			var ring1 := func() -> void:
+				if generation != _session_generation or _dead or not is_instance_valid(_player):
+					return
+				Vfx.play("whirl_ring", origin, {"radius": radius})
+				_kick(0.10)
+				if grade >= 1:
+					get_tree().create_timer(WHIRL_AFTERIMAGE_LEAD).timeout.connect(afterimage_fx)
+			_player.visual().on_impact(ring1, _last_swing_delay, WHIRL_RING_LEAD)
+			if hits >= 2:
+				# 10레벨 둘째 바퀴(§2.1 "두 바퀴, 바퀴마다 판정" — 피해 배수·도력은 그대로, 판정만 한 번 더) — WHIRL_SECOND_SPIN_GAP 주석 참고.
+				var second_fx := func() -> void:
+					if generation != _session_generation or _dead or not is_instance_valid(_player):
+						return
+					var area2 := HitArea.fan(origin, dir, radius, 360.0)
+					last_area = area2
+					_land_area(area2, mult, _blow(s), s, Vfx.play_area(area2, 0.0), generation)
+					Vfx.play("whirl_ring", origin, {"radius": radius})
+					_kick(0.10)
+					if grade >= 2:
+						Vfx.play("ink_ripple", origin, {"radius": radius})   # 검기 파문 — 바닥에 퍼지는 고리(마지막 바퀴 한 번)
+				var wv: ActorVisual = _player.visual()
+				var second := _whirl_second_ratio(wv, s)
+				if second > 0.0:
+					# 애니 재생 위치에 묶는다 (#493) — 안전판 시각 = 그 비율 × 동작 길이(play_skill과 같은 셈)
+					wv.on_swing_ratio(second, second_fx, second * wv.clip_length_of(s.anim) / clampf(s.anim_speed, 0.25, 4.0))
+				else:
+					get_tree().create_timer(_last_swing_delay + WHIRL_SECOND_SPIN_GAP).timeout.connect(second_fx)
+		SkillDef.Kind.DASH:
+			_dash(origin, dir, s, mult, tier_lv)
+		SkillDef.Kind.LEAP:
+			_leap_slash(origin, cursor_world, s, mult, tier_lv)
+		SkillDef.Kind.TRAP:
+			_cast_seal(origin, cursor_world, s, lv, mult, tier_lv, seal_i)
+		SkillDef.Kind.PIERCE:
+			_pierce(origin, dir, s, mult, tier_lv)
+		SkillDef.Kind.RAIN:
+			_cast_rain(origin, cursor_world, s, mult, tier_lv, seal_i)
+	if DevMode.is_active:
+		print("[Skill] %s → mp %.0f/%.0f" % [s.display_name, mp, max_mp])
+	_emit_stats()
+
+
+## 장비의 스킬 계단 +칸 (power_feel_v2 §3.2, #480 — StatsCalc tier_steps {스킬 id: 칸}) — 없으면 0.
+func tier_steps(id: String) -> int:
+	return int((stats.get("tier_steps", {}) as Dictionary).get(id, 0))
+
+
+## 참격 검기 (power_feel_v2 §3.2, #480 — 본국검 slash_wave): 칼이 닿는 순간 도호 자리에서 dir로 날아가는 칼바람 한 줄(SwordWave — 참격 반경 reach + WAVE_REACH ·
+## 반폭 WAVE_HALF_WIDTH · 벽에서 멈춤). 지난 선분에 몸이 닿은 적을 한 번씩 — 참격 부채 fan 안(칼이 이미 벤 몸)은 건너뛴다: 검기 = 부채 **밖** 한 줄(멀리 · 뒷줄).
+## 피해 = _land 한 길(명중·치명·처형·흡혈) · 막타 = 가로 베임(칼 궤적 없음 blade = {} — _hit_blow가 안 덮는다). 새 판이면 맞히지 않는다(#156).
+func _launch_wave(origin: Vector3, dir: Vector3, reach: float, mult: float, s: SkillDef, fan: Dictionary = {}) -> void:
+	var parent: Node = get_tree().get_first_node_in_group("level")
+	if parent == null:
+		parent = _player.get_parent()
+	var blow := _blow(s, dir)
+	blow["cut"] = WAVE_CUT
+	blow["blade"] = {}
+	var generation := _session_generation
+	var on_hit := func(e: Enemy) -> void:
+		if generation == _session_generation and not _dead:
+			_land(e, mult, false, blow)
+	var wave := SWORD_WAVE.new()
+	parent.add_child(wave)
+	wave.launch(origin, dir, reach + WAVE_REACH, WAVE_HALF_WIDTH, on_hit, fan)
+	last_wave = wave
+
+
+## 부채꼴(arc_deg ≥ 360이면 원) 안 적 전부를 한 휘두름에. **판정도 피해도 칼이 닿는 순간** (#400, vfx.md §9 「판정 = 보이는 대로」) —
+## 시전 순간엔 영역(시전 자리·방향)을 만들어 바닥 예고만 깔고, 닿는 틱(_skill_impact → _land_area)에 그 영역 안에 몸이 닿은 적을 본다.
+## 전(#385까지): 판정은 시전 순간·피해는 닿는 순간이라 선딜(참격 0.68초) 동안 도장 안으로 걸어 들어온 적은 안 맞고 나간 적은 맞았다. 디아2도 타격 프레임에 본다.
+## 판정 영역 = HitArea 사전 하나 (#385) — 판정(HitArea.hits)과 바닥 그림(Vfx.play_area)이 **같은 사전**을 받는다(그림용 숫자 없음).
+func _hit_enemies(origin: Vector3, dir: Vector3, radius: float, arc_deg: float, mult: float, s: SkillDef = null) -> void:
+	var area := HitArea.fan(origin, dir, radius, arc_deg)
+	last_area = area
+	var delay := _swing(true, s)  # 시전 = 휘두르기 한 번(도력 청 칼끝), 범위 안 적 전부가 같은 임팩트 프레임에 맞는다
+	_skill_impact(area, delay, mult, _blow(s), s, Vfx.play_area(area, delay))
+
+
+func _dash(origin: Vector3, dir: Vector3, s: SkillDef, mult: float, tier_lv: int = 1) -> void:
+	# 벽을 뚫지 않게: 레벨 격자에서 걷는 셀까지만
+	var level := get_tree().get_first_node_in_group("level") as Level
+	var dist := s.range
+	var end := origin + dir * dist
+	if level:
+		var steps := int(dist / 0.5)
+		for i in range(1, steps + 1):
+			var p := origin + dir * (i * 0.5)
+			if not level.is_cell_walkable(Level.world_to_cell(p)):
+				end = origin + dir * ((i - 1) * 0.5)
+				break
+	# 판정 영역 = 지나간 띠(시작 → 벽에서 끊긴 끝, 반폭 dash_hit_radius — 5·10레벨은 단계 배수로 넓어진다, D-093 §2.1 #473)
+	# 판정과 바닥 그림이 같은 사전 (#385, vfx.md §9). 판정은 칼이 닿는 순간(#400) 이 띠 그대로 — 띠 끝 = 돌진이 멈추는 자리
+	# (18u/s라 0.28초, 플레이어 마스크는 적 몸을 안 봐 벽 검사한 끝까지 늘 간다) = 닿는 0.89초에 도호가 선 자리.
+	# 도호가 그 뒤 걸어 나가도 먹은 그 자리(보이는 대로).
+	var width := s.tier_radius(s.dash_hit_radius, tier_lv)
+	var grade := s.tier_fx(tier_lv)
+	var area := HitArea.band(origin, end, width, dir)
+	last_area = area
+	# 띠 안 적 타격(선분 거리 + 몸) = 닿는 순간. 돌진 막타 = 돌진 방향(앞으로).
+	var delay := _swing(true, s)
+	var v: ActorVisual = _player.visual()
+	var land := v.impact_frac(s.anim)
+	var takeoff := -1.0
+	if delay > 0.0 and v.model != null and v.model.leap_takeoff.has(s.anim) and v.current_clip() == s.anim:
+		takeoff = v.warped_ratio(s.anim, float(v.model.leap_takeoff[s.anim]))
+	if takeoff >= 0.0 and takeoff < land:
+		# 도약 (#424 ②): 떠서 가다가 **착지 = 칼이 닿는 순간 = 도착** — 몸 진행 = 클립 재생 위치(Player.leap_to, 떠남 = ModelDef.leap_takeoff).
+		# 전: 몸은 18u/s로 0.28초에 멈추고(적 곁은 0.06초에 지남) 칼은 0.89초에 착지 베기 — 지나친 적이 0.8초 뒤에 맞았다.
+		# 바닥 궤적은 떠날 때 · 흙먼지·킥은 도착에 · 도착(finish_leap)을 판정보다 먼저 건다(같은 틱, 몸이 제자리에 선 뒤 맞는다)
+		_player.leap_to(end, takeoff, land)
+		var generation := _session_generation   # 새 판이면 떠남·착지 곁들이를 버린다 (#156 — 순간이동이 도약도 걷는다)
+		var trail_fx := func() -> void:
+			if generation == _session_generation:
+				Vfx.play("dash_trail", origin, {"to": end})   # 바닥 궤적 + 먼지 (vfx.md #46)
+		v.on_swing_ratio(takeoff, trail_fx, delay * takeoff / land)
+		var land_fx := func() -> void:
+			if generation != _session_generation:
+				return
+			_player.finish_leap()
+			Vfx.play("dash_dust", end, {"scale": 1.1 * _fx_grade_scale(grade)})    # 멈춘 자리의 흙먼지 (#82, 등급별 크기만 #473)
+			_kick(0.08)
+		v.on_impact(land_fx, delay)
+	else:
+		# 도약 클립이 없다(모델 없음 · 떠남 칸 없음) — 옛 대시: 곧바로 18u/s
+		Vfx.play("dash_trail", origin, {"to": end})
+		Vfx.play("dash_dust", end, {"scale": 1.1 * _fx_grade_scale(grade)})
+		_kick(0.08)
+		_player.dash_to(end)
+	_skill_impact(area, delay, mult, _blow(s, dir), s, Vfx.play_area(area, delay))
+
+
+## 도약 베기 (#477, power_feel_v2 §2.2 · skills_v2 §5.1): 커서 쪽 착지 자리(SkillSpot.leap_landing — 걸어서 닿는 곳만, 최대 cast_range ·
+## 적 몸 위면 몸 앞)로 뛰어 **착지 = 칼이 닿는 순간**에 착지 원(range × 계단)을 벤다. 몸 진행 = 돌진베기 도약과 같은 틀(Player.leap_to — 클립
+## 재생 위치에 묶임, 떠남 = ModelDef.leap_takeoff, 도착(finish_leap)을 판정보다 먼저 건다) · 판정 = 시전 순간 그린 착지 원 그대로(#400) ·
+## 막타 = 베임(세로 cut v, #472) · 넘어뜨림 대신 짧은 경직(SkillDef.stagger_add — _blow). 착지가 제자리면 뛰지 않고 그 자리에서 내리벤다.
+## 도약 클립이 없으면(모델 없음) 옛 대시로 곧장 가서 칼이 닿는 순간 벤다(돌진베기와 같은 되돌림).
+func _leap_slash(origin: Vector3, cursor_world: Vector3, s: SkillDef, mult: float, tier_lv: int) -> void:
+	var level := get_tree().get_first_node_in_group("level") as Level
+	var end := SKILL_SPOT.leap_landing(level, origin, cursor_world, s.cast_range, _enemy_bodies())
+	var radius := s.tier_radius(s.range, tier_lv)
+	var grade := s.tier_fx(tier_lv)
+	var area := HitArea.circle(Vector3(end.x, 0.0, end.z), radius)
+	last_area = area
+	var moving := Vector2(end.x - origin.x, end.z - origin.z).length() > 0.05
+	var delay := _swing(true, s)
+	var v: ActorVisual = _player.visual()
+	var land := v.impact_frac(s.anim)
+	var takeoff := -1.0
+	if delay > 0.0 and v.model != null and v.model.leap_takeoff.has(s.anim) and v.current_clip() == s.anim:
+		takeoff = v.warped_ratio(s.anim, float(v.model.leap_takeoff[s.anim]))
+	var generation := _session_generation   # 새 판이면 떠남·착지 곁들이를 버린다 (#156)
+	var land_fx := func() -> void:
+		if generation != _session_generation:
+			return
+		_player.finish_leap()   # 도착이 판정보다 먼저 — 몸이 착지 자리에 선 뒤 원이 벤다(같은 틱)
+		Vfx.play("dash_dust", end, {"scale": LEAP_DUST * _fx_grade_scale(grade)})
+		if grade >= 1:
+			Vfx.play("ink_ripple", Vector3(end.x, 0.0, end.z), {"radius": radius})   # 5레벨부터 착지 먹 파문 — 판정 경계까지
+		_kick(LEAP_KICK)
+	if moving and takeoff >= 0.0 and takeoff < land:
+		_player.leap_to(end, takeoff, land)
+		var takeoff_fx := func() -> void:
+			if generation == _session_generation:
+				Vfx.play("dash_dust", origin, {"scale": LEAP_TAKEOFF_DUST})   # 박차고 떠나는 자리
+		v.on_swing_ratio(takeoff, takeoff_fx, delay * takeoff / land)
+	elif moving:
+		_player.dash_to(end)
+	v.on_impact(land_fx, delay)
+	_skill_impact(area, delay, mult, _blow(s), s, Vfx.play_area(area, delay))
+
+
+## 살아 있는 적 몸들 [{pos, radius, id}] — 도약 착지가 몸 위에 내리지 않게 (SkillSpot.leap_landing) · 부적 비가 겨눌 몸(rain_pick, id = 인스턴스 번호).
+func _enemy_bodies() -> Array:
+	var out: Array = []
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var e := n as Enemy
+		if e != null and e.state != Enemy.State.DEAD:
+			out.append({"pos": e.global_position, "radius": e.def.radius, "id": e.get_instance_id()})
+	return out
+
+
+# ---------- 찌르기 (#478 — design/power_feel_v2.md §2.2 · skills_v2.md §5.1) ----------
+
+## 찌르기: 앞 한 줄 띠(HitArea.band — 시작 = 도호 앞 PIERCE_START · 끝 = 도호에서 길이 range × 계단, 벽에서 끊음 SkillSpot.pierce_end · 반폭 dash_hit_radius)를
+## **칼이 닿는 틱**에 그 띠 안 적 전부(#400·#424) · 판정 띠 = 바닥 그림. 막타 = 가르지 않음(cut x → 베여 쓰러짐, #472) · 막타 방향 = 찌른 쪽(_blow dir).
+## 곁들이 = 칼이 닿는 순간 칼끝 먹 궤적(dash_trail — 띠 시작 → 끝, 굵기 = 반폭 × 등급 배수) · 등급 1부터 잔상 한 줄(WHIRL_AFTERIMAGE_LEAD 뒤) · 2 = 끝에 먹 파문.
+func _pierce(origin: Vector3, dir: Vector3, s: SkillDef, mult: float, tier_lv: int) -> void:
+	var level := get_tree().get_first_node_in_group("level") as Level
+	var length := s.tier_radius(s.range, tier_lv)
+	var grade := s.tier_fx(tier_lv)
+	var start := origin + dir * minf(PIERCE_START, length)
+	var end := SKILL_SPOT.pierce_end(level, origin, dir, length)
+	if (end - origin).dot(dir) < PIERCE_START:
+		end = start   # 코앞이 벽 — 띠는 시작 한 점(둥근 끝 반폭)만
+	var width := s.dash_hit_radius
+	var area := HitArea.band(start, end, width, dir)
+	last_area = area
+	var delay := _swing(true, s)
+	var generation := _session_generation
+	var trail_w := width * _fx_grade_scale(grade)
+	var tip_fx := func() -> void:
+		if generation != _session_generation or _dead:
+			return
+		Vfx.play("dash_trail", start, {"to": end, "scale": trail_w})   # 칼끝 먹 궤적 — 찌른 줄 그대로
+		if grade >= 1:
+			var after := func() -> void:
+				if generation == _session_generation and not _dead:
+					Vfx.play("dash_trail", start, {"to": end, "scale": trail_w * 0.7})   # 잔상 한 줄
+			get_tree().create_timer(WHIRL_AFTERIMAGE_LEAD, false).timeout.connect(after)
+		if grade >= 2:
+			Vfx.play("ink_ripple", Vector3(end.x, 0.0, end.z), {"radius": width * 2.0})   # 찌른 끝 먹 파문
+		_kick(0.06)
+	_player.visual().on_impact(tip_fx, delay)
+	_skill_impact(area, delay, mult, _blow(s, dir), s, Vfx.play_area(area, delay))
+
+
+# ---------- 칼바람 (#478 — Kind.STORM, 디아2 휠윈드 · design/power_feel_v2.md §2.2 · skills_v2.md §5.1) ----------
+# 왜 이 구조인가: 칼바람은 「누르고 있는 동안」 도는 스킬이라 시전 한 번 = 동작 한 번(#424 동작 커밋)이 아니다 — 그래서 **바퀴**(tick_sec 0.3초)를
+# 동작 한 번으로 본다: 바퀴마다 회오리 클립을 처음부터 한 바퀴(ActorVisual.play_swing_loop) · 그 바퀴 칼이 닿는 틱에 발밑 원 판정(on_impact — 칼과 같은 시계) ·
+# 바퀴가 끝나면(_storm_until) 누르고 있고 도력이 남았으면 다음 바퀴, 아니면 선다(바퀴는 끝까지). 걸음은 Player._tick_storm(커서 쪽 곧게, ×move_mult).
+# 대안 = 클립을 반복 재생(loop)으로 틀고 타이머로 판정 → 명중 멈춤·메뉴 멈춤에서 칼과 판정이 어긋나고(#424가 없앤 것) 회오리 애니 자원을 고쳐야 한다(#493 영역), 기각.
+
+## 칼바람 시작 — cast_active가 도력(≥ mp_cost)·쿨을 확인한 뒤. 첫 바퀴를 곧바로 돈다.
+func _start_storm(i: int, s: SkillDef, lv: int, mult: float, tier_lv: int, point: Vector3) -> void:
+	if _storm_i >= 0:
+		return
+	_storm_i = i
+	_storm_mult = mult
+	_storm_tier_lv = tier_lv
+	_storm_cost = s.tick_cost(Progression.skill_mp(s, lv))
+	storm_goal = point
+	storm_revs = 0
+	storm_hits = 0
+	storm_mp_used = 0.0
+	skill_target = null
+	_player.stop_moving()
+	_player.face_toward(point)
+	_storm_rev(true)
+
+
+## 칼바람 한 바퀴 — 도력(한 바퀴 몫) · 회오리 클립 한 바퀴 · 칼이 닿는 틱에 발밑 원 판정 · 검광 · 시전 소리(STORM_WHOOSH_EVERY 바퀴마다).
+func _storm_rev(first: bool = false) -> void:
+	var s := skills[_storm_i]
+	mp = maxf(0.0, mp - _storm_cost)
+	storm_mp_used += _storm_cost
+	storm_revs += 1
+	var sec := maxf(s.tick_sec, 0.05)
+	# 바퀴 시계는 앞 바퀴 끝에 잇는다(물리 틱 반올림이 바퀴마다 쌓여 0.3 → 0.317초가 되지 않게) — 밀렸어도 STORM_CATCHUP까지만 따라잡는다(한 틱에 여러 바퀴 없음)
+	var base := GameClock.now if first else maxf(_storm_until, GameClock.now - STORM_CATCHUP)
+	_storm_until = base + sec
+	_hold_attack(sec)
+	var v: ActorVisual = _player.visual()
+	# 클립 한 바퀴 = 이 바퀴가 끝나는 때까지(틱 반올림만큼 조금 짧을 수 있다) — 다음 바퀴가 클립 끝에서 이어진다
+	var delay := v.play_swing_loop(s.anim, maxf(_storm_until - GameClock.now, 0.05), ActorVisual.BLEND if first else 0.0)
+	if delay < 0.0:
+		delay = 0.0   # 클립 없음(모델 없음) — 바퀴 시계는 그대로 돌고 판정은 곧바로(on_impact 안전판)
+	var def: Dictionary = Vfx.CUES["sword_trail"]
+	var color: Color = def["color"]
+	v.start_trail(sec + 0.05, color, def.get("tip_color", color))   # 바퀴마다 이어 그린다 — 끊기지 않게 한 바퀴 + 0.05초
+	if (storm_revs - 1) % STORM_WHOOSH_EVERY == 0:
+		Audio.play(AudioLib.skill_cue(s.id), null, AudioLib.skill_cue(s.sfx_as) if s.sfx_as != "" else "sword_swing")
+	v.on_impact(_storm_hit.bind(_session_generation, storm_revs), delay)
+	_emit_stats()
+
+
+## 칼바람 한 바퀴의 칼이 닿는 틱 — 그 순간 도호 자리의 원(range × 계단) 안 적 전부(_land_area — 판정 원 = 바닥 도장). 명중 멈춤 없음(blow.no_stop) ·
+## 허공 바퀴는 타격 소리 없음 · 먹 고리(등급 0 = 두 바퀴마다 · 1부터 바퀴마다) · 검기 파문(등급 2, 두 바퀴마다).
+func _storm_hit(generation: int, rev: int) -> void:
+	if generation != _session_generation or _dead or _storm_i < 0 or not is_instance_valid(_player):
+		return
+	var s := skills[_storm_i]
+	var radius := s.tier_radius(s.range, _storm_tier_lv)
+	var grade := s.tier_fx(_storm_tier_lv)
+	var at := _player.global_position
+	var area := HitArea.circle(at, radius, _player.facing())
+	last_area = area
+	var blow := _blow(s)
+	blow["no_stop"] = true
+	var n := _land_area(area, _storm_mult, blow, s, Vfx.play_area(area, 0.0), generation, false)
+	storm_hits += n
+	var beat := (rev - 1) % STORM_WHOOSH_EVERY == 0
+	if grade >= 1 or beat:
+		Vfx.play("whirl_ring", at, {"radius": radius})
+	if grade >= 2 and beat:
+		Vfx.play("ink_ripple", Vector3(at.x, 0.0, at.z), {"radius": radius})
+	if n > 0:
+		_kick(STORM_KICK)
+
+
+## 칼바람 도는 중 한 물리 틱 (_physics_process) — 바퀴가 안 끝났으면 아무 일 없다(바퀴는 끝까지). 끝났으면 누르고 있고 · 같은 스킬이 골라져 있고 ·
+## 도력이 한 바퀴 몫 남았으면 다음 바퀴, 아니면 선다.
+func _tick_storm() -> void:
+	if GameClock.now < _storm_until:
+		return
+	if storm_held and active_skill == _storm_i and mp + 0.0001 >= _storm_cost:
+		_storm_rev()
+	else:
+		end_storm()
+
+
+## 칼바람을 멈춘다 — 바퀴 끝(_tick_storm) · 죽음 · 순간이동·층 이동(Player.teleport_to) · 새 판. 도는 클립은 그대로 두면 끝나는 대로 대기·걷기로 섞인다.
+func end_storm() -> void:
+	if _storm_i < 0:
+		return
+	_storm_i = -1
+	_storm_until = 0.0
+	_emit_stats()
+
+
+## 칼바람 도는 중인가 (Player — 걸음·입력 · e2e).
+func storming() -> bool:
+	return _storm_i >= 0
+
+
+## 칼바람 걸음 배수 (Player._tick_storm — SkillDef.move_mult, 도는 중이 아니면 1).
+func storm_move_mult() -> float:
+	return skills[_storm_i].move_mult if _storm_i >= 0 and _storm_i < skills.size() else 1.0
+
+
+## 칼바람이 걸어가는 자리 (Player._process — 우클릭을 누른 채 프레임마다): 커서 밑 살아 있는 적이면 그 몸 · 아니면 커서 바닥 · 둘 다 없으면 그대로.
+func storm_steer(e: Enemy, ground: Variant) -> void:
+	if e != null and is_instance_valid(e) and e.state != Enemy.State.DEAD:
+		storm_goal = e.global_position
+	elif ground is Vector3:
+		storm_goal = ground
+
+
+## 칼이 닿는 순간 한 틱 (#400 · #384 · #385 · #424): 스킬 클립이 impact를 지나는 애니 틱(delay = 옛 예약 시각, 안전판)에 _land_area — ① 그 순간 영역 안에 몸이 닿은 적 전부 타격(_land) ② 타격 소리 skill_<id>_impact
+## (맞은 적이 없어도 — 허공) ③ 바닥 도장. 이 순서라 여럿을 한꺼번에 베어 효과음 풀(12)이 넘쳐도 소리 겹이 안 잘린다(적마다의 hit·<id>_hurt는 Enemy가
+## 그대로 낸다 — audio.md §2.3, 파일이 없으면 무음). 눈(도장)·귀(소리)·피해가 같은 틱. 전엔 판정만 시전 순간이었다(_strike 예약) — vfx.md §9 「판정 = 보이는 대로」.
+## fx = 바닥 범위 판(Vfx.play_area) — 형 없이 받는다: 층 이동으로 판이 먼저 해제돼도 타이머는 온다(_land와 같은 이유). 쓰러져 칼이 안 닿으면 도장 없이 걷는다(도장 = 「맞았다」).
+func _skill_impact(area: Dictionary, delay: float, mult: float, blow: Dictionary, s: SkillDef, fx = null) -> void:
+	if s == null:
+		Vfx.cancel_area(fx)
+		return
+	# 칼이 닿는 순간 = 애니 재생 위치 (#424 ② — ActorVisual.on_impact, 트리 멈춤이면 애니와 같이 선다 #156). 걸 때의 판만 친다
+	# (#156 — 옛 판의 영역이 새 층의 적을 치지 않게, _strike와 같다). 덮이면(새 휘두름) 판정 없이 바닥 예고만 걷는다
+	_player.visual().on_impact(_land_area.bind(area, mult, blow, s, fx, _session_generation), delay, 0.0, Vfx.cancel_area.bind(fx))
+
+
+## 칼이 닿는 틱 — 판정(HitArea.hits = 몸이 먹에 닿음, 영역은 시전 때 그린 그대로) → 피해(_land, 사거리 검사 없음) → 소리 → 도장. 반환 = 맞은 적 수.
+## generation = 예약을 건 판(#156) — −1(바로 부름)이 아니고 지금 판과 다르면 도장 없이 걷는다.
+## empty_sound = 아무도 안 맞아도 타격 소리를 낼까 — 칼바람(#478)은 초에 세 바퀴 넘게 돌아 허공 바퀴마다 소리가 나면 시끄럽다(false).
+func _land_area(area: Dictionary, mult: float, blow: Dictionary, s: SkillDef, fx = null, generation: int = -1, empty_sound: bool = true) -> int:
+	if _dead or (generation >= 0 and generation != _session_generation):
+		Vfx.cancel_area(fx)
+		return 0
+	var count := 0
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var e := n as Enemy
+		if e == null or e.state == Enemy.State.DEAD:
+			continue
+		if HitArea.hits(area, e.global_position, e.def.radius):
+			_land(e, mult, false, blow)
+			count += 1
+	PUS_JAR.strike_area(get_tree(), area)   # 고름독 (#331) — 범위 안 옹기도 깨진다(count엔 안 센다 — 적 수)
+	if empty_sound or count > 0:
+		Audio.play(AudioLib.skill_impact_cue(s.id), null, AudioLib.skill_impact_cue(s.sfx_as) if s.sfx_as != "" else "")   # 빌린 소리 (#477 sfx_as)
+	Vfx.stamp_area(fx)
+	return count
+
+
+# ---------- 소비 아이템 ----------
+
+## 벨트 i 복용 (숫자키 1~6 / 벨트 우클릭). 허리띠가 안 연 칸(막힌 칸)은 아무 일 없다. 도사 부적이면 던진다(E3 #203).
+func use_belt(i: int) -> void:
+	if TRACE.enabled():
+		TRACE.event("belt_attempt", "PlayerCombat.use_belt", self, {"slot": i})
+	var inv := GameState.inventory
+	if inv == null or _dead or i < 0 or i >= inv.belt_capacity() or inv.belt[i] == null:
+		return
+	var def: ItemDef = inv.belt[i].def
+	if def.is_talisman():
+		throw_talisman(i)
+		return
+	if apply_consumable(def):
+		inv.belt_consume(i)
+
+
+## 즉시 효과 소비(탕약·영약·청심환). 식별부·귀환부는 다른 곳에서 처리 → false.
+func apply_consumable(def: ItemDef) -> bool:
+	match def.consumable:
+		ItemDef.ConsumableKind.HP_POTION:
+			Audio.play("potion")
+			Vfx.play("potion_hp", _player.global_position)
+			heal(def.power, true)
+			return true
+		ItemDef.ConsumableKind.MP_POTION:
+			Audio.play("potion")
+			Vfx.play("potion_mp", _player.global_position)
+			mp = minf(max_mp, mp + def.power)
+			DamagePopup.spawn(_player.get_parent(), _player.global_position, "+%d 도력" % int(def.power), Color(0.5, 0.65, 1.0))
+			_emit_stats()
+			return true
+		ItemDef.ConsumableKind.REJUV:
+			# 청심환 = 생명·도력 둘 다 즉시(item_system_v2 §14.1·§14.5) — power = %(35), 두 물약 연출을 겹친다.
+			Audio.play("potion")
+			Vfx.play("potion_hp", _player.global_position)
+			Vfx.play("potion_mp", _player.global_position)
+			var pct := def.power * 0.01
+			heal(max_hp * pct, true)
+			mp = minf(max_mp, mp + max_mp * pct)
+			DamagePopup.spawn(_player.get_parent(), _player.global_position, "+%d 도력" % int(max_mp * pct), Color(0.5, 0.65, 1.0))
+			_emit_stats()
+			return true
+	return false
+
+
+# ---------- 도사 부적 (D-081 §5.1, E3 #203 — design/elements_v2.md §7.3) ----------
+
+## 벨트 i의 도사 부적을 던진다 — 숫자키·벨트 클릭(use_belt)이 여기로. 공용 쿨 1초 · 도력 0 · 명중 굴림 없음(맞는 쪽 = Enemy.receive_spell).
+## 부적 아끼기(stats.talisman_save %, 상한 50)면 안 줄어든다(Inventory.belt_use_talisman). 시전 동작(ModelDef.cast_clip — 0.8초 · 발동 .68)이
+## 끝날 때까지 평타가 동작을 덮지 않고, **발동 순간** 부적이 손을 떠난다. 반환 = 던졌나 — 막힌 칸·빈 칸·쿨 중·죽음·마을이면 false(부적 그대로).
+func throw_talisman(i: int) -> bool:
+	var inv := GameState.inventory
+	if inv == null or _dead or talisman_cd > 0.0 or i < 0 or i >= inv.belt_capacity() or inv.belt[i] == null:
+		return false
+	var def: ItemDef = inv.belt[i].def
+	if not def.is_talisman():
+		return false
+	if GameState.is_town():
+		EventBus.ui_message.emit("마을 안에서는 부적을 아낀다")
+		return false
+	if _player.motion_locked():
+		# 동작 중 — 지금 동작을 덮지 않고 끝난 뒤 한 번 (#424 ①, Player 버퍼 한 칸 · 마지막 입력이 이긴다). 부적은 그때 쓴다
+		_player.queue_command({"kind": "talisman", "slot": i})
+		return false
+	var aim := talisman_aim(def.throw_range)
+	var used := inv.belt_use_talisman(i, _rng, float(stats.get("talisman_save", 0.0)))
+	if used.is_empty():
+		return false
+	_start_talisman(def, aim, bool(used.kept))
+	return true
+
+
+## 가방의 확정 표적 검증. 적은 같은 레벨의 살아 있는 몸, 바닥은 빙결부(cold)만 허용한다. 화염부 광역 반경과 표적 종류는 별개다.
+## 확인/버퍼 실행 직전에 다시 부른다 — 원본이 이동했거나 적이 사라졌으면 자동 겨눔 없이 거절한다.
+func bag_talisman_reason(it: ItemInstance, aim: Dictionary, check_cd: bool = true) -> String:
+	var inv := GameState.inventory
+	if inv == null or it == null or it.def == null or not it.def.is_talisman() or not inv.grid.has(it) or it.stack <= 0:
+		return "선택한 부적이 가방에 없다"
+	if _dead:
+		return "쓰러진 동안에는 부적을 쓸 수 없다"
+	if GameState.is_town():
+		return "마을 안에서는 부적을 아낀다"
+	if check_cd and talisman_cd > 0.0:
+		return "부적 공용 재사용 %.1f초" % (ceilf(talisman_cd * 10.0) / 10.0)
+	var e: Variant = aim.get("enemy")
+	var point: Variant = aim.get("point")
+	var level := get_tree().get_first_node_in_group("level") as Level
+	if bool(aim.get("enemy_targeted", e != null)):
+		if not is_instance_valid(e) or not (e is Enemy) or not e.is_inside_tree() \
+				or e.is_queued_for_deletion() or e.state == Enemy.State.DEAD or level == null or not level.is_ancestor_of(e):
+			return "살아 있는 적을 고르세요"
+		point = e.global_position
+	elif it.def.talisman_element != &"cold":
+		return "살아 있는 적을 고르세요"
+	if not (point is Vector3) or not point.is_finite():
+		return "유효한 바닥을 고르세요"
+	if e == null and (level == null or not level.is_cell_walkable(Level.world_to_cell(point))):
+		return "걸을 수 있는 바닥을 고르세요"
+	var flat: Vector3 = point - _player.global_position
+	flat.y = 0.0
+	if flat.length() > it.def.throw_range:
+		return "부적 사거리 밖이다"
+	return ""
+
+
+## true = 즉시 시전 또는 명시 표적 버퍼에 접수. 대기만으로는 소비하지 않는다.
+func throw_bag_talisman(it: ItemInstance, aim: Dictionary) -> bool:
+	if bag_talisman_reason(it, aim) != "":
+		return false
+	var confirmed := {"enemy": aim.get("enemy"), "point": aim.point, "enemy_targeted": bool(aim.get("enemy_targeted", aim.get("enemy") != null))}
+	if _player.motion_locked() or _player.is_dashing():
+		_player.queue_command({"kind": "bag_talisman", "item": it, "aim": confirmed, "generation": _session_generation})
+		return true
+	var def := it.def
+	GameState.inventory.consume_one(it)   # 가방 투척은 부적 아끼기 대상 밖 (§7.4).
+	_start_talisman(def, confirmed, false, true)
+	return true
+
+
+## 벨트·가방이 공유하는 시전·발동 틱·도력0·공용쿨. 겨눔과 소비 정책은 호출자가 이미 확정했다.
+func _start_talisman(def: ItemDef, aim: Dictionary, kept: bool, confirmed: bool = false) -> void:
+	talisman_cd = TALISMAN_CD
+	var mult := StatsCalc.talisman_mult_for(stats, def.talisman_element)   # 정기 + 부적 피해 % + 그 속성 익히기 % (#477)
+	var mods := StatsCalc.talisman_mods(stats)   # 퇴마 % · 빙결부 익히기 빙결 +초·한기 시간 (#477)
+	var e: Variant = aim.get("enemy")
+	var point: Vector3 = e.global_position if is_instance_valid(e) else aim.point
+	_player.stop_moving()
+	_player.face_toward(point)
+	var v: ActorVisual = _player.visual()
+	var clip: String = v.model.cast_clip if v.model != null and v.model.cast_clip != "" else "cast"
+	var delay := v.play_skill(clip, 1.0)
+	if delay > 0.0:
+		_hold_attack(v.clip_length_of(clip))
+	# 숫자키/벨트 클릭은 최신 흩뿌리기를 유지한다. 가방은 명시한 적/바닥에 한 장만 던진다 (#451).
+	var fan: Dictionary = {} if confirmed else scatter_plan()
+	v.on_impact(_release_talisman.bind(def, aim, mult, mods, _session_generation, fan, confirmed), delay)
+	if DevMode.is_active:
+		print("[Talisman] %s → %s %s (배율 %.2f · 아낌 %s · 흩뿌리기 %s)" % [def.display_name, "적" if is_instance_valid(e) else "바닥", point, mult, kept, fan])
+
+
+## 부적 흩뿌리기 (#478, skills_v2 §5.3 · power_feel_v2 §2.2) — 숫자키로 던지는 한 장을 몇 장으로 가르나: {n 장수, ratio 곁 한 장 몫, arc 부채 전체 각,
+## radius_mult 터짐 반경 배수, grade 이펙트 등급}. 패시브(SkillDef.split_throw)가 없거나 0점이면 빈 사전(한 장 그대로 — 옛 결과·난수 그대로).
+func scatter_plan() -> Dictionary:
+	var sp := Progression.split_throw(GameState.character, GameState.skill_tree)
+	if sp.is_empty():
+		return {}
+	var sd: SkillDef = sp.def
+	var lv: int = int(sp.lv)
+	return {"n": maxi(1, sd.tier_hit_count(lv)), "ratio": Progression.skill_mult(sd, lv), "arc": sd.tier_arc(sd.arc_deg, lv),
+		"radius_mult": sd.tier_radius(1.0, lv), "grade": sd.tier_fx(lv)}
+
+
+## 부적 겨눔 (§5.1 「커서 표적」) = {"enemy": Enemy 또는 null, "point": 바닥}. 위에서부터 처음 맞는 것:
+## ① 커서 아래 살아 있는 적(GameState.hover = Player.pick_at — 외곽선·클릭과 같은 CursorPick 판정, #383) ② 커서가 가리킨 바닥(창·HUD 위가 아닐 때) ③ 지금 타깃 ④ 사거리 안 가장 가까운 적 ⑤ 바라보는 쪽 사거리 끝.
+## ③~⑤는 커서가 창·HUD 위일 때(벨트 칸을 눌러 던짐·창 열고 숫자키) — 가방 위로 부적이 날아가지 않게.
+func talisman_aim(reach: float) -> Dictionary:
+	# 형 없는 변수로 받는다 — 해제된 적(가라앉은 시체)이 호버에 남아 있으면 형 있는 칸에 넣는 순간 오류다
+	var hov = GameState.hover
+	if is_instance_valid(hov) and hov is Enemy and (hov as Enemy).state != Enemy.State.DEAD:
+		return {"enemy": hov, "point": (hov as Enemy).global_position}
+	if not GameState.is_ui_captured() and _player.has_method("cursor_world"):
+		var cw: Variant = _player.cursor_world()
+		if cw is Vector3:
+			return {"enemy": null, "point": cw}
+	if target != null and is_instance_valid(target) and target.state != Enemy.State.DEAD:
+		return {"enemy": target, "point": target.global_position}
+	var best: Enemy = null
+	var best_d := reach
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var e := n as Enemy
+		if e == null or e.state == Enemy.State.DEAD:
+			continue
+		var d := e.global_position.distance_to(_player.global_position)
+		if d <= best_d:
+			best_d = d
+			best = e
+	if best:
+		return {"enemy": best, "point": best.global_position}
+	return {"enemy": null, "point": _player.global_position + _player.facing() * reach}
+
+
+## 발동 순간 — 부적이 손을 떠난다. 그 사이 쓰러졌거나 층을 떠났으면 안 난다(줄어든 장수는 돌려주지 않는다 — 몸짓이 시작됐다).
+## mods = 던지는 순간의 부적 보정(StatsCalc.talisman_mods — 퇴마 %·빙결/한기, #377/#477) → TalismanShot → Enemy.receive_spell.
+## generation = 예약을 건 판(#156) — −1(바로 부름)이 아니고 지금 판과 다르면 안 던진다.
+## fan = 부적 흩뿌리기 (#478, scatter_plan) — 비면 한 장. 있으면 가운데(겨눈 적·자리 그대로) + 곁(SkillSpot.fan_points — 같은 거리 · 부채)을 같은 순간에:
+## 곁 한 장 = mult × ratio(굴림·화상, 빙결 시간은 그대로) · 터짐 반경 × radius_mult(가운데 포함) · 꼬리 굵기 × 등급. 반경 0(벽력부)은 곁이 다른 적을 따라간다.
+func _release_talisman(def: ItemDef, aim: Dictionary, mult: float, mods: Dictionary = {}, generation: int = -1, fan: Dictionary = {}, confirmed: bool = false) -> void:
+	if _dead or not is_instance_valid(_player) or not _player.is_inside_tree():
+		return
+	if generation >= 0 and generation != _session_generation:
+		return
+	var parent: Node = get_tree().get_first_node_in_group("level")
+	if parent == null:
+		parent = _player.get_parent()
+	# 발동까지 0.5초 남짓 — 겨눈 적이 그 사이 사라졌을 수 있다(형 없는 칸으로 먼저 본다)
+	var e_v = aim.get("enemy")
+	if confirmed and bool(aim.get("enemy_targeted", false)) and (not is_instance_valid(e_v) or not (e_v is Enemy) or e_v.state == Enemy.State.DEAD or e_v.is_queued_for_deletion()):
+		return   # 확정된 적 소멸 → 다른 적/바닥으로 바꾸지 않는다.
+	var enemy: Node3D = e_v as Node3D if is_instance_valid(e_v) else null
+	var point: Vector3 = enemy.global_position if enemy != null else aim.point
+	var dir := point - _player.global_position
+	dir.y = 0.0
+	dir = dir.normalized() if dir.length_squared() > 0.0001 else _player.facing()
+	var from := _player.global_position + Vector3(0.0, TALISMAN_HAND_Y, 0.0) + dir * TALISMAN_HAND_FWD
+	var radius_mult := float(fan.get("radius_mult", 1.0))
+	var look := _fx_grade_scale(int(fan.get("grade", 0)))
+	var shot := TALISMAN_SHOT.new()
+	shot.setup(def, mult, mods)
+	shot.radius_mult = radius_mult
+	shot.look_scale = look
+	parent.add_child(shot)
+	shot.launch(from, enemy, point)
+	last_talisman = shot
+	last_volley = [shot]
+	Audio.play("talisman_throw", from, "shoot")
+	Vfx.play("talisman_throw", from, {"dir": dir})
+	# 부적 흩뿌리기 (#478) — 곁 부적(한 장 값: 벨트에서 더 안 준다 · 공용 쿨은 던질 때 한 번)
+	if int(fan.get("n", 1)) <= 1:
+		return
+	var foot := _player.global_position
+	var taken: Array = [enemy]
+	for p in SKILL_SPOT.fan_points(foot, point, int(fan.n), float(fan.arc), def.throw_range):
+		var side_target: Node3D = null
+		if def.radius <= 0.0:
+			side_target = _nearest_other_enemy(p, def.throw_range, taken)   # 벽력부 = 다른 적 셋 (§5.3)
+			taken.append(side_target)
+		var sdir := Vector3(p.x - foot.x, 0.0, p.z - foot.z).normalized()
+		var sfrom := foot + Vector3(0.0, TALISMAN_HAND_Y, 0.0) + sdir * TALISMAN_HAND_FWD
+		var side := TALISMAN_SHOT.new()
+		side.setup(def, mult * float(fan.ratio), mods)
+		side.radius_mult = radius_mult
+		side.look_scale = look
+		parent.add_child(side)
+		side.launch(sfrom, side_target, p)
+		last_volley.append(side)
+
+
+## 곁 부적(벽력부)이 따라갈 적 (#478) — 도호에서 reach 안 살아 있는 적 중 taken에 없는 것, 자리 p에 가장 가까운 몸. 없으면 null(그 방향으로 곧게).
+func _nearest_other_enemy(p: Vector3, reach: float, taken: Array) -> Enemy:
+	var best: Enemy = null
+	var best_d := INF
+	for n in get_tree().get_nodes_in_group("enemy"):
+		var e := n as Enemy
+		if e == null or e.state == Enemy.State.DEAD or taken.has(e):
+			continue
+		if e.global_position.distance_to(_player.global_position) > reach:
+			continue
+		var d := Vector2(e.global_position.x - p.x, e.global_position.z - p.z).length()
+		if d < best_d:
+			best_d = d
+			best = e
+	return best
+
+
+# ---------- 부적 진 (#477 — design/power_feel_v2.md §2.2 · skills_v2.md §5.3) ----------
+
+## 이 도사 부적 속성을 「익혔나」 (skills_v2 §4.5 「익힌 것만」 — Progression.talisman_learned).
+func talisman_learned(element: StringName) -> bool:
+	return Progression.talisman_learned(GameState.character, GameState.skill_tree, element)
+
+
+## 부적 진이 쓸 벨트 칸 — 앞 칸부터 첫 「익힌」 불·한기 도사 부적(SEAL_KINDS · SkillSpot.seal_slot). F키 배정 때 종류 고르기(§4.5)는
+## 고르기 창이 붙은 뒤 — 그때까지 벨트 순서가 고른다. 없으면 −1.
+func seal_slot() -> int:
+	return SKILL_SPOT.seal_slot(GameState.inventory, SEAL_KINDS, talisman_learned)
+
+
+## 부적 진을 칠 수 있나 → 쓸 벨트 칸(없으면 −1). 부적 공용 쿨 중이면 조용히 −1(누른 채면 쿨이 끝나는 대로 다시 온다) · 마을·익힌 부적 없음은 알림 한 줄.
+func _seal_ready() -> int:
+	if talisman_cd > 0.0:
+		return -1
+	if GameState.is_town():
+		_seal_msg("마을 안에서는 부적을 아낀다")
+		return -1
+	var i := seal_slot()
+	if i < 0:
+		_seal_msg("벨트에 익힌 부적(화염부·빙결부)이 없다")
+	return i
+
+
+## 알림 — 누른 채 되풀이해도 SEAL_MSG_GAP초에 한 번.
+func _seal_msg(text: String) -> void:
+	if GameClock.now - _seal_msg_at < SEAL_MSG_GAP:
+		return
+	_seal_msg_at = GameClock.now
+	EventBus.ui_message.emit(text)
+
+
+## 부적 진 시전: 벨트 칸 slot의 부적 한 장(아끼기 %면 안 줄 수도 — 던지기와 같은 Inventory.belt_use_talisman) · 도력(cast_active가 이미 뺐다) ·
+## 부적 공용 쿨(같은 손) → 부적 던지기와 같은 시전 동작(ModelDef.cast_clip) → **발동 순간** 커서 쪽 자리(SkillSpot.seal_point — 사거리 cast_range)에 진.
+## 굴림 = 그 부적 굴림 × 속성 배율(정기 + 부적 피해 % + 익히기 %) × 이 스킬 배수(dmg_mult = 굴림의 몫 + 시너지) · 화상 = 부적 화상 그대로 — 시전 순간 값.
+## 반경 = range × 계단(1·5·10 = 2.0 · 2.2 · 2.45) · 지속 = duration_at(레벨) (6 + 0.3/레벨).
+func _cast_seal(origin: Vector3, cursor_world: Vector3, s: SkillDef, lv: int, mult: float, tier_lv: int, slot: int) -> void:
+	var used := GameState.inventory.belt_use_talisman(slot, _rng, float(stats.get("talisman_save", 0.0)))
+	if used.is_empty():
+		return
+	talisman_cd = TALISMAN_CD
+	var def: ItemDef = used.def
+	var el: StringName = def.talisman_element
+	var level := get_tree().get_first_node_in_group("level") as Level
+	var point := SKILL_SPOT.seal_point(level, origin, cursor_world, s.cast_range)
+	_player.face_toward(point)
+	var tmult := StatsCalc.talisman_mult_for(stats, el)
+	var roll := def.talisman_roll(tmult) * mult
+	var burn := def.talisman_burn(tmult)
+	var mods := StatsCalc.talisman_mods(stats)
+	var chill := SEAL_CHILL_SEC * float(mods.get("talisman_chill_mult", 1.0))
+	var radius := s.tier_radius(s.range, tier_lv)
+	var sec := s.duration_at(lv)
+	var v: ActorVisual = _player.visual()
+	var clip: String = v.model.cast_clip if v.model != null and v.model.cast_clip != "" else "cast"
+	var delay := v.play_skill(clip, 1.0)
+	if delay > 0.0:
+		_hold_attack(v.clip_length_of(clip))   # 평타가 시전 동작을 덮지 않게 (던지기와 같다, #387)
+	v.on_impact(_place_seal.bind(s.id, el, point, radius, sec, roll, burn, chill, mods, _session_generation), delay)
+	if DevMode.is_active:
+		print("[Seal] %s %s → %s 반경 %.2f · %.1f초 · 굴림 %.1f~%.1f (아낌 %s)" % [s.display_name, def.display_name, point, radius, sec, roll.x, roll.y, used.kept])
+
+
+## 진이 서는 순간 — 시전 클립이 발동 비율을 지나는 애니 틱(던지기와 같은 시계, #424 ②). 그사이 쓰러졌거나 판이 바뀌었으면 안 선다(줄어든 부적은 돌려주지 않는다).
+## 적만 치는 공용 장판(AoeField, #327) — 합치기 없음 · 동시 SEAL_MAX(셋째를 치면 가장 오래된 진이 걷힌다). 틱 = _seal_tick.
+func _place_seal(skill_id: String, el: StringName, point: Vector3, radius: float, sec: float, roll: Vector2, burn: Vector2, chill: float, mods: Dictionary, generation: int) -> void:
+	if _dead or generation != _session_generation or not is_instance_valid(_player) or not _player.is_inside_tree():
+		return
+	var level: Node = get_tree().get_first_node_in_group("level")
+	if level == null:
+		return
+	var cap := seal_max()   # 2 + 장비(사인참사검 +1, #480)
+	_retire_seals(cap - 1)
+	var tick := SEAL_COLD_TICK if el == &"cold" else SEAL_FIRE_TICK
+	var rules := {"targets": [&"enemy"], "power": (roll.x + roll.y) * 0.5, "cap": cap, "merge": 0.0, "source": _player}
+	var f := AoeField.spawn(level, SEAL_KINDS[el], point, radius, sec, tick, _seal_tick.bind(el, roll, burn, chill, mods), rules, SEAL_LOOK[el])
+	if f == null:
+		return
+	last_seal = f
+	Vfx.attach("talisman_%s_trail" % el, f, Vector3(0.0, 0.15, 0.0), {"scale": SEAL_MOTE_SCALE})   # 가운데 불씨·서리 가루 — 진과 함께 걷힌다
+	Vfx.play("talisman_%s_burst" % el, point + Vector3(0.0, 0.05, 0.0), {"radius": radius}, "talisman_fizzle")   # 진이 서는 고리 = 판정 경계까지
+	Audio.play(AudioLib.skill_cue(skill_id), _player.global_position, "talisman_throw")   # 부적이 손을 떠나는 소리(파일이 없으면 던지기 소리)
+	Audio.play("talisman_%s_burst" % el, point, "talisman_fire_hit")   # 진이 서는 소리(불 = 화염부 닿는 소리로 대신)
+
+
+## 부적 진 동시 상한 = SEAL_MAX(2) + 장비 줄(사인참사검 「부적 진 동시 +1」 seal_extra — power_feel_v2 §3.2, #480). 셋째(넷째)를 치면 가장 오래된 진이 걷힌다.
+func seal_max() -> int:
+	return SEAL_MAX + maxi(0, roundi(float(stats.get("seal_extra", 0.0))))
+
+
+## 살아 있는 부적 진을 keep개만 남기고 오래된 것부터 걷는다(불·한기 합쳐 센다 — AoeField.live는 오래된 순).
+func _retire_seals(keep: int) -> void:
+	var seals: Array = []
+	for f in AoeField.live():
+		if SEAL_KINDS.values().has((f as AoeField).kind):
+			seals.append(f)
+	while seals.size() > maxi(keep, 0):
+		(seals.pop_front() as AoeField).retire()
+
+
+## 진 한 틱 (AoeField.on_tick — 진 안에 선 적 하나마다, 바인드 인자는 뒤에): 불 = 굴림 + 화상 / 한기 = 한기 chill초(서리막이 곱) + SEAL_COLD_HIT_EVERY틱마다 굴림
+## (빙결은 안 건다 — 서리밭 = 느려짐). 조용한 틱(effects.field — 신음·킥 없음) · 막타 속성으로 재·박살(DeathPick — receive_spell이 last_hit_element를 적는다).
+func _seal_tick(target: Node3D, field: AoeField, el: StringName, roll: Vector2, burn: Vector2, chill: float, mods: Dictionary) -> void:
+	var e := target as Enemy
+	if e == null or e.state == Enemy.State.DEAD:
+		return
+	if el == &"cold":
+		var res := float((e.hit_target().get("res", {}) as Dictionary).get(&"cold", 0.0))
+		e.apply_chill(chill * DamageCalc.res_scale(res))
+		if field.ticks % SEAL_COLD_HIT_EVERY != 0:
+			return
+		e.receive_spell(_rng, el, roll.x, roll.y, {"field": true}, mods)
+		return
+	e.receive_spell(_rng, el, roll.x, roll.y, {"burn": burn, "field": true}, mods)
+
+
+# ---------- 부적 비 (#478 — design/power_feel_v2.md §2.2 · skills_v2.md §5.3) ----------
+
+## 부적 비 시전: 벨트 칸 slot(부적 진과 같은 고르기 — 벨트 앞 칸부터 첫 익힌 불·한기)의 부적 **전부**(최대 RAIN_MAX, 아끼기 %면 그 장은 칸에 남는다) ·
+## 도력(cast_active가 이미 뺐다) · 부적 공용 쿨 → 부적 던지기 시전 동작 → **발동 순간** 커서 쪽 가운데(SkillSpot.seal_point — 사거리 cast_range)에 비.
+## 한 장 = 그 부적 × 속성 배율(정기 + 부적 피해 % + 익히기 % — 던지기와 같다) × 이 스킬 배수(60% + 4%/레벨 · 시너지) — 굴림·화상에 곱, 빙결 시간은 그대로.
+## 반경 = range × 계단(4.0 · 4.4 · 4.8) · 등급 = 꼬리 굵기 · 2 = 떨어진 자리 먹 파문. last_area = 비가 떨어지는 원(e2e·dev — 판정은 한 장마다의 터짐 원).
+func _cast_rain(origin: Vector3, cursor_world: Vector3, s: SkillDef, mult: float, tier_lv: int, slot: int) -> void:
+	var inv := GameState.inventory
+	var it: ItemInstance = inv.belt[slot]
+	var def: ItemDef = it.def
+	var n := mini(it.stack, RAIN_MAX)
+	var save := float(stats.get("talisman_save", 0.0))
+	var kept := 0
+	for _k in n:
+		var used := inv.belt_use_talisman(slot, _rng, save)
+		if used.is_empty():
+			break
+		kept += 1 if bool(used.kept) else 0
+	talisman_cd = TALISMAN_CD
+	var level := get_tree().get_first_node_in_group("level") as Level
+	var center := SKILL_SPOT.seal_point(level, origin, cursor_world, s.cast_range)
+	_player.face_toward(center)
+	var radius := s.tier_radius(s.range, tier_lv)
+	last_area = HitArea.circle(center, radius)
+	var el: StringName = def.talisman_element
+	var tmult := StatsCalc.talisman_mult_for(stats, el) * mult
+	var mods := StatsCalc.talisman_mods(stats)
+	rain_total = n
+	rain_dropped = 0
+	last_volley = []
+	var v: ActorVisual = _player.visual()
+	var clip: String = v.model.cast_clip if v.model != null and v.model.cast_clip != "" else "cast"
+	var delay := v.play_skill(clip, 1.0)
+	if delay > 0.0:
+		_hold_attack(v.clip_length_of(clip))   # 평타가 시전 동작을 덮지 않게 (던지기·부적 진과 같다, #387)
+	v.on_impact(_release_rain.bind(s, def, center, radius, n, tmult, mods, s.tier_fx(tier_lv), _session_generation), delay)
+	if DevMode.is_active:
+		print("[Rain] %s %s × %d → %s 반경 %.2f · 한 장 배율 %.2f (아낌 %d)" % [s.display_name, def.display_name, n, center, radius, tmult, kept])
+
+
+## 비가 뿌려지는 순간(시전 클립 발동 — 던지기와 같은 시계, #424 ②): 한 장씩 tick_sec 간격으로 떨어뜨린다(첫 장은 곧바로). 판·죽음이 바뀌면 남은 장은 안 떨어진다.
+func _release_rain(s: SkillDef, def: ItemDef, center: Vector3, radius: float, n: int, tmult: float, mods: Dictionary, grade: int, generation: int) -> void:
+	if _dead or generation != _session_generation or not is_instance_valid(_player):
+		return
+	Audio.play(AudioLib.skill_cue(s.id), _player.global_position, "talisman_throw")   # 부적이 하늘로 흩어지는 소리(파일이 없으면 던지기 소리)
+	Vfx.play("talisman_throw", _player.global_position + Vector3(0.0, TALISMAN_HAND_Y, 0.0), {"dir": Vector3.UP})
+	var counts := {}   # 몸마다 겨눈 장수 — 뭉친 무리에 고루 (SkillSpot.rain_pick)
+	var rot := _rng.randf() * TAU
+	# 뿌린 층 — 둘째 장부터는 타이머로 떨어지니, 그새 층을 옮기면(순간이동·계단 — 판 세대는 그대로) 새 층에 떨어지지 않게 층을 같이 들고 간다
+	var lvl: Node = get_tree().get_first_node_in_group("level")
+	var lvl_id := lvl.get_instance_id() if lvl != null else 0
+	for i in n:
+		var drop := _rain_drop.bind(def, center, radius, i, n, rot, tmult, mods, grade, counts, generation, lvl_id)
+		if i == 0:
+			drop.call()
+		else:
+			get_tree().create_timer(maxf(s.tick_sec, 0.01) * float(i), false).timeout.connect(drop)   # 멈춤을 따른다 (#156)
+
+
+## 부적 비 한 장 — 떨어질 자리 = 원 안 살아 있는 적 중 덜 겨눠진 몸(SkillSpot.rain_pick) · 적이 없으면 해바라기 나선(rain_spiral, 걷는 칸으로) ·
+## 바닥 예고(터짐 원 = 판정) → RAIN_FALL초 뒤 땅에 닿는 순간 터짐(TalismanShot.fall — 같은 판에 도장).
+func _rain_drop(def: ItemDef, center: Vector3, radius: float, i: int, n: int, rot: float, tmult: float, mods: Dictionary, grade: int, counts: Dictionary, generation: int, level_id: int = 0) -> void:
+	if _dead or generation != _session_generation or not is_instance_valid(_player) or not _player.is_inside_tree():
+		return
+	var parent: Node = get_tree().get_first_node_in_group("level")
+	if parent == null or (level_id != 0 and parent.get_instance_id() != level_id):
+		return   # 그새 층을 옮겼다 — 남은 장은 옛 층과 함께 사라진다
+	var bodies := _enemy_bodies()
+	var k := SKILL_SPOT.rain_pick(bodies, center, radius, counts)
+	var p: Vector3
+	if k >= 0:
+		var b: Dictionary = bodies[k]
+		counts[b.id] = int(counts.get(b.id, 0)) + 1
+		p = Vector3((b.pos as Vector3).x, 0.0, (b.pos as Vector3).z)
+	else:
+		var q: Variant = SKILL_SPOT.snap_walkable(parent as Level, SKILL_SPOT.rain_spiral(center, radius, i, n, rot))
+		if q == null:
+			return
+		p = q
+	var shot := TALISMAN_SHOT.new()
+	shot.setup(def, tmult, mods)
+	shot.look_scale = _fx_grade_scale(grade)
+	shot.ripple = grade >= 2
+	var area := HitArea.circle(p, def.radius)
+	var fx := Vfx.play_area(area, RAIN_FALL, {"color": TALISMAN_SHOT.PAPER_TINT.get(def.talisman_element, Vfx.WHITE_INK)})
+	parent.add_child(shot)
+	shot.fall(p, RAIN_FALL, RAIN_HEIGHT, fx)
+	last_volley.append(shot)
+	rain_dropped += 1
+
+
+func heal(amount: float, show: bool) -> void:
+	if _dead:
+		return
+	hp = minf(max_hp, hp + amount)
+	if show:
+		DamagePopup.spawn(_player.get_parent(), _player.global_position, "+%d" % int(amount), Color(0.45, 0.95, 0.5))
+	_emit_stats()
+
+
+## 생명·도력을 한 번에 채운다 — 무당 할매 대화(무료·무제한·쿨다운 없음, npcs_v2 §4.2 디아2 아카라 그대로 이식).
+## revive_full()과 다르다: 죽음 상태·상태이상·평타 순환·쿨다운을 손대지 않는다(그냥 서서 말을 걸었을 뿐 되살아난 게 아니다).
+func heal_full() -> void:
+	if _dead:
+		return
+	hp = max_hp
+	mp = max_mp
+	_emit_stats()
+
+
+# ---------- 피격 / 사망 ----------
+
+## 적의 공격을 받는다. element·share = 공격 속성과 그 몫(D-081 §5.3, EnemyDef.attack_element — 부적술사 = 불 100%).
+## 속성 조각은 방어를 무시하고 막이(stats.res_*)에 깎인다. 한기(chill_sec)·살(dots)은 roll_hit이 돌려주고 E2·E8이 건다.
+## 명중 = DamageCalc.lands(굴림, attacker_acc, 회피) — 평타·투사체는 acc/(acc+eva)를 [0.5, 0.95]로 자른 굴림, 장판 틱·터짐(acc = DamageCalc.NO_ROLL_ACC)은 굴림 없음 = 늘 맞음 (#492).
+## 반환 = 받은 피해(빗나감·쓰러져 있음 0) — 적의 LAND 훅(흡혈하는 …, #290)이 읽는다.
+func receive_attack(rng: RandomNumberGenerator, dmg_min: float, dmg_max: float, attacker_acc: float, mult: float, element: StringName = &"", share: float = 0.0) -> int:
+	if TRACE.enabled():
+		TRACE.event("receive_attack_before", "PlayerCombat.receive_attack", self, {"attack_rng_body": TRACE.rng_key(rng), "attack_rng_state": TRACE.decimal(rng.state), "dmg_min": TRACE.exact(dmg_min), "dmg_max": TRACE.exact(dmg_max), "accuracy": TRACE.exact(attacker_acc), "mult": TRACE.exact(mult)})
+	var dealt := _receive_attack_untraced(rng, dmg_min, dmg_max, attacker_acc, mult, element, share)
+	if TRACE.enabled():
+		TRACE.event("receive_attack_after", "PlayerCombat.receive_attack", self, {"attack_rng_body": TRACE.rng_key(rng), "attack_rng_state": TRACE.decimal(rng.state), "dealt": dealt})
+	return dealt
+
+
+func _receive_attack_untraced(rng: RandomNumberGenerator, dmg_min: float, dmg_max: float, attacker_acc: float, mult: float, element: StringName = &"", share: float = 0.0) -> int:
+	if _dead:
+		return 0
+	attacks_received += 1
+	# 굴림은 늘 한 번 굴린다(난수 흐름 그대로) — 굴림 없는 공격(장판 틱 acc ≥ DamageCalc.NO_ROLL_ACC, #492)만 결과와 상관없이 맞는다. 평타·투사체는 상한 0.95 그대로.
+	if not DamageCalc.lands(rng.randf(), attacker_acc, float(stats.evasion)):
+		DamagePopup.spawn(_player.get_parent(), _player.global_position, "빗", Color(0.6, 0.8, 1.0))
+		return 0
+	hits_received += 1
+	var atk := {"phys_min": dmg_min, "phys_max": dmg_max, "mult": mult}
+	if element != DamageCalc.PHYS and share > 0.0:
+		atk["shares"] = {element: share}
+	var r := DamageCalc.roll_hit(rng, atk, {"def": float(stats.defense), "res": StatsCalc.resist_table(stats)})
+	var amount: int = int(r.amount)
+	if _status.is_cursed():
+		amount = int(round(float(amount) * _status.taken_mult()))   # 액이 낌 (#296 액 씌우는) — 받는 피해 +25%. 액이 없으면 숫자 그대로
+	hp -= amount
+	DamagePopup.player_hit(_player, amount)   # 내 피는 비중이 아니라 사건 — 늘 같은 크기 (§1.1)
+	_emit_stats()
+	if hp <= 0.0:
+		_dead = true
+		hp = 0.0
+		target = null
+		skill_target = null
+		retarget_hold = false
+		end_storm()   # 칼바람 (#478) — 죽으면 곧바로
+		clear_status()
+		Audio.play("player_die")
+		Audio.play("doho_die")  # 타격음 + 신음 두 겹 (#66)
+		Vfx.play("player_die", _player.global_position + Vector3(0, 0.6, 0))
+		_player.visual().play_die()
+		EventBus.player_died.emit()
+		return amount
+	if r.chill_sec > 0.0:
+		apply_chill(r.chill_sec)   # 적 공격의 한기 (E2) — 서리막이는 roll_hit이 이미 곱했다. 지금 한기 쓰는 적 없음(각시귀신 — §5.3)
+	Audio.play("player_hurt")
+	if randf() < HURT_VOICE_CHANCE:
+		Audio.play("doho_hurt")  # 맞는 소리 위에 신음 (#66)
+	Vfx.play("player_hurt", _player.global_position + Vector3(0, 0.9, 0))
+	# 순서: 클립 → 플래시·히트스톱 (히트스톱 뒤에 play()를 부르면 멈춤이 풀린다). 경직 길이 = 경직 −% 옵션을 곱한 값 (#377)
+	# 휘두르는 중(평타·스킬·부적 — #424 ① 동작 커밋)이면 번쩍임·소리만: 피격 클립이 휘두름을 덮지 않고 멈춤도 안 건다(칼이 제때 닿는다).
+	# 경직은 그대로 건다 — 이동만 멈추는 칸이라 휘두름은 끝까지 가고, 경직이 동작보다 길면 끝난 뒤 남은 만큼 선다
+	var stag := stagger_sec()
+	var v: ActorVisual = _player.visual()
+	if v.swing_busy():
+		v.flash(0.08)
+	else:
+		v.play_hit(stag)
+		v.flash(0.08)
+		v.hit_stop(0.06)
+	_player.stagger(stag)
+	return amount
+
+
+## 액이 낌 (#296 hooks/curse.gd — 「액 씌우는」 우두머리): sec초 동안 받는 피해 +pct %. 상태 비트 CURSED · 틴트 · HUD는 status_changed로.
+func apply_curse(sec: float, pct: float) -> void:
+	if _dead or sec <= 0.0:
+		return
+	var before := _status.mask()
+	_status.curse(sec, pct)
+	_after_status(before)
+
+
+func is_cursed() -> bool:
+	return _status.is_cursed()
+
+
+## 남은 액 시간(초) — e2e·HUD.
+func curse_left() -> float:
+	return _status.curse_left
+
+
+## 도력을 태운다 (#296 hooks/mana_burn.gd — 「도력 먹는」: 준 피해 × 1.0). 0 아래로는 안 간다 · 반환 = 실제로 준 양. 푸른 숫자 한 번.
+func drain_mp(amount: float) -> float:
+	if _dead or amount <= 0.0 or mp <= 0.0:
+		return 0.0
+	var before := mp
+	mp = maxf(0.0, mp - amount)
+	var took := before - mp
+	if took > 0.0:
+		DamagePopup.spawn(_player.get_parent(), _player.global_position, "-%d" % int(round(took)), Color(0.55, 0.65, 1.0))
+	_emit_stats()
+	return took
+
+
+## 도호가 받는 경직(초) = STAGGER 0.3 × (1 − 경직 −% 옵션) — 상한 60%는 StatsCalc가 자른다(→ 0.12초, item_system_v2 §7.5 · §7.6 #377).
+## 갑·띠·호신부의 소나무의·바위의 · 유니크 이름 없는 장수·꽃신이 같은 칸.
+func stagger_sec() -> float:
+	return STAGGER * (1.0 - float(stats.get("stagger_pct", 0.0)) * 0.01)
+
+
+## 죽어 있나 (사망 연출 중 — Player가 입력·이동을, 적이 추적을 멈추는 기준. combat_v2 §8).
+func is_dead() -> bool:
+	return _dead
+
+
+# ---------- 상태 효과 (D-081 E2 #202, design/elements_v2.md §3.3·§7.2) ----------
+## 도호는 얼지 않는다(§2.2 8 — 클릭 게임에서 조작을 뺏으면 억울함만 남는다): 빙결 요청 = 한기, 시간 = 빙결 시간 × 2.
+## 거는 곳 = 적 공격의 한기(receive_attack ← roll_hit chill_sec, 지금 한기 쓰는 적 없음) · 지금은 개발 키 Y·e2e.
+
+## 한기 sec초 (서리막이를 이미 곱한 시간). 길면 덮는다.
+func apply_chill(sec: float) -> void:
+	if _dead or sec <= 0.0:
+		return
+	var before := _status.mask()
+	_status.chill(sec)
+	_after_status(before)
+
+
+## 빙결 요청 — 도호는 늘 false(얼지 않는다): 한기 (base × (1 − 서리막이)) × 2.
+func apply_freeze(base_sec: float = DamageCalc.FREEZE_SEC) -> bool:
+	if _dead:
+		return false
+	var before := _status.mask()
+	var froze := _status.freeze(DamageCalc.freeze_sec(float(stats.get("res_cold", 0.0)), base_sec))
+	_after_status(before)
+	return froze
+
+
+func is_chilled() -> bool:
+	return _status.is_chilled()
+
+
+## 상태 비트 (core/status_effects.gd) — HUD 상태 아이콘(E5)이 읽는다. 도호에겐 빙결 비트가 서지 않는다.
+func status_mask() -> int:
+	return _status.mask()
+
+
+## 남은 한기 시간(초) — e2e·HUD.
+func chill_left() -> float:
+	return _status.chill_left
+
+
+## 전부 걷는다 (새 판·사망·부활) — 이동 속도·틴트도 되돌린다.
+func clear_status() -> void:
+	var before := _status.mask()
+	_status.clear()
+	_after_status(before)
+
+
+func _tick_status(delta: float) -> void:
+	var before := _status.mask()
+	_status.advance(delta)   # 도호에겐 화상이 안 온다(EA) — 반환 피해는 늘 0
+	_after_status(before)
+
+
+## 상태 비트가 바뀌면 이동 속도·틴트·HUD를 다시 건다.
+func _after_status(before: int) -> void:
+	if _status.mask() == before:
+		return
+	_apply_to_player()
+	if _player != null and _player.has_method("visual"):
+		_player.visual().set_tint(_status.tint())
+	EventBus.status_changed.emit(_player, _status.mask())
+	_emit_stats()
+
+
+## 새 판(새로 시작·이어하기, e2e 리셋)마다 Main이 부른다 — 캐릭터가 아니라 **조작하며 쌓인 것**을 비운다:
+## 타깃·제자리 공격·선택 스킬·쿨다운·연속 처치·휘두름 타이머. 캐릭터·인벤은 GameState가, 생명·도력은 revive_full이 맡는다.
+## 게임은 지금 부팅 때 한 번만 판을 열지만 e2e는 한 프로세스에서 수십 번 연다 — 전에는 안 비워서 앞 대본의 상태가 다음 대본으로 샜다
+## (배우지 않은 회오리가 선택된 채·제자리 공격이 켜진 채 시작, #97). "타이틀로" 같은 흐름이 생겨도 같은 길을 탄다.
+func reset_session() -> void:
+	_session_generation += 1   # 앞 판에 걸어 둔 예약(타격·범위기·부적·검광)은 버린다 (#156)
+	target = null
+	hold_position = false
+	retarget_hold = false   # 누른 채 다시 잡기 · 스킬 다가가기 (#383)
+	skill_target = null
+	_skill_repath = 0.0
+	active_skill = 0
+	for i in cooldowns.size():
+		cooldowns[i] = 0.0
+	kill_streak = 0
+	_last_kill_at = -999.0
+	attacks_received = 0
+	hits_received = 0
+	_attack_timer = 0.0
+	_repath_timer = 0.0
+	_last_swing_delay = 0.0
+	talisman_cd = 0.0   # 부적 공용 쿨 (E3 #203)
+	last_talisman = null
+	last_seal = null   # 부적 진 (#477) — 진은 층과 함께 걷힌다
+	_seal_msg_at = -999.0
+	end_storm()   # 칼바람 (#478) — 새 판은 서서 시작
+	storm_held = false
+	storm_revs = 0
+	storm_hits = 0
+	storm_mp_used = 0.0
+	last_volley = []   # 흩뿌리기·부적 비 (#478)
+	rain_dropped = 0
+	rain_total = 0
+	last_area = {}   # 마지막 스킬 판정 영역 (#385)
+	var v: ActorVisual = _player.visual() if _player else null
+	if v:
+		v.reset_chain()   # 평타 순환도 조작하며 쌓인 것 — 새 판은 1타부터 (§6.5)
+	clear_status()   # 앞 판의 한기가 다음 판(다음 e2e 대본)으로 새지 않게 (E2)
+	_emit_stats()
+
+
+## 사망 후 부활 (Main이 마을 스폰 뒤 호출).
+func revive_full() -> void:
+	_dead = false
+	hp = max_hp
+	mp = max_mp
+	target = null
+	skill_target = null
+	_player.visual().revive()
+	clear_status()
+	_emit_stats()
+
+
+var _stats_accum: float = 0.0
+func _emit_stats_throttled(delta: float) -> void:
+	_stats_accum += delta
+	if _stats_accum >= 0.25:
+		_stats_accum = 0.0
+		_emit_stats()
+
+
+func _emit_stats() -> void:
+	EventBus.player_stats_changed.emit()
+
+
+## 확정된 가방 명령이 다른 지역/새 판에 넘어가지 않게 Player 버퍼가 확인한다 (#451).
+func session_generation() -> int:
+	return _session_generation

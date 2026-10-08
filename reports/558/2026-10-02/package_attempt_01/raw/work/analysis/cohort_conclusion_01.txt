@@ -1,0 +1,104 @@
+#558 사전 선언 기본 시계 cohort 읽기 분석 — 2026-10-02 실행 / 2026-10-03 보고
+
+대상은 f1bf88f05a8eb48dd7d12510011245f3f6631e76으로 동결하여 실행한 focused_1, focused_2, full_1의 원문이다. 이후 후보 보완이나 HEAD 변경은 이 실행들의 후보를 바꾸지 않는다. 이 분석은 게임·테스트를 시작하지 않았고 전투 코드·정식 비교기·HEAD·보드·main을 수정하지 않았다. 요청한 정식 비교 세 건을 각각 한 번 수행한 뒤 재실행하지 않았다. #536은 완료되지 않았다.
+
+실제 실행과 보존 범위
+
+정식 combat_trace_compare.py 입력은 trace 폴더가 아니라 각 tmp/e2e_raw/<run>/ 부모 archive root였다. focused_pair, focused_1_vs_full_1, focused_2_vs_full_1 모두 exit0 / stderr0. 실제 argv의 --e2e/skip/fixed-fps, ENV PID·CLI, FILE saved·PID·경로·Lv·attempt·eventcount, exact ATTEMPT, 순차 TRIES, 실제 JSON 집합, Godot raw byte SHA를 연결하여 검증했다. full은 phase_2_solo에 balance_boss가 있고 그 전에 balance_room을 실행했다. phase_1_shared도 byte 원문으로 보존했다. 두 focused 전부 PASS와 full의 전체 PASS는 결과 동일성을 의미하지 않는다.
+
+각 실행은 Lv3/attempt1, Lv5/attempt1만 실제 생성되었고 모두 처치했다. 실제 총 6판, 재시도 0, 실패 판 0, 누락 0이다. 실패 판이 없다는 것은 실패를 제외해서가 아니라 실제 TRIES가 각 Lv에서 [처치]이기 때문이다. 보존된 6개 trace 문서 각각 실제 초기 4몸(도호·흑랑·파수 둘)과 이후 소환 둘을 기록한다. 최종 stream 6 / not_spawned []다. 미생성 actor를 만들지 않았다.
+
+모든 RUN은 FixedFps0, 실제 CLI에 --fixed-fps 없음, base seed 20260916, physics_hz60, time_scale 1.00000000000000000. seed 공식은 base + level*1000003 + attempt*10007 + role*1009 + ordinal*101로 전부 같다. seed/initial/final은 signed64 십진문자열 그대로 검증했다. 각 판 physics_dt_min=max=0.01666666666666667이며 process_dt는 자연 실행에서 변한다. 준비 ]6틱·]6틱·V5틱, 전투 입력6틱도 raw와 input_ticks_ok에서 유지된다. 성공 seed 검색·판정선 변경·실패 삭제는 없다.
+
+실제 runtime PID: focused_1 65412, focused_2 53444, full_1의 balance phase 11816. 각 phase Godot raw SHA:
+focused_1 79fcc7f8896957a233ca734841d5bd25f4c390f8764e150c7c8633ca04b76827
+focused_2 cb60f07f8dabbfe51785e4dea3f7311002e4e983e9707385d4514f8dc8f6e779
+full_1 balance fe5a79cb936a859deed4ac17bea8f79253315af05a5b5abb099136f0fde4d335
+
+14행이라는 수는 이번 세 실행 각각 최종 RNG 요약12 + 실제 ATTEMPT2의 관측된 합이다. 최초 RNG12, DT 표본, 이벤트 수만 행은 포함하지 않는다. 실제 시도 완전성의 고정14행 기준이 아니며 fixed60 parser를 자연 실행에 사용하지 않았다.
+
+실제 전투 결과 (17자리 시간 원문은 cohort_audit_01.json·정식 report에 보존)
+
+Lv3: 세 실행 모두 attacks41 / hits25 / used3 / hp34 / hp_min32, final RNG6 동일, role별 관측 RNG 변화열과 incoming 호출도 같다. focused1/2의 exact outcome 전체는 동일하다. full은 input_polls278 대 focused277, sec27.79999999999842300 대27.69999999999967600, phase2 11.19999999999936300 대11.20000000000016400이므로 exact outcome은 다르다.
+Lv5 focused1: attacks33 / hits21 / used3 / hp68 / hp_min47 / sec25.69999999999854300
+Lv5 focused2: attacks28 / hits18 / used2 / hp53 / hp_min51 / sec24.59999999999860500
+Lv5 full1:    attacks31 / hits19 / used3 / hp87 / hp_min47 / sec24.59999999999860900
+따라서 기본 시계의 결과 동일성은 확보되지 않았다.
+
+최초 전체 이벤트·상태·시계 관측을 분리
+
+focused1/2 Lv3의 최초 state/payload 차이는 seq3/tick0의 PlayerCombat._process(resource_process_before): delta 0.08212299999999992 대0.08333333333333333, idle clip_position 0.09878966666666664 대0.10000000000000006. seq1~2의 정규화 상태는 같았다. 최초 이벤트 순서/상대 tick 차이는 seq7: player_physics tick2 대resource_process_before tick1. 같은 인덱스의 최초 clock 값 차이도 이 순서가 달라진 관측이다. 공통 identity/tick prefix6에는 clock float만의 차이가 없다.
+
+focused1/2 Lv5의 최초 state/payload 차이는 seq4/tick0의 process delta 0.13791999999999999 대0.03448000000000000. 최초 이벤트/tick 차이는 seq25: hitstop_restore tick8 대player_physics tick9. 공통 identity/tick prefix24에는 clock float만의 차이가 없다.
+
+focused/full은 Lv3·Lv5 모두 seq2/tick0 body_bound에서 이미 상태가 다르다. Lv3의 최초 order는 seq3 resource_process_before 대mixer_applied; 최초 배열 clock 차이는 seq5 player_physics tick1 대resource_process_after tick0. Lv5 focused1/full 최초 order·clock 배열 차이는 seq78 enemy_physics_before tick20 대mixer_applied tick19, focused2/full은 seq25 player_physics tick9 대hitstop_restore tick8이다. 이러한 배열의 clock 차이를 순수 소수점 오차 또는 최초 인과라고 부르지 않는다.
+
+같은 role·callsite·physics·relative tick의 별도 clock 대조도 원문 그대로 보존했다. 최초 player_physics clock만의 수치 차이:
+focused pair Lv3: 없음.
+focused pair Lv5: seq3426/tick216에서 3.59999999999979890 대3.59999999999979540.
+focused/full Lv3: focused seq5 / full seq6, tick1에서 0.01666666666666666 대0.01666666666666572.
+focused1/full Lv5: tick216, 3.59999999999979890 대3.59999999999979540.
+focused2/full Lv5: tick223, 3.71666666666645900 대3.71666666666645540.
+이 별도 정렬은 이미 전체 순서가 달라진 뒤 같은 관측 키를 연결한 것이며, 앞선 모든 이벤트 동일성을 증명하지 않는다. 반올림·epsilon 허용·원문 제거를 하지 않았다. 절대 epoch도 유지했다: focused Lv3 둘0.23333333333333331 / full18.98333333333353700; Lv5 focused1 28.41666666666633400 / focused2 28.29999999999967400 / full47.13333333333194000.
+
+준비 시작 상태의 수렴 — 도호 role1/ordinal0
+
+full Lv3 binding seq2/tick0은 stopped=true, clip_speed0, stagger_remaining0.10000000000001208이다. focused 둘은 false/1/0이다. full은 seq21/tick7 Player._physics_process에서 stagger_remaining0·stagger_future=false, seq41/tick10에서 stopped=false·clip_speed1도 확인된다. 준비 도중 수렴하여 첫 전투 입력과 첫 승인 cast, 첫 실제 impact까지 이 flags 차이가 남아 있지 않다. 다만 유휴 clip_position은 다르다.
+
+Lv3 첫 입력/승인 cast/실제 outgoing impact:
+focused1 input seq157/tick22 → attempt158 → success159; impact mark_fire763 → impact_range_check764 → 흑랑(role2/ordinal0) receive_attack_before765(tick58).
+focused2 input seq163/tick21 → attempt164 → success165; impact775 →776 →777(tick56).
+full1 input seq187/tick21 → attempt188 → success189; impact795 →796 →797(tick56).
+첫 승인 직전 정규화 state의 focused/full 차이는 idle clip_position만이고, HP/MP/CD/busy/committed/RNG/위치/속도/타깃은 같다. 실제 첫 impact 직전에는 clip position, CD/MP, 일부 busy 남은 시간이 달라졌으나 실제 표적·거리/공격 인자·RNG initial은 같다. 시작 경직이 그대로 첫 시전을 막았다는 주장은 지지되지 않는다.
+
+Lv5의 최초 slide 차이는 이전 move_and_slide의 캐시다. TRACE._body_state는 get_slide_collision을 읽을 뿐 새 이동/충돌 검사를 하지 않고 Player._physics_process hook도 move_and_slide 이전이다. binding에서 세 실행의 실제 도호 위치(-0.35085099935531616,0.00039062649011612,1)와 속도(0,0,0)는 같다. focused 캐시는 ClickFloor의 위쪽 법선, full 캐시는 raw_name=freed인 과거 충돌(법선-1,0,0 / 점0,1.30000007152557370,1)이다. full seq7/tick1 combat_physics에서 ClickFloor 위쪽 법선 캐시로 교체된다. focused의 초기 콜라이더가 freed로 바뀌는 표시 변화 자체는 새 충돌로 취급하지 않는다.
+첫 전투 입력(tick28)에는 세 실행 모두 도호 위치10.5,0.00039062649011612,8.5 / 속도0 / 이번 FloorBody 점10.5,0,8.5 / 같은 법선·depth이다. 이전 캐시를 이번 판에 새로 충돌한 사건이나 원인으로 단정하지 않는다.
+Lv5 첫 승인 success seq209/212/221는 모두 tick28. 실제 첫 impact의 doho mark_fire → impact_range_check → 흑랑 receive_before는 focused1 seq821→822→823/tick63, focused2 836→837→838/tick64, full827→828→829/tick63이다. 당시 target/공격 인자/RNG는 같고, clip/CD/MP 일부가 다르다.
+
+처음 확인된 시전 승인 분기 — 같은 상대 tick의 직접 gate
+
+도호(role1/ordinal0) Lv5 poll141/tick868 직전, 세 실행은 위치10.16666698455810500,0.00039062649011612,8.5 / 흑랑 target(role2/ordinal0) / 거리1.69333457946777340 / RNG -8936760622420917439 및 커밋·busy 상태가 같다. focused1/2의 state 차이는 CD·MP 두 필드뿐이다. MP는 모두 비용5보다 크다.
+focused1 input seq14507 → attempt14508 CD0.00098355555555510 → rejected14509(cooldown_blocked=true,mp_blocked=false).
+focused2 input14510 → attempt14511 CD0 → success14512(slash, cost5, mult1.8).
+full1 input14510 → attempt14511 CD0.00356799999999738 → rejected14512(cooldown_blocked=true,mp_blocked=false).
+앞선140개 poll의 승인/반려 종류·사유는 같은 쌍들이다. 그보다 앞선 모든 process 상태가 같았다는 뜻은 아니다. source PlayerCombat._process:257~261은 process delta로 CD를 감소시키고 cast_active:807~810은 CD>0이면 반려한다. 이 gate가 이 요청의 승인 차이를 설명하며, 전체 전투의 최초 근본 인과까지 확정한 것은 아니다.
+focused1/full의 첫 poll 승인 분기는 poll157/tick964: focused1 attempt16348 CD0→success16349, full attempt16351 CD0.00356799999999738→rejected16352. 이 직전 위치/거리/표적/RNG도 같고 차이는 clip_position·CD·MP이다.
+
+이어진 실제 좌표·타깃·피격/RNG 차이
+
+focused1/2는 첫 도호 위치 차이가 player_physics seq14621/14624 tick874에서 x10.10000038146972700 대10.16666698455810500이다. 파수 박쥐 둘째(role4/ordinal2)는 tick874에서 target_position/거리만 먼저 다르고, 실제 본체 위치의 첫 차이는 enemy_physics_after_move seq14635/14638 tick875에서 x11.35063171386718800 대11.42875671386718800이다. 위 CD gate 직후인 이 상태·경로 차이를 지우지 않았다.
+25개 도호 outgoing receive의 순서에서 첫 receiver 차이는 15번째: focused1 summon_bat2(role3/ordinal2), seq17127/tick1000 대focused2 흑랑, seq17887/tick1035. full도 15번째는 흑랑 seq17890/tick1036. focused2/full은 outgoing receiver 순서가 전부 같지만 timing은 다르다.
+incoming 순서의 첫 source 차이는 18번째: focused1 도호 receive_before seq17826/tick1034의 guard_bat2 대focused2 seq18014/tick1041의 흑랑. full의 guard_bat2 첫 receive_before는 seq17831/tick1034다.
+
+RNG 최초 관측 소비 timing과 값/호출 대상 차이를 분리했다. 내부 draw를 하나씩 계측한 것이 아니라 기존 hook에서 보이는 signed64 state 변화이다. 한 receive가 여러 draw를 포함할 수 있어 관측 변화 수를 draw 수로 부르지 않는다.
+Lv3 첫 도호 RNG 변화는 focused1 seq767/tick58, focused2 seq779/tick56, full seq799/tick56: initial3718673984595126131→-888084381309891711로 같은 값이 다른 timing에 소비된다. 이후 6 stream 변화 값열과 final은 모두 같다.
+Lv5 첫 도호 변화는 focused1 seq825/tick63, focused2 seq840/tick64, full seq831/tick63: initial5600093101942189313→-3276735553772873825로 같은 값이다.
+Lv5 focused pair의 최초 stream 값열 차이는 guard_bat2: focused1 seq17827/tick1034 PlayerCombat.receive_attack_after에서 initial5723061790796302234→-2294790372600408388, focused2에는 해당 소비가 전혀 없고 initial=final5723061790796302234이다. full은 같은 소비를 seq17832/tick1034에서 관측하며 총3회, focused1은4회이다. focused1/full의 첫 이 stream 추가 소비 차이는 네 번째 focused1 seq27437/tick1508이다. 흑랑 변화 값열 차이는 더 뒤쪽이다. chronological RNG body/order 차이는 별도 JSON에 보존했다.
+
+최종 incoming before/after와 양수 dealt 합계를 outcome attacks/hits에 대조하여 정확히 일치시켰다.
+Lv5 focused1: 흑랑16/11명중, 파수1 9/6, 소환1 4/2, 파수2 4/2 =33/21.
+Lv5 focused2: 흑랑15/10, 파수1 9/6, 소환1 4/2, 파수2 0/0 =28/18.
+Lv5 full: 흑랑15/10, 파수1 9/6, 소환1 4/2, 파수2 3/1 =31/19.
+따라서 focused pair의5공격·3명중 차이는 실제 흑랑1공격·1명중과 파수2 4공격·2명중 차이로 설명된다. 단순 float epoch 표시 차이가 아니다. 이 사건을 만든 전체 최초 원인은 아직 확정되지 않았다.
+
+계측 한계와 후속 판단
+
+관측 수집 시간이 battle wall 시간의 약6.50~6.98%(판당1.65~2.00초)였다. 이는 훅 내부 측정으로, 비계측 실행에 비한 실제 slowdown 비율을 뜻하지 않는다. full Lv3 serialization1010065usec, Lv5 837801usec는 종료 후 별도 측정이다. 모든 실제 raw FILE 행의 계측 시간을 보존했다. 무관측 baseline 없이 영향0을 주장할 수 없다. hard kill이면 메모리 trace 저장이 안 될 수 있다는 한계는 이 성공 실행들에도 비교기의 계약으로 남아 있다.
+
+근본 결론은 자연 시계에서 이벤트/상태/타깃/실제 receive 결과가 달라진다는 것이다. 준비 시작 상태를 수렴시키는 fixture 보완만으로 Lv5의 같은 tick CD 승인 분기를 해결했다고 선언할 수 없고, AnimationPlayer callback 하나를 단독 원인으로 단정할 수도 없다. 이후 #536의 runtime 시간 정책 판단은 이 gate·marker·target·collision·receive의 보존 경계를 사용해야 하며 본 진단 카드에서 runtime 정책을 바꾸지 않았다.
+
+주요 증거 파일 (모두 C:/workspace/joseon/._tmp/trace_558_20261002/analysis/ 아래)
+focused_pair/comparison.json
+focused_1_vs_full_1/comparison.json
+focused_2_vs_full_1/comparison.json
+cohort_audit_01.json: RUN/ENV/seed/raw DT·CLOCK/모든 outcome·FILE 계측.
+cohort_first_divergence_01.json: 최초 state/order/tick/clock/RNG/본체 motion·target·collision 구분.
+cohort_aligned_clock_01.json: 같은 이벤트/tick 정렬의 exact17 clock 차이(전체 prefix와 혼동 금지).
+cohort_observed_rng_01.json: 6판 모든 stream 관측 변화 원문.
+cohort_preparation_and_first_impact_01.json: role/ordinal, 첫 입력·시전·타격 직전 snapshot 및 모든 cast/receive 순서.
+cohort_preparation_original_evidence_01.json: 준비 전 이벤트와 첫 타격 원문 창.
+cohort_Lv5_original_windows_01.json: 최초 CD 이후 motion·guard 경계 원문 창.
+focused_1_incoming_Lv3_attempt1.json 등 6개 incoming 파일: 실제 모든 피격 before/after 원문.
+각 비교 폴더 phase_evidence/: 원 Godot 로그·phase.json·console.merged·cohort RUN/LAUNCH/stdout/stderr byte 사본. 원본 trace는 cohort/*/traces/에 그대로 있다.
+
+분석 보조 도구 오류 원문 보존: worker/git_status_readonly_01.raw.log (읽기 safe.directory 적용 후 회복; 글로벌 설정 변화 없음), worker/cohort_analysis_01.stderr.raw.log (보조 분석 태그 오타를 BALANCE_TRACE_FILE로 수정; 정식 비교기/후보 무변경). 이후 추가 분석 exit0/stderr0. 별도 fixed60 balance_replay provenance 비교 회귀 보완은 다른 worker 담당이며 기존 실행들을 새 후보로 재분류하지 않았다.

@@ -1,0 +1,71 @@
+{
+  "schema": "joseon.reuse_handoff_verification.v1",
+  "card": 133,
+  "phase": "pre_commit_delivery_gate",
+  "result": "PASS",
+  "game_base_head": "294260c2054431b696866d14a9ff88ab517bf5b1",
+  "runtime_hash": {
+    "files": 3210,
+    "bytes": 339618564,
+    "changed": [],
+    "new_runtime": [],
+    "result": "PASS"
+  },
+  "reused_source_code": {
+    "files": 10,
+    "changed": [],
+    "result": "PASS"
+  },
+  "readonly_source_assets": {
+    "files": 6,
+    "changed": [],
+    "result": "PASS"
+  },
+  "manifest_copies": {
+    "identical": true,
+    "sha256": "7667aa0908ab36d719ef9d3aae2d4d5de570cd51baf61f333861cb6a0559b048"
+  },
+  "source_audit": {
+    "passed": 38,
+    "failed": 0
+  },
+  "doc_budget": {
+    "exit_code": 0,
+    "existing_warnings": 5,
+    "raw_path": "reports/133/doc_budget.raw.log"
+  },
+  "diff_check": {
+    "game_exit_code": 0,
+    "asset_exit_code": 0,
+    "initial_asset_crlf_diagnostics_preserved": "reports/133/asset_diff_check.crlf_before.raw.log",
+    "raw_preservation": "reports/133 only: -text, whitespace=cr-at-eol; engine/tool stdout bytes unchanged"
+  },
+  "game_owned_changes": [
+    "art/dungeon_props_133/reuse_manifest_2026-10-01.json",
+    "docs/design/dungeon_props_133.md"
+  ],
+  "runtime_tests_344": {
+    "executed_in_133": false,
+    "required_after_placement": [
+      "dungeon_layout",
+      "boss_floor",
+      "heukrang_pounce",
+      "test_vfx"
+    ]
+  },
+  "evidence_sha256": {
+    ".gitattributes": "731a94a37fccb801338887871d2af2655ece38178e8aebf94159c1e10174071a",
+    "asset_diff_check.crlf_before.exit.json": "bad7bb8da435c497d2a968810cafec477e812c1fd11fe9e9e3d9cd99b0116ceb",
+    "asset_diff_check.crlf_before.raw.log": "cd699339d69ed0dd65010f4e81834d6f8f3bc697b134a70099c05b3a2b8fb716",
+    "asset_diff_check.exit.json": "1f3898d82ed452ea1ed4331fcba79c799c35352a77118fd7d9868c810e618a8b",
+    "asset_diff_check.raw.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "chain_model_check.exit.json": "e070e91ea73fda6b8d95c9e7482da373a262bb636d297c53e8f0b8b3dfc07c39",
+    "chain_model_check.raw.log": "e194d6380ab1d15ee07abde49ed2665305e60473a295a199f8198a91f3bd81a6",
+    "doc_budget.raw.log": "5114182c75b46f3636d6fca2fcd4258a24690bde580a118f7950e64d1c59ee92",
+    "game_diff_check.exit.json": "fe70d41d726d44dc5e5d3abb85e21cdd5b02c6088f0565a4952cca713cd4d7b9",
+    "game_diff_check.raw.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime_baseline_2026-10-01.json": "820c6c4a7c1904ffa5e93f2d569738a0637b9eaaca45f71e67e20b830ba94362",
+    "source_audit_2026-10-01.json": "e2d3fb2e1c2843e6346a2182bc8c1f8a0d933cc34e2419bb215fa67c214c4179",
+    "source_measurements_2026-10-01.json": "4932ccc2c6eab2e19b05e244e58363b16095fe03a07d2deb50483d1b52170081"
+  }
+}

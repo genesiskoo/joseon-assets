@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "iksoe",
+    "rank": 1,
+    "voice_id": "TRO4gatqxbbwLXHLDLSk",
+    "name": "Jae-seong - Diplomatic and Measured",
+    "scene": "억쇠가 보따리를 펼쳐 보이며 도호의 호기심을 자극한다.",
+    "line": 0,
+    "file": "audio/iksoe_1_1.mp3",
+    "request": {
+      "text": "뭐가 들었는지는 나도 몰라유. 열어봐야 알지.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "그 보따리엔 뭐가 들었수?",
+      "next_text": "일단 하나 열어 봅시다.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "7rHLUUg1cyAl0nJxb7ec",
+    "history-item-id": "wxWvINeifobPaRhoakzp",
+    "character-cost": "3"
+  }
+}

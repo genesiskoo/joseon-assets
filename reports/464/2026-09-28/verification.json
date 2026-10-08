@@ -1,0 +1,78 @@
+{
+  "card": 464,
+  "parent_card": 274,
+  "status": "candidate_not_installed",
+  "originals": 6,
+  "packed_png": 6,
+  "dimensions": [
+    160,
+    240
+  ],
+  "footprint": [
+    2,
+    3
+  ],
+  "renderer_runs": [
+    {
+      "mode": "after",
+      "status": "PASS",
+      "script_engine_errors": 0,
+      "capture_size": [
+        1280,
+        760
+      ],
+      "real_shared_renderer": "UiSkin.item_slot/item_icon",
+      "virtual_resource_paths_only": true
+    },
+    {
+      "mode": "sizes",
+      "status": "PASS",
+      "script_engine_errors": 0,
+      "capture_size": [
+        1280,
+        760
+      ],
+      "real_shared_renderer": "UiSkin.item_slot/item_icon",
+      "virtual_resource_paths_only": true
+    },
+    {
+      "mode": "black_sizes",
+      "status": "PASS",
+      "script_engine_errors": 0,
+      "capture_size": [
+        1280,
+        760
+      ],
+      "real_shared_renderer": "UiSkin.item_slot/item_icon",
+      "virtual_resource_paths_only": true
+    }
+  ],
+  "protected_runtime_files": 109,
+  "protected_icon_png": 42,
+  "runtime_diff_empty": true,
+  "gallery": [
+    {
+      "name": "godot_after.jpg",
+      "bytes": 67385
+    },
+    {
+      "name": "godot_black_sizes.jpg",
+      "bytes": 104582
+    },
+    {
+      "name": "godot_sizes.jpg",
+      "bytes": 101000
+    },
+    {
+      "name": "material_readability.jpg",
+      "bytes": 44515
+    },
+    {
+      "name": "overview.jpg",
+      "bytes": 151110
+    }
+  ],
+  "limits": "No item has been adopted/installed. Small chainmail rings and individual studs are not individually readable at30px per cell; broader materials and silhouette are the acceptance target. Full suite not run because runtime code/data unchanged.",
+  "parent_remaining": 57,
+  "if_all_six_adopted_remaining": 51
+}

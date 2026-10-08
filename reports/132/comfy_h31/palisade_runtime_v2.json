@@ -1,0 +1,60 @@
+{
+  "asset": "palisade",
+  "source": "palisade_h31_raw_v1.glb",
+  "source_sha256": "901578fa71987b08e6811b525d35622239a9f0d6f784305aee95d84a03b0a193",
+  "output": "workbench/production/dungeon_props_132/models/palisade.glb",
+  "output_sha256": "157f15d73a8cf209312bc9a9d9fca81972c2fbe81d23dcdc35c75cab41e2be73",
+  "triangles": 5652,
+  "raw_bounds": [
+    [
+      -0.08283191174268723,
+      -0.36346542835235596,
+      -0.5
+    ],
+    [
+      0.08283191174268723,
+      0.36346542835235596,
+      0.5
+    ]
+  ],
+  "scale": 1.8,
+  "target_axis_xyz": 1,
+  "target_axis_metres": 1.7,
+  "preparation_revision": 2,
+  "yaw_rotation_degrees": -90,
+  "bounds_min": [
+    -0.9,
+    0.0,
+    -0.149097441136837
+  ],
+  "bounds_max": [
+    0.9,
+    1.3084755420684815,
+    0.149097441136837
+  ],
+  "dimensions_xyz": [
+    1.8,
+    1.3084755420684815,
+    0.298194882273674
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "before": [
+        2048,
+        2048
+      ],
+      "after": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  "material": {
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "emission": 0.0
+  },
+  "raw_preserved": true,
+  "game_intake": false
+}

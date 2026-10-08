@@ -1,0 +1,2505 @@
+{
+  "captured_at": "2026-09-16T22:21:22.573Z",
+  "operation": "tools/list",
+  "server": {
+    "name": "@meshy-ai/meshy-mcp-server",
+    "version": "0.5.1"
+  },
+  "sdk_version": "1.30.0",
+  "result": {
+    "tools": [
+      {
+        "name": "meshy_text_to_3d",
+        "title": "Generate 3D Model from Text",
+        "description": "Generate a 3D model from a text description using Meshy AI.\n\nPREFER THE IMAGE ROUTE: for higher quality and more control, generate a design image first (meshy_text_to_image) then meshy_image_to_3d. Use direct text-to-3d for a quick draft or when the user explicitly asks for it.\n\nThis tool creates a new 3D generation task and returns a task_id that can be used to poll the status. The generation process is asynchronous and typically takes 2-3 minutes.\n\nArgs:\n  - prompt (string): Text description of the 3D model (2-600 characters)\n  - ai_model (enum): AI model - \"meshy-5\" (previous gen, 5 credits), \"meshy-6\" (best quality, 20 credits), \"latest\" (default, resolves to meshy-6). NOTE: text-to-3d does NOT accept \"meshy-7\", and \"latest\" here is still Meshy 6 (image-to-3d differs). IMPORTANT: Ask the user which model to use before proceeding\n  - model_type (enum, optional): \"standard\" (default) or \"lowpoly\" (smart-topology is image-to-3d only). When \"lowpoly\", ai_model/topology/target_polycount/should_remesh are ignored\n  - topology (enum, optional): Mesh topology - \"quad\" or \"triangle\"\n  - target_polycount (number, optional): Target polygon count (100–300,000)\n  - symmetry_mode (enum, optional): \"off\", \"auto\" (default), or \"on\"\n  - should_remesh (boolean, optional): Whether to remesh. Default false for meshy-6, true for others\n  - pose_mode (enum, optional): \"a-pose\" or \"t-pose\". IMPORTANT: Use \"t-pose\" when the user intends to rig or animate the model\n  - target_formats (string[], optional): Output formats. Default: all except 3mf. For 3D printing white model, pass [\"obj\"].\n  - auto_size (boolean, optional): AI auto-estimate real-world height. Default false.\n  - origin_at (enum, optional): \"bottom\" or \"center\". Default \"bottom\" when auto_size is true.\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nWorkflow: This creates a PREVIEW (untextured mesh). After completion, ask the user if they want to add textures via meshy_text_to_3d_refine. Preview and refine ai_model should match — all models (meshy-5, meshy-6, latest) support both preview and refine.\n\nFor 3D printing: pass target_formats: [\"obj\"] to only generate OBJ format (faster).\nFor rigging/animation: use pose_mode: \"t-pose\" for best results.\n\nReturns:\n  { \"task_id\": \"abc-123-def\", \"status\": \"PENDING\", \"estimated_time\": \"2-3 minutes\" }\n\nNext Steps:\n  Use meshy_get_task_status with the task_id to wait for completion.\n\nExamples:\n  - \"Create a low-poly dragon\" → { prompt: \"dragon\", model_type: \"lowpoly\" }\n  - \"Generate for 3D print\" → { prompt: \"cat\", target_formats: [\"obj\"] }\n  - \"Character for animation\" → { prompt: \"warrior\", pose_mode: \"t-pose\" }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 600,
+              "description": "Text description"
+            },
+            "ai_model": {
+              "type": "string",
+              "enum": [
+                "meshy-5",
+                "meshy-6",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "AI model: 'meshy-5', 'meshy-6', or 'latest' (default). NOTE: text-to-3d does NOT accept 'meshy-7', and its 'latest' still resolves to Meshy 6 (unlike image-to-3d, where latest is Meshy 7). IMPORTANT: Before calling this tool, ask the user which model to use and explain the differences: meshy-6/latest = best quality (20 credits), meshy-5 = previous gen (5 credits)"
+            },
+            "model_type": {
+              "type": "string",
+              "enum": [
+                "standard",
+                "lowpoly"
+              ],
+              "description": "Model type: 'standard' or 'lowpoly' (smart-topology is image-to-3d only). When 'lowpoly', ai_model/topology/target_polycount/should_remesh are ignored"
+            },
+            "topology": {
+              "type": "string",
+              "enum": [
+                "quad",
+                "triangle"
+              ],
+              "description": "Mesh topology type (quad or triangle)"
+            },
+            "target_polycount": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 300000,
+              "description": "Target polygon count for the model (100–300,000)"
+            },
+            "decimation_mode": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4,
+              "description": "Adaptive decimation polycount level (1=ultra, 2=high, 3=medium, 4=low). When set, target_polycount is ignored."
+            },
+            "symmetry_mode": {
+              "type": "string",
+              "enum": [
+                "off",
+                "auto",
+                "on"
+              ],
+              "description": "DEPRECATED — no longer affects output (kept for backward compatibility). Values: 'off', 'auto', 'on'."
+            },
+            "should_remesh": {
+              "type": "boolean",
+              "description": "Whether to remesh. Default false for meshy-6, true for others"
+            },
+            "pose_mode": {
+              "type": "string",
+              "enum": [
+                "a-pose",
+                "t-pose"
+              ],
+              "description": "Pose mode for character models: 'a-pose' or 't-pose'. IMPORTANT: When the user intends to rig or animate the model, default to 't-pose' for best rigging results"
+            },
+            "target_formats": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "glb",
+                  "obj",
+                  "fbx",
+                  "stl",
+                  "usdz",
+                  "3mf"
+                ]
+              },
+              "description": "Output formats to generate. When omitted, produces glb/obj/fbx/stl/usdz but NOT 3mf. To get 3MF, you MUST include '3mf' explicitly (e.g. [\"glb\", \"3mf\"]). Specifying formats can reduce task completion time."
+            },
+            "alpha_thumbnail": {
+              "type": "boolean",
+              "description": "Also render a transparent-background (RGBA) preview, returned as alpha_thumbnail_url. Default false."
+            },
+            "auto_size": {
+              "type": "boolean",
+              "description": "Use AI to auto-estimate real-world height and resize the model. Default false."
+            },
+            "origin_at": {
+              "type": "string",
+              "enum": [
+                "bottom",
+                "center"
+              ],
+              "description": "Origin position: 'bottom' or 'center'. Default 'bottom' when auto_size is true."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "prompt"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_image_to_3d",
+        "title": "Generate 3D Model from Image",
+        "description": "Generate a 3D model from a single image using Meshy AI.\n\nThis tool creates a new 3D generation task from an image and returns a task_id.\n\nIMAGE INPUT (provide ONE, NEVER both):\n  - Local file → file_path: \"/absolute/path/to/image.jpg\" (RECOMMENDED)\n  - Remote URL → image_url: \"https://example.com/image.jpg\"\n  - NEVER manually base64-encode. NEVER use both file_path and image_url.\n\nOther Args:\n  - ai_model: \"meshy-5\", \"meshy-6\", \"meshy-7\", or \"latest\" (default, resolves to Meshy 7). For part-separated\n    geometry at a fraction of the cost, set model_type:\"smart-topology\" (ai_model defaults to \"meshy-t2\",\n    5 credits mesh instead of 20). Ask user which model before proceeding\n  - ultra_mode (boolean, optional): Meshy 7 high-detail geometry pass, +5 credits. Needs ai_model \"meshy-7\"\n    (or \"latest\" while it resolves to Meshy 7); rejected on meshy-5/meshy-6 and with lowpoly/smart-topology\n  - model_type: \"standard\" (default), \"smart-topology\", or \"lowpoly\" (deprecated)\n  - pose_mode, topology, target_polycount, should_remesh, symmetry_mode\n  - should_texture: Whether to generate textures (default true). Set false for untextured mesh\n  - enable_pbr: PBR maps (default false). Set true for metallic/roughness/normal maps\n  - texture_prompt, texture_image_url: Guide texturing\n  - texture_resolution: \"2k\" (default) / \"4k\" / \"8k\". 8K costs 15 credits instead of 10 — confirm first.\n    Replaces the deprecated hd_texture flag\n  - image_enhancement: Optimize input image (default true, meshy-6/latest only)\n  - remove_lighting: Remove highlights/shadows from base color texture (default true, meshy-6/latest only)\n  - save_pre_remeshed_model, response_format\n\nNote: Image-to-3D does NOT have a separate refine step. Texturing is controlled by should_texture (default true).\n\nExamples:\n  - Local file: { file_path: \"/path/to/cat.jpg\" }\n  - Public URL: { image_url: \"https://example.com/cat.jpg\" }\n  - With pose: { file_path: \"/path/to/character.png\", pose_mode: \"a-pose\" }\n\nError Handling:\n  - Returns \"InvalidImageUrl\" if image is not accessible\n  - Returns \"File not found\" if file_path doesn't exist",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "image_url": {
+              "type": "string",
+              "description": "PUBLIC image URL (https://...). Use ONLY for remote images. For local files use file_path instead. NEVER manually base64-encode."
+            },
+            "file_path": {
+              "type": "string",
+              "description": "ABSOLUTE path to LOCAL image (.jpg/.png). PREFERRED for local files. Server auto-encodes. Example: /Users/me/photo.jpg. NEVER manually base64-encode."
+            },
+            "input_task_id": {
+              "type": "string",
+              "description": "Chain from a SUCCEEDED text-to-image or image-to-image task: use its generated image as the input instead of image_url/file_path. Provide only one image source."
+            },
+            "ai_model": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "meshy-5",
+                    "meshy-6",
+                    "meshy-7",
+                    "latest"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "enum": [
+                    "meshy-t1",
+                    "meshy-t2"
+                  ]
+                }
+              ],
+              "description": "AI model. Standard generation: 'meshy-5', 'meshy-6', 'meshy-7', or 'latest' (default — resolves to Meshy 7 here). Smart Topology generation (set model_type: 'smart-topology'): 'meshy-t2' (default, recommended — native part separation) or 'meshy-t1'. IMPORTANT: Before calling this tool, ask the user which model to use and explain the trade-off: meshy-7/latest = best quality (20 credits mesh, 30 textured); meshy-t2 smart-topology = clean part-separated geometry and much cheaper (5 credits mesh, 15 textured); meshy-5 = previous gen (5 credits). NOTE: passing remove_lighting with 'latest' keeps the task on Meshy 6."
+            },
+            "ultra_mode": {
+              "type": "boolean",
+              "description": "Meshy 7 Ultra — run the extra high-detail geometry pass (+5 credits). Only valid when the task actually runs Meshy 7: pass ai_model 'meshy-7' explicitly (reliable), or 'latest' while latest resolves to Meshy 7. On meshy-5/meshy-6 the API returns 400. Single-image only — not available on multi-image-to-3d. Cannot be combined with model_type 'lowpoly'. Confirm the extra cost with the user first."
+            },
+            "model_type": {
+              "type": "string",
+              "enum": [
+                "standard",
+                "smart-topology",
+                "lowpoly"
+              ],
+              "description": "Model type: 'standard' (default), 'smart-topology' (part-separated geometry via meshy-t1/meshy-t2, much cheaper), or 'lowpoly' (deprecated — prefer smart-topology)"
+            },
+            "pose_mode": {
+              "type": "string",
+              "enum": [
+                "a-pose",
+                "t-pose"
+              ],
+              "description": "Pose mode for character models: 'a-pose' or 't-pose'. IMPORTANT: When the user intends to rig or animate the model, default to 't-pose' for best rigging results"
+            },
+            "enable_pbr": {
+              "type": "boolean",
+              "default": false,
+              "description": "Enable physically-based rendering textures. Default false"
+            },
+            "topology": {
+              "type": "string",
+              "enum": [
+                "quad",
+                "triangle"
+              ],
+              "description": "Mesh topology type (quad or triangle)"
+            },
+            "target_polycount": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 300000,
+              "description": "Target polygon count for the model (100–300,000)"
+            },
+            "decimation_mode": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4,
+              "description": "Adaptive decimation polycount level (1=ultra, 2=high, 3=medium, 4=low). When set, target_polycount is ignored."
+            },
+            "should_remesh": {
+              "type": "boolean",
+              "description": "Whether to remesh. Default false for meshy-6, true for others"
+            },
+            "symmetry_mode": {
+              "type": "string",
+              "enum": [
+                "off",
+                "auto",
+                "on"
+              ],
+              "description": "DEPRECATED — no longer affects output (kept for backward compatibility). Values: 'off', 'auto', 'on'."
+            },
+            "should_texture": {
+              "type": "boolean",
+              "description": "Whether to generate textures. Default true"
+            },
+            "texture_prompt": {
+              "type": "string",
+              "maxLength": 600,
+              "description": "Text to guide texturing. Max 600 characters"
+            },
+            "texture_image_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Image URL to guide texturing"
+            },
+            "texture_resolution": {
+              "type": "string",
+              "enum": [
+                "2k",
+                "4k",
+                "8k"
+              ],
+              "description": "Base color texture resolution: '2k' (default), '4k', or '8k'. 8K costs 15 credits instead of 10 — confirm with the user before selecting it. Only supported on meshy-6 / meshy-7 / latest / smart-topology; PBR maps stay at 2K. Replaces the deprecated hd_texture flag."
+            },
+            "hd_texture": {
+              "type": "boolean",
+              "description": "DEPRECATED — use texture_resolution instead (hd_texture: true is exactly texture_resolution: '4k'). Kept for backward compatibility."
+            },
+            "image_enhancement": {
+              "type": "boolean",
+              "description": "Optimize input image for better results. Default true. Meshy-6/latest only"
+            },
+            "remove_lighting": {
+              "type": "boolean",
+              "default": true,
+              "description": "Removes highlights and shadows from the base color texture for cleaner results under custom lighting. Default true. Only supported when ai_model is meshy-6 or latest"
+            },
+            "save_pre_remeshed_model": {
+              "type": "boolean",
+              "description": "Store GLB before remeshing. Default false. Only applies when should_remesh is true"
+            },
+            "target_formats": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "glb",
+                  "obj",
+                  "fbx",
+                  "stl",
+                  "usdz",
+                  "3mf"
+                ]
+              },
+              "description": "Output formats to generate. When omitted, produces glb/obj/fbx/stl/usdz but NOT 3mf. To get 3MF, you MUST include '3mf' explicitly (e.g. [\"glb\", \"3mf\"]). Specifying formats can reduce task completion time."
+            },
+            "alpha_thumbnail": {
+              "type": "boolean",
+              "description": "Also render a transparent-background (RGBA) preview, returned as alpha_thumbnail_url. Default false."
+            },
+            "multi_view_thumbnails": {
+              "type": "boolean",
+              "description": "Also return 4 cardinal-view thumbnails (front/back/left/right). Default false."
+            },
+            "auto_size": {
+              "type": "boolean",
+              "description": "Use AI to auto-estimate real-world height and resize the model. Default false."
+            },
+            "origin_at": {
+              "type": "string",
+              "enum": [
+                "bottom",
+                "center"
+              ],
+              "description": "Origin position: 'bottom' or 'center'. Default 'bottom' when auto_size is true."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_text_to_3d_refine",
+        "title": "Refine Text-to-3D Preview",
+        "description": "Apply textures to a completed text-to-3D preview mesh using Meshy AI.\n\nThis tool takes a completed preview task and generates a fully textured model. Run meshy_text_to_3d first to get a preview, then use this tool to add high-quality textures.\n\nArgs:\n  - preview_task_id (string): Task ID of the completed preview task to refine (required)\n  - enable_pbr (boolean): Enable physically-based rendering textures (default: false)\n  - texture_prompt (string, optional): Text to guide texturing. Max 600 characters\n  - texture_image_url (string, optional): Image URL to guide texturing\n  - ai_model (enum): AI model - \"meshy-5\", \"meshy-6\", or \"latest\" (default). Should match the preview's ai_model to avoid model mismatch errors.\n  - remove_lighting (boolean, optional): Remove highlights/shadows from base color texture. Default true. Only meshy-6/latest\n  - target_formats (string[], optional): Output formats. Default: all except 3mf.\n  - auto_size (boolean, optional): AI auto-estimate real-world height. Default false.\n  - origin_at (enum, optional): \"bottom\" or \"center\".\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nIMPORTANT: The ai_model used for refine should match the preview's ai_model. All models (meshy-5, meshy-6, latest) support refine.\n\nReturns:\n  { \"task_id\": \"abc-123-def\", \"status\": \"PENDING\", \"estimated_time\": \"2-3 minutes\" }\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"text-to-3d\" to check progress.\n\nExamples:\n  - Basic refine: { preview_task_id: \"abc-123\" }\n  - With PBR: { preview_task_id: \"abc-123\", enable_pbr: true }\n  - Guided texture: { preview_task_id: \"abc-123\", texture_prompt: \"rusty metal\" }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "preview_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Task ID of the completed preview task to refine"
+            },
+            "enable_pbr": {
+              "type": "boolean",
+              "default": false,
+              "description": "Enable physically-based rendering textures"
+            },
+            "texture_prompt": {
+              "type": "string",
+              "maxLength": 600,
+              "description": "Text to guide texturing. Max 600 characters"
+            },
+            "texture_image_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Image URL to guide texturing"
+            },
+            "ai_model": {
+              "type": "string",
+              "enum": [
+                "meshy-5",
+                "meshy-6",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "AI model: 'meshy-5', 'meshy-6', or 'latest' (default). NOTE: text-to-3d does NOT accept 'meshy-7' and its 'latest' still resolves to Meshy 6. Texturing costs 10 credits at 2K/4K, 15 at 8K."
+            },
+            "texture_resolution": {
+              "type": "string",
+              "enum": [
+                "2k",
+                "4k",
+                "8k"
+              ],
+              "description": "Base color texture resolution: '2k' (default), '4k', or '8k'. 8K costs 15 credits instead of 10 — confirm with the user before selecting it. Only supported on meshy-6 / meshy-7 / latest / smart-topology; PBR maps stay at 2K. Replaces the deprecated hd_texture flag."
+            },
+            "hd_texture": {
+              "type": "boolean",
+              "description": "DEPRECATED — use texture_resolution instead (hd_texture: true is exactly texture_resolution: '4k'). Kept for backward compatibility."
+            },
+            "remove_lighting": {
+              "type": "boolean",
+              "default": true,
+              "description": "Removes highlights and shadows from the base color texture for cleaner results under custom lighting. Default true. Only supported when ai_model is meshy-6 or latest"
+            },
+            "target_formats": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "glb",
+                  "obj",
+                  "fbx",
+                  "stl",
+                  "usdz",
+                  "3mf"
+                ]
+              },
+              "description": "Output formats to generate. When omitted, produces glb/obj/fbx/stl/usdz but NOT 3mf. To get 3MF, you MUST include '3mf' explicitly (e.g. [\"glb\", \"3mf\"]). Specifying formats can reduce task completion time."
+            },
+            "alpha_thumbnail": {
+              "type": "boolean",
+              "description": "Also render a transparent-background (RGBA) preview, returned as alpha_thumbnail_url. Default false."
+            },
+            "auto_size": {
+              "type": "boolean",
+              "description": "Use AI to auto-estimate real-world height and resize the model. Default false."
+            },
+            "origin_at": {
+              "type": "string",
+              "enum": [
+                "bottom",
+                "center"
+              ],
+              "description": "Origin position: 'bottom' or 'center'. Default 'bottom' when auto_size is true."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "preview_task_id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_multi_image_to_3d",
+        "title": "Generate 3D Model from Multiple Images",
+        "description": "Generate a 3D model from 1–4 images using Meshy AI.\n\nUse multiple views of the same object for better 3D reconstruction.\n\nImage Input (provide ONE of these):\n  - image_urls (array): 1–4 publicly accessible image URLs\n  - file_paths (array): 1–4 absolute paths to LOCAL image files. Server reads and encodes them automatically.\n\nIMPORTANT: For local files, always use file_paths instead of manually base64-encoding.\n\nOther Args:\n  - ai_model: \"meshy-5\", \"meshy-6\", \"meshy-7\", or \"latest\" (default, resolves to Meshy 7). NOTE: smart-topology\n    (meshy-t1/meshy-t2) and ultra_mode are single-image-only and NOT available here. Ask user which model first\n  - model_type: \"standard\" or \"lowpoly\", pose_mode, topology, target_polycount, should_remesh, symmetry_mode\n  - should_texture: Whether to generate textures (default true)\n  - enable_pbr: PBR maps (default false)\n  - texture_prompt, texture_image_url: Guide texturing\n  - texture_resolution: \"2k\" (default) / \"4k\" / \"8k\". 8K costs 15 credits instead of 10 — confirm first.\n    Replaces the deprecated hd_texture flag\n  - image_enhancement: Optimize input images (default true, meshy-6/latest only)\n  - remove_lighting: Remove highlights/shadows from base color texture (default true, meshy-6/latest only)\n  - save_pre_remeshed_model, response_format\n\nExamples:\n  - Local files: { file_paths: [\"/path/front.jpg\", \"/path/side.jpg\"] }\n  - Public URLs: { image_urls: [\"https://example.com/front.jpg\", \"https://example.com/side.jpg\"] }\n\nError Handling:\n  - Returns \"InvalidImageUrl\" if any image is not accessible\n  - Returns \"File not found\" if any file_path doesn't exist",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "image_urls": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "maxItems": 4,
+              "description": "Array of 1–4 publicly accessible image URLs. Provide this OR file_paths, not both"
+            },
+            "file_paths": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "maxItems": 4,
+              "description": "Array of 1–4 absolute paths to local image files (.jpg, .jpeg, .png). The server reads and encodes them automatically"
+            },
+            "input_task_id": {
+              "type": "string",
+              "description": "Chain from a SUCCEEDED text-to-image / image-to-image task that produced multi-view images, using them as the input instead of image_urls/file_paths."
+            },
+            "ai_model": {
+              "type": "string",
+              "enum": [
+                "meshy-5",
+                "meshy-6",
+                "meshy-7",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "AI model: 'meshy-5', 'meshy-6', 'meshy-7', or 'latest' (default — resolves to Meshy 7). Smart Topology (meshy-t1/meshy-t2) and ultra_mode are single-image-only and NOT available here. IMPORTANT: Before calling this tool, ask the user which model to use: meshy-7/latest = best quality (20 credits mesh, 30 textured), meshy-5 = previous gen (5 credits)"
+            },
+            "model_type": {
+              "type": "string",
+              "enum": [
+                "standard",
+                "lowpoly"
+              ],
+              "description": "Model type: 'standard' or 'lowpoly' (smart-topology is single-image-to-3d only)"
+            },
+            "pose_mode": {
+              "type": "string",
+              "enum": [
+                "a-pose",
+                "t-pose"
+              ],
+              "description": "Pose mode for character models: 'a-pose' or 't-pose'. IMPORTANT: When the user intends to rig or animate the model, default to 't-pose' for best rigging results"
+            },
+            "enable_pbr": {
+              "type": "boolean",
+              "default": false,
+              "description": "Enable physically-based rendering textures. Default false"
+            },
+            "topology": {
+              "type": "string",
+              "enum": [
+                "quad",
+                "triangle"
+              ],
+              "description": "Mesh topology type (quad or triangle)"
+            },
+            "target_polycount": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 300000,
+              "description": "Target polygon count for the model (100–300,000)"
+            },
+            "decimation_mode": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4,
+              "description": "Adaptive decimation polycount level (1=ultra, 2=high, 3=medium, 4=low). When set, target_polycount is ignored."
+            },
+            "should_remesh": {
+              "type": "boolean",
+              "description": "Whether to remesh. Default false for meshy-6, true for others"
+            },
+            "symmetry_mode": {
+              "type": "string",
+              "enum": [
+                "off",
+                "auto",
+                "on"
+              ],
+              "description": "DEPRECATED — no longer affects output (kept for backward compatibility). Values: 'off', 'auto', 'on'."
+            },
+            "should_texture": {
+              "type": "boolean",
+              "description": "Whether to generate textures. Default true"
+            },
+            "texture_prompt": {
+              "type": "string",
+              "maxLength": 600,
+              "description": "Text to guide texturing. Max 600 characters"
+            },
+            "texture_image_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Image URL to guide texturing"
+            },
+            "texture_resolution": {
+              "type": "string",
+              "enum": [
+                "2k",
+                "4k",
+                "8k"
+              ],
+              "description": "Base color texture resolution: '2k' (default), '4k', or '8k'. 8K costs 15 credits instead of 10 — confirm with the user before selecting it. Only supported on meshy-6 / meshy-7 / latest / smart-topology; PBR maps stay at 2K. Replaces the deprecated hd_texture flag."
+            },
+            "hd_texture": {
+              "type": "boolean",
+              "description": "DEPRECATED — use texture_resolution instead (hd_texture: true is exactly texture_resolution: '4k'). Kept for backward compatibility."
+            },
+            "image_enhancement": {
+              "type": "boolean",
+              "description": "Optimize input images for better results. Default true. Meshy-6/latest only"
+            },
+            "remove_lighting": {
+              "type": "boolean",
+              "default": true,
+              "description": "Removes highlights and shadows from the base color texture for cleaner results under custom lighting. Default true. Only supported when ai_model is meshy-6 or latest"
+            },
+            "save_pre_remeshed_model": {
+              "type": "boolean",
+              "description": "Store GLB before remeshing. Default false. Only applies when should_remesh is true"
+            },
+            "target_formats": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "glb",
+                  "obj",
+                  "fbx",
+                  "stl",
+                  "usdz",
+                  "3mf"
+                ]
+              },
+              "description": "Output formats to generate. When omitted, produces glb/obj/fbx/stl/usdz but NOT 3mf. To get 3MF, you MUST include '3mf' explicitly (e.g. [\"glb\", \"3mf\"]). Specifying formats can reduce task completion time."
+            },
+            "alpha_thumbnail": {
+              "type": "boolean",
+              "description": "Also render a transparent-background (RGBA) preview, returned as alpha_thumbnail_url. Default false."
+            },
+            "multi_view_thumbnails": {
+              "type": "boolean",
+              "description": "Also return 4 cardinal-view thumbnails (front/back/left/right). Default false."
+            },
+            "auto_size": {
+              "type": "boolean",
+              "description": "Use AI to auto-estimate real-world height and resize the model. Default false."
+            },
+            "origin_at": {
+              "type": "string",
+              "enum": [
+                "bottom",
+                "center"
+              ],
+              "description": "Origin position: 'bottom' or 'center'. Default 'bottom' when auto_size is true."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_get_task_status",
+        "title": "Get Task Status",
+        "description": "Check task status or wait for completion. Supports two modes:\n\n**wait=true (default)**: Auto-polls with exponential backoff (5s→30s, 15s at 95%+) until SUCCEEDED/FAILED/TIMEOUT. Returns full result with progress bar. Recommended — call once and get the final result.\n\n**wait=false**: Returns current status immediately (single query) with progress bar.\n\nArgs:\n  - task_id (string): Task ID returned from generation tools (required)\n  - task_type (enum, optional): Task type for endpoint routing (default: \"text-to-3d\"). Auto-infers if wrong.\n  - wait (boolean): Auto-wait until completion (default: true)\n  - timeout_seconds (number): Max wait time when wait=true (default: 300, max: 300)\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns (wait=true, SUCCEEDED):\n  Progress bar + full task data + model info + download instructions\n\nReturns (wait=false):\n  Progress bar + current status snapshot\n\nExamples:\n  - Auto-wait: { task_id: \"abc-123\" }\n  - Quick check: { task_id: \"abc-123\", wait: false }\n  - Image-to-3d: { task_id: \"abc-123\", task_type: \"image-to-3d\" }\n  - Short timeout: { task_id: \"abc-123\", timeout_seconds: 60 }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Unique task identifier (UUID)"
+            },
+            "task_type": {
+              "type": "string",
+              "enum": [
+                "text-to-3d",
+                "image-to-3d",
+                "multi-image-to-3d",
+                "remesh",
+                "retexture",
+                "rigging",
+                "animation",
+                "text-to-image",
+                "image-to-image",
+                "convert",
+                "resize",
+                "uv-unwrap",
+                "multi-color-print",
+                "print-analyze",
+                "print-repair",
+                "creative-lab-figure-prototype",
+                "creative-lab-figure-build",
+                "creative-lab-lamp-prototype",
+                "creative-lab-lamp-build",
+                "creative-lab-keychain-prototype",
+                "creative-lab-keychain-build",
+                "creative-lab-fridge-magnet-prototype",
+                "creative-lab-fridge-magnet-build",
+                "creative-lab-vinyl-figure-prototype",
+                "creative-lab-vinyl-figure-build",
+                "creative-lab-brick-figure-prototype",
+                "creative-lab-brick-figure-build",
+                "creative-lab-keycap-prototype",
+                "creative-lab-keycap-build"
+              ],
+              "default": "text-to-3d",
+              "description": "Task type for endpoint routing. Common values: 'text-to-3d', 'image-to-3d', 'multi-image-to-3d', 'remesh', 'retexture', 'rigging', 'animation', 'text-to-image', 'image-to-image', 'convert', 'resize', 'uv-unwrap'. Creative Lab is STAGE-specific: 'creative-lab-{product}-prototype' or 'creative-lab-{product}-build' (product = figure/lamp/keychain/fridge-magnet). If omitted or unrecognized, the server auto-infers the correct endpoint by probing — so an imperfect value still resolves; never fall back to manual HTTP."
+            },
+            "wait": {
+              "type": "boolean",
+              "default": true,
+              "description": "If true (default), auto-poll until task completes. If false, return current status immediately."
+            },
+            "timeout_seconds": {
+              "type": "integer",
+              "minimum": 10,
+              "maximum": 300,
+              "default": 300,
+              "description": "Maximum wait time in seconds when wait=true (default: 300, max: 300)"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "task_id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "outcome": {
+              "type": "string",
+              "enum": [
+                "SUCCEEDED",
+                "FAILED",
+                "CANCELED",
+                "TIMEOUT",
+                "IN_PROGRESS",
+                "PENDING"
+              ],
+              "description": "Final outcome of the status check"
+            },
+            "task_id": {
+              "type": "string",
+              "description": "Task identifier"
+            },
+            "status": {
+              "type": "string",
+              "description": "Current task status from the API"
+            },
+            "progress": {
+              "type": "number",
+              "description": "Progress percentage (0-100)"
+            },
+            "wait_time_seconds": {
+              "type": "number",
+              "description": "Total wait time in seconds (wait mode only)"
+            },
+            "poll_count": {
+              "type": "number",
+              "description": "Number of polls performed (wait mode only)"
+            },
+            "model_urls": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              },
+              "description": "Available model download URLs"
+            },
+            "image_urls": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Generated image URLs (text-to-image / image-to-image tasks)"
+            },
+            "vertex_count": {
+              "type": "number",
+              "description": "Number of vertices in the model"
+            },
+            "face_count": {
+              "type": "number",
+              "description": "Number of faces in the model"
+            },
+            "consumed_credits": {
+              "type": "number",
+              "description": "Credits consumed by the task (0 for FAILED — credits are refunded on failure)"
+            },
+            "error_code": {
+              "type": "string",
+              "description": "Error code if task failed"
+            },
+            "error_message": {
+              "type": "string",
+              "description": "Error message if task failed"
+            }
+          },
+          "required": [
+            "outcome",
+            "task_id",
+            "status",
+            "progress"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": true,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_list_tasks",
+        "title": "List Generation Tasks",
+        "description": "List tasks across all task types with filtering and pagination.\n\nQueries one or all task types. When task_type is omitted, queries ALL 7 list-capable endpoints in parallel and merges results sorted by creation time.\n\nArgs:\n  - task_type (enum, optional): Filter by task type. If omitted, queries ALL types and merges results.\n    Supported: \"text-to-3d\", \"image-to-3d\", \"multi-image-to-3d\", \"remesh\", \"retexture\", \"text-to-image\", \"image-to-image\"\n    Note: \"rigging\" and \"animation\" do NOT have list endpoints.\n  - sort_by (enum): Sort by creation time - \"-created_at\" (newest first, default) or \"+created_at\" (oldest first)\n  - status (enum, optional): Filter by status - \"PENDING\", \"IN_PROGRESS\", \"SUCCEEDED\", \"FAILED\", \"CANCELED\"\n  - phase (enum, optional): Filter by phase - \"draft\", \"generate\", \"texture\", \"stylize\", \"animate\"\n  - limit (number): Results per page per endpoint, 1-50 (default: 20). When querying all types, total results may be up to 7 × limit.\n  - offset (number): Skip N results for pagination (default: 0)\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"page_count\": 20,                  // Tasks in this response\n    \"offset\": 0,\n    \"tasks\": [ { task_type: \"text-to-3d\", ... }, ... ],\n    \"has_more\": true,\n    \"next_offset\": 20\n  }\n\nPagination:\n  To get next page, use the returned next_offset value.\n\nExamples:\n  - List all recent tasks: { limit: 10 }\n  - List only image-to-3d: { task_type: \"image-to-3d\", limit: 20 }\n  - List successful tasks: { status: \"SUCCEEDED\", limit: 20 }\n  - Get second page: { limit: 20, offset: 20 }\n\nError Handling:\n  - Automatically truncates if response exceeds size limit\n  - Partial endpoint failures are tolerated (uses Promise.allSettled)",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "task_type": {
+              "type": "string",
+              "enum": [
+                "text-to-3d",
+                "image-to-3d",
+                "multi-image-to-3d",
+                "remesh",
+                "retexture",
+                "rigging",
+                "animation",
+                "text-to-image",
+                "image-to-image",
+                "convert",
+                "resize",
+                "uv-unwrap",
+                "multi-color-print",
+                "print-analyze",
+                "print-repair",
+                "creative-lab-figure-prototype",
+                "creative-lab-figure-build",
+                "creative-lab-lamp-prototype",
+                "creative-lab-lamp-build",
+                "creative-lab-keychain-prototype",
+                "creative-lab-keychain-build",
+                "creative-lab-fridge-magnet-prototype",
+                "creative-lab-fridge-magnet-build",
+                "creative-lab-vinyl-figure-prototype",
+                "creative-lab-vinyl-figure-build",
+                "creative-lab-brick-figure-prototype",
+                "creative-lab-brick-figure-build",
+                "creative-lab-keycap-prototype",
+                "creative-lab-keycap-build"
+              ],
+              "description": "Filter by task type. If omitted, queries ALL list-capable task types (text/image/multi-image-to-3d, remesh, retexture, text/image-to-image, convert, resize, uv-unwrap, the print tasks, and the 4 creative-lab products) and merges results. Note: rigging and animation do not have list endpoints."
+            },
+            "sort_by": {
+              "type": "string",
+              "enum": [
+                "+created_at",
+                "-created_at"
+              ],
+              "default": "-created_at",
+              "description": "Sort order by creation time. '-created_at' = newest first (default), '+created_at' = oldest first"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "PENDING",
+                "IN_PROGRESS",
+                "SUCCEEDED",
+                "FAILED",
+                "CANCELED"
+              ],
+              "description": "Filter by task status"
+            },
+            "phase": {
+              "type": "string",
+              "enum": [
+                "draft",
+                "generate",
+                "texture",
+                "stylize",
+                "animate"
+              ],
+              "description": "Filter by task phase"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20,
+              "description": "Maximum number of results to return"
+            },
+            "offset": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "description": "Number of results to skip for pagination"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": true,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_cancel_task",
+        "title": "Cancel Generation Task",
+        "description": "Cancel a pending or in-progress 3D generation task.\n\nThis tool cancels a task that is currently PENDING or IN_PROGRESS. Completed or failed tasks cannot be canceled.\n\nArgs:\n  - task_id (string): Task ID to cancel (required)\n  - task_type (enum, optional): Task type to route to correct endpoint (default: \"text-to-3d\"). Auto-infers if wrong.\n\nReturns:\n  {\n    \"success\": true,\n    \"message\": \"Task canceled successfully\",\n    \"task_id\": \"abc-123\",\n    \"previous_status\": \"IN_PROGRESS\"\n  }\n\nUse Cases:\n  - Cancel tasks that are taking too long\n  - Free up task slots when at limit\n  - Stop incorrect generations\n\nExamples:\n  - Cancel task: { task_id: \"abc-123\" }\n\nError Handling:\n  - Returns error if task is already completed\n  - Returns \"NotFound\" if task doesn't exist",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Unique task identifier (UUID)"
+            },
+            "task_type": {
+              "type": "string",
+              "enum": [
+                "text-to-3d",
+                "image-to-3d",
+                "multi-image-to-3d",
+                "remesh",
+                "retexture",
+                "rigging",
+                "animation",
+                "text-to-image",
+                "image-to-image",
+                "convert",
+                "resize",
+                "uv-unwrap",
+                "multi-color-print",
+                "print-analyze",
+                "print-repair",
+                "creative-lab-figure-prototype",
+                "creative-lab-figure-build",
+                "creative-lab-lamp-prototype",
+                "creative-lab-lamp-build",
+                "creative-lab-keychain-prototype",
+                "creative-lab-keychain-build",
+                "creative-lab-fridge-magnet-prototype",
+                "creative-lab-fridge-magnet-build",
+                "creative-lab-vinyl-figure-prototype",
+                "creative-lab-vinyl-figure-build",
+                "creative-lab-brick-figure-prototype",
+                "creative-lab-brick-figure-build",
+                "creative-lab-keycap-prototype",
+                "creative-lab-keycap-build"
+              ],
+              "default": "text-to-3d",
+              "description": "Task type for endpoint routing. Common values: 'text-to-3d', 'image-to-3d', 'multi-image-to-3d', 'remesh', 'retexture', 'rigging', 'animation', 'text-to-image', 'image-to-image', 'convert', 'resize', 'uv-unwrap'. Creative Lab is STAGE-specific: 'creative-lab-{product}-prototype' or 'creative-lab-{product}-build' (product = figure/lamp/keychain/fridge-magnet). If omitted or unrecognized, the server auto-infers the correct endpoint by probing — so an imperfect value still resolves; never fall back to manual HTTP."
+            }
+          },
+          "required": [
+            "task_id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": true,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_download_model",
+        "title": "Download Model or Image",
+        "description": "Download a completed task's output to local disk with automatic file organization.\n\nHandles both 3D models and 2D images: 3D tasks save the chosen model `format`; image tasks (text-to-image / image-to-image) save the generated PNG/JPG image(s) and ignore `format`.\n\nIMPORTANT: For 3D models, ask the user which format they need BEFORE downloading. Do NOT download all formats.\nFormat recommendations: GLB (viewing), OBJ (white model printing), 3MF (multicolor printing), FBX (game engines), USDZ (AR).\n\nBy default, files are auto-saved to meshy_output/ under the current working directory with smart naming and history tracking. Use save_to to override with a custom path.\n\nArgs:\n  - task_id (string): Task ID of completed model (required)\n  - task_type (enum, optional): Task type to route to correct endpoint (default: \"text-to-3d\"). Auto-infers if wrong.\n  - format (enum): Model format - \"glb\", \"fbx\", \"usdz\", \"stl\", \"obj\", \"blend\", or \"3mf\" (default: \"glb\"). IMPORTANT: Ask user which format they need before downloading. NOTE: \"3mf\" is downloadable only if it was generated — request it via target_formats:[\"3mf\"] at creation, or use meshy_convert / meshy_process_multicolor.\n  - include_textures (boolean): Include texture files (default: true)\n  - save_to (string, optional): Override auto path with a custom ABSOLUTE path. If omitted, auto-saves to meshy_output/{timestamp}_{prompt}_{id}/.\n  - parent_task_id (string, optional): Parent task ID for chaining (e.g., preview_task_id for refine). Places output in the same project folder.\n  - print_ready (boolean, optional): If true and format=\"obj\", auto-fix for 3D printing: Y-up→Z-up, scale to height, center, bottom at Z=0.\n  - print_height_mm (number, optional): Target height in mm when print_ready=true. Default 75. Adjust per user request.\n\nReturns:\n  { \"local_path\": \"/path/to/file.obj\", \"file_size_bytes\": 12345678, \"project_dir\": \"...\", \"print_fixed\": true }\n\nExamples:\n  - Auto-save: { task_id: \"abc-123\", format: \"glb\" }\n  - 3D printing: { task_id: \"abc-123\", format: \"obj\", print_ready: true, print_height_mm: 100 }\n  - Chained refine: { task_id: \"def-456\", parent_task_id: \"abc-123\", format: \"glb\" }\n\nError Handling:\n  - Returns error if task is not SUCCEEDED\n  - If download fails, falls back to returning URLs",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Unique task identifier (UUID)"
+            },
+            "task_type": {
+              "type": "string",
+              "enum": [
+                "text-to-3d",
+                "image-to-3d",
+                "multi-image-to-3d",
+                "remesh",
+                "retexture",
+                "rigging",
+                "animation",
+                "text-to-image",
+                "image-to-image",
+                "convert",
+                "resize",
+                "uv-unwrap",
+                "multi-color-print",
+                "print-analyze",
+                "print-repair",
+                "creative-lab-figure-prototype",
+                "creative-lab-figure-build",
+                "creative-lab-lamp-prototype",
+                "creative-lab-lamp-build",
+                "creative-lab-keychain-prototype",
+                "creative-lab-keychain-build",
+                "creative-lab-fridge-magnet-prototype",
+                "creative-lab-fridge-magnet-build",
+                "creative-lab-vinyl-figure-prototype",
+                "creative-lab-vinyl-figure-build",
+                "creative-lab-brick-figure-prototype",
+                "creative-lab-brick-figure-build",
+                "creative-lab-keycap-prototype",
+                "creative-lab-keycap-build"
+              ],
+              "default": "text-to-3d",
+              "description": "Task type for endpoint routing. Common values: 'text-to-3d', 'image-to-3d', 'multi-image-to-3d', 'remesh', 'retexture', 'rigging', 'animation', 'text-to-image', 'image-to-image', 'convert', 'resize', 'uv-unwrap'. Creative Lab is STAGE-specific: 'creative-lab-{product}-prototype' or 'creative-lab-{product}-build' (product = figure/lamp/keychain/fridge-magnet). If omitted or unrecognized, the server auto-infers the correct endpoint by probing — so an imperfect value still resolves; never fall back to manual HTTP."
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "glb",
+                "fbx",
+                "usdz",
+                "stl",
+                "obj",
+                "blend",
+                "3mf"
+              ],
+              "default": "glb",
+              "description": "Model format to download. IMPORTANT: Ask the user which format they need before downloading. Recommendations: GLB (general viewing), OBJ (white model printing), 3MF (multicolor printing), FBX (game engines/animation), USDZ (AR/Apple), BLEND (Blender). Do NOT download all formats. NOTE: a format is only downloadable if it was generated — '3mf' must be requested at creation via target_formats:[\"3mf\"], or produced by the multi-color print / convert tools."
+            },
+            "include_textures": {
+              "type": "boolean",
+              "default": true,
+              "description": "Include texture files in response"
+            },
+            "save_to": {
+              "type": "string",
+              "description": "Override auto-save path with a custom ABSOLUTE path. If omitted, auto-saves to meshy_output/{timestamp}_{prompt}_{id}/. Example: /Users/me/models/chair.glb"
+            },
+            "parent_task_id": {
+              "type": "string",
+              "description": "Parent task ID for chaining (e.g., preview_task_id for refine, input_task_id for rig). Places output in the same project folder as the parent."
+            },
+            "print_ready": {
+              "type": "boolean",
+              "description": "If true and format is OBJ, auto-fix coordinates for 3D printing: rotates Y-up to Z-up, scales to target height, centers on XY, aligns bottom to Z=0. Default false."
+            },
+            "print_height_mm": {
+              "type": "number",
+              "description": "Target height in mm when print_ready is true. Default 75. Adjust per user request (e.g. 'print at 15cm' → 150)."
+            }
+          },
+          "required": [
+            "task_id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_list_models",
+        "title": "List Workspace Models",
+        "description": "Browse 3D models in your workspace with filtering and pagination.\n\nThis tool lists all completed models in your workspace. Only shows models with status SUCCEEDED.\n\nArgs:\n  - workspace_id (string, optional): Workspace ID (uses default workspace if omitted)\n  - filter (enum): Filter by visibility - \"all\", \"published\", or \"private\" (default: \"all\")\n  - limit (number): Results per page, 1-100 (default: 20)\n  - offset (number): Skip N results for pagination (default: 0)\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"page_count\": 20,\n    \"offset\": 0,\n    \"models\": [\n      {\n        \"id\": \"abc-123\",\n        \"name\": \"Dragon model\",\n        \"thumbnail_url\": \"https://...\",\n        \"created_at\": \"2026-03-02T10:00:00Z\",\n        \"vertex_count\": 45231,\n        \"face_count\": 89456,\n        \"is_published\": false\n      }\n    ],\n    \"has_more\": true,\n    \"next_offset\": 20\n  }\n\nUse Cases:\n  - Browse your generated models\n  - Find models by creation date\n  - Filter published vs private models\n\nExamples:\n  - List recent models: { limit: 10 }\n  - List published models: { filter: \"published\" }\n  - Get second page: { limit: 20, offset: 20 }\n\nError Handling:\n  - Automatically truncates if response exceeds size limit",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "workspace_id": {
+              "type": "string",
+              "description": "Workspace ID (uses default if omitted)"
+            },
+            "filter": {
+              "type": "string",
+              "enum": [
+                "all",
+                "published",
+                "private"
+              ],
+              "default": "all",
+              "description": "Filter models by visibility"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20,
+              "description": "Maximum number of results to return"
+            },
+            "offset": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "description": "Number of results to skip for pagination"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": true,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_remesh",
+        "title": "Remesh or Convert 3D Model",
+        "description": "Remesh an existing 3D model or convert it to different formats using Meshy AI.\n\nUse this to optimize polygon count, change topology, convert formats, or reposition model origin.\n\nArgs:\n  - input_task_id (string, optional): Task ID of an existing completed task to remesh\n  - model_url (string, optional): Direct URL to a model file to remesh\n    (Provide either input_task_id or model_url)\n  - target_formats (array, optional): Output formats to generate (default: [\"glb\"]). Options: \"glb\", \"fbx\", \"obj\", \"usdz\", \"blend\", \"stl\"\n  - topology (enum, optional): Mesh topology - \"quad\" or \"triangle\"\n  - target_polycount (number, optional): Target polygon count (100–300,000)\n  - resize_height (number, optional): Resize model height in meters (0 = no resize, default: 0)\n  - origin_at (enum, optional): Model origin placement - \"bottom\" or \"center\"\n  - convert_format_only (boolean, optional): Only convert format without remeshing (default: false)\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"task_id\": \"abc-123-def\",\n    \"status\": \"PENDING\",\n    \"message\": \"Remesh task created...\",\n    \"estimated_time\": \"1-2 minutes\"\n  }\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"remesh\" to check progress.\n\nExamples:\n  - Remesh by task: { input_task_id: \"abc-123\", target_polycount: 10000 }\n  - Convert format: { model_url: \"https://...\", target_formats: [\"fbx\", \"obj\"], convert_format_only: true }\n\nError Handling:\n  - Returns \"NotFound\" if input_task_id doesn't exist\n  - Returns \"InvalidModel\" if model_url is not accessible",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Task ID of an existing completed task to remesh"
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Direct URL to a model file to remesh"
+            },
+            "target_formats": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "glb",
+                  "fbx",
+                  "obj",
+                  "usdz",
+                  "blend",
+                  "stl",
+                  "3mf"
+                ]
+              },
+              "default": [
+                "glb"
+              ],
+              "description": "Output formats to generate (default: ['glb']). NOTE: 3MF is NOT included by default — you MUST explicitly include '3mf' to receive it."
+            },
+            "topology": {
+              "type": "string",
+              "enum": [
+                "quad",
+                "triangle"
+              ],
+              "description": "Mesh topology type (quad or triangle)"
+            },
+            "target_polycount": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 300000,
+              "description": "Target polygon count for the remeshed model (100–300,000)"
+            },
+            "decimation_mode": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4,
+              "description": "Adaptive decimation polycount level (1=ultra, 2=high, 3=medium, 4=low). When set, target_polycount is ignored."
+            },
+            "resize_height": {
+              "type": "number",
+              "default": 0,
+              "description": "Resize model to this height in meters (0 = no resize). Mutually exclusive with auto_size."
+            },
+            "resize_longest_side": {
+              "type": "number",
+              "description": "Resize so the model's longest side matches this value in meters (aspect ratio preserved). Alternative to resize_height."
+            },
+            "auto_size": {
+              "type": "boolean",
+              "description": "Use AI to auto-estimate real-world height. Mutually exclusive with resize_height. Default false."
+            },
+            "origin_at": {
+              "type": "string",
+              "enum": [
+                "bottom",
+                "center"
+              ],
+              "description": "Where to place the model origin: 'bottom' or 'center'. Default 'bottom' when auto_size is true."
+            },
+            "convert_format_only": {
+              "type": "boolean",
+              "default": false,
+              "description": "Only convert format without remeshing"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_retexture",
+        "title": "Retexture 3D Model",
+        "description": "Apply new AI-generated textures to an existing 3D model using Meshy AI.\n\nIMPORTANT: Before calling this tool, ask the user to provide EXACTLY ONE style input:\n  - text_style_prompt: A text description of the desired texture style (e.g. \"rusty metal\", \"cartoon style\")\n  - image_style_url: A single reference image URL for the texture STYLE\n  - multiview_image_urls: 1-4 photos OF THE SAME OBJECT from different angles (not style refs)\nOne of these is REQUIRED and they are MUTUALLY EXCLUSIVE — the tool will fail otherwise.\n\nArgs:\n  - input_task_id (string, optional): Task ID of an existing completed task to retexture\n  - model_url (string, optional): Direct URL to a model file to retexture\n    (Provide either input_task_id or model_url)\n  - text_style_prompt (string): Text prompt describing the desired texture style. Max 600 characters.\n  - image_style_url (string): URL of an image to use as texture style reference.\n  - multiview_image_urls (string[]): 1-4 ordered views of the SAME object; element 0 is the primary\n    reference and alone drives metallic/roughness prediction. Requires ai_model \"meshy-7\" or \"latest\".\n  - ai_model (enum): AI model - \"meshy-5\", \"meshy-6\", \"meshy-7\", or \"latest\" (default, resolves to Meshy 7). Ask user which model before proceeding\n  - enable_original_uv (boolean): Preserve original UV mapping (default: true)\n  - enable_pbr (boolean): Enable PBR textures (default: false)\n  - texture_resolution (enum, optional): \"2k\" (default), \"4k\", or \"8k\". 8K costs 15 credits instead of 10 — confirm with the user. Replaces the deprecated hd_texture flag.\n  - remove_lighting (boolean, optional): Remove highlights/shadows from base color texture. Default true. Only meshy-6/latest\n  - target_formats (string[], optional): Output formats. 3MF must be explicitly included if needed.\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"task_id\": \"abc-123-def\",\n    \"status\": \"PENDING\",\n    \"message\": \"Retexture task created...\",\n    \"estimated_time\": \"2-3 minutes\"\n  }\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"retexture\" to check progress.\n\nExamples:\n  - Text style: { input_task_id: \"abc-123\", text_style_prompt: \"rusty metal\" }\n  - Image style: { model_url: \"https://...\", image_style_url: \"https://style-ref.jpg\" }\n  - Multi-view: { input_task_id: \"abc-123\", ai_model: \"meshy-7\", multiview_image_urls: [\"https://front.jpg\", \"https://side.jpg\"] }\n\nError Handling:\n  - Returns \"NotFound\" if input_task_id doesn't exist\n  - Returns error if no style input is provided, or if more than one is provided",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Task ID of an existing completed task to retexture"
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Direct URL to a model file to retexture"
+            },
+            "text_style_prompt": {
+              "type": "string",
+              "maxLength": 600,
+              "description": "Text prompt describing the desired texture style. Max 600 characters. Mutually exclusive with image_style_url and multiview_image_urls — provide exactly one style input."
+            },
+            "image_style_url": {
+              "$ref": "#/properties/model_url",
+              "description": "URL of a SINGLE image to use as texture style reference. Mutually exclusive with text_style_prompt and multiview_image_urls."
+            },
+            "multiview_image_urls": {
+              "type": "array",
+              "items": {
+                "$ref": "#/properties/model_url"
+              },
+              "minItems": 1,
+              "maxItems": 4,
+              "description": "1–4 ordered views OF THE SAME OBJECT (not style references) — element 0 is the primary reference and alone drives the metallic/roughness prediction. Requires ai_model 'meshy-7' or 'latest'. Mutually exclusive with text_style_prompt and image_style_url."
+            },
+            "ai_model": {
+              "type": "string",
+              "enum": [
+                "meshy-5",
+                "meshy-6",
+                "meshy-7",
+                "latest"
+              ],
+              "default": "latest",
+              "description": "AI model: 'meshy-5', 'meshy-6', 'meshy-7', or 'latest' (default — resolves to Meshy 7). multiview_image_urls requires meshy-7 or latest. Texturing costs 10 credits at 2K/4K, 15 at 8K."
+            },
+            "enable_original_uv": {
+              "type": "boolean",
+              "default": true,
+              "description": "Preserve the original UV mapping"
+            },
+            "enable_pbr": {
+              "type": "boolean",
+              "default": false,
+              "description": "Enable physically-based rendering textures"
+            },
+            "texture_resolution": {
+              "type": "string",
+              "enum": [
+                "2k",
+                "4k",
+                "8k"
+              ],
+              "description": "Base color texture resolution: '2k' (default), '4k', or '8k'. 8K costs 15 credits instead of 10 — confirm with the user before selecting it. Only supported on meshy-6 / meshy-7 / latest; PBR maps stay at 2K. Replaces the deprecated hd_texture flag."
+            },
+            "hd_texture": {
+              "type": "boolean",
+              "description": "DEPRECATED — use texture_resolution instead (hd_texture: true is exactly texture_resolution: '4k'). Kept for backward compatibility."
+            },
+            "remove_lighting": {
+              "type": "boolean",
+              "default": true,
+              "description": "Removes highlights and shadows from the base color texture for cleaner results under custom lighting. Default true. Only supported when ai_model is meshy-6 or latest"
+            },
+            "target_formats": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "glb",
+                  "obj",
+                  "fbx",
+                  "stl",
+                  "usdz",
+                  "3mf"
+                ]
+              },
+              "description": "Output formats to generate. When omitted, produces glb/obj/fbx/stl/usdz but NOT 3mf. To get 3MF, you MUST include '3mf' explicitly."
+            },
+            "alpha_thumbnail": {
+              "type": "boolean",
+              "description": "Also render a transparent-background (RGBA) preview, returned as alpha_thumbnail_url. Default false."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_rig",
+        "title": "Auto-Rig 3D Character",
+        "description": "Automatically rig a 3D character model for animation using Meshy AI.\n\nCreates a skeletal rig for character models, enabling them to be animated. Rigging INCLUDES free walking + running animations.\n\nIMPORTANT: The source model should be generated with pose_mode=\"t-pose\" for best rigging results. When the user asks to rig or animate, always ensure the generation step used t-pose. If the model was not generated with t-pose, recommend regenerating with pose_mode=\"t-pose\" first.\n\nCONSTRAINT: Model must have ≤300,000 faces. This tool auto-checks and suggests remeshing if exceeded.\n\nArgs:\n  - input_task_id (string, optional): Task ID of an existing completed task to rig\n  - model_url (string, optional): Direct URL to a model file to rig\n    (Provide either input_task_id or model_url)\n  - height_meters (number, optional): Height of the character in meters (default: 1.7)\n  - texture_image_url (string, optional): URL of a texture image to apply to the model\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"task_id\": \"abc-123-def\",\n    \"status\": \"PENDING\",\n    \"message\": \"Rigging task created...\",\n    \"estimated_time\": \"2-3 minutes\"\n  }\n\nIncluded with rigging (FREE):\n  - Walking animation (GLB + FBX)\n  - Running animation (GLB + FBX)\n  Only call meshy_animate (3 credits) for CUSTOM animations beyond walking/running.\n\nExamples:\n  - Basic rig: { input_task_id: \"abc-123\" }\n  - With height: { model_url: \"https://...\", height_meters: 1.8 }\n\nError Handling:\n  - Returns \"NotFound\" if input_task_id doesn't exist\n  - Returns error if model exceeds 300K faces (suggests remeshing)\n  - Returns error if model is not suitable for rigging",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Task ID of an existing completed task to rig"
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Direct URL to a model file to rig"
+            },
+            "height_meters": {
+              "type": "number",
+              "default": 1.7,
+              "description": "Height of the character in meters (default: 1.7)"
+            },
+            "texture_image_url": {
+              "$ref": "#/properties/model_url",
+              "description": "URL of a texture image to apply to the model"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_animate",
+        "title": "Animate Rigged 3D Character",
+        "description": "Apply a CUSTOM animation to a rigged 3D character using Meshy AI. Cost: 3 credits.\n\nNOTE: Walking and running animations are already FREE with meshy_rig. Only use this tool for CUSTOM animations (dancing, jumping, fighting, etc.) that are NOT included in rigging.\n\nApplies a predefined animation action to a character that has been rigged with meshy_rig.\n\nArgs:\n  - rig_task_id (string): Task ID of the completed rigging task (required)\n  - action_id (number): Integer ID of the animation action to apply (required)\n  - post_process (object, optional): Optional post-processing to apply after animation:\n    - operation_type (enum): \"change_fps\", \"fbx2usdz\", or \"extract_armature\"\n    - fps (number, optional): Target FPS for change_fps operation (24, 25, 30, or 60)\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"task_id\": \"abc-123-def\",\n    \"status\": \"PENDING\",\n    \"message\": \"Animation task created...\",\n    \"estimated_time\": \"1-2 minutes\"\n  }\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"animation\" to check progress.\n\nExamples:\n  - Basic animate: { rig_task_id: \"abc-123\", action_id: 1 }\n  - With FPS change: { rig_task_id: \"abc-123\", action_id: 1, post_process: { operation_type: \"change_fps\", fps: 30 } }\n\nError Handling:\n  - Returns \"NotFound\" if rig_task_id doesn't exist\n  - Returns error if rig task is not yet completed",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "rig_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Task ID of the completed rigging task to animate"
+            },
+            "action_id": {
+              "type": "integer",
+              "description": "ID of the animation action to apply"
+            },
+            "post_process": {
+              "type": "object",
+              "properties": {
+                "operation_type": {
+                  "type": "string",
+                  "enum": [
+                    "change_fps",
+                    "fbx2usdz",
+                    "extract_armature"
+                  ],
+                  "description": "Post-processing operation to apply"
+                },
+                "fps": {
+                  "type": "number",
+                  "enum": [
+                    24,
+                    25,
+                    30,
+                    60
+                  ],
+                  "description": "Target FPS for change_fps operation"
+                }
+              },
+              "required": [
+                "operation_type"
+              ],
+              "additionalProperties": false,
+              "description": "Optional post-processing to apply after animation"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "rig_task_id",
+            "action_id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_convert",
+        "title": "Convert 3D Model Format",
+        "description": "Convert an existing 3D model into one or more file formats. Cost: 1 credit (cheaper than remesh for format-only conversion).\n\nProvide EXACTLY ONE of input_task_id / model_url, plus target_formats.\n\nArgs:\n  - input_task_id (string, optional): SUCCEEDED Meshy task whose model to convert. Mutually exclusive with model_url.\n  - model_url (string, optional): Public URL or data URI of a model (.glb / .gltf / .obj / .fbx / .stl). Mutually exclusive with input_task_id.\n  - target_formats (array, REQUIRED): Output formats. Options: glb, fbx, obj, usdz, blend, stl, 3mf.\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"convert\" to wait for completion, then meshy_download_model.\n\nExamples:\n  - To STL+3MF for printing: { input_task_id: \"abc-123\", target_formats: [\"stl\", \"3mf\"] }\n  - From a URL:               { model_url: \"https://example.com/model.glb\", target_formats: [\"fbx\"] }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "ID of a SUCCEEDED Meshy task whose model to convert. Mutually exclusive with model_url."
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Public URL or data URI of a 3D model (.glb / .gltf / .obj / .fbx / .stl). Mutually exclusive with input_task_id."
+            },
+            "target_formats": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "glb",
+                  "fbx",
+                  "obj",
+                  "usdz",
+                  "blend",
+                  "stl",
+                  "3mf"
+                ]
+              },
+              "minItems": 1,
+              "description": "Output formats (required). Options: glb, fbx, obj, usdz, blend, stl, 3mf."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "target_formats"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_resize",
+        "title": "Resize 3D Model to Real-World Dimensions",
+        "description": "Resize an existing 3D model to real-world dimensions. Cost: 1 credit.\n\nProvide EXACTLY ONE of input_task_id / model_url, AND exactly one resize mode.\n\nArgs:\n  - input_task_id (string, optional): SUCCEEDED Meshy task (output is GLB). Mutually exclusive with model_url.\n  - model_url (string, optional): Public URL or data URI of a model (.glb / .gltf / .obj / .fbx / .stl); output preserves input format. Mutually exclusive with input_task_id.\n  - resize_height (number, optional): Exact height in meters.\n  - resize_longest_side (number, optional): Longest side in meters (aspect ratio preserved).\n  - auto_size (boolean, optional): AI-estimate the real-world height and resize.\n    (Provide EXACTLY ONE of resize_height / resize_longest_side / auto_size.)\n  - origin_at (enum, optional): \"bottom\" (default) or \"center\".\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"resize\" to wait for completion.\n\nExamples:\n  - 5 cm tall figurine: { input_task_id: \"abc-123\", resize_height: 0.05 }\n  - Auto-size:          { model_url: \"https://example.com/model.glb\", auto_size: true }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "ID of a SUCCEEDED Meshy task whose model to resize (output is GLB). Mutually exclusive with model_url."
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Public URL or data URI of a 3D model (.glb / .gltf / .obj / .fbx / .stl); output preserves the input format. Mutually exclusive with input_task_id."
+            },
+            "resize_height": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "description": "Resize to this exact height in meters. Mutually exclusive with resize_longest_side / auto_size."
+            },
+            "resize_longest_side": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "description": "Resize so the longest side matches this value in meters (aspect ratio preserved). Mutually exclusive with resize_height / auto_size."
+            },
+            "auto_size": {
+              "type": "boolean",
+              "description": "Use AI vision to estimate the real-world height and resize accordingly. Mutually exclusive with resize_height / resize_longest_side."
+            },
+            "origin_at": {
+              "type": "string",
+              "enum": [
+                "bottom",
+                "center"
+              ],
+              "description": "Origin placement after resizing: 'bottom' (default) or 'center'."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_uv_unwrap",
+        "title": "Generate UV Unwrap for a 3D Model",
+        "description": "Generate a clean, non-overlapping UV layout (\"UV white model\") for an existing 3D model — the prerequisite step before external texturing (Blender, Substance Painter, Unreal). Cost: 5 credits.\n\nThe output preserves the input geometry with fresh UV coordinates and a placeholder grey material (treated as untextured by standard tools). Quad/n-gon meshes are triangulated.\n\nLIMITS: GLB only; meshes over 40,000 faces are rejected with 400 — run meshy_remesh first to reduce polycount.\n\nProvide EXACTLY ONE of:\n  - input_task_id (string, optional): SUCCEEDED Meshy task that produced a GLB (≤40k faces). Mutually exclusive with model_url.\n  - model_url (string, optional): Public URL or data URI of a .glb model (≤40k faces). Mutually exclusive with input_task_id.\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"uv-unwrap\" to wait for completion, then meshy_download_model (format \"glb\").\n\nExamples:\n  - From a task: { input_task_id: \"abc-123\" }\n  - From a URL:  { model_url: \"https://example.com/model.glb\" }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "ID of a SUCCEEDED Meshy task that produced a GLB (≤40,000 faces). Mutually exclusive with model_url."
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Public URL or data URI of a .glb model (≤40,000 faces). ONLY .glb is supported — convert other formats first. Mutually exclusive with input_task_id."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_text_to_image",
+        "title": "Generate 2D Image from Text",
+        "description": "Generate a 2D image from a text description using Meshy AI.\n\nUseful for creating reference images that can then be used with image-to-3d or image-to-image.\n\nArgs:\n  - ai_model (enum): AI model to use - \"nano-banana\" or \"nano-banana-pro\" (required)\n  - prompt (string): Text description of the image to generate (2-600 characters, required)\n  - generate_multi_view (boolean, optional): Generate multiple viewpoint images (default: false)\n  - pose_mode (enum, optional): Pose for character images - \"a-pose\" or \"t-pose\"\n  - aspect_ratio (enum, optional): Image aspect ratio (default: \"1:1\"). Options: \"1:1\", \"16:9\", \"9:16\", \"4:3\", \"3:4\"\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"task_id\": \"abc-123-def\",\n    \"status\": \"PENDING\",\n    \"message\": \"Image generation task created...\",\n    \"estimated_time\": \"~30 seconds\"\n  }\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"text-to-image\" to check progress.\n\nExamples:\n  - Basic image: { ai_model: \"nano-banana\", prompt: \"a cute cartoon cat\" }\n  - Widescreen: { ai_model: \"nano-banana-pro\", prompt: \"fantasy landscape\", aspect_ratio: \"16:9\" }\n  - Multi-view character: { ai_model: \"nano-banana-pro\", prompt: \"game character\", generate_multi_view: true }\n\nError Handling:\n  - Returns \"InsufficientCredits\" if account needs upgrade",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "ai_model": {
+              "type": "string",
+              "enum": [
+                "nano-banana",
+                "nano-banana-2",
+                "nano-banana-pro",
+                "gpt-image-2"
+              ],
+              "description": "AI model: 'nano-banana' (3 credits), 'nano-banana-2' (6), 'nano-banana-pro' (9), or 'gpt-image-2' (9). gpt-image-2 supports only a limited set of aspect ratios."
+            },
+            "prompt": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 600,
+              "description": "Text description"
+            },
+            "generate_multi_view": {
+              "type": "boolean",
+              "default": false,
+              "description": "Generate multiple viewpoint images (front, side, back)"
+            },
+            "pose_mode": {
+              "type": "string",
+              "enum": [
+                "a-pose",
+                "t-pose"
+              ],
+              "description": "Pose mode for character images: 'a-pose' or 't-pose'"
+            },
+            "aspect_ratio": {
+              "type": "string",
+              "enum": [
+                "1:1",
+                "16:9",
+                "9:16",
+                "4:3",
+                "3:4",
+                "3:2",
+                "2:3"
+              ],
+              "default": "1:1",
+              "description": "Aspect ratio. Support is model-specific: nano-banana / nano-banana-2 / nano-banana-pro accept '1:1','16:9','9:16','4:3','3:4'; gpt-image-2 accepts ONLY '1:1','3:2','2:3' ('3:2'/'2:3' are gpt-image-2-only and rejected by the nano-banana family). Default '1:1'."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "ai_model",
+            "prompt"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_image_to_image",
+        "title": "Transform Image using AI",
+        "description": "Transform images using AI with a text prompt and reference images using Meshy AI.\n\nReference Image Input (provide ONE of these):\n  - reference_image_urls (array): 1–5 publicly accessible reference image URLs\n  - reference_file_paths (array): 1–5 absolute paths to LOCAL image files. Server reads and encodes them automatically.\n\nIMPORTANT: For local files, always use reference_file_paths instead of manually base64-encoding.\n\nOther Args:\n  - ai_model (enum): \"nano-banana\" or \"nano-banana-pro\" (required)\n  - prompt (string): Text description guiding the transformation (required)\n  - generate_multi_view (boolean, optional): Generate multiple viewpoint images (default: false)\n  - response_format (enum): Output format (default: \"markdown\")\n\nExamples:\n  - Local file: { ai_model: \"nano-banana\", prompt: \"make it a robot\", reference_file_paths: [\"/path/to/image.jpg\"] }\n  - Public URL: { ai_model: \"nano-banana\", prompt: \"make it a robot\", reference_image_urls: [\"https://...\"] }\n\nError Handling:\n  - Returns \"InvalidImageUrl\" if any reference image is not accessible\n  - Returns \"File not found\" if any file_path doesn't exist",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "ai_model": {
+              "type": "string",
+              "enum": [
+                "nano-banana",
+                "nano-banana-2",
+                "nano-banana-pro",
+                "gpt-image-2"
+              ],
+              "description": "AI model: 'nano-banana' (3 credits), 'nano-banana-2' (6), 'nano-banana-pro' (9), or 'gpt-image-2' (12 for image-to-image)."
+            },
+            "prompt": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 600,
+              "description": "Text description"
+            },
+            "reference_image_urls": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "maxItems": 5,
+              "description": "Array of 1–5 publicly accessible reference image URLs. Provide this OR reference_file_paths, not both"
+            },
+            "reference_file_paths": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "maxItems": 5,
+              "description": "Array of 1–5 absolute paths to local reference image files. The server reads and encodes them automatically"
+            },
+            "generate_multi_view": {
+              "type": "boolean",
+              "default": false,
+              "description": "Generate multiple viewpoint images (front, side, back)"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "ai_model",
+            "prompt"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "string",
+              "description": "Unique task identifier for polling with meshy_get_task_status"
+            },
+            "status": {
+              "type": "string",
+              "description": "Initial task status (typically 'PENDING')"
+            },
+            "message": {
+              "type": "string",
+              "description": "Human-readable status message"
+            },
+            "estimated_time": {
+              "type": "string",
+              "description": "Estimated completion time"
+            }
+          },
+          "required": [
+            "task_id",
+            "status",
+            "message",
+            "estimated_time"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_send_to_slicer",
+        "title": "Send Model to 3D Printing Slicer",
+        "description": "Detect installed 3D printing slicer software and return launch commands.\n\nIMPORTANT: This tool should be called as the FIRST STEP in any 3D printing workflow — before generating the model. Save the result and reuse it at the end to open the model in the user's chosen slicer.\n\nSupports 7 slicers: OrcaSlicer, Bambu Studio, Creality Print, Elegoo Slicer, Anycubic Slicer Next, PrusaSlicer, UltiMaker Cura.\nMulticolor-capable: OrcaSlicer, Bambu Studio, Creality Print, Elegoo Slicer, Anycubic Slicer Next.\n\nUsage pattern:\n1. Call this tool at the START of a print workflow to detect slicers\n2. Present detected slicers to the user\n3. Generate, analyze, optionally repair / multicolor-process, and download the model\n4. At the END, take the launch_command, replace {file} with the local file path, execute via Bash\n\nArgs:\n  - model_url (string): Download URL of the model file (can be a placeholder at detection time)\n  - slicer_type (enum): 'auto' (default, detect all) or a specific slicer\n  - file_name (string): File name for the model (default: \"meshy_model.3mf\")\n  - is_multicolor (boolean): If true, only recommends multicolor-capable slicers (default: false)\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  {\n    \"detected_slicers\": [{\"name\": \"OrcaSlicer\", \"launch_command\": \"open -a \\\"OrcaSlicer\\\" \\\"{file}\\\"\", ...}],\n    \"recommended_slicer\": {\"name\": \"...\", \"launch_command\": \"...\"},\n    \"model_url\": \"https://...\"\n  }\n\nThe launch_command contains {file} as placeholder. Replace it with the actual local file path before executing via Bash.\n\nMULTIPLE MODELS: when opening several SEPARATE/unrelated models in a slicer (e.g. results from different generation tasks), run their open commands ONE AT A TIME with a short delay (~1–2s) between them — e.g. `open -a \"Bambu Studio\" \"modelA.stl\"; sleep 2; open -a \"Bambu Studio\" \"modelB.stl\"`. Firing them at once can make the slicer (Bambu Studio especially) respond to only one. (Parts of a SINGLE model belong in one project — open those together, not spaced.)",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Download URL of the model file to send to slicer (can be a placeholder when only running detection)"
+            },
+            "slicer_type": {
+              "type": "string",
+              "enum": [
+                "auto",
+                "bambu",
+                "orcaslicer",
+                "creality_print",
+                "elegoo_slicer",
+                "anycubic_slicer",
+                "prusaslicer",
+                "cura"
+              ],
+              "default": "auto",
+              "description": "Target slicer. 'auto' (default) detects all installed slicers and recommends the best one. Specify a value to target a particular slicer."
+            },
+            "file_name": {
+              "type": "string",
+              "default": "meshy_model.3mf",
+              "description": "File name for the model (default: meshy_model.3mf)"
+            },
+            "is_multicolor": {
+              "type": "boolean",
+              "default": false,
+              "description": "If true, only recommends multicolor-capable slicers (OrcaSlicer, Bambu Studio, Creality Print, Elegoo Slicer, Anycubic Slicer Next)"
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "model_url"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": true,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_analyze_printability",
+        "title": "Analyze Model Printability (FDM)",
+        "description": "Run automated FDM printability analysis on a 3D model. Cost: FREE (0 credits).\n\nThis is the authoritative way to answer \"is this model printable / suitable for 3D printing / ready to print?\". Printability here means geometry validity — watertightness, manifold edges, holes, degenerate faces, and volume — measured by this check. It's free, so run it whenever printability is the question, then use the result to decide whether the mesh needs repair (`meshy_repair_printability`).\n\nProvide EXACTLY ONE of:\n  - input_task_id: a SUCCEEDED Meshy task. **Must use Meshy 6 or any Preview model**. Supported task types: text-to-3d, image-to-3d, multi-image-to-3d, remesh, retexture.\n  - model_url: a public URL of a 3D model file (.glb / .gltf / .obj / .fbx / .stl, max 100 MB).\n\nArgs:\n  - input_task_id (string, optional): Upstream Meshy task ID\n  - model_url (string, optional): Public model URL\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  { \"task_id\": \"...\", \"status\": \"PENDING\", ... }\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"print-analyze\" to wait for completion.\n  Once SUCCEEDED, the task object's `printability` field contains:\n    - status: \"healthy\" / \"warning\" / \"error\" / \"unknown\"\n    - issue_count, error_count, warning_count\n    - metrics: { is_watertight, volume, non_manifold_edges, degenerate_faces, holes }\n  - status=\"error\" → call meshy_repair_printability before printing.\n  - status=\"warning\" → repair is optional but recommended for FDM.\n\nExamples:\n  - From a task: { input_task_id: \"abc-123\" }\n  - From a URL:  { model_url: \"https://example.com/model.glb\" }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "ID of a SUCCEEDED upstream task to analyze (must use Meshy 6 or a Preview model). Mutually exclusive with model_url."
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Public URL of a 3D model to analyze (.glb / .gltf / .obj / .fbx / .stl, max 100 MB). Mutually exclusive with input_task_id."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_repair_printability",
+        "title": "Repair Model Topology for 3D Printing",
+        "description": "Repair a 3D model's topology issues for FDM printing — fixes non-manifold edges, degenerate faces, holes, and ensures watertightness. Cost: 10 credits.\n\nOutput format mirrors the input format:\n  - input_task_id → output is GLB\n  - model_url with .stl → output is STL\n  - model_url with .obj → output is OBJ\n  - model_url with .glb → output is GLB\n\nProvide EXACTLY ONE of:\n  - input_task_id: a SUCCEEDED Meshy task that produced a GLB asset.\n  - model_url: a public URL of a 3D model (.glb / .stl / .obj, max 100 MB).\n\nArgs:\n  - input_task_id (string, optional): Upstream Meshy task ID\n  - model_url (string, optional): Public model URL\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  { \"task_id\": \"...\", \"status\": \"PENDING\", ... }\n\nNext Steps:\n  Use meshy_get_task_status with task_id and task_type=\"print-repair\" to wait for completion.\n  Once SUCCEEDED, model_urls contains the repaired model in the same format as the input.\n  Note: textures are NOT preserved — repair operates on geometry only.\n\nExamples:\n  - From a task: { input_task_id: \"abc-123\" }\n  - From an STL: { model_url: \"https://example.com/model.stl\" }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "ID of a SUCCEEDED upstream task with a GLB asset. Output will be GLB. Mutually exclusive with model_url."
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Public URL of a 3D model to repair (.glb / .stl / .obj / .fbx / .gltf, max 100 MB). Output mirrors the input format for .glb/.stl/.obj; .fbx and .gltf are decoded and returned as repaired GLB. .fbx must be an https URL — it cannot be passed as a data: URI. Mutually exclusive with input_task_id."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_process_multicolor",
+        "title": "Process Multi-Color 3D Print",
+        "description": "Process a textured 3D model for multi-color 3D printing. Cost: 10 credits.\n\nSegments the model's texture into discrete color regions and creates a task that outputs a 3MF file ready for multi-color slicers (OrcaSlicer, Bambu Studio, Creality Print, Elegoo Slicer, Anycubic Slicer Next).\n\nPREREQUISITES:\n  - The input model MUST have textures. Run meshy_text_to_3d_refine or meshy_retexture first.\n  - A multicolor-capable slicer should be installed on the user's system.\n\nIMPORTANT: Before calling, ask the user to confirm:\n  - max_colors: depends on their printer's multi-color capability (e.g. Bambu AMS supports 4-16 colors).\n  - max_depth: affects color boundary precision and file size. Higher = finer but larger.\n\nProvide EXACTLY ONE of input_task_id / model_url.\n\nArgs:\n  - input_task_id (string, optional): Task ID of a completed TEXTURED model. Mutually exclusive with model_url.\n  - model_url (string, optional): Public URL or data URI of a textured .glb or .fbx model. Mutually exclusive with input_task_id.\n  - max_colors (number): Max colors for segmentation (1-16, default: 4). MUST confirm with user based on their printer capability.\n  - max_depth (number): Segmentation depth (3-6, default: 4). Higher = finer separation, larger file. MUST confirm with user.\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  { \"task_id\": \"...\", \"status\": \"PENDING\", ... }\n\nNext Steps:\n  1. Use meshy_get_task_status with task_id and task_type=\"multi-color-print\" to wait for completion\n  2. The completed task will have a 3MF download URL in model_urls\n  3. Use meshy_download_model with format=\"3mf\" to download\n  4. Use meshy_send_to_slicer with is_multicolor=true to open the 3MF in a multicolor slicer\n\nExamples:\n  - Default: { input_task_id: \"abc-123\" }\n  - Custom: { input_task_id: \"abc-123\", max_colors: 8, max_depth: 5 }\n  - From URL: { model_url: \"https://example.com/textured.glb\", max_colors: 6 }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "input_task_id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "ID of a SUCCEEDED textured task. Run meshy_text_to_3d_refine or meshy_retexture first if needed. Mutually exclusive with model_url."
+            },
+            "model_url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Public URL of a textured 3D model (.glb / .fbx). Mutually exclusive with input_task_id."
+            },
+            "max_colors": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 16,
+              "default": 4,
+              "description": "Maximum number of colors in the output palette (1-16, default: 4). Match this to the user's printer AMS/MMU capability."
+            },
+            "max_depth": {
+              "type": "integer",
+              "minimum": 3,
+              "maximum": 6,
+              "default": 4,
+              "description": "Quadtree depth for color precision (3-6, default: 4). Higher = finer color boundaries but larger file."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_creative_lab",
+        "title": "Creative Lab — Make a Product (end-to-end)",
+        "description": "Turn a source photo (or text prompt) into a finished Creative Lab product 3D model.\n\nProducts and cost:\n  - \"figure\" (chibi collectible), \"lamp\" (3D-printable lampshade), \"keychain\", \"fridge-magnet\",\n    \"vinyl-figure\" (vinyl-toy style), \"brick-figure\" (brick-minifigure style) → 36 credits (6 + 30)\n  - \"keycap\" (Cherry MX 1u keycap) → 62 credits (12 + 50)\n\nThis runs the full two-stage Meshy pipeline internally — concept prototype then 3D build — and returns ONLY the final 3D model. The intermediate concept image is internal and is never surfaced. One call does everything; it blocks while both stages run (typically 2–5 minutes) and reports progress.\n\nIMPORTANT: confirm the credit cost with the user before calling — and note keycap costs 62, not 36.\n\nINPUT — provide ONE source:\n  - Local image → file_path: \"/absolute/path/photo.jpg\" (.jpg/.jpeg/.png/.webp)\n  - Remote image → image_url: \"https://example.com/photo.jpg\" (or data URI)\n  - Text prompt → text: \"...\"  (ONLY \"lamp\" accepts text; every other product is image-only)\n\nArgs:\n  - product (enum, REQUIRED): \"figure\" | \"lamp\" | \"keychain\" | \"fridge-magnet\" | \"vinyl-figure\" | \"brick-figure\" | \"keycap\"\n  - image_url / file_path (string, optional): image source\n  - text (string, optional): text prompt instead of an image (lamp only; ≤800 chars)\n  - image_subject (enum, optional): \"character\" | \"landscape\" — lamp only\n  - head_size_mm (number, optional): keycap only — head longest edge in mm (10–40, default 23)\n  - base_model (string, optional): keycap only — \"cherry-mx-1x1-r1\" (the only profile today)\n  - name (string, optional): display name (≤100 chars)\n  - timeout_seconds (number): max wait per stage (default 300, max 600)\n  - response_format (enum): \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns: the final build task_id + available model formats (GLB / OBJ+MTL). Then use meshy_download_model with task_type \"creative-lab-{product}-build\" to save the model.\n\nTo multicolor-print the result: a Creative Lab model can only be sent to meshy_process_multicolor as model_url — pass its build GLB URL, or a data URI of the downloaded GLB.\n\nExamples:\n  - { product: \"figure\", file_path: \"/Users/me/portrait.jpg\" }\n  - { product: \"lamp\", text: \"a stylized owl on a branch under moonlight\" }\n  - { product: \"keycap\", file_path: \"/Users/me/cat.jpg\", head_size_mm: 25 }\n\nIf the prototype stage fails, the build is NOT started (only the prototype is charged).",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "product": {
+              "type": "string",
+              "enum": [
+                "figure",
+                "lamp",
+                "keychain",
+                "fridge-magnet",
+                "vinyl-figure",
+                "brick-figure",
+                "keycap"
+              ],
+              "description": "Creative Lab product: 'figure' (chibi collectible), 'lamp' (3D-printable lampshade), 'keychain', 'fridge-magnet', 'vinyl-figure' (vinyl-toy style), 'brick-figure' (brick-minifigure style), or 'keycap' (Cherry MX 1u keycap — costs 62 credits, not 36)."
+            },
+            "image_url": {
+              "type": "string",
+              "description": "PUBLIC image URL or data URI of the source photo (.jpg/.jpeg/.png/.webp). For local files use file_path instead."
+            },
+            "file_path": {
+              "type": "string",
+              "description": "ABSOLUTE path to a LOCAL source photo (.jpg/.jpeg/.png/.webp). PREFERRED for local files; the server auto-encodes it."
+            },
+            "text": {
+              "type": "string",
+              "maxLength": 800,
+              "description": "Text prompt instead of an image. ONLY the 'lamp' product accepts text; every other product is image-only. Provide EITHER an image (image_url/file_path) OR text. Max 800 chars."
+            },
+            "image_subject": {
+              "type": "string",
+              "enum": [
+                "character",
+                "landscape"
+              ],
+              "description": "Lamp only: subject type of the input image, 'character' or 'landscape'."
+            },
+            "head_size_mm": {
+              "type": "number",
+              "minimum": 10,
+              "maximum": 40,
+              "description": "Keycap only: scales the head's LONGEST edge to this many millimetres (10–40, default 23). This is NOT the height above the base."
+            },
+            "base_model": {
+              "type": "string",
+              "const": "cherry-mx-1x1-r1",
+              "description": "Keycap only: keycap base profile. 'cherry-mx-1x1-r1' (Cherry MX 1u) is the only value supported today."
+            },
+            "name": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Optional display name for the task (≤100 chars)."
+            },
+            "timeout_seconds": {
+              "type": "integer",
+              "minimum": 30,
+              "maximum": 600,
+              "default": 300,
+              "description": "Max seconds to wait for EACH stage (prototype, then build) before giving up. Default 300."
+            },
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "required": [
+            "product"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      },
+      {
+        "name": "meshy_check_balance",
+        "title": "Check Credit Balance",
+        "description": "Check your Meshy account credit balance.\n\nReturns the current number of credits available in your account.\n\nArgs:\n  - response_format (enum): Output format - \"markdown\" or \"json\" (default: \"markdown\")\n\nReturns:\n  { \"balance\": 150 }\n\nExamples:\n  - Check balance: {}\n  - JSON format: { response_format: \"json\" }",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "response_format": {
+              "type": "string",
+              "enum": [
+                "markdown",
+                "json"
+              ],
+              "default": "markdown",
+              "description": "Output format: 'markdown' for human-readable or 'json' for machine-readable"
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": {
+          "type": "object",
+          "properties": {
+            "balance": {
+              "type": "number",
+              "description": "Current credit balance"
+            }
+          },
+          "required": [
+            "balance"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "annotations": {
+          "readOnlyHint": true,
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true
+        },
+        "execution": {
+          "taskSupport": "forbidden"
+        }
+      }
+    ]
+  },
+  "diagnostics": {
+    "stderr_bytes_suppressed": 937,
+    "protocol_errors": 0
+  }
+}

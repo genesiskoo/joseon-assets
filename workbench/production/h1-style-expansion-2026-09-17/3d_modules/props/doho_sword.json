@@ -1,0 +1,86 @@
+{
+  "aabb_position": [
+    -0.0599999986588955,
+    -0.135000005364418,
+    -0.0219999998807907
+  ],
+  "aabb_size": [
+    0.119999997317791,
+    0.935000002384186,
+    0.0439999997615814
+  ],
+  "contract": "Grip origin (0,0,0); +Y blade tip; XY broad face; blade Y=.06..80 (0.74u); hilt .16u; no skeleton; matches current ActorVisual proxy scale",
+  "cw_winding_normal_disagreements": 0,
+  "degenerate_triangles": 0,
+  "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+  "file": "props/doho_sword.glb",
+  "id": "doho_sword",
+  "is_game_intake": false,
+  "materials": [
+    {
+      "color": [
+        0.579999923706055,
+        0.610000014305115,
+        0.639999985694885,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "matte_blade",
+      "roughness": 0.670000016689301,
+      "texture_size": []
+    },
+    {
+      "color": [
+        0.0649999976158142,
+        0.051999993622303,
+        0.0430000051856041,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "dark_wrap",
+      "roughness": 1.0,
+      "texture_size": []
+    },
+    {
+      "color": [
+        0.330000013113022,
+        0.270000010728836,
+        0.15999998152256,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "aged_brass",
+      "roughness": 0.850000023841858,
+      "texture_size": []
+    },
+    {
+      "color": [
+        0.370000004768372,
+        0.379999995231628,
+        0.400000005960464,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_dark_wood",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "sha256": "71dc18da3ce310197a630356dd13c110d4112952359e7af71b14e26309d7c33d",
+  "triangles": 250,
+  "under_500_triangles": true,
+  "vertex_aabb_position": [
+    -0.0599999986588955,
+    -0.135000005364418,
+    -0.0219999998807907
+  ],
+  "vertex_aabb_size": [
+    0.119999997317791,
+    0.935000002384186,
+    0.0439999997615814
+  ],
+  "atlas": "textures/atlas_layout.json"
+}

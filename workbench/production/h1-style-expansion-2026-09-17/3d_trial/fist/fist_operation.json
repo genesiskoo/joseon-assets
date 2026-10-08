@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-09-17T08:38:17.0872846+09:00",
+  "source": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/pre_fist/H1_doho.glb",
+  "source_sha256": "AEEDB3148D40492614106F02DEA9E818B54BE01E6D2DC3271B316CE4676B25CE",
+  "helper_source": "C:/workspace/joseon/tools/blender/rig_fix.py",
+  "helper_sha256": "794F345ED565B532C1FE4349BD37FE274B60BA1AD65FF3ED2154C1852A10FA87",
+  "socket_helper_sha256": "60AC41AD7EC4E751D3B49D8A27E224BBF8D605F76EB5AA78DDABD90DF4A70109",
+  "settings": {
+    "fist": "both",
+    "palm": "down",
+    "chin": -999,
+    "hem": 10,
+    "sash_y": -999,
+    "waist": 11,
+    "knuckle": 0.45,
+    "thumb": 110,
+    "adduct": 0.3,
+    "curl": 170
+  },
+  "scope": "H1 Doho copy only; skirt, sash and head stages excluded by out-of-range thresholds. Original game helpers and GLB unchanged.",
+  "service_calls": 0,
+  "credits": 0,
+  "completed_at": "2026-09-17T08:58:57.3608246+09:00",
+  "final": "H1_doho.glb",
+  "final_sha256": "E5FEA5C6383180D1369D5F1975F804C4F3A2DD70A608918E26593D94C2511749",
+  "transfer_proof": "fist/H1_doho_preserved.glb.fist-transfer.json",
+  "final_scope": "Official helper rest-position delta only, adjacent hand normals and 12 normal-seam duplicates. Original materials, images, node/skin/clip data preserved. Main helper and source GLB unchanged.",
+  "grip_correction_passed": true,
+  "final_visual_approval": false
+}

@@ -1,0 +1,16 @@
+config_version=5
+
+[application]
+
+config/name="Joseon Hunters Icon QA #393"
+run/main_scene="res://qa_godot.tscn"
+
+[display]
+
+window/size/viewport_width=880
+window/size/viewport_height=670
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

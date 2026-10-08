@@ -1,0 +1,8 @@
+{
+  "card": 534,
+  "cause": "Receipt inspection saw the literal deferred-marker character inside an archived Python helper.",
+  "fix": "Apply the deferred-marker guard only to actual board.py command output, never git show file bytes.",
+  "initial_scripts_preserved": true,
+  "board_deferred_response_received": false,
+  "gameplay_or_art_modified": false
+}

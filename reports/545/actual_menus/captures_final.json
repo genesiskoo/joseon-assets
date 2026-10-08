@@ -1,0 +1,192 @@
+[
+  {
+    "label": "before_H1_1280x720",
+    "kind": "before",
+    "window": "1280x720",
+    "images": [
+      {
+        "stage": "menu",
+        "path": "before_H1_1280x720/character_profiles_01_menu.png",
+        "sha256": "02ebb9a42531030ee6b503d707bbeafe81752d8b2a02b7245ba1bd52206edc54"
+      },
+      {
+        "stage": "creation",
+        "path": "before_H1_1280x720/character_profiles_02_creation.png",
+        "sha256": "3e52d16010f23e5c8bc47fcf096cc1b8d4bb856defac004ae0fbd956dee31084"
+      },
+      {
+        "stage": "selection",
+        "path": "before_H1_1280x720/character_profiles_03_selection.png",
+        "sha256": "a0a3c2c5f240cc98025652a7a32971884ea00d08239ed0defe82cb3977402094"
+      },
+      {
+        "stage": "settings",
+        "path": "before_H1_1280x720/character_profiles_04_settings.png",
+        "sha256": "bc2734822ecf862add1932c3a0f19ec57eba873fb2b56819ff52b8d8fa8644de"
+      },
+      {
+        "stage": "credits",
+        "path": "before_H1_1280x720/character_profiles_05_credits.png",
+        "sha256": "e11643edf4c3b3b429ebe2cbc964a9b92cb60b66754131b8fe434bc356f4a9c6"
+      }
+    ],
+    "production_menu_input_test": true,
+    "world_clock_pause_and_profile_state_checks": true
+  },
+  {
+    "label": "final_motgol_1280x720",
+    "kind": "motgol",
+    "window": "1280x720",
+    "images": [
+      {
+        "stage": "menu",
+        "path": "final_motgol_1280x720/character_profiles_01_menu.png",
+        "sha256": "2297d43124b38a72ca22878fdce748ac6da8cb824272ef9f8c1b0ee177cf764d"
+      },
+      {
+        "stage": "creation",
+        "path": "final_motgol_1280x720/character_profiles_02_creation.png",
+        "sha256": "973dd530e6e1660839665dbb6252b7b920e355308b666a7c29f8f62b1dc825b2"
+      },
+      {
+        "stage": "selection",
+        "path": "final_motgol_1280x720/character_profiles_03_selection.png",
+        "sha256": "913c6f47bdb7a7641348421f765554be7ee7a133583aed9a9a4c58307964f092"
+      },
+      {
+        "stage": "settings",
+        "path": "final_motgol_1280x720/character_profiles_04_settings.png",
+        "sha256": "852dcbff66261d55043f2028abdf60a091fa462e5f941bf9b0118f506194a97f"
+      },
+      {
+        "stage": "credits",
+        "path": "final_motgol_1280x720/character_profiles_05_credits.png",
+        "sha256": "b9da758d68751d99282b4a45418cfa6a4d40c635b02e0d1f0662cb832f003e1b"
+      }
+    ],
+    "render_source_sha256": {
+      "ui/title_ui.gd": "284e84ab2173df66ff38257310e90167af57760973400ba535987d97cf2b049b",
+      "ui/title_backdrop.gd": "7e8599edf95a2b92990cc87a3e9a937b1edcfc6a46b02c677f7aa9932d68565b",
+      "assets/portraits/idle/doho_h1_idle_frame0_alpha.png": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f"
+    },
+    "production_menu_input_test": true,
+    "world_clock_pause_and_profile_state_checks": true
+  },
+  {
+    "label": "final_dungeon_1280x720",
+    "kind": "dungeon",
+    "window": "1280x720",
+    "images": [
+      {
+        "stage": "menu",
+        "path": "final_dungeon_1280x720/character_profiles_01_menu.png",
+        "sha256": "5ae9f75bba87d9124fe62c589b7942c4534cb41a25745d00e631c881f653db0e"
+      },
+      {
+        "stage": "creation",
+        "path": "final_dungeon_1280x720/character_profiles_02_creation.png",
+        "sha256": "895959d82751efd2e6d8ae6316700fe225087e2765477ee8f5a85ee7cd05afd4"
+      },
+      {
+        "stage": "selection",
+        "path": "final_dungeon_1280x720/character_profiles_03_selection.png",
+        "sha256": "e5f6f95c58546be5a993c5f218c01c8869801f27ea3afc95ccadcf122b08e863"
+      },
+      {
+        "stage": "settings",
+        "path": "final_dungeon_1280x720/character_profiles_04_settings.png",
+        "sha256": "d1c2a20545e4aeea9609fa2c70174a97db323a9e7b0a6276bff9e7ceff1e9d3e"
+      },
+      {
+        "stage": "credits",
+        "path": "final_dungeon_1280x720/character_profiles_05_credits.png",
+        "sha256": "cbbb2b54c4b77e08ca9d27005255326b6c1ab39d84b1b1f5b819b7d1baf8aba9"
+      }
+    ],
+    "render_source_sha256": {
+      "ui/title_ui.gd": "284e84ab2173df66ff38257310e90167af57760973400ba535987d97cf2b049b",
+      "ui/title_backdrop.gd": "7e8599edf95a2b92990cc87a3e9a937b1edcfc6a46b02c677f7aa9932d68565b",
+      "assets/portraits/idle/doho_h1_idle_frame0_alpha.png": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f"
+    },
+    "production_menu_input_test": true,
+    "world_clock_pause_and_profile_state_checks": true
+  },
+  {
+    "label": "final_motgol_1920x1080",
+    "kind": "motgol",
+    "window": "1920x1080",
+    "images": [
+      {
+        "stage": "menu",
+        "path": "final_motgol_1920x1080/character_profiles_01_menu.png",
+        "sha256": "a3995fcea3aeb834ef0eb2c54bdcc204ee563dc0ee5531f9c304b156909f241e"
+      },
+      {
+        "stage": "creation",
+        "path": "final_motgol_1920x1080/character_profiles_02_creation.png",
+        "sha256": "fe1f0551f8784fba2891ae3e7e662c6a88ed3aead0a917dc5cbcf651f6d7b59b"
+      },
+      {
+        "stage": "selection",
+        "path": "final_motgol_1920x1080/character_profiles_03_selection.png",
+        "sha256": "a2637c1a74b53c503188a15a5b0e1c3a4a4ab349764742f117dd8342d2eb52d6"
+      },
+      {
+        "stage": "settings",
+        "path": "final_motgol_1920x1080/character_profiles_04_settings.png",
+        "sha256": "ae89fed47f0083a98baa70ac8f3d2c49f29f55ed55f8eb152b6a924840403e47"
+      },
+      {
+        "stage": "credits",
+        "path": "final_motgol_1920x1080/character_profiles_05_credits.png",
+        "sha256": "d7118020b863c21bde2c9283d74f9276a3acec0035475e5a34a86cb6fc01163c"
+      }
+    ],
+    "render_source_sha256": {
+      "ui/title_ui.gd": "284e84ab2173df66ff38257310e90167af57760973400ba535987d97cf2b049b",
+      "ui/title_backdrop.gd": "7e8599edf95a2b92990cc87a3e9a937b1edcfc6a46b02c677f7aa9932d68565b",
+      "assets/portraits/idle/doho_h1_idle_frame0_alpha.png": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f"
+    },
+    "production_menu_input_test": true,
+    "world_clock_pause_and_profile_state_checks": true
+  },
+  {
+    "label": "final_motgol_2560x1440",
+    "kind": "motgol",
+    "window": "2560x1440",
+    "images": [
+      {
+        "stage": "menu",
+        "path": "final_motgol_2560x1440/character_profiles_01_menu.png",
+        "sha256": "cc46f07789032173834de1da2b65e116430e44dea04c592f68b0cb4576da893d"
+      },
+      {
+        "stage": "creation",
+        "path": "final_motgol_2560x1440/character_profiles_02_creation.png",
+        "sha256": "bb7ad93072685c0bf109e05c83a91620e803028a8d3cf925360f2eafb7aaaff1"
+      },
+      {
+        "stage": "selection",
+        "path": "final_motgol_2560x1440/character_profiles_03_selection.png",
+        "sha256": "2587073baf40d33b2179311f9347998b1ba749200e23879a80a209bec4026508"
+      },
+      {
+        "stage": "settings",
+        "path": "final_motgol_2560x1440/character_profiles_04_settings.png",
+        "sha256": "d2e5d5688d4eb41db4832e84543c9aed1fdbbca331ae1aeabdd73764b2de295e"
+      },
+      {
+        "stage": "credits",
+        "path": "final_motgol_2560x1440/character_profiles_05_credits.png",
+        "sha256": "42c0efc0ee17280e0222773791a2b0ea1b607d1c04a42eed708ccbc45f03bb9a"
+      }
+    ],
+    "render_source_sha256": {
+      "ui/title_ui.gd": "284e84ab2173df66ff38257310e90167af57760973400ba535987d97cf2b049b",
+      "ui/title_backdrop.gd": "7e8599edf95a2b92990cc87a3e9a937b1edcfc6a46b02c677f7aa9932d68565b",
+      "assets/portraits/idle/doho_h1_idle_frame0_alpha.png": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f"
+    },
+    "production_menu_input_test": true,
+    "world_clock_pause_and_profile_state_checks": true
+  }
+]

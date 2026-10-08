@@ -1,0 +1,33 @@
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000267f9c4a5c0] Auto-inserting h264_mp4toannexb bitstream filter
+Input #0, concat, from 'C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\._tmp\629_sword_trail_v2\deliverables\629_sword_trail_before_after_60fps_concat.txt':
+  Duration: N/A, start: -0.021333, bitrate: 3010 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1280x590 [SAR 1:1 DAR 128:59], 2849 kb/s, 60 fps, 60 tbr, 15360 tbn
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.100 libx264
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 161 kb/s, start -0.021333
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Output #0, mp4, to 'C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\._tmp\629_sword_trail_v2\deliverables\629_sword_trail_before_after_60fps.mp4':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1280x590 [SAR 1:1 DAR 128:59], q=2-31, 2849 kb/s, 60 fps, 60 tbr, 15360 tbn
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.100 libx264
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 161 kb/s
+    Metadata:
+      handler_name    : SoundHandler
+Press [q] to stop, [?] for help
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000267fa039700] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 00000267f9c5ed00] Non-monotonic DTS; previous: 216064, current: 216000; changing to 216065. This may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000267fa039700] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 00000267f9c5ed00] Non-monotonic DTS; previous: 432064, current: 432000; changing to 432065. This may result in incorrect timestamps in the output file.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 00000267fa039700] Auto-inserting h264_mp4toannexb bitstream filter
+[aost#0:1/copy @ 00000267f9c5ed00] Non-monotonic DTS; previous: 648064, current: 648000; changing to 648065. This may result in incorrect timestamps in the output file.
+[mp4 @ 00000267f9eddfc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000267f9ed9840] video:6555KiB audio:353KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.429005%
+frame= 1080 fps=0.0 q=-1.0 Lsize=    6938KiB time=00:00:17.98 bitrate=3159.7kbits/s speed= 478x elapsed=0:00:00.03    

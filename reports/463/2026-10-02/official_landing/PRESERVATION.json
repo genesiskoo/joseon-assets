@@ -1,0 +1,149 @@
+{
+  "card": 463,
+  "main_landed_commit": "3d772afcb144e70f1b93597c0728dd070c16faf8",
+  "full_regression_passed": 117,
+  "full_regression_total": 117,
+  "official_wt_land": true,
+  "raw_originals": [
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/docs_landing.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/docs_landing.stdout.raw.log",
+      "sha256": "1fc303ce194e422bc1c78aa1b1cd39dc7887e28be55feb90229226ef1caa15ee",
+      "bytes": 438
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/run_1.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/run_1.stdout.raw.log",
+      "sha256": "4ae2eec42e62353ea1edeaa316167290e8685d84258208839ed6d4810f906cbf",
+      "bytes": 100303
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/STATE.after.raw.md",
+      "sha256": "ca94c8a66584efcdc27d79e490b8a938e068d20cf6f33ae56a14e5b96307dc2a",
+      "bytes": 15761
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/STATE.before.raw.md",
+      "sha256": "d9fc2c1cdced6d1b2e45d98d5616103e8e38111bbe7dd556a0fbda36aa7586de",
+      "bytes": 15710
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/assets_commit.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/assets_commit.stdout.raw.log",
+      "sha256": "5e3c95c00e79d23fcc67218cc6018ae31262ad0c6d8ce97d7b388502b48022f5",
+      "bytes": 41
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/budget.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/budget.stdout.raw.log",
+      "sha256": "7c7d8eebe0b1a133a635af5b808dc5845757efe98fd1b00d779631165747fa26",
+      "bytes": 1247
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/clean_before.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/clean_before.stdout.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/commit.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/commit.stdout.raw.log",
+      "sha256": "8f6725945bcb3499a6860ac549f35366339bc8bd8f9dcfa4793c29cbc006d8e7",
+      "bytes": 198
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/documentation_commit.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/documentation_commit.stdout.raw.log",
+      "sha256": "fa55c512a9448345e3e13adebdfac6af02c2d55521b73863a917a171d9f8fc22",
+      "bytes": 41
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/manifest.json",
+      "sha256": "34be666ef60caa09df2bca817a649724170ffecc21e67a2cd68d2dd469ac71d0",
+      "bytes": 560
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/merged_ui.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/merged_ui.stdout.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/rebase.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/rebase.stdout.raw.log",
+      "sha256": "a65a0993f0783e05109ccb4f2eae2150bfabf50cb41fe35efc33068dcd32d238",
+      "bytes": 54
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/stage.stderr.raw.log",
+      "sha256": "bee34f5ad280eb1ffabcc2e758e3d96e8db42b475f68462d6686dd985960861b",
+      "bytes": 224
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/stage.stdout.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/ui_commit.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/ui_commit.stdout.raw.log",
+      "sha256": "f13f8cdb0ab0f5c3ad5ff7b35d079ec75881b9f0e61f95f25b3982cd4e588962",
+      "bytes": 41
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/whitespace.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/463/2026-10-02/official_landing/raw/landing/state_record/whitespace.stdout.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "all_prior_failures_and_cancelled_waits_preserved": true,
+  "world_placement_connected": null,
+  "placement_followup_card": null,
+  "new_title_art_adopted_by_this_card": false,
+  "pushed": false
+}

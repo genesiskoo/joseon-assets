@@ -1,0 +1,100 @@
+[
+  {
+    "file": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/H1_doho_fist.glb",
+    "sha256": "8083ae611da1e353b77fb8025d22d9e99d1a376f68e07aa462cb03a7b82a417b",
+    "byte_length": 1501416,
+    "materials": [
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 0
+        },
+        "name": "Material_1",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          }
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 18121,
+        "triangles": 10827,
+        "aligned": 10827,
+        "opposed": 0,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": 0.3602870439856469,
+        "max_dot": 0.9999999999994207
+      }
+    ],
+    "bones": [
+      24
+    ],
+    "animations": [
+      "walk",
+      "idle",
+      "attack"
+    ],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  },
+  {
+    "file": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/3d_trial/fist/../pre_fist/H1_doho.glb",
+    "sha256": "aeedb3148d40492614106f02dea9e818b54be01e6d2dc3271b316ce4676b25ce",
+    "byte_length": 6579724,
+    "materials": [
+      {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 1
+        },
+        "name": "Material_1",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicFactor": 1,
+          "roughnessFactor": 1
+        }
+      }
+    ],
+    "meshes": [
+      {
+        "vertices": 18068,
+        "triangles": 10827,
+        "aligned": 10827,
+        "opposed": 0,
+        "degenerate": 0,
+        "nonfinite": 0,
+        "min_dot": 0.914650237666247,
+        "max_dot": 0.9999999999985723
+      }
+    ],
+    "bones": [
+      24
+    ],
+    "animations": [
+      "attack",
+      "idle",
+      "walk"
+    ],
+    "gltf_winding_convention": "CCW triangle cross product compared to average vertex normal; not Godot CW"
+  }
+]

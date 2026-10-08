@@ -1,0 +1,97 @@
+{
+  "trace_files": 6,
+  "phase_proofs": 3,
+  "all_original_sources_unchanged": true,
+  "firsts": {
+    "focused_1": {
+      "(3, 1)": {
+        "rng_body": "doho0",
+        "old": "3718673984595126131",
+        "new": "-888084381309891711",
+        "observed_at": "fields.attack_rng_state",
+        "event_seq": 767,
+        "kind": "receive_attack_after",
+        "callsite": "Enemy.receive_attack",
+        "body": "heukrang0",
+        "tick": 58,
+        "process_frame": 98,
+        "physics": false,
+        "game_relative": "0.96666666666666734"
+      },
+      "(5, 1)": {
+        "rng_body": "doho0",
+        "old": "5600093101942189313",
+        "new": "-3276735553772873825",
+        "observed_at": "fields.attack_rng_state",
+        "event_seq": 825,
+        "kind": "receive_attack_after",
+        "callsite": "Enemy.receive_attack",
+        "body": "heukrang0",
+        "tick": 63,
+        "process_frame": 111,
+        "physics": false,
+        "game_relative": "1.04999999999994030"
+      }
+    },
+    "focused_2": {
+      "(3, 1)": {
+        "rng_body": "doho0",
+        "old": "3718673984595126131",
+        "new": "-888084381309891711",
+        "observed_at": "fields.attack_rng_state",
+        "event_seq": 779,
+        "kind": "receive_attack_after",
+        "callsite": "Enemy.receive_attack",
+        "body": "heukrang0",
+        "tick": 56,
+        "process_frame": 108,
+        "physics": false,
+        "game_relative": "0.93333333333333413"
+      },
+      "(5, 1)": {
+        "rng_body": "doho0",
+        "old": "5600093101942189313",
+        "new": "-3276735553772873825",
+        "observed_at": "fields.attack_rng_state",
+        "event_seq": 840,
+        "kind": "receive_attack_after",
+        "callsite": "Enemy.receive_attack",
+        "body": "heukrang0",
+        "tick": 64,
+        "process_frame": 112,
+        "physics": false,
+        "game_relative": "1.06666666666660600"
+      }
+    },
+    "full_1": {
+      "(3, 1)": {
+        "rng_body": "doho0",
+        "old": "3718673984595126131",
+        "new": "-888084381309891711",
+        "observed_at": "fields.attack_rng_state",
+        "event_seq": 799,
+        "kind": "receive_attack_after",
+        "callsite": "Enemy.receive_attack",
+        "body": "heukrang0",
+        "tick": 56,
+        "process_frame": 107,
+        "physics": false,
+        "game_relative": "0.93333333333328028"
+      },
+      "(5, 1)": {
+        "rng_body": "doho0",
+        "old": "5600093101942189313",
+        "new": "-3276735553772873825",
+        "observed_at": "fields.attack_rng_state",
+        "event_seq": 831,
+        "kind": "receive_attack_after",
+        "callsite": "Enemy.receive_attack",
+        "body": "heukrang0",
+        "tick": 63,
+        "process_frame": 113,
+        "physics": false,
+        "game_relative": "1.04999999999994030"
+      }
+    }
+  }
+}

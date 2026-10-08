@@ -1,0 +1,57 @@
+{
+  "card": 266,
+  "candidate_only": true,
+  "game_base": "8f2cd36a60eb2da6a985d01b9b9835b62a2d74e0",
+  "run": {
+    "card": 266,
+    "step": "screenshot_text_ready",
+    "cwd": "C:/Users/FORYOUCOM/.codex/worktrees/266-peddler-gamble/joseon",
+    "argv": [
+      "powershell",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "tools/test.ps1",
+      "-E2e",
+      "-Scenario",
+      "gamble",
+      "-Windowed",
+      "-Shots"
+    ],
+    "head_before": "8f2cd36a60eb2da6a985d01b9b9835b62a2d74e0",
+    "started_utc": "2026-10-04T07:58:01.895996+00:00",
+    "exit_code": 0,
+    "head_after": "8f2cd36a60eb2da6a985d01b9b9835b62a2d74e0",
+    "finished_utc": "2026-10-04T07:58:32.235601+00:00"
+  },
+  "images": [
+    {
+      "file": "gamble_01_market_after.png",
+      "bytes": 1172512,
+      "sha256": "9c5cb7f0f8d04461969b8aa1562765d0df6478fc7b9b763bdf341ad402d129f6"
+    },
+    {
+      "file": "gamble_02_first_meet.png",
+      "bytes": 983567,
+      "sha256": "295ce017b91f0590ec3326308ae1eeed9617b3cfc680647dee380d755a10112a"
+    },
+    {
+      "file": "gamble_03_eight_offers.png",
+      "bytes": 983546,
+      "sha256": "8e23b6971b9b9f9050fd43a881bb713429fc399263402251b185931c37ef7cd5"
+    },
+    {
+      "file": "gamble_04_purchase_result.png",
+      "bytes": 975933,
+      "sha256": "31052e8aa6bba923d740ef01ae5e6a691fb08f43445e5afc20bfdbb654f5df56"
+    },
+    {
+      "file": "gamble_05_after_load.png",
+      "bytes": 986122,
+      "sha256": "6becd83a64b2eee3f975fb27fb797b4f2f733fab1713aa0e4c449368ddd8712f"
+    }
+  ],
+  "before_source": "266_review_20261004/before/market.png",
+  "initial_raw_retained": "266_review_20261004/after/"
+}

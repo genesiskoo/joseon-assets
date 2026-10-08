@@ -1,0 +1,71 @@
+{
+ "cue": "sword_swing",
+ "v": 1,
+ "prompt": "Single sharp steel sword slash through air, fast dry airy whoosh, close clean mono-compatible game effect, no impact, no voice, no music.. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.582018,
+ "lufs": "-11.5",
+ "peak": "0.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 97,
+   "sub20_pct": 43.1,
+   "dc": [
+    -0.0464,
+    -0.0462
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/sword_swing_v1.wav",
+   "duration": 0.6,
+   "lufs": "-11.5",
+   "true_peak": "0.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25667,
+   "at": 0.582,
+   "removed_ms": 18.0,
+   "floor_db": -93.1,
+   "jump_db": 34.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.04,
+   "why": "걸면 트루피크 여유가 1.0 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -12.59,
+    -12.59
+   ],
+   "intake_tp": [
+    3.17,
+    4.21
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 43.3,
+   "dc": [
+    -0.0478,
+    -0.0477
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-11.5",
+   "true_peak": "0.8"
+  },
+  "warn": [
+   "CLIP 97",
+   "SUB20 43%",
+   "DC -0.048"
+  ]
+ }
+}

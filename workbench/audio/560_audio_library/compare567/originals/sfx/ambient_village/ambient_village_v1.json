@@ -1,0 +1,62 @@
+{
+ "cue": "ambient_village",
+ "v": 1,
+ "prompt": "A deserted Korean village at night, very faint cold breeze through old wooden shutters, occasional dry wood creak, quiet spacious eerie natural ambience, no music or voices.",
+ "seconds": 12.0,
+ "influence": 0.3,
+ "loop": true,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 03:23",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 12.0,
+ "lufs": "-47.7",
+ "peak": "-24.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 59.2,
+   "dc": [
+    -0.0002,
+    -0.0004
+   ],
+   "sample_peak_db": -24.38,
+   "file": "_raw/ambient_village_v1.wav",
+   "duration": 12.0,
+   "lufs": "-47.5",
+   "true_peak": "-24.4"
+  },
+  "tail": {
+   "cut": false,
+   "why": "루프 — 끝이 처음으로 이어져 안 자른다"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.3,
+   "why": "트루피크 여유 -0.3 LU",
+   "intake_i": [
+    -47.99,
+    -48.16
+   ],
+   "intake_tp": [
+    -23.87,
+    -23.74
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 12.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -24.9,
+   "lufs": "-47.7",
+   "true_peak": "-24.9"
+  },
+  "warn": []
+ }
+}

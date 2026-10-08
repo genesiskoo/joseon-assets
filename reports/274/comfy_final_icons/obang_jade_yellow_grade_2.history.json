@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "2": {
+      "display_node": "2",
+      "node_id": "2",
+      "parent_node": null,
+      "real_node_id": "2"
+    },
+    "3": {
+      "display_node": "3",
+      "node_id": "3",
+      "parent_node": null,
+      "real_node_id": "3"
+    }
+  },
+  "outputs": {
+    "2": {
+      "images": [
+        {
+          "filename": "4ce906ddd85ee094d8698983dd8ef6b43221d05763236c87c82023f61bd06766.png",
+          "subfolder": "274",
+          "type": "output"
+        }
+      ]
+    },
+    "3": {
+      "images": [
+        {
+          "filename": "fa6f2cb7a571ff568045cd37254701b30541fbd38854ebbc01c29506bf3850d8.png",
+          "subfolder": "274",
+          "type": "output"
+        }
+      ]
+    }
+  },
+  "status": {
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "cb3ebfc3-1f7f-48a9-ac13-4bac61d4f8a2",
+          "timestamp": 1790843803613
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "cb3ebfc3-1f7f-48a9-ac13-4bac61d4f8a2",
+          "timestamp": 1790843803623
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "cb3ebfc3-1f7f-48a9-ac13-4bac61d4f8a2",
+          "timestamp": 1790843825675
+        }
+      ]
+    ],
+    "status_str": "success"
+  }
+}

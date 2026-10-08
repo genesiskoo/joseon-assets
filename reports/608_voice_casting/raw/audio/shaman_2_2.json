@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "shaman",
+    "rank": 2,
+    "voice_id": "ZjAPD4f11zlnEnZpKDgo",
+    "name": "Haemi",
+    "scene": "봉인의 이상을 감지한 할매가 도호에게 조용하고 단호하게 경고한다.",
+    "line": 1,
+    "file": "audio/shaman_2_2.mp3",
+    "request": {
+      "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "무슨 일이 벌어진 게요?",
+      "next_text": "도사 양반밖에 없소.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "3OL7YS9ddLctTMDna16b",
+    "history-item-id": "y4MgzEg4Ip420miaKuUV",
+    "character-cost": "3"
+  }
+}

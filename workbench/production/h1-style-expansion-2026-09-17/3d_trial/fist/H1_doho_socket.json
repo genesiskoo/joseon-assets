@@ -1,0 +1,21 @@
+{
+  "source_model": "H1_doho.glb",
+  "source_sha256": "E5FEA5C6383180D1369D5F1975F804C4F3A2DD70A608918E26593D94C2511749",
+  "source_report": "fist/H1_doho_fist_fist.json",
+  "helper": "renderer/tools/weapon_socket.gd",
+  "weapon_offset_pos": [
+    0.0053,
+    0.0703,
+    0.026
+  ],
+  "weapon_offset_rot_deg": [
+    1.8,
+    -174.82,
+    97.77
+  ],
+  "origin_error_m": 0.0,
+  "blade_error_deg": 0.0,
+  "bone": "RightHand",
+  "axes": "blade +Y; width +X",
+  "status": "calculated and 3 clips sampled; fine finger/cloth contact visual acceptance pending"
+}

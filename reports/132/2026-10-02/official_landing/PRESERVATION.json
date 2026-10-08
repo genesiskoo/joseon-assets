@@ -1,0 +1,69 @@
+{
+  "card": 132,
+  "main_landed_commit": "38ad71951b9a9613bc444751ee9ee743efd7f459",
+  "full_regression_passed": 117,
+  "full_regression_total": 117,
+  "official_wt_land": true,
+  "raw_originals": [
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/132_state_doc_budget/repaired.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/132_state_doc_budget/repaired.stdout.raw.log",
+      "sha256": "512ce03060b04e5e007a188907248b3ce6ac7480046513df1382173539fa22a8",
+      "bytes": 1048
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/132_state_rebase/after.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/132_state_rebase/after.stdout.raw.log",
+      "sha256": "24e8c784ea2ceba56c7289a02eb8a6e0f8e6af380d993ca966fb6816ad9a00e7",
+      "bytes": 1286
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/132_state_rebase/before.raw.md",
+      "sha256": "43a3e0431c1f470d569606316d6dc0cdaa71379072e668f7e5013fb5030177d9",
+      "bytes": 16911
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/132_state_rebase/manifest.json",
+      "sha256": "7da9ee27e07b1e8e1a52184df38b6b76c44eb4df94510fc8cdf91be06b2d0d56",
+      "bytes": 231
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/landing/queued_refresh.json",
+      "sha256": "f7893ce2301db4ada2542555a65bf7dfc3b53fdfda2089ecc4fc56d4e9a64ec3",
+      "bytes": 234
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/landing/run_1.stderr.raw.log",
+      "sha256": "60c5c43a61733bda66726cee1d5fb0cdb72ed012e9e750172bef0f7e537b0150",
+      "bytes": 72
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/landing/run_1.stdout.raw.log",
+      "sha256": "49006b8b7c8958bf87793762fea3e0d93a4378ea918244d99bc6892c9a1fa91a",
+      "bytes": 11008
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/landing/run_2.stderr.raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reports/132/2026-10-02/official_landing/raw/landing/run_2.stdout.raw.log",
+      "sha256": "8b437d833294b8e774e0666e33ae39bf67e8115bdf5e974f9bba8e98cca7d64c",
+      "bytes": 101261
+    }
+  ],
+  "all_prior_failures_and_cancelled_waits_preserved": true,
+  "world_placement_connected": false,
+  "placement_followup_card": 556,
+  "new_title_art_adopted_by_this_card": false,
+  "pushed": false
+}

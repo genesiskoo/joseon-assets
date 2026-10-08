@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "dokkaebi",
+    "rank": 3,
+    "voice_id": "ibCGc01503OQd2R6i1n1",
+    "name": "Marcus - Deep steady Baritone(Stoic)",
+    "scene": "새로 못골에 눌러앉은 거한이 도호를 보고 웃으며 말을 건다.",
+    "line": 0,
+    "file": "audio/dokkaebi_3_1.mp3",
+    "request": {
+      "text": "오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "이 터엔 누구요?",
+      "next_text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "SwtsSr9MTOMUqgHfrzum",
+    "history-item-id": "TyLaI0W8gGr0K0ERngeE",
+    "character-cost": "6"
+  }
+}

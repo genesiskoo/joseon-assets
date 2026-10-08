@@ -1,0 +1,66 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "534/hp_potion_2_rank_v3",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "9",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Use case: stylized-concept. Asset type: one isolated physical inventory potion icon for Joseon Hunters, a Korean dark fantasy ARPG. This revision must make potion power rank visually obvious at 24 pixels, not merely at large concept-art size. Painterly Diablo II Resurrected physical item art, tangible hand-crafted Korean medicine vessel, crisp dark contours, broad shaded volumes, restrained semi-matte glaze and aged metal. One soft directional light from upper-left, weak ambient fill, no rim lights or bloom. Three-quarter frontal view with only a slight view of the closed lid. The entire closed object including its SHORT attached cord fits with 8 percent empty margin. Genuine transparent background. No floor, backdrop, shadow outside the object, text, labels, numbers, frame, rarity background, sparkles, glyphs, magic glow, hands or people. No Western glass test tube or fantasy trophy. Avoid thin engraved micro-details: metal bands should each occupy 10-13 percent of vessel height and broad silhouette features must dominate. The 1x1 inventory footprint is fixed; more powerful means a heavier/wider vessel and more substantial construction, NOT a narrower taller bottle. Keep the stopper closed and physically attached. Only one item, never a comparison sheet.\n\nPRIMARY OBJECT:\nRANK TWO of three HEALTH potions. The basic rank-one anchor is a small squat earthenware Korean medicine pot with folded beige hanji lid and red cord. Make its clear next step: a considerably broader, dense round oxblood-red/brown glazed medicine jar with a WIDE rounded shoulder, very short broad neck, and a perfectly fitted flat light wooden stopper. Body width is about 85 percent of the complete object height. ONE very broad horizontal aged brass reinforcement band across the upper shoulder, strongly contrasting against the red-brown body. Clean broad pottery lower body without more metal bands. Short red knot at the right of the shoulder, short tassel that stays close to body. This is substantially better made than the earthenware basic but still inferior to the heavy two-band gold-capped rank-three jar. Plain broad lower body, only one metal shoulder band.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "Custom",
+      "model.custom_width": 1024,
+      "model.custom_height": 1024,
+      "model.background": "transparent",
+      "model.quality": "high",
+      "n": 1,
+      "seed": 5343001
+    }
+  },
+  "3": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "534/hp_potion_2_rank_v3_raw",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SplitImageWithAlpha",
+    "inputs": {
+      "image": [
+        "8",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "BiRefNetRMBG",
+    "inputs": {
+      "image": [
+        "10",
+        0
+      ],
+      "model": "BiRefNet-general",
+      "mask_blur": 0,
+      "mask_offset": 0,
+      "invert_output": false,
+      "refine_foreground": false,
+      "background": "Alpha"
+    }
+  }
+}

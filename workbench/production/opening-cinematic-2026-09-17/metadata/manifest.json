@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "date": "2026-09-17",
+  "project": "Joseon Hunters",
+  "status": "generated_complete_preliminary_sample_review_complete",
+  "authorization": "User: 시험 제작 시작해",
+  "plan": "C:/workspace/joseon/docs/design/opening_cinematic_2026-09-17.md",
+  "asset_root": "C:/workspace/joseon-assets/workbench/production/opening-cinematic-2026-09-17",
+  "estimated_video_credits": 195,
+  "actual_video_credits": null,
+  "keyframe_tool": "Built-in image_gen; actual backend model ID not exposed",
+  "keyframe_prompts": {
+    "OP11": "Use case: stylized-concept. Create ONE finished 16:9 landscape cinematic START FRAME for Joseon Hunters shot OP11, suitable for image-to-video; not a contact sheet. Image 1 is the approved character identity and drawing-style authority: ONLY Doho D03 in the RIGHTMOST COLUMN of the catalog. Ignore D01/D02. Image 2 is a supporting enlarged D03 face/costume/weapon reference, not a new character choice. Preserve D03's slim adult Korean male face, crisp slender linework, broad skin shadows, matte painted cloth. A three-quarter medium shot from chest/waist upward: Doho is left-of-center facing and looking toward screen right at the closed village market, the black gat hat fully inside frame with generous top margin. Navy/indigo robe, white collar, subdued red sash glimpsed, blue round ornaments, black hair, NO scarf. ONE sword: his anatomical RIGHT hand grips the hilt by his RIGHT shoulder, the blade passes BEHIND his neck/upper back toward his LEFT, consistent with the reference; left hand empty and low. Do not put the blade in front of his face. His lips are CLOSED with a faint knowing expression, eyebrow at rest so it can lift subtly in the video. A quiet fictional Korean Joseon market at early dawn: cool blue ambient light, weak warm light from screen right, closed wooden shutters and tiled roofs simplified behind him. Preserve character-first contrast, background less detailed and same painted medium. Cinematic framing and depth, not photorealism. No skin pores, realistic fabric grain, glossy PBR, blooming rim lights, modern objects, text, titles, signatures, panels or extra people. Not pixel art. One coherent full-bleed 16:9 frame, no black bars.",
+    "OP06": "Use case: stylized-concept. Create ONE finished 16:9 landscape cinematic START FRAME for Joseon Hunters shot OP06, suitable for image-to-video; no montage/contact sheet. Image 1 is the D03 drawing-style reference only: use the RIGHTMOST D03 column's refined linework and broad matte skin shading, but DO NOT depict Doho, his hat, sword, ornaments or costume. Image 2 is supporting evidence of the same drawing medium on ordinary older adults, not specific story-character identities to copy. Depict exactly TWO ordinary adult villagers with simple unpatterned Korean Joseon clothing in a modest wooden hanok doorway at night. Left/center: an exhausted middle-aged male villager in ivory and muted grey clothes, half-standing upright with knees still mostly straight, his anatomical left palm supported against a sturdy vertical wooden post. Right: his adult wife in a muted clay-red jeogori and teal-grey skirt, hair in simple bun; standing close and ready to help, one hand gently supporting his right forearm, her other hand clear of his body. The man has not yet sat down: a low wooden threshold seat is clearly visible just behind him, allowing one simple lowering action in the future video. Both bodies readable from mid-thigh upward, elbows and hands separated and anatomically clear. Compassionate worried faces and closed lips, no grimaces. Cool weak moonlight from upper left, a dim warm doorway interior, broad quiet shadows. Same refined drawn contours and controlled matte color planes across faces, hands, clothes, timber and tiles. Adults have distinct face shapes and ages. No lesions, gore, zombie appearance, tearful screaming, realistic pores, coarse cloth, glossy 3D/PBR, rim-light outline, swords, talismans, text, borders, logos or extra people. One coherent full-bleed 16:9 frame.",
+    "OP04": "Use case: stylized-concept. Create ONE finished 16:9 landscape cinematic START FRAME for Joseon Hunters shot OP04: an ambiguous nine-tailed SHADOW REFLECTION on a moonlit Korean village pond. The provided D03 catalog is ONLY a drawing-style reference: take the RIGHTMOST D03 column's refined contours and broad matte painterly value planes, do NOT depict any person, Doho, costume or weapon. Composition: oblique downward close view, water fills the entire frame. Faint reflected roof/eave shapes at the far top edge establish a Joseon pavilion without showing the building directly. Center-left there is a soft unreadable dark ink-like reflection core with EXACTLY NINE distinguishable long tapered trailing reflection-shapes fanning outward; airy spaces between the nine tips make them countable. They are asymmetrical organic fox-tail-like shadow bands, not leaves, feathers, tentacles, a flower or a crest. The core has NO discernible face, eyes, ears, torso, limbs or visible creature above the water. Only the reflection is seen, uncertain and folkloric. The nine tips are distinct in this starting frame and will later soften in one passing ripple. Restrained slate blue water, silver moonlit streaks far to the side, charcoal shadows. One shallow ripple crossing near the lower edge, otherwise calm surface. Crisp hand-drawn edges only on nearby water ripple contours, soft lost edges on parts of the shadow, refined painted 2D fantasy film look coherent with D03's matte style. Readable at 720p, moderate contrast so the shadow can be inspected. Mystery, not grotesque horror. No eyes, faces, standing women, actual fox bodies, glowing magical symbol, extra tails, geometric diagram, lettering, numbers, text, borders or logos. Full-bleed 16:9 landscape."
+  },
+  "keyframe_revision_prompts": {
+    "OP11_v002": "Edit this OP11 cinematic start frame, preserving the exact Doho face identity, thin drawn linework, indigo/white/red costume, single sword with right-hand shoulder grip, the same closed market, palette, lighting and overall 16:9 composition. Make ONLY two production corrections: (1) zoom the entire composition out just enough (about 12–15%) to show the entire top of the black gat hat with at least 6% empty sky above it; keep the sword tip and both ends of the hat brim fully inside the frame. Do not merely stretch the hat or shrink its shape. Extend background naturally to support the slightly wider framing. (2) close his lips fully into a tiny knowing smile with NO visible teeth, no open mouth, ready for silent animation. Keep the anatomy, face, single blade behind shoulders, right hand and ornaments unchanged. No new characters, text, logos, black bars or altered style. Refined matte drawn/painterly movie frame, not photorealistic.",
+    "OP04_v002": "Edit this water-reflection cinematic frame. Preserve the 16:9 pond view, cool night palette and absence of any visible creature. REPLACE ONLY the large furry shadow reflection with a subtler ambiguous ink-like reflection that has EXACTLY NINE thin elongated tapered branches, each with its own separate pointed tip and a clear strip of blue water between adjacent tips. The current image has only seven unambiguous branches and is too furry and too explicit; do not preserve its branch layout. Put the small unreadable core at about x=30%, y=52%. Fan the NINE slender trailing shadow bands toward these nine distinct tip zones in clockwise order: (26%,14%), (44%,13%), (59%,22%), (72%,32%), (86%,47%), (83%,60%), (70%,75%), (48%,86%), (27%,87%). These are hidden layout instructions, do not draw coordinates, lines, numbers or a diagram. There must be exactly nine discernible ends; nine, not seven, eight or ten. The bands should be organic uneven folkloric tail-like ink reflections, NOT hairy solid fox tails, tentacles, leaves or feathers. Their disconnected soft edges and small surface ripple make them clearly flat reflections on water. The central core has NO eyes, face, ears, head, body or limbs. Lighten distracting roof/post reflections immediately around the nine tips so all nine remain distinguishable. No actual tail or animal above the surface. Refined hand-drawn matte fantasy film style, restrained contrast, no text or borders. Maintain nine clear separated tips before animation.",
+    "OP04_v003": "Precise minimal edit to this pond-reflection frame. It currently contains EIGHT separate tapered shadow branches. KEEP ALL EIGHT existing branches and their current tips unchanged. ADD EXACTLY ONE additional thin shadow-reflection branch pointing LEFT at about 9 o'clock, in the empty water gap between the existing upper-left branch and the existing lower-left branch. The new ninth branch starts from the shared shadow core around x31% y46%, curves through x20% y37%, and tapers to a separate tip around x8% y34%. Keep a visible blue water gap above and below this new branch so it cannot merge with its neighbors. It is a FLAT dark ink reflection integrated with the same pond ripples, not a real tail floating above water. After this edit exactly NINE tips must be visible: existing eight plus this new ninth on the far left-middle. No removal, replacement, fusion or duplication of any existing branch. Preserve everything else: 16:9 framing, cool water, pavilion reflections, restrained hand-drawn matte style, no visible creature or face. Do not draw numbers, coordinates, labels or a diagram."
+  },
+  "selected_keyframes": {
+    "OP04": "keyframes/OP04_v003.png",
+    "OP06": "keyframes/OP06_v001.png",
+    "OP11": "keyframes/OP11_v002.png"
+  },
+  "requests": [
+    {
+      "id": "OP04",
+      "params": {
+        "model": "seedance_2_5",
+        "mode": "omni_reference",
+        "duration": 10,
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard",
+        "count": 1,
+        "use_unlim": false,
+        "prompt": "High-end stylized CG cinematic for Joseon Hunters, a fictional Korean Joseon-inspired folk fantasy. Match the approved D03 character designs and the approved environment layout. Preserve D03's refined drawn linework, simplified facial proportions, broad skin shading and matte painted surfaces across every person and environment; achieve cinematic quality through composition, lighting and motion, with no photoreal pores, micro-wrinkles, gritty fabric or glossy PBR materials, and keep background detail and contrast subordinate to the characters. Readable silhouettes, restrained volumetric light and grounded camera movement. Maintain reference geometry and palette, no modern objects, no Chinese imperial palace or Japanese samurai styling. No embedded subtitles, text, logos or interface. No dialogue, singing, chanting or lip movements. Do not introduce unrequested characters or actions.\n\nUse the start image as an exact spatial and palette guide. A locked camera looks only at the moonlit pond surface. Preserve exactly NINE separate shadow-reflection tips visible in the start frame, including the thin left-facing ninth branch at 9 o'clock. For the first 2 seconds the reflection is nearly still. Between seconds 2 and 7 ONE very shallow ripple drifts gently from the bottom toward the center; it softly warps the same nine branches without creating, merging, deleting or moving their tips into other branches. In seconds 7 to 10 the water settles, preserving the original nine-branch silhouette. The nine shapes exist exclusively as flat faint reflections on water; never materialize a creature or 3D tails above the surface. No creature movement, no face, no eyes, no head, no underwater animal. The building reflections at the top remain fixed in place. Minimal motion, no camera push or pan, no edit, no sudden wave, no text.",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "9d4e8581-8ebb-49b9-b8c6-189ed3a3bea9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OP06",
+      "params": {
+        "model": "seedance_2_5",
+        "mode": "omni_reference",
+        "duration": 10,
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard",
+        "count": 1,
+        "use_unlim": false,
+        "prompt": "High-end stylized CG cinematic for Joseon Hunters, a fictional Korean Joseon-inspired folk fantasy. Match the approved D03 character designs and the approved environment layout. Preserve D03's refined drawn linework, simplified facial proportions, broad skin shading and matte painted surfaces across every person and environment; achieve cinematic quality through composition, lighting and motion, with no photoreal pores, micro-wrinkles, gritty fabric or glossy PBR materials, and keep background detail and contrast subordinate to the characters. Readable silhouettes, restrained volumetric light and grounded camera movement. Maintain reference geometry and palette, no modern objects, no Chinese imperial palace or Japanese samurai styling. No embedded subtitles, text, logos or interface. No dialogue, singing, chanting or lip movements. Do not introduce unrequested characters or actions.\n\nUse the start image's EXACT two ordinary adult villagers, identities, clothes, body positions and existing hand contacts. Single locked medium shot. The exhausted male stands at the left, with his RIGHT hand resting against the wooden post and his LEFT arm already supported by his wife on the right, matching the image. In seconds 0–2 pause and breathe gently. In seconds 2–7 he slowly bends his knees and lowers his body a short distance toward the low wooden threshold behind him. His wife keeps the same hand around his left upper arm and follows his lowering movement to help him sit safely, never pulling him across the doorway. His post hand slides downward a little while remaining one hand. End in a calm supported seated/low resting position for seconds 7–10. Keep both faces visible, lips closed. Exactly two people, two arms and two hands per person, preserve identity, no hand fusion or growing limbs. Gentle ordinary human action, no falling, no cough, no wounds, no zombie features. No extra villagers or Doho. Preserve matte drawn contours on both people and the environment. No camera movement or cuts, no dialogue.",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "1ffd8325-7449-4d49-bfa8-da76382946b3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OP11",
+      "params": {
+        "model": "seedance_2_5",
+        "mode": "omni_reference",
+        "duration": 10,
+        "resolution": "720p",
+        "aspect_ratio": "16:9",
+        "generate_audio": false,
+        "bitrate_mode": "standard",
+        "count": 1,
+        "use_unlim": false,
+        "prompt": "High-end stylized CG cinematic for Joseon Hunters, a fictional Korean Joseon-inspired folk fantasy. Match the approved D03 character designs and the approved environment layout. Preserve D03's refined drawn linework, simplified facial proportions, broad skin shading and matte painted surfaces across every person and environment; achieve cinematic quality through composition, lighting and motion, with no photoreal pores, micro-wrinkles, gritty fabric or glossy PBR materials, and keep background detail and contrast subordinate to the characters. Readable silhouettes, restrained volumetric light and grounded camera movement. Maintain reference geometry and palette, no modern objects, no Chinese imperial palace or Japanese samurai styling. No embedded subtitles, text, logos or interface. No dialogue, singing, chanting or lip movements. Do not introduce unrequested characters or actions.\n\nUse the start frame as the sole authority for Doho's identity, face, full black gat, costume, right-hand shoulder-sword pose, environment and dawn lighting. A single 10-second continuous medium shot, slow parallel tracking as he takes only two short unhurried steps toward screen right. Keep his WHOLE hat and sword tip inside the frame, same scale and headroom as the start frame. Doho keeps ONE sword resting behind his shoulders throughout; RIGHT hand on the hilt beside anatomical RIGHT shoulder, blade pointing behind his upper back toward anatomical LEFT; empty left hand stays relaxed. No drawing, lifting, swinging or passing the sword. Around seconds 4–6 he subtly lifts one eyebrow at the quiet closed market, then relaxes. Lips firmly closed, NO visible teeth or inner mouth, NO lip movement or speaking. Preserve D03 face shape, illustrated eyes, indigo robe, white collar, muted red sash, blue round ornaments and no scarf. Minimal cloth sway and no costume morphing. Background slides very slightly due to the short track, cool dawn and weak warm screen-right light stay constant. No additional people, no action beat, no jump, no camera orbit, no cut.",
+        "medias": [
+          {
+            "role": "start_image",
+            "value": "9bc229fb-93ce-45d4-9265-4f3230d9c900"
+          }
+        ]
+      }
+    }
+  ],
+  "jobs": [
+    {
+      "index": 1,
+      "job_id": "f4824bff-09c0-4071-ba0c-47d3b65e06c5",
+      "shot": "OP04"
+    },
+    {
+      "index": 2,
+      "job_id": "3441b949-abad-4103-8101-c3105283afec",
+      "shot": "OP06"
+    },
+    {
+      "index": 3,
+      "job_id": "3ea0127f-e0fb-4056-97e1-f624f2b3afb5",
+      "shot": "OP11"
+    }
+  ],
+  "latest_status": {
+    "jobs": [
+      {
+        "index": 1,
+        "job_id": "f4824bff-09c0-4071-ba0c-47d3b65e06c5",
+        "status": "completed",
+        "type": "video",
+        "model": "seedance_2_5",
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_192904_f4824bff-09c0-4071-ba0c-47d3b65e06c5.mp4",
+        "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/9d4e8581-8ebb-49b9-b8c6-189ed3a3bea9.jpg"
+      },
+      {
+        "index": 2,
+        "job_id": "3441b949-abad-4103-8101-c3105283afec",
+        "status": "completed",
+        "type": "video",
+        "model": "seedance_2_5",
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_192909_3441b949-abad-4103-8101-c3105283afec.mp4",
+        "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/1ffd8325-7449-4d49-bfa8-da76382946b3.jpg"
+      },
+      {
+        "index": 3,
+        "job_id": "3ea0127f-e0fb-4056-97e1-f624f2b3afb5",
+        "status": "completed",
+        "type": "video",
+        "model": "seedance_2_5",
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_193313_3ea0127f-e0fb-4056-97e1-f624f2b3afb5.mp4",
+        "thumbnail_url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/9bc229fb-93ce-45d4-9265-4f3230d9c900.jpg"
+      }
+    ],
+    "summary": {
+      "total": 3,
+      "completed": 3,
+      "failed": 0,
+      "active": 0,
+      "errors": 0
+    },
+    "all_terminal": true
+  },
+  "submission_events": [
+    {
+      "shot": "OP11",
+      "attempt": 1,
+      "status": "rejected_no_job",
+      "error": "seedance_2_5 backend request failed (429): not_enough_boost_credits"
+    },
+    {
+      "shot": "OP11",
+      "attempt": 2,
+      "status": "accepted",
+      "job_id": "3ea0127f-e0fb-4056-97e1-f624f2b3afb5",
+      "note": "Same parameters; retry after OP04 reached completed. No purchase or model change."
+    }
+  ],
+  "billing_note": "Balance is shared with concurrent project work; balance difference does not isolate the video cost. Per-request estimate is 65 credits.",
+  "completed_at_utc": "2026-09-16 19:39:46 UTC",
+  "balance_observation": {
+    "initial_credits": 2897,
+    "final_credits": 2824,
+    "plan": "ultra",
+    "attribution": "Shared balance; actual cost of these jobs cannot be isolated."
+  },
+  "source_references": [
+    "C:/workspace/joseon-assets/sheets/approved-2026-09-17/catalog_doho_D01-D03.png",
+    "C:/workspace/joseon-assets/workbench/production/artwork-sequence-2026-09-17/01_doho_D03_master.png",
+    "C:/workspace/joseon-assets/workbench/production/npc-style-alignment-2026-09-17/N02_npc_trio_D03_style.png"
+  ],
+  "original_imagegen_outputs": {
+    "keyframes/OP11_v001_hat-cropped.png": "exec-7e3e4fa0-4d55-4ea4-b12b-c0077266f0ac.png",
+    "keyframes/OP11_v002.png": "exec-72739b69-ba33-484f-81cf-9b3ee9e85920.png",
+    "keyframes/OP06_v001.png": "exec-f4d2545d-fc9a-451f-84d4-1bfb2ca063fc.png",
+    "keyframes/OP04_v001_seven-visible.png": "exec-77b56016-a53c-4a95-be87-2dba5f1c566b.png",
+    "keyframes/OP04_v002.png": "exec-6204085d-17a8-41bb-8ccc-8379f080e940.png",
+    "keyframes/OP04_v003.png": "exec-01d12578-5235-420e-be4c-8eaddfc4bdbe.png"
+  },
+  "original_imagegen_output_directory": "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab93-d681-76b3-bf13-54c5196fa469/",
+  "transport": {
+    "format": "JPEG",
+    "quality": 90,
+    "max_width": 1280,
+    "max_height": 720,
+    "exact_files": "metadata/upload_refs/",
+    "png_originals_unchanged": true
+  },
+  "qa": {
+    "full_decode": "passed all 3 clips",
+    "visual_method": "21 still frames at 0.5s intervals per clip plus full-resolution 0/5/10s; root and independent agent review",
+    "full_speed_playback_approved": false,
+    "game_imported": false,
+    "OP04": {
+      "status": "conditional_candidate",
+      "findings": "9 reflection tips retained in samples; no face/body; large bend at 4.5–5.5s may look like creature motion; reduce ripple distortion"
+    },
+    "OP06": {
+      "status": "preliminary_motion_candidate_pass",
+      "findings": "2 adults and limbs remain; controlled supported sit; slight downward camera adjustment differs from locked-shot prompt"
+    },
+    "OP11": {
+      "status": "preliminary_identity_candidate_pass",
+      "findings": "Whole hat, closed lips, one sword and right-hand grip remain; acting/body movement slight; left hand and feet offscreen, cannot verify empty left hand, two steps or grounding"
+    }
+  },
+  "style_scope": "D03 branch from original pilot plan. Concurrent world-style explorations remain unselected and are not overridden.",
+  "technical_outputs": {
+    "OP04": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "nb_frames": "241"
+        }
+      ],
+      "format": {
+        "duration": "10.041667",
+        "size": "2176752"
+      }
+    },
+    "OP06": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "nb_frames": "241"
+        }
+      ],
+      "format": {
+        "duration": "10.041667",
+        "size": "1861600"
+      }
+    },
+    "OP11": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "nb_frames": "241"
+        }
+      ],
+      "format": {
+        "duration": "10.041667",
+        "size": "2899894"
+      }
+    }
+  },
+  "file_inventory": [
+    {
+      "path": "clips/OP04_v001_seedance25_720p.mp4",
+      "bytes": 2176752,
+      "sha256": "51462e1429f921978ca0573eac049d9544bf4809608fd0b22d2959e7de9d749a"
+    },
+    {
+      "path": "clips/OP06_v001_seedance25_720p.mp4",
+      "bytes": 1861600,
+      "sha256": "b8ddce8336789ac15cede4eaf18cf887784499d63c0843726a3421dc00e41a36"
+    },
+    {
+      "path": "clips/OP11_v001_seedance25_720p.mp4",
+      "bytes": 2899894,
+      "sha256": "3246ea3039483a13792f5da1079480833e58bd596400b8dcfc576e9d598a8c1a"
+    },
+    {
+      "path": "keyframes/OP04_v001_seven-visible.png",
+      "bytes": 1978302,
+      "sha256": "6bb70a7ef1539a28d2784c4dd68596a5e85333c4ad225c6e0dfbf978531bcd20",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "keyframes/OP04_v002.png",
+      "bytes": 2000523,
+      "sha256": "2caa67fd843d9338fa2fcbdb40e4975a560ac4d007b67d76ba40a92fe9abda68",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "keyframes/OP04_v003.png",
+      "bytes": 1997435,
+      "sha256": "fb02aab2ccee74522781bac1dd38eb7c2f2284fcb2020d2d3275097eea41b003",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "keyframes/OP06_v001.png",
+      "bytes": 2000296,
+      "sha256": "7db747c9462533c298dcc27c2e68f530522199fc60b825844743f751ca15584b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "keyframes/OP11_v001_hat-cropped.png",
+      "bytes": 2182098,
+      "sha256": "494602b4f53b5c1b7d1eb6dc8aa8b9ebe50d8492bd08572af7176274d5334d12",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "keyframes/OP11_v002.png",
+      "bytes": 2229732,
+      "sha256": "27e5a34f7a5f7e4e1e56db1a29bf2ef00981904f90b58672bf9153ebc2ee3d38",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "metadata/build_review.py",
+      "bytes": 1690,
+      "sha256": "e1231001fe765ad6ec63dc2075b6df7a5bc170585cb9a49305dd89df4da9622d"
+    },
+    {
+      "path": "metadata/finalize_manifest.py",
+      "bytes": 1158,
+      "sha256": "8f38c8a007d159d2f674828180fca65f12c5a1ef5daecfb69ededa7d9936bebc"
+    },
+    {
+      "path": "metadata/OP04_ffprobe.json",
+      "bytes": 398,
+      "sha256": "e9a851f9f01c18122994e6f63c8aedff7b0d7eac10f5bd1bc24949859f57eaed"
+    },
+    {
+      "path": "metadata/OP06_ffprobe.json",
+      "bytes": 398,
+      "sha256": "51779e6093c2a2860e75efb9dbb9cd9bb8d0d5609d8fb5056402a59281fd2df5"
+    },
+    {
+      "path": "metadata/OP11_ffprobe.json",
+      "bytes": 398,
+      "sha256": "7dce95db77bd41421f523f30d4433ed10d1cd3fed7f436cad2fcd6f9ee0ebad4"
+    },
+    {
+      "path": "metadata/upload_refs/OP04_v003.jpg",
+      "bytes": 193172,
+      "sha256": "452a0a117fe9399b1c6846e014d7b786256d6ab925142f194a7ff6f80360aa98",
+      "width": 1279,
+      "height": 720
+    },
+    {
+      "path": "metadata/upload_refs/OP06_v001.jpg",
+      "bytes": 180384,
+      "sha256": "1b6097ae56c6b66d450c74d3d317ec41a51d18180c643e410ce2cf3f1fefd4f5",
+      "width": 1279,
+      "height": 720
+    },
+    {
+      "path": "metadata/upload_refs/OP11_v002.jpg",
+      "bytes": 228132,
+      "sha256": "df6ca21b3b505bf9927e1bb22101feee07789b53560f4f0cd5c5571592517778",
+      "width": 1279,
+      "height": 720
+    },
+    {
+      "path": "README.md",
+      "bytes": 2388,
+      "sha256": "fa6bcd752080702bb8a71e2093dc8cddb9e3202f6073a38606fa81de8d63ac16"
+    },
+    {
+      "path": "review/OP04_00.0s.png",
+      "bytes": 763136,
+      "sha256": "67acbc25ea8b8067610f7b54262765314635cbebdaa4697bba5da4ac193ff3bc",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP04_05.0s.png",
+      "bytes": 792352,
+      "sha256": "2df22a3172b4e8a9e038eb9a6dfec82fb5ba9bd289902fde770f282f09b67378",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP04_10.0s.png",
+      "bytes": 838145,
+      "sha256": "28970c044589aaa988c1db5464e3144fcb3393d3d3388ab99070cb1e292b200f",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP04_contact_2fps.jpg",
+      "bytes": 951000,
+      "sha256": "ab1a7b8701276dc7808c2776a14cc021113b69cea2aaf439304ba56600a062f9",
+      "width": 1920,
+      "height": 1800
+    },
+    {
+      "path": "review/OP06_00.0s.png",
+      "bytes": 701499,
+      "sha256": "47bbeb589915032f1e5bbf5972a9a118b5c8cc94aacc15dd4a367317b2a5b67c",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP06_05.0s.png",
+      "bytes": 799021,
+      "sha256": "18f59a5fc910551e6e0e1a016dba03fef6eb65b286fe5c914b02eebbbb2df31d",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP06_10.0s.png",
+      "bytes": 805995,
+      "sha256": "1e62dfe6e08a8495b0e27af229a4aefc2535b9f0b061232221a1ada9c2eb116c",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP06_contact_2fps.jpg",
+      "bytes": 926212,
+      "sha256": "091fb0078b17248ddc6b0c0cde3def337ce7beac9d0b15154917193b03bc122c",
+      "width": 1920,
+      "height": 1800
+    },
+    {
+      "path": "review/OP11_00.0s.png",
+      "bytes": 932062,
+      "sha256": "cf9799c8bfb15066ab4f771529fe349757fc93c7858b2166f3a87428b0e1156a",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP11_05.0s.png",
+      "bytes": 1024059,
+      "sha256": "632a500e207fe6bdf4199c6da1b8164b626c775f1b4f1aff7eaa878f413aabeb",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP11_10.0s.png",
+      "bytes": 1012457,
+      "sha256": "0b191226802103ee863a07829a6a6b19c87c8b39c8494599a0d8256845fff500",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "path": "review/OP11_contact_2fps.jpg",
+      "bytes": 1194464,
+      "sha256": "8ec2bc69e848fd2d5767e760613e479d08fac8b04a25121dacf242f952576928",
+      "width": 1920,
+      "height": 1800
+    }
+  ]
+}

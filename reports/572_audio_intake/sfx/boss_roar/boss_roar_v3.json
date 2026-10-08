@@ -1,0 +1,69 @@
+{
+ "cue": "boss_roar",
+ "v": 3,
+ "prompt": "A terrifying huge spectral wolf deep brief roar, restrained bass. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 1.0,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:24",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.986009,
+ "lufs": "-8.4",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 2077,
+   "sub20_pct": 2.4,
+   "dc": [
+    -0.0016,
+    -0.003
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/boss_roar_v3.wav",
+   "duration": 1.0,
+   "lufs": "-8.4",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 43483,
+   "at": 0.986,
+   "removed_ms": 14.0,
+   "floor_db": -87.3,
+   "jump_db": 51.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -5.27,
+   "why": "걸면 트루피크 여유가 5.3 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -8.5,
+    -8.92
+   ],
+   "intake_tp": [
+    3.02,
+    7.87
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 2.5,
+   "dc": [
+    -0.0017,
+    -0.0031
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-8.4",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 2077"
+  ]
+ }
+}

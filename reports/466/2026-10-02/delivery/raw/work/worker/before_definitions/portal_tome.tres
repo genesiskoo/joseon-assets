@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ItemDef" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://items/item_def.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/icons_h1/town_portal.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = "portal_tome"
+display_name = "귀환부첩"
+slot = 6
+size = Vector2i(1, 2)
+min_ilvl = 1
+price = 40
+weight = 10
+dmg_min = 0.0
+dmg_max = 0.0
+defense = 0.0
+consumable = 4
+power = 1.0
+max_stack = 20
+icon = ExtResource("2")
+drop_model = "res://assets/models/props/paper_talisman.glb"
+drop_scale = 1.0
+drop_rot_deg = Vector3(0, 0, 0)
+drop_tint = Color(0.78, 0.86, 1.0, 1)
+glyph = "귀"
+color = Color(0.6,0.85,1.0,1)

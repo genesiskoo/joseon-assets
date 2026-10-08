@@ -1,0 +1,60 @@
+Generate a premium, highly readable PORTRAIT 1024 x 1536 concept of the JOSEON HUNTERS INVENTORY PANEL, code D2. The previous equal square item cards were wrong. This must demonstrate a Diablo II Resurrected-type anatomical equipment layout and a MULTI-CELL inventory, using ORIGINAL KOREAN OBJECT ART.
+
+REFERENCE 1: D1 object sheet = authoritative original item designs/materials. Use these full objects as isolated physical cutouts. The cloth, leather, steel, bamboo, jade and ceramic look three-dimensional and tactile. Do not copy the labels into cells. The navy robe is EMPTY CLOTHING, not a person.
+REFERENCE 2: equipment layout drawing contains three alternatives. ONLY THE CENTER PANEL '제안 A — 9칸' is approved. Follow those nine positions. Ignore the left old seven-slot panel and the right ten-slot panel. Translate its technical drawing into finished quiet Korean wood UI, not literal bright colored construction outlines.
+REFERENCE 3: D2R screenshot teaches occupied size and understated background ONLY. Do not copy its stone frames, Western items, extra side charms, swap tabs, glove slot, branding or copyrighted textures.
+
+OVERALL DESIGN:
+One frontal flat UI window, on a plain near-black background. Not a real photographed prop, chest, cabinet, wall or angled board. No scene, hero portrait, landscape or HUD.
+Top outside window: small title "D2 · 소지품 배치". Bottom outside: small text "9개 장비칸 · 10×4 가방 / 적용 전 시안".
+Panel is charcoal blackened Korean lacquered wood, low saturation, subtle straight timber joinery, understated small old brass corner fittings. No floral carved border, dragon border, thick raised tile frames, gold outlines on every cell, warm orange wood or decorative item backplates. Objects must be brighter and more legible than structure.
+Header inside: centered ivory calligraphic Korean "소지품", small muted vermilion X at upper right. NO labels printed on equipment slots, NO permanent tooltip or floating stats.
+Use upper-left soft neutral studio shading on the item art with clear dark-object separation. Every physical object is WHOLE and uncropped.
+
+EXACT PANEL GEOMETRY:
+Use a 432-wide ×552-high logical panel scaled uniformly about 2x, roughly x80 y210 width864 height1104 on the 1024×1536 canvas.
+Equipment rectangles use the following PANEL-LOCAL logical coordinates (only visual placement; NEVER PRINT coordinates):
+head: x188 y40 w56 h56
+amulet: x256 y54 w28 h28
+mainhand: x112 y102 w56 h84
+armor: x188 y102 w56 h84
+offhand: x264 y102 w56 h84
+left ring: x152 y192 w28 h28
+belt: x188 y192 w56 h28
+right ring: x252 y192 w28 h28
+boots: x188 y226 w56 h56.
+Thus there are precisely NINE equipment receptacles: hat on center top, tiny pendant upper right of hat, weapon left / robe center / long ink case right across chest, ring-sash-ring below, shoes center bottom. Do not add gloves, spare slots or character portrait.
+
+EQUIPPED OBJECTS in those nine receptacles:
+1 head = woven bamboo 패랭이, NOT black gat.
+2 amulet = small celadon 옥패.
+3 mainhand = the full long thin Korean 환도 saber upright, one complete blade, not a short dagger, enough margins at both ends.
+4 armor = complete navy 무명 도포, collar through hem and sleeves, empty clothing.
+5 offhand = portable tall narrow black-wood 묵함 ink case. NOT shield, talisman paper, gourd or second weapon.
+6 left ring = simple silver ring.
+7 belt = folded pale cotton sash.
+8 right ring = second simple silver ring.
+9 boots = a pair of low brown Korean leather shoes.
+Use dark recessed rectangular equipment receptacles with only a very fine subdued grey outline, no ornament inside.
+
+BAG:
+Below equipment, begins exactly local x16 y288; width400 height160. It is EXACTLY TEN COLUMNS and FOUR ROWS of square 40×40 logical cells. At 2x scale this is 800×320. Keep bag at that aspect ratio 2.5:1.
+Grid should have quiet thin cool-grey lines in EMPTY cells and thin outline around each occupied footprint; all internal grid lines inside a MULTI-CELL occupied object are HIDDEN. Empty cells near-black. Occupied footprint has a barely brighter charcoal-blue ground, not solid saturated rarity color. The item itself appears ONCE over its whole footprint, never repeated in each cell.
+Exact inventory arrangement, columns numbered 1–10 left-to-right and rows 1–4 top-to-bottom for these instructions ONLY:
+- col1 rows1–3 = ONE upright 환도 (1×3)
+- cols2–3 rows1–3 = ONE complete 무명 도포 (2×3)
+- cols4–5 rows1–2 = ONE PAIR 가죽신 (2×2)
+- cols6–7 rows1–2 = ONE 패랭이 (2×2)
+- col8 rows1–2 = ONE 묵함 (1×2)
+- col9 row1 = ONE red-brown ceramic 탕약 (1×1)
+- col10 row1 = ONE slender celadon 영약 (1×1)
+- col9 row2 = ONE 옥패 (1×1)
+- col10 row2 = ONE 은가락지 (1×1)
+- cols4–5 row3 = ONE horizontal cotton sash 무명띠 (2×1)
+- col6 row3 = ONE small folded paper 화염부, its vermilion brushmark resembles a bold flame-like seal; a physical paper object, not a flame effect.
+- cols7–10 row3 are EMPTY four independent cells.
+- row4 has TEN EMPTY independent cells.
+There are exactly 40 underlying cells. Do not make a 6×2 icon card grid. Do not let grid lines bisect sword/robe/shoes. No feet or human body attached to clothing.
+
+Below bag, ample padding, a simple four-slot consumable belt aligned left with numbers 1 2 3 4, red-brown flask in1, celadon flask in2, paper talisman in3, empty4. On the lower right a small stacked brass cash-coin symbol and "1250". Nothing else.
+All lettering restrained and readable, ivory on dark wood. This should look like a plausible high-end dark Joseon ARPG inventory screenshot mockup and clearly demonstrate PHYSICAL multi-cell inventory. Do not create a moodboard of square illustrations.

@@ -1,0 +1,10 @@
+ERROR: Node not found: "DamageCalc" (relative to "/root").
+   at: get_node (scene/main/node.cpp:1975)
+   GDScript backtrace (most recent call first):
+       [0] _capture (res://._tmp/629_sword_trail_v2/capture_trail.gd:41)
+       [1] _frames (res://._tmp/629_sword_trail_v2/capture_trail.gd:16)
+SCRIPT ERROR: Invalid assignment of property or key 'sure_hit' with value of type 'bool' on a base object of type 'null instance'.
+   at: _capture (res://._tmp/629_sword_trail_v2/capture_trail.gd:42)
+   GDScript backtrace (most recent call first):
+       [0] _capture (res://._tmp/629_sword_trail_v2/capture_trail.gd:42)
+       [1] _frames (res://._tmp/629_sword_trail_v2/capture_trail.gd:16)

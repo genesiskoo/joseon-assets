@@ -1,0 +1,45 @@
+{
+  "card": 534,
+  "asset": "mp_potion_2_clean",
+  "provider": "Comfy Cloud",
+  "model": "BiRefNet-general",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_534\\reports\\534\\comfy_gpt25\\mp_potion_2.png",
+      "role": "Generated potion source, preserve object; segment foreground and eliminate background halo.",
+      "sha256": "7dc87804e552c8f5e8c3cabca078aa7d85741be9c076b4a85877203a0b2f4f9b"
+    }
+  ],
+  "prompt_sha256": "a7e9878d469de4567354cca5d4b62d5077c12a46d8082a62208e87317dfcb4a5",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "transparent",
+  "quality": "segmentation",
+  "seed": 5342001,
+  "workflow": "background_remove",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T07:42:58.263578+00:00",
+  "prompt_id": "e048e31f-f9ff-4cd5-a0b9-56b6250ab9c3",
+  "status_response": {
+    "assigned_inference": "10.4.7.79:8080",
+    "created_at": "2026-10-01T07:43:00.735652Z",
+    "id": "e048e31f-f9ff-4cd5-a0b9-56b6250ab9c3",
+    "last_state_update": "2026-10-01T07:43:06.448462Z",
+    "status": "success",
+    "updated_at": "2026-10-01T07:43:06.448462Z"
+  },
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_transparent_pixels": true,
+  "output": "mp_potion_2_clean.png",
+  "output_sha256": "d325c2266bff0723c7d9ad9bd4844727130ac0a876b420bcd2580fcdbc576f3f",
+  "output_bytes": 1043203
+}

@@ -1,0 +1,804 @@
+{
+  "generated_utc": "2026-09-16T23:59:55.4852172Z",
+  "scope": "All published payload files; excludes package_hashes.json and package_validation.json to avoid self-reference",
+  "files": [
+    {
+      "file": "actors/actor_visual.gd",
+      "bytes": 17402,
+      "sha256": "78f6a3fe9c3c294ffcda2e6a61ca04eb8efd2565901eb3f658567129aa51234d",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "actors/model_def.gd",
+      "bytes": 4501,
+      "sha256": "3b79017517d3f0b3b2d99156e4b764203df47b133cc37d72d87292182b11925c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "audit_glb.py",
+      "bytes": 5462,
+      "sha256": "a5e4cff38e526cbff285cdbdb4a1876c6aa685800b2dba913c1c2b19ad8db44e",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "build_initial_raw.log",
+      "bytes": 448,
+      "sha256": "5e28b422f5518e7ad39646fc952f097d83cea847e6b7caac73c4aea69cb1330c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "build_modules.gd",
+      "bytes": 23070,
+      "sha256": "c6361c036b1e330ad3102e9defc3672de0b859c4a6099e742419fcc432270641",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "build_props.gd",
+      "bytes": 5147,
+      "sha256": "19956bfb987937a6e0bbf740ebc8927d934517b3fb698d00292f7a66df05639f",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "build_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "build_stdout.log",
+      "bytes": 114,
+      "sha256": "605448c3d321a6c303be0ee4ad49498e1f274c8a0d5517eb747131dc4a546a7a",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "canonical_glbs.json",
+      "bytes": 3596,
+      "sha256": "97f015858c460b92f9d18c39cf958cb84cab5ac5bae134d83b4ff2a9acadd198",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/01_dungeon_catalog.png",
+      "bytes": 205326,
+      "sha256": "1a244bf3e340e159750bdceba1026e537010a30a08501f07b0261618e447de59",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/01b_town_catalog.png",
+      "bytes": 116120,
+      "sha256": "d7813661080f2305296a859723ecbc6caa063c9e3e994c84ff3f9f1e30d14b33",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/02_town_assembly.png",
+      "bytes": 257941,
+      "sha256": "479bb92ac845fad417c944b5bf60fc3cb90a342ad636a65abe2744154f01a5b0",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/03_dungeon_assembly.png",
+      "bytes": 292065,
+      "sha256": "1a600e9de53f909fe4c91895e0eeeae331eba2d5fecac0438d4ea8126982915c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/04_occlusion_baseline.png",
+      "bytes": 289211,
+      "sha256": "f035bef6f96d6b5fb9de9eecece435d5147ec23fa0df31ff427a8da3d2bc292b",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/05_occlusion_opaque.png",
+      "bytes": 215285,
+      "sha256": "7516257fa8a37652b87561a4147e251b795055189c45ad3d62769beaf32bff69",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/06_occlusion_cutaway.png",
+      "bytes": 248918,
+      "sha256": "a54976ac59161e1d674cd921034cd26c10eaa7fd39b150bcd79353805483e54a",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/07_props_catalog.png",
+      "bytes": 58770,
+      "sha256": "d78b7420322d3789250ff7db6827eaf7977b093deea437a5168ad20b89748bbd",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/08_sword_angles.png",
+      "bytes": 45902,
+      "sha256": "cd5ea27c2bc43cdc3a58a9b82f7084fb2f612ef33b831c6b4c40d49b08dc1ee3",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/09_sword_socket.png",
+      "bytes": 291353,
+      "sha256": "b0c98fc2487f19656031d183a7b473fb80032f2ac2b1207f3001efb73b2c7921",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/10_sword_socket_closeup.png",
+      "bytes": 978197,
+      "sha256": "650ca8089a8faafd2c3b05d66c606db9843b37a735531d6d6c2bfdf369b2d271",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_attack_00.png",
+      "bytes": 973966,
+      "sha256": "533693ce90220c4e9373fea39e0f9e3b03edb5d4d9550f00588bd6bc05b6cbfb",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_attack_01.png",
+      "bytes": 968020,
+      "sha256": "06b6bd77903b2862381fbda7ce8a7afa486ebaf708a4c4aa98d570959e6f4f0f",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_attack_02.png",
+      "bytes": 967593,
+      "sha256": "2ba93a05004b4b74cbee64a76199bd4a8545357e29a1b3c2a0834116947d1214",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_idle_00.png",
+      "bytes": 977432,
+      "sha256": "c862edb76119a0b58dd9545c1dd8ae32baa3e165726960b54bde35c49c2b72b1",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_idle_01.png",
+      "bytes": 948611,
+      "sha256": "a8bce32027eb1a00993a902336e035227cc8c4bce2113f52bff65068b5e9dfad",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_idle_02.png",
+      "bytes": 972789,
+      "sha256": "309dfc0877e9274333fcc6d7c3c76d6a9c3c1707f52b7d00e4b0848811bb153c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_walk_00.png",
+      "bytes": 962571,
+      "sha256": "321e144e198e48aae8ff0ad42d4364dbfb2bd56837d06a252cbdfb01bea6cecf",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_walk_01.png",
+      "bytes": 959466,
+      "sha256": "ae4cbb8af9442100eb09e70ab34a918b4ea559a1f70b445ef4b6c9363f58e428",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/11_h1_socket_walk_02.png",
+      "bytes": 975744,
+      "sha256": "a54ff21108a9d707e586e3df367aa81d3a2a9b8517a4fb543294e8fa8061d195",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/12_town_catalog_flat_control.png",
+      "bytes": 160043,
+      "sha256": "ed9062b63ba41f8c6992c2a0deededab9bee994b4fc3d452721f21169c70d25c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/13_town_assembly_flat_control.png",
+      "bytes": 906864,
+      "sha256": "ca2e2048a024b50ef58bc3fdc20b1c3edc93035e7bceccfcf9601354f589ce2e",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "captures/14_props_catalog_flat_control.png",
+      "bytes": 46504,
+      "sha256": "49fc5d6237f80a172008b264b1911ce8c0541fd57f2c47ae0c6df8401a11080b",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "finalize_package.py",
+      "bytes": 18847,
+      "sha256": "ff495bc0b0c750a48d7bb2fabcbf231202032775173b2b4e010dfe9e5f05f9fd",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "glb_export_audit.json",
+      "bytes": 14184,
+      "sha256": "efec76cf508d66e6cb623b225d99f6eef83b500c5e5844a390d655199da66829",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "h1_hand_measured_fist.json",
+      "bytes": 1358,
+      "sha256": "24d75c499da14761d8def3d7540f43155dec2015b43e3ffe1a1bb5b5634bd2fe",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "h1_socket_correction.json",
+      "bytes": 8033,
+      "sha256": "89908192dc326f05e154a18919508efc23f9e85bfb62cf401af5d6a8c2c215b2",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "hand_measure_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "hand_measure_stdout.log",
+      "bytes": 1612,
+      "sha256": "85cfc34456db58ec5705bb4f06bfff0633e195e8bcb9156ae890dca6fc0fb9b7",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "import_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "import_stdout.log",
+      "bytes": 6930,
+      "sha256": "1502b3ce4f5abf7c2118fcdccd956acdb50f8de87d7dc0f452e90b4354f93530",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "index.html",
+      "bytes": 10960,
+      "sha256": "20a440d17a10dc7e29ddde4a30e3f45fcc4cd870b81ce4301a5657d1d6db2ef5",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 45681,
+      "sha256": "877f831fd1c58b0fc6f5515204e1cf60d16dcff8975061f4aea014a6733ed5a0",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "measure_h1_hand.py",
+      "bytes": 3141,
+      "sha256": "f3103ac9fd62caf719b885882e3b320cbd72e19d29c760cd9ab9264426be1083",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/brazier.glb",
+      "bytes": 16792,
+      "sha256": "b113591491a77b7323a8de7f271c2b0b373b30b4134bf913c462ee84074fa5a7",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/brazier.json",
+      "bytes": 1065,
+      "sha256": "1367a3442cb9a998d16dde09df71f5205027c03fdd6c0dcea274b8c127dc3935",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/door_frame.glb",
+      "bytes": 860780,
+      "sha256": "f62550f098634bd4db0d694174162082885888a5c3b861a0452025c182a850bd",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/door_frame.json",
+      "bytes": 901,
+      "sha256": "e5ef94c63431dd7ae17c6c33a695d94e5f4d0ec76f0a8127b06f69cee02b54a9",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/floor.glb",
+      "bytes": 809132,
+      "sha256": "90a56695aac08d446cbabceaaf93f4593c57e05185d64288deb03860dd8130e2",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/floor.json",
+      "bytes": 844,
+      "sha256": "3ab845d174527647bec5204aef1f3acd08ad084fea33ca53e2cb2be43f5d234f",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/market_bay.glb",
+      "bytes": 3090756,
+      "sha256": "40176b4e92849bb6e825c134cf7e641ad05512422ee32c2123bdafaca743de69",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/market_bay.json",
+      "bytes": 2656,
+      "sha256": "103fadc9b646e804d76b5db64b20b7837004ef304018fb82673aafb2209be63b",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/onggi_jar.glb",
+      "bytes": 45084,
+      "sha256": "52db80e4b80dacaa36b89367077f5914f3af6286ca3b69d1f7c68c62b4033c1e",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/onggi_jar.json",
+      "bytes": 1056,
+      "sha256": "d7da2fd63a98869b86b919b8c9cd18d8d16e4252316c7b751cf8ab13bfad4093",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/paper_sliding_door.glb",
+      "bytes": 2198220,
+      "sha256": "38458904e8da1f4f82e57751cbcb416a1e08bee5b8b1fffb69bb1ec90aa530e2",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/paper_sliding_door.json",
+      "bytes": 1767,
+      "sha256": "80ff138880e5f3ce8c122573de22f1fa2d6e6cbd6ed1e797bb9f3b36f762deaa",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/pillar.glb",
+      "bytes": 1667896,
+      "sha256": "f706c8583e5c343c45f085c77b18abb0fccbed93ef9f7f89cc193b0124893cb5",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/pillar.json",
+      "bytes": 1170,
+      "sha256": "7f404fa121d6b8fbe0f8caf5412caa939e9951bba8a67d830e4016d1f9718886",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/seal_door.glb",
+      "bytes": 894956,
+      "sha256": "5e27cf71b3b5f03dcbed55a5cf90821bd4ddd091b1a80a43487b79aaba128bb0",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/seal_door.json",
+      "bytes": 1681,
+      "sha256": "4853a828f36854ef2dc700def32f69db7a02e6919e17d02a2ad26885a977a659",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/square_paper_lantern.glb",
+      "bytes": 2182004,
+      "sha256": "667ad6b39b8fd4ecd5db9185896f65bb86525b85819376e6bccb458eeada218a",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/square_paper_lantern.json",
+      "bytes": 1834,
+      "sha256": "f3609cf27a5c2a1f1af34e6f15433676325cc871afc1c15b1f58123f3d34c3bd",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/stairs_down.glb",
+      "bytes": 4780884,
+      "sha256": "2f367c5c57e5ea7294a9bab364a8591fee9cfc11cde4964145150456a8a5f759",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/stairs_down.json",
+      "bytes": 894,
+      "sha256": "67380713cacba324b668cae87decbbe38a2813b4610d6215e0be12198bc47599",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/stairs_up.glb",
+      "bytes": 4687912,
+      "sha256": "bf2718df807bee6eb9f1add5a502890eca4ba1d11980a24bde7216055ac4327a",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/stairs_up.json",
+      "bytes": 892,
+      "sha256": "31d1255466667716b8307aed39f9bb69f425dd2588ece2020b67d63ba0eaf218",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/wall_corner.glb",
+      "bytes": 1661544,
+      "sha256": "f090ed2530fbcbd0c3f077a8794b5cace38523449bc1d2986dea4335229f8e3c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/wall_corner.json",
+      "bytes": 1044,
+      "sha256": "131c7c70f8820dd1ea76c2926ee1dec3c42b60ea6f33583b59a17b5e06234b5a",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/wall_straight.glb",
+      "bytes": 853692,
+      "sha256": "f5ff141b8dd3d7fb90ee8c6e9c01845fd9247b39719170864ad7b1ea9a746d2c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/wall_straight.json",
+      "bytes": 820,
+      "sha256": "52a56547acfd717c59188b4ea534b14fcfa2cbfe6569ed0a9ef21f74c6a1db1e",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/wood_crate.glb",
+      "bytes": 2182824,
+      "sha256": "bb5bb755228488ce874e69b65cdd3cc86f2d52b891f0ed19b1124620f706c10f",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "models/wood_crate.json",
+      "bytes": 1250,
+      "sha256": "f5e3f34b117c89ebdfaf1a2177fe490f21473c3481c9aab40ac743327f73906c",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "module_report.json",
+      "bytes": 27647,
+      "sha256": "b3e27f0632e51fde731d9a4233c66a523c512d59472ad884e00a9760c9b5f657",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "prepare_stairs.py",
+      "bytes": 2061,
+      "sha256": "6439f7ad460c4bdb21ee8897eb1e1d723b0da7a225bf6cb9028a10ad370d54b8",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "project.godot",
+      "bytes": 514,
+      "sha256": "5e2cea5b01375de017fd2618bf993a2c0aee8546b2b3b29a7193ff9c5271b2c8",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props_build_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props_build_stdout.log",
+      "bytes": 112,
+      "sha256": "8348a031e1d0287b1a97bb05b654262ba4950113736ec43376f592569b1b0e38",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props_report.json",
+      "bytes": 11744,
+      "sha256": "0396fb38a9ee4bd90d9889693a6a53508dfae4469cec36726a82cfc0e07117f2",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/bandit_club.glb",
+      "bytes": 2204244,
+      "sha256": "75bc7ac8917aa9923f4884b1d55e6e586741a55460bcdbc3f33f78ad2a637dd3",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/bandit_club.json",
+      "bytes": 1576,
+      "sha256": "54b582478488452f95a2420175467157311601cc94e360cbd2317a6f35014318",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/doho_scabbard.glb",
+      "bytes": 2198508,
+      "sha256": "e801510cc887acdee88ca91b2b58d6c0342eca2add6d68e3b49a2ec36c1b94e2",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/doho_scabbard.json",
+      "bytes": 1594,
+      "sha256": "d51db1aa3792141f9087e495764b316110f4856598e5d62c2397c8d8823ccd4a",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/doho_sword.glb",
+      "bytes": 2208388,
+      "sha256": "71dc18da3ce310197a630356dd13c110d4112952359e7af71b14e26309d7c33d",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/doho_sword.json",
+      "bytes": 2104,
+      "sha256": "f9fd72a8ef1a251da0313410ca15bcd6efa4fc5b3b4b1a71297e3b69cf252730",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/paper_talisman.glb",
+      "bytes": 40704,
+      "sha256": "871cb174d3363244b563b798ec58edff5970bf00aebf54c58b27d51fe90532c7",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "props/paper_talisman.json",
+      "bytes": 1496,
+      "sha256": "a07d158c14787bd50461e1478a6547826989432207e9478ca9f4a15daf701b46",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "publish_package.ps1",
+      "bytes": 5795,
+      "sha256": "949aa2018e7b43258a3c4d5b4daaef30794dcf2dc69c54322201101eaca626ad",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "qa_report.json",
+      "bytes": 14076,
+      "sha256": "aa8479d1619c8347699b4fb357d66d8a0ea81cf29e4900c96e86baa60739a751",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "README.md",
+      "bytes": 7582,
+      "sha256": "de35ffcd99ba9c404320286bb7ee5415cf0e808a5d36384eccb37f965045cb83",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "reference_actor/H1_doho_fist_fist.json",
+      "bytes": 734,
+      "sha256": "2bef5051a2fc0f7537ed89cfd366e7480cf0428e69f2521123413362f4b12961",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "reference_actor/H1_doho_preserved.glb",
+      "bytes": 7875840,
+      "sha256": "e5fea5c6383180d1369d5f1975f804c4f3a2dd70a608918e26593d94c2511749",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "references/current_dungeon_environment.tres",
+      "bytes": 570,
+      "sha256": "00185e08393aba0badc5dbfa393626c1f0797f5fcf1e8c7372c8f83936cc87ec",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "references/current_player_light.tscn",
+      "bytes": 205,
+      "sha256": "a586d16160ecf7ef20251fb974dd3071694b6980e1ee458816c6d3a44f291816",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "render_report.json",
+      "bytes": 11708,
+      "sha256": "5b5ff67b5c5d3ddbe1e449004505761d85ac3f7464419fc6309b2853b570e3e8",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "REPRODUCE.md",
+      "bytes": 4115,
+      "sha256": "f99ab3745747c2763cbb12d19e50db5f5903759b66af2c6cf6e93f3e89ba59b0",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "review_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "review_stdout.log",
+      "bytes": 190,
+      "sha256": "e5807250390f3ff41dcf6ebcf05f1c04fa400e8ce3c749326e81d83ff96d504d",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "review.gd",
+      "bytes": 24424,
+      "sha256": "0ee5b52edc79039b2714f806106396e66cb72c0a0fdb8c5cf3ab6c1344e99551",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "review.tscn",
+      "bytes": 163,
+      "sha256": "b6421059c1d129f67ea744b5ea146df566c8278521d9599c53da345cd99ea2c5",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "run_review.ps1",
+      "bytes": 2917,
+      "sha256": "b936bfb6141e7c30315a0c81a182e7931b63cc8d2a94ecec36725ac2eca3e93f",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "socket_import_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "socket_import_stdout.log",
+      "bytes": 7727,
+      "sha256": "a14d8965d7f47d82e9b758dcc365d4227179f55d3b7e152ed2e58ba6bf893ebe",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "socket_measure_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "socket_measure_stdout.log",
+      "bytes": 486,
+      "sha256": "4f093dfebc4f917c1fef343b8b966ac45cb9c712cc0565e7a7df93aa14c79e35",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "socket_probe_engine.log",
+      "bytes": 887,
+      "sha256": "d8868ff7910b3bb300eb23ca18812253cc26ea380ec332bc92ce25215c8c966d",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "source_preservation.json",
+      "bytes": 2580,
+      "sha256": "7f3acb7e8e6b97ac4528e52941802d3c44a534ca540fd53a2b6dca5d337809bb",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "stairs_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "stairs_stdout.log",
+      "bytes": 1573,
+      "sha256": "58a97eefa38fc41368b9e4b2bc9e41833005162693b9b563c583e1103d5defe6",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "textures/atlas_layout.json",
+      "bytes": 1340,
+      "sha256": "c2a9d996bad8da7da80ec5a899f698d6fed6e497cfb5913e42e30dcdadd321c1",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "textures/H1_matte_atlas.png",
+      "bytes": 2247949,
+      "sha256": "99bcf46f8c234308f8bf094f1165dc7a17516ec2ddcd9fceaaaa7668186727a3",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "tools/model_check.gd",
+      "bytes": 9863,
+      "sha256": "1a3d05195b7f9e64aa040eb35677784ae4003b0d7660d7a8600266c376882760",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "tools/weapon_socket.gd",
+      "bytes": 4854,
+      "sha256": "60ac41ad7ec4e751d3b49d8a27e224bbf8d605f76eb5aa78ddabd90df4a70109",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "world/iso_camera.gd",
+      "bytes": 2477,
+      "sha256": "bae01f78b7ac6060d6985607c7f5757a32e30964ecc1e7bad4b2ba9dccab2618",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "world/torch.gd",
+      "bytes": 2645,
+      "sha256": "e09359abedaa4f7da9dab235a05e41c1e60a2085fe7ca5cd1d5f117113905f31",
+      "copy_action": "added",
+      "source_destination_match": true
+    },
+    {
+      "file": "world/wall_cutaway.gdshader",
+      "bytes": 1582,
+      "sha256": "54187f24523f41393dcd4647d2abaa06232f6afc22b41c36cd3286e2fb68e18d",
+      "copy_action": "added",
+      "source_destination_match": true
+    }
+  ]
+}

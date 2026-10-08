@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\workspace\joseon\._tmp\action_554_resumed.py", line 68, in <module>
+    proc = subprocess.run(cmd, cwd=WT, env=ENV, stdin=subprocess.DEVNULL, capture_output=True, timeout=14400)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\subprocess.py", line 550, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\subprocess.py", line 1028, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\subprocess.py", line 1540, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] ������ ������ ã�� �� �����ϴ�

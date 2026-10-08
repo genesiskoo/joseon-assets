@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "2": {
+      "display_node": "2",
+      "node_id": "2",
+      "parent_node": null,
+      "real_node_id": "2"
+    }
+  },
+  "outputs": {
+    "2": {
+      "images": [
+        {
+          "filename": "bfbe5882d71a9b66d9008ac0bd16c4af34b929324218be7c0baba11c6945a420.png",
+          "subfolder": "498",
+          "type": "output"
+        }
+      ]
+    }
+  },
+  "status": {
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "048e6f69-48a4-4846-98d2-54232f34be09",
+          "timestamp": 1790946605515
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "21"
+          ],
+          "prompt_id": "048e6f69-48a4-4846-98d2-54232f34be09",
+          "timestamp": 1790946605926
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "048e6f69-48a4-4846-98d2-54232f34be09",
+          "timestamp": 1790946637046
+        }
+      ]
+    ],
+    "status_str": "success"
+  }
+}

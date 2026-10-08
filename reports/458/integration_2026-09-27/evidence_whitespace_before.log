@@ -1,0 +1,127 @@
+reports/458/integration_2026-09-27/game_patch.diff:71: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:85: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:99: space before tab in indent.
++ 	var ids := ["seal_heukrang", "seal_jangsanbeom", "seal_bulgasari"]
+reports/458/integration_2026-09-27/game_patch.diff:100: space before tab in indent.
++ 	var specimens: Array[ItemInstance] = []
+reports/458/integration_2026-09-27/game_patch.diff:101: space before tab in indent.
++ 	var before: bool = "--icon-intake-before" in OS.get_cmdline_user_args()
+reports/458/integration_2026-09-27/game_patch.diff:103: space before tab in indent.
++ 	for i in ids.size():
+reports/458/integration_2026-09-27/game_patch.diff:104: space before tab in indent.
++ 		var id: String = ids[i]
+reports/458/integration_2026-09-27/game_patch.diff:105: space before tab in indent.
++ 		var it := ItemInstance.create(ItemDb.get_def(id))
+reports/458/integration_2026-09-27/game_patch.diff:107: space before tab in indent.
++ 	t.check(await t.wait_until(func() -> bool: return _t1_tip_name(tip).contains("흑랑의 봉인패"), 1.0), "봉인패 실제 가방 호버")
+reports/458/integration_2026-09-27/game_patch.diff:108: space before tab in indent.
++ 	t.check(not tip.current_rect.intersects(tip.source_rect), "봉인패 툴팁이 원래 칸을 가리지 않음")
+reports/458/integration_2026-09-27/game_patch.diff:109: space before tab in indent.
++ 	await t.frames(2)
+reports/458/integration_2026-09-27/game_patch.diff:111: space before tab in indent.
++ 	await t.shot("seal_inventory")
+reports/458/integration_2026-09-27/game_patch.diff:112: space before tab in indent.
++ 	await t.click(grid.position + Vector2(0.5, 0.5) * bag.CELL)
+reports/458/integration_2026-09-27/game_patch.diff:113: space before tab in indent.
++ 	t.check(bag.held == specimens[0] and not inv.grid.has(specimens[0]), "봉인패 클릭 → 같은 물건 커서")
+reports/458/integration_2026-09-27/game_patch.diff:114: space before tab in indent.
++ 	await t.click(grid.position + Vector2(0.5, 0.5) * bag.CELL)
+reports/458/integration_2026-09-27/game_patch.diff:115: space before tab in indent.
++ 	t.check(bag.held == null and inv.grid.get(specimens[0]) == Vector2i.ZERO, "봉인패 되놓기 → 원래 칸")
+reports/458/integration_2026-09-27/game_patch.diff:117: space before tab in indent.
++ 	var floor_before: int = t.tree.get_nodes_in_group("floor_item").size()
+reports/458/integration_2026-09-27/game_patch.diff:118: space before tab in indent.
++ 	for i in ids.size():
+reports/458/integration_2026-09-27/game_patch.diff:119: space before tab in indent.
++ 		await t.click(grid.position + Vector2(i + 0.5, 0.5) * bag.CELL, MOUSE_BUTTON_LEFT, false, true)
+reports/458/integration_2026-09-27/game_patch.diff:121: space before tab in indent.
++ 	t.check(await t.wait_until(func() -> bool: return _t1_tip_name(tip).contains("장산범의 봉인고리"), 1.0), "좌판 열린 가방 봉인고리 실제 호버")
+reports/458/integration_2026-09-27/game_patch.diff:122: space before tab in indent.
++ 	t.check(not tip.current_rect.intersects(tip.source_rect), "봉인고리 툴팁이 원래 칸을 가리지 않음")
+reports/458/integration_2026-09-27/game_patch.diff:123: space before tab in indent.
++ 	await t.frames(2)
+reports/458/integration_2026-09-27/game_patch.diff:125: space before tab in indent.
++ 	await t.shot("seal_vendor_refused")
+reports/458/integration_2026-09-27/game_patch.diff:126: space before tab in indent.
++ 	await t.close_all()
+reports/458/integration_2026-09-27/game_patch.diff:127: space before tab in indent.
++ 	t.main.load_area(AreaDb.TOWN, 0, Level.SpawnHint.FROM_ENTRY)
+reports/458/integration_2026-09-27/game_patch.diff:129: space before tab in indent.
++ 	await t.mouse_move(bag._grid_rect().position + Vector2(2.5, 0.5) * bag.CELL)
+reports/458/integration_2026-09-27/game_patch.diff:130: space before tab in indent.
++ 	t.check(await t.wait_until(func() -> bool: return _t1_tip_name(tip).contains("불가살이의 사슬 조각"), 1.0), "회수한 사슬 조각 실제 가방 호버")
+reports/458/integration_2026-09-27/game_patch.diff:131: space before tab in indent.
++ 	await t.frames(2)
+reports/458/integration_2026-09-27/game_patch.diff:133: space before tab in indent.
++ 	await t.shot("seal_drop_recovered")
+reports/458/integration_2026-09-27/game_patch.diff:134: space before tab in indent.
++ 	await t.close_all()
+reports/458/integration_2026-09-27/game_patch.diff:242: space before tab in indent.
++ 	await process_frame
+reports/458/integration_2026-09-27/game_patch.diff:243: space before tab in indent.
++ 	_swap_space()
+reports/458/integration_2026-09-27/game_patch.diff:244: space before tab in indent.
++ 	_tooltip()
+reports/458/integration_2026-09-27/game_patch.diff:246: space before tab in indent.
++ 	print("ITEM_UI_TEST checks=%d fails=%d %s" % [_n, _fails.size(), "PASS" if _fails.is_empty() else "FAIL"])
+reports/458/integration_2026-09-27/game_patch.diff:247: space before tab in indent.
++ 	quit(0 if _fails.is_empty() else 1)
+reports/458/integration_2026-09-27/game_patch.diff:248: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:250: space before tab in indent.
++ 		item.superior = spec[0]
+reports/458/integration_2026-09-27/game_patch.diff:251: space before tab in indent.
++ 		rows = tips.item(item)
+reports/458/integration_2026-09-27/game_patch.diff:252: space before tab in indent.
++ 		_check(rows[0].text == spec[2] and rows[0].color == Color(0.92, 0.92, 0.92), "%s 이름은 흰색" % spec[1])
+reports/458/integration_2026-09-27/game_patch.diff:287: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:291: space before tab in indent.
++ 		_right_click(pos)
+reports/458/integration_2026-09-27/game_patch.diff:292: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:293: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:297: space before tab in indent.
++ 	var bar := get_parent().get_node_or_null("Bar")
+reports/458/integration_2026-09-27/game_patch.diff:298: space before tab in indent.
++ 	var i: int = bar.belt_slot_at(_mouse, true) if bar else -1
+reports/458/integration_2026-09-27/game_patch.diff:299: space before tab in indent.
++ 	if i >= 0:
+reports/458/integration_2026-09-27/game_patch.diff:300: space before tab in indent.
++ 		bar.belt_click(i, MOUSE_BUTTON_LEFT)
+reports/458/integration_2026-09-27/game_patch.diff:301: space before tab in indent.
++ 	else:
+reports/458/integration_2026-09-27/game_patch.diff:305: space before tab in indent.
++ 		_drop_held()
+reports/458/integration_2026-09-27/game_patch.diff:306: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:307: trailing whitespace.
++ 
+reports/458/integration_2026-09-27/game_patch.diff:313: space before tab in indent.
++ 		if gold < cost:
+reports/458/integration_2026-09-27/game_patch.diff:314: space before tab in indent.
++ 			price += " · 엽전 부족"
+reports/458/integration_2026-09-27/game_patch.diff:315: space before tab in indent.
++ 		rows.append(_row(price, "price", PRICE_COLOR if gold >= cost else UNAFFORDABLE_COLOR))
+reports/458/integration_2026-09-27/game_patch.diff:318: space before tab in indent.
++ 		_separator(rows)
+reports/458/integration_2026-09-27/game_patch.diff:319: space before tab in indent.
++ 		var price := "판매가 %d 엽전" % Vendor.sell_price(it)
+reports/458/integration_2026-09-27/game_patch.diff:320: space before tab in indent.
++ 		if it.def.max_stack > 1:
+reports/458/integration_2026-09-27/game_patch.diff:322: space before tab in indent.
++ 			else:
+reports/458/integration_2026-09-27/game_patch.diff:323: space before tab in indent.
++ 				hints.append("클릭 / %d: %s" % [belt_index + 1, action])
+reports/458/integration_2026-09-27/game_patch.diff:324: space before tab in indent.
++ 		"bag":
+reports/458/integration_2026-09-27/game_patch.diff:331: space before tab in indent.
++ 			if selling:
+reports/458/integration_2026-09-27/game_patch.diff:332: space before tab in indent.
++ 				if it.def.can_discard():
+reports/458/integration_2026-09-27/game_patch.diff:333: space before tab in indent.
++ 					hints.append("우클릭 / Ctrl+클릭: 모두 판매" if it.def.max_stack > 1 else "우클릭 / Ctrl+클릭: 판매")
+reports/458/integration_2026-09-27/quest_guard_fixture.gd:100: new blank line at EOF.

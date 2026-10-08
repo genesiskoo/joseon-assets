@@ -1,0 +1,67 @@
+{
+ "cue": "stone_door_sink",
+ "v": 2,
+ "prompt": "Heavy ancient stone door sinks into the floor, slow gritty stone friction and final deep stone thud, clear grounded sound with controlled bass, no earthquake, no voice or music.. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.593016,
+ "lufs": "-11.8",
+ "peak": "-1.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0001,
+    0.0002
+   ],
+   "sample_peak_db": -1.42,
+   "file": "_raw/stone_door_sink_v2.wav",
+   "duration": 0.6,
+   "lufs": "-11.8",
+   "true_peak": "-1.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26152,
+   "at": 0.593,
+   "removed_ms": 7.0,
+   "floor_db": -87.2,
+   "jump_db": 29.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.53,
+   "why": "걸면 트루피크 여유가 0.5 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -11.81,
+    -11.83
+   ],
+   "intake_tp": [
+    1.56,
+    2.07
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0001,
+    0.0002
+   ],
+   "sample_peak_db": -1.42,
+   "lufs": "-11.8",
+   "true_peak": "-1.4"
+  },
+  "warn": []
+ }
+}

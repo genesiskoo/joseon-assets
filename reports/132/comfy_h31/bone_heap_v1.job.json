@@ -1,0 +1,27 @@
+{
+  "card": 132,
+  "asset": "bone_heap",
+  "provider": "Comfy Cloud",
+  "node": "TripoImageToModelNodeV2",
+  "model": "v3.1-20260211",
+  "source": "workbench/production/dungeon_props_132/refs/bone_heap.png",
+  "source_sha256": "4c39bcab9e66dc9346055abc5f0992a45bc74b51174aa62ef9e6efbfa567d572",
+  "face_limit": 8000,
+  "estimated_usd": 0.3,
+  "estimate_source": "live node price_badge on 2026-10-01",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T06:39:41.054914+00:00",
+  "prompt_id": "16b82755-8725-490a-a008-2e18f13c14cf",
+  "status_response": {
+    "assigned_inference": "10.4.43.36:8080",
+    "created_at": "2026-10-01T06:39:43.411358Z",
+    "id": "16b82755-8725-490a-a008-2e18f13c14cf",
+    "last_state_update": "2026-10-01T06:41:56.297147Z",
+    "status": "success",
+    "updated_at": "2026-10-01T06:41:56.297147Z"
+  },
+  "output": "bone_heap_h31_raw_v1.glb",
+  "output_sha256": "95618ad5a9dc66e746d4b98dbf5a960da5b7471676306966cbf20252f17198d8",
+  "output_bytes": 1562992
+}

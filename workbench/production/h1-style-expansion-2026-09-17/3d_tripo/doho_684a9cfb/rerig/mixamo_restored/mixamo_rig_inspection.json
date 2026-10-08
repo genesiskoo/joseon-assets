@@ -1,0 +1,222 @@
+{
+  "source": "C:\\Users\\FORYOUCOM\\Downloads\\doho_684a9cfb_12k_textured_static_mixamo.fbx",
+  "source_sha256": "d9923a576eb5590a159e1cbbb111834aae16b6d7601ea944dc60ddb01b3f491d",
+  "bones": [
+    "mixamorig:Hips",
+    "mixamorig:Spine",
+    "mixamorig:Spine1",
+    "mixamorig:Spine2",
+    "mixamorig:Neck",
+    "mixamorig:Head",
+    "mixamorig:HeadTop_End",
+    "mixamorig:LeftShoulder",
+    "mixamorig:LeftArm",
+    "mixamorig:LeftForeArm",
+    "mixamorig:LeftHand",
+    "mixamorig:RightShoulder",
+    "mixamorig:RightArm",
+    "mixamorig:RightForeArm",
+    "mixamorig:RightHand",
+    "mixamorig:LeftUpLeg",
+    "mixamorig:LeftLeg",
+    "mixamorig:LeftFoot",
+    "mixamorig:LeftToeBase",
+    "mixamorig:LeftToe_End",
+    "mixamorig:RightUpLeg",
+    "mixamorig:RightLeg",
+    "mixamorig:RightFoot",
+    "mixamorig:RightToeBase",
+    "mixamorig:RightToe_End"
+  ],
+  "bone_count": 25,
+  "weight_inspection": [
+    {
+      "mesh": "tripo_node_ad1f6802",
+      "vertices": 5964,
+      "triangles": 11999,
+      "unweighted_count": 0,
+      "unweighted_indices": [],
+      "max_influences": 6,
+      "weight_sum_min": 0.9999989569187164,
+      "weight_sum_max": 1.0000001250882633,
+      "non_normalized_count": 0
+    }
+  ],
+  "textures_restored": {
+    "base": {
+      "file": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\source_extracted\\tripo_convert_ad1f6802-a6ca-47a8-9574-bf72c364943a.fbm\\tripo_node_50e3aa36-9bca-4ab2-aa5d-43149541808a_Clone_BaseColor.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "sha256": "97a45897ae5802586d8f3187cdd2b555786fed0399b6fa36ef84fe499325cd1d"
+    },
+    "roughness": {
+      "file": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\source_extracted\\tripo_convert_ad1f6802-a6ca-47a8-9574-bf72c364943a.fbm\\traditional_hanbok_3d_model_roughness.PNG",
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "436dcf3dc8ece4fe532e0d20e66e2c61456e802f847c49380ce86fb083ea9676"
+    },
+    "metallic": {
+      "file": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\source_extracted\\tripo_convert_ad1f6802-a6ca-47a8-9574-bf72c364943a.fbm\\traditional_hanbok_3d_model_metallic.PNG",
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "c41f63c206ba752d8f86a090dfb6f3b928863c20065839e5f4993ec15b1f69c1"
+    },
+    "normal": {
+      "file": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\source_extracted\\tripo_convert_ad1f6802-a6ca-47a8-9574-bf72c364943a.fbm\\tripo_node_50e3aa36-9bca-4ab2-aa5d-43149541808a_Clone_Normal_Bake.png",
+      "size": [
+        256,
+        256
+      ],
+      "sha256": "8d0bae0a9d31fda298bfb715c87ebdb7ff52d861e81b1ed3179fa09520655d16"
+    }
+  },
+  "height": 1.6999999284737077,
+  "bbox_min": [
+    -0.6421903967857361,
+    -0.2103637009859085,
+    7.185363415374013e-13
+  ],
+  "bbox_max": [
+    0.6421903371810913,
+    0.2103637158870697,
+    1.6999999284744263
+  ],
+  "scale_applied": 1.000000122058478,
+  "weight_edits": "none",
+  "material_changes": "Reconnected original BaseColor, metallic, roughness, tangent normal maps; no generated texture changes",
+  "stress_renders": [
+    {
+      "label": "rest",
+      "image": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\mixamo_restored\\rest_stress.png",
+      "bone_local_degrees": {},
+      "evaluated_bbox_min": [
+        -0.6421905159950256,
+        -0.2103637009859085,
+        -4.946932641303192e-09
+      ],
+      "evaluated_bbox_max": [
+        0.6421903967857361,
+        0.2103637158870697,
+        1.6999999284744263
+      ]
+    },
+    {
+      "label": "elbows",
+      "image": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\mixamo_restored\\elbows_stress.png",
+      "bone_local_degrees": {
+        "mixamorig:LeftForeArm": [
+          0,
+          0,
+          85
+        ],
+        "mixamorig:RightForeArm": [
+          0,
+          0,
+          -85
+        ]
+      },
+      "evaluated_bbox_min": [
+        -0.3684035837650299,
+        -0.3322533369064331,
+        -4.946932641303192e-09
+      ],
+      "evaluated_bbox_max": [
+        0.38248181343078613,
+        0.2103637158870697,
+        1.6999999284744263
+      ]
+    },
+    {
+      "label": "shoulders",
+      "image": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\mixamo_restored\\shoulders_stress.png",
+      "bone_local_degrees": {
+        "mixamorig:LeftArm": [
+          0,
+          0,
+          60
+        ],
+        "mixamorig:RightArm": [
+          0,
+          0,
+          -60
+        ]
+      },
+      "evaluated_bbox_min": [
+        -0.41502997279167175,
+        -0.4391914904117584,
+        -4.946932641303192e-09
+      ],
+      "evaluated_bbox_max": [
+        0.4138450026512146,
+        0.2103637158870697,
+        1.6999999284744263
+      ]
+    },
+    {
+      "label": "legs",
+      "image": "C:\\workspace\\joseon\\tmp\\tripo_mixamo_compare\\new_684a9cfb\\mixamo_restored\\legs_stress.png",
+      "bone_local_degrees": {
+        "mixamorig:LeftUpLeg": [
+          -55,
+          0,
+          0
+        ],
+        "mixamorig:LeftLeg": [
+          85,
+          0,
+          0
+        ],
+        "mixamorig:RightUpLeg": [
+          20,
+          0,
+          0
+        ],
+        "mixamorig:RightLeg": [
+          20,
+          0,
+          0
+        ]
+      },
+      "evaluated_bbox_min": [
+        -0.6421905159950256,
+        -0.5874117016792297,
+        0.10718708485364914
+      ],
+      "evaluated_bbox_max": [
+        0.6421903967857361,
+        0.4346468448638916,
+        1.6999999284744263
+      ]
+    }
+  ],
+  "glb_export": "export_all_influences=True; original maximum 6 weights preserved",
+  "visual_verdict": "NOT FINAL APPROVED; white patch cause requires distinction. Clay test does not confirm previously claimed penetration. See diagnostic_clay_report.json. Full animation QA remains incomplete.",
+  "actual_clip_review": {
+    "retarget": "Godot global rest-space delta retarget; base Armature rotation/scale applied in separate canonical copy first",
+    "walk": "1.33s in place; white triangular patches visible at 25% and 50%, front panel separation at 75%",
+    "attack": "2.03s; white patches/panel intersections visible at 50%",
+    "rejected": "Unapplied original Armature transform produced lying-down axis error; separate rejected_axis_doho_mixamo25_walk_attack.glb is NOT usable",
+    "usable_for_review": "doho_mixamo25_walk_attack_preview.glb",
+    "production_status": "candidate only; not approved"
+  },
+  "diagnostic_correction": {
+    "test": "Same walk50/attack50 poses, camera and lighting; all meshes overridden in-memory with uniform roughness1 metallic0 gray material, no texture or normal maps. No source assets modified.",
+    "images": [
+      "diagnostic_clay_walk_50.png",
+      "diagnostic_clay_attack_50.png"
+    ],
+    "observations": {
+      "walk50": "The small high-contrast white triangles on the upper front robe no longer stand out as separate triangular holes in clay. The corresponding panel surfaces appear continuous at this view.",
+      "attack50": "The high-contrast white marks disappear. Broad polygonal/faceted shading on the left front flap remains even without a normal map, evidencing coarse geometry/normals; robe layers still overlap."
+    },
+    "conclusion": "The white color contrast is material/texture-dependent; these two clay views do not establish actual triangle holes or weight-driven interpenetration at the marked spots. Earlier categorical labeling of those white triangles as penetration is retracted. Coarse geometry/faceted shading and cloth layer overlap remain separate observations, but intersection-free motion cannot be certified from two views.",
+    "next_if_needed": "Read-only UV/base-color sampling or isolated-layer/depth diagnostics would be needed to distinguish painted white patches versus exposed light inner cloth; no further tests executed.",
+    "weight_verdict": "No evidence that local weight smoothing solves the marks; keep rejected candidate rejected. Do not modify weights solely to fix the white patches."
+  }
+}

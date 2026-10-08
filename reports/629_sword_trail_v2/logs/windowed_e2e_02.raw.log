@@ -1,0 +1,80 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(sword_trail_v2,vfx_cues,skill_tiers,attack_chain,aoe_skills,aoe_skills_2,invisible_sword,weapon_visibility,vfx_cap_blood,pack_perf)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (5.9초)
+== e2e (sword_trail_v2,vfx_cues,skill_tiers,attack_chain,aoe_skills,aoe_skills_2,invisible_sword,weapon_visibility,vfx_cap_blood,pack_perf · 단독(창 모드) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon","--","--e2e=sword_trail_v2,vfx_cues,skill_tiers,attack_chain,aoe_skills,aoe_skills_2,invisible_sword,weapon_visibility,vfx_cap_blood,pack_perf"],"phase_arg":"sword_trail_v2,vfx_cues,skill_tiers,attack_chain,aoe_skills,aoe_skills_2,invisible_sword,weapon_visibility,vfx_cap_blood,pack_perf","phase_tokens":["sword_trail_v2","vfx_cues","skill_tiers","attack_chain","aoe_skills","aoe_skills_2","invisible_sword","weapon_visibility","vfx_cap_blood","pack_perf"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":44200,"launched_utc":"2026-10-05T14:49:57.3359780Z"}
+E2E start: sword_trail_v2, vfx_cues, skill_tiers, attack_chain, aoe_skills, aoe_skills_2, invisible_sword, weapon_visibility, vfx_cap_blood, pack_perf
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ sword_trail_v2
+  · 검광 치명: 피해 8 · 그림 true · 금니 true · 표본 9
+  · 검광 일반: 피해 5 · 그림 true · 금니 false · 표본 9
+  · 검광 빗나감: 피해 0 · 그림 true · 금니 false · 표본 9
+  · 검광 사거리 밖: 피해 0 · 그림 true · 금니 false · 표본 9
+  · 검광 면역: 피해 0 · 그림 true · 금니 false · 표본 9
+E2E sword_trail_v2 PASS (검사 93)
+E2E ▶ vfx_cues
+  · 선딜 시트 pos=(44.5, 0.030391, 56.5) 적=(44.5, 0.000391, 56.5) 화면=(593.7165, 331.6754) visible=true frame=9/23
+  · 처치 5연속: 동시 단발 최고 19/24 · body_fall 5 · hit_spark 0
+  · 레벨업 道: 발 위 4.30 · 칸 15장 · 흩어짐 0.34(1.55초) · 사라짐 2.03초
+  · 흑랑 포효: 怒 발 위 2.74 · 먹 파문 시트 4장(바깥 흰 테 + 검은 먹 · 안쪽 흰 테 + 검은 먹) · 카메라 킥 0.2 · 怒 사라짐 1.43초
+  · 포효 怒 높이: 몸 꼭대기 흑랑 1.74 · 구미호 2.17 · 장산범 2.10 · 불가살이 2.33 (+1.0 = 怒 가운데)
+  · 寶(유니크 + 봉인 조각 한 무리): 寶 1번 · 착지 큐 1번 · 유니크가 앉은 뒤 1.75초에 사라짐
+  · 루프 103 · 단발 2
+E2E vfx_cues PASS (검사 151)
+E2E ▶ skill_tiers
+  · Lv1: 반경 2.50 → 2.50(배수 1.00) · 타수 1 · 이펙트 등급 0(화면 판단)
+  · Lv5: 반경 2.50 → 3.50(배수 1.40) · 타수 1 · 이펙트 등급 1(화면 판단)
+  · Lv10: 반경 2.50 → 3.50(배수 1.40) · 타수 2 · 이펙트 등급 2(화면 판단)
+E2E skill_tiers PASS (검사 72)
+E2E ▶ attack_chain
+  · ① 칸 [0, 1, 2, 0, 1] · 클립 ["attack", "attack2", "attack3", "attack", "attack2"] · 섞기 ["0.12", "0.10", "0.10", "0.10", "0.10"]
+E2E attack_chain PASS (검사 21)
+E2E ▶ aoe_skills
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 도호 (47.32843, 0.0, 59.32843) (화면 아래 4.0u) · 트임 4.0
+  · 도약 베기 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&""] · 죽음 [&"gibs", &"slide", &"cleave"] · 경직 [0.6, 0.6, 0.6]
+  · fire 진 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&"fire"] · 죽음 [&"ash"] · 틱 5
+  · cold 진 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&"cold"] · 죽음 [&"shatter"] · 틱 10
+E2E aoe_skills PASS (검사 66)
+E2E ▶ aoe_skills_2
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 트임 3.6 · 화면 위쪽 (-0.707107, 0.0, -0.707107)
+  · 찌르기 요약 — 맞음 3/7 [0, 1, 4] · 죽음 3 · 막타 [&"slashed"] · 칼이 닿기까지 0.33초 · 동작 0.63초
+  · 칼바람 요약 — 바퀴 9(누른 동안 9) · 박자 0.300초 · 도력 18.0 · 맞힌 합 28 · 맞음 7/7 · 죽음 4 [&"slide", &"cleave"] · 앞으로 6.4u · 뗀 뒤 0.23초에 섬
+  · 흩뿌리기 요약 — 장당 맞힌 수 [3, 1, 1] · 맞음 3/7 · 죽음 2 [&"ash"]
+  · 부적 비 요약 — 6장 · 맞음 7/7 · 죽음 4 [&"ash"] · 버티는 몸 타는 중 3
+E2E aoe_skills_2 PASS (검사 68)
+E2E ▶ invisible_sword
+  · ① 순서(시작 뒤 초) 평타 0.00 → 참격 0.60 → 평타 1.93 → 참격 2.53 → 평타 3.87 → 참격 4.47 → 평타 5.80 → 참격 6.40
+  · ④ 옛 자리 ↔ 새 자리 24.0유닛 · 층 이동 뒤 피해 0 (옛 자리 허수아비 0) · 곁들이 []
+  · ② 평타 — 시작 뒤 0.22초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 참격 — 시작 뒤 0.32초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 회오리 — 시작 뒤 0.17초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 돌진 · 떠나기 전 — 시작 뒤 0.12초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 돌진 · 도약 중 — 시작 뒤 0.47초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 부적 시전 — 시작 뒤 0.27초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · 거름: 표식 없는 마우스 이벤트 29개 막음 (#369 — 창 모드면 진짜 커서, --e2e-gate 헤드리스면 대본이 표식 없이 넣은 것)
+E2E invisible_sword PASS (검사 68)
+E2E ▶ weapon_visibility
+E2E weapon_visibility PASS (검사 25)
+E2E ▶ vfx_cap_blood
+  · #395 (고친 뒤) — 둘째 킬 직전 살아 있는 단발 22/24(장식성 패딩 17개) · 새로 생겼나=true · 킬 뒤 살아있는 단발 24 · 피 전용 4/24
+E2E vfx_cap_blood PASS (검사 3)
+E2E ▶ pack_perf
+  · 성능 | N=10(산 10) process 34.76ms + physics 8.38ms = 43.14ms/프레임
+  · 성능 | N=20(산 20) process 20.90ms + physics 3.21ms = 24.11ms/프레임
+  · 성능 | N=30(산 30) process 27.29ms + physics 5.10ms = 32.39ms/프레임
+  · 성능 | N=40(산 40) process 22.86ms + physics 6.82ms = 29.68ms/프레임
+  · 성능 | N=60(산 60) process 20.59ms + physics 10.70ms = 31.29ms/프레임
+  · ── 표 (§8 잴 것 「밀도: 동시 적 수 ↔ 프레임」)
+  · 표 | N=10(산 10) process 34.76ms + physics 8.38ms = 43.14ms/프레임
+  · 표 | N=20(산 20) process 20.90ms + physics 3.21ms = 24.11ms/프레임
+  · 표 | N=30(산 30) process 27.29ms + physics 5.10ms = 32.39ms/프레임
+  · 표 | N=40(산 40) process 22.86ms + physics 6.82ms = 29.68ms/프레임
+  · 표 | N=60(산 60) process 20.59ms + physics 10.70ms = 31.29ms/프레임
+  · 표 | 예산 8.0ms 안에 드는 가장 큰 N = 0 (동시 추적 적 상한 후보 — 판정 필요)
+  · 12몸 무리 — 시작 평균 거리 3.07u → 5초 뒤 2.37u · 제자리 3/12
+  · 거름: 표식 없는 마우스 이벤트 125개 막음 (#369 — 창 모드면 진짜 커서, --e2e-gate 헤드리스면 대본이 표식 없이 넣은 것)
+E2E pack_perf PASS (검사 8)
+E2E SUMMARY: 10/10 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\tmp\e2e_raw\20261005T1449513658121_29916\phase_1_solo
+  e2e  (163.3초) — 제한 3600초
+전부 PASS

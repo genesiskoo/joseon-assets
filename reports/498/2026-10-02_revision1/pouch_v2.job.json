@@ -1,0 +1,39 @@
+{
+  "card": 498,
+  "asset": "pouch_v2",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [],
+  "prompt_sha256": "d3a5974f51b7059e60e5a81d6da230200f4c5e6050f5afe5a68f1fc9d777e05a",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "opaque",
+  "quality": "medium",
+  "seed": 498202,
+  "workflow": "image_generate",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-02T13:18:29.393438+00:00",
+  "prompt_id": "460f3f02-670f-4ec2-9051-970e6bde31f4",
+  "status_response": {
+    "assigned_inference": "10.4.47.180:8080",
+    "created_at": "2026-10-02T13:18:30.504774Z",
+    "id": "460f3f02-670f-4ec2-9051-970e6bde31f4",
+    "last_state_update": "2026-10-02T13:19:24.028627Z",
+    "status": "success",
+    "updated_at": "2026-10-02T13:19:24.028627Z"
+  },
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "has_transparent_pixels": false,
+  "output": "pouch_v2.png",
+  "output_sha256": "76a5e851c7c54d0ced33fe42b714ca08c3a51fdf576059d9c5e8cafb5acc2666",
+  "output_bytes": 2436269
+}

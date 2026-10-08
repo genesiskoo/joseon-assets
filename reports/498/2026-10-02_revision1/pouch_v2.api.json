@@ -1,0 +1,29 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "498/pouch_v2",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "One square skill illustration for Joseon Hunters. Matte Korean ink-brush painting, rough dry brush edges, dark navy and charcoal, muted russet and ochre, warm ivory focal strokes. Three or four broad value groups readable at 30 pixels. No lettering, frame, pixel grid, watermark, readable symbols or bright magical lights. Object-only extreme close-up of one worn dark-navy cloth TALISMAN POUCH. A large rounded pouch fills two-thirds of the frame and is tied with a small russet cord. Its opening is visibly packed tight with many ochre paper strips forming a short stepped bundle. The pouch and protruding paper bundle are the only objects, clearly recognizable at 30 pixels. Absolutely no human figure, face, hat, hand, sword or attack trail. No flying paper, coins, potion bottles, magical replenishment or luminous rings.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "1024x1024",
+      "model.custom_width": 1024,
+      "model.custom_height": 1024,
+      "model.background": "opaque",
+      "model.quality": "medium",
+      "n": 1,
+      "seed": 498202
+    }
+  }
+}

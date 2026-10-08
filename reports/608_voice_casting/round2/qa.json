@@ -1,0 +1,19 @@
+{
+  "audio_count": 45,
+  "new_v4_dialogue_count": 30,
+  "designed_voices": 15,
+  "models": {
+    "design": "eleven_ttv_v3",
+    "dialogue": "eleven_v4"
+  },
+  "checks": [
+    "decode",
+    "LUFS within 1.1 of -20",
+    "true peak <= -1.5",
+    "HTTP 200 all45",
+    "browser v4 jumo and dokkaebi",
+    "browser design preview",
+    "original choice preserved after reload"
+  ],
+  "generated_by": "codex"
+}

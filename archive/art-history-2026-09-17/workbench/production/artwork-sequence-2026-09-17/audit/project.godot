@@ -1,0 +1,19 @@
+config_version=5
+
+[application]
+config/name="Doho Artwork Compare"
+
+[display]
+window/size/viewport_width=1536
+window/size/viewport_height=960
+window/size/window_width_override=1536
+window/size/window_height_override=960
+window/energy_saving/keep_screen_on=false
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[debug]
+file_logging/enable_file_logging=false

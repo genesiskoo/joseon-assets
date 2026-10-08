@@ -1,0 +1,35 @@
+{
+  "source_keyart": "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+  "source_keyart_sha256": "25FC995E23B3BFA098BDE79E71D73086EF7FF0DDB254AA2F1CE93B631140E6C0",
+  "source_keyart_id": "H1-K01r1",
+  "keyframe_prompt": "Use case: stylized-concept / identity-preserve.\nAsset type: exact first frame for an eight-second Joseon Hunters opening-cinematic test, landscape 16:9.\nInput image 1 is the NEW approved-for-reference key art: its CENTRAL MALE HERO Doho is the only character to appear in the output. Preserve that man's exact H1 face, adult proportions, black gat with small blue ornament, navy layered split robe, white collar, dull red sash, round blue pendants, wrapped dark forearms and boots. Preserve the illustration's controlled Korean ink contours, large matte shadow shapes, restrained detail density, muted midnight blue, charcoal, soot brown, localized warm firelight. Keep his sly relaxed confidence. The two women are reference context only; neither woman appears in this new shot.\n\nCreate a NEW single cinematic frame with Doho alone on a quiet deserted Korean fantasy village lane at night. He is one short step away from a fully CLOSED heavy wooden inn shutter on the RIGHT side of the frame, body angled toward it. This is the moment BEFORE he knocks. His anatomical LEFT hand is relaxed near his waist, empty and clearly separated from the door. His anatomical RIGHT hand holds the hilt of exactly ONE straight sword near his right shoulder; blade rests behind his shoulders and extends to his left, exactly like the reference. One dark EMPTY scabbard may stay at his waist; it is not a second sword.\nCamera: three-quarter eye-level medium-wide full-body shot, figure about 70% of image height, complete hat, sword tip and boots visible with comfortable margins. Place Doho just left of center with open foreground space toward lower left for his later departure. His face is large enough to read a small eyebrow lift and crooked smile. Do not show his back to camera. The closed shutter occupies the right third; wooden doorframe, a small contained amber lantern overhead, dark plaster wall, dry rough paving, distant deep-shadow roof silhouette on the left. No readable signs or lettering.\nLighting: low cool ambient light plus one small warm lantern, face/hands/sword and ground legible. Broad quiet matte values on skin, cloth, wood and stone. No golden daylight, no fog obscuring the actor, no glossy surfaces, no full rim outline, no bloom across the image.\nMaintain the new key art's face and visual medium. It is a narrative still, not a character sheet or collage. No captions, title, logo, frame border, extra people, extra arms, duplicated blades, sparks or active spells. Generate a polished landscape frame, 16:9.",
+  "keyframe_source": "C:/Users/FORYOUCOM/.codex/generated_images/01a0ab93-d681-76b3-bf13-54c5196fa469/exec-0e326362-83c5-4356-8cb4-fb8b6e850d37.png",
+  "keyframe_upload": {
+    "media_id": "a7c66f14-85f2-4e19-b079-33a7d195d208",
+    "status": "uploaded",
+    "type": "image",
+    "filename": "exec-0e326362-83c5-4356-8cb4-fb8b6e850d37.png",
+    "content_type": "image/png",
+    "size_bytes": 2341075,
+    "source_file_id": "file_000000004c708211b0c498a39d6aba63"
+  },
+  "video_params": {
+    "model": "seedance_2_5",
+    "mode": "omni_reference",
+    "duration": 8,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio": false,
+    "bitrate_mode": "standard",
+    "count": 1,
+    "use_unlim": false,
+    "prompt": "Animate the provided first frame into one continuous eight-second opening-cinematic shot for Joseon Hunters. Keep exactly this adult male Doho and this deserted Korean night street, closed wooden door, low cool ambient light and single amber lantern. Preserve his H1 Korean illustrated face, narrow amused eyes, black gat, layered navy split robe, white collar, dull red sash, round blue pendants, black boots and matte ink-painted visual medium. This must contain clearly performed physical actions, not a still image with a camera zoom.\n\nPerformance with brisk natural timing:\n0.0–1.2 seconds: Doho shifts his weight, turns his chest and head toward the door at screen right, and takes ONE short grounded step closer. His free anatomical LEFT hand leaves his waist and forms a loose knocking fist. The anatomical RIGHT hand keeps the ONE sword held by its hilt on his right shoulder throughout.\n1.2–2.5 seconds: his LEFT fist performs TWO quick distinct knuckle taps against the wooden door: hand draws back, strikes the wood, visibly recoils away by about 15 centimeters, then strikes and immediately recoils again. Keep his elbow and wrist readable. No palm pressing and no fist held against the door.\n2.5–3.5 seconds: he lowers his left hand and listens for a brief beat. The door remains completely closed and still. Nobody answers. He lifts one eyebrow.\n3.5–4.5 seconds: he turns his face three-quarters toward camera and gives a clear crooked half-smile, a small amused head tilt, then shifts weight onto his departing foot. Mouth remains closed; no spoken line.\n4.5–8.0 seconds: he turns away from the door and walks diagonally toward the lower LEFT foreground, taking at least THREE visible planted steps with alternating feet, real body translation and relaxed swagger. The split coat skirts and red sash follow the body with restrained secondary motion. He passes near camera and is leaving the frame by the end. Keep the departure moving through the final frame; do not freeze to pose.\n\nCamera is one steady eye-level medium-wide shot with only a very slight natural forward drift, no cuts, no orbit, no snap zoom or invented inserts. Door on screen right stays fixed, street depth stays fixed. Frame face, knocking hand and blade clearly during the door interaction. Preserve the exact original face and outfit through head turns. One visible sword blade and one EMPTY waist scabbard only; do not draw a second sword, switch hands or change weapons. No new people, monsters, magic, extra limbs, headgear changes, text, subtitles, logos, glossy photoreal textures or daylight. No dialogue, music or generated sound.",
+    "medias": [
+      {
+        "role": "start_image",
+        "value": "a7c66f14-85f2-4e19-b079-33a7d195d208"
+      }
+    ]
+  },
+  "balance_before": 2691.5
+}

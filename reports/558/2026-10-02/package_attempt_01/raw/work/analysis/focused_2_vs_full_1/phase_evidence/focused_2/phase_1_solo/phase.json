@@ -1,0 +1,41 @@
+{
+    "schema":  1,
+    "launch":  {
+                   "schema":  1,
+                   "fixed_fps":  0,
+                   "exe":  "godot",
+                   "argv":  [
+                                "--path",
+                                "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon",
+                                "--headless",
+                                "--",
+                                "--e2e=balance_boss",
+                                "--combat-trace",
+                                "--combat-trace-dir=C:\\workspace\\joseon\\._tmp\\trace_558_20261002\\cohort\\focused_2\\traces\\phase_1_62096"
+                            ],
+                   "phase_arg":  "balance_boss",
+                   "phase_tokens":  [
+                                        "balance_boss"
+                                    ],
+                   "skip":  [
+
+                            ],
+                   "exclusive":  true,
+                   "contains_balance_boss":  true,
+                   "combat_trace":  true,
+                   "launcher_pid":  39436,
+                   "launched_utc":  "2026-10-02T14:15:27.8720180Z"
+               },
+    "runtime_pid":  53444,
+    "exit_code":  0,
+    "timed_out":  false,
+    "elapsed_sec":  60.0314361,
+    "archived_utc":  "2026-10-02T14:16:27.9351831Z",
+    "godot_log":  {
+                      "source":  "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-558-combat-clock-trace\\logs\\godot.log",
+                      "archive":  "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\558-combat-clock-trace\\joseon\\tmp\\e2e_raw\\20261002T1415238741716_62096\\phase_1_solo\\godot.raw.log",
+                      "bytes":  63401,
+                      "sha256":  "cb60f07f8dabbfe51785e4dea3f7311002e4e983e9707385d4514f8dc8f6e779"
+                  },
+    "console_format":  "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

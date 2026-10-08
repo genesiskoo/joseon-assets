@@ -1,0 +1,128 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(vfx_cues,talisman_aoe,aoe_skills_2,talisman_targeting,element_sal,element_affix)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (4.7초)
+== e2e (vfx_cues,talisman_aoe,aoe_skills_2,talisman_targeting,element_sal,element_affix · 단독(창 모드) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\632-element-structure\\joseon","--","--e2e=vfx_cues,talisman_aoe,aoe_skills_2,talisman_targeting,element_sal,element_affix","--e2e-shots"],"phase_arg":"vfx_cues,talisman_aoe,aoe_skills_2,talisman_targeting,element_sal,element_affix","phase_tokens":["vfx_cues","talisman_aoe","aoe_skills_2","talisman_targeting","element_sal","element_affix"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":39272,"launched_utc":"2026-10-06T11:29:21.9120273Z"}
+E2E start: vfx_cues, talisman_aoe, aoe_skills_2, talisman_targeting, element_sal, element_affix
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ vfx_cues
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_01_drop_beam.png
+  · 선딜 시트 pos=(44.5, 0.030391, 56.5) 적=(44.5, 0.000391, 56.5) 화면=(593.7165, 331.6754) visible=true frame=8/23
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_02_windup.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_03_windup_open.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_04_swing.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_05_hit.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_06_hit_spark.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_07_talisman.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_08_fire_burst.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_09_dust.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_10_sal.png
+  · 처치 5연속: 동시 단발 최고 14/24 · body_fall 5 · hit_spark 0
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_11_slash.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_12_slash_left.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_13_dash.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_14_whirl.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_15_levelup.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_16_levelup_write.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_17_levelup_hold.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_18_levelup_burst.png
+  · 레벨업 道: 발 위 4.30 · 칸 15장 · 흩어짐 0.32(1.55초) · 사라짐 2.05초
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_19_roar.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_20_roar_write.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_21_roar_hold.png
+  · 흑랑 포효: 怒 발 위 2.74 · 먹 파문 시트 4장(바깥 흰 테 + 검은 먹 · 안쪽 흰 테 + 검은 먹) · 카메라 킥 0.2 · 怒 사라짐 1.43초
+  · 포효 怒 높이: 몸 꼭대기 흑랑 1.74 · 구미호 2.17 · 장산범 2.10 · 불가살이 2.33 (+1.0 = 怒 가운데)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_22_treasure_land.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_23_treasure_write.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_24_treasure_hold.png
+  · 寶(유니크 + 봉인 조각 한 무리): 寶 1번 · 착지 큐 1번 · 유니크가 앉은 뒤 1.75초에 사라짐
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/vfx_cues_25_portal.png
+  · 루프 103 · 단발 2
+E2E vfx_cues PASS (검사 151)
+E2E ▶ talisman_aoe
+  · fire: 겨눈 자리 (20.0, 0.0, 49.5) · 끝 = burst (radius=1.50)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_aoe_01_fire_burst.png
+  ·   [터지는 순간] #0 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [터지는 순간] #1 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #2 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [터지는 순간] #3 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #4 hp0=15 hp=3.0 화상=true 빙결=false 한기=false
+  ·   [터지는 순간] #5 hp0=15 그대로(반경 밖)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_aoe_02_fire_0.5s.png
+  ·   [0.5초] #0 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [0.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #2 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [0.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #4 hp0=15 hp=2.0 화상=true 빙결=false 한기=false
+  ·   [0.5초] #5 hp0=15 그대로(반경 밖)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_aoe_03_fire_1.5s.png
+  ·   [1.5초] #0 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [1.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #2 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [1.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #4 hp0=15 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [1.5초] #5 hp0=15 그대로(반경 밖)
+  · fire: 요약 — 맞은 마릿수 3/6 · 죽음 3/6 · 막타 속성 [&"fire"] · 죽음 종류 [&"ash"]
+  · cold: 겨눈 자리 (20.0, 0.0, 49.5) · 끝 = burst (radius=1.50)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_aoe_04_cold_burst.png
+  ·   [터지는 순간] #0 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [터지는 순간] #1 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #2 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [터지는 순간] #3 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #4 hp0=15 hp=10.0 화상=false 빙결=true 한기=true
+  ·   [터지는 순간] #5 hp0=15 그대로(반경 밖)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_aoe_05_cold_0.5s.png
+  ·   [0.5초] #0 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [0.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #2 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [0.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #4 hp0=15 hp=10.0 화상=false 빙결=true 한기=true
+  ·   [0.5초] #5 hp0=15 그대로(반경 밖)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_aoe_06_cold_1.5s.png
+  ·   [1.5초] #0 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [1.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #2 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [1.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #4 hp0=15 hp=10.0 화상=false 빙결=false 한기=false
+  ·   [1.5초] #5 hp0=15 그대로(반경 밖)
+  · cold: 요약 — 맞은 마릿수 3/6 · 죽음 2/6 · 막타 속성 [&"cold"] · 죽음 종류 [&"shatter"]
+E2E talisman_aoe PASS (검사 16)
+E2E ▶ aoe_skills_2
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 트임 3.6 · 화면 위쪽 (-0.707107, 0.0, -0.707107)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_01_thrust_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_02_thrust_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_03_thrust_end.png
+  · 찌르기 요약 — 맞음 3/7 [0, 1, 4] · 죽음 3 · 막타 [&"slashed"] · 칼이 닿기까지 0.33초 · 동작 0.63초
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_04_storm_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_05_storm_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_06_storm_end.png
+  · 칼바람 요약 — 바퀴 9(누른 동안 9) · 박자 0.300초 · 도력 18.0 · 맞힌 합 27 · 맞음 7/7 · 죽음 4 [&"slide", &"cleave"] · 앞으로 6.4u · 뗀 뒤 0.23초에 섬
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_07_scatter_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_08_scatter_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_09_scatter_end.png
+  · 흩뿌리기 요약 — 장당 맞힌 수 [3, 1, 1] · 맞음 3/7 · 죽음 2 [&"ash"]
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_10_rain_0s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_11_rain_0.5s.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/aoe_skills_2_12_rain_end.png
+  · 부적 비 요약 — 6장 · 맞음 7/7 · 죽음 4 [&"ash"] · 버티는 몸 타는 중 3
+E2E aoe_skills_2 PASS (검사 68)
+E2E ▶ talisman_targeting
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_targeting_01_bag_tooltip.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_targeting_02_fire_target.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/talisman_targeting_03_ice_ground.png
+E2E talisman_targeting PASS (검사 75)
+E2E ▶ element_sal
+  · 무대 = 방 [P: (15, 43), S: (14, 13)], 가로 11.0u
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/element_sal_01_sal_doho.png
+  · 탕약 1초 = 살 없음 +5.81 · 살이 낌 +2.90 (한 병 40 ÷ 7초 = 5.71/초)
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/element_sal_02_salpuri.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/element_sal_03_sal_rot.png
+E2E element_sal PASS (검사 42)
+E2E ▶ element_affix
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-632-element-structure/e2e/element_affix_01_element_affix.png
+E2E element_affix PASS (검사 7)
+E2E SUMMARY: 6/6 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\632-element-structure\joseon\tmp\e2e_raw\20261006T1129171627859_14212\phase_1_solo
+  e2e  (90.4초) — 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-632-element-structure\e2e
+전부 PASS

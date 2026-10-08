@@ -1,0 +1,138 @@
+SCRIPT ERROR: Compile Error: Identifier not found: GameState
+   at: GDScript::reload (res://tests/e2e/scenarios/balance_boss.gd:41)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://tests/test_combat_trace.gd:0)
+ERROR: Failed to load script "res://tests/test_combat_trace.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _init (res://tests/test_combat_trace.gd:67)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] _init (res://tests/test_combat_trace.gd:68)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] _init (res://tests/test_combat_trace.gd:75)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+       [7] _lifecycle (res://tests/test_combat_trace.gd:126)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+       [7] _lifecycle (res://tests/test_combat_trace.gd:126)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+       [7] _lifecycle (res://tests/test_combat_trace.gd:126)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+       [7] _lifecycle (res://tests/test_combat_trace.gd:126)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+       [7] _lifecycle (res://tests/test_combat_trace.gd:126)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+   at: _lifecycle (res://tests/test_combat_trace.gd:114)
+   GDScript backtrace (most recent call first):
+       [0] _lifecycle (res://tests/test_combat_trace.gd:114)
+       [1] _init (res://tests/test_combat_trace.gd:82)
+       [2] _lifecycle (res://tests/test_combat_trace.gd:126)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+       [7] _lifecycle (res://tests/test_combat_trace.gd:126)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+   at: _lifecycle (res://tests/test_combat_trace.gd:114)
+   GDScript backtrace (most recent call first):
+       [0] _lifecycle (res://tests/test_combat_trace.gd:114)
+       [1] _init (res://tests/test_combat_trace.gd:82)
+       [2] _lifecycle (res://tests/test_combat_trace.gd:126)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _bind_actor (res://tests/fixtures/balance_combat_rng.gd:170)
+       [4] begin (res://tests/fixtures/balance_combat_rng.gd:86)
+       [5] _lifecycle (res://tests/test_combat_trace.gd:102)
+       [6] _init (res://tests/test_combat_trace.gd:82)
+       [7] _lifecycle (res://tests/test_combat_trace.gd:126)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+   at: _lifecycle (res://tests/test_combat_trace.gd:114)
+   GDScript backtrace (most recent call first):
+       [0] _lifecycle (res://tests/test_combat_trace.gd:114)
+       [1] _init (res://tests/test_combat_trace.gd:82)
+       [2] _lifecycle (res://tests/test_combat_trace.gd:126)
+ERROR: AnimationPlayer has no current animation.
+   at: get_current_animation_position (scene/animation/animation_player.cpp:732)
+   GDScript backtrace (most recent call first):
+       [0] _body_state (res://core/combat_trace.gd:172)
+       [1] event (res://core/combat_trace.gd:188)
+       [2] bind_actor (res://core/combat_trace.gd:83)
+       [3] _init (res://tests/test_combat_trace.gd:85)
+       [4] _lifecycle (res://tests/test_combat_trace.gd:126)

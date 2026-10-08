@@ -1,0 +1,73 @@
+{
+  "status": "unapproved_candidates",
+  "requested_model": "nano_banana_pro",
+  "reported_model": "nano_banana_2",
+  "requests": [
+    {
+      "index": 1,
+      "params": {
+        "model": "nano_banana_pro",
+        "resolution": "2k",
+        "aspect_ratio": "3:4",
+        "count": 1,
+        "prompt": "Create one full-body enemy character concept for JOSEON HUNTERS, a stylized Korean fictional Joseon isometric action RPG. Subject: corrupted talisman caster, humanoid 1.6 metres tall, tattered OFF-WHITE Korean dopo robe, pale carved mask, dark hair tied neatly, charcoal undertrousers and simple cloth shoes, muted red cords and a few ochre paper talismans with abstract red ink marks attached securely to costume. Tone: mischievous swagger, lively Korean folklore fantasy, lightly threatening, NOT horror. Style: production-friendly low-poly 3D character concept render, hand-painted matte flat colors, broad clean shapes, readable at small isometric game scale, moderate natural stylized proportions, no microdetail. Show exactly ONE character, full body head to feet visible, near-front slight three-quarter view, arms held slightly apart with hands visible, relaxed neutral stance, even soft diffuse lighting, plain warm light grey background, small grounding shadow. No dramatic rim light, bloom, glowing magic, particles, floating papers, scenery, text labels, swords, staff, wide-brim gat, Japanese/Chinese costume, blood, gore, extra panels. This is an unapproved design candidate, not final game art. Candidate A: lean narrow vertical silhouette, straight knee-length outer robe with modest sleeves and split hem showing both legs clearly, small oval ivory mask with two slanted eye slits and a subtly crooked painted smile, three paper seals hanging from a simple waist cord. Economical geometry and clear ranged-caster identity."
+      }
+    },
+    {
+      "index": 2,
+      "params": {
+        "model": "nano_banana_pro",
+        "resolution": "2k",
+        "aspect_ratio": "3:4",
+        "count": 1,
+        "prompt": "Create one full-body enemy character concept for JOSEON HUNTERS, a stylized Korean fictional Joseon isometric action RPG. Subject: corrupted talisman caster, humanoid 1.6 metres tall, tattered OFF-WHITE Korean dopo robe, pale carved mask, dark hair tied neatly, charcoal undertrousers and simple cloth shoes, muted red cords and a few ochre paper talismans with abstract red ink marks attached securely to costume. Tone: mischievous swagger, lively Korean folklore fantasy, lightly threatening, NOT horror. Style: production-friendly low-poly 3D character concept render, hand-painted matte flat colors, broad clean shapes, readable at small isometric game scale, moderate natural stylized proportions, no microdetail. Show exactly ONE character, full body head to feet visible, near-front slight three-quarter view, arms held slightly apart with hands visible, relaxed neutral stance, even soft diffuse lighting, plain warm light grey background, small grounding shadow. No dramatic rim light, bloom, glowing magic, particles, floating papers, scenery, text labels, swords, staff, wide-brim gat, Japanese/Chinese costume, blood, gore, extra panels. This is an unapproved design candidate, not final game art. Candidate B: medium-build broad triangular upper silhouette, distinct wide elbow-length sleeves with visible forearms, layered knee-length robe and dark lower legs clearly visible, broad gently angular ivory mask with amused asymmetrical brows, two neat bundles of paper seals fixed to the waist. Strong readability without bulky armor."
+      }
+    },
+    {
+      "index": 3,
+      "params": {
+        "model": "nano_banana_pro",
+        "resolution": "2k",
+        "aspect_ratio": "3:4",
+        "count": 1,
+        "prompt": "Create one full-body enemy character concept for JOSEON HUNTERS, a stylized Korean fictional Joseon isometric action RPG. Subject: corrupted talisman caster, humanoid 1.6 metres tall, tattered OFF-WHITE Korean dopo robe, pale carved mask, dark hair tied neatly, charcoal undertrousers and simple cloth shoes, muted red cords and a few ochre paper talismans with abstract red ink marks attached securely to costume. Tone: mischievous swagger, lively Korean folklore fantasy, lightly threatening, NOT horror. Style: production-friendly low-poly 3D character concept render, hand-painted matte flat colors, broad clean shapes, readable at small isometric game scale, moderate natural stylized proportions, no microdetail. Show exactly ONE character, full body head to feet visible, near-front slight three-quarter view, arms held slightly apart with hands visible, relaxed neutral stance, even soft diffuse lighting, plain warm light grey background, small grounding shadow. No dramatic rim light, bloom, glowing magic, particles, floating papers, scenery, text labels, swords, staff, wide-brim gat, Japanese/Chinese costume, blood, gore, extra panels. This is an unapproved design candidate, not final game art. Candidate C: slightly hunched wiry silhouette, asymmetrical overlapping off-white robe panels ending above ankles, short diagonal stole made of a few large overlapping ochre paper seals across chest, elongated ivory mask with a sly painted expression, restrained red binding cords. Keep joints and hands unobstructed, no loose floating objects."
+      }
+    }
+  ],
+  "initial": [
+    {
+      "index": 1,
+      "job_id": "4992fe75-03fe-4149-96ee-568cffc0185b",
+      "status": "failed",
+      "type": "image",
+      "model": "nano_banana_2"
+    },
+    {
+      "index": 2,
+      "job_id": "f07d538e-422c-453d-83e6-34866271286c",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_182547_f07d538e-422c-453d-83e6-34866271286c.png"
+    },
+    {
+      "index": 3,
+      "job_id": "6718d7ec-fb30-4a8e-b2d8-0aaeb83b50cc",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_182547_6718d7ec-fb30-4a8e-b2d8-0aaeb83b50cc.png"
+    }
+  ],
+  "retry": [
+    {
+      "index": 1,
+      "job_id": "502e4bfb-1d1b-4c83-b697-8cd8cd17f3f0",
+      "status": "completed",
+      "type": "image",
+      "model": "nano_banana_2",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3B5zywdwiIrmBJfbwnbi8b1onpk/hf_20260916_182719_502e4bfb-1d1b-4c83-b697-8cd8cd17f3f0.png"
+    }
+  ],
+  "notes": "B is recommended for clean low-poly forms. Generated labels are unwanted and should be removed in selected model-reference generation. No game intake. Await user selection before front/side/back references."
+}

@@ -1,0 +1,41 @@
+{
+  "card": 274,
+  "asset": "obang_jade_red_grade_2",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [],
+  "prompt_sha256": "235513fa238f099a058d1f8e9618ae543fc405ce208c5dbabe58b654f1141190",
+  "width": 1024,
+  "height": 1024,
+  "background_requested": "transparent",
+  "quality": "high",
+  "seed": 2744001,
+  "workflow": "image_generate_clean",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T08:29:01.511074+00:00",
+  "prompt_id": "b0fce077-b4af-4b65-902a-d01657668b6e",
+  "status_response": {
+    "assigned_inference": "10.4.38.214:8080",
+    "created_at": "2026-10-01T08:29:04.026246Z",
+    "id": "b0fce077-b4af-4b65-902a-d01657668b6e",
+    "last_state_update": "2026-10-01T08:29:27.241067Z",
+    "status": "success",
+    "updated_at": "2026-10-01T08:29:27.241067Z"
+  },
+  "raw_output": "obang_jade_red_grade_2_raw.png",
+  "raw_output_sha256": "72d463617757bb53ba9753453d838fbec2354f54f7b4ea925019ba3a56b9a0f5",
+  "actual_dimensions": [
+    1024,
+    1024
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "has_transparent_pixels": true,
+  "output": "obang_jade_red_grade_2.png",
+  "output_sha256": "5094981e9990a4ac82da017b2e143db70f159851bed51e29566954ee38fbdb2a",
+  "output_bytes": 1204678
+}

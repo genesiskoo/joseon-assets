@@ -1,0 +1,12 @@
+PREPARED #534 real definitions4/tier1/1x1/max_stack10; runtime SHA 189 preserved
+Traceback (most recent call last):
+  File "C:\workspace\joseon\._tmp\assets_534\workbench\production\item_icons_534\prepare_534.py", line 241, in <module>
+    main()
+  File "C:\workspace\joseon\._tmp\assets_534\workbench\production\item_icons_534\prepare_534.py", line 237, in main
+    pack(args.game, inputs, args.selection)
+  File "C:\workspace\joseon\._tmp\assets_534\workbench\production\item_icons_534\prepare_534.py", line 217, in pack
+    source_selection_path=selection_path.relative_to(ROOT).as_posix() if selection_path else None,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\FORYOUCOM\miniconda3\Lib\pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'workbench\\production\\item_icons_534\\selected_sources.json' is not in the subpath of 'C:\\workspace\\joseon\\._tmp\\assets_534\\workbench\\production\\item_icons_534'

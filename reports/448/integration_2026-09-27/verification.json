@@ -1,0 +1,91 @@
+{
+  "card": 448,
+  "parent": 274,
+  "baseline": {
+    "game": "2c272968ee27c118af8d7a920161a8dc9fabd1f7",
+    "assets_main": "16f913dcdaaf948762709f88994ee96213bd3392"
+  },
+  "method": "built-in image_gen, no CLI/API fallback",
+  "originals_immutable": "6/6",
+  "current_definition_hashes_unchanged": "6/6",
+  "packed_alpha_and_footprints": "6/6",
+  "source_alpha": {
+    "jeongjagwan": [
+      0,
+      255
+    ],
+    "cheomju": [
+      0,
+      255
+    ],
+    "yundo": [
+      0,
+      255
+    ],
+    "bujeok_mokpan": [
+      0,
+      254
+    ],
+    "rejuv": [
+      0,
+      255
+    ],
+    "talisman_thunder": [
+      0,
+      255
+    ]
+  },
+  "actual_godot_renderer": "4.7.2 Forward+",
+  "render_cases": {
+    "before": {
+      "sha256": "0e8dec1a906ce3d3dc30b244e4a4cfe5f40b30463e651533dfe442344fccacb8",
+      "size": [
+        1280,
+        720
+      ],
+      "stderr_bytes": 0
+    },
+    "after": {
+      "sha256": "49279578198904ea73344be40401fa543384aaf57e25bab7e90442167fa5f27a",
+      "size": [
+        1280,
+        720
+      ],
+      "stderr_bytes": 0
+    },
+    "sizes": {
+      "sha256": "bce244189056358b4f554f8d981b5eb483f3955e4e64f3e58788c9197eb46d15",
+      "size": [
+        1280,
+        790
+      ],
+      "stderr_bytes": 0
+    }
+  },
+  "approved_reference_pixels_identical": true,
+  "gallery": [
+    {
+      "name": "overview",
+      "bytes": 109108,
+      "sha256": "97f6a7ef74793533574395d5950fb4cee89962887d027fcbec04c01853026d56"
+    },
+    {
+      "name": "before",
+      "bytes": 39053,
+      "sha256": "640c4dcad719f220b8c2f8dffc33abb32eff85beb07be91bdcbafdd5b24d19f2"
+    },
+    {
+      "name": "after",
+      "bytes": 46565,
+      "sha256": "4026813143bb18ca684e748c081ccb43471d44f120c5d0bad5742c66591f970b"
+    },
+    {
+      "name": "sizes",
+      "bytes": 67119,
+      "sha256": "fd048b8b7995c982a1446e7a4b833392bfc6d09ec712ca54e128279c7ef49967"
+    }
+  ],
+  "game_installation": false,
+  "source_manifest_sha256": "06f69f06ecc72f65e5112f10851218f63ef74204cbc3bf4502a2bf70fa2274cf",
+  "item_manifest_sha256": "4effe91163f5c166beb0c63a657a0e4c152946464d52f1c3488ea5fbf62349df"
+}

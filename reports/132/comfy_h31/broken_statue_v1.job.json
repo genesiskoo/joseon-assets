@@ -1,0 +1,27 @@
+{
+  "card": 132,
+  "asset": "broken_statue",
+  "provider": "Comfy Cloud",
+  "node": "TripoImageToModelNodeV2",
+  "model": "v3.1-20260211",
+  "source": "workbench/production/dungeon_props_132/refs/broken_statue.png",
+  "source_sha256": "68b44613f8c2598ce74f257fe05d31c7a4353d514e17654b982c989eca3ef65c",
+  "face_limit": 8000,
+  "estimated_usd": 0.3,
+  "estimate_source": "live node price_badge on 2026-10-01",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T06:40:06.256778+00:00",
+  "prompt_id": "3ab696d2-9e6d-45f7-9736-062f8d408c08",
+  "status_response": {
+    "assigned_inference": "10.4.30.54:8080",
+    "created_at": "2026-10-01T06:40:08.651046Z",
+    "id": "3ab696d2-9e6d-45f7-9736-062f8d408c08",
+    "last_state_update": "2026-10-01T06:50:43.308826Z",
+    "status": "success",
+    "updated_at": "2026-10-01T06:50:43.308826Z"
+  },
+  "output": "broken_statue_h31_raw_v1.glb",
+  "output_sha256": "16516180c7fb200babdccd4728737fc399a1787d79c837fff06992689921861b",
+  "output_bytes": 1787984
+}

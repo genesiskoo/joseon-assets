@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# joseon-assets 커밋 검사 — 큰 원본은 git 대신 Release·드라이브 (PD 2026-10-03, 게임 카드 #579·#581)
+# 아트 파일(png·jpg·glb·blend 등)은 50MB까지, 그 밖(json·log·wav·mp4·zip 등)은 10MB부터 막는다.
+# 정본 = AGENTS.md 「작업 원칙」. 설치 = git config core.hooksPath C:/workspace/joseon-assets/.githooks
+
+LIMIT_RAW=$((10 * 1024 * 1024))
+LIMIT_ART=$((50 * 1024 * 1024))
+ART_EXT=" png jpg jpeg webp gif bmp tga tif tiff exr hdr psd kra ase aseprite svg glb gltf fbx obj mtl blend "
+
+bad=""
+while IFS= read -r path; do
+  [ -z "$path" ] && continue
+  size=$(git cat-file -s ":$path" 2>/dev/null) || continue
+  ext=$(printf '%s' "${path##*.}" | tr 'A-Z' 'a-z')
+  case "$ART_EXT" in
+    *" $ext "*) limit=$LIMIT_ART; kind="아트" ;;
+    *) limit=$LIMIT_RAW; kind="원본" ;;
+  esac
+  if [ "$size" -ge "$limit" ]; then
+    mb=$(awk -v s="$size" 'BEGIN { printf "%.1f", s / 1048576 }')
+    bad="${bad}  ${mb}MB  ${path}  (${kind} 한도 $((limit / 1048576))MB)
+"
+  fi
+done <<EOF
+$(git -c core.quotepath=false diff --cached --name-only --diff-filter=AMR)
+EOF
+
+if [ -n "$bad" ]; then
+  {
+    echo "[joseon-assets 커밋 검사] 큰 파일이 있어 커밋을 막았습니다 (PD 2026-10-03 규칙):"
+    printf '%s' "$bad"
+    echo "→ git 대신 GitHub Release(공개해도 되는 것) 또는 구글 드라이브 내 드라이브/JoseonHunters_raw/<카드>/(비공개)로 옮기고,"
+    echo "  reports/<카드>/README.md에 위치·크기·SHA256을 적으세요. 스테이징 빼기 = git restore --staged <파일>"
+    echo "  한도: 아트 파일(png·jpg·glb·blend 등) 50MB · 그 밖(json·log·wav·mp4·zip 등) 10MB. 정본 = AGENTS.md 「작업 원칙」"
+  } >&2
+  exit 1
+fi
+exit 0

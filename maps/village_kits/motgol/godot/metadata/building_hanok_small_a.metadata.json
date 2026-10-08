@@ -1,0 +1,39 @@
+﻿{
+    "asset_id":  "building_hanok_small_a",
+    "type":  "building",
+    "category":  "buildings",
+    "raw":  "generated/raw/building_hanok_small_a.raw.png",
+    "processed":  "processed/buildings/building_hanok_small_a.png",
+    "canvas":  {
+                   "height":  256,
+                   "width":  256
+               },
+    "source_bbox":  {
+                        "y":  265,
+                        "width":  838,
+                        "height":  731,
+                        "x":  208
+                    },
+    "placed_rect":  {
+                        "y":  26,
+                        "width":  236,
+                        "height":  205,
+                        "x":  10
+                    },
+    "anchor_px":  {
+                      "y":  206,
+                      "x":  128
+                  },
+    "godot":  {
+                  "sprite_position":  {
+                                          "y":  -206,
+                                          "x":  -128
+                                      },
+                  "collision":  "manual_footprint_only",
+                  "y_sort":  "root_y",
+                  "root_position_is_anchor":  true,
+                  "sprite_centered":  false
+              },
+    "chroma_key":  "green",
+    "roof_split":  false
+}

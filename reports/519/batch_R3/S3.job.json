@@ -1,0 +1,37 @@
+{
+  "id": "S3",
+  "concept_number": 3,
+  "title_ko": "피 묻은 술잔",
+  "provider": "Comfy Cloud",
+  "model_label": "SEEDREAM",
+  "model": "seedream 5.0 pro",
+  "source": "../gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "prompt": "prompts/concept_3.txt",
+  "prompt_file_sha256": "bc1192120faf4631bf3577d79526b54edcfc2532f4f49ea78bdd6f72d67a82ce",
+  "submitted_prompt_sha256": "fb4e9f5a13ed70c603cf61bfd5a166960f75357eb6c54f628f8907bde38a5a5e",
+  "seed": 5193103,
+  "deterministic_seed_guaranteed": false,
+  "requested_images": 1,
+  "requested_dimensions": [
+    1664,
+    2496
+  ],
+  "state": "downloaded",
+  "prompt_id": "5532d1bf-ce26-49f7-ba20-2d6d247a552d",
+  "status_response": {
+    "assigned_inference": "10.4.57.224:8080",
+    "created_at": "2026-10-01T04:20:36.865217Z",
+    "id": "5532d1bf-ce26-49f7-ba20-2d6d247a552d",
+    "last_state_update": "2026-10-01T04:29:15.454391Z",
+    "status": "success",
+    "updated_at": "2026-10-01T04:29:15.454391Z"
+  },
+  "actual_dimensions": [
+    1664,
+    2496
+  ],
+  "output": "S3.png",
+  "output_sha256": "97f5af3f3c7887f71114b1553c594a517b8bbf38b99e7bb79ae0fb0c76f8eb1d",
+  "output_bytes": 2411091
+}

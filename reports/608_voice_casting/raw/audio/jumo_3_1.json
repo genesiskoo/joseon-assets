@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "jumo",
+    "rank": 3,
+    "voice_id": "VFNaRkx6q2IQZn2mmwwg",
+    "name": "Shin rara",
+    "scene": "손님 끊긴 술청에 도호가 들른다. 주모는 일손을 움직이며 구수하게 권한다.",
+    "line": 0,
+    "file": "audio/jumo_3_1.mp3",
+    "request": {
+      "text": "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "목이 좀 마르구려.",
+      "next_text": "국물이라도 한 그릇 주시오.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "QeC0ikWNy1GyqvgB3Muy",
+    "history-item-id": "1VaUqfwjM6V5qD4ZVtpZ",
+    "character-cost": "4"
+  }
+}

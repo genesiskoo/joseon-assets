@@ -1,0 +1,18 @@
+{
+ "cue": "pickup_coin",
+ "v": 2,
+ "prompt": "A small handful of old Korean brass coins scooped up and dropped into a cloth pouch: bright little clinks with a soft cloth thump, close-up, crisp, short, dry, isolated, no music, no voice",
+ "seconds": 0.6,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "duration": 0.6,
+ "lufs": "-20.1",
+ "peak": "-2.9",
+ "made": "2026-09-18 09:35",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "channels": 2,
+ "note": "pcm_44100 = 16-bit 스테레오 인터리브(실측) — 모노 포장 오류를 헤더만 재작성으로 교정"
+}

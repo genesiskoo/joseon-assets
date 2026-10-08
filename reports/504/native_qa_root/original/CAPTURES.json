@@ -1,0 +1,55 @@
+{
+  "card": 504,
+  "round": "original",
+  "native": true,
+  "game_integrated": false,
+  "runs": [
+    {
+      "mode": "all",
+      "returncode": 0,
+      "command": [
+        "C:\\Users\\FORYOUCOM\\bin\\godot.BAT",
+        "--path",
+        "C:\\workspace\\joseon\\._tmp\\assets_504\\workbench\\production\\element_marks_504\\qa",
+        "--script",
+        "element_mark_board.gd",
+        "--",
+        "--mode=all",
+        "--round=original",
+        "--out=C:/workspace/joseon/._tmp/assets_504/reports/504/native_qa_root/original"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "png": "godot_504_color.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "c8854ad605905ff23ba12c0d66de086fd6b80eb6cdc6627cb8e5afbb29f27b3a",
+      "jpg": "godot_504_color.jpg",
+      "jpg_bytes": 117173
+    },
+    {
+      "png": "godot_504_gray.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "b54312c3cd3fb796c105a178c7c012fce267c8123d8bf7cce10e9066209646a3",
+      "jpg": "godot_504_gray.jpg",
+      "jpg_bytes": 111999
+    },
+    {
+      "png": "godot_504_white.png",
+      "size": [
+        1280,
+        800
+      ],
+      "sha256": "7504b9a497ab55d9cf19b0b000df007340ce686a27a00ef453a3ae4f5048e398",
+      "jpg": "godot_504_white.jpg",
+      "jpg_bytes": 119424
+    }
+  ]
+}

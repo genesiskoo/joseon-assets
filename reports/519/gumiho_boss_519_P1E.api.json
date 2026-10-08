@@ -1,0 +1,61 @@
+{
+  "2": {
+    "_meta": {
+      "title": "이미지 저장 (고급)"
+    },
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "gumiho_boss_519_P1E",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "3": {
+    "_meta": {
+      "title": "이미지 로드"
+    },
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b7490637a10ce0739ef8059ae583074366e646bf9619db534ed4dab6b4d7d6b8.png"
+    },
+    "is_changed": [
+      "d657ca367095b99c9d2b1e70c44922f814d4ed42be4a98ac171ae49b11d65c75"
+    ]
+  },
+  "8": {
+    "_meta": {
+      "title": "ByteDance Seedream 4.5 & 5.0"
+    },
+    "class_type": "ByteDanceSeedreamNodeV3",
+    "inputs": {
+      "model": "seedream 5.0 pro",
+      "model.height": 2048,
+      "model.images.image_1": [
+        "3",
+        0
+      ],
+      "model.prompt_optimization": "standard",
+      "model.seed": 5191501,
+      "model.size_preset": "(2K) 2848x1600 (16:9)",
+      "model.thinking": true,
+      "model.watermark": false,
+      "model.width": 2048,
+      "prompt": "TWO-SHOT boss scale concept art for a dark Joseon fantasy isometric ARPG. There are exactly TWO distinct characters: on the LEFT the player hero DOHO, a human Korean wandering swordsman 1.7 meters tall; on the RIGHT the phase-one GUMIHO boss, a huge female fox-human predator. Both stand on the SAME stone floor and SAME camera depth so their physical size difference is honest, not forced perspective. Show the full figures and clear feet on that shared ground plane. Use reference image 1 ONLY for the female gumiho's face, faded navy inn-hostess jeogori, worn pale apron, dark chima, black furred forearms, amber eyes and tails. Use reference image 2 ONLY for Doho: slim adult Korean man, black gat with blue circular bead, navy layered split robe, white collar, red waist sash, blue round pendant, black pants and boots, one plain sword in hand. Do not swap their faces or garments; no other humans. This is PHASE ONE: a brutal physical predator, not a spellcaster. No fire, spirit glow, magic halos or jewelry. No queen gown, armor, crown, fox-ear cosplay or exposed body. The gumiho retains scraps of the same commoner's work clothes as a shocking reminder of her disguise, but her ANATOMY has become enormous and savage: long heavy foxlike spine, powerful hunched shoulders, thick furred forearms and claws bigger than Doho's hands, feral human face with small fangs and tangled hair. Nine distinct massive charcoal fox tails emerge from her lower back and sweep around the arena like muscular limbs, each with an individually legible root and tip. The tails should occupy more screen space than both characters together; they are an attacking body part, not a decorative symmetrical fan. Dust, broken stone and old Joseon seals establish an underground Gumiwon boss arena. Matte hand-painted Korean fantasy key art, hard readable silhouette, ink-edged brushwork, tactile cloth and fur, dark restrained palette and strong size comparison. No duplicate characters, no extra limbs, no split panels, no labels, no text. Clean boss-scale comparison in an actual battle composition. Doho stands to the left with sword drawn, one-third the boss's height. The gumiho rears upright on the right: a 3.5-meter monstrous fox-human torso with a partly recognizable inn-hostess face, long black hair and torn indigo work-cloth caught across a huge furred shoulder and chest, pale apron hanging at the waist. One elongated claw reaches above Doho's hat; nine enormous tails brace on the floor and roof like living pillars, framing but not hiding her huge body. Distinct body mass and predatory anatomy, no giant woman in an ordinary dress.",
+      "model.images.image_2": [
+        "10",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "b6ed1daace64aa610a7345b428c17330b6305482ba1a96e5a59381ab5ee82bb2.png"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "card": 466,
+  "before_head": "2e8af34945974d04a02aaf9bb8b5ca503c2fc4e2",
+  "before_receipt_sha256": "5ce9fa7c05e9d880aa049ad9996022794c3ffe422b11f3b7d9f22b3296a30052",
+  "before_native_count": 3,
+  "new_pngs_copied": 15,
+  "item_icon_paths_changed": 15,
+  "existing_pngs_preserved": 1125,
+  "other_item_definitions_unchanged": true,
+  "all_selected_other_fields_byte_exact": true,
+  "godot_import_started": false,
+  "unit_or_e2e_started": false
+}
+ data/items/dujeonggap.tres            |   2 +-
+ data/items/gold_ring.tres             |   2 +-
+ data/items/gwangdahoe.tres            |   2 +-
+ data/items/gyeongbeongap.tres         |   2 +-
+ data/items/hakchangui.tres            |   2 +-
+ data/items/ident_tome.tres            |   2 +-
+ data/items/jade_ring.tres             |   2 +-
+ data/items/jigap.tres                 |   2 +-
+ data/items/mokhwa.tres                |   2 +-
+ data/items/myeongdu.tres              |   2 +-
+ data/items/portal_tome.tres           |   2 +-
+ data/items/pouch.tres                 |   2 +-
+ data/items/silk_dopo.tres             |   2 +-
+ data/items/swaejagap.tres             |   2 +-
+ data/items/yagwangju.tres             |   2 +-
+ docs/art/466_item_icons/manifest.json | 267 +++++++++++++++++++++++++++++++++-
+ docs/design/item_icons_466_log.md     |   6 +
+ 17 files changed, 284 insertions(+), 19 deletions(-)
+

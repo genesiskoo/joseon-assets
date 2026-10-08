@@ -1,0 +1,56 @@
+{
+  "scope": "full decode plus 0.25-second samples; not continuous normal-speed playback",
+  "shots": {
+    "H05A": {
+      "duration": 4.041667,
+      "frames": 97,
+      "trim": [
+        1,
+        3
+      ],
+      "observations": "ordinary water until ~1.25; silhouette emerges ~1.5-2; counted nine tips (4+1+4) in full-resolution 2.75s; no body above water"
+    },
+    "H05B": {
+      "duration": 4.041667,
+      "frames": 97,
+      "trim": [
+        0.5,
+        2.5
+      ],
+      "observations": "nine tips early; concentric ripple grows, shadow fades by 2.25-2.5; sampled frame2.5 ordinary water",
+      "seam_note": "same camera and stones; generated water/tree-reflection texture may subtly change at seam"
+    },
+    "H08": {
+      "duration": 5.041667,
+      "frames": 121,
+      "trim": [
+        1,
+        5
+      ],
+      "observations": "boots lift and plant ~1.25/~2.5; upward reveal begins~2.75 and reaches fullbody end image by4.75; first selected frame begins mid first step",
+      "limitations": "end nearly matches r3 reference; gait and perceived seam require playback judgment"
+    },
+    "H10_r2": {
+      "duration": 5.041667,
+      "frames": 121,
+      "trim": [
+        0.5,
+        4.5
+      ],
+      "selected": true,
+      "observations": "both boots settle flat by~1.75 seconds; stable final standing by2; restored completed arrival; distant shaman small turn",
+      "rejects": "H10 initial frozen midstride retained as unselected candidate"
+    }
+  },
+  "sound": {
+    "kind": "original procedural temporary soundtrack, no recorded voices; not final Korean instrument recording",
+    "rate": 48000,
+    "channels": 2,
+    "duration": 50,
+    "peak_dBFS": -3,
+    "integrated_LUFS": -25.2,
+    "playback_audition": false
+  },
+  "final_sampled_frames": 13,
+  "normal_speed_continuous_av_review": false
+}

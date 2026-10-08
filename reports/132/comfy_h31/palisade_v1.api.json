@@ -1,0 +1,40 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "29d6e7a2ce7b882c2e417a0fd354a28efd85929ef085772b29507291b68e6368.png"
+    }
+  },
+  "8": {
+    "class_type": "TripoImageToModelNodeV2",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "model_version": "v3.1-20260211",
+      "texture": true,
+      "pbr": false,
+      "model_seed": 1320103,
+      "orientation": "default",
+      "texture_seed": 1320103,
+      "texture_quality": "standard",
+      "texture_alignment": "original_image",
+      "face_limit": 6000,
+      "quad": false,
+      "geometry_quality": "standard",
+      "smart_low_poly": false,
+      "auto_size": false
+    }
+  },
+  "9": {
+    "class_type": "SaveGLB",
+    "inputs": {
+      "mesh": [
+        "8",
+        1
+      ],
+      "filename_prefix": "132/palisade_h31_raw_v1"
+    }
+  }
+}

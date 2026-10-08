@@ -1,0 +1,16 @@
+{
+  "card": 266,
+  "step": "e2e_all",
+  "cwd": "C:/Users/FORYOUCOM/.codex/worktrees/266-peddler-gamble/joseon",
+  "argv": [
+    "powershell",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "tools/test.ps1",
+    "-E2e"
+  ],
+  "head_before": "8f2cd36a60eb2da6a985d01b9b9835b62a2d74e0",
+  "started_utc": "2026-10-04T07:17:29.238712+00:00"
+}

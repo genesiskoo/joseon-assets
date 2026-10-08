@@ -1,0 +1,27 @@
+{
+  "card": 132,
+  "asset": "seal_stone",
+  "provider": "Comfy Cloud",
+  "node": "TripoImageToModelNodeV2",
+  "model": "v3.1-20260211",
+  "source": "workbench/production/dungeon_props_132/refs/seal_stone.png",
+  "source_sha256": "727542de8c3a984580db696f0c95aeba26930f2ec900941a72bc341cb58d98dd",
+  "face_limit": 6000,
+  "estimated_usd": 0.3,
+  "estimate_source": "live node price_badge on 2026-10-01",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T06:40:02.604900+00:00",
+  "prompt_id": "dd998e9a-fc60-4e70-8c3d-df24c321ca8c",
+  "status_response": {
+    "assigned_inference": "10.4.4.45:8080",
+    "created_at": "2026-10-01T06:40:04.993895Z",
+    "id": "dd998e9a-fc60-4e70-8c3d-df24c321ca8c",
+    "last_state_update": "2026-10-01T06:46:11.405751Z",
+    "status": "success",
+    "updated_at": "2026-10-01T06:46:11.405751Z"
+  },
+  "output": "seal_stone_h31_raw_v1.glb",
+  "output_sha256": "3856550b074f50312b142d439197fd1517c7fe80d3a28c9b80273180c4b7bded",
+  "output_bytes": 1699456
+}

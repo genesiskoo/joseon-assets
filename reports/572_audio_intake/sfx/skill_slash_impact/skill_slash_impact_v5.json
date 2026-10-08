@@ -1,0 +1,69 @@
+{
+ "cue": "skill_slash_impact",
+ "v": 5,
+ "prompt": "A strong sweeping sword impact, short close heavy flesh thud. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:26",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.575011,
+ "lufs": "-10.4",
+ "peak": "0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 4,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0001
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_slash_impact_v5.wav",
+   "duration": 0.6,
+   "lufs": "-10.4",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25358,
+   "at": 0.575,
+   "removed_ms": 25.0,
+   "floor_db": -93.1,
+   "jump_db": 51.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.02,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -10.49,
+    -10.49
+   ],
+   "intake_tp": [
+    3.14,
+    3.12
+   ]
+  },
+  "out": {
+   "over_full": 1,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.01,
+   "lufs": "-10.4",
+   "true_peak": "0.1"
+  },
+  "warn": [
+   "CLIP 4"
+  ]
+ }
+}

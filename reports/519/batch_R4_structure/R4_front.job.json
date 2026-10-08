@@ -1,0 +1,49 @@
+{
+  "card": 519,
+  "asset": "R4_front",
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "reference_images": [
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\workbench\\production\\gumiho_phase1_519\\refs\\C_gaze.png",
+      "role": "Image 1: approved adult Korean hostess FACE and amber alluring gaze only; ignore its two-panel layout.",
+      "sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\._tmp\\assets_519\\workbench\\production\\gumiho_phase1_519\\refs\\P1_costume.png",
+      "role": "Approved P1 indigo blouse, naturally slipped left shoulder, pale worn apron, brown chima and physical corruption; preserve this design.",
+      "sha256": "e421b2748979a436b71fd25d9d7efc9ad173b22dc3af751b399b16a370c71d6f"
+    }
+  ],
+  "prompt_sha256": "128d7805dd6a06a75eeda49e9f0316983fc06a17bdf4e08e0804c4bffd52873d",
+  "width": 1536,
+  "height": 2048,
+  "background_requested": "opaque",
+  "quality": "high",
+  "seed": 5194001,
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T07:26:23.098369+00:00",
+  "prompt_id": "ca245618-7312-432a-ba48-e6754f4453e0",
+  "status_response": {
+    "assigned_inference": "10.4.43.34:8080",
+    "created_at": "2026-10-01T07:26:25.54334Z",
+    "id": "ca245618-7312-432a-ba48-e6754f4453e0",
+    "last_state_update": "2026-10-01T07:27:04.241637Z",
+    "status": "success",
+    "updated_at": "2026-10-01T07:27:04.241637Z"
+  },
+  "actual_dimensions": [
+    1536,
+    2048
+  ],
+  "actual_mode": "RGBA",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "has_transparent_pixels": false,
+  "output": "R4_front.png",
+  "output_sha256": "7d05e1d32e9c4dfe2fc8fbbe03ef254256fe1bee3a9b6f0c756fb4f960277d01",
+  "output_bytes": 4621752
+}

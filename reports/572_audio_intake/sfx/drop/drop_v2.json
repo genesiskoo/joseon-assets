@@ -1,0 +1,67 @@
+{
+ "cue": "drop",
+ "v": 2,
+ "prompt": "One small leather equipment bundle falls onto stone with a dull compact thud. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.593016,
+ "lufs": "-36.8",
+ "peak": "-14.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 14.9,
+   "dc": [
+    -0.0009,
+    0.0007
+   ],
+   "sample_peak_db": -11.29,
+   "file": "_raw/drop_v2.wav",
+   "duration": 0.6,
+   "lufs": "-36.7",
+   "true_peak": "-11.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26152,
+   "at": 0.593,
+   "removed_ms": 7.0,
+   "floor_db": -92.1,
+   "jump_db": 39.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 1.24,
+   "why": "트루피크 여유 +1.2 LU",
+   "intake_i": [
+    -40.41,
+    -40.41
+   ],
+   "intake_tp": [
+    -16.59,
+    -17.83
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.7,
+   "dc": [
+    0.0,
+    -0.0
+   ],
+   "sample_peak_db": -14.12,
+   "lufs": "-36.8",
+   "true_peak": "-14.1"
+  },
+  "warn": []
+ }
+}

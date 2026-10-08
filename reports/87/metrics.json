@@ -1,0 +1,56 @@
+{
+  "card": 87,
+  "scenario": "ui_windows",
+  "states": [
+    "hud",
+    "hover_npc",
+    "hover_item",
+    "character",
+    "inventory",
+    "skills",
+    "dialog_merchant",
+    "vendor",
+    "dialog_shaman",
+    "dialog_elder",
+    "waypoint",
+    "title"
+  ],
+  "measurements": {
+    "character_empty_wood": {
+      "box_1280x720": [
+        220,
+        80,
+        390,
+        135
+      ],
+      "before": {
+        "median_s": 0.388,
+        "median_v": 0.271,
+        "vivid_pct": 0.25
+      },
+      "after": {
+        "median_s": 0.032,
+        "median_v": 0.11,
+        "vivid_pct": 0.0
+      }
+    },
+    "inventory_empty_wood": {
+      "box_1280x720": [
+        1140,
+        85,
+        1240,
+        295
+      ],
+      "before": {
+        "median_s": 0.391,
+        "median_v": 0.271,
+        "vivid_pct": 1.5
+      },
+      "after": {
+        "median_s": 0.04,
+        "median_v": 0.098,
+        "vivid_pct": 0.0
+      }
+    }
+  }
+}

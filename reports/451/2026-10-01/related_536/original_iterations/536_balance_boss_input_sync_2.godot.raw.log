@@ -1,0 +1,308 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E start: balance_boss
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ balance_boss
+  · 명중 확정 끔 — 이 대본은 명중 굴림을 실전 그대로 쓴다 (#342)
+  · 흑랑 RNG Lv3 판1 doho0 seed=23271941 initial=3718673984595126131
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_3.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@509 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@510 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@511 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(21.5, 0.0, 43.5) screen=(130.8828, -674.1207)
+[Dev] interact @Area3D@512 world=(22.5, 0.0, 44.5) screen=(130.8829, -620.6779)
+[Dev] interact @Area3D@513 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@514 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@515 world=(44.5, 0.0, 51.5) screen=(825.1333, 154.2443)
+[Dev] interact @Area3D@516 world=(44.5, 0.0, 52.5) screen=(778.8499, 180.9657)
+[Dev] interact @Area3D@517 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 RNG Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107
+  · 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052
+  · 흑랑 RNG Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+[Audio] BGM boss → boss.ogg
+  · 흑랑 파수2 Lv3 판1 entered tick=26 game=0.4167 state=0 XZ=(20.5000,15.5000) pack=6 target=none path=0/0 level_current=false rng=3841642673449239052
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+  · 흑랑 파수2 Lv3 판1 sample tick=28 game=0.4667 state=1 XZ=(20.5000,15.6500) pack=6 target=(23.5000,23.5000) path=0/8 level_current=true rng=3841642673449239052
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 파수2 Lv3 판1 before_V tick=32 game=0.5167 state=1 XZ=(20.5000,15.8750) pack=6 target=(23.5000,23.5000) path=0/8 level_current=true rng=3841642673449239052
+[Dev] near boss hp=195/195
+  · 흑랑 준비 key=86 physics=5 expected=5
+  · 흑랑 파수2 Lv3 판1 after_V tick=38 game=0.6167 state=1 XZ=(20.5000,16.3250) pack=6 target=(10.5000,8.5000) path=1/8 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 46/50
+  · 흑랑 파수2 Lv3 판1 sample tick=58 game=0.9667 state=1 XZ=(19.9399,16.1269) pack=6 target=(10.5000,8.5000) path=0/16 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=89 game=1.4833 state=1 XZ=(19.5102,13.8946) pack=6 target=(10.5000,8.5000) path=0/14 level_current=true rng=3841642673449239052
+[Click] world=(8.822201, 0.000934, 8.525436) cell=(8, 8)
+  · 흑랑 파수2 Lv3 판1 sample tick=120 game=2.0000 state=1 XZ=(19.5003,11.5697) pack=6 target=(10.3667,8.5000) path=1/12 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=151 game=2.5167 state=1 XZ=(19.1752,9.3572) pack=6 target=(10.3667,8.5000) path=1/10 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 43/50
+  · 흑랑 파수2 Lv3 판1 sample tick=182 game=3.0333 state=3 XZ=(17.3488,8.5444) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=213 game=3.5500 state=5 XZ=(16.5488,8.5393) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=244 game=4.0667 state=5 XZ=(11.6177,8.5080) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 40/50
+  · 흑랑 파수2 Lv3 판1 sample tick=275 game=4.5833 state=1 XZ=(11.7395,8.5082) pack=6 target=(10.3667,8.5000) path=0/7 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=306 game=5.1000 state=1 XZ=(11.9442,8.5009) pack=6 target=(10.3667,8.5000) path=1/3 level_current=true rng=3841642673449239052
+[Click] world=(8.715492, 0.000934, 8.524979) cell=(8, 8)
+  · 흑랑 파수2 Lv3 판1 sample tick=337 game=5.6167 state=1 XZ=(11.6192,8.5000) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 37/50
+  · 흑랑 파수2 Lv3 판1 sample tick=368 game=6.1333 state=1 XZ=(11.5660,8.5000) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=399 game=6.6500 state=5 XZ=(11.5660,8.5000) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=430 game=7.1667 state=4 XZ=(11.5660,8.5000) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 35/50
+  · 흑랑 파수2 Lv3 판1 sample tick=461 game=7.6833 state=1 XZ=(11.5507,8.4998) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=491 game=8.1833 state=1 XZ=(11.5507,8.4998) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=521 game=8.6833 state=1 XZ=(11.5507,8.4998) pack=6 target=(10.3000,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Click] world=(8.622149, 0.000934, 8.525563) cell=(8, 8)
+  · 흑랑 파수2 Lv3 판1 sample tick=551 game=9.1833 state=3 XZ=(11.5507,8.4998) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 32/50
+  · 흑랑 파수2 Lv3 판1 sample tick=581 game=9.6833 state=4 XZ=(11.4288,8.4998) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=611 game=10.1833 state=1 XZ=(11.4287,8.4997) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=641 game=10.6833 state=1 XZ=(11.4287,8.4997) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+[Skill] 참격 → mp 29/50
+  · 흑랑 파수2 Lv3 판1 sample tick=671 game=11.1833 state=1 XZ=(11.4287,8.4997) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 파수2 Lv3 판1 sample tick=701 game=11.6833 state=3 XZ=(11.4287,8.4997) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=3841642673449239052
+  · 흑랑 RNG Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430
+  · 흑랑 RNG Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375
+  · 흑랑 파수2 Lv3 판1 sample tick=731 game=12.1833 state=5 XZ=(10.8329,8.5060) pack=6 target=(10.1667,8.5000) path=0/1 level_current=true rng=2984990500747020242
+[Click] world=(8.548803, -0.000038, 8.525856) cell=(8, 8)
+  · 흑랑 파수2 Lv3 판1 sample tick=761 game=12.6833 state=1 XZ=(10.7577,8.4697) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+[Skill] 참격 → mp 27/50
+  · 흑랑 파수2 Lv3 판1 sample tick=791 game=13.1833 state=1 XZ=(10.7577,8.4697) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=821 game=13.6833 state=1 XZ=(10.7577,8.4697) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=851 game=14.1833 state=1 XZ=(10.7577,8.4697) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+  · 흑랑 파수2 Lv3 판1 sample tick=881 game=14.6833 state=3 XZ=(10.7577,8.4697) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=2984990500747020242
+[Skill] 참격 → mp 24/50
+  · 흑랑 파수2 Lv3 판1 sample tick=911 game=15.1833 state=4 XZ=(10.7577,8.4697) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=941 game=15.6833 state=1 XZ=(10.7494,8.4682) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=971 game=16.1833 state=1 XZ=(10.7494,8.4682) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=1002 game=16.7000 state=1 XZ=(10.7494,8.4682) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+[Skill] 참격 → mp 21/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1033 game=17.2167 state=3 XZ=(10.7494,8.4682) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-1267280395400995224
+  · 흑랑 파수2 Lv3 판1 sample tick=1064 game=17.7333 state=4 XZ=(10.7494,8.4682) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1095 game=18.2500 state=1 XZ=(10.7494,8.4668) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1126 game=18.7667 state=1 XZ=(10.7494,8.4668) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+[Skill] 참격 → mp 19/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1157 game=19.2833 state=1 XZ=(10.7494,8.4668) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1188 game=19.8000 state=3 XZ=(10.7494,8.4668) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=7952870694343690062
+  · 흑랑 파수2 Lv3 판1 sample tick=1219 game=20.3167 state=4 XZ=(10.7494,8.4668) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+  · 흑랑 파수2 Lv3 판1 sample tick=1250 game=20.8333 state=1 XZ=(10.7493,8.4657) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+[Skill] 참격 → mp 16/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1281 game=21.3500 state=1 XZ=(10.7493,8.4657) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+[Kill] +7 xp (lv 4, 6/160)
+[LevelUp] lv=4 stat_pts=5 skill_pts=2
+[Dev] item 엽전 world=(8.093428, 0.0, 8.481773) screen=(547.9722, 289.8821)
+  · 흑랑 파수2 Lv3 판1 sample tick=1312 game=21.8667 state=1 XZ=(10.7493,8.4657) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+  · 흑랑 파수2 Lv3 판1 sample tick=1343 game=22.3833 state=3 XZ=(10.7493,8.4657) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5111047397832607740
+[Skill] 참격 → mp 14/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1374 game=22.9000 state=4 XZ=(10.7493,8.4657) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1405 game=23.4167 state=1 XZ=(10.7492,8.4647) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1436 game=23.9333 state=1 XZ=(10.7492,8.4647) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1467 game=24.4500 state=1 XZ=(10.7492,8.4647) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+[Skill] 참격 → mp 11/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1498 game=24.9667 state=3 XZ=(10.7492,8.4647) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=-5424752888238917110
+  · 흑랑 파수2 Lv3 판1 sample tick=1529 game=25.4833 state=4 XZ=(10.7492,8.4647) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1560 game=26.0000 state=1 XZ=(10.7491,8.4636) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1591 game=26.5167 state=1 XZ=(10.7491,8.4636) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+[Skill] 참격 → mp 9/50
+  · 흑랑 파수2 Lv3 판1 sample tick=1622 game=27.0333 state=1 XZ=(10.7491,8.4636) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1653 game=27.5500 state=3 XZ=(10.7491,8.4636) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=602141716667985580
+  · 흑랑 파수2 Lv3 판1 sample tick=1684 game=28.0667 state=4 XZ=(10.7491,8.4636) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=1286086405583097886
+[Kill] +168 xp (lv 5, 14/224)
+[LevelUp] lv=5 stat_pts=10 skill_pts=3
+[Loot] 채널 jade — 물건 정의가 아직 없다(옥 정의 item_type gem — I9 #265): 굴림만 돌고 물건은 없다 · Loot.MISSING_CHANNELS
+[Dev] item 미식별 본국검 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 영약 — 생맥산 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 탕약 — 쌍화탕 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 탕약 — 쌍화탕 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 귀환부첩 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 흑랑 이빨 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 흑랑 이빨 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 미식별 예도 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 미식별 무명띠 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 미식별 옥패 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Loot] 보스 전용 유니크 — boss_heukrang 첫 처치 → u_heukrang_fang (회차 1)
+[Dev] item 흑랑의 봉인패 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Dev] item 엽전 world=(8.668034, 0.0, 8.575096) screen=(570.2479, 307.7302)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "opening_pending": false, "quest": { "heukrang_clear": { "state": "none", "left": 20, "barked": false }, "heukrang_seal": { "state": "killed" }, "heukrang_thanks": { "state": "killed" } }, "seal:boss_heukrang": 1, "boss_killed_heukrang_gul": true }
+  · 흑랑 입력 Lv3 판1 polls=277 physics_interval=6 valid=true
+  · 흑랑 Lv3 처치 · 27.7초 · 2페이즈 11.1초 · 생명 130→34 (최저 32 = 25%) · 탕약 3/3 · 적 공격 41 (명중 25)
+  · 흑랑 파수2 Lv3 판1 finish tick=1700 game=28.3167 state=4 XZ=(10.7491,8.4636) pack=6 target=(10.1000,8.5000) path=0/1 level_current=true rng=1286086405583097886
+  · 흑랑 RNG Lv3 판1 doho0 seed=23271941 initial=3718673984595126131 final=210160255614176275
+  · 흑랑 RNG Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107 final=9053088838582101655
+  · 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052 final=1286086405583097886
+  · 흑랑 RNG Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808 final=-4334644856633984577
+  · 흑랑 RNG Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430 final=-7559868052669486168
+  · 흑랑 RNG Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375 final=481403823597241650
+  · 흑랑 재생 Lv3 판1 win=true attacks=41 hits=25 guards=2 summoned=2
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+  · 흑랑 RNG Lv5 판1 doho0 seed=25271947 initial=5600093101942189313
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@979 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@980 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@981 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(21.5, 0.0, 43.5) screen=(130.8828, -674.1207)
+[Dev] interact @Area3D@982 world=(22.5, 0.0, 44.5) screen=(130.8829, -620.6779)
+[Dev] interact @Area3D@983 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@984 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@985 world=(44.5, 0.0, 51.5) screen=(825.1333, 154.2443)
+[Dev] interact @Area3D@986 world=(44.5, 0.0, 52.5) screen=(778.8499, 180.9657)
+[Dev] interact @Area3D@987 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 RNG Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289
+  · 흑랑 RNG Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234
+  · 흑랑 RNG Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990
+[Dungeon] heukrang_gul 2층 lv=3 seed=3189434797 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+[Audio] BGM boss → boss.ogg
+  · 흑랑 파수2 Lv5 판1 entered tick=1708 game=28.4500 state=0 XZ=(20.5000,15.5000) pack=12 target=none path=0/0 level_current=false rng=5723061790796302234
+[Save] level 흑랑 굴 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(22.5, 0.0, 23.5) screen=(593.7167, 335.9507)
+  · 흑랑 파수2 Lv5 판1 sample tick=1708 game=28.4667 state=1 XZ=(20.5000,15.5000) pack=12 target=(23.5000,23.5000) path=0/0 level_current=false rng=5723061790796302234
+  · 흑랑 준비 key=93 physics=6 expected=6
+  · 흑랑 파수2 Lv5 판1 before_V tick=1714 game=28.5500 state=1 XZ=(20.5000,15.8750) pack=12 target=(23.5000,23.5000) path=0/8 level_current=true rng=5723061790796302234
+[Dev] near boss hp=195/195
+  · 흑랑 준비 key=86 physics=5 expected=5
+  · 흑랑 파수2 Lv5 판1 after_V tick=1720 game=28.6500 state=1 XZ=(20.5000,16.3250) pack=12 target=(10.5000,8.5000) path=1/8 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 45/50
+  · 흑랑 파수2 Lv5 판1 sample tick=1739 game=28.9833 state=1 XZ=(19.9830,16.1883) pack=12 target=(10.5000,8.5000) path=0/16 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1770 game=29.5000 state=1 XZ=(19.5122,13.9696) pack=12 target=(10.5000,8.5000) path=0/14 level_current=true rng=5723061790796302234
+[Click] world=(8.822547, 0.000934, 8.524997) cell=(8, 8)
+  · 흑랑 파수2 Lv5 판1 sample tick=1801 game=30.0167 state=1 XZ=(19.5003,11.6447) pack=12 target=(10.3667,8.5000) path=1/12 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1832 game=30.5333 state=1 XZ=(19.2216,9.4161) pack=12 target=(10.3667,8.5000) path=1/10 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 42/50
+  · 흑랑 파수2 Lv5 판1 sample tick=1863 game=31.0500 state=3 XZ=(17.3488,8.5444) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1894 game=31.5667 state=5 XZ=(16.7488,8.5406) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1925 game=32.0833 state=5 XZ=(11.6177,8.5080) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 39/50
+  · 흑랑 파수2 Lv5 판1 sample tick=1956 game=32.6000 state=1 XZ=(11.6415,8.5082) pack=12 target=(10.3667,8.5000) path=0/7 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=1987 game=33.1167 state=1 XZ=(12.0070,8.5011) pack=12 target=(10.3667,8.5000) path=1/3 level_current=true rng=5723061790796302234
+[Click] world=(8.71584, 0.000934, 8.524546) cell=(8, 8)
+  · 흑랑 파수2 Lv5 판1 sample tick=2018 game=33.6333 state=1 XZ=(11.6192,8.5000) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 35/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2049 game=34.1500 state=1 XZ=(11.5660,8.5000) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2080 game=34.6667 state=5 XZ=(11.5660,8.5000) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2111 game=35.1833 state=4 XZ=(11.5660,8.5000) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 32/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2142 game=35.7000 state=1 XZ=(11.5507,8.4998) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2173 game=36.2167 state=1 XZ=(11.5507,8.4998) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2204 game=36.7333 state=1 XZ=(11.5507,8.4998) pack=12 target=(10.3000,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Click] world=(8.622499, 0.000934, 8.525118) cell=(8, 8)
+  · 흑랑 파수2 Lv5 판1 sample tick=2235 game=37.2500 state=3 XZ=(11.5507,8.4998) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 29/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2266 game=37.7667 state=4 XZ=(11.4288,8.4998) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2297 game=38.2833 state=1 XZ=(11.4287,8.4997) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2328 game=38.8000 state=1 XZ=(11.4287,8.4997) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2359 game=39.3167 state=1 XZ=(11.4287,8.4997) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 26/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2390 game=39.8333 state=3 XZ=(11.4287,8.4997) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2421 game=40.3500 state=4 XZ=(11.4287,8.4997) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2452 game=40.8667 state=1 XZ=(11.4288,8.4995) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Click] world=(8.542508, 0.000934, 8.526419) cell=(8, 8)
+[Skill] 참격 → mp 23/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2483 game=41.3833 state=1 XZ=(11.4288,8.4995) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2514 game=41.9000 state=1 XZ=(11.4288,8.4995) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2545 game=42.4167 state=3 XZ=(11.4288,8.4995) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Skill] 참격 → mp 19/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2576 game=42.9333 state=4 XZ=(11.4288,8.4995) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 RNG Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612
+  · 흑랑 RNG Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557
+  · 흑랑 파수2 Lv5 판1 sample tick=2607 game=43.4500 state=1 XZ=(11.1148,8.5160) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2638 game=43.9667 state=1 XZ=(10.8220,8.5037) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+[Click] world=(8.535808, -0.000038, 8.524962) cell=(8, 8)
+[Skill] 참격 → mp 16/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2669 game=44.4833 state=1 XZ=(10.8220,8.5037) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2700 game=45.0000 state=3 XZ=(10.8220,8.5037) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=5723061790796302234
+  · 흑랑 파수2 Lv5 판1 sample tick=2731 game=45.5167 state=5 XZ=(10.8220,8.5037) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+  · 흑랑 파수2 Lv5 판1 sample tick=2762 game=46.0333 state=1 XZ=(10.8168,8.5001) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+[Skill] 참격 → mp 12/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2793 game=46.5500 state=1 XZ=(10.8168,8.5001) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+  · 흑랑 파수2 Lv5 판1 sample tick=2824 game=47.0667 state=1 XZ=(10.8168,8.5001) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+  · 흑랑 파수2 Lv5 판1 sample tick=2855 game=47.5833 state=3 XZ=(10.8168,8.5001) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-2294790372600408388
+[Skill] 참격 → mp 9/50
+  · 흑랑 파수2 Lv5 판1 sample tick=2886 game=48.1000 state=5 XZ=(10.8168,8.5001) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+  · 흑랑 파수2 Lv5 판1 sample tick=2917 game=48.6167 state=1 XZ=(10.8169,8.4974) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+  · 흑랑 파수2 Lv5 판1 sample tick=2948 game=49.1333 state=1 XZ=(10.8169,8.4974) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+  · 흑랑 파수2 Lv5 판1 sample tick=2979 game=49.6500 state=1 XZ=(10.8169,8.4974) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+[Skill] 참격 → mp 6/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3010 game=50.1667 state=1 XZ=(10.8169,8.4974) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-5545868306340860158
+[Kill] +7 xp (lv 5, 7/224)
+[Dev] item 탕약 — 쌍화탕 world=(8.158574, 0.0, 8.46221) screen=(548.8074, 289.3186)
+  · 흑랑 파수2 Lv5 판1 sample tick=3041 game=50.6833 state=5 XZ=(10.8169,8.4974) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · 흑랑 파수2 Lv5 판1 sample tick=3072 game=51.2000 state=4 XZ=(10.8169,8.4974) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · 흑랑 파수2 Lv5 판1 sample tick=3103 game=51.7167 state=1 XZ=(10.8168,8.4948) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=6331231839291702372
+[Skill] 참격 → mp 3/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3134 game=52.2333 state=1 XZ=(10.8168,8.4948) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · 흑랑 파수2 Lv5 판1 sample tick=3165 game=52.7500 state=1 XZ=(10.8168,8.4948) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · 흑랑 파수2 Lv5 판1 sample tick=3196 game=53.2667 state=3 XZ=(10.8168,8.4948) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=6331231839291702372
+  · 흑랑 파수2 Lv5 판1 sample tick=3227 game=53.7833 state=4 XZ=(10.8168,8.4948) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-6522577865471702166
+[Skill] 참격 → mp 0/50
+  · 흑랑 파수2 Lv5 판1 sample tick=3258 game=54.3000 state=1 XZ=(10.8167,8.4925) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-6522577865471702166
+  · 흑랑 파수2 Lv5 판1 sample tick=3289 game=54.8167 state=1 XZ=(10.8167,8.4925) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-6522577865471702166
+  · 흑랑 파수2 Lv5 판1 sample tick=3320 game=55.3333 state=1 XZ=(10.8167,8.4925) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-6522577865471702166
+  · 흑랑 파수2 Lv5 판1 sample tick=3351 game=55.8500 state=3 XZ=(10.8167,8.4925) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-6522577865471702166
+[Kill] +168 xp (lv 5, 175/224)
+[Dev] item 미식별 은가락지 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 탕약 — 쌍화탕 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 영약 — 생맥산 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 영약 — 생맥산 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 식별부첩 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 흑랑 이빨 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 미식별 예도 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 미식별 은가락지 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 미식별 옥패 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Loot] 보스 전용 유니크 — boss_heukrang 첫 처치 → u_heukrang_fang (회차 1)
+[Dev] item 흑랑의 봉인패 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Dev] item 엽전 world=(8.797669, 0.0, 8.583512) screen=(572.7725, 309.6376)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-536-balance-rng-replay/save_e2e.json)
+[Boss] killed area=heukrang_gul level=3 flags={ "opening_pending": false, "quest": { "heukrang_clear": { "state": "none", "left": 20, "barked": false }, "heukrang_seal": { "state": "killed" }, "heukrang_thanks": { "state": "killed" } }, "seal:boss_heukrang": 1, "boss_killed_heukrang_gul": true }
+  · 흑랑 입력 Lv5 판1 polls=277 physics_interval=6 valid=true
+  · 흑랑 Lv5 처치 · 27.7초 · 2페이즈 14.6초 · 생명 150→45 (최저 45 = 30%) · 탕약 3/3 · 적 공격 37 (명중 24)
+  · 흑랑 파수2 Lv5 판1 finish tick=3382 game=56.3500 state=4 XZ=(10.8167,8.4925) pack=12 target=(10.1667,8.5000) path=0/1 level_current=true rng=-4317364557962837696
+  · 흑랑 RNG Lv5 판1 doho0 seed=25271947 initial=5600093101942189313 final=-1456016979007014311
+  · 흑랑 RNG Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289 final=-4915985485660836923
+  · 흑랑 RNG Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234 final=-4317364557962837696
+  · 흑랑 RNG Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990 final=2395616564710220186
+  · 흑랑 RNG Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612 final=8077224405062169234
+  · 흑랑 RNG Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557 final=1002189368153405969
+  · 흑랑 재생 Lv5 판1 win=true attacks=37 hits=24 guards=2 summoned=2
+  · Lv5 목표 대조(이 판 — 판정은 25판 표 §9.7): 27.7초 (15~30) · 탕약 3 (1 안팎) · 최저 생명 30% (35~60)
+E2E balance_boss PASS (검사 30)
+E2E SUMMARY: 1/1 PASS
+  E2E balance_boss PASS (검사 30)

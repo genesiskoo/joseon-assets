@@ -1,0 +1,15 @@
+  PASS  AGENTS.md                            25,677 B / 예산 26,000
+  PASS  docs/DECISIONS.md                    17,799 B / 예산 22,000
+  PASS  docs/STATE.md                        15,646 B / 예산 16,000
+  PASS  세 문서 합                               59,122 B / 예산 70,000
+  PASS  STATE 줄 길이 ≤ 300자                    전부 안
+  PASS  .claude/agents/card-worker.md        4,612 B / 예산 8,000
+  PASS  docs/art 그림·영상 ≤ 2MB                 전부 안 · 400KB 넘는 옛 파일 89개(규약 전 것, 손대지 않음)
+  WARN  docs/design/item_system_v2.md 119,401 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monster_motion_v2.md 65,002 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monster_new_types_rules_2026-09-23.md 82,237 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monsters_v2.md 146,758 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/npcs_v2.md 77,840 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/quest_rework_dialogue_2026-10-01.md 71,627 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/testing.md 71,914 B > 60,000 (규칙/기록 가르기 #414·#415)
+DOC_BUDGET_TEST checks=7 fails=0 PASS

@@ -1,0 +1,186 @@
+extends SceneTree
+## #558 signed64·기본off·관측 전후 RNG/위치·상대 식별자·수명 정리. 실제 balance cohort는 돌리지 않는다.
+const TRACE := preload("res://core/combat_trace.gd")
+const FIXTURE := preload("res://tests/fixtures/balance_combat_rng.gd")
+var _scenario_script: GDScript
+var _checks := 0
+var _fails: Array[String] = []
+var _directory := ""
+
+class FakeCombat extends Node:
+	var _rng := RandomNumberGenerator.new()
+	var target: Node3D
+	var hp := 130.0
+	var max_hp := 130.0
+	var mp := 60.0
+	var max_mp := 60.0
+	var cooldowns: Array[float] = [0.0]
+	var active_skill := 0
+	var _stagger_until := 0.0
+
+class FakeEnemy extends CharacterBody3D:
+	var _rng := RandomNumberGenerator.new()
+	var _target: Node3D
+	var hp := 195.0
+	var max_hp := 195.0
+	var state := 0
+
+class FakeVisual extends Node:
+	var _swing_no := 101
+	var _hitstop_token := 91
+	var _busy_until := 0.0
+	var _committed := false
+	var _stopped := false
+	var _anim: AnimationPlayer
+
+
+func _check(condition: bool, message: String) -> void:
+	_checks += 1
+	if not condition:
+		_fails.append(message)
+		push_error("FAIL: " + message)
+
+
+func _init() -> void:
+	await process_frame
+	_scenario_script = load("res://tests/e2e/scenarios/balance_boss.gd")
+	_directory = "user://trace_unit_%d_%d" % [OS.get_process_id(), Time.get_ticks_usec()]
+	_check(not TRACE.enabled(), "기본 off")
+	var values: Array[int] = [9007199254740993, -9007199254740995, 9223372036854775807, -9223372036854775807 - 1, 0]
+	for value in values:
+		var payload := JSON.stringify({"state": TRACE.decimal(value)})
+		var parsed: Dictionary = JSON.parse_string(payload)
+		_check(parsed.state is String and parsed.state == str(value) and int(parsed.state) == value, "signed64 JSON 문자열 보존 " + str(value))
+	var body := CharacterBody3D.new()
+	root.add_child(body)
+	var combat := FakeCombat.new()
+	body.add_child(combat)
+	var visual := FakeVisual.new()
+	visual.name = "Visual"
+	body.add_child(visual)
+	visual._anim = AnimationPlayer.new()
+	visual.add_child(visual._anim)
+	combat._rng.seed = 20260916
+	var state0 := combat._rng.state
+	var position0 := body.global_position
+	TRACE.event("disabled", "unit", combat)
+	_check(combat._rng.state == state0 and body.global_position == position0, "off 관측은 실제 상태 불변")
+	TRACE.begin(self, {"scenario": "balance_boss", "base_seed": "20260916", "level":3, "attempt":1}, _directory.path_join("simple"))
+	TRACE.bind_actor(combat,"doho",0,combat._rng,combat._rng.seed,combat._rng.state)
+	TRACE.event("probe", "unit.actual_callsite", visual, {"state": TRACE.decimal(combat._rng.state)})
+	_check(combat._rng.state == state0 and body.global_position == position0, "on 관측도 RNG/위치 불변")
+	var snap := TRACE.snapshot()
+	_check(snap.streams.size() == 1 and snap.not_spawned.size() == 5, "미생성 몸은 가짜 스트림 없이 표시")
+	_check(snap.events.back().body == "doho0" and snap.events.back().callsite == "unit.actual_callsite", "Visual 별칭도 실제 도호 역할/호출위치")
+	visual._swing_no += 2
+	visual._hitstop_token += 3
+	TRACE.event("after_swing", "unit", visual)
+	_check(TRACE.snapshot().events.back().state.swing == 2 and TRACE.relative_hitstop(visual,94) == 3 and visual._swing_no == 103, "상대 swing/hitstop만 계산 · 원 카운터 유지")
+	_check(TRACE.snapshot().events.back().state.raw_swing == "103", "절대 swing 원문 보존")
+	var ended := TRACE.finish("unit")
+	_check(not TRACE.enabled() and ended.events.back().kind == "battle_end" and FileAccess.file_exists(TRACE.last_summary().path), "finish 저장과 disable")
+	_check(TRACE.finish("again").is_empty(), "finish idempotent")
+	var epoch0 := GameClock.now
+	var idle_states: Array[Dictionary] = []
+	for epoch in [10.0, 20000.0]:
+		GameClock.now = epoch   # 단위에서만. 원 epoch를 동기 검사 끝에 돌린다.
+		TRACE.begin(self,{"scenario":"balance_boss","base_seed":"20260916","level":3,"attempt":1},_directory.path_join("epoch_%d" % int(epoch)))
+		TRACE.bind_actor(combat,"doho",0,combat._rng,combat._rng.seed,combat._rng.state)
+		TRACE.event("idle_epoch", "unit", combat)
+		idle_states.append(TRACE.snapshot().events.back().state)
+		TRACE.finish("epoch_unit")
+	GameClock.now = epoch0
+	_check(idle_states[0].busy_remaining == idle_states[1].busy_remaining and idle_states[0].busy_remaining == TRACE.exact(0.0)
+		and idle_states[0].stagger_remaining == idle_states[1].stagger_remaining and not idle_states[0].busy_future and not idle_states[1].stagger_future,
+		"다른 누적 epoch의 inactive sentinel은 가짜 상대시간 차이를 만들지 않음")
+	_check(idle_states[0].raw_busy_until == TRACE.exact(0.0) and idle_states[1].raw_stagger_until == TRACE.exact(0.0) and GameClock.now == epoch0,
+		"절대 deadline 원문과 원 GameClock 유지")
+	for mode in ["close", "finish", "level_exiting", "level_changed", "exit_tree", "dispose", "timeout", "predelete"]:
+		await _lifecycle(combat, mode)
+	await _cross_generation(combat)
+	# Body remains in tree, but its still-valid target has already left it.
+	var target := FakeEnemy.new()
+	root.add_child(target)
+	combat.target = target
+	TRACE.begin(self,{"scenario":"balance_boss","base_seed":"20260916","level":3,"attempt":1},_directory.path_join("detached_target"))
+	TRACE.bind_actor(combat,"doho",0,combat._rng,combat._rng.seed,combat._rng.state)
+	root.remove_child(target)
+	TRACE.event("detached_target", "unit", combat)
+	var target_state: Dictionary = TRACE.snapshot().events.back().state
+	_check(body.is_inside_tree() and target_state.target_detached and not target_state.has("target_position") and not target_state.has("target_distance"),
+		"몸만 tree에 있는 detached target의 전역 위치를 읽지 않음")
+	_check(TRACE.attack_target(combat,target).get("detached",false), "실제 공격 target도 detached로 보존")
+	TRACE.finish("detached_target")
+	combat.target = null
+	target.free()
+	# Detached but valid body must never read global_position outside the tree.
+	TRACE.begin(self,{"scenario":"balance_boss","base_seed":"20260916","level":3,"attempt":1},_directory.path_join("detached"))
+	TRACE.bind_actor(combat,"doho",0,combat._rng,combat._rng.seed,combat._rng.state)
+	root.remove_child(body)
+	TRACE.event("detached", "unit", combat)
+	_check(TRACE.snapshot().events.back().state.get("detached",false), "tree_exiting 경계 detached 위치를 읽지 않음")
+	TRACE.finish("detached")
+	body.free()
+	_check(not TRACE.enabled(), "모든 수명 뒤 off")
+	print("COMBAT_TRACE_TEST checks=%d fails=%d %s" % [_checks,_fails.size(),"PASS" if _fails.is_empty() else "FAIL"])
+	quit(1 if not _fails.is_empty() else 0)
+
+
+func _lifecycle(combat: Node, mode: String) -> void:
+	var fixture := FIXTURE.new()
+	root.add_child(fixture)
+	var seed0: int = combat._rng.seed
+	var state0: int = combat._rng.state
+	var adds0 := node_added.get_connections().size()
+	fixture.begin(combat,20260916,3,1,AreaDb.DEFAULT_DUNGEON,2,Callable(),true,_directory.path_join(mode))
+	_check(TRACE.enabled(), mode + " 시작에서 켜짐")
+	match mode:
+		"close": fixture.close()
+		"finish": fixture.finish()
+		"level_exiting": fixture._on_level_exiting()
+		"level_changed":
+			var town := Node.new()
+			fixture._on_level_loaded(town)
+			town.free()
+		"exit_tree": fixture._exit_tree()
+		"dispose", "timeout", "predelete":
+			var scenario: RefCounted = _scenario_script.new()
+			scenario.set("_replay",fixture)
+			if mode == "predelete":
+				scenario = null
+			else:
+				scenario._dispose_replay("runner_timeout" if mode == "timeout" else "unit_dispose")
+				scenario = null
+	_check(not TRACE.enabled() and combat._rng.seed == seed0 and combat._rng.state == state0 and node_added.get_connections().size() == adds0,
+		mode + " flush/disable·원 RNG/연결 복원")
+	_check(TRACE.finish("duplicate").is_empty(), mode + " 중복 flush 없음")
+	if is_instance_valid(fixture) and not fixture.is_queued_for_deletion():
+		fixture.free()
+	await process_frame
+
+
+func _cross_generation(combat: Node) -> void:
+	var seed0: int = combat._rng.seed
+	var state0: int = combat._rng.state
+	var a := FIXTURE.new()
+	root.add_child(a)
+	a.begin(combat,20260916,3,1,AreaDb.DEFAULT_DUNGEON,2,Callable(),true,_directory.path_join("generation_a"))
+	var token_a: int = a.get("_trace_owner")
+	a.finish()
+	a.queue_free()   # 실제 exit_tree는 B 시작 뒤 process 경계에서 도착한다.
+	var b := FIXTURE.new()
+	root.add_child(b)
+	b.begin(combat,20260916,5,2,AreaDb.DEFAULT_DUNGEON,2,Callable(),true,_directory.path_join("generation_b"))
+	var token_b: int = b.get("_trace_owner")
+	var b_state: int = combat._rng.state
+	_check(token_b > token_a and TRACE.owns(token_b) and not TRACE.owns(token_a), "진단 수명 소유권은 새 판만 가짐")
+	a.finish({}, "late_finished")
+	a._exit_tree()
+	_check(TRACE.enabled() and TRACE.snapshot().battle.level == 5 and TRACE.finish_owned(token_a,"late_owned").is_empty()
+		and combat._rng.state == b_state, "A 중복 종료/구소유권은 B trace·RNG를 닫거나 바꾸지 않음")
+	await process_frame
+	_check(TRACE.owns(token_b) and TRACE.snapshot().battle.attempt == 2 and combat._rng.state == b_state,
+		"A의 늦은 실제 exit_tree 이후에도 B가 계속 기록됨")
+	b.finish({"win":false})
+	b.free()
+	_check(not TRACE.enabled() and combat._rng.seed == seed0 and combat._rng.state == state0, "B 판만 한 번 종료·원 스트림 복원")

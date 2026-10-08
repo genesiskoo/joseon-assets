@@ -1,0 +1,501 @@
+{
+  "issue": 453,
+  "production_issue": 452,
+  "source_repository": "joseon-assets",
+  "source_commit": "f96e2931e8fed818b1952642b3fe685edfee1006",
+  "game_base": "996fa75d8a90fc69b8200423f9d878058a071ad6",
+  "approval": "PD 2026-09-27: 승인 다음",
+  "method": "PowerShell Copy-Item of approved PNG bytes; ItemDef.icon only; existing UiSkin alpha-region drawing.",
+  "files": [
+    {
+      "data_id": "goehwangji",
+      "display_name": "괴황지",
+      "definition": "data/items/goehwangji.tres",
+      "source": "workbench/production/item_icons_452/game/items/goehwangji.png",
+      "destination": "assets/sprites/ui/icons_a/items/goehwangji.png",
+      "sha256": "680ccdd947e6d9a30ae5f9123b3519580084b9d0df696551e3dba588dbd86602",
+      "game_size": [
+        80,
+        80
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "previous_icon": null,
+      "definition_before_sha256": "3f73417fda1af59f783858da59d2e34228ad4f92ee4afbab58f0613e9c9c9933",
+      "non_icon_fields_sha256": "cc0b206f5e530c6d1af4830b4145b9b657d36613bcd29f3ca7fd81d1b76d0e8d",
+      "definition_after_sha256": "b58cba8c2d7961f6d959e32463fd1391c0e460ee6d0a38d35b931a744f1bebbf",
+      "unchanged_except_icon": true
+    },
+    {
+      "data_id": "gyeongmyeonjusa",
+      "display_name": "경면주사",
+      "definition": "data/items/gyeongmyeonjusa.tres",
+      "source": "workbench/production/item_icons_452/game/items/gyeongmyeonjusa.png",
+      "destination": "assets/sprites/ui/icons_a/items/gyeongmyeonjusa.png",
+      "sha256": "92cb2e4e04f419ac9b6a30a3fde619f19f7bee3c70b95df0a1cbf53142adfe26",
+      "game_size": [
+        80,
+        80
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "previous_icon": null,
+      "definition_before_sha256": "15d0c5feddba8c81110bb765ad6541674ab7a36533bb21081194d6db0b6db6e8",
+      "non_icon_fields_sha256": "64cefb1ec695d64aae162a027ae87d266c137e89b21422b72d7f5ca3f20e5702",
+      "definition_after_sha256": "da26a363260b4debb268101874560f6cca64bf7a77cb8a115221f452fe5e4d8b",
+      "unchanged_except_icon": true
+    },
+    {
+      "data_id": "heukrang_tooth",
+      "display_name": "흑랑 이빨",
+      "definition": "data/items/heukrang_tooth.tres",
+      "source": "workbench/production/item_icons_452/game/items/heukrang_tooth.png",
+      "destination": "assets/sprites/ui/icons_a/items/heukrang_tooth.png",
+      "sha256": "f6cd5a35169218cab6409ddd81ce36bad13f1b1acc4009ab64bd69095e67b85e",
+      "game_size": [
+        80,
+        80
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "previous_icon": null,
+      "definition_before_sha256": "18f59d58750983257a32a1f9d76876016f7774c5bafdf670edc4c09bdcc0d45c",
+      "non_icon_fields_sha256": "d829fb6f9ae1e08c2c3be3748332073d58b18870e9cf36510f0cbcab9a5c4115",
+      "definition_after_sha256": "d9ee73859f1264a47dd1fe51bf9bdd13b6039c5d0e0edd4b69487c631e5c2a47",
+      "unchanged_except_icon": true
+    },
+    {
+      "data_id": "jangsanbeom_fur",
+      "display_name": "장산범의 흰 털",
+      "definition": "data/items/jangsanbeom_fur.tres",
+      "source": "workbench/production/item_icons_452/game/items/jangsanbeom_fur.png",
+      "destination": "assets/sprites/ui/icons_a/items/jangsanbeom_fur.png",
+      "sha256": "641a090f262e086fc876703dac5cd74fed655ef788b776744259e4f569185d03",
+      "game_size": [
+        80,
+        80
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "previous_icon": null,
+      "definition_before_sha256": "c255b4655086c93500589adf09ac694e5c2ed37287b156fddf3e9023be8be8f5",
+      "non_icon_fields_sha256": "1b2cfa17648b75bdf929d543232eddab4b198ed74e95d889a4fefe65d1cc37de",
+      "definition_after_sha256": "4a9d288a35d84ec5277d0173053d3e439b1323b5b49879d50a24abb30192f4a0",
+      "unchanged_except_icon": true
+    },
+    {
+      "data_id": "bulgasari_scale",
+      "display_name": "불가살이의 쇠비늘",
+      "definition": "data/items/bulgasari_scale.tres",
+      "source": "workbench/production/item_icons_452/game/items/bulgasari_scale.png",
+      "destination": "assets/sprites/ui/icons_a/items/bulgasari_scale.png",
+      "sha256": "1e4747e8e9c401002f6bdc74883be322d21791a2d42cadd4001f343bd051f106",
+      "game_size": [
+        80,
+        80
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "previous_icon": null,
+      "definition_before_sha256": "7b3512677e2b89abb3adb60736b968c99b6930a7e04d04a8b5bfd020d6814748",
+      "non_icon_fields_sha256": "bfe4ed863426ce93599edbfef8b4705cabd78437bdebecb46af4fa1c9f4d3b03",
+      "definition_after_sha256": "02da7f974e4e5b7b26e91a538533e226b2b866fe6ee9c320923a2e4c555fa823",
+      "unchanged_except_icon": true
+    },
+    {
+      "data_id": "gumiho_tail",
+      "display_name": "구미호 꼬리털",
+      "definition": "data/items/gumiho_tail.tres",
+      "source": "workbench/production/item_icons_452/game/items/gumiho_tail.png",
+      "destination": "assets/sprites/ui/icons_a/items/gumiho_tail.png",
+      "sha256": "ae60892396a5ee831a05c58cb0e1b70d0e329c213bca4298f9c1950b07186a21",
+      "game_size": [
+        80,
+        80
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "previous_icon": null,
+      "definition_before_sha256": "21188fe4ac1e545ab50fbc436648495db460bc3438a18141989d1fbca80e4188",
+      "non_icon_fields_sha256": "d73df1149bdbbf0edf260252a3705a9255c4d2e7941e5d6dd38656cb60430c5c",
+      "definition_after_sha256": "e18dcc0ccf0dc6728a08324010f667a839e40d4e6063fc3e57572ff1dcf8c665",
+      "unchanged_except_icon": true
+    }
+  ],
+  "previous_assets_unchanged": [
+    {
+      "destination": "assets/sprites/ui/icons_a/items/hwando.png",
+      "sha256": "c1ace29103958c0e20fc0be08aee98c160f311a7e9b0e4b5be79616c0bde0955"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/cotton_dopo.png",
+      "sha256": "34386c757755fa6bd3a86c8de26bb40a8b503fe6b8c19bcadd2bec380a519afc"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/leather_shoes.png",
+      "sha256": "f7f7a268d61ce49eaafd040e5523ceb90daf68c6932b1e3e67ed9d4a7c79cf6f"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/paeraengi.png",
+      "sha256": "1869a36d7ecc1078e43e3f4764bb950bf32a658896f5f57d7a1edf12826d2b95"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/mukham.png",
+      "sha256": "a2f1b74b5af17e7dc81017bb24389774d603834dd55e612d55750a32ba0163fd"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/cotton_belt.png",
+      "sha256": "3eac917b39e5a2046a951c25c968526a14e16ab93276c0c3d56801dd7105b73c"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/silver_ring.png",
+      "sha256": "fe95b45cb6a56d1e70b386fe95d53f4f15ada35015048e246222cc02c4143794"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/jade_charm.png",
+      "sha256": "bc69b0dff090761634d334b2a61d9c746d373fc037af76d2c0164e8dc732c7ac"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/hp_potion.png",
+      "sha256": "dcc9619870e8b5f18e37c0bd68f39f7a5596190a216686e966fb0ed8a671e596"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/mp_potion.png",
+      "sha256": "4d76548f31a878b4283672555b79b0205d16ef21fdec1e0f89e972e42b1a7b77"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/talisman_fire.png",
+      "sha256": "dd87f7e8fdbb659209c44b490679ebe782a09754be28d761acd1124aae4bfed1"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/slash.png",
+      "sha256": "98cd399c0cd4a51361a949f249af489dd73c69df9980b8c15df473035146357e"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/lunge.png",
+      "sha256": "8e977e7a9889d52c5c8ff1688261a94c33bd9e96820ae84bea19a19f6bbde4a8"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/whirlwind.png",
+      "sha256": "8c02840033563ef0e5b3635168a6ce2e0a8cd89f36b49adea4288acdb2a62219"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/fire_talisman.png",
+      "sha256": "13f5ee44d0919a5e32aebe2fb559a5a5143772e3f7475e0359a37bbfb3607ca9"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/frost_talisman.png",
+      "sha256": "5e2f6baccba8d54924497e3fefdac597990a8c1d5f16def927202d6eed294022"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/skills/power_shield.png",
+      "sha256": "5d53828584088ae909d59b398069d11a9a0c6da924ad68ffba8f75e9d77f2873"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/satgat.png",
+      "sha256": "9eb58a538cda3b133a8b6241c42510ff36e97f40d1a0db9bb3cd356875fc6534"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/piju.png",
+      "sha256": "aac97ddaeccc3fd3c4b0cf82e73f15912a5937cd13c81179a7c7162a81bd38ac"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/injang.png",
+      "sha256": "bf1f69fc6f37e339accda2f04b0cfd6ade26bf4f25128862fe5828da2e383833"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/yedo.png",
+      "sha256": "a89a9eb1ab0c204049780f55bfa1ae30cd85398a201f8a3103d8c8b6a2b76389"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/mituri.png",
+      "sha256": "f221a81c11636591ce05412ce647aa86443fbeb4ed0137fd766efec83920e361"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/jeondae.png",
+      "sha256": "fa70629d671276a07d30aa241e36dfc89d0827aa42f17b18ce5453853993af00"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/jeongjagwan.png",
+      "sha256": "bfaa289f2967719ef39c09691841b93395c4c9778d3172cd46636fd4d05d5f0d"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/cheomju.png",
+      "sha256": "bbe446e1fa7f22c8694cb7a55aa9c8da223100ff047e3166ab3b494eb2b480bf"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/yundo.png",
+      "sha256": "b099f668435c958c1733450305bc5f7f1fd9c6cb5eb246a194f8e9f5f8414ed8"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/bujeok_mokpan.png",
+      "sha256": "56e7e43518d48f27d0e5b42969c66936f97955c99393c831bf6baee2e9e11518"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/rejuv.png",
+      "sha256": "fbc77821fc4523c47d8599a8ddf93f1913a368d0bd4e801448f2127a9914efc4"
+    },
+    {
+      "destination": "assets/sprites/ui/icons_a/items/talisman_thunder.png",
+      "sha256": "8675c3f048857ea869cd86744484d1351110595b4527183f4366272a392d2541"
+    }
+  ],
+  "other_definitions_unchanged": [
+    {
+      "path": "data/items/_index.tres",
+      "sha256": "6848e99fbe361b30f8cd7d452e210e89e655aaed39058082809a9dbd6e7af769"
+    },
+    {
+      "path": "data/items/bongukgeom.tres",
+      "sha256": "6e99259dd078b55ae62f4159732d2482792abecef3aa3c29f8c038fa88e1bd18"
+    },
+    {
+      "path": "data/items/bujeok_mokpan.tres",
+      "sha256": "3909e3231455e9a863853416326bd2a35e0d7f1df91e7ad08ccf8d36553d5507"
+    },
+    {
+      "path": "data/items/cheomju.tres",
+      "sha256": "f15972e0eaebf7af873a44c28c86c48d38a9dbd3f21d31a315c2ea255f57548e"
+    },
+    {
+      "path": "data/items/coin.tres",
+      "sha256": "6eed1c67da9febf9a12af0839f8e5f78314d9bba33341e692ec55f0e9514d857"
+    },
+    {
+      "path": "data/items/cotton_belt.tres",
+      "sha256": "6720ca81c827a10ef3163291dbd347bbba10b0e9dc5c4c62f4f525f125e2988e"
+    },
+    {
+      "path": "data/items/cotton_dopo.tres",
+      "sha256": "e8c8fc682d69166185d9814384de03b86af9fc27316a38bc84acc21549ed003c"
+    },
+    {
+      "path": "data/items/cotton_robe.tres",
+      "sha256": "6822750d025fbdaf8d7043a4d67ff3bbfdc5472e412a07a1092a5f52e604ee77"
+    },
+    {
+      "path": "data/items/dujeonggap.tres",
+      "sha256": "f6351567d49f02a951d82ee966743e6d82ea2fed2c59cfcc42eb0549f3ab474c"
+    },
+    {
+      "path": "data/items/gold_ring.tres",
+      "sha256": "c550892b9e76304fbe8387cdb4d0ad6195d982243377e206219c5b46b87cec8c"
+    },
+    {
+      "path": "data/items/gwangdahoe.tres",
+      "sha256": "1af97dad2a882d1d840a89440d005eacaf9f5e686ac55707a43c19abfb04b4d8"
+    },
+    {
+      "path": "data/items/gyeongbeongap.tres",
+      "sha256": "091fc5be232842be384e6d71cd93998307ba98967472eef22254f096501922e6"
+    },
+    {
+      "path": "data/items/hakchangui.tres",
+      "sha256": "bf2d4419efefddd6b98310037adb63eda9ce5f7630c807300d4cc72c86f1dc5e"
+    },
+    {
+      "path": "data/items/hp_potion.tres",
+      "sha256": "a6927d846994a8802cac9a748418e188b091d1a6d7d18250a616eb26c753c8b1"
+    },
+    {
+      "path": "data/items/hp_potion_2.tres",
+      "sha256": "0306e41a9b56f784b5d3a29ca4266e1fa87fee15b3b28df592fbd02a90e907d4"
+    },
+    {
+      "path": "data/items/hp_potion_3.tres",
+      "sha256": "017b014c35cbd56be2d583c1705ece84cc64e2370f89ce259c29ff85056d1774"
+    },
+    {
+      "path": "data/items/hwando.tres",
+      "sha256": "d4bbd57995e5144de5f5cf0a3453bc9d1a770896d71e7214fd699ea7671f181f"
+    },
+    {
+      "path": "data/items/ident_scroll.tres",
+      "sha256": "46dde314f3e676c75799f5c679e3e1892cae9913c4fb9a309407ed570a508639"
+    },
+    {
+      "path": "data/items/ident_tome.tres",
+      "sha256": "9aa9d6f6a0b9c4736879fc5f72b155ce442b6b3eb61bbaa349c21a6771c68e8d"
+    },
+    {
+      "path": "data/items/injang.tres",
+      "sha256": "0990d6fe8b32e399bc805f293650bd88b8d55dce09bea8b7a6ebf7c9a6d99db1"
+    },
+    {
+      "path": "data/items/iron_sword.tres",
+      "sha256": "731933fef101643b3c4a00a46057ccc0e617fac629ea57aef6e572e5cbcb68d9"
+    },
+    {
+      "path": "data/items/jade_charm.tres",
+      "sha256": "2a0cc50c5d6b9f04f85d62e775174592274bdb302e5964c7f93f2f23182e6b81"
+    },
+    {
+      "path": "data/items/jade_ring.tres",
+      "sha256": "91a764ceb830a63934d840b34a26a6bc90cf6eeb72d479e30cf52a5ccc8e5191"
+    },
+    {
+      "path": "data/items/jedokgeom.tres",
+      "sha256": "6f4adab860e1548358f4cd0b839bd4733472bfe4aac9a3d1e11a0a75d4b4e9fc"
+    },
+    {
+      "path": "data/items/jeondae.tres",
+      "sha256": "0fae402d7717612a1d9266ed6eb04ae97846f1c68387c246d712c935e0a53e68"
+    },
+    {
+      "path": "data/items/jeongjagwan.tres",
+      "sha256": "1a7aee407c5e92198b6b8f2dabd5a54991174b6b3b3cbcce783b8ab1cefae28b"
+    },
+    {
+      "path": "data/items/jigap.tres",
+      "sha256": "d528913e2dadeb2f0e7b30c30e687bf398b0e3279239b14c3ba33902cb3bc4c6"
+    },
+    {
+      "path": "data/items/leather_armor.tres",
+      "sha256": "0f1d965473cb964691b9f07c3ac692d8e3566ed10c0ffc364c1d4169820dee84"
+    },
+    {
+      "path": "data/items/leather_shoes.tres",
+      "sha256": "ec9a64e59baf24077f564bfd032cca2158c87d68e8d0fcf064bcb99a9dcebb0e"
+    },
+    {
+      "path": "data/items/long_sword.tres",
+      "sha256": "6e138b7cfa0b64d945a5e33d079126c2b1d7392f6093b21109e0937d26e14f1c"
+    },
+    {
+      "path": "data/items/mituri.tres",
+      "sha256": "14452a2e6bd822ba3405b37894cf9b01aa9d58606619f1fc57869d6fa7c0a28d"
+    },
+    {
+      "path": "data/items/mokhwa.tres",
+      "sha256": "4616ed68362bf54e2f84ed21bb7193cf9d7ec56f6a2ff5701082b8d7efac4481"
+    },
+    {
+      "path": "data/items/mp_potion.tres",
+      "sha256": "a17e86d7e8def6c262bcca04eecf1aad6c6d99a3f3caff7d22b3ee715002ecf1"
+    },
+    {
+      "path": "data/items/mp_potion_2.tres",
+      "sha256": "ba5a5db2790c6a539a2674dbd4a0437c3d0606b519bdfa2ff65bb09ffe2c73c8"
+    },
+    {
+      "path": "data/items/mp_potion_3.tres",
+      "sha256": "b03e51dd0e01ee33088cb386b621c5063b7ebd884a214629dfd3ddb551dd011a"
+    },
+    {
+      "path": "data/items/mukham.tres",
+      "sha256": "403d6112117633b8c939df5335afdd65741896d67da5311040f04f54343c4678"
+    },
+    {
+      "path": "data/items/myeongdu.tres",
+      "sha256": "e930005ddf112cf9e1ae777cbf4dc21c638196a706f0fae9083d37017d5e1e13"
+    },
+    {
+      "path": "data/items/paeraengi.tres",
+      "sha256": "b9411fd36df8f7bf7942427fa23386f7065542753fbb59f92de3a60c92a49987"
+    },
+    {
+      "path": "data/items/piju.tres",
+      "sha256": "a917547b62215a04ba4a51858df97fa332cd08212b677d599c337c18dd23b910"
+    },
+    {
+      "path": "data/items/portal_tome.tres",
+      "sha256": "5c1397b1e80962e73bd943ce0d52d501e5d4f52ade025e83184c9eaddc692740"
+    },
+    {
+      "path": "data/items/pouch.tres",
+      "sha256": "202c1eae3248b461883cb452986ebb5f22595c53c00805d3a9492802c4c95e90"
+    },
+    {
+      "path": "data/items/quilted_robe.tres",
+      "sha256": "f262f92db7ea9f468ff3584e09ade3be63601d7cf9e32078719b898c8c0f53c3"
+    },
+    {
+      "path": "data/items/rejuv.tres",
+      "sha256": "4c2edbcde11ac62ce6416910458e99cc9122eb79cee9e544768721c1b0665b68"
+    },
+    {
+      "path": "data/items/saingeom.tres",
+      "sha256": "99bf5d3ec4f7ec9c48b1e7088549d6c8ba17de5e40d24a6ac6e6046846628ae0"
+    },
+    {
+      "path": "data/items/satgat.tres",
+      "sha256": "04fe842146f813447916703f50c0b4a0bf5ae6134aae98213e705ff9d53b3481"
+    },
+    {
+      "path": "data/items/seal_bulgasari.tres",
+      "sha256": "fbaa9d4aa366dc87a3931e21ca3f48ff574e9dd747b7538497f336eee5a5e405"
+    },
+    {
+      "path": "data/items/seal_heukrang.tres",
+      "sha256": "0d3693d198417f3c067c0dfa7277dd4f82a3d5c067f8c23a4cf00f590de0d69b"
+    },
+    {
+      "path": "data/items/seal_jangsanbeom.tres",
+      "sha256": "00509f9e2aabddbb6edd9020a5fb553889b05b664ffc32bf91bcbd4cb84d3585"
+    },
+    {
+      "path": "data/items/silk_dopo.tres",
+      "sha256": "3d4829b9a483a6910d7b6bb6ae9528b7496781b3e1181ec65354d144aaae5902"
+    },
+    {
+      "path": "data/items/silver_ring.tres",
+      "sha256": "0cea8ad357136616396040a38df3633c2ad85fdec6773b6a87d4b35f9b6e9cb8"
+    },
+    {
+      "path": "data/items/ssangsudo.tres",
+      "sha256": "fc35ef17e47377dcf9e7bd1752bd731147b5f05694a39ae04c5bc3480809bde6"
+    },
+    {
+      "path": "data/items/straw_shoes.tres",
+      "sha256": "9fed9a402774b4340a04d2635882101bfd56156d7ed6864a6ad622ab5581083b"
+    },
+    {
+      "path": "data/items/swaejagap.tres",
+      "sha256": "8dde7e7a2462cb98d197d5ee8d74a7f1b373e0d36f1339cbf6d72b342dc77192"
+    },
+    {
+      "path": "data/items/talisman_fire.tres",
+      "sha256": "9dd89addc4c147985481c3f193880601157209d84880633f72d84980c78d73e8"
+    },
+    {
+      "path": "data/items/talisman_ice.tres",
+      "sha256": "a96d4b0fe1757d36501f1c95c998e9112552840f47e7123f354137c0ecd67b43"
+    },
+    {
+      "path": "data/items/talisman_thunder.tres",
+      "sha256": "95e9b09a4659e032ab4c5703bc9f5177239e3c30f925d1c7ec7f187bf1c148b8"
+    },
+    {
+      "path": "data/items/town_portal.tres",
+      "sha256": "fd767bc8b2a2a39bb78f268ba6175776a793f389ed7214de21fcd4b8edc8520d"
+    },
+    {
+      "path": "data/items/wooden_sword.tres",
+      "sha256": "501fc79a4276b13f3907da5cd75e94bfa2edfcef10b666ef2910428dcc2db042"
+    },
+    {
+      "path": "data/items/yagwangju.tres",
+      "sha256": "a9ca895b51943c444d179fd1134f868dd0f10d9f313c587d1cd7ed97bb4dffb9"
+    },
+    {
+      "path": "data/items/yedo.tres",
+      "sha256": "001fff48e5efcda88c8f44a3b21c8878b0ec6a6df54324ed92bc67374f39928d"
+    },
+    {
+      "path": "data/items/yundo.tres",
+      "sha256": "3310f12bcd1a9af5f19a98fba33242ecf02dfc53794e628b0bb999053e64ece4"
+    }
+  ]
+}

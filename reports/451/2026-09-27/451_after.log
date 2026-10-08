@@ -1,0 +1,46 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+Vulkan 1.4.329 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E start: talisman_targeting
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+E2E ▶ talisman_targeting
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=17 roster=bandit,bat,talisman_master elites=["방2:금색×3(깊이 0.50)"]
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 17 (heukrang_clear:none)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 흑랑 굴 1층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@506 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@507 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@508 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(21.5, 0.0, 43.5) screen=(130.8828, -674.1207)
+[Dev] interact @Area3D@509 world=(22.5, 0.0, 44.5) screen=(130.8829, -620.6779)
+[Dev] interact @Area3D@510 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@511 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@512 world=(44.5, 0.0, 51.5) screen=(825.1333, 154.2443)
+[Dev] interact @Area3D@513 world=(44.5, 0.0, 52.5) screen=(778.8499, 180.9657)
+[Dev] interact @Area3D@514 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 17 enemies
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/talisman_targeting_01_bag_tooltip.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/talisman_targeting_02_fire_target.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/talisman_targeting_03_ice_ground.png
+E2E talisman_targeting PASS (검사 4)
+E2E SUMMARY: 1/1 PASS
+  E2E talisman_targeting PASS (검사 4)

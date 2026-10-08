@@ -1,0 +1,354 @@
+{
+  "card": 534,
+  "parent_card": 274,
+  "game_repository": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon",
+  "definition_state": "existing",
+  "status": "candidate_not_installed",
+  "source_docs": {
+    "docs/design/item_catalog_v2.md": "8f1d2cd958025f61f7850eca1fbcc08483ef872ab5dec66825c71ef6934055d5",
+    "docs/design/item_system_v2.md": "29518bfad62dc63089462e8c4367c6f42f60e34f129ecca4815a19a6fd9fa82f"
+  },
+  "items": [
+    {
+      "item_id": "hp_potion_2",
+      "display_name": "십전대보탕",
+      "resource": "hp",
+      "efficacy_stage": 2,
+      "tier": 1,
+      "slot": 6,
+      "consumable_kind": 1,
+      "grid_w": 1,
+      "grid_h": 1,
+      "max_stack": 10,
+      "power": 80,
+      "min_ilvl": 6,
+      "definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/data/items/hp_potion_2.tres",
+      "definition_sha256": "0306e41a9b56f784b5d3a29ca4266e1fa87fee15b3b28df592fbd02a90e907d4",
+      "current_shared_icon": "assets/sprites/ui/icons_a/items/hp_potion.png",
+      "source_revision": "hp_potion_2_v2",
+      "generated_receipt_path": "reports/534/comfy_shape_v2/hp_potion_2_v2_raw.png",
+      "clean_receipt_path": "reports/534/comfy_shape_v2/hp_potion_2_v2.png",
+      "generated_path": "source/items/hp_potion_2_v2_generated.png",
+      "generated_sha256": "30aa20a656e5deff184fd584c25f11265c51d33e2f337f173f60f0c1ca1d2ad2",
+      "source_path": "source/items/hp_potion_2_v2.png",
+      "source_sha256": "4536f92e1046c0dd27a5fdfeaea09f71a123905f27dc4e8fec8e1601d3dc4d38",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha": [
+          0,
+          255
+        ],
+        "bbox": [
+          124,
+          118,
+          897,
+          950
+        ],
+        "nonzero": 488310,
+        "partial": 11805,
+        "opaque": 476505
+      },
+      "source_crop": [
+        124,
+        118,
+        897,
+        950
+      ],
+      "packing_padding_px": 6,
+      "game_path": "game/items/hp_potion_2.png",
+      "game_sha256": "2a2e52128603c8362f487874eaa76111d075dd58ba6012d8b6d3e1da60acf1d2",
+      "game_size": [
+        80,
+        80
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        8,
+        6,
+        71,
+        74
+      ]
+    },
+    {
+      "item_id": "hp_potion_3",
+      "display_name": "경옥고",
+      "resource": "hp",
+      "efficacy_stage": 3,
+      "tier": 1,
+      "slot": 6,
+      "consumable_kind": 1,
+      "grid_w": 1,
+      "grid_h": 1,
+      "max_stack": 10,
+      "power": 140,
+      "min_ilvl": 13,
+      "definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/data/items/hp_potion_3.tres",
+      "definition_sha256": "017b014c35cbd56be2d583c1705ece84cc64e2370f89ce259c29ff85056d1774",
+      "current_shared_icon": "assets/sprites/ui/icons_a/items/hp_potion.png",
+      "source_revision": "hp_potion_3",
+      "generated_receipt_path": "reports/534/comfy_gpt25/hp_potion_3.png",
+      "clean_receipt_path": "reports/534/comfy_birefnet/hp_potion_3_clean.png",
+      "generated_path": "source/items/hp_potion_3_generated.png",
+      "generated_sha256": "128e18e696c488ca44592c74c0185e2820d67be849797e13e69cb6410abcc5d4",
+      "source_path": "source/items/hp_potion_3.png",
+      "source_sha256": "e0fa26864def5a14c18c6de23ceb196288a354b3a6a3535e8a01db0ffb87d83c",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha": [
+          0,
+          255
+        ],
+        "bbox": [
+          194,
+          52,
+          835,
+          969
+        ],
+        "nonzero": 410574,
+        "partial": 12865,
+        "opaque": 397709
+      },
+      "source_crop": [
+        194,
+        52,
+        835,
+        969
+      ],
+      "packing_padding_px": 6,
+      "game_path": "game/items/hp_potion_3.png",
+      "game_sha256": "8cb0319726a02cf4728b6ef29f87bc473a2c2e7e9b181a8a154d29ac11f73115",
+      "game_size": [
+        80,
+        80
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        16,
+        6,
+        64,
+        74
+      ]
+    },
+    {
+      "item_id": "mp_potion_2",
+      "display_name": "총명탕",
+      "resource": "mp",
+      "efficacy_stage": 2,
+      "tier": 1,
+      "slot": 6,
+      "consumable_kind": 2,
+      "grid_w": 1,
+      "grid_h": 1,
+      "max_stack": 10,
+      "power": 50,
+      "min_ilvl": 6,
+      "definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/data/items/mp_potion_2.tres",
+      "definition_sha256": "ba5a5db2790c6a539a2674dbd4a0437c3d0606b519bdfa2ff65bb09ffe2c73c8",
+      "current_shared_icon": "assets/sprites/ui/icons_a/items/mp_potion.png",
+      "source_revision": "mp_potion_2_v2",
+      "generated_receipt_path": "reports/534/comfy_shape_v2/mp_potion_2_v2_raw.png",
+      "clean_receipt_path": "reports/534/comfy_shape_v2/mp_potion_2_v2.png",
+      "generated_path": "source/items/mp_potion_2_v2_generated.png",
+      "generated_sha256": "b7ebe5a85734eb61519beeb87bc0e4bfe0126b22e770bfc49eb10bbaf01779ea",
+      "source_path": "source/items/mp_potion_2_v2.png",
+      "source_sha256": "0b55c8fb2611d75d9909c404fd4282b5dd318f37b31487a2e7ecf0add67c2d6b",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha": [
+          0,
+          255
+        ],
+        "bbox": [
+          239,
+          69,
+          804,
+          966
+        ],
+        "nonzero": 322735,
+        "partial": 12299,
+        "opaque": 310436
+      },
+      "source_crop": [
+        239,
+        69,
+        804,
+        966
+      ],
+      "packing_padding_px": 6,
+      "game_path": "game/items/mp_potion_2.png",
+      "game_sha256": "7ff2c913ca168da36ddfcd90b8c5d8613c4d5c81ee29e6ff354ccd36573d01e2",
+      "game_size": [
+        80,
+        80
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        18,
+        6,
+        61,
+        74
+      ]
+    },
+    {
+      "item_id": "mp_potion_3",
+      "display_name": "공진단",
+      "resource": "mp",
+      "efficacy_stage": 3,
+      "tier": 1,
+      "slot": 6,
+      "consumable_kind": 2,
+      "grid_w": 1,
+      "grid_h": 1,
+      "max_stack": 10,
+      "power": 90,
+      "min_ilvl": 13,
+      "definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/data/items/mp_potion_3.tres",
+      "definition_sha256": "b03e51dd0e01ee33088cb386b621c5063b7ebd884a214629dfd3ddb551dd011a",
+      "current_shared_icon": "assets/sprites/ui/icons_a/items/mp_potion.png",
+      "source_revision": "mp_potion_3_v2",
+      "generated_receipt_path": "reports/534/comfy_shape_v2/mp_potion_3_v2_raw.png",
+      "clean_receipt_path": "reports/534/comfy_shape_v2/mp_potion_3_v2.png",
+      "generated_path": "source/items/mp_potion_3_v2_generated.png",
+      "generated_sha256": "1acaf5014a21781c8359d3884f1164a330fc9d2b888b4afe915787ca58873737",
+      "source_path": "source/items/mp_potion_3_v2.png",
+      "source_sha256": "aabfa58ac781689ad32f6947c0bba6cd74840ef86d2b032a3d4de0cdfe91a7bd",
+      "source_stats": {
+        "size": [
+          1024,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha": [
+          0,
+          255
+        ],
+        "bbox": [
+          223,
+          52,
+          850,
+          977
+        ],
+        "nonzero": 359233,
+        "partial": 13810,
+        "opaque": 345423
+      },
+      "source_crop": [
+        223,
+        52,
+        850,
+        977
+      ],
+      "packing_padding_px": 6,
+      "game_path": "game/items/mp_potion_3.png",
+      "game_sha256": "4235b62454e0d2bd7cbfb446866b43cb49986c9c16dc92e42ca05e585f6b5848",
+      "game_size": [
+        80,
+        80
+      ],
+      "game_alpha": [
+        0,
+        255
+      ],
+      "visible_bbox": [
+        17,
+        6,
+        63,
+        74
+      ]
+    }
+  ],
+  "references": [
+    {
+      "item_id": "hp_potion",
+      "resource": "hp",
+      "efficacy_stage": 1,
+      "display_name": "쌍화탕",
+      "tier": 1,
+      "power": 40.0,
+      "min_ilvl": 1,
+      "definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/data/items/hp_potion.tres",
+      "definition_sha256": "a6927d846994a8802cac9a748418e188b091d1a6d7d18250a616eb26c753c8b1",
+      "source_path": "refs/hp_potion_basic.png",
+      "source_sha256": "e7012bdc080fc57c2777c811e01e54beac15f82f21da28cbe167e524d8e28773",
+      "runtime_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/assets/sprites/ui/icons_a/items/hp_potion.png",
+      "runtime_sha256": "dcc9619870e8b5f18e37c0bd68f39f7a5596190a216686e966fb0ed8a671e596",
+      "runtime_snapshot_path": "source/reference_runtime/hp_potion.png",
+      "runtime_size": [
+        80,
+        80
+      ]
+    },
+    {
+      "item_id": "mp_potion",
+      "resource": "mp",
+      "efficacy_stage": 1,
+      "display_name": "생맥산",
+      "tier": 1,
+      "power": 25.0,
+      "min_ilvl": 1,
+      "definition_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/data/items/mp_potion.tres",
+      "definition_sha256": "a17e86d7e8def6c262bcca04eecf1aad6c6d99a3f3caff7d22b3ee715002ecf1",
+      "source_path": "refs/mp_potion_basic.png",
+      "source_sha256": "b87f9c4219b163468825bb27a5c0fa674c6767a0fa2dbbf8d70fffcfb1304a17",
+      "runtime_path": "C:/Users/FORYOUCOM/.codex/worktrees/534-potion-grade-art/joseon/assets/sprites/ui/icons_a/items/mp_potion.png",
+      "runtime_sha256": "4d76548f31a878b4283672555b79b0205d16ef21fdec1e0f89e972e42b1a7b77",
+      "runtime_snapshot_path": "source/reference_runtime/mp_potion.png",
+      "runtime_size": [
+        80,
+        80
+      ]
+    }
+  ],
+  "actual_ui": {
+    "bag": [
+      40,
+      8
+    ],
+    "vendor": [
+      48,
+      3
+    ],
+    "belt": [
+      42,
+      8
+    ],
+    "belt_stress": [
+      [
+        30,
+        8
+      ],
+      [
+        36,
+        8
+      ]
+    ]
+  },
+  "method": "Comfy GPT25 -> Comfy BiRefNet alpha -> premultiplied Lanczos ratio packing; no alpha threshold",
+  "source_selection_path": "selected_sources.json",
+  "output_scale": 2,
+  "logical_cell_px": 40,
+  "manual_pixel_editing": false,
+  "manual_alpha_editing": false,
+  "production_alpha_thresholding": false
+}

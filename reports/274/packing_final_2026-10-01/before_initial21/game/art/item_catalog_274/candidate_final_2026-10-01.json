@@ -1,0 +1,631 @@
+{
+  "parent": 274,
+  "date": "2026-10-01",
+  "status": "candidate_ready_not_approved_not_installed",
+  "approved_remaining": 25,
+  "approved_remaining_closed": false,
+  "approved_baseline": {
+    "after_PD_acceptance_card": 496,
+    "accepted_prior_count": 3,
+    "candidate_evidence_commit": "0e2f7820",
+    "decision_source": "latest root dispatch records PD acceptance; old candidate/remaining ledgers preserved as history"
+  },
+  "approved_remaining_groups": {
+    "obang_jade": 20,
+    "cube": 1,
+    "higher_tier_potion": 4
+  },
+  "candidate_ready": 21,
+  "candidate_groups": {
+    "obang_jade": 20,
+    "horibyeong": 1
+  },
+  "pending_child": {
+    "card": 534,
+    "count": 4,
+    "group": "higher_tier_potion",
+    "part_of_this_delivery": false
+  },
+  "definition_states": {
+    "this_candidate_design_only": 21,
+    "pending_child_existing_definition": 4
+  },
+  "legacy_2026_09_29_remaining28_preserved": true,
+  "intake_dependency": 265,
+  "runtime_intake_done": false,
+  "asset_manifest": "workbench/production/item_icons_274_final/manifest.json",
+  "manifest_sha256": "1dc4c4597fa3aef01f6ad5434c1284e4452e8aeab9dae0d0666b083c23c16388",
+  "pd_gallery": "docs/art/274_final_item_art/",
+  "qa_raw": "reports/274/packing_final_2026-10-01/",
+  "entries": [
+    {
+      "production_key": "obang_jade_red_grade_1",
+      "working_label": "적옥 · 깨진",
+      "color_token": "red",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_red_grade_1_v2",
+      "source_sha256": "9d8362185b95b9f40e673b9af15b99d96f479e9c0095245d824dc9c15481bb93",
+      "generated_sha256": "be42624a1c06124210da3a22df3640e435ed9f8f4a5742f43531ca2b1f754515",
+      "game_sha256": "5647f63d310203d123c8ef8e82574e20ea326f69e765c7e6d23d1c65203334dc"
+    },
+    {
+      "production_key": "obang_jade_red_grade_2",
+      "working_label": "적옥 · 흠 있는",
+      "color_token": "red",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_red_grade_2",
+      "source_sha256": "5094981e9990a4ac82da017b2e143db70f159851bed51e29566954ee38fbdb2a",
+      "generated_sha256": "72d463617757bb53ba9753453d838fbec2354f54f7b4ea925019ba3a56b9a0f5",
+      "game_sha256": "b1d1f0b0a55608ca79df22cf43b116162c3a29560483275088daf0922ff2a736"
+    },
+    {
+      "production_key": "obang_jade_red_grade_3",
+      "working_label": "적옥 · 온전한",
+      "color_token": "red",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_red_grade_3",
+      "source_sha256": "372b596a51c7d4c438e2f91840b2673765d4c89e1e8420e439b0e5d15a60adb0",
+      "generated_sha256": "d2aadf3550176388f48d09708968191198168fbdd187c48381e0406defdaf658",
+      "game_sha256": "9604f289fc30010d4aebf638f6d28cbffd15fa9a0c29aaf7febafbcde2c21df1"
+    },
+    {
+      "production_key": "obang_jade_red_grade_4",
+      "working_label": "적옥 · 4단(명칭 미정)",
+      "color_token": "red",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_red_grade_4_v2",
+      "source_sha256": "30f199e074d9d9bbd127216febee0f4230faab5648a3c0e6785df98f9ebf1805",
+      "generated_sha256": "2959ea9a9f22e172e8d1ac9772245ed468906eeefed17cc7d1c644585c586aa8",
+      "game_sha256": "31eef45b7ab4d6ca3385a488f215ae94684dab81cf5b9d9a7cc89e8567cd7474"
+    },
+    {
+      "production_key": "obang_jade_black_grade_1",
+      "working_label": "흑옥 · 깨진",
+      "color_token": "black",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_black_grade_1",
+      "source_sha256": "d82430d25f690f74daffd7a9fd6c7cc61f016374e60a33f3a8ee9bf5341ba2f3",
+      "generated_sha256": "24f810775b3300717824969f8669bfd3fc6138601c8618acc4ce1357fa824490",
+      "game_sha256": "2d1e8cb32bfd92f611a60ae5cb8810483eb26ae32ceb52f9b177a60f788db207"
+    },
+    {
+      "production_key": "obang_jade_black_grade_2",
+      "working_label": "흑옥 · 흠 있는",
+      "color_token": "black",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_black_grade_2",
+      "source_sha256": "e304efae64734e062f9eec15a8193f5e21416f79a31a7b0660360d6ea82853e3",
+      "generated_sha256": "4150554095a8720a62ad03f25505354b40d64499a93e50b232fdb024a10cd498",
+      "game_sha256": "77ac0b3ab84ab76838b43758ea1983b4c80201f38e430d71aa0611073165b9fa"
+    },
+    {
+      "production_key": "obang_jade_black_grade_3",
+      "working_label": "흑옥 · 온전한",
+      "color_token": "black",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_black_grade_3",
+      "source_sha256": "ea3f8bdc4310cb78f8afbb1abb4c86b0e9a4f13780f0324697f6fa753dcb673d",
+      "generated_sha256": "6dab3318950325572ba311a16794a7035ea5a6073997c4d0844f20d2a79b529b",
+      "game_sha256": "fb24562f1e9d926e1b25a552d9cd62b7de909fd1c883266e7adb26f8a889040b"
+    },
+    {
+      "production_key": "obang_jade_black_grade_4",
+      "working_label": "흑옥 · 4단(명칭 미정)",
+      "color_token": "black",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_black_grade_4",
+      "source_sha256": "d4f6d95b452c0479e7019e1aee2160f7f7568dee9ad66e861cbae63b1299bdce",
+      "generated_sha256": "25d56de3bd050713deeb6298ebb3a427cc703ece1a729c094a68d94ee0dc45e0",
+      "game_sha256": "f5d75fc2905639939f3e55c319b4767a50a522320a74cc5087fef74e9869f83d"
+    },
+    {
+      "production_key": "obang_jade_blue_grade_1",
+      "working_label": "청옥 · 깨진",
+      "color_token": "blue",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_blue_grade_1",
+      "source_sha256": "f4321785930426b3a5976e53c6b1a4400d9df43e06af0fdd99dd54b8537a6a88",
+      "generated_sha256": "5a5ac1ae20c534effc4b840a67a5598c30e9f359bab6cf75d42111c0f1e22011",
+      "game_sha256": "6ec731ab13e0f549563f1d32898c6beb10458b2f6cca0d0edac01413e407f991"
+    },
+    {
+      "production_key": "obang_jade_blue_grade_2",
+      "working_label": "청옥 · 흠 있는",
+      "color_token": "blue",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_blue_grade_2",
+      "source_sha256": "b2fca571fa7fbe1eeb1eaca8c7df76c09ed08d2a69a7e4f5852f761c93f7ca3e",
+      "generated_sha256": "4112f63702c30cd2d30aa2d4bd088507adb8227c3dc060902826731fd6f04142",
+      "game_sha256": "0ae56ae2a72da19cec9c518e61d80c62001ef73523deb629a6435b826f150a82"
+    },
+    {
+      "production_key": "obang_jade_blue_grade_3",
+      "working_label": "청옥 · 온전한",
+      "color_token": "blue",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_blue_grade_3",
+      "source_sha256": "789b8babd18ac9ab2e133f2d0cafd775415ecbe42b7fd07dddeb23eaab3c735e",
+      "generated_sha256": "a308d16be99360f767e7783966e85ed9876d62af4cdaffe24d66b4a55651770b",
+      "game_sha256": "932199ebd6e01ec26f533b113486b6a23c05697e4f089414c861f2237c92a4a3"
+    },
+    {
+      "production_key": "obang_jade_blue_grade_4",
+      "working_label": "청옥 · 4단(명칭 미정)",
+      "color_token": "blue",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_blue_grade_4",
+      "source_sha256": "588531ac94c33545e9a5e742953cdd0de28ae0f4c97c4173dd8aa3be8d6dd5b8",
+      "generated_sha256": "8a7f77f71b55da16b8ee8c046be8f83b692f03819b3c66651135fc414d86f63a",
+      "game_sha256": "25511ef3b212564e16a095950c6436668aa9ecf323afcebaa797bcae7db2f711"
+    },
+    {
+      "production_key": "obang_jade_white_grade_1",
+      "working_label": "백옥 · 깨진",
+      "color_token": "white",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_white_grade_1",
+      "source_sha256": "b8a9543b87ab95ba6247fd883471257eff9e9e3529523021311d56d4ee4edb38",
+      "generated_sha256": "5e35ee96f4c4c1f89bfd21b7b82218b8e37fbc02592cf0de927b5ed92644a372",
+      "game_sha256": "b84cc74df0cfffb6b7d1e71e2820d1d3348fa572385e2764284725ed20e18296"
+    },
+    {
+      "production_key": "obang_jade_white_grade_2",
+      "working_label": "백옥 · 흠 있는",
+      "color_token": "white",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_white_grade_2",
+      "source_sha256": "6cf1732c0de77f42f97e7609b200bc762771e5135f61ba58aa766ffd926d3dfd",
+      "generated_sha256": "120ac1ffcf847f4c3327b3160297dad63eef9d50819e75d9e4eabea3c980c88d",
+      "game_sha256": "f9732362f012379618b5694114ec4b27530123cdd97c1981275c056769f2a534"
+    },
+    {
+      "production_key": "obang_jade_white_grade_3",
+      "working_label": "백옥 · 온전한",
+      "color_token": "white",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_white_grade_3",
+      "source_sha256": "17dd02ac0229a03329798c0184d94e084f389c8258fec8864b3b90271478e98f",
+      "generated_sha256": "7178ac166e31633b1a952ccc84b56878a97f9cebb6c593a10319e59fabbf21c9",
+      "game_sha256": "bdc340863370992ff58ca4c5bf0840b1a09471ab82dd69b5aefac4497dfa8209"
+    },
+    {
+      "production_key": "obang_jade_white_grade_4",
+      "working_label": "백옥 · 4단(명칭 미정)",
+      "color_token": "white",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_white_grade_4",
+      "source_sha256": "cfd920edbe04905c1c69668fd76412771746309aa57981a7146579b0d696d3c1",
+      "generated_sha256": "86d9e4f0394b4d678e8672b9b5fa014e82f237c9c62b2e28f03f6249d114fb64",
+      "game_sha256": "be4b2010ac7c89bfc8231398ce6bcdc020e733a8940094c58046d4002ec0ddcc"
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_1",
+      "working_label": "황옥 · 깨진",
+      "color_token": "yellow",
+      "art_quality_stage": 1,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_yellow_grade_1",
+      "source_sha256": "f80aefdbdb20dd11447fafefe8c799b347f66db112eef6c5697b3ba117f5d32a",
+      "generated_sha256": "73bcdd4de6b62cd402924c8afc363ba12f50722c161c55922cc9b1661c5ae6c9",
+      "game_sha256": "23533955dc823137b81a2c7e62db198022047e0a26aebe103d3dfe985857933f"
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_2",
+      "working_label": "황옥 · 흠 있는",
+      "color_token": "yellow",
+      "art_quality_stage": 2,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_yellow_grade_2",
+      "source_sha256": "4bbb9262a4b6ad4ecb59c0aa2d76192cadd45f5b7adbbd0137dcff912d15e93f",
+      "generated_sha256": "0854333f20eb0c19db1f33b45f6f76bec6b6e50cc19b3368ef043af0779ecf08",
+      "game_sha256": "a91a705c6623fd2cad6f4b02675efd8c067e9d4f9072897cea2aa380539ebd1c"
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_3",
+      "working_label": "황옥 · 온전한",
+      "color_token": "yellow",
+      "art_quality_stage": 3,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_yellow_grade_3",
+      "source_sha256": "7d042a227624a1880cb930ef4b26a268b3bdb9641997711670dd86590d435765",
+      "generated_sha256": "807557ed7b267cbad546853ec113dac367bccd1334b75e86d27ed756ae409601",
+      "game_sha256": "8e694cf4ef2848d16dfbc7046fb75226a6c2bf1ade0d0b0f3d677bfd8eb3e02f"
+    },
+    {
+      "production_key": "obang_jade_yellow_grade_4",
+      "working_label": "황옥 · 4단(명칭 미정)",
+      "color_token": "yellow",
+      "art_quality_stage": 4,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        80
+      ],
+      "provisional_grid": [
+        1,
+        1
+      ],
+      "source_revision": "obang_jade_yellow_grade_4",
+      "source_sha256": "a2e8b9cd108e7b52f1ac5db4265b26593a6a85115dc5207a013f5ed2540a2a25",
+      "generated_sha256": "49493a85f764ee95d36a0b42ca46be4e43d46d65c78f59e6c1718eaaedfd822c",
+      "game_sha256": "78d7b68f123b59978857bfc3eda61701b9101f833e1b8de0d5ff9d5843687166"
+    },
+    {
+      "production_key": "horibyeong",
+      "working_label": "호리병",
+      "color_token": null,
+      "art_quality_stage": null,
+      "definition_state": "design_only",
+      "actual_item_id": null,
+      "actual_gem_id": null,
+      "final_display_name": null,
+      "final_grade_name": null,
+      "socket_count": null,
+      "game_rarity": null,
+      "game_tier": null,
+      "efficacy": null,
+      "intake_dependency": 265,
+      "provisional_output_px": [
+        80,
+        160
+      ],
+      "provisional_grid": [
+        1,
+        2
+      ],
+      "source_revision": "horibyeong",
+      "source_sha256": "83bc07fbd3dda4e1f140f96eff2bda3d1e0906806adcc4befa47597067dd345c",
+      "generated_sha256": "28ab83dbe64384991d10f822db69cc54dfda12a49b842f42b90fa01777b18afb",
+      "game_sha256": "349ab94716112ffa28b555454f854dba109c197b9f8d7133b4a3cd834153d258"
+    }
+  ],
+  "no_automatic_approval": true
+}

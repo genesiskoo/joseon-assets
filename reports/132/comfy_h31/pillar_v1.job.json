@@ -1,0 +1,27 @@
+{
+  "card": 132,
+  "asset": "pillar",
+  "provider": "Comfy Cloud",
+  "node": "TripoImageToModelNodeV2",
+  "model": "v3.1-20260211",
+  "source": "workbench/production/dungeon_props_132/refs/pillar.png",
+  "source_sha256": "b2df514d719e57fda8bbbdaf990f8dd04b6cb30a5c5a7b8c95b7062a93c773eb",
+  "face_limit": 6000,
+  "estimated_usd": 0.3,
+  "estimate_source": "live node price_badge on 2026-10-01",
+  "deterministic_seed_guaranteed": false,
+  "state": "downloaded",
+  "submitted_at": "2026-10-01T06:33:15.392762+00:00",
+  "prompt_id": "2ae23739-1187-4eca-bdf0-926e0ebe12fa",
+  "status_response": {
+    "assigned_inference": "10.4.20.18:8080",
+    "created_at": "2026-10-01T06:33:17.80004Z",
+    "id": "2ae23739-1187-4eca-bdf0-926e0ebe12fa",
+    "last_state_update": "2026-10-01T06:35:08.363256Z",
+    "status": "success",
+    "updated_at": "2026-10-01T06:35:08.363256Z"
+  },
+  "output": "pillar_h31_raw_v1.glb",
+  "output_sha256": "f9691e9d9f8c0c42b1e19722dcbe690b65932c30e6672ce0d0094c21c410c88a",
+  "output_bytes": 1693112
+}

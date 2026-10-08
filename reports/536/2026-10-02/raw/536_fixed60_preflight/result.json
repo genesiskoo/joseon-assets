@@ -1,0 +1,238 @@
+{
+  "guards": [
+    {
+      "name": "all",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-E2e",
+        "-Scenario",
+        "all",
+        "-FixedFps",
+        "60"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "all.stdout.raw.log",
+        "bytes": 84,
+        "sha256": "f3589ef9dc0d54b33fafef479b102cd10cbb6169dcd9d007806d3621f07e3adb"
+      },
+      "stderr": {
+        "file": "all.stderr.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pass": true
+    },
+    {
+      "name": "unit",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-Unit",
+        "-E2e",
+        "-Scenario",
+        "balance_boss",
+        "-FixedFps",
+        "60"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "unit.stdout.raw.log",
+        "bytes": 84,
+        "sha256": "f3589ef9dc0d54b33fafef479b102cd10cbb6169dcd9d007806d3621f07e3adb"
+      },
+      "stderr": {
+        "file": "unit.stderr.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pass": true
+    },
+    {
+      "name": "export",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-Export",
+        "-E2e",
+        "-Scenario",
+        "balance_boss",
+        "-FixedFps",
+        "60"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "export.stdout.raw.log",
+        "bytes": 84,
+        "sha256": "f3589ef9dc0d54b33fafef479b102cd10cbb6169dcd9d007806d3621f07e3adb"
+      },
+      "stderr": {
+        "file": "export.stderr.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pass": true
+    },
+    {
+      "name": "windowed",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-Windowed",
+        "-E2e",
+        "-Scenario",
+        "balance_boss",
+        "-FixedFps",
+        "60"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "windowed.stdout.raw.log",
+        "bytes": 84,
+        "sha256": "f3589ef9dc0d54b33fafef479b102cd10cbb6169dcd9d007806d3621f07e3adb"
+      },
+      "stderr": {
+        "file": "windowed.stderr.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pass": true
+    },
+    {
+      "name": "selftest",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-SelfTestTimeout",
+        "-E2e",
+        "-Scenario",
+        "balance_boss",
+        "-FixedFps",
+        "60"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "selftest.stdout.raw.log",
+        "bytes": 84,
+        "sha256": "f3589ef9dc0d54b33fafef479b102cd10cbb6169dcd9d007806d3621f07e3adb"
+      },
+      "stderr": {
+        "file": "selftest.stderr.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pass": true
+    },
+    {
+      "name": "other_scenario",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-E2e",
+        "-Scenario",
+        "balance_room",
+        "-FixedFps",
+        "60"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "other_scenario.stdout.raw.log",
+        "bytes": 84,
+        "sha256": "f3589ef9dc0d54b33fafef479b102cd10cbb6169dcd9d007806d3621f07e3adb"
+      },
+      "stderr": {
+        "file": "other_scenario.stderr.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pass": true
+    },
+    {
+      "name": "implicit_layers",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-Scenario",
+        "balance_boss",
+        "-FixedFps",
+        "60"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "implicit_layers.stdout.raw.log",
+        "bytes": 84,
+        "sha256": "f3589ef9dc0d54b33fafef479b102cd10cbb6169dcd9d007806d3621f07e3adb"
+      },
+      "stderr": {
+        "file": "implicit_layers.stderr.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pass": true
+    },
+    {
+      "name": "invalid_fps",
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\536-balance-rng-replay\\joseon\\tools\\test.ps1",
+        "-E2e",
+        "-Scenario",
+        "balance_boss",
+        "-FixedFps",
+        "30"
+      ],
+      "exit_code": 1,
+      "stdout": {
+        "file": "invalid_fps.stdout.raw.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "file": "invalid_fps.stderr.raw.log",
+        "bytes": 471,
+        "sha256": "55a2bf8e27bd28bc25acfbd8ef783b93071a01a293edbfeec1821cba5e84ce28"
+      },
+      "pass": true
+    }
+  ],
+  "selftest": {
+    "exit_code": 0,
+    "stdout_sha256": "dd68c575920f26e75a8899eb536da9dc1dbe6c4ec205f2717b65356faf06a626",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pass": true
+  },
+  "pass": true
+}

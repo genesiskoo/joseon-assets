@@ -1,0 +1,36 @@
+[
+  {
+    "label": "before_H1_1280x720",
+    "kind": "before",
+    "window": "1280x720",
+    "images": [
+      {
+        "stage": "menu",
+        "path": "before_H1_1280x720/character_profiles_01_menu.png",
+        "sha256": "02ebb9a42531030ee6b503d707bbeafe81752d8b2a02b7245ba1bd52206edc54"
+      },
+      {
+        "stage": "creation",
+        "path": "before_H1_1280x720/character_profiles_02_creation.png",
+        "sha256": "3e52d16010f23e5c8bc47fcf096cc1b8d4bb856defac004ae0fbd956dee31084"
+      },
+      {
+        "stage": "selection",
+        "path": "before_H1_1280x720/character_profiles_03_selection.png",
+        "sha256": "a0a3c2c5f240cc98025652a7a32971884ea00d08239ed0defe82cb3977402094"
+      },
+      {
+        "stage": "settings",
+        "path": "before_H1_1280x720/character_profiles_04_settings.png",
+        "sha256": "bc2734822ecf862add1932c3a0f19ec57eba873fb2b56819ff52b8d8fa8644de"
+      },
+      {
+        "stage": "credits",
+        "path": "before_H1_1280x720/character_profiles_05_credits.png",
+        "sha256": "e11643edf4c3b3b429ebe2cbc964a9b92cb60b66754131b8fe434bc356f4a9c6"
+      }
+    ],
+    "production_menu_input_test": true,
+    "world_clock_pause_and_profile_state_checks": true
+  }
+]

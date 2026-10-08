@@ -1,0 +1,13 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(whirl_structure_v1 skill_tiers aoe_skills_2 skill_area vfx_cues pack_perf)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (5.7초)
+== e2e (whirl_structure_v1 skill_tiers aoe_skills_2 skill_area vfx_cues pack_perf · 단독(창 모드) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\630-whirl-structure\\joseon","--","--e2e=whirl_structure_v1 skill_tiers aoe_skills_2 skill_area vfx_cues pack_perf","--e2e-shots"],"phase_arg":"whirl_structure_v1 skill_tiers aoe_skills_2 skill_area vfx_cues pack_perf","phase_tokens":["whirl_structure_v1 skill_tiers aoe_skills_2 skill_area vfx_cues pack_perf"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":24156,"launched_utc":"2026-10-05T22:32:37.6634634Z"}
+E2E start: whirl_structure_v1 skill_tiers aoe_skills_2 skill_area vfx_cues pack_perf
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E whirl_structure_v1 skill_tiers aoe_skills_2 skill_area vfx_cues pack_perf FAIL (없는 시나리오)
+E2E SUMMARY: 0/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\630-whirl-structure\joseon\tmp\e2e_raw\20261005T2232318298981_26136\phase_1_solo
+  e2e  (5.7초) — 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-630-whirl-structure\e2e
+실패 1

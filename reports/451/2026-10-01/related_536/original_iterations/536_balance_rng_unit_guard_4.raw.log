@@ -1,0 +1,53 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+SCRIPT ERROR: Compile Error: Identifier not found: Audio
+   at: GDScript::reload (res://world/floor_item.gd:151)
+ERROR: Failed to load script "res://world/floor_item.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: Vfx
+   at: GDScript::reload (res://world/portal.gd:37)
+ERROR: Failed to load script "res://world/portal.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: Vfx
+   at: GDScript::reload (res://actors/projectile.gd:33)
+ERROR: Failed to load script "res://actors/projectile.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: Audio
+   at: GDScript::reload (res://actors/enemy.gd:1314)
+ERROR: Failed to load script "res://actors/enemy.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: GameState
+   at: GDScript::reload (res://world/waypoint.gd:34)
+ERROR: Failed to load script "res://world/waypoint.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: EventBus
+   at: GDScript::reload (res://actors/boss.gd:37)
+ERROR: Failed to load script "res://actors/boss.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+SCRIPT ERROR: Compile Error: Identifier not found: GameState
+   at: GDScript::reload (res://world/dungeon_level.gd:138)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://tests/test_balance_rng.gd:0)
+ERROR: Failed to load script "res://tests/test_balance_rng.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+SCRIPT ERROR: Invalid call. Nonexistent function 'configure' in base 'Nil'.
+   at: _spawn_level (res://tests/test_balance_rng.gd:196)
+   GDScript backtrace (most recent call first):
+       [0] _spawn_level (res://tests/test_balance_rng.gd:196)
+       [1] _init (res://tests/test_balance_rng.gd:64)
+ERROR: FAIL: 실제 흑랑 층 생성으로 기존 파수 둘·흑랑을 모두 포착
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_balance_rng.gd:24)
+       [1] _init (res://tests/test_balance_rng.gd:65)
+SCRIPT ERROR: Cannot call method 'get' on a null value.
+   at: _rng (res://tests/test_balance_rng.gd:29)
+   GDScript backtrace (most recent call first):
+       [0] _rng (res://tests/test_balance_rng.gd:29)
+       [1] _init (res://tests/test_balance_rng.gd:67)
+SCRIPT ERROR: Invalid access to property or key 'seed' on a base object of type 'Nil'.
+   at: _init (res://tests/test_balance_rng.gd:67)
+   GDScript backtrace (most recent call first):
+       [0] _init (res://tests/test_balance_rng.gd:67)

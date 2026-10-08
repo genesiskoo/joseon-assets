@@ -1,0 +1,67 @@
+{
+ "cue": "bat_attack",
+ "v": 1,
+ "prompt": "One large cave bat attacks with leathery wing snap and tiny squeak. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:19",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.585011,
+ "lufs": "-23.5",
+ "peak": "-2.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 67.1,
+   "dc": [
+    0.014,
+    0.0026
+   ],
+   "sample_peak_db": -1.83,
+   "file": "_raw/bat_attack_v1.wav",
+   "duration": 0.6,
+   "lufs": "-23.5",
+   "true_peak": "-1.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25799,
+   "at": 0.585,
+   "removed_ms": 15.0,
+   "floor_db": -85.9,
+   "jump_db": 33.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.95,
+   "why": "트루피크 여유 +0.9 LU",
+   "intake_i": [
+    -26.88,
+    -26.88
+   ],
+   "intake_tp": [
+    -3.2,
+    -4.15
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 5.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -3.38,
+   "lufs": "-23.5",
+   "true_peak": "-2.6"
+  },
+  "warn": []
+ }
+}

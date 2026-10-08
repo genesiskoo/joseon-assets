@@ -1,0 +1,58 @@
+{
+  "runs": [
+    {
+      "label": "boundary_focus_1",
+      "rng": [
+        "Lv3 판1 doho0 seed=23271941 initial=3718673984595126131 final=210160255614176275",
+        "Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107 final=9053088838582101655",
+        "Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052 final=1286086405583097886",
+        "Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808 final=-4334644856633984577",
+        "Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430 final=-7559868052669486168",
+        "Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375 final=481403823597241650",
+        "Lv5 판1 doho0 seed=25271947 initial=5600093101942189313 final=-6694804097080234621",
+        "Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289 final=6682229980841271739",
+        "Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234 final=6331231839291702372",
+        "Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990 final=-3648881259114587272",
+        "Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612 final=1660210958701875916",
+        "Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557 final=1002189368153405969"
+      ],
+      "combat": [
+        "Lv3 판1 win=true attacks=41 hits=25 guards=2 summoned=2",
+        "Lv5 판1 win=true attacks=31 hits=19 guards=2 summoned=2"
+      ],
+      "stats": [
+        "· 흑랑 Lv3 처치 · 27.7초 · 2페이즈 11.2초 · 생명 130→34 (최저 32 = 25%) · 탕약 3/3 · 적 공격 41 (명중 25)",
+        "· 흑랑 Lv5 처치 · 24.6초 · 2페이즈 14.8초 · 생명 150→87 (최저 47 = 31%) · 탕약 3/3 · 적 공격 31 (명중 19)"
+      ]
+    },
+    {
+      "label": "boundary_focus_2",
+      "rng": [
+        "Lv3 판1 doho0 seed=23271941 initial=3718673984595126131 final=210160255614176275",
+        "Lv3 판1 guard_bat1 seed=23275069 initial=6699926644757452107 final=9053088838582101655",
+        "Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052 final=1286086405583097886",
+        "Lv3 판1 heukrang0 seed=23272950 initial=5665186195085305808 final=-4334644856633984577",
+        "Lv3 판1 summon_bat1 seed=23274060 initial=4753414434267272430 final=-7559868052669486168",
+        "Lv3 판1 summon_bat2 seed=23274161 initial=1895130462959059375 final=481403823597241650",
+        "Lv5 판1 doho0 seed=25271947 initial=5600093101942189313 final=-6694804097080234621",
+        "Lv5 판1 guard_bat1 seed=25275075 initial=8581345762104515289 final=6682229980841271739",
+        "Lv5 판1 guard_bat2 seed=25275176 initial=5723061790796302234 final=5723061790796302234",
+        "Lv5 판1 heukrang0 seed=25272956 initial=7546605312432368990 final=-3648881259114587272",
+        "Lv5 판1 summon_bat1 seed=25274066 initial=6634833551614335612 final=1660210958701875916",
+        "Lv5 판1 summon_bat2 seed=25274167 initial=3776549580306122557 final=1002189368153405969"
+      ],
+      "combat": [
+        "Lv3 판1 win=true attacks=41 hits=25 guards=2 summoned=2",
+        "Lv5 판1 win=true attacks=28 hits=18 guards=2 summoned=2"
+      ],
+      "stats": [
+        "· 흑랑 Lv3 처치 · 27.7초 · 2페이즈 11.2초 · 생명 130→34 (최저 32 = 25%) · 탕약 3/3 · 적 공격 41 (명중 25)",
+        "· 흑랑 Lv5 처치 · 24.5초 · 2페이즈 14.7초 · 생명 150→53 (최저 51 = 34%) · 탕약 2/3 · 적 공격 28 (명중 18)"
+      ]
+    }
+  ],
+  "rng_rows": 12,
+  "combat_rows": 2,
+  "equal_14": false,
+  "stats_equal": false
+}

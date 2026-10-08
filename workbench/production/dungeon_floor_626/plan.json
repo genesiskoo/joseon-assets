@@ -1,0 +1,26 @@
+{
+  "card": 626,
+  "candidate_only": true,
+  "native_tool": "Codex builtin image_gen",
+  "model_version": "not exposed by tool",
+  "palettes": {"A": "muted warm earth/neutral granite, no orange cast", "B": "cool charcoal/gray earth, no saturated blue"},
+  "base_layers": ["stone_large", "stone_small", "dirt", "mine_cinder", "bone_grit", "damp_organic"],
+  "decals": ["heukrang_scatter", "beom_root_scatter", "mine_scrap_scatter", "bongmil_seal_scatter"],
+  "biomes": {
+    "heukrang_gul": ["dirt", "stone_small", "stone_large", "heukrang_scatter"],
+    "beomgul": ["dirt", "damp_organic", "stone_small", "beom_root_scatter"],
+    "soeburi_mine": ["stone_large", "stone_small", "mine_cinder", "mine_scrap_scatter"],
+    "bongmil_gul": ["stone_large", "bone_grit", "dirt", "bongmil_seal_scatter"]
+  },
+  "output": "1024x1024 texture exports; preserve native image dimensions/hash and disclose any mechanical resampling",
+  "tone": "H1/actual in-game hand-painted matte materials, background albedo kept legible under dark lighting; no baked directional light, vignette or glossy reflection",
+  "span_recommended_units": 2.5,
+  "density_recommended_px_per_unit": 409.6,
+  "span_195_proposal_units": 3.0,
+  "density_195_proposal_px_per_unit": 341.3333333,
+  "density_note": "#120 audit band is400~900 px/unit. #195's3m estimate is below its400 lower bound for1024. Provide2.5m recommendation, preserve the3m alternative as an explicit follow-up shader decision.",
+  "seam_qa": "Half-width/half-height cyclic offset and2x2 repeating preview for each base; measure wrap color jumps against internal neighbor changes. Do not claim mathematical seamlessness from a prompt alone.",
+  "raw_policy": "If originals/card payload reaches50MB or an original reaches10MB, store raw outside Git via public Release/private Drive and record location/bytes/SHA. Do not duplicate all source originals in reports.",
+  "game_intake": false,
+  "comfy_cloud_used": false
+}

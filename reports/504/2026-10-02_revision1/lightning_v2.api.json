@@ -1,0 +1,76 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "504/lightning_v2",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "9",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Edit this element mark into a clean, flat white Korean brush silhouette on a UNIFORM SOLID PURE BLACK background (#000000). One centered mark, exactly one shape, generous margin on all four sides. The mark itself is OPAQUE PURE WHITE (#ffffff), broad solid connected strokes with only lightly uneven hard brush edges. Remove ALL diffuse haze, backlight, colored fringing, soft glow, drop shadow, gray fog, sheen and surrounding particles. Black must begin immediately at its defined edge and remain uniform all the way to the image border. Keep the silhouette bold enough for twelve-pixel display. No embossed bevel, lighting, texture inside the shape, letters, numerals, calligraphy character, frame, card, background pattern or checkerboard. Keep one single angular bolt with exactly two bends and a long pointed lower end. Broad upper shoulder and solid zigzag, with a sharp edge and no electric corona.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "1024x1024",
+      "model.custom_width": 1024,
+      "model.custom_height": 1024,
+      "model.background": "opaque",
+      "model.quality": "medium",
+      "n": 1,
+      "seed": 504203,
+      "model.images.image_1": [
+        "21",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "504/lightning_v2_raw",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "SplitImageWithAlpha",
+    "inputs": {
+      "image": [
+        "8",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "BiRefNetRMBG",
+    "inputs": {
+      "image": [
+        "10",
+        0
+      ],
+      "model": "BiRefNet-general",
+      "mask_blur": 0,
+      "mask_offset": 0,
+      "invert_output": false,
+      "refine_foreground": false,
+      "background": "Alpha"
+    }
+  },
+  "21": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "912aea1df034fb280c6c9dc8f147d0e945b87d38561042d914329e08920a67a4.png"
+    }
+  }
+}

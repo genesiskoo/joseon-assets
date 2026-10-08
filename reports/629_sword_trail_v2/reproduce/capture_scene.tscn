@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://._tmp/629_sword_trail_v2/capture_trail.gd" id="1"]
+
+[node name="SwordTrailVideoCapture629" type="Node"]
+script = ExtResource("1")

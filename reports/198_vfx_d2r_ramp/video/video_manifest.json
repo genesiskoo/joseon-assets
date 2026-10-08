@@ -1,0 +1,131 @@
+{
+  "card": 198,
+  "source_commit": "ff11d37ff08015f2b1c771284a3270bf9f847bdc",
+  "fps": 60,
+  "speed": 1.0,
+  "capture_check": "63/63 PASS",
+  "capture_mode": "Godot MovieMaker; not realtime performance evidence",
+  "comparison_crop_xywh": [
+    320,
+    110,
+    480,
+    360
+  ],
+  "raw_intermediate": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\d454\\joseon\\._tmp\\198_vfx_d2r\\video\\capture_master_corrected.avi",
+  "bounds": {
+    "fire_before": {
+      "BEGIN": 56,
+      "END": 296
+    },
+    "fire_after": {
+      "BEGIN": 316,
+      "END": 556
+    },
+    "cold_before": {
+      "BEGIN": 576,
+      "END": 816
+    },
+    "cold_after": {
+      "BEGIN": 836,
+      "END": 1076
+    },
+    "sal_before": {
+      "BEGIN": 1096,
+      "END": 1336
+    },
+    "sal_after": {
+      "BEGIN": 1356,
+      "END": 1596
+    },
+    "actual_fire_burst": {
+      "BEGIN": 1616,
+      "END": 1856
+    },
+    "actual_sal_burst": {
+      "BEGIN": 1876,
+      "END": 2116
+    },
+    "actual_talisman_fire_hit": {
+      "BEGIN": 2136,
+      "END": 2376
+    }
+  },
+  "files": [
+    {
+      "file": "198_vfx_before_after_60fps.mp4",
+      "bytes": 4105165,
+      "sha256": "c2f9e4da28f027a2f0e237c1083b46bc3449c6b7363d0666c66b4f0de5599ea5",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 590,
+            "r_frame_rate": "60/1",
+            "nb_frames": "720"
+          }
+        ],
+        "format": {
+          "duration": "12.000000",
+          "size": "4105165"
+        }
+      }
+    },
+    {
+      "file": "198_vfx_actual_60fps.mp4",
+      "bytes": 2190873,
+      "sha256": "b09d5833cd31faf1154e57b2db6d40168fb80add8a6c7946e75d46efc8f2bf77",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "60/1",
+            "nb_frames": "720"
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "nb_frames": "567"
+          }
+        ],
+        "format": {
+          "duration": "12.021333",
+          "size": "2190873"
+        }
+      }
+    },
+    {
+      "file": "198_vfx_engine_capture_60fps.mp4",
+      "bytes": 9403198,
+      "sha256": "5bac75e3a846824589addd428cfbb70149a2fc7156d35e2596a38517dc19dc75",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "60/1",
+            "nb_frames": "2397"
+          },
+          {
+            "codec_name": "aac",
+            "r_frame_rate": "0/0",
+            "nb_frames": "1874"
+          }
+        ],
+        "format": {
+          "duration": "39.950000",
+          "size": "9403198"
+        }
+      }
+    }
+  ]
+}

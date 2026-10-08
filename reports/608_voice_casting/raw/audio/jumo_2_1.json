@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "jumo",
+    "rank": 2,
+    "voice_id": "UqW1DivwFt1NwUMSGnTn",
+    "name": "Suzie - Calm Korean ",
+    "scene": "손님 끊긴 술청에 도호가 들른다. 주모는 일손을 움직이며 구수하게 권한다.",
+    "line": 0,
+    "file": "audio/jumo_2_1.mp3",
+    "request": {
+      "text": "도사 양반, 목이나 축이고 가시구려. 술은… 없어도 국물은 있지.",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "목이 좀 마르구려.",
+      "next_text": "국물이라도 한 그릇 주시오.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "87ha71ioInbwZQ0PhlQd",
+    "history-item-id": "07xbYYJErNhg7nkNq4nY",
+    "character-cost": "4"
+  }
+}

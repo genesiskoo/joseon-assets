@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "9": {
+      "display_node": "9",
+      "node_id": "9",
+      "parent_node": null,
+      "real_node_id": "9"
+    }
+  },
+  "outputs": {
+    "9": {
+      "3d": [
+        {
+          "filename": "33aedd50b35fd437ea301f04866d93ee580757e69ff2aa745a51a49532124231.glb",
+          "subfolder": "132",
+          "type": "output"
+        }
+      ]
+    }
+  },
+  "status": {
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "aa28a851-0de9-43a5-8fc1-79aa1114a749",
+          "timestamp": 1790837622226
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1"
+          ],
+          "prompt_id": "aa28a851-0de9-43a5-8fc1-79aa1114a749",
+          "timestamp": 1790837622657
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "aa28a851-0de9-43a5-8fc1-79aa1114a749",
+          "timestamp": 1790837756136
+        }
+      ]
+    ],
+    "status_str": "success"
+  }
+}

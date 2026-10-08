@@ -1,0 +1,31 @@
+{
+  "provider": "Comfy Cloud",
+  "model": "gpt-image-2.5-flare",
+  "source": "gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "prompt": "gumiho_model_test_R2.prompt.txt",
+  "prompt_file_sha256": "7761206a58ab9a81041d4b69c4bdda32181dab2f0fd9a78371fb4c566c8905f6",
+  "submitted_prompt_sha256": "2364177e41fec43a8e12bf6d20c3777f401f5b6490a1d7f3e5ac8296f7d507d8",
+  "seed": 5192301,
+  "deterministic_seed_guaranteed": false,
+  "requested_images": 1,
+  "requested_width": 1664,
+  "requested_height": 2496,
+  "state": "downloaded",
+  "prompt_id": "3e5d962e-1df4-4ee8-8941-c0c2c535ffea",
+  "status_response": {
+    "assigned_inference": "10.4.20.217:8080",
+    "created_at": "2026-09-30T08:23:11.05135Z",
+    "id": "3e5d962e-1df4-4ee8-8941-c0c2c535ffea",
+    "last_state_update": "2026-09-30T08:23:39.949477Z",
+    "status": "success",
+    "updated_at": "2026-09-30T08:23:39.949477Z"
+  },
+  "actual_dimensions": [
+    1664,
+    2496
+  ],
+  "output": "gumiho_519_T_GPT25_R2.png",
+  "output_sha256": "c2338b1917234a516128eb5bb4586b410c6011747d2fa337cab663f7c6b3f89c",
+  "output_bytes": 6053167
+}

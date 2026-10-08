@@ -1,0 +1,20 @@
+{
+  "issue": 86,
+  "date": "2026-09-20",
+  "tool": "built-in imagegen",
+  "model_version": "not exposed by tool",
+  "generate_count": 17,
+  "edit_count": 1,
+  "references": [
+    "C:/workspace/joseon-assets/sheets/approved-2026-09-17-h1/K2_H_doho_hero_options.png",
+    "C:/workspace/joseon-assets/workbench/production/h1-style-expansion-2026-09-17/19_weapons_props.png"
+  ],
+  "common_prompt": "Use case: stylized-concept. Production inventory item icon for a Korean Joseon dark-fantasy ARPG. Reference image 1: use LEFT H1 only for clean black ink contours, restrained Korean manhwa drawing and broad matte painted shadow planes. Reference image 2: material and prop language only, NOT a sheet layout. ONE isolated item, square canvas, genuine transparent RGBA background with empty alpha outside the item. No visible backdrop, no checkerboard, no ground, no cast shadow, no reflection, no aura, no glow, no rarity frame, no text labels, no letters, no logo. Draw large simple forms and a single crisp near-black contour, 3-4 broad tonal planes, moderate muted colors and a single soft upper-left light. Nonpixel illustrated artwork intended to remain clear at 128px and 40px. Slightly tilted front / three-quarter icon view. Entire item including all extremities in frame. Longest visible extent 80 percent of square with even clear margins. No grainy photorealism or microtexture. ",
+  "quilted_robe_revision": {
+    "reason": "Remove inherited red sash; preserve indigo and show padded panels",
+    "initial_prompt": "Use case: stylized-concept. Production inventory item icon for a Korean Joseon dark-fantasy ARPG. Reference image 1: use LEFT H1 only for clean black ink contours, restrained Korean manhwa drawing and broad matte painted shadow planes. Reference image 2: material and prop language only, NOT a sheet layout. ONE isolated item, square canvas, genuine transparent RGBA background with empty alpha outside the item. No visible backdrop, no checkerboard, no ground, no cast shadow, no reflection, no aura, no glow, no rarity frame, no text labels, no letters, no logo. Draw large simple forms and a single crisp near-black contour, 3-4 broad tonal planes, moderate muted colors and a single soft upper-left light. Nonpixel illustrated artwork intended to remain clear at 128px and 40px. Slightly tilted front / three-quarter icon view. Entire item including all extremities in frame. Longest visible extent 80 percent of square with even clear margins. No grainy photorealism or microtexture. Subject: ONE unworn Korean quilted coat, frontal entire long navy-indigo padded robe with empty neck opening, white narrow crossed collar, thick wide sleeves slightly out, big clearly drawn quilt channels, rounded heavy silhouette. Only a few broad quilt panels, not fine grid texture. Dark blue-black matte cloth. No person, mannequin, hands, head or extra equipment.",
+    "edit_prompt": "Use case: precise-object-edit. Change only the attached icon: REMOVE the entire RED sash belt and all red hanging cloth. Replace that waist area with the same padded NAVY INDIGO cloth. Make the coat unmistakably a thick Korean NUBI QUILTED coat with a few large clearly inked padded quilt channels across sleeves and torso; darker stitched grooves, broad pillow-like segments, not fine tiny texture. Retain the same empty unworn coat silhouette, white crossed collar, H1 black contours, broad matte shadow planes and isolated transparent background. No belt of any color, no adornments, no person or mannequin. Single item, all in frame, centered square canvas, no shadow, no labels. Same rendering style.",
+    "initial_source": "rejected/quilted_robe_v1.png",
+    "final_source": "sources/quilted_robe.png"
+  }
+}

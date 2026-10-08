@@ -1,0 +1,27 @@
+{
+  "request": {
+    "role": "merchant",
+    "rank": 1,
+    "voice_id": "PLfpgtLkFW07fDYbUiRJ",
+    "name": "Bongpal - Cheerful, Clear and Measured",
+    "scene": "처음 온 도호를 보고 잡화상이 장난스럽게 말을 붙인다.",
+    "line": 0,
+    "file": "audio/merchant_1_1.mp3",
+    "request": {
+      "text": "도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까?",
+      "model_id": "eleven_v4",
+      "language_code": "ko",
+      "previous_text": "물건 좀 봅시다.",
+      "next_text": "물건 좀 봅시다.",
+      "voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75
+      }
+    }
+  },
+  "response": {
+    "request-id": "cxe74xTluJQ9WFVFYSz9",
+    "history-item-id": "cMeVjNGqDKUEWShDzDgl",
+    "character-cost": "3"
+  }
+}

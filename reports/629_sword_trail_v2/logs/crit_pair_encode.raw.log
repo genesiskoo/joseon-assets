@@ -1,0 +1,61 @@
+[aist#0:1/pcm_s16le @ 0000029d6532f480] Guessed Channel Layout: stereo
+Input #0, avi, from 'C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\._tmp\629_sword_trail_v2\before.avi':
+  Duration: 00:00:25.98, start: 0.000000, bitrate: 22853 kb/s
+  Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj420p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 1:1 DAR 16:9], 21307 kb/s, 60 fps, 60 tbr, 60 tbn
+  Stream #0:1: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+[aist#1:1/pcm_s16le @ 0000029d653c8a80] Guessed Channel Layout: stereo
+Input #1, avi, from 'C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\._tmp\629_sword_trail_v2\after.avi':
+  Duration: 00:00:25.98, start: 0.000000, bitrate: 22837 kb/s
+  Stream #1:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj420p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 1:1 DAR 16:9], 21291 kb/s, 60 fps, 60 tbr, 60 tbn
+  Stream #1:1: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Input #2, png_pipe, from 'C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\._tmp\629_sword_trail_v2\crit_pair_caption.png':
+  Duration: N/A, bitrate: N/A
+  Stream #2:0: Video: png, rgba(pc, gbr/unknown/unknown), 1280x590, 60 fps, 60 tbr, 60 tbn
+Stream mapping:
+  Stream #0:0 (mjpeg) -> trim:default
+  Stream #1:0 (mjpeg) -> trim:default
+  Stream #1:1 (pcm_s16le) -> atrim:default
+  Stream #2:0 (png) -> overlay
+  overlay:default -> Stream #0:0 (libx264)
+  asetpts:default -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[swscaler @ 0000029d672fbfc0] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0000029d677a2540] deprecated pixel format used, make sure you did set range correctly
+[libx264 @ 0000029d65374140] using SAR=1/1
+[libx264 @ 0000029d65374140] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000029d65374140] profile High, level 3.2, 4:2:0, 8-bit
+[libx264 @ 0000029d65374140] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=2 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=6 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=30 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\Users\FORYOUCOM\.codex\worktrees\d454\joseon\._tmp\629_sword_trail_v2\deliverables\crit_pair.mp4':
+  Metadata:
+    encoder         : Lavf62.12.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(pc, bt470bg/unknown/unknown, progressive), 1280x590 [SAR 1:1 DAR 128:59], q=2-31, 60 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 160 kb/s
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+frame=  157 fps=101 q=26.0 size=    1024KiB time=00:00:02.58 bitrate=3247.4kbits/s speed=1.66x elapsed=0:00:01.55    
+[mp4 @ 0000029d65333900] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000029d65472400] video:1765KiB audio:88KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.454819%
+frame=  270 fps=159 q=-1.0 Lsize=    1862KiB time=00:00:04.46 bitrate=3415.5kbits/s speed=2.63x elapsed=0:00:01.69    
+[libx264 @ 0000029d65374140] frame I:2     Avg QP:16.25  size: 82839
+[libx264 @ 0000029d65374140] frame P:68    Avg QP:17.28  size: 16200
+[libx264 @ 0000029d65374140] frame B:200   Avg QP:22.54  size:  2699
+[libx264 @ 0000029d65374140] consecutive B-frames:  0.7%  0.7%  2.2% 96.3%
+[libx264 @ 0000029d65374140] mb I  I16..4:  7.1% 61.5% 31.4%
+[libx264 @ 0000029d65374140] mb P  I16..4:  0.2%  1.4%  1.6%  P16..4: 32.6% 10.7%  7.3%  0.0%  0.0%    skip:46.1%
+[libx264 @ 0000029d65374140] mb B  I16..4:  0.0%  0.0%  0.2%  B16..8:  3.9%  1.8%  0.6%  direct: 5.3%  skip:88.2%  L0:32.4% L1:49.6% BI:18.0%
+[libx264 @ 0000029d65374140] 8x8 transform intra:47.5% inter:60.0%
+[libx264 @ 0000029d65374140] coded y,uvDC,uvAC intra: 75.5% 75.4% 56.6% inter: 10.9% 12.9% 0.9%
+[libx264 @ 0000029d65374140] i16 v,h,dc,p: 43% 46%  7%  4%
+[libx264 @ 0000029d65374140] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 21% 11% 15%  5%  6%  2% 21%  3% 16%
+[libx264 @ 0000029d65374140] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 13% 12% 15%  9% 11%  6% 17%  6% 12%
+[libx264 @ 0000029d65374140] i8c dc,h,v,p: 54% 25% 15%  7%
+[libx264 @ 0000029d65374140] Weighted P-Frames: Y:1.5% UV:1.5%
+[libx264 @ 0000029d65374140] ref P L0: 65.8% 34.2%
+[libx264 @ 0000029d65374140] ref B L0: 83.1% 16.9%
+[libx264 @ 0000029d65374140] ref B L1: 95.5%  4.5%
+[libx264 @ 0000029d65374140] kb/s:3212.74
+[aac @ 0000029d65ba2240] Qavg: 674.649

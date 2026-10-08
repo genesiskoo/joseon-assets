@@ -1,0 +1,121 @@
+{
+	"area_id": "motgol",
+	"character": {
+		"dex": 15,
+		"hotkeys": [
+			"slash",
+			"dash_strike",
+			"whirl",
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"level": 1,
+		"name": "도호",
+		"skill_data_ver": 2,
+		"skill_grants": {},
+		"skill_points": 0,
+		"skills": {
+			"breath": 0,
+			"dash_strike": 0,
+			"slash": 1,
+			"sword_mastery": 0,
+			"whirl": 0
+		},
+		"spi": 20,
+		"stat_points": 0,
+		"str": 15,
+		"vit": 20,
+		"xp": 0
+	},
+	"first_kills": {},
+	"first_magic_run": 0,
+	"flags": {},
+	"floor_no": 0,
+	"hp": 110.0,
+	"inventory": {
+		"belt": [
+			{
+				"affixes": [],
+				"def": "hp_potion",
+				"identified": true,
+				"ilvl": 1,
+				"rare_name": "",
+				"rarity": 0,
+				"stack": 2
+			},
+			null,
+			null,
+			null,
+			null,
+			null
+		],
+		"equipment": {
+			"amulet": null,
+			"armor": {
+				"affixes": [],
+				"def": "cotton_robe",
+				"identified": true,
+				"ilvl": 1,
+				"rare_name": "",
+				"rarity": 0,
+				"stack": 1
+			},
+			"belt": null,
+			"boots": null,
+			"head": null,
+			"offhand": null,
+			"ring1": null,
+			"ring2": null,
+			"weapon": {
+				"affixes": [],
+				"def": "iron_sword",
+				"identified": true,
+				"ilvl": 1,
+				"rare_name": "",
+				"rarity": 0,
+				"stack": 1
+			}
+		},
+		"gold": 0,
+		"grid": [
+			{
+				"affixes": [],
+				"def": "ident_scroll",
+				"identified": true,
+				"ilvl": 1,
+				"pos": [
+					0,
+					0
+				],
+				"rare_name": "",
+				"rarity": 0,
+				"stack": 1
+			},
+			{
+				"affixes": [],
+				"def": "town_portal",
+				"identified": true,
+				"ilvl": 1,
+				"pos": [
+					1,
+					0
+				],
+				"rare_name": "",
+				"rarity": 0,
+				"stack": 1
+			}
+		]
+	},
+	"max_area_level": 0,
+	"mp": 50.0,
+	"portal": null,
+	"run": 1,
+	"run_seed": 1790533447,
+	"saved_at": "2026-09-28T03:24:10",
+	"town_visits": 1,
+	"version": 4,
+	"waypoints_active": []
+}

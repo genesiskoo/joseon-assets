@@ -1,0 +1,3 @@
+# Preserve captured output byte for byte, including line endings and whitespace.
+*.log -text -whitespace
+*.log.exit.txt -text -whitespace

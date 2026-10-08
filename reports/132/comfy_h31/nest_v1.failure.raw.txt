@@ -1,0 +1,29 @@
+Rate Limit Exceeded: The server returned 429 after all retry attempts. Please wait and try again.
+  File "/app/comfyui/execution.py", line 464, in execute
+    raise ex
+  File "/app/comfyui/execution.py", line 460, in execute
+    results.append(r.result())
+                   ^^^^^^^^^^
+  File "/app/comfyui/execution.py", line 303, in async_wrapper
+    return await f(**args)
+           ^^^^^^^^^^^^^^^
+  File "/app/comfyui/comfy_api/internal/__init__.py", line 145, in wrapped_async_func
+    return await method(locked_class, **inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/comfyui/comfy_api/latest/_io.py", line 2073, in EXECUTE_NORMALIZED_ASYNC
+    to_return = await cls.execute(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/comfyui/comfy_api_nodes/nodes_tripo.py", line 679, in execute
+    *await image_to_model(
+     ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/comfyui/comfy_api_nodes/nodes_tripo.py", line 560, in image_to_model
+    response = await sync_op(
+               ^^^^^^^^^^^^^^
+  File "/app/comfyui/comfy_api_nodes/util/client.py", line 202, in sync_op
+    raw = await sync_op_raw(
+          ^^^^^^^^^^^^^^^^^^
+  File "/app/comfyui/comfy_api_nodes/util/client.py", line 336, in sync_op_raw
+    return await _request_base(cfg, expect_binary=as_binary)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/comfyui/comfy_api_nodes/util/client.py", line 1091, in _request_base
+    raise Exception(msg)

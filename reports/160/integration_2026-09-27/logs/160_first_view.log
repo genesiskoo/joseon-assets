@@ -1,0 +1,13 @@
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (3.6초)
+== e2e (quest_journal) ==
+E2E start: quest_journal
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+SCRIPT ERROR: Parse Error: Expected expression to test after "match".
+ERROR: Failed to load script "res://tests/e2e/scenarios/quest_journal.gd" with error "Parse error".
+E2E quest_journal FAIL (시나리오 스크립트 컴파일 실패)
+E2E SUMMARY: 0/1 PASS
+  SCRIPT ERROR 2건 — 시나리오 코드 오류 (PASS 표시여도 실패)
+  e2e  (4.8초) — 제한 900초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-293-monster-elite-ui\e2e
+실패 1

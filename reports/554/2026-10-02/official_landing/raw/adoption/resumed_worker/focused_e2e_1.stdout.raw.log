@@ -1,0 +1,12 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(potion_icons,item_ui)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (6.6초)
+== e2e (potion_icons,item_ui · 공유 칸 ①/3) ==
+E2E start: potion_icons, item_ui
+E2E ▶ potion_icons
+E2E potion_icons PASS (검사 40)
+E2E ▶ item_ui
+E2E item_ui PASS (검사 42)
+E2E SUMMARY: 2/2 PASS
+  e2e  (8.7초) — 제한 3600초
+전부 PASS

@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+[Dungeon] heukrang_gul 2층 lv=3 seed=1144387369 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+[Dungeon] heukrang_gul 2층 lv=3 seed=1144387369 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+[Dungeon] heukrang_gul 2층 lv=3 seed=1144387369 preset 28x28 rooms=2 up=(22, 23) down=(-1, -1) enemies=2 roster=bat elites=[] named=-
+SCRIPT ERROR: Attempt to call function '_dispose_replay' in base 'null instance' on a null instance.
+   at: _notification (res://tests/e2e/scenarios/balance_boss.gd:172)
+   GDScript backtrace (most recent call first):
+       [0] _notification (res://tests/e2e/scenarios/balance_boss.gd:172)
+       [1] _init (res://tests/test_balance_rng.gd:146)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — player_hurt ×59 · enemy_hurt ×18 · doho_hurt ×24 · hit ×18 (버림 누계 119)
+[Audio] BGM town → town.ogg
+SCRIPT ERROR: Attempt to call function '_dispose_replay' in base 'null instance' on a null instance.
+   at: _notification (res://tests/e2e/scenarios/balance_boss.gd:172)
+   GDScript backtrace (most recent call first):
+       [0] _notification (res://tests/e2e/scenarios/balance_boss.gd:172)
+       [1] _init (res://tests/test_balance_rng.gd:166)
+ERROR: FAIL: 대본 PREDELETE도 입장 전 fixture 정리
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_balance_rng.gd:24)
+       [1] _init (res://tests/test_balance_rng.gd:167)
+BALANCE_RNG_TEST checks=36 fails=1 FAIL

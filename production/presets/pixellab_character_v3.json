@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "tool": "create_character",
+  "defaults": {
+    "body_type": "humanoid",
+    "mode": "v3",
+    "size": 96,
+    "outline": "selective outline",
+    "detail": "high detail",
+    "view": "high top-down"
+  },
+  "v3_behavior": {
+    "directions": 8,
+    "ignored_properties": [
+      "n_directions",
+      "proportions",
+      "shading",
+      "text_guidance_scale"
+    ]
+  },
+  "author": "OpenAI Codex",
+  "updated": "2026-06-07"
+}

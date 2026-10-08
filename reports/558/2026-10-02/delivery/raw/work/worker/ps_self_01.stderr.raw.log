@@ -1,0 +1,17 @@
+Get-FileHash : The term 'Get-FileHash' is not recognized as the name of a cmdlet, function, script file, or operable pr
+ogram. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At C:\Users\FORYOUCOM\.codex\worktrees\558-combat-clock-trace\joseon\tools\test.ps1:535 char:126
++ ...  (Get-Item -LiteralPath $dest).Length; sha256 = (Get-FileHash -Litera ...
++                                                      ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-FileHash:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+E2e phase detailed Godot log missing: C:\Users\FORYOU~1\AppData\Local\Temp\joseon_timeout_selftest_56880\phase_raw_fixt
+ure\logs\godot.log
+At C:\Users\FORYOUCOM\.codex\worktrees\558-combat-clock-trace\joseon\tools\test.ps1:541 char:29
++ ... detailMeta) { throw "E2e phase detailed Godot log missing: $detail" }
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (E2e phase detai...\logs\godot.log:String) [], RuntimeException
+    + FullyQualifiedErrorId : E2e phase detailed Godot log missing: C:\Users\FORYOU~1\AppData\Local\Temp\joseon_timeou 
+   t_selftest_56880\phase_raw_fixture\logs\godot.log
+ 

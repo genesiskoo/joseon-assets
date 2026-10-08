@@ -1,0 +1,13 @@
+ERROR: Node not found: "HUD/bar" (relative to "/root/Main").
+   at: get_node (scene/main/node.cpp:1975)
+   GDScript backtrace (most recent call first):
+       [0] hud_panel (res://tests/e2e/e2e.gd:104)
+       [1] run (res://tests/e2e/scenarios/potion_icons.gd:81)
+       [2] click (res://tests/e2e/e2e.gd:163)
+       [3] frames (res://tests/e2e/e2e.gd:52)
+SCRIPT ERROR: Attempt to call function '_belt_rect' in base 'null instance' on a null instance.
+   at: run (res://tests/e2e/scenarios/potion_icons.gd:82)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/e2e/scenarios/potion_icons.gd:82)
+       [1] click (res://tests/e2e/e2e.gd:163)
+       [2] frames (res://tests/e2e/e2e.gd:52)

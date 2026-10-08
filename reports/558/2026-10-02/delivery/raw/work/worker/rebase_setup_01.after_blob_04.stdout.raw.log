@@ -1,0 +1,808 @@
+extends CharacterBody3D
+
+const TRACE := preload("res://core/combat_trace.gd")
+## Player — 도호. 이동 담당(클릭 연속 이동 + 레벨 길찾기 웨이포인트). 전투는 자식 `Combat`(PlayerCombat)에 위임.
+## 좌클릭: 적이면 타깃(전투), 바닥이면 이동. 우클릭: 현재 스킬을 커서 밑 적(없으면 바닥) 쪽으로.
+## 누른 채 (#383, combat_v2 §9): 좌 = 칼이 빌 때마다 커서 밑 적으로 다시 잡기 · 우 = 스킬이 준비될 때마다 되풀이 시전. 커서 밑 판정 = actors/cursor_pick.gd.
+## 비주얼은 `Visual`(ActorVisual)이 맡는다: `data/models/doho.tres`가 가리키는 GLB가 있으면 모델, 없으면 캡슐+흑립(D-067, design/art_3d_pipeline.md).
+
+## 바닥 평면 히트가 이 거리보다 멀면 무시 (카메라 지평선 근처 클릭 → 무한대 방지).
+const MAX_CLICK_DISTANCE := 60.0
+## 홀드 중 경로 재계산 간격(초). A*는 싸지만 매 프레임은 낭비.
+const HOLD_REPATH_SEC := 0.12
+## 이 시간 이상 누르고 있어야 "홀드 이동"으로 본다. 짧은 클릭은 처음 찍은 지점 하나로 확정(계단 클릭 등 결정적).
+const HOLD_START_DELAY := 0.3
+const DASH_SPEED := 18.0
+## 픽업(레이어 4) + 상호작용(레이어 5) — 둘 다 interact() 규약.
+const INTERACT_MASK := 8 | 16
+## 커서 밑 적 한 판정 (#383, combat_v2 §9) — 호버·클릭·누른 채 다시 잡기·우클릭 겨눔이 같이 쓴다.
+## 호버는 여기서 프레임마다 한 번 보고 GameState.hover에 싣는다(보드 #81 — 창·HUD가 각자 레이를 쏘면 프레임마다 서너 번이 된다).
+const CURSOR_PICK := preload("res://actors/cursor_pick.gd")
+
+@export var move_speed: float = 4.0        # 유닛/초 (1유닛 = 타일 1칸) — 5→4(#23, PD 2026-09-24, 달리기 발 미끄럼)
+@export var turn_speed: float = 14.0       # 회전 보간
+@export var arrive_radius: float = 0.15
+@export var waypoint_radius: float = 0.3
+
+var _path: PackedVector3Array = PackedVector3Array()
+var _path_i: int = 0
+## 마지막으로 본 마우스 위치(뷰포트 좌표). 이벤트로만 갱신 — 주입 입력·창 밖 커서에도 결정적.
+var _mouse_pos: Vector2 = Vector2(-1, -1)
+var _holding: bool = false
+var _prev_primary: bool = false
+var _prev_secondary: bool = false
+## 우클릭을 월드에서 누르고 있나 (#383) — 누른 채면 스킬이 준비될 때마다 커서 밑 적(없으면 바닥)으로 되풀이 시전.
+## 창·HUD 위에서 시작한 누름은 켜지 않는다(좌클릭 _holding과 같은 규칙).
+var _holding_sec: bool = false
+var _repath_timer: float = 0.0
+var _spawn_pos: Vector3
+var _dash_target: Vector3
+var _dashing: bool = false
+## 도약 (#424 ② — 돌진베기): 떠남·도착 = 휘두름 클립 비율(x < y면 몸 진행을 클립 재생 위치에 묶는다, leap_to). 0,0 = 옛 대시(dash_to, 18u/s).
+var _leap: Vector2 = Vector2.ZERO
+var _dash_from: Vector3
+## 동작 중 들어온 명령 (#424 ① 동작 커밋 — 버퍼 한 칸, 마지막 입력이 이긴다): {kind: move·target·hold_target·face·interact·cast·cast_point·talisman, …}.
+## 평타·스킬·부적 동작이 끝나는 물리 틱에 한 번 한다(_physics_process — PlayerCombat보다 먼저 돌아 새 평타보다 앞선다). 빈 사전 = 없음.
+var _pending: Dictionary = {}
+## 피격 경직이 끝나는 시각 (combat_v2 §6.2 — 시계 = GameClock.now #234, 아래 밀치기·끌림 면역도). 그 전엔 걷지 않는다 — 경로·홀드는 남겨 두어 끝나면 이어 간다 ·
+## 적이 거는 밀치기·끌림은 경직과 따로 끝까지 몸을 옮긴다(#525, §6.2 ⑤).
+var _stagger_until: float = 0.0
+## 밀치기 (두억시니 — D-089 §1.4 밀치기, #326): 미는 속도(선형 감속)와 끝나는 시각. 길 위에 얹는 별도 이동(move_and_collide)이라 클릭 이동을 안 뺏는다. 거리는 틱마다 GameClock.ramp_step 적분(#324).
+const SHOVE_SEC := 0.2
+var _shove_vel: Vector3 = Vector3.ZERO
+var _shove_until: float = 0.0
+## 끌린 뒤 이만큼은 다시 안 끌린다 (#296 끌어당김 — 모든 적 공통, #318 판정).
+const PULL_IMMUNE_SEC := 2.0
+var _pull_immune_until: float = 0.0
+## 거미줄 안 이동 배수 (D-089 §2.2 묶는 자 · §2.6 표 — AoeField kind web, #326): 공격·스킬·클릭은 그대로(조작 잠금 0).
+const WEB_MOVE_MULT := 0.6
+## 바닥 판이 걸음을 늦추는 배수 — kind마다 (거미줄 0.6 #326 · 역병 구름 0.85 = §2.2 ① E8 전 임시, #328). 겹치면 가장 센 하나(한 겹).
+const GROUND_MOVE_MULTS := {&"web": WEB_MOVE_MULT, &"plague_cloud": 0.85, &"pus_burst": 0.85}   # pus_burst = 고름독 터짐 (#331, 역병 구름과 같은 ×0.85)
+## 클릭한 상호작용 대상(바닥 아이템·NPC·귀환문·서낭단) — 가까이 가서 interact()를 부른다.
+var _interact_target: Node3D
+## 발소리 (design/audio.md §2·§2.2, 보드 #178): 모델에 발 디딤 위상이 있으면(Visual.steps_synced) **보이는 발이 땅에 닿을 때** 레벨의 footstep_cue —
+## 거리로 세면 5u/s에서 초당 5.9번인데 화면의 발은 3.4번 딛었다. 위상이 없으면(캡슐 플레이스홀더 등) 옛 규칙: 걸은 거리 STEP_LEN 칸마다.
+const STEP_LEN := 0.85
+var _step_dist: float = 0.0
+
+@onready var _visual: ActorVisual = $Visual
+@onready var combat: PlayerCombat = $Combat
+
+
+## 비주얼(애니 훅). Combat이 타격·피격·사망을 알린다.
+func visual() -> ActorVisual:
+	return _visual
+
+
+func _ready() -> void:
+	add_to_group("player")
+	_visual.foot_down.connect(_on_foot_down)
+	EventBus.player_spawned.emit(self)
+
+
+## 마우스 이벤트는 "커서가 어디 있나"만 기록한다. 클릭 판정은 _process에서 액션 폴링으로 —
+## 실제 마우스·주입 액션(자동 테스트)·나중의 패드 "커서에서 확인"이 전부 같은 경로를 탄다.
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouse:
+		_mouse_pos = event.position
+
+
+## 엣지를 직접 검출한다. is_action_just_pressed는 프레임 스탬프에 의존해 주입 입력(action_press)을 놓치는 경우가 있음(실측).
+func _process(_delta: float) -> void:
+	# 사망 연출 중(combat_v2 §8): 클릭·우클릭을 먹지 않는다. 엣지 상태만 따라가 부활 직후 헛클릭이 안 나게.
+	if combat.is_dead():
+		_prev_primary = Input.is_action_pressed("primary_action")
+		_prev_secondary = Input.is_action_pressed("secondary_action")
+		_holding = false
+		_holding_sec = false
+		combat.retarget_hold = false
+		combat.storm_held = false
+		return
+	_update_hover()
+	_update_gate_hover()
+	var now := Input.is_action_pressed("primary_action")
+	if now != _prev_primary:
+		_prev_primary = now
+		# UI가 마우스를 잡고 있으면(인벤 창 위·아이템 들고 있음) 클릭은 UI 몫
+		if (GameState.is_ui_captured() or GameState.ui_click_recent()) and now:
+			_holding = false
+		else:
+			_on_primary(now)
+	# 좌클릭 누른 채 = 칼이 빌 때마다 커서 밑 적 (#383, combat_v2 §9 ②) — 커서가 창 위면 멈춘다(호버도 없다)
+	combat.retarget_hold = _holding and not GameState.is_ui_captured()
+	var sec := Input.is_action_pressed("secondary_action")
+	if sec != _prev_secondary:
+		_prev_secondary = sec
+		_holding_sec = sec and not GameState.is_ui_captured() and not GameState.ui_click_recent()
+	# 우클릭 누른 채 = 스킬이 준비될 때마다 커서 밑 적(없으면 바닥)으로 (§9 ③). 누른 첫 프레임도 이 길 — 준비돼 있으면 곧장 시전.
+	# 칼바람 (#478) = 누르고 있는 동안 도는 스킬 — 누름을 프레임마다 알린다(떼면 도는 바퀴를 끝까지 돈 뒤 선다)
+	combat.storm_held = _holding_sec and not GameState.is_ui_captured()
+	if _holding_sec and not GameState.is_ui_captured():
+		if TRACE.enabled():
+			TRACE.event("input_secondary_hold", "Player._process", self)
+		var e_h := CURSOR_PICK.live_enemy(GameState.hover)
+		var shift := Input.is_key_pressed(KEY_SHIFT)
+		if combat.storming():
+			combat.storm_steer(e_h, _cursor_world())   # 도는 중 — 버퍼가 아니라 걸어가는 쪽을 커서로 (#478)
+		elif motion_locked() or _dashing:
+			# 동작 중 — 지금 동작을 덮지 않고 끝난 뒤 한 번 (#424 ① 버퍼 한 칸). 누른 채면 겨눔만 커서를 따라 새로 담는다 —
+			# 그 뒤에 들어온 다른 명령(땅·적 클릭·부적)은 안 덮는다(마지막 입력이 이긴다)
+			if _pending.is_empty() or String(_pending.get("kind", "")) == "cast":
+				_pending = {"kind": "cast", "enemy": e_h, "ground": _cursor_world(), "in_place": shift}
+		else:
+			combat.hold_cast(e_h, _cursor_world(), shift)
+			if combat.skill_target != null:
+				_interact_target = null   # 스킬이 적에게 다가가기 시작했다 — 가던 NPC·아이템은 놓는다(새 명령)
+
+
+## 커서 아래에 무엇이 있나 (보드 #81 · 판정 #383). 매 프레임 한 번, 결과는 GameState.hover — 클릭도 이 답을 쓴다(외곽선이 뜬 것 = 누르면 할 것).
+## 바뀔 때만 EventBus.hover_changed를 쏜다 — 강조(외곽선)와 커서 모양이 그 신호를 받는다.
+func _update_hover() -> void:
+	var found: Node3D = null
+	if _mouse_pos.x >= 0.0 and not GameState.is_ui_captured():
+		found = pick_at(_mouse_pos)
+	if found == GameState.hover:
+		return
+	if GameState.hover != null and is_instance_valid(GameState.hover):
+		_set_hover_glow(GameState.hover, false)
+	GameState.hover = found
+	if found != null:
+		_set_hover_glow(found, true)
+	EventBus.hover_changed.emit(found)
+
+
+## 화면 좌표 밑의 것 (#383, combat_v2 §9 ①): 적 몸 안(레이·몸 기둥, 겹치면 카메라 쪽) → 바닥 아이템·NPC·문(레이) → 적 몸 둘레 12px.
+## 적을 먼저 보는 건 옛 클릭 규칙 그대로(싸움 중 발밑 아이템보다 적) — 둘레 여유만은 아이템·NPC 뒤라 적 곁 아이템도 집힌다.
+func pick_at(screen_pos: Vector2) -> Node3D:
+	var cam := get_viewport().get_camera_3d()
+	if cam == null:
+		return null
+	var enemies := CURSOR_PICK.scan(cam, screen_pos)
+	if enemies.inside != null:
+		return enemies.inside
+	var thing := _interactable_at(cam, screen_pos)
+	if thing != null:
+		return thing
+	return enemies.near
+
+
+## 외곽선(#15)의 색·두께만 바꾼다 — 강조용 메시를 따로 만들지 않으니 드로콜이 늘지 않는다.
+func _set_hover_glow(n: Node3D, on: bool) -> void:
+	var vis := n.get_node_or_null("Visual") as ActorVisual
+	if vis:
+		vis.set_highlight(on, Color(0.95, 0.42, 0.32) if n is Enemy else Color(1.0, 0.82, 0.45))
+
+
+## 화면 반경 안 가장 가까운 문 (GATE_HOVER_PX px).
+const GATE_HOVER_PX := 34.0
+
+
+## 던전 어귀 호버 (#474, D-093 §1) — GameState.hover(적·아이템·상호작용물, 클릭·이동을 정한다)와 갈래가 다르다:
+## HoverTip이 이름 + 지역 레벨만 그리고, 커서·클릭에는 손대지 않는다. hover가 있으면 비운다(적·아이템이 먼저) — group("area_gate")를
+## 화면 좌표로 훑는다(레이가 아니다 — 클릭 판정 레이어·마스크를 하나도 안 건드리려고, world/stairs.gd 주석과 같은 이유).
+func _update_gate_hover() -> void:
+	var found: Node3D = null
+	if GameState.hover == null and _mouse_pos.x >= 0.0 and not GameState.is_ui_captured():
+		var cam := get_viewport().get_camera_3d()
+		if cam:
+			var best := GATE_HOVER_PX
+			for n in get_tree().get_nodes_in_group(&"area_gate"):
+				var g := n as Node3D
+				if g == null or not is_instance_valid(g):
+					continue
+				var d := cam.unproject_position(g.global_position + Vector3(0, 1.0, 0)).distance_to(_mouse_pos)
+				if d <= best:
+					best = d
+					found = g
+	GameState.hover_gate = found
+
+
+## 누름 = 새 명령. 무엇을 누른 건지는 이 프레임의 호버(GameState.hover — _update_hover가 방금 본 pick_at)로 정한다 — 외곽선이 뜬 것이 곧 누른 것(#383).
+## 휘두르는 중(#424 ① 동작 커밋)이면 곧바로 하지 않고 버퍼 한 칸에 담는다 — 칼은 끝까지 가고 동작이 끝나는 틱에 이 명령을 한 번(마지막 입력이 이긴다).
+func _on_primary(pressed: bool) -> void:
+	_holding = pressed
+	if not pressed:
+		return
+	_repath_timer = HOLD_START_DELAY
+	var cmd := _primary_command()
+	var kind := String(cmd.kind)
+	if kind == "hold_target" or kind == "face":
+		_holding = false   # Shift = 제자리 공격 — 누른 채 다시 잡기·홀드 이동을 켜지 않는다(§9 ⑤)
+	if motion_locked() or _dashing:
+		_pending = cmd
+		return
+	_run_command(cmd)
+
+
+## 이 누름이 무엇인가 — 누른 그 프레임의 호버와 Shift로 정한다. 버퍼에 담겼다가 동작 뒤에 하더라도 누른 순간의 뜻 그대로(땅 자리 · 적 · NPC).
+func _primary_command() -> Dictionary:
+	var under: Variant = GameState.hover if _mouse_pos.x >= 0.0 else null
+	var e := CURSOR_PICK.live_enemy(under)
+	if Input.is_key_pressed(KEY_SHIFT):
+		# Shift+클릭 = 제자리 공격 (디아2): 적이면 타깃만 잡고 쫓지 않음, 바닥이면 그쪽을 보기만
+		if e != null:
+			return {"kind": "hold_target", "enemy": e}
+		return {"kind": "face", "point": _cursor_world()}
+	if e != null:
+		return {"kind": "target", "enemy": e}
+	if is_instance_valid(under) and under is Node3D and (under as Node3D).has_method("interact"):
+		return {"kind": "interact", "node": under}
+	return {"kind": "move", "point": _cursor_world()}
+
+
+## 명령 하나를 한다 — 누른 그 자리(_on_primary · 우클릭)나 동작이 끝난 틱(버퍼, _physics_process)에서. 대상이 그새 쓰러졌거나 사라졌으면 그 명령은 버린다.
+func _run_command(cmd: Dictionary) -> void:
+	var kind := String(cmd.get("kind", ""))
+	match kind:
+		"cast":
+			combat.hold_cast(CURSOR_PICK.live_enemy(cmd.get("enemy")), cmd.get("ground"), bool(cmd.get("in_place", false)))
+			if combat.skill_target != null:
+				_interact_target = null   # 스킬이 적에게 다가가기 시작했다 — 가던 NPC·아이템은 놓는다(새 명령)
+			return
+		"cast_point":
+			combat.cast_active(cmd.point)
+			return
+		"bag_talisman":
+			if int(cmd.get("generation", -1)) == combat.session_generation():
+				combat.throw_bag_talisman(cmd.get("item"), cmd.get("aim", {}))
+			return
+		"talisman":
+			combat.throw_talisman(int(cmd.slot))
+			return
+	# 좌클릭 명령 — 새 명령은 우클릭 스킬의 다가가기를 끊고(§9 ③) 가던 NPC·아이템을 놓는다
+	_interact_target = null
+	combat.cancel_skill_approach()
+	match kind:
+		"hold_target":
+			stop_moving()
+			var he := CURSOR_PICK.live_enemy(cmd.get("enemy"))
+			if he != null:
+				combat.set_target(he)
+				combat.hold_position = true
+		"face":
+			stop_moving()
+			if cmd.get("point") is Vector3:
+				face_toward(cmd.point)
+		"target":
+			var te := CURSOR_PICK.live_enemy(cmd.get("enemy"))
+			if te != null:
+				combat.hold_position = false
+				combat.set_target(te)   # 타깃 잡음 → Combat이 접근·공격. 누른 채면 칼이 빌 때마다 커서 밑 적으로 (combat.retarget_hold)
+		"interact":
+			combat.hold_position = false
+			combat.clear_target()
+			var n: Variant = cmd.get("node")
+			if is_instance_valid(n) and n is Node3D:
+				_go_interact(n as Node3D)   # 대상으로 걸어가 interact()
+		"move":
+			combat.hold_position = false
+			combat.clear_target()
+			if cmd.get("point") is Vector3:
+				_move_to_point(cmd.point)
+
+
+## 동작 중인가 (#424 ① 동작 커밋, combat_v2 §9.2) — 평타·스킬·부적 동작이 끝나기 전(ActorVisual.swing_busy: 칼이 닿은 뒤 복귀까지).
+## 이 동안 도호는 제자리(적이 미는 밀치기만), 걷기·대상 바꾸기·스킬·부적 명령은 버퍼 한 칸(_pending)에 담겼다가 동작이 끝나면 한 번.
+func motion_locked() -> bool:
+	return _visual.swing_busy() and not combat.is_dead()
+
+
+## 동작이 끝나면 한 번 할 명령을 담는다 (#424 ①) — 이미 있으면 갈음(마지막 입력이 이긴다). PlayerCombat(스킬 시전·부적)도 여기로 담는다.
+func queue_command(cmd: Dictionary) -> void:
+	_pending = cmd
+
+
+## 표적 UI가 처리한 마우스 누름은 폴링·홀드 이동/스킬로 새지 않는다 (#451).
+func consume_pointer_input() -> void:
+	GameState.mark_ui_click()
+	_holding = false
+	_holding_sec = false
+	combat.retarget_hold = false
+	_prev_primary = Input.is_action_pressed("primary_action")
+	_prev_secondary = Input.is_action_pressed("secondary_action")
+
+
+## 선택은 새 의도. 이전 접근/버퍼는 놓지만 시작한 휘두름/도약의 동작은 끝까지 간다.
+func begin_pointer_targeting() -> void:
+	consume_pointer_input()
+	stop_moving()
+	_interact_target = null
+	_pending = {}
+	combat.clear_target()
+	combat.cancel_skill_approach()
+
+
+func drop_bag_talisman_command() -> void:
+	if String(_pending.get("kind", "")) == "bag_talisman":
+		_pending = {}
+
+
+func is_dashing() -> bool:
+	return _dashing
+
+
+## 버퍼에 든 명령 (빈 사전 = 없음) — e2e·진단.
+func pending_command() -> Dictionary:
+	return _pending
+
+
+## 우클릭 스킬이 바뀌었다 (PlayerCombat.select_skill — F키·스킬 고르기 창·술법 창, #245 skills_v2 §8.3): 손을 뗀 우클릭이 버퍼에 남긴 시전은 버린다.
+## 우클릭을 누른 몇 프레임이 동작 시작 뒤로 넘어가면 버퍼에 시전이 담긴다 — 그대로 두면 동작 중 F키로 바꾼 스킬이 동작 뒤 저절로 나간다(바꾸기 = 시전).
+## 우클릭을 아직 누르고 있으면 그대로 — 누른 채 규칙(combat_v2 §9 ③)이 새 스킬로 잇는다. 다른 명령(땅·적 클릭·부적)은 안 건드린다.
+func drop_released_cast() -> void:
+	if _holding_sec:
+		return
+	var kind := String(_pending.get("kind", ""))
+	if kind == "cast" or kind == "cast_point":
+		_pending = {}
+
+
+## 상호작용 대상(바닥 아이템·NPC·귀환문·서낭단)으로 걸어가 닿으면 interact().
+func _go_interact(node: Node3D) -> void:
+	_interact_target = node
+	_holding = false
+	move_to(node.global_position)
+
+
+## 커서 아래 상호작용 대상(픽업·interact 레이어 Area) — pick_at의 가운데 칸. 적은 여기서 안 본다(CursorPick).
+func _interactable_at(cam: Camera3D, screen_pos: Vector2) -> Node3D:
+	var origin := cam.project_ray_origin(screen_pos)
+	var dir := cam.project_ray_normal(screen_pos)
+	var q := PhysicsRayQueryParameters3D.create(origin, origin + dir * 200.0, INTERACT_MASK)
+	q.collide_with_areas = true
+	q.collide_with_bodies = false
+	var hit := get_world_3d().direct_space_state.intersect_ray(q)
+	if hit.is_empty():
+		return null
+	var node := hit.collider as Node3D
+	if node == null or not (node is FloorItem or node.has_method("interact")):
+		return null
+	return node
+
+
+func _tick_interact() -> void:
+	if _interact_target == null:
+		return
+	if not is_instance_valid(_interact_target):
+		_interact_target = null
+		return
+	var radius: float = _interact_target.interact_radius if "interact_radius" in _interact_target else 1.1
+	var d := Vector3(_interact_target.global_position.x - global_position.x, 0.0, _interact_target.global_position.z - global_position.z).length()
+	var arrived := _path_i >= _path.size()
+	# 도착했는데 장애물 때문에 사거리보다 조금 멀면(격자 한 칸) 그래도 상호작용 — 길찾기 격자 오차 흡수
+	if d <= radius or (arrived and d <= radius + 1.0):
+		stop_moving()
+		var t := _interact_target
+		_interact_target = null
+		t.interact(self)
+	elif arrived:
+		# 경로가 끝났는데 아직 멀다(막힘) → 포기
+		_interact_target = null
+
+
+func _physics_process(delta: float) -> void:
+	if TRACE.enabled():
+		TRACE.event("player_physics", "Player._physics_process", self, {"delta": TRACE.exact(delta)})
+	# 사망 연출 중: 제자리(중력만). 경로·홀드는 버린다 — 마을에서 눈을 뜰 때 걷고 있지 않게.
+	if combat.is_dead():
+		_path.clear()
+		_path_i = 0
+		_holding = false
+		_dashing = false
+		_leap = Vector2.ZERO
+		_pending = {}
+		velocity.x = 0.0
+		velocity.z = 0.0
+		velocity.y = 0.0 if is_on_floor() else velocity.y - 20.0 * delta
+		move_and_slide()
+		_visual.set_moving(false, 0.0)
+		return
+	if _dashing:
+		_tick_dash(delta)
+		return
+	# 밀치기·끌림 (#326·#296 → #525): 몸을 옮기는 칸 — 아래 틱 갈래(칼바람 · 동작 커밋 · 경직 · 걷기)와 따로, 어느 갈래든 이 틱에 먼저 한 번.
+	# 경직은 걷기만 멈춘다(combat_v2 §6.2 ⑤) — 코·포효·털 낚아채기처럼 한 대에 경직과 밀침이 같이 와도 몸은 끝까지 밀린다
+	_tick_shove(delta)
+	# 칼바람 (#478): 도는 동안은 커서 쪽으로 곧게 걷는다(동작 커밋의 제자리 대신) — 그새 들어온 다른 명령은 버퍼에서 기다린다
+	if combat.storming():
+		_tick_storm(delta)
+		return
+
+	# 동작 커밋 (#424 ①, combat_v2 §9.2): 평타·스킬·부적 동작이 끝날 때까지 제자리 — 그새 들어온 명령은 버퍼(_pending)에서 기다린다
+	if motion_locked():
+		_tick_committed(delta)
+		return
+	# 동작이 끝난 첫 틱 — 버퍼의 명령을 한 번(PlayerCombat의 새 평타보다 먼저: 이 노드가 부모라 먼저 돈다)
+	if not _pending.is_empty():
+		var cmd := _pending
+		_pending = {}
+		_run_command(cmd)
+		if _dashing or motion_locked():
+			return   # 버퍼가 새 동작(스킬·부적)을 시작했다
+
+	if GameClock.now < _stagger_until:
+		_tick_stagger(delta)
+		return
+
+	_tick_interact()
+
+	# 누르고 있으면(딜레이 후) 주기적으로 목적지·경로 갱신 (디아 "홀드 이동"). 타깃 중·스킬 다가가기 중엔 Combat이 이동을 지휘.
+	# 커서 밑에 적이 오면 Combat이 그 적을 잡는다(retarget_hold, #383) — 그러면 target이 차서 여기 안 온다.
+	if _holding and combat.target == null and combat.skill_target == null and _interact_target == null:
+		_repath_timer -= delta
+		if _repath_timer <= 0.0:
+			_repath_timer = HOLD_REPATH_SEC
+			_set_target_from_mouse()
+
+	# 바닥에서 떨어졸으면 스폰으로 복귀 (플레이스홀더 바닥 가장자리 안전망).
+	if global_position.y < -5.0:
+		teleport_to(_spawn_pos)
+
+	if _path_i < _path.size():
+		var wp := _path[_path_i]
+		var to_wp := wp - global_position
+		to_wp.y = 0.0
+		var is_last := _path_i == _path.size() - 1
+		var radius := arrive_radius if is_last else waypoint_radius
+		if to_wp.length() <= radius:
+			_path_i += 1
+			if _path_i >= _path.size():
+				velocity.x = 0.0
+				velocity.z = 0.0
+		else:
+			var dir := to_wp.normalized()
+			var spd := move_speed * ground_move_mult()   # 거미줄 안이면 ×0.6 (#326)
+			velocity.x = dir.x * spd
+			velocity.z = dir.z * spd
+			_face(dir, delta)
+	else:
+		var flat := Vector3(velocity.x, 0.0, velocity.z).move_toward(Vector3.ZERO, move_speed * 4.0 * delta)
+		velocity.x = flat.x
+		velocity.z = flat.z
+
+	# 밀치기·끌림은 이 틱 맨 앞에서 이미 했다(_tick_shove — 길 위 이동과 따로 미끄러진다)
+	if not is_on_floor():
+		velocity.y -= 20.0 * delta
+	else:
+		velocity.y = 0.0
+	move_and_slide()
+	var _hspeed := Vector2(velocity.x, velocity.z).length()
+	_visual.set_moving(_hspeed > ActorVisual.MOVE_EPS, _hspeed)
+	_tick_footsteps(_hspeed, delta)
+
+
+## 거리 규칙 (위상 없는 모델만). 위상이 있으면 소리는 _on_foot_down이 낸다.
+func _tick_footsteps(hspeed: float, delta: float) -> void:
+	if hspeed <= ActorVisual.MOVE_EPS or not is_on_floor() or _visual.steps_synced():
+		_step_dist = 0.0
+		return
+	_step_dist += hspeed * delta
+	if _step_dist >= STEP_LEN:
+		_step_dist -= STEP_LEN
+		_play_footstep()
+
+
+## 보이는 발이 땅에 닿았다 (ActorVisual.foot_down, #178). 대시·사망 연출·공중에서는 안 난다.
+func _on_foot_down(_foot: int) -> void:
+	if _dashing or combat.is_dead() or not is_on_floor():
+		return
+	_play_footstep()
+
+
+func _play_footstep() -> void:
+	var lvl := get_tree().get_first_node_in_group("level")
+	Audio.play(String(lvl.footstep_cue) if lvl and "footstep_cue" in lvl else "step_dirt")
+
+
+# ---------- 공개 API (Combat·Main·Stairs가 사용) ----------
+
+## 현재 경로의 최종 목적지. 이동 중이 아니면 null. (계단이 "의도한 도착"인지 판정할 때 사용)
+func final_target() -> Variant:
+	if _path_i < _path.size():
+		return _path[_path.size() - 1]
+	return null
+
+
+## 레벨 길찾기로 목적지까지 이동 시작.
+func move_to(target: Vector3) -> void:
+	var level := get_tree().get_first_node_in_group("level") as Level
+	var path := level.find_path(global_position, target) if level else PackedVector3Array([target])
+	if path.is_empty():
+		return
+	_path = path
+	_path_i = 0
+	EventBus.player_move_target_set.emit(target)
+
+
+func stop_moving() -> void:
+	_path = PackedVector3Array()
+	_path_i = 0
+	velocity.x = 0.0
+	velocity.z = 0.0
+
+
+## Esc 메뉴·타이틀이 판을 멈출 때 (#156, design/system_menu_156.md) — 메뉴를 사이에 둔 입력은 새 명령으로 쓰지 않는다:
+## 걷기·누른 채 이동·다가가기·타깃·동작 중 버퍼(#424 — 메뉴 앞에 담긴 명령)를 놓는다. 돌진·휘두르는 동작·칼이 닿는 순간(애니와 같이 선다)·쿨다운·선택 스킬은
+## 그대로(트리 멈춤이 같이 세운다 — 멈춘 동안엔 물리 틱이 안 돌아 버퍼도 안 풀린다).
+func menu_pause_started() -> void:
+	stop_moving()
+	_holding = false
+	_holding_sec = false
+	_pending = {}
+	_interact_target = null
+	_repath_timer = 0.0
+	combat.clear_target()
+	combat.hold_position = false
+	combat.retarget_hold = false
+	menu_pause_ended()
+
+
+## 메뉴가 닫힐 때 — 엣지 폴링의 「직전 상태」를 지금 키로 맞춘다. 메뉴 안에서 누른 채 돌아온 클릭·F키·숫자키가 복귀 첫 프레임에 새 누름으로 읽히지 않게.
+func menu_pause_ended() -> void:
+	_prev_primary = Input.is_action_pressed("primary_action")
+	_prev_secondary = Input.is_action_pressed("secondary_action")
+	combat.sync_key_edges()
+
+
+## 피격 경직: sec 초 동안 이동 정지(겹치면 긴 쪽). 대시 중엔 무시(스킬 이동은 끊기지 않는다). 칼바람 도는 동안도 무시(#478 — 「도는 동안 경직 무시」).
+func stagger(sec: float) -> void:
+	if _dashing or combat.storming():
+		return
+	_stagger_until = maxf(_stagger_until, GameClock.now + sec)
+
+
+## 밀친다 (두억시니 밀치기 — D-089 §1.4, #326 hooks/shove.gd): dir 쪽으로 dist만큼 SHOVE_SEC에 걸쳐 미끄러진다. 피해·경직 없음 · 길(클릭 이동)은 그대로 —
+## 조작을 안 뺏는다(D-038). 벽에 밀리면 거기서 멈춘다. 대시 중엔 무시(스킬 이동은 끊기지 않는다) · 경직 중에도 끝까지 민다(#525 — 경직은 걷기만 멈춘다,
+## 코·포효·털 낚아채기는 경직과 같이 온다 · 옛 경직 틱은 이 값을 안 읽어 맞으면 0칸이었다). 미는 자리 = _tick_shove(물리 틱마다 한 번).
+func shove(dir: Vector3, dist: float) -> void:
+	var d := Vector3(dir.x, 0.0, dir.z)
+	if d.length_squared() < 0.0001 or dist <= 0.0 or _dashing or combat.is_dead():
+		return
+	_shove_vel = d.normalized() * (2.0 * dist / SHOVE_SEC)
+	_shove_until = GameClock.now + SHOVE_SEC
+
+
+## 밀리는 중인가 (e2e·진단).
+func is_shoved() -> bool:
+	return GameClock.now < _shove_until
+
+
+## 지금 끌릴 수 있나 — 끌린 지 PULL_IMMUNE_SEC 안 · 대시 중 · 죽음이면 아니오.
+func can_be_pulled() -> bool:
+	return GameClock.now >= _pull_immune_until and not _dashing and not combat.is_dead()
+
+
+## 끌어당김 (#296 hooks/pull.gd — 물귀신 · 나찰녀, 장산범 털 낚아채기 작은 판): dir 쪽으로 dist만큼 밀치기와 같은 미끄러짐(벽에 걸리면 거기서 · 길은 그대로).
+## 끌린 뒤 PULL_IMMUNE_SEC 2초는 다시 안 끌린다 — 모든 적 공통이라 도호 쪽 칸이다. 반환 = 끌렸나.
+func pull(dir: Vector3, dist: float) -> bool:
+	if not can_be_pulled() or dist <= 0.0:
+		return false
+	shove(dir, dist)
+	_pull_immune_until = GameClock.now + PULL_IMMUNE_SEC
+	return true
+
+
+## 발밑 바닥이 걸음을 늦추나 — 거미줄(AoeField kind web, monster_new_types_rules §2.2 묶는 자 · §2.6, #326) · 역병 구름(#328): kind마다 겹쳐도 한 겹(strongest_at) ·
+## kind끼리도 가장 센 하나(GROUND_MOVE_MULTS) · 공격 · 스킬 · 클릭은 그대로(조작 잠금 0). 걷는 속도에만 곱한다(대시·밀림엔 안 곱한다).
+func ground_move_mult() -> float:
+	var m := 1.0
+	for kind in GROUND_MOVE_MULTS:
+		if AoeField.strongest_at(kind, global_position) != null:
+			m = minf(m, float(GROUND_MOVE_MULTS[kind]))
+	return m
+
+
+## 사망 연출 중인가 (적·Main이 본다).
+func is_dead() -> bool:
+	return combat.is_dead()
+
+
+func is_staggered() -> bool:
+	return GameClock.now < _stagger_until
+
+
+## 동작 중 틱 (#424 ①): 제자리 — 걷는 속도 0 · 중력 · 적이 미는 밀치기·끌림은 그대로(#326 — 도호가 걷는 게 아니다, 휘두르는 몸도 밀린다 · _tick_shove가 먼저 했다).
+## 비주얼은 휘두름 클립을 끝까지 튼다(busy 동안 set_moving이 안 덮는다).
+func _tick_committed(delta: float) -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	if not is_on_floor():
+		velocity.y -= 20.0 * delta
+	else:
+		velocity.y = 0.0
+	move_and_slide()
+	_visual.set_moving(false)
+	_step_dist = 0.0
+
+
+## 칼바람 틱 (#478, power_feel_v2 §2.2): 커서 쪽(PlayerCombat.storm_goal)으로 **곧게** 걷는다 — 걸음 × 칼바람 배수(0.8, 한기 ×0.75는 move_speed에 이미)
+## × 바닥 배수(거미줄) · 적 몸은 지나친다(플레이어 마스크는 적 몸을 안 본다) · 벽은 미끄러진다 · 닿으면 제자리에서 돈다. 밀치기·끌림은 그대로(_tick_shove가 먼저 했다).
+## 비주얼은 도는 클립(ActorVisual.play_swing_loop)이 busy를 잡고 있어 걷기로 안 바뀐다 — 몸 방향만 걷는 쪽으로 돌린다.
+func _tick_storm(delta: float) -> void:
+	var to := combat.storm_goal - global_position
+	to.y = 0.0
+	var dist := to.length()
+	if dist > arrive_radius:
+		var dir := to / dist
+		var spd := minf(move_speed * combat.storm_move_mult() * ground_move_mult(), dist / maxf(delta, 0.0001))   # 넘어가지 않게
+		velocity.x = dir.x * spd
+		velocity.z = dir.z * spd
+		_face(dir, delta)
+	else:
+		velocity.x = 0.0
+		velocity.z = 0.0
+	if not is_on_floor():
+		velocity.y -= 20.0 * delta
+	else:
+		velocity.y = 0.0
+	move_and_slide()
+	_step_dist = 0.0
+
+
+## 밀치기·끌림 한 틱 (#326 · #296 · 적분 #324 · #525): 이 틱의 거리 = 선형 감속(1→0)을 틱 창에 적분한 몫 × 처음 속도(GameClock.ramp_step —
+## 적 넉백과 같은 식, 틱 위상과 무관하게 합 = 정격 거리) · 벽은 move_and_collide가 막는다. _physics_process가 대시·사망 뒤, 틱 갈래(칼바람 · 동작 커밋 ·
+## 경직 · 걷기) 앞에서 **한 번** 부른다 — 갈래마다 따로 두면 빠뜨린 갈래(옛 경직 틱)에서 밀림이 사라진다.
+## 왜 이 구조인가: 경직(걷기를 멈추는 칸)과 밀림(몸을 옮기는 칸)은 서로 모르는 두 칸이다 — 한 자리에서 먼저 밀면 어느 갈래든 같고, 걸린 순서(경직 먼저 · 밀침 먼저)와도 무관하다.
+## 대안 = 경직 틱에도 같은 세 줄을 더 둔다 → 갈래 넷에 같은 줄 넷, 새 갈래가 또 빠뜨릴 수 있고 버퍼가 새 동작을 연 틱(return)도 한 틱 몫을 잃는다, 기각.
+func _tick_shove(delta: float) -> void:
+	var s := GameClock.ramp_step(_shove_until, SHOVE_SEC, delta)
+	if s > 0.0:
+		move_and_collide(Vector3(_shove_vel.x * s, 0.0, _shove_vel.z * s))
+
+
+## 경직 틱: 수평 속도 0(걷지 않는다), 중력만 — 밀치기·끌림은 _tick_shove가 이 틱 앞에서 이미 옮겼다(#525). 비주얼은 play_hit이 잠가 둔 피격 클립을 계속 튼다.
+func _tick_stagger(delta: float) -> void:
+	velocity.x = 0.0
+	velocity.z = 0.0
+	if not is_on_floor():
+		velocity.y -= 20.0 * delta
+	else:
+		velocity.y = 0.0
+	move_and_slide()
+	_visual.set_moving(false)
+
+
+func face_toward(pos: Vector3) -> void:
+	var d := pos - global_position
+	d.y = 0.0
+	if d.length_squared() > 0.0001:
+		_visual.rotation.y = atan2(d.x, d.z)
+
+
+## 생명·도력 가득 (무당 할매 — Npc.has_method("heal_full") 덕 타이핑으로 부른다, npcs_v2 §4.2). Combat으로 그대로 넘긴다.
+func heal_full() -> void:
+	combat.heal_full()
+
+
+## 현재 바라보는 방향 (xz 단위벡터).
+func facing() -> Vector3:
+	return Vector3(sin(_visual.rotation.y), 0.0, cos(_visual.rotation.y))
+
+
+## 스킬 대시: 경로 무시하고 직선 고속 이동 (Combat이 벽 검사 후 끝점을 준다). 도약 클립이 없을 때의 옛 돌진 · e2e 이동 도구.
+func dash_to(end: Vector3) -> void:
+	stop_moving()
+	_dash_target = Vector3(end.x, global_position.y, end.z)
+	_leap = Vector2.ZERO
+	_dashing = true
+	face_toward(end)
+
+
+## 도약 (#424 ② — 돌진베기, combat_v2 §9.2): 몸 진행을 휘두름 클립의 재생 위치에 묶는다 — 비율 from(땅을 떠남)까지 제자리, from → to(칼이 닿는 순간 =
+## 착지) 사이에 end로 곧게, to에 도착. 명중·피격 멈춤이면 몸도 선다(칼과 같은 시계). 벽은 부르는 쪽이 이미 잘랐다(PlayerCombat._dash — 끊김 규칙 그대로).
+## 클립이 도중에 끊기면(사망 등) 옛 대시로 마저 간다. 도착은 칼이 닿는 틱에 finish_leap(판정보다 먼저)이 확정한다.
+func leap_to(end: Vector3, from_ratio: float, to_ratio: float) -> void:
+	stop_moving()
+	_dash_from = global_position
+	_dash_target = Vector3(end.x, global_position.y, end.z)
+	_leap = Vector2(from_ratio, to_ratio)
+	_dashing = true
+	face_toward(end)
+
+
+## 도약 도착 (#424 — 칼이 닿는 애니 틱, PlayerCombat._dash가 판정 앞에 건다): 몸을 도착 자리에 세운다. 도약 중이 아니면 아무 일 없다.
+func finish_leap() -> void:
+	if not _dashing or _leap.y <= _leap.x:
+		return
+	global_position = Vector3(_dash_target.x, global_position.y, _dash_target.z)
+	velocity = Vector3.ZERO
+	_dashing = false
+	_leap = Vector2.ZERO
+
+
+## 도약 중인가 (#424) — e2e·진단.
+func is_leaping() -> bool:
+	return _dashing and _leap.y > _leap.x
+
+
+## 반환 = 받은 피해(빗나감·쓰러져 있음 0) — 적의 LAND 훅(흡혈하는 …, #290)이 읽는다.
+func receive_attack(rng: RandomNumberGenerator, dmg_min: float, dmg_max: float, attacker_acc: float, mult: float, element: StringName = &"", share: float = 0.0) -> int:
+	return combat.receive_attack(rng, dmg_min, dmg_max, attacker_acc, mult, element, share)
+
+
+func teleport_to(pos: Vector3) -> void:
+	_spawn_pos = pos
+	global_position = pos + Vector3(0, 0.05, 0)
+	_visual.reset_springs()   # 옷 스프링 꼬리를 새 자리로 — 자리를 옮긴 **뒤에** (#346)
+	_visual.cancel_swing()    # 휘두르던 칼은 옛 자리(옛 층)의 것 — 새 자리에서 옛 영역을 치지 않게 버린다 (#403, 보이지 않는 칼)
+	velocity = Vector3.ZERO
+	_path = PackedVector3Array()
+	_path_i = 0
+	_holding = false
+	_holding_sec = false   # 층을 옮기면 누름도 새로 (좌클릭 _holding과 같다)
+	_dashing = false
+	_leap = Vector2.ZERO
+	_pending = {}          # 동작 중 버퍼도 새로 (#424)
+	_interact_target = null
+	combat.end_storm()     # 칼바람 (#478) — 새 자리는 서서
+	combat.clear_target()
+
+
+# ---------- 내부 ----------
+
+func _tick_dash(delta: float) -> void:
+	if _leap.y > _leap.x:
+		var k := _visual.swing_progress(_leap.x, _leap.y)
+		if k >= 0.0:
+			# 도약 — 이 틱 몸 자리 = 떠난 자리 → 도착을 클립 진행 k만큼 (클립이 서면 몸도 선다)
+			var want := _dash_from.lerp(_dash_target, k)
+			var step := Vector3(want.x - global_position.x, 0.0, want.z - global_position.z)
+			velocity = step / maxf(delta, 0.0001)
+			move_and_slide()
+			velocity = Vector3.ZERO
+			if k >= 1.0:
+				finish_leap()
+			return
+		_leap = Vector2.ZERO   # 도약 클립이 끊겼다 — 옛 대시로 마저 간다
+	var to_t := _dash_target - global_position
+	to_t.y = 0.0
+	var step := DASH_SPEED * delta
+	if to_t.length() <= step:
+		global_position = Vector3(_dash_target.x, global_position.y, _dash_target.z)
+		_dashing = false
+		velocity = Vector3.ZERO
+		return
+	velocity = to_t.normalized() * DASH_SPEED
+	move_and_slide()
+	if get_slide_collision_count() > 0 and velocity.length() < 0.5:
+		_dashing = false
+
+
+## 커서가 가리키는 바닥 지점 (없으면 null). 범위 표시·스킬 조준이 같은 값을 쓴다.
+func cursor_world() -> Variant:
+	return _cursor_world()
+
+
+## UI가 이벤트를 소비해도 그 이벤트 좌표로 바닥을 겨눈다 (#451).
+func world_at(screen_pos: Vector2) -> Variant:
+	var cam := get_viewport().get_camera_3d()
+	if cam == null or screen_pos.x < 0.0:
+		return null
+	return Plane(Vector3.UP, 0.0).intersects_ray(cam.project_ray_origin(screen_pos), cam.project_ray_normal(screen_pos))
+
+
+func _cursor_world() -> Variant:
+	if _mouse_pos.x < 0.0:
+		return null
+	return world_at(_mouse_pos)
+
+
+func _set_target_from_mouse() -> void:
+	var hit = _cursor_world()
+	if hit == null:
+		return
+	_move_to_point(hit)
+
+
+## 땅 한 점으로 걷기 (클릭·버퍼 명령 · 홀드 이동) — 너무 먼 점(지평선 근처)은 버린다.
+func _move_to_point(p: Vector3) -> void:
+	if p.distance_to(global_position) > MAX_CLICK_DISTANCE:
+		return
+	move_to(p)
+
+
+func _face(dir: Vector3, delta: float) -> void:
+	if dir.length_squared() < 0.0001:
+		return
+	var target_yaw := atan2(dir.x, dir.z)
+	_visual.rotation.y = lerp_angle(_visual.rotation.y, target_yaw, clampf(turn_speed * delta, 0.0, 1.0))

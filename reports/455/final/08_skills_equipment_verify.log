@@ -1,0 +1,45 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\reports\455\final\08_skills_equipment.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+  Duration: 00:00:11.10, start: 0.000000, bitrate: 1662 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], 1460 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+[Parsed_volumedetect_0 @ 0000018d4f56fec0] n_samples: 0
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: wrapped_avframe, yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 wrapped_avframe
+      handler_name    : VideoHandler
+  Stream #0:1(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 pcm_s16le
+      handler_name    : SoundHandler
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] n_samples: 1067008
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] mean_volume: -29.4 dB
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] max_volume: -5.2 dB
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] histogram_5db: 17
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] histogram_6db: 60
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] histogram_7db: 79
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] histogram_8db: 66
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] histogram_9db: 155
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] histogram_10db: 260
+[Parsed_volumedetect_0 @ 0000018d4f49d3c0] histogram_11db: 534
+[out#0/null @ 0000018d4f56f500] video:138KiB audio:2084KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  333 fps=0.0 q=-0.0 Lsize=N/A time=00:00:11.10 bitrate=N/A speed= 143x elapsed=0:00:00.07    

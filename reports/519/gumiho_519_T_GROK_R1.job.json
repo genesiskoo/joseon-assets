@@ -1,0 +1,25 @@
+{
+  "provider": "Comfy Cloud",
+  "model": "grok-imagine-image-2.0",
+  "source": "gumiho_C_gaze_pd_reference.png",
+  "source_sha256": "1c0d8c4c7d19035fd344b6cc864828e6071568aa439653e7532efd3db767a280",
+  "seed": 5192301,
+  "requested_images": 1,
+  "requested_aspect_ratio": "2:3",
+  "requested_resolution": "2K",
+  "state": "downloaded",
+  "prompt_id": "8eb31ae7-96a4-4377-a102-9546a86d1a7e",
+  "status_response": {
+    "assigned_inference": "10.4.4.34:8080",
+    "created_at": "2026-09-30T06:58:58.621666Z",
+    "id": "8eb31ae7-96a4-4377-a102-9546a86d1a7e",
+    "last_state_update": "2026-09-30T06:59:28.578564Z",
+    "status": "success",
+    "updated_at": "2026-09-30T06:59:28.578564Z"
+  },
+  "output": "gumiho_519_T_GROK_R1.png",
+  "output_sha256": "1070f966e4b2066352005c837625ea578d6c84c57d9115866bce03e13a500753",
+  "prompt_file_sha256": "ff402d99ae9b38929b5ca78647a9bd0465cf9eeb28b645cb437425709c6a58b9",
+  "submitted_prompt_sha256": "dfa77abe6104990707b9e0b4ccde39a1d017c1a0433cd920434bb1e2bb9e44f2",
+  "submission_prompt_file_sha256": "ff402d99ae9b38929b5ca78647a9bd0465cf9eeb28b645cb437425709c6a58b9"
+}

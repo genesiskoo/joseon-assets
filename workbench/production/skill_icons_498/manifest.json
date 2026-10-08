@@ -1,0 +1,675 @@
+{
+  "card": 498,
+  "status": "unapproved_candidates",
+  "runtime_connected": false,
+  "game_intake_count": 0,
+  "packing_method": "full-frame RGBA Lanczos 1024 to 128; no semantic editing",
+  "original_count": 14,
+  "candidate_count": 10,
+  "originals": [
+    {
+      "asset": "leap_slash",
+      "source": "reports/498/2026-10-02_round1/leap_slash.png",
+      "source_sha256": "5192d66bf9c85174dcce40bb186f1d80abf5ec4ce0b701041d535637a981dc75",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "afc3504e-3ebd-4281-803d-f7e26f621cf7",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/leap_slash.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/leap_slash.prompt.txt",
+      "prompt_sha256": "e21a45033d9308852e9f829c06862d4e47c3083bb87fafbabd3a62e451098703",
+      "prompt_file_sha256": "6c8543c7e6c6c8edae6f616507e01b7d2f0bb8d65decadf83efa7e2dd6125e8f",
+      "workflow_record": "reports/498/2026-10-02_round1/leap_slash.api.json",
+      "history_record": "reports/498/2026-10-02_round1/leap_slash.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "seal_array",
+      "source": "reports/498/2026-10-02_round1/seal_array.png",
+      "source_sha256": "055807306ef2e3867a08f57854c4537834eb1dfe6621ad0abff07a21cf5a2c07",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "b1a620ed-8211-478c-a955-8204d3ba48f9",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/seal_array.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/seal_array.prompt.txt",
+      "prompt_sha256": "101ecf8846ae0a673322c83af767715d8912b6a75d6f5b110c04ab5b7ac6f269",
+      "prompt_file_sha256": "2d8dd5b84221f0aa9f2914855dcc9e84ad27c7669cce816f2663424ab8fec59f",
+      "workflow_record": "reports/498/2026-10-02_round1/seal_array.api.json",
+      "history_record": "reports/498/2026-10-02_round1/seal_array.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "seal_array_v2",
+      "source": "reports/498/2026-10-02_revision1/seal_array_v2.png",
+      "source_sha256": "89c087e9abd7a8ee6f3278cdbf204447497e8ffb468348369cfe91cb09757eb4",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "2e4329fd-4d11-4b54-ad32-517403f36b47",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "medium",
+      "job_record": "reports/498/2026-10-02_revision1/seal_array_v2.job.json",
+      "prompt_record": "reports/498/2026-10-02_revision1/seal_array_v2.prompt.txt",
+      "prompt_sha256": "bf6d73fcdc02d1b227c5f45c291a7ba64e994297f3b0c40bbf59a57e795c518a",
+      "prompt_file_sha256": "350f16ea5331a6e8be9c1859b055e040503d5dad3c2a36f4ce915efcc04f5a1a",
+      "workflow_record": "reports/498/2026-10-02_revision1/seal_array_v2.api.json",
+      "history_record": "reports/498/2026-10-02_revision1/seal_array_v2.history.json",
+      "reference_images": [],
+      "state": "downloaded"
+    },
+    {
+      "asset": "blade_storm",
+      "source": "reports/498/2026-10-02_round1/blade_storm.png",
+      "source_sha256": "c630c22e3668f2db4a6c52e6f40ab461fc44a6ce8371bc421cabd8d5fb6fec3f",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "69be6a8d-b648-45e7-be83-d64bf2667556",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/blade_storm.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/blade_storm.prompt.txt",
+      "prompt_sha256": "d581bed5e5ad3ea7dd80c4f9e288df31b2a7f8583185827c42e8f5030299dbfa",
+      "prompt_file_sha256": "4b9bc7a85f8c4b8aec73423aa71e8096ed273cdc1f1c21e36acd8b4d818817dc",
+      "workflow_record": "reports/498/2026-10-02_round1/blade_storm.api.json",
+      "history_record": "reports/498/2026-10-02_round1/blade_storm.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "blade_storm_v2",
+      "source": "reports/498/2026-10-02_revision1/blade_storm_v2.png",
+      "source_sha256": "8f78620d34eab6a05d6fd6586b7bc1423caaad9f9d0418731dd3a5ac7e2d3ae3",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "90f19bd5-042e-4c33-af1a-8364e722ca2d",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "medium",
+      "job_record": "reports/498/2026-10-02_revision1/blade_storm_v2.job.json",
+      "prompt_record": "reports/498/2026-10-02_revision1/blade_storm_v2.prompt.txt",
+      "prompt_sha256": "7c92af36d2293698322409d7a424102ea8c9996e35d3dadb77bc658ae871f915",
+      "prompt_file_sha256": "d3b6899bddd85c514d01389191de4084c9280a5be2459f1fce333376d782d10a",
+      "workflow_record": "reports/498/2026-10-02_revision1/blade_storm_v2.api.json",
+      "history_record": "reports/498/2026-10-02_revision1/blade_storm_v2.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\reports\\498\\2026-10-02_round1\\blade_storm.png",
+          "role": "edit target; preserve character and paint style, change only the described incorrect motif",
+          "sha256": "c630c22e3668f2db4a6c52e6f40ab461fc44a6ce8371bc421cabd8d5fb6fec3f"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "breath",
+      "source": "reports/498/2026-10-02_round1/breath.png",
+      "source_sha256": "77650e1bb68569f88a35987576a0c71d103be5c1a5b018838ab555e96095eb3b",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "048e6f69-48a4-4846-98d2-54232f34be09",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/breath.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/breath.prompt.txt",
+      "prompt_sha256": "0575fa296071a9501f5439bf62f62c4daaee822456dcc0ddccbd42468e1ba5e1",
+      "prompt_file_sha256": "3fe36da6dca4f0e231651ff7c07fe72f3b24c5627afb3b7601c95f47504823d6",
+      "workflow_record": "reports/498/2026-10-02_round1/breath.api.json",
+      "history_record": "reports/498/2026-10-02_round1/breath.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "breath_v2",
+      "source": "reports/498/2026-10-02_revision1/breath_v2.png",
+      "source_sha256": "c26daabcedb675a20cda4c0010c4bf13a876b78dd7077d8ebec370d1365dc422",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "2764f3a8-39eb-46ff-8a10-1b213517c6d8",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "medium",
+      "job_record": "reports/498/2026-10-02_revision1/breath_v2.job.json",
+      "prompt_record": "reports/498/2026-10-02_revision1/breath_v2.prompt.txt",
+      "prompt_sha256": "250908456c8c711d19c49c1090cac7aacafbd074f038fce0682538667d9f75c2",
+      "prompt_file_sha256": "0bc8b975df7273bfd58026403328a0b64612ee32cffede1643b2c9fe00b945b6",
+      "workflow_record": "reports/498/2026-10-02_revision1/breath_v2.api.json",
+      "history_record": "reports/498/2026-10-02_revision1/breath_v2.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\reports\\498\\2026-10-02_round1\\breath.png",
+          "role": "edit target; preserve character and paint style, change only the described incorrect motif",
+          "sha256": "77650e1bb68569f88a35987576a0c71d103be5c1a5b018838ab555e96095eb3b"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "combo",
+      "source": "reports/498/2026-10-02_round1/combo.png",
+      "source_sha256": "4c0235f87e8a30ef76f49a73936795a9ae5763a318d56a26bdf7737aaf1bce7d",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "51e8c87f-76de-42c6-8dbd-a4c32f797670",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/combo.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/combo.prompt.txt",
+      "prompt_sha256": "00f58cd5c9d0b605968ee0a90f4f2abe859d66751ea97bea74c8fc35bbe56be5",
+      "prompt_file_sha256": "825b6bd8bc0e0767ae8d030588dc3749ca97e1b3b3884d12b5da498d72ee3655",
+      "workflow_record": "reports/498/2026-10-02_round1/combo.api.json",
+      "history_record": "reports/498/2026-10-02_round1/combo.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "pouch",
+      "source": "reports/498/2026-10-02_round1/pouch.png",
+      "source_sha256": "ec80665c879e94151e7b27013ecc5a87760ff4cc80a3c7f9810f118d51d3773f",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "e4eb4944-5b0b-4b2c-af37-b2836decf886",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/pouch.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/pouch.prompt.txt",
+      "prompt_sha256": "a5fec2972788294b88a3e671aeee0511c3b46bded3b175e600f610658d4514a8",
+      "prompt_file_sha256": "c62509411ae8b85ab09f07bfe7e8b3ddf0350f86a9b4b2c9126582e21206de18",
+      "workflow_record": "reports/498/2026-10-02_round1/pouch.api.json",
+      "history_record": "reports/498/2026-10-02_round1/pouch.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "pouch_v2",
+      "source": "reports/498/2026-10-02_revision1/pouch_v2.png",
+      "source_sha256": "76a5e851c7c54d0ced33fe42b714ca08c3a51fdf576059d9c5e8cafb5acc2666",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "460f3f02-670f-4ec2-9051-970e6bde31f4",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "medium",
+      "job_record": "reports/498/2026-10-02_revision1/pouch_v2.job.json",
+      "prompt_record": "reports/498/2026-10-02_revision1/pouch_v2.prompt.txt",
+      "prompt_sha256": "d3a5974f51b7059e60e5a81d6da230200f4c5e6050f5afe5a68f1fc9d777e05a",
+      "prompt_file_sha256": "b964674211119ed699c3d3cf9c11f4445e73f04b87f3eab80768247e890e50a9",
+      "workflow_record": "reports/498/2026-10-02_revision1/pouch_v2.api.json",
+      "history_record": "reports/498/2026-10-02_revision1/pouch_v2.history.json",
+      "reference_images": [],
+      "state": "downloaded"
+    },
+    {
+      "asset": "scatter",
+      "source": "reports/498/2026-10-02_round1/scatter.png",
+      "source_sha256": "63b70439818204ff17577aa74766d7b71a11eb9b17ee66004681e3cc1546ee7a",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "588deeb5-02e2-473d-a2ca-65dc91c74039",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/scatter.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/scatter.prompt.txt",
+      "prompt_sha256": "acb7d9c890bef03fae4a311858c34d13f50100c1ecbd18f48bc656f8157c0f13",
+      "prompt_file_sha256": "fe09e905918f57c2eb9b5912c078fcd6f7afc4202d94a0f2258fdfb4b9b4af48",
+      "workflow_record": "reports/498/2026-10-02_round1/scatter.api.json",
+      "history_record": "reports/498/2026-10-02_round1/scatter.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "sword_mastery",
+      "source": "reports/498/2026-10-02_round1/sword_mastery.png",
+      "source_sha256": "4a0e9346d38e623cf6d3807c0f24640a9611ce355010268d903c222990872663",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "5578b2bd-6bcb-4aa5-bf7f-16285d360ca8",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/sword_mastery.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/sword_mastery.prompt.txt",
+      "prompt_sha256": "d0fb79b1eb815b7bfe87aa47cfac8b6d89e38055496946e05d7ba2ba6085ff4d",
+      "prompt_file_sha256": "1d5b156c3a5a0f7c81bf74823a7af78dc9b07953a1819821e994c18d8165faff",
+      "workflow_record": "reports/498/2026-10-02_round1/sword_mastery.api.json",
+      "history_record": "reports/498/2026-10-02_round1/sword_mastery.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "talisman_rain",
+      "source": "reports/498/2026-10-02_round1/talisman_rain.png",
+      "source_sha256": "15a69c21661c01ecc497e1fe28f981a9b3eb921c066e6c1425d3320f51ab243f",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "d2081ef3-183b-4ad3-b276-4398e7f99402",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/talisman_rain.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/talisman_rain.prompt.txt",
+      "prompt_sha256": "247b8dcac1e6dde6ef3c7a883e5f2164cd418c14358feab4cd8c7699d8ae7de5",
+      "prompt_file_sha256": "12be35347449782d5dea4e0be4f5294d690846ab0f1b79f10d34ae5fc0eb5362",
+      "workflow_record": "reports/498/2026-10-02_round1/talisman_rain.api.json",
+      "history_record": "reports/498/2026-10-02_round1/talisman_rain.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    },
+    {
+      "asset": "thrust",
+      "source": "reports/498/2026-10-02_round1/thrust.png",
+      "source_sha256": "fdc06f0bcc2efc476e217b06264c9088e19b51e680897b6dee9beaa41a71841b",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "job_id": "c39ebd52-28d6-4a49-acb8-dd55abf39de7",
+      "provider": "Comfy Cloud",
+      "model": "gpt-image-2.5-flare",
+      "quality": "high",
+      "job_record": "reports/498/2026-10-02_round1/thrust.job.json",
+      "prompt_record": "reports/498/2026-10-02_round1/thrust.prompt.txt",
+      "prompt_sha256": "baea294d9642ae3aeeecafd7e7099a2d5500619d5b60297b78c71e8605803d66",
+      "prompt_file_sha256": "3a8fa397369d93330bbb799424e144d5d37c104e20c18f3d760ace254677eefe",
+      "workflow_record": "reports/498/2026-10-02_round1/thrust.api.json",
+      "history_record": "reports/498/2026-10-02_round1/thrust.history.json",
+      "reference_images": [
+        {
+          "path": "C:\\workspace\\joseon\\._tmp\\assets_498\\workbench\\production\\skill_icons_498\\references\\approved_slash_source.png",
+          "role": "approved A brush illustration style and Doho identity; new skill composition required",
+          "sha256": "6de6a3fa5ae03e6afe5185a2bc51a6a65528e457261325616f1a33483fad5602"
+        }
+      ],
+      "state": "downloaded"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "leap_slash",
+      "display_name": "도약 베기",
+      "kind": "active",
+      "selected_version": "round1",
+      "selected_source": "reports/498/2026-10-02_round1/leap_slash.png",
+      "source_sha256": "5192d66bf9c85174dcce40bb186f1d80abf5ec4ce0b701041d535637a981dc75",
+      "game_path": "game/leap_slash.png",
+      "game_sha256": "5e56a09b7f540fe1f6fe9adda17a6d3ce4068531fde9279472c4e593154a8b82",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "seal_array",
+      "display_name": "부적 진",
+      "kind": "active",
+      "selected_version": "revision1",
+      "selected_source": "reports/498/2026-10-02_revision1/seal_array_v2.png",
+      "source_sha256": "89c087e9abd7a8ee6f3278cdbf204447497e8ffb468348369cfe91cb09757eb4",
+      "game_path": "game/seal_array.png",
+      "game_sha256": "d0e02910a9d4780715d30b0ef3973fdde32f9d6c672a13769131deff56303d9f",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "blade_storm",
+      "display_name": "칼바람",
+      "kind": "active",
+      "selected_version": "revision1",
+      "selected_source": "reports/498/2026-10-02_revision1/blade_storm_v2.png",
+      "source_sha256": "8f78620d34eab6a05d6fd6586b7bc1423caaad9f9d0418731dd3a5ac7e2d3ae3",
+      "game_path": "game/blade_storm.png",
+      "game_sha256": "44e95bdb1f7c06ceb8baf678ea8152087fc5d41cb6739fc5cb5151b86bd66f84",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "breath",
+      "display_name": "조식",
+      "kind": "passive",
+      "selected_version": "revision1",
+      "selected_source": "reports/498/2026-10-02_revision1/breath_v2.png",
+      "source_sha256": "c26daabcedb675a20cda4c0010c4bf13a876b78dd7077d8ebec370d1365dc422",
+      "game_path": "game/breath.png",
+      "game_sha256": "51cf6af5d09bb952f8c6e078aea3299d7b42ad437a0365454d35169a4caef43f",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "combo",
+      "display_name": "연격",
+      "kind": "passive",
+      "selected_version": "round1",
+      "selected_source": "reports/498/2026-10-02_round1/combo.png",
+      "source_sha256": "4c0235f87e8a30ef76f49a73936795a9ae5763a318d56a26bdf7737aaf1bce7d",
+      "game_path": "game/combo.png",
+      "game_sha256": "bd147666a7c7fb5f4560ac6cba64b88a3247940bc13f8b5e2409eb7c970e6b4a",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "pouch",
+      "display_name": "부적 주머니",
+      "kind": "passive",
+      "selected_version": "revision1",
+      "selected_source": "reports/498/2026-10-02_revision1/pouch_v2.png",
+      "source_sha256": "76a5e851c7c54d0ced33fe42b714ca08c3a51fdf576059d9c5e8cafb5acc2666",
+      "game_path": "game/pouch.png",
+      "game_sha256": "faf4dcb84e2244f3c7c7fc4d992ccec88bbb7dc0e41cccff36b25b76dae3544f",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "scatter",
+      "display_name": "부적 흩뿌리기",
+      "kind": "passive",
+      "selected_version": "round1",
+      "selected_source": "reports/498/2026-10-02_round1/scatter.png",
+      "source_sha256": "63b70439818204ff17577aa74766d7b71a11eb9b17ee66004681e3cc1546ee7a",
+      "game_path": "game/scatter.png",
+      "game_sha256": "90d6ac17b509cd3396c29c358d73695d8a7a462df383790acdd75b8750684d3a",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "sword_mastery",
+      "display_name": "검 숙련",
+      "kind": "passive",
+      "selected_version": "round1",
+      "selected_source": "reports/498/2026-10-02_round1/sword_mastery.png",
+      "source_sha256": "4a0e9346d38e623cf6d3807c0f24640a9611ce355010268d903c222990872663",
+      "game_path": "game/sword_mastery.png",
+      "game_sha256": "b763e60af595642480646c315860bf8075923dd8105daedac9fcfcb85fbd8acd",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "talisman_rain",
+      "display_name": "부적 비",
+      "kind": "active",
+      "selected_version": "round1",
+      "selected_source": "reports/498/2026-10-02_round1/talisman_rain.png",
+      "source_sha256": "15a69c21661c01ecc497e1fe28f981a9b3eb921c066e6c1425d3320f51ab243f",
+      "game_path": "game/talisman_rain.png",
+      "game_sha256": "08ca0a8768fae7de576005ec8e34920c557921e23ce8285c82f3d38526933e66",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    },
+    {
+      "id": "thrust",
+      "display_name": "찌르기",
+      "kind": "active",
+      "selected_version": "round1",
+      "selected_source": "reports/498/2026-10-02_round1/thrust.png",
+      "source_sha256": "fdc06f0bcc2efc476e217b06264c9088e19b51e680897b6dee9beaa41a71841b",
+      "game_path": "game/thrust.png",
+      "game_sha256": "8192c4a687f08e986775578c0b0a44ccf163027b775a5e19757988e43758dca2",
+      "game_size": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "review_status": "candidate_for_pd_review",
+      "game_intake": false
+    }
+  ],
+  "existing_approved": [
+    {
+      "id": "slash",
+      "display_name": "참격",
+      "kind": "approved",
+      "game_path": "qa/approved/slash.png",
+      "sha256": "98cd399c0cd4a51361a949f249af489dd73c69df9980b8c15df473035146357e",
+      "source_path": "C:/workspace/joseon/assets/sprites/ui/icons_a/skills/slash.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "id": "lunge",
+      "display_name": "돌진 베기",
+      "kind": "approved",
+      "game_path": "qa/approved/lunge.png",
+      "sha256": "8e977e7a9889d52c5c8ff1688261a94c33bd9e96820ae84bea19a19f6bbde4a8",
+      "source_path": "C:/workspace/joseon/assets/sprites/ui/icons_a/skills/lunge.png",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "id": "whirlwind",
+      "display_name": "회오리",
+      "kind": "approved",
+      "game_path": "qa/approved/whirlwind.png",
+      "sha256": "8c02840033563ef0e5b3635168a6ce2e0a8cd89f36b49adea4288acdb2a62219",
+      "source_path": "C:/workspace/joseon/assets/sprites/ui/icons_a/skills/whirlwind.png",
+      "size": [
+        128,
+        128
+      ]
+    }
+  ],
+  "ui_snapshots": [
+    {
+      "source": "C:/workspace/joseon/ui/ui_skin.gd",
+      "snapshot": "qa/ui_skin_snapshot.gd",
+      "sha256": "e84c3c77e2dec293eb0ba59ffe17f12a79555ab18c1d35e62a6476a1424d7597"
+    },
+    {
+      "source": "C:/workspace/joseon/assets/sprites/ui/skin/slot.png",
+      "snapshot": "qa/assets/sprites/ui/skin/slot.png",
+      "sha256": "13140d2033dff1492c0bf864a03dece6fec6cea173c494a37c62b54b3d4ce41a"
+    }
+  ],
+  "ui_sizes": {
+    "raw": [
+      128,
+      60,
+      48,
+      30
+    ],
+    "hud_small": {
+      "slot": 30,
+      "padding": 3
+    },
+    "hud_main": {
+      "slot": 60,
+      "padding": 5
+    },
+    "skill_tree": {
+      "slot": 48,
+      "padding": 3
+    }
+  },
+  "native_qa": {
+    "project": "qa/project.godot",
+    "script": "qa/qa_godot.gd",
+    "size": [
+      1280,
+      720
+    ],
+    "modes": [
+      "overview",
+      "sizes_a",
+      "sizes_b",
+      "revisions"
+    ],
+    "output_dir": "reports/498/native_qa",
+    "captured": false
+  }
+}

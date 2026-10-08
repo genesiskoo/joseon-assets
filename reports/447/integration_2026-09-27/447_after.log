@@ -1,0 +1,77 @@
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (3.5초)
+== e2e (icon_intake,equipment_ui,inactive_gear,ui_tooltips,item_ui,pickup_equip,vendor_quest,belt_unify) ==
+E2E start: icon_intake, equipment_ui, inactive_gear, ui_tooltips, item_ui, pickup_equip, vendor_quest, belt_unify
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ icon_intake
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_01_inventory.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_02_held_swap.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_03_skills_sword.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_04_skills_body.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_05_skills_talisman.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_06_t1_inventory.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_07_t1_held.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/icon_intake_08_t1_vendor_tooltip.png
+E2E icon_intake PASS (검사 64)
+E2E ▶ equipment_ui
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/equipment_ui_01_empty_slots.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/equipment_ui_02_nine_slots.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/equipment_ui_03_twohand_blocked.png
+E2E equipment_ui PASS (검사 33)
+E2E ▶ inactive_gear
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/inactive_gear_01_slot.png
+  · 툴팁 줄 [name] 장검
+  · 툴팁 줄 [base] 피해 8~14
+  · 툴팁 줄 [base] 공격 속도 느림
+  · 툴팁 줄 [req] 요구 레벨 5
+  · 툴팁 줄 [req] 요구 힘 30
+  · 툴팁 줄 [inactive] 요구치 부족 — 꺼짐
+  · 툴팁 줄 [hint] 좌클릭: 벗어서 들기
+  · 툴팁 줄 [hint] 우클릭 / Shift+클릭: 가방으로 벗기
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/inactive_gear_02_tooltip.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/inactive_gear_03_charwin.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/inactive_gear_04_notice.png
+  · 좌판 ilvl — 못골 들녘 1회차: 무리 레벨 1~3 · max_area_level 3 · 좌판 장비 ilvl [3, 3, 3, 3] · dev G ilvl 들머리 1 / 끝 무리 3
+  · 좌판 ilvl — 정령재 1회차: 무리 레벨 4~7 · max_area_level 7 · 좌판 장비 ilvl [7, 7, 7, 7] · dev G ilvl 들머리 4 / 끝 무리 7
+  · 좌판 ilvl — 정령재 2회차: 무리 레벨 4~7 · max_area_level 7 · 좌판 장비 ilvl [19, 19, 19, 19] · dev G ilvl 들머리 16 / 끝 무리 19
+E2E inactive_gear PASS (검사 50)
+E2E ▶ ui_tooltips
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_01_normal.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_02_magic_multicell.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_03_rare.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_04_unidentified.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_05_long_name_corner.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_06_vendor_single_unit.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_07_bag_stack_sale.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_08_hud_belt_bottom.png
+E2E ui_tooltips PASS (검사 97)
+E2E ▶ item_ui
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/item_ui_01_requirements.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/item_ui_02_set_pieces.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/item_ui_03_talisman_belt.png
+E2E item_ui PASS (검사 42)
+E2E ▶ pickup_equip
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_01_drops_3d.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_02_dropped.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_03_pickup_pull_mid.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_04_pickup_bag_pulse.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_05_req_reject.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_06_req_ok.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_07_equipped.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_08_belt_5.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/pickup_equip_09_pickup_reject_mid.png
+E2E pickup_equip PASS (검사 37)
+E2E ▶ vendor_quest
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/vendor_quest_01_dialog.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/vendor_quest_02_vendor.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/vendor_quest_03_quest_done.png
+E2E vendor_quest PASS (검사 36)
+E2E ▶ belt_unify
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/belt_unify_01_inventory_open.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/belt_unify_02_hud_belt.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/belt_unify_03_hud_belt_6.png
+E2E belt_unify PASS (검사 15)
+E2E SUMMARY: 8/8 PASS
+  e2e  (55.7초) — 제한 900초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-293-monster-elite-ui\e2e
+전부 PASS

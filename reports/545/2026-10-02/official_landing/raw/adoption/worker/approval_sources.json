@@ -1,0 +1,61 @@
+{
+  "card": 545,
+  "included_feature_card": 550,
+  "approval_date_client": "2026-10-02",
+  "human_verbatim": "추천대로 작업 진행해",
+  "approval_context": "앞서 제안한 #545+#550 채택·병합 순서와 추천 배경 A 못골을 직접 승인했다.",
+  "selected_default_background": "A_motgol",
+  "scope": [
+    "못골 A 배경",
+    "조선헌터스 투명 로고",
+    "등불·불티·얕은 안개 환경 효과",
+    "캐릭터 생성·선택·개별 저장·기존 저장 이관",
+    "설정·크레딧 화면",
+    "기존 채택 도호 투명 원화 재사용"
+  ],
+  "comparison_background_B": {
+    "retained_for_review": true,
+    "selected_default": false
+  },
+  "approved_candidate_before_rebase": "dee170c97d9efb5ac3514cfd42eea7d7b19029d8",
+  "rebased_main": "2f0fa1548a3f91e83d6b03d8f78cde1d9b2bd847",
+  "preserved_sources": {
+    "assets/sprites/ui/title_545/motgol.png": {
+      "source_absolute_path": "C:/workspace/joseon-assets/workbench/production/title_545/game/motgol.png",
+      "sha256": "7be70f3edf62496febd086b02ff8647182bc6089c557553007b19e233d46b02e",
+      "bytes": 2027299,
+      "source_equals_game_bytes": true,
+      "use": "default_A"
+    },
+    "assets/sprites/ui/title_545/dungeon.png": {
+      "source_absolute_path": "C:/workspace/joseon-assets/workbench/production/title_545/game/dungeon.png",
+      "sha256": "b429ec5429a802df401ec09011a04bde08c3d773947a6f005a1882f0aecfc7a7",
+      "bytes": 2211657,
+      "source_equals_game_bytes": true,
+      "use": "comparison_B_only"
+    },
+    "assets/sprites/ui/title_545/logo.png": {
+      "source_absolute_path": "C:/workspace/joseon-assets/workbench/production/title_545/game/logo.png",
+      "sha256": "7d46106e309231f396ee7aa8f63b0e48a10b5d6d6089c2803df0ba73c55ae2e4",
+      "bytes": 828918,
+      "source_equals_game_bytes": true,
+      "use": "title_logo"
+    },
+    "assets/portraits/idle/doho_h1_idle_frame0_alpha.png": {
+      "sha256": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f",
+      "bytes": 285320,
+      "existing_approved_art_reused": true,
+      "bitmap_edited": false
+    }
+  },
+  "raw_generated_logo": {
+    "path": "C:/workspace/joseon-assets/reports/545/batch_A/logo_01_raw.png",
+    "sha256": "94867858e87bf530bb0fe74b366f6305c1202bb70d914361e38b0ef20090b7b7",
+    "crop_preserves_original_alpha": true
+  },
+  "previous_menu_capture_manifest_preserved": true,
+  "previous_manifest_sha256": "ad70b9283336c9166d49a271f6bdb68ae971559416df22c48fd3da8463ac9468",
+  "main_landed": false,
+  "full_landing_gate": "pending_root",
+  "pushed": false
+}

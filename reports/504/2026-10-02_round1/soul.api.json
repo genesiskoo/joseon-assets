@@ -1,0 +1,29 @@
+{
+  "2": {
+    "class_type": "SaveImageAdvanced",
+    "inputs": {
+      "filename_prefix": "504/soul",
+      "format": "png",
+      "format.bit_depth": "8-bit",
+      "format.input_color_space": "sRGB",
+      "images": [
+        "8",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": "Create one finished, isolated Korean ink-brush element mark on a genuinely transparent alpha background. A single centered monochrome opaque white-ink symbol, occupying about 80 percent of the square with safe margins. Bold connected shapes, broad negative spaces and lightly uneven dry-brush edges. The silhouette must remain distinct at 12, 14, 16 and 18 pixels. Keep the interior clean and solid. No letters, numerals, calligraphy characters, card, frame, background, checkerboard, glow, shadow, particles or surrounding decoration. One soft spirit-flame droplet with a rounded lower bulb and a single gently hooked tip leaning to the right. Add one broad crescent-shaped transparent cutout inside the bulb. The overall contour stays smooth and asymmetrical. No split flame tongues, jagged corners, skull, ghost face, enclosing orb or detached wisps.",
+      "model": "gpt-image-2.5-flare",
+      "model.size": "1024x1024",
+      "model.custom_width": 1024,
+      "model.custom_height": 1024,
+      "model.background": "transparent",
+      "model.quality": "medium",
+      "n": 1,
+      "seed": 504105
+    }
+  }
+}

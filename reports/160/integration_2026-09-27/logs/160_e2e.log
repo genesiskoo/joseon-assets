@@ -1,0 +1,152 @@
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (3.5초)
+== e2e (quest_journal,chief_quest,vendor_quest,ui_windows,hud_orb_fx,hud_hierarchy_view,dialogue_band,dialogue_event,system_menu,ui_tooltips) ==
+E2E start: quest_journal, chief_quest, vendor_quest, ui_windows, hud_orb_fx, hud_hierarchy_view, dialogue_band, dialogue_event, system_menu, ui_tooltips
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ quest_journal
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_01_none.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_02_notice.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_03_accepted.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_04_replay.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_05_killed.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_06_done.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_07_windows_1280x720.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_08_windows_1920x1080.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/quest_journal_09_windows_2560x1440.png
+  · revision 타입: 저장 전 2 · JSON 복원 3
+E2E quest_journal PASS (검사 44)
+E2E ▶ chief_quest
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/chief_quest_01_offer.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/chief_quest_02_bark_left3.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/chief_quest_03_report.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/chief_quest_04_thanks.png
+E2E chief_quest PASS (검사 57)
+E2E ▶ vendor_quest
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/vendor_quest_01_dialog.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/vendor_quest_02_vendor.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/vendor_quest_03_quest_done.png
+E2E vendor_quest PASS (검사 36)
+E2E ▶ ui_windows
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_01_hud.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_02_hud_clean.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_03_point_notice.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_04_hover_npc.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_05_hover_item.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_06_character.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_07_character_resistances.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_08_inventory.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_09_skills.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_10_dialog_merchant.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_11_vendor.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_12_dialog_shaman.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_13_dialog_elder.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_14_waypoint.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_15_title.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_16_wood_skin_1280x720.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_17_wood_skin_1920x1080.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_windows_18_wood_skin_2560x1440.png
+E2E ui_windows PASS (검사 69)
+E2E ▶ hud_orb_fx
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_01_normal.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_02_hurt.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_03_low_health.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_04_recovery.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_05_cast.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_06_fx_00.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_07_fx_01.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_08_fx_02.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_09_fx_03.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_10_fx_04.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_11_fx_05.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_12_fx_06.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_13_fx_07.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_14_fx_08.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_15_fx_09.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_16_fx_10.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_17_fx_11.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_18_fx_12.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_19_fx_13.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_20_fx_14.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_21_fx_15.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_22_fx_16.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_23_fx_17.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_24_fx_18.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_25_fx_19.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_26_fx_20.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_27_fx_21.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_28_fx_22.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_29_fx_23.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_30_fx_24.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_31_fx_25.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_32_fx_26.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_33_fx_27.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_34_fx_28.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_35_fx_29.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_36_fx_30.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_37_fx_31.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_38_fx_32.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_39_fx_33.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_40_fx_34.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_41_fx_35.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_42_fx_36.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_43_fx_37.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_44_fx_38.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_45_fx_39.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_46_fx_40.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_47_fx_41.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_48_fx_42.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_49_fx_43.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_50_fx_44.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_51_fx_45.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_52_fx_46.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_53_fx_47.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_54_windows_1280x720.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_55_windows_1920x1080.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_56_windows_2560x1440.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_57_empty.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_orb_fx_58_full.png
+E2E hud_orb_fx PASS (검사 53)
+E2E ▶ hud_hierarchy_view
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_hierarchy_view_01_clean.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_hierarchy_view_02_points.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_hierarchy_view_03_cooldown.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_hierarchy_view_04_mp_shortage.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/hud_hierarchy_view_05_combat.png
+E2E hud_hierarchy_view PASS (검사 4)
+E2E ▶ dialogue_band
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_band_01_talk.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_band_02_doho.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_band_03_choice.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_band_04_backlog.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_band_05_villager.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_band_06_swap.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_band_07_narration.png
+  · 이름표 글꼴 = 궁서
+E2E dialogue_band PASS (검사 73)
+E2E ▶ dialogue_event
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_event_01_letterbox.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_event_02_talk.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_event_03_hint.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/dialogue_event_04_after.png
+E2E dialogue_event PASS (검사 49)
+E2E ▶ system_menu
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/system_menu_01_menu.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/system_menu_02_settings.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/system_menu_03_settings_blood.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/system_menu_04_title_deulnyeok.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/system_menu_05_title_heukrang_gul.png
+E2E system_menu PASS (검사 44)
+E2E ▶ ui_tooltips
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_01_normal.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_02_magic_multicell.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_03_rare.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_04_unidentified.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_05_long_name_corner.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_06_vendor_single_unit.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_07_bag_stack_sale.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-293-monster-elite-ui/e2e/ui_tooltips_08_hud_belt_bottom.png
+E2E ui_tooltips PASS (검사 97)
+E2E SUMMARY: 10/10 PASS
+  e2e  (133.0초) — 제한 900초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-293-monster-elite-ui\e2e
+전부 PASS

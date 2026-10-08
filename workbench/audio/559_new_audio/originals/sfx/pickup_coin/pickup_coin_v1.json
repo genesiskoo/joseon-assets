@@ -1,0 +1,67 @@
+{
+ "cue": "pickup_coin",
+ "v": 1,
+ "prompt": "Small handful of old brass Korean coins gently collected, short soft metallic clinks, dry intimate game pickup effect, no cash register, no music or voice.",
+ "seconds": 0.5,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-02 21:02",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.473016,
+ "lufs": "-17.1",
+ "peak": "-2.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0004,
+    -0.0004
+   ],
+   "sample_peak_db": -2.47,
+   "file": "_raw/pickup_coin_v1.wav",
+   "duration": 0.48,
+   "lufs": "-17.1",
+   "true_peak": "-2.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20860,
+   "at": 0.473,
+   "removed_ms": 7.0,
+   "floor_db": -90.7,
+   "jump_db": 29.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.02,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -17.1,
+    -17.1
+   ],
+   "intake_tp": [
+    0.71,
+    0.69
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -2.5,
+   "lufs": "-17.1",
+   "true_peak": "-2.2"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,50 @@
+{
+  "aabb_position": [
+    -0.385000020265579,
+    0.0,
+    -0.385000020265579
+  ],
+  "aabb_size": [
+    0.770000040531158,
+    0.699999988079071,
+    0.770000040531158
+  ],
+  "contract": "0.77 x 0.7 x 0.77; dark timber crate with broad battens; base center; no collision",
+  "cw_winding_normal_disagreements": 0,
+  "degenerate_triangles": 0,
+  "derivation": "Procedural candidate; supplied TEX01 unchanged PNG, quadrant UV0 in mesh; matte color for remaining parts",
+  "file": "models/wood_crate.glb",
+  "id": "wood_crate",
+  "is_game_intake": false,
+  "materials": [
+    {
+      "color": [
+        0.850000023841858,
+        0.800000011920929,
+        0.730000019073486,
+        1.0
+      ],
+      "cull_mode": 0,
+      "name": "h1_atlas_wood",
+      "roughness": 1.0,
+      "texture_size": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "sha256": "bb5bb755228488ce874e69b65cdd3cc86f2d52b891f0ed19b1124620f706c10f",
+  "triangles": 108,
+  "under_500_triangles": true,
+  "vertex_aabb_position": [
+    -0.385000020265579,
+    0.0,
+    -0.385000020265579
+  ],
+  "vertex_aabb_size": [
+    0.770000040531158,
+    0.699999988079071,
+    0.770000040531158
+  ],
+  "atlas": "textures/atlas_layout.json"
+}

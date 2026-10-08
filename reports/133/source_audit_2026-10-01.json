@@ -1,0 +1,353 @@
+{
+  "schema": "joseon.reuse_source_audit.v1",
+  "card": 133,
+  "game_base_head": "294260c2054431b696866d14a9ff88ab517bf5b1",
+  "source_file_hashes": {
+    "world/prop_meshes.gd": {
+      "sha256": "312a5db43c9ae18078d783258f917157105d5e194ed3d52c133a9d9e854fce13",
+      "bytes": 52364
+    },
+    "actors/kill_fx.gd": {
+      "sha256": "6bd3901985792c57e1561b30681ddd3cdd1b00c77f8455dd32edbe73e46522ff",
+      "bytes": 23411
+    },
+    "world/town_dressing.gd": {
+      "sha256": "2a13da8c75f671c0276bf51ad5d238b0b7e09f7e64267a4a40883082d6ff3a38",
+      "bytes": 36539
+    },
+    "world/field_builder.gd": {
+      "sha256": "4b1ef8909e8c01c754cd01561065b3f43c082b8a27de3916b1da7a52422cc0da",
+      "bytes": 27235
+    },
+    "world/town_ground.gd": {
+      "sha256": "7e5f0ccca2c470d5f7a9c34b030b75bc7c5079c125f7955c673bfefb05acdca7",
+      "bytes": 13769
+    },
+    "core/vfx.gd": {
+      "sha256": "3dbfc6e8fa400397282f04336d2b8e15550f1efbbeb64ec288f364a1973a4232",
+      "bytes": 67433
+    },
+    "world/dungeon_builder.gd": {
+      "sha256": "dce75db7316ab3d2b993b254eb35eec39750085067f5312d93c9e1e04480a832",
+      "bytes": 43442
+    },
+    "data/dungeons/heukrang_gul.tres": {
+      "sha256": "edc7ecce3b42b70eac127a801db4ddcf957bbb3a2361e6516c888b8f5fe948d3",
+      "bytes": 2448
+    },
+    "docs/design/dungeon.md": {
+      "sha256": "b2cc6d8e55d5e05894af7072f31314c410b2d921b9080f549365894177ebf636",
+      "bytes": 57543
+    },
+    "docs/design/bosses_v2.md": {
+      "sha256": "6f84c61e8a99c41659143b6bc6387ec8a958a3e784dd4803b6c6400411cf5451",
+      "bytes": 41823
+    }
+  },
+  "checks": [
+    {
+      "check": "chain_exact_game_canonical_sha",
+      "result": "PASS",
+      "observed": "cba1428c4f157b259f67aee62b60ed1c7279604af44ace1561caacb7d837cc63"
+    },
+    {
+      "check": "chain_triangles",
+      "result": "PASS",
+      "observed": 4370
+    },
+    {
+      "check": "chain_dimensions",
+      "result": "PASS",
+      "observed": [
+        1.0,
+        0.16126900911331177,
+        1.0
+      ]
+    },
+    {
+      "check": "chain_grounded_centered",
+      "result": "PASS",
+      "observed": [
+        -0.5,
+        0.0,
+        -0.5
+      ]
+    },
+    {
+      "check": "chain_static_one_mesh",
+      "result": "PASS",
+      "observed": {
+        "meshes": 1,
+        "skins": 0,
+        "animations": 0
+      }
+    },
+    {
+      "check": "chain_embedded_1k_jpeg",
+      "result": "PASS",
+      "observed": [
+        {
+          "embedded": true,
+          "width": 1024,
+          "height": 1024,
+          "mime": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "check": "chain_original_material",
+      "result": "PASS",
+      "observed": [
+        {
+          "metallic": 0.0,
+          "roughness": 0.800000011920929,
+          "emissive": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "base_color_texture": {
+            "index": 0
+          }
+        }
+      ]
+    },
+    {
+      "check": "chain_godot_pass",
+      "result": "PASS",
+      "observed": {
+        "exit_code": 0,
+        "raw_sha256": "e194d6380ab1d15ee07abde49ed2665305e60473a295a199f8198a91f3bd81a6"
+      }
+    },
+    {
+      "check": "chain_floor_slot",
+      "result": "PASS",
+      "observed": "chain_floor => chain.glb with h fit"
+    },
+    {
+      "check": "instance_preserves_surface_material",
+      "result": "PASS",
+      "observed": "only non-model gets shared vertex material"
+    },
+    {
+      "check": "hanging_chain_separate",
+      "result": "PASS",
+      "observed": "wall chain remains procedural"
+    },
+    {
+      "check": "ash_mask_size_variants",
+      "result": "PASS",
+      "observed": {
+        "size": 64,
+        "variants": 3
+      }
+    },
+    {
+      "check": "ash_mask_only_api",
+      "result": "PASS",
+      "observed": "mask generator reused without combat stain allocation"
+    },
+    {
+      "check": "ash_color",
+      "result": "PASS",
+      "observed": [
+        0.08,
+        0.07,
+        0.065,
+        0.88
+      ]
+    },
+    {
+      "check": "combat_stain_fade_cap",
+      "result": "PASS",
+      "observed": {
+        "seconds": 20,
+        "shared_cap": 32,
+        "group": "blood_stain"
+      }
+    },
+    {
+      "check": "campfire_ash_geometry_material",
+      "result": "PASS",
+      "observed": {
+        "radii": [
+          0.52,
+          0.54
+        ],
+        "height": 0.04,
+        "color": [
+          0.09,
+          0.085,
+          0.08
+        ],
+        "roughness": 1
+      }
+    },
+    {
+      "check": "field_local_mask",
+      "result": "PASS",
+      "observed": "md.r local mask"
+    },
+    {
+      "check": "town_local_scorch",
+      "result": "PASS",
+      "observed": "fire_center local mask"
+    },
+    {
+      "check": "torch_embers_cue",
+      "result": "PASS",
+      "observed": {
+        "scale": 0.45,
+        "loop": true
+      }
+    },
+    {
+      "check": "embers_preset",
+      "result": "PASS",
+      "observed": {
+        "particles": 10,
+        "life": 1.6
+      }
+    },
+    {
+      "check": "dungeon_dust_loop",
+      "result": "PASS",
+      "observed": "existing ambient"
+    },
+    {
+      "check": "burn_ash_single_death_effect",
+      "result": "PASS",
+      "observed": {
+        "particles": 18,
+        "life": 1.3,
+        "loop": false
+      }
+    },
+    {
+      "check": "attach_forces_loop",
+      "result": "PASS",
+      "observed": "burn_ash cannot be attached as ambient"
+    },
+    {
+      "check": "unchanged_fx_caps",
+      "result": "PASS",
+      "observed": {
+        "loop_nodes": 128,
+        "torches": 48
+      }
+    },
+    {
+      "check": "torch_sheet_sha",
+      "result": "PASS",
+      "observed": "74c00a80199c39f5dbd0f42e161e7928d9396e43322f2701564a6bce9153ca02"
+    },
+    {
+      "check": "torch_meta_sha",
+      "result": "PASS",
+      "observed": "56974a2f06f3d2b76aec277c7e7f526626553897149432484cdc8cf6e4e6cdaa"
+    },
+    {
+      "check": "torch_sheet_pixels",
+      "result": "PASS",
+      "observed": [
+        295,
+        640
+      ]
+    },
+    {
+      "check": "torch_sheet_meta",
+      "result": "PASS",
+      "observed": {
+        "cols": 5,
+        "rows": 5,
+        "total": 21,
+        "fw": 59,
+        "fh": 128,
+        "fps": 12.0,
+        "loop": true,
+        "units": 0.55,
+        "loop_blend": 4
+      }
+    },
+    {
+      "check": "torch_flame_cue",
+      "result": "PASS",
+      "observed": {
+        "cue_scale": 0.5
+      }
+    },
+    {
+      "check": "boss_map_size",
+      "result": "PASS",
+      "observed": {
+        "rows": 28,
+        "columns": [
+          28
+        ]
+      }
+    },
+    {
+      "check": "combat_room",
+      "result": "PASS",
+      "observed": [
+        14,
+        13
+      ]
+    },
+    {
+      "check": "four_pillars",
+      "result": "PASS",
+      "observed": {
+        "pillar_count": 4,
+        "cells": 16
+      }
+    },
+    {
+      "check": "corridor_width",
+      "result": "PASS",
+      "observed": 3
+    },
+    {
+      "check": "stair_and_boss",
+      "result": "PASS",
+      "observed": {
+        "stairs": 1,
+        "boss": 1
+      }
+    },
+    {
+      "check": "heukrang_bulgae",
+      "result": "PASS",
+      "observed": "D086/worldbuilding5.4"
+    },
+    {
+      "check": "optional_bone_sha",
+      "result": "PASS",
+      "observed": "3311ebe92829ec64601d21c16e48631da7bd60fbd517056131b7f7d18b066320"
+    },
+    {
+      "check": "optional_bone_metrics",
+      "result": "PASS",
+      "observed": {
+        "tris": 7755,
+        "xyz": [
+          1.2770208173710957,
+          0.5,
+          0.9715126104277299
+        ]
+      }
+    },
+    {
+      "check": "approved_reference_sha",
+      "result": "PASS",
+      "observed": "0d16078ab6b5800f9a494102a142c2e14694fef052f9060ef75ce99d2343a4ee"
+    }
+  ],
+  "result": "PASS",
+  "passed": 38,
+  "failed": 0,
+  "manifest_sha256": "7667aa0908ab36d719ef9d3aae2d4d5de570cd51baf61f333861cb6a0559b048",
+  "manifest_copies_identical": true,
+  "audit_type": "current source structure/data inspection + Godot chain model_check; no344 placement/E2E claim"
+}

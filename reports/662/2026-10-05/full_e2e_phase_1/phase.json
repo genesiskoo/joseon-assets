@@ -1,0 +1,48 @@
+{
+    "schema":  1,
+    "launch":  {
+                   "schema":  1,
+                   "fixed_fps":  0,
+                   "exe":  "godot",
+                   "argv":  [
+                                "--path",
+                                "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\662-portrait-bca-first\\joseon",
+                                "--headless",
+                                "--",
+                                "--e2e=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,footsteps,audio_cues,sfx_limiter"
+                            ],
+                   "phase_arg":  "balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,footsteps,audio_cues,sfx_limiter",
+                   "phase_tokens":  [
+                                        "balance_room",
+                                        "balance_boss",
+                                        "hit_stagger",
+                                        "pack_perf",
+                                        "bodies_cap",
+                                        "gimmicks",
+                                        "item_showcase",
+                                        "footsteps",
+                                        "audio_cues",
+                                        "sfx_limiter"
+                                    ],
+                   "skip":  [
+
+                            ],
+                   "exclusive":  true,
+                   "contains_balance_boss":  true,
+                   "combat_trace":  false,
+                   "launcher_pid":  34416,
+                   "launched_utc":  "2026-10-05T07:12:10.8480399Z"
+               },
+    "runtime_pid":  9740,
+    "exit_code":  0,
+    "timed_out":  false,
+    "elapsed_sec":  186.65812499999998,
+    "archived_utc":  "2026-10-05T07:15:17.5281998Z",
+    "godot_log":  {
+                      "source":  "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-662-portrait-bca-first\\logs\\godot.log",
+                      "archive":  "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\662-portrait-bca-first\\joseon\\tmp\\e2e_raw\\20261005T0712062698155_38656\\phase_1_solo\\godot.raw.log",
+                      "bytes":  101817,
+                      "sha256":  "71e16c144c5d9f79ba5b17ebf4cea9949066e04e6badc4003b134ab7218558a1"
+                  },
+    "console_format":  "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

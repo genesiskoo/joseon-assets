@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "seconds": 18.687,
+  "error_lines": 0,
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "tools/test.ps1",
+    "-E2e",
+    "-Scenario",
+    "character_profiles"
+  ],
+  "raw": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\550-character-profiles\\joseon\\._tmp\\550"
+}

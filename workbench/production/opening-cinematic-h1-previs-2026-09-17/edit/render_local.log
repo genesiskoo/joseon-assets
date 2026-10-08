@@ -1,0 +1,209 @@
+-filter_complex_script is deprecated, use -/filter_complex filters.ffscript instead
+[Parsed_ass_63 @ 0000016474936180] libass API version: 0x1704000
+[Parsed_ass_63 @ 0000016474936180] libass source: commit: 0.17.4-21-gfadc390583f24eb5cf98f16925fd3adee50bca88
+[Parsed_ass_63 @ 0000016474936180] Shaper: FriBidi 1.0.16 (SIMPLE) HarfBuzz-ng 13.1.1 (COMPLEX)
+[Parsed_ass_63 @ 0000016474936180] Loading font file 'fonts\NanumMyeongjo-Regular.ttf'
+[Parsed_ass_63 @ 0000016474936180] Loading font file 'fonts\OFL-NanumMyeongjo.txt'
+[Parsed_ass_63 @ 0000016474936180] Error opening memory font 'OFL-NanumMyeongjo.txt'
+[Parsed_ass_63 @ 0000016474936180] Using font provider directwrite (with GDI)
+[Parsed_ass_63 @ 0000016474936180] Added subtitle file: 'saseol_title.ass' (4 styles, 8 events)
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H01.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:05.04, start: 0.000000, bitrate: 2762 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 2724 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H02.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:05.04, start: 0.000000, bitrate: 1564 kb/s
+  Stream #1:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 1526 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H03.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:06.04, start: 0.000000, bitrate: 1894 kb/s
+  Stream #2:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 1861 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #3, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H04.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:05.04, start: 0.000000, bitrate: 1637 kb/s
+  Stream #3:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 1599 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #4, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H05A.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:04.04, start: 0.000000, bitrate: 1839 kb/s
+  Stream #4:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 1792 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #5, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H05B.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:04.04, start: 0.000000, bitrate: 2998 kb/s
+  Stream #5:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 2951 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #6, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H06.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:04.04, start: 0.000000, bitrate: 3248 kb/s
+  Stream #6:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 3201 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #7, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H07.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:04.04, start: 0.000000, bitrate: 1541 kb/s
+  Stream #7:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 1494 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #8, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H08.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:05.04, start: 0.000000, bitrate: 3828 kb/s
+  Stream #8:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 3789 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #9, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H09.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:08.04, start: 0.000000, bitrate: 2361 kb/s
+  Stream #9:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 2336 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #10, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\clips\H10_r2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:05.04, start: 0.000000, bitrate: 1744 kb/s
+  Stream #10:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 1706 kb/s, 24 fps, 24 tbr, 90k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+Input #11, lavfi, from 'color=c=0x080c13:size=1280x720:rate=24:duration=4':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #11:0: Video: wrapped_avframe, yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 24 fps, 24 tbr, 24 tbn
+Input #12, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\runtime\H12_actual_game_start_GT1_3s_720p24.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+  Duration: 00:00:03.00, start: 0.000000, bitrate: 436 kb/s
+  Stream #12:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuvj420p(pc, bt470bg/unknown/unknown, progressive), 1280x720 [SAR 1:1 DAR 16:9], 431 kb/s, 24 fps, 24 tbr, 12288 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.100 libx264
+[aist#13:0/pcm_s16le @ 0000016474f3e400] Guessed Channel Layout: stereo
+Input #13, wav, from 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\edit\temp_soundtrack.wav':
+  Metadata:
+    title           : Joseon Hunters H1 original temp soundtrack
+    artist          : Joseon Hunters project - procedural synthesis
+    comment         : Original procedural temporary score and Foley. NOT final gugak. No external samples, recordings, compositions, voices, TTS, or paid services. All sound generated by this deterministic NumPy script; seed=2026091701. H09 knock timing is provisional and adju
+  Duration: 00:00:50.00, bitrate: 1536 kb/s
+  Stream #13:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 (h264) -> trim:default
+  Stream #1:0 (h264) -> trim:default
+  Stream #2:0 (h264) -> trim:default
+  Stream #3:0 (h264) -> trim:default
+  Stream #4:0 (h264) -> trim:default
+  Stream #5:0 (h264) -> trim:default
+  Stream #6:0 (h264) -> trim:default
+  Stream #7:0 (h264) -> trim:default
+  Stream #8:0 (h264) -> trim:default
+  Stream #9:0 (h264) -> trim:default
+  Stream #10:0 (h264) -> trim:default
+  Stream #11:0 (wrapped_avframe) -> trim:default
+  Stream #12:0 (h264) -> trim:default
+  Stream #13:0 (pcm_s16le) -> atrim:default
+  ass:default -> Stream #0:0 (libx264)
+  afade:default -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[Parsed_ass_63 @ 000001647f62f980] libass API version: 0x1704000
+[Parsed_ass_63 @ 000001647f62f980] libass source: commit: 0.17.4-21-gfadc390583f24eb5cf98f16925fd3adee50bca88
+[Parsed_ass_63 @ 000001647f62f980] Shaper: FriBidi 1.0.16 (SIMPLE) HarfBuzz-ng 13.1.1 (COMPLEX)
+[Parsed_ass_63 @ 000001647f62f980] Loading font file 'fonts\NanumMyeongjo-Regular.ttf'
+[Parsed_ass_63 @ 000001647f62f980] Loading font file 'fonts\OFL-NanumMyeongjo.txt'
+[Parsed_ass_63 @ 000001647f62f980] Error opening memory font 'OFL-NanumMyeongjo.txt'
+[Parsed_ass_63 @ 000001647f62f980] Using font provider directwrite (with GDI)
+[Parsed_ass_63 @ 000001647f62f980] Added subtitle file: 'saseol_title.ass' (4 styles, 8 events)
+[swscaler @ 000001647fae8ec0] deprecated pixel format used, make sure you did set range correctly
+[libx264 @ 0000016475530cc0] using SAR=1/1
+[libx264 @ 0000016475530cc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000016475530cc0] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0000016475530cc0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=4 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:\workspace\joseon-assets\workbench\production\opening-cinematic-h1-previs-2026-09-17\edit\joseon_h1_opening_previs_50s_v001.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 24 fps, 12288 tbn
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+[Parsed_ass_63 @ 000001647f62f980] fontselect: (NanumMyeongjo, 400, 0) -> NanumMyeongjo, 0, NanumMyeongjo
+frame=    6 fps=0.0 q=23.0 size=       0KiB time=00:00:00.16 bitrate=   2.3kbits/s speed=0.325x elapsed=0:00:00.51    frame=   50 fps= 49 q=23.0 size=     768KiB time=00:00:02.00 bitrate=3145.9kbits/s speed=1.94x elapsed=0:00:01.02    frame=  105 fps= 68 q=23.0 size=    1536KiB time=00:00:04.29 bitrate=2932.0kbits/s speed=2.77x elapsed=0:00:01.54    frame=  192 fps= 93 q=23.0 size=    2304KiB time=00:00:07.91 bitrate=2384.2kbits/s speed=3.84x elapsed=0:00:02.06    frame=  267 fps=104 q=23.0 size=    3328KiB time=00:00:11.04 bitrate=2469.1kbits/s speed=4.29x elapsed=0:00:02.57    frame=  337 fps=109 q=23.0 size=    4096KiB time=00:00:13.95 bitrate=2403.9kbits/s speed= 4.5x elapsed=0:00:03.10    frame=  373 fps=103 q=23.0 size=    4352KiB time=00:00:15.45 bitrate=2306.3kbits/s speed=4.28x elapsed=0:00:03.61    frame=  420 fps=102 q=23.0 size=    4864KiB time=00:00:17.41 bitrate=2287.8kbits/s speed=4.22x elapsed=0:00:04.12    frame=  456 fps= 98 q=23.0 size=    5120KiB time=00:00:18.91 bitrate=2217.3kbits/s speed=4.08x elapsed=0:00:04.63    frame=  480 fps= 93 q=23.0 size=    5632KiB time=00:00:19.91 bitrate=2316.5kbits/s speed=3.86x elapsed=0:00:05.15    frame=  505 fps= 89 q=23.0 size=    6144KiB time=00:00:20.95 bitrate=2401.5kbits/s speed=3.69x elapsed=0:00:05.68    frame=  533 fps= 86 q=23.0 size=    6656KiB time=00:00:22.12 bitrate=2464.5kbits/s speed=3.57x elapsed=0:00:06.19    frame=  557 fps= 83 q=23.0 size=    6912KiB time=00:00:23.12 bitrate=2448.6kbits/s speed=3.44x elapsed=0:00:06.71    frame=  589 fps= 82 q=23.0 size=    7424KiB time=00:00:24.45 bitrate=2486.6kbits/s speed=3.39x elapsed=0:00:07.22    frame=  626 fps= 81 q=23.0 size=    7936KiB time=00:00:26.00 bitrate=2500.5kbits/s speed=3.36x elapsed=0:00:07.73    frame=  665 fps= 81 q=23.0 size=    8448KiB time=00:00:27.62 bitrate=2505.2kbits/s speed=3.35x elapsed=0:00:08.25    frame=  687 fps= 78 q=23.0 size=    8704KiB time=00:00:28.54 bitrate=2498.2kbits/s speed=3.26x elapsed=0:00:08.76    frame=  707 fps= 76 q=23.0 size=    9216KiB time=00:00:29.37 bitrate=2570.1kbits/s speed=3.16x elapsed=0:00:09.28    frame=  731 fps= 75 q=23.0 size=    9728KiB time=00:00:30.37 bitrate=2623.6kbits/s speed= 3.1x elapsed=0:00:09.79    frame=  755 fps= 73 q=23.0 size=   10240KiB time=00:00:31.37 bitrate=2673.7kbits/s speed=3.04x elapsed=0:00:10.31    frame=  775 fps= 72 q=23.0 size=   10496KiB time=00:00:32.20 bitrate=2669.6kbits/s speed=2.97x elapsed=0:00:10.83    frame=  797 fps= 70 q=23.0 size=   11008KiB time=00:00:33.12 bitrate=2722.4kbits/s speed=2.92x elapsed=0:00:11.34    frame=  819 fps= 69 q=23.0 size=   11264KiB time=00:00:34.04 bitrate=2710.7kbits/s speed=2.87x elapsed=0:00:11.85    frame=  857 fps= 69 q=23.0 size=   11520KiB time=00:00:35.62 bitrate=2649.0kbits/s speed=2.88x elapsed=0:00:12.38    frame=  887 fps= 69 q=23.0 size=   11776KiB time=00:00:36.87 bitrate=2616.1kbits/s speed=2.86x elapsed=0:00:12.89    frame=  921 fps= 69 q=23.0 size=   12288KiB time=00:00:38.29 bitrate=2628.9kbits/s speed=2.86x elapsed=0:00:13.40    frame=  961 fps= 69 q=23.0 size=   13056KiB time=00:00:39.95 bitrate=2676.7kbits/s speed=2.87x elapsed=0:00:13.92    frame= 1003 fps= 69 q=23.0 size=   13312KiB time=00:00:41.70 bitrate=2614.6kbits/s speed=2.89x elapsed=0:00:14.44    frame= 1127 fps= 75 q=23.0 size=   13568KiB time=00:00:46.87 bitrate=2371.2kbits/s speed=3.13x elapsed=0:00:14.96    [mp4 @ 00000164754b8bc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001647492e440] video:12963KiB audio:1173KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.249683%
+frame= 1200 fps= 78 q=-1.0 Lsize=   14171KiB time=00:00:49.91 bitrate=2325.7kbits/s speed=3.23x elapsed=0:00:15.45    
+[libx264 @ 0000016475530cc0] frame I:12    Avg QP:11.37  size:189999
+[libx264 @ 0000016475530cc0] frame P:324   Avg QP:14.94  size: 24992
+[libx264 @ 0000016475530cc0] frame B:864   Avg QP:20.47  size:  3352
+[libx264 @ 0000016475530cc0] consecutive B-frames:  1.3%  7.3%  2.0% 89.3%
+[libx264 @ 0000016475530cc0] mb I  I16..4: 11.1% 49.1% 39.8%
+[libx264 @ 0000016475530cc0] mb P  I16..4:  0.2%  2.9%  0.9%  P16..4: 30.0% 16.6% 14.5%  0.0%  0.0%    skip:34.9%
+[libx264 @ 0000016475530cc0] mb B  I16..4:  0.1%  0.2%  0.0%  B16..8: 25.5%  3.0%  0.8%  direct: 1.7%  skip:68.7%  L0:36.7% L1:52.6% BI:10.7%
+[libx264 @ 0000016475530cc0] 8x8 transform intra:61.5% inter:59.9%
+[libx264 @ 0000016475530cc0] coded y,uvDC,uvAC intra: 80.4% 73.0% 53.9% inter: 13.1% 12.0% 1.7%
+[libx264 @ 0000016475530cc0] i16 v,h,dc,p: 63% 20%  9%  8%
+[libx264 @ 0000016475530cc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 14% 17%  5%  6%  7%  8%  8%  9%
+[libx264 @ 0000016475530cc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 16% 10%  7%  8%  8%  8%  8%  9%
+[libx264 @ 0000016475530cc0] i8c dc,h,v,p: 54% 19% 22%  5%
+[libx264 @ 0000016475530cc0] Weighted P-Frames: Y:7.4% UV:6.5%
+[libx264 @ 0000016475530cc0] ref P L0: 68.8% 13.5% 13.7%  3.9%  0.1%
+[libx264 @ 0000016475530cc0] ref B L0: 91.7%  7.0%  1.3%
+[libx264 @ 0000016475530cc0] ref B L1: 96.6%  3.4%
+[libx264 @ 0000016475530cc0] kb/s:2123.73
+[aac @ 0000016475525c00] Qavg: 983.993

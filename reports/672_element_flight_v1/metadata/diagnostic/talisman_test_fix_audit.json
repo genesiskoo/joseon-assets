@@ -1,0 +1,42 @@
+{
+  "test": {
+    "path": "tests\\e2e\\scenarios\\talisman_throw.gd",
+    "size": 26442,
+    "sha256": "f00774b1a95423350ce5243a75cca9b68d4abae12a4167f4222d768027b45ec7",
+    "cr_count": 0
+  },
+  "runtime": [
+    {
+      "path": "core/projectile_flight.gd",
+      "sha256": "2e1001d40dd5a03ec217a2260119bcea94467c3ca72b54d129858e7105961c31",
+      "unchanged": true
+    },
+    {
+      "path": "core/projectile_flight.gd.uid",
+      "sha256": "418061bdededf29eaf910ea4783e497c9d411036f1e443071c97ae718b777cb8",
+      "unchanged": true
+    },
+    {
+      "path": "core/vfx_elements.gd",
+      "sha256": "7812eb861cb23046f29b7b2ca28c34547baf4e24f2e5f62a96448734c42cdad6",
+      "unchanged": true
+    },
+    {
+      "path": "core/vfx_elements.gd.uid",
+      "sha256": "c0c55fc36ed875e83069b980d423a823fb29cd01f590c02ccce661cbb83d678b",
+      "unchanged": true
+    },
+    {
+      "path": "actors/talisman_shot.gd",
+      "sha256": "fd0c4af28b82185a2f2cc596184d72ec85c8411c5cd2dd17a4321509f9c27edd",
+      "unchanged": true
+    },
+    {
+      "path": "actors/projectile.gd",
+      "sha256": "01daf95afb6aa2d6d21c9d18ac4ff0f73f1672ca8e794f4931978e6711ea0713",
+      "unchanged": true
+    }
+  ],
+  "test_executed": false,
+  "reason": "root full_test_01 currently using this user save"
+}

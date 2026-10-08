@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\634-status-structure\\joseon",
+      "--headless",
+      "--",
+      "--e2e=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,footsteps,audio_cues,sfx_limiter"
+    ],
+    "phase_arg": "balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,footsteps,audio_cues,sfx_limiter",
+    "phase_tokens": [
+      "balance_room",
+      "balance_boss",
+      "hit_stagger",
+      "pack_perf",
+      "bodies_cap",
+      "gimmicks",
+      "item_showcase",
+      "footsteps",
+      "audio_cues",
+      "sfx_limiter"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": true,
+    "combat_trace": false,
+    "launcher_pid": 19816,
+    "launched_utc": "2026-10-06T11:48:20.8899255Z"
+  },
+  "runtime_pid": 43192,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_sec": 185.5717121,
+  "archived_utc": "2026-10-06T11:51:26.4858093Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-634-status-structure\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\634-status-structure\\joseon\\tmp\\e2e_raw\\20261006T1148161927130_6704\\phase_1_solo\\godot.raw.log",
+    "bytes": 101753,
+    "sha256": "9b81b0e2404124e7f2e1e987cc28eb8d5a521a7ed03106685e1a0332c3ccb1bf"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

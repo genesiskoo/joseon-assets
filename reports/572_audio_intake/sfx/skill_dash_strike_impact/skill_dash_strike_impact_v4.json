@@ -1,0 +1,69 @@
+{
+ "cue": "skill_dash_strike_impact",
+ "v": 4,
+ "prompt": "A rushing sword thrust enters a monster body, compact sharp wet thud. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation. Quiet restrained natural sound, gentle transient, low recording level, no distortion.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:24",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.59102,
+ "lufs": "-14.6",
+ "peak": "1.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 13,
+   "sub20_pct": 53.3,
+   "dc": [
+    0.0054,
+    0.0048
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_dash_strike_impact_v4.wav",
+   "duration": 0.6,
+   "lufs": "-14.6",
+   "true_peak": "0.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26064,
+   "at": 0.591,
+   "removed_ms": 9.0,
+   "floor_db": -88.3,
+   "jump_db": 31.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.19,
+   "why": "트루피크 여유 +0.2 LU",
+   "intake_i": [
+    -15.54,
+    -15.54
+   ],
+   "intake_tp": [
+    3.12,
+    2.93
+   ]
+  },
+  "out": {
+   "over_full": 3,
+   "sub20_pct": 5.7,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.75,
+   "lufs": "-14.6",
+   "true_peak": "1.3"
+  },
+  "warn": [
+   "CLIP 13"
+  ]
+ }
+}

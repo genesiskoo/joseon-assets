@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ModelDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://actors/model_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "merchant"
+scene_path = "res://assets/models/merchant/merchant.glb"
+scale = 1.0
+y_offset = 0.0
+yaw_offset_deg = 0.0
+target_height = 1.5
+pixel_filter = false
+anim_idle = "idle"
+anim_walk = "walk"
+anim_attack = "attack"
+anim_hit = "hit"
+anim_die = "die"

@@ -1,0 +1,75 @@
+{
+  "card": 466,
+  "rendered_head": "81f121529eedba345c26858cc3a9379d405b657e",
+  "commit": "3f82e617e8f6d32cde38fb0d4f00268417cd4ec8",
+  "clean": true,
+  "changed_paths": [
+    "docs/art/466_item_icons/manifest.json",
+    "docs/design/item_icons_466_log.md",
+    "docs/art/466_item_icons/README.md",
+    "docs/art/466_item_icons/466_armor_after.jpg",
+    "docs/art/466_item_icons/466_accessories_after.jpg",
+    "docs/art/466_item_icons/466_gear_tomes_after.jpg"
+  ],
+  "gallery_count": 6,
+  "gallery_bytes": 1045709,
+  "blobs_sha256_verified": {
+    "docs/art/466_item_icons/466_armor_before.jpg": {
+      "sha256": "7d8fb302ee80ec1464291bf3c07319c26506ccd4b2e6fc75b1ab738e749bdf02",
+      "before_preserved": true
+    },
+    "docs/art/466_item_icons/466_accessories_before.jpg": {
+      "sha256": "a89de37bddaacaab2933822de9d25d3e3ba780ec2c011d8ac5e5b02c6bdadc1a",
+      "before_preserved": true
+    },
+    "docs/art/466_item_icons/466_gear_tomes_before.jpg": {
+      "sha256": "8421c49ff6ec8b63e5a4e7c1c976baf7ffcbf06e7fa4893532f195fb892b5447",
+      "before_preserved": true
+    },
+    "docs/art/466_item_icons/466_armor_after.jpg": {
+      "sha256": "9e65f6b9470a755732240ada41eb1fd5b9ae585d0cccbf0cdc79d172b2911d48",
+      "source_byte_exact": true
+    },
+    "docs/art/466_item_icons/466_accessories_after.jpg": {
+      "sha256": "226d35714b97d011c0346300edda81053a7113e7c487ad4f4fa6166b687564f5",
+      "source_byte_exact": true
+    },
+    "docs/art/466_item_icons/466_gear_tomes_after.jpg": {
+      "sha256": "01dad821a3fa0729293473f18c565b705880c4a49e0b1828a5d76f1f465cac96",
+      "source_byte_exact": true
+    },
+    "docs/art/466_item_icons/manifest.json": {
+      "sha256": "22692d6156043be4772971e57b8566609f786f2a5e7285bcfc57a931a004f21b",
+      "text_lf_only": true
+    },
+    "docs/design/item_icons_466_log.md": {
+      "sha256": "25554fe7d8483d44ac5c0e72f26c72c6036af8defb1574f0d2011bf4f9fafbc8",
+      "text_lf_only": true
+    },
+    "docs/art/466_item_icons/README.md": {
+      "sha256": "3d503d1e327219c0c1163314c76bc9b7c954a48eb2929361ee1066058531616e",
+      "text_lf_only": true
+    }
+  },
+  "windowed_after": {
+    "checks": 316,
+    "scenarios_passed": 1,
+    "scenarios_total": 1,
+    "stderr_bytes": 0,
+    "returncode": 0,
+    "native_size": [
+      1280,
+      720
+    ],
+    "elapsed_seconds_including_semaphore": 164.77641677856445,
+    "capture_owner": "root",
+    "semaphore": "existing exclusive E2E slots"
+  },
+  "previous_manifest_fields_preserved": true,
+  "previous_log_prefix_byte_exact": true,
+  "product_changes_from_rendered_head": [],
+  "additional_tests": 0,
+  "doc_budget_returncode": 0,
+  "diff_check_returncode": 0,
+  "main_landed": false
+}

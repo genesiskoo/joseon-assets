@@ -1,0 +1,67 @@
+{
+ "cue": "bisect",
+ "v": 2,
+ "prompt": "A decisive heavy blade slices thick flesh, brief tearing and dense wet impact. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:19",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.578005,
+ "lufs": "-16.6",
+ "peak": "-1.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 8.7,
+   "dc": [
+    -0.0014,
+    -0.0011
+   ],
+   "sample_peak_db": -1.29,
+   "file": "_raw/bisect_v2.wav",
+   "duration": 0.6,
+   "lufs": "-16.5",
+   "true_peak": "-1.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25490,
+   "at": 0.578,
+   "removed_ms": 22.0,
+   "floor_db": -95.3,
+   "jump_db": 52.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.48,
+   "why": "트루피크 여유 +0.5 LU",
+   "intake_i": [
+    -16.61,
+    -16.65
+   ],
+   "intake_tp": [
+    1.23,
+    0.71
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 2.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -1.81,
+   "lufs": "-16.6",
+   "true_peak": "-1.7"
+  },
+  "warn": []
+ }
+}

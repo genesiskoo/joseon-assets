@@ -1,0 +1,69 @@
+{
+ "cue": "talisman_cold_burst",
+ "v": 2,
+ "prompt": "Sudden localized freezing burst, crisp ice crack with a short crystalline tail and cold airy puff, clean game effect, no glass tinkling melody, no voice or music.. One isolated close game effect, moderate intensity, clean unclipped recording, no music, no speech, no long reverberation.",
+ "seconds": 0.6,
+ "influence": 0.3,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-03 04:22",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.59102,
+ "lufs": "-16.7",
+ "peak": "0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 2,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/talisman_cold_burst_v2.wav",
+   "duration": 0.6,
+   "lufs": "-16.7",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26064,
+   "at": 0.591,
+   "removed_ms": 9.0,
+   "floor_db": -81.8,
+   "jump_db": 25.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.01,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -16.7,
+    -16.7
+   ],
+   "intake_tp": [
+    3.07,
+    3.08
+   ]
+  },
+  "out": {
+   "over_full": 3,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.05,
+   "lufs": "-16.7",
+   "true_peak": "0.1"
+  },
+  "warn": [
+   "CLIP 2"
+  ]
+ }
+}

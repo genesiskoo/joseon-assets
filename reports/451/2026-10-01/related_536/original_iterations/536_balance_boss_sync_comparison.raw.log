@@ -1,0 +1,10 @@
+INITIAL_STATES_IDENTICAL=True PREP_TICKS_IDENTICAL=True REPLAY_DIFF_COUNT=4
+
+InputObject                                                                                       SideIndicator
+-----------                                                                                       -------------
+· 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052 final=602141716667985580  =>
+· 흑랑 RNG Lv3 판1 guard_bat2 seed=23275170 initial=3841642673449239052 final=1286086405583097886 <=
+· 흑랑 재생 Lv3 판1 win=true attacks=40 hits=25 guards=2 summoned=2                               =>
+· 흑랑 재생 Lv3 판1 win=true attacks=41 hits=25 guards=2 summoned=2                               <=
+
+
