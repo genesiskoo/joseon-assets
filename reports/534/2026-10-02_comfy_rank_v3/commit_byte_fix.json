@@ -1,8 +1,0 @@
-{
-  "card": 534,
-  "attempt1": "failed before commit",
-  "exact_transcript": "commit_attempt1.tool_output.txt",
-  "cause": "Git text normalization of copied preserved_basic_sources.json",
-  "fix": "One-file -text attribute; reapply staging only for card revision paths.",
-  "original_file_bytes_modified": false
-}

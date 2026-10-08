@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "C:\Users\FORYOUCOM\.codex\worktrees\632-element-structure\joseon\._tmp\634_status_structure_v1\validate_capture.py", line 52, in <module>
-    assert 239<=active[-1]<=240 and r['input_edges'][-2]['frame']==240  # native queued key; next snapshot sees removal
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

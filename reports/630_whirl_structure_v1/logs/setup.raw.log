@@ -1,7 +1,0 @@
-⎇ 작업 트리 준비 — 630-whirl-structure (codex)
-  ✓ override.cfg — 이 자리 user:// = %APPDATA%/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure
-  ✓ 임포트 사이드카 7개 복사 · 이 자리에 없는 에셋 25개 건너뜀 (uid 를 본진과 맞춘다)
-  ✓ .godot 캐시 복사 6초
-  ✓ godot --headless --import 75초
-  ✓ user:// = C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-630-whirl-structure
-  다음: 작업·커밋 → python tools/wt.py land -m "요약"  |  에디터가 필요하면 godot --path . -e → godot-ai session_activate "630-whirl-structure" 뒤에 쓴다 (안 하면 본진 에디터를 조작한다)

@@ -1,8 +1,0 @@
-{
-  "card": 534,
-  "scope": "preserved_basic_sources.json only",
-  "cause": "Exact preserved CRLF receipt was reported as trailing whitespace.",
-  "original_bytes_modified": false,
-  "fix": "Disable text conversion and whitespace lint for this archived receipt only.",
-  "raw_diagnostic": "lint_recheck_before_attribute_fix.stdout.raw.log"
-}

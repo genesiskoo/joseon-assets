@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "C:\workspace\joseon\._tmp\trace_558_20261002\worker\fix_replay_provenance.py", line 125, in <module>
-    patch(out)
-  File "C:\workspace\joseon\._tmp\trace_558_20261002\worker\fix_replay_provenance.py", line 36, in patch
-    raise RuntimeError(f'working bytes differ: {name}')
-RuntimeError: working bytes differ: tools/balance_replay.py

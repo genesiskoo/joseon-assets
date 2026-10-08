@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="Script" path="res://._tmp/680_blender_vfx_test/capture/capture_blender.gd" id="1"]
-
-[node name="BlenderCapture680" type="Node"]
-process_mode = 3
-script = ExtResource("1")
