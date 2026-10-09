@@ -1,87 +1,125 @@
-| 항목 | 방식 | 폭×높이 px | 최대 면적 px² | 첫 | 등장 | 다 보임 | 보임 | 절정 | 피해 | 절정−피해 | 효과음−절정 | 패스 | 입자 노드/양 | 빛 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| play:hit | Vfx.play | 52×49 | 211 | 0 | 9 | 11 | 21 | 14 | -1 | — | — | 1 | 0/0 | 1 |
-| play:hit_crit | Vfx.play | 78×74 | 475 | 0 | 9 | 11 | 21 | 14 | -1 | — | — | 1 | 0/0 | 1 |
-| play:hit_sparks | Vfx.play | 0×0 | 0 | -1 | -1 | 0 | 0 | -1 | -1 | — | — | 1 | 1/8 | 0 |
-| play:slash_arc | Vfx.play scale=range×0.7 | 130×131 | 746 | 0 | 0 | 17 | 24 | 5 | -1 | — | — | 1 | 0/0 | 1 |
-| basic_attack | 자동공격 1타 | 197×203 | 30166 | 4 | 14 | 9 | 70 | 19 | 18 | 1 | -1 | 8 | 3/21 | 1 |
-| slash | cast Lv1 | 426×270 | 128346 | 0 | 0 | 59 | 74 | 40 | 37 | 3 | -3 | 11 | 4/31 | 2 |
-| whirl_lv1 | cast Lv1 | 481×278 | 260444 | 0 | 27 | 23 | 98 | 35 | 28 | 7 | -7 | 16 | 3/21 | 2 |
-| whirl_lv10 | cast Lv10 | 667×452 | 1201649 | 0 | 45 | 5 | 97 | 48 | 28 | 20 | -4 | 40 | 3/21 | 2 |
-| dash_strike | cast Lv1 | 454×333 | 234680 | 0 | 31 | 10 | 85 | 34 | 33 | 1 | -1 | 15 | 3/24 | 1 |
-| leap_slash | cast Lv1 | 389×309 | 122382 | 0 | 26 | 22 | 97 | 34 | 33 | 1 | -1 | 13 | 4/31 | 1 |
-| fire_lore | cast Lv1 (비행+터짐) | 296×171 | 69932 | 33 | 20 | 21 | 64 | 58 | 52 | 6 | -6 | 10 | 1/12 | 1 |
-| ice_lore | cast Lv1 (비행+터짐) | 296×179 | 71114 | 33 | 18 | 21 | 65 | 56 | 50 | 6 | -6 | 12 | 1/12 | 1 |
-| thunder_lore | cast Lv1 (비행+터짐) | 61×105 | 1514 | 33 | 8 | 7 | 24 | 47 | 37 | 10 | -10 | 6 | 1/12 | 1 |
-| salpuri | cast Lv1 (제자리) | 203×146 | 978 | 0 | 12 | 14 | 46 | 19 | -1 | — | -19 | 3 | 1/12 | 0 |
-| seal_array | cast Lv1 (화염 진) | 415×239 | 200871 | 33 | 0 | 65 | 65 | 41 | 93 | -52 | -8 | 7 | 2/22 | 1 |
-| blink | cast Lv1 (3u) | 312×180 | 632 | 0 | 11 | 12 | 46 | 16 | -1 | — | -16 | 4 | 2/16 | 0 |
-| mana_shield | cast Lv1 | 207×117 | 531 | 33 | 10 | 12 | 29 | 49 | -1 | — | -16 | 1 | 0/0 | 0 |
-| kill_basic | 자동공격 막타(생명 1) | 198×202 | 32905 | 4 | 14 | 9 | 118 | 25 | 18 | 7 | -7 | 10 | 4/38 | 1 |
-| kill_slash | 참격 막타(생명 1) | 426×270 | 153606 | 0 | 37 | 22 | 122 | 44 | 37 | 7 | -7 | 20 | 4/38 | 2 |
-| kill_bisect | 평타 막타 + 두 동강 강제 | 198×202 | 33873 | 4 | 14 | 9 | 118 | 25 | 18 | 7 | -7 | 10 | 4/38 | 1 |
+| 항목 | 방식 | 폭×높이 px | 최대 면적 px² | 첫 | 등장 | 다 보임 | 보임 | 95% | 절정 | 피해(전부) | 95%−피해 | 절정−피해 | 효과음−절정 | 패스 | 입자 노드/양 | 빛 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| play:hit | Vfx.play | 52×49 | 242 | 0 | 7 | 10 | 20 | 8 | 11 | — | — | — | — | 1 | 0/0 | 1 |
+| play:hit_crit | Vfx.play | 78×74 | 544 | 0 | 7 | 10 | 20 | 8 | 11 | — | — | — | — | 1 | 0/0 | 1 |
+| play:hit_sparks | Vfx.play | 0×0 | 0 | -1 | -1 | 0 | 0 | -1 | -1 | — | — | — | — | 1 | 1/8 | 0 |
+| play:slash_arc | Vfx.play scale=range×0.7 | 95×131 | 794 | 0 | 0 | 13 | 23 | 0 | 0 | — | — | — | — | 1 | 0/0 | 1 |
+| basic_attack | 자동공격 1타 | 183×195 | 29110 | 3 | 14 | 8 | 71 | 18 | 18 | 18 | 0 | 0 | 0 | 6 | 1/8 | 1 |
+| slash | cast Lv1 | 301×234 | 75625 | 0 | 18 | 22 | 74 | 37 | 39 | 37 | 0 | 2 | -2 | 9 | 2/18 | 2 |
+| whirl_lv1 | cast Lv1 | 340×221 | 147580 | 0 | 26 | 15 | 98 | 28 | 33 | 28 | 0 | 5 | -5 | 14 | 1/8 | 2 |
+| whirl_lv10 | cast Lv10 | 471×298 | 604092 | 0 | 44 | 5 | 97 | 46 | 48 | 28,44 | 2 | 4 | -4 | 40 | 1/8 | 2 |
+| dash_strike | cast Lv1 | 362×306 | 184886 | 0 | 32 | 8 | 85 | 33 | 33 | 33 | 0 | 0 | 0 | 13 | 3/24 | 1 |
+| leap_slash | cast Lv1 | 275×276 | 79058 | 0 | 32 | 11 | 97 | 33 | 33 | 33 | 0 | 0 | 0 | 11 | 2/18 | 1 |
+| fire_lore | cast Lv1 (비행+터짐) | 210×129 | 37048 | 33 | 19 | 21 | 64 | 53 | 56 | 52 | 1 | 4 | -4 | 10 | 0/0 | 1 |
+| ice_lore | cast Lv1 (비행+터짐) | 210×135 | 37963 | 33 | 17 | 21 | 65 | 51 | 55 | 50 | 1 | 5 | -5 | 12 | 0/0 | 1 |
+| thunder_lore | cast Lv1 (비행+터짐) | 46×77 | 1218 | 33 | 7 | 7 | 23 | 41 | 46 | 37 | 4 | 9 | -9 | 5 | 0/0 | 1 |
+| salpuri | cast Lv1 (제자리) | 142×129 | 909 | 0 | 8 | 17 | 45 | 12 | 15 | — | — | — | -15 | 2 | 0/0 | 0 |
+| seal_array | cast Lv1 (화염 진) | 293×170 | 116050 | 33 | 0 | 65 | 65 | 38 | 45 | 93 | -55 | -48 | -12 | 7 | 1/10 | 1 |
+| blink | cast Lv1 (3u) | 261×151 | 345 | 0 | 9 | 15 | 45 | 13 | 15 | — | — | — | -15 | 4 | 2/16 | 0 |
+| mana_shield | cast Lv1 | 148×85 | 290 | 33 | 8 | 16 | 29 | 46 | 48 | — | — | — | -15 | 1 | 0/0 | 0 |
+| kill_basic | 자동공격 막타(생명 1) | 198×196 | 30518 | 3 | 14 | 9 | 119 | 18 | 18 | 18 | 0 | 0 | 0 | 9 | 2/16 | 1 |
+| kill_slash | 참격 막타(생명 1) | 301×234 | 91302 | 0 | 37 | 10 | 122 | 37 | 39 | 37 | 0 | 2 | -2 | 18 | 2/16 | 2 |
+| kill_bisect | 평타 막타 + 두 동강(bisect_pct 100) | 198×199 | 44913 | 3 | 15 | 9 | 119 | 18 | 18 | 18 | 0 | 0 | 0 | 15 | 2/16 | 1 |
 
-무리별(노드 이름) 위 3 — 폭×높이 px · 최대 면적 · 첫/절정/끝 · 다 보임
+몸통(BODY) — 빼는 노드(SwordTrail, Vfx_skill_area, Vfx_mark, Stain, /MeshInstance3D(Mesh), _Outline() 밖에서 넓이 위 둘 · 폭×높이 px · 최대 면적 · 첫/95%/절정/끝 · 95%·절정 − 그 앞 피해 · 다 보임 · 소리 = 이 노드 95%에 가장 가까운 효과음 − 95%
 
-| 항목 | 무리 | 폭×높이 | 면적 | 첫 | 절정 | 끝 | 다 보임 |
+| 항목 | 노드 | 폭×높이 | 면적 | 첫 | 95% | 절정 | 끝 | 95%−피해 | 절정−피해 | 다 보임 | 소리−95% |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| play:hit | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)#1` | 52×49 | 242 | 0 | 8 | 11 | 19 | — | — | 10 | — |
+| play:hit_crit | `DungeonLevel/Vfx_sheet_hit_crit(AnimatedSprite)#1` | 78×74 | 544 | 0 | 8 | 11 | 19 | — | — | 10 | — |
+| play:slash_arc | `DungeonLevel/Vfx_sheet_slash_arc(AnimatedSprite)#1` | 95×131 | 794 | 0 | 0 | 0 | 22 | — | — | 13 | — |
+| basic_attack | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)#1` | 52×49 | 242 | 18 | 26 | 29 | 37 | 8 | 11 | 10 | -8(hit) |
+| slash | `DungeonLevel/Vfx_sheet_slash_arc(AnimatedSprite)#1` | 95×131 | 794 | 34 | 34 | 34 | 56 | -3 | -3 | 13 | 3(hit) |
+|  | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)#1` | 52×49 | 242 | 37 | 45 | 48 | 56 | 8 | 11 | 10 | -8(hit) |
+| whirl_lv1 | `Vfx_whirl_ring_whirl_imp/DryInk(Mesh)#1` | 327×189 | 30918 | 25 | 28 | 29 | 97 | 0 | 1 | 47 | 0(hit) |
+|  | `Vfx_whirl_ring_whirl_imp/InnerRipple(Mesh)#1` | 327×189 | 17033 | 25 | 26 | 26 | 49 | -2 | -2 | 5 | 2(hit) |
+| whirl_lv10 | `Vfx_whirl_ring_whirl_imp/DryInk(Mesh)#2` | 458×265 | 82416 | 44 | 47 | 48 | 96 | 3 | 4 | 51 | -3(hit) |
+|  | `Vfx_whirl_ring_whirl_imp/DryInk(Mesh)#1` | 458×265 | 82416 | 25 | 28 | 29 | 96 | 0 | 1 | 56 | 0(hit) |
+| dash_strike | `DungeonLevel/Vfx_streak(Mesh)#1` | 232×134 | 31169 | 22 | 22 | 22 | 39 | -11 | -11 | 18 | 11(hit) |
+|  | `DungeonLevel/Vfx_sheet_dash_dust(AnimatedSprite)#1` | 97×36 | 420 | 33 | 44 | 47 | 61 | 11 | 14 | 15 | -11(hit) |
+| leap_slash | `DungeonLevel/AnimatedSprite3D(AnimatedSprite)#1` | 132×49 | 782 | 33 | 44 | 47 | 61 | 11 | 14 | 15 | -11(hit) |
+|  | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)#1` | 52×49 | 242 | 33 | 41 | 44 | 52 | 8 | 11 | 10 | -8(hit) |
+| fire_lore | `Vfx_element_fire/GroundTrace(Mesh)#1` | 196×113 | 7346 | 52 | 54 | 54 | 96 | 2 | 2 | 33 | -2(bandit_hurt) |
+|  | `Burn/Body(Mesh)#1` | 56×99 | 1615 | 52 | 52 | 52 | 96 | 0 | 0 | 35 | 0(bandit_hurt) |
+| ice_lore | `Vfx_element_cold/GroundTrace(Mesh)#1` | 196×113 | 6456 | 50 | 52 | 52 | 97 | 2 | 2 | 35 | -2(bandit_hurt) |
+|  | `Frozen/Body(Mesh)#1` | 71×109 | 1937 | 50 | 50 | 50 | 97 | 0 | 0 | 48 | 0(bandit_hurt) |
+| thunder_lore | `Vfx_element_lightning/Form_(Mesh)#1` | 46×77 | 839 | 37 | 41 | 46 | 55 | 4 | 9 | 7 | -4(bandit_hurt) |
+|  | `Vfx_element_lightning/Fragments(MultiMesh)#1` | 26×61 | 379 | 37 | 37 | 46 | 55 | 0 | 9 | 9 | 0(bandit_hurt) |
+| salpuri | `DungeonLevel/Vfx_sheet_sal_burst(AnimatedSprite)#1` | 76×79 | 688 | 0 | 12 | 12 | 33 | — | — | 17 | -12(talisman_salpuri) |
+|  | `DungeonLevel/Vfx_sheet_seal_ripple(AnimatedSprite)#1` | 142×82 | 222 | 0 | 14 | 15 | 44 | — | — | 15 | -14(talisman_salpuri) |
+| seal_array | `AoeField_seal_fire/Body(Mesh)#1` | 293×169 | 49645 | 33 | 47 | 58 | 97 | -46 | -35 | 55 | -14(skill_seal_array) |
+|  | `AoeField_seal_fire/Rim(Mesh)#1` | 293×169 | 49644 | 33 | 33 | 33 | 97 | -60 | -60 | 65 | 0(skill_seal_array) |
+| blink | `DungeonLevel/Vfx_sheet_blink_in(AnimatedSprite)#1` | 136×79 | 208 | 0 | 14 | 15 | 44 | — | — | 16 | -14(skill_blink) |
+|  | `DungeonLevel/Vfx_sheet_blink_out(AnimatedSprite)#1` | 107×62 | 137 | 0 | 13 | 15 | 44 | — | — | 16 | -13(skill_blink) |
+| mana_shield | `DungeonLevel/Vfx_sheet_shield_on(AnimatedSprite)#1` | 148×85 | 290 | 33 | 46 | 48 | 61 | — | — | 16 | -13(skill_mana_shield) |
+| kill_basic | `DungeonLevel/Vfx_sheet_blood_splat(AnimatedSprite)#1` | 67×64 | 409 | 18 | 26 | 29 | 37 | 8 | 11 | 10 | -8(hit) |
+|  | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)#1` | 52×49 | 242 | 18 | 26 | 29 | 37 | 8 | 11 | 10 | -8(hit) |
+| kill_slash | `Skeleton3D/tripo_node_2d7b86bc(Mesh)#1` | 99×101 | 9374 | 37 | 65 | 67 | 121 | 28 | 30 | 62 | 10(body_fall) |
+|  | `DungeonLevel/Vfx_sheet_slash_arc(AnimatedSprite)#1` | 95×131 | 794 | 34 | 34 | 34 | 56 | -3 | -3 | 13 | 3(hit) |
+| kill_bisect | `Skeleton3D/tripo_node_2d7b86bc(Mesh)#1` | 94×100 | 9058 | 18 | 72 | 84 | 121 | 54 | 66 | 59 | 2(body_fall) |
+|  | `Weapon/Body(Mesh)#1` | 22×23 | 485 | 18 | 18 | 18 | 121 | 0 | 0 | 50 | 0(hit) |
+
+노드별 위 3(전부) — 폭×높이 px · 최대 면적 · 첫/절정/끝 · 다 보임
+
+| 항목 | 노드 | 폭×높이 | 면적 | 첫 | 절정 | 끝 | 다 보임 |
 |---|---|---|---|---|---|---|---|
-| play:hit | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)` | 52×49 | 211 | 0 | 14 | 20 | 11 |
-| play:hit_crit | `DungeonLevel/Vfx_sheet_hit_crit(AnimatedSprite)` | 78×74 | 475 | 0 | 14 | 20 | 11 |
-| play:slash_arc | `DungeonLevel/Vfx_sheet_slash_arc(AnimatedSprite)` | 130×131 | 746 | 0 | 5 | 23 | 17 |
-| basic_attack | `SwordTrail` | 178×160 | 28497 | 4 | 19 | 34 | 8 |
-|  | `DungeonLevel/Vfx_mark(Mesh)` | 76×42 | 3187 | 18 | 26 | 73 | 52 |
-|  | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)` | 52×49 | 211 | 18 | 32 | 38 | 11 |
-| slash | `DungeonLevel/Vfx_skill_area(Mesh)` | 426×246 | 104679 | 0 | 0 | 58 | 59 |
-|  | `SwordTrail` | 120×178 | 21329 | 3 | 38 | 53 | 9 |
-|  | `DungeonLevel/MeshInstance3D(Mesh)` | 68×33 | 2269 | 37 | 45 | 73 | 33 |
-| whirl_lv1 | `DungeonLevel/Vfx_skill_area(Mesh)` | 481×278 | 133768 | 0 | 0 | 49 | 50 |
-|  | `Vfx_whirl_ring_whirl_imp/DryInk(Mesh)` | 463×267 | 61838 | 26 | 30 | 97 | 47 |
-|  | `Vfx_whirl_ring_whirl_imp/InnerRipple(Mesh)` | 462×267 | 34068 | 26 | 27 | 50 | 5 |
-| whirl_lv10 | `DungeonLevel/Vfx_skill_area(Mesh)` | 667×385 | 512908 | 0 | 44 | 65 | 6 |
-|  | `Vfx_whirl_ring_whirl_imp/DryInk(Mesh)` | 648×374 | 329671 | 26 | 49 | 96 | 45 |
-|  | `Vfx_whirl_ring_whirl_imp/Helix_(Mesh)` | 559×420 | 257822 | 26 | 51 | 95 | 15 |
-| dash_strike | `DungeonLevel/Vfx_skill_area(Mesh)` | 454×262 | 118778 | 0 | 0 | 54 | 55 |
-|  | `SwordTrail` | 296×263 | 77837 | 3 | 34 | 50 | 2 |
-|  | `DungeonLevel/Vfx_streak(Mesh)` | 252×146 | 36735 | 22 | 22 | 40 | 19 |
-| leap_slash | `DungeonLevel/Vfx_skill_area(Mesh)` | 389×225 | 87266 | 0 | 0 | 54 | 55 |
-|  | `SwordTrail` | 179×193 | 33982 | 3 | 34 | 50 | 8 |
-|  | `DungeonLevel/MeshInstance3D(Mesh)` | 54×25 | 1614 | 33 | 50 | 96 | 59 |
-| fire_lore | `DungeonLevel/Vfx_skill_area(Mesh)` | 296×171 | 50658 | 52 | 52 | 73 | 22 |
-|  | `Vfx_element_fire/GroundTrace(Mesh)` | 278×160 | 14693 | 53 | 55 | 96 | 33 |
-|  | `Vfx_element_fire/Form_(Mesh)` | 106×106 | 2689 | 53 | 58 | 85 | 19 |
-| ice_lore | `DungeonLevel/Vfx_skill_area(Mesh)` | 296×171 | 50658 | 50 | 50 | 71 | 22 |
-|  | `Vfx_element_cold/GroundTrace(Mesh)` | 278×160 | 12912 | 51 | 53 | 97 | 35 |
-|  | `Frozen/Body(Mesh)` | 100×142 | 3538 | 50 | 50 | 97 | 48 |
-| thunder_lore | `Vfx_element_lightning/Form_(Mesh)` | 61×105 | 1514 | 38 | 47 | 56 | 7 |
-|  | `Vfx_talisman_lightning_t/Form_(Mesh)` | 57×40 | 444 | 33 | 34 | 36 | 4 |
-|  | `Area3D/Paper(Mesh)` | 21×16 | 321 | 33 | 33 | 36 | 4 |
-| salpuri | `DungeonLevel/Vfx_sheet_sal_burst(AnimatedSprite)` | 76×79 | 570 | 0 | 18 | 34 | 13 |
-|  | `DungeonLevel/Vfx_sheet_seal_ripple(AnimatedSprite)` | 203×116 | 408 | 0 | 19 | 45 | 13 |
-| seal_array | `AoeField_seal_fire/Rim(Mesh)` | 415×239 | 99289 | 33 | 33 | 97 | 65 |
-|  | `DungeonLevel/Vfx_ring(Mesh)` | 390×225 | 83318 | 33 | 33 | 59 | 6 |
-|  | `AoeField_seal_fire/Body(Mesh)` | 378×219 | 82660 | 33 | 97 | 97 | 39 |
-| blink | `DungeonLevel/Vfx_sheet_blink_in(AnimatedSprite)` | 194×111 | 381 | 0 | 16 | 45 | 13 |
-|  | `DungeonLevel/Vfx_sheet_blink_out(AnimatedSprite)` | 153×88 | 251 | 0 | 16 | 45 | 12 |
-| mana_shield | `DungeonLevel/Vfx_sheet_shield_on(AnimatedSprite)` | 207×117 | 531 | 33 | 49 | 61 | 12 |
-| kill_basic | `SwordTrail` | 178×160 | 28506 | 4 | 19 | 28 | 8 |
-|  | `DungeonLevel/BloodStain(Mesh)` | 107×62 | 6556 | 18 | 36 | 121 | 94 |
-|  | `DungeonLevel/Vfx_mark(Mesh)` | 62×33 | 2058 | 18 | 26 | 121 | 100 |
-| kill_slash | `DungeonLevel/Vfx_skill_area(Mesh)` | 426×246 | 104679 | 0 | 0 | 58 | 59 |
-|  | `SwordTrail` | 120×178 | 21329 | 3 | 38 | 47 | 9 |
-|  | `Skeleton3D/tripo_node_2d7b86bc(Mesh)` | 132×137 | 17977 | 37 | 69 | 121 | 13 |
-| kill_bisect | `SwordTrail` | 178×160 | 28498 | 4 | 19 | 28 | 8 |
-|  | `DungeonLevel/MeshInstance3D(Mesh)` | 108×62 | 9640 | 18 | 36 | 121 | 96 |
-|  | `DungeonLevel/Vfx_sheet_blood_splat(AnimatedSprite)` | 67×64 | 357 | 18 | 32 | 38 | 11 |
+| play:hit | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)#1` | 52×49 | 242 | 0 | 11 | 19 | 10 |
+| play:hit_crit | `DungeonLevel/Vfx_sheet_hit_crit(AnimatedSprite)#1` | 78×74 | 544 | 0 | 11 | 19 | 10 |
+| play:slash_arc | `DungeonLevel/Vfx_sheet_slash_arc(AnimatedSprite)#1` | 95×131 | 794 | 0 | 0 | 22 | 13 |
+| basic_attack | `SwordTrail#1` | 178×160 | 28496 | 3 | 18 | 33 | 8 |
+|  | `DungeonLevel/Vfx_mark(Mesh)#1` | 43×24 | 1035 | 18 | 25 | 73 | 53 |
+|  | `DungeonLevel/Vfx_sheet_hit(AnimatedSprite)#1` | 52×49 | 242 | 18 | 29 | 37 | 10 |
+| slash | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 301×174 | 52340 | 0 | 0 | 57 | 58 |
+|  | `SwordTrail#1` | 120×178 | 21329 | 2 | 37 | 52 | 9 |
+|  | `DungeonLevel/MeshInstance3D(Mesh)#1` | 54×27 | 1442 | 37 | 44 | 73 | 34 |
+| whirl_lv1 | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 340×197 | 66884 | 0 | 0 | 48 | 49 |
+|  | `Vfx_whirl_ring_whirl_imp/DryInk(Mesh)#1` | 327×189 | 30918 | 25 | 29 | 97 | 47 |
+|  | `SwordTrail#1` | 153×165 | 25218 | 2 | 33 | 43 | 8 |
+| whirl_lv10 | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 471×272 | 128227 | 0 | 0 | 48 | 49 |
+|  | `DungeonLevel/Vfx_skill_area(Mesh)#2` | 471×272 | 128227 | 44 | 44 | 64 | 21 |
+|  | `Vfx_whirl_ring_whirl_imp/DryInk(Mesh)#2` | 458×265 | 82416 | 44 | 48 | 96 | 51 |
+| dash_strike | `SwordTrail#1` | 296×263 | 77837 | 2 | 33 | 49 | 2 |
+|  | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 360×208 | 74849 | 0 | 0 | 53 | 54 |
+|  | `DungeonLevel/Vfx_streak(Mesh)#1` | 232×134 | 31169 | 22 | 22 | 39 | 18 |
+| leap_slash | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 275×159 | 43633 | 0 | 0 | 53 | 54 |
+|  | `SwordTrail#1` | 179×193 | 33982 | 2 | 33 | 49 | 8 |
+|  | `DungeonLevel/MeshInstance3D(Mesh)#2` | 52×25 | 1285 | 33 | 40 | 96 | 61 |
+| fire_lore | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 210×121 | 25329 | 52 | 52 | 72 | 21 |
+|  | `Vfx_element_fire/GroundTrace(Mesh)#1` | 196×113 | 7346 | 52 | 54 | 96 | 33 |
+|  | `Burn/Body(Mesh)#1` | 56×99 | 1615 | 52 | 52 | 96 | 35 |
+| ice_lore | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 210×121 | 25329 | 50 | 50 | 70 | 21 |
+|  | `Vfx_element_cold/GroundTrace(Mesh)#1` | 196×113 | 6456 | 50 | 52 | 97 | 35 |
+|  | `Frozen/Body(Mesh)#1` | 71×109 | 1937 | 50 | 50 | 97 | 48 |
+| thunder_lore | `Vfx_element_lightning/Form_(Mesh)#1` | 46×77 | 839 | 37 | 46 | 55 | 7 |
+|  | `Vfx_element_lightning/Fragments(MultiMesh)#1` | 26×61 | 379 | 37 | 46 | 55 | 9 |
+|  | `Vfx_talisman_lightning_t/Fragments(MultiMesh)#1` | 26×60 | 313 | 33 | 33 | 36 | 4 |
+| salpuri | `DungeonLevel/Vfx_sheet_sal_burst(AnimatedSprite)#1` | 76×79 | 688 | 0 | 12 | 33 | 17 |
+|  | `DungeonLevel/Vfx_sheet_seal_ripple(AnimatedSprite)#1` | 142×82 | 222 | 0 | 15 | 44 | 15 |
+| seal_array | `AoeField_seal_fire/Body(Mesh)#1` | 293×169 | 49645 | 33 | 58 | 97 | 55 |
+|  | `AoeField_seal_fire/Rim(Mesh)#1` | 293×169 | 49644 | 33 | 33 | 97 | 65 |
+|  | `DungeonLevel/Vfx_ring(Mesh)#1` | 276×159 | 40116 | 33 | 33 | 58 | 6 |
+| blink | `DungeonLevel/Vfx_sheet_blink_in(AnimatedSprite)#1` | 136×79 | 208 | 0 | 15 | 44 | 16 |
+|  | `DungeonLevel/Vfx_sheet_blink_out(AnimatedSprite)#1` | 107×62 | 137 | 0 | 15 | 44 | 16 |
+| mana_shield | `DungeonLevel/Vfx_sheet_shield_on(AnimatedSprite)#1` | 148×85 | 290 | 33 | 48 | 61 | 16 |
+| kill_basic | `SwordTrail#1` | 178×160 | 28506 | 3 | 18 | 27 | 8 |
+|  | `DungeonLevel/BloodStain(Mesh)#1` | 77×44 | 3386 | 18 | 35 | 121 | 95 |
+|  | `DungeonLevel/Vfx_mark(Mesh)#1` | 44×26 | 1157 | 18 | 24 | 121 | 101 |
+| kill_slash | `DungeonLevel/Vfx_skill_area(Mesh)#1` | 301×174 | 52340 | 0 | 0 | 57 | 58 |
+|  | `SwordTrail#1` | 120×178 | 21329 | 2 | 37 | 46 | 9 |
+|  | `Skeleton3D/tripo_node_2d7b86bc(Mesh)#1` | 99×101 | 9374 | 37 | 67 | 121 | 62 |
+| kill_bisect | `SwordTrail#1` | 178×160 | 28498 | 3 | 18 | 27 | 8 |
+|  | `Skeleton3D/tripo_node_2d7b86bc(Mesh)#1` | 94×100 | 9058 | 18 | 84 | 121 | 59 |
+|  | `Skeleton3D/tripo_node_2d7b86bc_Outline(Mesh)#1` | 94×100 | 9058 | 18 | 84 | 121 | 59 |
 
 데우기 열쇠 15 · 원장이 쓴 열쇠 31 · 데우기 밖 18
 - 데우기 밖: `M:sprite3d bb0 tr1 sh0 ds1 nd0` ← whirl_lv10, salpuri, blink
 - 데우기 밖: `M:std t0 b0 s0 bb0 nd0 vc0 tex0 cull2 fog0` ← fire_lore, ice_lore, thunder_lore
 - 데우기 밖: `M:std t1 b0 s0 bb0 nd0 vc0 tex0 cull0 fog0` ← fire_lore, ice_lore, blink
 - 데우기 밖: `M:std t1 b1 s0 bb0 nd0 vc0 tex1 cull2 fog1` ← dash_strike
-- 데우기 밖: `M:std t1 b1 s0 bb3 nd0 vc1 tex1 cull0 fog1` ← fire_lore, ice_lore, thunder_lore
+- 데우기 밖: `M:std t1 b1 s0 bb3 nd0 vc1 tex1 cull0 fog1` ← fire_lore
 - 데우기 밖: `P:ppm e6 o0` ← seal_array
-- 데우기 밖: `S:bisect_cut.gdshader` ← kill_slash
-- 데우기 밖: `S:bisect_outline.gdshader` ← kill_slash
+- 데우기 밖: `S:bisect_cut.gdshader` ← kill_slash, kill_bisect
+- 데우기 밖: `S:bisect_outline.gdshader` ← kill_slash, kill_bisect
 - 데우기 밖: `S:vfx_elements:ELEMENT_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]` ← fire_lore, ice_lore, thunder_lore
 - 데우기 밖: `S:vfx_elements:ELEMENT_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix]` ← fire_lore, ice_lore, thunder_lore
 - 데우기 밖: `S:vfx_elements:FLIGHT_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]` ← fire_lore, ice_lore, thunder_lore
