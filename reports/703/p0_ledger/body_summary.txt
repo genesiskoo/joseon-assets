@@ -1,0 +1,20 @@
+play:hit | Vfx_sheet_hit(AnimatedSprite) 51x49 first0 peak14 full11 last20
+play:hit_crit | Vfx_sheet_hit_crit(AnimatedSprite) 77x73 first0 peak14 full11 last20
+play:hit_sparks | 
+play:slash_arc | Vfx_sheet_slash_arc(AnimatedSprite) 130x131 first0 peak5 full17 last23
+basic_attack | Vfx_sheet_hit(AnimatedSprite) 51x49 first18 peak32 (pk-dmg +14) full11 last38 ; HitStain(Mesh) 12x7 first18 peak35 (pk-dmg +17) full46 last73
+slash | Vfx_sheet_slash_arc(AnimatedSprite) 130x131 first34 peak39 (pk-dmg +2) full17 last57 ; Vfx_sheet_hit(AnimatedSprite) 51x49 first37 peak51 (pk-dmg +14) full11 last57
+whirl_lv1 | Vfx_whirl_ring_whirl_imp/DryInk(Mesh) 462x267 first26 peak30 (pk-dmg +2) full47 last97 ; Vfx_whirl_ring_whirl_imp/InnerRipple(Mesh) 462x266 first26 peak27 (pk-dmg -1) full5 last50
+whirl_lv10 | Vfx_whirl_ring_whirl_imp/DryInk(Mesh) 648x374 first26 peak49 (pk-dmg +21) full45 last96 ; Vfx_whirl_ring_whirl_imp/Helix_(Mesh) 559x420 first26 peak51 (pk-dmg +23) full15 last95
+dash_strike | Vfx_streak(Mesh) 252x145 first22 peak22 (pk-dmg -11) full19 last40 ; Vfx_sheet_dash_dust(AnimatedSprite) 96x80 first33 peak48 (pk-dmg +15) full11 last62
+leap_slash | AnimatedSprite3D(AnimatedSprite) 131x110 first33 peak48 (pk-dmg +15) full11 last62 ; Vfx_sheet_hit(AnimatedSprite) 51x49 first33 peak47 (pk-dmg +14) full11 last53
+fire_lore | Vfx_element_fire/GroundTrace(Mesh) 277x160 first53 peak55 (pk-dmg +3) full33 last96 ; Vfx_element_fire/Form_(Mesh) 105x106 first53 peak58 (pk-dmg +6) full19 last85
+ice_lore | Vfx_element_cold/GroundTrace(Mesh) 277x160 first51 peak53 (pk-dmg +3) full35 last97 ; Frozen/FrostFoot(Mesh) 113x65 first50 peak50 (pk-dmg +0) full48 last97
+thunder_lore | Vfx_element_lightning/Form_(Mesh) 60x104 first38 peak47 (pk-dmg +10) full7 last56 ; Vfx_talisman_lightning_t/Form_(Mesh) 56x39 first33 peak34 (pk-dmg -3) full4 last36
+salpuri | Vfx_sheet_sal_burst(AnimatedSprite) 76x78 first0 peak18 full13 last34 ; Vfx_sheet_seal_ripple(AnimatedSprite) 202x116 first0 peak19 full13 last45
+seal_array | AoeField_seal_fire/Rim(Mesh) 414x239 first33 peak33 (pk-dmg -60) full65 last97 ; Vfx_ring(Mesh) 389x225 first33 peak33 (pk-dmg -60) full6 last59
+blink | Vfx_sheet_blink_in(AnimatedSprite) 194x111 first0 peak16 full13 last45 ; Vfx_sheet_blink_out(AnimatedSprite) 152x87 first0 peak16 full12 last45
+mana_shield | Vfx_sheet_shield_on(AnimatedSprite) 206x117 first33 peak49 full12 last61
+kill_basic | Vfx_sheet_blood_splat(AnimatedSprite) 67x63 first18 peak32 (pk-dmg +14) full11 last38 ; Vfx_sheet_hit(AnimatedSprite) 51x49 first18 peak32 (pk-dmg +14) full11 last38
+kill_slash | Vfx_sheet_slash_arc(AnimatedSprite) 130x131 first34 peak39 (pk-dmg +2) full17 last57 ; Weapon/Body(Mesh) 24x24 first37 peak37 (pk-dmg +0) full24 last121
+kill_bisect | Vfx_sheet_blood_splat(AnimatedSprite) 67x63 first18 peak32 (pk-dmg +14) full11 last38 ; Vfx_sheet_hit(AnimatedSprite) 51x49 first18 peak32 (pk-dmg +14) full11 last38

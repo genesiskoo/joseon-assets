@@ -1,0 +1,100 @@
+LEDGER|play:hit|w=52|h=49|area=211|first=0|appear=9|full=11|shown=21|peak=14|dmg=-1|pk-dmg=—|sfx-pk=—()|draws=1|parts=0/0|lights=1|alive_end=false|cues=hit
+LEDGER|play:hit_crit|w=78|h=74|area=475|first=0|appear=9|full=11|shown=21|peak=14|dmg=-1|pk-dmg=—|sfx-pk=—()|draws=1|parts=0/0|lights=1|alive_end=false|cues=hit_crit
+LEDGER|play:hit_sparks|w=0|h=0|area=0|first=-1|appear=-1|full=0|shown=0|peak=-1|dmg=-1|pk-dmg=—|sfx-pk=—()|draws=1|parts=1/8|lights=0|alive_end=false|cues=hit_sparks
+LEDGER|play:slash_arc|w=130|h=131|area=746|first=0|appear=0|full=17|shown=24|peak=5|dmg=-1|pk-dmg=—|sfx-pk=—()|draws=1|parts=0/0|lights=1|alive_end=false|cues=slash_arc
+LEDGER|basic_attack|w=197|h=203|area=30166|first=4|appear=14|full=9|shown=70|peak=19|dmg=18|pk-dmg=1|sfx-pk=-1(hit)|draws=8|parts=3/21|lights=1|alive_end=true|cues=sword_trail,hit,bandit_hurt,hit_sparks,hit_ink,hit_mark
+LEDGER|slash|w=426|h=270|area=128346|first=0|appear=0|full=59|shown=74|peak=40|dmg=37|pk-dmg=3|sfx-pk=-3(hit)|draws=11|parts=4/31|lights=2|alive_end=true|cues=sword_trail,skill_area,slash_arc,hit,hit_spark,bandit_hurt,blood_gush,hit_sparks,hit_ink,hit_mark,skill_area_stamp,blood_gush
+LEDGER|whirl_lv1|w=481|h=278|area=260444|first=0|appear=27|full=23|shown=98|peak=35|dmg=28|pk-dmg=7|sfx-pk=-7(hit)|draws=16|parts=3/21|lights=2|alive_end=true|cues=sword_trail,skill_area,whirl_ring,hit,hit_spark,bandit_hurt,hit_sparks,hit_ink,hit_mark,skill_area_stamp
+LEDGER|whirl_lv10|w=667|h=452|area=1201649|first=0|appear=45|full=5|shown=97|peak=48|dmg=28|pk-dmg=20|sfx-pk=-4(hit)|draws=40|parts=3/21|lights=2|alive_end=true|cues=sword_trail,skill_area,whirl_ring,hit,hit_spark,bandit_hurt,hit_sparks,hit_ink,hit_mark,skill_area_stamp,whirl_ring,skill_area,skill_area_stamp,hit,hit_spark,bandit_hurt,hit_sparks,hit_ink,hit_mark,whirl_ring,ink_ripple
+LEDGER|dash_strike|w=454|h=333|area=234680|first=0|appear=31|full=10|shown=85|peak=34|dmg=33|pk-dmg=1|sfx-pk=-1(hit)|draws=15|parts=3/24|lights=1|alive_end=true|cues=sword_trail,skill_area,dash_trail,dash_dust,hit,hit_spark,bandit_hurt,hit_sparks,hit_ink,hit_mark,skill_area_stamp
+LEDGER|leap_slash|w=389|h=309|area=122382|first=0|appear=26|full=22|shown=97|peak=34|dmg=33|pk-dmg=1|sfx-pk=-1(hit)|draws=13|parts=4/31|lights=1|alive_end=true|cues=sword_trail,skill_area,dash_dust,dash_dust,hit,hit_spark,bandit_hurt,blood_gush,hit_sparks,hit_ink,hit_mark,skill_area_stamp,blood_gush
+LEDGER|fire_lore|w=296|h=171|area=69932|first=33|appear=20|full=21|shown=64|peak=58|dmg=52|pk-dmg=6|sfx-pk=-6(bandit_hurt)|draws=10|parts=1/12|lights=1|alive_end=true|cues=talisman_fire_trail,talisman_throw,talisman_fire_burst,skill_area,skill_area_stamp
+LEDGER|ice_lore|w=296|h=179|area=71114|first=33|appear=18|full=21|shown=65|peak=56|dmg=50|pk-dmg=6|sfx-pk=-6(bandit_hurt)|draws=12|parts=1/12|lights=1|alive_end=true|cues=talisman_cold_trail,talisman_throw,talisman_cold_burst,skill_area,skill_area_stamp
+LEDGER|thunder_lore|w=61|h=105|area=1514|first=33|appear=8|full=7|shown=24|peak=47|dmg=37|pk-dmg=10|sfx-pk=-10(bandit_hurt)|draws=6|parts=1/12|lights=1|alive_end=false|cues=talisman_lightning_trail,talisman_throw,talisman_lightning_hit
+LEDGER|salpuri|w=203|h=146|area=978|first=0|appear=12|full=14|shown=46|peak=19|dmg=-1|pk-dmg=—|sfx-pk=-19(talisman_salpuri)|draws=3|parts=1/12|lights=0|alive_end=false|cues=sal_burst,seal_ripple
+LEDGER|seal_array|w=415|h=239|area=200871|first=33|appear=0|full=65|shown=65|peak=41|dmg=93|pk-dmg=-52|sfx-pk=-8(skill_seal_array)|draws=7|parts=2/22|lights=1|alive_end=true|cues=talisman_fire_trail,talisman_fire_burst
+LEDGER|blink|w=312|h=180|area=632|first=0|appear=11|full=12|shown=46|peak=16|dmg=-1|pk-dmg=—|sfx-pk=-16(skill_blink)|draws=4|parts=2/16|lights=0|alive_end=false|cues=blink_out,blink_in
+LEDGER|mana_shield|w=207|h=117|area=531|first=33|appear=10|full=12|shown=29|peak=49|dmg=-1|pk-dmg=—|sfx-pk=-16(skill_mana_shield)|draws=1|parts=0/0|lights=0|alive_end=true|cues=shield_on
+LEDGER|kill_basic|w=198|h=202|area=32905|first=4|appear=14|full=9|shown=118|peak=25|dmg=18|pk-dmg=7|sfx-pk=-7(hit)|draws=10|parts=4/38|lights=1|alive_end=true|cues=sword_trail,hit,hit_sparks,hit_ink,hit_mark,bandit_die,blood_splat,blood_drops,body_fall
+LEDGER|kill_slash|w=426|h=270|area=153606|first=0|appear=37|full=22|shown=122|peak=44|dmg=37|pk-dmg=7|sfx-pk=-7(hit)|draws=20|parts=4/38|lights=2|alive_end=true|cues=sword_trail,skill_area,slash_arc,hit,hit_spark,hit_sparks,hit_ink,hit_mark,bandit_die,blood_splat,blood_drops,skill_area_stamp,blood_gush,blood_gush,blood_gush,body_fall,body_fall,blood_gush
+LEDGER|kill_bisect|w=198|h=202|area=33873|first=4|appear=14|full=9|shown=118|peak=25|dmg=18|pk-dmg=7|sfx-pk=-7(hit)|draws=10|parts=4/38|lights=1|alive_end=true|cues=sword_trail,hit,hit_sparks,hit_ink,hit_mark,bandit_die,blood_splat,blood_drops,body_fall
+LEDGERG|play:hit|DungeonLevel/Vfx_sheet_hit(AnimatedSprite)|w=52|h=49|area=211|first=0|peak=14|last=20|full=11
+LEDGERG|play:hit_crit|DungeonLevel/Vfx_sheet_hit_crit(AnimatedSprite)|w=78|h=74|area=475|first=0|peak=14|last=20|full=11
+LEDGERG|play:slash_arc|DungeonLevel/Vfx_sheet_slash_arc(AnimatedSprite)|w=130|h=131|area=746|first=0|peak=5|last=23|full=17
+LEDGERG|basic_attack|SwordTrail|w=178|h=160|area=28497|first=4|peak=19|last=34|full=8
+LEDGERG|basic_attack|DungeonLevel/Vfx_mark(Mesh)|w=76|h=42|area=3187|first=18|peak=26|last=73|full=52
+LEDGERG|basic_attack|DungeonLevel/Vfx_sheet_hit(AnimatedSprite)|w=52|h=49|area=211|first=18|peak=32|last=38|full=11
+LEDGERG|slash|DungeonLevel/Vfx_skill_area(Mesh)|w=426|h=246|area=104679|first=0|peak=0|last=58|full=59
+LEDGERG|slash|SwordTrail|w=120|h=178|area=21329|first=3|peak=38|last=53|full=9
+LEDGERG|slash|DungeonLevel/MeshInstance3D(Mesh)|w=68|h=33|area=2269|first=37|peak=45|last=73|full=33
+LEDGERG|whirl_lv1|DungeonLevel/Vfx_skill_area(Mesh)|w=481|h=278|area=133768|first=0|peak=0|last=49|full=50
+LEDGERG|whirl_lv1|Vfx_whirl_ring_whirl_imp/DryInk(Mesh)|w=463|h=267|area=61838|first=26|peak=30|last=97|full=47
+LEDGERG|whirl_lv1|Vfx_whirl_ring_whirl_imp/InnerRipple(Mesh)|w=462|h=267|area=34068|first=26|peak=27|last=50|full=5
+LEDGERG|whirl_lv10|DungeonLevel/Vfx_skill_area(Mesh)|w=667|h=385|area=512908|first=0|peak=44|last=65|full=6
+LEDGERG|whirl_lv10|Vfx_whirl_ring_whirl_imp/DryInk(Mesh)|w=648|h=374|area=329671|first=26|peak=49|last=96|full=45
+LEDGERG|whirl_lv10|Vfx_whirl_ring_whirl_imp/Helix_(Mesh)|w=559|h=420|area=257822|first=26|peak=51|last=95|full=15
+LEDGERG|dash_strike|DungeonLevel/Vfx_skill_area(Mesh)|w=454|h=262|area=118778|first=0|peak=0|last=54|full=55
+LEDGERG|dash_strike|SwordTrail|w=296|h=263|area=77837|first=3|peak=34|last=50|full=2
+LEDGERG|dash_strike|DungeonLevel/Vfx_streak(Mesh)|w=252|h=146|area=36735|first=22|peak=22|last=40|full=19
+LEDGERG|leap_slash|DungeonLevel/Vfx_skill_area(Mesh)|w=389|h=225|area=87266|first=0|peak=0|last=54|full=55
+LEDGERG|leap_slash|SwordTrail|w=179|h=193|area=33982|first=3|peak=34|last=50|full=8
+LEDGERG|leap_slash|DungeonLevel/MeshInstance3D(Mesh)|w=54|h=25|area=1614|first=33|peak=50|last=96|full=59
+LEDGERG|fire_lore|DungeonLevel/Vfx_skill_area(Mesh)|w=296|h=171|area=50658|first=52|peak=52|last=73|full=22
+LEDGERG|fire_lore|Vfx_element_fire/GroundTrace(Mesh)|w=278|h=160|area=14693|first=53|peak=55|last=96|full=33
+LEDGERG|fire_lore|Vfx_element_fire/Form_(Mesh)|w=106|h=106|area=2689|first=53|peak=58|last=85|full=19
+LEDGERG|ice_lore|DungeonLevel/Vfx_skill_area(Mesh)|w=296|h=171|area=50658|first=50|peak=50|last=71|full=22
+LEDGERG|ice_lore|Vfx_element_cold/GroundTrace(Mesh)|w=278|h=160|area=12912|first=51|peak=53|last=97|full=35
+LEDGERG|ice_lore|Frozen/Body(Mesh)|w=100|h=142|area=3538|first=50|peak=50|last=97|full=48
+LEDGERG|thunder_lore|Vfx_element_lightning/Form_(Mesh)|w=61|h=105|area=1514|first=38|peak=47|last=56|full=7
+LEDGERG|thunder_lore|Vfx_talisman_lightning_t/Form_(Mesh)|w=57|h=40|area=444|first=33|peak=34|last=36|full=4
+LEDGERG|thunder_lore|Area3D/Paper(Mesh)|w=21|h=16|area=321|first=33|peak=33|last=36|full=4
+LEDGERG|salpuri|DungeonLevel/Vfx_sheet_sal_burst(AnimatedSprite)|w=76|h=79|area=570|first=0|peak=18|last=34|full=13
+LEDGERG|salpuri|DungeonLevel/Vfx_sheet_seal_ripple(AnimatedSprite)|w=203|h=116|area=408|first=0|peak=19|last=45|full=13
+LEDGERG|seal_array|AoeField_seal_fire/Rim(Mesh)|w=415|h=239|area=99289|first=33|peak=33|last=97|full=65
+LEDGERG|seal_array|DungeonLevel/Vfx_ring(Mesh)|w=390|h=225|area=83318|first=33|peak=33|last=59|full=6
+LEDGERG|seal_array|AoeField_seal_fire/Body(Mesh)|w=378|h=219|area=82660|first=33|peak=97|last=97|full=39
+LEDGERG|blink|DungeonLevel/Vfx_sheet_blink_in(AnimatedSprite)|w=194|h=111|area=381|first=0|peak=16|last=45|full=13
+LEDGERG|blink|DungeonLevel/Vfx_sheet_blink_out(AnimatedSprite)|w=153|h=88|area=251|first=0|peak=16|last=45|full=12
+LEDGERG|mana_shield|DungeonLevel/Vfx_sheet_shield_on(AnimatedSprite)|w=207|h=117|area=531|first=33|peak=49|last=61|full=12
+LEDGERG|kill_basic|SwordTrail|w=178|h=160|area=28506|first=4|peak=19|last=28|full=8
+LEDGERG|kill_basic|DungeonLevel/BloodStain(Mesh)|w=107|h=62|area=6556|first=18|peak=36|last=121|full=94
+LEDGERG|kill_basic|DungeonLevel/Vfx_mark(Mesh)|w=62|h=33|area=2058|first=18|peak=26|last=121|full=100
+LEDGERG|kill_slash|DungeonLevel/Vfx_skill_area(Mesh)|w=426|h=246|area=104679|first=0|peak=0|last=58|full=59
+LEDGERG|kill_slash|SwordTrail|w=120|h=178|area=21329|first=3|peak=38|last=47|full=9
+LEDGERG|kill_slash|Skeleton3D/tripo_node_2d7b86bc(Mesh)|w=132|h=137|area=17977|first=37|peak=69|last=121|full=13
+LEDGERG|kill_bisect|SwordTrail|w=178|h=160|area=28498|first=4|peak=19|last=28|full=8
+LEDGERG|kill_bisect|DungeonLevel/MeshInstance3D(Mesh)|w=108|h=62|area=9640|first=18|peak=36|last=121|full=96
+LEDGERG|kill_bisect|DungeonLevel/Vfx_sheet_blood_splat(AnimatedSprite)|w=67|h=64|area=357|first=18|peak=32|last=38|full=11
+WARMCOV|cold|M:sprite3d bb0 tr1 sh0 ds1 nd0|whirl_lv10,salpuri,blink
+WARMCOV|cold|M:std t0 b0 s0 bb0 nd0 vc0 tex0 cull2 fog0|fire_lore,ice_lore,thunder_lore
+WARMCOV|cold|M:std t1 b0 s0 bb0 nd0 vc0 tex0 cull0 fog0|fire_lore,ice_lore,blink
+WARMCOV|cold|M:std t1 b1 s0 bb0 nd0 vc0 tex1 cull2 fog1|dash_strike
+WARMCOV|cold|M:std t1 b1 s0 bb3 nd0 vc1 tex1 cull0 fog1|fire_lore,ice_lore,thunder_lore
+WARMCOV|cold|P:ppm e6 o0|seal_array
+WARMCOV|cold|S:bisect_cut.gdshader|kill_slash
+WARMCOV|cold|S:bisect_outline.gdshader|kill_slash
+WARMCOV|cold|S:vfx_elements:ELEMENT_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]|fire_lore,ice_lore,thunder_lore
+WARMCOV|cold|S:vfx_elements:ELEMENT_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix]|fire_lore,ice_lore,thunder_lore
+WARMCOV|cold|S:vfx_elements:FLIGHT_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]|fire_lore,ice_lore,thunder_lore
+WARMCOV|cold|S:vfx_elements:FLIGHT_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix]|fire_lore,ice_lore,thunder_lore
+WARMCOV|cold|S:vfx_meshes:RAMP_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]|seal_array
+WARMCOV|cold|S:vfx_meshes:RAMP_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix]|salpuri,seal_array
+WARMCOV|cold|S:vfx_status:STATUS_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]|fire_lore,ice_lore,seal_array
+WARMCOV|cold|S:vfx_status:STATUS_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix]|fire_lore,ice_lore,seal_array
+WARMCOV|cold|S:vfx_whirl:SHAPE_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]|whirl_lv1,whirl_lv10
+WARMCOV|cold|S:vfx_whirl:SHAPE_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix]|whirl_lv1,whirl_lv10
+WARMCOV|warm|M:sprite3d bb1 tr1 sh0 ds1 nd0|used
+WARMCOV|warm|M:std t1 b0 s0 bb3 nd0 vc1 tex1 cull0 fog0|used
+WARMCOV|warm|M:std t1 b0 s1 bb0 nd0 vc0 tex1 cull0 fog0|used
+WARMCOV|warm|P:ppm e0 o0|used
+WARMCOV|warm|P:ppm e1 o0|used
+WARMCOV|warm|S:sword_trail:TRAIL_SHADER [unshaded,cull_disabled,depth_draw_never,depth_test_disabled,blend_add,fog_disabled]|used
+WARMCOV|warm|S:sword_trail:TRAIL_SHADER [unshaded,cull_disabled,depth_draw_never,depth_test_disabled,blend_mix]|used
+WARMCOV|warm|S:vfx_meshes:AREA_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix,shadows_disabled]|used
+WARMCOV|warm|S:vfx_meshes:MARK_SHADER [unshaded,blend_mix,depth_draw_never,cull_disabled]|used
+WARMCOV|warm|S:vfx_meshes:RIM_SHADER [unshaded,blend_add,depth_draw_never,cull_back,fog_disabled]|used
+WARMCOV|warm|S:vfx_meshes:RING_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]|used
+WARMCOV|warm|S:vfx_meshes:SHEET_SHADER [unshaded,cull_disabled,depth_draw_never,blend_add,fog_disabled]|used
+WARMCOV|warm|S:vfx_meshes:STREAK_SHADER [unshaded,blend_add,depth_draw_never,cull_disabled,fog_disabled]|used
+WARMCOV|warm|S:vfx_meshes:WARN_SHADER [unshaded,cull_disabled,depth_draw_never,blend_mix,shadows_disabled]|unused
+WARMCOV|warm|S:vfx_meshes:sh.code@L377 []|unused
