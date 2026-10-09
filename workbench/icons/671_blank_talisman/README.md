@@ -2,7 +2,7 @@
 
 - Tool: Codex built-in image_gen; exact model version not exposed.
 - Reference: game icons_a/items/talisman_fire.png, material/shape only.
-- Status: PD adoption pending; game intake has not happened.
+- Status: **PD adopted 2026-10-09** (judgment board 34 「합쳐」). Game intake = `assets/sprites/ui/icons_a/items/blank_talisman.png` (alpha>40 crop, content 75%, LANCZOS 80×80) wired to `data/items/blank_talisman.tres` — lands with #670+#671.
 - Source: 851097 bytes; SHA256 62ABAFF6DB3CC509721A48EED10A0A2032F2EA24558595C0D6439E2DC6D0B6A1.
 
 ## Exact generation prompt
