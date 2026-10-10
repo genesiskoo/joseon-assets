@@ -213,3 +213,10 @@ Retro Diffusion은 이 저장소에서 **MCP가 아니라 REST API**로 사용�
 - **큰 원본은 git에 넣지 않는다**(PD 2026-10-03, 게임 #579): 파일 하나 10MB 이상이거나 카드 하나의 원본 합이 50MB 이상이면(trace·raw 로그 묶음·원본 녹화·영상·대량 오디오 후보) 공개해도 되는 것은 GitHub Release, 나머지는 구글 드라이브 `내 드라이브/JoseonHunters_raw/<카드>/`(비공개 — 이 PC의 `G:\내 드라이브`에 복사하면 올라간다)로 뺀다. `reports/<카드>/` git에는 README(어디에 뒀는지·크기·SHA256)·도구·로그 요약·작은 대조표만 남긴다. 커밋 전에 `git diff --cached --stat`로 크기를 본다. 이미 올라간 것은 그대로 둔다(이력 재작성 금지).
 - **커밋 검사 `.githooks/pre-commit`**(게임 #581): 아트 파일(png·jpg·jpeg·webp·psd·svg·glb·gltf·fbx·obj·blend 등)은 50MB, 그 밖(json·log·wav·mp3·mp4·avi·zip 등)은 10MB부터 커밋을 막는다. `core.hooksPath`가 이 저장소 공용 설정에 절대 경로(`C:/workspace/joseon-assets/.githooks`)로 걸려 있어 모든 작업 트리에 적용된다. 막히면 위 규칙대로 Release·드라이브로 옮긴다 — `--no-verify`로 넘기지 않는다(PD 허락 때만).
 - **아트 에셋은 main에 들어가면 바로 push한다**(PD 2026-10-03 상시 지시 — 「push는 PD 지시 때만」의 예외): 원화·컨셉·아이콘·시트·스프라이트·3D 모델·렌더·showcase 이미지, workbench 후보 기록 포함. 아트 변화 과정을 GitHub에서 그대로 보이게 하려는 것이다. 오디오·검증 기록만 담긴 커밋은 PD 지시 때 push하되, 아트를 push할 때 main에 함께 쌓여 있으면 같이 올라가도 된다(큰 원본은 커밋 검사가 막는다). push 전에 API 키·토큰이 없는지 본다.
+
+## SNS 마케팅 인도 (PD 2026-10-10, 게임 #721)
+
+- 홍보 자료 인도는 `marketing/YYYY-MM-DD/`(KST 날짜)에 모으고 `marketing/README.md`에 연결한다. 기존 아트와 게임의 확정본·후보를 구분하며, 각 파일의 공개 허용 여부와 스포일러 수준을 대응표·manifest에 표시한다.
+- 초상은 원본 해상도·투명도를 유지한다. 없는 표정·입 프레임·성우 대사·Steam 링크를 있는 것으로 적지 않는다. 후보나 저해상도 보충 자료는 파일명과 표에 명시한다. 주모의 공개 초상은 평상복 대화 버전만 사용한다.
+- 큰 원본 보존 규칙은 그대로 적용한다. 공개 미디어 원본은 같은 저장소의 `marketing-YYYY-MM-DD` Release에 올리고, ZIP 내부도 `marketing/YYYY-MM-DD/` 경로를 유지한다. 날짜 폴더에는 다운로드·해시·개별 파일 정보와 작은 미리보기를 둔다.
+- 게임 변경을 main에 착륙할 때마다 해당 날짜의 `player_changes_public.csv`에 플레이어가 느끼는 변화를 한두 문장 추가한다. 날짜·카드·착륙 커밋·공개 여부·스포일러를 같이 적고, 본문에서는 개발 수치와 내부 디버그 용어를 뺀다. 체감 변화가 없는 작업은 그 사실을 적는다. 정본은 `marketing/README.md`.

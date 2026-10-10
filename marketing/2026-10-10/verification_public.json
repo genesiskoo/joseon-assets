@@ -1,0 +1,34 @@
+{
+  "public_allowed": true,
+  "spoiler": "mixed_see_manifest",
+  "game_source_commit": "627061d8021ce3013afae09f3c1cc1abaccc858a",
+  "original_art_and_audio_sha256_matches": 283,
+  "source_git_blob_sha256_matches": 272,
+  "video_count": 30,
+  "video_native_size": [
+    1920,
+    1080
+  ],
+  "video_fps": 60,
+  "all_videos_full_decode_pass": true,
+  "all_videos_audio_stream_and_audible_audio_pass": true,
+  "screenshot_count": 16,
+  "screenshot_native_size": [
+    3840,
+    2160
+  ],
+  "all_screenshot_dimensions_pass": true,
+  "visual_video_review": {
+    "representative_frames": 90,
+    "all_30_clips_covered": true,
+    "ui_off_no_hud_names_or_developer_markers": true,
+    "boss_title_occlusion_resolved": true,
+    "limitation": "Representative early/middle/late frames, not an exhaustive frame-by-frame review."
+  },
+  "visual_screenshot_review": {
+    "all_16_images_covered": true,
+    "ui_off_no_hud_names_or_developer_markers": true
+  },
+  "withheld_voice_files": 41,
+  "withheld_voice_hashes_absent": true
+}
