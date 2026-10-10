@@ -1,0 +1,1175 @@
+{
+ "A": {
+  "plate": "A",
+  "style": "a",
+  "clips": {
+   "01_basic": {
+    "begin": 27,
+    "end": 416,
+    "frames": 389,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 13,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 210,
+      "amount": 90,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 265,
+      "amount": 16,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 320,
+      "amount": 16,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "02_crit": {
+    "begin": 437,
+    "end": 661,
+    "frames": 224,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     }
+    ]
+   },
+   "03_fire": {
+    "begin": 682,
+    "end": 1118,
+    "frames": 436,
+    "hits": [
+     {
+      "n": 81,
+      "amount": 15,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 81,
+      "amount": 14,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 81,
+      "amount": 11,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 4,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 3,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 4,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 4,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 4,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 3,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 3,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 3,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 4,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 3,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 4,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 3,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "04_cold": {
+    "begin": 1139,
+    "end": 1572,
+    "frames": 433,
+    "hits": [
+     {
+      "n": 78,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 78,
+      "amount": 7,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 78,
+      "amount": 6,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "05_aoe8": {
+    "begin": 1593,
+    "end": 1764,
+    "frames": 171,
+    "hits": [
+     {
+      "n": 62,
+      "amount": 23,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 37,
+      "foe": 1,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 31,
+      "foe": 2,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 35,
+      "foe": 3,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 24,
+      "foe": 4,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 38,
+      "foe": 5,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 30,
+      "foe": 6,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 22,
+      "foe": 7,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "06_kill": {
+    "begin": 1785,
+    "end": 2032,
+    "frames": 247,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 98,
+      "amount": 20,
+      "foe": 1,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 178,
+      "amount": 12,
+      "foe": 2,
+      "crit": false,
+      "kill": true
+     }
+    ]
+   },
+   "07_bulgasari_heat": {
+    "begin": 2053,
+    "end": 2342,
+    "frames": 289,
+    "hits": [
+     {
+      "n": 53,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 110,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 165,
+      "amount": 59,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 220,
+      "amount": 56,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   }
+  }
+ },
+ "N716": {
+  "plate": "N716",
+  "style": "d",
+  "clips": {
+   "01_basic": {
+    "begin": 27,
+    "end": 416,
+    "frames": 389,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 13,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 210,
+      "amount": 90,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 265,
+      "amount": 16,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 320,
+      "amount": 16,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "02_crit": {
+    "begin": 437,
+    "end": 661,
+    "frames": 224,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     }
+    ]
+   },
+   "03_fire": {
+    "begin": 682,
+    "end": 1118,
+    "frames": 436,
+    "hits": [
+     {
+      "n": 81,
+      "amount": 11,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 81,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 81,
+      "amount": 13,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 4,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 3,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 4,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 4,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 4,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 3,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 3,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 3,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 4,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 3,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 4,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 3,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "04_cold": {
+    "begin": 1139,
+    "end": 1572,
+    "frames": 433,
+    "hits": [
+     {
+      "n": 78,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 78,
+      "amount": 6,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 78,
+      "amount": 7,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "05_aoe8": {
+    "begin": 1593,
+    "end": 1764,
+    "frames": 171,
+    "hits": [
+     {
+      "n": 62,
+      "amount": 23,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 37,
+      "foe": 1,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 31,
+      "foe": 2,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 35,
+      "foe": 3,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 24,
+      "foe": 4,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 38,
+      "foe": 5,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 30,
+      "foe": 6,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 22,
+      "foe": 7,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "06_kill": {
+    "begin": 1785,
+    "end": 2032,
+    "frames": 247,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 98,
+      "amount": 20,
+      "foe": 1,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 178,
+      "amount": 14,
+      "foe": 2,
+      "crit": false,
+      "kill": true
+     }
+    ]
+   },
+   "07_bulgasari_heat": {
+    "begin": 2053,
+    "end": 2342,
+    "frames": 289,
+    "hits": [
+     {
+      "n": 53,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 110,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 165,
+      "amount": 59,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 220,
+      "amount": 56,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   }
+  }
+ },
+ "N716L": {
+  "plate": "N716L",
+  "style": "d_soft",
+  "clips": {
+   "01_basic": {
+    "begin": 27,
+    "end": 416,
+    "frames": 389,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 13,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 210,
+      "amount": 90,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 265,
+      "amount": 16,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 320,
+      "amount": 16,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "02_crit": {
+    "begin": 437,
+    "end": 661,
+    "frames": 224,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     }
+    ]
+   },
+   "03_fire": {
+    "begin": 682,
+    "end": 1118,
+    "frames": 436,
+    "hits": [
+     {
+      "n": 81,
+      "amount": 13,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 81,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 81,
+      "amount": 13,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 4,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 3,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 257,
+      "amount": 4,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 4,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 4,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 317,
+      "amount": 3,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 3,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 3,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 377,
+      "amount": 4,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 3,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 4,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 437,
+      "amount": 3,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "04_cold": {
+    "begin": 1139,
+    "end": 1572,
+    "frames": 433,
+    "hits": [
+     {
+      "n": 78,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 78,
+      "amount": 6,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 78,
+      "amount": 7,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 314,
+      "amount": 2,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 434,
+      "amount": 2,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "05_aoe8": {
+    "begin": 1593,
+    "end": 1764,
+    "frames": 171,
+    "hits": [
+     {
+      "n": 62,
+      "amount": 23,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 37,
+      "foe": 1,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 31,
+      "foe": 2,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 35,
+      "foe": 3,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 24,
+      "foe": 4,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 38,
+      "foe": 5,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 62,
+      "amount": 30,
+      "foe": 6,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 62,
+      "amount": 22,
+      "foe": 7,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "06_kill": {
+    "begin": 1785,
+    "end": 2032,
+    "frames": 247,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 98,
+      "amount": 20,
+      "foe": 1,
+      "crit": true,
+      "kill": true
+     },
+     {
+      "n": 178,
+      "amount": 11,
+      "foe": 2,
+      "crit": false,
+      "kill": true
+     }
+    ]
+   },
+   "07_bulgasari_heat": {
+    "begin": 2053,
+    "end": 2342,
+    "frames": 289,
+    "hits": [
+     {
+      "n": 53,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 110,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 165,
+      "amount": 59,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 220,
+      "amount": 56,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   }
+  }
+ }
+}

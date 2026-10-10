@@ -1,0 +1,88 @@
+{
+  "source_commit": "d7289d9359c5893b1f267b2c3dbb0a0e8e4b30ec",
+  "fps": 60,
+  "scenario": "_feel_numbers_demo",
+  "vfx_fixed_seed": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "game_audio": true,
+  "command": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\workspace\\joseon\\.claude\\worktrees\\716-damage-numbers",
+    "--windowed",
+    "--resolution",
+    "1920x1080",
+    "--position",
+    "0,0",
+    "--fixed-fps",
+    "60",
+    "--disable-vsync",
+    "--write-movie",
+    "C:\\workspace\\joseon-assets\\reports\\716\\A\\capture_master.avi",
+    "--",
+    "--e2e=_feel_numbers_demo",
+    "--feel-lab=A"
+  ],
+  "setup": "E2E Lv6 prepared character; sure-hit enabled; separate save; normal enemy stats",
+  "clips": [
+    {
+      "id": "01_basic",
+      "label": "01_basic",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\A\\01_basic.mp4",
+      "seconds": 6.483,
+      "source_begin_frame": 27,
+      "source_end_frame": 416
+    },
+    {
+      "id": "02_crit",
+      "label": "02_crit",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\A\\02_crit.mp4",
+      "seconds": 3.733,
+      "source_begin_frame": 437,
+      "source_end_frame": 661
+    },
+    {
+      "id": "03_fire",
+      "label": "03_fire",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\A\\03_fire.mp4",
+      "seconds": 7.267,
+      "source_begin_frame": 682,
+      "source_end_frame": 1118
+    },
+    {
+      "id": "04_cold",
+      "label": "04_cold",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\A\\04_cold.mp4",
+      "seconds": 7.217,
+      "source_begin_frame": 1139,
+      "source_end_frame": 1572
+    },
+    {
+      "id": "05_aoe8",
+      "label": "05_aoe8",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\A\\05_aoe8.mp4",
+      "seconds": 2.85,
+      "source_begin_frame": 1593,
+      "source_end_frame": 1764
+    },
+    {
+      "id": "06_kill",
+      "label": "06_kill",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\A\\06_kill.mp4",
+      "seconds": 4.117,
+      "source_begin_frame": 1785,
+      "source_end_frame": 2032
+    },
+    {
+      "id": "07_bulgasari_heat",
+      "label": "07_bulgasari_heat",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\A\\07_bulgasari_heat.mp4",
+      "seconds": 4.817,
+      "source_begin_frame": 2053,
+      "source_end_frame": 2342
+    }
+  ]
+}
