@@ -11,5 +11,10 @@
 | 05_aoe8.mp4 | 05_aoe8 | 2.9초 |
 | 06_kill.mp4 | 06_kill | 4.1초 |
 | 07_bulgasari_heat.mp4 | 07_bulgasari_heat | 4.8초 |
+| 08_lightning.mp4 | 08_lightning | 7.1초 |
+| 09_flurry.mp4 | 09_flurry | 4.7초 |
+| 10_elite_alt.mp4 | 10_elite_alt | 9.0초 |
+| 11_cave.mp4 | 11_cave | 7.8초 |
+| 12_town.mp4 | 12_town | 6.0초 |
 
 원본 capture_master.avi / raw로그 capture_raw.log / 프레임 범위 manifest.json. MP4 전체 디코딩으로 영상·오디오 스트림 검증.

@@ -2,6 +2,8 @@ Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
 D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
 
 Movie Maker mode enabled, recording movie in 1280×720 @ 60 FPS...
+WARNING: Current available space on disk is low (3.06 GiB). MovieWriter will fail during movie recording if the disk runs out of available space.
+   at: begin (servers/movie_writer/movie_writer.cpp:117)
 [DevMode] ON
 [godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
 Joseon Hunters dev · D3D12 · NVIDIA GeForce RTX 4070
@@ -79,8 +81,8 @@ CAPTURE 03_fire BEGIN 682
 [Talisman] 화염부 → 적 (33.04559, 0.0, 53.95441) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
 [Skill] 화염부 → mp 50/50
 NUMDEMO 03_fire DMG 762 15 0 0 0
-NUMDEMO 03_fire DMG 762 14 1 0 0
-NUMDEMO 03_fire DMG 762 11 2 0 0
+NUMDEMO 03_fire DMG 762 13 1 0 0
+NUMDEMO 03_fire DMG 762 14 2 0 0
 [Seal] 부적 진 화염부 → (33.04559, 0.0, 53.95441) 반경 2.00 · 6.0초 · 굴림 2.8~4.2 (아낌 false)
 [Skill] 부적 진 → mp 44/50
 NUMDEMO 03_fire DMG 938 4 0 0 0
@@ -124,7 +126,7 @@ NUMDEMO 05_aoe8 DMG 1654 38 5 1 0
 NUMDEMO 05_aoe8 DMG 1654 30 6 1 1
 [Kill] +0 xp (lv 1, 0/20)
 NUMDEMO 05_aoe8 DMG 1654 22 7 0 0
-[Audio] 같은 순간 같은 큐 상한(3) 넘침 — bandit_hurt ×2 · blood_splat ×1 (버림 누계 3)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — bandit_hurt ×4 · blood_splat ×3 · hit_crit ×2 · hit_crit_low ×2 · bandit_wake ×1 (버림 누계 12)
 [Audio] 전투 밀집 — 노리는 무게 5 ≥ 5 → dungeon_tense
 [Audio] BGM dungeon_tense → dungeon_tense.ogg
 CAPTURE 05_aoe8 END 1764
@@ -149,15 +151,107 @@ NUMDEMO 07_bulgasari_heat DMG 2162 6 0 0 0
 NUMDEMO 07_bulgasari_heat DMG 2217 59 0 0 0
 NUMDEMO 07_bulgasari_heat DMG 2272 56 0 0 0
 CAPTURE 07_bulgasari_heat END 2342
-E2E _feel_numbers_demo PASS (검사 9)
+CAPTURE 08_lightning BEGIN 2363
+[Talisman] 벽력부 → 적 (33.04559, 0.0, 53.95441) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
+[Skill] 벽력부 → mp 50/50
+NUMDEMO 08_lightning DMG 2432 19 0 0 0
+[Seal] 부적 진 벽력부 → (33.04559, 0.0, 53.95441) 반경 2.00 · 6.0초 · 굴림 4.9~7.0 (아낌 false)
+[Skill] 부적 진 → mp 44/50
+NUMDEMO 08_lightning DMG 2608 6 0 0 0
+NUMDEMO 08_lightning DMG 2608 5 1 0 0
+NUMDEMO 08_lightning DMG 2608 6 2 0 0
+NUMDEMO 08_lightning DMG 2668 6 0 0 0
+NUMDEMO 08_lightning DMG 2668 7 1 0 0
+NUMDEMO 08_lightning DMG 2668 5 2 0 0
+NUMDEMO 08_lightning DMG 2728 6 0 0 0
+NUMDEMO 08_lightning DMG 2728 6 1 0 0
+NUMDEMO 08_lightning DMG 2728 6 2 0 0
+NUMDEMO 08_lightning DMG 2788 6 0 0 0
+NUMDEMO 08_lightning DMG 2788 7 1 0 0
+NUMDEMO 08_lightning DMG 2788 5 2 0 0
+CAPTURE 08_lightning END 2788
+CAPTURE 09_flurry BEGIN 2809
+[Skill] 연속 베기 → mp 41/50
+NUMDEMO 09_flurry DMG 2848 36 0 0 0
+NUMDEMO 09_flurry DMG 2879 58 0 1 0
+NUMDEMO 09_flurry DMG 2910 49 0 1 0
+NUMDEMO 09_flurry DMG 2941 56 0 1 0
+NUMDEMO 09_flurry DMG 2972 57 0 0 0
+[Skill] 연속 베기 → mp 35/50
+NUMDEMO 09_flurry DMG 3008 60 0 1 0
+NUMDEMO 09_flurry DMG 3036 47 0 1 0
+NUMDEMO 09_flurry DMG 3064 35 0 0 0
+CAPTURE 09_flurry END 3091
+CAPTURE 10_elite_alt BEGIN 3167
+NUMDEMO 10_elite_alt DMG 3210 12 0 0 0
+NUMDEMO 10_elite_alt DMG 3267 20 0 1 0
+NUMDEMO 10_elite_alt DMG 3322 19 0 1 0
+NUMDEMO 10_elite_alt DMG 3377 19 0 1 0
+NUMDEMO 10_elite_alt DMG 3432 13 0 0 0
+NUMDEMO 10_elite_alt DMG 3487 23 0 1 0
+NUMDEMO 10_elite_alt DMG 3542 17 0 1 0
+NUMDEMO 10_elite_alt DMG 3597 12 0 0 0
+CAPTURE 10_elite_alt END 3708
+[Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,eorin_heukrang elites=["방2:금색×3(깊이 0.50)"] named=-
+[Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
+[Save] level 흑랑 굴 1층 → 안 씀 (손맛 실험장 — 세이브 막음)
+[Dev] stairs StairsUp dir=-1 world=(44.5, 0.0, 56.5) screen=(593.7165, 335.9509)
+[Dev] stairs StairsDown dir=1 world=(7.5, 0.0, 23.5) screen=(408.583, -1534.551)
+[Dev] interact PusJar world=(29.5, 0.0, 42.5) screen=(547.433, -487.0705)
+[Dev] interact @Area3D@1692 world=(14.5, 0.0, 24.5) screen=(686.2831, -1368.878)
+[Dev] interact @Area3D@1693 world=(23.5, 0.0, 18.5) screen=(1380.534, -1288.714)
+[Dev] interact LootChest world=(29.5, 0.0, 39.5) screen=(686.2831, -567.2349)
+[Dev] interact @Area3D@1694 world=(40.5, 0.0, 38.5) screen=(1241.683, -300.0204)
+[Dev] interact LootPot world=(17.5, 0.0, 43.5) screen=(-54.25064, -781.0067)
+[Dev] interact @Area3D@1695 world=(18.5, 0.0, 44.5) screen=(-54.25041, -727.5637)
+[Dev] interact @Area3D@1696 world=(19.5, 0.0, 9.5) screen=(1611.95, -1636.093)
+[Dev] interact @Area3D@1697 world=(20.5, 0.0, 9.5) screen=(1658.234, -1609.372)
+[Dev] interact @Area3D@1698 world=(43.5, 0.0, 60.5) screen=(362.2997, 368.0159)
+[Dev] interact @Area3D@1699 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
+[Dev] interact @Area3D@1700 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
+[Dev] removed 20 enemies
+CAPTURE 11_cave BEGIN 3746
+NUMDEMO 11_cave DMG 3788 12 0 0 0
+NUMDEMO 11_cave DMG 3845 20 0 1 0
+NUMDEMO 11_cave DMG 3900 121 0 1 0
+[Click] world=(46.77279, 0.000391, 53.95442) cell=(46, 53)
+[Click] world=(46.77279, 0.000391, 53.95442) cell=(46, 53)
+NUMDEMO 11_cave DMG 3979 13 1 0 1
+[Kill] +0 xp (lv 1, 0/20)
+[Talisman] 화염부 → 적 (46.34853, 0.000391, 55.65147) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
+[Skill] 화염부 → mp 50/50
+NUMDEMO 11_cave DMG 4064 11 0 0 0
+CAPTURE 11_cave END 4214
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → 안 씀 (손맛 실험장 — 세이브 막음)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.3, 0.0, -2.05) screen=(933.8992, 321.2533)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+[Dev] removed 0 enemies
+CAPTURE 12_town BEGIN 4252
+NUMDEMO 12_town DMG 4294 12 0 0 0
+NUMDEMO 12_town DMG 4351 20 0 1 0
+NUMDEMO 12_town DMG 4406 121 0 1 0
+[Click] world=(1.272792, 0.000391, -1.545585) cell=(1, -2)
+[Click] world=(1.272792, 0.000391, -1.545585) cell=(1, -2)
+NUMDEMO 12_town DMG 4495 13 1 0 1
+[Kill] +0 xp (lv 1, 0/20)
+  · 12_town 마을 = 부적을 못 던진다(마을 규칙) — 화염부 건너뜀
+CAPTURE 12_town END 4613
+E2E _feel_numbers_demo PASS (검사 18)
 E2E SUMMARY: 1/1 PASS
-  E2E _feel_numbers_demo PASS (검사 9)
+  E2E _feel_numbers_demo PASS (검사 18)
 --------------------------------------------------------------------------------
 Done recording movie at path: C:\workspace\joseon-assets\reports\716\A\capture_master.avi
-2344 frames at 60 FPS (movie length: 00:00:39:04), recorded in 00:01:40 (39% of real-time speed).
-CPU render time: 1.90 seconds (average: 0.81 ms/frame)
-GPU render time: 23.51 seconds (average: 10.03 ms/frame)
-Encoding time: 17.50 seconds (average: 7.47 ms/frame)
+4615 frames at 60 FPS (movie length: 00:01:16:55), recorded in 00:02:44 (46% of real-time speed).
+CPU render time: 2.60 seconds (average: 0.56 ms/frame)
+GPU render time: 43.55 seconds (average: 9.44 ms/frame)
+Encoding time: 32.51 seconds (average: 7.05 ms/frame)
 --------------------------------------------------------------------------------
 WARNING: 17 ObjectDB instances were leaked at exit (run with `--verbose` for details).
    at: cleanup (core/object/object.cpp:2536)

@@ -7,6 +7,15 @@ DEUT = np.array([[0.367322, 0.860646, -0.227968],
                  [-0.011820, 0.042940, 0.968881]])
 
 
+# 같은 논문의 적색약(protanopia)·청색약(tritanopia) 세기 1.0 — 검수(#716): 시뮬 3종
+PROT = np.array([[0.152286, 1.052583, -0.204868],
+                 [0.114503, 0.786281, 0.099216],
+                 [-0.003882, -0.048116, 1.051998]])
+TRIT = np.array([[1.255528, -0.076749, -0.178779],
+                 [-0.078411, 0.930809, 0.147602],
+                 [0.004733, 0.691367, 0.303900]])
+
+
 def to_lin(c):
     c = np.asarray(c, dtype=np.float64) / 255.0
     return np.where(c <= 0.04045, c / 12.92, ((c + 0.055) / 1.055) ** 2.4)
@@ -21,6 +30,14 @@ def deut(rgb):
     """rgb (…,3) 0..255 → 색약 시뮬 rgb 0..255."""
     lin = to_lin(rgb)
     return to_srgb(lin @ DEUT.T)
+
+
+def prot(rgb):
+    return to_srgb(to_lin(rgb) @ PROT.T)
+
+
+def trit(rgb):
+    return to_srgb(to_lin(rgb) @ TRIT.T)
 
 
 def lab(rgb):

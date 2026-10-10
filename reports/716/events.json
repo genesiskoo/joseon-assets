@@ -94,14 +94,14 @@
      },
      {
       "n": 81,
-      "amount": 14,
+      "amount": 13,
       "foe": 1,
       "crit": false,
       "kill": false
      },
      {
       "n": 81,
-      "amount": 11,
+      "amount": 14,
       "foe": 2,
       "crit": false,
       "kill": false
@@ -385,6 +385,307 @@
       "foe": 0,
       "crit": false,
       "kill": false
+     }
+    ]
+   },
+   "08_lightning": {
+    "begin": 2363,
+    "end": 2788,
+    "frames": 425,
+    "hits": [
+     {
+      "n": 70,
+      "amount": 19,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 5,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 6,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 7,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 5,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 7,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 5,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "09_flurry": {
+    "begin": 2809,
+    "end": 3091,
+    "frames": 282,
+    "hits": [
+     {
+      "n": 40,
+      "amount": 36,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 71,
+      "amount": 58,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 102,
+      "amount": 49,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 133,
+      "amount": 56,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 164,
+      "amount": 57,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 200,
+      "amount": 60,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 228,
+      "amount": 47,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 256,
+      "amount": 35,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "10_elite_alt": {
+    "begin": 3167,
+    "end": 3708,
+    "frames": 541,
+    "hits": [
+     {
+      "n": 44,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 101,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 156,
+      "amount": 19,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 211,
+      "amount": 19,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 266,
+      "amount": 13,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 321,
+      "amount": 23,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 376,
+      "amount": 17,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 431,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "11_cave": {
+    "begin": 3746,
+    "end": 4214,
+    "frames": 468,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 234,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 319,
+      "amount": 11,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "12_town": {
+    "begin": 4252,
+    "end": 4613,
+    "frames": 361,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 244,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": true
      }
     ]
    }
@@ -478,7 +779,7 @@
     "hits": [
      {
       "n": 81,
-      "amount": 11,
+      "amount": 14,
       "foe": 0,
       "crit": false,
       "kill": false
@@ -492,7 +793,7 @@
      },
      {
       "n": 81,
-      "amount": 13,
+      "amount": 11,
       "foe": 2,
       "crit": false,
       "kill": false
@@ -590,7 +891,7 @@
     "hits": [
      {
       "n": 78,
-      "amount": 6,
+      "amount": 7,
       "foe": 0,
       "crit": false,
       "kill": false
@@ -737,7 +1038,7 @@
      },
      {
       "n": 178,
-      "amount": 14,
+      "amount": 12,
       "foe": 2,
       "crit": false,
       "kill": true
@@ -776,6 +1077,307 @@
       "foe": 0,
       "crit": false,
       "kill": false
+     }
+    ]
+   },
+   "08_lightning": {
+    "begin": 2363,
+    "end": 2788,
+    "frames": 425,
+    "hits": [
+     {
+      "n": 70,
+      "amount": 24,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 5,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 6,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 7,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 5,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 7,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 5,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "09_flurry": {
+    "begin": 2809,
+    "end": 3091,
+    "frames": 282,
+    "hits": [
+     {
+      "n": 40,
+      "amount": 36,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 71,
+      "amount": 58,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 102,
+      "amount": 49,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 133,
+      "amount": 56,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 164,
+      "amount": 57,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 200,
+      "amount": 60,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 228,
+      "amount": 47,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 256,
+      "amount": 35,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "10_elite_alt": {
+    "begin": 3167,
+    "end": 3708,
+    "frames": 541,
+    "hits": [
+     {
+      "n": 44,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 101,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 156,
+      "amount": 19,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 211,
+      "amount": 19,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 266,
+      "amount": 13,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 321,
+      "amount": 23,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 376,
+      "amount": 17,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 431,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "11_cave": {
+    "begin": 3746,
+    "end": 4214,
+    "frames": 468,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 234,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 319,
+      "amount": 14,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "12_town": {
+    "begin": 4252,
+    "end": 4613,
+    "frames": 361,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 244,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": true
      }
     ]
    }
@@ -869,21 +1471,21 @@
     "hits": [
      {
       "n": 81,
-      "amount": 13,
+      "amount": 14,
       "foe": 0,
       "crit": false,
       "kill": false
      },
      {
       "n": 81,
-      "amount": 13,
+      "amount": 12,
       "foe": 1,
       "crit": false,
       "kill": false
      },
      {
       "n": 81,
-      "amount": 13,
+      "amount": 11,
       "foe": 2,
       "crit": false,
       "kill": false
@@ -981,7 +1583,7 @@
     "hits": [
      {
       "n": 78,
-      "amount": 6,
+      "amount": 8,
       "foe": 0,
       "crit": false,
       "kill": false
@@ -995,7 +1597,7 @@
      },
      {
       "n": 78,
-      "amount": 7,
+      "amount": 6,
       "foe": 2,
       "crit": false,
       "kill": false
@@ -1167,6 +1769,307 @@
       "foe": 0,
       "crit": false,
       "kill": false
+     }
+    ]
+   },
+   "08_lightning": {
+    "begin": 2363,
+    "end": 2788,
+    "frames": 425,
+    "hits": [
+     {
+      "n": 70,
+      "amount": 23,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 5,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 246,
+      "amount": 6,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 7,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 306,
+      "amount": 5,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 366,
+      "amount": 6,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 6,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 7,
+      "foe": 1,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 426,
+      "amount": 5,
+      "foe": 2,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "09_flurry": {
+    "begin": 2809,
+    "end": 3091,
+    "frames": 282,
+    "hits": [
+     {
+      "n": 40,
+      "amount": 36,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 71,
+      "amount": 58,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 102,
+      "amount": 49,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 133,
+      "amount": 56,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 164,
+      "amount": 57,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 200,
+      "amount": 60,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 228,
+      "amount": 47,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 256,
+      "amount": 35,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "10_elite_alt": {
+    "begin": 3167,
+    "end": 3708,
+    "frames": 541,
+    "hits": [
+     {
+      "n": 44,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 101,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 156,
+      "amount": 19,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 211,
+      "amount": 19,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 266,
+      "amount": 13,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 321,
+      "amount": 23,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 376,
+      "amount": 17,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 431,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "11_cave": {
+    "begin": 3746,
+    "end": 4214,
+    "frames": 468,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 234,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": true
+     },
+     {
+      "n": 319,
+      "amount": 11,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     }
+    ]
+   },
+   "12_town": {
+    "begin": 4252,
+    "end": 4613,
+    "frames": 361,
+    "hits": [
+     {
+      "n": 43,
+      "amount": 12,
+      "foe": 0,
+      "crit": false,
+      "kill": false
+     },
+     {
+      "n": 100,
+      "amount": 20,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 155,
+      "amount": 121,
+      "foe": 0,
+      "crit": true,
+      "kill": false
+     },
+     {
+      "n": 244,
+      "amount": 13,
+      "foe": 1,
+      "crit": false,
+      "kill": true
      }
     ]
    }

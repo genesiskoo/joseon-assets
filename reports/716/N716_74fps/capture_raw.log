@@ -1,9 +1,11 @@
 Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
 D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
 
-Movie Maker mode enabled, recording movie in 1280×720 @ 60 FPS...
-WARNING: Current available space on disk is low (2.83 GiB). MovieWriter will fail during movie recording if the disk runs out of available space.
+Movie Maker mode enabled, recording movie in 1280×720 @ 74 FPS...
+WARNING: Current available space on disk is low (2.38 GiB). MovieWriter will fail during movie recording if the disk runs out of available space.
    at: begin (servers/movie_writer/movie_writer.cpp:117)
+WARNING: MovieWriter's audio mix rate (48000) can not be divided by the recording FPS (74). Audio may go out of sync over time.
+   at: begin (servers/movie_writer/movie_writer.cpp:129)
 [DevMode] ON
 [godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
 Joseon Hunters dev · D3D12 · NVIDIA GeForce RTX 4070
@@ -31,10 +33,10 @@ E2E start: _feel_numbers_demo
 [Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
 E2E ▶ _feel_numbers_demo
 FEEL_LAB: on plate=N716 overrides=1 stations=true
-[Dev] item 빈 부적 world=(32.5, 0.0, 70.5) screen=(-1072.484, 3072.144)
-[Dev] item 빈 부적 world=(33.5, 0.0, 69.5) screen=(-979.9173, 3072.143)
+[Dev] item 빈 부적 world=(32.5, 0.0, 70.5) screen=(-1072.484, 3072.118)
+[Dev] item 빈 부적 world=(33.5, 0.0, 69.5) screen=(-979.9173, 3072.118)
 [Field] deulnyeok seed=355022911 128x128 props=2252 packs=18 enemies=77 waypoint=(62, 65) roster=bandit,bat,talisman_master elites=["13:파란×4@구간3"]
-[Audio] BGM dungeon → dungeon_3.ogg
+[Audio] BGM dungeon → dungeon_1.ogg
 [Save] level 못골 들녘 → 안 씀 (손맛 실험장 — 세이브 막음)
 [Dev] stairs Down_cave dir=1 world=(88.5, 0.0, 3.5) screen=(7212.236, 897.1014)
 [Dev] interact Waypoint world=(62.5, 0.0, 65.5) screen=(3139.301, 1810.974)
@@ -64,134 +66,125 @@ FEEL_LAB: on plate=N716 overrides=1 stations=true
 [Dev] interact @Area3D@1078 world=(88.5, 0.0, 52.5) screen=(4944.352, 2158.353)
 FEEL_LAB: 정거장 row@(14, 50), maze@(10, 73), ring@(30, 56), pack3@(8, 91), pack6@(12, 32) · 허수아비 3 · 산적 3+6 · 기둥 33 · 원형 표식 24
 NUMDEMO INFO plate=N716 style=d
-CAPTURE 01_basic BEGIN 27
-NUMDEMO 01_basic DMG 69 12 0 0 0
-NUMDEMO 01_basic DMG 126 13 0 0 0
-NUMDEMO 01_basic DMG 181 12 0 0 0
-NUMDEMO 01_basic DMG 236 90 0 0 0
-NUMDEMO 01_basic DMG 291 16 0 0 0
-NUMDEMO 01_basic DMG 346 16 0 0 0
-CAPTURE 01_basic END 416
-CAPTURE 02_crit BEGIN 437
-NUMDEMO 02_crit DMG 479 12 0 0 0
-NUMDEMO 02_crit DMG 536 20 0 1 0
-NUMDEMO 02_crit DMG 591 121 0 1 0
-CAPTURE 02_crit END 661
-CAPTURE 03_fire BEGIN 682
+CAPTURE 01_basic BEGIN 32
+NUMDEMO 01_basic DMG 76 12 0 0 0
+NUMDEMO 01_basic DMG 146 13 0 0 0
+NUMDEMO 01_basic DMG 214 12 0 0 0
+NUMDEMO 01_basic DMG 282 90 0 0 0
+NUMDEMO 01_basic DMG 350 16 0 0 0
+NUMDEMO 01_basic DMG 418 16 0 0 0
+CAPTURE 01_basic END 488
+CAPTURE 02_crit BEGIN 513
+NUMDEMO 02_crit DMG 557 12 0 0 0
+NUMDEMO 02_crit DMG 627 20 0 1 0
+NUMDEMO 02_crit DMG 695 121 0 1 0
+CAPTURE 02_crit END 765
+CAPTURE 03_fire BEGIN 790
 [Talisman] 화염부 → 적 (33.04559, 0.0, 53.95441) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
 [Skill] 화염부 → mp 50/50
-NUMDEMO 03_fire DMG 762 14 0 0 0
-NUMDEMO 03_fire DMG 762 13 1 0 0
-NUMDEMO 03_fire DMG 762 11 2 0 0
+NUMDEMO 03_fire DMG 881 13 0 0 0
+NUMDEMO 03_fire DMG 881 12 1 0 0
+NUMDEMO 03_fire DMG 881 11 2 0 0
 [Seal] 부적 진 화염부 → (33.04559, 0.0, 53.95441) 반경 2.00 · 6.0초 · 굴림 2.8~4.2 (아낌 false)
 [Skill] 부적 진 → mp 44/50
-NUMDEMO 03_fire DMG 938 4 0 0 0
-NUMDEMO 03_fire DMG 938 3 1 0 0
-NUMDEMO 03_fire DMG 938 4 2 0 0
-NUMDEMO 03_fire DMG 998 4 0 0 0
-NUMDEMO 03_fire DMG 998 4 1 0 0
-NUMDEMO 03_fire DMG 998 3 2 0 0
-NUMDEMO 03_fire DMG 1058 3 0 0 0
-NUMDEMO 03_fire DMG 1058 3 1 0 0
-NUMDEMO 03_fire DMG 1058 4 2 0 0
-NUMDEMO 03_fire DMG 1118 3 0 0 0
-NUMDEMO 03_fire DMG 1118 4 1 0 0
-NUMDEMO 03_fire DMG 1118 3 2 0 0
-CAPTURE 03_fire END 1118
-CAPTURE 04_cold BEGIN 1139
+NUMDEMO 03_fire DMG 1079 4 0 0 0
+NUMDEMO 03_fire DMG 1079 3 1 0 0
+NUMDEMO 03_fire DMG 1079 4 2 0 0
+NUMDEMO 03_fire DMG 1153 4 0 0 0
+NUMDEMO 03_fire DMG 1153 4 1 0 0
+NUMDEMO 03_fire DMG 1153 3 2 0 0
+NUMDEMO 03_fire DMG 1227 3 0 0 0
+NUMDEMO 03_fire DMG 1227 3 1 0 0
+NUMDEMO 03_fire DMG 1227 4 2 0 0
+CAPTURE 03_fire END 1245
+CAPTURE 04_cold BEGIN 1270
 [Talisman] 빙결부 → 적 (33.04559, 0.0, 53.95441) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
 [Skill] 빙결부 → mp 50/50
-NUMDEMO 04_cold DMG 1216 7 0 0 0
-NUMDEMO 04_cold DMG 1216 6 1 0 0
-NUMDEMO 04_cold DMG 1216 7 2 0 0
+NUMDEMO 04_cold DMG 1357 7 0 0 0
+NUMDEMO 04_cold DMG 1357 6 1 0 0
+NUMDEMO 04_cold DMG 1357 7 2 0 0
 [Seal] 부적 진 빙결부 → (33.04559, 0.0, 53.95441) 반경 2.00 · 6.0초 · 굴림 1.4~2.1 (아낌 false)
 [Skill] 부적 진 → mp 44/50
-NUMDEMO 04_cold DMG 1452 2 0 0 0
-NUMDEMO 04_cold DMG 1452 2 1 0 0
-NUMDEMO 04_cold DMG 1452 2 2 0 0
-NUMDEMO 04_cold DMG 1572 2 0 0 0
-NUMDEMO 04_cold DMG 1572 2 1 0 0
-NUMDEMO 04_cold DMG 1572 2 2 0 0
-CAPTURE 04_cold END 1572
-CAPTURE 05_aoe8 BEGIN 1593
+NUMDEMO 04_cold DMG 1629 2 0 0 0
+NUMDEMO 04_cold DMG 1629 2 1 0 0
+NUMDEMO 04_cold DMG 1629 2 2 0 0
+CAPTURE 04_cold END 1721
+CAPTURE 05_aoe8 BEGIN 1746
 [Skill] 회오리베기 → mp 42/50
-NUMDEMO 05_aoe8 DMG 1654 23 0 0 0
-NUMDEMO 05_aoe8 DMG 1654 37 1 1 1
+NUMDEMO 05_aoe8 DMG 1814 23 0 0 0
+NUMDEMO 05_aoe8 DMG 1814 37 1 1 1
 [Kill] +0 xp (lv 1, 0/20)
-NUMDEMO 05_aoe8 DMG 1654 31 2 1 0
-NUMDEMO 05_aoe8 DMG 1654 35 3 1 0
-NUMDEMO 05_aoe8 DMG 1654 24 4 0 1
+NUMDEMO 05_aoe8 DMG 1814 31 2 1 0
+NUMDEMO 05_aoe8 DMG 1814 35 3 1 0
+NUMDEMO 05_aoe8 DMG 1814 24 4 0 1
 [Kill] +0 xp (lv 1, 0/20)
-NUMDEMO 05_aoe8 DMG 1654 38 5 1 0
-NUMDEMO 05_aoe8 DMG 1654 30 6 1 1
+NUMDEMO 05_aoe8 DMG 1814 38 5 1 0
+NUMDEMO 05_aoe8 DMG 1814 30 6 1 1
 [Kill] +0 xp (lv 1, 0/20)
-NUMDEMO 05_aoe8 DMG 1654 22 7 0 0
-[Audio] 같은 순간 같은 큐 상한(3) 넘침 — bandit_hurt ×5 · blood_splat ×3 · hit_crit ×2 · hit_crit_low ×2 · bandit_wake ×2 (버림 누계 14)
+NUMDEMO 05_aoe8 DMG 1814 22 7 0 0
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — bandit_hurt ×4 · blood_splat ×3 · hit_crit ×2 · hit_crit_low ×2 · bandit_wake ×2 (버림 누계 13)
 [Audio] 전투 밀집 — 노리는 무게 5 ≥ 5 → dungeon_tense
 [Audio] BGM dungeon_tense → dungeon_tense.ogg
-CAPTURE 05_aoe8 END 1764
-CAPTURE 06_kill BEGIN 1785
-NUMDEMO 06_kill DMG 1827 12 0 0 1
+CAPTURE 05_aoe8 END 1924
+CAPTURE 06_kill BEGIN 1949
+NUMDEMO 06_kill DMG 1993 12 0 0 1
 [Kill] +0 xp (lv 1, 0/20)
 [Click] world=(30.57071, 0.0, 54.44939) cell=(30, 54)
-NUMDEMO 06_kill DMG 1882 20 1 1 1
+NUMDEMO 06_kill DMG 2060 20 1 1 1
 [Kill] +0 xp (lv 1, 0/20)
 [Talisman] 화염부 → 적 (33.54056, 0.0, 54.16655) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
 [Skill] 화염부 → mp 50/50
-NUMDEMO 06_kill DMG 1962 12 2 0 1
+NUMDEMO 06_kill DMG 2155 15 2 0 1
 [Kill] +0 xp (lv 1, 0/20)
-CAPTURE 06_kill END 2032
-CAPTURE 07_bulgasari_heat BEGIN 2053
+CAPTURE 06_kill END 2225
+CAPTURE 07_bulgasari_heat BEGIN 2250
 [Click] world=(31.91421, 0.0, 55.08578) cell=(31, 55)
-NUMDEMO 07_bulgasari_heat DMG 2105 6 0 0 0
+NUMDEMO 07_bulgasari_heat DMG 2306 6 0 0 0
 [Audio] missing cue: boss_bulgasari_wake (파일 규약 design/audio.md §3)
+NUMDEMO 07_bulgasari_heat DMG 2376 6 0 0 0
 [Audio] 전투 밀집 끝 — 무게 ≤ 2가 6초 → dungeon
-[Audio] BGM dungeon → dungeon_3.ogg
-NUMDEMO 07_bulgasari_heat DMG 2162 6 0 0 0
-NUMDEMO 07_bulgasari_heat DMG 2217 59 0 0 0
-NUMDEMO 07_bulgasari_heat DMG 2272 56 0 0 0
-CAPTURE 07_bulgasari_heat END 2342
-CAPTURE 08_lightning BEGIN 2363
+[Audio] BGM dungeon → dungeon_1.ogg
+NUMDEMO 07_bulgasari_heat DMG 2444 59 0 0 0
+NUMDEMO 07_bulgasari_heat DMG 2512 56 0 0 0
+CAPTURE 07_bulgasari_heat END 2582
+CAPTURE 08_lightning BEGIN 2607
 [Talisman] 벽력부 → 적 (33.04559, 0.0, 53.95441) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
 [Skill] 벽력부 → mp 50/50
-NUMDEMO 08_lightning DMG 2432 24 0 0 0
+NUMDEMO 08_lightning DMG 2684 19 0 0 0
 [Seal] 부적 진 벽력부 → (33.04559, 0.0, 53.95441) 반경 2.00 · 6.0초 · 굴림 4.9~7.0 (아낌 false)
 [Skill] 부적 진 → mp 44/50
-NUMDEMO 08_lightning DMG 2608 6 0 0 0
-NUMDEMO 08_lightning DMG 2608 5 1 0 0
-NUMDEMO 08_lightning DMG 2608 6 2 0 0
-NUMDEMO 08_lightning DMG 2668 6 0 0 0
-NUMDEMO 08_lightning DMG 2668 7 1 0 0
-NUMDEMO 08_lightning DMG 2668 5 2 0 0
-NUMDEMO 08_lightning DMG 2728 6 0 0 0
-NUMDEMO 08_lightning DMG 2728 6 1 0 0
-NUMDEMO 08_lightning DMG 2728 6 2 0 0
-NUMDEMO 08_lightning DMG 2788 6 0 0 0
-NUMDEMO 08_lightning DMG 2788 7 1 0 0
-NUMDEMO 08_lightning DMG 2788 5 2 0 0
-CAPTURE 08_lightning END 2788
-CAPTURE 09_flurry BEGIN 2809
+NUMDEMO 08_lightning DMG 2882 6 0 0 0
+NUMDEMO 08_lightning DMG 2882 5 1 0 0
+NUMDEMO 08_lightning DMG 2882 6 2 0 0
+NUMDEMO 08_lightning DMG 2956 6 0 0 0
+NUMDEMO 08_lightning DMG 2956 7 1 0 0
+NUMDEMO 08_lightning DMG 2956 5 2 0 0
+NUMDEMO 08_lightning DMG 3030 6 0 0 0
+NUMDEMO 08_lightning DMG 3030 6 1 0 0
+NUMDEMO 08_lightning DMG 3030 6 2 0 0
+CAPTURE 08_lightning END 3048
+CAPTURE 09_flurry BEGIN 3073
 [Skill] 연속 베기 → mp 41/50
-NUMDEMO 09_flurry DMG 2848 36 0 0 0
-NUMDEMO 09_flurry DMG 2879 58 0 1 0
-NUMDEMO 09_flurry DMG 2910 49 0 1 0
-NUMDEMO 09_flurry DMG 2941 56 0 1 0
-NUMDEMO 09_flurry DMG 2972 57 0 0 0
+NUMDEMO 09_flurry DMG 3114 36 0 0 0
+NUMDEMO 09_flurry DMG 3152 58 0 1 0
+NUMDEMO 09_flurry DMG 3190 49 0 1 0
+NUMDEMO 09_flurry DMG 3228 56 0 1 0
+NUMDEMO 09_flurry DMG 3267 57 0 0 0
 [Skill] 연속 베기 → mp 35/50
-NUMDEMO 09_flurry DMG 3008 60 0 1 0
-NUMDEMO 09_flurry DMG 3036 47 0 1 0
-NUMDEMO 09_flurry DMG 3064 35 0 0 0
-CAPTURE 09_flurry END 3091
-CAPTURE 10_elite_alt BEGIN 3167
-NUMDEMO 10_elite_alt DMG 3210 12 0 0 0
-NUMDEMO 10_elite_alt DMG 3267 20 0 1 0
-NUMDEMO 10_elite_alt DMG 3322 19 0 1 0
-NUMDEMO 10_elite_alt DMG 3377 19 0 1 0
-NUMDEMO 10_elite_alt DMG 3432 13 0 0 0
-NUMDEMO 10_elite_alt DMG 3487 23 0 1 0
-NUMDEMO 10_elite_alt DMG 3542 17 0 1 0
-NUMDEMO 10_elite_alt DMG 3597 12 0 0 0
-CAPTURE 10_elite_alt END 3708
+NUMDEMO 09_flurry DMG 3311 60 0 1 0
+NUMDEMO 09_flurry DMG 3346 47 0 1 0
+NUMDEMO 09_flurry DMG 3380 35 0 0 0
+CAPTURE 09_flurry END 3392
+CAPTURE 10_elite_alt BEGIN 3506
+NUMDEMO 10_elite_alt DMG 3551 12 0 0 0
+NUMDEMO 10_elite_alt DMG 3622 20 0 1 0
+NUMDEMO 10_elite_alt DMG 3690 19 0 1 0
+NUMDEMO 10_elite_alt DMG 3757 19 0 1 0
+NUMDEMO 10_elite_alt DMG 3825 13 0 0 0
+NUMDEMO 10_elite_alt DMG 3893 23 0 1 0
+NUMDEMO 10_elite_alt DMG 3961 17 0 1 0
+NUMDEMO 10_elite_alt DMG 4029 12 0 0 0
+CAPTURE 10_elite_alt END 4140
 [Dungeon] heukrang_gul 1층 lv=2 seed=403727558 gen 64x64 rooms=6 up=(44, 56) down=(7, 23) enemies=20 roster=bandit,bat,eorin_heukrang elites=["방2:금색×3(깊이 0.50)"] named=-
 [Quest] heukrang_gul 1층 — 싹쓸이 셈 시작 20 (heukrang_clear:none)
 [Save] level 흑랑 굴 1층 → 안 씀 (손맛 실험장 — 세이브 막음)
@@ -210,18 +203,18 @@ CAPTURE 10_elite_alt END 3708
 [Dev] interact @Area3D@1699 world=(43.5, 0.0, 59.5) screen=(408.583, 341.2944)
 [Dev] interact @Area3D@1700 world=(21.5, 0.0, 39.5) screen=(316.0163, -781.0065)
 [Dev] removed 20 enemies
-CAPTURE 11_cave BEGIN 3746
-NUMDEMO 11_cave DMG 3788 12 0 0 0
-NUMDEMO 11_cave DMG 3845 20 0 1 0
-NUMDEMO 11_cave DMG 3900 121 0 1 0
+CAPTURE 11_cave BEGIN 4182
+NUMDEMO 11_cave DMG 4226 12 0 0 0
+NUMDEMO 11_cave DMG 4296 20 0 1 0
+NUMDEMO 11_cave DMG 4364 121 0 1 0
 [Click] world=(46.77279, 0.000391, 53.95442) cell=(46, 53)
 [Click] world=(46.77279, 0.000391, 53.95442) cell=(46, 53)
-NUMDEMO 11_cave DMG 3979 13 1 0 1
+NUMDEMO 11_cave DMG 4456 13 1 0 1
 [Kill] +0 xp (lv 1, 0/20)
 [Talisman] 화염부 → 적 (46.34853, 0.000391, 55.65147) (배율 1.28 · 아낌 false · 흩뿌리기 {  })
 [Skill] 화염부 → mp 50/50
-NUMDEMO 11_cave DMG 4064 14 0 0 0
-CAPTURE 11_cave END 4214
+NUMDEMO 11_cave DMG 4555 13 0 0 0
+CAPTURE 11_cave END 4705
 [Audio] BGM town → town.ogg
 [Save] level 못골 마을 → 안 씀 (손맛 실험장 — 세이브 막음)
 [Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
@@ -233,25 +226,25 @@ CAPTURE 11_cave END 4214
 [Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
 [Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
 [Dev] removed 0 enemies
-CAPTURE 12_town BEGIN 4252
-NUMDEMO 12_town DMG 4294 12 0 0 0
-NUMDEMO 12_town DMG 4351 20 0 1 0
-NUMDEMO 12_town DMG 4406 121 0 1 0
+CAPTURE 12_town BEGIN 4747
+NUMDEMO 12_town DMG 4791 12 0 0 0
+NUMDEMO 12_town DMG 4861 20 0 1 0
+NUMDEMO 12_town DMG 4929 121 0 1 0
 [Click] world=(1.272792, 0.000391, -1.545585) cell=(1, -2)
 [Click] world=(1.272792, 0.000391, -1.545585) cell=(1, -2)
-NUMDEMO 12_town DMG 4495 13 1 0 1
+NUMDEMO 12_town DMG 5033 13 1 0 1
 [Kill] +0 xp (lv 1, 0/20)
   · 12_town 마을 = 부적을 못 던진다(마을 규칙) — 화염부 건너뜀
-CAPTURE 12_town END 4613
+CAPTURE 12_town END 5157
 E2E _feel_numbers_demo PASS (검사 18)
 E2E SUMMARY: 1/1 PASS
   E2E _feel_numbers_demo PASS (검사 18)
 --------------------------------------------------------------------------------
-Done recording movie at path: C:\workspace\joseon-assets\reports\716\N716\capture_master.avi
-4615 frames at 60 FPS (movie length: 00:01:16:55), recorded in 00:02:58 (42% of real-time speed).
-CPU render time: 2.52 seconds (average: 0.55 ms/frame)
-GPU render time: 53.28 seconds (average: 11.55 ms/frame)
-Encoding time: 32.53 seconds (average: 7.05 ms/frame)
+Done recording movie at path: C:\workspace\joseon-assets\reports\716\N716_74fps\capture_master.avi
+5159 frames at 74 FPS (movie length: 00:01:09:53), recorded in 00:03:12 (35% of real-time speed).
+CPU render time: 2.76 seconds (average: 0.54 ms/frame)
+GPU render time: 60.48 seconds (average: 11.72 ms/frame)
+Encoding time: 36.59 seconds (average: 7.09 ms/frame)
 --------------------------------------------------------------------------------
 WARNING: 17 ObjectDB instances were leaked at exit (run with `--verbose` for details).
    at: cleanup (core/object/object.cpp:2536)

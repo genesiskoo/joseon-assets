@@ -1,0 +1,128 @@
+{
+  "source_commit": "1c76784dc07ce1fcaff3558c7df45eb6d1697a62",
+  "fps": 74,
+  "scenario": "_feel_numbers_demo",
+  "vfx_fixed_seed": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "game_audio": true,
+  "command": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\workspace\\joseon\\.claude\\worktrees\\716-damage-numbers",
+    "--windowed",
+    "--resolution",
+    "1920x1080",
+    "--position",
+    "0,0",
+    "--fixed-fps",
+    "74",
+    "--disable-vsync",
+    "--write-movie",
+    "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\capture_master.avi",
+    "--",
+    "--e2e=_feel_numbers_demo",
+    "--feel-lab=N716"
+  ],
+  "setup": "E2E Lv6 prepared character; sure-hit enabled; separate save; normal enemy stats",
+  "clips": [
+    {
+      "id": "01_basic",
+      "label": "01_basic",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\01_basic.mp4",
+      "seconds": 6.162,
+      "source_begin_frame": 32,
+      "source_end_frame": 488
+    },
+    {
+      "id": "02_crit",
+      "label": "02_crit",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\02_crit.mp4",
+      "seconds": 3.405,
+      "source_begin_frame": 513,
+      "source_end_frame": 765
+    },
+    {
+      "id": "03_fire",
+      "label": "03_fire",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\03_fire.mp4",
+      "seconds": 6.149,
+      "source_begin_frame": 790,
+      "source_end_frame": 1245
+    },
+    {
+      "id": "04_cold",
+      "label": "04_cold",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\04_cold.mp4",
+      "seconds": 6.095,
+      "source_begin_frame": 1270,
+      "source_end_frame": 1721
+    },
+    {
+      "id": "05_aoe8",
+      "label": "05_aoe8",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\05_aoe8.mp4",
+      "seconds": 2.405,
+      "source_begin_frame": 1746,
+      "source_end_frame": 1924
+    },
+    {
+      "id": "06_kill",
+      "label": "06_kill",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\06_kill.mp4",
+      "seconds": 3.73,
+      "source_begin_frame": 1949,
+      "source_end_frame": 2225
+    },
+    {
+      "id": "07_bulgasari_heat",
+      "label": "07_bulgasari_heat",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\07_bulgasari_heat.mp4",
+      "seconds": 4.486,
+      "source_begin_frame": 2250,
+      "source_end_frame": 2582
+    },
+    {
+      "id": "08_lightning",
+      "label": "08_lightning",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\08_lightning.mp4",
+      "seconds": 5.959,
+      "source_begin_frame": 2607,
+      "source_end_frame": 3048
+    },
+    {
+      "id": "09_flurry",
+      "label": "09_flurry",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\09_flurry.mp4",
+      "seconds": 4.311,
+      "source_begin_frame": 3073,
+      "source_end_frame": 3392
+    },
+    {
+      "id": "10_elite_alt",
+      "label": "10_elite_alt",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\10_elite_alt.mp4",
+      "seconds": 8.568,
+      "source_begin_frame": 3506,
+      "source_end_frame": 4140
+    },
+    {
+      "id": "11_cave",
+      "label": "11_cave",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\11_cave.mp4",
+      "seconds": 7.068,
+      "source_begin_frame": 4182,
+      "source_end_frame": 4705
+    },
+    {
+      "id": "12_town",
+      "label": "12_town",
+      "path": "C:\\workspace\\joseon-assets\\reports\\716\\N716_74fps\\12_town.mp4",
+      "seconds": 5.541,
+      "source_begin_frame": 4747,
+      "source_end_frame": 5157
+    }
+  ]
+}

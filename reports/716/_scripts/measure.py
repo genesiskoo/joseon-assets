@@ -9,24 +9,30 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 from scipy import ndimage
-from colorsci import contrast, de76, de2000, deut, hexrgb
+from colorsci import contrast, de76, de2000, deut, prot, trit, hexrgb
 
 sys.stdout.reconfigure(encoding="utf-8")
 R = Path(__file__).resolve().parent.parent
 DBG = R / "_measure"
 DBG.mkdir(exist_ok=True)
 
-# 이름 · 클립 · n · 상자(x, y, w, h) · 채움 찾기 · 사양 헥스 · 판 A도 같은 자리인가(보통 움직임 = #618 A 그대로)
+# 이름 · 클립 · n · 판 N716 상자(x, y, w, h) · 채움 찾기 · 사양 헥스 · 판 A 상자(같은 숫자 · 보통 숫자는 가로 흔들림이 난수라 자리가 다르다 — None = 판 A 없음)
+# 검수 뒤 다시 찍음(#716 fix): 상자는 새 클립 프레임에서 다시 잡았다 · 부적 터짐 숫자는 판마다 1~4 다름(부적 비행 난수 — 이름은 판 N716 값)
 SAMPLES = [
-    ("물리 보통 12", "01_basic", 46, (705, 248, 24, 18), "lum", "#F2EDE0", True),
-    ("칼+무기 불(불 우세) 16", "01_basic", 268, (705, 249, 26, 21), "sat", "#FF6E3A", True),
-    ("부적 화염 13", "03_fire", 84, (903, 221, 22, 17), "sat", "#FF6E3A", True),
-    ("부적 빙결 6", "04_cold", 100, (875, 223, 14, 17), "lum", "#7FD0FF", True),
-    ("치명 20(+6f, 버팀)", "02_crit", 106, (698, 246, 46, 26), "sat", "#FFB847", False),
-    ("큰 치명 121(오름)", "02_crit", 180, (682, 172, 70, 40), "sat", "#FFB847", False),
-    ("처치(화염부) 14", "06_kill", 182, (843, 268, 44, 32), "sat", "#FF6E3A", False),
-    ("화상 틱 8", "03_fire", 200, (909, 240, 11, 14), "sat", "#D9623A", True),
-    ("진(불) 틱 4", "03_fire", 262, (910, 234, 12, 15), "sat", "#D9623A", False),
+    ("물리 보통 12 (들녘)", "01_basic", 46, (705, 248, 26, 19), "lum", "#F2EDE0", (710, 249, 24, 18)),
+    ("칼+무기 불(불 우세) 16", "01_basic", 268, (704, 249, 28, 20), "sat", "#FF6E3A", (703, 249, 24, 18)),
+    ("부적 화염 터짐 11", "03_fire", 84, (902, 220, 24, 19), "sat", "#FF6E3A", (909, 221, 22, 18)),
+    ("부적 빙결 7", "04_cold", 100, (869, 221, 14, 18), "lum", "#7FD0FF", (877, 223, 14, 18)),
+    ("벽력부 터짐 24", "08_lightning", 72, (865, 251, 22, 17), "lum", "#D8CCFF", None),
+    ("치명 20(+6f, 버팀)", "02_crit", 106, (698, 246, 46, 26), "sat", "#FFB847", None),
+    ("큰 치명 121(오름)", "02_crit", 180, (682, 172, 70, 40), "sat", "#FFB847", None),
+    ("처치(화염부) 12", "06_kill", 182, (843, 267, 46, 32), "sat", "#FF6E3A", None),
+    ("화상 틱 8", "03_fire", 200, (909, 240, 13, 17), "sat", "#E3794F", (909, 240, 13, 17)),
+    ("진(불) 틱 4", "03_fire", 262, (908, 233, 14, 16), "sat", "#E3794F", None),
+    ("물리 보통 12 (흑랑 굴)", "11_cave", 46, (709, 247, 25, 19), "lum", "#F2EDE0", (707, 248, 22, 18)),
+    ("물리 처치 13 (흑랑 굴)", "11_cave", 237, (718, 218, 40, 30), "lum", "#FFF8EC", (716, 219, 44, 35)),
+    ("물리 보통 12 (못골 흙)", "12_town", 46, (705, 247, 27, 18), "lum", "#F2EDE0", (705, 248, 24, 19)),
+    ("물리 처치 13 (못골 흙)", "12_town", 247, (685, 191, 42, 32), "lum", "#FFF8EC", (684, 193, 40, 33)),
 ]
 
 
@@ -73,9 +79,12 @@ def hx(c):
 
 rows = []
 got = {}
-for name, clip, n, box, mode, spec, also_a in SAMPLES:
-    for plate in (["N716", "A"] if also_a else ["N716"]):
-        fc, oc, bc, npx, dbg = measure(frame(plate, clip, n), box, mode if plate == "N716" or "틱" in name else "lum")
+for name, clip, n, box, mode, spec, box_a in SAMPLES:
+    for plate, b in [("N716", box)] + ([("A", box_a)] if box_a else []):
+        m = mode if plate == "N716" or "틱" in name else "lum"
+        if plate == "A" and "처치" in name and "물리" in name:
+            m = "sat"   # 판 A 처치 = 붉은금 채움
+        fc, oc, bc, npx, dbg = measure(frame(plate, clip, n), b, m)
         Image.fromarray(dbg.astype(np.uint8)).resize((dbg.shape[1] * 8, dbg.shape[0] * 8), Image.NEAREST).save(DBG / f"{plate}_{clip}_{n}.png")
         got[(plate, name)] = fc
         rows.append((plate, name, f"{clip} f{n}", spec if plate == "N716" else "—", hx(fc), npx, hx(oc), contrast(fc, oc), hx(bc), contrast(fc, bc)))
@@ -85,12 +94,19 @@ print("|---|---|---|---|---|---|---|---|---|")
 for p, name, fr, spec, f, npx, o, c1, b, c2 in rows:
     print(f"| {p} | {name} | {fr} | {spec} | {f} ({npx}) | {o} | {c1:.1f} | {b} | {c2:.1f} |")
 
-print("\n| 쌍 | 화면 ΔE76 | 화면 ΔE2000 | 색약 시뮬 ΔE76 | 색약 시뮬 ΔE2000 |")
+print("\n| 쌍 | 화면 ΔE76 | 적록 deut ΔE76 (2000) | 적색 prot ΔE76 (2000) | 청색 trit ΔE76 (2000) |")
 print("|---|---|---|---|---|")
-pairs = [("부적 화염 13", "치명 20(+6f, 버팀)"), ("부적 화염 13", "큰 치명 121(오름)"), ("칼+무기 불(불 우세) 16", "치명 20(+6f, 버팀)"),
-         ("처치(화염부) 14", "큰 치명 121(오름)"), ("화상 틱 8", "치명 20(+6f, 버팀)")]
+pairs = [("부적 화염 터짐 11", "치명 20(+6f, 버팀)"), ("부적 화염 터짐 11", "큰 치명 121(오름)"), ("칼+무기 불(불 우세) 16", "치명 20(+6f, 버팀)"),
+         ("처치(화염부) 12", "큰 치명 121(오름)"), ("화상 틱 8", "치명 20(+6f, 버팀)"), ("화상 틱 8", "부적 화염 터짐 11"),
+         ("벽력부 터짐 24", "치명 20(+6f, 버팀)"), ("벽력부 터짐 24", "부적 빙결 7")]
+
+
+def sims(ca, cb):
+    return " | ".join(f"{de76(f(ca), f(cb)):.1f} ({de2000(f(ca), f(cb)):.1f})" for f in (deut, prot, trit))
+
+
 for a, b in pairs:
     ca, cb = got[("N716", a)], got[("N716", b)]
-    print(f"| {a} ↔ {b} | {de76(ca, cb):.1f} | {de2000(ca, cb):.1f} | {de76(deut(ca), deut(cb)):.1f} | {de2000(deut(ca), deut(cb)):.1f} |")
+    print(f"| {a} ↔ {b} | {de76(ca, cb):.1f} | {sims(ca, cb)} |")
 f, g = hexrgb("#FF6E3A"), hexrgb("#FFB847")
-print(f"| (헥스) #FF6E3A ↔ #FFB847 | {de76(f, g):.1f} | {de2000(f, g):.1f} | {de76(deut(f), deut(g)):.1f} | {de2000(deut(f), deut(g)):.1f} |")
+print(f"| (헥스) #FF6E3A ↔ #FFB847 | {de76(f, g):.1f} | {sims(f, g)} |")
