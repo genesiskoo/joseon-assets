@@ -20,10 +20,18 @@ function save() {
 const isConcept = a => ['concept','concept_board','reference','illustration','key_art'].includes(a.media_type);
 const hasConnected = g => g.runtime.connection === 'connected';
 function versions(g) { return g.assets.filter(isConcept); }
+function preferredConcept(g) {
+ const items=versions(g);
+ const latest=aa=>aa.sort((a,b)=>String(b.decision?.date || '').localeCompare(String(a.decision?.date || '')) || (b.provenance?.source_card || 0)-(a.provenance?.source_card || 0))[0];
+ // Display choice is independent of approval; keep every earlier version selectable.
+ const anchors=items.filter(a=>a.decision?.status==='approved' && (a.asset_id.endsWith('-anchor') || (a.decision.scope || []).includes('identity') && (a.decision.scope || []).includes('face')));
+ const directions=items.filter(a=>a.decision?.status==='recommended' || a.decision?.status==='approved' && (a.decision.scope || []).includes('tone'));
+ return latest(anchors) || latest(directions) || latest(items.filter(a=>a.decision?.status==='approved')) || items[0];
+}
 function evidenceHTML(asset) {
  if (!asset) return '';
  const d = asset.decision || {};
- return `<p><span class="viz-badge">${esc(tr(d.status))}</span> ${esc((d.scope || []).map(tr).join(' · ') || '승인 범위 미확인')}</p>`+
+ return `<p><span class="viz-badge">${esc(tr(d.status))}</span> ${esc((d.scope || []).map(tr).join(' · ') || (['recommended','unreviewed','rejected'].includes(d.status) ? '승인 없음' : '승인 범위 미확인'))}</p>`+
  `<p class="text-small">${esc(d.date || '판정 날짜 미확인')}${d.card ? ' · #'+esc(d.card) : ''}</p>`+
  (d.quote ? `<blockquote>${esc(d.quote)}</blockquote>` : '')+
  (asset.panel ? `<p class="notice">${esc(asset.panel.selection || '선택 패널')} 선택 범위만 판정. 전체 보드 승인 아님${asset.preview?.crop_rect ? ' · 선택 패널 파생 미리보기' : ''}</p>` : '')+
@@ -38,6 +46,17 @@ function details(asset) {
 function imageHTML(asset, missing) {
  if (!asset?.preview?.src) return `<div class="image-stage"><p>${esc(asset?.preview?.missing_reason || missing)}</p></div>`;
  return `<figure><div class="image-stage"><img src="${esc(asset.preview.src)}" alt="${esc(asset.display_name)}"></div><figcaption>${esc(asset.display_name)}${asset.preview.crop_rect ? ' · 선택 패널' : ''}</figcaption></figure><div class="viz-row"><button class="btn" type="button" data-enlarge="${esc(asset.asset_id)}">확대</button>${asset.preview.original_url && !data.inline ? `<a class="btn" href="${esc(asset.preview.original_url)}" target="_blank" rel="noopener">원본 보기</a>` : ''}</div>${asset.preview.original_path ? `<details><summary>원본 파일 위치</summary><label class="form-label">복사할 로컬 경로<input class="form-control" data-original-path readonly value="${esc(asset.preview.original_path)}"></label><p class="text-small">${data.inline ? '원본은 로컬 파일입니다. 경로를 복사해 파일 탐색기에서 여세요.' : '브라우저가 로컬 링크를 차단하면 경로를 복사해 파일 탐색기에서 여세요.'}</p></details>` : ''}`;
+}
+function captureSummary(conditions) {
+ if (!conditions) return '';
+ if (typeof conditions==='string') return `<p class="text-small">촬영 조건: ${esc(conditions)}</p>`;
+ const kind=conditions['종류'] || conditions.kind || conditions.type;
+ const size=conditions['화면크기'] || conditions.resolution || conditions.viewport;
+ const camera=conditions['카메라'] || conditions.camera;
+ const action=conditions['동작'] || conditions.action || conditions.animation || conditions['시나리오'] || conditions.scenario;
+ const parts=[kind,Array.isArray(size) ? size.join(' × ') : typeof size==='string' ? size : null,camera,action].filter(v=>typeof v==='string' && v);
+ const limit=conditions['비교한계'] || conditions['비교 한계'] || conditions.limitations;
+ return `<p class="text-small">${esc(parts.length ? parts.join(' · ') : '촬영 조건은 근거 상세에서 확인')}</p>`+(typeof limit==='string' ? `<p class="text-small">비교 한계: ${esc(limit)}</p>` : '');
 }
 function runtimeHTML(g, current) {
  const r = current?.runtime || g.runtime;
@@ -54,12 +73,12 @@ function render() {
  if (!shown.some(g=>g.id===state.selected)) { state.selected=shown[0]?.id; state.version=''; }
  $('[data-count]').textContent = `${shown.length}개 형태 / 전체 ${groups.length}개 형태`;
  $('[data-list]').innerHTML = shown.map(g => {
- const cover = versions(g).find(a=>a.decision?.status==='approved') || versions(g)[0] || g.assets.find(a=>a.preview?.src);
+ const cover = preferredConcept(g) || g.assets.find(a=>a.preview?.src);
  return `<button class="btn viz-tile" type="button" data-select="${esc(g.id)}" aria-pressed="${g.id===state.selected}"><span class="catalogue-entry">${cover?.preview?.src ? `<img src="${esc(cover.preview.src)}" alt="">` : ''}<span>${esc(g.name)} · ${esc(g.form)}</span><span class="text-small">${esc(tr(g.role))} · ${hasConnected(g)?'게임 연결':g.runtime.connection==='definition_only'?'정의만 있음 · 사용 미확인':tr(g.runtime.connection)}</span></span></button>`;
  }).join('');
  const g = groups.find(g=>g.id===state.selected);
  if (!g) { $('[data-detail]').innerHTML='<p>검색 조건에 맞는 자료가 없습니다.</p>'; return; }
- const vv=versions(g), concept=vv.find(a=>a.asset_id===state.version) || vv.find(a=>a.decision?.status==='approved') || vv[0];
+ const vv=versions(g), concept=vv.find(a=>a.asset_id===state.version) || preferredConcept(g);
  state.version=concept?.asset_id || '';
  const types = {portrait:['portrait','portrait_sheet','portrait_atlas','portrait_still'],model_render:['model_render','render'],game_capture:['game_capture','game_screenshot','capture']};
  const media = g.assets.filter(a=>types[state.tab].includes(a.media_type));
@@ -67,7 +86,7 @@ function render() {
  state.currentVersion=current?.asset_id || '';
  const mediaSelector=media.length>1 ? `<label class="form-label">현재 자료<select class="form-select" data-current-version>${media.map(a=>`<option value="${esc(a.asset_id)}" ${a===current?'selected':''}>${esc(a.display_name)}</option>`).join('')}</select></label>` : '';
  const condition=current?.capture?.conditions;
- $('[data-detail]').innerHTML=`<h3>${esc(g.name)} · ${esc(g.form)}</h3><div class="comparison"><section><h3>원화 · 판정 이력</h3>${vv.length ? `<label class="form-label">원화 버전<select class="form-select" data-version>${vv.map(a=>`<option value="${esc(a.asset_id)}" ${a===concept?'selected':''}>${esc(a.display_name)} · ${esc(tr(a.decision?.status))}</option>`).join('')}</select></label>`:''}${evidenceHTML(concept)}${imageHTML(concept,'원화 자료 미확인')}${(concept?.notes || []).map(n=>`<p class="notice">${esc(n)}</p>`).join('')}${details(concept)}</section><section><h3>현재 게임 모습</h3><div class="viz-row" role="group" aria-label="현재 매체">${Object.keys(types).map(t=>`<button class="btn" type="button" data-tab="${t}" aria-pressed="${state.tab===t}">${esc(tr(t))}</button>`).join('')}</div>${runtimeHTML(g,current)}${mediaSelector}${imageHTML(current,{portrait:'현재 초상 이미지 미확인',model_render:'현재 모델 렌더 미확인 · 3D 파일만으로 화면을 추정하지 않음',game_capture:'현재 게임 캡처 미확인 · 월드 표시 확인 필요'}[state.tab])}${condition ? `<p class="text-small">캡처 조건: ${esc(typeof condition==='string'?condition:JSON.stringify(condition))}</p>`:''}${details(current)}<details><summary>현재 연결 근거</summary><pre class="metadata">${esc(JSON.stringify(g.runtime,null,2))}</pre></details></section></div>`;
+ $('[data-detail]').innerHTML=`<h3>${esc(g.name)} · ${esc(g.form)}</h3><div class="comparison"><section><h3>원화 · 판정 이력</h3>${vv.length ? `<label class="form-label">원화 버전<select class="form-select" data-version>${vv.map(a=>`<option value="${esc(a.asset_id)}" ${a===concept?'selected':''}>${esc(a.display_name)} · ${esc(tr(a.decision?.status))}</option>`).join('')}</select></label>`:''}${evidenceHTML(concept)}${imageHTML(concept,'원화 자료 미확인')}${(concept?.notes || []).map(n=>`<p class="notice">${esc(n)}</p>`).join('')}${details(concept)}</section><section><h3>현재 게임 모습</h3><div class="viz-row" role="group" aria-label="현재 매체">${Object.keys(types).map(t=>`<button class="btn" type="button" data-tab="${t}" aria-pressed="${state.tab===t}">${esc(tr(t))}</button>`).join('')}</div>${runtimeHTML(g,current)}${mediaSelector}${imageHTML(current,{portrait:'현재 초상 이미지 미확인',model_render:'현재 모델 렌더 미확인 · 3D 파일만으로 화면을 추정하지 않음',game_capture:'현재 게임 캡처 미확인 · 월드 표시 확인 필요'}[state.tab])}${captureSummary(condition)}${details(current)}<details><summary>현재 연결 근거</summary><pre class="metadata">${esc(JSON.stringify(g.runtime,null,2))}</pre></details></section></div>`;
 }
 for (const role of [...new Set(groups.map(g=>g.role))]) $('[data-role]').insertAdjacentHTML('beforeend',`<option value="${esc(role)}">${esc(tr(role))}</option>`);
 $('[data-search]').value=state.search; $('[data-role]').value=state.role; $('[data-status]').value=state.status;
@@ -88,6 +107,8 @@ window.addEventListener('openai:set_globals',event=>{const incoming=event.detail
 if(data.issues?.length){$('[data-issues]').hidden=false;$('[data-issues-content]').textContent=JSON.stringify(data.issues,null,2);}
 render();
 })();
+
+
 
 
 
