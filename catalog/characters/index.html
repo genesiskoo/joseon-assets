@@ -130,7 +130,7 @@ function render() {
  $('[data-count]').textContent = `${shown.length}개 형태 / 전체 ${groups.length}개 형태`;
  $('[data-list]').innerHTML = shown.map(g => {
  const cover = preferredConcept(g) || g.assets.find(a=>a.preview?.src);
- return `<button class="btn viz-tile" type="button" data-select="${esc(g.id)}" aria-pressed="${g.id===state.selected}"><span class="catalogue-entry">${cover?.preview?.src ? `<img src="${esc(cover.preview.src)}" alt="">` : ''}<span>${esc(g.name)} · ${esc(g.form)}</span><span class="text-small">${esc(tr(g.role))} · ${hasConnected(g)?'게임 연결':g.runtime.connection==='definition_only'?'정의만 있음 · 사용 미확인':tr(g.runtime.connection)}</span></span></button>`;
+ return `<div class="catalogue-entry"><figure data-thumbnail-select="${esc(g.id)}" class="cursor-interaction">${cover?.preview?.src ? `<img src="${esc(cover.preview.src)}" alt="${esc(g.name)} · ${esc(g.form)} 미리보기">` : `<figcaption>${esc(g.name)} · 이미지 미확인</figcaption>`}</figure><button class="btn" type="button" data-select="${esc(g.id)}" data-group="${esc(g.id)}" aria-pressed="${g.id===state.selected}">${esc(g.name)} · ${esc(g.form)}</button><span class="text-small">${esc(tr(g.role))} · ${hasConnected(g)?'게임 연결':g.runtime.connection==='definition_only'?'정의만 있음 · 사용 미확인':tr(g.runtime.connection)}</span></div>`;
  }).join('');
  const g = groups.find(g=>g.id===state.selected);
  if (!g) { $('[data-detail]').innerHTML='<p>검색 조건에 맞는 자료가 없습니다.</p>'; return; }
@@ -150,6 +150,8 @@ root.addEventListener('input',e=>{if(e.target.matches('[data-search]')){state.se
 root.addEventListener('change',e=>{if(e.target.matches('[data-current-version]')){state.currentVersion=e.target.value;render();save();}for(const key of ['role','status','version'])if(e.target.matches(`[data-${key}]`)){state[key]=e.target.value;render();save();}});
 root.addEventListener('click',e=>{
  if(e.target.matches('[data-original-path]'))e.target.select();
+ const thumb=e.target.closest('[data-thumbnail-select]');
+ if(thumb){const target=[...root.querySelectorAll('[data-group]')].find(b=>b.dataset.group===thumb.dataset.thumbnailSelect);target?.click();return;}
  const b=e.target.closest('button'); if(!b)return;
  if(b.hasAttribute('data-select')) {state.selected=b.dataset.select;state.version='';state.currentVersion='';render();save();}
  if(b.hasAttribute('data-tab')){state.tab=b.dataset.tab;state.currentVersion='';render();save();}
@@ -163,6 +165,7 @@ window.addEventListener('openai:set_globals',event=>{const incoming=event.detail
 if(data.issues?.length){$('[data-issues]').hidden=false;$('[data-issues-content]').textContent=JSON.stringify(data.issues,null,2);}
 render();
 })();
+
 
 
 
