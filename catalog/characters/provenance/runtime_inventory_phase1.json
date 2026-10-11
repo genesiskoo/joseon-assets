@@ -1,0 +1,1701 @@
+{
+  "schema_version": "1.0.0",
+  "inspection": "static_resource_connections_only",
+  "bindings": [
+    {
+      "runtime_id": "doho",
+      "resource_path": "actors/player.tscn",
+      "model_id": "doho",
+      "model_resource": "data/models/doho.tres",
+      "model_resources": [
+        "data/models/doho.tres"
+      ],
+      "model_variants": null,
+      "attachments": {
+        "weapon_scene": "\"res://assets/models/weapons/doho_sword_held.glb\"",
+        "weapon_placeholder": "false",
+        "weapon_bone": "\"mixamorig_RightHand\"",
+        "weapon_offset_pos": "Vector3(0.0093, 0.0832, 0.0361)",
+        "weapon_offset_rot_deg": "Vector3(-0.96, 179.24, 90.07)",
+        "sheath_scene": "\"res://assets/models/weapons/doho_sheath.glb\"",
+        "sheath_bone": "\"mixamorig_Hips\"",
+        "sheath_offset_pos": "Vector3(0.2223, 0.0826, 0.1241)",
+        "sheath_offset_rot_deg": "Vector3(-3.16, 85.21, -123.4)",
+        "cast_hand_bone": "\"mixamorig_LeftHand\"",
+        "cast_hand_scene": "\"res://assets/models/weapons/doho_cast_hand.glb\"",
+        "cast_hand_hide_scale": "0.02"
+      },
+      "loadout": {
+        "status": "not_checked",
+        "reason": "Player equipment is mutable runtime state; static resources do not establish capture loadout."
+      },
+      "scene_path": "assets/models/doho/doho.glb",
+      "portrait_id": "doho",
+      "portrait_resource": "data/portraits/doho.tres",
+      "definition_config": "[gd_scene load_steps=11 format=3]\n\n[ext_resource type=\"Script\" path=\"res://actors/player.gd\" id=\"1_player\"]\n[ext_resource type=\"Script\" path=\"res://actors/actor_visual.gd\" id=\"av_visual\"]\n[ext_resource type=\"Resource\" path=\"res://data/models/doho.tres\" id=\"md_doho\"]\n[ext_resource type=\"Script\" path=\"res://actors/player_combat.gd\" id=\"2_combat\"]\n\n[sub_resource type=\"CapsuleShape3D\" id=\"shape_body\"]\nradius = 0.35\nheight = 1.6\n\n[sub_resource type=\"CapsuleMesh\" id=\"mesh_body\"]\nradius = 0.35\nheight = 1.6\n\n[sub_resource type=\"StandardMaterial3D\" id=\"mat_body\"]\nalbedo_color = Color(0.12, 0.14, 0.32, 1)\nroughness = 0.9\n\n[sub_resource type=\"CylinderMesh\" id=\"mesh_hat\"]\ntop_radius = 0.55\nbottom_radius = 0.55\nheight = 0.06\n\n[sub_resource type=\"StandardMaterial3D\" id=\"mat_hat\"]\nalbedo_color = Color(0.05, 0.05, 0.05, 1)\nroughness = 1.0\n\n[sub_resource type=\"BoxMesh\" id=\"mesh_nose\"]\nsize = Vector3(0.12, 0.12, 0.3)\n\n[node name=\"Player\" type=\"CharacterBody3D\"]\ncollision_layer = 2\ncollision_mask = 1\nscript = ExtResource(\"1_player\")\n\n[node name=\"Collision\" type=\"CollisionShape3D\" parent=\".\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)\nshape = SubResource(\"shape_body\")\n\n[node name=\"Visual\" type=\"Node3D\" parent=\".\"]\nscript = ExtResource(\"av_visual\")\nmodel = ExtResource(\"md_doho\")\n\n[node name=\"Body\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)\nmesh = SubResource(\"mesh_body\")\nmaterial_override = SubResource(\"mat_body\")\n\n[node name=\"Heukrip\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62, 0)\nmesh = SubResource(\"mesh_hat\")\nmaterial_override = SubResource(\"mat_hat\")\n\n[node name=\"Nose\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0.4)\nmesh = SubResource(\"mesh_nose\")\nmaterial_override = SubResource(\"mat_hat\")\n\n[node name=\"LightRadius\" type=\"OmniLight3D\" parent=\".\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0)\nlight_color = Color(0.98, 0.92, 0.82, 1)\nlight_energy = 2.2\nomni_range = 9.0\n\n[node name=\"Combat\" type=\"Node\" parent=\".\"]\nscript = ExtResource(\"2_combat\")",
+      "model_config": "script = ExtResource(\"1\")\nid = \"doho\"\nscene_path = \"res://assets/models/doho/doho.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/doho_sword_held.glb\"\nweapon_placeholder = false\nweapon_bone = \"mixamorig_RightHand\"\nweapon_offset_pos = Vector3(0.0093, 0.0832, 0.0361)\nweapon_offset_rot_deg = Vector3(-0.96, 179.24, 90.07)\nsheath_scene = \"res://assets/models/weapons/doho_sheath.glb\"\nsheath_bone = \"mixamorig_Hips\"\nsheath_offset_pos = Vector3(0.2223, 0.0826, 0.1241)\nsheath_offset_rot_deg = Vector3(-3.16, 85.21, -123.4)\nwalk_blade = \"sheath\"\nsheathed_offset_y = -0.071\nidle_blade = \"forward\"\ncast_clip = \"cast\"\ncast_hand_bone = \"mixamorig_LeftHand\"\ncast_hand_scene = \"res://assets/models/weapons/doho_cast_hand.glb\"\ncast_hand_hide_scale = 0.02\nwalk_speed = 1.04\nrun_speed = 3.64\nrun_threshold = 2.6\nloco_scale_min = 0.75\nloco_scale_max = 1.5\nstep_phases = {\n\"run\": Vector2(0.383, 0.883),\n\"walk\": Vector2(0.085, 0.585)\n}\nspring_roots = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_ends = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_tips = PackedFloat32Array(0.2, 0.17, 0.18)\nspring_stiffness = 1.2\nspring_drag = 0.4\nspring_gravity = 0.8\nspring_stiffness_each = PackedFloat32Array(1.0, 1.4, 1.4)\nspring_drag_each = PackedFloat32Array(0.5, 0.5, 0.5)\nspring_gravity_each = PackedFloat32Array(0.05, 0.05, 0.05)\nflare_bones = PackedStringArray(\"Hem_L\", \"Hem_R\")\nflare_deg_per_turn = 55.0\nflare_max_deg = 45.0\nflare_attack = 0.06\nflare_release = 0.3\nflare_dead_rad = 1.0\nattack_impact = {\n\"attack\": 0.4,\n\"attack2\": 0.55,\n\"attack3\": 0.42,\n\"attack4\": 0.5,\n\"cast\": 0.68,\n\"kick_spin\": 0.32\n}\nattack_impact_default = 0.45\nswing_warp = {\n\"attack\": Vector3(0.33, 0.43, 0.52),\n\"attack2\": Vector3(0.47, 0.56, 0.62),\n\"attack3\": Vector3(0.39, 0.47, 0.54),\n\"attack4\": Vector3(0.45, 0.51, 0.56),\n\"skill_leap\": Vector3(0.205, 0.227, 0.3),\n\"skill_strike\": Vector3(0.44, 0.53, 0.6),\n\"skill_thrust\": Vector3(0.47, 0.52, 0.56),\n\"skill_whirl\": Vector3(0.335, 0.371, 0.42)\n}\nswing_phases = Vector4(0.46, 0.05, 0.08, 0.1)\nswing_phases_clip = {\n\"skill_leap\": Vector4(0.3, 0.015, 0.073, 0.13)\n}\nswing_knots = {\n\"skill_thrust\": PackedVector2Array(0, 0, 0.014718, 0.05, 0.032544, 0.1, 0.057589, 0.15, 0.089668, 0.2, 0.162378, 0.25, 0.202558, 0.3, 0.242567, 0.35, 0.36911, 0.4, 0.42648, 0.45, 0.46, 0.47, 0.51, 0.52, 0.59, 0.56, 0.69, 0.56, 1, 1),\n\"attack\": PackedVector2Array(0, 0, 0.0745, 0.1946, 0.1342, 0.3589, 0.1815, 0.43, 0.2558, 0.47, 0.3755, 0.52, 0.9149, 0.7462, 0.9485, 0.7784, 1, 1),\n\"attack2\": PackedVector2Array(0, 0, 0.1155, 0.447, 0.143, 0.5028, 0.1815, 0.56, 0.2805, 0.61, 0.5456, 0.635, 0.8428, 0.7516, 0.9069, 0.8, 1, 1),\n\"attack3\": PackedVector2Array(0, 0, 0.0264, 0.155, 0.0876, 0.345, 0.1165, 0.384, 0.1815, 0.47, 0.24, 0.52, 0.3373, 0.55, 0.8636, 0.7243, 0.932, 0.774, 1, 1),\n\"skill_strike\": PackedVector2Array(0, 0, 0.3113, 0.31, 0.3676, 0.422, 0.4126, 0.422, 0.4501, 0.53, 0.4801, 0.609, 0.6676, 0.609, 0.8927, 0.83, 1, 1),\n\"skill_whirl\": PackedVector2Array(0, 0, 0.05, 0.079, 0.3, 0.286, 0.3477, 0.286, 0.3911, 0.371, 0.4215, 0.415, 0.5257, 0.415, 0.5865, 0.474, 0.8686, 0.75, 1, 1)\n}\nswing_fill = {\n\"attack\": 0.66,\n\"attack2\": 0.66,\n\"attack3\": 0.66\n}\nswing_fill_visual = {\n\"attack\": 1.0,\n\"attack2\": 1.0,\n\"attack3\": 1.0\n}\nleap_takeoff = {\n\"skill_leap\": 0.14\n}\nsecond_hit = {\n\"skill_whirl\": 0.46\n}\nhit_speed = 2.5\nattack_chain = PackedStringArray(\"attack\", \"attack2\", \"attack3\")\nchain_reset_sec = 1.2\nchain_blend = 0.1\nchain_blend_in = 0.12\nchain_blend_out = 0.3\nchain_head_skip = 0.04\nrun_idle_blend = 0.18\nloop_end = {\n\"run\": 0.5833\n}\nstance_lock = PackedStringArray(\"run\")\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nclip_files = {\n\"idle\": \"res://assets/models/doho/doho_idle_ip.res\"\n}",
+      "tint": null,
+      "usage_evidence": [
+        "world/main.tscn",
+        "actors/player.tscn:Visual.model"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "actors/actor_visual.gd",
+          "exists": true,
+          "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+          "bytes": 124812
+        },
+        {
+          "repository": "game",
+          "path": "actors/model_def.gd",
+          "exists": true,
+          "sha256": "1fdde609d16ddee47bde11b9674c7ff5426bf53596376a28e39dd4ec194cf7ed",
+          "bytes": 38090
+        },
+        {
+          "repository": "game",
+          "path": "actors/player.gd",
+          "exists": true,
+          "sha256": "4fef1191402c61455f08ab575d0272f07a166bbeaa0a7458aaf0fa3a9d5abf16",
+          "bytes": 55833
+        },
+        {
+          "repository": "game",
+          "path": "actors/player.tscn",
+          "exists": true,
+          "sha256": "a791311162001ec1ea5874fa53e0de668051319c0abfbf740e0d98b658f048fe",
+          "bytes": 2163
+        },
+        {
+          "repository": "game",
+          "path": "actors/player_combat.gd",
+          "exists": true,
+          "sha256": "c0daa670f8eba9c4cf77056337351a9dd579d89f36543e88aab0833bea1a89cc",
+          "bytes": 153100
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/doho/doho.glb",
+          "exists": true,
+          "sha256": "aad81737e667ceb9f8e94343db07fa7f68fb20990a880557955729c3323029f9",
+          "bytes": 1703756
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/doho/doho_idle_ip.res",
+          "exists": true,
+          "sha256": "23182b5748367703b8e48f2bb0f99282beb8ad040c6fcf9082f91b6b40725775",
+          "bytes": 86156
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/weapons/doho_cast_hand.glb",
+          "exists": true,
+          "sha256": "c52e01e94bf07866e9192ee15599d9d0cc8818fbedbf5cde44d32fd2f5a7bc02",
+          "bytes": 13120
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/weapons/doho_sheath.glb",
+          "exists": true,
+          "sha256": "681d33df7b5ff85d4b18945ed9ca9bdf041a08d20fdcaa4b09f38a141c48fbb7",
+          "bytes": 17840
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/weapons/doho_sword_held.glb",
+          "exists": true,
+          "sha256": "2eb2c839c0c5e3937afff9945116d4945dfb7db6b0dfa93e0ea95fe2fdc33827",
+          "bytes": 19252
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/doho_h1_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f",
+          "bytes": 285320
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/doho_h1_idle_meta.json",
+          "exists": true,
+          "sha256": "7d77220b5fa41b009f168e03206207dc1b4200752c6a20f942d52d2079325f48",
+          "bytes": 218
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/doho_h1_idle_sheet.webp",
+          "exists": true,
+          "sha256": "5ac23feac23dc87df474fc1b33e56c31f20d2bc1a744c575e620656efd93cf8d",
+          "bytes": 2833528
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/neutral.png",
+          "exists": true,
+          "sha256": "522b0357e833bb2aa3ac4974013fd809401f7356bb56bb9ec1bccd6527d4ddd1",
+          "bytes": 1607596
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/serious.png",
+          "exists": true,
+          "sha256": "24dfb5acbc0321f42277820dbee4f81e5334ac2aff8ece1b4f59ca87dc3daee7",
+          "bytes": 1565371
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/shadow.png",
+          "exists": true,
+          "sha256": "f362d25d5ba035c339f186cfaf19738adc1741bcf2b543f94a1a9f50f180a1a4",
+          "bytes": 651
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/smug.png",
+          "exists": true,
+          "sha256": "e3dde31273a6ca964928e729e3d2268eaca9e4b7237ce254dbebadce6ab6ad57",
+          "bytes": 1585410
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/models/doho.tres",
+          "exists": true,
+          "sha256": "eff9aca26989718613d50296739ce7362bcc3da3dfe3baf40144d7f2f7f9cbd4",
+          "bytes": 4027
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/doho.tres",
+          "exists": true,
+          "sha256": "1313dbdb6b4888949dd7670fb2a1aa16d75404cce4cd3427a242bf9d393ebf28",
+          "bytes": 893
+        },
+        {
+          "repository": "game",
+          "path": "ui/dialogue_portrait.gd",
+          "exists": true,
+          "sha256": "a137de529c439dd8edd2a44d3147ac8dd459039bcc3e51c411dd2f195c6c3f73",
+          "bytes": 20032
+        },
+        {
+          "repository": "game",
+          "path": "world/main.tscn",
+          "exists": true,
+          "sha256": "fde6880a5552d866a66e3dc16522bd17bc5ab3574995d3aca1645bbcb666d64b",
+          "bytes": 4433
+        }
+      ],
+      "fingerprint": "106520e609003c05a857cdf95816f2258ba9ae9f5db0016b529c8e2ff0689087",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "elder",
+      "resource_path": "data/npcs/elder.tres",
+      "model_id": "elder_v2",
+      "model_resource": "data/models/elder_v2.tres",
+      "model_resources": [
+        "data/models/elder_v2.tres"
+      ],
+      "model_variants": null,
+      "attachments": {},
+      "loadout": {
+        "status": "not_checked",
+        "reason": "Player equipment is mutable runtime state; static resources do not establish capture loadout."
+      },
+      "scene_path": "assets/models/elder_v2/elder_v2.glb",
+      "portrait_id": "elder",
+      "portrait_resource": "data/portraits/elder.tres",
+      "definition_config": "script = ExtResource(\"1\")\nid = \"elder\"\ndisplay_name = \"촌장\"\ndialogue = \"res://data/dialogue/npc/elder.dialogue\"\nportrait = ExtResource(\"3\")\ncolor = Color(0.35, 0.3, 0.3, 1)\nheight = 1.6\nmodel = ExtResource(\"2\")",
+      "model_config": "script = ExtResource(\"1\")\nid = \"elder_v2\"\nscene_path = \"res://assets/models/elder_v2/elder_v2.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nwalk_speed = 1.05\nstep_phases = {\n\"walk\": Vector2(0.07, 0.57)\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+      "tint": null,
+      "usage_evidence": [
+        "world/town.tscn"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "actors/actor_visual.gd",
+          "exists": true,
+          "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+          "bytes": 124812
+        },
+        {
+          "repository": "game",
+          "path": "actors/model_def.gd",
+          "exists": true,
+          "sha256": "1fdde609d16ddee47bde11b9674c7ff5426bf53596376a28e39dd4ec194cf7ed",
+          "bytes": 38090
+        },
+        {
+          "repository": "game",
+          "path": "actors/npc_def.gd",
+          "exists": true,
+          "sha256": "46783a71a7d380c1f8876bf48449ff1aaf4b1d2f65526e491a13daa3ac5b4f1e",
+          "bytes": 4741
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/elder_v2/elder_v2.glb",
+          "exists": true,
+          "sha256": "404f2e2cc89130d69aa16c3cc9273679b2c7701a620ccef1fe773febe377fc04",
+          "bytes": 4736972
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/elder_b3_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "8ffd4c7ab90bdc38344f983d8ea6cb4a069db8004996706b03b5fe74804ceb3f",
+          "bytes": 290009
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/elder_b3_idle_meta.json",
+          "exists": true,
+          "sha256": "8ff98f49d414a8b136cb89782aa44ab031b859adef1066fae8d3fe99f700abed",
+          "bytes": 218
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/elder_b3_idle_sheet.webp",
+          "exists": true,
+          "sha256": "7b798e718b00039b31f27d8fab572af77444131dea007eb69773b87145729685",
+          "bytes": 2549632
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/elder.dialogue",
+          "exists": true,
+          "sha256": "33d4afcbd91e014c807bc76dad2b67f1753513ad063a805242ca8fd95ff98a20",
+          "bytes": 9017
+        },
+        {
+          "repository": "game",
+          "path": "data/models/elder_v2.tres",
+          "exists": true,
+          "sha256": "b521250365058d1e949f07107b13a4264410ea4333bbe88737a2f3b0caa7435c",
+          "bytes": 521
+        },
+        {
+          "repository": "game",
+          "path": "data/npcs/elder.tres",
+          "exists": true,
+          "sha256": "aceff775e68f8d5c167fc066d8d226577764a56ed90dfe9c2f5c8c859c920dc2",
+          "bytes": 522
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/elder.tres",
+          "exists": true,
+          "sha256": "c44673dc8918d71af7581ac72a897421c234d79987500b7a2b58ad72025fb3d5",
+          "bytes": 285
+        },
+        {
+          "repository": "game",
+          "path": "ui/dialogue_portrait.gd",
+          "exists": true,
+          "sha256": "a137de529c439dd8edd2a44d3147ac8dd459039bcc3e51c411dd2f195c6c3f73",
+          "bytes": 20032
+        },
+        {
+          "repository": "game",
+          "path": "world/town.tscn",
+          "exists": true,
+          "sha256": "9c3e6e6bdd6352f1c2b32af2267a8f8a619648fe66c3b66422709acb84c9ba4f",
+          "bytes": 8203
+        }
+      ],
+      "fingerprint": "45d337040818078ab0640fcae2b0dbd4dbf5458730199dab07b8f9201111e6eb",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "eoksoe",
+      "resource_path": "data/npcs/eoksoe.tres",
+      "model_id": "eoksoe",
+      "model_resource": "data/models/eoksoe.tres",
+      "model_resources": [
+        "data/models/eoksoe.tres"
+      ],
+      "model_variants": null,
+      "attachments": {
+        "sheath_scene": "\"res://assets/models/eoksoe/botjim.glb\"",
+        "sheath_bone": "\"mixamorig_Spine2\"",
+        "sheath_offset_pos": "Vector3(-0.02, -0.05, 0)",
+        "sheath_offset_rot_deg": "Vector3(0, 180, 0)"
+      },
+      "loadout": {
+        "status": "not_checked",
+        "reason": "Player equipment is mutable runtime state; static resources do not establish capture loadout."
+      },
+      "scene_path": "assets/models/eoksoe/eoksoe.glb",
+      "portrait_id": "eoksoe",
+      "portrait_resource": "data/portraits/eoksoe.tres",
+      "definition_config": "script = ExtResource(\"1\")\nid = \"eoksoe\"\ndisplay_name = \"억쇠\"\ndialogue = \"res://data/dialogue/npc/eoksoe.dialogue\"\nportrait = ExtResource(\"3\")\ncolor = Color(0.45, 0.35, 0.23, 1)\nheight = 1.65\nmodel = ExtResource(\"2\")\nappears_after_den = &\"heukrang_gul\"",
+      "model_config": "script = ExtResource(\"1\")\nid = \"eoksoe\"\nscene_path = \"res://assets/models/eoksoe/eoksoe.glb\"\nscale = 1.765\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.65\npixel_filter = false\nhit_speed = 1.0\nsheath_scene = \"res://assets/models/eoksoe/botjim.glb\"\nsheath_bone = \"mixamorig_Spine2\"\nsheath_offset_pos = Vector3(-0.02, -0.05, 0)\nsheath_offset_rot_deg = Vector3(0, 180, 0)\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+      "tint": null,
+      "usage_evidence": [
+        "world/town.tscn"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "actors/actor_visual.gd",
+          "exists": true,
+          "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+          "bytes": 124812
+        },
+        {
+          "repository": "game",
+          "path": "actors/model_def.gd",
+          "exists": true,
+          "sha256": "1fdde609d16ddee47bde11b9674c7ff5426bf53596376a28e39dd4ec194cf7ed",
+          "bytes": 38090
+        },
+        {
+          "repository": "game",
+          "path": "actors/npc_def.gd",
+          "exists": true,
+          "sha256": "46783a71a7d380c1f8876bf48449ff1aaf4b1d2f65526e491a13daa3ac5b4f1e",
+          "bytes": 4741
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/eoksoe/botjim.glb",
+          "exists": true,
+          "sha256": "213893234cb1288998a1c2f89d3267ae9a8414dda9082a8f71bd185c8801a181",
+          "bytes": 269148
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/eoksoe/eoksoe.glb",
+          "exists": true,
+          "sha256": "e6076410a65d6828d7329d76a2b9a519cfed812ecce7d4e6cc1c3537e3139d33",
+          "bytes": 1582016
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/eoksoe/neutral.png",
+          "exists": true,
+          "sha256": "964c516f3f98814d19dc36698932282b833e2670f13a69bd7c9987cb004d6435",
+          "bytes": 2256873
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/eoksoe/shadow.png",
+          "exists": true,
+          "sha256": "9071628446c91e9de74764be6c582daa9edc4d430930f3b91873c646fab51907",
+          "bytes": 492
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/eoksoe/smile.png",
+          "exists": true,
+          "sha256": "7dbfbcd28051b661a298d9c435bb93045166d3cdf54a1ac9188763a139864beb",
+          "bytes": 2144288
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/eoksoe.dialogue",
+          "exists": true,
+          "sha256": "660f0a2dd68d0b5ab654a4b740974aea80f7dbf32021ee76411aba25b41e4421",
+          "bytes": 898
+        },
+        {
+          "repository": "game",
+          "path": "data/models/eoksoe.tres",
+          "exists": true,
+          "sha256": "03c46d7f1ca7f49f73c725dd1836d106d02bae4eef3497bd2377743f89e333c5",
+          "bytes": 630
+        },
+        {
+          "repository": "game",
+          "path": "data/npcs/eoksoe.tres",
+          "exists": true,
+          "sha256": "0ce2328a21f5e116996124ae873ef432452440d603392b276d3e54bb16f88303",
+          "bytes": 562
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/eoksoe.tres",
+          "exists": true,
+          "sha256": "ca2652e01abf931e86fa03ceeed491ea91179514e38e972ac09c610a57f70b02",
+          "bytes": 730
+        },
+        {
+          "repository": "game",
+          "path": "ui/dialogue_portrait.gd",
+          "exists": true,
+          "sha256": "a137de529c439dd8edd2a44d3147ac8dd459039bcc3e51c411dd2f195c6c3f73",
+          "bytes": 20032
+        },
+        {
+          "repository": "game",
+          "path": "world/town.tscn",
+          "exists": true,
+          "sha256": "9c3e6e6bdd6352f1c2b32af2267a8f8a619648fe66c3b66422709acb84c9ba4f",
+          "bytes": 8203
+        }
+      ],
+      "fingerprint": "793b1673f1d3c8bd20a1fb28647567cf1bc461dfecb0b1c1dd1e85c8ad08f7fc",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "jumo",
+      "resource_path": "data/npcs/jumo.tres",
+      "model_id": "jumo",
+      "model_resource": "data/models/jumo.tres",
+      "model_resources": [
+        "data/models/jumo.tres"
+      ],
+      "model_variants": null,
+      "attachments": {},
+      "loadout": {
+        "status": "not_checked",
+        "reason": "Player equipment is mutable runtime state; static resources do not establish capture loadout."
+      },
+      "scene_path": "assets/models/jumo/jumo.glb",
+      "portrait_id": "jumo",
+      "portrait_resource": "data/portraits/jumo.tres",
+      "definition_config": "script = ExtResource(\"1\")\nid = \"jumo\"\ndisplay_name = \"주모\"\ndialogue = \"res://data/dialogue/npc/jumo.dialogue\"\nportrait = ExtResource(\"3\")\ncolor = Color(0.22, 0.25, 0.36, 1)\nheight = 1.6\nmodel = ExtResource(\"2\")\naway_seals = 2\naway_chance = 0.5\ngone_seals = 3\naway_bark = \"주모가 요새 통 안 보이네\"\ngone_flag = \"jumo_gone\"",
+      "model_config": "script = ExtResource(\"1\")\nid = \"jumo\"\nscene_path = \"res://assets/models/jumo/jumo.glb\"\nscale = 0.914\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+      "tint": null,
+      "usage_evidence": [
+        "world/town.tscn"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "actors/actor_visual.gd",
+          "exists": true,
+          "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+          "bytes": 124812
+        },
+        {
+          "repository": "game",
+          "path": "actors/model_def.gd",
+          "exists": true,
+          "sha256": "1fdde609d16ddee47bde11b9674c7ff5426bf53596376a28e39dd4ec194cf7ed",
+          "bytes": 38090
+        },
+        {
+          "repository": "game",
+          "path": "actors/npc_def.gd",
+          "exists": true,
+          "sha256": "46783a71a7d380c1f8876bf48449ff1aaf4b1d2f65526e491a13daa3ac5b4f1e",
+          "bytes": 4741
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/jumo/jumo.glb",
+          "exists": true,
+          "sha256": "50024743a604d2d89187c5b001ecf0514020a16d64389e2852a3f23415b18207",
+          "bytes": 1815560
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/jumo_b4_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "b20e61faaa363ea96f741db26fca7ee4b29cecd0f1d436a1ee92c9158c5ef000",
+          "bytes": 274884
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/jumo_b4_idle_meta.json",
+          "exists": true,
+          "sha256": "ce0adef6b1b30dc1e0cc5e4d30c652382aada89809f13575453dd2213a91a06f",
+          "bytes": 217
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/jumo_b4_idle_sheet.webp",
+          "exists": true,
+          "sha256": "27fcd267bda9e2f3a96dffe6f87c50f135cb85e69f491ca898abcb99b79b38cd",
+          "bytes": 2194814
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/jumo.dialogue",
+          "exists": true,
+          "sha256": "8be913e16972a29ae195e102790eeb5aaf1284b2b1398298990229d14af85b47",
+          "bytes": 10979
+        },
+        {
+          "repository": "game",
+          "path": "data/models/jumo.tres",
+          "exists": true,
+          "sha256": "2bd00af0379f4779dfda52cbdcfee288fac1636c2652371f6ecc66e3baf53933",
+          "bytes": 447
+        },
+        {
+          "repository": "game",
+          "path": "data/npcs/jumo.tres",
+          "exists": true,
+          "sha256": "ed05a9dbe8a843402760d0aa358f7e42402af9005ad8d6041fdc6d481a5f308c",
+          "bytes": 638
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/jumo.tres",
+          "exists": true,
+          "sha256": "49b7db40af7fee07b2e26e8ac544423bad421ff7493780deda9d4ca4aa9b4cdf",
+          "bytes": 283
+        },
+        {
+          "repository": "game",
+          "path": "ui/dialogue_portrait.gd",
+          "exists": true,
+          "sha256": "a137de529c439dd8edd2a44d3147ac8dd459039bcc3e51c411dd2f195c6c3f73",
+          "bytes": 20032
+        },
+        {
+          "repository": "game",
+          "path": "world/town.tscn",
+          "exists": true,
+          "sha256": "9c3e6e6bdd6352f1c2b32af2267a8f8a619648fe66c3b66422709acb84c9ba4f",
+          "bytes": 8203
+        }
+      ],
+      "fingerprint": "b76c4b4084233222d82252f1f1dcde0ee7b12555939631fa1c4fd25229f2cd42",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "merchant",
+      "resource_path": "data/npcs/merchant.tres",
+      "model_id": "merchant_v2",
+      "model_resource": "data/models/merchant_v2.tres",
+      "model_resources": [
+        "data/models/merchant_v2.tres"
+      ],
+      "model_variants": null,
+      "attachments": {},
+      "loadout": {
+        "status": "not_checked",
+        "reason": "Player equipment is mutable runtime state; static resources do not establish capture loadout."
+      },
+      "scene_path": "assets/models/merchant_v2/merchant_v2.glb",
+      "portrait_id": "merchant",
+      "portrait_resource": "data/portraits/merchant.tres",
+      "definition_config": "script = ExtResource(\"1\")\nid = \"merchant\"\ndisplay_name = \"김 영감\"\ndialogue = \"res://data/dialogue/npc/merchant.dialogue\"\nportrait = ExtResource(\"3\")\ncolor = Color(0.55, 0.42, 0.28, 1)\nheight = 1.5\nmodel = ExtResource(\"2\")",
+      "model_config": "script = ExtResource(\"1\")\nid = \"merchant_v2\"\nscene_path = \"res://assets/models/merchant_v2/merchant_v2.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.5\npixel_filter = false\nwalk_speed = 0.8\nstep_phases = {\n\"walk\": Vector2(0.063, 0.563)\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+      "tint": null,
+      "usage_evidence": [
+        "world/town.tscn"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "actors/actor_visual.gd",
+          "exists": true,
+          "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+          "bytes": 124812
+        },
+        {
+          "repository": "game",
+          "path": "actors/model_def.gd",
+          "exists": true,
+          "sha256": "1fdde609d16ddee47bde11b9674c7ff5426bf53596376a28e39dd4ec194cf7ed",
+          "bytes": 38090
+        },
+        {
+          "repository": "game",
+          "path": "actors/npc_def.gd",
+          "exists": true,
+          "sha256": "46783a71a7d380c1f8876bf48449ff1aaf4b1d2f65526e491a13daa3ac5b4f1e",
+          "bytes": 4741
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/merchant_v2/merchant_v2.glb",
+          "exists": true,
+          "sha256": "c876ebcc97e242e67136d8abdca00054d6614edf225ad768781cf5a5c9e5129e",
+          "bytes": 4474232
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/merchant_b1_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "777343f662edef98dffac41e6076bb9af0ba5f0073e817cda64a3b6327d95d06",
+          "bytes": 379401
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/merchant_b1_idle_meta.json",
+          "exists": true,
+          "sha256": "16aecba13bf27e209a8f597d8a1a9724fa32239e0093cee19d740a1365a60688",
+          "bytes": 225
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/merchant_b1_idle_sheet.webp",
+          "exists": true,
+          "sha256": "8ab9e8ccc1ec9e3883381bc900f06010d0305f27e6216d1ec0f5166e29d52ea9",
+          "bytes": 3406736
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/merchant/neutral.png",
+          "exists": true,
+          "sha256": "df61a1b15d7d18c9b5adc1ab1e434d6d47e8b8863386040a790e40cf092d9f79",
+          "bytes": 1588561
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/merchant/shadow.png",
+          "exists": true,
+          "sha256": "47a3ef2cc7b75cbf338b328ec0c7628c5c40d9e7d40b707ce6fe78b06eb5bc5c",
+          "bytes": 508
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/merchant/smile.png",
+          "exists": true,
+          "sha256": "549a5f20f88e9c07612c87ec5dd85a05a4c1f8ae608ba37c723378714271970a",
+          "bytes": 1545711
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/merchant.dialogue",
+          "exists": true,
+          "sha256": "0a26dde0f9610662cce91d267e65db4e45c2578a521ca0e7c0871d7c4cf3fca3",
+          "bytes": 6444
+        },
+        {
+          "repository": "game",
+          "path": "data/models/merchant_v2.tres",
+          "exists": true,
+          "sha256": "88b2dbb5893364076e68a4b9fbf15fdf5c306e187fbfed0cd1461621968cd1f2",
+          "bytes": 531
+        },
+        {
+          "repository": "game",
+          "path": "data/npcs/merchant.tres",
+          "exists": true,
+          "sha256": "cfc5c092ccc080d510993aaeb09136ba90894892c5f0193ae1c4c9cd2d173b84",
+          "bytes": 540
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/merchant.tres",
+          "exists": true,
+          "sha256": "8514308df840297738ff727185154ee68161bc5974f020cbb2384d38e9483ca9",
+          "bytes": 812
+        },
+        {
+          "repository": "game",
+          "path": "ui/dialogue_portrait.gd",
+          "exists": true,
+          "sha256": "a137de529c439dd8edd2a44d3147ac8dd459039bcc3e51c411dd2f195c6c3f73",
+          "bytes": 20032
+        },
+        {
+          "repository": "game",
+          "path": "world/town.tscn",
+          "exists": true,
+          "sha256": "9c3e6e6bdd6352f1c2b32af2267a8f8a619648fe66c3b66422709acb84c9ba4f",
+          "bytes": 8203
+        }
+      ],
+      "fingerprint": "2c2e645bb85ff1fbaf5b80fc2792c6822622d295cea51a57eb0a5a406ce4f77a",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "shaman",
+      "resource_path": "data/npcs/shaman.tres",
+      "model_id": "shaman_v2",
+      "model_resource": "data/models/shaman_v2.tres",
+      "model_resources": [
+        "data/models/shaman_v2.tres"
+      ],
+      "model_variants": null,
+      "attachments": {},
+      "loadout": {
+        "status": "not_checked",
+        "reason": "Player equipment is mutable runtime state; static resources do not establish capture loadout."
+      },
+      "scene_path": "assets/models/shaman_v2/shaman_v2.glb",
+      "portrait_id": "shaman",
+      "portrait_resource": "data/portraits/shaman.tres",
+      "definition_config": "script = ExtResource(\"1\")\nid = \"shaman\"\ndisplay_name = \"무당 할매\"\ndialogue = \"res://data/dialogue/npc/shaman.dialogue\"\nportrait = ExtResource(\"3\")\ncolor = Color(0.85, 0.83, 0.75, 1)\nheight = 1.45\nmodel = ExtResource(\"2\")",
+      "model_config": "script = ExtResource(\"1\")\nid = \"shaman_v2\"\nscene_path = \"res://assets/models/shaman_v2/shaman_v2.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.5\npixel_filter = false\nwalk_speed = 1.06\nstep_phases = {\n\"walk\": Vector2(0.07, 0.57)\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+      "tint": null,
+      "usage_evidence": [
+        "world/town.tscn"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "actors/actor_visual.gd",
+          "exists": true,
+          "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+          "bytes": 124812
+        },
+        {
+          "repository": "game",
+          "path": "actors/model_def.gd",
+          "exists": true,
+          "sha256": "1fdde609d16ddee47bde11b9674c7ff5426bf53596376a28e39dd4ec194cf7ed",
+          "bytes": 38090
+        },
+        {
+          "repository": "game",
+          "path": "actors/npc_def.gd",
+          "exists": true,
+          "sha256": "46783a71a7d380c1f8876bf48449ff1aaf4b1d2f65526e491a13daa3ac5b4f1e",
+          "bytes": 4741
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/shaman_v2/shaman_v2.glb",
+          "exists": true,
+          "sha256": "353a880d5253bf97691d9d297f049452d7f82ec862703e8b682cbd0c20a91276",
+          "bytes": 5047680
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/shaman_b2_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "d9d54da99c9975414b4ee94c948adcc6d7d24fc3a333bcb0392dea7fe4f63359",
+          "bytes": 295996
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/shaman_b2_idle_meta.json",
+          "exists": true,
+          "sha256": "07adc3f12580a0aa8a5222f2b365f767e4227fdf3dfa6b060fdfcf142b1da8af",
+          "bytes": 222
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/shaman_b2_idle_sheet.webp",
+          "exists": true,
+          "sha256": "8ea529068f7ffa0f4a3467f3a7a286f531605aa4d0b9c7fb0f8bfe10265f5485",
+          "bytes": 2672162
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/shaman.dialogue",
+          "exists": true,
+          "sha256": "655fb636ae4668e854edba97f9d9c7f6ccec57d57e439a8bfb48f3fc446bbe94",
+          "bytes": 16389
+        },
+        {
+          "repository": "game",
+          "path": "data/models/shaman_v2.tres",
+          "exists": true,
+          "sha256": "80ffd3ec87116fbcd54b6d38ec2b047fa966c0a387af3de2d1bde29b36932f91",
+          "bytes": 524
+        },
+        {
+          "repository": "game",
+          "path": "data/npcs/shaman.tres",
+          "exists": true,
+          "sha256": "99d83f8088e89bb1a6bed304a64aafed7cf55eb1861c409a61b7268d713fa4aa",
+          "bytes": 536
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/shaman.tres",
+          "exists": true,
+          "sha256": "9f5b45e473b94c2a6a4b8ae1e40071a0445f09f60017ac9ecd8be464de11845e",
+          "bytes": 294
+        },
+        {
+          "repository": "game",
+          "path": "ui/dialogue_portrait.gd",
+          "exists": true,
+          "sha256": "a137de529c439dd8edd2a44d3147ac8dd459039bcc3e51c411dd2f195c6c3f73",
+          "bytes": 20032
+        },
+        {
+          "repository": "game",
+          "path": "world/town.tscn",
+          "exists": true,
+          "sha256": "9c3e6e6bdd6352f1c2b32af2267a8f8a619648fe66c3b66422709acb84c9ba4f",
+          "bytes": 8203
+        }
+      ],
+      "fingerprint": "1c3725817ff83f7246835d740fdb0497999991052c3ea6b89d51787326491afe",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "boss_gumiho",
+      "resource_path": "data/enemies/boss_gumiho.tres",
+      "model_id": "boss_gumiho",
+      "model_resource": "data/models/boss_gumiho.tres",
+      "model_resources": [
+        "data/models/boss_gumiho.tres"
+      ],
+      "model_variants": null,
+      "attachments": {},
+      "loadout": {
+        "status": "not_checked",
+        "reason": "Player equipment is mutable runtime state; static resources do not establish capture loadout."
+      },
+      "scene_path": "assets/models/boss_heukrang/boss_heukrang.glb",
+      "portrait_id": null,
+      "portrait_resource": null,
+      "definition_config": "script = ExtResource(\"1\")\nid = \"boss_gumiho\"\ndisplay_name = \"구미호(자리)\"\nbehavior = 0\nmax_hp = 400.0\ndefense = 6.0\nevasion = 25.0\nxp = 800\ndrop_class = 2\nboss_material = &\"gumiho_tail\"\ndmg_min = 16.0\ndmg_max = 24.0\naccuracy = 90.0\nattack_range = 1.9\nattack_cooldown = 1.3\nwindup = 0.45\nstagger_sec = 0.0\nknockback = 0.08\nresist_fire = 25.0\nresist_lightning = -25.0\nresist_sal = 75.0\ncan_freeze = false\nmove_speed = 3.6\naggro_range = 12.0\nkeep_distance_min = 3.0\nkeep_distance_max = 9.0\ndash_speed = 13.0\ndash_length = 8.0\ncolor = Color(0.7, 0.42, 0.16, 1)\nheight = 2.2\nradius = 0.9\nmodel = ExtResource(\"2\")\nmodel_tint = Color(1.55, 1.05, 0.6, 1)\nlaunch_mult = 0.0\nfamily = &\"gumiho\"\nkind = 2\nside = 1\nbody = 1\nregion_tier = 4\nelite_ok = false\nres_custom = true\nboss_scene = \"res://actors/boss_gumiho.tscn\"",
+      "model_config": "script = ExtResource(\"1\")\nid = \"boss_gumiho\"\nscene_path = \"res://assets/models/boss_heukrang/boss_heukrang.glb\"\nscale = 2.75\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 3.0\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 1.581\nrun_speed = 6.131\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.044, 0.446),\n\"walk\": Vector2(0.258, 0.754)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+      "tint": "Color(1.55, 1.05, 0.6, 1)",
+      "usage_evidence": [
+        "data/dungeons/bongmil_gul.tres"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "actors/actor_visual.gd",
+          "exists": true,
+          "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+          "bytes": 124812
+        },
+        {
+          "repository": "game",
+          "path": "actors/boss.gd",
+          "exists": true,
+          "sha256": "9499f2b61155705cf99f774821b4686408510af65eccfbf75467e646bb209529",
+          "bytes": 15226
+        },
+        {
+          "repository": "game",
+          "path": "actors/boss.tscn",
+          "exists": true,
+          "sha256": "4a34cc22ebbcbe0c2056e77ea9d9ea6f80e64fe3d9f3f783b021e8b38121a76c",
+          "bytes": 841
+        },
+        {
+          "repository": "game",
+          "path": "actors/boss_gumiho.gd",
+          "exists": true,
+          "sha256": "d3c1831a0e9df3cf3a7ff1108abe35453bc3bd12c98b1e14c706dc14ad69094e",
+          "bytes": 2787
+        },
+        {
+          "repository": "game",
+          "path": "actors/boss_gumiho.tscn",
+          "exists": true,
+          "sha256": "e08ee5d8e7c71042b0185af5f96ba9527d286216bd89c0d662bae10c26ea2728",
+          "bytes": 266
+        },
+        {
+          "repository": "game",
+          "path": "actors/enemy_def.gd",
+          "exists": true,
+          "sha256": "6776c8e8939cd20816956b7cdf94a8e06fffe3dc9b4f3fc1a27fc512261387e5",
+          "bytes": 27092
+        },
+        {
+          "repository": "game",
+          "path": "actors/model_def.gd",
+          "exists": true,
+          "sha256": "1fdde609d16ddee47bde11b9674c7ff5426bf53596376a28e39dd4ec194cf7ed",
+          "bytes": 38090
+        },
+        {
+          "repository": "game",
+          "path": "assets/models/boss_heukrang/boss_heukrang.glb",
+          "exists": true,
+          "sha256": "9281324e4e87c9cb836ffa36e2d4c4031feb816d47c29d79f685e8a852730ffc",
+          "bytes": 1695512
+        },
+        {
+          "repository": "game",
+          "path": "data/dungeons/bongmil_gul.tres",
+          "exists": true,
+          "sha256": "25012044743d1522fa3cd2c28d769acafe9b8afd0a79cf2ebe52adcc0a4f36fa",
+          "bytes": 6121
+        },
+        {
+          "repository": "game",
+          "path": "data/enemies/boss_gumiho.tres",
+          "exists": true,
+          "sha256": "0dda041320b0fa0e69092b0cbd54ead89f2ed6c1752f99022085de39a989ae10",
+          "bytes": 1051
+        },
+        {
+          "repository": "game",
+          "path": "data/models/boss_gumiho.tres",
+          "exists": true,
+          "sha256": "0a5ec96918832b5c6a4692869849278a167d5750164babb1b8dd66b1ad171eb3",
+          "bytes": 1452
+        },
+        {
+          "repository": "game",
+          "path": "ui/dialogue_portrait.gd",
+          "exists": true,
+          "sha256": "a137de529c439dd8edd2a44d3147ac8dd459039bcc3e51c411dd2f195c6c3f73",
+          "bytes": 20032
+        }
+      ],
+      "fingerprint": "5ba68ed1a1c2f47c886985c372f079ae40efdb8c1784b81675cd7c65b60b594e",
+      "dependency_complete": true
+    }
+  ],
+  "portraits": [
+    {
+      "runtime_id": "cheongyeon",
+      "resource_path": "data/portraits/cheongyeon.tres",
+      "portrait_id": "cheongyeon",
+      "speaker_usage": [],
+      "definition_usage": [],
+      "connection": "definition_only",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/cheongyeon_c01_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "056037d464dfff515deae5d22e4b9b4665015babd02e0d4e85c43eae4224f0a8",
+          "bytes": 399765
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/cheongyeon_c01_idle_meta.json",
+          "exists": true,
+          "sha256": "547a44adc20feed0f589447768abe3e4e637e651e89d6a22a6225c8f0396c294",
+          "bytes": 232
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/cheongyeon_c01_idle_sheet.webp",
+          "exists": true,
+          "sha256": "16bd8c44d7aab8ab9c950bf6e6cd33441fa2b2b1ce14411f569529f3d510821e",
+          "bytes": 3678220
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/cheongyeon.tres",
+          "exists": true,
+          "sha256": "a620292110eb78d20bd1d4df802662f2e0863e94c54247f40bceee28558951b2",
+          "bytes": 295
+        }
+      ],
+      "fingerprint": "c74c7f07680891916b4980bfcc7d44c39ef514a4474a3f3599bb53a10751d0c8",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "doho",
+      "resource_path": "data/portraits/doho.tres",
+      "portrait_id": "doho",
+      "speaker_usage": [
+        "data/dialogue/dev/band_preview.dialogue",
+        "data/dialogue/event/seal_gate.dialogue",
+        "data/dialogue/event/shaman_quest.dialogue",
+        "data/dialogue/npc/dokkaebi.dialogue",
+        "data/dialogue/npc/elder.dialogue",
+        "data/dialogue/npc/jumo.dialogue",
+        "data/dialogue/npc/merchant.dialogue",
+        "data/dialogue/npc/shaman.dialogue"
+      ],
+      "definition_usage": [
+        "actors/player.tscn"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/doho_h1_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "b75861a5c0b73900a736c9e8268f0dc0133d6896043bed8410421795061dc04f",
+          "bytes": 285320
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/doho_h1_idle_meta.json",
+          "exists": true,
+          "sha256": "7d77220b5fa41b009f168e03206207dc1b4200752c6a20f942d52d2079325f48",
+          "bytes": 218
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/doho_h1_idle_sheet.webp",
+          "exists": true,
+          "sha256": "5ac23feac23dc87df474fc1b33e56c31f20d2bc1a744c575e620656efd93cf8d",
+          "bytes": 2833528
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/neutral.png",
+          "exists": true,
+          "sha256": "522b0357e833bb2aa3ac4974013fd809401f7356bb56bb9ec1bccd6527d4ddd1",
+          "bytes": 1607596
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/serious.png",
+          "exists": true,
+          "sha256": "24dfb5acbc0321f42277820dbee4f81e5334ac2aff8ece1b4f59ca87dc3daee7",
+          "bytes": 1565371
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/shadow.png",
+          "exists": true,
+          "sha256": "f362d25d5ba035c339f186cfaf19738adc1741bcf2b543f94a1a9f50f180a1a4",
+          "bytes": 651
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/doho/smug.png",
+          "exists": true,
+          "sha256": "e3dde31273a6ca964928e729e3d2268eaca9e4b7237ce254dbebadce6ab6ad57",
+          "bytes": 1585410
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/dev/band_preview.dialogue",
+          "exists": true,
+          "sha256": "75882395978583f4bf0b6269b78485429232087552427fe84158cb6d63ecafdb",
+          "bytes": 1598
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/event/seal_gate.dialogue",
+          "exists": true,
+          "sha256": "eeb142decb7560387f5740d0274ed661d554accdec7744cd1dbdca4a182f1b86",
+          "bytes": 961
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/event/shaman_quest.dialogue",
+          "exists": true,
+          "sha256": "e8895a31ec4553baf410a4b101ce93d470112901dba9957ab682dc0a4ad0a29e",
+          "bytes": 2262
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/dokkaebi.dialogue",
+          "exists": true,
+          "sha256": "537e39a055bfcaa693cb41ddd2e37933e43cb07fa265035e7a61c0739b65c071",
+          "bytes": 19471
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/elder.dialogue",
+          "exists": true,
+          "sha256": "33d4afcbd91e014c807bc76dad2b67f1753513ad063a805242ca8fd95ff98a20",
+          "bytes": 9017
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/jumo.dialogue",
+          "exists": true,
+          "sha256": "8be913e16972a29ae195e102790eeb5aaf1284b2b1398298990229d14af85b47",
+          "bytes": 10979
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/merchant.dialogue",
+          "exists": true,
+          "sha256": "0a26dde0f9610662cce91d267e65db4e45c2578a521ca0e7c0871d7c4cf3fca3",
+          "bytes": 6444
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/shaman.dialogue",
+          "exists": true,
+          "sha256": "655fb636ae4668e854edba97f9d9c7f6ccec57d57e439a8bfb48f3fc446bbe94",
+          "bytes": 16389
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/doho.tres",
+          "exists": true,
+          "sha256": "1313dbdb6b4888949dd7670fb2a1aa16d75404cce4cd3427a242bf9d393ebf28",
+          "bytes": 893
+        }
+      ],
+      "fingerprint": "73bb293949abd71020fbbe9c586beba37d5123d51aa18b70e926637319722bce",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "elder",
+      "resource_path": "data/portraits/elder.tres",
+      "portrait_id": "elder",
+      "speaker_usage": [
+        "data/dialogue/npc/elder.dialogue"
+      ],
+      "definition_usage": [
+        "data/npcs/elder.tres"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/elder_b3_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "8ffd4c7ab90bdc38344f983d8ea6cb4a069db8004996706b03b5fe74804ceb3f",
+          "bytes": 290009
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/elder_b3_idle_meta.json",
+          "exists": true,
+          "sha256": "8ff98f49d414a8b136cb89782aa44ab031b859adef1066fae8d3fe99f700abed",
+          "bytes": 218
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/elder_b3_idle_sheet.webp",
+          "exists": true,
+          "sha256": "7b798e718b00039b31f27d8fab572af77444131dea007eb69773b87145729685",
+          "bytes": 2549632
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/elder.dialogue",
+          "exists": true,
+          "sha256": "33d4afcbd91e014c807bc76dad2b67f1753513ad063a805242ca8fd95ff98a20",
+          "bytes": 9017
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/elder.tres",
+          "exists": true,
+          "sha256": "c44673dc8918d71af7581ac72a897421c234d79987500b7a2b58ad72025fb3d5",
+          "bytes": 285
+        }
+      ],
+      "fingerprint": "4e811d0044cbfa2b1729b7790f4297725b9e40e385d7e53de364a02068ede71c",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "eoksoe",
+      "resource_path": "data/portraits/eoksoe.tres",
+      "portrait_id": "eoksoe",
+      "speaker_usage": [
+        "data/dialogue/npc/eoksoe.dialogue"
+      ],
+      "definition_usage": [
+        "data/npcs/eoksoe.tres"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/eoksoe/neutral.png",
+          "exists": true,
+          "sha256": "964c516f3f98814d19dc36698932282b833e2670f13a69bd7c9987cb004d6435",
+          "bytes": 2256873
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/eoksoe/shadow.png",
+          "exists": true,
+          "sha256": "9071628446c91e9de74764be6c582daa9edc4d430930f3b91873c646fab51907",
+          "bytes": 492
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/eoksoe/smile.png",
+          "exists": true,
+          "sha256": "7dbfbcd28051b661a298d9c435bb93045166d3cdf54a1ac9188763a139864beb",
+          "bytes": 2144288
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/eoksoe.dialogue",
+          "exists": true,
+          "sha256": "660f0a2dd68d0b5ab654a4b740974aea80f7dbf32021ee76411aba25b41e4421",
+          "bytes": 898
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/eoksoe.tres",
+          "exists": true,
+          "sha256": "ca2652e01abf931e86fa03ceeed491ea91179514e38e972ac09c610a57f70b02",
+          "bytes": 730
+        }
+      ],
+      "fingerprint": "7627c16313414d9e8b78ee0a26437b22704b80fc68a9bc092b7b19a2a31b4ec4",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "gumiho_f01",
+      "resource_path": "data/portraits/gumiho_f01.tres",
+      "portrait_id": "gumiho_f01",
+      "speaker_usage": [],
+      "definition_usage": [],
+      "connection": "definition_only",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gumiho_f01_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "ae75eeee94fe984517743987353b4e6fb37e2d8e30a2a7165a4e8730dfd74778",
+          "bytes": 467845
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gumiho_f01_idle_meta.json",
+          "exists": true,
+          "sha256": "347ce6719be7d83efabed2abd8572dbc70741ea24b79261fa7fa35629fa18003",
+          "bytes": 223
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gumiho_f01_idle_sheet.webp",
+          "exists": true,
+          "sha256": "ecb2c0205c252bac6a027678aea69ffd4a72548f62eb2a432e329617d88054f1",
+          "bytes": 4001676
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/gumiho_f01.tres",
+          "exists": true,
+          "sha256": "928874c0ae7681cf0a43bbbbe15cd21d5bdb1b745dc684a45303fa6e2d82f7d7",
+          "bytes": 294
+        }
+      ],
+      "fingerprint": "207c17c0e2351b534cbb6d8e852facd6bb5826661e1fa753e29e411c0f4f1547",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "gumiho_f03",
+      "resource_path": "data/portraits/gumiho_f03.tres",
+      "portrait_id": "gumiho_f03",
+      "speaker_usage": [],
+      "definition_usage": [],
+      "connection": "definition_only",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gumiho_f03_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "32d2cde5190241b64a2e1681913d55d28e019b88224cb2cd10c74636ea7cec5c",
+          "bytes": 608836
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gumiho_f03_idle_meta.json",
+          "exists": true,
+          "sha256": "3813bbadb92d67bd533043ca911738a3614103858f150929cac67296aee60f83",
+          "bytes": 224
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gumiho_f03_idle_sheet.webp",
+          "exists": true,
+          "sha256": "056dffd98db33ac713e9f3debc1653a97441b69373c6f6bf2e192c227881c128",
+          "bytes": 5707656
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/gumiho_f03.tres",
+          "exists": true,
+          "sha256": "9d318adf7cfa16f042899888e2e72c66cf105e851fb1728bec7a598d4f89144f",
+          "bytes": 295
+        }
+      ],
+      "fingerprint": "f5bc326de9a5dc5a899c74449d53431a00723a0690cdf87cb45239f84e1f2e13",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "gwisae",
+      "resource_path": "data/portraits/gwisae.tres",
+      "portrait_id": "gwisae",
+      "speaker_usage": [],
+      "definition_usage": [],
+      "connection": "definition_only",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gwisae_g02_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "758b5d90d69bc45480473778d98b7f940c8deef912d862195f0f3c8fd78d4e57",
+          "bytes": 346312
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gwisae_g02_idle_meta.json",
+          "exists": true,
+          "sha256": "252125cae349b45714b9ca612808bd3ef9458ded531b7ef0750064913acb9d62",
+          "bytes": 224
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/gwisae_g02_idle_sheet.webp",
+          "exists": true,
+          "sha256": "f449d5fe2185a849f0cadcc0de9598e120f99f7db6212adeedbeb63dfa34d203",
+          "bytes": 3305220
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/gwisae.tres",
+          "exists": true,
+          "sha256": "e4034e86c64cc15bcb3676f6ecee1b69558acef5fb0b1e6a99df9a812656743b",
+          "bytes": 288
+        }
+      ],
+      "fingerprint": "ef809c4bdb91aa15378b09acec1e383fab23c2e2843ac76200e96431b2e0f3c4",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "jumo",
+      "resource_path": "data/portraits/jumo.tres",
+      "portrait_id": "jumo",
+      "speaker_usage": [
+        "data/dialogue/npc/jumo.dialogue"
+      ],
+      "definition_usage": [
+        "data/npcs/jumo.tres"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/jumo_b4_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "b20e61faaa363ea96f741db26fca7ee4b29cecd0f1d436a1ee92c9158c5ef000",
+          "bytes": 274884
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/jumo_b4_idle_meta.json",
+          "exists": true,
+          "sha256": "ce0adef6b1b30dc1e0cc5e4d30c652382aada89809f13575453dd2213a91a06f",
+          "bytes": 217
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/jumo_b4_idle_sheet.webp",
+          "exists": true,
+          "sha256": "27fcd267bda9e2f3a96dffe6f87c50f135cb85e69f491ca898abcb99b79b38cd",
+          "bytes": 2194814
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/jumo.dialogue",
+          "exists": true,
+          "sha256": "8be913e16972a29ae195e102790eeb5aaf1284b2b1398298990229d14af85b47",
+          "bytes": 10979
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/jumo.tres",
+          "exists": true,
+          "sha256": "49b7db40af7fee07b2e26e8ac544423bad421ff7493780deda9d4ca4aa9b4cdf",
+          "bytes": 283
+        }
+      ],
+      "fingerprint": "032aadafb99b2b21359e188b61d7e3bff176dfb8e6eef164f7051f7a17b7adf1",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "merchant",
+      "resource_path": "data/portraits/merchant.tres",
+      "portrait_id": "merchant",
+      "speaker_usage": [
+        "data/dialogue/dev/band_preview.dialogue",
+        "data/dialogue/npc/merchant.dialogue"
+      ],
+      "definition_usage": [
+        "data/npcs/merchant.tres"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/merchant_b1_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "777343f662edef98dffac41e6076bb9af0ba5f0073e817cda64a3b6327d95d06",
+          "bytes": 379401
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/merchant_b1_idle_meta.json",
+          "exists": true,
+          "sha256": "16aecba13bf27e209a8f597d8a1a9724fa32239e0093cee19d740a1365a60688",
+          "bytes": 225
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/merchant_b1_idle_sheet.webp",
+          "exists": true,
+          "sha256": "8ab9e8ccc1ec9e3883381bc900f06010d0305f27e6216d1ec0f5166e29d52ea9",
+          "bytes": 3406736
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/merchant/neutral.png",
+          "exists": true,
+          "sha256": "df61a1b15d7d18c9b5adc1ab1e434d6d47e8b8863386040a790e40cf092d9f79",
+          "bytes": 1588561
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/merchant/shadow.png",
+          "exists": true,
+          "sha256": "47a3ef2cc7b75cbf338b328ec0c7628c5c40d9e7d40b707ce6fe78b06eb5bc5c",
+          "bytes": 508
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/talk/merchant/smile.png",
+          "exists": true,
+          "sha256": "549a5f20f88e9c07612c87ec5dd85a05a4c1f8ae608ba37c723378714271970a",
+          "bytes": 1545711
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/dev/band_preview.dialogue",
+          "exists": true,
+          "sha256": "75882395978583f4bf0b6269b78485429232087552427fe84158cb6d63ecafdb",
+          "bytes": 1598
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/merchant.dialogue",
+          "exists": true,
+          "sha256": "0a26dde0f9610662cce91d267e65db4e45c2578a521ca0e7c0871d7c4cf3fca3",
+          "bytes": 6444
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/merchant.tres",
+          "exists": true,
+          "sha256": "8514308df840297738ff727185154ee68161bc5974f020cbb2384d38e9483ca9",
+          "bytes": 812
+        }
+      ],
+      "fingerprint": "078bd68d1ec1c4fc53c464578d7759606e5a347b6b2e153dbddc8e43236a873a",
+      "dependency_complete": true
+    },
+    {
+      "runtime_id": "shaman",
+      "resource_path": "data/portraits/shaman.tres",
+      "portrait_id": "shaman",
+      "speaker_usage": [
+        "data/dialogue/dev/band_preview.dialogue",
+        "data/dialogue/event/seal_gate.dialogue",
+        "data/dialogue/event/shaman_quest.dialogue",
+        "data/dialogue/npc/shaman.dialogue"
+      ],
+      "definition_usage": [
+        "data/npcs/shaman.tres"
+      ],
+      "connection": "connected",
+      "load": "not_checked",
+      "world_display": "not_checked",
+      "dependencies": [
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/shaman_b2_idle_frame0_alpha.png",
+          "exists": true,
+          "sha256": "d9d54da99c9975414b4ee94c948adcc6d7d24fc3a333bcb0392dea7fe4f63359",
+          "bytes": 295996
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/shaman_b2_idle_meta.json",
+          "exists": true,
+          "sha256": "07adc3f12580a0aa8a5222f2b365f767e4227fdf3dfa6b060fdfcf142b1da8af",
+          "bytes": 222
+        },
+        {
+          "repository": "game",
+          "path": "assets/portraits/idle/shaman_b2_idle_sheet.webp",
+          "exists": true,
+          "sha256": "8ea529068f7ffa0f4a3467f3a7a286f531605aa4d0b9c7fb0f8bfe10265f5485",
+          "bytes": 2672162
+        },
+        {
+          "repository": "game",
+          "path": "core/portrait_def.gd",
+          "exists": true,
+          "sha256": "16c3da5da6213a854bc7b2155f6cd167619a0927a807808600645bcbbd032f90",
+          "bytes": 4547
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/dev/band_preview.dialogue",
+          "exists": true,
+          "sha256": "75882395978583f4bf0b6269b78485429232087552427fe84158cb6d63ecafdb",
+          "bytes": 1598
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/event/seal_gate.dialogue",
+          "exists": true,
+          "sha256": "eeb142decb7560387f5740d0274ed661d554accdec7744cd1dbdca4a182f1b86",
+          "bytes": 961
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/event/shaman_quest.dialogue",
+          "exists": true,
+          "sha256": "e8895a31ec4553baf410a4b101ce93d470112901dba9957ab682dc0a4ad0a29e",
+          "bytes": 2262
+        },
+        {
+          "repository": "game",
+          "path": "data/dialogue/npc/shaman.dialogue",
+          "exists": true,
+          "sha256": "655fb636ae4668e854edba97f9d9c7f6ccec57d57e439a8bfb48f3fc446bbe94",
+          "bytes": 16389
+        },
+        {
+          "repository": "game",
+          "path": "data/portraits/shaman.tres",
+          "exists": true,
+          "sha256": "9f5b45e473b94c2a6a4b8ae1e40071a0445f09f60017ac9ecd8be464de11845e",
+          "bytes": 294
+        }
+      ],
+      "fingerprint": "e5d0a008cec726d88be76d221bc0884e8dfe6f6d6062443e0f391042049dcb33",
+      "dependency_complete": true
+    }
+  ],
+  "limitations": [
+    "Static resource links do not prove Godot load or world display.",
+    "Dynamic GDScript expressions and dialogue cast arguments require recorded runtime evidence.",
+    "Mutable equipment/loadout and capture environment are not inferred from static definitions.",
+    "Fingerprint covers listed resources; capture conditions require explicit dependencies."
+  ],
+  "source_commit": "bf84fd5884eaa64773b0f4d6a7cde8d0bf4a9dab",
+  "phase": 1
+}

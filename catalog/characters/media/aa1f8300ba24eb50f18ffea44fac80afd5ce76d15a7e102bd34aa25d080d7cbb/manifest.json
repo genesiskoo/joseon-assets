@@ -1,0 +1,39 @@
+{
+  "card": 742,
+  "id": "H02",
+  "title": "상체·골반의 인간 구조",
+  "status": "candidate-pending-root-review",
+  "tool": "built-in image_gen",
+  "backend_model": "not exposed by tool",
+  "generation_mode": "reference edit",
+  "calls": 1,
+  "image_inputs": 1,
+  "input_path": "C:/workspace/joseon-assets/.codex/worktrees/741-gumiho-style/workbench/production/gumiho_741_style/gumiho_style_match_v2.png",
+  "input_role": "style+tone+identity+pose baseline and edit target",
+  "input_sha256": "48e08976200847b47b187b484e71205af37da02e10fa0d87b8b039002a2803dd",
+  "referenced_image_paths": [
+    "C:/workspace/joseon-assets/.codex/worktrees/741-gumiho-style/workbench/production/gumiho_741_style/gumiho_style_match_v2.png"
+  ],
+  "num_last_images_to_include": "omitted",
+  "transparent_background": false,
+  "generated_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a12a10-0494-7ab1-b9d0-a9b1dd278ee2/exec-5ebd2052-0855-4b61-bee2-ccb6ced625c0.png",
+  "preserved_original_path": "C:/workspace/joseon-assets/.codex/worktrees/742-gumiho-human-variants/workbench/production/gumiho_742_human/H02/raw.png",
+  "original_dimensions": [
+    1536,
+    1024
+  ],
+  "original_bytes": 2224036,
+  "original_sha256": "c895bda95fc0db949fdba163e07310f6c3b50f82f129e9dc97793aaa53381e16",
+  "prompt_path": "C:/workspace/joseon-assets/.codex/worktrees/742-gumiho-human-variants/workbench/production/gumiho_742_human/H02/prompt.txt",
+  "prompt_sha256": "149ba5bc4be5bc10acf81231758448ae1923e1557ad53a4ec69b971dd3de5d54",
+  "review_path": "C:/workspace/joseon-assets/.codex/worktrees/742-gumiho-human-variants/reports/742/H02/H02.jpg",
+  "review_dimensions": [
+    1280,
+    853
+  ],
+  "review_bytes": 255276,
+  "review_sha256": "3d3f982cd7c7b5edd6d4c90be4f2c83742f596e6079e7f87305ec436692cb8bf",
+  "preview_processing": "full-frame resize and JPEG encoding only; no crop, painting or composite",
+  "copy_hash_verified": true,
+  "prompt_matches_plan": true
+}

@@ -1,0 +1,170 @@
+{
+  "card": 741,
+  "status": "style-match candidate pending PD judgement",
+  "tool": "built-in image_gen",
+  "backend_model": "not exposed by tool",
+  "mode": "reference image edit",
+  "generation_count": 2,
+  "tool_parameters": {
+    "referenced_image_paths": [
+      "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-559646d1-65a9-49fb-ad67-39060bcf7b87.png",
+      "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-0c3b77dd-ece3-440b-b604-a98b8ab0be0f.png",
+      "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-688ba7b8-ef0b-4e24-9c2b-50734bddf5e0.png"
+    ],
+    "num_last_images_to_include": "omitted",
+    "transparent_background": false
+  },
+  "reference_inputs": [
+    {
+      "order": 1,
+      "role": "style only",
+      "tool_input_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-688ba7b8-ef0b-4e24-9c2b-50734bddf5e0.png",
+      "preserved_input_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\references\\01_style.png",
+      "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 2519622
+    },
+    {
+      "order": 2,
+      "role": "edit target: design identity pose expression composition",
+      "tool_input_path": "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-0c3b77dd-ece3-440b-b604-a98b8ab0be0f.png",
+      "preserved_input_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\references\\02_target.png",
+      "sha256": "8a5c3ad3341e9db8f3e8ff8140f8bef7159a68a434128f7e625d8795dc7afbd2",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 2401518
+    }
+  ],
+  "prompt_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\prompts\\gumiho_style_match_v2.txt",
+  "prompt_sha256": "c599e88ec70bab3ec4ef8aa0929fb2c8b368ebd2462886ead2c46a533b38194a",
+  "original_generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a128e9-3f04-75b3-938e-6d130a617fe1\\exec-7e8a82e2-a3a6-47f0-9ceb-8cb59f84a3e9.png",
+  "preserved_output_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\gumiho_style_match_v2.png",
+  "output_sha256": "48e08976200847b47b187b484e71205af37da02e10fa0d87b8b039002a2803dd",
+  "output_bytes": 2266240,
+  "output_dimensions": [
+    1536,
+    1024
+  ],
+  "copy_hash_verified": true,
+  "previews": [
+    {
+      "path": "C:\\workspace\\joseon\\docs\\art\\741_gumiho_style\\after.jpg",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "bytes": 254807,
+      "sha256": "272c95cde00c87e870d99ccafaf40a303a82e6174ed8905bb7d9f1034ed6c193"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\docs\\art\\741_gumiho_style\\attempt_v1.jpg",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "bytes": 282754,
+      "sha256": "cbe6ad857e16067763b6f93dd6bf8430e16409c2948881fb4ed5cf0a4abe86be"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\docs\\art\\741_gumiho_style\\before.jpg",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "bytes": 253974,
+      "sha256": "8c05a350ff8f8e20c7976df4871e9b5c2b0788206832b3439e2634b7841b5396"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\docs\\art\\741_gumiho_style\\before_after.jpg",
+      "dimensions": [
+        1280,
+        472
+      ],
+      "bytes": 156420,
+      "sha256": "9f256d4f9a5c643e66791550e9c10cc2ea496dfaee54b05412b2659ad8030c7e"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\docs\\art\\741_gumiho_style\\face_before_after.jpg",
+      "dimensions": [
+        1280,
+        656
+      ],
+      "bytes": 144886,
+      "sha256": "596715e4bf77e06c6e3dab0505e37c09e9ba7f0473eeeb5bd2af0d55416178ce"
+    },
+    {
+      "path": "C:\\workspace\\joseon\\docs\\art\\741_gumiho_style\\style_reference.jpg",
+      "dimensions": [
+        853,
+        1280
+      ],
+      "bytes": 237938,
+      "sha256": "a95b38682b456a9719a286adb668249a16b47ea973afb7e886560ed857ec1a2f"
+    }
+  ],
+  "preview_transforms": "resize/JPEG and same-coordinate face crop/contact layout only; no repaint/compositing of character",
+  "face_crop": [
+    125,
+    210,
+    455,
+    540
+  ],
+  "new_lore": "none",
+  "runtime_or_rig_changes": "none",
+  "attempts": [
+    {
+      "version": "v1",
+      "tool_parameters": {
+        "referenced_image_paths": [
+          "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-688ba7b8-ef0b-4e24-9c2b-50734bddf5e0.png",
+          "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-0c3b77dd-ece3-440b-b604-a98b8ab0be0f.png"
+        ],
+        "num_last_images_to_include": "omitted",
+        "transparent_background": false
+      },
+      "output_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\gumiho_style_match_v1.png",
+      "output_sha256": "71e2b6f9072bcb96819682ed2e2cf380ea8e59fab34d4d3ae723615ecfb1ab33",
+      "prompt_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\prompts\\gumiho_style_match_v1.txt",
+      "prompt_sha256": "581ac0be7fe3a22d059c7b8a3f31d3c68c2543942db5edfd0468b2bce4a92372",
+      "review": "style matched; pupil shape and tired lower-eyelid shadow insufficiently preserved; retained attempt"
+    },
+    {
+      "version": "v2",
+      "tool_parameters": {
+        "referenced_image_paths": [
+          "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-559646d1-65a9-49fb-ad67-39060bcf7b87.png",
+          "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-0c3b77dd-ece3-440b-b604-a98b8ab0be0f.png",
+          "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-688ba7b8-ef0b-4e24-9c2b-50734bddf5e0.png"
+        ],
+        "num_last_images_to_include": "omitted",
+        "transparent_background": false
+      },
+      "input_roles": [
+        "edit target: retain matched style and all design",
+        "original facial acting guide only",
+        "style only"
+      ],
+      "input_preserved_paths": [
+        "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\gumiho_style_match_v1.png",
+        "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\references\\02_target.png",
+        "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\references\\01_style.png"
+      ],
+      "input_sha256": [
+        "71e2b6f9072bcb96819682ed2e2cf380ea8e59fab34d4d3ae723615ecfb1ab33",
+        "8a5c3ad3341e9db8f3e8ff8140f8bef7159a68a434128f7e625d8795dc7afbd2",
+        "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6"
+      ],
+      "output_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\gumiho_style_match_v2.png",
+      "output_sha256": "48e08976200847b47b187b484e71205af37da02e10fa0d87b8b039002a2803dd",
+      "prompt_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\prompts\\gumiho_style_match_v2.txt",
+      "prompt_sha256": "c599e88ec70bab3ec4ef8aa0929fb2c8b368ebd2462886ead2c46a533b38194a",
+      "review": "matched warm illustration retained; local facial correction; fine pupil/han strength subject to visual judgement"
+    }
+  ],
+  "selected_version": "v2"
+}

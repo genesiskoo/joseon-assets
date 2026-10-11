@@ -1,0 +1,535 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://joseon-hunters.local/catalog/characters/schema.json",
+  "title": "Character Art Catalogue v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "updated_at",
+    "characters",
+    "assets",
+    "runtime_inventory",
+    "issues"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "character_id",
+          "display_name",
+          "role",
+          "forms"
+        ],
+        "properties": {
+          "forms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "form_id",
+                "display_name",
+                "runtime_aliases"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "character_id",
+          "form_id",
+          "version_id",
+          "display_name",
+          "role",
+          "runtime_aliases",
+          "media_type",
+          "file",
+          "decision",
+          "provenance",
+          "runtime",
+          "notes"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "character_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "form_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "display_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "media_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "file": {
+            "type": "object",
+            "required": [
+              "repository",
+              "path",
+              "sha256",
+              "bytes"
+            ],
+            "properties": {
+              "repository": {
+                "type": "string",
+                "enum": [
+                  "assets",
+                  "game"
+                ]
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$)).+"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "width": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "height": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "source_commit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "decision": {
+            "type": "object",
+            "required": [
+              "status",
+              "scope",
+              "date",
+              "card",
+              "evidence",
+              "quote",
+              "supersedes"
+            ],
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": [
+                  "unreviewed",
+                  "recommended",
+                  "approved",
+                  "rejected",
+                  "superseded",
+                  "unknown"
+                ]
+              },
+              "scope": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "card": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "evidence": {
+                "type": "array"
+              },
+              "quote": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "supersedes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "runtime": {
+            "type": "object",
+            "required": [
+              "connection",
+              "load",
+              "world_display",
+              "freshness",
+              "bindings",
+              "evidence"
+            ],
+            "properties": {
+              "connection": {
+                "type": "string",
+                "enum": [
+                  "connected",
+                  "not_connected",
+                  "definition_only",
+                  "not_checked"
+                ]
+              },
+              "load": {
+                "type": "string",
+                "enum": [
+                  "success",
+                  "failed",
+                  "not_checked"
+                ]
+              },
+              "world_display": {
+                "type": "string",
+                "enum": [
+                  "confirmed",
+                  "not_confirmed",
+                  "not_checked"
+                ]
+              },
+              "freshness": {
+                "type": "string",
+                "enum": [
+                  "current",
+                  "stale",
+                  "indeterminate"
+                ]
+              },
+              "bindings": {
+                "type": "array"
+              },
+              "evidence": {
+                "type": "array"
+              }
+            }
+          },
+          "runtime_aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "required": [
+              "source_card",
+              "source_commit",
+              "inclusion_reason",
+              "tool",
+              "backend",
+              "prompt",
+              "references"
+            ],
+            "properties": {
+              "prompt": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "required": [
+                      "repository",
+                      "path",
+                      "sha256",
+                      "bytes"
+                    ],
+                    "properties": {
+                      "repository": {
+                        "type": "string",
+                        "enum": [
+                          "assets",
+                          "game"
+                        ]
+                      },
+                      "path": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$)).+"
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "bytes": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "width": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 1
+                      },
+                      "height": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 1
+                      },
+                      "source_commit": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "references": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "repository",
+                    "path",
+                    "sha256",
+                    "bytes"
+                  ],
+                  "properties": {
+                    "repository": {
+                      "type": "string",
+                      "enum": [
+                        "assets",
+                        "game"
+                      ]
+                    },
+                    "path": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$)).+"
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "bytes": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "width": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1
+                    },
+                    "height": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1
+                    },
+                    "source_commit": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              },
+              "inclusion_reason": {
+                "type": "string"
+              }
+            }
+          },
+          "preview": {
+            "allOf": [
+              {
+                "type": "object",
+                "required": [
+                  "repository",
+                  "path",
+                  "sha256",
+                  "bytes"
+                ],
+                "properties": {
+                  "repository": {
+                    "type": "string",
+                    "enum": [
+                      "assets",
+                      "game"
+                    ]
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$)).+"
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "bytes": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "width": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1
+                  },
+                  "height": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1
+                  },
+                  "source_commit": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "required": [
+                  "derived_from",
+                  "crop_rect",
+                  "transform"
+                ],
+                "properties": {
+                  "derived_from": {
+                    "type": "object",
+                    "required": [
+                      "repository",
+                      "path",
+                      "sha256",
+                      "bytes"
+                    ],
+                    "properties": {
+                      "repository": {
+                        "type": "string",
+                        "enum": [
+                          "assets",
+                          "game"
+                        ]
+                      },
+                      "path": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$)).+"
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "bytes": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "width": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 1
+                      },
+                      "height": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 1
+                      },
+                      "source_commit": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  },
+                  "crop_rect": {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "runtime_inventory": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "issues": {
+      "type": "array"
+    }
+  }
+}

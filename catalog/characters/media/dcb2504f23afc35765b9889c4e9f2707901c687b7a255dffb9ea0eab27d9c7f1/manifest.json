@@ -1,0 +1,144 @@
+{
+  "card": 730,
+  "generated_at": "2026-10-11T15:19:54.159869+09:00",
+  "tool": "image_gen_builtin",
+  "backend_model": "not exposed by tool",
+  "review_status": "PD approved expression and upper-body anchors; no game intake",
+  "variants": [
+    {
+      "id": "01_listening_jumo_v1",
+      "title": "질문을 듣는 주모",
+      "path": "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-7a22aee7-36fb-4d17-8b9a-62518aa86f1a.png",
+      "final": true,
+      "copy": "workbench/production/gumiho_730_expressions/01_listening_jumo_v1.png",
+      "source_sha256": "130f622c9161b591ed148abda9f753df068b92d02aed6f0616f0326c568af4af",
+      "source_bytes": 2336121,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "prompt": "workbench/production/gumiho_730_expressions/prompts/01_listening_jumo_v1.txt",
+      "prompt_sha256": "405c283d734d2b7d6d0cab71957b117b203b9cabd2fad8fdaeeeda2c99885b0a",
+      "preview": {
+        "width": 768,
+        "height": 1152,
+        "bytes": 134920,
+        "sha256": "4f1d5f4b76f017224565b3904da9a24d2d098cdf5576e874e0f27f090d2375e5"
+      },
+      "review_status": "approved-expression-anchor"
+    },
+    {
+      "id": "02_waiting_true_form_v1",
+      "title": "기다리는 본체",
+      "path": "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-6b42c354-fcd1-4ba6-a5e0-2f40fbeb5cae.png",
+      "final": true,
+      "copy": "workbench/production/gumiho_730_expressions/02_waiting_true_form_v1.png",
+      "source_sha256": "64b08e6ee13fdd293ae7f71f0024a13b04a5e115b38e2c3431331b460216f30c",
+      "source_bytes": 2382595,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "prompt": "workbench/production/gumiho_730_expressions/prompts/02_waiting_true_form_v1.txt",
+      "prompt_sha256": "4b65d114252d12f4ea8e8bbde3cc9b8a531a189767faebaab9a9dead4d941817",
+      "preview": {
+        "width": 768,
+        "height": 1152,
+        "bytes": 143782,
+        "sha256": "edce01309cc5cd1e23a8f8938f766ff627ead25f4a5d66005c6df44ad9a9600e"
+      },
+      "review_status": "approved-expression-anchor"
+    },
+    {
+      "id": "03_prediction_broken_v1",
+      "title": "예상이 빗나간 순간 첫 시도",
+      "path": "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-1c103524-5928-4a67-a8cf-167c8ad43ea7.png",
+      "final": false,
+      "copy": "workbench/production/gumiho_730_expressions/03_prediction_broken_v1.png",
+      "source_sha256": "ef15d370b552335df66535aa6966aabdccdc340c71116a8771e5e8dc724b9088",
+      "source_bytes": 2332661,
+      "dimensions": [
+        943,
+        1668
+      ],
+      "prompt": "workbench/production/gumiho_730_expressions/prompts/03_prediction_broken_v1.txt",
+      "prompt_sha256": "938b01158118389238002a670fb95d9e5249bcef110fa1708eb4d852a957ba41",
+      "preview": {
+        "width": 768,
+        "height": 1358,
+        "bytes": 164208,
+        "sha256": "57b0ac8358c516f42b83abb979e3c9767b138fe33bc7cf758aa11581588d5b04"
+      },
+      "review_status": "rejected-composition-drift"
+    },
+    {
+      "id": "03_prediction_broken_v2",
+      "title": "예상이 빗나간 순간 수정 후보",
+      "path": "C:/Users/FORYOUCOM/.codex/generated_images/01a128e9-3f04-75b3-938e-6d130a617fe1/exec-24719d11-2a9f-428a-8396-6ceb9983c301.png",
+      "final": true,
+      "copy": "workbench/production/gumiho_730_expressions/03_prediction_broken_v2.png",
+      "source_sha256": "ef50183de71d2071116535ef138ab698a1f5945aef6e5652d72656decf012f35",
+      "source_bytes": 2149798,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "prompt": "workbench/production/gumiho_730_expressions/prompts/03_prediction_broken_v2.txt",
+      "prompt_sha256": "9ede1dbd94dd953afe8afa0fecf443c97dd28a073751582a14a0aad9423b3314",
+      "preview": {
+        "width": 768,
+        "height": 1152,
+        "bytes": 131663,
+        "sha256": "03e252be8ca740db704f1ef56e9f6619dca76fa85ab05cc050b908499f71d522"
+      },
+      "review_status": "approved-expression-anchor"
+    }
+  ],
+  "references": [
+    {
+      "role": "B4 identity",
+      "path": "C:/workspace/joseon-assets/workbench/production/jumo_306/portrait/jumo_b4_gpt25_full.png",
+      "name": "reference_B4",
+      "copy": "workbench/production/gumiho_730_expressions/references/reference_B4.png",
+      "sha256": "cafdad1fbca999e642237f52bed129fb21af9bf53e2b853468ca28ff63dbe699",
+      "preview": {
+        "width": 768,
+        "height": 1358,
+        "bytes": 110289,
+        "sha256": "6cd490595249d0214b63675815b838ee8a1e6d2e6e8950cc6ea87f60344b0207"
+      }
+    },
+    {
+      "role": "P1 acting + selected eyes",
+      "path": "C:/workspace/joseon-assets/reports/519/batch_R3/review/catalog_P.jpg",
+      "name": "reference_P1_eyes",
+      "copy": "workbench/production/gumiho_730_expressions/references/reference_P1_eyes.jpg",
+      "sha256": "c4e9f6e37f57d07588c9095df7fc69d019378676f4429206b3c943aa5be39924",
+      "preview": {
+        "width": 768,
+        "height": 886,
+        "bytes": 131197,
+        "sha256": "1a18cf2b94f3dd046435653e96396844bab09f4b609ebe09db944087bd785a77"
+      }
+    }
+  ],
+  "raw_variant_bytes_total": 9201175,
+  "checks": {
+    "copy_hashes": "PASS",
+    "decode": "PASS",
+    "jpg_width_and_bytes": "PASS",
+    "review_image_count": 6,
+    "raw_git_size_limit": "PASS"
+  },
+  "approval": {
+    "date": "2026-10-11",
+    "evidence": "PD chat: 승인. 앵커이미지를 좀 더 다양하게 확보하는건 어떄?",
+    "approved_ids": [
+      "01_listening_jumo_v1",
+      "02_waiting_true_form_v1",
+      "03_prediction_broken_v2"
+    ],
+    "scope": "expression and shown upper-body identity/costume",
+    "additional_anchors": "proposal only; not generated in approval-record task"
+  }
+}

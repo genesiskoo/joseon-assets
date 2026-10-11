@@ -1,0 +1,54 @@
+{
+  "card": 742,
+  "id": "H03",
+  "title": "하체·전체 비율의 인간성",
+  "status": "single_edit_candidate_pending_root_and_PD_review",
+  "tool": "built-in image_gen",
+  "backend_model": "not_exposed",
+  "mode": "referenced_edit",
+  "generation_count": 1,
+  "retries": 0,
+  "reference_image_count": 1,
+  "reference_inputs": [
+    {
+      "path": "C:/workspace/joseon-assets/.codex/worktrees/741-gumiho-style/workbench/production/gumiho_741_style/gumiho_style_match_v2.png",
+      "role": "style+tone+identity+pose baseline and edit target",
+      "sha256": "48e08976200847b47b187b484e71205af37da02e10fa0d87b8b039002a2803dd"
+    }
+  ],
+  "generation_parameters": {
+    "referenced_image_paths": [
+      "C:/workspace/joseon-assets/.codex/worktrees/741-gumiho-style/workbench/production/gumiho_741_style/gumiho_style_match_v2.png"
+    ],
+    "num_last_images_to_include": "omitted",
+    "transparent_background": false
+  },
+  "plan_path": "C:/workspace/joseon-assets/.codex/worktrees/742-gumiho-human-variants/workbench/production/gumiho_742_human/generation_plan.json",
+  "prompt_from_plan_id": "H03",
+  "original_generated_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a12911-f1bc-7942-9a6b-3760aeb040bd\\exec-64808714-d795-4f88-b47d-c78b244d5f97.png",
+  "raw_path": "C:/workspace/joseon-assets/.codex/worktrees/742-gumiho-human-variants/workbench/production/gumiho_742_human/H03/raw.png",
+  "raw_dimensions": [
+    1536,
+    1024
+  ],
+  "raw_bytes": 2217281,
+  "raw_sha256": "cef4a4e9d0edc086b5b2e7b71a80ef6bff1d5458224fc31574f4b64f2b33ca3b",
+  "prompt_path": "C:/workspace/joseon-assets/.codex/worktrees/742-gumiho-human-variants/workbench/production/gumiho_742_human/H03/prompt.txt",
+  "prompt_sha256": "e94d5c46dd2df2032ca038cf1630b0c57a420133737e4b99211d29eeadff1a19",
+  "input_path": "C:/workspace/joseon-assets/.codex/worktrees/741-gumiho-style/workbench/production/gumiho_741_style/gumiho_style_match_v2.png",
+  "input_sha256": "48e08976200847b47b187b484e71205af37da02e10fa0d87b8b039002a2803dd",
+  "preview_path": "C:/workspace/joseon-assets/.codex/worktrees/742-gumiho-human-variants/reports/742/H03/H03.jpg",
+  "preview_dimensions": [
+    1280,
+    853
+  ],
+  "preview_bytes": 224186,
+  "preview_sha256": "64095165019447af56c3840a0a99dbcda352ae75b7e4e0266cdb7ac02ed9fb83",
+  "self_review": {
+    "tone": "따뜻한 회갈/세피아 배경, 복숭아빛 피부, 탁한 남색·상아 한국 겹옷과 무광 일러스트 명암을 이어 간다. 눈에 띄는 차가운 실사 전환은 없다.",
+    "humanization": "노출된 상부 허벅지가 사람 피부로 바뀌고 지지 손/손가락 규모가 조금 줄어 인간 비중이 늘었다. 낮은 전방 접힘, 높은 골반, 아래 다리 털과 꺾인 발목·발톱, 큰 꼬리는 유지된다. 무릎/골반 구조보다 피부 재질 변화가 더 선명하다.",
+    "emotion_intelligence": "동일 얼굴의 금빛 고정 응시, 미간/눈꺼풀 긴장과 닫힌 입매, 초대 손이 유지된다. 한은 분노/경계와 겹치는 미세한 정서이며 강화됐다고 판정하지 않는다. 전신의 작은 눈에서는 정확한 세로 동공이 확실히 판독되지 않는다.",
+    "form": "앞의 두 팔과 크게 보이는 뒤다리 역할은 읽힌다. 반대 뒤다리와 골반/몸 연결은 옷과 꼬리에 가려 완전한 4사지 연결 구조를 확정하지 않는다. 초대 손과 지지 손의 역할 및 주요 접지는 이어진다.",
+    "limits": "인간화는 피부 노출 변화가 중심이고 전체 실루엣 변화는 제한적이다. 정확한 9개 꼬리 뿌리/리그/게임 시점은 미검증. 얼굴/몸 픽셀 고정이나 PD 채택을 의미하지 않는다."
+  }
+}

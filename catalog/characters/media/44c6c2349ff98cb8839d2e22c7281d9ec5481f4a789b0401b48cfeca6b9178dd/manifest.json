@@ -1,0 +1,54 @@
+{
+  "card": 742,
+  "id": "H01",
+  "title": "얼굴·팔의 인간 잔상",
+  "agent": "gumiho_t2i_human",
+  "candidate_status": "pending_root_review_and_PD_selection",
+  "generation_mode": "reference_image_edit",
+  "tool": "built-in image_gen",
+  "backend_model": "not exposed by tool",
+  "tool_call_count": 1,
+  "reference_image_count": 1,
+  "referenced_image_paths": [
+    "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\gumiho_style_match_v2.png"
+  ],
+  "num_last_images_to_include_argument": "omitted",
+  "transparent_background": false,
+  "input_role": "style+tone+identity+pose baseline and edit target",
+  "input_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\741-gumiho-style\\workbench\\production\\gumiho_741_style\\gumiho_style_match_v2.png",
+  "input_sha256": "48e08976200847b47b187b484e71205af37da02e10fa0d87b8b039002a2803dd",
+  "generated_source_path": "C:\\Users\\FORYOUCOM\\.codex\\generated_images\\01a12a0f-ad24-72b2-bd6b-0aea24433309\\exec-a2f97865-ce9a-4395-9516-195edd1c6ee0.png",
+  "raw_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\742-gumiho-human-variants\\workbench\\production\\gumiho_742_human\\H01\\raw.png",
+  "raw_sha256": "61e98e3a5e9a64cdaf16ebae917eabf33c1215bbf2a0ed82d77e31a135b887fa",
+  "raw_bytes": 2238954,
+  "actual_dimensions": [
+    1536,
+    1024
+  ],
+  "prompt_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\742-gumiho-human-variants\\workbench\\production\\gumiho_742_human\\H01\\prompt.txt",
+  "prompt_sha256": "051e4deeb640935164a19d9689c12228c60fcbba29f75b02e2e5f1a1f3bd812e",
+  "prompt_exact_match": "PASS",
+  "preview_path": "C:\\workspace\\joseon-assets\\.codex\\worktrees\\742-gumiho-human-variants\\reports\\742\\H01\\H01.jpg",
+  "preview_sha256": "137ff6b75ac6438fc5346c810739c6b7477864b6d88907318f8597ea22b0a30e",
+  "preview_bytes": 298642,
+  "preview_dimensions": [
+    1280,
+    853
+  ],
+  "preview_transform": "full frame proportional resize and JPEG compression only; no crop/repaint/composite",
+  "verification": {
+    "raw_generated_copy_sha": "PASS",
+    "full_pixel_decode_input_generated_raw_preview": "PASS",
+    "prompt_equality": "PASS",
+    "jpg_width_bytes": "PASS",
+    "raw_git_file_limit": "PASS"
+  },
+  "recorded_at_kst": "2026-10-11T22:25:46.649250+09:00",
+  "visual_review": {
+    "tone": "따뜻한 회갈색 배경·남색/상아색 겹옷·따뜻한 피부·가는 선택적 선과 큰 무광 면이 입력 #741 v2와 이어진다.",
+    "more_human": "팔 아래 부분이 대부분 인간 피부로 드러나고 자연스러운 손목 폭·줄어든 손 크기·짧은 어두운 손톱이 분명히 인간형에 가까워졌다. 얼굴/목 주변의 털 변화는 작다.",
+    "han_intelligence": "같은 성인 여성으로 읽히는 얼굴과 금빛 집중 시선·안쪽 눈썹 긴장·닫힌 입은 유지된다. 지능적 관찰은 읽히고 한은 강한 고통보다 눌린 분노/원망으로 먼저 읽힐 수 있다. 전신의 작은 동공 형태는 정밀 유지 여부를 확정하지 않는다.",
+    "form": "낮은 앞몸·높은 등/골반·짐승 뒷다리·오른쪽 꼬리 덩어리·전신 구도와 지지손/초대손의 역할은 유지된다. 초대 손가락 배치와 지지손 크기/접지 위치는 바뀌어 픽셀 단위 동일 자세가 아니다.",
+    "limits": "초대 손의 접힌 손가락은 겹침 때문에 정확한 5손가락 연결을 확정하기 어렵다. 꼬리의 정확한 9개 뿌리와 가려진 반대 뒤다리 연결은 확인하지 않았다. 피부/팔 비율 인간화에 비해 얼굴의 변화는 의도대로 작다. 후보이며 공식 채택/리깅 확인/Godot 반입은 아니다."
+  }
+}
