@@ -1,0 +1,85 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "impacts": [
+    {
+      "asset_id": "card744-world-merchant",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-shaman",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-elder",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-jumo",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-eoksoe",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-doho",
+      "change": "capture_indeterminate"
+    }
+  ],
+  "capture_checks": [
+    {
+      "asset_id": "card744-render-doho",
+      "freshness": "current"
+    },
+    {
+      "asset_id": "card744-render-merchant",
+      "freshness": "current"
+    },
+    {
+      "asset_id": "card744-render-shaman",
+      "freshness": "current"
+    },
+    {
+      "asset_id": "card744-render-elder",
+      "freshness": "current"
+    },
+    {
+      "asset_id": "card744-render-eoksoe",
+      "freshness": "current"
+    },
+    {
+      "asset_id": "card744-render-jumo",
+      "freshness": "current"
+    },
+    {
+      "asset_id": "card744-render-boss_gumiho",
+      "freshness": "current"
+    },
+    {
+      "asset_id": "card744-world-merchant",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-shaman",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-elder",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-jumo",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-eoksoe",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-doho",
+      "freshness": "indeterminate"
+    }
+  ]
+}

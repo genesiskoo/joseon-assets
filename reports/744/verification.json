@@ -1,0 +1,920 @@
+{
+  "card": 744,
+  "completed_date": "2026-10-12",
+  "scope": {
+    "characters": 8,
+    "forms": 9,
+    "assets": 49
+  },
+  "checks": {
+    "catalogue": true,
+    "viewer_unit_tests": 7,
+    "catalogue_unit_tests": 15,
+    "viewer_js_regressions": "PASS",
+    "browser_desktop_and_320px": "PASS",
+    "missing_media_does_not_inherit_loaded_or_current": "PASS"
+  },
+  "game_test": "Full run failed only footsteps; unchanged isolated rerun PASS. Other completed scenarios PASS. Full unit/tool layers reported PASS in the execution output.",
+  "phases": [
+    {
+      "kind": "full",
+      "phase": "phase_1_solo",
+      "metadata": {
+        "schema": 1,
+        "launch": {
+          "schema": 1,
+          "fixed_fps": 0,
+          "exe": "godot",
+          "argv": [
+            "--path",
+            "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon",
+            "--headless",
+            "--",
+            "--e2e=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter"
+          ],
+          "phase_arg": "balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter",
+          "phase_tokens": [
+            "balance_room",
+            "balance_boss",
+            "hit_stagger",
+            "pack_perf",
+            "bodies_cap",
+            "gimmicks",
+            "item_showcase",
+            "hit_warmup",
+            "footsteps",
+            "audio_cues",
+            "sfx_limiter"
+          ],
+          "skip": [],
+          "exclusive": true,
+          "contains_balance_boss": true,
+          "combat_trace": false,
+          "launcher_pid": 49988,
+          "launched_utc": "2026-10-11T14:21:29.3077069Z"
+        },
+        "runtime_pid": 32656,
+        "exit_code": 1,
+        "timed_out": false,
+        "elapsed_sec": 210.4730807,
+        "archived_utc": "2026-10-11T14:24:59.8216730Z",
+        "godot_log": {
+          "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-747-catalogue-tools\\logs\\godot.log",
+          "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon\\tmp\\e2e_raw\\20261011T1421207856033_10724\\phase_1_solo\\godot.raw.log",
+          "bytes": 112546,
+          "sha256": "63dd5a7b8c423634e166ac455fb9adb5f08cd1591a5a11968d5e2ad7f0c4daed"
+        },
+        "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+      },
+      "scenario_results": [
+        {
+          "name": "balance_room",
+          "verdict": "PASS"
+        },
+        {
+          "name": "balance_boss",
+          "verdict": "PASS"
+        },
+        {
+          "name": "hit_stagger",
+          "verdict": "PASS"
+        },
+        {
+          "name": "pack_perf",
+          "verdict": "PASS"
+        },
+        {
+          "name": "bodies_cap",
+          "verdict": "PASS"
+        },
+        {
+          "name": "gimmicks",
+          "verdict": "PASS"
+        },
+        {
+          "name": "item_showcase",
+          "verdict": "PASS"
+        },
+        {
+          "name": "hit_warmup",
+          "verdict": "PASS"
+        },
+        {
+          "name": "footsteps",
+          "verdict": "FAIL"
+        },
+        {
+          "name": "audio_cues",
+          "verdict": "PASS"
+        },
+        {
+          "name": "sfx_limiter",
+          "verdict": "PASS"
+        }
+      ]
+    },
+    {
+      "kind": "full",
+      "phase": "phase_2_shared",
+      "metadata": {
+        "schema": 1,
+        "launch": {
+          "schema": 1,
+          "fixed_fps": 0,
+          "exe": "godot",
+          "argv": [
+            "--path",
+            "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon",
+            "--headless",
+            "--",
+            "--e2e=all",
+            "--e2e-skip=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter"
+          ],
+          "phase_arg": "all",
+          "phase_tokens": [
+            "all"
+          ],
+          "skip": [
+            "balance_room",
+            "balance_boss",
+            "hit_stagger",
+            "pack_perf",
+            "bodies_cap",
+            "gimmicks",
+            "item_showcase",
+            "hit_warmup",
+            "footsteps",
+            "audio_cues",
+            "sfx_limiter"
+          ],
+          "exclusive": false,
+          "contains_balance_boss": false,
+          "combat_trace": false,
+          "launcher_pid": 50624,
+          "launched_utc": "2026-10-11T14:24:59.9136867Z"
+        },
+        "runtime_pid": null,
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_sec": 2208.6122588999997,
+        "archived_utc": "2026-10-11T15:01:48.5463174Z",
+        "godot_log": {
+          "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-747-catalogue-tools\\logs\\godot.log",
+          "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon\\tmp\\e2e_raw\\20261011T1421207856033_10724\\phase_2_shared\\godot.raw.log",
+          "bytes": 955749,
+          "sha256": "0491b4ae7dffd6750f83094fe821c7e0b6cf010064b3421958581846d84f0086"
+        },
+        "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+      },
+      "scenario_results": [
+        {
+          "name": "character_stats",
+          "verdict": "PASS"
+        },
+        {
+          "name": "single_flurry_dps",
+          "verdict": "PASS"
+        },
+        {
+          "name": "single_flurry",
+          "verdict": "PASS"
+        },
+        {
+          "name": "vfx_ramp_gallery",
+          "verdict": "PASS"
+        },
+        {
+          "name": "unique_icons",
+          "verdict": "PASS"
+        },
+        {
+          "name": "quest_journal_refresh",
+          "verdict": "PASS"
+        },
+        {
+          "name": "character_profiles",
+          "verdict": "PASS"
+        },
+        {
+          "name": "quest_journal",
+          "verdict": "PASS"
+        },
+        {
+          "name": "hud_orb_fx",
+          "verdict": "PASS"
+        },
+        {
+          "name": "npc_hover_view",
+          "verdict": "PASS"
+        },
+        {
+          "name": "elite_ui_view",
+          "verdict": "PASS"
+        },
+        {
+          "name": "hud_hierarchy_view",
+          "verdict": "PASS"
+        },
+        {
+          "name": "dev_legend_view",
+          "verdict": "PASS"
+        },
+        {
+          "name": "dev_panel",
+          "verdict": "PASS"
+        },
+        {
+          "name": "pickup_feedback_view",
+          "verdict": "PASS"
+        },
+        {
+          "name": "icon_intake",
+          "verdict": "PASS"
+        },
+        {
+          "name": "automap",
+          "verdict": "PASS"
+        },
+        {
+          "name": "pickup_equip",
+          "verdict": "PASS"
+        },
+        {
+          "name": "identify",
+          "verdict": "PASS"
+        },
+        {
+          "name": "equipment_ui",
+          "verdict": "PASS"
+        },
+        {
+          "name": "inactive_gear",
+          "verdict": "PASS"
+        },
+        {
+          "name": "sockets",
+          "verdict": "PASS"
+        },
+        {
+          "name": "socket_punch",
+          "verdict": "PASS"
+        },
+        {
+          "name": "glyph_combo",
+          "verdict": "PASS"
+        },
+        {
+          "name": "combination",
+          "verdict": "PASS"
+        },
+        {
+          "name": "portal_roundtrip",
+          "verdict": "PASS"
+        },
+        {
+          "name": "waypoint",
+          "verdict": "PASS"
+        },
+        {
+          "name": "vendor_quest",
+          "verdict": "PASS"
+        },
+        {
+          "name": "vendor_prices",
+          "verdict": "PASS"
+        },
+        {
+          "name": "gamble",
+          "verdict": "PASS"
+        },
+        {
+          "name": "stash_roundtrip",
+          "verdict": "PASS"
+        },
+        {
+          "name": "chief_quest",
+          "verdict": "PASS"
+        },
+        {
+          "name": "boss_greetings",
+          "verdict": "PASS"
+        },
+        {
+          "name": "shaman_heal",
+          "verdict": "PASS"
+        },
+        {
+          "name": "respec",
+          "verdict": "PASS"
+        },
+        {
+          "name": "save_continue",
+          "verdict": "PASS"
+        },
+        {
+          "name": "held_save",
+          "verdict": "PASS"
+        },
+        {
+          "name": "boss_floor",
+          "verdict": "PASS"
+        },
+        {
+          "name": "boss_bulgasari",
+          "verdict": "PASS"
+        },
+        {
+          "name": "bulgasari_path",
+          "verdict": "PASS"
+        },
+        {
+          "name": "boss_uniques",
+          "verdict": "PASS"
+        },
+        {
+          "name": "boss_jangsanbeom",
+          "verdict": "PASS"
+        },
+        {
+          "name": "heukrang_look",
+          "verdict": "PASS"
+        },
+        {
+          "name": "heukrang_pounce",
+          "verdict": "PASS"
+        },
+        {
+          "name": "visual_swap",
+          "verdict": "PASS"
+        },
+        {
+          "name": "run_upright",
+          "verdict": "PASS"
+        },
+        {
+          "name": "teleport_settle",
+          "verdict": "PASS"
+        },
+        {
+          "name": "render_interp",
+          "verdict": "PASS"
+        },
+        {
+          "name": "hit_feel",
+          "verdict": "PASS"
+        },
+        {
+          "name": "damage_colors",
+          "verdict": "PASS"
+        },
+        {
+          "name": "element_affix",
+          "verdict": "PASS"
+        },
+        {
+          "name": "affix_combat",
+          "verdict": "PASS"
+        },
+        {
+          "name": "attack_chain",
+          "verdict": "PASS"
+        },
+        {
+          "name": "sword_trail_v2",
+          "verdict": "PASS"
+        },
+        {
+          "name": "whirl_structure_v1",
+          "verdict": "PASS"
+        },
+        {
+          "name": "status_structure_v1",
+          "verdict": "PASS"
+        },
+        {
+          "name": "element_structure_v1",
+          "verdict": "PASS"
+        },
+        {
+          "name": "element_flight_v1",
+          "verdict": "PASS"
+        },
+        {
+          "name": "aspd_steps",
+          "verdict": "PASS"
+        },
+        {
+          "name": "skill_then_attack",
+          "verdict": "PASS"
+        },
+        {
+          "name": "anim_commit",
+          "verdict": "PASS"
+        },
+        {
+          "name": "combat_timeline",
+          "verdict": "PASS"
+        },
+        {
+          "name": "feel_lab_parity",
+          "verdict": "PASS"
+        },
+        {
+          "name": "feel_lab_plates",
+          "verdict": "PASS"
+        },
+        {
+          "name": "path_smooth",
+          "verdict": "PASS"
+        },
+        {
+          "name": "path_shove_replan",
+          "verdict": "PASS"
+        },
+        {
+          "name": "player_resource_clock",
+          "verdict": "PASS"
+        },
+        {
+          "name": "invisible_sword",
+          "verdict": "PASS"
+        },
+        {
+          "name": "heavy_react",
+          "verdict": "PASS"
+        },
+        {
+          "name": "pack_ai",
+          "verdict": "PASS"
+        },
+        {
+          "name": "kill_slump",
+          "verdict": "PASS"
+        },
+        {
+          "name": "kill_bisect",
+          "verdict": "PASS"
+        },
+        {
+          "name": "slice_deaths",
+          "verdict": "PASS"
+        },
+        {
+          "name": "monster_motion_gallery",
+          "verdict": "PASS"
+        },
+        {
+          "name": "element_status",
+          "verdict": "PASS"
+        },
+        {
+          "name": "element_ui",
+          "verdict": "PASS"
+        },
+        {
+          "name": "element_sal",
+          "verdict": "PASS"
+        },
+        {
+          "name": "talisman_targeting",
+          "verdict": "PASS"
+        },
+        {
+          "name": "talisman_throw",
+          "verdict": "PASS"
+        },
+        {
+          "name": "talisman_aoe",
+          "verdict": "PASS"
+        },
+        {
+          "name": "loot_drop",
+          "verdict": "PASS"
+        },
+        {
+          "name": "potion_icons",
+          "verdict": "PASS"
+        },
+        {
+          "name": "potion_tiers",
+          "verdict": "PASS"
+        },
+        {
+          "name": "loot_props",
+          "verdict": "PASS"
+        },
+        {
+          "name": "elite_pack",
+          "verdict": "PASS"
+        },
+        {
+          "name": "elite_slots",
+          "verdict": "PASS"
+        },
+        {
+          "name": "flee_chase",
+          "verdict": "PASS"
+        },
+        {
+          "name": "verify_flows",
+          "verdict": "PASS"
+        },
+        {
+          "name": "player_death",
+          "verdict": "PASS"
+        },
+        {
+          "name": "wall_cutaway",
+          "verdict": "PASS"
+        },
+        {
+          "name": "floor_seams",
+          "verdict": "PASS"
+        },
+        {
+          "name": "floor_layers",
+          "verdict": "PASS"
+        },
+        {
+          "name": "char_light",
+          "verdict": "PASS"
+        },
+        {
+          "name": "town_layout",
+          "verdict": "PASS"
+        },
+        {
+          "name": "town_approach",
+          "verdict": "PASS"
+        },
+        {
+          "name": "bgm_hooks",
+          "verdict": "PASS"
+        },
+        {
+          "name": "ui_windows",
+          "verdict": "PASS"
+        },
+        {
+          "name": "story_cutin",
+          "verdict": "PASS"
+        },
+        {
+          "name": "dialogue_band",
+          "verdict": "PASS"
+        },
+        {
+          "name": "dialogue_event",
+          "verdict": "PASS"
+        },
+        {
+          "name": "dialogue_choices",
+          "verdict": "PASS"
+        },
+        {
+          "name": "dialogue_esc_menu",
+          "verdict": "PASS"
+        },
+        {
+          "name": "ui_docks",
+          "verdict": "PASS"
+        },
+        {
+          "name": "ui_tooltips",
+          "verdict": "PASS"
+        },
+        {
+          "name": "belt_unify",
+          "verdict": "PASS"
+        },
+        {
+          "name": "item_ui",
+          "verdict": "PASS"
+        },
+        {
+          "name": "skill_picker",
+          "verdict": "PASS"
+        },
+        {
+          "name": "skill_icons",
+          "verdict": "PASS"
+        },
+        {
+          "name": "skill_names",
+          "verdict": "PASS"
+        },
+        {
+          "name": "vfx_cues",
+          "verdict": "PASS"
+        },
+        {
+          "name": "area_title",
+          "verdict": "PASS"
+        },
+        {
+          "name": "ink_transition",
+          "verdict": "PASS"
+        },
+        {
+          "name": "vfx_cap_blood",
+          "verdict": "PASS"
+        },
+        {
+          "name": "vfx_cap_comfort",
+          "verdict": "PASS"
+        },
+        {
+          "name": "hit_blood",
+          "verdict": "PASS"
+        },
+        {
+          "name": "skill_area",
+          "verdict": "PASS"
+        },
+        {
+          "name": "skill_tiers",
+          "verdict": "PASS"
+        },
+        {
+          "name": "aoe_skills",
+          "verdict": "PASS"
+        },
+        {
+          "name": "aoe_skills_2",
+          "verdict": "PASS"
+        },
+        {
+          "name": "build_changers",
+          "verdict": "PASS"
+        },
+        {
+          "name": "body_arts",
+          "verdict": "PASS"
+        },
+        {
+          "name": "dungeon_layout",
+          "verdict": "PASS"
+        },
+        {
+          "name": "beomgul_walk",
+          "verdict": "PASS"
+        },
+        {
+          "name": "mine_walk",
+          "verdict": "PASS"
+        },
+        {
+          "name": "bongmil_walk",
+          "verdict": "PASS"
+        },
+        {
+          "name": "room_props",
+          "verdict": "PASS"
+        },
+        {
+          "name": "town_exits",
+          "verdict": "PASS"
+        },
+        {
+          "name": "field_layout",
+          "verdict": "PASS"
+        },
+        {
+          "name": "field2_layout",
+          "verdict": "PASS"
+        },
+        {
+          "name": "gate_hover",
+          "verdict": "PASS"
+        },
+        {
+          "name": "pack_density",
+          "verdict": "PASS"
+        },
+        {
+          "name": "slice_loop",
+          "verdict": "PASS"
+        },
+        {
+          "name": "plaza_light",
+          "verdict": "PASS"
+        },
+        {
+          "name": "town_tour",
+          "verdict": "PASS"
+        },
+        {
+          "name": "aoe_field",
+          "verdict": "PASS"
+        },
+        {
+          "name": "long_body",
+          "verdict": "PASS"
+        },
+        {
+          "name": "named_imugi",
+          "verdict": "PASS"
+        },
+        {
+          "name": "named_gaksi",
+          "verdict": "PASS"
+        },
+        {
+          "name": "serpent_models",
+          "verdict": "PASS"
+        },
+        {
+          "name": "pus_jar",
+          "verdict": "PASS"
+        },
+        {
+          "name": "roles",
+          "verdict": "PASS"
+        },
+        {
+          "name": "roster_swap",
+          "verdict": "PASS"
+        },
+        {
+          "name": "gimmicks_m10",
+          "verdict": "PASS"
+        },
+        {
+          "name": "behaviors_m9",
+          "verdict": "PASS"
+        },
+        {
+          "name": "female_f1",
+          "verdict": "PASS"
+        },
+        {
+          "name": "female_float",
+          "verdict": "PASS"
+        },
+        {
+          "name": "yeogung_attacks",
+          "verdict": "PASS"
+        },
+        {
+          "name": "nachalnyeo_attacks",
+          "verdict": "PASS"
+        },
+        {
+          "name": "m14_models",
+          "verdict": "PASS"
+        },
+        {
+          "name": "leader_options",
+          "verdict": "PASS"
+        },
+        {
+          "name": "surround",
+          "verdict": "PASS"
+        },
+        {
+          "name": "weapon_visibility",
+          "verdict": "PASS"
+        },
+        {
+          "name": "first_magic",
+          "verdict": "PASS"
+        },
+        {
+          "name": "hover_target",
+          "verdict": "PASS"
+        },
+        {
+          "name": "system_menu",
+          "verdict": "PASS"
+        },
+        {
+          "name": "walk_audit",
+          "verdict": "PASS"
+        }
+      ]
+    },
+    {
+      "kind": "retry",
+      "phase": "phase_1_solo",
+      "metadata": {
+        "schema": 1,
+        "launch": {
+          "schema": 1,
+          "fixed_fps": 0,
+          "exe": "godot",
+          "argv": [
+            "--path",
+            "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon",
+            "--headless",
+            "--",
+            "--e2e=footsteps"
+          ],
+          "phase_arg": "footsteps",
+          "phase_tokens": [
+            "footsteps"
+          ],
+          "skip": [],
+          "exclusive": true,
+          "contains_balance_boss": false,
+          "combat_trace": false,
+          "launcher_pid": 28140,
+          "launched_utc": "2026-10-11T15:02:19.1762953Z"
+        },
+        "runtime_pid": null,
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_sec": 14.3341742,
+        "archived_utc": "2026-10-11T15:02:33.5822435Z",
+        "godot_log": {
+          "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-747-catalogue-tools\\logs\\godot.log",
+          "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon\\tmp\\e2e_raw\\20261011T1502053022065_31684\\phase_1_solo\\godot.raw.log",
+          "bytes": 4255,
+          "sha256": "be8da2bc2eb5aeb3a4a8ab55cc1e394f6d108522580ba3cf437a635a64d50f50"
+        },
+        "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+      },
+      "scenario_results": [
+        {
+          "name": "footsteps",
+          "verdict": "PASS"
+        }
+      ]
+    }
+  ],
+  "raw_logs": [
+    {
+      "path": "reports/744/logs/full_phase_1_solo_console.merged.raw.log",
+      "bytes": 113849,
+      "sha256": "d70a159980c236b41a27886b50888113de20d44312e244558d1cf2d35464ecd0"
+    },
+    {
+      "path": "reports/744/logs/full_phase_1_solo_godot.raw.log",
+      "bytes": 112546,
+      "sha256": "63dd5a7b8c423634e166ac455fb9adb5f08cd1591a5a11968d5e2ad7f0c4daed"
+    },
+    {
+      "path": "reports/744/logs/full_phase_1_solo_phase.json",
+      "bytes": 2583,
+      "sha256": "4fea0e54f273a7d2a6b2b715250cbe17502403b09740474979b56ba4d1b9a52b"
+    },
+    {
+      "path": "reports/744/logs/full_phase_2_shared_console.merged.raw.log",
+      "bytes": 967443,
+      "sha256": "61f8c282dab52d279c49bc949d5b1ac14305a80490b090d40e96d2be25fbaebf"
+    },
+    {
+      "path": "reports/744/logs/full_phase_2_shared_godot.raw.log",
+      "bytes": 955749,
+      "sha256": "0491b4ae7dffd6750f83094fe821c7e0b6cf010064b3421958581846d84f0086"
+    },
+    {
+      "path": "reports/744/logs/full_phase_2_shared_phase.json",
+      "bytes": 2479,
+      "sha256": "3a57fcf3a22f4618cd279890d3a91bcced1080e69e69401ff7144473e5ba19ef"
+    },
+    {
+      "path": "reports/744/logs/retry_phase_1_solo_console.merged.raw.log",
+      "bytes": 4559,
+      "sha256": "2608ba2d6d2a66750fe15f7df89e4dd00ffdf4bc4f83a854906362ea258e6107"
+    },
+    {
+      "path": "reports/744/logs/retry_phase_1_solo_godot.raw.log",
+      "bytes": 4255,
+      "sha256": "be8da2bc2eb5aeb3a4a8ab55cc1e394f6d108522580ba3cf437a635a64d50f50"
+    },
+    {
+      "path": "reports/744/logs/retry_phase_1_solo_phase.json",
+      "bytes": 1216,
+      "sha256": "35d810888e9418e23f01152502e28061b45245eb8139aa38ded26358f98764ca"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:/workspace/joseon-assets/catalog/characters/catalog.json",
+      "bytes": 750658,
+      "sha256": "ef6b8579be86d6af50c4c10c79afc684d6f9d234307732b1f942f23a7fa4cf12"
+    },
+    {
+      "path": "C:/workspace/joseon-assets/catalog/characters/index.html",
+      "bytes": 4201101,
+      "sha256": "91f67d9c697be456d5e0e79af52a29a0acd8546fdc1bd2e2a787ac5429a40c27"
+    },
+    {
+      "path": "C:/workspace/joseon-assets/catalog/characters/inline.html",
+      "bytes": 798051,
+      "sha256": "e3e8750ee527a509177bd8e35ceff4069658794b2e5c83a347ea117c18c8d062"
+    },
+    {
+      "path": "C:/Users/FORYOUCOM/.codex/visualizations/2026/10/11/01a128e9-3f04-75b3-938e-6d130a617fe1/character-art-catalogue.html",
+      "bytes": 798051,
+      "sha256": "e3e8750ee527a509177bd8e35ceff4069658794b2e5c83a347ea117c18c8d062"
+    }
+  ],
+  "limits": [
+    "New Gumiho designs not adopted in game; current boss model references heukrang.",
+    "World capture dependency lists incomplete: indeterminate freshness.",
+    "Neutral model renders do not apply EnemyDef tint or world lighting.",
+    "Original approval dates/prompts without evidence are not reconstructed."
+  ],
+  "maintenance": "Game docs/design/character_art_catalogue_ops.md; assets catalog/characters/viewer/README.md; update on the corresponding change card."
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon",
+      "--headless",
+      "--",
+      "--e2e=footsteps"
+    ],
+    "phase_arg": "footsteps",
+    "phase_tokens": [
+      "footsteps"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 28140,
+    "launched_utc": "2026-10-11T15:02:19.1762953Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_sec": 14.3341742,
+  "archived_utc": "2026-10-11T15:02:33.5822435Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-747-catalogue-tools\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon\\tmp\\e2e_raw\\20261011T1502053022065_31684\\phase_1_solo\\godot.raw.log",
+    "bytes": 4255,
+    "sha256": "be8da2bc2eb5aeb3a4a8ab55cc1e394f6d108522580ba3cf437a635a64d50f50"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

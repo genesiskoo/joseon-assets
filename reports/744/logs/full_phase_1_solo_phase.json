@@ -1,0 +1,49 @@
+{
+    "schema":  1,
+    "launch":  {
+                   "schema":  1,
+                   "fixed_fps":  0,
+                   "exe":  "godot",
+                   "argv":  [
+                                "--path",
+                                "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon",
+                                "--headless",
+                                "--",
+                                "--e2e=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter"
+                            ],
+                   "phase_arg":  "balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter",
+                   "phase_tokens":  [
+                                        "balance_room",
+                                        "balance_boss",
+                                        "hit_stagger",
+                                        "pack_perf",
+                                        "bodies_cap",
+                                        "gimmicks",
+                                        "item_showcase",
+                                        "hit_warmup",
+                                        "footsteps",
+                                        "audio_cues",
+                                        "sfx_limiter"
+                                    ],
+                   "skip":  [
+
+                            ],
+                   "exclusive":  true,
+                   "contains_balance_boss":  true,
+                   "combat_trace":  false,
+                   "launcher_pid":  49988,
+                   "launched_utc":  "2026-10-11T14:21:29.3077069Z"
+               },
+    "runtime_pid":  32656,
+    "exit_code":  1,
+    "timed_out":  false,
+    "elapsed_sec":  210.4730807,
+    "archived_utc":  "2026-10-11T14:24:59.8216730Z",
+    "godot_log":  {
+                      "source":  "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-747-catalogue-tools\\logs\\godot.log",
+                      "archive":  "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\747-catalogue-tools\\joseon\\tmp\\e2e_raw\\20261011T1421207856033_10724\\phase_1_solo\\godot.raw.log",
+                      "bytes":  112546,
+                      "sha256":  "63dd5a7b8c423634e166ac455fb9adb5f08cd1591a5a11968d5e2ad7f0c4daed"
+                  },
+    "console_format":  "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

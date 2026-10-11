@@ -1,0 +1,19 @@
+{
+  "test": "isolated ModelDef change",
+  "target": "data/models/jumo.tres",
+  "stale": [
+    {
+      "asset_id": "card744-render-jumo",
+      "freshness": "stale"
+    }
+  ],
+  "unchanged_other_model_captures": 6,
+  "approval_digest_before": "93cde33b03d1e42eb9216583af68fb162282a482cd08e5d4e10bac872e28006b",
+  "approval_digest_after": "93cde33b03d1e42eb9216583af68fb162282a482cd08e5d4e10bac872e28006b",
+  "game_files_modified": 0,
+  "catalogue_modified": false,
+  "errors": [
+    "card744-render-jumo: hash/size mismatch data/models/jumo.tres",
+    "card744-world-jumo: hash/size mismatch data/models/jumo.tres"
+  ]
+}
