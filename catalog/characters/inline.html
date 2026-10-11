@@ -97,10 +97,18 @@ function captureSummary(conditions) {
  const limit=conditions['비교한계'] || conditions['비교 한계'] || conditions.limitations;
  return `<p class="text-small">${esc(parts.length ? parts.join(' · ') : '촬영 조건은 근거 상세에서 확인')}</p>`+(typeof limit==='string' ? `<p class="text-small">비교 한계: ${esc(limit)}</p>` : '');
 }
+function selectedRuntime(g, current) {
+ if(current?.runtime) return current.runtime;
+ return {connection:g.runtime.connection,load:'not_checked',world_display:'not_checked',freshness:'indeterminate',bindings:g.runtime.bindings || [],evidence:[]};
+}
+function connectedBindings(r) {
+ return (r.bindings || []).filter(b=>b.connection==='connected' || !b.connection && r.connection==='connected');
+}
 function runtimeHTML(g, current) {
- const r = current?.runtime || g.runtime;
- return `<p>연결: ${esc(tr(r.connection))} · 로드: ${esc(tr(r.load))}</p><p>월드 표시: ${esc(tr(r.world_display))} · 최신성: ${esc(tr(r.freshness))}</p>`+
- (r.bindings?.length ? `<p class="text-small">현재 연결: ${esc([...new Set(r.bindings.map(b=>b.model_id || b.portrait_id || b.runtime_id || '미확인'))].join(' · '))}</p>` : '<p class="text-small">확인된 runtime 연결 자료 없음</p>')+
+ const r = selectedRuntime(g,current);
+ const bindings=connectedBindings(r);
+ return `<p>${current ? '선택 매체 연결' : '정적 그룹 연결'}: ${esc(tr(r.connection))} · 로드: ${esc(tr(r.load))}</p><p>월드 표시: ${esc(tr(r.world_display))} · 최신성: ${esc(tr(r.freshness))}</p>`+
+ (bindings.length ? `<p class="text-small">현재 연결: ${esc([...new Set(bindings.map(b=>b.model_id || b.portrait_id || b.runtime_id || '미확인'))].join(' · '))}</p>` : '<p class="text-small">연결됨으로 확인한 매체 자료 없음</p>')+
  (g.notes?.length ? `<p class="notice">${esc(g.notes.join(' · '))}</p>` : '');
 }
 function matching() {
@@ -148,6 +156,7 @@ window.addEventListener('openai:set_globals',event=>{const incoming=event.detail
 if(data.issues?.length){$('[data-issues]').hidden=false;$('[data-issues-content]').textContent=JSON.stringify(data.issues,null,2);}
 render();
 })();
+
 
 
 

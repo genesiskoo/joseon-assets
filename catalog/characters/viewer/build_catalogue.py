@@ -153,7 +153,7 @@ def normalise(catalog, roots, size, quality, inline, output, standalone_url, val
         group['aliases']=list(dict.fromkeys(group['aliases']+asset.get('runtime_aliases',[])))
         r=item.get('runtime') or {}
         merge_status(group['runtime'],r)
-        group['runtime']['bindings']+=[compact_binding(b) for b in r.get('bindings',[])]
+        group['runtime']['bindings']+=[compact_binding(dict(b,connection=b.get('connection',r.get('connection','not_checked')))) for b in r.get('bindings',[])]
         group['runtime']['evidence']+=r.get('evidence',[])
     for char in catalog.get('characters',[]):
         for form in char.get('forms',[]):
@@ -223,6 +223,7 @@ def main():
     print(json.dumps(report,ensure_ascii=False))
 
 if __name__=='__main__': main()
+
 
 
 

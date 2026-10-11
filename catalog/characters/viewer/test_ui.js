@@ -5,7 +5,7 @@ const vm = require('node:vm');
 const src = fs.readFileSync(__dirname+'/app.js','utf8');
 const context = {esc:v=>String(v ?? ''),tr:v=>v,versions:g=>g.assets};
 vm.createContext(context);
-for (const [first,last] of [['function preferredConcept','function evidenceHTML'],['function captureSummary','function runtimeHTML'],['function evidenceHTML','function details']]) {
+for (const [first,last] of [['function preferredConcept','function evidenceHTML'],['function captureSummary','function runtimeHTML'],['function evidenceHTML','function details'],['function selectedRuntime','function matching']]) {
  vm.runInContext(src.slice(src.indexOf(first),src.indexOf(last)),context);
 }
 const old={asset_id:'old-f01',decision:{status:'approved',scope:['appearance'],date:'2026-09-17'},provenance:{}};
@@ -22,3 +22,16 @@ assert.match(summary,/중립 뷰어 · 1280 × 720 · 직교 · idle/);
 assert.match(summary,/비교 한계: 씬 틴트 없음/);
 assert.doesNotMatch(summary,/hidden detail|화면크기|\{/);
 console.log('UI selection, approval wording and capture summary: PASS');
+
+// No game-capture asset: model proof cannot stand in for the missing medium.
+const grouped={runtime:{connection:'connected',load:'success',world_display:'confirmed',freshness:'current',bindings:[{model_id:'boss_gumiho',connection:'connected'},{portrait_id:'gumiho_f03',connection:'definition_only'}]}};
+const missingMedia=context.selectedRuntime(grouped,null);
+assert.equal(missingMedia.connection,'connected');
+assert.equal(missingMedia.load,'not_checked');
+assert.equal(missingMedia.world_display,'not_checked');
+assert.equal(missingMedia.freshness,'indeterminate');
+assert.equal(context.connectedBindings(missingMedia).length,1);
+assert.equal(context.connectedBindings(missingMedia)[0].model_id,'boss_gumiho');
+const selected={runtime:{connection:'connected',load:'not_checked',world_display:'not_checked',freshness:'stale',bindings:[{portrait_id:'jumo'}]}};
+assert.equal(context.selectedRuntime(grouped,selected).freshness,'stale');
+console.log('Missing-media status and connected-only bindings: PASS');
