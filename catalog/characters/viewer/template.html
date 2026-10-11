@@ -1,0 +1,13 @@
+<div id="jh-character-catalogue">
+<header><h2>조선헌터스 캐릭터 자료관</h2><p class="text-muted">원화 판정 · 현재 게임 모습</p></header>
+<div class="viz-controls">
+<label class="form-label">인물·형태 검색<input class="form-control" data-search type="search" placeholder="도호, 주모, 구미호…"></label>
+<label class="form-label">역할<select class="form-select" data-role><option value="">전체 역할</option></select></label>
+<label class="form-label">자료 상태<select class="form-select" data-status><option value="">전체 상태</option><option value="approved">승인 자료 있음</option><option value="unapproved">미승인 자료 있음</option><option value="connected">게임 연결 있음</option><option value="stale">재확인 필요</option></select></label>
+</div>
+<p data-count class="text-small" aria-live="polite"></p>
+<div data-list class="catalogue-list" aria-label="캐릭터 목록"></div>
+<hr><section data-detail aria-live="polite"></section><details data-issues hidden><summary>자료 불일치·미확인 근거</summary><pre class="metadata" data-issues-content></pre></details>
+<dialog data-zoom><button class="btn" type="button" data-close>닫기</button><figure><img data-zoom-image alt=""><figcaption data-zoom-caption></figcaption></figure></dialog>
+</div>
+
