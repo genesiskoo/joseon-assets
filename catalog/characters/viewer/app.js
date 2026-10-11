@@ -7,7 +7,7 @@ const groups = data.groups;
 const label = {
  approved:'승인',recommended:'추천 · 미승인',unreviewed:'미판정',unknown:'판정 불명',rejected:'기각',superseded:'과거 승인 · 대체됨',
  connected:'연결됨',not_connected:'미연결',definition_only:'정의만 있음 · 사용 미확인',not_checked:'미검사',success:'성공',failed:'실패',confirmed:'확인',not_confirmed:'미확인',current:'현재 조건 일치',stale:'재확인 필요',indeterminate:'최신성 판정 불가',
- face:'얼굴',costume:'복식',tone:'톤',silhouette:'실루엣',eyes:'눈',appearance:'외형',hair:'머리',player:'플레이어',npc:'마을 NPC',boss:'보스',enemy:'일반 몬스터',related_character:'관련 인물',boss_npc:'보스 · NPC',concept:'원화',concept_board:'원화 보드',portrait:'초상',model_render:'모델 렌더',game_capture:'게임 화면',model:'3D 모델'
+ age:'연령',expression:'표정',identity:'인물 정체성',role:'역할',shown_upper_body_costume:'그림에 보이는 상반신 복식',shown_upper_body_identity:'그림에 보이는 상반신 정체성',face:'얼굴',costume:'복식',tone:'톤',silhouette:'실루엣',eyes:'눈',appearance:'외형',hair:'머리',player:'플레이어',npc:'마을 NPC',boss:'보스',enemy:'일반 몬스터',related_character:'관련 인물',boss_npc:'보스 · NPC',concept:'원화',concept_board:'원화 보드',portrait:'초상',model_render:'모델 렌더',game_capture:'게임 화면',model:'3D 모델'
 };
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const tr = value => label[value] || value || '미확인';
@@ -107,6 +107,7 @@ window.addEventListener('openai:set_globals',event=>{const incoming=event.detail
 if(data.issues?.length){$('[data-issues]').hidden=false;$('[data-issues-content]').textContent=JSON.stringify(data.issues,null,2);}
 render();
 })();
+
 
 
 
