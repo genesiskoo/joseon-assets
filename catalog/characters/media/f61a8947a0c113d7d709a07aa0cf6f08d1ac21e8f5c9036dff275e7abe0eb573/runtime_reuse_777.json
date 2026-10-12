@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "card": 777,
+  "date": "2026-10-13",
+  "purpose": "Existing model reuse by dynamic TownResidents; no model file replacement or approval expansion.",
+  "source_state": "Frozen #777 working tree source snapshot; historical fingerprints remain unchanged.",
+  "models": [
+    {
+      "repository": "game",
+      "path": "data/models/merchant_v2.tres",
+      "sha256": "88b2dbb5893364076e68a4b9fbf15fdf5c306e187fbfed0cd1461621968cd1f2",
+      "bytes": 531
+    },
+    {
+      "repository": "game",
+      "path": "data/models/elder_v2.tres",
+      "sha256": "b521250365058d1e949f07107b13a4264410ea4333bbe88737a2f3b0caa7435c",
+      "bytes": 521
+    },
+    {
+      "repository": "game",
+      "path": "assets/models/merchant_v2/merchant_v2.glb",
+      "sha256": "c876ebcc97e242e67136d8abdca00054d6614edf225ad768781cf5a5c9e5129e",
+      "bytes": 4474232
+    },
+    {
+      "repository": "game",
+      "path": "assets/models/elder_v2/elder_v2.glb",
+      "sha256": "404f2e2cc89130d69aa16c3cc9273679b2c7701a620ccef1fe773febe377fc04",
+      "bytes": 4736972
+    }
+  ],
+  "code": [
+    {
+      "repository": "game",
+      "path": "world/town_residents.gd",
+      "sha256": "f1bc34eb8476ffea63432a9203a96ab9689dc0c6f4c43f9107805b5d4b2e9423",
+      "bytes": 4698
+    },
+    {
+      "repository": "game",
+      "path": "core/story_barks.gd",
+      "sha256": "a9cb98ad3180e35e522463492a4bfeb96871ff4c9525993e42eb2a954e6455c1",
+      "bytes": 3225
+    },
+    {
+      "repository": "game",
+      "path": "core/quest_watch.gd",
+      "sha256": "65fe2d6ce1d98a0f1fe3c4442d433b1ec9b6cc8c70553b4a71e020b5c9f030ed",
+      "bytes": 3616
+    },
+    {
+      "repository": "game",
+      "path": "actors/actor_visual.gd",
+      "sha256": "9cefa3d685e1e5359693e8726d53ad83b4e3948c71501ce1071005d17d3d24f3",
+      "bytes": 124812
+    }
+  ],
+  "tints": [
+    [
+      0.74,
+      0.83,
+      0.8,
+      1
+    ],
+    [
+      0.83,
+      0.73,
+      0.69,
+      1
+    ],
+    [
+      0.7,
+      0.75,
+      0.86,
+      1
+    ]
+  ],
+  "default_count": 6,
+  "ending_finished_count": 8,
+  "behavior": "Frozen idle, no service/click/collision/nav obstacle; nearby one reaction per stage and 10-second interval.",
+  "verification": {
+    "scenario": "dialogue_audit",
+    "mode": "actual window",
+    "checks": 42,
+    "pass": true,
+    "raw": "reports/777_dialogue_voice/qa/review_window_final.raw.log"
+  }
+}

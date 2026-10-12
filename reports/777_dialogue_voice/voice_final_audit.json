@@ -1,0 +1,1527 @@
+{
+  "schema": 1,
+  "card": 777,
+  "auditor": "voice_pipeline independent read-only verification",
+  "verified_utc": "2026-10-12T21:56:20.056605+00:00",
+  "pass": true,
+  "summary": {
+    "active": 277,
+    "orphans": 23,
+    "game_wavs": 300,
+    "source_files": 21,
+    "baseline_files": 237,
+    "baseline_replaced": 214,
+    "baseline_unchanged": 23,
+    "new_ids": 63,
+    "active_file_checks_passed": 277,
+    "api_calls": 0,
+    "godot_runs": 0
+  },
+  "plan_sha256": "c6078e970bd5f5e15627f7814febd51202e4f1c41a43605b06a6ed8731ef5cf8",
+  "document_sha256": {
+    "manifest": "b471a0a3a1dc1b536e80efa5fdec12812d344f05f4bd836e4e6a8c8ae6cdbdb9",
+    "qa": "f365caba84df59144c95992447d15793c4821b256273a76fa2238d3294d3fb4a",
+    "intake": "b2684989ad25512384f3b6d71cbcf425640f50a1d4eeb52145f27e5b1c22b801",
+    "result": "51962860efcb5065d78c8b12efd8eb525cbc016d1ed60fbd073cf8eeb835b524",
+    "baseline": "9428af5597e798838ecd0c634b4f56e877b52895a6e39ad98be781ae2c7a25de",
+    "first_manifest": "521d4c5ff01c11eb59892ec1f1be8b58cd24bbdff322c9816ef55f0b89482f23",
+    "first_qa": "1ec7626a0807ce1ade38b94ec4309195cf18dd29d04d7912eece3cec1cfb1a51",
+    "first_intake": "ff27ac91ad072e1970830ae99b2cce1f1b1b8a90ecc9652de5615d1de21f5400",
+    "initial_manifest": "9370365a103669fc305d8cf07a65a0ed4bcb24c0dee9a82a073d23a88947dc68"
+  },
+  "checks": [
+    {
+      "check": "manifest_unique_ids",
+      "pass": true,
+      "detail": {
+        "count": 277,
+        "unique": 277
+      }
+    },
+    {
+      "check": "qa_unique_ids",
+      "pass": true,
+      "detail": {
+        "count": 277,
+        "unique": 277
+      }
+    },
+    {
+      "check": "intake_unique_ids",
+      "pass": true,
+      "detail": {
+        "count": 277,
+        "unique": 277
+      }
+    },
+    {
+      "check": "result_unique_ids",
+      "pass": true,
+      "detail": {
+        "count": 277,
+        "unique": 277
+      }
+    },
+    {
+      "check": "first_intake_unique_ids",
+      "pass": true,
+      "detail": {
+        "count": 277,
+        "unique": 277
+      }
+    },
+    {
+      "check": "result_orphans_unique_ids",
+      "pass": true,
+      "detail": {
+        "count": 23,
+        "unique": 23
+      }
+    },
+    {
+      "check": "active_count",
+      "pass": true,
+      "detail": {
+        "manifest": 277,
+        "qa": 277,
+        "result": 277
+      }
+    },
+    {
+      "check": "all_active_id_sets",
+      "pass": true
+    },
+    {
+      "check": "manifest_plan_hash",
+      "pass": true
+    },
+    {
+      "check": "plan_identity",
+      "pass": true
+    },
+    {
+      "check": "qa_success",
+      "pass": true
+    },
+    {
+      "check": "orphans_agree",
+      "pass": true
+    },
+    {
+      "check": "baseline_identity",
+      "pass": true
+    },
+    {
+      "check": "game_wav_id_set",
+      "pass": true,
+      "detail": {
+        "total": 300
+      }
+    },
+    {
+      "check": "all_active_file_checks",
+      "pass": true,
+      "detail": {
+        "passed": 277,
+        "total": 277,
+        "failures": []
+      }
+    },
+    {
+      "check": "orphans_byte_preserved",
+      "pass": true
+    },
+    {
+      "check": "source_map_identity",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/dev/band_preview.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/event/ending.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/event/gumiho.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/event/seal_gate.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/event/shaman_quest.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/npc/dokkaebi.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/npc/elder.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/npc/eoksoe.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/npc/jumo.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/npc/merchant.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/dialogue/npc/shaman.dialogue",
+      "pass": true
+    },
+    {
+      "check": "source_sha_docs/design/audio_cast_613.json",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/audio/bark_lines_777.json",
+      "pass": true
+    },
+    {
+      "check": "source_sha_core/story_barks.gd",
+      "pass": true
+    },
+    {
+      "check": "source_sha_world/stairs.gd",
+      "pass": true
+    },
+    {
+      "check": "source_sha_world/jumo_stall.gd",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/quests/heukrang_clear.tres",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/enemies/beom_apjabi.tres",
+      "pass": true
+    },
+    {
+      "check": "source_sha_data/bosses/jangsanbeom_voices.tres",
+      "pass": true
+    },
+    {
+      "check": "source_sha_actors/boss_bulgasari.gd",
+      "pass": true
+    },
+    {
+      "check": "source_sha_world/town_residents.gd",
+      "pass": true
+    },
+    {
+      "check": "source_inventory_complete",
+      "pass": true,
+      "detail": {
+        "expected": 21,
+        "snapshot": 21
+      }
+    },
+    {
+      "check": "initial_baseline_counts",
+      "pass": true,
+      "detail": {
+        "comparison": {
+          "replaced": 214,
+          "unchanged": 23,
+          "missing": 0
+        },
+        "new_ids": 63
+      }
+    },
+    {
+      "check": "first_qa_baseline_match",
+      "pass": true
+    },
+    {
+      "check": "result_declared_counts",
+      "pass": true
+    },
+    {
+      "check": "result_replan_bytes_unchanged",
+      "pass": true
+    },
+    {
+      "check": "reported_runtime_counts",
+      "pass": true,
+      "detail": {
+        "independently_replayed": false,
+        "reason": "read-only audit; no Godot execution authorized"
+      }
+    },
+    {
+      "check": "orphans_unreferenced",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "audit_documents_stable",
+      "pass": true
+    },
+    {
+      "check": "audit_sources_stable",
+      "pass": true
+    }
+  ],
+  "active_files": [
+    {
+      "id": "EV_ENDING_1",
+      "pass": true
+    },
+    {
+      "id": "EV_ENDING_2",
+      "pass": true
+    },
+    {
+      "id": "EV_ENDING_3",
+      "pass": true
+    },
+    {
+      "id": "EV_ENDING_4",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_1",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_MET",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_CREDIT",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_PAY",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_UNMET",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_2",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_3",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_4",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_5",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_6",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_1",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_2",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_3",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_4",
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_5",
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_1",
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_2",
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_3",
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_4",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_1",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_2",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3B",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3C",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_4",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_5",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_6",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_7",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_8",
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_9",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_6",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_7",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_8",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_9",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_10",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_11",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_12",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_14",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_6",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CRAFT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_ASK_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_MOKRO",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_6",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_7",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_8",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_EMPTY_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_EMPTY_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_DONE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_DONE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_NONE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_NONE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_FIRST_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_FIRST_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_THANKS_NUDGE",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_DONE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_DONE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_ACTIVE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_ACTIVE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_AGAIN",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_ACTIVE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_ACTIVE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_ACCEPT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_REPORT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_REPORT_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_REPORT_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_THANKS_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_ENDING_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_THANKS_FULL",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_VOUCH_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_BEOM_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_BEOM_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_SOE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_SOE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_EOKSOE_FIRST_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_EOKSOE_GREET_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_EOKSOE_GREET_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_FIRST_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_FIRST_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_FIRST_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3B",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3C",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_4B",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_6",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_7",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_8",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_9",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_10",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_DONE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_DONE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_HEUK",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_BEOM",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_SOE",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_HEUK",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_BEOM_SOE",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_BEOM",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_HEUK_SOE",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_SOE",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_HEUK_BEOM",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_END",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GREET_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GREET_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GREET_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_BUSY_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_BUSY_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_6",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_7",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_8",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_OFFER_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_OFFER_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_OFFER_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_ACTIVE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_ACTIVE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_VOUCH_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_BEOM_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_BEOM_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_SOE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_SOE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_ENDING_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3B",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3C",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_5",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_6",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_7",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_8",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_9",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_HEAL_INTRO_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_PROGRESS_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_PROGRESS_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_NUDGE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_PROXY_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_TAVERN_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_TAVERN_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_HAND_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_WARN_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_WARN_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_JUMO_AWAY_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_JUMO_GONE_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_4",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_3",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_IDENTIFY_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_IDENTIFY_2",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_ASK_1",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_ASK_VERSION",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_ASK_FREE",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_DONE",
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_CANCEL",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_ARRIVAL_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BONGMIL_ENTRY_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BONGMIL_LAST_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_GATE_LOOK_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_STALL_GONE_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_STALL_ENDING_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_CLEAR_CLOSE_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_CLEAR_DONE_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_APJABI_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_ELDER_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_NAME_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_P3_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_BAIT_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BULGASARI_IRON_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BULGASARI_GOLD_1",
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BULGASARI_DEATH_1",
+      "pass": true
+    }
+  ],
+  "orphans": [
+    {
+      "id": "NPC_DOKKAEBI_FIRST_13",
+      "pass": true,
+      "sha256": "a3ed05f077a73d1bab267313210e3be3e91de39bd9d9251fe1a42509b84b892f"
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET2_1",
+      "pass": true,
+      "sha256": "f8a620aace1c5432110af39dfb314b8494261bfc5ec419bfa0c4e2f0d0a6592c"
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET2_2",
+      "pass": true,
+      "sha256": "be3a1056912ffe4ce642e7203f65734ef1770aa404dad1f7055e8f92cd102ff1"
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_UNIQUE_1",
+      "pass": true,
+      "sha256": "faca127c29de66da913989fa1e6d0bb00c72281658da9b7db9bfec6b54419780"
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_UNIQUE_2",
+      "pass": true,
+      "sha256": "e36b4d6eb34d118206bff922106c80fe565f3bf7bed0c4f651b931b3a541b039"
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_UNIQUE_3",
+      "pass": true,
+      "sha256": "b401e8a6fa51415a51eec28dc2e8a7d6a7c8599e1f4ce6a408e7cb9524c80bba"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G05_ELSE",
+      "pass": true,
+      "sha256": "79c3a8f82e2ac800a8cf19b8422eb7f6ffae1ac473ad1d92e773908998ac724e"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G06_ELSE",
+      "pass": true,
+      "sha256": "d5e107347430e46760789f2489100e6d650b53711c7242c877877a5e32f22e07"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G06_RULE",
+      "pass": true,
+      "sha256": "a5a32c85711deee9d3f4ac78e0c69514133dce02dd1865bda40c67165e44a0bf"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G07_ELSE",
+      "pass": true,
+      "sha256": "d6e7f0181193f67c646a303a0777baa6d7f70c07da77f56d04875469d9c4fa05"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G08_ELSE",
+      "pass": true,
+      "sha256": "36ebf6c7dc804f9181fdd155f3626bad7d703f1a858d9ee0c9644ceee822bfdd"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G09_ELSE",
+      "pass": true,
+      "sha256": "ed7f7b765ff9c14581923a01d61b3ea2443620489a04723103ca650677139190"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G09_RULE",
+      "pass": true,
+      "sha256": "2439d864ed83d60b58633a16b3b4357df3ac927eec9712ef8c7cfb5d643cc002"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G10_ELSE",
+      "pass": true,
+      "sha256": "c81c1b67fa55677ae88e4b99347676d036916f9299473db572739313d39f4f53"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G10_RULE",
+      "pass": true,
+      "sha256": "485c819cf79acdad629c8b1dae51bd0833c49618352eb0322a23feeb0dba4dac"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G11_ELSE",
+      "pass": true,
+      "sha256": "ef741dde243a07f798da02447131476a6a5e6547885df257a6e3e0df16ca7388"
+    },
+    {
+      "id": "NPC_DOKKAEBI_NEAR_G12_ELSE",
+      "pass": true,
+      "sha256": "3b6321bab3615beb19de0194864fcf6bbbeb43274be83601a78804abec93539d"
+    },
+    {
+      "id": "NPC_MERCHANT_HINT_G08_1",
+      "pass": true,
+      "sha256": "472bffc3d83dad1595ffb51c0fb67c0ec95e7b27f26a94adf064f1d96da7d158"
+    },
+    {
+      "id": "NPC_MERCHANT_HINT_G08_2",
+      "pass": true,
+      "sha256": "82433ea732dfef443aff15191c3510b7b046acaddcbea2290979348b5acca821"
+    },
+    {
+      "id": "NPC_MERCHANT_HINT_G08_3",
+      "pass": true,
+      "sha256": "537b809bfb080bd4591157b79dd0ed0b8d34c71566720c68b88db8752ca82ce0"
+    },
+    {
+      "id": "NPC_SHAMAN_HINT_MANSA_1",
+      "pass": true,
+      "sha256": "2dca6261de6387bb7aac18753630d773f3a0a50e2e23626c2312c0b4bc23a9b9"
+    },
+    {
+      "id": "NPC_SHAMAN_HINT_MANSA_2",
+      "pass": true,
+      "sha256": "d59c5595793d491e0b9b6fc46f9f1596974f6b9222fcc5f7e89e9263fae3c06c"
+    },
+    {
+      "id": "NPC_SHAMAN_HINT_MANSA_3",
+      "pass": true,
+      "sha256": "5691a434904bc4df2c8fa1135f40300dfaa851a017bcb0c57878b2b301f103f5"
+    }
+  ],
+  "source_sha256": {
+    "data/dialogue/dev/band_preview.dialogue": "75882395978583f4bf0b6269b78485429232087552427fe84158cb6d63ecafdb",
+    "data/dialogue/event/ending.dialogue": "feaabec5c53d1536219ca839a6f38688b74d1aca51a4b5b104b9bd0e195244e6",
+    "data/dialogue/event/gumiho.dialogue": "1c30bbe799f5a7eac8a35176bf8f9b4c58d9c80362f91fbb7dc76f79168542eb",
+    "data/dialogue/event/seal_gate.dialogue": "eeb142decb7560387f5740d0274ed661d554accdec7744cd1dbdca4a182f1b86",
+    "data/dialogue/event/shaman_quest.dialogue": "5ba733ea79ccfaef040737c886160183588f2191e1e8d9cf36f964d13f5154da",
+    "data/dialogue/npc/dokkaebi.dialogue": "aa1efd4238f0ca7c13fa43f42d7aac1eadbdc4a595be6b3787eb825bfff8a872",
+    "data/dialogue/npc/elder.dialogue": "8c47cf30a0ce033b2e1d41ff43012642fe0c8132fdb175ca285d168310bcf137",
+    "data/dialogue/npc/eoksoe.dialogue": "9e9c73456560c4f307b560cccd888c2a1e4818c8af1c707c5fb767127d568b3d",
+    "data/dialogue/npc/jumo.dialogue": "7e9092f087ed60df72fe4cf1d8dc05703d054f63be267a114c480dd12f5a6974",
+    "data/dialogue/npc/merchant.dialogue": "b77bd5ca16365c56ca3baef084af39f227792eeef224648e9a8c10145116569b",
+    "data/dialogue/npc/shaman.dialogue": "2c27d3159e8047adedf1bc9fd87721e8907f120e000c2f69e379a191f3d09ef4",
+    "docs/design/audio_cast_613.json": "70e4c2ad13da8efa92fa720cd76707ac1d471c8b8014850501965e89188cfb84",
+    "data/audio/bark_lines_777.json": "40e773dbff8f3fba85b5ad616d7370a63afa035e2f883b83d90fc1c001f0080b",
+    "core/story_barks.gd": "a9cb98ad3180e35e522463492a4bfeb96871ff4c9525993e42eb2a954e6455c1",
+    "world/stairs.gd": "172455bc056264d019839a7b855140e8992811e982e9962003bb9c572e483e9a",
+    "world/jumo_stall.gd": "c8c61a01cc0fa0ef2cd83070b08270862490e3d64d74b270e2dbc8ebefa82a0a",
+    "data/quests/heukrang_clear.tres": "f7c4333b65eeede1c08d9c14c9e88764e554b1f24136e2aeff482203372f7ee7",
+    "data/enemies/beom_apjabi.tres": "0a9b14643e21d2c209cbf275a2a9ee3f3426cd0613938151729c30d6d7f2ed21",
+    "data/bosses/jangsanbeom_voices.tres": "b098f827a21679002525a0aa435ca3086c7b12f1fa15e8bac7317cd15329a2bb",
+    "actors/boss_bulgasari.gd": "8da841062b59671ac418a6ffa7f2aeb76d453801a804527bd7ecf7b4e28a47a1",
+    "world/town_residents.gd": "f1bc34eb8476ffea63432a9203a96ab9689dc0c6f4c43f9107805b5d4b2e9423"
+  },
+  "scope_note": "Game/staged/raw bytes and PCM headers independently checked. LUFS/TP cross-checked against immutable existing QA/intake/result; no new audio measurement or runtime execution."
+}

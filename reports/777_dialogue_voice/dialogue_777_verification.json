@@ -1,0 +1,925 @@
+{
+  "schema": 1,
+  "card": 777,
+  "date": "2026-10-13",
+  "basis": "Initial full shared run plus corrected fresh critical scenarios plus all solo scenarios. Initial failures/cancelled controller remain in raw history; this is an aggregate final verdict, not a claim that the original command passed.",
+  "e2e": {
+    "scenarios": 170,
+    "pass": 170,
+    "fail": 0,
+    "checks": 10523,
+    "latest": {
+      "affix_combat": {
+        "verdict": "PASS",
+        "checks": 42,
+        "raw": "full_test.raw.log"
+      },
+      "anim_commit": {
+        "verdict": "PASS",
+        "checks": 59,
+        "raw": "full_test.raw.log"
+      },
+      "aoe_field": {
+        "verdict": "PASS",
+        "checks": 20,
+        "raw": "full_test.raw.log"
+      },
+      "aoe_skills": {
+        "verdict": "PASS",
+        "checks": 66,
+        "raw": "full_test.raw.log"
+      },
+      "aoe_skills_2": {
+        "verdict": "PASS",
+        "checks": 63,
+        "raw": "full_test.raw.log"
+      },
+      "area_title": {
+        "verdict": "PASS",
+        "checks": 70,
+        "raw": "full_test.raw.log"
+      },
+      "aspd_steps": {
+        "verdict": "PASS",
+        "checks": 27,
+        "raw": "full_test.raw.log"
+      },
+      "attack_chain": {
+        "verdict": "PASS",
+        "checks": 21,
+        "raw": "full_test.raw.log"
+      },
+      "audio_cues": {
+        "verdict": "PASS",
+        "checks": 158,
+        "raw": "solo_final.raw.log"
+      },
+      "automap": {
+        "verdict": "PASS",
+        "checks": 50,
+        "raw": "full_test.raw.log"
+      },
+      "balance_boss": {
+        "verdict": "PASS",
+        "checks": 30,
+        "raw": "solo_final.raw.log"
+      },
+      "balance_room": {
+        "verdict": "PASS",
+        "checks": 8,
+        "raw": "solo_final.raw.log"
+      },
+      "behaviors_m9": {
+        "verdict": "PASS",
+        "checks": 13,
+        "raw": "full_test.raw.log"
+      },
+      "belt_unify": {
+        "verdict": "PASS",
+        "checks": 15,
+        "raw": "full_test.raw.log"
+      },
+      "beomgul_walk": {
+        "verdict": "PASS",
+        "checks": 76,
+        "raw": "full_test.raw.log"
+      },
+      "bgm_hooks": {
+        "verdict": "PASS",
+        "checks": 23,
+        "raw": "full_test.raw.log"
+      },
+      "bodies_cap": {
+        "verdict": "PASS",
+        "checks": 13,
+        "raw": "solo_final.raw.log"
+      },
+      "body_arts": {
+        "verdict": "PASS",
+        "checks": 76,
+        "raw": "full_test.raw.log"
+      },
+      "bongmil_walk": {
+        "verdict": "PASS",
+        "checks": 165,
+        "raw": "full_test.raw.log"
+      },
+      "boss_bulgasari": {
+        "verdict": "PASS",
+        "checks": 52,
+        "raw": "full_test.raw.log"
+      },
+      "boss_floor": {
+        "verdict": "PASS",
+        "checks": 46,
+        "raw": "full_test.raw.log"
+      },
+      "boss_greetings": {
+        "verdict": "PASS",
+        "checks": 36,
+        "raw": "greetings_hover_final.raw.log"
+      },
+      "boss_jangsanbeom": {
+        "verdict": "PASS",
+        "checks": 42,
+        "raw": "full_test.raw.log"
+      },
+      "boss_uniques": {
+        "verdict": "PASS",
+        "checks": 37,
+        "raw": "full_test.raw.log"
+      },
+      "build_changers": {
+        "verdict": "PASS",
+        "checks": 88,
+        "raw": "full_test.raw.log"
+      },
+      "bulgasari_path": {
+        "verdict": "PASS",
+        "checks": 15,
+        "raw": "full_test.raw.log"
+      },
+      "char_light": {
+        "verdict": "PASS",
+        "checks": 107,
+        "raw": "full_test.raw.log"
+      },
+      "character_profiles": {
+        "verdict": "PASS",
+        "checks": 38,
+        "raw": "full_test.raw.log"
+      },
+      "character_stats": {
+        "verdict": "PASS",
+        "checks": 191,
+        "raw": "full_test.raw.log"
+      },
+      "chief_quest": {
+        "verdict": "PASS",
+        "checks": 71,
+        "raw": "full_test.raw.log"
+      },
+      "combat_timeline": {
+        "verdict": "PASS",
+        "checks": 96,
+        "raw": "full_test.raw.log"
+      },
+      "combination": {
+        "verdict": "PASS",
+        "checks": 26,
+        "raw": "full_test.raw.log"
+      },
+      "damage_colors": {
+        "verdict": "PASS",
+        "checks": 18,
+        "raw": "full_test.raw.log"
+      },
+      "dev_legend_view": {
+        "verdict": "PASS",
+        "checks": 23,
+        "raw": "full_test.raw.log"
+      },
+      "dev_panel": {
+        "verdict": "PASS",
+        "checks": 136,
+        "raw": "full_test.raw.log"
+      },
+      "dialogue_audit": {
+        "verdict": "PASS",
+        "checks": 42,
+        "raw": "review_window_final.raw.log"
+      },
+      "dialogue_band": {
+        "verdict": "PASS",
+        "checks": 78,
+        "raw": "full_test.raw.log"
+      },
+      "dialogue_choices": {
+        "verdict": "PASS",
+        "checks": 46,
+        "raw": "full_test.raw.log"
+      },
+      "dialogue_esc_menu": {
+        "verdict": "PASS",
+        "checks": 53,
+        "raw": "full_test.raw.log"
+      },
+      "dialogue_event": {
+        "verdict": "PASS",
+        "checks": 50,
+        "raw": "full_test.raw.log"
+      },
+      "dungeon_layout": {
+        "verdict": "PASS",
+        "checks": 42,
+        "raw": "full_test.raw.log"
+      },
+      "element_affix": {
+        "verdict": "PASS",
+        "checks": 7,
+        "raw": "full_test.raw.log"
+      },
+      "element_flight_v1": {
+        "verdict": "PASS",
+        "checks": 45,
+        "raw": "full_test.raw.log"
+      },
+      "element_sal": {
+        "verdict": "PASS",
+        "checks": 42,
+        "raw": "full_test.raw.log"
+      },
+      "element_status": {
+        "verdict": "PASS",
+        "checks": 78,
+        "raw": "full_test.raw.log"
+      },
+      "element_structure_v1": {
+        "verdict": "PASS",
+        "checks": 89,
+        "raw": "full_test.raw.log"
+      },
+      "element_ui": {
+        "verdict": "PASS",
+        "checks": 13,
+        "raw": "full_test.raw.log"
+      },
+      "elite_pack": {
+        "verdict": "PASS",
+        "checks": 52,
+        "raw": "full_test.raw.log"
+      },
+      "elite_slots": {
+        "verdict": "PASS",
+        "checks": 31,
+        "raw": "full_test.raw.log"
+      },
+      "elite_ui_view": {
+        "verdict": "PASS",
+        "checks": 6,
+        "raw": "full_test.raw.log"
+      },
+      "ending": {
+        "verdict": "PASS",
+        "checks": 38,
+        "raw": "review_window_final.raw.log"
+      },
+      "equipment_ui": {
+        "verdict": "PASS",
+        "checks": 56,
+        "raw": "full_test.raw.log"
+      },
+      "feel_lab_parity": {
+        "verdict": "PASS",
+        "checks": 121,
+        "raw": "full_test.raw.log"
+      },
+      "feel_lab_plates": {
+        "verdict": "PASS",
+        "checks": 63,
+        "raw": "full_test.raw.log"
+      },
+      "female_f1": {
+        "verdict": "PASS",
+        "checks": 7,
+        "raw": "full_test.raw.log"
+      },
+      "female_float": {
+        "verdict": "PASS",
+        "checks": 5,
+        "raw": "full_test.raw.log"
+      },
+      "field2_layout": {
+        "verdict": "PASS",
+        "checks": 29,
+        "raw": "full_test.raw.log"
+      },
+      "field_layout": {
+        "verdict": "PASS",
+        "checks": 41,
+        "raw": "full_test.raw.log"
+      },
+      "first_magic": {
+        "verdict": "PASS",
+        "checks": 18,
+        "raw": "full_test.raw.log"
+      },
+      "flee_chase": {
+        "verdict": "PASS",
+        "checks": 35,
+        "raw": "full_test.raw.log"
+      },
+      "floor_layers": {
+        "verdict": "PASS",
+        "checks": 27,
+        "raw": "full_test.raw.log"
+      },
+      "floor_seams": {
+        "verdict": "PASS",
+        "checks": 3,
+        "raw": "full_test.raw.log"
+      },
+      "footsteps": {
+        "verdict": "PASS",
+        "checks": 13,
+        "raw": "solo_final.raw.log"
+      },
+      "gamble": {
+        "verdict": "PASS",
+        "checks": 54,
+        "raw": "full_test.raw.log"
+      },
+      "gate_hover": {
+        "verdict": "PASS",
+        "checks": 6,
+        "raw": "full_test.raw.log"
+      },
+      "gimmicks": {
+        "verdict": "PASS",
+        "checks": 36,
+        "raw": "solo_final.raw.log"
+      },
+      "gimmicks_m10": {
+        "verdict": "PASS",
+        "checks": 26,
+        "raw": "full_test.raw.log"
+      },
+      "glyph_combo": {
+        "verdict": "PASS",
+        "checks": 26,
+        "raw": "full_test.raw.log"
+      },
+      "heavy_react": {
+        "verdict": "PASS",
+        "checks": 97,
+        "raw": "full_test.raw.log"
+      },
+      "held_save": {
+        "verdict": "PASS",
+        "checks": 27,
+        "raw": "full_test.raw.log"
+      },
+      "heukrang_look": {
+        "verdict": "PASS",
+        "checks": 4,
+        "raw": "full_test.raw.log"
+      },
+      "heukrang_pounce": {
+        "verdict": "PASS",
+        "checks": 11,
+        "raw": "full_test.raw.log"
+      },
+      "hit_blood": {
+        "verdict": "PASS",
+        "checks": 73,
+        "raw": "full_test.raw.log"
+      },
+      "hit_feel": {
+        "verdict": "PASS",
+        "checks": 41,
+        "raw": "full_test.raw.log"
+      },
+      "hit_stagger": {
+        "verdict": "PASS",
+        "checks": 20,
+        "raw": "solo_final.raw.log"
+      },
+      "hit_warmup": {
+        "verdict": "PASS",
+        "checks": 26,
+        "raw": "solo_final.raw.log"
+      },
+      "hover_target": {
+        "verdict": "PASS",
+        "checks": 83,
+        "raw": "full_test.raw.log"
+      },
+      "hud_hierarchy_view": {
+        "verdict": "PASS",
+        "checks": 124,
+        "raw": "full_test.raw.log"
+      },
+      "hud_orb_fx": {
+        "verdict": "PASS",
+        "checks": 32,
+        "raw": "full_test.raw.log"
+      },
+      "icon_intake": {
+        "verdict": "PASS",
+        "checks": 317,
+        "raw": "full_test.raw.log"
+      },
+      "identify": {
+        "verdict": "PASS",
+        "checks": 9,
+        "raw": "full_test.raw.log"
+      },
+      "inactive_gear": {
+        "verdict": "PASS",
+        "checks": 50,
+        "raw": "full_test.raw.log"
+      },
+      "ink_transition": {
+        "verdict": "PASS",
+        "checks": 62,
+        "raw": "full_test.raw.log"
+      },
+      "invisible_sword": {
+        "verdict": "PASS",
+        "checks": 68,
+        "raw": "full_test.raw.log"
+      },
+      "item_showcase": {
+        "verdict": "PASS",
+        "checks": 1725,
+        "raw": "solo_final.raw.log"
+      },
+      "item_ui": {
+        "verdict": "PASS",
+        "checks": 41,
+        "raw": "full_test.raw.log"
+      },
+      "kill_bisect": {
+        "verdict": "PASS",
+        "checks": 68,
+        "raw": "full_test.raw.log"
+      },
+      "kill_slump": {
+        "verdict": "PASS",
+        "checks": 51,
+        "raw": "full_test.raw.log"
+      },
+      "leader_options": {
+        "verdict": "PASS",
+        "checks": 20,
+        "raw": "full_test.raw.log"
+      },
+      "long_body": {
+        "verdict": "PASS",
+        "checks": 13,
+        "raw": "full_test.raw.log"
+      },
+      "loot_drop": {
+        "verdict": "PASS",
+        "checks": 55,
+        "raw": "full_test.raw.log"
+      },
+      "loot_props": {
+        "verdict": "PASS",
+        "checks": 19,
+        "raw": "full_test.raw.log"
+      },
+      "m14_models": {
+        "verdict": "PASS",
+        "checks": 13,
+        "raw": "full_test.raw.log"
+      },
+      "mine_walk": {
+        "verdict": "PASS",
+        "checks": 79,
+        "raw": "full_test.raw.log"
+      },
+      "monster_motion_gallery": {
+        "verdict": "PASS",
+        "checks": 71,
+        "raw": "full_test.raw.log"
+      },
+      "nachalnyeo_attacks": {
+        "verdict": "PASS",
+        "checks": 16,
+        "raw": "full_test.raw.log"
+      },
+      "named_gaksi": {
+        "verdict": "PASS",
+        "checks": 19,
+        "raw": "full_test.raw.log"
+      },
+      "named_imugi": {
+        "verdict": "PASS",
+        "checks": 19,
+        "raw": "full_test.raw.log"
+      },
+      "npc_hover_view": {
+        "verdict": "PASS",
+        "checks": 82,
+        "raw": "greetings_hover_final.raw.log"
+      },
+      "pack_ai": {
+        "verdict": "PASS",
+        "checks": 46,
+        "raw": "full_test.raw.log"
+      },
+      "pack_density": {
+        "verdict": "PASS",
+        "checks": 2,
+        "raw": "full_test.raw.log"
+      },
+      "pack_perf": {
+        "verdict": "PASS",
+        "checks": 8,
+        "raw": "solo_final.raw.log"
+      },
+      "path_shove_replan": {
+        "verdict": "PASS",
+        "checks": 6,
+        "raw": "full_test.raw.log"
+      },
+      "path_smooth": {
+        "verdict": "PASS",
+        "checks": 44,
+        "raw": "full_test.raw.log"
+      },
+      "pickup_equip": {
+        "verdict": "PASS",
+        "checks": 37,
+        "raw": "full_test.raw.log"
+      },
+      "pickup_feedback_view": {
+        "verdict": "PASS",
+        "checks": 3,
+        "raw": "full_test.raw.log"
+      },
+      "player_death": {
+        "verdict": "PASS",
+        "checks": 27,
+        "raw": "full_test.raw.log"
+      },
+      "player_resource_clock": {
+        "verdict": "PASS",
+        "checks": 73,
+        "raw": "full_test.raw.log"
+      },
+      "plaza_light": {
+        "verdict": "PASS",
+        "checks": 8,
+        "raw": "full_test.raw.log"
+      },
+      "portal_roundtrip": {
+        "verdict": "PASS",
+        "checks": 18,
+        "raw": "full_test.raw.log"
+      },
+      "potion_icons": {
+        "verdict": "PASS",
+        "checks": 57,
+        "raw": "full_test.raw.log"
+      },
+      "potion_tiers": {
+        "verdict": "PASS",
+        "checks": 10,
+        "raw": "full_test.raw.log"
+      },
+      "pus_jar": {
+        "verdict": "PASS",
+        "checks": 15,
+        "raw": "full_test.raw.log"
+      },
+      "quest_journal": {
+        "verdict": "PASS",
+        "checks": 56,
+        "raw": "full_test.raw.log"
+      },
+      "quest_journal_refresh": {
+        "verdict": "PASS",
+        "checks": 19,
+        "raw": "full_test.raw.log"
+      },
+      "render_interp": {
+        "verdict": "PASS",
+        "checks": 36,
+        "raw": "full_test.raw.log"
+      },
+      "respec": {
+        "verdict": "PASS",
+        "checks": 64,
+        "raw": "full_test.raw.log"
+      },
+      "roles": {
+        "verdict": "PASS",
+        "checks": 24,
+        "raw": "full_test.raw.log"
+      },
+      "room_props": {
+        "verdict": "PASS",
+        "checks": 90,
+        "raw": "full_test.raw.log"
+      },
+      "roster_swap": {
+        "verdict": "PASS",
+        "checks": 19,
+        "raw": "full_test.raw.log"
+      },
+      "run_upright": {
+        "verdict": "PASS",
+        "checks": 16,
+        "raw": "full_test.raw.log"
+      },
+      "save_continue": {
+        "verdict": "PASS",
+        "checks": 14,
+        "raw": "full_test.raw.log"
+      },
+      "serpent_models": {
+        "verdict": "PASS",
+        "checks": 18,
+        "raw": "full_test.raw.log"
+      },
+      "sfx_limiter": {
+        "verdict": "PASS",
+        "checks": 26,
+        "raw": "solo_final.raw.log"
+      },
+      "shaman_heal": {
+        "verdict": "PASS",
+        "checks": 28,
+        "raw": "full_test.raw.log"
+      },
+      "single_flurry": {
+        "verdict": "PASS",
+        "checks": 98,
+        "raw": "full_test.raw.log"
+      },
+      "single_flurry_dps": {
+        "verdict": "PASS",
+        "checks": 13,
+        "raw": "full_test.raw.log"
+      },
+      "skill_area": {
+        "verdict": "PASS",
+        "checks": 93,
+        "raw": "full_test.raw.log"
+      },
+      "skill_icons": {
+        "verdict": "PASS",
+        "checks": 115,
+        "raw": "full_test.raw.log"
+      },
+      "skill_names": {
+        "verdict": "PASS",
+        "checks": 248,
+        "raw": "full_test.raw.log"
+      },
+      "skill_picker": {
+        "verdict": "PASS",
+        "checks": 303,
+        "raw": "full_test.raw.log"
+      },
+      "skill_then_attack": {
+        "verdict": "PASS",
+        "checks": 64,
+        "raw": "full_test.raw.log"
+      },
+      "skill_tiers": {
+        "verdict": "PASS",
+        "checks": 72,
+        "raw": "full_test.raw.log"
+      },
+      "slice_deaths": {
+        "verdict": "PASS",
+        "checks": 111,
+        "raw": "full_test.raw.log"
+      },
+      "slice_loop": {
+        "verdict": "PASS",
+        "checks": 29,
+        "raw": "full_test.raw.log"
+      },
+      "socket_punch": {
+        "verdict": "PASS",
+        "checks": 36,
+        "raw": "full_test.raw.log"
+      },
+      "sockets": {
+        "verdict": "PASS",
+        "checks": 16,
+        "raw": "full_test.raw.log"
+      },
+      "stash_roundtrip": {
+        "verdict": "PASS",
+        "checks": 51,
+        "raw": "full_test.raw.log"
+      },
+      "status_structure_v1": {
+        "verdict": "PASS",
+        "checks": 36,
+        "raw": "full_test.raw.log"
+      },
+      "story_cutin": {
+        "verdict": "PASS",
+        "checks": 32,
+        "raw": "full_test.raw.log"
+      },
+      "surround": {
+        "verdict": "PASS",
+        "checks": 7,
+        "raw": "full_test.raw.log"
+      },
+      "sword_trail_v2": {
+        "verdict": "PASS",
+        "checks": 93,
+        "raw": "full_test.raw.log"
+      },
+      "system_menu": {
+        "verdict": "PASS",
+        "checks": 83,
+        "raw": "full_test.raw.log"
+      },
+      "talisman_aoe": {
+        "verdict": "PASS",
+        "checks": 16,
+        "raw": "full_test.raw.log"
+      },
+      "talisman_targeting": {
+        "verdict": "PASS",
+        "checks": 147,
+        "raw": "full_test.raw.log"
+      },
+      "talisman_throw": {
+        "verdict": "PASS",
+        "checks": 56,
+        "raw": "full_test.raw.log"
+      },
+      "teleport_settle": {
+        "verdict": "PASS",
+        "checks": 10,
+        "raw": "full_test.raw.log"
+      },
+      "town_approach": {
+        "verdict": "PASS",
+        "checks": 139,
+        "raw": "full_test.raw.log"
+      },
+      "town_exits": {
+        "verdict": "PASS",
+        "checks": 8,
+        "raw": "full_test.raw.log"
+      },
+      "town_layout": {
+        "verdict": "PASS",
+        "checks": 80,
+        "raw": "full_test.raw.log"
+      },
+      "town_tour": {
+        "verdict": "PASS",
+        "checks": 2,
+        "raw": "full_test.raw.log"
+      },
+      "ui_docks": {
+        "verdict": "PASS",
+        "checks": 61,
+        "raw": "full_test.raw.log"
+      },
+      "ui_item_contract": {
+        "verdict": "PASS",
+        "checks": 268,
+        "raw": "full_test.raw.log"
+      },
+      "ui_tooltips": {
+        "verdict": "PASS",
+        "checks": 108,
+        "raw": "full_test.raw.log"
+      },
+      "ui_windows": {
+        "verdict": "PASS",
+        "checks": 65,
+        "raw": "full_test.raw.log"
+      },
+      "unique_icons": {
+        "verdict": "PASS",
+        "checks": 12,
+        "raw": "full_test.raw.log"
+      },
+      "vendor_prices": {
+        "verdict": "PASS",
+        "checks": 12,
+        "raw": "full_test.raw.log"
+      },
+      "vendor_quest": {
+        "verdict": "PASS",
+        "checks": 54,
+        "raw": "full_test.raw.log"
+      },
+      "verify_flows": {
+        "verdict": "PASS",
+        "checks": 16,
+        "raw": "full_test.raw.log"
+      },
+      "vfx_cap_blood": {
+        "verdict": "PASS",
+        "checks": 3,
+        "raw": "full_test.raw.log"
+      },
+      "vfx_cap_comfort": {
+        "verdict": "PASS",
+        "checks": 20,
+        "raw": "full_test.raw.log"
+      },
+      "vfx_cues": {
+        "verdict": "PASS",
+        "checks": 166,
+        "raw": "full_test.raw.log"
+      },
+      "vfx_ramp_gallery": {
+        "verdict": "PASS",
+        "checks": 18,
+        "raw": "full_test.raw.log"
+      },
+      "visual_swap": {
+        "verdict": "PASS",
+        "checks": 65,
+        "raw": "full_test.raw.log"
+      },
+      "walk_audit": {
+        "verdict": "PASS",
+        "checks": 166,
+        "raw": "full_test.raw.log"
+      },
+      "wall_cutaway": {
+        "verdict": "PASS",
+        "checks": 17,
+        "raw": "full_test.raw.log"
+      },
+      "waypoint": {
+        "verdict": "PASS",
+        "checks": 15,
+        "raw": "full_test.raw.log"
+      },
+      "weapon_visibility": {
+        "verdict": "PASS",
+        "checks": 25,
+        "raw": "full_test.raw.log"
+      },
+      "whirl_structure_v1": {
+        "verdict": "PASS",
+        "checks": 69,
+        "raw": "full_test.raw.log"
+      },
+      "yeogung_attacks": {
+        "verdict": "PASS",
+        "checks": 11,
+        "raw": "full_test.raw.log"
+      }
+    },
+    "history": [
+      {
+        "raw": "full_test.raw.log",
+        "sha256": "196dc635c3ed59bcc0e54c46c126583dce6d2540d7654f7d8c2c2e82b921e002",
+        "scenarios": 159,
+        "pass": 155,
+        "fail": 4,
+        "summary": [
+          "E2E SUMMARY: 155/159 PASS\r"
+        ]
+      },
+      {
+        "raw": "review_window_final.raw.log",
+        "sha256": "6af9b5be63b8054e1dea4186fbf38f32c9ef010c4359b5218f191fcde25237c9",
+        "scenarios": 3,
+        "pass": 2,
+        "fail": 1,
+        "summary": [
+          "E2E SUMMARY: 2/3 PASS\r"
+        ]
+      },
+      {
+        "raw": "greetings_hover_final.raw.log",
+        "sha256": "b05a98466aba9463dbaaa2421f35f78071133145c9023c0f8e24473d632625ed",
+        "scenarios": 2,
+        "pass": 2,
+        "fail": 0,
+        "summary": [
+          "E2E SUMMARY: 2/2 PASS\r"
+        ]
+      },
+      {
+        "raw": "solo_final.raw.log",
+        "sha256": "ed87639270b0ab61f42f5b38ac67fbfe5fb56dc11cf62001966bd99acc7f20af",
+        "scenarios": 11,
+        "pass": 11,
+        "fail": 0,
+        "summary": [
+          "E2E SUMMARY: 11/11 PASS\r"
+        ]
+      }
+    ]
+  },
+  "unit_and_tools": {
+    "initial_pass": 155,
+    "initial_fail": 2,
+    "corrected": [
+      "test_combo_codex.gd",
+      "test_socket_punch.gd"
+    ],
+    "final_existing_entries_pass": 157,
+    "new_dialogue_voice_checks": 838,
+    "runner_selftest": "5/5 PASS"
+  },
+  "export": {
+    "voice_checks": 838,
+    "voice_ids": 277,
+    "source_files": 324,
+    "source_lines": 18524,
+    "changed_missing_extra": 0,
+    "shutdown_errors": 0
+  }
+}

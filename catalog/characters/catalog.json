@@ -15185,6 +15185,46 @@
             "bytes": 7848,
             "width": null,
             "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/f61a8947a0c113d7d709a07aa0cf6f08d1ac21e8f5c9036dff275e7abe0eb573/runtime_reuse_777.json",
+            "sha256": "f61a8947a0c113d7d709a07aa0cf6f08d1ac21e8f5c9036dff275e7abe0eb573",
+            "bytes": 2388,
+            "width": null,
+            "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/c802bdf412bbc580079dffd2692e56d5e614faef9f20d59b9acff98f1f3a5718/residents_after_777.jpg",
+            "sha256": "c802bdf412bbc580079dffd2692e56d5e614faef9f20d59b9acff98f1f3a5718",
+            "bytes": 160136,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/3f3e3af9270b79da18bf9be7db1ae4b99b82deff58786e33ed1a4b61c156a183/catalogue_candidate.json",
+            "sha256": "3f3e3af9270b79da18bf9be7db1ae4b99b82deff58786e33ed1a4b61c156a183",
+            "bytes": 774408,
+            "width": null,
+            "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/885296da01f982216225838b7902435ec793b72530773ea4a1795739198a2a18/catalogue_candidate_check.json",
+            "sha256": "885296da01f982216225838b7902435ec793b72530773ea4a1795739198a2a18",
+            "bytes": 2401,
+            "width": null,
+            "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/32578850a8d07f7fe4a49a95fffc775a75551ef2e8ba06a119b469378e4de4cb/catalogue_candidate_changes.json",
+            "sha256": "32578850a8d07f7fe4a49a95fffc775a75551ef2e8ba06a119b469378e4de4cb",
+            "bytes": 142150,
+            "width": null,
+            "height": null
           }
         ]
       },
@@ -15391,7 +15431,9 @@
         "source_commit": "bf84fd5884eaa64773b0f4d6a7cde8d0bf4a9dab"
       },
       "notes": [
-        "캡처가 원화 승인이나 외형 정합을 뜻하지 않는다."
+        "캡처가 원화 승인이나 외형 정합을 뜻하지 않는다.",
+        "#777: 기존 merchant_v2/elder_v2 모델을 주거 주민으로 동적 재사용. 원본 모델 교체0·runtime 틴트3·주민6→8명. 실제 창42검사/사진 근거를 추가하며 기존 외형 승인 상태를 확대하지 않는다.",
+        "#777: 미착륙 작업 트리 후보 inventory/binding 정합 검사 PASS(오류0·경고0). 후보 snapshot/검사/차이를 불변 증거로 연결. 정본 main 연결·옛 capture/판정은 보존; 후보의 변경 연결 load/world_display는 not_checked다."
       ]
     },
     {
@@ -15944,6 +15986,46 @@
             "bytes": 7848,
             "width": null,
             "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/f61a8947a0c113d7d709a07aa0cf6f08d1ac21e8f5c9036dff275e7abe0eb573/runtime_reuse_777.json",
+            "sha256": "f61a8947a0c113d7d709a07aa0cf6f08d1ac21e8f5c9036dff275e7abe0eb573",
+            "bytes": 2388,
+            "width": null,
+            "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/c802bdf412bbc580079dffd2692e56d5e614faef9f20d59b9acff98f1f3a5718/residents_after_777.jpg",
+            "sha256": "c802bdf412bbc580079dffd2692e56d5e614faef9f20d59b9acff98f1f3a5718",
+            "bytes": 160136,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/3f3e3af9270b79da18bf9be7db1ae4b99b82deff58786e33ed1a4b61c156a183/catalogue_candidate.json",
+            "sha256": "3f3e3af9270b79da18bf9be7db1ae4b99b82deff58786e33ed1a4b61c156a183",
+            "bytes": 774408,
+            "width": null,
+            "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/885296da01f982216225838b7902435ec793b72530773ea4a1795739198a2a18/catalogue_candidate_check.json",
+            "sha256": "885296da01f982216225838b7902435ec793b72530773ea4a1795739198a2a18",
+            "bytes": 2401,
+            "width": null,
+            "height": null
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/32578850a8d07f7fe4a49a95fffc775a75551ef2e8ba06a119b469378e4de4cb/catalogue_candidate_changes.json",
+            "sha256": "32578850a8d07f7fe4a49a95fffc775a75551ef2e8ba06a119b469378e4de4cb",
+            "bytes": 142150,
+            "width": null,
+            "height": null
           }
         ]
       },
@@ -16129,7 +16211,9 @@
         "source_commit": "bf84fd5884eaa64773b0f4d6a7cde8d0bf4a9dab"
       },
       "notes": [
-        "캡처가 원화 승인이나 외형 정합을 뜻하지 않는다."
+        "캡처가 원화 승인이나 외형 정합을 뜻하지 않는다.",
+        "#777: 기존 merchant_v2/elder_v2 모델을 주거 주민으로 동적 재사용. 원본 모델 교체0·runtime 틴트3·주민6→8명. 실제 창42검사/사진 근거를 추가하며 기존 외형 승인 상태를 확대하지 않는다.",
+        "#777: 미착륙 작업 트리 후보 inventory/binding 정합 검사 PASS(오류0·경고0). 후보 snapshot/검사/차이를 불변 증거로 연결. 정본 main 연결·옛 capture/판정은 보존; 후보의 변경 연결 load/world_display는 not_checked다."
       ]
     },
     {
