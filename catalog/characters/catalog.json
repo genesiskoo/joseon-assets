@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11",
+  "updated_at": "2026-10-13",
   "characters": [
     {
       "character_id": "doho",
@@ -17502,6 +17502,282 @@
       "notes": [
         "캡처가 원화 승인이나 외형 정합을 뜻하지 않는다.",
         "김 영감 대화 장면에 표시되는 도호 모델·좌측 초상. 초상 표정별 개별 검증과 구분."
+      ]
+    },
+    {
+      "asset_id": "card731-01_face_front_v1",
+      "character_id": "gumiho",
+      "form_id": "true_form",
+      "version_id": "card731-01_face_front_v1",
+      "display_name": "#731 본체 정면 얼굴 앵커",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_gumiho",
+        "gumiho_f03"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+        "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+        "bytes": 2519622,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": null,
+        "card": 731,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 731,
+        "source_commit": null,
+        "inclusion_reason": "PD 2026-10-13 자료관 포함 지목 (#776) · Codex 자리 커밋 f9f35bfd",
+        "tool": "image_gen_builtin",
+        "backend": "not exposed by tool",
+        "prompt": {
+          "repository": "assets",
+          "path": "catalog/characters/media/770939c040e31517b5f304549506fdebee6e8807ab663d33ef6a903c8589b895/01_face_front_v1.txt",
+          "sha256": "770939c040e31517b5f304549506fdebee6e8807ab663d33ef6a903c8589b895",
+          "bytes": 2671,
+          "width": null,
+          "height": null
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/jumo_306/portrait/jumo_b4_gpt25_full.png",
+            "sha256": "cafdad1fbca999e642237f52bed129fb21af9bf53e2b853468ca28ff63dbe699",
+            "bytes": 3364449,
+            "width": 1520,
+            "height": 2688,
+            "order": 1,
+            "role": "B4 얼굴 정체성(주된 참조)"
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/64b08e6ee13fdd293ae7f71f0024a13b04a5e115b38e2c3431331b460216f30c/02_waiting_true_form_v1.png",
+            "sha256": "64b08e6ee13fdd293ae7f71f0024a13b04a5e115b38e2c3431331b460216f30c",
+            "bytes": 2382595,
+            "width": 1024,
+            "height": 1536,
+            "order": 2,
+            "role": "#730 승인 본체 상반신 복식·연기"
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "#731 manifest: pending PD selection — 판정 전(게임 미반입)",
+        "근거 기록 game:docs/art/731_gumiho_anchors/manifest.json"
+      ]
+    },
+    {
+      "asset_id": "card731-02_face_profile_v1",
+      "character_id": "gumiho",
+      "form_id": "true_form",
+      "version_id": "card731-02_face_profile_v1",
+      "display_name": "#731 본체 측면 얼굴 앵커",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_gumiho",
+        "gumiho_f03"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/7d43295f601c257ce32e35cffffc4fdfd28c6501bce492431f07fff2cf64b159/02_face_profile_v1.png",
+        "sha256": "7d43295f601c257ce32e35cffffc4fdfd28c6501bce492431f07fff2cf64b159",
+        "bytes": 2664300,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": null,
+        "card": 731,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 731,
+        "source_commit": null,
+        "inclusion_reason": "PD 2026-10-13 자료관 포함 지목 (#776) · Codex 자리 커밋 f9f35bfd",
+        "tool": "image_gen_builtin",
+        "backend": "not exposed by tool",
+        "prompt": {
+          "repository": "assets",
+          "path": "catalog/characters/media/6ab95704b16d719cbd073fb56a90ac22e6ae9225a0cbf25b129ca00c7cf51cec/02_face_profile_v1.txt",
+          "sha256": "6ab95704b16d719cbd073fb56a90ac22e6ae9225a0cbf25b129ca00c7cf51cec",
+          "bytes": 2759,
+          "width": null,
+          "height": null
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/jumo_306/portrait/jumo_b4_gpt25_full.png",
+            "sha256": "cafdad1fbca999e642237f52bed129fb21af9bf53e2b853468ca28ff63dbe699",
+            "bytes": 3364449,
+            "width": 1520,
+            "height": 2688,
+            "order": 1,
+            "role": "B4 얼굴 정체성(주된 참조)"
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/64b08e6ee13fdd293ae7f71f0024a13b04a5e115b38e2c3431331b460216f30c/02_waiting_true_form_v1.png",
+            "sha256": "64b08e6ee13fdd293ae7f71f0024a13b04a5e115b38e2c3431331b460216f30c",
+            "bytes": 2382595,
+            "width": 1024,
+            "height": 1536,
+            "order": 2,
+            "role": "#730 승인 본체 상반신 복식·연기"
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "#731 manifest: pending PD selection — 판정 전(게임 미반입)",
+        "근거 기록 game:docs/art/731_gumiho_anchors/manifest.json"
+      ]
+    },
+    {
+      "asset_id": "card733-01_between_human_beast_t2i_v1",
+      "character_id": "gumiho",
+      "form_id": "true_form",
+      "version_id": "card733-01_between_human_beast_t2i_v1",
+      "display_name": "#733 A — 사람처럼 기다리는 불분명한 야수",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_gumiho",
+        "gumiho_f03"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/16119b187aab71109efc8262c966193f28711a2d23310c7508199a03c8b57e47/01_between_human_beast_t2i_v1.png",
+        "sha256": "16119b187aab71109efc8262c966193f28711a2d23310c7508199a03c8b57e47",
+        "bytes": 2404937,
+        "width": 1145,
+        "height": 1374
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": null,
+        "card": 733,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 733,
+        "source_commit": null,
+        "inclusion_reason": "PD 2026-10-13 자료관 포함 지목 (#776) · Codex 자리 커밋 773cf139",
+        "tool": "image_gen_builtin",
+        "backend": "not exposed by tool",
+        "prompt": {
+          "repository": "assets",
+          "path": "catalog/characters/media/872e538d3fe42824ad57289e390483ee9afb906d52c9c16d56cd4e909668ff2e/01_between_human_beast_t2i_v1.txt",
+          "sha256": "872e538d3fe42824ad57289e390483ee9afb906d52c9c16d56cd4e909668ff2e",
+          "bytes": 5358,
+          "width": null,
+          "height": null
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "#733 에서 PD 가 B 를 다듬을 방향으로 골랐고 A 는 탐색으로 남겼다(retained-exploration) — 이 그림 자체의 판정은 아직",
+        "무참조 t2i(참조 0) · 근거 기록 game:docs/art/733_gumiho_t2i/manifest.json"
+      ]
+    },
+    {
+      "asset_id": "card733-02_folded_unknown_t2i_v1",
+      "character_id": "gumiho",
+      "form_id": "true_form",
+      "version_id": "card733-02_folded_unknown_t2i_v1",
+      "display_name": "#733 B — 낮게 접힌 정체불명의 짐승",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_gumiho",
+        "gumiho_f03"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/e5e300b81e2db7e5a5d5479249f87a04d798c3b3887903133cc78e3b91d99de3/02_folded_unknown_t2i_v1.png",
+        "sha256": "e5e300b81e2db7e5a5d5479249f87a04d798c3b3887903133cc78e3b91d99de3",
+        "bytes": 2579573,
+        "width": 1536,
+        "height": 1024
+      },
+      "decision": {
+        "status": "recommended",
+        "scope": [],
+        "date": "2026-10-11",
+        "card": 733,
+        "evidence": [
+          "game:docs/art/733_gumiho_t2i/manifest.json (review_status: B selected by PD as refinement direction; final form not adopted)"
+        ],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 733,
+        "source_commit": null,
+        "inclusion_reason": "PD 2026-10-13 자료관 포함 지목 (#776) · Codex 자리 커밋 773cf139",
+        "tool": "image_gen_builtin",
+        "backend": "not exposed by tool",
+        "prompt": {
+          "repository": "assets",
+          "path": "catalog/characters/media/571fe287571b1aa484dd4dba88abf74fc4c0e76992a9b4c79ff05d4eee8d62a9/02_folded_unknown_t2i_v1.txt",
+          "sha256": "571fe287571b1aa484dd4dba88abf74fc4c0e76992a9b4c79ff05d4eee8d62a9",
+          "bytes": 5510,
+          "width": null,
+          "height": null
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD 가 #733 A/B/C 가운데 B 를 다듬을 방향으로 골랐다 — 최종 형태 채택 아님(→ #734 인간성·분노·한 조정)",
+        "무참조 t2i(참조 0)"
       ]
     }
   ],
