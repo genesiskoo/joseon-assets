@@ -1,0 +1,381 @@
+{
+  "status": "PASS",
+  "unique_media_paths": true,
+  "original_copy_sha256": "PASS",
+  "previous_public_art_sha256": "PASS",
+  "archive_crc": "PASS",
+  "archive_media_member_sha256": "PASS",
+  "preview_limits": "width<=1280, each<=300000 bytes",
+  "pending_visual_review_paths": [],
+  "capture_scenarios": [
+    {
+      "capture_folder": "cave_ui_off",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 18 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 9 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/cave_ui_off/capture_raw.log",
+      "raw_log_sha256": "784ec3e5ceb07567d615dfef7cc55f359d57e522e30de4654387b1b9d3a3464f"
+    },
+    {
+      "capture_folder": "cave_ui_on",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 16 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/cave_ui_on/capture_raw.log",
+      "raw_log_sha256": "e07a2c7a4c20fe2fd59191bffec10ec31af457226095ed6ed110e4ef8748475b"
+    },
+    {
+      "capture_folder": "effect_cold_ui_off",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_cold_ui_off/capture_raw.log",
+      "raw_log_sha256": "d9c64d5c1ea20afdc2bb38b97c38bbcd7bc32e99fa8d0fce8efd2a1b0a6417e5"
+    },
+    {
+      "capture_folder": "effect_cold_ui_on",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_cold_ui_on/capture_raw.log",
+      "raw_log_sha256": "953b2623b6edbbf00964db022da946bffcbcc7d5d641a2c3ca77ffcd17531646"
+    },
+    {
+      "capture_folder": "effect_fire_ui_off",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_fire_ui_off/capture_raw.log",
+      "raw_log_sha256": "f0ec7176e5bd456dd4047368ad013d9964ab5dd7cf2b472d5b3e0a7f3a76b1d0"
+    },
+    {
+      "capture_folder": "effect_fire_ui_on",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_fire_ui_on/capture_raw.log",
+      "raw_log_sha256": "c80274125d81f9b03c959676656840acdc0a068da718f46b443e34bbdffce997"
+    },
+    {
+      "capture_folder": "effect_flurry_ui_off",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_flurry_ui_off/capture_raw.log",
+      "raw_log_sha256": "71ae32aff5af657b13b8d5e71f92a63e7623ed7d9f93b113509551b92fb47f3a"
+    },
+    {
+      "capture_folder": "effect_flurry_ui_on",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_flurry_ui_on/capture_raw.log",
+      "raw_log_sha256": "94199a2e9e77eb0473e77b9e6c573eed9c11967372995c597c3798866e26fcc3"
+    },
+    {
+      "capture_folder": "effect_lightning_lv10_ui_off",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_lightning_lv10_ui_off/capture_raw.log",
+      "raw_log_sha256": "bbb2e3f506b9f0f7a86d01dbe78f7e8eaa4622b1c2bc76a1a447ff99547da974"
+    },
+    {
+      "capture_folder": "effect_lightning_lv10_ui_on",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_lightning_lv10_ui_on/capture_raw.log",
+      "raw_log_sha256": "d773389d9acae95482546b32ccf149cd179ff6f24e4fa04cf55c09f96abaa041"
+    },
+    {
+      "capture_folder": "effect_lightning_ui_off",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_lightning_ui_off/capture_raw.log",
+      "raw_log_sha256": "6610b4ab7f904abce63ac7ffe47dcaf6c811df2411f805e059f0623db57e8fd8"
+    },
+    {
+      "capture_folder": "effect_lightning_ui_on",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 15 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 8 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/effect_lightning_ui_on/capture_raw.log",
+      "raw_log_sha256": "b509a96aca9a4689001bafb0e34135fdcc1b35e299fb71dba9e0e2935dcdb62d"
+    },
+    {
+      "capture_folder": "screenshots_4k_no_ui",
+      "e2e_summary": "1/1 PASS",
+      "shutdown_warnings": [
+        "WARNING: 10 ObjectDB instances were leaked at exit (run with `--verbose` for details)."
+      ],
+      "shutdown_resource_errors": [
+        "ERROR: 6 resources still in use at exit (run with --verbose for details)."
+      ],
+      "unexpected_script_or_engine_errors": [],
+      "raw_log_path": "marketing/2026-10-14/qa/capture/screenshots_4k_no_ui/capture_raw.log",
+      "raw_log_sha256": "fb036fb2cec8ea8c1b20e60fd6e80e856619b124ae1b49bee297e7cf277b62d2"
+    }
+  ],
+  "videos": [
+    {
+      "path": "marketing/2026-10-14/video/ui_off/cave/04_cave_entry_ui_off_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.816667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 469,
+      "mean_volume_db": -26.0,
+      "max_volume_db": -2.0,
+      "decode_verify_log_sha256": "9e22a5524caf4ab87d9638d20e543a598ac657e0c267b7321d0595fe6f43c7ca",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_off/cave/cave_floor1_combat_ui_off_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 15.633008,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 938,
+      "mean_volume_db": -16.2,
+      "max_volume_db": -0.5,
+      "decode_verify_log_sha256": "f94fc9badca7bacad8e4d7aaa6e1d6461eb26f3d99f803cda85265220c001149",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_on/cave/04_cave_entry_ui_on_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.816667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 469,
+      "mean_volume_db": -25.3,
+      "max_volume_db": -1.1,
+      "decode_verify_log_sha256": "87267797427ee1a4f66e246e04fa8b1c5db17192a42d6b1258294f3d7e0b0da2",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_on/cave/cave_floor1_combat_ui_on_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 15.633008,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 938,
+      "mean_volume_db": -15.8,
+      "max_volume_db": -0.1,
+      "decode_verify_log_sha256": "8416a91a96d1681ec59704aaf9de382d48093e62c7739f9596e210a33275bf36",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_off/effect_cold/04_cold_ui_off_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.216667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 433,
+      "mean_volume_db": -22.6,
+      "max_volume_db": -0.2,
+      "decode_verify_log_sha256": "724ab38db35e7f4921a49b7b01d8d69c55142f5ef926c1b1b60260ccce0d6189",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_on/effect_cold/04_cold_ui_on_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.216667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 433,
+      "mean_volume_db": -21.3,
+      "max_volume_db": -0.7,
+      "decode_verify_log_sha256": "4a0c8504b038a861ed5de187c9836f3ced75de07b6dba0be91d58ec381af9c73",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_off/effect_fire/03_fire_ui_off_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.266667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 436,
+      "mean_volume_db": -20.7,
+      "max_volume_db": -0.5,
+      "decode_verify_log_sha256": "c3bf6355b9f15e86fe6e2395f4aa9d78f3ee524e2768bedc0b62ff3d12b54cb7",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_on/effect_fire/03_fire_ui_on_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.266667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 436,
+      "mean_volume_db": -20.6,
+      "max_volume_db": -0.6,
+      "decode_verify_log_sha256": "dff6caf7b6dca8e5e2a2cde6c91b8e50a0aabe06cdef74be20266758aaf82074",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_off/effect_flurry/09_flurry_ui_off_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.7,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 282,
+      "mean_volume_db": -15.9,
+      "max_volume_db": -0.5,
+      "decode_verify_log_sha256": "f8cbb957dfa91f47434d0c9962ac8772999435e09dc39260a2e9a5ae3b3127fa",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_on/effect_flurry/09_flurry_ui_on_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 4.7,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 282,
+      "mean_volume_db": -15.7,
+      "max_volume_db": -0.5,
+      "decode_verify_log_sha256": "f473393786d9f9f371c2a7b653f1da3c37749941d090e2938fe26021cb8375b0",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_off/effect_lightning_lv10/08_lightning_ui_off_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.116667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 427,
+      "mean_volume_db": -21.2,
+      "max_volume_db": -0.8,
+      "decode_verify_log_sha256": "17cd966414b09546247b8d36bb30f9def433138347291ffe90326ad7e124157f",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_on/effect_lightning_lv10/08_lightning_ui_on_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.116667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 427,
+      "mean_volume_db": -21.1,
+      "max_volume_db": -0.8,
+      "decode_verify_log_sha256": "0f6dcf625381ca53c6a254ca82e73fa88f6729708260b49ba080740d912a496d",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_off/effect_lightning/08_lightning_ui_off_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.116667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 427,
+      "mean_volume_db": -21.2,
+      "max_volume_db": -0.8,
+      "decode_verify_log_sha256": "be9b65d8b05e13b9bfbf424e040bd2d16279d52c76655b9f1f1130756e6bab50",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    },
+    {
+      "path": "marketing/2026-10-14/video/ui_on/effect_lightning/08_lightning_ui_on_current_public_nosp.mp4",
+      "fps": 60.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_seconds": 7.116667,
+      "audio": "original_game_audio",
+      "fully_decoded": true,
+      "decoded_frame_count": 427,
+      "mean_volume_db": -21.3,
+      "max_volume_db": -1.0,
+      "decode_verify_log_sha256": "69bb8c3f00ab3f2e6a29cf16e69d6ad0e1e7ac24a3ad808eefd317dac20289cf",
+      "visual_review": "reviewed_sampled_frames_root: current game render; correct UI on/off; no development station labels; effect or prepared encounter as disclosed"
+    }
+  ],
+  "raw_logs": "Byte originals in the QA Release ZIP; individual paths/bytes/SHA256 in qa_sources.json.",
+  "shutdown_note": "E2E success and video decoding/audio checks do not imply zero engine shutdown warnings; observed messages are preserved above and in raw logs."
+}

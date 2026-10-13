@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "method": "SHA1 of canonical Git blob header + exact native media bytes compared with historical Git tree blob OID",
+  "files": [
+    {
+      "path": "marketing/2026-10-14/art/doho_neutral_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "workbench/production/dialogue-portraits-235/game/doho/neutral.png",
+      "source_git_blob_oid": "acb0d97953cf0ed2b650dd191876e4f801fcabe5",
+      "verified": true
+    },
+    {
+      "path": "marketing/2026-10-14/art/doho_smug_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "workbench/production/dialogue-portraits-235/game/doho/smug.png",
+      "source_git_blob_oid": "ba29640f1ed86de00d1a5126b730859f809aa0b7",
+      "verified": true
+    },
+    {
+      "path": "marketing/2026-10-14/art/eoksoe_neutral_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "workbench/production/eoksoe_625/game/eoksoe/neutral.png",
+      "source_git_blob_oid": "6911a12b45328c9b3a0c64820b3456c922054e96",
+      "verified": true
+    },
+    {
+      "path": "marketing/2026-10-14/art/h1_keyart_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "workbench/production/h1-style-expansion-2026-09-17/20_keyart.png",
+      "source_git_blob_oid": "000547984caf08cb2026a69a78238f9327b2a897",
+      "verified": true
+    },
+    {
+      "path": "marketing/2026-10-14/art/title_motgol_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "workbench/production/title_545/game/motgol.png",
+      "source_git_blob_oid": "ae7270498a90d3c8619c36a05a6d53f80a286b7a",
+      "verified": true
+    },
+    {
+      "path": "marketing/2026-10-14/art/title_galpil_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "branding/title/2026-10-06_ink/title_galpil_v1.png",
+      "source_git_blob_oid": "0839cfbe9b463f5bf667600122c28fffd5101eb9",
+      "verified": true
+    },
+    {
+      "path": "marketing/2026-10-14/art/title_nongmuk_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "branding/title/2026-10-06_ink/title_nongmuk_v1.png",
+      "source_git_blob_oid": "159b70cf5b5d3b75addcdc6b14f80ed54571fc35",
+      "verified": true
+    },
+    {
+      "path": "marketing/2026-10-14/art/logo_kr_runtime_confirmed_public_spoiler-none.png",
+      "source_commit": "33ee992580a404ae61e728d120c6d308da5067db",
+      "source_path": "workbench/production/title_545/game/logo.png",
+      "source_git_blob_oid": "1fe82a0244dfa1e9235a999b3ad810307d56844b",
+      "verified": true
+    }
+  ]
+}
