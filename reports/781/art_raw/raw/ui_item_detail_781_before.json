@@ -1,0 +1,1380 @@
+{
+	"captures": [
+		{
+			"inventory": {
+				"belt": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				],
+				"equipment": {
+					"amulet": null,
+					"armor": {
+						"affixes": [],
+						"def": "cotton_robe",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 0,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"belt": {
+						"affixes": [],
+						"def": "jeondae",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "talisman_pct",
+								"v": 8.0
+							},
+							{
+								"stat": "hp_flat",
+								"v": 10.0
+							}
+						],
+						"piece_id": "set_dosa_jeondae",
+						"rare_name": "",
+						"rarity": 3,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"boots": {
+						"affixes": [],
+						"def": "mituri",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "move_pct",
+								"v": 10.0
+							},
+							{
+								"stat": "mp_regen",
+								"v": 0.3
+							}
+						],
+						"piece_id": "set_dosa_mituri",
+						"rare_name": "",
+						"rarity": 3,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"head": null,
+					"offhand": null,
+					"ring1": {
+						"affixes": [
+							{
+								"id": "precise",
+								"v": 17.0
+							},
+							{
+								"id": "of_tiger",
+								"v": 4.0
+							}
+						],
+						"def": "silver_ring",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"ring2": {
+						"affixes": [
+							{
+								"id": "blue",
+								"v": 10.0
+							},
+							{
+								"id": "of_sage",
+								"v": 7.0
+							}
+						],
+						"def": "jade_ring",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"weapon": {
+						"affixes": [],
+						"def": "iron_sword",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 0,
+						"stack": 1,
+						"talisman_item_ver": 1
+					}
+				},
+				"gold": 1250,
+				"grid": [
+					{
+						"affixes": [
+							{
+								"id": "keen",
+								"v": 5.0
+							},
+							{
+								"id": "fierce",
+								"v": 20.0
+							},
+							{
+								"id": "precise",
+								"v": 17.0
+							},
+							{
+								"id": "of_bear",
+								"v": 7.0
+							},
+							{
+								"id": "of_hawk",
+								"v": 7.0
+							},
+							{
+								"id": "of_sage",
+								"v": 7.0
+							}
+						],
+						"def": "long_sword",
+						"identified": true,
+						"ilvl": 30,
+						"pos": [
+							0,
+							0
+						],
+						"rare_name": "깊은 산의 새벽 안개를 가르고 무너진 봉인을 되찾아 돌아온 도사의 오래된 칼을 성문 앞에서 다시 벼려낸 마지막 수호자의 검",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [],
+						"def": "hakchangui",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "spi",
+								"v": 8.0
+							},
+							{
+								"stat": "mp_flat",
+								"v": 15.0
+							}
+						],
+						"piece_id": "set_dosa_hakchangui",
+						"pos": [
+							2,
+							0
+						],
+						"rare_name": "",
+						"rarity": 3,
+						"socketed": [
+							{
+								"id": "jeogok_3"
+							}
+						],
+						"sockets": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [
+							{
+								"id": "biting",
+								"v": 4.0
+							},
+							{
+								"id": "nimble",
+								"v": 12.0
+							},
+							{
+								"id": "of_wildcat",
+								"v": 4.0
+							},
+							{
+								"id": "of_crane",
+								"v": 4.0
+							}
+						],
+						"def": "jade_ring",
+						"identified": true,
+						"ilvl": 30,
+						"pos": [
+							5,
+							0
+						],
+						"rare_name": "새벽 서리",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [
+							{
+								"id": "precise",
+								"v": 19.0
+							}
+						],
+						"def": "jade_charm",
+						"identified": false,
+						"ilvl": 1,
+						"pos": [
+							6,
+							0
+						],
+						"rare_name": "감춰진 새벽",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					}
+				]
+			},
+			"item": {
+				"affixes": [
+					{
+						"id": "keen",
+						"v": 5.0
+					},
+					{
+						"id": "fierce",
+						"v": 20.0
+					},
+					{
+						"id": "precise",
+						"v": 17.0
+					},
+					{
+						"id": "of_bear",
+						"v": 7.0
+					},
+					{
+						"id": "of_hawk",
+						"v": 7.0
+					},
+					{
+						"id": "of_sage",
+						"v": 7.0
+					}
+				],
+				"def": "long_sword",
+				"identified": true,
+				"ilvl": 30,
+				"rare_name": "깊은 산의 새벽 안개를 가르고 무너진 봉인을 되찾아 돌아온 도사의 오래된 칼을 성문 앞에서 다시 벼려낸 마지막 수호자의 검",
+				"rarity": 2,
+				"stack": 1,
+				"talisman_item_ver": 1
+			},
+			"label": "before_rare_long",
+			"pointer": "(903.0, 459.0)",
+			"source_rect": "[P: (864.0, 340.0), S: (40.0, 120.0)]",
+			"tooltip_present": true,
+			"tooltip_rect": "[P: (236.0, 187.0), S: (620.0, 426.0)]",
+			"tooltip_rows": [
+				{
+					"color": [
+						1.0,
+						0.882352948188782,
+						0.301960796117783,
+						1.0
+					],
+					"role": "name",
+					"size": 16,
+					"text": "깊은 산의 새벽 안개를 가르고 무너진 봉인을 되찾아 돌아온 도사의 오래된 칼을 성문 앞에서 다시 벼려낸 마지막 수호자의 검"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "base_name",
+					"size": 15,
+					"text": "장검"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "base",
+					"size": 15,
+					"text": "피해 8~14"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "base",
+					"size": 15,
+					"text": "공격 속도 느림"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "req",
+					"size": 15,
+					"text": "요구 레벨 5"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "req",
+					"size": 15,
+					"text": "요구 힘 30"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "피해 +5"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "피해 +20%"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "명중 +17"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "힘 +7"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "민첩 +7"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "정기 +7"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "separator",
+					"size": 15,
+					"text": ""
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "좌클릭: 들기 · 들고 창 밖 클릭: 버림"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "우클릭 / Shift+클릭: 장착"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "Ctrl+클릭: 발밑에 버림"
+				}
+			]
+		},
+		{
+			"inventory": {
+				"belt": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				],
+				"equipment": {
+					"amulet": null,
+					"armor": {
+						"affixes": [],
+						"def": "cotton_robe",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 0,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"belt": {
+						"affixes": [],
+						"def": "jeondae",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "talisman_pct",
+								"v": 8.0
+							},
+							{
+								"stat": "hp_flat",
+								"v": 10.0
+							}
+						],
+						"piece_id": "set_dosa_jeondae",
+						"rare_name": "",
+						"rarity": 3,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"boots": {
+						"affixes": [],
+						"def": "mituri",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "move_pct",
+								"v": 10.0
+							},
+							{
+								"stat": "mp_regen",
+								"v": 0.3
+							}
+						],
+						"piece_id": "set_dosa_mituri",
+						"rare_name": "",
+						"rarity": 3,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"head": null,
+					"offhand": null,
+					"ring1": {
+						"affixes": [
+							{
+								"id": "precise",
+								"v": 17.0
+							},
+							{
+								"id": "of_tiger",
+								"v": 4.0
+							}
+						],
+						"def": "silver_ring",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"ring2": {
+						"affixes": [
+							{
+								"id": "blue",
+								"v": 10.0
+							},
+							{
+								"id": "of_sage",
+								"v": 7.0
+							}
+						],
+						"def": "jade_ring",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"weapon": {
+						"affixes": [],
+						"def": "iron_sword",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 0,
+						"stack": 1,
+						"talisman_item_ver": 1
+					}
+				},
+				"gold": 1250,
+				"grid": [
+					{
+						"affixes": [
+							{
+								"id": "keen",
+								"v": 5.0
+							},
+							{
+								"id": "fierce",
+								"v": 20.0
+							},
+							{
+								"id": "precise",
+								"v": 17.0
+							},
+							{
+								"id": "of_bear",
+								"v": 7.0
+							},
+							{
+								"id": "of_hawk",
+								"v": 7.0
+							},
+							{
+								"id": "of_sage",
+								"v": 7.0
+							}
+						],
+						"def": "long_sword",
+						"identified": true,
+						"ilvl": 30,
+						"pos": [
+							0,
+							0
+						],
+						"rare_name": "깊은 산의 새벽 안개를 가르고 무너진 봉인을 되찾아 돌아온 도사의 오래된 칼을 성문 앞에서 다시 벼려낸 마지막 수호자의 검",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [],
+						"def": "hakchangui",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "spi",
+								"v": 8.0
+							},
+							{
+								"stat": "mp_flat",
+								"v": 15.0
+							}
+						],
+						"piece_id": "set_dosa_hakchangui",
+						"pos": [
+							2,
+							0
+						],
+						"rare_name": "",
+						"rarity": 3,
+						"socketed": [
+							{
+								"id": "jeogok_3"
+							}
+						],
+						"sockets": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [
+							{
+								"id": "biting",
+								"v": 4.0
+							},
+							{
+								"id": "nimble",
+								"v": 12.0
+							},
+							{
+								"id": "of_wildcat",
+								"v": 4.0
+							},
+							{
+								"id": "of_crane",
+								"v": 4.0
+							}
+						],
+						"def": "jade_ring",
+						"identified": true,
+						"ilvl": 30,
+						"pos": [
+							5,
+							0
+						],
+						"rare_name": "새벽 서리",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [
+							{
+								"id": "precise",
+								"v": 19.0
+							}
+						],
+						"def": "jade_charm",
+						"identified": false,
+						"ilvl": 1,
+						"pos": [
+							6,
+							0
+						],
+						"rare_name": "감춰진 새벽",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					}
+				]
+			},
+			"item": {
+				"affixes": [],
+				"def": "hakchangui",
+				"identified": true,
+				"ilvl": 30,
+				"mods": [
+					{
+						"stat": "spi",
+						"v": 8.0
+					},
+					{
+						"stat": "mp_flat",
+						"v": 15.0
+					}
+				],
+				"piece_id": "set_dosa_hakchangui",
+				"rare_name": "",
+				"rarity": 3,
+				"socketed": [
+					{
+						"id": "jeogok_3"
+					}
+				],
+				"sockets": 1,
+				"stack": 1,
+				"talisman_item_ver": 1
+			},
+			"label": "before_set_socket",
+			"pointer": "(1023.0, 459.0)",
+			"source_rect": "[P: (944.0, 340.0), S: (80.0, 120.0)]",
+			"tooltip_present": true,
+			"tooltip_rect": "[P: (505.0, 127.0), S: (431.0, 545.0)]",
+			"tooltip_rows": [
+				{
+					"color": [
+						0.309803932905197,
+						0.823529422283173,
+						0.47843137383461,
+						1.0
+					],
+					"role": "name",
+					"size": 16,
+					"text": "학창의"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "base",
+					"size": 15,
+					"text": "방어 4"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "req",
+					"size": 15,
+					"text": "요구 레벨 10"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "req",
+					"size": 15,
+					"text": "요구 정기 35"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "implicit",
+					"size": 15,
+					"text": "정기 +4"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "implicit",
+					"size": 15,
+					"text": "도력 +10"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "정기 +8"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "도력 +15"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"element": "fire",
+					"role": "affix",
+					"size": 15,
+					"text": "불막이 +12%"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "socket",
+					"size": 15,
+					"text": "홈 1 · 적옥(온전한)"
+				},
+				{
+					"color": [
+						0.309803932905197,
+						0.823529422283173,
+						0.47843137383461,
+						1.0
+					],
+					"role": "set",
+					"size": 14,
+					"text": "떠돌이 도사 행장 (2/4)"
+				},
+				{
+					"color": [
+						0.550000011920929,
+						0.579999983310699,
+						0.550000011920929,
+						1.0
+					],
+					"role": "set_piece",
+					"size": 14,
+					"text": "○ 학창의"
+				},
+				{
+					"color": [
+						0.309803932905197,
+						0.823529422283173,
+						0.47843137383461,
+						1.0
+					],
+					"role": "set_piece",
+					"size": 14,
+					"text": "● 미투리"
+				},
+				{
+					"color": [
+						0.550000011920929,
+						0.579999983310699,
+						0.550000011920929,
+						1.0
+					],
+					"role": "set_piece",
+					"size": 14,
+					"text": "○ 복주머니"
+				},
+				{
+					"color": [
+						0.309803932905197,
+						0.823529422283173,
+						0.47843137383461,
+						1.0
+					],
+					"role": "set_piece",
+					"size": 14,
+					"text": "● 전대"
+				},
+				{
+					"color": [
+						0.309803932905197,
+						0.823529422283173,
+						0.47843137383461,
+						1.0
+					],
+					"role": "set",
+					"size": 14,
+					"text": "2조각: 부적 피해 +15%"
+				},
+				{
+					"color": [
+						0.550000011920929,
+						0.579999983310699,
+						0.550000011920929,
+						1.0
+					],
+					"role": "set",
+					"size": 14,
+					"text": "3조각: 부적 아끼기 +15% · 도력 +20"
+				},
+				{
+					"color": [
+						0.550000011920929,
+						0.579999983310699,
+						0.550000011920929,
+						1.0
+					],
+					"role": "set",
+					"size": 14,
+					"text": "완성 (4조각): 부적 주머니 도력 −30% · 정기 +10 · 모든 막이 +10%"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "separator",
+					"size": 15,
+					"text": ""
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "좌클릭: 들기 · 들고 창 밖 클릭: 버림"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "우클릭 / Shift+클릭: 장착"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "Ctrl+클릭: 발밑에 버림"
+				}
+			]
+		},
+		{
+			"inventory": {
+				"belt": [
+					null,
+					null,
+					null,
+					null,
+					null,
+					null
+				],
+				"equipment": {
+					"amulet": null,
+					"armor": {
+						"affixes": [],
+						"def": "cotton_robe",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 0,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"belt": {
+						"affixes": [],
+						"def": "jeondae",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "talisman_pct",
+								"v": 8.0
+							},
+							{
+								"stat": "hp_flat",
+								"v": 10.0
+							}
+						],
+						"piece_id": "set_dosa_jeondae",
+						"rare_name": "",
+						"rarity": 3,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"boots": {
+						"affixes": [],
+						"def": "mituri",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "move_pct",
+								"v": 10.0
+							},
+							{
+								"stat": "mp_regen",
+								"v": 0.3
+							}
+						],
+						"piece_id": "set_dosa_mituri",
+						"rare_name": "",
+						"rarity": 3,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"head": null,
+					"offhand": null,
+					"ring1": {
+						"affixes": [
+							{
+								"id": "precise",
+								"v": 17.0
+							},
+							{
+								"id": "of_tiger",
+								"v": 4.0
+							}
+						],
+						"def": "silver_ring",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"ring2": {
+						"affixes": [
+							{
+								"id": "blue",
+								"v": 10.0
+							},
+							{
+								"id": "of_sage",
+								"v": 7.0
+							}
+						],
+						"def": "jade_ring",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					"weapon": {
+						"affixes": [],
+						"def": "iron_sword",
+						"identified": true,
+						"ilvl": 1,
+						"rare_name": "",
+						"rarity": 0,
+						"stack": 1,
+						"talisman_item_ver": 1
+					}
+				},
+				"gold": 1250,
+				"grid": [
+					{
+						"affixes": [
+							{
+								"id": "keen",
+								"v": 5.0
+							},
+							{
+								"id": "fierce",
+								"v": 20.0
+							},
+							{
+								"id": "precise",
+								"v": 17.0
+							},
+							{
+								"id": "of_bear",
+								"v": 7.0
+							},
+							{
+								"id": "of_hawk",
+								"v": 7.0
+							},
+							{
+								"id": "of_sage",
+								"v": 7.0
+							}
+						],
+						"def": "long_sword",
+						"identified": true,
+						"ilvl": 30,
+						"pos": [
+							0,
+							0
+						],
+						"rare_name": "깊은 산의 새벽 안개를 가르고 무너진 봉인을 되찾아 돌아온 도사의 오래된 칼을 성문 앞에서 다시 벼려낸 마지막 수호자의 검",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [],
+						"def": "hakchangui",
+						"identified": true,
+						"ilvl": 30,
+						"mods": [
+							{
+								"stat": "spi",
+								"v": 8.0
+							},
+							{
+								"stat": "mp_flat",
+								"v": 15.0
+							}
+						],
+						"piece_id": "set_dosa_hakchangui",
+						"pos": [
+							2,
+							0
+						],
+						"rare_name": "",
+						"rarity": 3,
+						"socketed": [
+							{
+								"id": "jeogok_3"
+							}
+						],
+						"sockets": 1,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [
+							{
+								"id": "biting",
+								"v": 4.0
+							},
+							{
+								"id": "nimble",
+								"v": 12.0
+							},
+							{
+								"id": "of_wildcat",
+								"v": 4.0
+							},
+							{
+								"id": "of_crane",
+								"v": 4.0
+							}
+						],
+						"def": "jade_ring",
+						"identified": true,
+						"ilvl": 30,
+						"pos": [
+							5,
+							0
+						],
+						"rare_name": "새벽 서리",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					},
+					{
+						"affixes": [
+							{
+								"id": "precise",
+								"v": 19.0
+							}
+						],
+						"def": "jade_charm",
+						"identified": false,
+						"ilvl": 1,
+						"pos": [
+							6,
+							0
+						],
+						"rare_name": "감춰진 새벽",
+						"rarity": 2,
+						"stack": 1,
+						"talisman_item_ver": 1
+					}
+				]
+			},
+			"item": {
+				"affixes": [
+					{
+						"id": "biting",
+						"v": 4.0
+					},
+					{
+						"id": "nimble",
+						"v": 12.0
+					},
+					{
+						"id": "of_wildcat",
+						"v": 4.0
+					},
+					{
+						"id": "of_crane",
+						"v": 4.0
+					}
+				],
+				"def": "jade_ring",
+				"identified": true,
+				"ilvl": 30,
+				"rare_name": "새벽 서리",
+				"rarity": 2,
+				"stack": 1,
+				"talisman_item_ver": 1
+			},
+			"label": "before_ring_compare",
+			"pointer": "(1103.0, 379.0)",
+			"source_rect": "[P: (1064.0, 340.0), S: (40.0, 40.0)]",
+			"tooltip_present": true,
+			"tooltip_rect": "[P: (962.0, 54.0), S: (243.0, 278.0)]",
+			"tooltip_rows": [
+				{
+					"color": [
+						1.0,
+						0.882352948188782,
+						0.301960796117783,
+						1.0
+					],
+					"role": "name",
+					"size": 16,
+					"text": "새벽 서리"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "base_name",
+					"size": 15,
+					"text": "옥가락지"
+				},
+				{
+					"color": [
+						0.879999995231628,
+						0.870000004768372,
+						0.819999992847443,
+						1.0
+					],
+					"role": "req",
+					"size": 15,
+					"text": "요구 레벨 5"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "치명 +4%"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "회피 +12"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "민첩 +4"
+				},
+				{
+					"color": [
+						0.431372553110123,
+						0.607843160629272,
+						1.0,
+						1.0
+					],
+					"role": "affix",
+					"size": 15,
+					"text": "정기 +4"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "separator",
+					"size": 15,
+					"text": ""
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "좌클릭: 들기 · 들고 창 밖 클릭: 버림"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "우클릭 / Shift+클릭: 장착"
+				},
+				{
+					"color": [
+						0.720000028610229,
+						0.720000028610229,
+						0.680000007152557,
+						1.0
+					],
+					"role": "hint",
+					"size": 14,
+					"text": "Ctrl+클릭: 발밑에 버림"
+				}
+			]
+		}
+	],
+	"fixture": "Fixed existing item definitions and legal options; set socket from actual SocketPunch.commit/socket_in; isolated E2E character; no save calls.",
+	"input": "Actual marked t.mouse_move; source item final occupied pixel; no OS mouse or presentation lock.",
+	"issue": 781,
+	"logical_viewport": "(1280.0, 720.0)",
+	"physical_render": "(1280.0, 720.0)",
+	"scene": "res://world/main.tscn"
+}

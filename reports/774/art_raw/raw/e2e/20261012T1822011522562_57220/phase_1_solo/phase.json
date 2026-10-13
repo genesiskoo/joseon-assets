@@ -1,0 +1,49 @@
+{
+    "schema":  1,
+    "launch":  {
+                   "schema":  1,
+                   "fixed_fps":  0,
+                   "exe":  "godot",
+                   "argv":  [
+                                "--path",
+                                "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+                                "--headless",
+                                "--",
+                                "--e2e=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter"
+                            ],
+                   "phase_arg":  "balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter",
+                   "phase_tokens":  [
+                                        "balance_room",
+                                        "balance_boss",
+                                        "hit_stagger",
+                                        "pack_perf",
+                                        "bodies_cap",
+                                        "gimmicks",
+                                        "item_showcase",
+                                        "hit_warmup",
+                                        "footsteps",
+                                        "audio_cues",
+                                        "sfx_limiter"
+                                    ],
+                   "skip":  [
+
+                            ],
+                   "exclusive":  true,
+                   "contains_balance_boss":  true,
+                   "combat_trace":  false,
+                   "launcher_pid":  38904,
+                   "launched_utc":  "2026-10-12T18:22:09.9289256Z"
+               },
+    "runtime_pid":  26752,
+    "exit_code":  0,
+    "timed_out":  false,
+    "elapsed_sec":  212.96569409999998,
+    "archived_utc":  "2026-10-12T18:25:42.8505603Z",
+    "godot_log":  {
+                      "source":  "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-2d0c\\logs\\godot.log",
+                      "archive":  "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261012T1822011522562_57220\\phase_1_solo\\godot.raw.log",
+                      "bytes":  112026,
+                      "sha256":  "e472472eee0187e0ff79805063038266e4ecc9a3a31a8ed4d54c13ef697eed82"
+                  },
+    "console_format":  "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

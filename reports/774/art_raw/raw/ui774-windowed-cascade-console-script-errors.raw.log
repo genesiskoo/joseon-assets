@@ -1,0 +1,16 @@
+SCRIPT ERROR: Cannot call method 'get' on a previously freed instance.
+   at: run (res://tests/e2e/scenarios/audio_cues.gd:674)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/e2e/scenarios/audio_cues.gd:674)
+       [1] frames (res://tests/e2e/e2e.gd:53)
+SCRIPT ERROR: Invalid type in function '_hit_once' in base 'RefCounted (sfx_limiter.gd)'. The Object-derived class of argument 2 (previously freed) is not a subclass of the expected argument class.
+   at: run (res://tests/e2e/scenarios/sfx_limiter.gd:198)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/e2e/scenarios/sfx_limiter.gd:198)
+       [1] _quiet (res://tests/e2e/scenarios/sfx_limiter.gd:393)
+       [2] seconds (res://tests/e2e/e2e.gd:57)
+SCRIPT ERROR: Invalid access to property or key '<RefCounted#-9223330020263439890>' on a base object of type 'Dictionary'.
+   at: _drop_and_pickup (res://tests/e2e/scenarios/ui_docks.gd:75)
+   GDScript backtrace (most recent call first):
+       [0] _drop_and_pickup (res://tests/e2e/scenarios/ui_docks.gd:75)
+       [1] frames (res://tests/e2e/e2e.gd:53)

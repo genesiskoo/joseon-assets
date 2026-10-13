@@ -1,0 +1,24 @@
+E2E ▶ bgm_hooks
+  ✗ 마을 = 무게 0 — 그래도 town 그대로 (긴장 짝 없음)
+  ✗ 1층 BGM id (기대 dungeon, 실제 boss)
+  · Music 플레이어 재생 중 3 (헤드리스 드라이버에 따라 0일 수 있음)
+  ✗ 흑랑 굴 1층 = dungeon · 무게 0
+  ✗ 1층 곡 = 던전 5곡 중 하나 (boss.ogg)
+  ✗ 무게 4 = 그대로 (들어가기 문턱 5)
+  ✗ 겹침 시험 전 — 던전 BGM 스트림이 걸려 있다
+  ✗ 무게 5 → dungeon_tense (town.ogg)
+  ✗ 이력 music:dungeon_tense · 층 곡은 그대로 dungeon
+  ✗ 둘 잡음 → 무게 3 (죽은 몸 안 셈) = 긴장 그대로 · 셈 0.00 (띠 3~4)
+  · 곡 순환 11곡: dungeon_1 → dungeon_2 → dungeon_1 → dungeon_3 → dungeon_4 → dungeon → dungeon_2 → dungeon_3 → dungeon → dungeon_1 → dungeon_4
+  ✗ 다 잡고 3초 = 아직 긴장 · 셈 0.00초
+  · 다 잡고 원래 곡까지 2.99초 (나오기 6초 · 재는 간격 0.25초)
+  ✗ 무게 0이 6초 → 원래 곡 (2.99초)
+  ✗ 원래 곡 = 들어갈 때 돌던 그 곡 (dungeon_4.ogg)
+  ✗ 이력 music:dungeon · 셈 0
+  ✗ 파란 정예 셋 = 무게 6 → 긴장
+  ✗ 층을 새로 세우면 처음부터 — 긴장 끔 · 층 곡 dungeon (boss.ogg)
+  ✗ 대화 띠 동안 = 무게 5 — 그래도 그대로
+SCRIPT ERROR: Cannot call method 'get' on a previously freed instance.
+  ✗ SCRIPT ERROR 1건 — 대본이 중간에 끊겼을 수 있다: Cannot call method 'get' on a previously freed instance. (audio_cues.gd:674)
+  ✗ SCRIPT ERROR 1건 — 대본이 중간에 끊겼을 수 있다: Cannot call method 'get' on a previously freed instance. (audio_cues.gd:674)
+E2E bgm_hooks FAIL (검사 17, 실패 15)

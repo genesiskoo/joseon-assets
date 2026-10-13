@@ -1,0 +1,9 @@
+#781 → 완료 (닫힘)
+  📏 문서 예산 0.1초 (#574) — ✓ PASS 7 · WARN 11
+✅ 착륙 — main e4e64cd → 68193233
+68193233 docs(#781): record approval and landing checks
+c5cf7fd5 feat(#781): 목조 아이템 상세와 장비 비교
+  📦 본진에 들인 변경: 스크립트 추가·삭제·이름 바뀜 6 (docs/art/781_ui_item_detail/landing/20261013_approval/pre/ui781-landing-boot.gd, tests/e2e/scenarios/ui_item_detail.gd, tests/test_ui_item_detail_info.gd …) → 본진 임포트 (godot --headless --path <본진> --import)
+  ✓ 본진 임포트 28초
+  🧭 본진: 임포트 28초 · ✓ 부팅 검사 SCRIPT ERROR 0 · 오토로드 10/10 · 주 장면 OK (6초)
+  다음 카드는 이 자리에서 새 브랜치: git switch -c claude/<M>-<slug> main  (또는 세션 끝 = ExitWorktree remove)

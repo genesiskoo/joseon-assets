@@ -1,0 +1,19 @@
+E2E ▶ ui_tooltips
+SCRIPT ERROR: Invalid access to property or key '<RefCounted#-9223330020263439890>' on a base object of type 'Dictionary'.
+  · left camera settled, player x=856.00
+  ✗ pointer shows current tooltip: 가죽신
+  ✗ normal boots tooltip stays inside logical viewport
+  ✗ normal boots source is the complete item footprint
+  ✗ normal separates base stats without invented options
+  · left after movement camera settled, player x=857.31
+  · both camera settled, player x=640.20
+  · skills and bag camera settled, player x=640.07
+  · Esc restores center camera settled, player x=640.04
+  ✗ right click equips boots
+  ✗ pointer shows current tooltip: 가죽신
+  ✗ equipment tooltip stays inside logical viewport
+  ✗ equipment source is the complete item footprint
+  ✗ pointer shows current tooltip: 가죽신
+  ✗ SCRIPT ERROR 1건 — 대본이 중간에 끊겼을 수 있다: Invalid access to property or key '<RefCounted#-9223330020263439890>' on a base object of type 'Dictionary'. (ui_docks.gd:75)
+  ✗ SCRIPT ERROR 1건 — 대본이 중간에 끊겼을 수 있다: Invalid access to property or key '<RefCounted#-9223330020263439890>' on a base object of type 'Dictionary'. (ui_docks.gd:75)
+E2E ui_tooltips FAIL (검사 108, 실패 10)

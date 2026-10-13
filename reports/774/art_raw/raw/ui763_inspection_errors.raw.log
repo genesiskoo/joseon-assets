@@ -1,0 +1,36 @@
+Read-only inspection errors before implementation:
+
+Command: python tools/board.py show --brief
+Exit: 1
+error connecting to api.github.com
+check your internet connection or https://githubstatus.com
+gh api graphql 실패 (exit 1) — gh auth status / 네트워크 확인
+
+Get-Content:
+Line |
+   2 |  … lCount 240; Get-Content -LiteralPath 'ui/equipment_ui.gd' -TotalCount …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'ui/equipment_ui.gd' because it does not exist.
+
+Get-Content:
+Line |
+   2 |  … lCount 170; Get-Content -LiteralPath 'tests/test_ui_fonts.gd' -TotalC …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'tests/test_ui_fonts.gd' because it does not exist.
+
+Read-only path query:
+rg: data/items/robe.tres: 지정된 파일을 찾을 수 없습니다. (os error 2)
+
+Patch verification (no files changed by this failed patch):
+Script error:
+apply_patch verification failed: Failed to find expected lines in C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\._tmp\ui763_inspection_errors.raw.log:
++     | Cannot find path 'tests/test_ui_fonts.gd' because it does not exist.
+
+Read-only wildcard query:
+rg: tests/test_shared*: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)
+
+Read-only font metric console encoding probe (repeated with codepoint-only output):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2039' in position 39: illegal multibyte sequence
+units 1024

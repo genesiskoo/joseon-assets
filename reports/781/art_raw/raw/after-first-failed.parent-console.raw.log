@@ -1,0 +1,36 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(ui_item_detail)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (7.4초)
+== e2e (ui_item_detail · 단독(창 모드) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon","--","--e2e=ui_item_detail","--e2e-shots"],"phase_arg":"ui_item_detail","phase_tokens":["ui_item_detail"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":21672,"launched_utc":"2026-10-13T08:45:42.3377431Z"}
+E2E start: ui_item_detail
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ ui_item_detail
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_item_detail_01_after_rare_long.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_item_detail_02_after_set_socket.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_item_detail_03_after_ring_compare.png
+  ✗ 긴희귀 전문 페이지0 실제 표시 글자·본문clip·720p안 req
+  ✗ 긴희귀 전문 페이지3 실제 표시 글자·본문clip·720p안 section
+  ✗ 긴희귀 전문 페이지7 실제 표시 글자·본문clip·720p안 hint
+  ✗ 긴희귀 전문 페이지12 실제 표시 글자·본문clip·720p안 hint
+  ✗ 실제 세트홈 전문 페이지1 실제 표시 글자·본문clip·720p안 affix
+  ✗ 실제 세트홈 전문 페이지4 실제 표시 글자·본문clip·720p안 req
+  ✗ 실제 세트홈 전문 페이지5 실제 표시 글자·본문clip·720p안 set_piece
+  ✗ 실제 세트홈 전문 페이지10 실제 표시 글자·본문clip·720p안 set_piece
+  ✗ 가락지2 후보·값차이 페이지4 실제 표시 글자·본문clip·720p안 affix
+  ✗ 가락지2 후보·값차이 페이지5 실제 표시 글자·본문clip·720p안 delta
+  ✗ 가락지2 현재 전문 페이지0 실제 표시 글자·본문clip·720p안 hint
+  ✗ 가락지2 현재 전문 페이지1 실제 표시 글자·본문clip·720p안 section
+  ✗ 가락지2 현재 전문 페이지4 실제 표시 글자·본문clip·720p안 affix
+  ✗ 가락지2 현재 전문 페이지5 실제 표시 글자·본문clip·720p안 section
+  ✗ 한영 초장문 전문 페이지9 실제 표시 글자·본문clip·720p안 base_name
+  ✗ 한영 초장문 전문 페이지26 실제 표시 글자·본문clip·720p안 comparison_note
+  ✗ 공급자 selling 문맥 변경은 상세가격을 다시 읽음
+  ✗ 같은프레임 open_request→Esc도 상세만 닫고 동적 부모서비스 보존
+  · #781 AFTER 실제 고정상세·입력 3장: 동일 fixture/커서·저장 없음
+E2E ui_item_detail FAIL (검사 16387, 실패 18)
+E2E SUMMARY: 0/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tmp\e2e_raw\20261013T0845348925566_45776\phase_1_solo
+  e2e  (42.7초) — 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-2d0c\e2e
+실패 1

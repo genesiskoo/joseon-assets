@@ -1,0 +1,23 @@
+rg: data/skills/*.tres: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)
+rg: ._tmp/ui763_*.py: IO error for operation on ._tmp/ui763_*.py: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)
+rg: data/set_pieces: 지정된 파일을 찾을 수 없습니다. (os error 2)
+Get-Content: 
+Line |
+   2 |  … skills/clone.tres'; Get-Content -LiteralPath 'data/skills/invis.tres'
+     |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'data/skills/invis.tres' because it does not exist.
+
+rg: docs/design/combat.md: 지정된 파일을 찾을 수 없습니다. (os error 2)
+rg: items/talisman_shot.gd: 지정된 파일을 찾을 수 없습니다. (os error 2)
+Get-Content:
+Line |
+   2 |  … under_lore.tres; Get-Content data/items/talisman_thunder.tres; rg -n  …
+     |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\data\items\talisman_thunder.tres' because it does not exist.
+
+rg: ui/skill_info.gd: 지정된 파일을 찾을 수 없습니다. (os error 2)
+Get-Content:
+Line |
+   2 |  … t data/skills/blink.tres; Get-Content data/skills/shield.tres; Get-Co …
+     |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\data\skills\shield.tres' because it does not exist.

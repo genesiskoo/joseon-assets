@@ -1,0 +1,55 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+  · ② 놓침: LOST 6.017초 · SEARCH 6.033초 · IDLE 9.050초 · 도호 쪽 끝 x 0.27 (본 자리 0.00) · 두리번 517° · 쉼 (0.274988, 0.500809, 0.0)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — hit ×2 · bandit_hurt ×3 · enemy_attack ×1 · kill_extra ×1 · bandit_die ×1 (버림 누계 8)
+ERROR: FAIL: ⑮ to 자리에 닿으면 done · 쫓기 (3.77u · 4.02초 · 속도 배수 1.00·1.00·1.00)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_enemy_ai.gd:139)
+       [1] _busy_consts (res://tests/test_enemy_ai.gd:1311)
+       [2] _init (res://tests/test_enemy_ai.gd:178)
+       [3] _role_raise (res://tests/test_enemy_ai.gd:1280)
+ERROR: FAIL: ⑰ 시체 곁에서 먹기 시작 (3.82u · 3.02초)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_enemy_ai.gd:139)
+       [1] _devour (res://tests/test_enemy_ai.gd:1367)
+       [2] _init (res://tests/test_enemy_ai.gd:180)
+       [3] _role_raise (res://tests/test_enemy_ai.gd:1280)
+ERROR: FAIL: ⑰ 1.5초 먹으면 생명 +25% · 크기·피해 ×1.1 · 먹은 수 1 (생명 9.0 → 9.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_enemy_ai.gd:139)
+       [1] _devour (res://tests/test_enemy_ai.gd:1370)
+       [2] _init (res://tests/test_enemy_ai.gd:180)
+       [3] _role_raise (res://tests/test_enemy_ai.gd:1280)
+ERROR: FAIL: ⑰ 먹힌 시체는 가라앉는다
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_enemy_ai.gd:139)
+       [1] _devour (res://tests/test_enemy_ai.gd:1372)
+       [2] _init (res://tests/test_enemy_ai.gd:180)
+       [3] _role_raise (res://tests/test_enemy_ai.gd:1280)
+ERROR: FAIL: ⑰ 재(불 막타 fire) · 넋(soul) 시체는 안 먹는다
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_enemy_ai.gd:139)
+       [1] _devour (res://tests/test_enemy_ai.gd:1386)
+       [2] _init (res://tests/test_enemy_ai.gd:180)
+       [3] _role_raise (res://tests/test_enemy_ai.gd:1280)
+ERROR: FAIL: ⑰ 3번 먹었으면 더 안 간다
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_enemy_ai.gd:139)
+       [1] _devour (res://tests/test_enemy_ai.gd:1394)
+       [2] _init (res://tests/test_enemy_ai.gd:180)
+       [3] _role_raise (res://tests/test_enemy_ai.gd:1280)
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — bandit_attack ×7 · hollin_yeogung_spear_attack ×18 (버림 누계 33)
+ENEMY_AI_TEST checks=798 fails=6 FAIL
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+

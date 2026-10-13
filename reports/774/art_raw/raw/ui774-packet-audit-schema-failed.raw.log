@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\._tmp\ui774_packet_audit.py", line 50, in <module>
+    captured = data(art / 'after-source-snapshot.json')['files']
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str

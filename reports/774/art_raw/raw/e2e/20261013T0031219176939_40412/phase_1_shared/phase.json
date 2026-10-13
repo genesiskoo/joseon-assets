@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+      "--headless",
+      "--",
+      "--e2e=skill_icons,skill_names"
+    ],
+    "phase_arg": "skill_icons,skill_names",
+    "phase_tokens": [
+      "skill_icons",
+      "skill_names"
+    ],
+    "skip": [],
+    "exclusive": false,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 14184,
+    "launched_utc": "2026-10-13T00:31:28.6949341Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_sec": 18.0261008,
+  "archived_utc": "2026-10-13T00:31:46.7405169Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-2d0c\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261013T0031219176939_40412\\phase_1_shared\\godot.raw.log",
+    "bytes": 6138,
+    "sha256": "f9fbce8622cf7c2ca5b1ce4c177df3260265030a2179b1fb5c3ed9095a63dcb6"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

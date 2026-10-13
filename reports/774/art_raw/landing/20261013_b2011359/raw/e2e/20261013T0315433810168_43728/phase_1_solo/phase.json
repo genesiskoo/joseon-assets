@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+      "--",
+      "--e2e=boss_bulgasari,ui_skill_contract,equipment_ui,ui_item_contract,ui_docks,hud_hierarchy_view,skill_picker,skill_icons,skill_names,belt_pickup"
+    ],
+    "phase_arg": "boss_bulgasari,ui_skill_contract,equipment_ui,ui_item_contract,ui_docks,hud_hierarchy_view,skill_picker,skill_icons,skill_names,belt_pickup",
+    "phase_tokens": [
+      "boss_bulgasari",
+      "ui_skill_contract",
+      "equipment_ui",
+      "ui_item_contract",
+      "ui_docks",
+      "hud_hierarchy_view",
+      "skill_picker",
+      "skill_icons",
+      "skill_names",
+      "belt_pickup"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 43096,
+    "launched_utc": "2026-10-13T03:54:00.3109212Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_sec": 124.3515137,
+  "archived_utc": "2026-10-13T03:56:04.6857070Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-2d0c\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261013T0315433810168_43728\\phase_1_solo\\godot.raw.log",
+    "bytes": 25383,
+    "sha256": "22db209ea60b57c56c436394da75dad645c6831c20279d12c3dfeff1b344d6d8"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

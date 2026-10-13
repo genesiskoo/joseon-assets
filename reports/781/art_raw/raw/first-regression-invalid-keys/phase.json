@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+      "--headless",
+      "--",
+      "--e2e=ui_tooltips,ui_item_contract,ui_skill_contract,skill_picker,hud_hierarchy,equipment"
+    ],
+    "phase_arg": "ui_tooltips,ui_item_contract,ui_skill_contract,skill_picker,hud_hierarchy,equipment",
+    "phase_tokens": [
+      "ui_tooltips",
+      "ui_item_contract",
+      "ui_skill_contract",
+      "skill_picker",
+      "hud_hierarchy",
+      "equipment"
+    ],
+    "skip": [],
+    "exclusive": false,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 47956,
+    "launched_utc": "2026-10-13T06:44:17.7458782Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_sec": 32.0872799,
+  "archived_utc": "2026-10-13T06:44:49.8565575Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-2d0c\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261013T0644104870635_49948\\phase_1_shared\\godot.raw.log",
+    "bytes": 7525,
+    "sha256": "ae27f7c05ea4e31f12f83f5add9cc3176b88d2d38fde0db3c20cc6252c704bb7"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

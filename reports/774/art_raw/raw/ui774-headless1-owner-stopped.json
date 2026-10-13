@@ -1,0 +1,60 @@
+{
+  "card": 774,
+  "verdict": "owner-stopped while queued after shared skill_icons failure; not an overall PASS",
+  "raw": "raw/ui774-headless1-owner-stopped.raw.log",
+  "raw_sha256": "fbfc800cf109d17afec29e98bf0f696eaf2c743535a6c8213ee3d57763c64df2",
+  "native_session": {
+    "id": 24994,
+    "exit": -1,
+    "confirmed_by": "parent tools.write_stdin"
+  },
+  "owner_stopped_after_shared_failure": true,
+  "solo_launched": false,
+  "owner_stop": {
+    "wrapper_pid": 19372,
+    "parent_pid": 14536,
+    "name": "pwsh",
+    "identity_checks": [
+      "unique raw marker",
+      "parent PID",
+      "process name"
+    ],
+    "owned_game_processes": 0,
+    "action": "parent stopped only the identified waiting wrapper"
+  },
+  "shared_phase": {
+    "engine_exit": 1,
+    "timed_out": false,
+    "elapsed_sec": 2128.5694553,
+    "raw_directory": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261012T2347456135712_19372\\phase_1_shared",
+    "passed": 157,
+    "failed": 1,
+    "total": 158,
+    "failure": {
+      "scenario": "skill_icons",
+      "checks": 108,
+      "fails": 3
+    }
+  },
+  "unit_tools": {
+    "passed_steps": 157,
+    "valid_section": "before == 외형 표",
+    "tested_source_count": 34,
+    "tested_source": "raw/ui774-headless1-unit-source.json",
+    "tested_source_sha256": "3de879e4d046b6958592c63449da1f29c9a8df887b6277c9dddf537eec9c1a8a"
+  },
+  "pending_solo_scenarios": [
+    "balance_room",
+    "balance_boss",
+    "hit_stagger",
+    "pack_perf",
+    "bodies_cap",
+    "gimmicks",
+    "item_showcase",
+    "hit_warmup",
+    "footsteps",
+    "audio_cues",
+    "sfx_limiter"
+  ],
+  "coverage": "Shared result and unit proof retained; no claim of clean complete E2E coverage."
+}

@@ -1,0 +1,7 @@
+E2E ▶ ui_docks
+  · none camera settled, player x=640.00
+  · right camera settled, player x=424.00
+SCRIPT ERROR: Invalid type in function '_hit_once' in base 'RefCounted (sfx_limiter.gd)'. The Object-derived class of argument 2 (previously freed) is not a subclass of the expected argument class.
+  ✗ SCRIPT ERROR 1건 — 대본이 중간에 끊겼을 수 있다: Invalid type in function '_hit_once' in base 'RefCounted (sfx_limiter.gd)'. The Object-derived class of argument 2 (previously freed) is not a subclass of the expected argument class. (sfx_limiter.gd:198)
+  ✗ SCRIPT ERROR 1건 — 대본이 중간에 끊겼을 수 있다: Invalid type in function '_hit_once' in base 'RefCounted (sfx_limiter.gd)'. The Object-derived class of argument 2 (previously freed) is not a subclass of the expected argument class. (sfx_limiter.gd:198)
+E2E ui_docks FAIL (검사 7, 실패 1)

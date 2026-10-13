@@ -1,0 +1,27 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+ERROR: FAIL: 두손 교체의 비교 한계 명시
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_ui_item_detail_info.gd:18)
+       [1] _requirements_and_limits (res://tests/test_ui_item_detail_info.gd:220)
+       [2] _run (res://tests/test_ui_item_detail_info.gd:236)
+ERROR: FAIL: 꺼진 장비 수치는 적용 효과로 오인하지 않음
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_ui_item_detail_info.gd:18)
+       [1] _requirements_and_limits (res://tests/test_ui_item_detail_info.gd:223)
+       [2] _run (res://tests/test_ui_item_detail_info.gd:236)
+ERROR: FAIL: 명시 물건값을 종합DPS·계단 추정으로 표현하지 않음
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_ui_item_detail_info.gd:18)
+       [1] _requirements_and_limits (res://tests/test_ui_item_detail_info.gd:224)
+       [2] _run (res://tests/test_ui_item_detail_info.gd:236)
+UI_ITEM_DETAIL_INFO_TEST checks=104 fails=3 FAIL
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

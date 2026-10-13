@@ -1,0 +1,4 @@
+usage: render.py [-h] [--title TITLE] [--force] [--serve] [--port PORT]
+                 [--share] [--metadata METADATA]
+                 fragment [destination]
+render.py: error: destination already exists; pass --force to replace it

@@ -1,0 +1,12 @@
+#763 → 완료 (닫힘)
+  ↻ main 에 새 커밋 1개 → git rebase main
+  📏 문서 예산 0.9초 (#574) — ✓ PASS 7 · WARN 11
+✅ 착륙 — main ed27ed1 → 3e586a09
+3e586a09 feat(#763): unify wood UI contracts and item scale at 720p
+df2f7de3 docs(#748): redesign limited inventory and implemented skill UI
+1b167850 docs(#748): define UI layout font and frame validation gates
+18f97267 docs(#748): plan modern ARPG UI in retained Joseon wood style
+  📦 본진에 들인 변경: 스크립트 추가·삭제·이름 바뀜 3 (tests/e2e/scenarios/ui_item_contract.gd, tests/test_ui_item_contract.gd, tools/ui_contract_lab.gd) → 본진 임포트 (godot --headless --path <본진> --import)
+  ✓ 본진 임포트 24초
+  🧭 본진: 임포트 24초 · ✓ 부팅 검사 SCRIPT ERROR 0 · 오토로드 10/10 · 주 장면 OK (6초)
+  다음 카드는 이 자리에서 새 브랜치: git switch -c claude/<M>-<slug> main  (또는 세션 끝 = ExitWorktree remove)

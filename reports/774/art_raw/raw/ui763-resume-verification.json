@@ -1,0 +1,863 @@
+{
+  "card": 763,
+  "tested_head": "e97164d13c09ba9a87f20e9649815def4a2af4ce",
+  "coverage_result": "168/168 scenario PASS across interrupted run plus continuation",
+  "initial_completed": 130,
+  "resumed_completed": 38,
+  "unit_tool_pass_steps": 156,
+  "interrupted_overall_verdict": "incomplete; not an overall test.ps1 PASS",
+  "continuation_overall_verdict": "test.ps1 -E2e focused 38/38 PASS, exit 0",
+  "runtime_equivalence_review": "Existing runtime, data, assets and E2E unchanged from full-tested dfd87be7; added VFX benches isolated. New tool/import/site gate covered by current landing run.",
+  "scenarios": [
+    {
+      "name": "character_stats",
+      "checks": 191,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "single_flurry_dps",
+      "checks": 13,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "single_flurry",
+      "checks": 98,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "vfx_ramp_gallery",
+      "checks": 18,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "unique_icons",
+      "checks": 12,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "quest_journal_refresh",
+      "checks": 19,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "character_profiles",
+      "checks": 38,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "quest_journal",
+      "checks": 56,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "hud_orb_fx",
+      "checks": 32,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "npc_hover_view",
+      "checks": 82,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "elite_ui_view",
+      "checks": 6,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "hud_hierarchy_view",
+      "checks": 124,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "dev_legend_view",
+      "checks": 23,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "dev_panel",
+      "checks": 136,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "pickup_feedback_view",
+      "checks": 3,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "icon_intake",
+      "checks": 317,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "automap",
+      "checks": 50,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "pickup_equip",
+      "checks": 37,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "identify",
+      "checks": 9,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "equipment_ui",
+      "checks": 56,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "ui_item_contract",
+      "checks": 268,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "inactive_gear",
+      "checks": 50,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "sockets",
+      "checks": 16,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "socket_punch",
+      "checks": 36,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "glyph_combo",
+      "checks": 26,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "combination",
+      "checks": 26,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "portal_roundtrip",
+      "checks": 18,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "waypoint",
+      "checks": 15,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "vendor_quest",
+      "checks": 54,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "vendor_prices",
+      "checks": 12,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "gamble",
+      "checks": 54,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "stash_roundtrip",
+      "checks": 51,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "chief_quest",
+      "checks": 71,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "boss_greetings",
+      "checks": 36,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "shaman_heal",
+      "checks": 31,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "respec",
+      "checks": 64,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "save_continue",
+      "checks": 14,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "held_save",
+      "checks": 27,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "bodies_cap",
+      "checks": 13,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "boss_floor",
+      "checks": 46,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "boss_bulgasari",
+      "checks": 52,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "bulgasari_path",
+      "checks": 15,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "boss_uniques",
+      "checks": 37,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "boss_jangsanbeom",
+      "checks": 42,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "heukrang_look",
+      "checks": 4,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "heukrang_pounce",
+      "checks": 11,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "visual_swap",
+      "checks": 65,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "run_upright",
+      "checks": 16,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "teleport_settle",
+      "checks": 10,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "render_interp",
+      "checks": 36,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "hit_stagger",
+      "checks": 20,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "hit_feel",
+      "checks": 41,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "damage_colors",
+      "checks": 18,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "element_affix",
+      "checks": 7,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "affix_combat",
+      "checks": 42,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "attack_chain",
+      "checks": 21,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "sword_trail_v2",
+      "checks": 93,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "whirl_structure_v1",
+      "checks": 69,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "status_structure_v1",
+      "checks": 36,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "element_structure_v1",
+      "checks": 89,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "element_flight_v1",
+      "checks": 45,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "aspd_steps",
+      "checks": 27,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "skill_then_attack",
+      "checks": 64,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "anim_commit",
+      "checks": 59,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "combat_timeline",
+      "checks": 96,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "feel_lab_parity",
+      "checks": 121,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "feel_lab_plates",
+      "checks": 63,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "path_smooth",
+      "checks": 44,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "path_shove_replan",
+      "checks": 6,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "player_resource_clock",
+      "checks": 73,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "invisible_sword",
+      "checks": 68,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "heavy_react",
+      "checks": 97,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "pack_ai",
+      "checks": 46,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "kill_slump",
+      "checks": 51,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "kill_bisect",
+      "checks": 68,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "slice_deaths",
+      "checks": 111,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "monster_motion_gallery",
+      "checks": 71,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "element_status",
+      "checks": 78,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "element_ui",
+      "checks": 13,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "element_sal",
+      "checks": 42,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "talisman_targeting",
+      "checks": 147,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "talisman_throw",
+      "checks": 56,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "talisman_aoe",
+      "checks": 16,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "loot_drop",
+      "checks": 55,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "potion_icons",
+      "checks": 57,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "potion_tiers",
+      "checks": 10,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "loot_props",
+      "checks": 19,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "elite_pack",
+      "checks": 52,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "elite_slots",
+      "checks": 31,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "flee_chase",
+      "checks": 35,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "verify_flows",
+      "checks": 16,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "balance_room",
+      "checks": 8,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "balance_boss",
+      "checks": 30,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "player_death",
+      "checks": 27,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "wall_cutaway",
+      "checks": 17,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "floor_seams",
+      "checks": 3,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "floor_layers",
+      "checks": 27,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "char_light",
+      "checks": 107,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "town_layout",
+      "checks": 80,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "town_approach",
+      "checks": 139,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "audio_cues",
+      "checks": 158,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "bgm_hooks",
+      "checks": 23,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "sfx_limiter",
+      "checks": 26,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "ui_windows",
+      "checks": 65,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "story_cutin",
+      "checks": 32,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "dialogue_band",
+      "checks": 78,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "dialogue_event",
+      "checks": 50,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "dialogue_choices",
+      "checks": 46,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "dialogue_esc_menu",
+      "checks": 53,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "ui_docks",
+      "checks": 61,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "ui_tooltips",
+      "checks": 108,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "belt_unify",
+      "checks": 15,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "item_ui",
+      "checks": 41,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "skill_picker",
+      "checks": 303,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "skill_icons",
+      "checks": 115,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "skill_names",
+      "checks": 248,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "vfx_cues",
+      "checks": 166,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "area_title",
+      "checks": 70,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "ink_transition",
+      "checks": 62,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "vfx_cap_blood",
+      "checks": 3,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "vfx_cap_comfort",
+      "checks": 20,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "hit_blood",
+      "checks": 73,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "hit_warmup",
+      "checks": 26,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "skill_area",
+      "checks": 93,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "skill_tiers",
+      "checks": 72,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "aoe_skills",
+      "checks": 66,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "aoe_skills_2",
+      "checks": 63,
+      "run": "continuation"
+    },
+    {
+      "name": "build_changers",
+      "checks": 87,
+      "run": "continuation"
+    },
+    {
+      "name": "body_arts",
+      "checks": 76,
+      "run": "continuation"
+    },
+    {
+      "name": "footsteps",
+      "checks": 13,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "dungeon_layout",
+      "checks": 42,
+      "run": "continuation"
+    },
+    {
+      "name": "beomgul_walk",
+      "checks": 76,
+      "run": "continuation"
+    },
+    {
+      "name": "mine_walk",
+      "checks": 79,
+      "run": "continuation"
+    },
+    {
+      "name": "bongmil_walk",
+      "checks": 165,
+      "run": "continuation"
+    },
+    {
+      "name": "room_props",
+      "checks": 90,
+      "run": "continuation"
+    },
+    {
+      "name": "town_exits",
+      "checks": 8,
+      "run": "continuation"
+    },
+    {
+      "name": "field_layout",
+      "checks": 41,
+      "run": "continuation"
+    },
+    {
+      "name": "field2_layout",
+      "checks": 29,
+      "run": "continuation"
+    },
+    {
+      "name": "gate_hover",
+      "checks": 6,
+      "run": "continuation"
+    },
+    {
+      "name": "pack_density",
+      "checks": 2,
+      "run": "continuation"
+    },
+    {
+      "name": "pack_perf",
+      "checks": 8,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "slice_loop",
+      "checks": 29,
+      "run": "continuation"
+    },
+    {
+      "name": "plaza_light",
+      "checks": 8,
+      "run": "continuation"
+    },
+    {
+      "name": "town_tour",
+      "checks": 2,
+      "run": "continuation"
+    },
+    {
+      "name": "aoe_field",
+      "checks": 20,
+      "run": "continuation"
+    },
+    {
+      "name": "long_body",
+      "checks": 13,
+      "run": "continuation"
+    },
+    {
+      "name": "named_imugi",
+      "checks": 19,
+      "run": "continuation"
+    },
+    {
+      "name": "named_gaksi",
+      "checks": 19,
+      "run": "continuation"
+    },
+    {
+      "name": "serpent_models",
+      "checks": 18,
+      "run": "continuation"
+    },
+    {
+      "name": "gimmicks",
+      "checks": 36,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "pus_jar",
+      "checks": 15,
+      "run": "continuation"
+    },
+    {
+      "name": "roles",
+      "checks": 24,
+      "run": "continuation"
+    },
+    {
+      "name": "roster_swap",
+      "checks": 19,
+      "run": "continuation"
+    },
+    {
+      "name": "gimmicks_m10",
+      "checks": 26,
+      "run": "continuation"
+    },
+    {
+      "name": "behaviors_m9",
+      "checks": 13,
+      "run": "continuation"
+    },
+    {
+      "name": "female_f1",
+      "checks": 7,
+      "run": "continuation"
+    },
+    {
+      "name": "female_float",
+      "checks": 5,
+      "run": "continuation"
+    },
+    {
+      "name": "yeogung_attacks",
+      "checks": 11,
+      "run": "continuation"
+    },
+    {
+      "name": "nachalnyeo_attacks",
+      "checks": 16,
+      "run": "continuation"
+    },
+    {
+      "name": "m14_models",
+      "checks": 13,
+      "run": "continuation"
+    },
+    {
+      "name": "leader_options",
+      "checks": 20,
+      "run": "continuation"
+    },
+    {
+      "name": "surround",
+      "checks": 7,
+      "run": "continuation"
+    },
+    {
+      "name": "item_showcase",
+      "checks": 1725,
+      "run": "interrupted_before_host_reset"
+    },
+    {
+      "name": "weapon_visibility",
+      "checks": 25,
+      "run": "continuation"
+    },
+    {
+      "name": "first_magic",
+      "checks": 18,
+      "run": "continuation"
+    },
+    {
+      "name": "hover_target",
+      "checks": 83,
+      "run": "continuation"
+    },
+    {
+      "name": "system_menu",
+      "checks": 83,
+      "run": "continuation"
+    },
+    {
+      "name": "walk_audit",
+      "checks": 166,
+      "run": "continuation"
+    }
+  ],
+  "raw": [
+    {
+      "path": "._tmp/ui763-land.raw.log",
+      "sha256": "96e7bf3c3f31b4816d1f705832cad0f647debf67d217492493ea00d164a5dccb"
+    },
+    {
+      "path": "._tmp/ui763-resume-e2e.raw.log",
+      "sha256": "36067347d01cc1d1d80511cd2a911eeb8b6837e8ac78e78d224a82aeeac87354"
+    }
+  ]
+}

@@ -1,0 +1,1262 @@
+== 단위 테스트 ==
+  PASS  test_affix_combat.gd  AFFIX_COMBAT_TEST checks=49 fails=0 PASS  (3.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_affixes.gd  AFFIXES_TEST checks=735 fails=0 PASS (29.0초)  (32.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_animation_clock.gd  ANIMATION_CLOCK_TEST checks=28 fails=0 PASS  (4.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_animation_sample.gd  ANIMATION_SAMPLE_TEST checks=38 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_animation_tick_sample.gd  ANIMATION_TICK_SAMPLE_TEST checks=11 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_aoe_field.gd  AOE_FIELD_TEST fails=0 PASS  (2.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_aoe_skills_2.gd  AOE_SKILLS_2_TEST checks=69 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_aoe_skills.gd  AOE_SKILLS_TEST checks=64 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_area_title.gd  AREA_TITLE_TEST fails=0 PASS  (3.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_aspd_steps.gd  ASPD_STEPS_TEST checks=56 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_asset_spec.gd  ASSET_SPEC_TEST checks=65 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_attack_chain.gd  ATTACK_CHAIN_TEST checks=50 fails=0 PASS  (2.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_attack_seam.gd  ATTACK_SEAM_TEST checks=52 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_audio.gd  AUDIO_TEST fails=0 PASS  (7.7초) · 허용 목록 오류 줄 1 거름
+  PASS  test_automap_data.gd  AUTOMAP_DATA_TEST checks=48 fails=0 PASS  (2.8초) · 허용 목록 오류 줄 1 거름
+  PASS  test_balance_rng.gd  BALANCE_RNG_TEST checks=48 fails=0 PASS  (9.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_balance.gd  BALANCE_TEST fails=0 PASS  (220.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_beomgul.gd  BEOMGUL_TEST checks=55 fails=0 PASS  (4.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_blank_talisman_supply.gd  BLANK_TALISMAN_SUPPLY_TEST checks=394 fails=0 PASS  (2.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_blank_talisman.gd  BLANK_TALISMAN_TEST checks=90 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_body_arts.gd  BODY_ARTS_TEST checks=97 fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_body_navigation.gd  BODY_NAVIGATION_TEST checks=31 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_bongmil.gd  BONGMIL_TEST checks=173 fails=0 PASS  (21.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_boss_uniques.gd  BOSS_UNIQUES_TEST checks=62 fails=0 PASS  (3.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_build_changers.gd  BUILD_CHANGERS_TEST checks=103 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_build_info.gd  BUILD_INFO_TEST checks=39 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_bulgasari.gd  BULGASARI_TEST checks=87 fails=0 PASS  (6.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_char_light.gd  CHAR_LIGHT_TEST checks=71 fails=0 PASS  (2.4초) · 허용 목록 오류 줄 1 거름
+  PASS  test_character_profiles.gd  CHARACTER_PROFILES_TEST checks=36 fails=0 PASS  (2.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_combat_trace.gd  COMBAT_TRACE_TEST checks=48 fails=0 PASS  (2.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_combinations.gd  COMBINATIONS_TEST checks=69 fails=0 PASS  (3.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_combo_codex.gd  COMBO_CODEX_TEST checks=82 fails=0 PASS  (2.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_cursor_pick.gd  CURSOR_PICK_TEST fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_damage_calc.gd  DAMAGE_CALC_TEST element_checks=506 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_damage_popup.gd  DAMAGE_POPUP_TEST fails=0 PASS  (3.8초) · 허용 목록 오류 줄 1 거름
+  PASS  test_data_index.gd  DATA_INDEX_TEST checks=231 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_death_pick.gd  DEATH_PICK_TEST fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_dev_legend.gd  DEV_LEGEND_TEST width=1246.0 max=1256 checks=30 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_dev_panel.gd  DEV_PANEL_TEST checks=26 fails=0 PASS  (3.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_dialogue_band.gd  DIALOGUE_BAND_TEST fails=0 PASS  (7.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_dialogue.gd  DIALOGUE_TEST fails=0 PASS  (2.7초) · 허용 목록 오류 줄 1 거름
+  PASS  test_dm_cache_exclude.gd  DM_CACHE_EXCLUDE_TEST checks=129 fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_doho_moves.gd  DOHO_MOVES_TEST checks=64 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_dungeon_dressing.gd  DUNGEON_DRESSING_TEST checks=13 fails=0 PASS  (50.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_dungeon_gen.gd  DUNGEON_GEN_TEST seeds=20 fails=0 PASS  (2.7초) · 허용 목록 오류 줄 6 거름
+  PASS  test_element_affixes.gd  ELEMENT_AFFIXES_TEST fails=0 PASS  (5.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_elites.gd  ELITES_TEST checks=534 fails=0 PASS  (54.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_enemy_ai.gd  ENEMY_AI_TEST checks=798 fails=0 PASS  (7.7초) · 허용 목록 오류 줄 1 거름
+  PASS  test_enemy_cadence.gd  ENEMY_CADENCE_TEST checks=41 fails=0 PASS  (3.8초) · 허용 목록 오류 줄 1 거름
+  PASS  test_enemy_moves.gd  ENEMY_MOVES_TEST checks=45 fails=0 PASS  (3.4초) · 허용 목록 오류 줄 1 거름
+  PASS  test_export_safety.gd  EXPORT_SAFETY_TEST checks=26 fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_field_gen.gd  FIELD_GEN_TEST seeds=20 한 번 들녘 284ms · 정령재 519ms fails=0 PASS  (77.4초) · 허용 목록 오류 줄 1 거름
+  PASS  test_float_motion.gd  FLOAT_MOTION_TEST checks=70 fails=0 PASS  (2.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_floor_label_stack.gd  FLOOR_LABEL_STACK_TEST fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_floor_layers.gd  FLOOR_LAYERS_TEST checks=140 fails=0 PASS  (5.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_floor_light_cap.gd  FLOOR_LIGHT_CAP_TEST fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_footsteps.gd  FOOTSTEPS_TEST checks=39 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_gamble_ui.gd  GAMBLE_UI_TEST checks=43 fails=0 PASS  (2.7초) · 허용 목록 오류 줄 1 거름
+  PASS  test_gamble.gd  GAMBLE_TEST checks=62 fails=0 PASS  (17.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_game_clock.gd  GAME_CLOCK_TEST checks=22 fails=0 PASS  (6.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_hit_area.gd  HIT_AREA_TEST fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_hit_blood.gd  HIT_BLOOD_TEST fails=0 PASS  (3.4초) · 허용 목록 오류 줄 1 거름
+  PASS  test_hud_resource_text.gd  HUD_RESOURCE_TEXT_TEST checks=15 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_ink_dissolve.gd  INK_DISSOLVE_TEST fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_ink_wipe.gd  INK_WIPE_TEST fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_item_dictionary.gd  ITEM_DICTIONARY_TEST checks=73 fails=0 PASS  (3.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_item_services_ui.gd  ITEM_SERVICES_UI_TEST checks=125 fails=0 PASS  (2.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_item_skills.gd  ITEM_SKILLS_TEST checks=22 fails=0 PASS  (2.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_item_ui.gd  ITEM_UI_TEST checks=69 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_item_usage.gd  ITEM_USAGE_TEST checks=48 fails=0 PASS  (3.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_items.gd  ITEMS_TEST fails=0 PASS  (53.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_jangsanbeom.gd  JANGSANBEOM_TEST checks=89 fails=0 PASS  (3.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_kill_fx.gd  KILL_FX_TEST fails=0 PASS  (2.8초) · 허용 목록 오류 줄 1 거름
+  PASS  test_knock_distance.gd  KNOCK_DISTANCE_TEST checks=68 fails=0 PASS  (4.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_loot_sim.gd  LOOT_SIM_TEST runs=60×2 checks=46 fails=0 PASS · 목표 안 6/9 (밖: 흑랑 전 유니크 48% · 레벨 봉밀굴 앞 다 잡음 +1.6 · 가방 정령재 서낭단부터 48칸) · 20.9초  (24.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_loot.gd  LOOT_TEST checks=73 fails=0 PASS · 26.8초  (28.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_mine.gd  MINE_TEST checks=135 fails=0 PASS  (11.7초) · 허용 목록 오류 줄 1 거름
+  PASS  test_models.gd  MODELS_TEST fails=0 PASS  (4.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_monster_data.gd  MONSTER_DATA_TEST checks=696 fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_named.gd  NAMED_TEST checks=40 fails=0 PASS  (5.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_overhead_queue.gd  OVERHEAD_TEST checks=21 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_pack_density.gd  PACK_DENSITY_TEST 들녘(Lv1~3): 무리 크기 2~5(평균 3.8, 323개 실측) · 무리 수 14~18 · 크기 데이터 3~5(easy 2~3)  (18.4초) · 허용 목록 오류 줄 1 거름
+  PASS  test_paper_flags.gd  PAPER_FLAGS_TEST checks=29 fails=0 PASS  (9.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_player_path.gd  PLAYER_PATH_TEST checks=44 fails=0 PASS  (8.8초) · 허용 목록 오류 줄 1 거름
+  PASS  test_player_resource_clock.gd  PLAYER_RESOURCE_CLOCK_TEST checks=16 fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_potion_regen.gd  POTION_REGEN_TEST checks=46 fails=0 PASS  (2.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_profiles_restart.gd  PROFILES_RESTART_TEST checks=2 fails=0 PASS  (16.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_progression.gd  PROGRESSION_TEST fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_projectile_flight.gd  PROJECTILE_FLIGHT_TEST checks=268 fails=0 PASS  (3.8초) · 허용 목록 오류 줄 1 거름
+  PASS  test_pus_jar.gd  PUS_JAR_TEST checks=34 fails=0 PASS  (3.7초) · 허용 목록 오류 줄 1 거름
+  PASS  test_quad_family.gd  QUAD_FAMILY_TEST checks=86 fails=0 PASS  (2.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_quest_journal_refresh.gd  QUEST_REFRESH_TEST checks=35 fails=0 PASS  (2.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_quest_journal.gd  QUEST_JOURNAL_TEST fails=0 PASS  (2.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_quests.gd  QUEST_TEST fails=0 PASS  (2.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_recipes.gd  RECIPES_TEST checks=346 fails=0 PASS  (2.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_render_interp.gd  RENDER_INTERP_TEST checks=29 fails=0 PASS  (2.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_role_stats.gd  ROLE_STATS_TEST checks=22 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_room_props.gd  ROOM_PROPS_TEST checks=66 fails=0 PASS  (20.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_roster.gd  ROSTER_TEST checks=185 fails=0 PASS  (45.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_sal.gd  SAL_TEST checks=80 fails=0 PASS  (2.4초) · 허용 목록 오류 줄 1 거름
+  PASS  test_save.gd  SAVE_TEST fails=0 PASS  (3.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_sets.gd  SETS_TEST checks=232 fails=0 PASS  (24.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_skill_names.gd  SKILL_NAMES_TEST checks=336 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_skills.gd  SKILLS_TEST checks=147 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_socket_punch_review.gd  SOCKET_PUNCH_REVIEW_TEST checks=23 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_socket_punch.gd  SOCKET_PUNCH_TEST checks=26 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_sockets.gd  SOCKETS_TEST checks=58 fails=0 PASS  (13.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_stash.gd  STASH_TEST checks=100 fails=0 PASS  (2.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_stat_caps.gd  STAT_CAPS_TEST checks=62 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_status.gd  STATUS_TEST checks=80 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_surround.gd  SURROUND_TEST checks=37 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_sword_trail.gd  SWORD_TRAIL_TEST checks=70 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_talisman_hud.gd  TALISMAN_HUD_TEST checks=49 fails=0 PASS  (2.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_talisman_skills.gd  TALISMAN_SKILLS_TEST checks=86 fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  test_talismans.gd  TALISMANS_TEST checks=250 fails=0 PASS  (9.7초) · 허용 목록 오류 줄 1 거름
+  PASS  test_title_first_launch.gd  TITLE_FIRST_LAUNCH_TEST fails=0 PASS  (5.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_town_gate.gd  TOWN_GATE_TEST checks=24 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_town.gd  TOWN_TEST fails=0 PASS  (4.5초) · 허용 목록 오류 줄 1 거름
+  PASS  test_tree_fade.gd  TREE_FADE_TEST checks=83 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_ui_item_contract.gd  UI_ITEM_CONTRACT_TEST checks=1167 cases=95 unimplemented_set_bases=4 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_ui_skill_info.gd  UI_SKILL_INFO_TEST checks=917 ids=24 fails=0 PASS  (2.3초) · 허용 목록 오류 줄 1 거름
+  PASS  test_unique_icons.gd    (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_vfx_element_manager.gd  VFX_ELEMENT_MANAGER_TEST checks=50 fails=0 PASS  (2.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_vfx_elements.gd  VFX_ELEMENTS_TEST checks=735 fails=0 PASS  (2.1초) · 허용 목록 오류 줄 1 거름
+  PASS  test_vfx_status.gd  VFX_STATUS_TEST checks=276 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  test_vfx_whirl.gd  VFX_WHIRL_TEST checks=118 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  test_vfx_world_glyph.gd  VFX_WORLD_GLYPH_TEST checks=69 fails=0 PASS  (3.6초) · 허용 목록 오류 줄 1 거름
+  PASS  test_vfx.gd  VFX_TEST fails=0 PASS  (10.6초) · 허용 목록 오류 줄 1 거름
+  PASS  settings restart write  SETTINGS_RESTART_TEST mode=write fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  settings restart read  SETTINGS_RESTART_TEST mode=read fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  motion_audit.gd --selftest  MOTION_AUDIT_TEST checks=74 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  look_audit.gd --selftest  LOOK_AUDIT_TEST checks=60 fails=0 PASS  (2.0초) · 허용 목록 오류 줄 1 거름
+  PASS  robe_probe.gd --selftest  ROBE_PROBE_TEST checks=13 fails=0 PASS  (1.9초) · 허용 목록 오류 줄 1 거름
+  PASS  dungeon_stats.gd --selftest  DUNGEON_STATS_TEST checks=28 fails=0 PASS  (2.2초) · 허용 목록 오류 줄 1 거름
+  PASS  unit_verdict.py --selftest  UNIT_VERDICT_TEST checks=33 fails=0 PASS  (0.1초)
+  PASS  e2e_shards.py --selftest  E2E_SHARDS_TEST checks=22 fails=0 PASS  (0.1초)
+  PASS  vfx_sheet.py --selftest  VFX_SHEET_TEST fails=0 PASS  (0.5초)
+  PASS  audio_intake.py --selftest  AUDIO_INTAKE_TEST fails=0 PASS  (4.1초)
+  PASS  portrait_intake.py --selftest  PORTRAIT_INTAKE_TEST checks=32 fails=0 PASS  (1.8초)
+  PASS  board.py --selftest  BOARD_TEST fails=0 PASS  (0.8초)
+  PASS  sfx_gen.py --selftest  SFX_GEN_TEST fails=0 PASS  (1.1초)
+  PASS  balance_replay.py --selftest  BALANCE_REPLAY_TEST checks=57 fails=0 PASS  (0.3초)
+  PASS  combat_trace_compare.py --selftest  COMBAT_TRACE_COMPARE_TEST checks=56 fails=0 PASS  (0.4초)
+  PASS  wt.py --selftest  WT_TEST checks=151 fails=0 PASS (75.1s)  (75.2초)
+  PASS  doc_budget.py --selftest  DOC_BUDGET_TEST checks=7 fails=0 PASS  (0.1초)
+  PASS  albedo_ops.py --selftest  ALBEDO_OPS_TEST checks=54 fails=0 PASS  (1.9초)
+  PASS  comfy_char.py --selftest  COMFY_CHAR_TEST checks=59 fails=0 PASS  (0.2초)
+  PASS  anim_retime.py --selftest  ANIM_RETIME_TEST checks=98 fails=0 PASS  (0.1초)
+  PASS  glb_pose.py --selftest  GLB_POSE_TEST checks=32 fails=0 PASS  (0.3초)
+  PASS  decimate_swap.py --selftest  DECIMATE_SWAP_TEST checks=39 fails=0 PASS  (4.0초)
+  PASS  quad_gait.py --selftest  QUAD_GAIT_TEST checks=27 fails=0 PASS  (6.8초)
+  PASS  quad_rig.py --selftest  QUAD_RIG_TEST checks=22 fails=0 PASS  (1.0초)
+  PASS  item_dictionary.py --selftest  ITEM_DICTIONARY_TEST checks=45 fails=0 PASS  (0.2초)
+  PASS  asset_gallery.py --selftest  ASSET_GALLERY_TEST checks=48 fails=0 PASS  (0.8초)
+  PASS  export_check.py --selftest  EXPORT_CHECK_TEST checks=37 fails=0 PASS  (0.1초)
+  PASS  build.py --selftest  BUILD_TEST checks=36 fails=0 PASS  (0.4초)
+  PASS  feel_lab --smoke  FEEL_LAB_SMOKE PASS 41/41  (13.2초) · 허용 목록 오류 줄 1 거름
+== 외형 표 (look_audit — 출력만, 실패로 세지 않음) ==
+    가족         삼각형  텍스처     밝기   채도   대비   텍셀/유닛  판정
+    PC 도호      11999   1024       0.241  0.288  0.155  602        OK
+    적 산적      8112    2048       0.345  0.237  0.146  1205       X 밀도
+    적 부적술사  8096    2048       0.380  0.160  0.151  1205       X 채도,밀도
+    보스 흑랑    10000   1024       0.220  0.184  0.085  589        OK
+    NPC 김 영감  8243    1024       0.357  0.211  0.149  683        OK
+    NPC 무당     8094    1024       0.362  0.380  0.150  683        OK
+    NPC 촌장     7742    1024       0.253  0.183  0.151  640        OK
+    배경 좌판    452     1254       0.357  0.222  0.206  468        X 빛 구움
+    배경 항아리  288     단색       0.098  0.633  0.000  -          X 밝기,채도
+    배경 등롱    96      1254+단색  0.406  0.398  0.213  1990       X 채도,빛 구움,밀도
+    배경 바닥    12      1024       0.320  0.190  0.090  1024       X 밀도
+    배경 벽      20      1024       0.320  0.192  0.090  512        OK
+    드랍 병      1200    512        0.231  0.375  0.068  1280       X 채도,밀도
+    드랍 검      250     512+단색   0.377  0.250  0.245  1024       X 빛 구움,밀도
+    LOOK_AUDIT 밴드 밖 8 / 14 — 적 산적(밀도), 적 부적술사(채도,밀도), 배경 좌판(빛 구움), 배경 항아리(밝기,채도), 배경 등롱(채도,빛 구움,밀도), 배경 바닥(밀도), 드랍 병(채도,밀도), 드랍 검(빛 구움,밀도)  (출력만)  (2.6초)
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(all − 단독 묶음 11) → 단독(balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (9.7초)
+== e2e (all − 단독 묶음 11 · 공유 칸 ③/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon","--headless","--","--e2e=all","--e2e-skip=balance_room,balance_boss,hit_stagger,pack_perf,bodies_cap,gimmicks,item_showcase,hit_warmup,footsteps,audio_cues,sfx_limiter"],"phase_arg":"all","phase_tokens":["all"],"skip":["balance_room","balance_boss","hit_stagger","pack_perf","bodies_cap","gimmicks","item_showcase","hit_warmup","footsteps","audio_cues","sfx_limiter"],"exclusive":false,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":39344,"launched_utc":"2026-10-12T23:47:55.3393951Z"}
+E2E start: character_stats, single_flurry_dps, single_flurry, vfx_ramp_gallery, unique_icons, quest_journal_refresh, character_profiles, quest_journal, hud_orb_fx, npc_hover_view, elite_ui_view, hud_hierarchy_view, dev_legend_view, dev_panel, pickup_feedback_view, icon_intake, automap, pickup_equip, identify, equipment_ui, ui_item_contract, ui_skill_contract, inactive_gear, sockets, socket_punch, glyph_combo, combination, portal_roundtrip, waypoint, vendor_quest, vendor_prices, gamble, stash_roundtrip, chief_quest, boss_greetings, shaman_heal, respec, save_continue, held_save, boss_floor, boss_bulgasari, bulgasari_path, boss_uniques, boss_jangsanbeom, heukrang_look, heukrang_pounce, visual_swap, run_upright, teleport_settle, render_interp, hit_feel, damage_colors, element_affix, affix_combat, attack_chain, sword_trail_v2, whirl_structure_v1, status_structure_v1, element_structure_v1, element_flight_v1, aspd_steps, skill_then_attack, anim_commit, combat_timeline, feel_lab_parity, feel_lab_plates, path_smooth, path_shove_replan, player_resource_clock, invisible_sword, heavy_react, pack_ai, kill_slump, kill_bisect, slice_deaths, monster_motion_gallery, element_status, element_ui, element_sal, talisman_targeting, talisman_throw, talisman_aoe, loot_drop, potion_icons, potion_tiers, loot_props, elite_pack, elite_slots, flee_chase, verify_flows, player_death, wall_cutaway, floor_seams, floor_layers, char_light, town_layout, town_approach, bgm_hooks, ui_windows, story_cutin, dialogue_band, dialogue_event, dialogue_choices, dialogue_esc_menu, ui_docks, ui_tooltips, belt_unify, item_ui, skill_picker, skill_icons, skill_names, vfx_cues, area_title, ink_transition, vfx_cap_blood, vfx_cap_comfort, hit_blood, skill_area, skill_tiers, aoe_skills, aoe_skills_2, build_changers, body_arts, dungeon_layout, beomgul_walk, mine_walk, bongmil_walk, room_props, town_exits, field_layout, field2_layout, gate_hover, pack_density, slice_loop, plaza_light, town_tour, aoe_field, long_body, named_imugi, named_gaksi, serpent_models, pus_jar, roles, roster_swap, gimmicks_m10, behaviors_m9, female_f1, female_float, yeogung_attacks, nachalnyeo_attacks, m14_models, leader_options, surround, weapon_visibility, first_magic, hover_target, system_menu, walk_audit
+E2E skip: balance_room, balance_boss, hit_stagger, pack_perf, bodies_cap, gimmicks, item_showcase, hit_warmup, footsteps, audio_cues, sfx_limiter (단독 묶음 — 다른 실행이 따로 돈다, #553)
+E2E ▶ character_stats
+E2E character_stats PASS (검사 191)
+E2E ▶ single_flurry_dps
+  · FLURRY_DPS_RUNTIME Lv1 flurry 30s damage=584 DPS=19.4667 casts=15 mp=5.017 starved=true
+  · FLURRY_DPS_RUNTIME Lv1 whirl 30s damage=300 DPS=10.0000 casts=5 mp=40.017 starved=false
+  · FLURRY_DPS_RUNTIME Lv5 flurry 30s damage=805 DPS=26.8333 casts=12 mp=0.817 starved=true
+  · FLURRY_DPS_RUNTIME Lv5 whirl 30s damage=359 DPS=11.9667 casts=5 mp=36.017 starved=false
+  · FLURRY_DPS_RUNTIME Lv10 flurry 30s damage=1147 DPS=38.2333 casts=9 mp=2.600 starved=true
+  · FLURRY_DPS_RUNTIME Lv10 whirl 30s damage=525 DPS=17.5000 casts=5 mp=31.000 starved=false
+E2E single_flurry_dps PASS (검사 13)
+E2E ▶ single_flurry
+  · FLURRY_ENGINE Lv1 hits=3 sec=1.6167 damage=31
+  · FLURRY_ENGINE Lv5 hits=4 sec=2.1333 damage=50
+  · FLURRY_ENGINE Lv10 hits=5 sec=2.6500 damage=108
+  · MOMENTUM cast1 mp=45.00 active=true before=0 dist=1.000 locked=true ready=true skill=flurry
+  · MOMENTUM cast2 mp=41.62 active=true before=1 dist=1.000 locked=true ready=true skill=flurry
+  · MOMENTUM cast3 mp=38.08 active=true before=2 dist=1.000 locked=true ready=true skill=flurry
+  · MOMENTUM cast4 mp=34.45 active=true before=3 dist=1.000 locked=true ready=true skill=flurry
+E2E single_flurry PASS (검사 98)
+E2E ▶ vfx_ramp_gallery
+E2E vfx_ramp_gallery PASS (검사 18)
+E2E ▶ unique_icons
+E2E unique_icons PASS (검사 12)
+E2E ▶ quest_journal_refresh
+E2E quest_journal_refresh PASS (검사 19)
+E2E ▶ character_profiles
+E2E character_profiles PASS (검사 38)
+E2E ▶ quest_journal
+  · revision 타입: 저장 전 2 · JSON 복원 3
+E2E quest_journal PASS (검사 56)
+E2E ▶ hud_orb_fx
+E2E hud_orb_fx PASS (검사 32)
+E2E ▶ npc_hover_view
+E2E npc_hover_view PASS (검사 82)
+E2E ▶ elite_ui_view
+E2E elite_ui_view PASS (검사 6)
+E2E ▶ hud_hierarchy_view
+E2E hud_hierarchy_view PASS (검사 124)
+E2E ▶ dev_legend_view
+  · #405 검수 보완 전·후 촬영 phase=after (이전 main 비교 아님)
+  · DEV_LEGEND_METRICS headless window=(64, 64) visible_rect=[P: (0.0, 0.0), S: (1280.0, 720.0)] viewport_rect=[P: (0.0, 0.0), S: (1280.0, 720.0)] content_scale_size=(1280, 720) final_transform=[X: (0.05, 0.0), Y: (0.0, 0.05), O: (0.0, 14.0)] font=FontFile font_size=16 text_width=1246.0 label_rect=[P: (12.0, 8.0), S: (1246.0, 24.0)] lines=1 text=   [ ]층 R새맵 F타깃 G드랍 U회차 H덤프 X경험 M엽전 B보스표시 W서낭 N제거 V보스옆 J한기 Z빙결 P화상 Y도호빙 O장판(Ctrl터·Shift지움) E정예(Shift금) Shift+Q역할 L대화띠
+E2E dev_legend_view PASS (검사 23)
+E2E ▶ dev_panel
+E2E dev_panel PASS (검사 136)
+E2E ▶ pickup_feedback_view
+E2E pickup_feedback_view PASS (검사 3)
+E2E ▶ icon_intake
+  · 청심환 즉시 회복: HP 60.50000000000000700/60.50000000000000700 · MP 60.50000000000000700/60.50000000000000700 · 재생률 HP/MP=0.0/1.3 · Player 물리=false
+E2E icon_intake PASS (검사 317)
+E2E ▶ automap
+E2E automap PASS (검사 50)
+E2E ▶ pickup_equip
+E2E pickup_equip PASS (검사 37)
+E2E ▶ identify
+E2E identify PASS (검사 9)
+E2E ▶ equipment_ui
+E2E equipment_ui PASS (검사 56)
+E2E ▶ ui_item_contract
+E2E ui_item_contract PASS (검사 268)
+E2E ▶ ui_skill_contract
+E2E ui_skill_contract PASS (검사 13956)
+E2E ▶ inactive_gear
+  · 툴팁 줄 [name] 장검
+  · 툴팁 줄 [base] 피해 8~14
+  · 툴팁 줄 [base] 공격 속도 느림
+  · 툴팁 줄 [req] 요구 레벨 5
+  · 툴팁 줄 [req] 요구 힘 30
+  · 툴팁 줄 [inactive] 요구치 부족 — 꺼짐
+  · 툴팁 줄 [hint] 좌클릭: 벗어서 들기
+  · 툴팁 줄 [hint] 우클릭 / Shift+클릭: 가방으로 벗기
+  · 좌판 ilvl — 못골 들녘 1회차: 무리 레벨 1~3 · max_area_level 3 · 좌판 장비 ilvl [3, 3, 3, 3] · dev G ilvl 들머리 1 / 끝 무리 3
+  · 좌판 ilvl — 정령재 1회차: 무리 레벨 4~7 · max_area_level 7 · 좌판 장비 ilvl [7, 7, 7, 7] · dev G ilvl 들머리 4 / 끝 무리 7
+  · 좌판 ilvl — 정령재 2회차: 무리 레벨 4~7 · max_area_level 7 · 좌판 장비 ilvl [19, 19, 19, 19] · dev G ilvl 들머리 16 / 끝 무리 19
+E2E inactive_gear PASS (검사 50)
+E2E ▶ sockets
+E2E sockets PASS (검사 16)
+E2E ▶ socket_punch
+E2E socket_punch PASS (검사 36)
+E2E ▶ glyph_combo
+E2E glyph_combo PASS (검사 26)
+E2E ▶ combination
+E2E combination PASS (검사 26)
+E2E ▶ portal_roundtrip
+E2E portal_roundtrip PASS (검사 18)
+E2E ▶ waypoint
+E2E waypoint PASS (검사 15)
+E2E ▶ vendor_quest
+E2E vendor_quest PASS (검사 54)
+E2E ▶ vendor_prices
+E2E vendor_prices PASS (검사 12)
+E2E ▶ gamble
+E2E gamble PASS (검사 54)
+E2E ▶ stash_roundtrip
+E2E stash_roundtrip PASS (검사 51)
+E2E ▶ chief_quest
+E2E chief_quest PASS (검사 71)
+E2E ▶ boss_greetings
+E2E boss_greetings PASS (검사 36)
+E2E ▶ shaman_heal
+E2E shaman_heal PASS (검사 31)
+E2E ▶ respec
+E2E respec PASS (검사 64)
+E2E ▶ save_continue
+E2E save_continue PASS (검사 14)
+E2E ▶ held_save
+E2E held_save PASS (검사 27)
+E2E ▶ boss_floor
+  · 겹침: 송곳니 금 광선 = 封 가운데에서 0.93유닛(封 반폭 1.8 · 반깊이 1.62) · 조각 자리에서 1.00유닛(파문 반지름 1.1)
+  · 흑랑 처치 封: 먹 폭 3.6 → 0.36 · 사라짐 4.56초
+E2E boss_floor PASS (검사 46)
+E2E ▶ boss_bulgasari
+  · 화로 Brazier_4_14 · 불가살이 (5.76278, 0.0, 12.45786) · 도호 (2.5, 0.000391, 15.5) · 달아오름 6.00초 · 출처 brazier
+  · 달아오름 알림 = 달아오르고 0.37초 뒤 · 그때 도호 바크 없음 · 달아오름 5.6초 남음
+  · 엽전 뜯기 물기 — 0.5초 · 선딜 1(코 0) · 닿은 한 대 1 · 맞음 1 · 달아오름 0 · 물러남 0 · 거리 1.72~1.72
+  · 바닥 칼 없음 · 불가살이 (6.451753, 0.0, 9.519005) · 붙듦  · 간 1 · 먹은 1
+  · 벽 쇠사슬 뜯음 [5] · #5 4.74칸 · 가장 가까운 #5 4.74칸 · 사슬 7
+  · 헤드리스 — 뜯은 벽 사슬 그림 지움 대조 생략 (더미 렌더러는 인스턴스 값 0)
+  · 삼키기 사진 틀 (화면 (1280.0, 720.0)) — 보스 머리 (609.0122, 196.061) · 발 (609.0122, 396.5497) · 「무적」 (618.477, 190.6243) · 도호 머리 (697.5487, 353.9642) · 몸집 × 1.22 · 겉칠 (0.74, 0.78, 0.86, 0.32)
+  · 벽 쇠사슬 뜯음 [5, 3] · #3 6.41칸 · 가장 가까운 #3 6.41칸 · 사슬 7
+  · 헤드리스 — 뜯은 벽 사슬 그림 지움 대조 생략 (더미 렌더러는 인스턴스 값 0)
+  · 포효 밀린 칸 3.000 (정격 3.0 · 경직 true · 도호 (10.5, 0.0, 9.5) → (13.49957, 0.0, 9.449057) · 불가살이 (9.619858, 0.0, 9.502217))
+  · 코 밀린 칸 2.000 (정격 2.0 · 맞음 true · 도호 (11.5, 0.000391, 9.5) → (13.5, 0.000391, 9.497641) · 불가살이 (10.33985, 0.0, 9.50064))
+  · 처치 뒤 줄 — 처치 1.81초 · 스킬 포인트 3.51초 (드랍 다 앉음 ≤ 0.91초)
+E2E boss_bulgasari PASS (검사 52)
+E2E ▶ bulgasari_path
+  · 화로 경로 0.00초 몸 (3.99967, 13.09992) · 칼 거리 3.116 · 붙듦 eat_item · 먹은 0
+  · 화로 경로 0.52초 몸 (4.334951, 11.97924) · 칼 거리 2.499 · 붙듦 eat_item · 먹은 0
+  · 먹기 끝 0.967초 · 몸 (5.551165, 0.000827, 11.55086) · 칼 없음 · 거리 1.298 · 시도 1 · 먹은 1 · HP 1496.0 → 1589.5
+E2E bulgasari_path PASS (검사 15)
+E2E ▶ boss_uniques
+  · 11칸 산적 눈 화면 자리 (1149.117, 583.4112) / 화면 (1280.0, 720.0)
+E2E boss_uniques PASS (검사 37)
+E2E ▶ boss_jangsanbeom
+  · 파수 2 치움 (어린 장산범, #688)
+  · 앞선 덮치기 1번 · 미끼 「서리 발톱」 · 선딜까지 기다림 끝
+  · 덮치기: 선딜 자리 (12.21983, 0.0, 5.500493) · 도호 (15.5, 0.000391, 13.5) · 끝 (15.2515, 0.000934, 12.37677) · 끝난 까닭 hit · 도호 지금 (15.5, 0.000391, 13.5)
+  · 덮치기·빛 안 물기 뒤 도호 생명 110 → 89 (명중 굴림)
+  · 털 낚아채기 끌린 칸 2.871 (기대 2.871 = 거리 4.271 − 몸 앞 1.400 · 경직 true · 도호 (19.5, 0.000391, 12.5) → (16.63267, 0.000391, 12.36467))
+E2E boss_jangsanbeom PASS (검사 42)
+E2E ▶ heukrang_look
+E2E heukrang_look PASS (검사 4)
+E2E ▶ heukrang_pounce
+  · 흑랑 클립 = attack, die, hit, idle, pounce, pounce_air, pounce_land, run, walk · 덮치기 클립 있음(#506 반입 뒤 — 클립 차례를 검사한다)
+  · 돌격 1 — 선딜 0.50초 pounce · 돌진 0.65초 pounce →  → pounce_air · 착지 뒤 0.9초 pounce_land →  → idle · 뜬 몸 엉덩이 +23cm (선딜 전 높이 기준)
+  ·   pounce 재생 배율 × 1.00
+  ·   pounce_air 재생 배율 × 1.00
+  ·   pounce_land 재생 배율 × 1.00
+E2E heukrang_pounce PASS (검사 11)
+E2E ▶ visual_swap
+E2E visual_swap PASS (검사 65)
+E2E ▶ run_upright
+  · 달린 시간 1.52초 · 6.0칸 · 갱신 310(달리기 클립 310) · 머리−골반 최저 +0.443 (0.2 미만 0번) · 몸 뼈 최대 어긋남 0.0cm ()
+  · 옷 뼈 최대 흔들림(애니와 벌어진 각): Hem_L 24.0°, Hem_R 23.8°, Sleeve_L 59.0°, Sleeve_R 28.9°, SashTail 27.4°
+  · 순간이동 6.0칸 → 11번 잼 · 옷 뼈 최대 1.0° (Sleeve_L) · 몸 뼈 최대 0.0cm
+E2E run_upright PASS (검사 16)
+E2E ▶ teleport_settle
+  · 자리 (22.5, 0.000391, 49.5) → 목적지 (27.5, 0.0, 49.5) (5.0칸)
+  · 01_before (초기화 끔): 첫 프레임 옷 뼈 72.4° · 끝 22.8cm (Sleeve_R) · 8프레임 최대 109.1° · 끝 29.3cm (Sleeve_R) · 몸 뼈 0.0mm · 프레임별 [72°, 80°, 107°, 109°, 107°, 107°, 103°, 98°]
+  · 02_after (초기화 켬): 첫 프레임 옷 뼈 0.6° · 끝 0.2cm (Sleeve_L) · 8프레임 최대 0.9° · 끝 0.3cm (Sleeve_L) · 몸 뼈 0.0mm · 프레임별 [1°, 0°, 0°, 0°, 0°, 1°, 1°, 1°]
+E2E teleport_settle PASS (검사 10)
+E2E ▶ render_interp
+  · 켬: 틱 사이 프레임(그려진 자리 != 진짜 자리) 145/146 · 평균 차 0.032u
+E2E render_interp PASS (검사 36)
+E2E ▶ hit_feel
+E2E hit_feel PASS (검사 41)
+E2E ▶ damage_colors
+E2E damage_colors PASS (검사 18)
+E2E ▶ element_affix
+E2E element_affix PASS (검사 7)
+E2E ▶ affix_combat
+  · 산적 경직 구간 0.350~0.350 → 회초리 0.450~0.450 · 밀림 0.220 → 0.330
+  · 받는 경직 구간 0.300~0.300 → −25% 0.225~0.225 → 상한 0.120~0.120
+E2E affix_combat PASS (검사 42)
+E2E ▶ attack_chain
+  · ① 칸 [0, 1, 2, 0, 1] · 클립 ["attack", "attack2", "attack3", "attack", "attack2"] · 섞기 ["0.11", "0.10", "0.10", "0.10", "0.10"]
+E2E attack_chain PASS (검사 21)
+E2E ▶ sword_trail_v2
+  · 검광 치명: 피해 8 · 그림 true · 금니 true · 표본 14
+  · 검광 일반: 피해 5 · 그림 true · 금니 false · 표본 10
+  · 검광 빗나감: 피해 0 · 그림 true · 금니 false · 표본 10
+  · 검광 사거리 밖: 피해 0 · 그림 true · 금니 false · 표본 10
+  · 검광 면역: 피해 0 · 그림 true · 금니 false · 표본 10
+E2E sword_trail_v2 PASS (검사 93)
+E2E ▶ whirl_structure_v1
+E2E whirl_structure_v1 PASS (검사 69)
+E2E ▶ status_structure_v1
+E2E status_structure_v1 PASS (검사 36)
+E2E ▶ element_structure_v1
+E2E element_structure_v1 PASS (검사 89)
+E2E ▶ element_flight_v1
+E2E element_flight_v1 PASS (검사 45)
+E2E ▶ aspd_steps
+  · 0단계: 공속 1.100 · 간격 0.9091초 · 실제 휘두름 사이 0.917초
+  · 10단계(예도 합 15): 공속 1.210 · 간격 0.8264초 · 실제 휘두름 사이 0.833초
+  · 툴팁(예도) ["공격 속도", "장비 없이 1.10", "현재 1.21", "공속 +15% → 단계 +10% · 다음 단계까지 +5%"]
+  · 20단계(예도 + 빠른 5, 합 20): 공속 1.320 · 간격 0.7576초 · 실제 휘두름 사이 0.767초
+  · 툴팁(예도 + 빠른 5) ["공격 속도", "장비 없이 1.10", "현재 1.32", "공속 +20% → 단계 +20% · 다음 단계까지 +10%"]
+E2E aspd_steps PASS (검사 27)
+E2E ▶ skill_then_attack
+  · ① 참격: 시전 → 다음 평타 1.33초 (동작 1.33초) · 그 사이 클립 ["skill_strike"] · 평타가 시작될 때 skill_strike 95% 돎 · 다음 평타 attack2
+  · ② 회오리: 시전 → 다음 평타 1.17초 (동작 1.15초) · 그 사이 클립 ["skill_whirl"] · 평타가 시작될 때 skill_whirl 96% 돎 · 다음 평타 attack2
+  · ③ 돌진베기: 시전 → 다음 평타 1.75초 (동작 1.74초) · 그 사이 클립 ["skill_leap"] · 평타가 시작될 때 skill_leap 96% 돎 · 다음 평타 attack
+  · ④ 부적: 시전 → 다음 평타 0.80초 (동작 0.80초) · 그 사이 클립 ["cast", ""] · 평타가 시작될 때 cast 98% 돎 · 다음 평타 attack2
+E2E skill_then_attack PASS (검사 64)
+E2E ▶ anim_commit
+  · 무대 = 방 가운데 (22.5, 0.0, 49.5) · 적 쪽 (1.0, 0.0, 0.0)(트임 6.0) · 땅 클릭 (19.5, 0.0, 49.5) · 먼 적 (22.5, 0.0, 53.5)
+  · 땅 클릭 (휘두름 시작 + 0.060초 · 칼이 닿기 0.105초 전 · 누를 때 클립 attack): 0.15초 뒤 0.00유닛 움직임 · 클립 attack · 그 칼 맞음 (피해 틱 0.139초) · 동작 끝(시작 + 0.600초)까지 0.00유닛 · 끝나고 0.1초 뒤 클립 run · 첫 걸음 = 클릭 뒤 +0.581초(동작 끝 = 클릭 뒤 0.546초) · 끝나고 1.5초 뒤 클릭 자리까지 0.01유닛
+  · 먼 적 클릭(4.0유닛 옆) (휘두름 시작 + 0.049초 · 칼이 닿기 0.116초 전 · 누를 때 클립 attack): 0.15초 뒤 0.00유닛 움직임 · 클립 attack · 그 칼 맞음 (피해 틱 0.138초) · 동작 끝(시작 + 0.600초)까지 0.00유닛 · 끝나고 0.1초 뒤 클립 run · 첫 걸음 = 클릭 뒤 +0.602초(동작 끝 = 클릭 뒤 0.555초) · 끝나고 1.5초 뒤 먼 적까지 1.57유닛 · 먼 적 피해 2번 · 타깃 = 먼 적
+  · 평타 중 참격 (평타 attack 시작 + 0.023초 = 칼 닿기 0.086초 전 우클릭): 평타 클립이 돈 창 0.594초(동작 0.60) · skill_strike 시작 = 우클릭 +0.571초 · 이 사이 피해(맞을 때 클립 · 우클릭 기준) ["attack 19% @ 우클릭 +0.117초", "skill_strike 46% @ 우클릭 +1.180초"] · 평타: attack attack: 동작 0.91초 · 예약 피해 0.165초 · 피해 틱 0.141초(클립 19.1%) · 칼끝 최고속 0.233초(클립 21.8%, 252.3 u/s) · 차이(피해 − 최고속) -0.093초 = -5.6틱 · 피해 틱 칼끝 62% · [평평4.4%] 90% 이상 프레임 [-3, 0] · 곡선 0 86 0 0 [156] 0 0 0 0 0 0 0 0 0 0 221 0 252 0 0 27 · 곁들이(피해 틱 기준 초) 타격 소리 -0.009 · 먹 튐 -0.009 · 도장 — · 반달·고리 — · 검광 끝 +0.138 · 참격 skill_strike: 동작 1.33초 · 예약 피해 0.600초 · 피해 틱 0.609초(클립 46.2%) · 칼끝 최고속 0.591초(클립 44.4%, 215.0 u/s) · 차이(피해 − 최고속) +0.018초 = +1.1틱 · 피해 틱 칼끝 63% · [뾰족0.5%] 90% 이상 프레임 [-2] · 곡선 174 0 215 0 [135] 0 0 0 0 0 0 0 0 0 0 0 76 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 · 곁들이(피해 틱 기준 초) 타격 소리 -0.007 · 먹 튐 -0.007 · 도장 -0.007 · 반달·고리 -0.058 · 검광 끝 +0.146
+  · 피격 중 평타: 맞음 1 · 맞은 뒤 클립 attack · 평타 attack: 동작 0.91초 · 예약 피해 0.165초 · 피해 틱 0.140초(클립 19.1%) · 칼끝 최고속 0.138초(클립 18.2%, 617.1 u/s) · 차이(피해 − 최고속) +0.001초 = +0.1틱 · 피해 틱 칼끝 100% · [뾰족1.6%] 90% 이상 프레임 [-3, 0] · 곡선 0 116 0 0 [617] 0 0 0 0 0 0 0 0 0 0 0 68 37 0 28 · 곁들이(피해 틱 기준 초) 타격 소리 -0.002 · 먹 튐 -0.002 · 도장 — · 반달·고리 — · 검광 끝 +0.138
+  · 피격 중 참격: 맞음 1 · 맞은 뒤 클립 skill_strike · 참격 skill_strike: 동작 1.33초 · 예약 피해 0.600초 · 피해 틱 0.618초(클립 46.2%) · 칼끝 최고속 0.599초(클립 44.4%, 215.0 u/s) · 차이(피해 − 최고속) +0.018초 = +1.1틱 · 피해 틱 칼끝 63% · [뾰족0.5%] 90% 이상 프레임 [-2] · 곡선 174 0 215 0 [135] 0 0 0 0 0 0 0 0 0 0 45 0 9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 · 곁들이(피해 틱 기준 초) 타격 소리 -0.007 · 먹 튐 -0.007 · 도장 -0.007 · 반달·고리 -0.051 · 검광 끝 +0.149
+  · 누른 채 땅 (휘두름 시작 + 0.063초 · 칼이 닿기 0.102초 전 · 누를 때 클립 attack): 0.15초 뒤 0.00유닛 움직임 · 클립 attack · 그 칼 맞음 (피해 틱 0.140초) · 동작 끝(시작 + 0.600초)까지 0.00유닛 · 끝나고 0.1초 뒤 클립 run · 첫 걸음 = 클릭 뒤 +0.587초(동작 끝 = 클릭 뒤 0.554초) · 끝나고 1.5초 뒤 누른 자리까지 4.01유닛
+  · 표 — 행마다: 동작 길이 · 예약 피해(impact_frac × 동작) · 피해 틱(시작 뒤 초 · 클립 %) · 칼끝 최고속(시작 뒤 초 · 클립 % · Visual 공간 u/s) · 차이(피해 − 최고속, 초 · 60Hz 틱) · 피해 틱 칼끝 속도 ÷ 최고속 · 90% 이상 프레임(피해 프레임 기준 — 애니 틱 속도로 고름, #674) · 칼끝 곡선(u/s, [피해 프레임]) · 곁들이(피해 틱 기준 초)
+  · 평타1 attack: 동작 0.91초 · 예약 피해 0.165초 · 피해 틱 0.149초(클립 19.1%) · 칼끝 최고속 0.072초(클립 10.8%, 532.8 u/s) · 차이(피해 − 최고속) +0.077초 = +4.6틱 · 피해 틱 칼끝 20% · [평평2.9%] 90% 이상 프레임 [-2, 0] · 곡선 64 0 111 0 [105] 0 0 0 0 0 0 0 0 0 46 0 45 0 27 · 곁들이(피해 틱 기준 초) 타격 소리 -0.013 · 먹 튐 -0.013 · 도장 — · 반달·고리 — · 검광 끝 +0.127
+  · 평타2 attack2: 동작 0.91초 · 예약 피해 0.165초 · 피해 틱 0.183초(클립 18.3%) · 칼끝 최고속 0.180초(클립 17.4%, 154.3 u/s) · 차이(피해 − 최고속) +0.004초 = +0.2틱 · 피해 틱 칼끝 100% · [뾰족0.8%] 90% 이상 프레임 [0] · 곡선 0 72 0 0 [154] 0 0 0 0 0 0 0 0 0 0 62 0 60 0 0 56 · 곁들이(피해 틱 기준 초) 타격 소리 -0.007 · 먹 튐 -0.007 · 도장 — · 반달·고리 — · 검광 끝 +0.146
+  · 평타3 attack3: 동작 0.91초 · 예약 피해 0.165초 · 피해 틱 0.170초(클립 18.3%) · 칼끝 최고속 0.164초(클립 17.4%, 88.4 u/s) · 차이(피해 − 최고속) +0.006초 = +0.4틱 · 피해 틱 칼끝 100% · [뾰족1.5%] 90% 이상 프레임 [0] · 곡선 43 0 80 0 [88] 0 0 0 0 0 0 0 0 0 0 0 58 0 50 0 43 · 곁들이(피해 틱 기준 초) 타격 소리 -0.013 · 먹 튐 -0.013 · 도장 — · 반달·고리 — · 검광 끝 +0.147
+  · 참격 skill_strike: 동작 1.33초 · 예약 피해 0.600초 · 피해 틱 0.623초(클립 46.2%) · 칼끝 최고속 0.605초(클립 44.4%, 215.0 u/s) · 차이(피해 − 최고속) +0.018초 = +1.1틱 · 피해 틱 칼끝 63% · [뾰족0.5%] 90% 이상 프레임 [-2] · 곡선 174 0 215 0 [135] 0 0 0 0 0 0 0 0 0 0 0 76 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 · 곁들이(피해 틱 기준 초) 타격 소리 -0.007 · 먹 튐 -0.007 · 도장 -0.007 · 반달·고리 -0.058 · 검광 끝 +0.139
+  · 회오리베기 skill_whirl: 동작 1.15초 · 예약 피해 0.450초 · 피해 틱 0.465초(클립 40.5%) · 칼끝 최고속 0.460초(클립 39.8%, 125.9 u/s) · 차이(피해 − 최고속) +0.005초 = +0.3틱 · 피해 틱 칼끝 100% · [뾰족1.9%] 90% 이상 프레임 [-3, 0] · 곡선 0 100 0 0 [126] 0 0 0 0 0 0 0 0 0 0 56 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 22 · 곁들이(피해 틱 기준 초) 타격 소리 -0.009 · 먹 튐 -0.009 · 도장 -0.009 · 반달·고리 -0.060 · 검광 끝 +0.141
+  · 돌진베기 skill_leap: 동작 1.74초 · 예약 피해 0.548초 · 피해 틱 0.556초(클립 31.6%) · 칼끝 최고속 0.532초(클립 30.2%, 365.1 u/s) · 차이(피해 − 최고속) +0.023초 = +1.4틱 · 피해 틱 칼끝 24% · [뾰족0.9%] 90% 이상 프레임 [0] · 곡선 17 0 365 0 [88] 0 0 0 0 0 0 0 0 0 64 0 0 0 49 0 37 · 곁들이(피해 틱 기준 초) 타격 소리 -0.016 · 먹 튐 -0.016 · 도장 -0.016 · 반달·고리 — · 검광 끝 +0.155 · 몸 5.0유닛 이동 — 이동 끝 0.556초 · 도착 0.556초 · 적 곁을 지난 때 0.431초(피해 틱은 그 +0.125초 뒤)
+  · 도약 베기 skill_leap: 동작 1.74초 · 예약 피해 0.548초 · 피해 틱 0.545초(클립 31.6%) · 칼끝 최고속 0.625초(클립 32.1%, 537.7 u/s) · 차이(피해 − 최고속) -0.080초 = -4.8틱 · 피해 틱 칼끝 22% · [뾰족0.7%] 90% 이상 프레임 [0] · 곡선 20 0 39 0 [120] 0 0 0 0 0 0 0 0 0 0 538 0 0 49 186 · 곁들이(피해 틱 기준 초) 타격 소리 -0.012 · 먹 튐 -0.012 · 도장 -0.012 · 반달·고리 — · 검광 끝 +0.157
+  · 평타 중 참격 skill_strike: 동작 1.33초 · 예약 피해 0.600초 · 피해 틱 0.609초(클립 46.2%) · 칼끝 최고속 0.591초(클립 44.4%, 215.0 u/s) · 차이(피해 − 최고속) +0.018초 = +1.1틱 · 피해 틱 칼끝 63% · [뾰족0.5%] 90% 이상 프레임 [-2] · 곡선 174 0 215 0 [135] 0 0 0 0 0 0 0 0 0 0 0 76 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 · 곁들이(피해 틱 기준 초) 타격 소리 -0.007 · 먹 튐 -0.007 · 도장 -0.007 · 반달·고리 -0.058 · 검광 끝 +0.146
+  · 그림 프레임 간격 가운데 0.0073초 · 가장 긴 0.0219초 (3684프레임)
+E2E anim_commit PASS (검사 59)
+E2E ▶ combat_timeline
+  · STATS 레벨 1 · 공속 1.100 · 간격 0.9091초 · 사거리 1.60 · 이동 4.00
+  · 무대 (22.5, 0.0, 49.5) · 방향 (0.707107, 0.0, 0.707107) · 트임 7.00u
+  · F thrust — 스킬 트리에 없음(#670 찌르기 → 연속 베기 등) → F.thrust 줄 건너뜀
+  · F thrust — 스킬 트리에 없음(#670 찌르기 → 연속 베기 등) → F.thrust_far 줄 건너뜀
+  · G 원본 정점(10ms 창, 변주별 ms) — sword_swing [0, 0, 0, 0] · skill_slash [180, 180, 180] · skill_slash_impact [370, 370, 370] · skill_whirl_impact [20, 20]
+  · F 부적 진 — 진 스킬 true · 화염부 false(#671 빈 부적 개편) → F.seal 줄 건너뜀
+  · H 출발 (9.5, 0.000391, 62.5) · 쪽 (0.382683, 0.0, -0.92388) (32.0u 곧게 트임)
+  · TL A.press_to_swing = [1, 1, 1, 1] (기준 1~2 ±1.0)
+  · TL A.swing_to_damage = [8, 8, 8, 8] (기준 8~8 ±1.0)
+  · TL A.press_to_damage = [9, 9, 9, 9] (기준 9~10 ±1.0)
+  · TL A.busy = [36, 36, 36, 36] (기준 36~36 ±1.0)
+  · TL A.away_turn = [5] (기준 5~6 ±1.0)
+  · TL B.press_to_move = [2, 2] (기준 2~3 ±1.0)
+  · TL B.press_to_swing = [39, 39] (기준 39~40 ±1.0)
+  · TL B.swing_to_damage = [8, 8] (기준 8~8 ±1.0)
+  · TL B.press_to_damage = [47, 47] (기준 47~48 ±1.0)
+  · TL C.swing_interval = [55, 55, 55, 55, 55, 55, 55, 55, 55] (기준 55~55 ±1.0)
+  · TL C.damage_interval = [57, 55, 55, 55, 55, 55, 55, 55, 55] (기대 [57, 55, 55, 55, 55, 55, 55, 55, 55] ±1.0)
+  · TL C.swing_to_damage = [8, 10, 10, 10, 10, 10, 10, 10, 10] (기대 [8, 10, 10, 10, 10, 10, 10, 10, 10] ±1.0)
+  · TL C.busy = [36, 36, 36, 36, 36, 36, 36, 36, 36] (기준 36~36 ±1.0)
+  · TL C.chain_step = [0, 1, 2, 0, 1, 2, 0, 1, 2] (기대 [0, 1, 2, 0, 1, 2, 0, 1, 2] ±0.0)
+  · TL C.hitstop = [5, 5, 5, 5, 5, 5, 5, 5, 5] (기준 5~5 ±1.0)
+  · TL C.still = [8, 7, 7, 6, 6, 7, 6, 6, 7] (기대 [8, 7, 7, 6, 6, 7, 6, 6, 7] ±1.0)
+  · TL C.still_pct = [14.5, 12.7, 12.7, 10.9, 10.9, 12.7, 10.9, 10.9, 12.7] (기대 [14.5, 12.7, 12.7, 10.9, 10.9, 12.7, 10.9, 10.9, 12.7] ±2.0)
+  · TL C.tail_still = [1, 0, 0, 0, 0, 0, 0, 0, 0] (기대 [1, 0, 0, 0, 0, 0, 0, 0, 0] ±1.0)
+  · TL C.fast = [5, 5, 5, 5, 5, 5, 5, 5, 5] (기대 [5, 5, 5, 5, 5, 5, 5, 5, 5] ±1.0)
+  · TL C.zanshin = [22, 13, 18, 27, 13, 18, 27, 13, 18] (기대 [22, 13, 18, 27, 13, 18, 27, 13, 18] ±1.0)
+  · TL D.kill_to_next_damage = [57, 57] (기준 57~57 ±1.0)
+  · TL D.press_to_kill = [9, 9] (기준 9~10 ±1.0)
+  · TL D.next_press_to_damage = [57] (기준 55~57 ±1.0 · 보고만)
+  · TL E.press_to_damage = [70, 62, 53, 44, 37, 37] (기대 [70, 62, 53, 44, 37, 37] ±1.0)
+  · TL E.offset = [2, 10, 19, 28, 38, 49] (기대 [2, 10, 19, 28, 38, 49] ±1.0)
+  · TL E.skill_swing_to_damage = [36, 36, 36, 36, 36, 36] (기준 36~36 ±1.0)
+  · TL F.slash.press_to_damage = [37] (기준 37~38 ±1.0)
+  · TL F.slash.busy = [80] (기준 80~80 ±1.0)
+  · TL F.slash_far.press_to_damage = [51] (기준 51~52 ±1.0)
+  · TL F.slash_far.busy = [80] (기준 80~80 ±1.0)
+  · TL F.whirl.press_to_damage = [29] (기준 28~29 ±1.0)
+  · TL F.whirl.busy = [69] (기준 69~69 ±1.0)
+  · TL F.thrust.press_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust.busy = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust_far.press_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust_far.busy = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.dash_strike.press_to_damage = [34] (기준 33~34 ±1.0)
+  · TL F.dash_strike.busy = [104] (기준 104~104 ±1.0)
+  · TL F.leap_slash.press_to_damage = [33] (기준 33~34 ±1.0)
+  · TL F.leap_slash.busy = [104] (기준 104~104 ±1.0)
+  · TL F.slash.swing_to_damage = [36] (기준 36~36 ±1.0)
+  · TL F.slash_far.swing_to_damage = [37] (기준 37~37 ±1.0)
+  · TL F.whirl.swing_to_damage = [27] (기준 27~27 ±1.0)
+  · TL F.thrust.swing_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust_far.swing_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.dash_strike.swing_to_damage = [32] (기준 32~32 ±1.0)
+  · TL F.leap_slash.swing_to_damage = [32] (기준 32~32 ±1.0)
+  · TL F.seal.setup = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.seal.press_to_swing = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.seal.press_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL G.swing_cue_to_swing = [0, 0, 0] (기준 0~0 ±1.0)
+  · TL G.swing_cue_to_damage = [-8, -10, -10] (기대 [-8, -10, -10] ±1.0)
+  · TL G.swing_peak_vs_damage_ms = [-133.3, -133.3, -133.3, -133.3, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7] (기대 [-133.3, -133.3, -133.3, -133.3, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7] ±17.0)
+  · TL G.swing_peak_vs_fast_ms = [-50.0, -50.0, -50.0, -50.0, -66.7, -66.7, -66.7, -66.7, -133.3, -133.3, -133.3, -133.3] (기대 [-50.0, -50.0, -50.0, -50.0, -66.7, -66.7, -66.7, -66.7, -133.3, -133.3, -133.3, -133.3] ±17.0)
+  · TL G.slash_cue_to_swing = [0] (기준 0~0 ±1.0)
+  · TL G.slash_impact_cue_to_damage = [0] (기준 0~0 ±1.0)
+  · TL G.slash_impact_peak_vs_damage_ms = [370.0, 370.0, 370.0] (기준 370.0~370.0 ±17.0)
+  · TL G.slash_peak_vs_damage_ms = [-420.0, -420.0, -420.0] (기준 -420.0~-420.0 ±17.0)
+  · TL G.whirl_impact_peak_vs_damage_ms = [20.0, 20.0] (기준 20.0~20.0 ±17.0)
+  · TL H.travel = [392, 393] (기준 393~395 ±2.0)
+  · TL H.jumps = [0, 0] (기준 0~0 ±1.0)
+  · TL H.jumps_per_sec = [0.0, 0.0] (기준 0.0~0.0 ±0.5)
+  · TL H.deviation_cm = [0, 0] (기준 0~40 ±3.0)
+  · TL H.yaw_turn_deg = [180.0, 180.0] (기준 203.2~203.2 ±60.0 · 보고만)
+  · TL H.walk_ticks = [0, 0] (기준 0~0 ±0.0)
+  · TL I.press_to_move = [1, 1] (기준 1~2 ±1.0)
+  · TL I.start_ramp = [4, 4] (기준 4~4 ±1.0)
+  · TL I.stop_ramp = [6, 7] (기준 6~7 ±1.0)
+  · TL I.turn90 = [6, 6] (기준 6~6 ±1.0)
+  · TL I.turn = [7, 7] (기대 [7, 7] ±1.0 · 보고만)
+  · TL I.path_kinks = [0, 0] (기준 -~- ±1.0 · 보고만)
+  · TL I.first_leg = [74, 66] (기준 -~- ±1.0 · 보고만)
+  · TL I.walk_ticks = [0, 0] (기준 0~0 ±0.0)
+  · TL I.end_err_cm = [1.3, 1.0] (기준 1.1~1.1 ±2.0)
+  · TL I.dest_gap_cm = [0.0, 0.0] (기준 -~- ±1.0 · 보고만)
+  · TL J.doho_hits = [13] (기준 -~- ±1.0 · 보고만)
+  · TL J.hit_clips = [1] (기준 -~- ±1.0 · 보고만)
+  · TL J.swings = [9] (기준 -~- ±1.0 · 보고만)
+  · TL J.damages = [9] (기준 -~- ±1.0 · 보고만)
+  · TL J.chain_resets = [0] (기준 -~- ±1.0 · 보고만)
+  · TL J.hits_during_swing = [10] (기준 -~- ±1.0 · 보고만)
+  · TL J.chase_ticks = [0] (기준 -~- ±1.0 · 보고만)
+  · TL J.still_pct = [18.0] (기준 -~- ±1.0 · 보고만)
+  · TL C.fast_run = [3, 3, 5, 3, 3, 5, 3, 3, 5] (기준 없음 · 보고만)
+  · TL C.pull_pct = [64.9, 62.6, 44.3, 61.3, 62.6, 44.3, 61.3, 62.6, 44.3] (기준 없음 · 보고만)
+  · TL C.dip_pct = [23.3, 5.6, 30.2, 48.9, 5.6, 30.2, 48.9, 5.6, 30.2] (기준 없음 · 보고만)
+  · TL 다시 잼 0번 · 끊김 7곳 · 기록 5962틱 895사건
+  · COMBAT_TIMELINE_FILE C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/combat_timeline/20261013_090129_14684.json
+E2E combat_timeline PASS (검사 96)
+E2E ▶ feel_lab_parity
+  · 원래 구운 클립 11개 ["attack", "attack2", "attack3", "attack4", "skill_leap", "skill_strike", "skill_thrust", "skill_whirl", "run", "idle", "walk"] · hit_stop 0.07
+  · 명중 멈춤 — 판 _selftest 1틱 · 판 A 4틱
+  · ① combat_timeline A~I 엄격 — 판 A · 덮어쓰기 0
+  · STATS 레벨 1 · 공속 1.100 · 간격 0.9091초 · 사거리 1.60 · 이동 4.00
+  · 무대 (22.5, 0.0, 49.5) · 방향 (0.707107, 0.0, 0.707107) · 트임 7.00u
+  · F thrust — 스킬 트리에 없음(#670 찌르기 → 연속 베기 등) → F.thrust 줄 건너뜀
+  · F thrust — 스킬 트리에 없음(#670 찌르기 → 연속 베기 등) → F.thrust_far 줄 건너뜀
+  · G 원본 정점(10ms 창, 변주별 ms) — sword_swing [0, 0, 0, 0] · skill_slash [180, 180, 180] · skill_slash_impact [370, 370, 370] · skill_whirl_impact [20, 20]
+  · F 부적 진 — 진 스킬 true · 화염부 false(#671 빈 부적 개편) → F.seal 줄 건너뜀
+  · H 출발 (9.5, 0.000391, 62.5) · 쪽 (0.382683, 0.0, -0.92388) (32.0u 곧게 트임)
+  · TL A.press_to_swing = [2, 1, 2, 2] (기준 1~2 ±1.0)
+  · TL A.swing_to_damage = [8, 8, 8, 8] (기준 8~8 ±0.0)
+  · TL A.press_to_damage = [10, 9, 10, 10] (기준 9~10 ±1.0)
+  · TL A.busy = [36, 36, 36, 36] (기준 36~36 ±0.0)
+  · TL A.away_turn = [6] (기준 5~6 ±0.0)
+  · TL B.press_to_move = [3, 2] (기준 2~3 ±1.0)
+  · TL B.press_to_swing = [40, 39] (기준 39~40 ±1.0)
+  · TL B.swing_to_damage = [8, 8] (기준 8~8 ±0.0)
+  · TL B.press_to_damage = [48, 47] (기준 47~48 ±1.0)
+  · TL C.swing_interval = [55, 55, 55, 55, 55, 55, 55, 55, 55] (기준 55~55 ±0.0)
+  · TL C.damage_interval = [57, 55, 55, 55, 55, 55, 55, 55, 55] (기대 [57, 55, 55, 55, 55, 55, 55, 55, 55] ±0.0)
+  · TL C.swing_to_damage = [8, 10, 10, 10, 10, 10, 10, 10, 10] (기대 [8, 10, 10, 10, 10, 10, 10, 10, 10] ±0.0)
+  · TL C.busy = [36, 36, 36, 36, 36, 36, 36, 36, 36] (기준 36~36 ±0.0)
+  · TL C.chain_step = [0, 1, 2, 0, 1, 2, 0, 1, 2] (기대 [0, 1, 2, 0, 1, 2, 0, 1, 2] ±0.0)
+  · TL C.hitstop = [5, 5, 5, 5, 5, 5, 5, 5, 5] (기준 5~5 ±0.0)
+  · TL C.still = [8, 7, 7, 6, 6, 7, 6, 6, 7] (기대 [8, 7, 7, 6, 6, 7, 6, 6, 7] ±0.0)
+  · TL C.still_pct = [14.5, 12.7, 12.7, 10.9, 10.9, 12.7, 10.9, 10.9, 12.7] (기대 [14.5, 12.7, 12.7, 10.9, 10.9, 12.7, 10.9, 10.9, 12.7] ±2.0)
+  · TL C.tail_still = [1, 0, 0, 0, 0, 0, 0, 0, 0] (기대 [1, 0, 0, 0, 0, 0, 0, 0, 0] ±0.0)
+  · TL C.fast = [5, 5, 5, 5, 5, 5, 5, 5, 5] (기대 [5, 5, 5, 5, 5, 5, 5, 5, 5] ±0.0)
+  · TL C.zanshin = [22, 13, 18, 27, 13, 18, 27, 13, 18] (기대 [22, 13, 18, 27, 13, 18, 27, 13, 18] ±0.0)
+  · TL D.kill_to_next_damage = [57, 57] (기준 57~57 ±0.0)
+  · TL D.press_to_kill = [10, 10] (기준 9~10 ±1.0)
+  · TL D.next_press_to_damage = [57] (기준 55~57 ±1.0 · 보고만)
+  · TL E.press_to_damage = [70, 62, 53, 44, 37, 37] (기대 [70, 62, 53, 44, 37, 37] ±1.0)
+  · TL E.offset = [2, 10, 19, 28, 38, 49] (기대 [2, 10, 19, 28, 38, 49] ±0.0)
+  · TL E.skill_swing_to_damage = [36, 36, 36, 36, 36, 36] (기준 36~36 ±0.0)
+  · TL F.slash.press_to_damage = [37] (기준 37~38 ±1.0)
+  · TL F.slash.busy = [80] (기준 80~80 ±0.0)
+  · TL F.slash_far.press_to_damage = [51] (기준 51~52 ±1.0)
+  · TL F.slash_far.busy = [80] (기준 80~80 ±0.0)
+  · TL F.whirl.press_to_damage = [28] (기준 28~29 ±1.0)
+  · TL F.whirl.busy = [69] (기준 69~69 ±0.0)
+  · TL F.thrust.press_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust.busy = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust_far.press_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust_far.busy = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.dash_strike.press_to_damage = [33] (기준 33~34 ±1.0)
+  · TL F.dash_strike.busy = [104] (기준 104~104 ±0.0)
+  · TL F.leap_slash.press_to_damage = [33] (기준 33~34 ±1.0)
+  · TL F.leap_slash.busy = [104] (기준 104~104 ±0.0)
+  · TL F.slash.swing_to_damage = [36] (기준 36~36 ±0.0)
+  · TL F.slash_far.swing_to_damage = [37] (기준 37~37 ±0.0)
+  · TL F.whirl.swing_to_damage = [27] (기준 27~27 ±0.0)
+  · TL F.thrust.swing_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.thrust_far.swing_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.dash_strike.swing_to_damage = [32] (기준 32~32 ±0.0)
+  · TL F.leap_slash.swing_to_damage = [32] (기준 32~32 ±0.0)
+  · TL F.seal.setup = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.seal.press_to_swing = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL F.seal.press_to_damage = 건너뜀 (이 트리에 없는 스킬·아이템)
+  · TL G.swing_cue_to_swing = [0, 0, 0] (기준 0~0 ±0.0)
+  · TL G.swing_cue_to_damage = [-8, -10, -10] (기대 [-8, -10, -10] ±0.0)
+  · TL G.swing_peak_vs_damage_ms = [-133.3, -133.3, -133.3, -133.3, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7] (기대 [-133.3, -133.3, -133.3, -133.3, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7, -166.7] ±17.0)
+  · TL G.swing_peak_vs_fast_ms = [-50.0, -50.0, -50.0, -50.0, -66.7, -66.7, -66.7, -66.7, -133.3, -133.3, -133.3, -133.3] (기대 [-50.0, -50.0, -50.0, -50.0, -66.7, -66.7, -66.7, -66.7, -133.3, -133.3, -133.3, -133.3] ±17.0)
+  · TL G.slash_cue_to_swing = [0] (기준 0~0 ±0.0)
+  · TL G.slash_impact_cue_to_damage = [0] (기준 0~0 ±0.0)
+  · TL G.slash_impact_peak_vs_damage_ms = [370.0, 370.0, 370.0] (기준 370.0~370.0 ±17.0)
+  · TL G.slash_peak_vs_damage_ms = [-420.0, -420.0, -420.0] (기준 -420.0~-420.0 ±17.0)
+  · TL G.whirl_impact_peak_vs_damage_ms = [20.0, 20.0] (기준 20.0~20.0 ±17.0)
+  · TL H.travel = [392, 392] (기준 393~395 ±2.0)
+  · TL H.jumps = [0, 0] (기준 0~0 ±1.0)
+  · TL H.jumps_per_sec = [0.0, 0.0] (기준 0.0~0.0 ±0.5)
+  · TL H.deviation_cm = [0, 0] (기준 0~40 ±3.0)
+  · TL H.yaw_turn_deg = [180.0, 180.0] (기준 203.2~203.2 ±60.0 · 보고만)
+  · TL H.walk_ticks = [0, 0] (기준 0~0 ±0.0)
+  · TL I.press_to_move = [2, 2] (기준 1~2 ±1.0)
+  · TL I.start_ramp = [4, 4] (기준 4~4 ±0.0)
+  · TL I.stop_ramp = [6, 7] (기준 6~7 ±0.0)
+  · TL I.turn90 = [6, 6] (기준 6~6 ±0.0)
+  · TL I.turn = [7, 7] (기대 [7, 7] ±0.0 · 보고만)
+  · TL I.path_kinks = [0, 0] (기준 -~- ±0.0 · 보고만)
+  · TL I.first_leg = [74, 67] (기준 -~- ±0.0 · 보고만)
+  · TL I.walk_ticks = [0, 0] (기준 0~0 ±0.0)
+  · TL I.end_err_cm = [1.3, 1.0] (기준 1.1~1.1 ±2.0)
+  · TL I.dest_gap_cm = [0.0, 0.1] (기준 -~- ±0.0 · 보고만)
+  · TL C.fast_run = [3, 3, 5, 3, 3, 5, 3, 3, 5] (기준 없음 · 보고만)
+  · TL C.pull_pct = [64.9, 62.6, 44.3, 61.3, 62.6, 44.3, 61.3, 62.6, 44.3] (기준 없음 · 보고만)
+  · TL C.dip_pct = [23.3, 5.6, 30.2, 48.9, 5.6, 30.2, 48.9, 5.6, 30.2] (기준 없음 · 보고만)
+  · TL 다시 잼 0번 · 끊김 7곳 · 기록 5482틱 693사건
+E2E feel_lab_parity PASS (검사 121)
+E2E ▶ feel_lab_plates
+  · STATS 레벨 1 · 공속 1.100 · 간격 0.9091초 · 사거리 1.60 · 이동 4.00
+  · 무대 (22.5, 0.0, 49.5) · 방향 (0.707107, 0.0, 0.707107) · 트임 7.00u
+  · 판 A — 누름→피해 [10, 9, 9, 10]틱 · 4u [47, 47]틱 · 손 정지 [14.5, 12.7, 12.7, 10.9, 10.9, 12.7, 10.9, 10.9, 12.7]% (멈춤 뺀 정지 [3, 2, 2, 1, 1, 2, 1, 1, 2]틱) · 잔심 [22, 13, 18, 27, 13, 18, 27, 13, 18]틱 · 명중 멈춤 [5, 5, 5, 5, 5, 5, 5, 5, 5]틱 · 이어진 빠른 [3, 3, 5, 3, 3, 5, 3, 3, 5]틱(흩어진 [5, 5, 5, 5, 5, 5, 5, 5, 5]) · 당김÷내려치기 [64.9, 62.6, 44.3]% · 장전 최저 [23.3, 5.6, 30.2]%
+  · STATS 레벨 1 · 공속 1.100 · 간격 0.9091초 · 사거리 1.60 · 이동 4.00
+  · 무대 (9.5, 0.0, 8.5) · 방향 (1.0, 0.0, 0.0) · 트임 7.00u
+  · 판 OLD — 누름→피해 [18, 18, 19, 18]틱 · 4u [56, 56]틱 · 손 정지 [54.5, 58.2, 58.2, 54.5, 58.2, 58.2, 54.5, 58.2, 58.2]% (멈춤 뺀 정지 [25, 27, 27, 25, 27, 27, 25, 27, 27]틱) · 잔심 [0, 0, 0, 0, 0, 0, 0, 0, 0]틱 · 명중 멈춤 [5, 5, 5, 5, 5, 5, 5, 5, 5]틱 · 이어진 빠른 [2, 3, 3, 2, 3, 3, 2, 3, 3]틱(흩어진 [2, 3, 3, 2, 3, 3, 2, 3, 3]) · 당김÷내려치기 [42.7, 26.5, 31.8]% · 장전 최저 [-1.0, 0.0, -1.0]%
+  · 판 A 이음새 — 보통 명중 순환 1.0° · 1.2° · 0.8° · 37칸 중 attack2>attack3 끝단 치명 1.2° (OLD 0.0°) / attack2>attack3 끝단 보통 1.2° (OLD 0.0°) / attack2>attack3 기본 처치 1.2° (OLD 0.0°) / attack2>attack3 기본 치명 1.2° (OLD 0.0°) / attack2>attack3 기본 보통 1.2° (OLD 0.0°)
+  · 판 A 이음새 — 판 OLD부터 5°를 넘는 칸 16개(보고만): attack>attack2 끝단 처치 1.0° (OLD 39.0°) / attack>attack2 끝단 네임드 1.0° (OLD 122.1°) / attack>attack 기본 처치 49.2° (OLD 49.8°) / attack>attack 기본 네임드 49.2° (OLD 49.8°) / attack>attack 끝단 처치 49.2° (OLD 61.7°) / attack>attack 끝단 네임드 49.2° (OLD 127.3°) / attack>attack 헛 49.8° (OLD 49.8°) / attack2>attack3 끝단 처치 1.2° (OLD 13.4°) / attack2>attack3 끝단 네임드 1.2° (OLD 79.9°) / attack2>attack 기본 처치 46.0° (OLD 46.0°) / attack2>attack 기본 네임드 46.0° (OLD 46.0°) / attack2>attack 끝단 처치 46.0° (OLD 46.0°) / attack2>attack 끝단 네임드 46.0° (OLD 70.9°) / attack2>attack 헛 46.0° (OLD 46.0°) / attack3>attack 끝단 처치 0.8° (OLD 72.4°) / attack3>attack 끝단 네임드 0.8° (OLD 108.3°)
+  · 판 OLD 이음새(보고만) — 보통 명중 순환 0.0° · 0.0° · 0.0° · 37칸 중 attack>attack2 끝단 네임드 122.1° (A 1.0°) / attack3>attack 끝단 네임드 108.3° (A 0.8°) / attack2>attack3 끝단 네임드 79.9° (A 1.2°) / attack>attack 끝단 네임드 127.3° (A 49.2°) / attack3>attack 끝단 처치 72.4° (A 0.8°)
+  · 판 A 이어진 빠른 구간 §3 목표 5~6틱 밖: attack2 3틱, attack 3틱 (PD-N 채택 때 그대로 — combat_feel_v3_log §11)
+  · 판 A 다시 — combat_timeline A·C 기준 엄격 (main ±0틱)
+  · STATS 레벨 1 · 공속 1.100 · 간격 0.9091초 · 사거리 1.60 · 이동 4.00
+  · 무대 (9.5, 0.0, 8.5) · 방향 (1.0, 0.0, 0.0) · 트임 7.00u
+  · TL A.press_to_swing = [1, 1, 2, 2] (기준 1~2 ±1.0)
+  · TL A.swing_to_damage = [8, 8, 8, 8] (기준 8~8 ±0.0)
+  · TL A.press_to_damage = [9, 9, 10, 10] (기준 9~10 ±1.0)
+  · TL A.busy = [36, 36, 36, 36] (기준 36~36 ±0.0)
+  · TL A.away_turn = [6] (기준 5~6 ±0.0)
+  · TL C.swing_interval = [55, 55, 55, 55, 55, 55, 55, 55, 55] (기준 55~55 ±0.0)
+  · TL C.damage_interval = [57, 55, 55, 55, 55, 55, 55, 55, 55] (기대 [57, 55, 55, 55, 55, 55, 55, 55, 55] ±0.0)
+  · TL C.swing_to_damage = [8, 10, 10, 10, 10, 10, 10, 10, 10] (기대 [8, 10, 10, 10, 10, 10, 10, 10, 10] ±0.0)
+  · TL C.busy = [36, 36, 36, 36, 36, 36, 36, 36, 36] (기준 36~36 ±0.0)
+  · TL C.chain_step = [0, 1, 2, 0, 1, 2, 0, 1, 2] (기대 [0, 1, 2, 0, 1, 2, 0, 1, 2] ±0.0)
+  · TL C.hitstop = [5, 5, 5, 5, 5, 5, 5, 5, 5] (기준 5~5 ±0.0)
+  · TL C.still = [8, 7, 7, 6, 6, 7, 6, 6, 7] (기대 [8, 7, 7, 6, 6, 7, 6, 6, 7] ±0.0)
+  · TL C.still_pct = [14.5, 12.7, 12.7, 10.9, 10.9, 12.7, 10.9, 10.9, 12.7] (기대 [14.5, 12.7, 12.7, 10.9, 10.9, 12.7, 10.9, 10.9, 12.7] ±2.0)
+  · TL C.tail_still = [1, 0, 0, 0, 0, 0, 0, 0, 0] (기대 [1, 0, 0, 0, 0, 0, 0, 0, 0] ±0.0)
+  · TL C.fast = [5, 5, 5, 5, 5, 5, 5, 5, 5] (기대 [5, 5, 5, 5, 5, 5, 5, 5, 5] ±0.0)
+  · TL C.zanshin = [22, 13, 18, 27, 13, 18, 27, 13, 18] (기대 [22, 13, 18, 27, 13, 18, 27, 13, 18] ±0.0)
+  · TL C.fast_run = [3, 3, 5, 3, 3, 5, 3, 3, 5] (기준 없음 · 보고만)
+  · TL C.pull_pct = [64.9, 62.6, 44.3, 61.3, 62.6, 44.3, 61.3, 62.6, 44.3] (기준 없음 · 보고만)
+  · TL C.dip_pct = [23.3, 5.6, 30.2, 48.9, 5.6, 30.2, 48.9, 5.6, 30.2] (기준 없음 · 보고만)
+  · TL 다시 잼 0번 · 끊김 0곳 · 기록 1216틱 175사건
+  · PLATES_TABLE {"blend_fast_iv":[["attack",0.063,0.046],["attack2",0.103,0.086],["attack3",0.103,0.086]],"contact_ticks":[10],"cycle":[55],"dip_pct":[23.3,5.6,30.2],"far_press_to_damage":[47,47],"far_swing_to_damage":[8,8],"fast_run":[3,3,5,3,3,5,3,3,5],"fast_scattered":[5,5,5,5,5,5,5,5,5],"first_contact_ticks":[8],"impact_frac":[0.1815,0.1815,0.1815],"label":"지금","lock":[36],"plate":"A","press_to_damage":[10,9,9,10],"pull_pct":[64.9,62.6,44.3],"seam_worst_vs_OLD":{"a":0.0,"deg":1.2,"key":"attack2>attack3 끝단 치명"},"still_moving_ticks":[3,2,2,1,1,2,1,1,2],"still_pct":[14.5,12.7,12.7,10.9,10.9,12.7,10.9,10.9,12.7],"tail_probe":{"scale":2.27,"seam":{"네임드":0.0,"보통":0.0},"u_named_kill":0.987,"u_normal":0.996},"zanshin":[22,13,18,27,13,18,27,13,18]}
+  · PLATES_TABLE {"blend_fast_iv":[["attack",0.169,0.12],["attack2",0.173,0.1],["attack3",0.169,0.1]],"contact_ticks":[17],"cycle":[55],"dip_pct":[-1.0,0.0,-1.0],"far_press_to_damage":[56,56],"far_swing_to_damage":[17,17],"fast_run":[2,3,3,2,3,3,2,3,3],"fast_scattered":[2,3,3,2,3,3,2,3,3],"first_contact_ticks":[17],"impact_frac":[0.45,0.46,0.45],"label":"옛 값(#693 전)","lock":[36],"plate":"OLD","press_to_damage":[18,18,19,18],"pull_pct":[42.7,26.5,31.8],"still_moving_ticks":[25,27,27,25,27,27,25,27,27],"still_pct":[54.5,58.2,58.2,54.5,58.2,58.2,54.5,58.2,58.2],"zanshin":[0,0,0,0,0,0,0,0,0]}
+E2E feel_lab_plates PASS (검사 63)
+E2E ▶ path_smooth
+  · PATH_SMOOTH_TABLE {"click4_in015_s":1.0,"click4_in015_ticks":60,"click4_repeat_end_diff":0.0,"click4_stop_s":1.017,"click4_walk_ticks":0,"click8_dev":[1.778,0.0,1.778],"click8_end_err":[0.146,0.133,0.146],"click8_kink_deg":[38.5,0.0,38.5],"click8_stop_s":[2.233,2.0,2.233],"plate":"M0","reverse_off_run_ticks":0,"sweep_err_mean_deg":26.2,"sweep_jumps_per_s":5.5,"sweep_max_step_deg":81.5,"sweep_walk_ticks":0,"wall_dev":0.12,"wall_end_err":0.146,"wall_kink_deg":6.8,"wall_scrape_ticks":0}
+  · PATH_SMOOTH_TABLE {"click4_in015_s":1.017,"click4_in015_ticks":61,"click4_repeat_end_diff":0.0001,"click4_stop_s":1.117,"click4_walk_ticks":0,"click8_dev":[0.0,0.0,0.0],"click8_end_err":[0.01,0.01,0.01],"click8_kink_deg":[0.0,0.0,0.0],"click8_stop_s":[2.117,2.117,2.133],"plate":"A","reverse_off_run_ticks":0,"sweep_err_mean_deg":6.9,"sweep_jumps_per_s":0.0,"sweep_max_step_deg":13.7,"sweep_walk_ticks":0,"wall_dev":0.0,"wall_end_err":0.01,"wall_kink_deg":0.0,"wall_scrape_ticks":0}
+  · STATS 레벨 1 · 공속 1.100 · 간격 0.9091초 · 사거리 1.60 · 이동 4.00
+  · 무대 (22.5, 0.0, 49.5) · 방향 (0.707107, 0.0, 0.707107) · 트임 7.00u
+  · H 출발 (9.5, 0.000391, 62.5) · 쪽 (0.382683, 0.0, -0.92388) (32.0u 곧게 트임)
+  · TL B.press_to_move = [2, 3] (기준 2~3 ±1.0)
+  · TL B.press_to_swing = [39, 40] (기준 39~40 ±1.0)
+  · TL B.swing_to_damage = [8, 8] (기준 8~8 ±1.0)
+  · TL B.press_to_damage = [47, 48] (기준 47~48 ±1.0)
+  · TL H.travel = [392, 392] (기준 393~395 ±2.0)
+  · TL H.jumps = [0, 0] (기준 0~0 ±1.0)
+  · TL H.jumps_per_sec = [0.0, 0.0] (기준 0.0~0.0 ±0.5)
+  · TL H.deviation_cm = [0, 0] (기준 0~40 ±3.0)
+  · TL H.yaw_turn_deg = [180.0, 180.0] (기준 203.2~203.2 ±60.0 · 보고만)
+  · TL H.walk_ticks = [0, 0] (기준 0~0 ±0.0)
+  · TL I.press_to_move = [2, 1] (기준 1~2 ±1.0)
+  · TL I.start_ramp = [4, 4] (기준 4~4 ±1.0)
+  · TL I.stop_ramp = [6, 7] (기준 6~7 ±1.0)
+  · TL I.turn90 = [6, 6] (기준 6~6 ±1.0)
+  · TL I.turn = [7, 7] (기대 [7, 7] ±1.0 · 보고만)
+  · TL I.path_kinks = [0, 0] (기준 -~- ±1.0 · 보고만)
+  · TL I.first_leg = [74, 67] (기준 -~- ±1.0 · 보고만)
+  · TL I.walk_ticks = [0, 0] (기준 0~0 ±0.0)
+  · TL I.end_err_cm = [1.3, 1.0] (기준 1.1~1.1 ±2.0)
+  · TL I.dest_gap_cm = [0.0, 0.0] (기준 -~- ±1.0 · 보고만)
+  · TL 다시 잼 0번 · 끊김 6곳 · 기록 1423틱 108사건
+  · STATS 레벨 1 · 공속 1.100 · 간격 0.9091초 · 사거리 1.60 · 이동 4.00
+  · 무대 (22.5, 0.0, 49.5) · 방향 (0.707107, 0.0, 0.707107) · 트임 7.00u
+  · H 출발 (9.5, 0.000391, 62.5) · 쪽 (0.382683, 0.0, -0.92388) (32.0u 곧게 트임)
+  · PATH_SMOOTH_TABLE {"B.press_to_damage":[47,48],"B.press_to_swing":[39,40],"BHI.wall_ticks":0,"H.deviation_cm":[0,0],"H.jumps":[0,0],"H.jumps_per_sec":[0.0,0.0],"I.path_kinks":[0,0],"I.start_ramp":[4,4],"I.stop_ramp":[6,7],"I.turn":[7,7],"I.turn90":[6,6],"M0.B.press_to_damage":[46,46],"M0.B.press_to_swing":[38,38],"M0.BHI.wall_ticks":0,"M0.H.deviation_cm":[302,265],"M0.H.jumps_per_sec":[5.61,5.48],"plate":"A"}
+E2E path_smooth PASS (검사 44)
+E2E ▶ path_shove_replan
+  · PATH_SHOVE_REPLAN smooth=on { "reached_shove": true, "blocked": true, "arrived": true, "gap": 0.01, "sec": 2.53, "speed": 1.11, "shoved_at": (26.43, 42.82) }
+  · PATH_SHOVE_REPLAN smooth=off { "reached_shove": true, "blocked": true, "arrived": true, "gap": 0.01, "sec": 2.53, "speed": 1.49, "shoved_at": (26.46, 42.9) }
+E2E path_shove_replan PASS (검사 6)
+E2E ▶ player_resource_clock
+E2E player_resource_clock PASS (검사 73)
+E2E ▶ invisible_sword
+  · ① 순서(시작 뒤 초) 평타 0.00 → 참격 0.60 → 평타 1.93 → 참격 2.53 → 평타 3.87 → 참격 4.47 → 평타 5.80 → 참격 6.40
+  · ④ 옛 자리 ↔ 새 자리 24.0유닛 · 층 이동 뒤 피해 0 (옛 자리 허수아비 0) · 곁들이 []
+  · ② 평타 — 시작 뒤 0.22초에 쓰러짐 · 그 전 피해 1 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 참격 — 시작 뒤 0.32초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 회오리 — 시작 뒤 0.17초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 돌진 · 떠나기 전 — 시작 뒤 0.12초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 돌진 · 도약 중 — 시작 뒤 0.47초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+  · ② 부적 시전 — 시작 뒤 0.27초에 쓰러짐 · 그 전 피해 0 · 뒤 피해 0 · 뒤 곁들이 []
+E2E invisible_sword PASS (검사 68)
+E2E ▶ heavy_react
+  · ① 평타 1타: 뜬 높이 0.00 · 앞 0.22 · 옆 0.00 · 밀림 속도 3.67 · 반응 0.37초 · 클립 hit, run · 공격 0
+  · ② 평타 3타: 뜬 높이 0.00 · 앞 0.33 · 옆 0.03 · 밀림 속도 5.50 · 반응 0.37초 · 클립 hit, run · 공격 0
+  · ③ 강타(참격): 뜬 높이 0.52 · 앞 1.40 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.43초 · 클립 hit, die, idle · 공격 0
+  · ④ 회오리: 뜬 높이 0.47 · 앞 1.20 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.40초 · 클립 hit, die, idle · 공격 0
+  · ⑤ 돌진베기: 뜬 높이 0.00 · 앞 0.22 · 옆 0.00 · 밀림 속도 3.67 · 반응 0.37초 · 클립 hit, run · 공격 0
+  · ⑥ 부적술사 강타: 뜬 높이 0.52 · 앞 1.40 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.45초 · 클립 attack, die, idle · 공격 0
+  · ⑦ 박쥐 강타: 뜬 높이 0.69 · 앞 1.96 · 옆 0.00 · 밀림 속도 0.00 · 반응 1.53초 · 클립  · 공격 0
+  · ⑧ 흑랑 강타(제외): 뜬 높이 0.00 · 앞 0.08 · 옆 0.00 · 밀림 속도 1.33 · 반응 0.13초 · 클립 hit, idle · 공격 0
+  · ⑨ 쿨다운 3.0초: 넘어져 있는 1.45초 + 쿨다운 = 한 판 4.45초 중 33%가 누움 (쿨다운 0이면 강타 쿨 1.5초에 걸려 97%)
+  · ⑫ 돌진베기 넘어뜨리기 시험: 적 3.54u에서 맞아 4.84u에 누움 · 도호는 5.00u에 섬 → 사이 0.16u (겹침 문턱 0.80u) · 날아가는 내내 가장 가까웠던 거리 0.16u
+  · ── 표 | 타격 · 적 | 뜬 높이 | 앞 거리 | 밀림 속도 | 반응 | 클립
+  · 표 | ① 평타 1타 · 산적 | 0.00 | 0.22 | 3.67 | 0.37초 | hit, run
+  · 표 | ② 평타 3타 · 산적 | 0.00 | 0.33 | 5.50 | 0.37초 | hit, run
+  · 표 | ③ 강타(참격) · 산적 | 0.52 | 1.40 | 0.00 | 1.43초 | hit, die, idle
+  · 표 | ④ 회오리 · 산적 | 0.47 | 1.20 | 0.00 | 1.40초 | hit, die, idle
+  · 표 | ⑤ 돌진베기 · 산적 | 0.00 | 0.22 | 3.67 | 0.37초 | hit, run
+  · 표 | ⑥ 강타 · 부적술사 | 0.52 | 1.40 | 0.00 | 1.45초 | attack, die, idle
+  · 표 | ⑦ 강타 · 박쥐 | 0.69 | 1.96 | 0.00 | 1.53초 | (없음)
+  · 표 | ⑧ 강타 · 흑랑(제외) | 0.00 | 0.08 | 1.33 | 0.13초 | hit, idle
+  · §6.6 구현 있음(2단계 판정선) · 넘어짐 = 날아감 + 누움 0.5초 + 일어남 0.45초 · 쿨다운 3.0초
+E2E heavy_react PASS (검사 97)
+E2E ▶ pack_ai
+  · 띠 첫 자리 (12.5, 0.0, 53.5)
+  · §13.4.1 구현 있음 — 판정선을 본다
+  · ── 표 (§13.4.1 전/후)
+  · 표 | ① 무리 어그로: 한 대 뒤 깬 A 3/3 · B 0/3 · 신호 1+2 · 4.5초 뒤 A 곁 3/3 · B 깸 0
+  · 표 | ② 놓침: 붙은 뒤 도호 25.0u 밖 → LOST 6.02초 · 도호 쪽 끝 x +5.75 (본 자리 +6.00) · 두리번 3.02초(517°) · 쉼 = 본 자리 0.25u · 처음 자리 8.75u · 숨음 → LOST 0.02초
+  · 표 | ③ 흩어짐: 하수인 셋 — 멀어진 거리(가장 적은 몸) +5.60u · 흩어지는 2.5초 동안 공격 시작 0 · 돌아옴 [2.51666666666438, 2.51666666666438, 2.51666666666438] · 4.5초 뒤 다시 다가옴 3/3 · 곁(3칸) 3/3 · 박쥐 흩어짐 false
+  · 표 | ④ 넘어뜨림: 산적 선딜 넘어짐 true · 한 대 0 | 우두머리 선딜 넘어짐 false · 선딜 그대로 true · 한 대 1 | 쫓던 우두머리 넘어짐 false · 경직 0.11초 · 넉백 속도 1.10 | 흑랑 넘어짐 false
+E2E pack_ai PASS (검사 46)
+E2E ▶ kill_slump
+  · ① 평타 막타: 누움 0.77초 · 이동 0.00 · 누운 골반 0.12 · 비틀림 0
+  · ② 비틀림 갈래 [-1, 0, 1, -1, 0, 1] · 누운 방향 [-25.9999986745346, -0.00000250447817, 26.0000004957675, -25.9999986745346, -0.00000250447817, 26.0000004957675]°
+  · ⑥ 박쥐 평타: 이동 0.00 · 모델 높이 0.93 → 0.19
+  · 시체 10 · 핏자국 14 (상한 32) · 피 튐 크기 1.00
+E2E kill_slump PASS (검사 51)
+E2E ▶ kill_bisect
+  · ① 평타 치명 (게임 1111.2초에 막타 · +0.22초 갈라짐): 윗몸 옆으로 0.44 · 아랫몸 75° · 뿜음 5
+  · ③ 강타 치명 (게임 1113.5초에 막타): cleave · 윗몸 0.41u (계획 0.41) · 최고 +0.00
+  · ⑦ 평타 (게임 1115.1초에 막타): 칼 방향 (0.969086, 0.142022, 0.20175) · 칼끝 속도 (13.04413, 2.201471, -20.48576) → 궤적 0.0° · 갈래 h · 단면 5.2° · slide · 윗몸 계획 0.44u
+  · ⑦ 회오리베기 (게임 1117.0초에 막타): 칼 방향 (-0.6236, 0.268077, -0.734342) · 칼끝 속도 (-4.501939, -2.824748, -17.94596) → 궤적 8.7° · 갈래 h · 단면 8.7° · cleave · 윗몸 계획 0.45u
+  · ⑦ 참격 (게임 1119.1초에 막타): 칼 방향 (0.14251, -0.533152, -0.833931) · 칼끝 속도 (3.721402, -15.97236, -8.004773) → 궤적 61.1° · 갈래 d · 단면 55.0° · slide · 윗몸 계획 0.34u
+  · 무대 17곳 · 단면 기울기 평타 5.2° · 회오리 8.7° · 참격 55.0° · 시체 12 · 핏자국 17
+E2E kill_bisect PASS (검사 68)
+E2E ▶ slice_deaths
+  · 무대 = (23.5, 0.0, 46.5) · 간격 ×1.00 · 도호 = 줄 앞 3.0u
+  · ① 평타 막타 — 게임 1122.97초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.80초 · die 클립 true · 죽음 slump/slump
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.67초 · die 클립 true · 죽음 plague/slump
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 plague/drop
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 drop/drop
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 scatter/scatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.80초 · die 클립 true · 죽음 slump/slump
+  · ② 평타 치명 막타 — 게임 1125.09초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.44 · 단면 0° · 누움 0.82초 · die 클립 true · 죽음 cleave/cleave
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.41 · 단면 90° · 누움 0.82초 · die 클립 true · 죽음 plague/cleave
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 plague/slashed
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 slashed/slashed
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 scatter/scatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.44 · 단면 0° · 누움 1.12초 · die 클립 true · 죽음 slide/slide
+  · ③ 참격 막타 — 사선 칼 — 게임 1127.21초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.33 · 단면 45° · 누움 0.82초 · die 클립 true · 죽음 cleave/cleave
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.41 · 단면 90° · 누움 0.82초 · die 클립 true · 죽음 plague/cleave
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 plague/slashed
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 slashed/slashed
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 scatter/scatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.37 · 단면 45° · 누움 1.13초 · die 클립 true · 죽음 slide/slide
+  · ④ 회오리 막타 — 가로 칼 — 게임 1129.33초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.33 · 단면 0° · 누움 0.84초 · die 클립 true · 죽음 cleave/cleave
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.41 · 단면 90° · 누움 0.84초 · die 클립 true · 죽음 plague/cleave
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 plague/slashed
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 slashed/slashed
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.52초 · die 클립 false · 죽음 scatter/scatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.44 · 단면 0° · 누움 1.12초 · die 클립 true · 죽음 slide/slide
+  · ⑤ 도약 베기 막타 — 세로 칼 — 게임 1131.45초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.99 · 단면 90° · 누움 0.68초 · die 클립 true · 죽음 cleave/cleave
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.41 · 단면 90° · 누움 0.83초 · die 클립 true · 죽음 plague/cleave
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 plague/slashed
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 slashed/slashed
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 scatter/scatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 1.77 · 단면 90° · 누움 0.83초 · die 클립 true · 죽음 cleave/cleave
+  · ⑥ 참격 치명 + 넘친 피해 — 게임 1133.55초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.45 · 단면 45° · 누움 0.83초 · die 클립 true · 죽음 gibs/cleave
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.41 · 단면 90° · 누움 0.83초 · die 클립 true · 죽음 plague/cleave
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 plague/slashed
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 slashed/slashed
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.53초 · die 클립 false · 죽음 scatter/scatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.37 · 단면 45° · 누움 1.11초 · die 클립 true · 죽음 gibs/slide
+  · ⑦ 화염 막타 (부적, dev 강제) — 게임 1135.68초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 true · 죽음 ash/ash
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 true · 죽음 ash/ash
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 ash/ash
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 ash/ash
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 ash/ash
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 true · 죽음 ash/ash
+  · ⑧ 냉기 막타 (빙결 뒤 참격, dev 강제) — 게임 1137.80초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 true · 죽음 shatter/shatter
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 true · 죽음 shatter/shatter
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 shatter/shatter
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 shatter/shatter
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 shatter/shatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 true · 죽음 shatter/shatter
+  · ⑨ 피 끄기 + 참격 막타 — 게임 1139.91초에 막타 (여섯 몸 같은 프레임)
+  ·   사람형: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.33 · 단면 45° · 누움 0.82초 · die 클립 true · 죽음 cleave/cleave
+  ·   짐승: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.41 · 단면 90° · 누움 0.82초 · die 클립 true · 죽음 plague/cleave
+  ·   벌레: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 plague/slashed
+  ·   떠다님·피: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 slashed/slashed
+  ·   떠다님·넋: 이동 0.00 · 뜸 0.00 · 두 동강 false · 윗몸 0.00 · 단면 - · 누움 0.54초 · die 클립 false · 죽음 scatter/scatter
+  ·   큰 덩치: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.37 · 단면 45° · 누움 1.14초 · die 클립 true · 죽음 slide/slide
+  · ⑩ 산적1 — 게임 1142.03초에 막타
+  · ⑩ 산적2 — 게임 1142.85초에 막타
+  · ⑩ 산적3 — 게임 1143.67초에 막타
+  · ⑩ 산적4 — 게임 1144.48초에 막타
+  · ⑩ 산적5 — 게임 1145.30초에 막타
+  · ⑩ 반복 — 같은 참격(사선 칼) 다섯 번:
+  ·   산적1: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.33 · 단면 45° · 누움 0.83초 · die 클립 true · 죽음 cleave/cleave
+  ·   산적2: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.37 · 단면 45° · 누움 1.12초 · die 클립 true · 죽음 slide/slide
+  ·   산적3: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.33 · 단면 45° · 누움 0.83초 · die 클립 true · 죽음 cleave/cleave
+  ·   산적4: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.37 · 단면 45° · 누움 1.12초 · die 클립 true · 죽음 slide/slide
+  ·   산적5: 이동 0.00 · 뜸 0.00 · 두 동강 true · 윗몸 0.33 · 단면 45° · 누움 0.82초 · die 클립 true · 죽음 cleave/cleave
+E2E slice_deaths PASS (검사 111)
+E2E ▶ monster_motion_gallery
+  · 봉우리 셈 자기검사 — 표본 위상 20가지 × 봉우리 셋: 꼭짓점 폭 0.0025초 (표본 그대로면 0.0158초) · 대칭 봉우리 오차 0.0002초
+  · 목록 없는 MultiMesh 1덩이 = 풀·꽃 셈 밖 ["GroundMist"]
+  · 헤드리스 — 들녘 소품 MultiMesh 인스턴스 = 심은 목록 대조 생략 (더미 렌더러는 인스턴스 값 0)
+  · 무대 = (26.5, 0.0, 30.5) · 숨긴 풀·꽃 4 · 도호 = 오른쪽 8.4u
+  · 사진 = 구간마다 틀(쉼 (-8.4, 5.4) · 걷기 (-8.4, 5.8) · 달리기 (-8.4, 7.9), 여백 5%) · 무대 조명 = 가운데 위 6.0u · 세기 3.5 · 반경 18 · 감쇠 0.5 (대본 끝에 치움)
+  · 떠다님·넋 (떠도는 넋) = tteodoneun_neok (크기 ×1.00) · 뼈 없음(정지 메시) · 클립 없음
+  · 떠다님·몸 (나찰녀) = nachalnyeo (크기 ×1.00) · 뼈 없음(정지 메시) · 클립 없음
+  · 네발·짐승 (역병 든 들개) = plague_dog (크기 ×0.91) · 뼈 19 · 발 4 · 골반 Hips · 머리 Head · 손 0 · attack 0.50 · die 1.25 · hit 0.30 · idle 2.20 · pounce 0.60 · pounce_air 0.40 · pounce_land 0.25 · run 0.55 · walk 0.85
+  · 네발·족속 (어린 흑랑) = eorin_heukrang (크기 ×1.00) · 뼈 19 · 발 4 · 골반 Hips · 머리 Head · 손 0 · attack 0.67 · die 1.25 · hit 0.30 · idle 2.20 · pounce 0.65 · pounce_air 0.40 · pounce_land 0.25 · run 0.77 · walk 1.02
+  · 두 발·Tripo (산적) = bandit (크기 ×1.00) · 뼈 65 · 발 2 · 골반 mixamorig_Hips · 머리 mixamorig_Head · 손 2 · attack 0.55 · attack2 0.55 · die 3.00 · hit 0.30 · idle 7.67 · run 0.58 · walk 1.12
+  · 두 발·Meshy (홀린 여창) = hollin_yeogung_spear (크기 ×1.00) · 뼈 24 · 발 2 · 골반 Hips · 머리 Head · 손 2 · attack_bow 0.75 · attack_spear 0.75 · die 3.00 · hit 0.30 · idle 1.30 · run 0.63 · walk 1.03
+  · 떠다님 2몸 = 그림 틱을 물리 틱에 묶어 잰다 (_tick_float)
+  · ① 대기 3.0초 — 뼈 있는 몸 = 머리 봉우리-봉우리(목표 2~15cm) · 떠다님 = 둥실 반폭(3~8cm)·주기(1.8~3.2초):
+  ·   떠다님·넋 (떠도는 넋): 둥실 5.0cm ○ · 주기 2.22초 ○ · 옆 흔들림 4.5° · 뼈 없음
+  ·   떠다님·몸 (나찰녀): 둥실 6.0cm ○ · 주기 2.00초 ○ · 옆 흔들림 4.5° · 뼈 없음
+  ·   네발·짐승 (역병 든 들개): 들썩임 4.6cm ○ · 클립 idle
+  ·   네발·족속 (어린 흑랑): 들썩임 3.3cm ○ · 클립 idle
+  ·   두 발·Tripo (산적): 들썩임 9.5cm ○ · 클립 idle
+  ·   두 발·Meshy (홀린 여창): 들썩임 6.4cm ○ · 클립 idle
+  · ② 걷기 1.2u/s — 1.5초 · 화면 오른쪽으로 곧게 (발 미끄러짐 목표 ≤ 5cm/s · 떠다님 앞 기울기 목표 3~8°):
+  ·   떠다님·넋 (떠도는 넋): 빠르기 1.20u/s · 뼈 없음 · 앞 기울기 5.4° ○ · 옆 흔들림 7.0° · 둥실 2.4cm · 옷자락 끌림 4.2cm (물결 메시 2)
+  ·   떠다님·몸 (나찰녀): 빠르기 1.20u/s · 뼈 없음 · 앞 기울기 5.4° ○ · 옆 흔들림 7.0° · 둥실 4.4cm · 옷자락 끌림 3.6cm (물결 메시 2)
+  ·   네발·짐승 (역병 든 들개): 빠르기 1.20u/s · 클립 walk × 1.55 · 발 미끄러짐 1cm/s (몸의 0%) ○ · 걸음마다 0.1cm · 디딤 몫 0.57 · 걸음 4.3/초
+  ·   네발·족속 (어린 흑랑): 빠르기 1.20u/s · 클립 walk × 1.72 · 발 미끄러짐 1cm/s (몸의 0%) ○ · 걸음마다 0.1cm · 디딤 몫 0.57 · 걸음 3.9/초
+  ·   두 발·Tripo (산적): 빠르기 1.20u/s · 클립 walk × 1.40 · 발 미끄러짐 0cm/s (몸의 0%) ○ · 걸음마다 0.0cm · 디딤 몫 0.49 · 걸음 3.2/초
+  ·   두 발·Meshy (홀린 여창): 빠르기 1.20u/s · 클립 walk × 0.97 · 발 미끄러짐 1cm/s (몸의 1%) ○ · 걸음마다 0.2cm · 디딤 몫 0.28 · 걸음 2.4/초
+  · ③ 달리기(쫓는 빠르기 = move_speed) — 1.0초 · 화면 오른쪽으로 곧게 (발 미끄러짐 목표 ≤ 10cm/s · 떠다님 앞 기울기 목표 9~16°):
+  ·   떠다님·넋 (떠도는 넋): 빠르기 2.80u/s · 뼈 없음 · 앞 기울기 12.5° ○ · 옆 흔들림 13.3° · 둥실 2.0cm · 옷자락 끌림 9.8cm (물결 메시 2)
+  ·   떠다님·몸 (나찰녀): 빠르기 3.60u/s · 뼈 없음 · 앞 기울기 15.9° ○ · 옆 흔들림 16.6° · 둥실 4.4cm · 옷자락 끌림 10.8cm (물결 메시 2)
+  ·   네발·짐승 (역병 든 들개): 빠르기 4.50u/s · 클립 run × 1.29 · 발 미끄러짐 2cm/s (몸의 0%) ○ · 걸음마다 0.1cm · 디딤 몫 0.24 · 걸음 4.6/초
+  ·   네발·족속 (어린 흑랑): 빠르기 4.20u/s · 클립 run × 1.55 · 발 미끄러짐 1cm/s (몸의 0%) ○ · 걸음마다 0.1cm · 디딤 몫 0.22 · 걸음 3.9/초
+  ·   두 발·Tripo (산적): 빠르기 3.50u/s · 클립 run × 1.20 · 발 미끄러짐 1cm/s (몸의 0%) ○ · 걸음마다 0.1cm · 디딤 몫 0.26 · 걸음 5.2/초
+  ·   두 발·Meshy (홀린 여창): 빠르기 3.80u/s · 클립 run × 0.87 · 발 미끄러짐 1cm/s (몸의 0%) ○ · 걸음마다 0.1cm · 디딤 몫 0.23 · 걸음 3.9/초
+  · ④ 공격 — 같은 틱에 선딜(피해 = 선딜 끝 · 타격 몫 목표 0.50~0.70 · 치는 곳 가장 빠른 때 = 선딜 끝 ± 0.08초, 2u/s 이상):
+  ·   떠다님·넋 (떠도는 넋): 선딜 0.30초 · 잠금 0.55초 · 공격 클립 없음 · 가장 빠른 때 0.270초(타격 -0.030) ○ · 12.4u/s · 당김 10cm (0.23초) · 쏘기 40cm (0.30초) · 머리 쏘기 40cm
+  ·   떠다님·몸 (나찰녀): 선딜 0.50초 · 잠금 0.75초 · 공격 클립 없음 · 가장 빠른 때 0.460초(타격 -0.040) ○ · 4.7u/s · 당김 8cm (0.42초) · 쏘기 15cm (0.50초) · 머리 쏘기 15cm
+  ·   네발·짐승 (역병 든 들개): 선딜 0.30초 · 잠금 0.50초 · 클립 attack 0.50초 × 1.00배 · 타격 몫 0.60 ○ · 가장 빠른 때 0.280초(타격 -0.020) ○ · 6.6u/s · 당김 5cm (0.23초) · 쏘기 15cm (0.30초) · 머리 쏘기 17cm
+  ·   네발·족속 (어린 흑랑): 선딜 0.40초 · 잠금 0.67초 · 클립 attack 0.67초 × 1.00배 · 타격 몫 0.60 ○ · 가장 빠른 때 0.352초(타격 -0.048) ○ · 5.0u/s · 당김 5cm (0.30초) · 쏘기 16cm (0.40초) · 머리 쏘기 22cm
+  ·   두 발·Tripo (산적): 선딜 0.30초 · 잠금 0.55초 · 클립 attack 0.55초 × 1.00배 · 타격 몫 0.55 ○ · 가장 빠른 때 0.272초(타격 -0.028) ○ · 5.5u/s · 당김 0cm (0.00초) · 쏘기 0cm (0.00초) · 머리 쏘기 14cm
+  ·   두 발·Meshy (홀린 여창): 선딜 0.40초 · 잠금 0.75초 · 클립 attack_spear 0.75초 × 1.00배 · 타격 몫 0.53 ○ · 가장 빠른 때 0.397초(타격 -0.003) ○ · 9.5u/s · 당김 0cm (0.00초) · 쏘기 1cm (0.10초) · 머리 쏘기 2cm
+  · ⑤ 맞기 — 한 대(오른쪽에서 · 반응 ≥ 6cm 또는 젖힘 ≥ 8° · 피격 동작 0.20~0.40초):
+  ·   떠다님·넋 (떠도는 넋): 경직 0.35초 · 피격 동작 없음 · 반응 15cm · 젖힘 12° ○ · 몸 밀림 22cm
+  ·   떠다님·몸 (나찰녀): 경직 0.35초 · 피격 동작 없음 · 반응 10cm · 젖힘 8° ○ · 몸 밀림 22cm
+  ·   네발·짐승 (역병 든 들개): 경직 0.35초 · 클립 hit 0.30초 × 1.0배 = 0.30초 ○ · 반응 8cm · 젖힘 6° ○ · 몸 밀림 22cm
+  ·   네발·족속 (어린 흑랑): 경직 0.35초 · 클립 hit 0.30초 × 1.0배 = 0.30초 ○ · 반응 8cm · 젖힘 2° ○ · 몸 밀림 30cm
+  ·   두 발·Tripo (산적): 경직 0.35초 · 클립 hit 0.30초 × 1.0배 = 0.30초 ○ · 반응 0cm · 젖힘 26° ○ · 몸 밀림 22cm
+  ·   두 발·Meshy (홀린 여창): 경직 0.35초 · 클립 hit 0.30초 × 1.0배 = 0.30초 ○ · 반응 8cm · 젖힘 6° ○ · 몸 밀림 22cm
+  · 요약 (○ = 목표 안 · 사양 monster_motion_v2 §2):
+  ·   떠다님·넋 (떠도는 넋): 둥실 5.0cm○·2.2초○ · 기울기 걷기 5.4°○·쫓기 12.5°○ · 빠른 때○ · 당김 10○·쏘기 40○ · 맞기 15cm·12°○
+  ·   떠다님·몸 (나찰녀): 둥실 6.0cm○·2.0초○ · 기울기 걷기 5.4°○·쫓기 15.9°○ · 빠른 때○ · 당김 8○·쏘기 15○ · 맞기 10cm·8°○
+  ·   네발·짐승 (역병 든 들개): 대기 4.6cm○ · 미끄러짐 걷기 1○·달리기 2○ · 타격 몫 0.60○ · 빠른 때○ · 머리 쏘기 17○ · 맞기 8cm·6°○·동작 0.30초○
+  ·   네발·족속 (어린 흑랑): 대기 3.3cm○ · 미끄러짐 걷기 1○·달리기 1○ · 타격 몫 0.60○ · 빠른 때○ · 머리 쏘기 22○ · 맞기 8cm·2°○·동작 0.30초○
+  ·   두 발·Tripo (산적): 대기 9.5cm○ · 미끄러짐 걷기 0○·달리기 1○ · 타격 몫 0.55○ · 빠른 때○ · 맞기 0cm·26°○·동작 0.30초○
+  ·   두 발·Meshy (홀린 여창): 대기 6.4cm○ · 미끄러짐 걷기 1○·달리기 1○ · 타격 몫 0.53○ · 빠른 때○ · 맞기 8cm·6°○·동작 0.30초○
+E2E monster_motion_gallery PASS (검사 71)
+E2E ▶ element_status
+  · 무대 = 방 [P: (15, 43), S: (14, 13)], 가로 11.0u
+  · 한기 이동 실측 2.27 / 3.50 = ×0.65 (사양 ×0.65)
+E2E element_status PASS (검사 78)
+E2E ▶ element_ui
+E2E element_ui PASS (검사 13)
+E2E ▶ element_sal
+  · 무대 = 방 [P: (15, 43), S: (14, 13)], 가로 11.0u
+  · 탕약 1초 = 살 없음 +5.81 · 살이 낌 +2.90 (한 병 40 ÷ 7초 = 5.71/초)
+E2E element_sal PASS (검사 42)
+E2E ▶ talisman_targeting
+  · CAPTURE fire_target
+  · CAPTURE ice_ground
+  · CAPTURE bag_tooltip
+  · BLANK_TALISMAN_ENGINE complete
+E2E talisman_targeting PASS (검사 147)
+E2E ▶ talisman_throw
+  · 무대 = 방 [P: (15, 43), S: (14, 13)]
+  · 판 1(화염부): 발사 ID 30968945583335 → 자연 사망에서 기록 [{ "enemy_id": 30962989666276, "shot_id": 30968945583335, "ended": "burst", "live_before_free": true }]
+  · 판 2(빙결부): 발사 ID 30999262016044 → 자연 사망에서 기록 [{ "enemy_id": 30992333021760, "shot_id": 30999262016044, "ended": "burst", "live_before_free": true }, { "enemy_id": 30993540980476, "shot_id": 30999262016044, "ended": "burst", "live_before_free": true }]
+E2E talisman_throw PASS (검사 56)
+E2E ▶ talisman_aoe
+  · fire: 겨눈 자리 (20.0, 0.0, 49.5) · 끝 = ? (radius=1.50)
+  ·   [터지는 순간] #0 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [터지는 순간] #1 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #2 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [터지는 순간] #3 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #4 hp0=15 hp=3.0 화상=true 빙결=false 한기=false
+  ·   [터지는 순간] #5 hp0=15 그대로(반경 밖)
+  ·   [0.5초] #0 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [0.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #2 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [0.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #4 hp0=15 hp=2.0 화상=true 빙결=false 한기=false
+  ·   [0.5초] #5 hp0=15 그대로(반경 밖)
+  ·   [1.5초] #0 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [1.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #2 hp0=3 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [1.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #4 hp0=15 죽음 — 막타 속성=fire · kind=ash play=ash
+  ·   [1.5초] #5 hp0=15 그대로(반경 밖)
+  · fire: 요약 — 맞은 마릿수 3/6 · 죽음 3/6 · 막타 속성 [&"fire"] · 죽음 종류 [&"ash"]
+  · cold: 겨눈 자리 (20.0, 0.0, 49.5) · 끝 = ? (radius=1.50)
+  ·   [터지는 순간] #0 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [터지는 순간] #1 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #2 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [터지는 순간] #3 hp0=3 그대로(반경 밖)
+  ·   [터지는 순간] #4 hp0=15 hp=9.0 화상=false 빙결=true 한기=true
+  ·   [터지는 순간] #5 hp0=15 그대로(반경 밖)
+  ·   [0.5초] #0 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [0.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #2 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [0.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [0.5초] #4 hp0=15 hp=9.0 화상=false 빙결=true 한기=true
+  ·   [0.5초] #5 hp0=15 그대로(반경 밖)
+  ·   [1.5초] #0 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [1.5초] #1 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #2 hp0=3 죽음 — 막타 속성=cold · kind=shatter play=shatter
+  ·   [1.5초] #3 hp0=3 그대로(반경 밖)
+  ·   [1.5초] #4 hp0=15 hp=9.0 화상=false 빙결=false 한기=true
+  ·   [1.5초] #5 hp0=15 그대로(반경 밖)
+  · cold: 요약 — 맞은 마릿수 3/6 · 죽음 2/6 · 막타 속성 [&"cold"] · 죽음 종류 [&"shatter"]
+E2E talisman_aoe PASS (검사 16)
+E2E ▶ loot_drop
+  · 광선 사다리 (#638): 심 밝기 [1.5, 1.9, 2.3, 2.7] · 굵기 [1.0, 1.0, 1.3, 1.6] · 높이 [2.0, 2.0, 2.3, 2.6] (매직·희귀·세트·유니크)
+  · 광선·점광 상한: 22개 한 점 → 매 프레임 최대 광선 6 · 점광 8 (후보 광선 14 · 점광 22)
+E2E loot_drop PASS (검사 55)
+E2E ▶ potion_icons
+  · #599 여섯 병: 다 마신 직후 생명 +6.43 · 1초 뒤 7.4 → 44.0 · 영약 끝 5.00초(도력 166.0000) · 탕약 끝 7.00초(생명 261.0000)
+  · #599 겹침 끔: 알림 ["탕약 기운이 아직 돈다"] · 던전 1층 → 귀환문 → 마을을 지나 생명 1 → 41.0000
+E2E potion_icons PASS (검사 57)
+E2E ▶ potion_tiers
+E2E potion_tiers PASS (검사 10)
+E2E ▶ loot_props
+E2E loot_props PASS (검사 19)
+E2E ▶ elite_pack
+  · 층 지역 레벨 2
+E2E elite_pack PASS (검사 52)
+E2E ▶ elite_slots
+  · 시드 3340239649 · 무리 11/18 · 구간 2 · 레벨 2 · 산적 ×4 · 강화 fierce
+  · 시드 160326318 · 방 3 (깊이 0.71) · 산적 · 대머리 판돌이 + 하수인 4 · 옵션 cold_enchanted
+E2E elite_slots PASS (검사 31)
+E2E ▶ flee_chase
+  · 띠 첫 자리 (12.5, 0.0, 53.5) (들머리에서 12.1u)
+  · 표 — 판 · 붙잡음(첫 칼) · 닿음 · 휘두름 · 도망친 거리 · 물러나는 빠르기(가운데/최대) | 맞은 뒤 4초: 멀어지며 걸은 시간·거리 · 공격 시작 · 첫 공격 · 닿은 공격 · 적 칼 맞음/휘두름 · 적이 움직인 거리
+  · 부적술사      걷기 3.00 | 붙잡음 2.05초 · 닿음 1.77초 · 휘두름 1 · 도망친 거리 3.08u (1.47초) · 물러나는 빠르기 2.10/2.10 | 맞은 뒤: 멀어지며 0.00초 0.00u · 공격 시작 2 · 첫 공격 0.37초 · 닿은 공격 2 · 적 칼 맞음 4/4 · 움직인 거리 0.81u
+  · 박쥐        걷기 4.50 | 붙잡음 0.97초 · 닿음 0.68초 · 휘두름 1 · 도망친 거리 2.15u (0.68초) · 물러나는 빠르기 3.15/3.15 | 맞은 뒤: 멀어지며 0.00초 0.00u · 공격 시작 1 · 첫 공격 2.43초 · 닿은 공격 2 · 적 칼 맞음 4/4 · 움직인 거리 0.59u
+  · 날랜 박쥐     걷기 6.08 | 붙잡음 1.02초 · 닿음 0.73초 · 휘두름 1 · 도망친 거리 2.35u (0.73초) · 물러나는 빠르기 3.20/3.20 | 맞은 뒤: 멀어지며 0.00초 0.00u · 공격 시작 2 · 첫 공격 1.55초 · 닿은 공격 3 · 적 칼 맞음 4/4 · 움직인 거리 0.94u
+E2E flee_chase PASS (검사 35)
+E2E ▶ verify_flows
+E2E verify_flows PASS (검사 16)
+E2E ▶ player_death
+E2E player_death PASS (검사 27)
+E2E ▶ wall_cutaway
+  · stand=(48, 51) wall=(49, 52) player=(48.5, 0.000391, 51.5) 후보 116칸
+E2E wall_cutaway PASS (검사 17)
+E2E ▶ floor_seams
+  · 헤드리스 — 밝기 실측 생략
+E2E floor_seams PASS (검사 3)
+E2E ▶ floor_layers
+  · 길 (23, 11) → (23, 23) · 발소리 11번 · 판정 9번 (경계 둘레 2번 셈 밖) · 큐 ["step_stone", "step_dirt"]
+E2E floor_layers PASS (검사 27)
+E2E ▶ char_light
+  · 마을: 키 0.450 오는 쪽 (0.067, 0.643, 0.763) · 보조 0.060 오는 쪽 (-0.079, 0.423, -0.903) (카메라 자리 (0.577, 0.577, 0.577))
+  · 헤드리스 — town 스윕 [0.15, 0.45, 0.8] 픽셀 실측 생략 (배우 5명 · glTF 기본값 금속 재질 0)
+  · 던전 1층: 키 0.350 오는 쪽 (0.067, 0.643, 0.763) · 보조 0.047 오는 쪽 (-0.079, 0.423, -0.903) (카메라 자리 (0.577, 0.577, 0.577))
+  · 헤드리스 — dungeon 스윕 [0.35, 0.8, 1.5] 픽셀 실측 생략 (배우 5명 · glTF 기본값 금속 재질 0)
+  · 보스 층: 키 0.350 오는 쪽 (0.067, 0.643, 0.763) · 보조 0.047 오는 쪽 (-0.079, 0.423, -0.903) (카메라 자리 (0.577, 0.577, 0.577))
+E2E char_light PASS (검사 107)
+E2E ▶ town_layout
+  · 광장→입구 내비 경로 41.7u
+  · 갈대 154포기
+  · 헤드리스 — 갈대 MultiMesh 인스턴스 = 심은 목록 대조 생략 (더미 렌더러는 인스턴스 값 0)
+  · 못골 가림 옅게(#702 T) — 나무 13그루 · 등록 재질 3
+  · 못골 그림자 켠 방향광 1 · 카메라 시선과 내적 최대 0.9856 (문턱 0.9995)
+  · 돌담 마디 66 · 바위 190 · 울타리 마디 10
+  · 문짝 쪽 대시 정지 — 문 좌표 (-0.236755, 1.523116) (빈 홈 앞면 z 0.76)
+E2E town_layout PASS (검사 80)
+E2E ▶ town_approach
+  · 문턱까지 클릭 주행 11.90s (캡처·입력 대기 포함)
+  · 가운데 빈 홈 클릭 → 도호 선 자리 문 좌표 (-0.499235, 2.770941) (클릭점 = (0, 2.3))
+E2E town_approach PASS (검사 139)
+E2E ▶ bgm_hooks
+  · 다 잡고 원래 곡까지 5.86초 (나오기 6초 · 재는 간격 0.25초)
+E2E bgm_hooks PASS (검사 23)
+E2E ▶ ui_windows
+E2E ui_windows PASS (검사 65)
+E2E ▶ story_cutin
+  · 사설 가장 긴 줄 869 / 글 폭 1101 px (화면 (1280.0, 720.0)) 「그날 이후 괴질이 돌았으니라! 옛 도사들이 걸어 둔 봉인이 새어 병이 번져 방방곡곡 휘몰아쳐—」
+  · 컷인 조우 before tick=85110 intro=false signals=0 visible=false kind= paused=true menu=false distance=4.000
+  · 컷인 조우 after tick=85111 delta=1 opened=true intro=true signals=1 visible=true kind=boss paused=true menu=false
+  · 컷인 Esc tick=85113 intro=true signals=1 visible=false paused=false menu=false
+E2E story_cutin PASS (검사 32)
+E2E ▶ dialogue_band
+  · 이름표 글꼴 = 궁서
+E2E dialogue_band PASS (검사 78)
+E2E ▶ dialogue_event
+E2E dialogue_event PASS (검사 50)
+E2E ▶ dialogue_choices
+E2E dialogue_choices PASS (검사 46)
+E2E ▶ dialogue_esc_menu
+E2E dialogue_esc_menu PASS (검사 53)
+E2E ▶ ui_docks
+  · none camera settled, player x=640.00
+  · right camera settled, player x=424.00
+  · right after pickup camera settled, player x=424.00
+  · left camera settled, player x=856.00
+  · left after movement camera settled, player x=857.49
+  · both camera settled, player x=640.29
+  · skills and bag camera settled, player x=640.17
+  · Esc restores center camera settled, player x=640.11
+  · dialog alone camera settled, player x=641.40
+  · vendor and bag camera settled, player x=640.00
+  · after vendor close camera settled, player x=640.00
+  · waypoint alone camera settled, player x=854.56
+  · waypoint and bag camera settled, player x=639.72
+  · final center camera settled, player x=639.83
+E2E ui_docks PASS (검사 61)
+E2E ▶ ui_tooltips
+E2E ui_tooltips PASS (검사 108)
+E2E ▶ belt_unify
+E2E belt_unify PASS (검사 15)
+E2E ▶ item_ui
+E2E item_ui PASS (검사 41)
+E2E ▶ skill_picker
+E2E skill_picker PASS (검사 303)
+E2E ▶ skill_icons
+  ✗ 회오리 + 투자 → 최대 레벨 (기대 10, 실제 1)
+  ✗ 최대 레벨까지 투자 포인트 소모 (기대 0, 실제 9)
+  ✗ K로 술법창 다시 열림
+E2E skill_icons FAIL (검사 108, 실패 3)
+E2E ▶ skill_names
+  · slash | 참격 | 머리 위에서 칼을 내려쳐 부채꼴로 벤다 | 설명 1줄 · 툴팁 284×229
+  · dash_strike | 돌진베기 | 앞으로 뛰어 지나치며 적을 벤다 | 설명 1줄 · 툴팁 261×229
+  · whirl | 회오리베기 | 몸이 한 바퀴 돌며 둘레를 벤다 | 설명 1줄 · 툴팁 261×229
+  · sword_mastery | 검 숙련 | 칼 쓰는 손이 익는다 — 칼 피해·명중·치명 | 설명 1줄 · 툴팁 296×229
+  · combo | 연격 | 평타 셋째 타에 힘을 싣는다 — 막타는 베어 가른다 | 설명 1줄 · 툴팁 356×229
+  · flurry | 연속 베기 | 한 적을 연속으로 벤다. 끝타 150%, 맞히면 기세 공속 +10%(최대 3겹), 2.5초 안 치면 해제 | 설명 1줄 · 툴팁 613×229
+  · leap_slash | 도약 베기 | 커서 자리로 뛰어올라(걸어서 닿는 곳, 최대 6칸) 착지와 동시에 둘레를 벤다 — 맞은 적은 잠깐 굳는다 | 설명 2줄 · 툴팁 620×251
+  · first_cut | 첫 칼 | 어깨에 칼을 걸친 세 — 쉬다 치는 첫 한 칼은 치명 확정 | 설명 1줄 · 툴팁 382×179
+  · blade_storm | 칼바람 | 누르는 동안 걸으며 계속 돈다 — 보이는 도력은 여러 바퀴 몫 | 설명 1줄 · 툴팁 423×229
+  · breath | 조식 | 숨을 가다듬으면 도력이 돌아온다 — 회복·최대 도력 | 설명 1줄 · 툴팁 367×229
+  · blink | 축지법 | 땅을 접어 한 걸음에 닿는다 — 걸어서 갈 수 있는 곳만, 벽 너머는 못 간다 | 설명 1줄 · 툴팁 503×229
+  · mana_shield | 도력 방패 | 도력이 앞에서 맞아 준다 — 도력이 다하면 꺼진다 | 설명 1줄 · 툴팁 352×229
+  · clone | 분신술 | 먹으로 그린 내가 적을 끌고 칼을 휘두른다 | 설명 1줄 · 툴팁 303×179
+  · light_step | 경공 | 몸이 가벼워 발이 빨라진다 — 이동·회피 | 설명 1줄 · 툴팁 288×229
+  · iron_body | 금강불괴 | 몸이 쇠처럼 굳는다 — 받는 물리 피해가 준다 | 설명 1줄 · 툴팁 322×179
+  · hide | 은형술 | 몸을 감춘다 — 감춘 채 치는 첫 칼이 제일 세다 | 설명 1줄 · 툴팁 330×179
+  · fire_lore | 화염부 | 빈 부적 한 장에 화염부를 써서 던진다 | 설명 1줄 · 툴팁 273×229
+  · ice_lore | 빙결부 | 빈 부적 한 장에 빙결부를 써서 던진다 | 설명 1줄 · 툴팁 273×229
+  · pouch | 부적 주머니 | 빈 부적을 아껴 쓴다 — 아끼기 2%/점, 장비와 합계 최대50% | 설명 1줄 · 툴팁 421×229
+  · seal_array | 부적 진 | 배운 속성을 골라 빈 부적 한 장으로 바닥에 진을 친다 | 설명 1줄 · 툴팁 375×229
+  · thunder_lore | 벽력부 | 빈 부적 한 장에 벽력부를 써서 던진다 | 설명 1줄 · 툴팁 273×229
+  · scatter | 부적 흩뿌리기 | 우클릭으로 던진 부적 한 장이 부채꼴로 갈라진다 — 한 장 값 | 설명 1줄 · 툴팁 423×229
+  · talisman_rain | 부적 비 | 가방의 빈 부적 최대15장을 한꺼번에 비처럼 쏟는다 — 아끼기 없음 | 설명 1줄 · 툴팁 467×229
+  · salpuri | 살풀이 | 빈 부적 한 장으로 살을 씻고 잠시 살을 막는다 | 설명 1줄 · 툴팁 326×229
+  · 24칸 화면 원시 기록 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/skill_names_manifest.json
+E2E skill_names PASS (검사 272)
+E2E ▶ vfx_cues
+  · 횃불 흔들림 0.8초: 세기 1.66~2.39 · 반경 6.75~7.26 · 빛 자리 최대 0.098유닛 · 빛 속 먼지 점 1152 · 티끌 320 (횃불 48)
+  · 선딜 예고 pos=(44.5, 0.035391, 56.5) 적=(44.5, 0.000391, 56.5) 화면=(593.7152, 331.4082) 반지름=0.49 차오름=0.00
+  · 처치 5연속: 동시 단발 최고 17/24 · body_fall 5 · hit_spark 0
+  · 레벨업 道: 발 위 4.30 · 칸 15장 · 흩어짐 0.36(1.55초) · 사라짐 2.02초
+  · 흑랑 포효: 怒 발 위 2.74 · 먹 파문 시트 4장(바깥 흰 테 + 검은 먹 · 안쪽 흰 테 + 검은 먹) · 카메라 킥 0.2 · 怒 사라짐 1.42초
+  · 포효 怒 높이: 몸 꼭대기 흑랑 1.74 · 구미호 2.17 · 장산범 2.10 · 불가살이 2.33 (+1.0 = 怒 가운데)
+  · 寶(유니크 + 봉인 조각 한 무리): 寶 1번 · 착지 큐 1번 · 유니크가 앉은 뒤 1.74초에 사라짐
+  · 루프 54 · 단발 2
+E2E vfx_cues PASS (검사 166)
+E2E ▶ area_title
+E2E area_title PASS (검사 70)
+E2E ▶ ink_transition
+E2E ink_transition PASS (검사 62)
+E2E ▶ vfx_cap_blood
+  · #395 (고친 뒤) — 둘째 킬 직전 살아 있는 단발 22/24(장식성 패딩 20개) · 새로 생겼나=true · 킬 뒤 살아있는 단발 24 · 피 전용 4/24
+E2E vfx_cap_blood PASS (검사 3)
+E2E ▶ vfx_cap_comfort
+  · 절정(기본) — 부른 큐 201 · 파문 1 · 생략 { "hit": 15, "hit_sparks": 16, "hit_ink": 16, "hit_spark": 16, "enemy_hurt": 8 } · 밀림 { "hit": 1 }
+  · ── 표 (#636 V11 — 같은 자리·16몸·회오리 10레벨, design/vfx_rework_2026-10-04.md §4.3)
+  · 표 | 조용(이펙트 없음) — 프레임 6.89ms(최고 8.21, 147프레임) · GPU = 창 모드(지휘) · 점광 최고 0/8 · 공용 최고 0/24 · 조각 최고 0/32 · 흔들림 최고 0.000u
+  · 표 | 절정 빛 켬 — 프레임 6.91ms(최고 22.33, 259프레임) · GPU = 창 모드(지휘) · 점광 최고 8/8 · 공용 최고 24/24 · 조각 최고 32/32 · 흔들림 최고 0.137u
+  · 표 | 절정 줄이기(빛·화면·흔들림 0) — 프레임 6.88ms(최고 20.51, 262프레임) · GPU = 창 모드(지휘) · 점광 최고 0/8 · 공용 최고 24/24 · 조각 최고 32/32 · 흔들림 최고 0.000u
+  · 표 | GPU 시간 = 창 모드에서만 — 지휘: .\tools\test.ps1 -E2e -Scenario vfx_cap_comfort -Windowed
+E2E vfx_cap_comfort PASS (검사 20)
+E2E ▶ hit_blood
+  · ④ 흘림 40%: 자국 4 · 간격 ["0.87", "0.87", "0.88"] (기대 0.83u)
+  · ⑨ 회오리 8: hit 8 · hit_spark 8 · 평소 피 8 · 생략 공용 0 · 평소 피 0 · 뿜음 0 · 피 칸 8/24 · 공용 18/24
+  · ⑩ 잡몹 막타 멈춤: 값 0.22 · 맞은 몸 0.233 · 도호 0.233초
+  · ⑩ 우두머리 막타 멈춤: 값 0.28 · 맞은 몸 0.283 · 도호 0.283초
+  · ⑩ 네임드 막타 멈춤: 값 0.30 · 맞은 몸 0.317 · 도호 0.317초
+E2E hit_blood PASS (검사 73)
+E2E ▶ skill_area
+  · 참격: 반지름 2.20 · 각 120° · 칼이 닿는 시각 0.60초
+  · slash 타격 관측 physics=true · 물리시간 0.61666666666610581 · 실제틱 0.01666666666666667
+  · 회오리베기: 반지름 2.50 · 칼이 닿는 시각 0.45초
+  · whirl 타격 관측 physics=true · 물리시간 0.46666666666624224 · 실제틱 0.01666666666666667
+  · 돌진베기: 길이 5.00 (벽에서 끊김 반영) · 반폭 1.10 · 칼이 닿는 시각 0.55초
+  · dash 타격 관측 physics=true · 물리시간 0.54999999999949978 · 실제틱 0.01666666666666667
+E2E skill_area PASS (검사 93)
+E2E ▶ skill_tiers
+  · Lv1: 반경 2.50 → 2.50(배수 1.00) · 타수 1 · 이펙트 등급 0(화면 판단)
+  · Lv5: 반경 2.50 → 3.50(배수 1.40) · 타수 1 · 이펙트 등급 1(화면 판단)
+  · Lv10: 반경 2.50 → 3.50(배수 1.40) · 타수 2 · 이펙트 등급 2(화면 판단)
+E2E skill_tiers PASS (검사 72)
+E2E ▶ aoe_skills
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 도호 (47.32843, 0.0, 59.32843) (화면 아래 4.0u) · 트임 4.0
+  · 도약 베기 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&""] · 죽음 [&"slide", &"gibs"] · 경직 [0.59999999999991, 0.59999999999991, 0.59999999999991]
+  · fire 진 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&"fire"] · 죽음 [&"ash"] · 틱 5
+  · cold 진 요약 — 맞음 6/6 · 죽음 3 · 막타 속성 [&"cold"] · 죽음 [&"shatter"] · 틱 10
+E2E aoe_skills PASS (검사 66)
+E2E ▶ aoe_skills_2
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 트임 3.6 · 화면 위쪽 (-0.707107, 0.0, -0.707107)
+  · 칼바람 요약 — 바퀴 9(누른 동안 9) · 박자 0.302초 · 도력 18.0 · 맞힌 합 28 · 맞음 7/7 · 죽음 4 [&"cleave", &"slide"] · 앞으로 6.4u · 뗀 뒤 0.27초에 섬
+  · 흩뿌리기 요약 — 장당 맞힌 수 [3, 2, 2] · 맞음 6/7 · 죽음 3 [&"ash"]
+  · 부적 비 요약 — 6장 · 맞음 7/7 · 죽음 4 [&"ash"] · 버티는 몸 타는 중 3
+E2E aoe_skills_2 PASS (검사 63)
+E2E ▶ build_changers
+  · 무대 = 한가운데 (44.5, 0.0, 56.5) · 도호 (47.32843, 0.0, 59.32843) (화면 아래 4.0u) · 트임 4.0
+  · 처형 — 죽음 cleave/cleave · 면 h
+  · 망나니 칼 요약 — 대조 환도 남은 생명 131 · 처형 한 대 · 두 동강 4/8
+  · 도깨비불 요약 — 첫 불씨 3 · 무리 재 6/6
+  · 이무기 비늘 요약 — 3점 반경 2.50 → 3.50 · 5점 바퀴 1 → 2
+  · 사인참사검 요약 — 진 셋 쳐서 선 수: 사인검 2 → 사인참사검 3
+  · 본국검 요약 — 맞은 수 보통 [1, 0, 0, 0] → 검기 [1, 1, 1, 1] · 검기 길이 6.8
+E2E build_changers PASS (검사 88)
+E2E ▶ body_arts
+  · 벽 너머 짝 = (39.5, 0.0, 51.5) → (37.0, 0.0, 51.5) (2.5u · 길 10.1)
+E2E body_arts PASS (검사 76)
+E2E ▶ dungeon_layout
+  · 1층 격자 64x64 · 방 6 (한 변 8~14) · 걷는 칸 882(복도 126) · 적 20 { "bandit": 15, "bat": 5 } · 보스 0 · 횃불 48 · 소품 1
+  · 1층 모양 갈래 { "bandit_v2": 7, "bandit_v2_dagger": 8 } · 두 갈래가 같이 있는 방 4곳 [1, 2, 4, 5]
+  · 2층 격자 28x28 · 방 2 (한 변 7~14) · 걷는 칸 274(복도 45) · 적 2 { "bat": 2 } · 보스 1 · 횃불 16 · 소품 1
+  · 2층 모양 갈래 {  } · 두 갈래가 같이 있는 방 0곳 []
+E2E dungeon_layout PASS (검사 42)
+E2E ▶ beomgul_walk
+  · 1층 64x64 · 적 40 · 명단 ["hwajeok", "changgwi", "eorin_jangsanbeom"] · 장식 ["Rock 50", "RuinStone 68", "Bones 20", "Fur 12"] · 정예 자리 1
+  · 2층 64x64 · 적 20 · 명단 ["hwajeok", "changgwi", "eorin_jangsanbeom"] · 장식 ["Rock 34", "RuinStone 54", "Bones 22", "Fur 16"] · 정예 자리 1
+  · 3층 32x30 · 적 2 · 명단 ["eorin_jangsanbeom"] · 장식 ["Rock 12", "RuinStone 16", "Bones 9", "Fur 3"] · 정예 자리 0
+  · #691 장산범 멈춤 · 처음 파수 2 치움 — 같은 자리에 쉬는 어린 장산범 둘을 세운다
+E2E beomgul_walk PASS (검사 76)
+E2E ▶ mine_walk
+  · 1층 64x64 · 적 20 · 명단 ["plague_miner", "cave_bat", "soemeogi"] · 장식 { "Crate": 1, "Woodpile": 1, "Slag": 34, "RuinStone": 17, "Bones": 9, "Timber": 15, "Chain": 3, "ChainFloor": 3, "Rail": 27, "OreCart": 1 } · 정예 자리 1 · 네임드 (-1, -1)
+  · 2층 64x64 · 적 26 · 명단 ["plague_miner", "soemeogi", "yacha", "nachalnyeo"] · 장식 { "SlagHeap": 1, "Slag": 38, "RuinStone": 18, "Bones": 8, "Timber": 24, "Chain": 2, "ChainFloor": 2, "Rail": 47, "OreCart": 1 } · 정예 자리 2 · 네임드 (50, 21)
+  · 3층 32x30 · 적 2 · 명단 ["soemeogi"] · 장식 { "Slag": 27, "RuinStone": 6, "Bones": 2, "Timber": 6, "Chain": 7, "ChainFloor": 10, "Rail": 13 } · 정예 자리 0 · 네임드 (-1, -1)
+E2E mine_walk PASS (검사 79)
+E2E ▶ bongmil_walk
+  · 첫 접근 혼잣말 — 닿음까지 0.52초 (줄 2.6초 · 미룸 2.70초)
+  · 1층 72x72 · 적 46 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "yeou"] · 장식 { "Stele": 2, "SteleFallen": 8, "PaperBits": 47, "Bones": 15, "RuinStone": 54, "RopeIntact": 19 } · 정예 자리 2 · 네임드 (-1, -1) · 봉인석 [(26, 29), (33, 39), (30, 55)] · 고리 [(0, 2), (2, 5), (1, 9)]
+  · 2층 72x72 · 적 35 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "yeou"] · 장식 { "SteleFallen": 4, "PaperBits": 42, "Bones": 16, "RuinStone": 29, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (-1, -1) · 봉인석 [(23, 20), (31, 12), (45, 7)] · 고리 [(4, 6), (3, 4), (0, 2), (4, 8)]
+  · 3층 72x72 · 적 33 · 명단 ["hollin_yeogung_bow2", "hollin_yeogung_spear", "yeou", "wang_geomi"] · 장식 { "Stele": 1, "SteleFallen": 2, "PaperBits": 38, "Bones": 16, "RuinStone": 40, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (6, 61) · 봉인석 [(22, 44), (59, 11), (63, 39)] · 고리 [(7, 8), (3, 8), (2, 6)]
+  · 4층 32x30 · 적 3 · 명단 ["yeou", "yeoubul"] · 장식 { "PaperBits": 8, "Bones": 6, "RuinStone": 11, "RopeIntact": 2 } · 정예 자리 0 · 네임드 (-1, -1) · 봉인석 [] · 고리 []
+E2E bongmil_walk PASS (검사 165)
+E2E ▶ room_props
+  · 흑랑 굴 1층 소품 9 · 역할 { &"mouth": 6, &"nook": 3 } · 막는 칸 0
+  · 흑랑 굴 2층 소품 7 · 역할 { &"mouth": 2, &"lair": 5 } · 막는 칸 0
+  · 봉밀굴 1층 소품 6 · 역할 { &"seal": 6 } · 막는 칸 6
+  · 봉밀굴 4층 구미원 소품 8 · 역할 { &"stage": 8 } · 막는 칸 4
+  · 흑랑 굴 1층(다른 시드) 소품 9 · 역할 { &"mouth": 6, &"nook": 3 } · 막는 칸 0
+  · 봉밀굴 2층(다른 시드) 소품 6 · 역할 { &"seal": 6 } · 막는 칸 6
+E2E room_props PASS (검사 90)
+E2E ▶ town_exits
+E2E town_exits PASS (검사 8)
+E2E ▶ field_layout
+  · 자리 10곳 · 모닥불 3 · 자리 둘레 소품 69
+  · 들녘 모양 갈래 { "bandit_v2_dagger": 35, "bandit_v2": 28 } · 산적 있는 무리 18 중 두 갈래가 섞인 무리 16
+  · 들녘 적 76 { 1: 23, 2: 26, 3: 27 } · 장식 2263 · 무리 18 · 서낭단 (62, 65)
+  · 거대 건축물 자리 { "fort_lintel": (119.5388, 38.16928), "stone_pagoda": (89.5, 45.5), "flag_pillar": (87.0, 48.0) } · 폐사지 닻 칸 (88.5, 0.0, 44.5)
+  · 들녘 가림 옅게(#702 T) — 소나무 151그루(테두리 609) · 신목 3 · 당산나무 1(GiantFade) · 등록 재질 3
+  · 들녘 그림자 켠 방향광 1 · 카메라 시선과 내적 최대 0.9919 (문턱 0.9995)
+E2E field_layout PASS (검사 41)
+E2E ▶ field2_layout
+  · 정령재 적 61 { 4: 19, 5: 20, 6: 13, 7: 9 } · 장식 2810 · 소나무 1026 · 무리 13 · 서낭단 (61, 66)
+  · 정령재 가림 옅게(#702 T) — 소나무 1026그루(테두리 926) · 신목 2 · 당산나무 0(GiantFade) · 등록 재질 3
+  · 정령재 그림자 켠 방향광 1 · 카메라 시선과 내적 최대 0.9919 (문턱 0.9995)
+E2E field2_layout PASS (검사 29)
+E2E ▶ gate_hover
+E2E gate_hover PASS (검사 6)
+E2E ▶ pack_density
+  · 정령재 첫 무리(레벨 4 · 구간 1) 자리 둘레 4칸 적 2(무리 배정 2몸) · 층 총 적 61 · 무리 수 13
+  · 범굴 1층 첫 방((12, 14)) 적 3 · 층 총 적 40
+E2E pack_density PASS (검사 2)
+E2E ▶ slice_loop
+E2E slice_loop PASS (검사 29)
+E2E ▶ plaza_light
+  · 환경광 0.18 · 해 0.33 · 등롱 2.20/4.6 · 플레이어 빛 1.40/4.5 · 캐릭터 빛 0.45
+E2E plaza_light PASS (검사 8)
+E2E ▶ town_tour
+E2E town_tour PASS (검사 2)
+E2E ▶ aoe_field
+E2E aoe_field PASS (검사 20)
+E2E ▶ long_body
+E2E long_body PASS (검사 13)
+E2E ▶ named_imugi
+  · 이무기 잠수 높이 실측 — 잠수 전 y 0.000 · 솟은 몸 y 0.000 · 꼬리 첫 마디 y 0.000
+E2E named_imugi PASS (검사 19)
+E2E ▶ named_gaksi
+E2E named_gaksi PASS (검사 19)
+E2E ▶ serpent_models
+E2E serpent_models PASS (검사 18)
+E2E ▶ pus_jar
+E2E pus_jar PASS (검사 15)
+E2E ▶ roles
+E2E roles PASS (검사 24)
+E2E ▶ roster_swap
+E2E roster_swap PASS (검사 19)
+E2E ▶ gimmicks_m10
+  · 매복 관측: entry=1840.877921 rising=true rise_at=1840.894588 rise_left=0.583333 up=true up_at=1841.477921 rises=1 elapsed=0.600000 · entry→rise=0.016667 rise→up=0.583333 render_seen_after=0.000000
+  · 끌림 실측 3.700u (정격 3.700 = 4.65 − 몸 0.35 − stop 0.6)
+E2E gimmicks_m10 PASS (검사 26)
+E2E ▶ behaviors_m9
+  · ① 선 자리 거리 들개 6.0 · 넋 6.0 · 혼불 6.0
+  · ① 도호 쪽 빠르기 들개 4.50 · 넋 2.34 · 혼불 4.62 · 넋 흔들림 최대 53°
+E2E behaviors_m9 PASS (검사 13)
+E2E ▶ female_f1
+E2E female_f1 PASS (검사 7)
+E2E ▶ female_float
+E2E female_float PASS (검사 5)
+E2E ▶ yeogung_attacks
+  · ① 동작 보고 줄 — 같은 틱 선딜(피해 = 선딜 끝 · 타격 몫 목표 0.50~0.70 · 치는 곳 가장 빠른 때 = 선딜 끝 ± 0.08초, 2u/s 이상):
+  ·   두 발·Meshy (홀린 여창): 선딜 0.40초 · 잠금 0.75초 · 클립 attack_spear 0.75초 × 1.00배 · 타격 몫 0.53 ○ · 가장 빠른 때 0.397초(타격 -0.003) ○ · 9.5u/s
+  ·   두 발·Meshy (홀린 여궁): 선딜 0.45초 · 잠금 0.75초 · 클립 attack_bow 0.75초 × 1.00배 · 타격 몫 0.60 ○ · 놓는 때 0.450초(타격 -0.000) ○ · 놓을 때 활 팔 0.4° ○ · (참고) 손 가장 빠른 때 0.599초(+0.149) · 6.5u/s
+  · 여창 한 판: 돌진 끝에서 건 벌 1 · 쿨 동안 건 벌 0 · 낸 대 3 · 닿은 대 3 · 도호 생명 99/110
+E2E yeogung_attacks PASS (검사 11)
+E2E ▶ nachalnyeo_attacks
+  · 홀림 실측: 첫 예고 깨어난 뒤 3.02초 · 예고 0.98초 · 끌림 3.500u(정격 3.500) → 나찰녀 앞 1.50칸 · 스침 끌림 +0.37초 · 도호 생명 106/110
+E2E nachalnyeo_attacks PASS (검사 16)
+E2E ▶ m14_models
+  · 줄 가운데 = (76.5, 0.0, 74.5) (서낭단 닻 (64, 66))
+  · 모양: hollin_yeogung_bow=hollin_yeogung, hollin_yeogung_spear=hollin_yeogung_spear, plague_dog=plague_dog, honbul=honbul, tteodoneun_neok=sobok_gwisin, gaekgwi=sobok_gwisin, mulgwishin=sobok_gwisin, nachalnyeo=nachalnyeo
+E2E m14_models PASS (검사 13)
+E2E ▶ leader_options
+  · 축지 — 도호 곁 1.94칸 · 맞고 옆으로 4.47칸 (잣대 2.29~5.71)
+E2E leader_options PASS (검사 20)
+E2E ▶ surround
+  · 제 자리 0.5u 안 9 (무리가 8 넘은 아홉째는 더 걸어야 하는 바깥 자리 포함)
+E2E surround PASS (검사 7)
+E2E ▶ weapon_visibility
+E2E weapon_visibility PASS (검사 25)
+E2E ▶ first_magic
+E2E first_magic PASS (검사 18)
+E2E ▶ hover_target
+E2E hover_target PASS (검사 83)
+E2E ▶ system_menu
+E2E system_menu PASS (검사 83)
+E2E ▶ walk_audit
+  · motgol_0 걷는 칸 358 · 소품 589 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 15 · R10 52 · R1F 0 · R1hF 0
+  · deulnyeok_0 걷는 칸 13210 · 소품 5742 · R1 0 · R1h 4 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 16 · R10 0 · R1F 50 · R1hF 325
+  · heukrang_gul_1 걷는 칸 881 · 소품 47 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 7 · R10 2 · R1F 0 · R1hF 0
+  · heukrang_gul_2 걷는 칸 273 · 소품 17 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 1 · R10 0 · R1F 0 · R1hF 0
+  · jeongnyeongjae_0 걷는 칸 16962 · 소품 6115 · R1 0 · R1h 3 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 15 · R10 0 · R1F 658 · R1hF 4332
+  · beomgul_1 걷는 칸 1385 · 소품 188 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 4 · R10 1 · R1F 0 · R1hF 0
+  · beomgul_2 걷는 칸 1189 · 소품 161 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 4 · R10 1 · R1F 0 · R1hF 0
+  · beomgul_3 걷는 칸 355 · 소품 52 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 4 · R10 1 · R1F 0 · R1hF 0
+  · soeburi_1 걷는 칸 815 · 소품 145 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 6 · R1F 0 · R1hF 0
+  · soeburi_2 걷는 칸 1152 · 소품 179 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 6 · R10 14 · R1F 0 · R1hF 0
+  · soeburi_3 걷는 칸 343 · 소품 79 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 3 · R10 4 · R1F 0 · R1hF 0
+  · bongmil_gul_1 걷는 칸 1616 · 소품 195 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 8 · R1F 0 · R1hF 0
+  · bongmil_gul_2 걷는 칸 1335 · 소품 156 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 8 · R1F 0 · R1hF 0
+  · bongmil_gul_3 걷는 칸 1379 · 소품 152 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 6 · R1F 0 · R1hF 0
+  · bongmil_gul_4 걷는 칸 390 · 소품 59 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 2 · R10 0 · R1F 0 · R1hF 0
+E2E walk_audit PASS (검사 166)
+E2E SUMMARY: 157/158 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tmp\e2e_raw\20261012T2347456135712_19372\phase_1_shared
+  e2e  (2128.6초) — 제한 3600초
+  ⏳ 다른 자리가 먼저 단독 차례 (775-bulk-judge · pid 33584 · 08:57 · 단독 대기(시간 민감 묶음)) — 그 뒤에 이어서 돈다
+  ⏳ 다른 자리가 먼저 단독 차례 (775-bulk-judge · pid 33584 · 09:23 · 단독(시간 민감 묶음)) — 그 뒤에 이어서 돈다
+  ⏳ 단독(시간 민감 묶음) — 공유 칸 1/3 아직 도는 중: ① agent-aee44a88609291f92 · pid 26528 · 09:26 · 공유 — 끝나면 혼자 돈다 (새 공유는 막아 둠)

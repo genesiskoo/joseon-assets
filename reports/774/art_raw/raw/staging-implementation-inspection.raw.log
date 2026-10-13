@@ -1,0 +1,21 @@
+Get-Content: 
+Line |
+   2 |  Get-Content ui/skill_picker.gd
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\ui\skill_picker.gd' because it does not exist.
+
+rg: tests/e2e/scenarios/*skill*: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)
+rg: tests/test*skill*: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)
+
+Get-Content: 
+Line |
+   2 |  Get-Content core/skill_tree_def.gd; Get-Content core/skill_def.gd | S …
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\core\skill_tree_def.gd' because it does not exist.
+Get-Content: 
+Line |
+   2 |  … Content core/skill_tree_def.gd; Get-Content core/skill_def.gd | Selec …
+     |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\core\skill_def.gd' because it does not exist.
+
+rg: data/skills/*.tres: IO error for operation on data/skills/*.tres: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)

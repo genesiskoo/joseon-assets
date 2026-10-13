@@ -1,0 +1,18 @@
+  PASS  AGENTS.md                            25,985 B / 예산 26,000
+  PASS  docs/DECISIONS.md                    21,973 B / 예산 22,000
+  PASS  docs/STATE.md                        15,916 B / 예산 16,000
+  PASS  세 문서 합                               63,874 B / 예산 70,000
+  PASS  STATE 줄 길이 ≤ 300자                    전부 안
+  PASS  .claude/agents/card-worker.md        4,733 B / 예산 8,000
+  PASS  docs/art 그림·영상 ≤ 2MB                 전부 안 · 400KB 넘는 옛 파일 89개(규약 전 것, 손대지 않음)
+  WARN  docs/design/dialogue_v2.md 61,807 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/dungeon.md 66,045 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/item_system_v2.md 127,748 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monster_motion_v2.md 70,554 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monster_new_types_rules_2026-09-23.md 83,023 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/monsters_v2.md 150,789 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/npcs_v2.md 89,427 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/quest_rework_dialogue_2026-10-01.md 73,384 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/testing.md 105,088 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/ui_v2.md 62,095 B > 60,000 (규칙/기록 가르기 #414·#415)
+  WARN  docs/design/vfx.md 62,227 B > 60,000 (규칙/기록 가르기 #414·#415)

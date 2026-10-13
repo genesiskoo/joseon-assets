@@ -1,0 +1,74 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev · D3D12 · NVIDIA GeForce RTX 4070
+RENDER_INTERP: boot on · jitter_fix=0.00
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E start: skill_icons, skill_names
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ skill_icons
+[Skill] 회오리베기 → mp 42/50
+E2E skill_icons PASS (검사 119)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ skill_names
+  · slash | 참격 | 머리 위에서 칼을 내려쳐 부채꼴로 벤다 | 설명 1줄 · 툴팁 284×229
+  · dash_strike | 돌진베기 | 앞으로 뛰어 지나치며 적을 벤다 | 설명 1줄 · 툴팁 261×229
+  · whirl | 회오리베기 | 몸이 한 바퀴 돌며 둘레를 벤다 | 설명 1줄 · 툴팁 261×229
+  · sword_mastery | 검 숙련 | 칼 쓰는 손이 익는다 — 칼 피해·명중·치명 | 설명 1줄 · 툴팁 296×229
+  · combo | 연격 | 평타 셋째 타에 힘을 싣는다 — 막타는 베어 가른다 | 설명 1줄 · 툴팁 356×229
+  · flurry | 연속 베기 | 한 적을 연속으로 벤다. 끝타 150%, 맞히면 기세 공속 +10%(최대 3겹), 2.5초 안 치면 해제 | 설명 1줄 · 툴팁 613×229
+  · leap_slash | 도약 베기 | 커서 자리로 뛰어올라(걸어서 닿는 곳, 최대 6칸) 착지와 동시에 둘레를 벤다 — 맞은 적은 잠깐 굳는다 | 설명 2줄 · 툴팁 620×251
+  · first_cut | 첫 칼 | 어깨에 칼을 걸친 세 — 쉬다 치는 첫 한 칼은 치명 확정 | 설명 1줄 · 툴팁 382×179
+  · blade_storm | 칼바람 | 누르는 동안 걸으며 계속 돈다 — 보이는 도력은 여러 바퀴 몫 | 설명 1줄 · 툴팁 423×229
+  · breath | 조식 | 숨을 가다듬으면 도력이 돌아온다 — 회복·최대 도력 | 설명 1줄 · 툴팁 367×229
+  · blink | 축지법 | 땅을 접어 한 걸음에 닿는다 — 걸어서 갈 수 있는 곳만, 벽 너머는 못 간다 | 설명 1줄 · 툴팁 503×229
+  · mana_shield | 도력 방패 | 도력이 앞에서 맞아 준다 — 도력이 다하면 꺼진다 | 설명 1줄 · 툴팁 352×229
+  · clone | 분신술 | 먹으로 그린 내가 적을 끌고 칼을 휘두른다 | 설명 1줄 · 툴팁 303×179
+  · light_step | 경공 | 몸이 가벼워 발이 빨라진다 — 이동·회피 | 설명 1줄 · 툴팁 288×229
+  · iron_body | 금강불괴 | 몸이 쇠처럼 굳는다 — 받는 물리 피해가 준다 | 설명 1줄 · 툴팁 322×179
+  · hide | 은형술 | 몸을 감춘다 — 감춘 채 치는 첫 칼이 제일 세다 | 설명 1줄 · 툴팁 330×179
+  · fire_lore | 화염부 | 빈 부적 한 장에 화염부를 써서 던진다 | 설명 1줄 · 툴팁 273×229
+  · ice_lore | 빙결부 | 빈 부적 한 장에 빙결부를 써서 던진다 | 설명 1줄 · 툴팁 273×229
+  · pouch | 부적 주머니 | 빈 부적을 아껴 쓴다 — 아끼기 2%/점, 장비와 합계 최대50% | 설명 1줄 · 툴팁 421×229
+  · seal_array | 부적 진 | 배운 속성을 골라 빈 부적 한 장으로 바닥에 진을 친다 | 설명 1줄 · 툴팁 375×229
+  · thunder_lore | 벽력부 | 빈 부적 한 장에 벽력부를 써서 던진다 | 설명 1줄 · 툴팁 273×229
+  · scatter | 부적 흩뿌리기 | 우클릭으로 던진 부적 한 장이 부채꼴로 갈라진다 — 한 장 값 | 설명 1줄 · 툴팁 423×229
+  · talisman_rain | 부적 비 | 가방의 빈 부적 최대15장을 한꺼번에 비처럼 쏟는다 — 아끼기 없음 | 설명 1줄 · 툴팁 467×229
+  · salpuri | 살풀이 | 빈 부적 한 장으로 살을 씻고 잠시 살을 막는다 | 설명 1줄 · 툴팁 326×229
+  · 24칸 화면 원시 기록 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/skill_names_manifest.json
+E2E skill_names PASS (검사 272)
+E2E SUMMARY: 2/2 PASS
+  E2E skill_icons PASS (검사 119)
+  E2E skill_names PASS (검사 272)
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

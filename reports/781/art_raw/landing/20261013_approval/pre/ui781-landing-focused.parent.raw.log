@@ -1,0 +1,12 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(potion_tiers)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (11.7초)
+== e2e (potion_tiers · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon","--headless","--","--e2e=potion_tiers"],"phase_arg":"potion_tiers","phase_tokens":["potion_tiers"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":30024,"launched_utc":"2026-10-13T12:42:54.3613046Z"}
+E2E start: potion_tiers
+E2E ▶ potion_tiers
+E2E potion_tiers PASS (검사 10)
+E2E SUMMARY: 1/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tmp\e2e_raw\20261013T1242424883702_27860\phase_1_shared
+  e2e  (17.0초) — 제한 3600초
+전부 PASS
