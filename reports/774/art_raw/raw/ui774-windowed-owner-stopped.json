@@ -1,0 +1,794 @@
+{
+  "card": 774,
+  "trial": "Windowed all; owner stopped after cascading asynchronous scenario errors",
+  "overall_verdict": "FAIL / interrupted; not a complete passing suite",
+  "native_session": {
+    "id": 86225,
+    "exit": 1,
+    "confirmed_by": "parent tools.write_stdin"
+  },
+  "engine_phase": {
+    "exit": -1,
+    "timed_out": false,
+    "elapsed_sec": 1838.3101501,
+    "launch": {
+      "schema": 1,
+      "fixed_fps": 0,
+      "exe": "godot",
+      "argv": [
+        "--path",
+        "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+        "--",
+        "--e2e=all"
+      ],
+      "phase_arg": "all",
+      "phase_tokens": [
+        "all"
+      ],
+      "skip": [],
+      "exclusive": true,
+      "contains_balance_boss": true,
+      "combat_trace": false,
+      "launcher_pid": 36740,
+      "launched_utc": "2026-10-12T22:28:43.7222712Z"
+    },
+    "raw_directory": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261012T2134474774612_26820\\phase_1_solo"
+  },
+  "owner_stop": {
+    "godot_pid": 35800,
+    "parent_pid": 36740,
+    "verified_before_stop": [
+      "own worktree --path",
+      "--e2e=all",
+      "parent PID"
+    ],
+    "evidence": "Parent reported the verification and stop; no other process was stopped."
+  },
+  "valid_unit_tool_steps": 157,
+  "valid_ui": {
+    "checks": 13956,
+    "captures": 4,
+    "resolution": [
+      1280,
+      720
+    ]
+  },
+  "pre_timeout_results": [
+    {
+      "name": "character_stats",
+      "verdict": "PASS",
+      "checks": 576,
+      "failures": 0
+    },
+    {
+      "name": "single_flurry_dps",
+      "verdict": "PASS",
+      "checks": 13,
+      "failures": 0
+    },
+    {
+      "name": "single_flurry",
+      "verdict": "PASS",
+      "checks": 98,
+      "failures": 0
+    },
+    {
+      "name": "vfx_ramp_gallery",
+      "verdict": "PASS",
+      "checks": 18,
+      "failures": 0
+    },
+    {
+      "name": "unique_icons",
+      "verdict": "PASS",
+      "checks": 12,
+      "failures": 0
+    },
+    {
+      "name": "quest_journal_refresh",
+      "verdict": "PASS",
+      "checks": 19,
+      "failures": 0
+    },
+    {
+      "name": "character_profiles",
+      "verdict": "PASS",
+      "checks": 38,
+      "failures": 0
+    },
+    {
+      "name": "quest_journal",
+      "verdict": "PASS",
+      "checks": 56,
+      "failures": 0
+    },
+    {
+      "name": "hud_orb_fx",
+      "verdict": "PASS",
+      "checks": 32,
+      "failures": 0
+    },
+    {
+      "name": "npc_hover_view",
+      "verdict": "PASS",
+      "checks": 82,
+      "failures": 0
+    },
+    {
+      "name": "elite_ui_view",
+      "verdict": "PASS",
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "name": "hud_hierarchy_view",
+      "verdict": "PASS",
+      "checks": 327,
+      "failures": 0
+    },
+    {
+      "name": "dev_legend_view",
+      "verdict": "PASS",
+      "checks": 33,
+      "failures": 0
+    },
+    {
+      "name": "dev_panel",
+      "verdict": "PASS",
+      "checks": 136,
+      "failures": 0
+    },
+    {
+      "name": "pickup_feedback_view",
+      "verdict": "PASS",
+      "checks": 3,
+      "failures": 0
+    },
+    {
+      "name": "icon_intake",
+      "verdict": "PASS",
+      "checks": 317,
+      "failures": 0
+    },
+    {
+      "name": "automap",
+      "verdict": "PASS",
+      "checks": 50,
+      "failures": 0
+    },
+    {
+      "name": "pickup_equip",
+      "verdict": "PASS",
+      "checks": 37,
+      "failures": 0
+    },
+    {
+      "name": "identify",
+      "verdict": "PASS",
+      "checks": 9,
+      "failures": 0
+    },
+    {
+      "name": "equipment_ui",
+      "verdict": "PASS",
+      "checks": 101,
+      "failures": 0
+    },
+    {
+      "name": "ui_item_contract",
+      "verdict": "PASS",
+      "checks": 269,
+      "failures": 0
+    },
+    {
+      "name": "ui_skill_contract",
+      "verdict": "PASS",
+      "checks": 13956,
+      "failures": 0
+    },
+    {
+      "name": "inactive_gear",
+      "verdict": "PASS",
+      "checks": 50,
+      "failures": 0
+    },
+    {
+      "name": "sockets",
+      "verdict": "PASS",
+      "checks": 16,
+      "failures": 0
+    },
+    {
+      "name": "socket_punch",
+      "verdict": "PASS",
+      "checks": 36,
+      "failures": 0
+    },
+    {
+      "name": "glyph_combo",
+      "verdict": "PASS",
+      "checks": 26,
+      "failures": 0
+    },
+    {
+      "name": "combination",
+      "verdict": "PASS",
+      "checks": 26,
+      "failures": 0
+    },
+    {
+      "name": "portal_roundtrip",
+      "verdict": "PASS",
+      "checks": 18,
+      "failures": 0
+    },
+    {
+      "name": "waypoint",
+      "verdict": "PASS",
+      "checks": 15,
+      "failures": 0
+    },
+    {
+      "name": "vendor_quest",
+      "verdict": "PASS",
+      "checks": 54,
+      "failures": 0
+    },
+    {
+      "name": "vendor_prices",
+      "verdict": "PASS",
+      "checks": 12,
+      "failures": 0
+    },
+    {
+      "name": "gamble",
+      "verdict": "PASS",
+      "checks": 54,
+      "failures": 0
+    },
+    {
+      "name": "stash_roundtrip",
+      "verdict": "PASS",
+      "checks": 51,
+      "failures": 0
+    },
+    {
+      "name": "chief_quest",
+      "verdict": "PASS",
+      "checks": 71,
+      "failures": 0
+    },
+    {
+      "name": "boss_greetings",
+      "verdict": "PASS",
+      "checks": 36,
+      "failures": 0
+    },
+    {
+      "name": "shaman_heal",
+      "verdict": "PASS",
+      "checks": 31,
+      "failures": 0
+    },
+    {
+      "name": "respec",
+      "verdict": "PASS",
+      "checks": 64,
+      "failures": 0
+    },
+    {
+      "name": "save_continue",
+      "verdict": "PASS",
+      "checks": 14,
+      "failures": 0
+    },
+    {
+      "name": "held_save",
+      "verdict": "PASS",
+      "checks": 27,
+      "failures": 0
+    },
+    {
+      "name": "bodies_cap",
+      "verdict": "PASS",
+      "checks": 13,
+      "failures": 0
+    },
+    {
+      "name": "boss_floor",
+      "verdict": "PASS",
+      "checks": 46,
+      "failures": 0
+    },
+    {
+      "name": "boss_bulgasari",
+      "verdict": "FAIL",
+      "checks": 54,
+      "failures": 2
+    },
+    {
+      "name": "bulgasari_path",
+      "verdict": "PASS",
+      "checks": 15,
+      "failures": 0
+    },
+    {
+      "name": "boss_uniques",
+      "verdict": "PASS",
+      "checks": 37,
+      "failures": 0
+    },
+    {
+      "name": "boss_jangsanbeom",
+      "verdict": "PASS",
+      "checks": 42,
+      "failures": 0
+    },
+    {
+      "name": "heukrang_look",
+      "verdict": "PASS",
+      "checks": 4,
+      "failures": 0
+    },
+    {
+      "name": "heukrang_pounce",
+      "verdict": "PASS",
+      "checks": 11,
+      "failures": 0
+    },
+    {
+      "name": "visual_swap",
+      "verdict": "PASS",
+      "checks": 65,
+      "failures": 0
+    },
+    {
+      "name": "run_upright",
+      "verdict": "PASS",
+      "checks": 16,
+      "failures": 0
+    },
+    {
+      "name": "teleport_settle",
+      "verdict": "PASS",
+      "checks": 10,
+      "failures": 0
+    },
+    {
+      "name": "render_interp",
+      "verdict": "PASS",
+      "checks": 36,
+      "failures": 0
+    },
+    {
+      "name": "hit_stagger",
+      "verdict": "PASS",
+      "checks": 20,
+      "failures": 0
+    },
+    {
+      "name": "hit_feel",
+      "verdict": "PASS",
+      "checks": 41,
+      "failures": 0
+    },
+    {
+      "name": "damage_colors",
+      "verdict": "PASS",
+      "checks": 18,
+      "failures": 0
+    },
+    {
+      "name": "element_affix",
+      "verdict": "PASS",
+      "checks": 7,
+      "failures": 0
+    },
+    {
+      "name": "affix_combat",
+      "verdict": "PASS",
+      "checks": 42,
+      "failures": 0
+    },
+    {
+      "name": "attack_chain",
+      "verdict": "PASS",
+      "checks": 21,
+      "failures": 0
+    },
+    {
+      "name": "sword_trail_v2",
+      "verdict": "PASS",
+      "checks": 93,
+      "failures": 0
+    },
+    {
+      "name": "whirl_structure_v1",
+      "verdict": "PASS",
+      "checks": 69,
+      "failures": 0
+    },
+    {
+      "name": "status_structure_v1",
+      "verdict": "PASS",
+      "checks": 36,
+      "failures": 0
+    },
+    {
+      "name": "element_structure_v1",
+      "verdict": "PASS",
+      "checks": 89,
+      "failures": 0
+    },
+    {
+      "name": "element_flight_v1",
+      "verdict": "PASS",
+      "checks": 45,
+      "failures": 0
+    },
+    {
+      "name": "aspd_steps",
+      "verdict": "PASS",
+      "checks": 27,
+      "failures": 0
+    },
+    {
+      "name": "skill_then_attack",
+      "verdict": "PASS",
+      "checks": 64,
+      "failures": 0
+    },
+    {
+      "name": "anim_commit",
+      "verdict": "PASS",
+      "checks": 59,
+      "failures": 0
+    },
+    {
+      "name": "combat_timeline",
+      "verdict": "PASS",
+      "checks": 96,
+      "failures": 0
+    },
+    {
+      "name": "feel_lab_parity",
+      "verdict": "PASS",
+      "checks": 121,
+      "failures": 0
+    },
+    {
+      "name": "feel_lab_plates",
+      "verdict": "PASS",
+      "checks": 63,
+      "failures": 0
+    },
+    {
+      "name": "path_smooth",
+      "verdict": "PASS",
+      "checks": 44,
+      "failures": 0
+    },
+    {
+      "name": "path_shove_replan",
+      "verdict": "PASS",
+      "checks": 6,
+      "failures": 0
+    },
+    {
+      "name": "player_resource_clock",
+      "verdict": "PASS",
+      "checks": 73,
+      "failures": 0
+    },
+    {
+      "name": "invisible_sword",
+      "verdict": "PASS",
+      "checks": 68,
+      "failures": 0
+    },
+    {
+      "name": "heavy_react",
+      "verdict": "PASS",
+      "checks": 97,
+      "failures": 0
+    },
+    {
+      "name": "pack_ai",
+      "verdict": "PASS",
+      "checks": 46,
+      "failures": 0
+    },
+    {
+      "name": "kill_slump",
+      "verdict": "PASS",
+      "checks": 51,
+      "failures": 0
+    },
+    {
+      "name": "kill_bisect",
+      "verdict": "PASS",
+      "checks": 68,
+      "failures": 0
+    },
+    {
+      "name": "slice_deaths",
+      "verdict": "PASS",
+      "checks": 111,
+      "failures": 0
+    },
+    {
+      "name": "monster_motion_gallery",
+      "verdict": "PASS",
+      "checks": 72,
+      "failures": 0
+    },
+    {
+      "name": "element_status",
+      "verdict": "PASS",
+      "checks": 78,
+      "failures": 0
+    },
+    {
+      "name": "element_ui",
+      "verdict": "PASS",
+      "checks": 13,
+      "failures": 0
+    },
+    {
+      "name": "element_sal",
+      "verdict": "PASS",
+      "checks": 42,
+      "failures": 0
+    },
+    {
+      "name": "talisman_targeting",
+      "verdict": "PASS",
+      "checks": 147,
+      "failures": 0
+    },
+    {
+      "name": "talisman_throw",
+      "verdict": "PASS",
+      "checks": 56,
+      "failures": 0
+    },
+    {
+      "name": "talisman_aoe",
+      "verdict": "PASS",
+      "checks": 16,
+      "failures": 0
+    },
+    {
+      "name": "loot_drop",
+      "verdict": "PASS",
+      "checks": 55,
+      "failures": 0
+    },
+    {
+      "name": "potion_icons",
+      "verdict": "PASS",
+      "checks": 57,
+      "failures": 0
+    },
+    {
+      "name": "potion_tiers",
+      "verdict": "PASS",
+      "checks": 10,
+      "failures": 0
+    },
+    {
+      "name": "loot_props",
+      "verdict": "PASS",
+      "checks": 19,
+      "failures": 0
+    },
+    {
+      "name": "elite_pack",
+      "verdict": "PASS",
+      "checks": 52,
+      "failures": 0
+    },
+    {
+      "name": "elite_slots",
+      "verdict": "PASS",
+      "checks": 31,
+      "failures": 0
+    },
+    {
+      "name": "flee_chase",
+      "verdict": "PASS",
+      "checks": 35,
+      "failures": 0
+    },
+    {
+      "name": "verify_flows",
+      "verdict": "PASS",
+      "checks": 16,
+      "failures": 0
+    },
+    {
+      "name": "balance_room",
+      "verdict": "PASS",
+      "checks": 8,
+      "failures": 0
+    },
+    {
+      "name": "balance_boss",
+      "verdict": "PASS",
+      "checks": 30,
+      "failures": 0
+    },
+    {
+      "name": "player_death",
+      "verdict": "PASS",
+      "checks": 27,
+      "failures": 0
+    },
+    {
+      "name": "wall_cutaway",
+      "verdict": "PASS",
+      "checks": 17,
+      "failures": 0
+    },
+    {
+      "name": "floor_seams",
+      "verdict": "PASS",
+      "checks": 5,
+      "failures": 0
+    },
+    {
+      "name": "floor_layers",
+      "verdict": "PASS",
+      "checks": 27,
+      "failures": 0
+    },
+    {
+      "name": "char_light",
+      "verdict": "PASS",
+      "checks": 153,
+      "failures": 0
+    },
+    {
+      "name": "town_layout",
+      "verdict": "PASS",
+      "checks": 81,
+      "failures": 0
+    }
+  ],
+  "excluded_from_coverage": {
+    "from_scenario": "town_approach",
+    "reason": "Parent explorer confirmed a timed-out coroutine survived and changed global _finished; subsequent PASS/FAIL labels are not reliable coverage.",
+    "reported_results": [
+      {
+        "name": "town_approach",
+        "verdict": "FAIL",
+        "checks": 136,
+        "failures": 1
+      },
+      {
+        "name": "audio_cues",
+        "verdict": "PASS",
+        "checks": 6,
+        "failures": 0
+      },
+      {
+        "name": "bgm_hooks",
+        "verdict": "FAIL",
+        "checks": 17,
+        "failures": 15
+      },
+      {
+        "name": "sfx_limiter",
+        "verdict": "PASS",
+        "checks": 2,
+        "failures": 0
+      },
+      {
+        "name": "ui_windows",
+        "verdict": "PASS",
+        "checks": 65,
+        "failures": 0
+      },
+      {
+        "name": "story_cutin",
+        "verdict": "PASS",
+        "checks": 32,
+        "failures": 0
+      },
+      {
+        "name": "dialogue_band",
+        "verdict": "PASS",
+        "checks": 78,
+        "failures": 0
+      },
+      {
+        "name": "dialogue_event",
+        "verdict": "PASS",
+        "checks": 50,
+        "failures": 0
+      },
+      {
+        "name": "dialogue_choices",
+        "verdict": "PASS",
+        "checks": 46,
+        "failures": 0
+      },
+      {
+        "name": "dialogue_esc_menu",
+        "verdict": "FAIL",
+        "checks": 47,
+        "failures": 10
+      },
+      {
+        "name": "ui_docks",
+        "verdict": "FAIL",
+        "checks": 7,
+        "failures": 1
+      },
+      {
+        "name": "ui_tooltips",
+        "verdict": "FAIL",
+        "checks": 108,
+        "failures": 10
+      },
+      {
+        "name": "belt_unify",
+        "verdict": "PASS",
+        "checks": 15,
+        "failures": 0
+      },
+      {
+        "name": "item_ui",
+        "verdict": "PASS",
+        "checks": 41,
+        "failures": 0
+      },
+      {
+        "name": "skill_picker",
+        "verdict": "PASS",
+        "checks": 83,
+        "failures": 0
+      },
+      {
+        "name": "skill_icons",
+        "verdict": "FAIL",
+        "checks": 108,
+        "failures": 9
+      },
+      {
+        "name": "skill_names",
+        "verdict": "PASS",
+        "checks": 3,
+        "failures": 0
+      },
+      {
+        "name": "vfx_cues",
+        "verdict": "PASS",
+        "checks": 166,
+        "failures": 0
+      },
+      {
+        "name": "area_title",
+        "verdict": "PASS",
+        "checks": 70,
+        "failures": 0
+      },
+      {
+        "name": "ink_transition",
+        "verdict": "PASS",
+        "checks": 7,
+        "failures": 0
+      },
+      {
+        "name": "vfx_cap_blood",
+        "verdict": "PASS",
+        "checks": 3,
+        "failures": 0
+      }
+    ]
+  },
+  "script_error_lines_reported_by_wrapper": 6,
+  "raw": "raw/ui774-full-windowed-owner-stopped.raw.log",
+  "raw_sha256": "c907a21a58ff3cb5710dd75ed0cbc756471d1c6425e63228a28d31838c7f3819",
+  "source": "raw/ui774-windowed-owner-stopped-source.json"
+}

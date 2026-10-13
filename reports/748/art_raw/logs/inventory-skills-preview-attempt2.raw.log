@@ -1,0 +1,8 @@
+locator.click: Error: strict mode violation: locator('.jh-app[data-layout=dock]').locator('[data-item=robe]') resolved to 2 elements:
+    1) <button type="button" data-item="robe" aria-label="무명 도포" data-item-id="robe" data-context="equip" data-footprint="2x3" data-footprint-w="2" data-footprint-h="3" class="jh-item-object cursor-interaction jh-equip-slot">…</button> aka getByRole('button', { name: '무명 도포' }).first()
+    2) <button type="button" data-item="robe" data-context="bag" aria-label="무명 도포" data-item-id="robe" aria-pressed="true" data-footprint="2x3" data-footprint-w="2" data-footprint-h="3" class="jh-item-object cursor-interaction ">…</button> aka getByRole('button', { name: '무명 도포' }).nth(1)
+
+Call log:
+  - waiting for locator('iframe').contentFrame().locator('.jh-app[data-layout=dock]').locator('[data-item=robe]')
+
+    at C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\._tmp\ui748_final_qa.cjs:135:41

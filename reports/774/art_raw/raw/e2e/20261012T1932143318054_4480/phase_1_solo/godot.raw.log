@@ -1,0 +1,62 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev · D3D12 · NVIDIA GeForce RTX 4070
+RENDER_INTERP: boot on · jitter_fix=0.00
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E start: ui_skill_contract
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ ui_skill_contract
+[Dev] removed 0 enemies
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_skill_contract_01_after_tree.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_skill_contract_02_after_complex.png
+  ✗ sword_mastery 실제공통Font 이름경계
+  ✗ slash 실제공통Font 이름경계
+  ✗ combo 실제공통Font 이름경계
+  ✗ dash_strike 실제공통Font 이름경계
+  ✗ flurry 실제공통Font 이름경계
+  ✗ whirl 실제공통Font 이름경계
+  ✗ leap_slash 실제공통Font 이름경계
+  ✗ first_cut 실제공통Font 이름경계
+  ✗ blade_storm 실제공통Font 이름경계
+  ✗ breath 실제공통Font 이름경계
+  ✗ blink 실제공통Font 이름경계
+  ✗ mana_shield 실제공통Font 이름경계
+  ✗ clone 실제공통Font 이름경계
+  ✗ light_step 실제공통Font 이름경계
+  ✗ iron_body 실제공통Font 이름경계
+  ✗ hide 실제공통Font 이름경계
+  ✗ fire_lore 실제공통Font 이름경계
+  ✗ ice_lore 실제공통Font 이름경계
+  ✗ salpuri 실제공통Font 이름경계
+  ✗ pouch 실제공통Font 이름경계
+  ✗ seal_array 실제공통Font 이름경계
+  ✗ thunder_lore 실제공통Font 이름경계
+  ✗ scatter 실제공통Font 이름경계
+  ✗ talisman_rain 실제공통Font 이름경계
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_skill_contract_03_after_assignment.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_skill_contract_04_after_detail_bottom.png
+  ✗ 최하단 긴이름은축소없음·ellipsis·경계안
+E2E ui_skill_contract FAIL (검사 10462, 실패 25)
+E2E SUMMARY: 0/1 PASS
+  E2E ui_skill_contract FAIL (검사 10462, 실패 25)

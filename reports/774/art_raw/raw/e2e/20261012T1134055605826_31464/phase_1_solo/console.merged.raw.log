@@ -1,0 +1,96 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev · D3D12 · NVIDIA GeForce RTX 4070
+RENDER_INTERP: boot on · jitter_fix=0.00
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E start: equipment_ui, item_ui, ui_docks
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ equipment_ui
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_01_empty_slots.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_02_nine_slots.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_03_shared_1280x720.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_04_shared_1920x1080.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_05_shared_2560x1440.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_06_twohand_blocked.png
+E2E equipment_ui PASS (검사 101)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ item_ui
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/item_ui_01_requirements.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/item_ui_02_set_pieces.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/item_ui_03_talisman_belt.png
+E2E item_ui PASS (검사 41)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ ui_docks
+  · none camera settled, player x=640.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_01_none.png
+  · right camera settled, player x=424.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_02_right.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_03_right_world_hover.png
+[Click] world=(0.0, 0.189929, 1.9) cell=(0, 1)
+  · right after pickup camera settled, player x=424.00
+  · left camera settled, player x=856.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_04_left.png
+[Click] world=(0.989948, 0.0, 0.01005) cell=(0, 0)
+  · left after movement camera settled, player x=857.39
+  · both camera settled, player x=640.22
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_05_both.png
+  · skills and bag camera settled, player x=640.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_06_skills_bag.png
+  · Esc restores center camera settled, player x=640.00
+[Click] world=(5.4, 0.0, -2.4) cell=(5, -3)
+  · dialog alone camera settled, player x=641.38
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_07_dialog_excluded.png
+  · vendor and bag camera settled, player x=640.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_08_vendor_bag.png
+  · after vendor close camera settled, player x=640.00
+[Click] world=(-4.2, 0.0, 2.2) cell=(-5, 2)
+  · waypoint alone camera settled, player x=854.58
+  · waypoint and bag camera settled, player x=639.78
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_09_waypoint_bag.png
+  · final center camera settled, player x=640.00
+E2E ui_docks PASS (검사 61)
+E2E SUMMARY: 3/3 PASS
+  E2E equipment_ui PASS (검사 101)
+  E2E item_ui PASS (검사 41)
+  E2E ui_docks PASS (검사 61)
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

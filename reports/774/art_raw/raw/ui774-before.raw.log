@@ -1,0 +1,17 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(ui_skill_contract)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (8.5초)
+== e2e (ui_skill_contract · 단독(창 모드) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon","--","--e2e=ui_skill_contract","--e2e-shots"],"phase_arg":"ui_skill_contract","phase_tokens":["ui_skill_contract"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":3060,"launched_utc":"2026-10-12T19:24:38.1365219Z"}
+E2E start: ui_skill_contract
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ ui_skill_contract
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_skill_contract_01_before_tree.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_skill_contract_02_before_complex.png
+  · #774 BEFORE: 구 UI 동일 fixture 2장만 촬영, 저장하지 않음
+E2E ui_skill_contract PASS (검사 5)
+E2E SUMMARY: 1/1 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tmp\e2e_raw\20261012T1924294491467_27080\phase_1_solo
+  e2e  (7.8초) — 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-2d0c\e2e
+전부 PASS

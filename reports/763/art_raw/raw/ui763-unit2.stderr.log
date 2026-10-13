@@ -1,0 +1,6 @@
+ERROR: Could not create directory: 'user://C:'.
+   at: make_dir_recursive (core/io/dir_access.cpp:179)
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit.
+   at: clear (core/io/resource.cpp:817)

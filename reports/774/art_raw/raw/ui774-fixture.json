@@ -1,0 +1,27 @@
+{
+  "before_scenario_sha256": "d063fbfc2503369c23bfb33ee550c7e812af52f6e046b7f1f39afa3695b53739",
+  "after_scenario_sha256": "88a6027003005c389bb6cca205e3c3cc7cb869321267282d7a93af45bd0b8f3d",
+  "comparison_basis": "Initial fixture and paired capture functions were left unchanged while diagnostic assertions were added. The before file bytes were not retained, so the two whole source files are not claimed cryptographically identical.",
+  "fixture": {
+    "level": 30,
+    "str": 80,
+    "dex": 80,
+    "vit": 80,
+    "spi": 80,
+    "points": 12,
+    "slash_hard": 10,
+    "blink_hard": 0,
+    "rain_hard": 3,
+    "ice_lore_hard": 4,
+    "paper_stock": 0,
+    "explicit_test_gear": "rare paeraengi with skill_all3",
+    "scene": "world/main.tscn",
+    "resolution": [
+      1280,
+      720
+    ],
+    "save_calls": 0
+  },
+  "fixture_normalized_sha256": "75f62c8ea338bf40f83b1a7f3d871334a5be95cffbb06a9a71682966f34499d7",
+  "paired_capture_normalized_sha256": "f7a5f812f30a4d2fea92e98b8f348bdea88a2900492cdb3bac667a772fbfc1a4"
+}

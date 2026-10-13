@@ -1,0 +1,14 @@
+E2E ▶ dialogue_esc_menu
+  · 비막타 normal: 봉우리 -0.93 dBFS · 겹: hit=hit_1.wav -0.8 dB(보정 +0.0) · bandit_hurt=bandit_hurt_1.wav -0.8 dB(보정 +0.0) · sword_swing=sword_swing_4.wav +0.0 dB(보정 +0.0) · doho_kiai=doho_kiai_3.wav +0.0 dB(보정 +0.0) · hit=hit_2.wav -0.8 dB(보정 +0.0) · bandit_hurt=bandit_hurt_1.wav -0.8 dB(보정 +0.0) · sword_swing=sword_swing_3.wav +0.0 dB(보정 +0.0) · doho_kiai=doho_kiai_1.wav +0.0 dB(보정 +0.0)
+  ✗ ② 재개 뒤 김 영감 클릭 → 띠 열림
+  ✗ ② 띠가 다 보임 (알파 0.00)
+  ✗ ② 대화 = 화면 캡처
+  ✗ ② Space 로 선택지까지
+  ✗ ② 「그만 간다」 선택지 (-1 · [])
+  · 비막타 crit: 봉우리 -0.84 dBFS · 겹: hit_crit=hit_crit_1.wav -0.8 dB(보정 +0.0) · bandit_hurt=bandit_hurt_1.wav +3.2 dB(보정 +4.0) · blood_splat=blood_splat_1.wav -0.8 dB(보정 +0.0) · hit_crit_low=hit_crit_low_1.wav -6.8 dB(보정 -6.0) · sword_swing=sword_swing_2.wav +0.0 dB(보정 +0.0) · doho_kiai=doho_kiai_1.wav +0.0 dB(보정 +0.0) · hit_crit=hit_crit_2.wav -0.8 dB(보정 +0.0) · bandit_hurt=bandit_hurt_1.wav +3.2 dB(보정 +4.0) · blood_splat=blood_splat_1.wav -0.8 dB(보정 +0.0) · hit_crit_low=hit_crit_low_1.wav -6.8 dB(보정 -6.0) · sword_swing=sword_swing_3.wav +0.0 dB(보정 +0.0) · doho_kiai=doho_kiai_3.wav +0.0 dB(보정 +0.0) · hit_crit=hit_crit_1.wav -0.8 dB(보정 +0.0) · bandit_hurt=bandit_hurt_1.wav +3.2 dB(보정 +4.0) · blood_splat=blood_splat_1.wav -0.8 dB(보정 +0.0) · hit_crit_low=hit_crit_low_1.wav -6.8 dB(보정 -6.0)
+  ✗ ④ 재개 뒤 김 영감 클릭 → 띠 열림
+  ✗ ④ 띠가 다 보임 (알파 0.00)
+  ✗ ④ 대화 = 화면 캡처
+  ✗ ④ Space 로 선택지까지
+  ✗ ④ 「그만 간다」 선택지 (-1 · [])
+E2E dialogue_esc_menu FAIL (검사 47, 실패 10)

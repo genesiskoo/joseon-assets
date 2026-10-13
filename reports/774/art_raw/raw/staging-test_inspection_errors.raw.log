@@ -1,0 +1,26 @@
+Get-Content:
+Line |
+   2 |  …  skills/skill_def.gd; Get-Content tests/test_ui_skill_info.gd; Get-Co …
+     |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tests\test_ui_skill_info.gd' because it does not exist.
+
+Get-Content:
+Line |
+   2 |  …  -TotalCount 110; Get-Content tests/e2e/e2e_context.gd -TotalCount 70
+     |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tests\e2e\e2e_context.gd' because it does not exist.
+
+rg: tests/test_*.gd: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)
+rg: tests/e2e/scenarios/*.gd: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. (os error 123)
+
+Get-Content:
+Line |
+   2 |  … ect-Object -Skip 1276 -First 14; Get-Content core/item_gen.gd | Selec …
+     |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\core\item_gen.gd' because it does not exist.
+
+Get-Content:
+Line |
+   2 |  … _tree_ui.gd; Get-Content ._tmp/ui774-focused.raw.log -Tail 36; rg --f …
+     |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path 'C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\._tmp\ui774-focused.raw.log' because it does not exist.

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+      "--",
+      "--e2e=boss_bulgasari"
+    ],
+    "phase_arg": "boss_bulgasari",
+    "phase_tokens": [
+      "boss_bulgasari"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 36760,
+    "launched_utc": "2026-10-12T23:06:17.3651586Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_sec": 34.8524003,
+  "archived_utc": "2026-10-12T23:06:52.2418513Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-2d0c\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261012T2304483032227_32808\\phase_1_solo\\godot.raw.log",
+    "bytes": 6779,
+    "sha256": "616ea402d7f4d875d9a49a227b9eac8d9e42f54bd6f2c2ee068cacef2f3197e1"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

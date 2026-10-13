@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+      "--",
+      "--e2e=equipment_ui,ui_item_contract,item_ui,ui_docks,ui_tooltips,ui_windows,hud_hierarchy_view,inactive_gear,belt_unify,held_save,stash_roundtrip",
+      "--e2e-shots"
+    ],
+    "phase_arg": "equipment_ui,ui_item_contract,item_ui,ui_docks,ui_tooltips,ui_windows,hud_hierarchy_view,inactive_gear,belt_unify,held_save,stash_roundtrip",
+    "phase_tokens": [
+      "equipment_ui",
+      "ui_item_contract",
+      "item_ui",
+      "ui_docks",
+      "ui_tooltips",
+      "ui_windows",
+      "hud_hierarchy_view",
+      "inactive_gear",
+      "belt_unify",
+      "held_save",
+      "stash_roundtrip"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 15888,
+    "launched_utc": "2026-10-12T11:47:05.9503344Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 1,
+  "timed_out": false,
+  "elapsed_sec": 106.8262817,
+  "archived_utc": "2026-10-12T11:48:52.8272150Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-2d0c\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261012T1146532648791_49028\\phase_1_solo\\godot.raw.log",
+    "bytes": 48738,
+    "sha256": "65e198993bb14549758b3b81215c4ab24b3fea71d6f0a93f189bddc9b2801e37"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

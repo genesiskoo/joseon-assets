@@ -1,0 +1,161 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(aoe_skills_2,build_changers,body_arts,dungeon_layout,beomgul_walk,mine_walk,bongmil_walk,room_props,town_exits,field_layout,field2_layout,gate_hover,pack_density,slice_loop,plaza_light,town_tour,aoe_field,long_body,named_imugi,named_gaksi,serpent_models,pus_jar,roles,roster_swap,gimmicks_m10,behaviors_m9,female_f1,female_float,yeogung_attacks,nachalnyeo_attacks,m14_models,leader_options,surround,weapon_visibility,first_magic,hover_target,system_menu,walk_audit)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (12.8초)
+== e2e (aoe_skills_2,build_changers,body_arts,dungeon_layout,beomgul_walk,mine_walk,bongmil_walk,room_props,town_exits,field_layout,field2_layout,gate_hover,pack_density,slice_loop,plaza_light,town_tour,aoe_field,long_body,named_imugi,named_gaksi,serpent_models,pus_jar,roles,roster_swap,gimmicks_m10,behaviors_m9,female_f1,female_float,yeogung_attacks,nachalnyeo_attacks,m14_models,leader_options,surround,weapon_visibility,first_magic,hover_target,system_menu,walk_audit · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon","--headless","--","--e2e=aoe_skills_2,build_changers,body_arts,dungeon_layout,beomgul_walk,mine_walk,bongmil_walk,room_props,town_exits,field_layout,field2_layout,gate_hover,pack_density,slice_loop,plaza_light,town_tour,aoe_field,long_body,named_imugi,named_gaksi,serpent_models,pus_jar,roles,roster_swap,gimmicks_m10,behaviors_m9,female_f1,female_float,yeogung_attacks,nachalnyeo_attacks,m14_models,leader_options,surround,weapon_visibility,first_magic,hover_target,system_menu,walk_audit"],"phase_arg":"aoe_skills_2,build_changers,body_arts,dungeon_layout,beomgul_walk,mine_walk,bongmil_walk,room_props,town_exits,field_layout,field2_layout,gate_hover,pack_density,slice_loop,plaza_light,town_tour,aoe_field,long_body,named_imugi,named_gaksi,serpent_models,pus_jar,roles,roster_swap,gimmicks_m10,behaviors_m9,female_f1,female_float,yeogung_attacks,nachalnyeo_attacks,m14_models,leader_options,surround,weapon_visibility,first_magic,hover_target,system_menu,walk_audit","phase_tokens":["aoe_skills_2","build_changers","body_arts","dungeon_layout","beomgul_walk","mine_walk","bongmil_walk","room_props","town_exits","field_layout","field2_layout","gate_hover","pack_density","slice_loop","plaza_light","town_tour","aoe_field","long_body","named_imugi","named_gaksi","serpent_models","pus_jar","roles","roster_swap","gimmicks_m10","behaviors_m9","female_f1","female_float","yeogung_attacks","nachalnyeo_attacks","m14_models","leader_options","surround","weapon_visibility","first_magic","hover_target","system_menu","walk_audit"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":1372,"launched_utc":"2026-10-12T19:11:57.0748095Z"}
+E2E start: aoe_skills_2, build_changers, body_arts, dungeon_layout, beomgul_walk, mine_walk, bongmil_walk, room_props, town_exits, field_layout, field2_layout, gate_hover, pack_density, slice_loop, plaza_light, town_tour, aoe_field, long_body, named_imugi, named_gaksi, serpent_models, pus_jar, roles, roster_swap, gimmicks_m10, behaviors_m9, female_f1, female_float, yeogung_attacks, nachalnyeo_attacks, m14_models, leader_options, surround, weapon_visibility, first_magic, hover_target, system_menu, walk_audit
+E2E ▶ aoe_skills_2
+  · 무대 = 무리 한가운데 (44.5, 0.0, 56.5) · 트임 3.6 · 화면 위쪽 (-0.707107, 0.0, -0.707107)
+  · 칼바람 요약 — 바퀴 9(누른 동안 9) · 박자 0.300초 · 도력 18.0 · 맞힌 합 28 · 맞음 7/7 · 죽음 4 [&"cleave", &"slide"] · 앞으로 6.4u · 뗀 뒤 0.27초에 섬
+  · 흩뿌리기 요약 — 장당 맞힌 수 [3, 2, 2] · 맞음 6/7 · 죽음 3 [&"ash"]
+  · 부적 비 요약 — 6장 · 맞음 7/7 · 죽음 4 [&"ash"] · 버티는 몸 타는 중 3
+E2E aoe_skills_2 PASS (검사 63)
+E2E ▶ build_changers
+  · 무대 = 한가운데 (44.5, 0.0, 56.5) · 도호 (47.32843, 0.0, 59.32843) (화면 아래 4.0u) · 트임 4.0
+  · 처형 — 죽음 cleave/cleave · 면 h
+  · 망나니 칼 요약 — 대조 환도 남은 생명 131 · 처형 한 대 · 두 동강 5/8
+  · 도깨비불 요약 — 첫 불씨 3 · 무리 재 6/6
+  · 이무기 비늘 요약 — 3점 반경 2.50 → 3.50 · 5점 바퀴 1 → 2
+  · 사인참사검 요약 — 진 셋 쳐서 선 수: 사인검 2 → 사인참사검 3
+  · 본국검 요약 — 맞은 수 보통 [1, 0, 0, 0] → 검기 [1, 1, 1, 1] · 검기 길이 6.8
+E2E build_changers PASS (검사 87)
+E2E ▶ body_arts
+  · 벽 너머 짝 = (39.5, 0.0, 51.5) → (37.0, 0.0, 51.5) (2.5u · 길 10.1)
+E2E body_arts PASS (검사 76)
+E2E ▶ dungeon_layout
+  · 1층 격자 64x64 · 방 6 (한 변 8~14) · 걷는 칸 882(복도 126) · 적 20 { "bandit": 15, "bat": 5 } · 보스 0 · 횃불 48 · 소품 1
+  · 1층 모양 갈래 { "bandit_v2": 7, "bandit_v2_dagger": 8 } · 두 갈래가 같이 있는 방 4곳 [1, 2, 4, 5]
+  · 2층 격자 28x28 · 방 2 (한 변 7~14) · 걷는 칸 274(복도 45) · 적 2 { "bat": 2 } · 보스 1 · 횃불 16 · 소품 1
+  · 2층 모양 갈래 {  } · 두 갈래가 같이 있는 방 0곳 []
+E2E dungeon_layout PASS (검사 42)
+E2E ▶ beomgul_walk
+  · 1층 64x64 · 적 40 · 명단 ["hwajeok", "changgwi", "eorin_jangsanbeom"] · 장식 ["Rock 50", "RuinStone 68", "Bones 20", "Fur 12"] · 정예 자리 1
+  · 2층 64x64 · 적 20 · 명단 ["hwajeok", "changgwi", "eorin_jangsanbeom"] · 장식 ["Rock 34", "RuinStone 54", "Bones 22", "Fur 16"] · 정예 자리 1
+  · 3층 32x30 · 적 2 · 명단 ["eorin_jangsanbeom"] · 장식 ["Rock 12", "RuinStone 16", "Bones 9", "Fur 3"] · 정예 자리 0
+  · #691 장산범 멈춤 · 처음 파수 2 치움 — 같은 자리에 쉬는 어린 장산범 둘을 세운다
+E2E beomgul_walk PASS (검사 76)
+E2E ▶ mine_walk
+  · 1층 64x64 · 적 20 · 명단 ["plague_miner", "cave_bat", "soemeogi"] · 장식 { "Crate": 1, "Woodpile": 1, "Slag": 34, "RuinStone": 17, "Bones": 9, "Timber": 15, "Chain": 3, "ChainFloor": 3, "Rail": 27, "OreCart": 1 } · 정예 자리 1 · 네임드 (-1, -1)
+  · 2층 64x64 · 적 26 · 명단 ["plague_miner", "soemeogi", "yacha", "nachalnyeo"] · 장식 { "SlagHeap": 1, "Slag": 38, "RuinStone": 18, "Bones": 8, "Timber": 24, "Chain": 2, "ChainFloor": 2, "Rail": 47, "OreCart": 1 } · 정예 자리 2 · 네임드 (50, 21)
+  · 3층 32x30 · 적 2 · 명단 ["soemeogi"] · 장식 { "Slag": 27, "RuinStone": 6, "Bones": 2, "Timber": 6, "Chain": 7, "ChainFloor": 10, "Rail": 13 } · 정예 자리 0 · 네임드 (-1, -1)
+E2E mine_walk PASS (검사 79)
+E2E ▶ bongmil_walk
+  · 첫 접근 혼잣말 — 닿음까지 0.53초 (줄 2.6초 · 미룸 2.70초)
+  · 1층 72x72 · 적 46 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "yeou"] · 장식 { "Stele": 2, "SteleFallen": 8, "PaperBits": 47, "Bones": 15, "RuinStone": 54, "RopeIntact": 19 } · 정예 자리 2 · 네임드 (-1, -1) · 봉인석 [(26, 29), (33, 39), (30, 55)] · 고리 [(0, 2), (2, 5), (1, 9)]
+  · 2층 72x72 · 적 35 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "yeou"] · 장식 { "SteleFallen": 4, "PaperBits": 42, "Bones": 16, "RuinStone": 29, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (-1, -1) · 봉인석 [(23, 20), (31, 12), (45, 7)] · 고리 [(4, 6), (3, 4), (0, 2), (4, 8)]
+  · 3층 72x72 · 적 33 · 명단 ["hollin_yeogung_bow2", "hollin_yeogung_spear", "yeou", "wang_geomi"] · 장식 { "Stele": 1, "SteleFallen": 2, "PaperBits": 38, "Bones": 16, "RuinStone": 40, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (6, 61) · 봉인석 [(22, 44), (59, 11), (63, 39)] · 고리 [(7, 8), (3, 8), (2, 6)]
+  · 4층 32x30 · 적 3 · 명단 ["yeou", "yeoubul"] · 장식 { "PaperBits": 8, "Bones": 6, "RuinStone": 11, "RopeIntact": 2 } · 정예 자리 0 · 네임드 (-1, -1) · 봉인석 [] · 고리 []
+E2E bongmil_walk PASS (검사 165)
+E2E ▶ room_props
+  · 흑랑 굴 1층 소품 9 · 역할 { &"mouth": 6, &"nook": 3 } · 막는 칸 0
+  · 흑랑 굴 2층 소품 7 · 역할 { &"mouth": 2, &"lair": 5 } · 막는 칸 0
+  · 봉밀굴 1층 소품 6 · 역할 { &"seal": 6 } · 막는 칸 6
+  · 봉밀굴 4층 구미원 소품 8 · 역할 { &"stage": 8 } · 막는 칸 4
+  · 흑랑 굴 1층(다른 시드) 소품 9 · 역할 { &"mouth": 6, &"nook": 3 } · 막는 칸 0
+  · 봉밀굴 2층(다른 시드) 소품 6 · 역할 { &"seal": 6 } · 막는 칸 6
+E2E room_props PASS (검사 90)
+E2E ▶ town_exits
+E2E town_exits PASS (검사 8)
+E2E ▶ field_layout
+  · 자리 10곳 · 모닥불 3 · 자리 둘레 소품 69
+  · 들녘 모양 갈래 { "bandit_v2_dagger": 35, "bandit_v2": 28 } · 산적 있는 무리 18 중 두 갈래가 섞인 무리 16
+  · 들녘 적 76 { 1: 23, 2: 26, 3: 27 } · 장식 2263 · 무리 18 · 서낭단 (62, 65)
+  · 거대 건축물 자리 { "fort_lintel": (119.5388, 38.16928), "stone_pagoda": (89.5, 45.5), "flag_pillar": (87.0, 48.0) } · 폐사지 닻 칸 (88.5, 0.0, 44.5)
+  · 들녘 가림 옅게(#702 T) — 소나무 151그루(테두리 609) · 신목 3 · 당산나무 1(GiantFade) · 등록 재질 3
+  · 들녘 그림자 켠 방향광 1 · 카메라 시선과 내적 최대 0.9919 (문턱 0.9995)
+E2E field_layout PASS (검사 41)
+E2E ▶ field2_layout
+  · 정령재 적 61 { 4: 19, 5: 20, 6: 13, 7: 9 } · 장식 2810 · 소나무 1026 · 무리 13 · 서낭단 (61, 66)
+  · 정령재 가림 옅게(#702 T) — 소나무 1026그루(테두리 926) · 신목 2 · 당산나무 0(GiantFade) · 등록 재질 3
+  · 정령재 그림자 켠 방향광 1 · 카메라 시선과 내적 최대 0.9919 (문턱 0.9995)
+E2E field2_layout PASS (검사 29)
+E2E ▶ gate_hover
+E2E gate_hover PASS (검사 6)
+E2E ▶ pack_density
+  · 정령재 첫 무리(레벨 4 · 구간 1) 자리 둘레 4칸 적 2(무리 배정 2몸) · 층 총 적 61 · 무리 수 13
+  · 범굴 1층 첫 방((12, 14)) 적 3 · 층 총 적 40
+E2E pack_density PASS (검사 2)
+E2E ▶ slice_loop
+E2E slice_loop PASS (검사 29)
+E2E ▶ plaza_light
+  · 환경광 0.18 · 해 0.33 · 등롱 2.20/4.6 · 플레이어 빛 1.40/4.5 · 캐릭터 빛 0.45
+E2E plaza_light PASS (검사 8)
+E2E ▶ town_tour
+E2E town_tour PASS (검사 2)
+E2E ▶ aoe_field
+E2E aoe_field PASS (검사 20)
+E2E ▶ long_body
+E2E long_body PASS (검사 13)
+E2E ▶ named_imugi
+  · 이무기 잠수 높이 실측 — 잠수 전 y 0.000 · 솟은 몸 y 0.000 · 꼬리 첫 마디 y 0.000
+E2E named_imugi PASS (검사 19)
+E2E ▶ named_gaksi
+E2E named_gaksi PASS (검사 19)
+E2E ▶ serpent_models
+E2E serpent_models PASS (검사 18)
+E2E ▶ pus_jar
+E2E pus_jar PASS (검사 15)
+E2E ▶ roles
+E2E roles PASS (검사 24)
+E2E ▶ roster_swap
+E2E roster_swap PASS (검사 19)
+E2E ▶ gimmicks_m10
+  · 매복 관측: entry=237.625200 rising=true rise_at=237.641867 rise_left=0.583333 up=true up_at=238.225200 rises=1 elapsed=0.600000 · entry→rise=0.016667 rise→up=0.583333 render_seen_after=0.000000
+  · 끌림 실측 3.700u (정격 3.700 = 4.65 − 몸 0.35 − stop 0.6)
+E2E gimmicks_m10 PASS (검사 26)
+E2E ▶ behaviors_m9
+  · ① 선 자리 거리 들개 6.0 · 넋 6.0 · 혼불 6.0
+  · ① 도호 쪽 빠르기 들개 4.50 · 넋 2.34 · 혼불 4.62 · 넋 흔들림 최대 53°
+E2E behaviors_m9 PASS (검사 13)
+E2E ▶ female_f1
+E2E female_f1 PASS (검사 7)
+E2E ▶ female_float
+E2E female_float PASS (검사 5)
+E2E ▶ yeogung_attacks
+  · ① 동작 보고 줄 — 같은 틱 선딜(피해 = 선딜 끝 · 타격 몫 목표 0.50~0.70 · 치는 곳 가장 빠른 때 = 선딜 끝 ± 0.08초, 2u/s 이상):
+  ·   두 발·Meshy (홀린 여창): 선딜 0.40초 · 잠금 0.75초 · 클립 attack_spear 0.75초 × 1.00배 · 타격 몫 0.53 ○ · 가장 빠른 때 0.397초(타격 -0.003) ○ · 9.5u/s
+  ·   두 발·Meshy (홀린 여궁): 선딜 0.45초 · 잠금 0.75초 · 클립 attack_bow 0.75초 × 1.00배 · 타격 몫 0.60 ○ · 놓는 때 0.450초(타격 -0.000) ○ · 놓을 때 활 팔 0.4° ○ · (참고) 손 가장 빠른 때 0.599초(+0.149) · 6.5u/s
+  · 여창 한 판: 돌진 끝에서 건 벌 1 · 쿨 동안 건 벌 0 · 낸 대 3 · 닿은 대 3 · 도호 생명 98/110
+E2E yeogung_attacks PASS (검사 11)
+E2E ▶ nachalnyeo_attacks
+  · 홀림 실측: 첫 예고 깨어난 뒤 3.02초 · 예고 0.98초 · 끌림 3.500u(정격 3.500) → 나찰녀 앞 1.50칸 · 스침 끌림 +0.37초 · 도호 생명 105/110
+E2E nachalnyeo_attacks PASS (검사 16)
+E2E ▶ m14_models
+  · 줄 가운데 = (76.5, 0.0, 74.5) (서낭단 닻 (64, 66))
+  · 모양: hollin_yeogung_bow=hollin_yeogung, hollin_yeogung_spear=hollin_yeogung_spear, plague_dog=plague_dog, honbul=honbul, tteodoneun_neok=sobok_gwisin, gaekgwi=sobok_gwisin, mulgwishin=sobok_gwisin, nachalnyeo=nachalnyeo
+E2E m14_models PASS (검사 13)
+E2E ▶ leader_options
+  · 축지 — 도호 곁 1.94칸 · 맞고 옆으로 4.47칸 (잣대 2.29~5.71)
+E2E leader_options PASS (검사 20)
+E2E ▶ surround
+  · 제 자리 0.5u 안 9 (무리가 8 넘은 아홉째는 더 걸어야 하는 바깥 자리 포함)
+E2E surround PASS (검사 7)
+E2E ▶ weapon_visibility
+E2E weapon_visibility PASS (검사 25)
+E2E ▶ first_magic
+E2E first_magic PASS (검사 18)
+E2E ▶ hover_target
+E2E hover_target PASS (검사 83)
+E2E ▶ system_menu
+E2E system_menu PASS (검사 83)
+E2E ▶ walk_audit
+  · motgol_0 걷는 칸 358 · 소품 589 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 15 · R10 52 · R1F 0 · R1hF 0
+  · deulnyeok_0 걷는 칸 13210 · 소품 5742 · R1 0 · R1h 4 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 16 · R10 0 · R1F 50 · R1hF 325
+  · heukrang_gul_1 걷는 칸 881 · 소품 47 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 7 · R10 2 · R1F 0 · R1hF 0
+  · heukrang_gul_2 걷는 칸 273 · 소품 17 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 1 · R10 0 · R1F 0 · R1hF 0
+  · jeongnyeongjae_0 걷는 칸 16962 · 소품 6115 · R1 0 · R1h 3 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 15 · R10 0 · R1F 658 · R1hF 4332
+  · beomgul_1 걷는 칸 1385 · 소품 188 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 4 · R10 1 · R1F 0 · R1hF 0
+  · beomgul_2 걷는 칸 1189 · 소품 161 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 4 · R10 1 · R1F 0 · R1hF 0
+  · beomgul_3 걷는 칸 355 · 소품 52 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 4 · R10 1 · R1F 0 · R1hF 0
+  · soeburi_1 걷는 칸 815 · 소품 145 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 6 · R1F 0 · R1hF 0
+  · soeburi_2 걷는 칸 1152 · 소품 179 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 6 · R10 14 · R1F 0 · R1hF 0
+  · soeburi_3 걷는 칸 343 · 소품 79 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 3 · R10 4 · R1F 0 · R1hF 0
+  · bongmil_gul_1 걷는 칸 1616 · 소품 195 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 8 · R1F 0 · R1hF 0
+  · bongmil_gul_2 걷는 칸 1335 · 소품 156 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 8 · R1F 0 · R1hF 0
+  · bongmil_gul_3 걷는 칸 1379 · 소품 152 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 5 · R10 6 · R1F 0 · R1hF 0
+  · bongmil_gul_4 걷는 칸 390 · 소품 59 · R1 0 · R1h 0 · R2 0 · R3 0 · R4 0 · R5 0 · R6 0 · R7 0 · R8 2 · R10 0 · R1F 0 · R1hF 0
+E2E walk_audit PASS (검사 166)
+E2E SUMMARY: 38/38 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tmp\e2e_raw\20261012T1911441303321_12560\phase_1_shared
+  e2e  (450.3초) — 제한 3600초
+전부 PASS

@@ -1,0 +1,141 @@
+{
+  "base": "3e586a096e12b64691043d6b159c396e79d7286f",
+  "files": [
+    {
+      "path": "tests/e2e/e2e_runner.gd",
+      "sha256": "7928126962e09d403de108c05b1be98da80ee5759ce471d19ad803b8a41d34e3"
+    },
+    {
+      "path": "tests/e2e/scenarios/boss_bulgasari.gd",
+      "sha256": "2ebec97a7f72ecc87937a101fde5102e04b964eb22333dc27b3ca5852973f655"
+    },
+    {
+      "path": "tests/e2e/scenarios/skill_names.gd",
+      "sha256": "7dfc713fdc340f9c5f0691c3fb0649696e093385bd9105520f47ca9881003003"
+    },
+    {
+      "path": "tests/e2e/scenarios/ui_skill_contract.gd",
+      "sha256": "88a6027003005c389bb6cca205e3c3cc7cb869321267282d7a93af45bd0b8f3d"
+    },
+    {
+      "path": "tests/e2e/scenarios/ui_skill_contract.gd.uid",
+      "sha256": "8f70de52cc3369b102ccc984e50528782eafb06497cb64a7174027c422fda557"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_first.gd",
+      "sha256": "6bfe5b0af7b550aa476eee97de255841f09cf5fa966a96bd77465fb35d202b7f"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_first.gd.uid",
+      "sha256": "fedddf7f5087a4eca941e1f33916104d34ddc0393eb25e14fff296e9bda4e89a"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_guard.gd",
+      "sha256": "8b0fcfc512654889a94bb4d109c30ffd0aa4b5218eba9ed8b0a55df7aec176a8"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_guard.gd.uid",
+      "sha256": "e8db097183a33b2f73f28111942c96494e9c4802f8eae6ce2478dcea1a0b72ac"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_second.gd",
+      "sha256": "ea77d7fced5eda90feba06a1615e95efb89d81b5e8cd35ebb0b3dbb70ed8148f"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_second.gd.uid",
+      "sha256": "e05171fe5eb9b843488148e1e67192308135b80dff4a10f8145b739595a80c41"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_timeout.gd",
+      "sha256": "f01888f1885c2f6bc7879498bfd95e2d69c2fd7a656b6f4f22ad1c8ccdd815ee"
+    },
+    {
+      "path": "tests/e2e/selftest/batch_timeout.gd.uid",
+      "sha256": "bb2257b1f1177c8882c2dae27d81a4710b5dfc5e7dcf1f99b706174b486ef3f3"
+    },
+    {
+      "path": "tests/test_enemy_ai.gd",
+      "sha256": "a0c585a1574cf25e4eb97f0ba66b80f9c949afb291ff4de0fecf316a08bd5a31"
+    },
+    {
+      "path": "tests/test_talisman_hud.gd",
+      "sha256": "b12dad169ddbfcfabcc586276b93b8e745b02710de9374149d2e4fe3d669cfef"
+    },
+    {
+      "path": "tests/test_ui_item_contract.gd",
+      "sha256": "8b23e46a3faa33cae67988cf579c8051397c9a293dd53169f496b14846a45f37"
+    },
+    {
+      "path": "tests/test_ui_skill_info.gd",
+      "sha256": "a79984921c0841593076bd30583d22d037e0ba2423f76299fbfe13aa3bf61728"
+    },
+    {
+      "path": "tests/test_ui_skill_info.gd.uid",
+      "sha256": "a850ca225c51a740b8f41f8f136633f029f68596c0eed0407cfe2dbe794cb0b8"
+    },
+    {
+      "path": "ui/hud.gd",
+      "sha256": "f05c649e512a071edee7a9ac7877602432a1ef12c825b83a7e859aa4b655acb3"
+    },
+    {
+      "path": "ui/panel_ui.gd",
+      "sha256": "d705521698366d7ce81292d06c452373ea30b55ba8b1dc82656b6ea06b850a1a"
+    },
+    {
+      "path": "ui/skill_detail_body.gd",
+      "sha256": "5072125728e34ae9d6a94f2f3671c984edfa1c7746180d536b4d43a1f69b7be0"
+    },
+    {
+      "path": "ui/skill_detail_body.gd.uid",
+      "sha256": "03f80c28d326b9a3570b61397090edda1e68fb794f6bd92814b417f043b1017c"
+    },
+    {
+      "path": "ui/skill_info.gd",
+      "sha256": "198f7418f89aa5f965a74adef2aa7f948cea761a0583fb5d5eb34a6ca29c0414"
+    },
+    {
+      "path": "ui/skill_info.gd.uid",
+      "sha256": "7105582a6e56e29485a16586b3eb5329572ee8f734d8dd771e9d873ecb79d757"
+    },
+    {
+      "path": "ui/skill_picker_ui.gd",
+      "sha256": "8afd36b03165ee814a918f705cb26bdd2ec9b6ed7d236e03834c8ec05daf370f"
+    },
+    {
+      "path": "ui/skill_tree_ui.gd",
+      "sha256": "53e0c898f55abfa688577e7dd693a956873315759b0716bc23e107e87c416c1c"
+    },
+    {
+      "path": "actors/player_combat.gd",
+      "sha256": "c0daa670f8eba9c4cf77056337351a9dd579d89f36543e88aab0833bea1a89cc"
+    },
+    {
+      "path": "core/progression.gd",
+      "sha256": "33fd225e8df6275467afbb03f6d09a01d161aef43056cb0435010d2972a041a6"
+    },
+    {
+      "path": "skills/skill_def.gd",
+      "sha256": "84232a7bdb1be8382060ea843861520864524f484d75d1b33e9fa71d4f08127f"
+    },
+    {
+      "path": "data/skill_trees/doho.tres",
+      "sha256": "e6b7472bc5934c19515465db2488f80121c8d43f57acd303a9f2494704f9cdbd"
+    },
+    {
+      "path": "ui/ui_fonts.gd",
+      "sha256": "1678ef66429ec29d053aac305b7412b04b0cd8cb599e3c36f81a4065d6d59fc3"
+    },
+    {
+      "path": "ui/ui_skin.gd",
+      "sha256": "9e4d913936a09b5516b659b223c0a664b5fc099195006ceb97e7a97b208528eb"
+    },
+    {
+      "path": "tools/test.ps1",
+      "sha256": "56dec4b211cd573c626ffdb7e23490b8fe6e947d9a65d68b48df94c8805ab364"
+    },
+    {
+      "path": "docs/design/ui_skill_contract_774.json",
+      "sha256": "876ec11ab71943c5fedcc0132c4ad62373f56b3fbce7c55969abac8ac60c038b"
+    }
+  ]
+}

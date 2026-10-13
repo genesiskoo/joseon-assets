@@ -1,0 +1,50 @@
+  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 단독(equipment_ui,item_ui,ui_docks)
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (6.4초)
+== e2e (equipment_ui,item_ui,ui_docks · 단독(창 모드) — 다른 자리 e2e 없이) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon","--","--e2e=equipment_ui,item_ui,ui_docks","--e2e-shots"],"phase_arg":"equipment_ui,item_ui,ui_docks","phase_tokens":["equipment_ui","item_ui","ui_docks"],"skip":[],"exclusive":true,"contains_balance_boss":false,"combat_trace":false,"launcher_pid":30252,"launched_utc":"2026-10-12T11:34:12.0373903Z"}
+E2E start: equipment_ui, item_ui, ui_docks
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+E2E ▶ equipment_ui
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_01_empty_slots.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_02_nine_slots.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_03_shared_1280x720.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_04_shared_1920x1080.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_05_shared_2560x1440.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/equipment_ui_06_twohand_blocked.png
+E2E equipment_ui PASS (검사 101)
+E2E ▶ item_ui
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/item_ui_01_requirements.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/item_ui_02_set_pieces.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/item_ui_03_talisman_belt.png
+E2E item_ui PASS (검사 41)
+E2E ▶ ui_docks
+  · none camera settled, player x=640.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_01_none.png
+  · right camera settled, player x=424.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_02_right.png
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_03_right_world_hover.png
+  · right after pickup camera settled, player x=424.00
+  · left camera settled, player x=856.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_04_left.png
+  · left after movement camera settled, player x=857.39
+  · both camera settled, player x=640.22
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_05_both.png
+  · skills and bag camera settled, player x=640.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_06_skills_bag.png
+  · Esc restores center camera settled, player x=640.00
+  · dialog alone camera settled, player x=641.38
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_07_dialog_excluded.png
+  · vendor and bag camera settled, player x=640.00
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_08_vendor_bag.png
+  · after vendor close camera settled, player x=640.00
+  · waypoint alone camera settled, player x=854.58
+  · waypoint and bag camera settled, player x=639.78
+  · 스크린샷 C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/e2e/ui_docks_09_waypoint_bag.png
+  · final center camera settled, player x=640.00
+E2E ui_docks PASS (검사 61)
+E2E SUMMARY: 3/3 PASS
+E2E_PHASE_RAW C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\tmp\e2e_raw\20261012T1134055605826_31464\phase_1_solo
+  e2e  (28.6초) — 제한 3600초
+  스크린샷 = C:\Users\FORYOUCOM\AppData\Roaming\Godot\app_userdata\Joseon Hunters\wt\codex-2d0c\e2e
+전부 PASS

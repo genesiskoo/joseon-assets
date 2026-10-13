@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "launch": {
+    "schema": 1,
+    "fixed_fps": 0,
+    "exe": "godot",
+    "argv": [
+      "--path",
+      "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon",
+      "--",
+      "--e2e=boss_bulgasari,ui_skill_contract,equipment_ui,ui_item_contract,ui_docks,ui_tooltips,ui_windows,hud_hierarchy_view,skill_picker,skill_names,skill_tiers,body_arts,build_changers,aoe_skills,aoe_skills_2"
+    ],
+    "phase_arg": "boss_bulgasari,ui_skill_contract,equipment_ui,ui_item_contract,ui_docks,ui_tooltips,ui_windows,hud_hierarchy_view,skill_picker,skill_names,skill_tiers,body_arts,build_changers,aoe_skills,aoe_skills_2",
+    "phase_tokens": [
+      "boss_bulgasari",
+      "ui_skill_contract",
+      "equipment_ui",
+      "ui_item_contract",
+      "ui_docks",
+      "ui_tooltips",
+      "ui_windows",
+      "hud_hierarchy_view",
+      "skill_picker",
+      "skill_names",
+      "skill_tiers",
+      "body_arts",
+      "build_changers",
+      "aoe_skills",
+      "aoe_skills_2"
+    ],
+    "skip": [],
+    "exclusive": true,
+    "contains_balance_boss": false,
+    "combat_trace": false,
+    "launcher_pid": 36820,
+    "launched_utc": "2026-10-12T23:11:13.5799985Z"
+  },
+  "runtime_pid": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_sec": 202.9124578,
+  "archived_utc": "2026-10-12T23:14:36.5336964Z",
+  "godot_log": {
+    "source": "C:\\Users\\FORYOUCOM\\AppData\\Roaming\\Godot\\app_userdata\\Joseon Hunters\\wt\\codex-2d0c\\logs\\godot.log",
+    "archive": "C:\\Users\\FORYOUCOM\\.codex\\worktrees\\2d0c\\joseon\\tmp\\e2e_raw\\20261012T2311052102194_11952\\phase_1_solo\\godot.raw.log",
+    "bytes": 50970,
+    "sha256": "f7df5d4f7108a74c5c5eeb3b21b3d0c471d59ce446ecea572ca48687456ae424"
+  },
+  "console_format": "Invoke-Step merged decoded lines; godot.raw.log is byte-exact original"
+}

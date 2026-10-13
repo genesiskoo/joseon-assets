@@ -1,0 +1,79 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev · D3D12 · NVIDIA GeForce RTX 4070
+RENDER_INTERP: boot on · jitter_fix=0.00
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E start: boss_bulgasari
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ boss_bulgasari
+[Dev] item 빈 부적 world=(23.5, 0.0, 10.5) screen=(1287.967, 1225.784)
+[Dungeon] soeburi 3층 lv=9 seed=100493242 preset 32x30 rooms=2 up=(26, 24) down=(-1, -1) enemies=2 roster=soemeogi elites=[] named=-
+[Audio] BGM boss → boss.ogg
+[Save] level 쇠부리 폐광 3층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(26.5, 0.0, 24.5) screen=(593.7167, 335.9507)
+[Dev] interact FloorItem world=(23.5, 0.0, 10.5) screen=(1102.833, -166.4132)
+[Audio] missing cue: boss_bulgasari_wake (파일 규약 design/audio.md §3)
+  · 화로 Brazier_4_14 · 불가살이 (5.76278, 0.0, 12.45786) · 도호 (2.5, 0.000391, 15.5) · 달아오름 6.00초 · 출처 brazier
+  · 달아오름 알림 = 달아오르고 0.37초 뒤 · 그때 도호 바크 없음 · 달아오름 5.6초 남음
+  · 엽전 뜯기 물기 — 0.5초 · 선딜 1(코 0) · 닿은 한 대 1 · 맞음 1 · 달아오름 0 · 물러남 0 · 거리 1.72~1.72
+[Dev] item 장검 world=(7.5, 0.0, 10.5) screen=(1056.55, 372.6777)
+  · 바닥 칼 없음 · 불가살이 (5.516253, 0.0, 10.5809) · 붙듦  · 간 1 · 먹은 1
+  · 벽 쇠사슬 뜯음 [5] · #5 3.64칸 · 가장 가까운 #5 3.64칸 · 사슬 7
+  ✗ 뜯은 벽 사슬 #5 그림 = 지움 (크기 1.000 · 자리 그대로)
+  · 삼키기 사진 틀 (화면 (1280.0, 720.0)) — 보스 머리 (609.0167, 195.957) · 발 (609.0167, 396.6034) · 「무적」 (608.3389, 178.7932) · 도호 머리 (697.5401, 353.8644) · 몸집 × 1.22 · 겉칠 (0.74, 0.78, 0.86, 0.32)
+  · 벽 쇠사슬 뜯음 [5, 3] · #3 6.16칸 · 가장 가까운 #3 6.16칸 · 사슬 7
+  ✗ 뜯은 벽 사슬 #3 그림 = 지움 (크기 1.000 · 자리 그대로)
+  · 포효 밀린 칸 3.000 (정격 3.0 · 경직 true · 도호 (9.5, 0.000391, 10.5) → (12.49959, 0.000391, 10.45075) · 불가살이 (8.681627, 0.0, 10.5021))
+  · 코 밀린 칸 2.000 (정격 2.0 · 맞음 true · 도호 (10.5, 0.000391, 10.5) → (12.5, 0.000391, 10.49769) · 불가살이 (9.401624, 0.0, 10.50062))
+WARNING: [Physics interpolation] MultiMesh interpolation is being triggered from outside physics process, this might lead to issues (possibly benign).
+   at: multimesh_instance_set_transform (servers/rendering/storage/mesh_storage.cpp:107)
+   GDScript backtrace (most recent call first):
+       [0] _glyph_drops (res://core/vfx.gd:2406)
+       [1] _glyph_step (res://core/vfx.gd:2347)
+[Kill] +2912 xp (lv 11, 58/730)
+[LevelUp] lv=11 stat_pts=50 skill_pts=10
+[Dev] item 미식별 삿갓 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 탕약 — 쌍화탕 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 탕약 — 십전대보탕 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 영약 — 총명탕 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 식별부 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 흠 있는 흑옥 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 온전한 백옥 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 불가살이의 쇠비늘 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 불가살이의 쇠비늘 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 수복 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 미식별 사인검 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 미식별 본국검 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 미식별 장검 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Loot] 보스 전용 유니크 — boss_bulgasari 첫 처치 → u_soe_eater (회차 1)
+[Dev] item 불가살이의 사슬 조각 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 엽전 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Dev] item 엽전 world=(14.24162, 0.0, 10.50011) screen=(581.7529, 310.3653)
+[Save] boss → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/codex-2d0c/save_e2e.json)
+[Boss] killed area=soeburi level=9 flags={ "opening_pending": false, "story": { "entered/motgol": true, "entered/soeburi": true }, "seal:boss_bulgasari": 1, "quest": { "soeburi_seal": { "state": "killed" } }, "boss_killed_soeburi": true }
+[Audio] 같은 순간 같은 큐 상한(3) 넘침 — drop ×9 (버림 누계 9)
+  · 처치 뒤 줄 — 처치 1.81초 · 스킬 포인트 3.51초 (드랍 다 앉음 ≤ 0.91초)
+E2E boss_bulgasari FAIL (검사 54, 실패 2)
+E2E SUMMARY: 0/1 PASS
+  E2E boss_bulgasari FAIL (검사 54, 실패 2)

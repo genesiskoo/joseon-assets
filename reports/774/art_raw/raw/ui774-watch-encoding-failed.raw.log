@@ -1,0 +1,5 @@
+{"changed": true, "scenarios": 1, "last": ["character_stats", "PASS", "191"], "failures": [], "script_errors": [], "phase_failures": [], "shots": 0, "skill_pass": false, "log_pass": false, "engine_started": true, "phase_archived": false}
+Traceback (most recent call last):
+  File "C:\Users\FORYOUCOM\.codex\worktrees\2d0c\joseon\._tmp\ui774_watch.py", line 45, in <module>
+    print('\n'.join(content.splitlines()[-15:]))
+UnicodeEncodeError: 'cp949' codec can't encode character '\u2014' in position 314: illegal multibyte sequence

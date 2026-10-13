@@ -1,0 +1,6 @@
+Command: python -c "import json; d=json.load(open('docs/art/748_ui_plan/skill-system-audit.json',encoding='utf-8')); n=next(n for n in d['nodes'] if n['resolved']['id']=='talisman_rain'); print(json.dumps(n['variant_fixtures']['fire'],ensure_ascii=True))"
+Exit: 1
+stderr:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+KeyError: 'variant_fixtures'
