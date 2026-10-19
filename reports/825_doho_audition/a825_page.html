@@ -1,0 +1,168 @@
+<title>도호 목소리 재오디션</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+/* 레이아웃: 맨 위 = 대사별 연속 듣기 줄, 아래 = 성우 카드(대사 3 × 설정 2 단추) · 맨 끝 = 고른 결과 복사 */
+:root {
+  --bg: #f3efe7; --panel: #fbf8f2; --ink: #23201b; --muted: #6d665b; --line: #d9d0c1;
+  --accent: #8a2f24; --accent-soft: #f1ddd6; --pick: #2f5d4a; --pick-soft: #dcebe3;
+  --display: "Nanum Myeongjo", "Batang", serif;
+  --body: "IBM Plex Sans KR", "Malgun Gothic", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #171512; --panel: #201d19; --ink: #ece6da; --muted: #a39a8b; --line: #3a352d;
+  --accent: #d9715f; --accent-soft: #3a221d; --pick: #7fbf9f; --pick-soft: #1d3329; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #171512; --panel: #201d19; --ink: #ece6da; --muted: #a39a8b; --line: #3a352d;
+  --accent: #d9715f; --accent-soft: #3a221d; --pick: #7fbf9f; --pick-soft: #1d3329; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+h1 { font-family: var(--display); font-weight: 800; font-size: 30px; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--display); font-size: 20px; margin: 0; }
+.lede { color: var(--muted); max-width: 64ch; margin: 6px 0 0; }
+.tag { display: inline-block; font-size: 12px; letter-spacing: .04em; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 6px; }
+.lines { display: grid; gap: 10px; }
+.line { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  border-top: 1px solid var(--line); padding-top: 10px; }
+.line .k { font-family: var(--display); font-size: 17px; color: var(--accent); }
+.line q { font-size: 16px; quotes: "「" "」"; }
+.line small { display: block; color: var(--muted); }
+.seq { display: flex; gap: 6px; flex-wrap: wrap; }
+button { font: inherit; font-size: 14px; color: var(--ink); background: var(--panel); border: 1px solid var(--line);
+  border-radius: 4px; padding: 6px 10px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.playing { background: var(--accent-soft); border-color: var(--accent); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 12px; align-content: start; }
+.card.picked { border-color: var(--pick); box-shadow: inset 0 0 0 1px var(--pick); }
+.card header { display: grid; gap: 2px; }
+.card header p { margin: 0; color: var(--muted); font-size: 13px; }
+.grid { display: grid; grid-template-columns: 44px 1fr 1fr; gap: 6px; align-items: center; }
+.grid .h { font-size: 12px; color: var(--muted); text-align: center; }
+.grid .rk { font-size: 13px; color: var(--muted); }
+.grid button { width: 100%; }
+.picks { display: flex; gap: 6px; flex-wrap: wrap; }
+.picks button[aria-pressed="true"] { background: var(--pick-soft); border-color: var(--pick); color: var(--ink); font-weight: 600; }
+textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 13px; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 4px; padding: 6px 8px; min-height: 52px; resize: vertical; }
+.result { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 10px; }
+.result pre { margin: 0; white-space: pre-wrap; font-family: var(--body); font-size: 14px; background: var(--bg); border-radius: 4px; padding: 10px; min-width: 0; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.status { color: var(--pick); font-size: 13px; }
+.note { color: var(--muted); font-size: 13px; max-width: 70ch; margin: 0; }
+@media (max-width: 560px) { .line { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="tag">#825 · ElevenLabs eleven_v4 · 음량 −20 LUFS로 맞춤</span>
+    <h1>도호 목소리 재오디션</h1>
+    <p class="lede">같은 대사 세 줄을 성우 다섯(지금 성우 포함) × 연기 설정 둘로 뽑았습니다. 대사마다 「연속 듣기」로 성우를 차례로 비교하고, 마음에 드는 성우 카드에서 설정을 고른 뒤 맨 아래 「결과 복사」를 눌러 채팅에 붙여 주세요.</p>
+  </header>
+
+  <section class="lines" aria-label="대사별 연속 듣기">
+    <h2>대사별 연속 듣기</h2>
+    <div id="lines"></div>
+  </section>
+
+  <section aria-label="성우 카드" style="display:grid;gap:12px">
+    <h2>성우</h2>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="result" aria-label="결과">
+    <h2>결과</h2>
+    <pre id="out"></pre>
+    <div class="row"><button id="copy" type="button">결과 복사</button><span class="status" id="status" role="status"></span></div>
+    <p class="note">고른 내용은 이 브라우저에만 남습니다. 「연기」는 대사에 [능청]·[웃음]·[뜸] 같은 연기 지시를 넣고 안정도를 낮춘 설정입니다. 둘 다 아니면 「후보 없음」을 고르고 메모에 원하는 결을 적어 주세요.</p>
+  </section>
+</div>
+
+<script>
+/*DATA*/
+const player = new Audio();
+let queue = [], current = null;
+function stopAll() { player.pause(); queue = []; if (current) current.classList.remove("playing"); current = null; }
+function play(key, btn) {
+  if (!AUDIO[key]) return;
+  if (current) current.classList.remove("playing");
+  current = btn || null; if (current) current.classList.add("playing");
+  player.src = AUDIO[key]; player.currentTime = 0; player.play().catch(() => {});
+}
+player.addEventListener("ended", () => {
+  if (current) current.classList.remove("playing"); current = null;
+  const next = queue.shift(); if (next) setTimeout(() => play(next.key, next.btn), 450);
+});
+const store = { get() { try { return JSON.parse(localStorage.getItem("a825") || "{}"); } catch (e) { return {}; } },
+  set(v) { try { localStorage.setItem("a825", JSON.stringify(v)); } catch (e) {} } };
+let state = store.get(); state.pick = state.pick || {}; state.memo = state.memo || {};
+
+const linesEl = document.getElementById("lines");
+for (const [lk, label, text, scene] of DATA.lines) {
+  const row = document.createElement("div"); row.className = "line";
+  row.innerHTML = `<span class="k">${label}</span><div><q>${text}</q><small>${scene}</small></div><div class="seq"></div>`;
+  for (const [sk, sname] of DATA.sets) {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = `${sname} 연속 듣기`;
+    b.addEventListener("click", () => {
+      stopAll();
+      queue = DATA.voices.map(([vk]) => ({ key: `${vk}_${sk}_${lk}`, btn: document.querySelector(`[data-key="${vk}_${sk}_${lk}"]`) })).filter(x => AUDIO[x.key]);
+      const first = queue.shift(); if (first) play(first.key, first.btn);
+    });
+    row.querySelector(".seq").appendChild(b);
+  }
+  linesEl.appendChild(row);
+}
+
+const cardsEl = document.getElementById("cards");
+const PICKS = [["a", "자연으로"], ["b", "연기로"], ["no", "후보 없음"]];
+for (const [vk, name, desc] of DATA.voices) {
+  const card = document.createElement("article"); card.className = "card"; card.id = `card-${vk}`;
+  let grid = `<div class="grid"><span></span>${DATA.sets.map(([, s, d]) => `<span class="h" title="${d}">${s}</span>`).join("")}`;
+  for (const [lk, label] of DATA.lines) {
+    grid += `<span class="rk">${label}</span>` + DATA.sets.map(([sk, s]) => `<button type="button" data-key="${vk}_${sk}_${lk}" aria-label="${name} ${label} ${s} 듣기">▶ 듣기</button>`).join("");
+  }
+  grid += "</div>";
+  card.innerHTML = `<header><h2>${name}</h2><p>${desc}</p></header>${grid}
+    <div class="picks">${PICKS.map(([p, t]) => `<button type="button" data-pick="${p}" aria-pressed="false">${t}</button>`).join("")}</div>
+    <label><span class="note">메모</span><textarea id="memo-${vk}" placeholder="예: 허세 줄 좋음, 진지 줄은 너무 가벼움"></textarea></label>`;
+  card.querySelectorAll("[data-key]").forEach(b => b.addEventListener("click", () => { stopAll(); play(b.dataset.key, b); }));
+  card.querySelectorAll("[data-pick]").forEach(b => b.addEventListener("click", () => {
+    state.pick[vk] = state.pick[vk] === b.dataset.pick ? undefined : b.dataset.pick; store.set(state); render();
+  }));
+  const memo = card.querySelector("textarea"); memo.value = state.memo[vk] || "";
+  memo.addEventListener("input", () => { state.memo[vk] = memo.value; store.set(state); render(); });
+  cardsEl.appendChild(card);
+}
+
+function resultText() {
+  const lines = ["#825 도호 오디션 판정"];
+  for (const [vk, name] of DATA.voices) {
+    const p = state.pick[vk]; const m = (state.memo[vk] || "").trim();
+    if (!p && !m) continue;
+    const what = p === "a" ? "고름 · 자연" : p === "b" ? "고름 · 연기" : p === "no" ? "후보 없음" : "판정 없음";
+    lines.push(`- ${name}: ${what}${m ? " — " + m : ""}`);
+  }
+  if (lines.length === 1) lines.push("(아직 고른 것 없음)");
+  return lines.join("\n");
+}
+function render() {
+  for (const [vk] of DATA.voices) {
+    const card = document.getElementById(`card-${vk}`);
+    card.classList.toggle("picked", state.pick[vk] === "a" || state.pick[vk] === "b");
+    card.querySelectorAll("[data-pick]").forEach(b => b.setAttribute("aria-pressed", String(state.pick[vk] === b.dataset.pick)));
+  }
+  document.getElementById("out").textContent = resultText();
+}
+document.getElementById("copy").addEventListener("click", () => {
+  const text = resultText(), status = document.getElementById("status");
+  navigator.clipboard.writeText(text).then(() => { status.textContent = "복사했습니다. 채팅에 붙여 주세요."; })
+    .catch(() => { const r = document.createRange(); r.selectNodeContents(document.getElementById("out"));
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r); status.textContent = "Ctrl+C로 복사해 주세요(선택해 두었습니다)."; });
+});
+render();
+</script>
