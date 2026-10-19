@@ -1,0 +1,420 @@
+{
+  "ok": false,
+  "errors": [
+    "runtime-doho-idle-atlas: hash/size mismatch data/dialogue/event/shaman_quest.dialogue",
+    "runtime-doho-idle-atlas: hash/size mismatch data/dialogue/npc/dokkaebi.dialogue",
+    "runtime-doho-idle-atlas: hash/size mismatch data/dialogue/npc/elder.dialogue",
+    "runtime-doho-idle-atlas: hash/size mismatch data/dialogue/npc/jumo.dialogue",
+    "runtime-doho-idle-atlas: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "runtime-doho-idle-atlas: hash/size mismatch data/dialogue/npc/shaman.dialogue",
+    "runtime-doho-still-neutral: hash/size mismatch data/dialogue/event/shaman_quest.dialogue",
+    "runtime-doho-still-neutral: hash/size mismatch data/dialogue/npc/dokkaebi.dialogue",
+    "runtime-doho-still-neutral: hash/size mismatch data/dialogue/npc/elder.dialogue",
+    "runtime-doho-still-neutral: hash/size mismatch data/dialogue/npc/jumo.dialogue",
+    "runtime-doho-still-neutral: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "runtime-doho-still-neutral: hash/size mismatch data/dialogue/npc/shaman.dialogue",
+    "runtime-doho-still-serious: hash/size mismatch data/dialogue/event/shaman_quest.dialogue",
+    "runtime-doho-still-serious: hash/size mismatch data/dialogue/npc/dokkaebi.dialogue",
+    "runtime-doho-still-serious: hash/size mismatch data/dialogue/npc/elder.dialogue",
+    "runtime-doho-still-serious: hash/size mismatch data/dialogue/npc/jumo.dialogue",
+    "runtime-doho-still-serious: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "runtime-doho-still-serious: hash/size mismatch data/dialogue/npc/shaman.dialogue",
+    "runtime-doho-still-smug: hash/size mismatch data/dialogue/event/shaman_quest.dialogue",
+    "runtime-doho-still-smug: hash/size mismatch data/dialogue/npc/dokkaebi.dialogue",
+    "runtime-doho-still-smug: hash/size mismatch data/dialogue/npc/elder.dialogue",
+    "runtime-doho-still-smug: hash/size mismatch data/dialogue/npc/jumo.dialogue",
+    "runtime-doho-still-smug: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "runtime-doho-still-smug: hash/size mismatch data/dialogue/npc/shaman.dialogue",
+    "runtime-merchant-idle-atlas: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "runtime-merchant-still-neutral: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "runtime-merchant-still-smile: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "runtime-shaman-idle-atlas: hash/size mismatch data/dialogue/event/shaman_quest.dialogue",
+    "runtime-shaman-idle-atlas: hash/size mismatch data/dialogue/npc/shaman.dialogue",
+    "runtime-elder-idle-atlas: hash/size mismatch data/dialogue/npc/elder.dialogue",
+    "runtime-eoksoe-still-neutral: hash/size mismatch data/dialogue/npc/eoksoe.dialogue",
+    "runtime-eoksoe-still-smile: hash/size mismatch data/dialogue/npc/eoksoe.dialogue",
+    "runtime-jumo-idle-atlas: hash/size mismatch data/dialogue/npc/jumo.dialogue",
+    "card744-render-doho: hash/size mismatch actors/actor_visual.gd",
+    "card744-render-doho: hash/size mismatch actors/model_def.gd",
+    "card744-render-doho: hash/size mismatch actors/player.gd",
+    "card744-render-doho: hash/size mismatch actors/player_combat.gd",
+    "card744-render-merchant: hash/size mismatch actors/actor_visual.gd",
+    "card744-render-merchant: hash/size mismatch actors/model_def.gd",
+    "card744-render-merchant: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "card744-render-merchant: hash/size mismatch world/town.tscn",
+    "card744-render-shaman: hash/size mismatch actors/actor_visual.gd",
+    "card744-render-shaman: hash/size mismatch actors/model_def.gd",
+    "card744-render-shaman: hash/size mismatch data/dialogue/npc/shaman.dialogue",
+    "card744-render-shaman: hash/size mismatch world/town.tscn",
+    "card744-render-elder: hash/size mismatch actors/actor_visual.gd",
+    "card744-render-elder: hash/size mismatch actors/model_def.gd",
+    "card744-render-elder: hash/size mismatch data/dialogue/npc/elder.dialogue",
+    "card744-render-elder: hash/size mismatch world/town.tscn",
+    "card744-render-eoksoe: hash/size mismatch actors/actor_visual.gd",
+    "card744-render-eoksoe: hash/size mismatch actors/model_def.gd",
+    "card744-render-eoksoe: hash/size mismatch data/dialogue/npc/eoksoe.dialogue",
+    "card744-render-eoksoe: hash/size mismatch world/town.tscn",
+    "card744-render-jumo: hash/size mismatch actors/actor_visual.gd",
+    "card744-render-jumo: hash/size mismatch actors/model_def.gd",
+    "card744-render-jumo: hash/size mismatch data/dialogue/npc/jumo.dialogue",
+    "card744-render-jumo: hash/size mismatch world/town.tscn",
+    "card744-render-boss_gumiho: hash/size mismatch actors/actor_visual.gd",
+    "card744-render-boss_gumiho: hash/size mismatch actors/boss_gumiho.gd",
+    "card744-render-boss_gumiho: hash/size mismatch actors/enemy_def.gd",
+    "card744-render-boss_gumiho: hash/size mismatch actors/model_def.gd",
+    "card744-render-boss_gumiho: hash/size mismatch data/enemies/boss_gumiho.tres",
+    "card744-world-merchant: hash/size mismatch actors/actor_visual.gd",
+    "card744-world-merchant: hash/size mismatch actors/model_def.gd",
+    "card744-world-merchant: hash/size mismatch data/dialogue/npc/merchant.dialogue",
+    "card744-world-merchant: hash/size mismatch world/town.tscn",
+    "card744-world-shaman: hash/size mismatch actors/actor_visual.gd",
+    "card744-world-shaman: hash/size mismatch actors/model_def.gd",
+    "card744-world-shaman: hash/size mismatch data/dialogue/npc/shaman.dialogue",
+    "card744-world-shaman: hash/size mismatch world/town.tscn",
+    "card744-world-elder: hash/size mismatch actors/actor_visual.gd",
+    "card744-world-elder: hash/size mismatch actors/model_def.gd",
+    "card744-world-elder: hash/size mismatch data/dialogue/npc/elder.dialogue",
+    "card744-world-elder: hash/size mismatch world/town.tscn",
+    "card744-world-jumo: hash/size mismatch actors/actor_visual.gd",
+    "card744-world-jumo: hash/size mismatch actors/model_def.gd",
+    "card744-world-jumo: hash/size mismatch data/dialogue/npc/jumo.dialogue",
+    "card744-world-jumo: hash/size mismatch world/town.tscn",
+    "card744-world-eoksoe: hash/size mismatch actors/actor_visual.gd",
+    "card744-world-eoksoe: hash/size mismatch actors/model_def.gd",
+    "card744-world-eoksoe: hash/size mismatch data/dialogue/npc/eoksoe.dialogue",
+    "card744-world-eoksoe: hash/size mismatch world/town.tscn",
+    "card744-world-doho: hash/size mismatch actors/actor_visual.gd",
+    "card744-world-doho: hash/size mismatch actors/model_def.gd",
+    "card744-world-doho: hash/size mismatch actors/player.gd",
+    "card744-world-doho: hash/size mismatch actors/player_combat.gd"
+  ],
+  "warnings": [],
+  "impacts": [
+    {
+      "runtime_id": "doho",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "elder",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "eoksoe",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "jumo",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "merchant",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "shaman",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "bandit",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "bat",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "beacon_keeper",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "beom_apjabi",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "boss_bulgasari",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "boss_gumiho",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "boss_heukrang",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "boss_jangsanbeom",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "cart_puller",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "cave_bat",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "centipede",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "changgwi",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "dungap_yeou",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "eorin_heukrang",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "eorin_jangsanbeom",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "frost_master",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "gaekgwi",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "gaksi_gwisin",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "geomeun_yacha",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "guard_master",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "gumjurin_agwi",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "gwangbu_neok",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "hollin_saram",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "hollin_yeogung_bow",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "hollin_yeogung_bow2",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "hollin_yeogung_spear",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "honbul",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "honbureum_sulsa",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "hwajeok",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "imugi",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "lightning_master",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "locust",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "maegu",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "mulgwishin",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "nachalnyeo",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "pitbit_nachalnyeo",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "plague_dog",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "plague_miner",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "soemeogi",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "soemeogi_elder",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "spider",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "talisman_master",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "tteodoneun_neok",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "vampire_bat",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "wang_geomi",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "yacha",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "yeou",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "yeoubul",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "runtime_id": "yeounui",
+      "change": "runtime_dependencies_changed"
+    },
+    {
+      "asset_id": "card744-render-doho",
+      "change": "capture_stale"
+    },
+    {
+      "asset_id": "card744-render-merchant",
+      "change": "capture_stale"
+    },
+    {
+      "asset_id": "card744-render-shaman",
+      "change": "capture_stale"
+    },
+    {
+      "asset_id": "card744-render-elder",
+      "change": "capture_stale"
+    },
+    {
+      "asset_id": "card744-render-eoksoe",
+      "change": "capture_stale"
+    },
+    {
+      "asset_id": "card744-render-jumo",
+      "change": "capture_stale"
+    },
+    {
+      "asset_id": "card744-render-boss_gumiho",
+      "change": "capture_stale"
+    },
+    {
+      "asset_id": "card744-world-merchant",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-shaman",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-elder",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-jumo",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-eoksoe",
+      "change": "capture_indeterminate"
+    },
+    {
+      "asset_id": "card744-world-doho",
+      "change": "capture_indeterminate"
+    }
+  ],
+  "capture_checks": [
+    {
+      "asset_id": "card744-render-doho",
+      "freshness": "stale"
+    },
+    {
+      "asset_id": "card744-render-merchant",
+      "freshness": "stale"
+    },
+    {
+      "asset_id": "card744-render-shaman",
+      "freshness": "stale"
+    },
+    {
+      "asset_id": "card744-render-elder",
+      "freshness": "stale"
+    },
+    {
+      "asset_id": "card744-render-eoksoe",
+      "freshness": "stale"
+    },
+    {
+      "asset_id": "card744-render-jumo",
+      "freshness": "stale"
+    },
+    {
+      "asset_id": "card744-render-boss_gumiho",
+      "freshness": "stale"
+    },
+    {
+      "asset_id": "card744-world-merchant",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-shaman",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-elder",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-jumo",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-eoksoe",
+      "freshness": "indeterminate"
+    },
+    {
+      "asset_id": "card744-world-doho",
+      "freshness": "indeterminate"
+    }
+  ]
+}

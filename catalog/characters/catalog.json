@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13",
+  "updated_at": "2026-10-20",
   "characters": [
     {
       "character_id": "doho",
@@ -17862,6 +17862,75 @@
       "notes": [
         "PD 가 #733 A/B/C 가운데 B 를 다듬을 방향으로 골랐다 — 최종 형태 채택 아님(→ #734 인간성·분노·한 조정)",
         "무참조 t2i(참조 0)"
+      ]
+    },
+    {
+      "asset_id": "card820-gumiho-y2-model",
+      "character_id": "gumiho",
+      "form_id": "true_form",
+      "version_id": "2026-10-20",
+      "display_name": "구미호 본체 · 두 발 요괴 Y2 3D 몸 (Tripo 웹)",
+      "role": "boss_npc",
+      "runtime_aliases": [
+        "gumiho_y2"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/c8297ef5ac896b52b9142868352ac325b8f358075120061c4e9ff736fc3e9d2a/gumiho_y2_front_idle.png",
+        "sha256": "c8297ef5ac896b52b9142868352ac325b8f358075120061c4e9ff736fc3e9d2a",
+        "bytes": 200451,
+        "width": 1280,
+        "height": 720
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 몸 · 보스 1·2단계 두 발 요괴(Y2)"
+        ],
+        "date": "2026-10-20",
+        "card": 820,
+        "evidence": [
+          "board #820 본문 — PD 10-18 판정판 「추천대로」: #762 채택분 다운로드 허락 · 구미호 새 3단 몸(사람 탈 · Y2 · Y1)",
+          "board #820 댓글 2026-10-20 — PD Y2 시안 재확인"
+        ],
+        "quote": "이건 써도 되겠네",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 820,
+        "source_commit": null,
+        "inclusion_reason": "#762 Tripo 웹 생성(작업 71206fe8-2103-41c9-af6c-9c6c2d1efa6d) · 10-20 크레딧 0 내보내기 → 게임 반입",
+        "tool": "Tripo Studio 웹 H3.1 · Auto Rig Mixamo 65 · AI 동작 / 촬영 Godot 4.7.2 model_viewer",
+        "backend": "Tripo 웹(생성) · D3D12 / RTX 4070(촬영)",
+        "prompt": null,
+        "references": []
+      },
+      "runtime": {
+        "connection": "definition_only",
+        "load": "success",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "reports/820/logs/gumiho_y2_model_raw.log",
+            "sha256": "8dd6eba36c68804a12b62ebe991856c3821af73e1ed90ed748f381cb15740e35",
+            "bytes": 704,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입본 assets/models/gumiho_y2/gumiho_y2.glb SHA-256 75818e257409c30126e57b0b6792e35a6448384daf85c6c39d12d6e8461a6e98 · ModelDef data/models/gumiho_y2.tres(scale 2.442 · 키 2.4 가안)",
+        "Tripo 원본 gumiho_y2_tripo_export_7anim.glb · 2234804 B · SHA-256 1d7b93ea22ea41a439bada4e6a6c27227f697f91afc121d8c75dcadd852e4557",
+        "Tripo 원본 gumiho_y2_tripo_export.glb · 1968068 B · SHA-256 462f2ea9cbc203105156d9335db8b4240ce1dbdf93c4b84086624526fec5fe52",
+        "동작 8 = Tripo AI 7(idle · walk · run · attack · leap · hit · roar) + die = bandit_v2 die를 키 비율로 옮긴 임시 대역(Tripo 「Demon Collapses」가 붙으면 갈음)",
+        "찌르기(Demon Lunge Attack)는 아직 Tripo 모델에 안 붙어 빠짐",
+        "적 정의(boss_gumiho)에는 아직 연결 안 함 — 단계 연결은 #515 · 그래서 connection = definition_only · world_display 미확인",
+        "촬영 = model_viewer --zoom=3.5 --yaw=45 --clean idle 2초 · 조건 파일 없음 → freshness indeterminate"
       ]
     }
   ],
