@@ -17932,6 +17932,205 @@
         "적 정의(boss_gumiho)에는 아직 연결 안 함 — 단계 연결은 #515 · 그래서 connection = definition_only · world_display 미확인",
         "촬영 = model_viewer --zoom=3.5 --yaw=45 --clean idle 2초 · 조건 파일 없음 → freshness indeterminate"
       ]
+    },
+    {
+      "asset_id": "card840-gumiho-h2-model",
+      "character_id": "gumiho",
+      "form_id": "human_disguise",
+      "version_id": "2026-10-20",
+      "display_name": "구미호 사람 탈 · H2 3D 몸 (Tripo 웹)",
+      "role": "boss_npc",
+      "runtime_aliases": [
+        "gumiho_h2"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/a50f90dc140fcf59813f7315182c6a59173ea8a197ab2515895b2032da6e27b0/gumiho_h2_front_idle.png",
+        "sha256": "a50f90dc140fcf59813f7315182c6a59173ea8a197ab2515895b2032da6e27b0",
+        "bytes": 98952,
+        "width": 1280,
+        "height": 720
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 몸 · 사람 탈(주모 차림) H2"
+        ],
+        "date": "2026-10-18",
+        "card": 840,
+        "evidence": [
+          "board #820 본문 — PD 10-18 판정판 「추천대로」: #762 채택분 다운로드 허락 · 구미호 새 3단 몸(사람 탈 · Y2 · Y1) + 꼬리",
+          "board #840 — #820 남은 몸 반입(10-20 Claude 인수)"
+        ],
+        "quote": "추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 840,
+        "source_commit": null,
+        "inclusion_reason": "#762 Tripo 웹 생성(작업 570a554b-0c35-4400-898f-66c2847514a1) · 10-20 크레딧 0 내보내기 → 게임 반입",
+        "tool": "Tripo Studio 웹 H3.1 · Auto Rig Mixamo 65 · AI 동작 / 촬영 Godot 4.7.2 model_viewer",
+        "backend": "Tripo 웹(생성) · D3D12 / RTX 4070(촬영)",
+        "prompt": null,
+        "references": []
+      },
+      "runtime": {
+        "connection": "definition_only",
+        "load": "success",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "reports/840/logs/gumiho_h2_model_raw.log",
+            "sha256": "1fe609970f59445c53a8eb42e106c177b9dc313d62833a5f4ca86961c4155319",
+            "bytes": 1143,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입본 assets/models/gumiho_h2/gumiho_h2.glb SHA-256 14730c517bae86ded4e1998218347dc7e47a180c8bbb4fe8031615eea355ec47 · ModelDef data/models/gumiho_h2.tres(scale 1.636 · 키 1.6 가안)",
+        "Tripo 원본 gumiho_h2_tripo_export_6anim.glb · 2004304 B · SHA-256 89089f090c4c65599ba14ccb5ccdf23cf539e9e70f4a7b1afdc23299dbf40d57",
+        "동작 8 = Tripo 6(idle · walk · demon_idle · pour · talk · offer) + hit · die = bandit_v2를 키 비율로 옮긴 임시 대역 · 공격 없음",
+        "적 · NPC 정의에는 아직 연결 안 함 — 주모 갈음 · 단계 연결은 #515 · connection = definition_only",
+        "촬영 = model_viewer --zoom=3.5 --yaw=45 --clean idle 2초 · 조건 파일 없음 → freshness indeterminate"
+      ]
+    },
+    {
+      "asset_id": "card840-gumiho-y1-model",
+      "character_id": "gumiho",
+      "form_id": "true_form",
+      "version_id": "2026-10-20",
+      "display_name": "구미호 본체 · 네발 요괴 Y1 3D 몸 (Tripo 웹 + 우리 4족 리그)",
+      "role": "boss_npc",
+      "runtime_aliases": [
+        "gumiho_y1"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/e431d3ef879e228537ffb7242a35f248019178ccd1c64c9ee01aab3ca1251ccb/gumiho_y1_front_idle.png",
+        "sha256": "e431d3ef879e228537ffb7242a35f248019178ccd1c64c9ee01aab3ca1251ccb",
+        "bytes": 133478,
+        "width": 1280,
+        "height": 720
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 몸 · 보스 마지막 단계 네발 요괴(Y1)"
+        ],
+        "date": "2026-10-18",
+        "card": 840,
+        "evidence": [
+          "board #820 본문 — PD 10-18 판정판 「추천대로」: #762 채택분 다운로드 허락 · 구미호 새 3단 몸(사람 탈 · Y2 · Y1) + 꼬리",
+          "board #840 — #820 남은 몸 반입(10-20 Claude 인수)"
+        ],
+        "quote": "추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 840,
+        "source_commit": null,
+        "inclusion_reason": "#762 Tripo 웹 생성(작업 356314ae-0c8c-42c0-8a52-09ff22f0d7d9) · 10-20 크레딧 0 내보내기 → 게임 반입",
+        "tool": "Tripo Studio 웹 H3.1(메시) · rig_quadruped v2(뼈 19 · 클립 9) / 촬영 Godot 4.7.2 model_viewer",
+        "backend": "Tripo 웹(생성) · D3D12 / RTX 4070(촬영)",
+        "prompt": null,
+        "references": []
+      },
+      "runtime": {
+        "connection": "definition_only",
+        "load": "success",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "reports/840/logs/gumiho_y1_model_raw.log",
+            "sha256": "0422b871d5c0cd7fda3094ddf9e273eacedf1a5d0f838991002f6ce4366ee246",
+            "bytes": 1083,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입본 assets/models/gumiho_y1/gumiho_y1.glb SHA-256 7ae4dc617500903c081d6207822c7b5eea894ee6762a1aa2fc3624bb1b291fa6 · ModelDef data/models/gumiho_y1.tres(scale 1.833 · 키 1.8 가안)",
+        "Tripo 원본 gumiho_y1_tripo_export.glb · 2167520 B · SHA-256 37d35d998adef541a0b6ce7cf67d621287bf1217962df9d2c8b7fb82d402d1dd — Tripo Other 리그(26뼈 · 동작 0)는 버리고 glTF 스킨 떼기 → rig_quadruped",
+        "적 정의(boss_gumiho)에는 아직 연결 안 함 — 단계 연결은 #515 · connection = definition_only",
+        "촬영 = model_viewer --zoom=3.5 --yaw=45 --clean idle 2초 · 조건 파일 없음 → freshness indeterminate"
+      ]
+    },
+    {
+      "asset_id": "card840-gumiho-tail-model",
+      "character_id": "gumiho",
+      "form_id": "true_form",
+      "version_id": "2026-10-20",
+      "display_name": "구미호 꼬리 한 가닥 3D 부품 (Tripo 웹)",
+      "role": "boss_npc",
+      "runtime_aliases": [
+        "gumiho_tail"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/c10f351f4ba16dd30daa6e5e85f1384fbd09277ede1aea19d7339f3ca7c69e33/gumiho_tail_idle.png",
+        "sha256": "c10f351f4ba16dd30daa6e5e85f1384fbd09277ede1aea19d7339f3ca7c69e33",
+        "bytes": 109348,
+        "width": 1280,
+        "height": 720
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 부품 · 9꼬리 한 가닥(정지 메시)"
+        ],
+        "date": "2026-10-18",
+        "card": 840,
+        "evidence": [
+          "board #820 본문 — PD 10-18 판정판 「추천대로」: #762 채택분 다운로드 허락 · 구미호 새 3단 몸(사람 탈 · Y2 · Y1) + 꼬리",
+          "board #840 — #820 남은 몸 반입(10-20 Claude 인수)"
+        ],
+        "quote": "추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 840,
+        "source_commit": null,
+        "inclusion_reason": "#762 Tripo 웹 생성(작업 f949daee-b400-435d-8684-e96dd8814a42) · 10-20 크레딧 0 내보내기 → 게임 반입",
+        "tool": "Tripo Studio 웹 H3.1 · decimate_glb 1,500 / 촬영 Godot 4.7.2 model_viewer",
+        "backend": "Tripo 웹(생성) · D3D12 / RTX 4070(촬영)",
+        "prompt": null,
+        "references": []
+      },
+      "runtime": {
+        "connection": "definition_only",
+        "load": "success",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "reports/840/logs/gumiho_tail_model_raw.log",
+            "sha256": "7631c643df09bc9eb5210f18f7d69e17c857919c15de196db9f55b122c2f0235",
+            "bytes": 867,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입본 assets/models/gumiho_tail/gumiho_tail.glb SHA-256 b40cd10d0feb3a343ccf684631acd0171ed050acc22cf39b49d1428bc532746b · ModelDef 없음(부품 — 9개 배치는 #515)",
+        "Tripo 원본 gumiho_tail_tripo_export.glb · 1019368 B · SHA-256 6786dd159ff1d38994863e4cb9a9c402459cfe7d4eb04c411ef768bcbd9d741d · 4,814 → 1,499 tri",
+        "털 색 = 원본 갈색(흰 소복 9꼬리 색은 #515 틴트) · look_audit 채도 · 납작 경고",
+        "촬영 = model_viewer --zoom=2 --yaw=45 --clean 1초 · 조건 파일 없음 → freshness indeterminate"
+      ]
     }
   ],
   "schema_version": "1.0.0"

@@ -1,0 +1,22 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+== model_check res://assets/models/gumiho_y1/gumiho_y1.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 19: Hips, BL_Up, BL_Low, BL_Foot, BR_Up, BR_Low…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 14053
+AABB: 키 0.98 · 너비 0.31 · 깊이 0.50 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 9: attack(0.50s), die(1.20s), hit(0.30s), idle(2.20s), pounce(0.60s), pounce_air(0.40s), pounce_land(0.25s), run(0.55s), walk(0.85s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
