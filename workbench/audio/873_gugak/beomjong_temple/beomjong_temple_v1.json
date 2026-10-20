@@ -1,0 +1,67 @@
+{
+ "cue": "beomjong_temple",
+ "v": 1,
+ "prompt": "One toll of a huge Korean Buddhist temple bronze bell beomjong struck by a log, very deep low boom with a long pulsing hum, heard from nearby, solemn, no other instruments, no speech",
+ "seconds": 6.0,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 5.976009,
+ "lufs": "-12.4",
+ "peak": "-0.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.6,
+   "dc": [
+    0.0014,
+    0.0014
+   ],
+   "sample_peak_db": -0.05,
+   "file": "_raw/beomjong_temple_v1.wav",
+   "duration": 6.0,
+   "lufs": "-12.3",
+   "true_peak": "-0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 263542,
+   "at": 5.976,
+   "removed_ms": 24.0,
+   "floor_db": -93.7,
+   "jump_db": 51.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.39,
+   "why": "트루피크 여유 +0.4 LU",
+   "intake_i": [
+    -12.54,
+    -12.59
+   ],
+   "intake_tp": [
+    2.89,
+    2.45
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -0.45,
+   "lufs": "-12.4",
+   "true_peak": "-0.4"
+  },
+  "warn": []
+ }
+}

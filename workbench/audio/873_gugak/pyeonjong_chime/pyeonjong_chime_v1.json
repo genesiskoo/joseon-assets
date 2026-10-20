@@ -1,0 +1,67 @@
+{
+ "cue": "pyeonjong_chime",
+ "v": 1,
+ "prompt": "One clear strike on a Korean pyeonjong bronze bell from a court bell rack, pure solemn metallic tone with a long shimmering ring, solo, dry, no speech",
+ "seconds": 2.5,
+ "influence": 0.55,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 2.45102,
+ "lufs": "-22.9",
+ "peak": "-8.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -8.58,
+   "file": "_raw/pyeonjong_chime_v1.wav",
+   "duration": 2.48,
+   "lufs": "-22.9",
+   "true_peak": "-8.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 108090,
+   "at": 2.451,
+   "removed_ms": 29.0,
+   "floor_db": -90.6,
+   "jump_db": 47.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.04,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -22.97,
+    -22.97
+   ],
+   "intake_tp": [
+    -5.35,
+    -5.39
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -8.61,
+   "lufs": "-22.9",
+   "true_peak": "-8.2"
+  },
+  "warn": []
+ }
+}

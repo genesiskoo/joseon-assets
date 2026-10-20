@@ -1,0 +1,69 @@
+{
+ "cue": "janggu_phrase",
+ "v": 3,
+ "prompt": "Short Korean janggu hourglass drum phrase: deong, kung, then a crisp double tap dak-dak ending, lively groove, solo drum, close-up, dry, no other instruments, no speech",
+ "seconds": 1.5,
+ "influence": 0.55,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.472018,
+ "lufs": "-14.7",
+ "peak": "0.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 154,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0001,
+    0.0001
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/janggu_phrase_v3.wav",
+   "duration": 1.48,
+   "lufs": "-14.7",
+   "true_peak": "0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 64916,
+   "at": 1.472,
+   "removed_ms": 8.0,
+   "floor_db": -94.2,
+   "jump_db": 20.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.67,
+   "why": "걸면 트루피크 여유가 0.7 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -14.77,
+    -14.77
+   ],
+   "intake_tp": [
+    3.16,
+    3.83
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0001,
+    0.0001
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-14.7",
+   "true_peak": "0.2"
+  },
+  "warn": [
+   "CLIP 154"
+  ]
+ }
+}

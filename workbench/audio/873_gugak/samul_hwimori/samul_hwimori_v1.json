@@ -1,0 +1,67 @@
+{
+ "cue": "samul_hwimori",
+ "v": 1,
+ "prompt": "Korean samulnori percussion burst in fast hwimori rhythm: shrill kkwaenggwari, cracking janggu and pounding buk drum, intense rhythmic frenzy for three seconds then a sharp stop, live, no melody, no speech",
+ "seconds": 3.0,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 2.988005,
+ "lufs": "-14.2",
+ "peak": "-0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.24,
+   "file": "_raw/samul_hwimori_v1.wav",
+   "duration": 3.0,
+   "lufs": "-14.2",
+   "true_peak": "-0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 131771,
+   "at": 2.988,
+   "removed_ms": 12.0,
+   "floor_db": -92.3,
+   "jump_db": 26.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.03,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -15.06,
+    -15.06
+   ],
+   "intake_tp": [
+    2.75,
+    2.78
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.19,
+   "lufs": "-14.2",
+   "true_peak": "-0.1"
+  },
+  "warn": []
+ }
+}

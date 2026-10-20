@@ -1,0 +1,67 @@
+{
+ "cue": "bak_clap",
+ "v": 1,
+ "prompt": "One single sharp crack of a Korean bak wooden clapper made of six hardwood slats snapped shut, dry woody clack, solo, close-up, no speech",
+ "seconds": 0.6,
+ "influence": 0.55,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.587007,
+ "lufs": "-63.4",
+ "peak": "-49.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 32.2,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": -50.05,
+   "file": "_raw/bak_clap_v1.wav",
+   "duration": 0.6,
+   "lufs": "-63.4",
+   "true_peak": "-49.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25887,
+   "at": 0.587,
+   "removed_ms": 13.0,
+   "floor_db": -93.3,
+   "jump_db": 22.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.15,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -63.45,
+    -63.45
+   ],
+   "intake_tp": [
+    -46.78,
+    -46.63
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.6,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -49.65,
+   "lufs": "-63.4",
+   "true_peak": "-49.6"
+  },
+  "warn": []
+ }
+}

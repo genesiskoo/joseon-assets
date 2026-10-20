@@ -1,0 +1,67 @@
+{
+ "cue": "janggu_deong",
+ "v": 1,
+ "prompt": "One deep resonant deong hit on a Korean janggu hourglass drum, both heads struck at once, low thump with a crisp slap on top, solo, close-up, dry, no speech",
+ "seconds": 0.8,
+ "influence": 0.55,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.792018,
+ "lufs": "-46.6",
+ "peak": "-33.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -33.79,
+   "file": "_raw/janggu_deong_v1.wav",
+   "duration": 0.8,
+   "lufs": "-46.6",
+   "true_peak": "-33.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34928,
+   "at": 0.792,
+   "removed_ms": 8.0,
+   "floor_db": -92.9,
+   "jump_db": 17.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.0,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -46.64,
+    -46.71
+   ],
+   "intake_tp": [
+    -31.31,
+    -31.38
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -33.85,
+   "lufs": "-46.6",
+   "true_peak": "-33.8"
+  },
+  "warn": []
+ }
+}

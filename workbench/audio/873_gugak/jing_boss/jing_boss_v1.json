@@ -1,0 +1,67 @@
+{
+ "cue": "jing_boss",
+ "v": 1,
+ "prompt": "One single strike on a large Korean jing gong with a padded mallet: deep warm booming fundamental with a slow wavering wah-wah beating hum, long natural decay, solo instrument, close-up, dry room, no other instruments, no music, no speech",
+ "seconds": 5.0,
+ "influence": 0.55,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:17",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 4.973016,
+ "lufs": "-13.5",
+ "peak": "-3.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0002,
+    -0.0001
+   ],
+   "sample_peak_db": -2.76,
+   "file": "_raw/jing_boss_v1.wav",
+   "duration": 5.0,
+   "lufs": "-13.5",
+   "true_peak": "-2.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 219310,
+   "at": 4.973,
+   "removed_ms": 27.0,
+   "floor_db": -93.3,
+   "jump_db": 53.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.83,
+   "why": "트루피크 여유 +0.8 LU",
+   "intake_i": [
+    -13.71,
+    -13.71
+   ],
+   "intake_tp": [
+    -0.14,
+    -0.97
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -3.56,
+   "lufs": "-13.5",
+   "true_peak": "-3.6"
+  },
+  "warn": []
+ }
+}

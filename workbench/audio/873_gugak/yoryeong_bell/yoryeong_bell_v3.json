@@ -1,0 +1,67 @@
+{
+ "cue": "yoryeong_bell",
+ "v": 3,
+ "prompt": "Korean shaman ritual hand bell yoryeong, a cluster of small brass bells on a handle shaken once briskly, bright jingling shimmer then ringing out, solo, close-up, dry, no speech",
+ "seconds": 1.5,
+ "influence": 0.55,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.453016,
+ "lufs": "-12.8",
+ "peak": "0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0009,
+    -0.0002
+   ],
+   "sample_peak_db": -0.44,
+   "file": "_raw/yoryeong_bell_v3.wav",
+   "duration": 1.48,
+   "lufs": "-12.8",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 64078,
+   "at": 1.453,
+   "removed_ms": 27.0,
+   "floor_db": -88.0,
+   "jump_db": 56.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.06,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -12.89,
+    -12.89
+   ],
+   "intake_tp": [
+    2.84,
+    2.78
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.37,
+   "lufs": "-12.8",
+   "true_peak": "0.1"
+  },
+  "warn": []
+ }
+}

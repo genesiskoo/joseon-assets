@@ -1,0 +1,69 @@
+{
+ "cue": "taepyeongso_call",
+ "v": 2,
+ "prompt": "Korean taepyeongso shrill conical double-reed horn playing a short loud triumphant ascending call, piercing festive tone, solo, outdoors, no other instruments, no speech",
+ "seconds": 2.5,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 2.476009,
+ "lufs": "-4.7",
+ "peak": "0.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 1269,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0032,
+    -0.003
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/taepyeongso_call_v2.wav",
+   "duration": 2.48,
+   "lufs": "-4.7",
+   "true_peak": "0.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 109192,
+   "at": 2.476,
+   "removed_ms": 4.0,
+   "floor_db": -87.2,
+   "jump_db": 22.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.28,
+   "why": "트루피크 여유 -0.3 LU",
+   "intake_i": [
+    -4.42,
+    -4.42
+   ],
+   "intake_tp": [
+    3.35,
+    3.63
+   ]
+  },
+  "out": {
+   "over_full": 1724,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.34,
+   "lufs": "-4.7",
+   "true_peak": "0.6"
+  },
+  "warn": [
+   "CLIP 1269"
+  ]
+ }
+}

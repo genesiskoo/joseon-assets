@@ -1,0 +1,67 @@
+{
+ "cue": "kkwaenggwari_hit",
+ "v": 2,
+ "prompt": "One sharp bright clang on a Korean kkwaenggwari small brass gong struck with a hard wooden mallet, quickly half-muted by the hand, piercing metallic, solo, close-up, dry, no speech",
+ "seconds": 0.8,
+ "influence": 0.55,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.795011,
+ "lufs": "-32.6",
+ "peak": "-14.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.9,
+   "dc": [
+    -0.0014,
+    -0.0006
+   ],
+   "sample_peak_db": -14.56,
+   "file": "_raw/kkwaenggwari_hit_v2.wav",
+   "duration": 0.8,
+   "lufs": "-32.6",
+   "true_peak": "-14.6"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 35060,
+   "at": 0.795,
+   "removed_ms": 5.0,
+   "floor_db": -78.0,
+   "jump_db": 16.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.33,
+   "why": "트루피크 여유 +0.3 LU",
+   "intake_i": [
+    -32.62,
+    -32.62
+   ],
+   "intake_tp": [
+    -11.56,
+    -11.89
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -14.88,
+   "lufs": "-32.6",
+   "true_peak": "-14.9"
+  },
+  "warn": []
+ }
+}

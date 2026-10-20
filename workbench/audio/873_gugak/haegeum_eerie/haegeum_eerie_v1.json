@@ -1,0 +1,67 @@
+{
+ "cue": "haegeum_eerie",
+ "v": 1,
+ "prompt": "Korean haegeum two-string fiddle playing an eerie ghostly sliding glissando that bends down like a wailing cry, nasal bowed tone, unsettling, solo, dry, no other instruments, no speech",
+ "seconds": 3.0,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-20 18:18",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 2.988005,
+ "lufs": "-11.8",
+ "peak": "-0.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.76,
+   "file": "_raw/haegeum_eerie_v1.wav",
+   "duration": 3.0,
+   "lufs": "-11.8",
+   "true_peak": "-0.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 131771,
+   "at": 2.988,
+   "removed_ms": 12.0,
+   "floor_db": -92.3,
+   "jump_db": 36.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.07,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -13.12,
+    -13.12
+   ],
+   "intake_tp": [
+    2.12,
+    2.05
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.86,
+   "lufs": "-11.8",
+   "true_peak": "-0.8"
+  },
+  "warn": []
+ }
+}
