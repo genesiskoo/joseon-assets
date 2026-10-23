@@ -1,0 +1,39 @@
+{
+  "source_commit": "dfd427d003932ea2604cfce2e52902c5396bb7aa",
+  "fps": 30,
+  "scenario": "geomi_sinbu_look",
+  "vfx_fixed_seed": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "game_audio": true,
+  "command": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\workspace\\joseon\\.claude\\worktrees\\896-monster-geomi_sinbu",
+    "--windowed",
+    "--resolution",
+    "1920x1080",
+    "--position",
+    "0,0",
+    "--fixed-fps",
+    "30",
+    "--disable-vsync",
+    "--write-movie",
+    "C:\\workspace\\joseon-assets\\reports\\896\\rig_v2\\capture_master.avi",
+    "--",
+    "--e2e=geomi_sinbu_look"
+  ],
+  "setup": "E2E Lv6 prepared character; sure-hit enabled; separate save; normal enemy stats",
+  "clips": [
+    {
+      "id": "geomi_sinbu",
+      "label": "geomi_sinbu",
+      "path": "C:\\workspace\\joseon-assets\\reports\\896\\rig_v2\\geomi_sinbu.mp4",
+      "seconds": 6.7,
+      "source_begin_frame": 19,
+      "source_end_frame": 220
+    }
+  ]
+}

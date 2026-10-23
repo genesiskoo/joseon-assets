@@ -1,0 +1,63 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+D3D12 12_0 - Forward+ - Using Device #0: NVIDIA - NVIDIA GeForce RTX 4070
+
+Movie Maker mode enabled, recording movie in 1280×720 @ 30 FPS...
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+Joseon Hunters dev · D3D12 · NVIDIA GeForce RTX 4070
+RENDER_INTERP: boot on · jitter_fix=0.00
+[Audio] BGM town → town.ogg
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/896-monster-geomi_sinbu/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E start: geomi_sinbu_look
+  · 거름 켬 (창 모드) — 표식 없는 마우스(진짜 OS 커서)는 게임 앞에서 막는다 (#369)
+[Save] level 못골 마을 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/896-monster-geomi_sinbu/save_e2e.json)
+[Dev] stairs DungeonEntrance dir=1 world=(0.0, 0.0, -31.0) screen=(2121.067, -492.4143)
+[Dev] interact Merchant world=(5.4, 0.0, -2.4) screen=(1047.293, 368.0158)
+[Dev] interact Shaman world=(-5.6, 0.0, 0.4) screen=(408.5833, 148.8999)
+[Dev] interact Elder world=(2.0, 0.0, -5.6) screen=(1038.037, 191.6542)
+[Dev] interact Jumo world=(7.1, 0.0, -1.4) screen=(1079.692, 440.1637)
+[Dev] interact StashChest world=(3.5, 0.0, -2.5) screen=(963.9835, 314.5728)
+[Dev] interact Waypoint world=(-4.2, 0.0, 2.2) screen=(390.0698, 234.4085)
+[Dev] interact Eoksoe world=(4.4, 0.0, 0.25) screen=(878.3593, 412.1061)
+E2E ▶ geomi_sinbu_look
+[Dungeon] soeburi 2층 lv=8 seed=212727641 gen 64x64 rooms=8 up=(15, 24) down=(52, 52) enemies=27 roster=soemeogi,yacha,nachalnyeo,gwangbu_neok elites=["방2:파란×2(깊이 0.50)", "방3:금색×4(깊이 0.33)"] named=방4 (50, 21)
+[Audio] BGM dungeon → dungeon_4.ogg
+[Save] level 쇠부리 폐광 2층 → user://save_e2e.json (C:/Users/FORYOUCOM/AppData/Roaming/Godot/app_userdata/Joseon Hunters/wt/896-monster-geomi_sinbu/save_e2e.json)
+[Dev] stairs StairsUp dir=-1 world=(15.5, 0.0, 24.5) screen=(593.7167, 335.9507)
+[Dev] stairs StairsDown dir=1 world=(52.5, 0.0, 52.5) screen=(1010.267, 2072.845)
+[Dev] interact LootChest world=(2.5, 0.0, 46.5) screen=(-1026.201, 528.3445)
+[Dev] interact @Area3D@659 world=(48.5, 0.0, 47.5) screen=(1056.55, 1784.253)
+[Dev] interact @Area3D@661 world=(26.5, 0.0, 22.5) screen=(1195.4, 528.3444)
+[Dev] interact LootPot world=(47.5, 0.0, 17.5) screen=(2398.768, 955.8877)
+[Dev] interact @Area3D@664 world=(48.5, 0.0, 18.5) screen=(2398.768, 1009.331)
+[Dev] interact @Area3D@666 world=(49.5, 0.0, 18.5) screen=(2445.051, 1036.052)
+[Dev] interact @Area3D@668 world=(17.5, 0.0, 46.5) screen=(-331.9504, 929.1662)
+[Dev] interact @Area3D@670 world=(17.5, 0.0, 47.5) screen=(-378.2339, 955.8877)
+[Dev] interact @Area3D@672 world=(19.5, 0.0, 19.5) screen=(1010.267, 261.1299)
+[Dev] removed 27 enemies
+CAPTURE geomi_sinbu BEGIN 19
+  · 스침 1번 · 닿음 1
+CAPTURE geomi_sinbu END 220
+[Dev] removed 1 enemies
+E2E geomi_sinbu_look PASS (검사 7)
+E2E SUMMARY: 1/1 PASS
+  E2E geomi_sinbu_look PASS (검사 7)
+--------------------------------------------------------------------------------
+Done recording movie at path: C:\workspace\joseon-assets\reports\896\capture_master.avi
+229 frames at 30 FPS (movie length: 00:00:07:19), recorded in 00:00:13 (53% of real-time speed).
+CPU render time: 0.12 seconds (average: 0.53 ms/frame)
+GPU render time: 0.68 seconds (average: 2.99 ms/frame)
+Encoding time: 1.15 seconds (average: 5.02 ms/frame)
+--------------------------------------------------------------------------------
+WARNING: 11 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 6 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
