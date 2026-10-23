@@ -121,6 +121,48 @@
           ]
         }
       ]
+    },
+    {
+      "character_id": "uinyeogwi",
+      "display_name": "의녀귀",
+      "role": "monster",
+      "forms": [
+        {
+          "form_id": "monster",
+          "display_name": "의녀귀",
+          "runtime_aliases": [
+            "uinyeogwi"
+          ]
+        }
+      ]
+    },
+    {
+      "character_id": "hollin_mudang",
+      "display_name": "홀린 무녀",
+      "role": "monster",
+      "forms": [
+        {
+          "form_id": "monster",
+          "display_name": "홀린 무녀",
+          "runtime_aliases": [
+            "hollin_mudang"
+          ]
+        }
+      ]
+    },
+    {
+      "character_id": "gaksi_gwisin",
+      "display_name": "각시귀신",
+      "role": "monster",
+      "forms": [
+        {
+          "form_id": "monster",
+          "display_name": "각시귀신",
+          "runtime_aliases": [
+            "gaksi_gwisin"
+          ]
+        }
+      ]
     }
   ],
   "issues": [
@@ -18405,6 +18447,393 @@
         "Tripo 원본 gumiho_tail_tripo_export.glb · 1019368 B · SHA-256 6786dd159ff1d38994863e4cb9a9c402459cfe7d4eb04c411ef768bcbd9d741d · 4,814 → 1,499 tri",
         "털 색 = 원본 갈색(흰 소복 9꼬리 색은 #515 틴트) · look_audit 채도 · 납작 경고",
         "촬영 = model_viewer --zoom=2 --yaw=45 --clean 1초 · 조건 파일 없음 → freshness indeterminate"
+      ]
+    },
+    {
+      "asset_id": "card833-uinyeogwi-apose",
+      "character_id": "uinyeogwi",
+      "form_id": "monster",
+      "version_id": "2026-10-22",
+      "display_name": "의녀귀 · A포즈 모델링 원화 (Codex GPT, f4 원화 참조)",
+      "role": "monster",
+      "runtime_aliases": [
+        "uinyeogwi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/833_female_f4/apose/uinyeogwi_gpt_2.png",
+        "sha256": "283ed05e14ff0758cee09f16f306b97fa9e019e7373e55f66544c6dabaef6b4b",
+        "bytes": 1604092,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 모델링 입력 원화 (외형 = f4 원화 그대로)"
+        ],
+        "date": "2026-10-22",
+        "card": 833,
+        "evidence": [
+          "board #833 — PD 10-20 「01 04 07 여성형 몬스터 인게임 편입」 · 10-22 「원화 그대로」 → 「원화부터 점검」 → A포즈 「gpt로 가자」 · 10-22 「리깅 진행해」 · 10-23 「추천대로」(명단 · 맞기)"
+        ],
+        "quote": "gpt로 가자",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 833,
+        "source_commit": null,
+        "inclusion_reason": "동작 포즈 f4 원화를 그대로 3D에 넣어 어긋남(PD 10-22) → 같은 외형 정면 A포즈로 다시 뽑음",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "inbox/hermes/female-monsters-f4-20261018/f4/01_uinyeogwi_3.png",
+            "sha256": "227ed095848eb6a6fb2f8bcfed9f40a359dd992f12bc1cf0e36e598bef46f8bd",
+            "bytes": 796638,
+            "width": 896,
+            "height": 1152
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "후보 = GPT 2 · Grok 2 (workbench/production/833_female_f4/apose/sheet_*.jpg) · PD가 GPT, 그중 팔이 더 벌어진 _2",
+        "문장 = 프롬프트 BASE + 종별 줄 — 장부 ledger.md · 원화 포즈(동작)는 대기 동작 참고용"
+      ]
+    },
+    {
+      "asset_id": "card833-uinyeogwi-model",
+      "character_id": "uinyeogwi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "의녀귀 · 3D 몸 (Tripo 웹 · 성격별 AI 동작)",
+      "role": "monster",
+      "runtime_aliases": [
+        "uinyeogwi"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/876ee9204e7ffbdf7ef1ac4da6653d4e4706b142fd9d77e4b1f47c73af911ae3/uinyeogwi_front_idle.png",
+        "sha256": "876ee9204e7ffbdf7ef1ac4da6653d4e4706b142fd9d77e4b1f47c73af911ae3",
+        "bytes": 116010,
+        "width": 1280,
+        "height": 720
+      },
+      "decision": {
+        "status": "recommended",
+        "scope": [
+          "3D 몸 · 동작 (착륙 전 — PD 「합쳐」 대기)"
+        ],
+        "date": "2026-10-23",
+        "card": 833,
+        "evidence": [
+          "board #833 — PD 10-20 「01 04 07 여성형 몬스터 인게임 편입」 · 10-22 「원화 그대로」 → 「원화부터 점검」 → A포즈 「gpt로 가자」 · 10-22 「리깅 진행해」 · 10-23 「추천대로」(명단 · 맞기)"
+        ],
+        "quote": "추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 833,
+        "source_commit": null,
+        "inclusion_reason": "Tripo 웹 H3.1 3D(작업 6acae60c-6f42-4cc0-95ec-1f11032ca96c) · Auto Rig Mixamo 65 · 프리셋 걷기·달리기 + AI 동작(대기·공격·시전·맞기·죽기)",
+        "tool": "Tripo Studio 웹 / 촬영 Godot 4.7.2 model_viewer",
+        "backend": "Tripo 웹(생성) · RTX 4070(촬영)",
+        "prompt": null,
+        "references": []
+      },
+      "runtime": {
+        "connection": "definition_only",
+        "load": "success",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "reports/833/logs/uinyeogwi_model_raw.log",
+            "sha256": "da382539668bf50bed7ad99123d1afc38df61247bb0c03e463480a81441e9345",
+            "bytes": 1352,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입본 assets/models/uinyeogwi/uinyeogwi.glb SHA-256 6e143574fcda227ddbe0da7353b4d41a14972a2b1c40b440b2e765f66161c432 · ModelDef data/models/uinyeogwi.tres(scale 1.633 · 키 1.6) · EnemyDef data/enemies/uinyeogwi.tres",
+        "정령재 앞 명단 · 맞기 = hit_to_head",
+        "동작 기획 = design/f4_motion_833.md · 영상 = reports/833/833_f4_motions_v2.mp4 · 833_hit_candidates.mp4",
+        "브랜치 claude/833-female-f4 (착륙 전) — 본진 main 착륙 뒤 connected 확정",
+        "촬영 = model_viewer --zoom=3.5 --yaw=45 --clean idle · 조건 파일 없음 → freshness indeterminate"
+      ]
+    },
+    {
+      "asset_id": "card833-hollin_mudang-apose",
+      "character_id": "hollin_mudang",
+      "form_id": "monster",
+      "version_id": "2026-10-22",
+      "display_name": "홀린 무녀 · A포즈 모델링 원화 (Codex GPT, f4 원화 참조)",
+      "role": "monster",
+      "runtime_aliases": [
+        "hollin_mudang"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/833_female_f4/apose/hollin_mudang_gpt_2.png",
+        "sha256": "6567770b6eab90c26e491edfff52dfaac6b86160cb038ec878972a65d8b18f58",
+        "bytes": 1761300,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 모델링 입력 원화 (외형 = f4 원화 그대로)"
+        ],
+        "date": "2026-10-22",
+        "card": 833,
+        "evidence": [
+          "board #833 — PD 10-20 「01 04 07 여성형 몬스터 인게임 편입」 · 10-22 「원화 그대로」 → 「원화부터 점검」 → A포즈 「gpt로 가자」 · 10-22 「리깅 진행해」 · 10-23 「추천대로」(명단 · 맞기)"
+        ],
+        "quote": "gpt로 가자",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 833,
+        "source_commit": null,
+        "inclusion_reason": "동작 포즈 f4 원화를 그대로 3D에 넣어 어긋남(PD 10-22) → 같은 외형 정면 A포즈로 다시 뽑음",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "inbox/hermes/female-monsters-f4-20261018/f4/04_hollin_mudang_3.png",
+            "sha256": "114c60fc1a14702f8461baa7b67b3d38f9cf1184b9d5dab4151a010ad6ae4d63",
+            "bytes": 1000457,
+            "width": 896,
+            "height": 1152
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "후보 = GPT 2 · Grok 2 (workbench/production/833_female_f4/apose/sheet_*.jpg) · PD가 GPT, 그중 팔이 더 벌어진 _2",
+        "문장 = 프롬프트 BASE + 종별 줄 — 장부 ledger.md · 원화 포즈(동작)는 대기 동작 참고용"
+      ]
+    },
+    {
+      "asset_id": "card833-hollin_mudang-model",
+      "character_id": "hollin_mudang",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "홀린 무녀 · 3D 몸 (Tripo 웹 · 성격별 AI 동작)",
+      "role": "monster",
+      "runtime_aliases": [
+        "hollin_mudang"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/d531067ae48e9e2bb759b799221cd23c6da0af693c82f1aeed0b5e80a2598fe2/hollin_mudang_front_idle.png",
+        "sha256": "d531067ae48e9e2bb759b799221cd23c6da0af693c82f1aeed0b5e80a2598fe2",
+        "bytes": 123894,
+        "width": 1280,
+        "height": 720
+      },
+      "decision": {
+        "status": "recommended",
+        "scope": [
+          "3D 몸 · 동작 (착륙 전 — PD 「합쳐」 대기)"
+        ],
+        "date": "2026-10-23",
+        "card": 833,
+        "evidence": [
+          "board #833 — PD 10-20 「01 04 07 여성형 몬스터 인게임 편입」 · 10-22 「원화 그대로」 → 「원화부터 점검」 → A포즈 「gpt로 가자」 · 10-22 「리깅 진행해」 · 10-23 「추천대로」(명단 · 맞기)"
+        ],
+        "quote": "추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 833,
+        "source_commit": null,
+        "inclusion_reason": "Tripo 웹 H3.1 3D(작업 dab8c1d4-40ef-4242-8a7d-eb7758a0f0ff) · Auto Rig Mixamo 65 · 프리셋 걷기·달리기 + AI 동작(대기·공격·시전·맞기·죽기)",
+        "tool": "Tripo Studio 웹 / 촬영 Godot 4.7.2 model_viewer",
+        "backend": "Tripo 웹(생성) · RTX 4070(촬영)",
+        "prompt": null,
+        "references": []
+      },
+      "runtime": {
+        "connection": "definition_only",
+        "load": "success",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "reports/833/logs/hollin_mudang_model_raw.log",
+            "sha256": "5082bcb617bd065e6527887bc46a74990b936b5a1437dea937d4278ada541f56",
+            "bytes": 1288,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입본 assets/models/hollin_mudang/hollin_mudang.glb SHA-256 475d445ad0d741a09fd0eda4d731a6a2b90775c383e1c133c83c6bfab6d3eb24 · ModelDef data/models/hollin_mudang.tres(scale 1.633 · 키 1.6) · EnemyDef data/enemies/hollin_mudang.tres",
+        "봉밀굴 1~3층 홀린 여궁 칸 묶음 셋째 갈래 · 맞기 = AI(Startled Retreat)",
+        "동작 기획 = design/f4_motion_833.md · 영상 = reports/833/833_f4_motions_v2.mp4 · 833_hit_candidates.mp4",
+        "브랜치 claude/833-female-f4 (착륙 전) — 본진 main 착륙 뒤 connected 확정",
+        "촬영 = model_viewer --zoom=3.5 --yaw=45 --clean idle · 조건 파일 없음 → freshness indeterminate"
+      ]
+    },
+    {
+      "asset_id": "card833-gaksi_gwisin-apose",
+      "character_id": "gaksi_gwisin",
+      "form_id": "monster",
+      "version_id": "2026-10-22",
+      "display_name": "각시귀신 · A포즈 모델링 원화 (Codex GPT, f4 원화 참조)",
+      "role": "monster",
+      "runtime_aliases": [
+        "gaksi_gwisin"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/833_female_f4/apose/gaksi_gwisin_gpt_2.png",
+        "sha256": "229d24bad5c57f82cfea051c667ec50073fb77f9bc046b3594924c62af30ad32",
+        "bytes": 1741828,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 모델링 입력 원화 (외형 = f4 원화 그대로)"
+        ],
+        "date": "2026-10-22",
+        "card": 833,
+        "evidence": [
+          "board #833 — PD 10-20 「01 04 07 여성형 몬스터 인게임 편입」 · 10-22 「원화 그대로」 → 「원화부터 점검」 → A포즈 「gpt로 가자」 · 10-22 「리깅 진행해」 · 10-23 「추천대로」(명단 · 맞기)"
+        ],
+        "quote": "gpt로 가자",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 833,
+        "source_commit": null,
+        "inclusion_reason": "동작 포즈 f4 원화를 그대로 3D에 넣어 어긋남(PD 10-22) → 같은 외형 정면 A포즈로 다시 뽑음",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "inbox/hermes/female-monsters-f4-20261018/f4/07_gaksi_gwisin_2.png",
+            "sha256": "f62eaf5bdf4f3d8b39e16a13c9960d8e514de3a025129902bd4398bde559d644",
+            "bytes": 912148,
+            "width": 896,
+            "height": 1152
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "후보 = GPT 2 · Grok 2 (workbench/production/833_female_f4/apose/sheet_*.jpg) · PD가 GPT, 그중 팔이 더 벌어진 _2",
+        "문장 = 프롬프트 BASE + 종별 줄 — 장부 ledger.md · 원화 포즈(동작)는 대기 동작 참고용"
+      ]
+    },
+    {
+      "asset_id": "card833-gaksi_gwisin-model",
+      "character_id": "gaksi_gwisin",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "각시귀신 · 3D 몸 (Tripo 웹 · 성격별 AI 동작)",
+      "role": "monster",
+      "runtime_aliases": [
+        "gaksi_gwisin"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "catalog/characters/media/de9da07b3810b706cb91a4959e5b9f0f64550e171b28b6d8e48dde89c6e246d0/gaksi_gwisin_front_idle.png",
+        "sha256": "de9da07b3810b706cb91a4959e5b9f0f64550e171b28b6d8e48dde89c6e246d0",
+        "bytes": 122102,
+        "width": 1280,
+        "height": 720
+      },
+      "decision": {
+        "status": "recommended",
+        "scope": [
+          "3D 몸 · 동작 (착륙 전 — PD 「합쳐」 대기)"
+        ],
+        "date": "2026-10-23",
+        "card": 833,
+        "evidence": [
+          "board #833 — PD 10-20 「01 04 07 여성형 몬스터 인게임 편입」 · 10-22 「원화 그대로」 → 「원화부터 점검」 → A포즈 「gpt로 가자」 · 10-22 「리깅 진행해」 · 10-23 「추천대로」(명단 · 맞기)"
+        ],
+        "quote": "추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 833,
+        "source_commit": null,
+        "inclusion_reason": "Tripo 웹 H3.1 3D(작업 74616f8d-3eec-4635-bced-51f46674e291) · Auto Rig Mixamo 65 · 프리셋 걷기·달리기 + AI 동작(대기·공격·시전·맞기·죽기)",
+        "tool": "Tripo Studio 웹 / 촬영 Godot 4.7.2 model_viewer",
+        "backend": "Tripo 웹(생성) · RTX 4070(촬영)",
+        "prompt": null,
+        "references": []
+      },
+      "runtime": {
+        "connection": "definition_only",
+        "load": "success",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "reports/833/logs/gaksi_gwisin_model_raw.log",
+            "sha256": "71081993044bbe19f80be0a3ca96a55916af6db31d38bc721303a33111682c13",
+            "bytes": 1370,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입본 assets/models/gaksi_gwisin/gaksi_gwisin.glb SHA-256 a2e3c226c4947f617e8947b379e6c94f788a4d978571b84a50f8e9bcece521d0 · ModelDef data/models/gaksi_gwisin.tres(scale 1.633 · 키 1.6) · EnemyDef data/enemies/gaksi_gwisin.tres",
+        "들녘 옛 주막 터 네임드(소복 모델 + 틴트 갈음) · 맞기 = hit_to_body_02",
+        "동작 기획 = design/f4_motion_833.md · 영상 = reports/833/833_f4_motions_v2.mp4 · 833_hit_candidates.mp4",
+        "브랜치 claude/833-female-f4 (착륙 전) — 본진 main 착륙 뒤 connected 확정",
+        "촬영 = model_viewer --zoom=3.5 --yaw=45 --clean idle · 조건 파일 없음 → freshness indeterminate"
       ]
     }
   ],

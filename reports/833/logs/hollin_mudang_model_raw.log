@@ -1,0 +1,23 @@
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+== model_check res://assets/models/hollin_mudang/hollin_mudang.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11221
+AABB: 키 0.98 · 너비 0.52 · 깊이 0.21 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+⚠ 키 0.98 ≠ 목표 1.60 (±15%) → ModelDef.scale = 1.631 권장
+텍스처: 1024x1024
+클립 11: attack(1.96s), cast(2.96s), die(2.96s), fall(3.00s), hit(0.96s), hit_to_body_01(1.29s), idle(3.96s), idle_preset(15.33s), run(1.25s), slash(6.58s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT WARN: 키 불일치
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
