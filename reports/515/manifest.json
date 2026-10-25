@@ -1,0 +1,71 @@
+{
+  "source_commit": "cc7c01b78c90c4b32e0dcc877857ad7876c80ce8",
+  "fps": 30,
+  "scenario": "_gumiho_capture",
+  "vfx_fixed_seed": false,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "game_audio": true,
+  "command": [
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Godot Engine\\godot.windows.opt.tools.64.exe",
+    "--path",
+    "C:\\workspace\\joseon\\.claude\\worktrees\\515-gumiho-phases",
+    "--windowed",
+    "--resolution",
+    "1920x1080",
+    "--position",
+    "0,0",
+    "--fixed-fps",
+    "30",
+    "--disable-vsync",
+    "--write-movie",
+    "C:\\Users\\FORYOUCOM\\AppData\\Local\\Temp\\claude\\C--workspace-joseon\\03f0369f-6962-4b78-8451-f133c5118aca\\scratchpad\\cap515c\\capture_master.avi",
+    "--",
+    "--e2e=_gumiho_capture"
+  ],
+  "setup": "E2E Lv6 prepared character; sure-hit enabled; separate save; normal enemy stats",
+  "clips": [
+    {
+      "id": "unmask",
+      "label": "unmask",
+      "path": "C:\\Users\\FORYOUCOM\\AppData\\Local\\Temp\\claude\\C--workspace-joseon\\03f0369f-6962-4b78-8451-f133c5118aca\\scratchpad\\cap515c\\unmask.mp4",
+      "seconds": 5.067,
+      "source_begin_frame": 17,
+      "source_end_frame": 169
+    },
+    {
+      "id": "p1",
+      "label": "p1",
+      "path": "C:\\Users\\FORYOUCOM\\AppData\\Local\\Temp\\claude\\C--workspace-joseon\\03f0369f-6962-4b78-8451-f133c5118aca\\scratchpad\\cap515c\\p1.mp4",
+      "seconds": 7.033,
+      "source_begin_frame": 172,
+      "source_end_frame": 383
+    },
+    {
+      "id": "p2",
+      "label": "p2",
+      "path": "C:\\Users\\FORYOUCOM\\AppData\\Local\\Temp\\claude\\C--workspace-joseon\\03f0369f-6962-4b78-8451-f133c5118aca\\scratchpad\\cap515c\\p2.mp4",
+      "seconds": 8.033,
+      "source_begin_frame": 386,
+      "source_end_frame": 627
+    },
+    {
+      "id": "p3",
+      "label": "p3",
+      "path": "C:\\Users\\FORYOUCOM\\AppData\\Local\\Temp\\claude\\C--workspace-joseon\\03f0369f-6962-4b78-8451-f133c5118aca\\scratchpad\\cap515c\\p3.mp4",
+      "seconds": 8.033,
+      "source_begin_frame": 630,
+      "source_end_frame": 871
+    },
+    {
+      "id": "death",
+      "label": "death",
+      "path": "C:\\Users\\FORYOUCOM\\AppData\\Local\\Temp\\claude\\C--workspace-joseon\\03f0369f-6962-4b78-8451-f133c5118aca\\scratchpad\\cap515c\\death.mp4",
+      "seconds": 4.067,
+      "source_begin_frame": 874,
+      "source_end_frame": 996
+    }
+  ]
+}
