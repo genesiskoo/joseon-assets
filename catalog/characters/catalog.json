@@ -8161,20 +8161,12 @@
         "height": 1024
       },
       "decision": {
-        "status": "unreviewed",
+        "status": "rejected",
         "scope": [],
-        "date": "2026-10-11",
-        "card": 741,
+        "date": "2026-10-13",
+        "card": 938,
         "evidence": [
-          {
-            "repository": "assets",
-            "path": "catalog/characters/media/487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1/manifest.json",
-            "sha256": "487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1",
-            "bytes": 7834,
-            "width": null,
-            "height": null
-          },
-          "game:docs/design/gumiho_seduction_2026-10-11.md"
+          "PD 아트 자료관 일괄 판정(4장) 2026-10-12T18:29:35.462Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card741-style-v1 · by u_1HCnCzO1phOE099hN4p02A)"
         ],
         "quote": null,
         "supersedes": []
@@ -8225,7 +8217,8 @@
         "evidence": []
       },
       "notes": [
-        "manifest pending은 톤 선택 전 기록. 몸·표정·리그 최종 승인 아님"
+        "manifest pending은 톤 선택 전 기록. 몸·표정·리그 최종 승인 아님",
+        "이전 판정 (2026-10-13 자료관 판정으로 바뀜): {\"card\": 741, \"date\": \"2026-10-11\", \"evidence\": [{\"bytes\": 7834, \"height\": null, \"path\": \"catalog/characters/media/487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1/manifest.json\", \"repository\": \"assets\", \"sha256\": \"487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1\", \"width\": null}, \"game:docs/design/gumiho_seduction_2026-10-11.md\"], \"quote\": null, \"scope\": [], \"status\": \"unreviewed\", \"supersedes\": []}"
       ]
     },
     {
@@ -8249,24 +8242,14 @@
         "height": 1024
       },
       "decision": {
-        "status": "approved",
-        "scope": [
-          "tone"
-        ],
-        "date": "2026-10-11",
-        "card": 741,
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-13",
+        "card": 938,
         "evidence": [
-          {
-            "repository": "assets",
-            "path": "catalog/characters/media/487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1/manifest.json",
-            "sha256": "487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1",
-            "bytes": 7834,
-            "width": null,
-            "height": null
-          },
-          "game:docs/design/gumiho_seduction_2026-10-11.md"
+          "PD 아트 자료관 일괄 판정(1장) 2026-10-12T18:30:39.759Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card741-style-v2 · by u_1HCnCzO1phOE099hN4p02A)"
         ],
-        "quote": "현재 톤 유지",
+        "quote": null,
         "supersedes": []
       },
       "provenance": {
@@ -8325,7 +8308,8 @@
         "evidence": []
       },
       "notes": [
-        "manifest pending은 톤 선택 전 기록. 몸·표정·리그 최종 승인 아님"
+        "manifest pending은 톤 선택 전 기록. 몸·표정·리그 최종 승인 아님",
+        "이전 판정 (2026-10-13 자료관 판정으로 바뀜): {\"card\": 741, \"date\": \"2026-10-11\", \"evidence\": [{\"bytes\": 7834, \"height\": null, \"path\": \"catalog/characters/media/487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1/manifest.json\", \"repository\": \"assets\", \"sha256\": \"487b7c6e9102b7e3cb38a4f96be131628ade18525b53663c50e194b21dbb84d1\", \"width\": null}, \"game:docs/design/gumiho_seduction_2026-10-11.md\"], \"quote\": \"현재 톤 유지\", \"scope\": [\"tone\"], \"status\": \"approved\", \"supersedes\": []}"
       ]
     },
     {
@@ -8349,20 +8333,12 @@
         "height": 1024
       },
       "decision": {
-        "status": "recommended",
+        "status": "rejected",
         "scope": [],
-        "date": "2026-10-11",
-        "card": 742,
+        "date": "2026-10-26",
+        "card": 938,
         "evidence": [
-          {
-            "repository": "assets",
-            "path": "catalog/characters/media/44c6c2349ff98cb8839d2e22c7281d9ec5481f4a789b0401b48cfeca6b9178dd/manifest.json",
-            "sha256": "44c6c2349ff98cb8839d2e22c7281d9ec5481f4a789b0401b48cfeca6b9178dd",
-            "bytes": 3727,
-            "width": null,
-            "height": null
-          },
-          "game:docs/design/gumiho_seduction_2026-10-11.md"
+          "PD 아트 자료관 판정 2026-10-26T13:33:02.002Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card742-h01-v1 · by u_1HCnCzO1phOE099hN4p02A)"
         ],
         "quote": null,
         "supersedes": []
@@ -8403,7 +8379,8 @@
         "evidence": []
       },
       "notes": [
-        "H01은 root 추천뿐이며 PD 승인 없음"
+        "H01은 root 추천뿐이며 PD 승인 없음",
+        "이전 판정 (2026-10-26 자료관 판정으로 바뀜): {\"card\": 742, \"date\": \"2026-10-11\", \"evidence\": [{\"bytes\": 3727, \"height\": null, \"path\": \"catalog/characters/media/44c6c2349ff98cb8839d2e22c7281d9ec5481f4a789b0401b48cfeca6b9178dd/manifest.json\", \"repository\": \"assets\", \"sha256\": \"44c6c2349ff98cb8839d2e22c7281d9ec5481f4a789b0401b48cfeca6b9178dd\", \"width\": null}, \"game:docs/design/gumiho_seduction_2026-10-11.md\"], \"quote\": null, \"scope\": [], \"status\": \"recommended\", \"supersedes\": []}"
       ]
     },
     {
@@ -8427,20 +8404,12 @@
         "height": 1024
       },
       "decision": {
-        "status": "unreviewed",
+        "status": "rejected",
         "scope": [],
-        "date": "2026-10-11",
-        "card": 742,
+        "date": "2026-10-13",
+        "card": 938,
         "evidence": [
-          {
-            "repository": "assets",
-            "path": "catalog/characters/media/aa1f8300ba24eb50f18ffea44fac80afd5ce76d15a7e102bd34aa25d080d7cbb/manifest.json",
-            "sha256": "aa1f8300ba24eb50f18ffea44fac80afd5ce76d15a7e102bd34aa25d080d7cbb",
-            "bytes": 1950,
-            "width": null,
-            "height": null
-          },
-          "game:docs/design/gumiho_seduction_2026-10-11.md"
+          "PD 아트 자료관 일괄 판정(4장) 2026-10-12T18:29:35.462Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card742-h02-v1 · by u_1HCnCzO1phOE099hN4p02A)"
         ],
         "quote": null,
         "supersedes": []
@@ -8481,7 +8450,8 @@
         "evidence": []
       },
       "notes": [
-        "PD 미선택"
+        "PD 미선택",
+        "이전 판정 (2026-10-13 자료관 판정으로 바뀜): {\"card\": 742, \"date\": \"2026-10-11\", \"evidence\": [{\"bytes\": 1950, \"height\": null, \"path\": \"catalog/characters/media/aa1f8300ba24eb50f18ffea44fac80afd5ce76d15a7e102bd34aa25d080d7cbb/manifest.json\", \"repository\": \"assets\", \"sha256\": \"aa1f8300ba24eb50f18ffea44fac80afd5ce76d15a7e102bd34aa25d080d7cbb\", \"width\": null}, \"game:docs/design/gumiho_seduction_2026-10-11.md\"], \"quote\": null, \"scope\": [], \"status\": \"unreviewed\", \"supersedes\": []}"
       ]
     },
     {
@@ -8505,20 +8475,12 @@
         "height": 1024
       },
       "decision": {
-        "status": "unreviewed",
+        "status": "rejected",
         "scope": [],
-        "date": "2026-10-11",
-        "card": 742,
+        "date": "2026-10-13",
+        "card": 938,
         "evidence": [
-          {
-            "repository": "assets",
-            "path": "catalog/characters/media/6cd83c80acde7414111834b414e1aa6c188e6e5695f747e7685a2c5243541e42/manifest.json",
-            "sha256": "6cd83c80acde7414111834b414e1aa6c188e6e5695f747e7685a2c5243541e42",
-            "bytes": 3709,
-            "width": null,
-            "height": null
-          },
-          "game:docs/design/gumiho_seduction_2026-10-11.md"
+          "PD 아트 자료관 일괄 판정(4장) 2026-10-12T18:29:35.462Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card742-h03-v1 · by u_1HCnCzO1phOE099hN4p02A)"
         ],
         "quote": null,
         "supersedes": []
@@ -8559,7 +8521,8 @@
         "evidence": []
       },
       "notes": [
-        "PD 미선택"
+        "PD 미선택",
+        "이전 판정 (2026-10-13 자료관 판정으로 바뀜): {\"card\": 742, \"date\": \"2026-10-11\", \"evidence\": [{\"bytes\": 3709, \"height\": null, \"path\": \"catalog/characters/media/6cd83c80acde7414111834b414e1aa6c188e6e5695f747e7685a2c5243541e42/manifest.json\", \"repository\": \"assets\", \"sha256\": \"6cd83c80acde7414111834b414e1aa6c188e6e5695f747e7685a2c5243541e42\", \"width\": null}, \"game:docs/design/gumiho_seduction_2026-10-11.md\"], \"quote\": null, \"scope\": [], \"status\": \"unreviewed\", \"supersedes\": []}"
       ]
     },
     {
