@@ -1,0 +1,50 @@
+{
+  "status": "provisionally_approved",
+  "approved_at": "2026-10-19T11:55:57.525200+09:00",
+  "approval_quote": "일단 이걸로 잠정 승인 인게임이나 마케팅 에셋으로 활용한다",
+  "scope": [
+    "in_game_asset_use",
+    "marketing_asset_use"
+  ],
+  "version": "v4",
+  "deployed_to_game": false,
+  "published": false,
+  "replaces_existing_brand_masters": false,
+  "files": [
+    {
+      "file": "title_brush_v4.mp4",
+      "bytes": 730948,
+      "sha256": "31f32161f380ba3251730d0be12dcb6200f4bf77e8c24fb7d5c157864418db8b"
+    },
+    {
+      "file": "title_brush_v4_silent.mp4",
+      "bytes": 659114,
+      "sha256": "04e3724dd910e16913f2f75dd4f71e934315423cb95729c9006d61a5e7970a61"
+    },
+    {
+      "file": "title_brush_v4_layers.zip",
+      "bytes": 13063308,
+      "sha256": "a7e35b0361b42fc95a0153de2e80038a2ce1889df324a13931e5eaafc71ccd52"
+    },
+    {
+      "file": "character_layers.jpg",
+      "bytes": 144208,
+      "sha256": "9ae188427e13f38719ed352fa0ec0d87ee6d6bd725fd3a53b540301318d93edd"
+    },
+    {
+      "file": "QA.json",
+      "bytes": 562,
+      "sha256": "4f88e2356715eb00a6eaea89bb4c71dc91f6dc1779110c9e575c5e6f63d6f4d6"
+    },
+    {
+      "file": "title_fusion_03.png",
+      "bytes": 2236308,
+      "sha256": "2addd94508c2cd0c9bcc7bfcb457349426d15e21592ebc33bda523835f3f2e40"
+    },
+    {
+      "file": "APPROVAL.md",
+      "bytes": 2936,
+      "sha256": "0dd8dd8ed637d2347234d685eec23b100fc34495a54de7beb185033acc5b7522"
+    }
+  ]
+}

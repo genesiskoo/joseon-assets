@@ -1,0 +1,53 @@
+{
+  "version": "v4",
+  "publication_authorized": "2026-10-27: public git images/video; layer ZIP direct to main PC only",
+  "files": [
+    {
+      "file": "APPROVAL.md",
+      "bytes": 2936,
+      "sha256": "0dd8dd8ed637d2347234d685eec23b100fc34495a54de7beb185033acc5b7522"
+    },
+    {
+      "file": "MANIFEST.json",
+      "bytes": 1481,
+      "sha256": "cc5ddfbd288171bed727c3694622c26736af8180e0b04d22c9644a60ff5dd7b5"
+    },
+    {
+      "file": "QA.json",
+      "bytes": 562,
+      "sha256": "4f88e2356715eb00a6eaea89bb4c71dc91f6dc1779110c9e575c5e6f63d6f4d6"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2561,
+      "sha256": "1360d610f841daff943f130a572b4ba03a4fbb36d65276526b2254b9f06585f5"
+    },
+    {
+      "file": "character_layers.jpg",
+      "bytes": 144208,
+      "sha256": "9ae188427e13f38719ed352fa0ec0d87ee6d6bd725fd3a53b540301318d93edd"
+    },
+    {
+      "file": "title_brush_v4.mp4",
+      "bytes": 730948,
+      "sha256": "31f32161f380ba3251730d0be12dcb6200f4bf77e8c24fb7d5c157864418db8b"
+    },
+    {
+      "file": "title_brush_v4_silent.mp4",
+      "bytes": 659114,
+      "sha256": "04e3724dd910e16913f2f75dd4f71e934315423cb95729c9006d61a5e7970a61"
+    },
+    {
+      "file": "title_fusion_03.png",
+      "bytes": 2236308,
+      "sha256": "2addd94508c2cd0c9bcc7bfcb457349426d15e21592ebc33bda523835f3f2e40"
+    }
+  ],
+  "separate_delivery": {
+    "file": "title_brush_v4_layers.zip",
+    "bytes": 13063308,
+    "sha256": "a7e35b0361b42fc95a0153de2e80038a2ce1889df324a13931e5eaafc71ccd52",
+    "method": "direct_main_pc_not_git_not_release",
+    "target": "C:/workspace/handoffs/joseon-title-v4-20261027/title_brush_v4_layers.zip"
+  }
+}
