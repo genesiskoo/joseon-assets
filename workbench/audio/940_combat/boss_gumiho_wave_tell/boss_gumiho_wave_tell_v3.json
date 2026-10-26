@@ -1,0 +1,69 @@
+{
+ "cue": "boss_gumiho_wave_tell",
+ "v": 3,
+ "prompt": "A dark curse gathering power before releasing a shockwave: deep low droning swell with whispering distortion building tension, sudden cut off, close-up, isolated, no music, no words",
+ "seconds": 1.2,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.192018,
+ "lufs": "-8.8",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 172,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0011,
+    -0.0025
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/boss_gumiho_wave_tell_v3.wav",
+   "duration": 1.2,
+   "lufs": "-8.8",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 52568,
+   "at": 1.192,
+   "removed_ms": 8.0,
+   "floor_db": -86.1,
+   "jump_db": 41.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.04,
+   "why": "걸면 트루피크 여유가 1.0 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -10.19,
+    -10.25
+   ],
+   "intake_tp": [
+    2.37,
+    3.35
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0011,
+    -0.0025
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-8.8",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 172"
+  ]
+ }
+}

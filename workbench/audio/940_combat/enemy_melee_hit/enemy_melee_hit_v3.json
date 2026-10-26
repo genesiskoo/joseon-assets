@@ -1,0 +1,67 @@
+{
+ "cue": "enemy_melee_hit",
+ "v": 3,
+ "prompt": "A monster's claw or club connecting hard: short heavy punchy whack, tight, close-up, dry, isolated, no voice, no music",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.478005,
+ "lufs": "-63.7",
+ "peak": "-42.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 92.8,
+   "dc": [
+    -0.0013,
+    -0.0012
+   ],
+   "sample_peak_db": -40.65,
+   "file": "_raw/enemy_melee_hit_v3.wav",
+   "duration": 0.48,
+   "lufs": "-63.7",
+   "true_peak": "-40.5"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 21080,
+   "at": 0.478,
+   "removed_ms": 2.0,
+   "floor_db": -78.2,
+   "jump_db": 11.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 1.79,
+   "why": "트루피크 여유 +1.8 LU",
+   "intake_i": [
+    -63.84,
+    -63.84
+   ],
+   "intake_tp": [
+    -37.96,
+    -39.75
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.6,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -42.46,
+   "lufs": "-63.7",
+   "true_peak": "-42.4"
+  },
+  "warn": []
+ }
+}

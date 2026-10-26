@@ -1,0 +1,71 @@
+{
+ "cue": "hit_crit_iron",
+ "v": 3,
+ "prompt": "A powerful critical sword blow smashing into thick iron armor plates: heavy metallic crunch and dent, a bright clang with sparks crackle and a short resonant ring, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.67,
+ "lufs": "-11.1",
+ "peak": "1.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 140,
+   "sub20_pct": 57.1,
+   "dc": [
+    0.0673,
+    0.059
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/hit_crit_iron_v3.wav",
+   "duration": 0.68,
+   "lufs": "-11.1",
+   "true_peak": "1.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29547,
+   "at": 0.67,
+   "removed_ms": 10.0,
+   "floor_db": -78.3,
+   "jump_db": 44.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.62,
+   "why": "걸면 트루피크 여유가 0.6 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -11.37,
+    -11.37
+   ],
+   "intake_tp": [
+    4.25,
+    4.87
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 57.2,
+   "dc": [
+    0.0684,
+    0.0599
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-11.1",
+   "true_peak": "1.2"
+  },
+  "warn": [
+   "CLIP 140",
+   "SUB20 57%",
+   "DC +0.068"
+  ]
+ }
+}

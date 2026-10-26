@@ -1,0 +1,69 @@
+{
+ "cue": "skill_dash_strike_impact",
+ "v": 3,
+ "prompt": "A charging sword thrust ramming into a body: heavy punchy stab impact with a crisp steel crack, short, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.469002,
+ "lufs": "-10.5",
+ "peak": "0.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 67,
+   "sub20_pct": 0.7,
+   "dc": [
+    -0.001,
+    -0.0019
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_dash_strike_impact_v3.wav",
+   "duration": 0.48,
+   "lufs": "-10.5",
+   "true_peak": "0.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20683,
+   "at": 0.469,
+   "removed_ms": 11.0,
+   "floor_db": -87.8,
+   "jump_db": 39.8,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.72,
+   "why": "걸면 트루피크 여유가 0.7 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -11.66,
+    -11.73
+   ],
+   "intake_tp": [
+    3.21,
+    3.86
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.8,
+   "dc": [
+    -0.0011,
+    -0.0019
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-10.5",
+   "true_peak": "0.4"
+  },
+  "warn": [
+   "CLIP 67"
+  ]
+ }
+}

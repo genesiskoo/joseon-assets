@@ -1,0 +1,67 @@
+{
+ "cue": "skill_denied",
+ "v": 6,
+ "prompt": "A clearly audible failed magic cast: a short hollow wooden clack followed by a soft fizzling sputter dying out, game UI error cue, close-up, crisp, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:42",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.472018,
+ "lufs": "-29.7",
+ "peak": "-5.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 2.5,
+   "dc": [
+    0.0019,
+    0.001
+   ],
+   "sample_peak_db": -6.49,
+   "file": "_raw/skill_denied_v6.wav",
+   "duration": 0.48,
+   "lufs": "-29.7",
+   "true_peak": "-6.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20816,
+   "at": 0.472,
+   "removed_ms": 8.0,
+   "floor_db": -90.7,
+   "jump_db": 27.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.35,
+   "why": "트루피크 여유 -0.3 LU",
+   "intake_i": [
+    -29.88,
+    -29.88
+   ],
+   "intake_tp": [
+    -3.62,
+    -3.27
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -6.14,
+   "lufs": "-29.7",
+   "true_peak": "-5.9"
+  },
+  "warn": []
+ }
+}

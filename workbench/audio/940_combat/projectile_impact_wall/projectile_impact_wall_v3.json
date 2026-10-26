@@ -1,0 +1,67 @@
+{
+ "cue": "projectile_impact_wall",
+ "v": 3,
+ "prompt": "An arrow hitting a stone wall: short hard thunk and a small wooden snap, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.475011,
+ "lufs": "-51.2",
+ "peak": "-26.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 78.3,
+   "dc": [
+    -0.0002,
+    -0.0001
+   ],
+   "sample_peak_db": -26.64,
+   "file": "_raw/projectile_impact_wall_v3.wav",
+   "duration": 0.48,
+   "lufs": "-51.1",
+   "true_peak": "-26.6"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20948,
+   "at": 0.475,
+   "removed_ms": 5.0,
+   "floor_db": -85.0,
+   "jump_db": 13.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.2,
+   "why": "트루피크 여유 -0.2 LU",
+   "intake_i": [
+    -48.75,
+    -48.75
+   ],
+   "intake_tp": [
+    -23.95,
+    -23.75
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 5.3,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -26.78,
+   "lufs": "-51.2",
+   "true_peak": "-26.7"
+  },
+  "warn": []
+ }
+}

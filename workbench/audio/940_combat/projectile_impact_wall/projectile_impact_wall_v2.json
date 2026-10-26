@@ -1,0 +1,69 @@
+{
+ "cue": "projectile_impact_wall",
+ "v": 2,
+ "prompt": "An arrow hitting a stone wall: short hard thunk and a small wooden snap, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.45102,
+ "lufs": "-14.6",
+ "peak": "0.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 96,
+   "sub20_pct": 11.0,
+   "dc": [
+    0.0072,
+    0.0024
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/projectile_impact_wall_v2.wav",
+   "duration": 0.48,
+   "lufs": "-14.6",
+   "true_peak": "0.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 19890,
+   "at": 0.451,
+   "removed_ms": 29.0,
+   "floor_db": -80.6,
+   "jump_db": 58.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.23,
+   "why": "걸면 트루피크 여유가 1.2 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -14.95,
+    -15.05
+   ],
+   "intake_tp": [
+    3.2,
+    4.33
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 13.0,
+   "dc": [
+    0.0076,
+    0.0025
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-14.6",
+   "true_peak": "0.7"
+  },
+  "warn": [
+   "CLIP 96"
+  ]
+ }
+}

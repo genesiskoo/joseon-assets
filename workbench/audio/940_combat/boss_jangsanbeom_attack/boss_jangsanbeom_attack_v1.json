@@ -1,0 +1,67 @@
+{
+ "cue": "boss_jangsanbeom_attack",
+ "v": 1,
+ "prompt": "A huge white-furred tiger-like mountain beast rearing to pounce: deep breathy tiger chuff and snarl with a thick fur rustle and heavy paws, close-up, powerful, dry, isolated, no music, no voice",
+ "seconds": 0.8,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.792018,
+ "lufs": "-26.0",
+ "peak": "-5.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0001
+   ],
+   "sample_peak_db": -5.39,
+   "file": "_raw/boss_jangsanbeom_attack_v1.wav",
+   "duration": 0.8,
+   "lufs": "-25.9",
+   "true_peak": "-5.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34928,
+   "at": 0.792,
+   "removed_ms": 8.0,
+   "floor_db": -93.3,
+   "jump_db": 31.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.08,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -26.0,
+    -26.0
+   ],
+   "intake_tp": [
+    -2.4,
+    -2.32
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -5.31,
+   "lufs": "-26.0",
+   "true_peak": "-5.3"
+  },
+  "warn": []
+ }
+}

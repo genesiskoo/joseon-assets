@@ -1,0 +1,67 @@
+{
+ "cue": "enemy_slam",
+ "v": 3,
+ "prompt": "A massive weapon slamming down onto a stone floor: huge heavy ground impact boom with cracking stone and debris, powerful, close-up, isolated, no music, no voice",
+ "seconds": 0.9,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.858005,
+ "lufs": "-22.3",
+ "peak": "-4.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 3.6,
+   "dc": [
+    0.0009,
+    0.0006
+   ],
+   "sample_peak_db": -0.69,
+   "file": "_raw/enemy_slam_v3.wav",
+   "duration": 0.88,
+   "lufs": "-20.9",
+   "true_peak": "-0.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 37838,
+   "at": 0.858,
+   "removed_ms": 22.0,
+   "floor_db": -93.7,
+   "jump_db": 28.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 1.15,
+   "why": "트루피크 여유 +1.1 LU",
+   "intake_i": [
+    -21.46,
+    -23.04
+   ],
+   "intake_tp": [
+    1.31,
+    -1.42
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.1,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -3.98,
+   "lufs": "-22.3",
+   "true_peak": "-4.0"
+  },
+  "warn": []
+ }
+}

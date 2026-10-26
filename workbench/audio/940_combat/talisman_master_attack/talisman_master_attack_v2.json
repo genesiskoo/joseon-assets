@@ -1,0 +1,67 @@
+{
+ "cue": "talisman_master_attack",
+ "v": 2,
+ "prompt": "A dark sorcerer snapping paper talismans out of a wide silk sleeve: quick dry paper flutter, a crisp snap and a heavy sleeve swish, close-up, crisp, dry, isolated, no music, no voice",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.588005,
+ "lufs": "-23.0",
+ "peak": "-5.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    0.0,
+    0.0001
+   ],
+   "sample_peak_db": -5.25,
+   "file": "_raw/talisman_master_attack_v2.wav",
+   "duration": 0.6,
+   "lufs": "-23.0",
+   "true_peak": "-5.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25931,
+   "at": 0.588,
+   "removed_ms": 12.0,
+   "floor_db": -93.1,
+   "jump_db": 26.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.34,
+   "why": "트루피크 여유 +0.3 LU",
+   "intake_i": [
+    -23.08,
+    -23.08
+   ],
+   "intake_tp": [
+    -2.18,
+    -2.52
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -5.59,
+   "lufs": "-23.0",
+   "true_peak": "-5.5"
+  },
+  "warn": []
+ }
+}

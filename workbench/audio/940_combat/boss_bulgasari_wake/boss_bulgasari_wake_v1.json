@@ -1,0 +1,69 @@
+{
+ "cue": "boss_bulgasari_wake",
+ "v": 1,
+ "prompt": "A massive iron monster stirring awake: creaking grinding iron plates, a deep rumbling snort and a heavy metallic shift, close-up, dark, isolated, no music",
+ "seconds": 1.5,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.454014,
+ "lufs": "-11.9",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 2,
+   "sub20_pct": 1.4,
+   "dc": [
+    0.0009,
+    0.0008
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/boss_bulgasari_wake_v1.wav",
+   "duration": 1.48,
+   "lufs": "-11.9",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 64122,
+   "at": 1.454,
+   "removed_ms": 26.0,
+   "floor_db": -91.2,
+   "jump_db": 42.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.97,
+   "why": "걸면 트루피크 여유가 2.0 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -11.91,
+    -12.0
+   ],
+   "intake_tp": [
+    2.92,
+    4.8
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.8,
+   "dc": [
+    0.0009,
+    0.0008
+   ],
+   "sample_peak_db": -0.0,
+   "lufs": "-11.9",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 2"
+  ]
+ }
+}

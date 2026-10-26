@@ -1,0 +1,67 @@
+{
+ "cue": "mana_shield_break",
+ "v": 2,
+ "prompt": "A magical spirit barrier shattering: sharp crystalline energy crack bursting apart with a fading airy shimmer, close-up, isolated, no music, no voice",
+ "seconds": 0.8,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.77102,
+ "lufs": "-13.0",
+ "peak": "-1.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    0.0001,
+    0.0001
+   ],
+   "sample_peak_db": -2.14,
+   "file": "_raw/mana_shield_break_v2.wav",
+   "duration": 0.8,
+   "lufs": "-13.0",
+   "true_peak": "-1.6"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34002,
+   "at": 0.771,
+   "removed_ms": 29.0,
+   "floor_db": -90.8,
+   "jump_db": 44.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.41,
+   "why": "트루피크 여유 +0.4 LU",
+   "intake_i": [
+    -13.07,
+    -13.07
+   ],
+   "intake_tp": [
+    1.24,
+    0.83
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -1.59,
+   "lufs": "-13.0",
+   "true_peak": "-1.6"
+  },
+  "warn": []
+ }
+}

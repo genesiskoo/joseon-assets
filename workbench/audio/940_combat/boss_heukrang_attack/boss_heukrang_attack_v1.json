@@ -1,0 +1,67 @@
+{
+ "cue": "boss_heukrang_attack",
+ "v": 1,
+ "prompt": "A huge black fire wolf gathering itself to lunge and bite: deep guttural rumbling snarl with a crackle of embers in its fur and heavy paws scraping stone, close-up, powerful, dry, isolated, no music, no voice",
+ "seconds": 0.9,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.87,
+ "lufs": "-21.4",
+ "peak": "0.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 8.3,
+   "dc": [
+    0.001,
+    -0.0008
+   ],
+   "sample_peak_db": -0.01,
+   "file": "_raw/boss_heukrang_attack_v1.wav",
+   "duration": 0.88,
+   "lufs": "-21.1",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 38367,
+   "at": 0.87,
+   "removed_ms": 10.0,
+   "floor_db": -87.4,
+   "jump_db": 26.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.47,
+   "why": "트루피크 여유 -0.5 LU",
+   "intake_i": [
+    -21.74,
+    -21.93
+   ],
+   "intake_tp": [
+    -0.73,
+    -0.45
+   ]
+  },
+  "out": {
+   "over_full": 14,
+   "sub20_pct": 1.5,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.78,
+   "lufs": "-21.4",
+   "true_peak": "0.8"
+  },
+  "warn": []
+ }
+}

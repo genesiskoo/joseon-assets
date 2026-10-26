@@ -1,0 +1,67 @@
+{
+ "cue": "boss_bulgasari_attack",
+ "v": 1,
+ "prompt": "A massive iron-eating monster winding up to strike: grinding metal plates shifting, a deep bestial bellow through clanking iron, close-up, heavy, dry, isolated, no music, no voice",
+ "seconds": 0.8,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.777007,
+ "lufs": "-14.4",
+ "peak": "-2.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 7.3,
+   "dc": [
+    -0.001,
+    -0.0005
+   ],
+   "sample_peak_db": -2.76,
+   "file": "_raw/boss_bulgasari_attack_v1.wav",
+   "duration": 0.8,
+   "lufs": "-14.4",
+   "true_peak": "-2.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34266,
+   "at": 0.777,
+   "removed_ms": 23.0,
+   "floor_db": -89.3,
+   "jump_db": 38.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.69,
+   "why": "걸면 트루피크 여유가 0.7 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -14.92,
+    -14.92
+   ],
+   "intake_tp": [
+    -1.98,
+    -1.29
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 7.3,
+   "dc": [
+    -0.001,
+    -0.0005
+   ],
+   "sample_peak_db": -2.76,
+   "lufs": "-14.4",
+   "true_peak": "-2.8"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "cue": "talisman_cold_burst",
+ "v": 1,
+ "prompt": "Sudden localized freezing burst from a paper talisman: crisp ice crack and crystalline crunch with a short cold airy puff, loud, close-up, isolated, no glass melody, no music, no voice",
+ "seconds": 0.8,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.775011,
+ "lufs": "-16.7",
+ "peak": "0.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 6,
+   "sub20_pct": 0.5,
+   "dc": [
+    -0.0001,
+    0.0
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/talisman_cold_burst_v1.wav",
+   "duration": 0.8,
+   "lufs": "-16.7",
+   "true_peak": "0.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34178,
+   "at": 0.775,
+   "removed_ms": 25.0,
+   "floor_db": -86.0,
+   "jump_db": 36.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.06,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -16.8,
+    -16.8
+   ],
+   "intake_tp": [
+    3.39,
+    3.45
+   ]
+  },
+  "out": {
+   "over_full": 4,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.28,
+   "lufs": "-16.7",
+   "true_peak": "0.4"
+  },
+  "warn": [
+   "CLIP 6"
+  ]
+ }
+}

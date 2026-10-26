@@ -1,0 +1,69 @@
+{
+ "cue": "boss_gumiho_foxfire_tell",
+ "v": 3,
+ "prompt": "Eerie blue foxfire flames igniting and gathering in the air: soft ghostly ignition whoosh rising into an unsettling hollow hum, close-up, isolated, no melody, no music, no voice",
+ "seconds": 1.0,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.993016,
+ "lufs": "-13.2",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 14,
+   "sub20_pct": 0.6,
+   "dc": [
+    -0.0007,
+    -0.0004
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/boss_gumiho_foxfire_tell_v3.wav",
+   "duration": 1.0,
+   "lufs": "-13.2",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 43792,
+   "at": 0.993,
+   "removed_ms": 7.0,
+   "floor_db": -93.5,
+   "jump_db": 24.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.66,
+   "why": "걸면 트루피크 여유가 1.7 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -13.23,
+    -13.33
+   ],
+   "intake_tp": [
+    3.02,
+    4.58
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.6,
+   "dc": [
+    -0.0007,
+    -0.0004
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-13.2",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 14"
+  ]
+ }
+}

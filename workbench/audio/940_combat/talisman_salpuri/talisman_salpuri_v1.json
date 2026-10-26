@@ -1,0 +1,67 @@
+{
+ "cue": "talisman_salpuri",
+ "v": 1,
+ "prompt": "A shaman's purification talisman released: a single bright brass bell shake with a rising airy cleansing whoosh, paper fluttering and a soft clear shimmer, close-up, isolated, no melody, no voice",
+ "seconds": 1.2,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 1.174014,
+ "lufs": "-10.8",
+ "peak": "-1.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0002
+   ],
+   "sample_peak_db": -2.16,
+   "file": "_raw/talisman_salpuri_v1.wav",
+   "duration": 1.2,
+   "lufs": "-10.8",
+   "true_peak": "-1.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 51774,
+   "at": 1.174,
+   "removed_ms": 26.0,
+   "floor_db": -91.3,
+   "jump_db": 50.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.04,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -10.99,
+    -10.99
+   ],
+   "intake_tp": [
+    1.0,
+    0.96
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -2.17,
+   "lufs": "-10.8",
+   "true_peak": "-1.8"
+  },
+  "warn": []
+ }
+}

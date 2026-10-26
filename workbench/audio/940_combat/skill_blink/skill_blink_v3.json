@@ -1,0 +1,67 @@
+{
+ "cue": "skill_blink",
+ "v": 3,
+ "prompt": "A Taoist master vanishing and reappearing in an instant: quick ink-smoke puff and a sharp airy displacement whoosh with a soft magical snap, close-up, isolated, no music, no voice",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.585011,
+ "lufs": "-18.8",
+ "peak": "-3.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 75.3,
+   "dc": [
+    -0.0277,
+    -0.0404
+   ],
+   "sample_peak_db": -3.11,
+   "file": "_raw/skill_blink_v3.wav",
+   "duration": 0.6,
+   "lufs": "-18.8",
+   "true_peak": "-2.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25799,
+   "at": 0.585,
+   "removed_ms": 15.0,
+   "floor_db": -84.0,
+   "jump_db": 32.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.26,
+   "why": "트루피크 여유 +0.3 LU",
+   "intake_i": [
+    -19.94,
+    -19.95
+   ],
+   "intake_tp": [
+    -0.67,
+    -0.94
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 2.6,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -3.55,
+   "lufs": "-18.8",
+   "true_peak": "-3.2"
+  },
+  "warn": []
+ }
+}

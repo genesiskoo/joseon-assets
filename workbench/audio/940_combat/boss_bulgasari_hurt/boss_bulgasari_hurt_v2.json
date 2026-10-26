@@ -1,0 +1,69 @@
+{
+ "cue": "boss_bulgasari_hurt",
+ "v": 2,
+ "prompt": "A massive iron-skinned monster struck: low angry metallic groan with clanking scales and a short hiss of heated iron, close-up, heavy, dry, isolated, no music",
+ "seconds": 0.6,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.578005,
+ "lufs": "-15.8",
+ "peak": "0.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 18,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/boss_bulgasari_hurt_v2.wav",
+   "duration": 0.6,
+   "lufs": "-15.8",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25490,
+   "at": 0.578,
+   "removed_ms": 22.0,
+   "floor_db": -91.3,
+   "jump_db": 37.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.07,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -16.55,
+    -16.55
+   ],
+   "intake_tp": [
+    3.05,
+    2.98
+   ]
+  },
+  "out": {
+   "over_full": 12,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.17,
+   "lufs": "-15.8",
+   "true_peak": "0.2"
+  },
+  "warn": [
+   "CLIP 18"
+  ]
+ }
+}

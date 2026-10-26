@@ -1,0 +1,67 @@
+{
+ "cue": "boss_heukrang_hurt",
+ "v": 3,
+ "prompt": "A huge black fire wolf struck by a blade: one short savage pained snarl-yelp with a burst of crackling embers from its fur, wordless, close-up, powerful, dry, isolated, no music",
+ "seconds": 0.6,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.579002,
+ "lufs": "-22.5",
+ "peak": "-2.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 3.0,
+   "dc": [
+    0.0043,
+    0.0041
+   ],
+   "sample_peak_db": -2.92,
+   "file": "_raw/boss_heukrang_hurt_v3.wav",
+   "duration": 0.6,
+   "lufs": "-24.2",
+   "true_peak": "-2.9"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25534,
+   "at": 0.579,
+   "removed_ms": 21.0,
+   "floor_db": -85.0,
+   "jump_db": 27.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.0,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -22.5,
+    -22.5
+   ],
+   "intake_tp": [
+    0.09,
+    0.09
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -2.9,
+   "lufs": "-22.5",
+   "true_peak": "-2.9"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "cue": "skill_seal_array",
+ "v": 1,
+ "prompt": "A circle of paper talismans slapping onto the ground and activating a magic seal: several quick paper slaps then a low resonant hum rising, close-up, isolated, no melody, no music, no voice",
+ "seconds": 1.0,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.99102,
+ "lufs": "-17.7",
+ "peak": "0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 3,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0003,
+    0.0003
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/skill_seal_array_v1.wav",
+   "duration": 1.0,
+   "lufs": "-17.7",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 43704,
+   "at": 0.991,
+   "removed_ms": 9.0,
+   "floor_db": -90.9,
+   "jump_db": 26.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.05,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -17.83,
+    -17.83
+   ],
+   "intake_tp": [
+    3.06,
+    3.11
+   ]
+  },
+  "out": {
+   "over_full": 3,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.07,
+   "lufs": "-17.7",
+   "true_peak": "0.1"
+  },
+  "warn": [
+   "CLIP 3"
+  ]
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "cue": "hit_crit_iron",
+ "v": 1,
+ "prompt": "A powerful critical sword blow smashing into thick iron armor plates: heavy metallic crunch and dent, a bright clang with sparks crackle and a short resonant ring, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.67,
+ "lufs": "-10.2",
+ "peak": "2.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 72,
+   "sub20_pct": 22.2,
+   "dc": [
+    -0.0096,
+    0.0013
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/hit_crit_iron_v1.wav",
+   "duration": 0.68,
+   "lufs": "-10.2",
+   "true_peak": "2.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29547,
+   "at": 0.67,
+   "removed_ms": 10.0,
+   "floor_db": -83.4,
+   "jump_db": 50.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.2,
+   "why": "트루피크 여유 -0.2 LU",
+   "intake_i": [
+    -10.82,
+    -10.82
+   ],
+   "intake_tp": [
+    4.16,
+    4.36
+   ]
+  },
+  "out": {
+   "over_full": 26,
+   "sub20_pct": 0.2,
+   "dc": [
+    0.0,
+    -0.0
+   ],
+   "sample_peak_db": 1.46,
+   "lufs": "-10.2",
+   "true_peak": "2.9"
+  },
+  "warn": [
+   "CLIP 72"
+  ]
+ }
+}

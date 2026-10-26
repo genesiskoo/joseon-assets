@@ -1,0 +1,67 @@
+{
+ "cue": "boss_jangsanbeom_hurt",
+ "v": 1,
+ "prompt": "A huge white-furred mountain beast struck by a blade: short furious pained tiger snarl with an eerie almost-human rasp, wordless, close-up, dry, isolated, no music",
+ "seconds": 0.6,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.592018,
+ "lufs": "-18.3",
+ "peak": "-3.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0002,
+    0.0002
+   ],
+   "sample_peak_db": -2.88,
+   "file": "_raw/boss_jangsanbeom_hurt_v1.wav",
+   "duration": 0.6,
+   "lufs": "-18.2",
+   "true_peak": "-2.9"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26108,
+   "at": 0.592,
+   "removed_ms": 8.0,
+   "floor_db": -87.7,
+   "jump_db": 40.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.42,
+   "why": "트루피크 여유 +0.4 LU",
+   "intake_i": [
+    -18.28,
+    -18.31
+   ],
+   "intake_tp": [
+    0.11,
+    -0.34
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -3.1,
+   "lufs": "-18.3",
+   "true_peak": "-3.1"
+  },
+  "warn": []
+ }
+}

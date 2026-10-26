@@ -1,0 +1,70 @@
+{
+ "cue": "elem_lightning_hit",
+ "v": 3,
+ "prompt": "A lightning-charged blade striking: quick sharp electric zap and snapping crackle on contact, subtle layer, close-up, dry, isolated, no thunder, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.476009,
+ "lufs": "-8.0",
+ "peak": "1.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 142,
+   "sub20_pct": 3.7,
+   "dc": [
+    0.0207,
+    0.0263
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/elem_lightning_hit_v3.wav",
+   "duration": 0.48,
+   "lufs": "-8.0",
+   "true_peak": "1.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20992,
+   "at": 0.476,
+   "removed_ms": 4.0,
+   "floor_db": -54.2,
+   "jump_db": 17.8,
+   "channels": "L"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.73,
+   "why": "걸면 트루피크 여유가 0.7 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -8.06,
+    -8.06
+   ],
+   "intake_tp": [
+    4.72,
+    5.45
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 3.7,
+   "dc": [
+    0.0209,
+    0.0265
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-8.0",
+   "true_peak": "1.7"
+  },
+  "warn": [
+   "CLIP 142",
+   "DC +0.026"
+  ]
+ }
+}

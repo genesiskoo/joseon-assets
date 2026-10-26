@@ -1,0 +1,67 @@
+{
+ "cue": "doho_dodge",
+ "v": 1,
+ "prompt": "A swordsman nimbly sidestepping an attack: quick light cloth robe swish and a soft airy duck, close-up, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.472018,
+ "lufs": "-24.0",
+ "peak": "-6.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    -0.0001,
+    -0.0002
+   ],
+   "sample_peak_db": -6.57,
+   "file": "_raw/doho_dodge_v1.wav",
+   "duration": 0.48,
+   "lufs": "-24.0",
+   "true_peak": "-6.6"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20816,
+   "at": 0.472,
+   "removed_ms": 8.0,
+   "floor_db": -93.3,
+   "jump_db": 21.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.67,
+   "why": "걸면 트루피크 여유가 0.7 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -24.33,
+    -24.43
+   ],
+   "intake_tp": [
+    -3.72,
+    -3.15
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    -0.0001,
+    -0.0002
+   ],
+   "sample_peak_db": -6.57,
+   "lufs": "-24.0",
+   "true_peak": "-6.6"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "cue": "player_hurt",
+ "v": 4,
+ "prompt": "A heavy blow landing on a man wearing a thick cloth robe: dull blunt body impact thud with a short fabric slap, punchy, close-up, dry, isolated, no voice, no music",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.41102,
+ "lufs": "-16.3",
+ "peak": "0.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 725,
+   "sub20_pct": 29.5,
+   "dc": [
+    -0.0049,
+    -0.0044
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/player_hurt_v4.wav",
+   "duration": 0.48,
+   "lufs": "-16.3",
+   "true_peak": "0.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 18126,
+   "at": 0.411,
+   "removed_ms": 69.0,
+   "floor_db": -90.2,
+   "jump_db": 45.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -6.12,
+   "why": "걸면 트루피크 여유가 6.1 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -16.45,
+    -20.64
+   ],
+   "intake_tp": [
+    3.06,
+    4.99
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 37.6,
+   "dc": [
+    -0.0057,
+    -0.0051
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-16.3",
+   "true_peak": "0.3"
+  },
+  "warn": [
+   "CLIP 725",
+   "SUB20 38%"
+  ]
+ }
+}

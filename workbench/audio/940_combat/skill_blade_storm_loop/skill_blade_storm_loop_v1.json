@@ -1,0 +1,64 @@
+{
+ "cue": "skill_blade_storm_loop",
+ "v": 1,
+ "prompt": "A continuous whirling storm of spinning sword blades: steady rapid circular whooshing wind and metallic blade whistles cycling evenly, intense, close-up, seamless loop, no music, no voice",
+ "seconds": 2.0,
+ "influence": 0.4,
+ "loop": true,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 2.25,
+ "lufs": "-6.2",
+ "peak": "0.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 17,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0008,
+    -0.0005
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_blade_storm_loop_v1.wav",
+   "duration": 2.25,
+   "lufs": "-6.2",
+   "true_peak": "0.5"
+  },
+  "tail": {
+   "cut": false,
+   "why": "루프 — 끝이 처음으로 이어져 안 자른다"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.05,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -7.69,
+    -7.69
+   ],
+   "intake_tp": [
+    3.01,
+    2.96
+   ]
+  },
+  "out": {
+   "over_full": 6,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.18,
+   "lufs": "-6.2",
+   "true_peak": "0.5"
+  },
+  "warn": [
+   "CLIP 17"
+  ]
+ }
+}

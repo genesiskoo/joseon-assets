@@ -1,0 +1,69 @@
+{
+ "cue": "boss_bulgasari_attack",
+ "v": 3,
+ "prompt": "A massive iron-eating monster winding up to strike: grinding metal plates shifting, a deep bestial bellow through clanking iron, close-up, heavy, dry, isolated, no music, no voice",
+ "seconds": 0.8,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.79,
+ "lufs": "-16.2",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 1,
+   "sub20_pct": 0.9,
+   "dc": [
+    -0.0004,
+    -0.0003
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/boss_bulgasari_attack_v3.wav",
+   "duration": 0.8,
+   "lufs": "-16.2",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34839,
+   "at": 0.79,
+   "removed_ms": 10.0,
+   "floor_db": -85.3,
+   "jump_db": 33.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.06,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -17.15,
+    -17.15
+   ],
+   "intake_tp": [
+    1.34,
+    1.28
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.01,
+   "lufs": "-16.2",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 1"
+  ]
+ }
+}

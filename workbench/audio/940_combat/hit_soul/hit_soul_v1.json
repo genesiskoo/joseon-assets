@@ -1,0 +1,64 @@
+{
+ "cue": "hit_soul",
+ "v": 1,
+ "prompt": "A sword cutting through a ghost's misty spirit body: airy ghostly swish tearing through cold mist with a faint hollow eerie whisper-tone, no flesh, close-up, dry, isolated, no music, no words",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.48,
+ "lufs": "-10.2",
+ "peak": "2.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 14,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0006,
+    -0.0006
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/hit_soul_v1.wav",
+   "duration": 0.48,
+   "lufs": "-10.2",
+   "true_peak": "2.0"
+  },
+  "tail": {
+   "cut": false,
+   "why": "끝이 바닥에서 뛰지 않는다"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.07,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -10.5,
+    -10.5
+   ],
+   "intake_tp": [
+    3.5,
+    3.43
+   ]
+  },
+  "out": {
+   "over_full": 10,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": 0.45,
+   "lufs": "-10.2",
+   "true_peak": "2.3"
+  },
+  "warn": [
+   "CLIP 14"
+  ]
+ }
+}

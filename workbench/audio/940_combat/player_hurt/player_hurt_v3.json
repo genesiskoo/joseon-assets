@@ -1,0 +1,69 @@
+{
+ "cue": "player_hurt",
+ "v": 3,
+ "prompt": "A heavy blow landing on a man wearing a thick cloth robe: dull blunt body impact thud with a short fabric slap, punchy, close-up, dry, isolated, no voice, no music",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.47,
+ "lufs": "-22.3",
+ "peak": "-3.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 176,
+   "sub20_pct": 51.5,
+   "dc": [
+    0.0179,
+    0.0181
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/player_hurt_v3.wav",
+   "duration": 0.48,
+   "lufs": "-21.5",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20727,
+   "at": 0.47,
+   "removed_ms": 10.0,
+   "floor_db": -85.4,
+   "jump_db": 41.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 2.14,
+   "why": "트루피크 여유 +2.1 LU",
+   "intake_i": [
+    -21.55,
+    -22.45
+   ],
+   "intake_tp": [
+    3.01,
+    -0.03
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 16.7,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -3.01,
+   "lufs": "-22.3",
+   "true_peak": "-3.0"
+  },
+  "warn": [
+   "CLIP 176"
+  ]
+ }
+}

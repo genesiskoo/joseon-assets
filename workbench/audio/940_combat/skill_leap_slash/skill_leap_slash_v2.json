@@ -1,0 +1,71 @@
+{
+ "cue": "skill_leap_slash",
+ "v": 2,
+ "prompt": "A swordsman leaping high into the air: strong push-off cloth whoosh and rising wind rush, close-up, dry, isolated, no landing, no music, no voice",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.588005,
+ "lufs": "-19.6",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 218,
+   "sub20_pct": 52.4,
+   "dc": [
+    -0.0563,
+    -0.0032
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_leap_slash_v2.wav",
+   "duration": 0.6,
+   "lufs": "-19.6",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25931,
+   "at": 0.588,
+   "removed_ms": 12.0,
+   "floor_db": -91.1,
+   "jump_db": 29.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.57,
+   "why": "걸면 트루피크 여유가 0.6 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -21.17,
+    -21.86
+   ],
+   "intake_tp": [
+    3.02,
+    2.9
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 53.2,
+   "dc": [
+    -0.0575,
+    -0.0033
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-19.6",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 218",
+   "SUB20 53%",
+   "DC -0.058"
+  ]
+ }
+}

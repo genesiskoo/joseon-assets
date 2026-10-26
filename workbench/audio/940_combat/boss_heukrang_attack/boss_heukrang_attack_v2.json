@@ -1,0 +1,67 @@
+{
+ "cue": "boss_heukrang_attack",
+ "v": 2,
+ "prompt": "A huge black fire wolf gathering itself to lunge and bite: deep guttural rumbling snarl with a crackle of embers in its fur and heavy paws scraping stone, close-up, powerful, dry, isolated, no music, no voice",
+ "seconds": 0.9,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.855011,
+ "lufs": "-15.0",
+ "peak": "-0.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 6.2,
+   "dc": [
+    0.0011,
+    0.0011
+   ],
+   "sample_peak_db": -0.52,
+   "file": "_raw/boss_heukrang_attack_v2.wav",
+   "duration": 0.88,
+   "lufs": "-15.0",
+   "true_peak": "-0.5"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 37706,
+   "at": 0.855,
+   "removed_ms": 25.0,
+   "floor_db": -85.9,
+   "jump_db": 15.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.19,
+   "why": "걸면 트루피크 여유가 1.2 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -15.03,
+    -15.04
+   ],
+   "intake_tp": [
+    2.46,
+    3.64
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 7.2,
+   "dc": [
+    0.0011,
+    0.0011
+   ],
+   "sample_peak_db": -0.52,
+   "lufs": "-15.0",
+   "true_peak": "-0.5"
+  },
+  "warn": []
+ }
+}

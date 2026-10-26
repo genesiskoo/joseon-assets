@@ -1,0 +1,67 @@
+{
+ "cue": "skill_talisman_rain",
+ "v": 3,
+ "prompt": "A handful of paper talismans flung high into the sky: big papery whoosh and many sheets fluttering upward and scattering, close-up, crisp, isolated, no impact, no music, no voice",
+ "seconds": 1.0,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.992018,
+ "lufs": "-19.8",
+ "peak": "-3.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -3.35,
+   "file": "_raw/skill_talisman_rain_v3.wav",
+   "duration": 1.0,
+   "lufs": "-19.8",
+   "true_peak": "-3.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 43748,
+   "at": 0.992,
+   "removed_ms": 8.0,
+   "floor_db": -93.1,
+   "jump_db": 21.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.25,
+   "why": "트루피크 여유 +0.2 LU",
+   "intake_i": [
+    -19.84,
+    -19.84
+   ],
+   "intake_tp": [
+    -0.34,
+    -0.59
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -3.54,
+   "lufs": "-19.8",
+   "true_peak": "-3.5"
+  },
+  "warn": []
+ }
+}

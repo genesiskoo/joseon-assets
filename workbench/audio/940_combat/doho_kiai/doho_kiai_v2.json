@@ -1,0 +1,69 @@
+{
+ "cue": "doho_kiai",
+ "v": 2,
+ "prompt": "A confident young Korean swordsman's single short sharp battle kiai shout as he swings, one forceful wordless exhale-yell like 'hup!', close-up, dry, isolated, no music, no words",
+ "seconds": 0.5,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.475011,
+ "lufs": "-8.3",
+ "peak": "0.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 187,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0018,
+    -0.0012
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/doho_kiai_v2.wav",
+   "duration": 0.48,
+   "lufs": "-8.3",
+   "true_peak": "0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20948,
+   "at": 0.475,
+   "removed_ms": 5.0,
+   "floor_db": -63.2,
+   "jump_db": 20.9,
+   "channels": "L"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.25,
+   "why": "트루피크 여유 -0.2 LU",
+   "intake_i": [
+    -8.33,
+    -8.33
+   ],
+   "intake_tp": [
+    3.2,
+    3.45
+   ]
+  },
+  "out": {
+   "over_full": 171,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.34,
+   "lufs": "-8.3",
+   "true_peak": "0.5"
+  },
+  "warn": [
+   "CLIP 187"
+  ]
+ }
+}

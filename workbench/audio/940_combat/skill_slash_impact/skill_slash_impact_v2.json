@@ -1,0 +1,69 @@
+{
+ "cue": "skill_slash_impact",
+ "v": 2,
+ "prompt": "A wide sword arc slicing through several bodies at once: layered sharp steel bites over a broad meaty impact, punchy, short tail, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.454014,
+ "lufs": "-11.0",
+ "peak": "1.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 14,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0006,
+    -0.0002
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_slash_impact_v2.wav",
+   "duration": 0.48,
+   "lufs": "-11.0",
+   "true_peak": "1.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20022,
+   "at": 0.454,
+   "removed_ms": 26.0,
+   "floor_db": -77.3,
+   "jump_db": 40.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.03,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -11.33,
+    -11.33
+   ],
+   "intake_tp": [
+    3.87,
+    3.9
+   ]
+  },
+  "out": {
+   "over_full": 9,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.4,
+   "lufs": "-11.0",
+   "true_peak": "1.1"
+  },
+  "warn": [
+   "CLIP 14"
+  ]
+ }
+}

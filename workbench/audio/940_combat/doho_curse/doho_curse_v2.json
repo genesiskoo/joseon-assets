@@ -1,0 +1,67 @@
+{
+ "cue": "doho_curse",
+ "v": 2,
+ "prompt": "A dark curse latching onto a person: low ominous whispering swell and a sinister hollow thrum, eerie, close-up, isolated, no music, no words",
+ "seconds": 0.9,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.873016,
+ "lufs": "-37.7",
+ "peak": "-20.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.3,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -20.68,
+   "file": "_raw/doho_curse_v2.wav",
+   "duration": 0.88,
+   "lufs": "-37.7",
+   "true_peak": "-20.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 38500,
+   "at": 0.873,
+   "removed_ms": 7.0,
+   "floor_db": -92.9,
+   "jump_db": 17.9,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.76,
+   "why": "걸면 트루피크 여유가 0.8 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -37.75,
+    -38.0
+   ],
+   "intake_tp": [
+    -17.79,
+    -17.28
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.3,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -20.68,
+   "lufs": "-37.7",
+   "true_peak": "-20.7"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "cue": "skill_blade_storm_end",
+ "v": 1,
+ "prompt": "A spinning blade whirlwind coming to an abrupt stop: final wide whoosh, a sharp sword snap into stance and wind settling, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.8,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.79,
+ "lufs": "-12.9",
+ "peak": "0.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 817,
+   "sub20_pct": 9.9,
+   "dc": [
+    0.0097,
+    0.0125
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_blade_storm_end_v1.wav",
+   "duration": 0.8,
+   "lufs": "-12.9",
+   "true_peak": "0.9"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34839,
+   "at": 0.79,
+   "removed_ms": 10.0,
+   "floor_db": -94.2,
+   "jump_db": 20.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -6.33,
+   "why": "걸면 트루피크 여유가 6.3 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -13.59,
+    -14.0
+   ],
+   "intake_tp": [
+    3.15,
+    9.07
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 10.5,
+   "dc": [
+    0.0098,
+    0.0126
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-12.9",
+   "true_peak": "0.9"
+  },
+  "warn": [
+   "CLIP 817",
+   "DC +0.013"
+  ]
+ }
+}

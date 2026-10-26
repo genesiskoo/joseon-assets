@@ -1,0 +1,69 @@
+{
+ "cue": "bandit_attack",
+ "v": 3,
+ "prompt": "A ragged bandit heaving a heavy wooden club over his shoulder to strike: deep low whoosh of the club, rough hemp cloth rustle and a short gruff wordless effort grunt, close-up, punchy, dry, isolated, no music",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.585011,
+ "lufs": "-16.4",
+ "peak": "-1.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 60,
+   "sub20_pct": 75.3,
+   "dc": [
+    -0.0079,
+    -0.0077
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/bandit_attack_v3.wav",
+   "duration": 0.6,
+   "lufs": "-17.7",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25799,
+   "at": 0.585,
+   "removed_ms": 15.0,
+   "floor_db": -94.4,
+   "jump_db": 21.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 2.83,
+   "why": "트루피크 여유 +2.8 LU",
+   "intake_i": [
+    -17.8,
+    -16.45
+   ],
+   "intake_tp": [
+    3.02,
+    1.54
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 22.2,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -1.21,
+   "lufs": "-16.4",
+   "true_peak": "-1.2"
+  },
+  "warn": [
+   "CLIP 60"
+  ]
+ }
+}

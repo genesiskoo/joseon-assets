@@ -1,0 +1,71 @@
+{
+ "cue": "shoot",
+ "v": 2,
+ "prompt": "A projectile released hard toward the player: quick sharp release snap and a short rushing whoosh flying away, close-up, crisp, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.453016,
+ "lufs": "-20.2",
+ "peak": "0.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 397,
+   "sub20_pct": 57.1,
+   "dc": [
+    -0.0164,
+    -0.0173
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/shoot_v2.wav",
+   "duration": 0.48,
+   "lufs": "-20.2",
+   "true_peak": "0.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 19978,
+   "at": 0.453,
+   "removed_ms": 27.0,
+   "floor_db": -89.4,
+   "jump_db": 53.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -2.0,
+   "why": "걸면 트루피크 여유가 2.0 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -20.34,
+    -20.94
+   ],
+   "intake_tp": [
+    3.38,
+    4.78
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 67.0,
+   "dc": [
+    -0.0174,
+    -0.0183
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-20.2",
+   "true_peak": "0.4"
+  },
+  "warn": [
+   "CLIP 397",
+   "SUB20 67%",
+   "DC -0.018"
+  ]
+ }
+}

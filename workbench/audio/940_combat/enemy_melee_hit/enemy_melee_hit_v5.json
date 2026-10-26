@@ -1,0 +1,69 @@
+{
+ "cue": "enemy_melee_hit",
+ "v": 5,
+ "prompt": "A heavy monster club smashing into a man's body: loud punchy blunt whack with a cloth thump, close-up, crisp, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:42",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.452018,
+ "lufs": "-18.1",
+ "peak": "-0.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 19,
+   "sub20_pct": 8.8,
+   "dc": [
+    0.0056,
+    0.0061
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/enemy_melee_hit_v5.wav",
+   "duration": 0.48,
+   "lufs": "-17.8",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 19934,
+   "at": 0.452,
+   "removed_ms": 28.0,
+   "floor_db": -92.3,
+   "jump_db": 45.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.34,
+   "why": "트루피크 여유 +0.3 LU",
+   "intake_i": [
+    -17.85,
+    -18.25
+   ],
+   "intake_tp": [
+    3.04,
+    2.3
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.6,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -0.67,
+   "lufs": "-18.1",
+   "true_peak": "-0.6"
+  },
+  "warn": [
+   "CLIP 19"
+  ]
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "cue": "doho_chill",
+ "v": 2,
+ "prompt": "A person suddenly chilled by freezing magic: quick frost crackle spreading over cloth with a cold shivering hiss, close-up, isolated, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.658005,
+ "lufs": "-11.7",
+ "peak": "0.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 3,
+   "sub20_pct": 24.3,
+   "dc": [
+    -0.0135,
+    -0.0046
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/doho_chill_v2.wav",
+   "duration": 0.68,
+   "lufs": "-11.7",
+   "true_peak": "0.3"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29018,
+   "at": 0.658,
+   "removed_ms": 22.0,
+   "floor_db": -82.8,
+   "jump_db": 26.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.82,
+   "why": "걸면 트루피크 여유가 0.8 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -13.55,
+    -13.6
+   ],
+   "intake_tp": [
+    2.64,
+    3.41
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 26.1,
+   "dc": [
+    -0.014,
+    -0.0048
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-11.7",
+   "true_peak": "0.3"
+  },
+  "warn": [
+   "CLIP 3",
+   "DC -0.014"
+  ]
+ }
+}

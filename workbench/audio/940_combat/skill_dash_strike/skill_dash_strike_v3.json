@@ -1,0 +1,67 @@
+{
+ "cue": "skill_dash_strike",
+ "v": 3,
+ "prompt": "A swordsman lunging forward at high speed: rushing air burst and cloth flutter ending in a sharp steel slash, compact, close-up, dry, isolated, no footsteps, no music, no voice",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.578005,
+ "lufs": "-10.0",
+ "peak": "0.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    0.0,
+    -0.0022
+   ],
+   "sample_peak_db": -0.55,
+   "file": "_raw/skill_dash_strike_v3.wav",
+   "duration": 0.6,
+   "lufs": "-10.0",
+   "true_peak": "0.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25490,
+   "at": 0.578,
+   "removed_ms": 22.0,
+   "floor_db": -92.6,
+   "jump_db": 54.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.1,
+   "why": "트루피크 여유 -0.1 LU",
+   "intake_i": [
+    -12.12,
+    -12.12
+   ],
+   "intake_tp": [
+    -0.19,
+    -0.09
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.48,
+   "lufs": "-10.0",
+   "true_peak": "0.8"
+  },
+  "warn": []
+ }
+}

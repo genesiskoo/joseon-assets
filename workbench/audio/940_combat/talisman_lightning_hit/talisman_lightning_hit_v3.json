@@ -1,0 +1,70 @@
+{
+ "cue": "talisman_lightning_hit",
+ "v": 3,
+ "prompt": "A bolt of lightning striking the ground instantly: violent sharp electric crack and snapping thunderclap with a short sizzling buzz tail, loud, close-up, isolated, no long rumble, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.606009,
+ "lufs": "-7.9",
+ "peak": "1.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 126,
+   "sub20_pct": 5.2,
+   "dc": [
+    -0.014,
+    -0.0225
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/talisman_lightning_hit_v3.wav",
+   "duration": 0.68,
+   "lufs": "-7.9",
+   "true_peak": "1.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26725,
+   "at": 0.606,
+   "removed_ms": 74.0,
+   "floor_db": -72.8,
+   "jump_db": 34.5,
+   "channels": "L"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.92,
+   "why": "걸면 트루피크 여유가 0.9 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -8.93,
+    -8.95
+   ],
+   "intake_tp": [
+    3.38,
+    4.28
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 5.6,
+   "dc": [
+    -0.0156,
+    -0.0251
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-7.9",
+   "true_peak": "1.2"
+  },
+  "warn": [
+   "CLIP 126",
+   "DC -0.025"
+  ]
+ }
+}

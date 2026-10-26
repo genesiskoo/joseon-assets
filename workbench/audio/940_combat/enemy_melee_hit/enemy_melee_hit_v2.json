@@ -1,0 +1,70 @@
+{
+ "cue": "enemy_melee_hit",
+ "v": 2,
+ "prompt": "A monster's claw or club connecting hard: short heavy punchy whack, tight, close-up, dry, isolated, no voice, no music",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.469002,
+ "lufs": "-14.6",
+ "peak": "0.4",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 102,
+   "sub20_pct": 14.4,
+   "dc": [
+    -0.0195,
+    -0.018
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/enemy_melee_hit_v2.wav",
+   "duration": 0.48,
+   "lufs": "-14.6",
+   "true_peak": "0.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20683,
+   "at": 0.469,
+   "removed_ms": 11.0,
+   "floor_db": -83.1,
+   "jump_db": 47.7,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -2.6,
+   "why": "걸면 트루피크 여유가 2.6 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -14.95,
+    -14.95
+   ],
+   "intake_tp": [
+    3.1,
+    5.7
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 14.5,
+   "dc": [
+    -0.02,
+    -0.0184
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-14.6",
+   "true_peak": "0.4"
+  },
+  "warn": [
+   "CLIP 102",
+   "DC -0.020"
+  ]
+ }
+}

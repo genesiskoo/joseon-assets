@@ -1,0 +1,70 @@
+{
+ "cue": "elem_fire_hit",
+ "v": 2,
+ "prompt": "A short burst of flame searing flesh as a fiery blade strikes: quick hot sizzle and a small fire whoosh, subtle layer, close-up, dry, isolated, no explosion, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.44102,
+ "lufs": "-12.2",
+ "peak": "0.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 16,
+   "sub20_pct": 18.7,
+   "dc": [
+    0.0097,
+    0.0127
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/elem_fire_hit_v2.wav",
+   "duration": 0.48,
+   "lufs": "-12.2",
+   "true_peak": "0.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 19449,
+   "at": 0.441,
+   "removed_ms": 39.0,
+   "floor_db": -87.1,
+   "jump_db": 41.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.18,
+   "why": "걸면 트루피크 여유가 1.2 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -12.34,
+    -12.37
+   ],
+   "intake_tp": [
+    3.75,
+    4.9
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 17.6,
+   "dc": [
+    0.0105,
+    0.0138
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-12.2",
+   "true_peak": "0.8"
+  },
+  "warn": [
+   "CLIP 16",
+   "DC +0.014"
+  ]
+ }
+}

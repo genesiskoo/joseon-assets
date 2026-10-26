@@ -1,0 +1,69 @@
+{
+ "cue": "skill_denied",
+ "v": 3,
+ "prompt": "A short dull muted wooden knock with a soft fizzling-out spark, a failed spell cue, subtle, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:41",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.47102,
+ "lufs": "-57.2",
+ "peak": "-38.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 75.9,
+   "dc": [
+    -0.0,
+    0.0001
+   ],
+   "sample_peak_db": -33.62,
+   "file": "_raw/skill_denied_v3.wav",
+   "duration": 0.48,
+   "lufs": "-58.4",
+   "true_peak": "-33.6"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20772,
+   "at": 0.471,
+   "removed_ms": 9.0,
+   "floor_db": -93.7,
+   "jump_db": 37.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 3.13,
+   "why": "트루피크 여유 +3.1 LU",
+   "intake_i": [
+    -58.98,
+    -57.75
+   ],
+   "intake_tp": [
+    -33.58,
+    -35.48
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 36.5,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": -38.23,
+   "lufs": "-57.2",
+   "true_peak": "-38.2"
+  },
+  "warn": [
+   "SUB20 36%"
+  ]
+ }
+}

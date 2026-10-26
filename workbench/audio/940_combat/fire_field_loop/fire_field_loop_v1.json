@@ -1,0 +1,62 @@
+{
+ "cue": "fire_field_loop",
+ "v": 1,
+ "prompt": "A patch of ground burning steadily: continuous low crackling flames and soft roaring fire with small ember pops, even and steady, close-up, seamless loop, no music, no voice",
+ "seconds": 3.0,
+ "influence": 0.4,
+ "loop": true,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 3.0,
+ "lufs": "-38.3",
+ "peak": "-12.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.5,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -12.93,
+   "file": "_raw/fire_field_loop_v1.wav",
+   "duration": 3.0,
+   "lufs": "-38.3",
+   "true_peak": "-12.7"
+  },
+  "tail": {
+   "cut": false,
+   "why": "루프 — 끝이 처음으로 이어져 안 자른다"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.19,
+   "why": "트루피크 여유 +0.2 LU",
+   "intake_i": [
+    -38.45,
+    -38.49
+   ],
+   "intake_tp": [
+    -10.09,
+    -10.32
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -13.14,
+   "lufs": "-38.3",
+   "true_peak": "-12.9"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "cue": "enemy_attack",
+ "v": 4,
+ "prompt": "A monster rearing back to strike: deep low guttural snarl-breath and a heavy limb whooshing back, weighty, close-up, punchy, dry, isolated, no music, no words",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:39",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.532018,
+ "lufs": "-11.6",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 48,
+   "sub20_pct": 0.9,
+   "dc": [
+    -0.0028,
+    -0.003
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/enemy_attack_v4.wav",
+   "duration": 0.6,
+   "lufs": "-11.6",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 23462,
+   "at": 0.532,
+   "removed_ms": 68.0,
+   "floor_db": -81.2,
+   "jump_db": 34.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.99,
+   "why": "걸면 트루피크 여유가 2.0 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -11.63,
+    -11.64
+   ],
+   "intake_tp": [
+    3.02,
+    5.0
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.0,
+   "dc": [
+    -0.0032,
+    -0.0034
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-11.6",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 48"
+  ]
+ }
+}

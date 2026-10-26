@@ -1,0 +1,67 @@
+{
+ "cue": "boss_bulgasari_charge_tell",
+ "v": 1,
+ "prompt": "A massive iron beast lowering its head to charge: harsh metal scraping on stone, iron spikes rattling and a rising bellow, close-up, tense, isolated, no music, no voice",
+ "seconds": 0.8,
+ "influence": 0.5,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-26 23:40",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.79102,
+ "lufs": "-14.6",
+ "peak": "-4.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.3,
+   "dc": [
+    -0.0004,
+    -0.0002
+   ],
+   "sample_peak_db": -4.44,
+   "file": "_raw/boss_bulgasari_charge_tell_v1.wav",
+   "duration": 0.8,
+   "lufs": "-14.6",
+   "true_peak": "-4.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 34884,
+   "at": 0.791,
+   "removed_ms": 9.0,
+   "floor_db": -88.4,
+   "jump_db": 31.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.03,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -14.65,
+    -14.65
+   ],
+   "intake_tp": [
+    -1.46,
+    -1.49
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -4.48,
+   "lufs": "-14.6",
+   "true_peak": "-4.5"
+  },
+  "warn": []
+ }
+}
