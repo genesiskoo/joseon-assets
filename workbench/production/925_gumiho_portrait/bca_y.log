@@ -1,0 +1,27 @@
+cloud: GGUF 로더 노드가 클라우드에 없음 → --engine fp8 강제
+cloud mode: REST(X-API-Key) 자동
+backend=cloud engine=fp8 cfg=1.0 shift=5.0 upscale=none
+src uploaded -> 1600c75bca7ab82247f816d12170ae3f47781732a9fc48e644ea580139b3c76b.png
+
+=== [1/3] 소스 S (한방향 i2v) ===
+S cloud queued 45e741b9-5b12-456a-9e88-d3ead06ecde8
+  cloud 45e741b9 queued_limited (0s)
+  cloud 45e741b9 executing (6s)
+  cloud 45e741b9 success (131s)
+  S cloud -> C:\ComfyUI\output\bca\jo_gumiho_y925_S_00001_.webp
+  S=81f  split M=40: A=41f B=41f
+
+=== [2/3] 브릿지 C (FLF: B끝 -> A첫) ===
+  bridge frames uploaded -> 68a51f32796f3d7b79e24768fbe537fb5e40209173ff950b88ca713781d7a765.png 7749172242992f7250fa03eeca05b315497094c4aaa575fa1036a2bad78fdc1d.png
+C cloud queued f098eee4-4c0a-4a01-835c-bc63cc60286a
+  cloud f098eee4 queued_limited (0s)
+  cloud f098eee4 executing (6s)
+  cloud f098eee4 executed (132s)
+  cloud f098eee4 success (137s)
+  C cloud -> C:\ComfyUI\output\bca\jo_gumiho_y925_C_00001_.webp
+  C=81f
+
+=== [3/3] 스티치 B->C->A ===
+  loop = B(41) + C[1:-1](79) + A[1:-1](39) = 159f
+  -> C:\ComfyUI\review\staff_idle_test\jo_gumiho_y925_BCA_loop.webp
+  마감: python loop_retime.py C:\ComfyUI\review\staff_idle_test\jo_gumiho_y925_BCA_loop.webp --strength 0.6
