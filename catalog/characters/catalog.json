@@ -229,16 +229,17 @@
         "attachments": {
           "weapon_scene": "\"res://assets/models/weapons/doho_sword_held.glb\"",
           "weapon_placeholder": "false",
-          "weapon_bone": "\"mixamorig_RightHand\"",
-          "weapon_offset_pos": "Vector3(0.0093, 0.0832, 0.0361)",
-          "weapon_offset_rot_deg": "Vector3(-0.96, 179.24, 90.07)",
+          "weapon_bone": "\"R_Hand\"",
+          "weapon_offset_pos": "Vector3(-0.0122, 0.0617, 0.0165)",
+          "weapon_offset_rot_deg": "Vector3(-3.86, 157.72, 90.97)",
           "sheath_scene": "\"res://assets/models/weapons/doho_sheath.glb\"",
-          "sheath_bone": "\"mixamorig_Hips\"",
-          "sheath_offset_pos": "Vector3(0.2223, 0.0826, 0.1241)",
-          "sheath_offset_rot_deg": "Vector3(-3.16, 85.21, -123.4)",
-          "cast_hand_bone": "\"mixamorig_LeftHand\"",
+          "sheath_bone": "\"Pelvis\"",
+          "sheath_offset_pos": "Vector3(0.1266, -0.1266, 0.1989)",
+          "sheath_offset_rot_deg": "Vector3(14.36, 6.11, 56.3)",
+          "cast_hand_bone": "\"L_Hand\"",
           "cast_hand_scene": "\"res://assets/models/weapons/doho_cast_hand.glb\"",
-          "cast_hand_hide_scale": "0.02"
+          "cast_hand_hide_scale": "0.02",
+          "cast_hand_offset_rot_deg": "Vector3(6.49, 169.35, 0.09)"
         },
         "loadout": {
           "status": "not_checked",
@@ -248,7 +249,7 @@
         "portrait_id": "doho",
         "portrait_resource": "data/portraits/doho.tres",
         "definition_config": "[gd_scene load_steps=11 format=3]\n\n[ext_resource type=\"Script\" path=\"res://actors/player.gd\" id=\"1_player\"]\n[ext_resource type=\"Script\" path=\"res://actors/actor_visual.gd\" id=\"av_visual\"]\n[ext_resource type=\"Resource\" path=\"res://data/models/doho.tres\" id=\"md_doho\"]\n[ext_resource type=\"Script\" path=\"res://actors/player_combat.gd\" id=\"2_combat\"]\n\n[sub_resource type=\"CapsuleShape3D\" id=\"shape_body\"]\nradius = 0.35\nheight = 1.6\n\n[sub_resource type=\"CapsuleMesh\" id=\"mesh_body\"]\nradius = 0.35\nheight = 1.6\n\n[sub_resource type=\"StandardMaterial3D\" id=\"mat_body\"]\nalbedo_color = Color(0.12, 0.14, 0.32, 1)\nroughness = 0.9\n\n[sub_resource type=\"CylinderMesh\" id=\"mesh_hat\"]\ntop_radius = 0.55\nbottom_radius = 0.55\nheight = 0.06\n\n[sub_resource type=\"StandardMaterial3D\" id=\"mat_hat\"]\nalbedo_color = Color(0.05, 0.05, 0.05, 1)\nroughness = 1.0\n\n[sub_resource type=\"BoxMesh\" id=\"mesh_nose\"]\nsize = Vector3(0.12, 0.12, 0.3)\n\n[node name=\"Player\" type=\"CharacterBody3D\"]\ncollision_layer = 2\ncollision_mask = 1\nscript = ExtResource(\"1_player\")\n\n[node name=\"Collision\" type=\"CollisionShape3D\" parent=\".\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)\nshape = SubResource(\"shape_body\")\n\n[node name=\"Visual\" type=\"Node3D\" parent=\".\"]\nscript = ExtResource(\"av_visual\")\nmodel = ExtResource(\"md_doho\")\n\n[node name=\"Body\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)\nmesh = SubResource(\"mesh_body\")\nmaterial_override = SubResource(\"mat_body\")\n\n[node name=\"Heukrip\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62, 0)\nmesh = SubResource(\"mesh_hat\")\nmaterial_override = SubResource(\"mat_hat\")\n\n[node name=\"Nose\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0.4)\nmesh = SubResource(\"mesh_nose\")\nmaterial_override = SubResource(\"mat_hat\")\n\n[node name=\"LightRadius\" type=\"OmniLight3D\" parent=\".\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0)\nlight_color = Color(0.98, 0.92, 0.82, 1)\nlight_energy = 2.2\nomni_range = 9.0\n\n[node name=\"Combat\" type=\"Node\" parent=\".\"]\nscript = ExtResource(\"2_combat\")",
-        "model_config": "script = ExtResource(\"1\")\nid = \"doho\"\nscene_path = \"res://assets/models/doho/doho.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/doho_sword_held.glb\"\nweapon_placeholder = false\nweapon_bone = \"mixamorig_RightHand\"\nweapon_offset_pos = Vector3(0.0093, 0.0832, 0.0361)\nweapon_offset_rot_deg = Vector3(-0.96, 179.24, 90.07)\nsheath_scene = \"res://assets/models/weapons/doho_sheath.glb\"\nsheath_bone = \"mixamorig_Hips\"\nsheath_offset_pos = Vector3(0.2223, 0.0826, 0.1241)\nsheath_offset_rot_deg = Vector3(-3.16, 85.21, -123.4)\nwalk_blade = \"sheath\"\nsheathed_offset_y = -0.071\nidle_blade = \"forward\"\ncast_clip = \"cast\"\ncast_hand_bone = \"mixamorig_LeftHand\"\ncast_hand_scene = \"res://assets/models/weapons/doho_cast_hand.glb\"\ncast_hand_hide_scale = 0.02\nwalk_speed = 1.04\nrun_speed = 3.64\nrun_threshold = 2.6\nloco_scale_min = 0.75\nloco_scale_max = 1.5\nstep_phases = {\n\"run\": Vector2(0.383, 0.883),\n\"walk\": Vector2(0.085, 0.585)\n}\nspring_roots = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_ends = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_tips = PackedFloat32Array(0.2, 0.17, 0.18)\nspring_stiffness = 1.2\nspring_drag = 0.4\nspring_gravity = 0.8\nspring_stiffness_each = PackedFloat32Array(1.0, 1.4, 1.4)\nspring_drag_each = PackedFloat32Array(0.5, 0.5, 0.5)\nspring_gravity_each = PackedFloat32Array(0.05, 0.05, 0.05)\nflare_bones = PackedStringArray(\"Hem_L\", \"Hem_R\")\nflare_deg_per_turn = 55.0\nflare_max_deg = 45.0\nflare_attack = 0.06\nflare_release = 0.3\nflare_dead_rad = 1.0\nattack_impact = {\n\"attack\": 0.4,\n\"attack2\": 0.55,\n\"attack3\": 0.42,\n\"attack4\": 0.5,\n\"cast\": 0.68,\n\"kick_spin\": 0.32\n}\nattack_impact_default = 0.45\nswing_warp = {\n\"attack\": Vector3(0.33, 0.43, 0.52),\n\"attack2\": Vector3(0.47, 0.56, 0.62),\n\"attack3\": Vector3(0.39, 0.47, 0.54),\n\"attack4\": Vector3(0.45, 0.51, 0.56),\n\"skill_leap\": Vector3(0.205, 0.227, 0.3),\n\"skill_strike\": Vector3(0.44, 0.53, 0.6),\n\"skill_thrust\": Vector3(0.47, 0.52, 0.56),\n\"skill_whirl\": Vector3(0.335, 0.371, 0.42)\n}\nswing_phases = Vector4(0.46, 0.05, 0.08, 0.1)\nswing_phases_clip = {\n\"skill_leap\": Vector4(0.3, 0.015, 0.073, 0.13)\n}\nswing_knots = {\n\"skill_thrust\": PackedVector2Array(0, 0, 0.014718, 0.05, 0.032544, 0.1, 0.057589, 0.15, 0.089668, 0.2, 0.162378, 0.25, 0.202558, 0.3, 0.242567, 0.35, 0.36911, 0.4, 0.42648, 0.45, 0.46, 0.47, 0.51, 0.52, 0.59, 0.56, 0.69, 0.56, 1, 1),\n\"attack\": PackedVector2Array(0, 0, 0.0745, 0.1946, 0.1342, 0.3589, 0.1815, 0.43, 0.2558, 0.47, 0.3755, 0.52, 0.9149, 0.7462, 0.9485, 0.7784, 1, 1),\n\"attack2\": PackedVector2Array(0, 0, 0.1155, 0.447, 0.143, 0.5028, 0.1815, 0.56, 0.2805, 0.61, 0.5456, 0.635, 0.8428, 0.7516, 0.9069, 0.8, 1, 1),\n\"attack3\": PackedVector2Array(0, 0, 0.0264, 0.155, 0.0876, 0.345, 0.1165, 0.384, 0.1815, 0.47, 0.24, 0.52, 0.3373, 0.55, 0.8636, 0.7243, 0.932, 0.774, 1, 1),\n\"skill_strike\": PackedVector2Array(0, 0, 0.3113, 0.31, 0.3676, 0.422, 0.4126, 0.422, 0.4501, 0.53, 0.4801, 0.609, 0.6676, 0.609, 0.8927, 0.83, 1, 1),\n\"skill_whirl\": PackedVector2Array(0, 0, 0.05, 0.079, 0.3, 0.286, 0.3477, 0.286, 0.3911, 0.371, 0.4215, 0.415, 0.5257, 0.415, 0.5865, 0.474, 0.8686, 0.75, 1, 1)\n}\nswing_fill = {\n\"attack\": 0.66,\n\"attack2\": 0.66,\n\"attack3\": 0.66\n}\nswing_fill_visual = {\n\"attack\": 1.0,\n\"attack2\": 1.0,\n\"attack3\": 1.0\n}\nleap_takeoff = {\n\"skill_leap\": 0.14\n}\nsecond_hit = {\n\"skill_whirl\": 0.46\n}\nhit_speed = 2.5\nattack_chain = PackedStringArray(\"attack\", \"attack2\", \"attack3\")\nchain_reset_sec = 1.2\nchain_blend = 0.1\nchain_blend_in = 0.12\nchain_blend_out = 0.3\nchain_head_skip = 0.04\nrun_idle_blend = 0.18\nloop_end = {\n\"run\": 0.5833\n}\nstance_lock = PackedStringArray(\"run\")\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nclip_files = {\n\"idle\": \"res://assets/models/doho/doho_idle_ip.res\",\n\"run_stop0\": \"res://assets/models/doho/doho_run_stop0.res\",\n\"run_stop1\": \"res://assets/models/doho/doho_run_stop1.res\",\n\"run_stop2\": \"res://assets/models/doho/doho_run_stop2.res\",\n\"run_stop3\": \"res://assets/models/doho/doho_run_stop3.res\",\n\"run_stop4\": \"res://assets/models/doho/doho_run_stop4.res\",\n\"run_stop5\": \"res://assets/models/doho/doho_run_stop5.res\",\n\"run_stop6\": \"res://assets/models/doho/doho_run_stop6.res\",\n\"run_stop7\": \"res://assets/models/doho/doho_run_stop7.res\",\n\"run_stop8\": \"res://assets/models/doho/doho_run_stop8.res\",\n\"run_stop9\": \"res://assets/models/doho/doho_run_stop9.res\",\n\"run_stop10\": \"res://assets/models/doho/doho_run_stop10.res\",\n\"run_stop11\": \"res://assets/models/doho/doho_run_stop11.res\",\n\"run_stop12\": \"res://assets/models/doho/doho_run_stop12.res\",\n\"run_stop13\": \"res://assets/models/doho/doho_run_stop13.res\"\n}\nstop_clips = {\n\"run\": [\"run_stop0\", \"run_stop1\", \"run_stop2\", \"run_stop3\", \"run_stop4\", \"run_stop5\", \"run_stop6\", \"run_stop7\", \"run_stop8\", \"run_stop9\", \"run_stop10\", \"run_stop11\", \"run_stop12\", \"run_stop13\"]\n}\nstop_blend = 0.1",
+        "model_config": "script = ExtResource(\"1\")\nid = \"doho\"\nscene_path = \"res://assets/models/doho/doho.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/doho_sword_held.glb\"\nweapon_placeholder = false\nweapon_bone = \"R_Hand\"\nweapon_offset_pos = Vector3(-0.0122, 0.0617, 0.0165)\nweapon_offset_rot_deg = Vector3(-3.86, 157.72, 90.97)\nsheath_scene = \"res://assets/models/weapons/doho_sheath.glb\"\nsheath_bone = \"Pelvis\"\nsheath_offset_pos = Vector3(0.1266, -0.1266, 0.1989)\nsheath_offset_rot_deg = Vector3(14.36, 6.11, 56.3)\nwalk_blade = \"sheath\"\nrun_blade = \"sheath\"\nblade_draw_sec = 0.12\nsheathed_offset_y = -0.071\nidle_blade = \"forward\"\ncast_clip = \"cast\"\ncast_hand_bone = \"L_Hand\"\ncast_hand_scene = \"res://assets/models/weapons/doho_cast_hand.glb\"\ncast_hand_hide_scale = 0.02\ncast_hand_offset_rot_deg = Vector3(6.49, 169.35, 0.09)\nwalk_speed = 1.2\nrun_speed = 3.7\nrun_threshold = 2.6\nloco_scale_min = 0.75\nloco_scale_max = 1.5\nstep_phases = {\n\"run\": Vector2(0.374, 0.874),\n\"walk\": Vector2(0.085, 0.585)\n}\nspring_roots = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_ends = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_tips = PackedFloat32Array(0.2, 0.17, 0.18)\nspring_stiffness = 1.2\nspring_drag = 0.4\nspring_gravity = 0.8\nspring_stiffness_each = PackedFloat32Array(1.0, 1.4, 1.4)\nspring_drag_each = PackedFloat32Array(0.5, 0.5, 0.5)\nspring_gravity_each = PackedFloat32Array(0.05, 0.05, 0.05)\nflare_bones = PackedStringArray(\"Hem_L\", \"Hem_R\")\nflare_deg_per_turn = 55.0\nflare_max_deg = 45.0\nflare_attack = 0.06\nflare_release = 0.3\nflare_dead_rad = 1.0\nattack_impact = {\n\"attack\": 0.4,\n\"attack2\": 0.55,\n\"attack3\": 0.42,\n\"attack4\": 0.5,\n\"cast\": 0.68,\n\"kick_spin\": 0.32\n}\nattack_impact_default = 0.45\nswing_warp = {\n\"attack\": Vector3(0.33, 0.43, 0.52),\n\"attack2\": Vector3(0.47, 0.56, 0.62),\n\"attack3\": Vector3(0.39, 0.47, 0.54),\n\"attack4\": Vector3(0.45, 0.51, 0.56),\n\"skill_leap\": Vector3(0.205, 0.227, 0.3),\n\"skill_strike\": Vector3(0.44, 0.53, 0.6),\n\"skill_thrust\": Vector3(0.47, 0.52, 0.56),\n\"skill_whirl\": Vector3(0.335, 0.371, 0.42)\n}\nswing_phases = Vector4(0.46, 0.05, 0.08, 0.1)\nswing_phases_clip = {\n\"skill_leap\": Vector4(0.3, 0.015, 0.073, 0.13)\n}\nswing_knots = {\n\"skill_thrust\": PackedVector2Array(0, 0, 0.014718, 0.05, 0.032544, 0.1, 0.057589, 0.15, 0.089668, 0.2, 0.162378, 0.25, 0.202558, 0.3, 0.242567, 0.35, 0.36911, 0.4, 0.42648, 0.45, 0.46, 0.47, 0.51, 0.52, 0.59, 0.56, 0.69, 0.56, 1, 1),\n\"attack\": PackedVector2Array(0, 0, 0.0745, 0.1946, 0.1342, 0.3589, 0.1815, 0.43, 0.2558, 0.47, 0.3755, 0.52, 0.9149, 0.7462, 0.9485, 0.7784, 1, 1),\n\"attack2\": PackedVector2Array(0, 0, 0.1155, 0.447, 0.143, 0.5028, 0.1815, 0.56, 0.2805, 0.61, 0.5456, 0.635, 0.8428, 0.7516, 0.9069, 0.8, 1, 1),\n\"attack3\": PackedVector2Array(0, 0, 0.0264, 0.155, 0.0876, 0.345, 0.1165, 0.384, 0.1815, 0.47, 0.24, 0.52, 0.3373, 0.55, 0.8636, 0.7243, 0.932, 0.774, 1, 1),\n\"skill_strike\": PackedVector2Array(0, 0, 0.3113, 0.31, 0.3676, 0.422, 0.4126, 0.422, 0.4501, 0.53, 0.4801, 0.609, 0.6676, 0.609, 0.8927, 0.83, 1, 1),\n\"skill_whirl\": PackedVector2Array(0, 0, 0.05, 0.079, 0.3, 0.286, 0.3477, 0.286, 0.3911, 0.371, 0.4215, 0.415, 0.5257, 0.415, 0.5865, 0.474, 0.8686, 0.75, 1, 1)\n}\nswing_fill = {\n\"attack\": 0.66,\n\"attack2\": 0.66,\n\"attack3\": 0.66\n}\nswing_fill_visual = {\n\"attack\": 1.0,\n\"attack2\": 1.0,\n\"attack3\": 1.0\n}\nleap_takeoff = {\n\"skill_leap\": 0.14\n}\nsecond_hit = {\n\"skill_whirl\": 0.46\n}\nhit_speed = 2.5\nattack_chain = PackedStringArray(\"attack\", \"attack2\", \"attack3\")\nchain_reset_sec = 1.2\nchain_blend = 0.1\nchain_blend_in = 0.12\nchain_blend_out = 0.3\nchain_head_skip = 0.04\nrun_idle_blend = 0.18\nloop_end = {\n\"run\": 0.5667,\n\"walk\": 1.1\n}\nstance_lock = PackedStringArray(\"run\")\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nclip_files = {\n\"idle\": \"res://assets/models/doho/doho_idle_ip.res\",\n\"run_stop0\": \"res://assets/models/doho/doho_run_stop0.res\",\n\"run_stop1\": \"res://assets/models/doho/doho_run_stop1.res\",\n\"run_stop2\": \"res://assets/models/doho/doho_run_stop2.res\",\n\"run_stop3\": \"res://assets/models/doho/doho_run_stop3.res\",\n\"run_stop4\": \"res://assets/models/doho/doho_run_stop4.res\",\n\"run_stop5\": \"res://assets/models/doho/doho_run_stop5.res\",\n\"run_stop6\": \"res://assets/models/doho/doho_run_stop6.res\",\n\"run_stop7\": \"res://assets/models/doho/doho_run_stop7.res\",\n\"run_stop8\": \"res://assets/models/doho/doho_run_stop8.res\",\n\"run_stop9\": \"res://assets/models/doho/doho_run_stop9.res\",\n\"run_stop10\": \"res://assets/models/doho/doho_run_stop10.res\",\n\"run_stop11\": \"res://assets/models/doho/doho_run_stop11.res\",\n\"run_stop12\": \"res://assets/models/doho/doho_run_stop12.res\",\n\"run_stop13\": \"res://assets/models/doho/doho_run_stop13.res\"\n}\nstop_clips = {\n\"run\": [\"run_stop0\", \"run_stop1\", \"run_stop2\", \"run_stop3\", \"run_stop4\", \"run_stop5\", \"run_stop6\", \"run_stop7\", \"run_stop8\", \"run_stop9\", \"run_stop10\", \"run_stop11\", \"run_stop12\", \"run_stop13\"]\n}\nstop_blend = 0.1",
         "tint": null,
         "usage_evidence": [
           "world/main.tscn",
@@ -262,15 +263,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -297,113 +298,113 @@
             "repository": "game",
             "path": "assets/models/doho/doho.glb",
             "exists": true,
-            "sha256": "709f25174607533c97f68cbf7f18cc2f8bec6427bf314c04947ed377caa7815e",
-            "bytes": 1703748
+            "sha256": "34909610c2dc150cb2d528c95c03a844937f4cacdd251f0f73a6f03e7dd4c6c6",
+            "bytes": 2553256
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_idle_ip.res",
             "exists": true,
-            "sha256": "23182b5748367703b8e48f2bb0f99282beb8ad040c6fcf9082f91b6b40725775",
-            "bytes": 86156
+            "sha256": "d2f1981fe2f0aa929ad013bf453db63acb9e1fc1ef0b1b3f991ca60700109f5a",
+            "bytes": 97666
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop0.res",
             "exists": true,
-            "sha256": "09aebc88169c5e8c1566107a319a4723ecd996147cdd67b05dec137518283542",
-            "bytes": 5845
+            "sha256": "a5f8e194f6a5bf6da223d65ea11f0787a9098985105381c721a659fffbb323f5",
+            "bytes": 15189
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop1.res",
             "exists": true,
-            "sha256": "cc83730574bbc95ea9520bee5938c7f2f4b842c871fd1d1947acfd673e847fb7",
-            "bytes": 5853
+            "sha256": "bcb205b1917b7bdc72e4d4bbb2f6ac78d6c48df698fefc5c8cec862db97397a2",
+            "bytes": 15161
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop10.res",
             "exists": true,
-            "sha256": "4958729aeead32c5afb9aedeead09ceba010ddf24fb3533ddb460b02bd92817e",
-            "bytes": 5851
+            "sha256": "4e8776659bb7bce78d3ae48eff3bbc48259e28b4c0e8f4aa1097c81c20ab37d1",
+            "bytes": 15135
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop11.res",
             "exists": true,
-            "sha256": "475eaafb9b8471ccb8c6a577523029c4e8bca0bfba2e157caaf945485d4a05c1",
-            "bytes": 5867
+            "sha256": "f1674a841696e21d460fc239d3ca553553952521e61da82fc6284ef10eb6fbc2",
+            "bytes": 15159
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop12.res",
             "exists": true,
-            "sha256": "817982509c923e331382e21f358555760db059464b4da106f9ac2865c9518f23",
-            "bytes": 5875
+            "sha256": "619b8e3729541e8dcdd979da6c8e69e0a876d101d2f9673d59d5920ac99f393f",
+            "bytes": 15155
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop13.res",
             "exists": true,
-            "sha256": "4b48a2fafab354ccd401b120168015f0d7458249a79941449dd86f60232bfefa",
-            "bytes": 5865
+            "sha256": "17e0ce66fef12907ea8e9b0087a850c966dff57e00d0e6baa4d0273681d86abd",
+            "bytes": 15167
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop2.res",
             "exists": true,
-            "sha256": "2c1667889ab8d1a27abba8cf8e1760a25c261769da47c4f4877e690b644db4fd",
-            "bytes": 5853
+            "sha256": "e4a5026b23860303f62d6a1a3a7b6854b913669f96fa1b0ecaf948e9f5d1405d",
+            "bytes": 15162
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop3.res",
             "exists": true,
-            "sha256": "76c8a6208c860f19d1a446ee248b86c0d8e624d05ae0a04873bad6b8725ea8bc",
-            "bytes": 5855
+            "sha256": "f18bf509ff772f5492cbc53b65eb70920fb097428126680aa318c34b5a8a250c",
+            "bytes": 15167
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop4.res",
             "exists": true,
-            "sha256": "473cb974b5e2cfc802d5bc4cf21d0704076e0f13b82fc5dee8c8b3bbda8c2f0c",
-            "bytes": 5829
+            "sha256": "5cbb47c2a74f73d7e84a338cd278ccc53d1b9ddbe635700790865e84a949bba2",
+            "bytes": 15173
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop5.res",
             "exists": true,
-            "sha256": "bf176716999ac0ef5317b36817b3cf6e02a02e9289dc8548595e8df3299184bd",
-            "bytes": 5867
+            "sha256": "77ed700f5f90c9302262a514ae47976b1d423bdca882cc9207b9733390042116",
+            "bytes": 15189
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop6.res",
             "exists": true,
-            "sha256": "7394024bc1f75936f4d4d00e1f86a419fc3fe2b21743f008d1aeb118ab69e3dd",
-            "bytes": 5871
+            "sha256": "48b194ff459368fa8345a06018f4b8a4cee673b24063008941c2bbb8e007a769",
+            "bytes": 15165
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop7.res",
             "exists": true,
-            "sha256": "53f37c76b8af2b489de9c88578970cdbcee1cf6b4e133e4fdda5c5c3f1c97726",
-            "bytes": 5861
+            "sha256": "c734912769197f4e56ebe87e0a1a09d16885c6ab3eeebb8638dbe8c146e9011f",
+            "bytes": 15165
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop8.res",
             "exists": true,
-            "sha256": "4885aec3cb058c90ac4e401d1466840f12cccfd989b7a506526e77422f79012a",
-            "bytes": 5863
+            "sha256": "cd34acc7350a4416f32503cc686ee6c79741917886c234b44069c5cf6f19f831",
+            "bytes": 15170
           },
           {
             "repository": "game",
             "path": "assets/models/doho/doho_run_stop9.res",
             "exists": true,
-            "sha256": "5874860c790d9aef5d16dcc5dc2e378dd2ce40069accf7b943a24ca90cf6a87a",
-            "bytes": 5837
+            "sha256": "0d1a99bbc62fb91788bc3b58d9d7d3489c5f5098c8114aae4089b2e202bc8f31",
+            "bytes": 15168
           },
           {
             "repository": "game",
@@ -486,8 +487,8 @@
             "repository": "game",
             "path": "data/models/doho.tres",
             "exists": true,
-            "sha256": "ae817d71075bbc63cb9229c465eed6281cc3d3d32d3402f93e59320cb91f5e2b",
-            "bytes": 5723
+            "sha256": "fc8645bf41fba556f5d006885bf70ed64cb9e67313878039812716d7fc040159",
+            "bytes": 5798
           },
           {
             "repository": "game",
@@ -511,7 +512,7 @@
             "bytes": 4433
           }
         ],
-        "fingerprint": "dac99bbc52b0c626e8aae0c8bc5d914d6f09a16da2815d8f97e9e73d22e447b2",
+        "fingerprint": "c519cef68c545da0205a7fc6e74501aefa7522f6069282e6c195b17bc76c7557",
         "dependency_complete": true
       },
       {
@@ -545,15 +546,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -640,7 +641,7 @@
             "bytes": 8203
           }
         ],
-        "fingerprint": "b343d3d7ec1e0672469733cfed0e4db7a50c99e1f3a530cb9844547a7922855c",
+        "fingerprint": "8be5a5de3aef79b5b9593a8d5f1eba8a0233c68b02bce8b62436a971240aa37d",
         "dependency_complete": true
       },
       {
@@ -679,15 +680,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -781,7 +782,7 @@
             "bytes": 8203
           }
         ],
-        "fingerprint": "9f9cd5164342ce9a2d6166f490d7486605b574399b0400e5bc2128579bff946b",
+        "fingerprint": "3da8c872814b3635dd28100dd4cd5caf3ddddd57e66ed07d1a2a8591ab536b59",
         "dependency_complete": true
       },
       {
@@ -815,15 +816,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -910,7 +911,7 @@
             "bytes": 8203
           }
         ],
-        "fingerprint": "2e1f18fd7452a263bd9c0f043320fe1e6f36b2d3c6db1fbecfa3a1c450b866ba",
+        "fingerprint": "a669af50b1d7f582bb743412f135ecfa0d2ae4da49a13b90d46f947616c05234",
         "dependency_complete": true
       },
       {
@@ -944,15 +945,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1060,7 +1061,7 @@
             "bytes": 8203
           }
         ],
-        "fingerprint": "b708962d42d141f903621962c93ecaa026e73deef367427f4a46727c99d09d11",
+        "fingerprint": "8592ea11d332b10150a5a82be40704abe8870c1c3405a887c05c7dcc51ab7834",
         "dependency_complete": true
       },
       {
@@ -1094,15 +1095,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1189,7 +1190,7 @@
             "bytes": 8203
           }
         ],
-        "fingerprint": "e88da74b9ad3928d0b1820bbad326f3dbf44a5f7e73ef2bc47dff982b6b777ad",
+        "fingerprint": "e3d31db945ac3eb563485a58a6c63c06bdda1202f1e62ca787f2340ddae5d9c8",
         "dependency_complete": true
       },
       {
@@ -1231,8 +1232,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1245,8 +1246,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1312,7 +1313,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "ba801e9acee0a685da896ba5855643b21cf306a6033fa41080b6f6fc4faa71cf",
+        "fingerprint": "54c443ffba75f01d7bb75bd348db69f74666b1b59b2f91b2082f4dacc39017f5",
         "dependency_complete": true
       },
       {
@@ -1347,8 +1348,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1361,8 +1362,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1407,7 +1408,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "27d55009ae7f26166553059d5e3815476b991645fe90d3496a135ead1b2a14da",
+        "fingerprint": "733e6bde279137c96f9e9104f4483289d3a21461c317b9ed97b329ca681d39ba",
         "dependency_complete": true
       },
       {
@@ -1447,8 +1448,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1461,8 +1462,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1507,7 +1508,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "f9c206e2461f5042d85522585216db66857971e3a1937cc251a769569fd7bdf9",
+        "fingerprint": "aa907e2bfb60c94fb043334fb354a55d834027010292a1495985a8ebb6fbb779",
         "dependency_complete": true
       },
       {
@@ -1541,8 +1542,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1555,8 +1556,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1601,7 +1602,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "b2b64e39ea3ce53d84371b3937fc16801d2ddbe29578a83ba1db8d919d713a76",
+        "fingerprint": "b4fcae2e6560e6f69a524660fc640d63c4ec355d9eb3f4c117c88cb1a402d3ea",
         "dependency_complete": true
       },
       {
@@ -1635,8 +1636,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1677,8 +1678,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1716,7 +1717,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "a5b4535bf35911a0cc583c62102015807232f00a57a3aa648708209d5c7fc243",
+        "fingerprint": "76ba35efa1fcad67d661b83f4f22f0b00c0d1c96b170c2ae4773d2a45d8740c3",
         "dependency_complete": true
       },
       {
@@ -1750,8 +1751,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1792,8 +1793,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1831,7 +1832,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "5caf4418df90b8ffa8bf7327f09d3a1fc1d3f2876211de7cfdf49b1aed466f2c",
+        "fingerprint": "84842cf2ba34e47a78758c76182a583876b0a8f6bd72c1625497cf364af523e7",
         "dependency_complete": true
       },
       {
@@ -1865,8 +1866,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1879,8 +1880,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -1918,7 +1919,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "691d1bcf05539d3188bcfd857d7ca4b28de66b52b2da2be6d4dde9f90a3d5ae2",
+        "fingerprint": "cd57e79fbec4c4a449e288dd1205fbf538e0e303d2dad2a07c55ec5fb76a6b0f",
         "dependency_complete": true
       },
       {
@@ -1952,8 +1953,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -1994,8 +1995,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2033,7 +2034,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "9fdb7606b2406dc7da6eb778e24c00da019c870d1c5c1605824510607dc93366",
+        "fingerprint": "33c9bd30af6f398211cc20534ee3b72493d03e40e5af949f9b6a2e782a6ff292",
         "dependency_complete": true
       },
       {
@@ -2073,8 +2074,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2087,8 +2088,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2133,7 +2134,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "86758e0b59b80ef394ede6d385fa29b238acc9218fd1ca3e11726c0a536fb7c6",
+        "fingerprint": "4578e6c6d1c7832bd76fba6fcd65c7e546e33c2298732dd5da2a90f33f32f4eb",
         "dependency_complete": true
       },
       {
@@ -2167,8 +2168,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2181,8 +2182,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2220,7 +2221,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "449dde532209e553e8252597a066119ac2b3ac913a9791963b0180d7bb838f30",
+        "fingerprint": "b4e1552278182e883d8addd6213ca1b9a748a9dae879c914b827c1cfa6b0fb07",
         "dependency_complete": true
       },
       {
@@ -2254,8 +2255,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2268,8 +2269,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2321,7 +2322,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "7c7ac8d79617474e2dc4b9b0ba63dba3e543a21fb3b6b81fc3fce8c57130fb3c",
+        "fingerprint": "8a0c5a487853a634348cb9e2579952daef1d2b888c63f9f68e4cda23a5bebc27",
         "dependency_complete": true
       },
       {
@@ -2356,8 +2357,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2370,8 +2371,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2416,7 +2417,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "b2b64e39ea3ce53d84371b3937fc16801d2ddbe29578a83ba1db8d919d713a76",
+        "fingerprint": "b4fcae2e6560e6f69a524660fc640d63c4ec355d9eb3f4c117c88cb1a402d3ea",
         "dependency_complete": true
       },
       {
@@ -2450,8 +2451,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2464,8 +2465,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2503,7 +2504,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "2c182d6f71474c84a94a1f6001b9411ec5ac6d33c5ff8ef1121587a3b86ee9f6",
+        "fingerprint": "69b39db3c3e0f847942e4aa214157511f6488f377caf318671d2da56a5808c81",
         "dependency_complete": true
       },
       {
@@ -2537,8 +2538,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2551,8 +2552,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2590,7 +2591,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "29a4a92d89d62384ee207ca2db6abeb90279d3dd19e4b273d19c0574c6d0b4af",
+        "fingerprint": "4c63433bafbf7fb74ecce28325ce58affd79b834868cd7861413cb99d600f0b8",
         "dependency_complete": true
       },
       {
@@ -2624,8 +2625,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2638,8 +2639,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2677,7 +2678,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "04f01fbe7d069f27df7094cbfbfe77a8877a0b62f94d03af306cd608079607f0",
+        "fingerprint": "707c8a79e14e7aa5ab75186f55650d3e9c3569b96896595c5bd87fc31d4556c4",
         "dependency_complete": true
       },
       {
@@ -2711,8 +2712,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2725,8 +2726,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2764,7 +2765,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "fc3748d6da47fc9dd27208d95dfd812d82b85fc9798bf0639b5615b269b78219",
+        "fingerprint": "2da62bd1804a5e8ff952d7dc55513544966a796e1778cd5472789dda93885f9a",
         "dependency_complete": true
       },
       {
@@ -2804,8 +2805,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2818,8 +2819,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2864,7 +2865,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "4f0a08c0c4b088e9c755c5b7a9da533da7ee0070a505c0d42536305d4653a758",
+        "fingerprint": "28e367c3b2a7a71d4564e6d79802ca46390e57d0e4f996d1f30f8f735d223719",
         "dependency_complete": true
       },
       {
@@ -2898,8 +2899,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2912,8 +2913,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -2951,7 +2952,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "102e1b434a67f9326d666745ea3e0cb44fa47eae64e1938e97693323817c510f",
+        "fingerprint": "193de8dcbcc9f05abd0d7395f094703d61ef4624fac3a430488d023da0453d30",
         "dependency_complete": true
       },
       {
@@ -2985,8 +2986,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -2999,8 +3000,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3059,7 +3060,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "0ff59dc3a1116fd90b5e2a43355edabd136e7779a6acf5e6843b18425e66cc38",
+        "fingerprint": "dce7359aa81371b7da9cfe93b081178f97fbf4072502e82368ee07e7cf3a4597",
         "dependency_complete": true
       },
       {
@@ -3093,8 +3094,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3107,8 +3108,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3146,7 +3147,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "1ac4b832ae4c61f38d938602940afb386352a2c3fa85b44e366857fc472d6b20",
+        "fingerprint": "ff4b304ebab2080750bbf2b85ebe442e8a3e7fb731e723a91bc36467a094caee",
         "dependency_complete": true
       },
       {
@@ -3180,8 +3181,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3194,8 +3195,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3233,7 +3234,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "b9fe73ef00fece61962d5a10ab6a22631aa3fa856437805d1ffb6f84cc32aee3",
+        "fingerprint": "80be1d085933a841bbbefaf4416a8ae0ec0b4c79e209f80bec58487ac5793bb9",
         "dependency_complete": true
       },
       {
@@ -3273,8 +3274,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3287,8 +3288,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3333,7 +3334,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "7706be7172e298ba2a986bbc8ba2de61115fbdf3fc135c61636788e77d0e9d59",
+        "fingerprint": "ad8f6113b79198418d4c4cf6abd7460b98af696d062c2904eb6cbd0d1cafb635",
         "dependency_complete": true
       },
       {
@@ -3367,8 +3368,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3381,8 +3382,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3420,7 +3421,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "b84dd850763ebedbd8b9d2c4f949e1aef931d38ae8fd3386a01ac4962d8a98b4",
+        "fingerprint": "1297084e2a5567d92b74fe5706d88810d0eda8ff15295b4a6de8da754dbd1a8e",
         "dependency_complete": true
       },
       {
@@ -3454,8 +3455,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3468,8 +3469,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3507,7 +3508,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "2dc3575be49a761bbed21014e2f52a5c97a08441360abafe2699416d29a6bf7a",
+        "fingerprint": "b1a6aa00f95f45b2550f2d63d43bfcbd957f4e12b9a16aeb71914660125283c4",
         "dependency_complete": true
       },
       {
@@ -3541,8 +3542,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3555,8 +3556,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3594,7 +3595,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "08252a17284ba0b0397207674e9522a59a833ff8dc9a370c4aced4bd191795f4",
+        "fingerprint": "ca27fae17d4a341a09864ba80a9705dc84516e0cb757658eec91dfc16a1eed76",
         "dependency_complete": true
       },
       {
@@ -3634,8 +3635,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3648,8 +3649,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3694,7 +3695,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "e3c724f2a78434ff17377f073e634fc5380f80b71df4a761ffcee1fd949f12b1",
+        "fingerprint": "26a6644dc70a1114d9adfd031013e241a06f6c6db8bc8e517061ce5feac969d6",
         "dependency_complete": true
       },
       {
@@ -3734,8 +3735,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3748,8 +3749,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3794,7 +3795,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "2d6b27939e293d72e262466e854240e19892a3a12d81bd8f186f4abb11e1554c",
+        "fingerprint": "388c8514295bcebd359a668e0f048454962a2f83bf829f0576511b19db5c8dd2",
         "dependency_complete": true
       },
       {
@@ -3834,8 +3835,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3848,8 +3849,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3894,7 +3895,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "a2604d1037c20068a4041873ff5ac9d6b9ed04ddc984a23e1d99f9e14a1ee94d",
+        "fingerprint": "2dddfbf7c3e697508c09aef6758d3a8d7d4ee07027d54bfb9be076255e459eb3",
         "dependency_complete": true
       },
       {
@@ -3934,8 +3935,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -3948,8 +3949,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -3994,7 +3995,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "6e642a59fa4784703ed1fcef0df8c531be0dc65a909d65d86c4099932ce4c66a",
+        "fingerprint": "90857cadd29a77947cb6fd31739057b129098cd6289989f2444d4137bc16e9f6",
         "dependency_complete": true
       },
       {
@@ -4026,8 +4027,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4047,8 +4048,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4079,7 +4080,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "9540dea456c83d01f0b5821e993a03bd6c945d805ad7355dd476179a9558be9a",
+        "fingerprint": "4b501c72554469f1d3250bc9985a04a4fd78161fb0e715a147d413e2cb6ab2a3",
         "dependency_complete": true
       },
       {
@@ -4119,8 +4120,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4133,8 +4134,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4179,7 +4180,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "2ea2fc06bd49105a1f476c370a4919d19fcd77d70cc56654f0dac646aadd2ab7",
+        "fingerprint": "0157cdd77e156bbba42801a93fa71d7b792f95c06957a9c3c61fd219ae2243c1",
         "dependency_complete": true
       },
       {
@@ -4221,8 +4222,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4235,8 +4236,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4302,7 +4303,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "f0a22d1758632bbbd3a67c73d100dc56adf8f83ab96f94dbdb6140cdef750c36",
+        "fingerprint": "1de76a6ab451de5dfcebf52189de05d59ed26f6aa7d245190c4885af72f58cbf",
         "dependency_complete": true
       },
       {
@@ -4336,8 +4337,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4350,8 +4351,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4403,7 +4404,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "a2b27be6c235a28c51ca2b3ab769ee4a6d01104e135cb4b707c68e3fd99e501b",
+        "fingerprint": "64256e9e922bde5844aa8552879745e06a56d112c45a1c219ffa300a22b5f08f",
         "dependency_complete": true
       },
       {
@@ -4444,8 +4445,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4458,8 +4459,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4511,7 +4512,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "fc3c55a0f8d61b4a351d8099d56ed8f0ad4a788e237655f4224c546eb5989095",
+        "fingerprint": "eb4c9d0afd0a2f67fc0a82a2a8cdca4278981c28007ba30cb67591ef939bf1e7",
         "dependency_complete": true
       },
       {
@@ -4545,8 +4546,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4566,8 +4567,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4605,7 +4606,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "de6cdf4c5d0336eeeead87ef001ecfb8c907d7e5438a770d467fed4df7612632",
+        "fingerprint": "37bb4f2a8c49552b0020c658a81bb5a36f65e2866e103ba6fe10b7b5542c76f7",
         "dependency_complete": true
       },
       {
@@ -4639,8 +4640,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4653,8 +4654,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4692,7 +4693,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "703a235a00f2ce6c4e970d783719e128233884b4c3f9332cb6929657ec56149f",
+        "fingerprint": "13b1da50ebf2ec17ee4cd94bd4306d1064e83fe472cd5952f79d0fe7634ca487",
         "dependency_complete": true
       },
       {
@@ -4726,8 +4727,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4740,8 +4741,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4779,7 +4780,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "34c5d4895cad5f9a8a833635d860bba87c5cf8c1ef32f2f7a43d92ee6d319ce6",
+        "fingerprint": "03d5ed4341b691d4a3b0db78abec61c08821450860550423de9c869bd3cbc2f5",
         "dependency_complete": true
       },
       {
@@ -4813,8 +4814,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4827,8 +4828,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4866,7 +4867,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "3151731fc7f2d9d058989008ca6c3c010f509156d9761f3737358b0b5c4a4637",
+        "fingerprint": "ec070d11f8d7947a99462cd949e775549dbd57753cbeef1d5708f6c1f9f3f3a4",
         "dependency_complete": true
       },
       {
@@ -4900,8 +4901,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4914,8 +4915,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -4953,7 +4954,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "4fd226234f9b85136f67b650592c7b33280a44bf3781f07e22f766f75ffe2cbf",
+        "fingerprint": "ca26d019bffd8be109449470d7bdbf35bcd9171463b536ebd9d1670efd676468",
         "dependency_complete": true
       },
       {
@@ -4985,8 +4986,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -4999,8 +5000,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5031,7 +5032,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "d6e8345dc27052ae3356f71c7085afe38926bf6dc1ada3b89b2d1a2e040115d5",
+        "fingerprint": "671484666f5899006e480559f729f67c4c768131abd42247fdd52341781bc5b1",
         "dependency_complete": true
       },
       {
@@ -5071,8 +5072,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5085,8 +5086,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5131,7 +5132,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "e3a6ed213706c720eac4cfb9aefa145abcad716d0677021cf7a0d24adeee7271",
+        "fingerprint": "68de8dd31b56570c1301cc252e02b4c639624c50744ac5e85238cb259ac78134",
         "dependency_complete": true
       },
       {
@@ -5165,8 +5166,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5179,8 +5180,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5218,7 +5219,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "06060aca7bed562e3b0bd8c5451b7ae9bf568e814589b5f86096a007d71f2392",
+        "fingerprint": "3eabd9c573a91faca3957fd7cf79f58beb9060b453f7d139f25f1bd850c21c8d",
         "dependency_complete": true
       },
       {
@@ -5252,8 +5253,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5266,8 +5267,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5305,7 +5306,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "a5709950cef092be311e44c3ecab85a68c804d076078a873f4afb4ce91facc41",
+        "fingerprint": "bf64f620d71759974f307ee57bf5b4f4e31e0a1f35011caff316bf6596e643ca",
         "dependency_complete": true
       },
       {
@@ -5339,8 +5340,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5353,8 +5354,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5392,7 +5393,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "40d1727b84c75fb250acda4b3c1e2c136abe998bb2baacbc63b9e5540e860a6a",
+        "fingerprint": "d2bc65d09f7e901b45961584a2b51f6276e3f7ec7fbed47b9e10cf889545e385",
         "dependency_complete": true
       },
       {
@@ -5433,8 +5434,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5447,8 +5448,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5500,7 +5501,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "6d7ceb4c20da7a74e15d635852e25917ab9b1f0bae2505d0ff2361eff6f21de2",
+        "fingerprint": "63ee36e811bf88162ccd57fdf9c7996a3ac31ded7c2f6f1715c1be6e817faf6e",
         "dependency_complete": true
       },
       {
@@ -5534,8 +5535,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5548,8 +5549,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5587,7 +5588,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "88829d0f773bfb3d51d7eb5d028ed13ab2b62cf049e93512ffb5095860671d27",
+        "fingerprint": "7cbcba2f6ab50bf80b7a80cdbacffe801d4d036591578ceb50349d69863304ce",
         "dependency_complete": true
       },
       {
@@ -5621,8 +5622,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5635,8 +5636,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5674,7 +5675,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "ee7555fd35c46858aa9b85f0eae699f966850366cb2544d9f12f15e616e7e965",
+        "fingerprint": "9c3e716796b1322f01f1824077a64c1447525b82efb406ecee44e92239fba115",
         "dependency_complete": true
       },
       {
@@ -5708,8 +5709,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5722,8 +5723,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5761,7 +5762,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "1c4ba4358fd03f27047a7faf34311ca8d63edfb5ed011dbcd7078d4fb2493083",
+        "fingerprint": "4ab9f6401784f0aec4f40ccbbc91d90bea8792bdb072f1bc679c4ac2085f6d34",
         "dependency_complete": true
       },
       {
@@ -5795,8 +5796,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5809,8 +5810,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5848,7 +5849,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "06ce23959e2791a8ba85e0bbd98c810f4c980734be127e553f3adb04aa8b6207",
+        "fingerprint": "0f0edd0be59e268c2e930094976543db15e6a2cc2a72147f86761f6483eb8ac2",
         "dependency_complete": true
       },
       {
@@ -5882,8 +5883,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5896,8 +5897,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -5935,7 +5936,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "9aff77a6e9b29b082d0a7c69124f2c2b373d82195744c6ff0cbb059e8a792df1",
+        "fingerprint": "2d3e8df83f19289d2b079a1f9a917921ada727af9e9173338db29640d11ab30a",
         "dependency_complete": true
       },
       {
@@ -5969,8 +5970,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -5983,8 +5984,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -6022,7 +6023,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "cbc327ca2d4da6e8deab5ceb5a1776b7d6afb49f8d1e1ee0bf7afd5ebb30cebd",
+        "fingerprint": "9c9aa5d816345b84e2f2715c82fbce6888ba1c4d4c27d6bdd2f9cef95298367e",
         "dependency_complete": true
       },
       {
@@ -6056,8 +6057,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -6077,8 +6078,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -6116,7 +6117,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "fb35bd4516971c45844255dc55ff518df83547269d2ff211fa3d9a004f6c28b7",
+        "fingerprint": "3df9bfb26bd7dedce0ef547be8fd3c234bfb8132e6b5e14a085cb0372fb4599a",
         "dependency_complete": true
       },
       {
@@ -6150,8 +6151,8 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "4da5f0f643e2e36d3ada497b31a7e02acbe382c983f4aca515a21abddd6d67d5",
-            "bytes": 130686
+            "sha256": "fe0da3378a3f9c39853d0f3f253cadcdb8f7af83be7b5bed05dd66cdd0a1bdb1",
+            "bytes": 133647
           },
           {
             "repository": "game",
@@ -6164,8 +6165,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "38c7e43205df93f52e9ad84282d1e00fffb4d235550a01ebc1877df0d5b7382d",
-            "bytes": 40695
+            "sha256": "df668fb9e95295500096662643550cb05e09b69a924df3d7d7b0ac8edc014011",
+            "bytes": 41758
           },
           {
             "repository": "game",
@@ -6203,7 +6204,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "d4bc6037a6576d465561497163f0b004973be079bbfcbeb319eee689fd706d37",
+        "fingerprint": "1ab2beb6d0e39668f740cb20a1c7d495b80b39375fb32122f732bb9473cd71a4",
         "dependency_complete": true
       }
     ],
