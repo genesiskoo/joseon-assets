@@ -1,0 +1,64 @@
+{
+ "cue": "hit_crit",
+ "v": 6,
+ "prompt": "One powerful critical sword strike tearing through a body: crisp steel crack layered on a deep compact flesh impact, heavy and satisfying, no explosion, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.68,
+ "lufs": "-9.2",
+ "peak": "0.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 5,
+   "sub20_pct": 0.1,
+   "dc": [
+    0.0003,
+    0.0007
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/hit_crit_v6.wav",
+   "duration": 0.68,
+   "lufs": "-9.2",
+   "true_peak": "0.3"
+  },
+  "tail": {
+   "cut": false,
+   "why": "끝이 바닥에서 뛰지 않는다"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.17,
+   "why": "트루피크 여유 -0.2 LU",
+   "intake_i": [
+    -9.25,
+    -9.25
+   ],
+   "intake_tp": [
+    3.27,
+    3.44
+   ]
+  },
+  "out": {
+   "over_full": 5,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.2,
+   "lufs": "-9.2",
+   "true_peak": "0.5"
+  },
+  "warn": [
+   "CLIP 5"
+  ]
+ }
+}

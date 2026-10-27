@@ -1,0 +1,69 @@
+{
+ "cue": "sword_swing",
+ "v": 14,
+ "prompt": "Single fast steel sword slash cutting through air, sharp dry airy whoosh with a thin blade whistle, quick attack and short tail, close-up, crisp, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:33",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.466009,
+ "lufs": "-15.1",
+ "peak": "-0.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 2,
+   "sub20_pct": 21.7,
+   "dc": [
+    0.0092,
+    -0.0058
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/sword_swing_v14.wav",
+   "duration": 0.48,
+   "lufs": "-15.0",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20551,
+   "at": 0.466,
+   "removed_ms": 14.0,
+   "floor_db": -92.8,
+   "jump_db": 38.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.74,
+   "why": "트루피크 여유 +0.7 LU",
+   "intake_i": [
+    -15.45,
+    -15.55
+   ],
+   "intake_tp": [
+    2.89,
+    2.05
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 4.1,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -0.31,
+   "lufs": "-15.1",
+   "true_peak": "-0.3"
+  },
+  "warn": [
+   "CLIP 2"
+  ]
+ }
+}

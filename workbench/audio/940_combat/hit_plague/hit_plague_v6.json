@@ -1,0 +1,71 @@
+{
+ "cue": "hit_plague",
+ "v": 6,
+ "prompt": "A sword slicing into a bloated plague-rotted corpse body: thick squelching wet impact with a sickly gurgle and a short steel bite, gross, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.468005,
+ "lufs": "-13.5",
+ "peak": "0.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 42,
+   "sub20_pct": 47.0,
+   "dc": [
+    -0.0729,
+    -0.0892
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/hit_plague_v6.wav",
+   "duration": 0.48,
+   "lufs": "-13.5",
+   "true_peak": "0.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20639,
+   "at": 0.468,
+   "removed_ms": 12.0,
+   "floor_db": -72.1,
+   "jump_db": 40.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.16,
+   "why": "걸면 트루피크 여유가 1.2 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -14.43,
+    -14.43
+   ],
+   "intake_tp": [
+    3.25,
+    4.41
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 47.3,
+   "dc": [
+    -0.0748,
+    -0.0915
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-13.5",
+   "true_peak": "0.8"
+  },
+  "warn": [
+   "CLIP 42",
+   "SUB20 47%",
+   "DC -0.091"
+  ]
+ }
+}

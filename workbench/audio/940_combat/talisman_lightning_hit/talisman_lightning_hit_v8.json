@@ -1,0 +1,69 @@
+{
+ "cue": "talisman_lightning_hit",
+ "v": 8,
+ "prompt": "A bolt of lightning striking the ground instantly: violent sharp electric crack and snapping thunderclap with a short sizzling buzz tail, loud, close-up, isolated, no long rumble, no music, no voice",
+ "seconds": 0.7,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:32",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.667007,
+ "lufs": "-7.9",
+ "peak": "1.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 66,
+   "sub20_pct": 1.5,
+   "dc": [
+    -0.0055,
+    -0.0128
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/talisman_lightning_hit_v8.wav",
+   "duration": 0.68,
+   "lufs": "-7.9",
+   "true_peak": "0.9"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 29415,
+   "at": 0.667,
+   "removed_ms": 13.0,
+   "floor_db": -90.5,
+   "jump_db": 53.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.15,
+   "why": "트루피크 여유 +0.1 LU",
+   "intake_i": [
+    -10.77,
+    -10.77
+   ],
+   "intake_tp": [
+    3.02,
+    2.87
+   ]
+  },
+  "out": {
+   "over_full": 49,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.34,
+   "lufs": "-7.9",
+   "true_peak": "1.0"
+  },
+  "warn": [
+   "CLIP 66"
+  ]
+ }
+}

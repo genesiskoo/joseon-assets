@@ -1,0 +1,67 @@
+{
+ "cue": "skill_dash_strike_impact",
+ "v": 5,
+ "prompt": "A charging sword thrust ramming into a body: heavy punchy stab impact with a crisp steel crack, short, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.45102,
+ "lufs": "-19.3",
+ "peak": "-0.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 5.8,
+   "dc": [
+    -0.0011,
+    -0.0008
+   ],
+   "sample_peak_db": -1.24,
+   "file": "_raw/skill_dash_strike_impact_v5.wav",
+   "duration": 0.48,
+   "lufs": "-19.3",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 19890,
+   "at": 0.451,
+   "removed_ms": 29.0,
+   "floor_db": -93.1,
+   "jump_db": 55.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 1.24,
+   "why": "트루피크 여유 +1.2 LU",
+   "intake_i": [
+    -19.5,
+    -19.5
+   ],
+   "intake_tp": [
+    2.95,
+    1.71
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.5,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -1.4,
+   "lufs": "-19.3",
+   "true_peak": "-0.9"
+  },
+  "warn": []
+ }
+}

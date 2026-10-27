@@ -1,0 +1,67 @@
+{
+ "cue": "elem_cold_hit",
+ "v": 4,
+ "prompt": "A frost-enchanted blade striking: quick crisp ice crackle of frost spreading on contact with a cold short hiss, subtle layer, close-up, dry, isolated, no glass melody, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.47102,
+ "lufs": "-39.7",
+ "peak": "-16.9",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 18.7,
+   "dc": [
+    -0.0002,
+    -0.0001
+   ],
+   "sample_peak_db": -16.33,
+   "file": "_raw/elem_cold_hit_v4.wav",
+   "duration": 0.48,
+   "lufs": "-39.7",
+   "true_peak": "-16.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20772,
+   "at": 0.471,
+   "removed_ms": 9.0,
+   "floor_db": -96.7,
+   "jump_db": 21.4,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.6,
+   "why": "트루피크 여유 +0.6 LU",
+   "intake_i": [
+    -39.78,
+    -39.78
+   ],
+   "intake_tp": [
+    -13.82,
+    -14.42
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 1.3,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -16.89,
+   "lufs": "-39.7",
+   "true_peak": "-16.9"
+  },
+  "warn": []
+ }
+}

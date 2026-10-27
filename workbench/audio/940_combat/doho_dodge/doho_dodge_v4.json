@@ -1,0 +1,67 @@
+{
+ "cue": "doho_dodge",
+ "v": 4,
+ "prompt": "A swordsman nimbly sidestepping an attack: quick light cloth robe swish and a soft airy duck, close-up, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:32",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.468005,
+ "lufs": "-18.2",
+ "peak": "-5.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 50.5,
+   "dc": [
+    0.0197,
+    0.02
+   ],
+   "sample_peak_db": -3.73,
+   "file": "_raw/doho_dodge_v4.wav",
+   "duration": 0.48,
+   "lufs": "-18.1",
+   "true_peak": "-3.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20639,
+   "at": 0.468,
+   "removed_ms": 12.0,
+   "floor_db": -88.0,
+   "jump_db": 38.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 1.39,
+   "why": "트루피크 여유 +1.4 LU",
+   "intake_i": [
+    -18.15,
+    -18.25
+   ],
+   "intake_tp": [
+    -0.79,
+    -2.28
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 8.4,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -5.49,
+   "lufs": "-18.2",
+   "true_peak": "-5.1"
+  },
+  "warn": []
+ }
+}

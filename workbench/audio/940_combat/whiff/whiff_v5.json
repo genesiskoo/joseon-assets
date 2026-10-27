@@ -1,0 +1,70 @@
+{
+ "cue": "whiff",
+ "v": 5,
+ "prompt": "A sword swing missing its target and cutting only empty air: short breathy whoosh with a faint fading whistle, light, close-up, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.476009,
+ "lufs": "-13.0",
+ "peak": "0.1",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 188,
+   "sub20_pct": 18.6,
+   "dc": [
+    -0.018,
+    -0.0267
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/whiff_v5.wav",
+   "duration": 0.48,
+   "lufs": "-13.0",
+   "true_peak": "0.1"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20992,
+   "at": 0.476,
+   "removed_ms": 4.0,
+   "floor_db": -68.5,
+   "jump_db": 25.4,
+   "channels": "L"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -0.89,
+   "why": "걸면 트루피크 여유가 0.9 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -13.45,
+    -13.45
+   ],
+   "intake_tp": [
+    3.05,
+    3.94
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 18.7,
+   "dc": [
+    -0.0181,
+    -0.0269
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-13.0",
+   "true_peak": "0.1"
+  },
+  "warn": [
+   "CLIP 188",
+   "DC -0.027"
+  ]
+ }
+}

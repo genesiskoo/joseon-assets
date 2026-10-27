@@ -1,0 +1,69 @@
+{
+ "cue": "whiff",
+ "v": 7,
+ "prompt": "A sword swing missing its target and cutting only empty air: short breathy whoosh with a faint fading whistle, light, close-up, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.468005,
+ "lufs": "-13.0",
+ "peak": "1.6",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 34,
+   "sub20_pct": 19.3,
+   "dc": [
+    -0.0168,
+    -0.0153
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/whiff_v7.wav",
+   "duration": 0.48,
+   "lufs": "-12.9",
+   "true_peak": "0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20639,
+   "at": 0.468,
+   "removed_ms": 12.0,
+   "floor_db": -94.2,
+   "jump_db": 51.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.26,
+   "why": "트루피크 여유 -0.3 LU",
+   "intake_i": [
+    -13.75,
+    -13.75
+   ],
+   "intake_tp": [
+    3.0,
+    3.26
+   ]
+  },
+  "out": {
+   "over_full": 23,
+   "sub20_pct": 2.8,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 1.6,
+   "lufs": "-13.0",
+   "true_peak": "1.6"
+  },
+  "warn": [
+   "CLIP 34"
+  ]
+ }
+}

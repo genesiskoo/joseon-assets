@@ -1,0 +1,71 @@
+{
+ "cue": "skill_dash_strike",
+ "v": 9,
+ "prompt": "A swordsman lunging forward at high speed: rushing air burst and cloth flutter ending in a sharp steel slash, compact, close-up, dry, isolated, no footsteps, no music, no voice",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:32",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.589002,
+ "lufs": "-13.3",
+ "peak": "0.7",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 378,
+   "sub20_pct": 44.2,
+   "dc": [
+    0.0163,
+    0.0186
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/skill_dash_strike_v9.wav",
+   "duration": 0.6,
+   "lufs": "-13.3",
+   "true_peak": "0.7"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 25975,
+   "at": 0.589,
+   "removed_ms": 11.0,
+   "floor_db": -91.1,
+   "jump_db": 27.1,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -2.08,
+   "why": "걸면 트루피크 여유가 2.1 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -15.13,
+    -15.37
+   ],
+   "intake_tp": [
+    3.13,
+    4.97
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 46.3,
+   "dc": [
+    0.0166,
+    0.019
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-13.3",
+   "true_peak": "0.7"
+  },
+  "warn": [
+   "CLIP 378",
+   "SUB20 46%",
+   "DC +0.019"
+  ]
+ }
+}

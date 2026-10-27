@@ -1,0 +1,70 @@
+{
+ "cue": "bandit_attack",
+ "v": 5,
+ "prompt": "A ragged bandit heaving a heavy wooden club over his shoulder to strike: deep low whoosh of the club, rough hemp cloth rustle and a short gruff wordless effort grunt, close-up, punchy, dry, isolated, no music",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.592018,
+ "lufs": "-19.9",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 650,
+   "sub20_pct": 30.7,
+   "dc": [
+    -0.0048,
+    -0.0042
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/bandit_attack_v5.wav",
+   "duration": 0.6,
+   "lufs": "-19.9",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26108,
+   "at": 0.592,
+   "removed_ms": 8.0,
+   "floor_db": -93.5,
+   "jump_db": 33.2,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -2.82,
+   "why": "걸면 트루피크 여유가 2.8 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -19.85,
+    -21.16
+   ],
+   "intake_tp": [
+    3.01,
+    4.52
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 32.3,
+   "dc": [
+    -0.0048,
+    -0.0042
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-19.9",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 650",
+   "SUB20 32%"
+  ]
+ }
+}

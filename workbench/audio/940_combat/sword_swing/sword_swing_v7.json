@@ -1,0 +1,70 @@
+{
+ "cue": "sword_swing",
+ "v": 7,
+ "prompt": "Single fast steel sword slash cutting through air, sharp dry airy whoosh with a thin blade whistle, quick attack and short tail, close-up, crisp, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.477007,
+ "lufs": "-14.7",
+ "peak": "0.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 491,
+   "sub20_pct": 7.6,
+   "dc": [
+    -0.0116,
+    -0.0097
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/sword_swing_v7.wav",
+   "duration": 0.48,
+   "lufs": "-14.7",
+   "true_peak": "0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 21036,
+   "at": 0.477,
+   "removed_ms": 3.0,
+   "floor_db": -84.0,
+   "jump_db": 8.7,
+   "channels": "R"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -5.17,
+   "why": "걸면 트루피크 여유가 5.2 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -15.5,
+    -15.98
+   ],
+   "intake_tp": [
+    3.07,
+    7.76
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 7.9,
+   "dc": [
+    -0.0117,
+    -0.0097
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-14.7",
+   "true_peak": "0.2"
+  },
+  "warn": [
+   "CLIP 491",
+   "DC -0.012"
+  ]
+ }
+}

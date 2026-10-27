@@ -1,0 +1,67 @@
+{
+ "cue": "skill_whirl_impact",
+ "v": 4,
+ "prompt": "A spinning sword sweep cutting into surrounding bodies: fast rolling series of two or three sharp steel bites over wet impacts, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.473016,
+ "lufs": "-11.3",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0004,
+    -0.0004
+   ],
+   "sample_peak_db": -0.2,
+   "file": "_raw/skill_whirl_impact_v4.wav",
+   "duration": 0.48,
+   "lufs": "-11.3",
+   "true_peak": "-0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20860,
+   "at": 0.473,
+   "removed_ms": 7.0,
+   "floor_db": -85.0,
+   "jump_db": 36.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.02,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -11.29,
+    -11.29
+   ],
+   "intake_tp": [
+    2.89,
+    2.91
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -0.17,
+   "lufs": "-11.3",
+   "true_peak": "0.0"
+  },
+  "warn": []
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "cue": "doho_kiai",
+ "v": 7,
+ "text": "[grunts] 흐읍!",
+ "voice_id": "v1is6KLMuZWgumQgKSOi",
+ "speaker": "doho",
+ "request": {
+  "text": "[grunts] 흐읍!",
+  "model_id": "eleven_v4",
+  "language_code": "ko",
+  "voice_settings": {
+   "stability": 0.35,
+   "similarity_boost": 0.8
+  }
+ },
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs tts (#942 doho_vox.py)"
+}

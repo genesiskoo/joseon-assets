@@ -1,0 +1,67 @@
+{
+ "cue": "skill_flurry",
+ "v": 6,
+ "prompt": "One very fast short sword flick in a rapid flurry of cuts: tight crisp thin air slice, quick and light, close-up, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:32",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.453016,
+ "lufs": "-13.5",
+ "peak": "-1.8",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.1,
+   "dc": [
+    -0.0002,
+    -0.0003
+   ],
+   "sample_peak_db": -1.8,
+   "file": "_raw/skill_flurry_v6.wav",
+   "duration": 0.48,
+   "lufs": "-13.5",
+   "true_peak": "-1.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 19978,
+   "at": 0.453,
+   "removed_ms": 27.0,
+   "floor_db": -87.3,
+   "jump_db": 50.5,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.04,
+   "why": "트루피크 여유 -0.0 LU",
+   "intake_i": [
+    -13.59,
+    -13.59
+   ],
+   "intake_tp": [
+    1.05,
+    1.09
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -1.81,
+   "lufs": "-13.5",
+   "true_peak": "-1.8"
+  },
+  "warn": []
+ }
+}

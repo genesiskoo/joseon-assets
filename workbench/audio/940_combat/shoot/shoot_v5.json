@@ -1,0 +1,67 @@
+{
+ "cue": "shoot",
+ "v": 5,
+ "prompt": "A projectile released hard toward the player: quick sharp release snap and a short rushing whoosh flying away, close-up, crisp, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.47,
+ "lufs": "-29.0",
+ "peak": "-11.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 2.2,
+   "dc": [
+    -0.0005,
+    -0.0004
+   ],
+   "sample_peak_db": -9.91,
+   "file": "_raw/shoot_v5.wav",
+   "duration": 0.48,
+   "lufs": "-29.0",
+   "true_peak": "-9.8"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20727,
+   "at": 0.47,
+   "removed_ms": 10.0,
+   "floor_db": -87.7,
+   "jump_db": 32.0,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 1.27,
+   "why": "트루피크 여유 +1.3 LU",
+   "intake_i": [
+    -29.05,
+    -29.05
+   ],
+   "intake_tp": [
+    -6.98,
+    -8.25
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.5,
+   "dc": [
+    0.0,
+    0.0
+   ],
+   "sample_peak_db": -11.22,
+   "lufs": "-29.0",
+   "true_peak": "-11.2"
+  },
+  "warn": []
+ }
+}

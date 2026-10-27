@@ -1,0 +1,67 @@
+{
+ "cue": "enemy_die",
+ "v": 5,
+ "prompt": "A dark creature dying: one low ragged dying groan that chokes off into a last rattling breath, wordless, close-up, dry, isolated, no music, no speech",
+ "seconds": 0.9,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.863016,
+ "lufs": "-19.9",
+ "peak": "-5.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 0,
+   "sub20_pct": 0.2,
+   "dc": [
+    -0.0001,
+    -0.0001
+   ],
+   "sample_peak_db": -5.47,
+   "file": "_raw/enemy_die_v5.wav",
+   "duration": 0.88,
+   "lufs": "-19.9",
+   "true_peak": "-5.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 38059,
+   "at": 0.863,
+   "removed_ms": 17.0,
+   "floor_db": -85.4,
+   "jump_db": 30.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.02,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -19.93,
+    -19.93
+   ],
+   "intake_tp": [
+    -2.48,
+    -2.5
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": -5.49,
+   "lufs": "-19.9",
+   "true_peak": "-5.5"
+  },
+  "warn": []
+ }
+}

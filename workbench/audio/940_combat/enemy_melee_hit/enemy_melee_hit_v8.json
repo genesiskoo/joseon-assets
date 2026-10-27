@@ -1,0 +1,69 @@
+{
+ "cue": "enemy_melee_hit",
+ "v": 8,
+ "prompt": "A heavy monster club smashing into a man's body: loud punchy blunt whack with a cloth thump, close-up, crisp, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:32",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.455011,
+ "lufs": "-16.2",
+ "peak": "0.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 5,
+   "sub20_pct": 5.1,
+   "dc": [
+    -0.0012,
+    0.0027
+   ],
+   "sample_peak_db": -0.0,
+   "file": "_raw/enemy_melee_hit_v8.wav",
+   "duration": 0.48,
+   "lufs": "-16.2",
+   "true_peak": "0.0"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 20066,
+   "at": 0.455,
+   "removed_ms": 25.0,
+   "floor_db": -86.4,
+   "jump_db": 44.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -1.3,
+   "why": "걸면 트루피크 여유가 1.3 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -16.75,
+    -16.95
+   ],
+   "intake_tp": [
+    1.82,
+    2.92
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 5.6,
+   "dc": [
+    -0.0013,
+    0.0029
+   ],
+   "sample_peak_db": -0.0,
+   "lufs": "-16.2",
+   "true_peak": "0.0"
+  },
+  "warn": [
+   "CLIP 5"
+  ]
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "cue": "hit",
+ "v": 10,
+ "prompt": "One sword blade slicing into a monster's flesh body: tight wet meaty thud with a short sharp steel bite, punchy midrange, close-up, dry, isolated, no long tail, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.413016,
+ "lufs": "-13.9",
+ "peak": "1.0",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 19,
+   "sub20_pct": 31.2,
+   "dc": [
+    -0.0146,
+    -0.0158
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/hit_v10.wav",
+   "duration": 0.48,
+   "lufs": "-13.9",
+   "true_peak": "1.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 18214,
+   "at": 0.413,
+   "removed_ms": 67.0,
+   "floor_db": -63.5,
+   "jump_db": 31.6,
+   "channels": "L"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.44,
+   "why": "트루피크 여유 +0.4 LU",
+   "intake_i": [
+    -13.96,
+    -13.96
+   ],
+   "intake_tp": [
+    4.38,
+    3.94
+   ]
+  },
+  "out": {
+   "over_full": 2,
+   "sub20_pct": 1.7,
+   "dc": [
+    -0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.11,
+   "lufs": "-13.9",
+   "true_peak": "1.0"
+  },
+  "warn": [
+   "CLIP 19"
+  ]
+ }
+}

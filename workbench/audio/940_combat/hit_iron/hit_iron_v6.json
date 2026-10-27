@@ -1,0 +1,64 @@
+{
+ "cue": "hit_iron",
+ "v": 6,
+ "prompt": "A sword blade striking a monster made of rusty iron: hard metallic clang with a gritty scrape and short ringing tail, the blade barely biting, close-up, dry, isolated, no music, no voice",
+ "seconds": 0.5,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:31",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.48,
+ "lufs": "-8.1",
+ "peak": "1.5",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 80,
+   "sub20_pct": 0.3,
+   "dc": [
+    -0.0065,
+    -0.003
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/hit_iron_v6.wav",
+   "duration": 0.48,
+   "lufs": "-8.1",
+   "true_peak": "1.2"
+  },
+  "tail": {
+   "cut": false,
+   "why": "끝이 바닥에서 뛰지 않는다"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": -0.26,
+   "why": "트루피크 여유 -0.3 LU",
+   "intake_i": [
+    -8.13,
+    -8.13
+   ],
+   "intake_tp": [
+    4.12,
+    4.38
+   ]
+  },
+  "out": {
+   "over_full": 59,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0001,
+    0.0004
+   ],
+   "sample_peak_db": 0.62,
+   "lufs": "-8.1",
+   "true_peak": "1.5"
+  },
+  "warn": [
+   "CLIP 80"
+  ]
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "sword_swing": {
+  "ref": [
+   "sword_swing_v3.wav"
+  ],
+  "pick": [
+   16,
+   18
+  ],
+  "dist": [
+   1.71,
+   5.21
+  ],
+  "pool": 9
+ },
+ "hit": {
+  "ref": [
+   "hit_v4.wav"
+  ],
+  "pick": [
+   5,
+   8,
+   6
+  ],
+  "dist": [
+   0.95,
+   1.17,
+   1.73
+  ],
+  "pool": 6
+ },
+ "hit_crit": {
+  "ref": [
+   "hit_crit_v3.wav"
+  ],
+  "pick": [
+   6,
+   5
+  ],
+  "dist": [
+   1.55,
+   3.57
+  ],
+  "pool": 4
+ },
+ "whiff": {
+  "ref": [
+   "whiff_v2.wav"
+  ],
+  "pick": [
+   7,
+   4
+  ],
+  "dist": [
+   3.69,
+   5.44
+  ],
+  "pool": 4
+ },
+ "enemy_hurt": {
+  "ref": [
+   "enemy_hurt_v2.wav",
+   "enemy_hurt_v3.wav"
+  ],
+  "pick": [
+   7
+  ],
+  "dist": [
+   4.05
+  ],
+  "pool": 4
+ },
+ "enemy_die": {
+  "ref": [
+   "enemy_die_v2.wav",
+   "enemy_die_v3.wav"
+  ],
+  "pick": [
+   4
+  ],
+  "dist": [
+   4.57
+  ],
+  "pool": 2
+ },
+ "shoot": {
+  "ref": [
+   "shoot_v3.wav",
+   "shoot_v4.wav"
+  ],
+  "pick": [
+   5
+  ],
+  "dist": [
+   4.4
+  ],
+  "pool": 2
+ },
+ "skill_slash_impact": {
+  "ref": [
+   "skill_slash_impact_v2.wav"
+  ],
+  "pick": [
+   4,
+   6
+  ],
+  "dist": [
+   0.59,
+   1.03
+  ],
+  "pool": 4
+ },
+ "skill_dash_strike_impact": {
+  "ref": [
+   "skill_dash_strike_impact_v2.wav"
+  ],
+  "pick": [
+   7,
+   5
+  ],
+  "dist": [
+   1.48,
+   2.44
+  ],
+  "pool": 4
+ },
+ "skill_whirl_impact": {
+  "ref": [
+   "skill_whirl_impact_v2.wav"
+  ],
+  "pick": [
+   7,
+   5
+  ],
+  "dist": [
+   3.06,
+   4.31
+  ],
+  "pool": 4
+ },
+ "bandit_attack": {
+  "ref": [
+   "bandit_attack_v2.wav"
+  ],
+  "pick": [],
+  "dist": [],
+  "pool": 0
+ },
+ "talisman_master_attack": {
+  "ref": [
+   "talisman_master_attack_v1.wav"
+  ],
+  "pick": [
+   5
+  ],
+  "dist": [
+   4.44
+  ],
+  "pool": 2
+ },
+ "hit_iron": {
+  "ref": [
+   "hit_iron_v3.wav",
+   "hit_iron_v4.wav"
+  ],
+  "pick": [
+   6
+  ],
+  "dist": [
+   1.8
+  ],
+  "pool": 2
+ },
+ "hit_soul": {
+  "ref": [
+   "hit_soul_v3.wav",
+   "hit_soul_v4.wav"
+  ],
+  "pick": [
+   5
+  ],
+  "dist": [
+   1.29
+  ],
+  "pool": 2
+ },
+ "hit_plague": {
+  "ref": [
+   "hit_plague_v2.wav",
+   "hit_plague_v3.wav"
+  ],
+  "pick": [
+   5
+  ],
+  "dist": [
+   1.12
+  ],
+  "pool": 2
+ },
+ "hit_crit_soul": {
+  "ref": [
+   "hit_crit_soul_v2.wav"
+  ],
+  "pick": [
+   4
+  ],
+  "dist": [
+   2.09
+  ],
+  "pool": 2
+ },
+ "elem_cold_hit": {
+  "ref": [
+   "elem_cold_hit_v2.wav"
+  ],
+  "pick": [
+   5
+  ],
+  "dist": [
+   1.08
+  ],
+  "pool": 2
+ },
+ "elem_lightning_hit": {
+  "ref": [
+   "elem_lightning_hit_v1.wav"
+  ],
+  "pick": [
+   5
+  ],
+  "dist": [
+   4.1
+  ],
+  "pool": 2
+ },
+ "talisman_lightning_hit": {
+  "ref": [
+   "talisman_lightning_hit_v2.wav"
+  ],
+  "pick": [
+   8,
+   7
+  ],
+  "dist": [
+   1.25,
+   1.35
+  ],
+  "pool": 3
+ },
+ "talisman_fire_burst": {
+  "ref": [
+   "talisman_fire_burst_v1.wav"
+  ],
+  "pick": [
+   5,
+   7
+  ],
+  "dist": [
+   5.0,
+   5.7
+  ],
+  "pool": 2
+ },
+ "skill_flurry": {
+  "ref": [
+   "skill_flurry_v1.wav"
+  ],
+  "pick": [
+   4,
+   6
+  ],
+  "dist": [
+   2.09,
+   2.46
+  ],
+  "pool": 4
+ },
+ "skill_flurry_impact": {
+  "ref": [
+   "skill_flurry_impact_v1.wav"
+  ],
+  "pick": [
+   7,
+   4
+  ],
+  "dist": [
+   0.8,
+   1.87
+  ],
+  "pool": 3
+ },
+ "mana_shield_absorb": {
+  "ref": [
+   "mana_shield_absorb_v3.wav"
+  ],
+  "pick": [
+   4
+  ],
+  "dist": [
+   1.46
+  ],
+  "pool": 1
+ },
+ "enemy_melee_hit": {
+  "ref": [
+   "enemy_melee_hit_v4.wav"
+  ],
+  "pick": [
+   9,
+   8
+  ],
+  "dist": [
+   1.77,
+   1.97
+  ],
+  "pool": 3
+ },
+ "doho_dodge": {
+  "ref": [
+   "doho_dodge_v1.wav"
+  ],
+  "pick": [],
+  "dist": [],
+  "pool": 1
+ },
+ "projectile_fly": {
+  "ref": [
+   "projectile_fly_v1.wav"
+  ],
+  "pick": [
+   6,
+   5
+  ],
+  "dist": [
+   0.9,
+   1.66
+  ],
+  "pool": 4
+ },
+ "blade_deflect": {
+  "ref": [
+   "blade_deflect_v4.wav"
+  ],
+  "pick": [
+   5
+  ],
+  "dist": [
+   1.58
+  ],
+  "pool": 2
+ },
+ "skill_slash": {
+  "ref": [
+   "skill_slash_1.wav"
+  ],
+  "pick": [
+   9,
+   5,
+   6
+  ],
+  "dist": [
+   1.08,
+   1.75,
+   1.99
+  ],
+  "pool": 6
+ },
+ "skill_dash_strike": {
+  "ref": [
+   "skill_dash_strike_1.wav"
+  ],
+  "pick": [
+   7,
+   8,
+   6
+  ],
+  "dist": [
+   0.84,
+   1.65,
+   2.18
+  ],
+  "pool": 5
+ }
+}

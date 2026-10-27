@@ -1,0 +1,69 @@
+{
+ "cue": "talisman_fire_burst",
+ "v": 8,
+ "prompt": "A paper talisman bursting into a ball of fire on impact: sudden whooshing flame burst with a punchy low thump and crackling embers scattering, loud, close-up, isolated, no giant explosion, no music, no voice",
+ "seconds": 0.9,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:32",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.873016,
+ "lufs": "-12.1",
+ "peak": "0.2",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 216,
+   "sub20_pct": 8.4,
+   "dc": [
+    -0.0031,
+    -0.0031
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/talisman_fire_burst_v8.wav",
+   "duration": 0.88,
+   "lufs": "-12.1",
+   "true_peak": "0.2"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 38500,
+   "at": 0.873,
+   "removed_ms": 7.0,
+   "floor_db": -94.7,
+   "jump_db": 18.6,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": false,
+   "plr_change_lu": -4.04,
+   "why": "걸면 트루피크 여유가 4.0 LU 준다(봉우리가 저역이 아니다) — 안 건다",
+   "intake_i": [
+    -12.17,
+    -10.66
+   ],
+   "intake_tp": [
+    3.18,
+    8.73
+   ]
+  },
+  "out": {
+   "over_full": 0,
+   "sub20_pct": 8.7,
+   "dc": [
+    -0.0031,
+    -0.0031
+   ],
+   "sample_peak_db": 0.0,
+   "lufs": "-12.1",
+   "true_peak": "0.2"
+  },
+  "warn": [
+   "CLIP 216"
+  ]
+ }
+}

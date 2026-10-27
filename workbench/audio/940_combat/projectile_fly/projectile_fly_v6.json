@@ -1,0 +1,69 @@
+{
+ "cue": "projectile_fly",
+ "v": 6,
+ "prompt": "An arrow flying fast past the listener: short sharp whistling whiz passing by, close-up, dry, isolated, no impact, no music, no voice",
+ "seconds": 0.6,
+ "influence": 0.45,
+ "loop": false,
+ "model": "eleven_text_to_sound_v2",
+ "format": "pcm_44100",
+ "request_id": "",
+ "made": "2026-10-27 00:32",
+ "source": "elevenlabs direct api (tools/sfx_gen.py)",
+ "duration": 0.593016,
+ "lufs": "-12.5",
+ "peak": "0.3",
+ "clean": {
+  "by": "tools/sfx_gen.py #399",
+  "raw": {
+   "clipped": 11,
+   "sub20_pct": 0.0,
+   "dc": [
+    0.0,
+    -0.0
+   ],
+   "sample_peak_db": 0.0,
+   "file": "_raw/projectile_fly_v6.wav",
+   "duration": 0.6,
+   "lufs": "-12.5",
+   "true_peak": "0.4"
+  },
+  "tail": {
+   "cut": true,
+   "keep": 26152,
+   "at": 0.593,
+   "removed_ms": 7.0,
+   "floor_db": -94.4,
+   "jump_db": 17.3,
+   "channels": "LR"
+  },
+  "highpass": {
+   "hz": 25.0,
+   "applied": true,
+   "plr_change_lu": 0.03,
+   "why": "트루피크 여유 +0.0 LU",
+   "intake_i": [
+    -14.3,
+    -14.3
+   ],
+   "intake_tp": [
+    1.79,
+    1.76
+   ]
+  },
+  "out": {
+   "over_full": 5,
+   "sub20_pct": 0.0,
+   "dc": [
+    -0.0,
+    0.0
+   ],
+   "sample_peak_db": 0.1,
+   "lufs": "-12.5",
+   "true_peak": "0.3"
+  },
+  "warn": [
+   "CLIP 11"
+  ]
+ }
+}
