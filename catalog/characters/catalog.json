@@ -20273,6 +20273,390 @@
       "notes": [
         "채택"
       ]
+    },
+    {
+      "asset_id": "card992-dallae-modeling-front-apose",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-modeling-front-apose",
+      "display_name": "달래 정면 A포즈 (3D 입력)",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/dallae/modeling/front_apose.png",
+        "sha256": "4a3828fd09eee259d61ca85f7113ddd03081193ad4bcb03ba67bbbfb415e2ec9",
+        "bytes": 1923350,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "채택 원화에서 파생 — 3D 입력 · 대화 초상(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/dallae/modeling/front_apose.prompt.txt",
+          "sha256": "cf9ade0aad8940978dac1ee99a2b521f43a4bdf148179480776e889d0268eaf7",
+          "bytes": 1793
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: workbench/production/992_new_npcs/concept/child_b.png",
+        "modeling_bible §4.3 입력 · Tripo 생성 전"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-modeling-front-apose",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-modeling-front-apose",
+      "display_name": "갑돌 정면 A포즈 (3D 입력)",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/gapdol/modeling/front_apose.png",
+        "sha256": "bf0325fc21e742ecc88707529afec8281c144df2102330130e17ae12e354d3a7",
+        "bytes": 1767285,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "채택 원화에서 파생 — 3D 입력 · 대화 초상(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/gapdol/modeling/front_apose.prompt.txt",
+          "sha256": "7462cde2fdb6639c2436e7a0e44e709c41d863d75394d86fa00bf553b9305302",
+          "bytes": 1852
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/youth_j.png",
+            "sha256": "2cc9eeb67baec276f0ef540350cd3d507dd0f5914ac833bdd640b85a22283095",
+            "bytes": 1926173,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: workbench/production/992_new_npcs/concept/youth_j.png",
+        "modeling_bible §4.3 입력 · Tripo 생성 전"
+      ]
+    },
+    {
+      "asset_id": "card992-dallae-portrait-neutral",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-portrait-neutral",
+      "display_name": "달래 대화 초상 neutral",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "portrait_still",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/dallae/portrait/neutral.png",
+        "sha256": "82ea3d1f866519dba8b984fd61836426695443ace033a022f27f6e93a724eb15",
+        "bytes": 1381246,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "채택 원화에서 파생 — 3D 입력 · 대화 초상(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/dallae/portrait/neutral.prompt.txt",
+          "sha256": "4e5ffa965ffc05e36e50c4cd36bea6108107cb614402d3c85719d55a319c05cf",
+          "bytes": 1537
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: workbench/production/992_new_npcs/concept/child_b.png",
+        "1024×1536 RGBA · 반입 전(알파 손질 필요 여부는 intake 때)"
+      ]
+    },
+    {
+      "asset_id": "card992-dallae-portrait-sad",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-portrait-sad",
+      "display_name": "달래 대화 초상 sad",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "portrait_still",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/dallae/portrait/sad.png",
+        "sha256": "e22aab561e7449348f544da582e303efb590b6846828014083a45afce0f896fd",
+        "bytes": 1366750,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "채택 원화에서 파생 — 3D 입력 · 대화 초상(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/dallae/portrait/sad.prompt.txt",
+          "sha256": "f8fbb2dde7e1f2aacc0e5109da7134b8c99de5016a89cfd3547a3ce9230079c4",
+          "bytes": 1033
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: workbench/production/992_new_npcs/concept/child_b.png",
+        "neutral 에서 얼굴만 편집 · 실루엣 같음"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-portrait-neutral",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-portrait-neutral",
+      "display_name": "갑돌 대화 초상 neutral",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "portrait_still",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/gapdol/portrait/neutral.png",
+        "sha256": "8d230eb9e77e72c4a57514ff002fba1ca242322b58553bf92ab7a6e578d065e5",
+        "bytes": 1502442,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "채택 원화에서 파생 — 3D 입력 · 대화 초상(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/gapdol/portrait/neutral.prompt.txt",
+          "sha256": "4dc311152139f920b5378276674f7a59f0f50c4867130a0640089bfbe6217710",
+          "bytes": 4693
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/youth_j.png",
+            "sha256": "2cc9eeb67baec276f0ef540350cd3d507dd0f5914ac833bdd640b85a22283095",
+            "bytes": 1926173,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: workbench/production/992_new_npcs/concept/youth_j.png",
+        "3판(1판 얼굴 잘생겨짐 · 2판 모자 깨짐 = archive/)"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-portrait-smile",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-portrait-smile",
+      "display_name": "갑돌 대화 초상 smile",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "portrait_still",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/gapdol/portrait/smile.png",
+        "sha256": "5020b96f901d263fc69a6c1db66402d3fce1d2a96fc40219719c55ad1386ee54",
+        "bytes": 2188462,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "채택 원화에서 파생 — 3D 입력 · 대화 초상(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/gapdol/portrait/smile.prompt.txt",
+          "sha256": "640c2bc328ec78473bf27ccb0209e6c11a60714b3ea9505c9acb3138abc300fd",
+          "bytes": 1045
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/youth_j.png",
+            "sha256": "2cc9eeb67baec276f0ef540350cd3d507dd0f5914ac833bdd640b85a22283095",
+            "bytes": 1926173,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: workbench/production/992_new_npcs/concept/youth_j.png",
+        "neutral 에서 얼굴만 편집 · 실루엣 같음"
+      ]
     }
   ],
   "schema_version": "1.0.0"
