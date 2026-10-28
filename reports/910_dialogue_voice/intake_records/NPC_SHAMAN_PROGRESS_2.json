@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.32
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.3,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.3
+  },
+  "sha256": "c4a8a7cc9066eab4db62a344b0b9b83183aefba4fc111d2777566fecee9507ec",
+  "id": "NPC_SHAMAN_PROGRESS_2",
+  "speaker": "shaman",
+  "request_sha256": "cd0fccd133e98cd80abd514fa18ff6ae3837f90b588a88d49622b52cc59ff7c0",
+  "raw_sha256": "62dd9f37a9158f189fc043dca4a27a41866f412e80a8f6d0db9253a5fc6405ac",
+  "file": "assets/audio/voice/NPC_SHAMAN_PROGRESS_2.wav",
+  "previous_sha256": "0233c002af87c9653272dae9541e0bd5906db73753fd027b0744e06a2b54707e"
+}

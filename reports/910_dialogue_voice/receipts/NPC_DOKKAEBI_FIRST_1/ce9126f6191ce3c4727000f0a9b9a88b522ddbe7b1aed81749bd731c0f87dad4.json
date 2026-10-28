@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "ce9126f6191ce3c4727000f0a9b9a88b522ddbe7b1aed81749bd731c0f87dad4",
+  "request": {
+    "text": "오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_FIRST_1_ce9126f6191ce3c4727000f0a9b9a88b522ddbe7b1aed81749bd731c0f87dad4.mp3",
+  "raw_sha256": "44cd21a0e03957ea65f3d5c7fc4231dd3a4ef423abf25cda384e9e2ec6c8bcaf",
+  "bytes": 116235,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.2
+  },
+  "http_status": 200,
+  "response_request_id": "NJNOFySIJK4uN3vKLeSm",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:09Z"
+}

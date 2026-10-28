@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_ACCEPT_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "05af602a418d8a51351a22d12ad78710d5f66141601c89aeab06de022d9ad30f",
+  "request": {
+    "text": "그 산책, 부디 무사히 끝내시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_ACCEPT_1_05af602a418d8a51351a22d12ad78710d5f66141601c89aeab06de022d9ad30f.mp3",
+  "raw_sha256": "9065143e727e0312589a5db184ee6e38b2869ad8d133e662cdbef7df8f9aaf63",
+  "bytes": 52287,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.2
+  },
+  "http_status": 200,
+  "response_request_id": "6hjc7qxmzYcgHLoDKKzr",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:53Z"
+}

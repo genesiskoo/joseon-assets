@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_RUMOR_4",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "bf46f782c6a8cd722b57c07bb666ac884ba053750330914c9c05edabf5bc511c",
+  "request": {
+    "text": "요새 밤이면 북쪽 산길 끝에서 여우 우는 소리가 들리우. 여우는 무슨, 바람이겠지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_RUMOR_4_bf46f782c6a8cd722b57c07bb666ac884ba053750330914c9c05edabf5bc511c.mp3",
+  "raw_sha256": "00656c66b83af35d893f011bb81312f01621feca539da6e07f8866d057ed34c3",
+  "bytes": 125430,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.76
+  },
+  "http_status": 200,
+  "response_request_id": "FAftSo7U8xiwgacWLDkw",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:44Z"
+}

@@ -1,0 +1,170 @@
+# 주모 (D-094 · #306 → D-096 · #541, design/quest_rework_dialogue_2026-10-01.md) — 메인 줄기 의뢰인. 인사(처음 + 열쇠 이야기 / 각시귀신 알림 / 조각 소식 / 자리 비우는 때 / 무작위) → 일 선택지(소문 · 옛 주막 · 그만).
+# 부르는 이름 = Story(러너) · Talk(NpcTalk — Npc.talk() 가 넘김). 선택지 태그 [#act=rumor|accept|leave] — 알림 버튼 없음(보고는 말 걸면 자동, D-096).
+# 정체 = 사람 모습의 구미호(D-094) — 마을에선 억척스럽고 정 많은 주모를 연기한다. 정체는 대사로 밝히지 않는다(구미원 #515 몫) · 말을 흐리는 게 캐릭터. 말버릇 = 「열쇠」(할매는 「봉인」) · 「외상」은 주모 전용 말.
+# D-097 표기: NPC 말 = 장터 · 굴 · 문 = 처음 「마을 북쪽 산길 끝 봉밀굴 문」, 그 뒤 「북쪽 돌문」 · 도호는 「도사 양반」 · 한 줄에 새 이름 ≤ 2 · 풀 대사는 혼자 선다.
+# 낭독 규칙(dialogue_v2 §4.6 · #910): 주모 말끝 = 하우체 「-수 · -우 · -시우 · -구려」만(하오체 「-소 · -오」 금지) · 줄 첫머리 「…」 금지 · 한 줄 한 호흡.
+# 가면 사다리(D-115 · gumiho_reveal_2026-10-26 §3): L1 첫 조각 = 도호가 말하지 않은 싸움 세부를 안다(KNOW 줄 · 「목로엔 소문이 모이는 법」으로 덮음) ·
+#   L2 둘째 조각 = 말씨가 반말로 한 번 미끄러졌다 고쳐 말함(NEWS2_1 — 하우체 규칙의 단 하나 예외) + 거울말(첫 만남 도호 말 「국물이면 됐지」를 돌려줌, 들은 판만) ·
+#   반말이 다시 나오는 곳은 구미원뿐(event/gumiho). 들은 표시 story.jumo_slip_seen — 못 본 판은 할매가 빈자리 줄에서 한 줄 품는다.
+# 자리 단계(Talk.presence — 봉인 조각 수): here = 평소 · away = 자리를 비우는 날이 생긴다(그날 서 있으면 busy 줄) · gone = 몸이 없어 대본이 안 열린다.
+# 조각 소식 = Talk.seals() > story.jumo_seals(할매는 story.shaman_seals — 따로 센다). 둘을 한꺼번에 잡고 오면 둘째 소식 하나. 소식 앞머리가 열쇠 의뢰(1·4·6) 중 killed 인 것을 done 으로 만든다(자동 보고).
+# 각시귀신 의뢰(퀘스트 3 「옛 주막의 사연」 old_tavern) — Talk.has_quest(정의+과녁 존재)로 연다. 접수에 「내가 일하던 집」을 넣어 소문을 못 들었어도 복선이 선다(#777).
+#   접수를 들었는지 = story.jumo_tavern_told(#910) — 안 들은 채 각시귀신을 벤 판은 주모가 먼저 알아보는 줄로 시작한다(도호가 듣지 않은 의뢰를 보고하지 않게, #908 M1).
+# 구체 인연·사망 원인은 미정. 실제 목표인 각시귀신 처치를 말하며 대화 해결 선택지를 약속하지 않는다.
+# 열쇠 이야기 다시(#541 구현 — 최종판에 없던 한 가지): NPC 대화의 Esc 는 건너뛰기가 아니라 닫기라, 첫 만남을 끝까지 안 들으면 의뢰 넷이 안 들어간다
+#   → 닫힌 문 의뢰(bongmil_gate — 구미호를 베기 전엔 늘 none 아니면 받음)가 아직 none 이면 다음에 말을 걸 때 열쇠 이야기를 다시 한다.
+
+~ start
+if Story.first("jumo_met")
+	jumo: 도사 양반, 목이나 축이고 가시구려. 술은 없어도 국물은 있수. [ID:NPC_JUMO_FIRST_1]
+	doho: 국물이면 됐지. 외상도 되나? [ID:NPC_JUMO_FIRST_2]
+	jumo: 외상은 살아서 돌아오는 사람한테만 놓수. [ID:NPC_JUMO_FIRST_3]
+	$> Story.put("jumo_credit_heard")
+	=> offer_main
+elif Talk.state_of("bongmil_gate") == "none"
+	=> offer_main
+elif Talk.has_quest("old_tavern") and Talk.state_of("old_tavern") == "killed"
+	=> tavern_done
+elif Talk.seals() > Story.value("jumo_seals", 0)
+	=> news
+elif Talk.presence() == "away"
+	=> busy
+else
+	=> greet
+=> jobs
+
+# 첫 만남의 열쇠 이야기 — 굴 셋(순서 자유)과 봉밀굴, 의뢰 넷을 한꺼번에 맡긴다. 알림 「의뢰 넷을 받았다」는 한 번.
+# 줄마다 새 이름 하나 — 문 → 열쇠 셋 → 굴 둘 → 마지막 굴 → 부탁 → 문 안 → 첫 굴 길.
+~ offer_main
+jumo: 그나저나 도사 양반, 이 장터가 왜 닫혔는지 아시우? [ID:NPC_JUMO_MAIN_1]
+doho: 닫힌 장터에 국솥만 끓고 있네. 무슨 일인데? [ID:NPC_JUMO_MAIN_2]
+jumo: 마을 북쪽 산길 끝에 봉밀굴 문이 있수. 이 병의 뿌리가 그 안에 있다우. [ID:NPC_JUMO_MAIN_3]
+jumo: 그 돌문 열쇠가 세 쪽으로 흩어졌수. 굴 주인 셋이 하나씩 쥐고 있다우. [ID:NPC_JUMO_MAIN_3B]
+jumo: 하나는 들녘 흑랑 굴의 개가, 하나는 고개 너머 범굴의 범이 쥐고 있수. [ID:NPC_JUMO_MAIN_3C]
+doho: 소문치곤 번지수까지 친절하구먼. [ID:NPC_JUMO_MAIN_4]
+jumo: 마지막 한 쪽은 쇠부리 폐광, 쇠 먹는 놈 뱃속에 있수. [ID:NPC_JUMO_MAIN_4B]
+jumo: 목로엔 소문이 모이는 법이우. 못 믿겠거든 길부터 살펴보시우. [ID:NPC_JUMO_MAIN_5]
+jumo: 열쇠 셋을 모아서 북쪽 돌문을 열어 주시우. [ID:NPC_JUMO_MAIN_6]
+doho: 문 안엔 뭐가 있는데? [ID:NPC_JUMO_MAIN_7]
+jumo: 천 년 묵은 여우가 갇혀 있다우. 그 여우 얘긴 입에 올리기도 싫수. 국물 식겠수. [ID:NPC_JUMO_MAIN_8]
+doho: 국물값치곤 일이 크네. 외상으로 달아 두시오. [ID:NPC_JUMO_MAIN_9]
+$> Talk.accept_main_quests()
+if Talk.seals() > Story.value("jumo_seals", 0)
+	=> news
+jumo: 가까운 건 동쪽 문 밖 들녘의 흑랑 굴이우. 어디부터 갈지는 도사 양반 마음대로 하시우. [ID:NPC_JUMO_MAIN_10]
+=> jobs
+
+# 각시귀신을 벤 뒤 — 알림 버튼 없이 말을 걸면 바로 끝난다. 접수를 안 들은 판(먼저 벤 판)은 주모가 먼저 알아본다(#910 · #908 M1).
+~ tavern_done
+if Story.flag("jumo_tavern_told")
+	jumo: 끝났수? 그 울음소리가 그쳤구려. [ID:NPC_JUMO_GAKSI_DONE_1]
+else
+	jumo: 들녘 옛 주막 터 울음이 그쳤다던데, 도사 양반이 그랬수? [ID:NPC_JUMO_GAKSI_UNTOLD_1]
+	doho: 각시귀신 하나가 길을 막길래 치웠지. [ID:NPC_JUMO_GAKSI_UNTOLD_2]
+	jumo: 그 집은 내가 오래 일하던 데라우. [ID:NPC_JUMO_GAKSI_UNTOLD_3]
+$> Talk.complete_quest("old_tavern")
+jumo: 고맙수, 도사 양반. 그 집 얘기는 이제 그만하우. [ID:NPC_JUMO_GAKSI_DONE_2]
+=> jobs
+
+# 조각 소식 + 자동 보고. 첫 조각엔 주모가 늘 서 있다(자리 단계 here) — 둘째부터는 그날 서 있을 때만 닿고, 없으면 할매가 대신 받는다.
+# 보스 뒤 인사(#307, npcs_v2 §5.2.1) = 첫 조각 소식 안에서 그 보스 한 줄(흑랑 = 「그 개」 · 장산범 = 「그 범」 · 불가살이 = 「쇠 먹는 놈」 — 열쇠 이야기에서 주모가 부른 이름 그대로).
+#   겉으론 반기고 속으론 수하를 아는 티(장산범 = 약조에 묶인 파수꾼 · 불가살이 뱃속 = 죽일 수 없는 곳, bosses_v2 §1.1) → 「아니우」로 흐린다(정체는 대사로 안 밝힘).
+#   둘째 조각(자리를 비우는 단계 away, D-094)엔 보스 줄이 없다 — 「목로를 지키고 있을지는」이 이미 떠날 복선이다.
+# 조각을 받아 들고 북쪽을 보다 돌려준다(#910 · #908 M6) — 「요괴는 쥘 수는 있어도 문에 대지 못한다」(worldbuilding §5.3)와 맞는 복선.
+# 들려준 수(jumo_seals)는 소식 앞에 적는다(#541 구현 — 최종판은 끝): 애드온은 마지막 대사 바로 뒤가 => 일 때만 선택지를 그 줄에 붙인다($> 가 끼면 빈 띠에 선택지만).
+~ news
+if Talk.state_of("heukrang_seal") == "killed"
+	$> Talk.complete_quest("heukrang_seal")
+if Talk.state_of("beomgul_seal") == "killed"
+	$> Talk.complete_quest("beomgul_seal")
+if Talk.state_of("soeburi_seal") == "killed"
+	$> Talk.complete_quest("soeburi_seal")
+$> Story.put("jumo_seals", Talk.seals())
+if Talk.seals() >= 2
+	$> Story.put("jumo_slip_seen")
+	jumo: 벌써 둘이나 모았네… 모으셨수. 생각보다 훨씬 믿음직하구려. [ID:NPC_JUMO_NEWS2_1]
+	if Talk.den_cleared("beomgul") and Talk.den_cleared("soeburi")
+		jumo: 이제 들녘 흑랑 굴 하나 남았수. 셋 다 모이거든 북쪽 돌문에 대 보시우. [ID:NPC_JUMO_NEWS2_LAST_HEUK]
+	elif Talk.den_cleared("heukrang_gul") and Talk.den_cleared("soeburi")
+		jumo: 이제 정령재 범굴 하나 남았수. 셋 다 모이거든 북쪽 돌문에 대 보시우. [ID:NPC_JUMO_NEWS2_LAST_BEOM]
+	else
+		jumo: 이제 정령재 쇠부리 폐광 하나 남았수. 셋 다 모이거든 북쪽 돌문에 대 보시우. [ID:NPC_JUMO_NEWS2_LAST_SOE]
+	jumo: 그때까지 내가 이 목로를 지키고 있을지는 모르겠수. [ID:NPC_JUMO_NEWS2_3]
+	doho: 장사 접을 일이라도… 있나? [ID:NPC_JUMO_NEWS2_4]
+	jumo: 사람 일은 모르는 거라우. [ID:NPC_JUMO_NEWS2_5]
+	if Story.flag("jumo_credit_heard")
+		jumo: 국물이면 됐지? 도사 양반이 처음에 그랬잖수. [ID:NPC_JUMO_NEWS2_MIRROR]
+		doho: 내가… 그랬나. [ID:NPC_JUMO_NEWS2_MIRROR_2]
+else
+	jumo: 벌써 하나 가져오셨수? 그게 열쇠우? 어디 좀 보여 주시우. [ID:NPC_JUMO_NEWS1_1]
+	주모가 조각을 받아 들고, 북쪽 산길 쪽을 한참 바라본다. [ID:NPC_JUMO_NEWS1_2]
+	jumo: 이건 도사 양반 손에 있어야 쓸모가 있겠수. 도로 받으시우. [ID:NPC_JUMO_NEWS1_3]
+	doho: 국물 한 그릇이면 얼마든지 들고 다니지. [ID:NPC_JUMO_NEWS1_4]
+	if Talk.den_cleared("heukrang_gul")
+		jumo: 그 개는… 편히 갔수? 아니우, 괜한 소릴 했수. [ID:NPC_JUMO_NEWS1_HEUK]
+		jumo: 남은 둘은 고개 너머 정령재의 범굴과 쇠부리 폐광이우. 어느 쪽이 먼저든 상관없수. [ID:NPC_JUMO_NEWS1_LEFT_BEOM_SOE]
+		jumo: 그 불개가 끝까지 꼬리를 세우고 버텼다지? [ID:NPC_JUMO_NEWS1_KNOW_HEUK]
+	elif Talk.den_cleared("beomgul")
+		jumo: 그 범은 끝까지 굴을 지키다 갔수? 아니우, 범 팔자가 그렇단 소리우. [ID:NPC_JUMO_NEWS1_BEOM]
+		jumo: 남은 둘은 들녘의 흑랑 굴과 정령재의 쇠부리 폐광이우. 어느 쪽이 먼저든 상관없수. [ID:NPC_JUMO_NEWS1_LEFT_HEUK_SOE]
+		jumo: 그 범이 마지막엔 도사 양반 이름을 부르더라며? [ID:NPC_JUMO_NEWS1_KNOW_BEOM]
+	else
+		jumo: 쇠 먹는 놈을 정말 잡았수? 아니우, 잘했수. 참 잘했수. [ID:NPC_JUMO_NEWS1_SOE]
+		jumo: 남은 둘은 들녘의 흑랑 굴과 정령재의 범굴이우. 어느 쪽이 먼저든 상관없수. [ID:NPC_JUMO_NEWS1_LEFT_HEUK_BEOM]
+		jumo: 그놈이 불에 달아오르던 소리, 여기까지 들리는 것 같았수. [ID:NPC_JUMO_NEWS1_KNOW_SOE]
+	doho: 그건 어떻게 알았나? 난 말한 적 없는데. [ID:NPC_JUMO_NEWS1_KNOW_ASK]
+	jumo: 목로엔 소문이 모이는 법이라우. [ID:NPC_JUMO_NEWS1_KNOW_ANS]
+	doho: 그 소문, 발 한번 빠르네. [ID:NPC_JUMO_NEWS1_END]
+=> jobs
+
+~ greet
+match Talk.roll("jumo_greet", 3)
+	when 0
+		jumo: 어서 오시구려. 국물 식기 전에 드시우. [ID:NPC_JUMO_GREET_1]
+	when 1
+		jumo: 또 오셨수? 산 사람 얼굴을 보니 반갑구려. [ID:NPC_JUMO_GREET_2]
+	else
+		jumo: 걷느라 고생하셨수. 앉아서 숨이나 돌리시우. [ID:NPC_JUMO_GREET_3]
+=> jobs
+
+~ busy
+match Talk.roll("jumo_busy", 2)
+	when 0
+		jumo: 요샌 내가 자리를 자주 비운다우. 장 볼 데가 멀어서. [ID:NPC_JUMO_BUSY_1]
+	else
+		jumo: 장 볼 데가 멀어졌수. 아낙 바쁜 데가 어디 한둘이우? [ID:NPC_JUMO_BUSY_2]
+=> jobs
+
+# 소문 풀 — 앞 다섯은 D-094 복선(옛 주막 · 여우 울음 · 오래 일한 집). 뒤 셋(6~8)은 굴별 귀띔[선택] — 순서 자유라 첫째·둘째로 가는 굴도 귀띔을 듣게(구미호가 길을 깔아 주는 놀이).
+~ rumor
+match Talk.roll("jumo_rumor", 8)
+	when 0
+		jumo: 들녘 옛 주막 터엔 함부로 가지 마시우. 거기 뭔가 있다는 게 나만 하는 말이 아니라우. [ID:NPC_JUMO_RUMOR_1]
+	when 1
+		jumo: 흑랑 굴 개들은 떼로 다니우. 한 놈이 보이면 열 놈이라 치시구려. [ID:NPC_JUMO_RUMOR_2]
+	when 2
+		jumo: 고개 너머 쇠부리 폐광 사람들은 다 어디 갔는지. 밤마다 망치 소리만 난다우. [ID:NPC_JUMO_RUMOR_3]
+	when 3
+		jumo: 요새 밤이면 북쪽 산길 끝에서 여우 우는 소리가 들리우. 여우는 무슨, 바람이겠지. [ID:NPC_JUMO_RUMOR_4]
+	when 4
+		jumo: 내가 들녘 옛 주막집에서 오래 일했수. 그 얘긴, 말 못 하겠수. [ID:NPC_JUMO_RUMOR_5]
+	when 5
+		jumo: 흑랑 굴 맨 끝엔 불개 한 마리가 산다우. 달려들 땐 옆으로 비켜서시구려. [ID:NPC_JUMO_RUMOR_6]
+	when 6
+		jumo: 범굴에선 누가 이름을 불러도 대답 마시우. [ID:NPC_JUMO_RUMOR_7]
+	else
+		jumo: 쇠부리 폐광엔 쇠 먹는 놈이 산다우. 칼이 안 들거든 불을 쓰시구려. [ID:NPC_JUMO_RUMOR_8]
+=> jobs
+
+~ jobs
+- 소문을 묻는다 [#act=rumor] [ID:NPC_JUMO_JOB_RUMOR]
+	=> rumor
+- 들녘 옛 주막 터 얘기를 묻는다 [if Talk.has_quest("old_tavern") and Talk.state_of("old_tavern") == "none" and Story.seen("npc/jumo/start") > 1 /] [#act=accept] [ID:NPC_JUMO_JOB_ACCEPT]
+	jumo: 들녘 옛 주막 터는 내가 일하던 집이우. 요새 밤마다 거기서 각시 하나가 운다우. [ID:NPC_JUMO_OFFER_1]
+	jumo: 그 각시귀신을 베어서 울음 좀 그치게 해 주시우. 그 집 얘긴 그것만 하면 됐수. [ID:NPC_JUMO_OFFER_2]
+	$> Talk.accept_quest("old_tavern")
+	$> Story.put("jumo_tavern_told")
+	doho: 듣고만 오라는 건 아니구먼. 다녀오지. [ID:NPC_JUMO_OFFER_3]
+	=> jobs
+- 그만 간다 [#act=leave] [ID:NPC_JUMO_JOB_LEAVE]
+=> END

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_AFTER_BEOM_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "5c5464398b610c8c335499b8cef3d7ff95e1cbb55dea509ac2ca85ae8645b076",
+  "request": {
+    "text": "영감 목소리로 싸게 준다길래, 가짜인 줄 바로 알았지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "범굴 흰 범을 베셨다며? 아는 사람 목소리로 꾄다던데, 참말이었수?",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_MERCHANT_AFTER_BEOM_2_5c5464398b610c8c335499b8cef3d7ff95e1cbb55dea509ac2ca85ae8645b076.mp3",
+  "raw_sha256": "7eea65099a7b0846b58aa54d976037a4bd47285d35767d37efd73712b3483d53",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "YxlEtyzz4zKmFTifsK5d",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:58Z"
+}

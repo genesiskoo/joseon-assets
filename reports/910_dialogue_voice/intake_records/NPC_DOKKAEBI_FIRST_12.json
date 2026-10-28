@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.52
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 7.899999999999999,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "639d6e3bca71613f3286bf454cfe11bbdb63877dcff401a153de707c0ab4a2e2",
+  "id": "NPC_DOKKAEBI_FIRST_12",
+  "speaker": "dokkaebi",
+  "request_sha256": "02d6715f1ad701079a8d33709fcae0dd97407cc12c78c05a8079107ee76de123",
+  "raw_sha256": "8aa978d43edb386f53a57e002f3e9f66ea5223fffc3fb9e478f6749c0308290a",
+  "file": "assets/audio/voice/NPC_DOKKAEBI_FIRST_12.wav",
+  "previous_sha256": "ffa858f926ca13520b7e5c1e3754807b255ea06c474d4875885ba2815623bcc2"
+}

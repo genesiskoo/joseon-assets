@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SHAMAN_QUEST_9",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "199e4b5ae53a81eef07c7754bbfd812ea3901a27887afcc5ec15c00588c33167",
+  "request": {
+    "text": "…허. 하는 김에.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "살아서 돌아오면 쳐 드리리다.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_SHAMAN_QUEST_9_199e4b5ae53a81eef07c7754bbfd812ea3901a27887afcc5ec15c00588c33167.mp3",
+  "raw_sha256": "0c58c90d01e0e961619154decd69d0535d85709c27dc68017eafeae43d0dc1fb",
+  "bytes": 38077,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.32
+  },
+  "http_status": 200,
+  "response_request_id": "YjZrFDEhpYv0mFIU4yjN",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:07Z"
+}

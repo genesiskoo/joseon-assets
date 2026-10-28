@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_CLEAR_ACTIVE_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "da9f3bc7b958f5812b4a40cad7b8586f11979f7f89682f0dd922ed0c81f0378f",
+  "request": {
+    "text": "간밤에도 굴 어귀에서 뭔가 울었소. 아직 남았구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_CLEAR_ACTIVE_1_da9f3bc7b958f5812b4a40cad7b8586f11979f7f89682f0dd922ed0c81f0378f.mp3",
+  "raw_sha256": "0ca84ce12441df06027330726c7475ae41f36aa8eef493c9b0ae31f0380801a3",
+  "bytes": 74021,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.56
+  },
+  "http_status": 200,
+  "response_request_id": "08GyTwGAJ4Pl5EOhF1OS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:47Z"
+}

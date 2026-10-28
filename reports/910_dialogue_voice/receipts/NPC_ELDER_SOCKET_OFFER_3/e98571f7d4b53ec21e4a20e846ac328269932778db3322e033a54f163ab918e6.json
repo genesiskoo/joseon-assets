@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_SOCKET_OFFER_3",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "e98571f7d4b53ec21e4a20e846ac328269932778db3322e033a54f163ab918e6",
+  "request": {
+    "text": "공짜면 마다할 까닭이 없지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "칼이나 옷을 하나 가져오시오. 늙은이 손으로도 홈 하나는 내 드리리다.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_ELDER_SOCKET_OFFER_3_e98571f7d4b53ec21e4a20e846ac328269932778db3322e033a54f163ab918e6.mp3",
+  "raw_sha256": "6dd41a72d57675fc82bcb85f70d84138ffd0665c62a33f24af1fcfe010291471",
+  "bytes": 38077,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.32
+  },
+  "http_status": 200,
+  "response_request_id": "Uy79ubGlBqq3sT5HPjdX",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:05Z"
+}

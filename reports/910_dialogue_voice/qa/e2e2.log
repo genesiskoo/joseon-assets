@@ -1,0 +1,32 @@
+﻿  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(bongmil_walk,boss_greetings)
+  ⏳ 다른 자리의 단독 차례 (pid 43124 shots wait) — 끝나면 이어서 돈다
+  ⏳ 다른 자리의 단독 차례 (pid 45312 shots wait) — 끝나면 이어서 돈다
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (7.3초)
+== e2e (bongmil_walk,boss_greetings · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\workspace\\joseon\\.claude\\worktrees\\9
+10-script-voice","--headless","--","--e2e=bongmil_walk,boss_greetings"],"phase_arg":"bongmil_walk,boss_greetings","phas
+e_tokens":["bongmil_walk","boss_greetings"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trace":fa
+lse,"launcher_pid":34288,"launched_utc":"2026-10-27T17:05:35.5911511Z"}
+E2E start: bongmil_walk, boss_greetings
+E2E ▶ bongmil_walk
+  · 첫 접근 혼잣말 — 닿음까지 0.52초 (줄 2.6초 · 미룸 2.70초)
+  · 1층 72x72 · 적 40 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "hollin_mudang", "yeou"] · 
+장식 { "Stele": 2, "SteleFallen": 8, "PaperBits": 47, "Bones": 15, "RuinStone": 54, "RopeIntact": 19 } · 정예 자리 2 · 네임드 (-
+1, -1) · 봉인석 [(26, 29), (33, 39), (30, 55)] · 고리 [(0, 2), (2, 5), (1, 9)]
+  · 2층 72x72 · 적 34 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "hollin_mudang", "yeou"] · 
+장식 { "SteleFallen": 4, "PaperBits": 42, "Bones": 16, "RuinStone": 29, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (-1, -1) · 봉인석
+ [(23, 20), (31, 12), (45, 7)] · 고리 [(4, 6), (3, 4), (0, 2), (4, 8)]
+  · 3층 72x72 · 적 33 · 명단 ["hollin_yeogung_bow2", "hollin_yeogung_spear", "hollin_mudang", "yeou", "wang_geomi"] · 장식 { 
+"Stele": 1, "SteleFallen": 2, "PaperBits": 38, "Bones": 16, "RuinStone": 40, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (6, 61)
+ · 봉인석 [(22, 44), (59, 11), (63, 39)] · 고리 [(7, 8), (3, 8), (2, 6)]
+  · 4층 32x30 · 적 3 · 명단 ["yeou", "yeoubul"] · 장식 { "PaperBits": 8, "Bones": 6, "RuinStone": 11, "RopeIntact": 2 } · 정예 
+자리 0 · 네임드 (-1, -1) · 봉인석 [] · 고리 []
+E2E bongmil_walk PASS (검사 165)
+E2E ▶ boss_greetings
+E2E boss_greetings PASS (검사 36)
+E2E SUMMARY: 2/2 PASS
+E2E_PHASE_RAW C:\workspace\joseon\.claude\worktrees\910-script-voice\tmp\e2e_raw\20261027T1704531371446_65668\phase_1_s
+hared
+  e2e  (63.0초) — 제한 3600초
+전부 PASS

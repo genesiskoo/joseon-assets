@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.2
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -4.8,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 1.1999999999999993,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.8
+  },
+  "sha256": "405f9eab6f3a596443758215dc546b42123a2abbe88c23cc4ca7cc221aef906a",
+  "id": "NPC_JUMO_GAKSI_DONE_1",
+  "speaker": "jumo",
+  "request_sha256": "a22dc5e72b6be3f1eed55df3e4ff2dfaf898b937a9a5fa8b79d4ebf70a17dd7d",
+  "raw_sha256": "1bad291b41cbc34aaa6e442c71167d2b17f8d86b59284dcbbdfd4a1c084649a5",
+  "file": "assets/audio/voice/NPC_JUMO_GAKSI_DONE_1.wav",
+  "previous_sha256": "6a77f7733572774441b2ceb0cfe9e0ae2a662706098001e6469cd69e9ae45926"
+}

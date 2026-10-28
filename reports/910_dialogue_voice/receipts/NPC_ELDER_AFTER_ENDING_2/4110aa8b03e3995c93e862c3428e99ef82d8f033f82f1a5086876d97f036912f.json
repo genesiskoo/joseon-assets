@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_AFTER_ENDING_2",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "4110aa8b03e3995c93e862c3428e99ef82d8f033f82f1a5086876d97f036912f",
+  "request": {
+    "text": "고맙소. 장터도 사람 손으로 다시 살려 봐야지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_AFTER_ENDING_2_4110aa8b03e3995c93e862c3428e99ef82d8f033f82f1a5086876d97f036912f.mp3",
+  "raw_sha256": "6aa17e79133933b945f72b2c859441f71d1e47c443d979d1a30f723b86737fd8",
+  "bytes": 66498,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.08
+  },
+  "http_status": 200,
+  "response_request_id": "CJBbJmxbJTS1SpPZ55rT",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:56Z"
+}

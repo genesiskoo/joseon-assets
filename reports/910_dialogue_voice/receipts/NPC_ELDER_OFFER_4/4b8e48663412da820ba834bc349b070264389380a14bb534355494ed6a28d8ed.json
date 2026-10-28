@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_OFFER_4",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "4b8e48663412da820ba834bc349b070264389380a14bb534355494ed6a28d8ed",
+  "request": {
+    "text": "어귀만? 그럼 산책이구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "끝까지는 바라지도 않소. 굴 어귀만 비워 주시오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_ELDER_OFFER_4_4b8e48663412da820ba834bc349b070264389380a14bb534355494ed6a28d8ed.mp3",
+  "raw_sha256": "f73bb6964c3e737e4da78577ded03fb7272bec96c976c090aa4e97667683d7e3",
+  "bytes": 46018,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.8
+  },
+  "http_status": 200,
+  "response_request_id": "TXT11GOR7E1AoV32sqPC",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:50Z"
+}

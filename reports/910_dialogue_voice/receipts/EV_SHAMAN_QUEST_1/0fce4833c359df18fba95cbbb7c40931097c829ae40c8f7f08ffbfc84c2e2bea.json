@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SHAMAN_QUEST_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "0fce4833c359df18fba95cbbb7c40931097c829ae40c8f7f08ffbfc84c2e2bea",
+  "request": {
+    "text": "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "할매, 술부터 한 잔… 아니, 분위기가 아니구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/EV_SHAMAN_QUEST_1_0fce4833c359df18fba95cbbb7c40931097c829ae40c8f7f08ffbfc84c2e2bea.mp3",
+  "raw_sha256": "c1287880b998d61ef3804722647d97bb0f00deb431c7b11a967632fd549df9c1",
+  "bytes": 79037,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.88
+  },
+  "http_status": 200,
+  "response_request_id": "bOVOq0W3kZMvZdjKKx6P",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:02Z"
+}

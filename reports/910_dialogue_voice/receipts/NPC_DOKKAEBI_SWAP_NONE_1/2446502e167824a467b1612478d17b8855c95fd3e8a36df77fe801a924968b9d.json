@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_SWAP_NONE_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "2446502e167824a467b1612478d17b8855c95fd3e8a36df77fe801a924968b9d",
+  "request": {
+    "text": "빈손이네. 쓰던 장비 하나 들고 다시 와. 누비옷은 어디 안 가.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_SWAP_NONE_1_2446502e167824a467b1612478d17b8855c95fd3e8a36df77fe801a924968b9d.mp3",
+  "raw_sha256": "dab62bd1196f80434e6bd7f74fee9f1757ed94dc04ec8ea7bacdcccc98565842",
+  "bytes": 81545,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.04
+  },
+  "http_status": 200,
+  "response_request_id": "8t9B2WNZvpBux0wA77wj",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:42Z"
+}

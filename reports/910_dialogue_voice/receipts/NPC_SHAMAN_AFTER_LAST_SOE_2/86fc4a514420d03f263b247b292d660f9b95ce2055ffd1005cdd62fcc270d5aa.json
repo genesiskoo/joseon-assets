@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LAST_SOE_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "86fc4a514420d03f263b247b292d660f9b95ce2055ffd1005cdd62fcc270d5aa",
+  "request": {
+    "text": "그놈한텐 칼이 잘 안 드오. 불을 쓰시오. 화염 술법에 쓸 빈 부적은 김 영감이 파오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "이제 남은 건 정령재의 쇠부리 폐광 하나요.",
+    "next_text": "칼 대신 불이라. 부적값이 또 나가겠군.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_LAST_SOE_2_86fc4a514420d03f263b247b292d660f9b95ce2055ffd1005cdd62fcc270d5aa.mp3",
+  "raw_sha256": "4c867a47c6fb2a6643997510be4861e56be2d9ede0be9705a956063228b5299f",
+  "bytes": 145910,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 9.04
+  },
+  "http_status": 200,
+  "response_request_id": "TRfR6XqBeyltfkm0Qot1",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:31Z"
+}

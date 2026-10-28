@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.2
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -4.8,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 1.6000000000000014,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.8
+  },
+  "sha256": "c37110befb9002985aa70d6627566ef59f020c199208e14ea700fa67701adb40",
+  "id": "NPC_JUMO_GAKSI_UNTOLD_1",
+  "speaker": "jumo",
+  "request_sha256": "3ef5d0453ff0523eb53479369fd9631dcd2455885bf3da2c53cd74ae100a62db",
+  "raw_sha256": "27ac4a85d6194ac78399517a0fdf2e967b43b5831f0d6d0da4ec9e04aed3afb5",
+  "file": "assets/audio/voice/NPC_JUMO_GAKSI_UNTOLD_1.wav",
+  "previous_sha256": null
+}

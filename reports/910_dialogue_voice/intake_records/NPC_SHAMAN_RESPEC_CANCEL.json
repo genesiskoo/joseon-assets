@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.48
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.399999999999999,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "bc6e327349b3e4971448bbdea2971ac1eca1f41dd86493a4f01211184b9b1c7a",
+  "id": "NPC_SHAMAN_RESPEC_CANCEL",
+  "speaker": "shaman",
+  "request_sha256": "b17654e71dc7bbec8acc9acefc2f67c255126cf1e4874fc6aa1bb58bffb75471",
+  "raw_sha256": "34c834c36673b57c026b33deba0f199745250945b2672bbbc4f5c75f2a6573f8",
+  "file": "assets/audio/voice/NPC_SHAMAN_RESPEC_CANCEL.wav",
+  "previous_sha256": "ceebb9e49b100fde4ce2162ca599a955e38f92803f24a6c48b1357efdb983c78"
+}

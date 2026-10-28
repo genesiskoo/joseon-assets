@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_IDENTIFY_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "bfe567e7288cbc154431e5b9c4bc4615a7159f01661b7d99e96a284c1c6d00dc",
+  "request": {
+    "text": "봉인 너머의 기운이 묻어 있소. 이제 쓰임을 알겠구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_IDENTIFY_1_bfe567e7288cbc154431e5b9c4bc4615a7159f01661b7d99e96a284c1c6d00dc.mp3",
+  "raw_sha256": "701968116ffeb657427d55b3e16508559d787e93c61c153ae471e84d8e9fedfd",
+  "bytes": 80291,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.96
+  },
+  "http_status": 200,
+  "response_request_id": "ajE6veaCNO3bSmYSSPzs",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:46Z"
+}

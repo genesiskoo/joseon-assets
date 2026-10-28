@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS2_4",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "b77724d9a834d6e13a1ac74d20d325b1d4d69a60091ae6cf6a473fd7a288f7fa",
+  "request": {
+    "text": "장사 접을 일이라도… 있나?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그때까지 내가 이 목로를 지키고 있을지는 모르겠수.",
+    "next_text": "사람 일은 모르는 거라우.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_NEWS2_4_b77724d9a834d6e13a1ac74d20d325b1d4d69a60091ae6cf6a473fd7a288f7fa.mp3",
+  "raw_sha256": "6b3c9ae5b78727d871f3ab36b5053917f97a85fcd517f8bc5eb38e604ac7463b",
+  "bytes": 49780,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.04
+  },
+  "http_status": 200,
+  "response_request_id": "9nAZ9ZcLA1ma2ZaTN76O",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:26Z"
+}

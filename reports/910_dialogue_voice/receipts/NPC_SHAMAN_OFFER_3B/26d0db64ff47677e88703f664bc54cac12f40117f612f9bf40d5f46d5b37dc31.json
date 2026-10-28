@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_OFFER_3B",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "26d0db64ff47677e88703f664bc54cac12f40117f612f9bf40d5f46d5b37dc31",
+  "request": {
+    "text": "꼬리 아홉 달린 천 년 묵은 여우, 구미호의 기운이오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+    "next_text": "그 수하 하나가 들녘 너머 흑랑 굴에 들어앉았소.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_OFFER_3B_26d0db64ff47677e88703f664bc54cac12f40117f612f9bf40d5f46d5b37dc31.mp3",
+  "raw_sha256": "883780426259b7bf7f92c7b4cad80db36383aeea5b10e4a9278b463f472d3541",
+  "bytes": 89486,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.52
+  },
+  "http_status": 200,
+  "response_request_id": "BWc5loUUnIp8j4175qRl",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:06Z"
+}

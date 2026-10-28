@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_GREET_4",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "5e5d80690d1c95d8890b78d2112f9bb307038fa6be7cee9a13457af28d7178bb",
+  "request": {
+    "text": "굴에서 건져 온 물건은 기운을 읽어야 쓸 수 있소. 감정은 내가 해 드리리다.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_GREET_4_5e5d80690d1c95d8890b78d2112f9bb307038fa6be7cee9a13457af28d7178bb.mp3",
+  "raw_sha256": "6ba9e8d894d2166f4847b5b616869f353ee3cf189712b442906e35036b22b9ef",
+  "bytes": 109966,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.8
+  },
+  "http_status": 200,
+  "response_request_id": "eExBnKa7pFskBGcOBOFO",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:43Z"
+}

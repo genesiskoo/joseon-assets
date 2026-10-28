@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_JUMO_AWAY_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "9009bc52429f555b481119012d6aaef369d8a83948fcd517144c63fe1c50eda5",
+  "request": {
+    "text": "주모네 목로가 오늘도 비었구려. 요괴가 들끓는데 아낙 혼자 먼 길을 다니고도 늘 멀쩡히 돌아오니, 예사롭지 않소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_JUMO_AWAY_1_9009bc52429f555b481119012d6aaef369d8a83948fcd517144c63fe1c50eda5.mp3",
+  "raw_sha256": "a76c9d6009b28608aa3d4c60b2212aee5ca49db66e0e73eb62d95d27e1fbb657",
+  "bytes": 166390,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 10.32
+  },
+  "http_status": 200,
+  "response_request_id": "Ps3RYEepZx2UXeRJPglS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:38Z"
+}

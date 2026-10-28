@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_THANKS_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "ed38c6cc204ba4bcbc990afebb206ea4bbcacd804bb654adc3955bfeed0342e9",
+  "request": {
+    "text": "약소하지만 받으시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_THANKS_1_ed38c6cc204ba4bcbc990afebb206ea4bbcacd804bb654adc3955bfeed0342e9.mp3",
+  "raw_sha256": "db30cfc762ff9e544da8003cc215ebeaa34d9abd014d707fe85e27eab3d9a479",
+  "bytes": 33061,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.0
+  },
+  "http_status": 200,
+  "response_request_id": "Ndl7Mb367IUYsd4YPHNX",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:55Z"
+}

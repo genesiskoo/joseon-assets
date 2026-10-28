@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.88
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -5.6,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 2.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -5.6
+  },
+  "sha256": "2294838e325fde3e639c18c6ebb7af7e95cc6b032a6816a0e39926a85c7134b1",
+  "id": "EV_GUMIHO_DEPART_1B",
+  "speaker": "gumiho_f03",
+  "request_sha256": "959ff1005878ff02fc602e060e13da92be3228cfb7ada5d4aa549cd8f485b28d",
+  "raw_sha256": "49776018b4752839e69b066e7c03c00ce9489904f92294a290e532e5b4478560",
+  "file": "assets/audio/voice/EV_GUMIHO_DEPART_1B.wav",
+  "previous_sha256": null
+}

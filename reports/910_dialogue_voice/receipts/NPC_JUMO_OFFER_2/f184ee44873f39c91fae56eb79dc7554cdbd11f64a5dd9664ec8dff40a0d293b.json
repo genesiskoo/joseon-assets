@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_OFFER_2",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "f184ee44873f39c91fae56eb79dc7554cdbd11f64a5dd9664ec8dff40a0d293b",
+  "request": {
+    "text": "그 각시귀신을 베어서 울음 좀 그치게 해 주시우. 그 집 얘긴 그것만 하면 됐수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "들녘 옛 주막 터는 내가 일하던 집이우. 요새 밤마다 거기서 각시 하나가 운다우.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_OFFER_2_f184ee44873f39c91fae56eb79dc7554cdbd11f64a5dd9664ec8dff40a0d293b.mp3",
+  "raw_sha256": "0a0cd2b0e7014a1e9a3b37353866df71437e1a0b5e88ba9abbd607d0a6b6717e",
+  "bytes": 131700,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.16
+  },
+  "http_status": 200,
+  "response_request_id": "ZccfuRFY4GUckJerus2K",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:48Z"
+}

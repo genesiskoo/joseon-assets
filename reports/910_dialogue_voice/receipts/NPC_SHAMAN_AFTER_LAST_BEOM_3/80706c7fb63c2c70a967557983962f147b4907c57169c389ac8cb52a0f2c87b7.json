@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LAST_BEOM_3",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "80706c7fb63c2c70a967557983962f147b4907c57169c389ac8cb52a0f2c87b7",
+  "request": {
+    "text": "내 이름 부를 사람이 이 동네에 또 있었나.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "굴 안에서 누가 도사 양반 이름을 부르거든, 그건 사람이 아니오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_AFTER_LAST_BEOM_3_80706c7fb63c2c70a967557983962f147b4907c57169c389ac8cb52a0f2c87b7.mp3",
+  "raw_sha256": "c398eb5055ea9270a68662aa70885e87d3952fee0f9c80825c273a8c33851c25",
+  "bytes": 48526,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "http_status": 200,
+  "response_request_id": "2mMiC7p9VVoFgdyDT1KY",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:29Z"
+}

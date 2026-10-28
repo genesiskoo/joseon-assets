@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_REPEAT_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "08a23d58dab9f298ad4687f29d2e708a070c296ba505dc3cb858b80b05750749",
+  "request": {
+    "text": "굴에 들기 전에 몸부터 추스르고 가시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_REPEAT_1_08a23d58dab9f298ad4687f29d2e708a070c296ba505dc3cb858b80b05750749.mp3",
+  "raw_sha256": "e79ada57182e4a2b53c9a20859dfa3699c020626086772fcf40ed336359ca1c7",
+  "bytes": 54795,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.36
+  },
+  "http_status": 200,
+  "response_request_id": "15VhjTi3b8wpL8KTfSnF",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:44Z"
+}

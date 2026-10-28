@@ -1,0 +1,5086 @@
+{
+  "card": 910,
+  "plan_sha256": "1c90b72d21864fb3d1111c49e07047ddeae9da171938a9c51b248a0dee73e7bb",
+  "pass": true,
+  "count": 310,
+  "files": [
+    {
+      "id": "EV_ENDING_1",
+      "sha256": "29e1c7e3fa71a86ff9f359aeddc6e558d8e7a5be18ad94bee97e50caeca0ee1a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.84
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_ENDING_1B",
+      "sha256": "6976387bb236d879333e95b352206e4afc947769e5035533cd8bb0a2bf9739fe",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.6
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_ENDING_2",
+      "sha256": "bfccdfe16c4adbfb994728c6dc801f2055d341182416adc3ce7f4fa3f85abd74",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.84
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_ENDING_3",
+      "sha256": "2286a8c2d6bf17c6e7a298552a7c43ee843c5a1f1a40f843bfc9a333df2e15dd",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.28
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_ENDING_4",
+      "sha256": "33009dccfa1a2aab45f011008670d49672156711c6d43ac571ad80a3ec723a49",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.16
+      },
+      "lufs": -18.4,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_1",
+      "sha256": "999c48ede7375ee0aa2f129aa4e40404a8f48d08ff58b2c2b14ec157107b6ee6",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_MET_0",
+      "sha256": "408ddec9a5d4c55aaa284069e61d02f18568c7ca1e10a5ec467969eb7dc0faa0",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_MET",
+      "sha256": "b00d63a435d4d2b448de39a6f2eb492677cf13c348be5b8ed3f55a59a40791c3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_CREDIT",
+      "sha256": "fc7856098763da88fdf5ff81f42974eb8ad94ca14a8fd2643db4b7e6315f41f9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_PAY",
+      "sha256": "f3393e68a2ee94188fcd46a59fc296a1b415b02398faba0b5367812574c4d2e1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.92
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_MIRROR",
+      "sha256": "63efcdf3ac228f755ba2b89a399fed286beb2b19d79c018329e1dc718bb8f6c2",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.76
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -6.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_UNMET",
+      "sha256": "0c1f2ab403cb11de4483085396d58ad62073257b1d2ca9af79dde39a2231ed1e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.84
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_2",
+      "sha256": "80209e0777a2de2ae7f642b0dfca1df97eef191d46abc152651bdc3d3aa6cd13",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.72
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_3",
+      "sha256": "6957097b3af33ab29b48ddd939af8f15f58e1bae52a108582742af30b51e84dd",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.28
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_4",
+      "sha256": "61b046d223f0c5d4678ea1cf1468363fb4ebc5c61913953a8b04ee7ada6adf2c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.48
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_5",
+      "sha256": "f781a3848403fbd17fdf2d5c4582a701fc0415e0fcba83fe96f45e0281d74082",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.08
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_INTRO_6",
+      "sha256": "06b8e51932c647005613a83f07e9c06bceb2ce270c14a212b5b2ab48c2e7e29c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_1",
+      "sha256": "91df0e719ea08556a67b430eb2556eed4ec1d24c7512921f3fe7e3137675eaf5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_1B",
+      "sha256": "2294838e325fde3e639c18c6ebb7af7e95cc6b032a6816a0e39926a85c7134b1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_2",
+      "sha256": "523e93a4fcaf98a1d9c7549333f565848674513227b21f95466864209216e025",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_3",
+      "sha256": "b31dc91f9a71759642a41aff446d6a94fee01e6e2e21cf7e56b467463a353b35",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.52
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_4",
+      "sha256": "018fcb8886f65030581328d7eff7bc50086bfea056dbc6ef368d788fbc5a57cc",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.24
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_GUMIHO_DEPART_5",
+      "sha256": "a25203e4af534014facc87c23393e8e26af963949a60f05d95ee3e25fc3c48a4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.84
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_1",
+      "sha256": "362123b7ec07d01ed8ad081c14bf786297002ae402fa367cb38e43ee6e3034d8",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.24
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_2",
+      "sha256": "f2035f8b9207b2dc3bd4873bd62251573176e75b5135a07ceefa8b74c897ea5f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_3",
+      "sha256": "0b8502a8a7d7a4a065bb8c1d5cf247ab19549da9a8e7d5c6f3f9e1fdd145c812",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.48
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SEAL_GATE_4",
+      "sha256": "9805d7bcc2e1760a57656b18903521ae302caeab29b4bcc386462973c7fb5700",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_1",
+      "sha256": "42332e28b2b987f1102cf9355ac0d3a0db06e6372a99b77ab3b4a657972f4d87",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_2",
+      "sha256": "758c9e372cd6abb08b31c2dd107a936c6c76ae0d15dc96dd8e693db384539d73",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.56
+      },
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3",
+      "sha256": "3a4c6e615e29687e8a6847844e6a965026727db342719d94475d5edbb659361c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3B",
+      "sha256": "8b85e91b9a44798545db342cacb520addce24c06caa8277465d5180be165b90a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_3C",
+      "sha256": "ac72d80bb6106c6b4bfd7027cb38cf48b54732ba341d9e2efb403a3675eea9d5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_4",
+      "sha256": "fba8304b10c42a3a9e401edd83e33f33a44e28420c39696088a60c86b8c87e5f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_5",
+      "sha256": "f0575839bbc07e2cf4b7381c548d7969bf59746f616c738ac1e524acc564d1ff",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_6",
+      "sha256": "a10258b3c444b97b176985e90302c7e8fa09c3d78b917d0ad0d9ca93c8c29748",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.76
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_7",
+      "sha256": "ba4feb9d4e83aa204405359d04fd7437f9a9b5b3b58a76d798d116ea72c406ea",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_8",
+      "sha256": "ffa307f4910649ef0726413785085c0442832f6525881e787fb0132547b9325b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "EV_SHAMAN_QUEST_9",
+      "sha256": "d91bd4215334d0d7d56aa51f6999fa682974b5aee7b70119dba6882896665d0c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.32
+      },
+      "lufs": -18.4,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_1",
+      "sha256": "f48900e56e7b83543fa84fa16918acb831d444e921a8886b2a29ff0f86e100e6",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.2
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_2",
+      "sha256": "7de6830f37c80e17931d7adea7553ba2f9b7de25a2070278ba2154de2eeaa30d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_3",
+      "sha256": "0885a998492f95b628f93172562be0af9fff1c6343be2b62b2be05634ac2b3a5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_4",
+      "sha256": "e44655f44ca8213351cd9970b357f6ed1c062eb023676e3dd8c8338d55ae5930",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_5",
+      "sha256": "dd610c73c1c5c033905161ba516a4b06252940752922468fcb71228e766c0051",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_6",
+      "sha256": "e411ae211e1f2725cdee1051a721a5dc0b20265796d19fc615c632702275e529",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.44
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_7",
+      "sha256": "66a4e65459bbf39c1a66b8ab39deb64b5e6c1743f02a8ad39a31c6f5fce317d8",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.76
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_8",
+      "sha256": "0799a922473d3579d4aa995abecbf7b21c16549b883090486da551b9d6953d0a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.72
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_9",
+      "sha256": "6aef5124596f4d95dfe9efe3cdaeda23beb25bb291c711489a5cb28e414d67ba",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.48
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_10",
+      "sha256": "a90b11ddd8f930953745709ad469ba0ad6a1c7cea93cde409372085400ef12d9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.56
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_11",
+      "sha256": "a150795278438299602df831fcc21efe0c0aa57c65a4c44085d6d09eecb2be78",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_12",
+      "sha256": "639d6e3bca71613f3286bf454cfe11bbdb63877dcff401a153de707c0ab4a2e2",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_FIRST_14",
+      "sha256": "8639139d382e35c98e8783911d2f878c5cc68849d127049c4379c8c328f1ceca",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.36
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_1",
+      "sha256": "df6b1ce4e74befee3404079b2a68a6ce3f462836fc83421f248b8d01f8eaae90",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.72
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_2",
+      "sha256": "15dbbda79acb8061af6b055d5fa57446d14eda384fd2f2a00d4bb5def7b60104",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.0
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_3",
+      "sha256": "ec52433be6887764fec73fad06a20c32e4a1a904dd1e6c06c81ba5a0b3f87e00",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_4",
+      "sha256": "aae29f9c6b2b582f1290b1aeeecb86b53774f350b5a6865fa9e425ca7056cb9a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.56
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_5",
+      "sha256": "99d953edf673f78446ebdd63383a6c357071697fc54d53d76ad5cfab9251d295",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GREET_6",
+      "sha256": "d296335e55b5343f21549d10658e092a7a84f531ee80833e0007ec29bf36a20b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CRAFT_1",
+      "sha256": "49f7054c6613e1b8e2bbb4a38943c5907f10fa06b5f3552bc0469422bfdc77c9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.48
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_1",
+      "sha256": "52ff503e4ccad79481403aa46c6d84fbd79f0b7f735c0355b2cf22fbf6ed3d0a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.0
+      },
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_ASK_1",
+      "sha256": "2fb27031b83ba91cbb439c9d6c6635fa901ab4af67f838a7b1efbb24596c766b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.56
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_1",
+      "sha256": "226eae9ab5f1cbae8965c76159f38bb4f0fa4513edd1e44809d3576859d77bf1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.36
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_2",
+      "sha256": "6ed31bb1f1bca91e0f093d8bf2391172995201f88873fb459c10969d16b3bf8f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.28
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_HINT_AGAIN_3",
+      "sha256": "f5571d9f8daa95bf798d1f67554e0eeed44b72e12987ded33d372b8e15704531",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.4
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_MOKRO",
+      "sha256": "b1626f257d662c17c2e984bfb5faf8c09ccd44c76467c5d22ab7328657b35220",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.96
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_1",
+      "sha256": "e1dd7d67e8e5d197badbc073a61559c952944d54251e250cde4aeea5f3e66f4d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.28
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_2",
+      "sha256": "bf2c84fd51e4a4c21ac25a0ef95114711ea828e0da34294744b0cc7aa7c6b92e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.64
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_3",
+      "sha256": "ff8e1891df1b4ed7253798e2a2bcf1c60290fd6d423275913a7d9286bd75e4d4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_4",
+      "sha256": "4299e49e337512427a632f748169c8492fef62e6d5aa414542c7c482a9d9e160",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.44
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_5",
+      "sha256": "02ff1ce33f0806b1a55122572010e5016b4fbb0c74910462c01a09d4dff75dc8",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.68
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_6",
+      "sha256": "bc3dc106e8a9a1ef393a7bdb16492a925ee1660c91e23a5b53762e757aa11cc9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.04
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_7",
+      "sha256": "5fa1c5f3b182167e15fdaf89217327ccfa3b25a7b4490613118b5d435afe7a2c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.16
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_CHAT_8",
+      "sha256": "a3b2436a3ded927aac836ecd8c8700fd45ea841d7d502beabdf5cd6202bb419c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.8
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_1",
+      "sha256": "bf3b057d8ceea61e1df0c3ee6ff2f119127db7c8d543ceba8ea48252fdce5efb",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.08
+      },
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_2",
+      "sha256": "3f70fb1fc90e45852be430427d80e52f277b1ae1723cd69657329575756ee532",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_MADE_3",
+      "sha256": "14c96ff55dd417664d1aca9c415c99020d6391cd4719a0ef2e443a06e883e0a1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_1",
+      "sha256": "3f997ae0b350df7f638d91d27d030566a5ced6c987bd7b5b47ec0749e7391996",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.4
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_2",
+      "sha256": "7eda5461246a84d7e822f0d1b35228d0fe986e63bfe958cadf168a0b6a90cdaf",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NOTHING_3",
+      "sha256": "44f76d3f3ec3555bed4dc6740c7b8367d56640d6b1a44a07d6fb806b364ace62",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.4
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_1",
+      "sha256": "791eb9d22567c1af8c35bd030bbffd7137eb69dcba81389d4915c5a124d5ab08",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.92
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_2",
+      "sha256": "1d22815e0cebb2fb44ad69be4b04cc7a31db18195e2cfabbdb4ce9cd147bc718",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.96
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_NO_RESULT_3",
+      "sha256": "4e7d75d7416bc2c7121ba75d2acfd216ada5fb1539dba8979acaebfd61875c08",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.48
+      },
+      "lufs": -18.4,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_1",
+      "sha256": "2a60c20f91b22b547d98387d284486b24dacd654519fe126e911e3823fbd4adb",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.0,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_2",
+      "sha256": "cc0e083f5b58b8beda3c7773a4a01cd2cad2e604d83a1d15a9878df60becd7e8",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.96
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_GOLD_SHORT_3",
+      "sha256": "c1384c64c8a71101db3337409c3241cd5628962ae559964c5fe7cd2002c726f6",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_1",
+      "sha256": "96f83a578eb82532b845daa7e97144ca323278f9c5cf13cdef8988dbaf6937ff",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_2",
+      "sha256": "4c93ff52c232419a127f8d9dc80f8284c7f184b262171fd95b5f3d48f5466ff9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.72
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_BAG_FULL_3",
+      "sha256": "1adaf9ba5d73839142d21593ca50e6dc8fbf9f165254d7e60d73b2f294f9af81",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_EMPTY_1",
+      "sha256": "6fb81eabf9ca3ede74e866c63aadece34ec14eece4f4074abb891cfb80ffe678",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.44
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_EMPTY_2",
+      "sha256": "db4533ddfb681f5e17addba105029d073e0d94649260dde167eff2ea0b216f75",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.08
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_DONE_1",
+      "sha256": "6c2df7bd2af3aa1eb5e265d343d63d13889fef59f896ef11deca4eb638486bd4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.96
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_DONE_2",
+      "sha256": "1c10efba8bd225e7b75030646aa772486654168399a3c4c99765c80fca79ae93",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.72
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_NONE_1",
+      "sha256": "b266c7ce3b38355ee56dc9be0fcd1646bae4f87f3ec0a25a89c0baad426c7537",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_DOKKAEBI_SWAP_NONE_2",
+      "sha256": "e81fc342faf0d4b61b36124f697c1ff61ac97f9d1aea041234269bca6a56aefe",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.88
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_FIRST_1",
+      "sha256": "97cf6d9f1d12af491242652900f6d170abaf82d6fef4465d461e7b6863af80cf",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_FIRST_2",
+      "sha256": "8f6ada9c4a4c2c6031139a0dc8cf1409be6828f98308d9ba6b3be6c61c6cd2e1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_1",
+      "sha256": "7242059dc88245e7f87e8c1cb69136bb303eb4cf5a6dccfd96fb401269939ca2",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.68
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_THANKS_NUDGE",
+      "sha256": "c8ba072d8919dc85dd0037d0f27976f24a50d2c21ed8fec8a46a0e2fbc84274b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_DONE_1",
+      "sha256": "f1516430d8c0d3d03f80ce8608b9fa97018e8787334c6be57248baa0076ac8fc",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_DONE_2",
+      "sha256": "d642b48cf9f8da75086eefbb0c1a17bdb212565a73df0ff9acb37f7483c2786e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_ACTIVE_1",
+      "sha256": "49c33637f4a4999a7d7575483d3d644546b3549077a2b818c5cba588ca53871a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.56
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_CLEAR_ACTIVE_2",
+      "sha256": "9caff3ddb97866cd3bbe57d12a594b6037a6080afbb9ec8c32b2d90f6e93dd5c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.68
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_AGAIN",
+      "sha256": "ef8b6784c859ccb64feb290f55496ab50f449e19333e43193639ff57a9077663",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_ACTIVE_1",
+      "sha256": "e0df16412c0e0a587500494f762a4eb8e54a1be49ac22ca5efaca316534147f5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.68
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_ACTIVE_2",
+      "sha256": "013f0c9853d5070bacaf7f28dd22da68c6c34294d37337304c766929e5e2ee94",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.76
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_1",
+      "sha256": "8bd4db0a06872b55f90b421c4acbee657576125099dc5a72aea2b58d24826692",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_2",
+      "sha256": "ac993200d76c514f21fb0ee2b8df0abf449d2251d9c05ec7fb5ba59809b5226a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.48
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_3",
+      "sha256": "7b6e27c3b43e50f191d38cbefa5bd2f3be600259ea9d248e4e35f146422c16c6",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.72
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_OFFER_4",
+      "sha256": "b27ea236f18ce6635b9811033b29619d0371c38c15141cc7a59a4bb603c9e737",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.8
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_1",
+      "sha256": "f5e00f6f642d091dfb3e9194e1ad458720c2c523e1c3b2f2cc69a9d72576db54",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.8
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_2",
+      "sha256": "6397359bc3940d7949bbb552db251cd3ba46e9cfe883ca9a35c399d239fdc8a4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.12
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_3",
+      "sha256": "99ecdf3a0dc59d6c5dcb3f7709e62060074c9a93717fdfedaf655a43129a9381",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_GREET_4",
+      "sha256": "511424d06b112657b8b6c5c4395efbe6f45ce07b080cfb1bb66451396b0b7eb4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.68
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_ACCEPT_1",
+      "sha256": "ff312ed88e7f4846b775945017ecd23d773c6ae30e7d54ea8e2858144a8abd0a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.2
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_REPORT_1",
+      "sha256": "147e4b5f63109153be7c9e58c7b3a381272fca976ff91e617fc3d2562c9b9f55",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.08
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_REPORT_2",
+      "sha256": "932da167064a306d6bc608c65f3721b5f18633dd9f544173cf64657929904790",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.76
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_REPORT_3",
+      "sha256": "585167d186b2bd905e2701ae6bb22b2d2945509c69bed9c2040421699d4852f7",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.72
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_THANKS_1",
+      "sha256": "a11f726c3ecd8a6025a229bb7927498051a90d3245f63f22268e4ea0b11b2bc2",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_ENDING_2",
+      "sha256": "94f7e350e93b5ad91856c7ceec627025b5ae12dfad184de37f36b8a307faa319",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.08
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_2",
+      "sha256": "38cebd8b5445292be8de3c4474e00e1284b7f6e4693a80100b6f7c3f3968282f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.44
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_THANKS_FULL",
+      "sha256": "9fcb30bd6743b661ac3603de3e02ca94ace0a685bb05bcb16778a5b36e7a5dc3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.68
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_VOUCH_1",
+      "sha256": "901df3f719c04de99d2062d495d51bddbb5939211e796f449df0e654c304786e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.28
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_1",
+      "sha256": "1ea34190cbd1ab74ed05504836a507823485fae51a82b902fc4387a5b4f7621a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.0
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_2",
+      "sha256": "8b0a9f789c6ee9290c30af827412613bc8759b5249b5c752aa239369b028336b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_HINT_G06_3",
+      "sha256": "0936fd21d9cfdd598606b8301c7083b6ff255ad37ce5baa596ae98829fadf7b1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.52
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_BEOM_1",
+      "sha256": "16a117251d6c18dce329d969fe152b1f078e73bb42018ec03a8ad7f45a09005c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.4
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_BEOM_2",
+      "sha256": "d50fc7b1caefb5d44b5e12bbe63182bd076218ac65d83e52d346e7bb1a3cabe3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.76
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_SOE_1",
+      "sha256": "e37e212b75e337d80372eaf85a91a284f419d74f923a52fb5eaf1494d96ce7bd",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_SOE_2",
+      "sha256": "f4cb73fdb2de9fb0a3dbfeb33afed6be381ac4e378b395f7196d13deafc72ace",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.48
+      },
+      "lufs": -18.4,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_END_1",
+      "sha256": "35decdc523645c02e0a6963e581ba43ecfe444c12ea7b5ca040aa45c42c63e53",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.68
+      },
+      "lufs": -18.5,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_AFTER_END_2",
+      "sha256": "6c3510f4f8daaec35976a6e0e113b6eb545ac23066f1a0c4cbaf8ab86e162c55",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_SOCKET_OFFER_1",
+      "sha256": "2e208bd7c640daabd818166c64f839b1b367224055bcbc6aeee8a97c9eb3de9d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.68
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_SOCKET_OFFER_2",
+      "sha256": "563ab60eb6e2770126622115f363c8dc98b157fd5a2367c2f62c8e2e713b77ce",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_SOCKET_OFFER_3",
+      "sha256": "4866caf621142bb1b97bb8a6ed6073b8907e2eae495d0ec461d300890ef44e29",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_FORGET_1",
+      "sha256": "2772a3169d2964b77b6eca575430a4084abc14aea96a19a3d9e0f05b9b68245a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.44
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_ELDER_FORGET_2",
+      "sha256": "cea32eed426f1fec3ca2cead5761069da1bfeb9a9256a544e62b275e60902326",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.4
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_EOKSOE_FIRST_1",
+      "sha256": "b0470afafce202f990ec52a3792c0884c8664915f330166d040e59b6c302f4ec",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.04
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_EOKSOE_GREET_1",
+      "sha256": "e45b526d8853cd8ccb8f1c4094bbbf634f28ef5dd5bc98906caa73aa24de36d9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.44
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_EOKSOE_GREET_2",
+      "sha256": "e5fd1ab31dd6205712f55cb070b641b827b8a1e5abbe395cd12700120032f5dc",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.72
+      },
+      "lufs": -18.4,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_FIRST_1",
+      "sha256": "b86504855d347b1713f582191696bc721202d33571fb78dfd09a9af2b1b87f9a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.08
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_FIRST_2",
+      "sha256": "c67b83cb6d3e8f1e2d78288fb206248e2de84d8576002747b1c9d13ae3c0a266",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.12
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_FIRST_3",
+      "sha256": "48bed65a9d9d235e4e34e9758d07dc243e1a182cb660dd050a027626bf80c1fa",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -6.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_1",
+      "sha256": "17b49c2a76fe985b99388d7346a8eac11dc69c1c6af8e57b8e98361cfb3582a2",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_2",
+      "sha256": "f3c7c139e61a8729190e80db7036efb8736fb3a7a6dbae23effc624cd9f4f010",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.32
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3",
+      "sha256": "2aa23773e27ead26a212056faf6d757cf15a23c990cef73321734898f2f3087f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.56
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3B",
+      "sha256": "264d4c52e082b8333e35f23add9443ef013f7137d51ac551b8280687e7cb2d69",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_3C",
+      "sha256": "b1642f70eb9b2435c2a4926223e2c45c3a507eace284c6700912f6afac090251",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.08
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_4",
+      "sha256": "74032bb98aa5975103398f17774d24d635adc0bc5b1437c38b08c66dda22c674",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.12
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_4B",
+      "sha256": "088188bd4171ba0880b695bc5cc8c0051897f931ad517e6e0fb0a82bda261014",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.48
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_5",
+      "sha256": "0730d751bd60a5e68635e1be26eb5c394733cc7a299d59a3cca5fc5ecba47bb5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.12
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_6",
+      "sha256": "3d8b1b0e5a7f611813690617312ebbc9ec676e557e1e223780e1752682417454",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.48
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_7",
+      "sha256": "086b37985e9d560d9c8e72040ffffa809119ad4579f0141baa769c2196a58261",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.08
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_8",
+      "sha256": "d995eddc4214bd8b37016f0f633fa57f5d0fdb199a35295927ba87cac93ae5d3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.36
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_9",
+      "sha256": "a95d0c69046acf1f082c2d33a2df341be0151730f5e6ec675d00551f7be45210",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.44
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_MAIN_10",
+      "sha256": "1ee938dd653acadf8097321410783b51dff6c9721385cf6f4e437a0554eeb1d9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_DONE_1",
+      "sha256": "405f9eab6f3a596443758215dc546b42123a2abbe88c23cc4ca7cc221aef906a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_UNTOLD_1",
+      "sha256": "c37110befb9002985aa70d6627566ef59f020c199208e14ea700fa67701adb40",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_UNTOLD_2",
+      "sha256": "e69e7e8550624b7ca59234a26917d2076d4d732ab84f68fb38d8a9cf084a2a5c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.44
+      },
+      "lufs": -18.4,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_UNTOLD_3",
+      "sha256": "404702b32cbd427719abba2ca6fa235b603a84cda2443cf22bdf333fc20ad79d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.0,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GAKSI_DONE_2",
+      "sha256": "6007330e60bde8363329b9f25400c19cb8c5cbf99408c3744c41e644986cc52f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_1",
+      "sha256": "004099835e2b21f3457def3f39ad96f86f55dfe187e5b24cc1c0b5aae0aee1c1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.56
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_HEUK",
+      "sha256": "9ff5a171a58a7fce2217ccee713cb691242d023e31a1db97d7894111af329a6d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.48
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_BEOM",
+      "sha256": "2126f693e4cde07048ab7776f1b00d11e0a665c63c7e8aec6abfe89193962908",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.08
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_LAST_SOE",
+      "sha256": "760c94b45fd1d6696fe127c17b06dace4ec9188fb95ce7d83ecf0140341cf116",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_3",
+      "sha256": "f3bbdf85532dda676fc93ce1a77aed6d8ef829684ba96f95836b5c1c636d2a14",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_4",
+      "sha256": "eb7951a9f1b4a1e610766832305232e24a319b1dd3080d6522ab34d60bc74199",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.04
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_5",
+      "sha256": "71589a85a46c0ad97563b5d4c858efd9398999ae40654837f8682aeb7cf28cce",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.24
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_MIRROR",
+      "sha256": "c17cfa139f5b24f8cd6e97f934f930a3fbfa322085ee75cfceb7c305e26dffaa",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS2_MIRROR_2",
+      "sha256": "1593ecb9aafa35005a2e03892674ed8d4221365de30a96888e6a40ccc3a91909",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.16
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_1",
+      "sha256": "3dfbcff7231bc2390ac3147a0ac48556cf97d53a0aece203d615520dcff18cff",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_3",
+      "sha256": "6dfefac3871178071bce3d3ef55cb03d1178c1703c51e0639b1ca6bda199c371",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_4",
+      "sha256": "cb6479865c5b5e671f35dd950407c883acef9fe479524ba6d37abfc00a31b69a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_HEUK",
+      "sha256": "ea08f2ae6fc56aeb539f8c529f3669c7c2361139a67d20d7d781e0821a7566b1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.12
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_BEOM_SOE",
+      "sha256": "5efbbcc0846ba2a73b7ad1ff7f4080f5a42969a6f636eed7e018765122107eaf",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_KNOW_HEUK",
+      "sha256": "4647970433f95ea7270df2289a36f3af6847eeb7e122b27c5a2863cc22d82d94",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.68
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_BEOM",
+      "sha256": "12361f85726a4bbe95be98173ac7afdbe9c115ebaabe3ea0d594519fc09bd662",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_HEUK_SOE",
+      "sha256": "0babe21cd0d3143659d9735667f580eb9fc20c28b9dac2b27bbe8145c70bb45d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_KNOW_BEOM",
+      "sha256": "ca1748d0a7ba2864eb8a88088a8c04540f6b9738c13bdac29e9077ac23b7e0d8",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_SOE",
+      "sha256": "a5b00517cba9425d6a32afd2d2c05073f67322d36b947776ec3ed3f1aee0d655",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_LEFT_HEUK_BEOM",
+      "sha256": "4b13f303476a11090651c87dadbb0b69e9bde9074757bcb32a30ea865c6cd3e0",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.12
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_KNOW_SOE",
+      "sha256": "edfc5fc694d59bfb775fc9fd000bc8435db7832be9e443b747568df818c3af79",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_KNOW_ASK",
+      "sha256": "4b7c1a3f221360ddb225b9a2662ad865d7e1f08cdb34e095c3d944d9726a0da0",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.44
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_KNOW_ANS",
+      "sha256": "466b2f85e62a8a96529db587835d42ed981def7ffde318bda2d4d805b326eb9b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.44
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -7.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_NEWS1_END",
+      "sha256": "957ecbe5eb2e7ac059b18869bc3c122456e2e6fd265736b12d7b7b3fb8d4157b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.48
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GREET_1",
+      "sha256": "889f7bd8b3f926264a96e91f9db25c4f2b2a08eef0f94fc850460dd0c378546d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.68
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GREET_2",
+      "sha256": "ca2635a71605f76bfd58523fc78f66c672f816da3fe928012c9dd93a501c8ce1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_GREET_3",
+      "sha256": "bd338cdf4a60dac6df91c48cef2edb1b6f8bcdc4ee4a220ed55d26d0d7b52bd5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_BUSY_1",
+      "sha256": "a857c9907915a72adc8dc834e437a0123f43f88e1e689858f530eac2789ac681",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.56
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_BUSY_2",
+      "sha256": "a6af591a49ab006e36b5d74c685acc7b3bbd372531917f7cc1e9a4704f85cdd1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_1",
+      "sha256": "1dac1cd69a099edb10ed35e0cbbc9d01c0197fab77f1035154e32eeffa60d6e6",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.96
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_2",
+      "sha256": "dd76b615099e032eaec0bb79a6d8f21721b9dbdfc9f12e3f7cb6610525d6d6dd",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.44
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_3",
+      "sha256": "743a10a1b0cba4cbb9f8d3460ceb9f68dfab7a52480fc1836ed82f56771b0c6f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.36
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_4",
+      "sha256": "b4858d684e0b9d84f0e711befaafc9d663f01c7721980cf026127284ef965d81",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.76
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.0,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_5",
+      "sha256": "fb37b3eb24d681c3ad98d1390d729531ce091d5962c232f4fe41c42af0a04040",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_6",
+      "sha256": "17c222fde844c62521d1f37906f5ab5711db4ac52892bdde4941f8ae2911cc41",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.0,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_7",
+      "sha256": "cbfc5bf5b7bd158ae45023bd6760cfbc3bf5b21bf66f18052a4950baadc8747d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.6
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_RUMOR_8",
+      "sha256": "c7e988646f6534092d1a8d110b9c84771c1b5ae574831f1c5e55c3e639e85d82",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_OFFER_1",
+      "sha256": "c09b18db0e2dc5d4c7b597a38eb0e68aec8ba7ce7fc789e5c7be9b5b39703f13",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.0,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_OFFER_2",
+      "sha256": "9999d592589ffeb1897dadd807d9a8f33dcc48f487c34ce3be45d7cc01d7c0ca",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -5.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_JUMO_OFFER_3",
+      "sha256": "ff465365633f85989ba23defce95a88d964e232f49cfae359dfa7db8843527f5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.8
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_1",
+      "sha256": "e64fe914ab3c6d67f99bd60df5aa9338eceb591f0471ad7645fff9433679bccb",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_2",
+      "sha256": "cc61e1ce6321c8aadab4d222528438c2f4791e57a4fd341266cd9be5eb7ebf69",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_FIRST_3",
+      "sha256": "5e0d157875ac0ae82d3358f3497309a7ec15fef7bc78e87b746545b2b08d3bba",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.08
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_ACTIVE_1",
+      "sha256": "eb94f42bef6d8fd1ff22e1a1835007d2573ac12d363cf8273eca20829dfe4988",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.08
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_ACTIVE_2",
+      "sha256": "45d33d002c96c84cfd264dad73e9cc83bfefc28f9c61c986c80b636bbab6e1f4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_1",
+      "sha256": "923f82b44fd9a1b036ade1b6fcb8da5a469c609dfe0add7874a1f98dd28315cb",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_2",
+      "sha256": "89d79065f72064c0a8a29cdbe9921269b835d5ebe4c8a8925bd2a81dd392e202",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_3",
+      "sha256": "c65c482e23e4f8bd5361e88cd7cd9d08a831a15f7b7dd7b18fd9f550880fc3a9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.2
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_4",
+      "sha256": "d56076ab1b39446982811546694b40ff9256380e922ff181943ab9a53e9b2548",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.24
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_GREET_5",
+      "sha256": "c7765db08c19143f67486564ae89f0d21d0c654c7ac735f91e23f7e0628243c7",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.8
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_VOUCH_1",
+      "sha256": "9267bc2f9416797dd91a66a4c90fb50782cf8c42d3b1994468c53fc3469980dc",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.56
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_1",
+      "sha256": "eb5ea9c6a176d6ee9eecec14b83c0802de0ace022f52be6096930d3ebccfd872",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.52
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_2",
+      "sha256": "a990aa3612bb81414da911429f90047b924dc157f54d96b0cd69c8f6f34b9af3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_BEOM_1",
+      "sha256": "46f01e8b0278c25f7881a828c98291e86e4dfb5ba80aa5eb6b4071bace07eaee",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.76
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_BEOM_2",
+      "sha256": "bbaaf9826639249ab3738fe0b815e12e52fa545634a6b7532e8096a9b7937668",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_SOE_1",
+      "sha256": "a89c2b763853a2f38f71c6baf87dfa79953c891eed71da86b55ff3b4aab55348",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_SOE_2",
+      "sha256": "8c15df0c6ba0545fa430b0501c28c292544ca287ff6c60dbc63578a66bee1ba3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_AFTER_END_1",
+      "sha256": "ba2ea4242e0c85bb7e53494e6b87b10c7870e53700c28d193b3184d263190c2a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_MERCHANT_FORGET_1",
+      "sha256": "ee53a506bed04a85a197d76152dc64d743dd28126b3802383b55943dc77ea4f7",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_ENDING_1",
+      "sha256": "5a2b92d64e0a61db85fc8c7a627c2ac532906f3bad87663409112d57d794b8be",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_ENDING_2",
+      "sha256": "de8b5d269400e40accfdcd584ae519de6ab2c0b6ce6eba2364a51211e4fd95da",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.52
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_ENDING_3",
+      "sha256": "2025b69ec07e34772b85657d68ab6c21c8b9937d04c788bec88d0ed75a1ba0bf",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_1",
+      "sha256": "83185b1b9f35a04049f073d9a9478e7c2681c8f7635835dc785bca0fcf730ad9",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_2",
+      "sha256": "7e8ab671233685ae4203bb888fa820873460d8ee162b077b354a9b59d34e0d8d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.64
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3",
+      "sha256": "218a39c1c45d49db4db3595563375f1e2fc699e876389b8b64f8810e5139e7d0",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3B",
+      "sha256": "1e7f8e4b6213029b68431ee36b368bbabf6fbb64288a67845775265045e2797b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_3C",
+      "sha256": "2c5d17cf01241dad9748bc55d653e5fd92e5d1d7a6743296e2af7b9403cc8d40",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_4",
+      "sha256": "f66c0847327ef66451e1d0a014a5a77ce45a9b65a9e284d99a4e12153015872a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.2
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_5",
+      "sha256": "c3a1a58fa2f1a1007c229668dc9fa0e9c18f9496dca915ae82aa48a0fe33437d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_6",
+      "sha256": "0cb2998c4c3f31d55eb2b697390cb847639b7def7ca826d2fc3345486b5dccc8",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.92
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_7",
+      "sha256": "b26f266330d272db39ceff08c7c7a7fdfbed83fdb1c5705c2f815d3e6834857c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.76
+      },
+      "lufs": -18.6,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_8",
+      "sha256": "3fd485993a4300ab9dc9d85b357529728ca8f4e6967b03b09dd69a7addf6318f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.12
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_OFFER_9",
+      "sha256": "421406f58fa6a06342822ebf2f1b8fa66439e98424256f28525dcbe97ba8002f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.16
+      },
+      "lufs": -18.7,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_HEAL_INTRO_1",
+      "sha256": "22444b0456b0d9cdf0a06ded66490a0d34ba6496ff83c4b3cd2dd768d5a7e1f8",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.92
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_HEAL_INTRO_2",
+      "sha256": "4cfe7b15aca8e136a0afbb18151403a531679e56846e09160296d888a07527eb",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.4
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_PROGRESS_1",
+      "sha256": "f3f9e828e8416a95666f509e1e7568fc122262dd2ccf5217404a3a8218dfd30f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_PROGRESS_2",
+      "sha256": "c4a8a7cc9066eab4db62a344b0b9b83183aefba4fc111d2777566fecee9507ec",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_NUDGE_1",
+      "sha256": "c201d14a0932ecf97ad54694c97e834fb02f8ce3379ea961cb6443c47d6e0b3b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_1",
+      "sha256": "5c120f9281d4ed37613686b69c519a4db646eae5e0da9fff82bef58bd2c59e6b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_DONE_2",
+      "sha256": "f5508dd6fa75208235e620d058cd98c3817d71a0258a443280fde8379c44ebb1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_PROXY_UNMET_1",
+      "sha256": "33ba6e86ddc3f564caccc803b9d7d7c5fd940de14dd3715b634dba400bfa0325",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.96
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_3",
+      "sha256": "2a8254d2602c1a6de02dd210a10eb3cd740aa282faf6bd0d8f69f46f6a10a30d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.4
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_2",
+      "sha256": "417084b514b6a9e86aeada9f29a8ac7152fa82aba3bbb27ac17e272aab35a96f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.76
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPORT_1",
+      "sha256": "b55b22a31ed39b1b346c0f6a14359f3b3c22ea8e32bb881c27a7a82b096ac111",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.08
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_TAVERN_1",
+      "sha256": "fca8965d37983d68afe7aa02ec0c8bc2582d03bc8b91b7ef257c496d4e1437f3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_TAVERN_UNTOLD_1",
+      "sha256": "f186a9da79fe68e09e4fa5f616d2dba49e5226f592b9aab07acce24db848e07c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.28
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_TAVERN_2",
+      "sha256": "fb00611f6f41cbed51ca498d519b6b2d12e5daf832e3107c6574f63029956ecb",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.36
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_1",
+      "sha256": "10fdd7d8e7ed9063484100fa0b0fc4f2e0a6c793eaef0d4cced3202da8e4805b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_1B",
+      "sha256": "6c888ce9733b50b30a65276aad8831718f731c8d946a9146f229902758281336",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.88
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_2",
+      "sha256": "c4ea0bdf90db429860ad77f9254c46e0479d19e33c315c13cbe38c038aa55a81",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.44
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_2B",
+      "sha256": "4790860eb9c9253049bbff929b2a881d789a9874a4f0fab6d8ccbe2427682e88",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LORE_4",
+      "sha256": "17dc1163e54f76856c33434c8d9ede40526fd0354f7dd8e18208dccd2eca2f2b",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.48
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_1",
+      "sha256": "17fe9cedba80f82e3a64d0d42e7f097edbdaf55f1cfb21d28cbb771f78a54551",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.48
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_1B",
+      "sha256": "1f2ba09913621144754c403104cd4d6839718d7987549837851fadaa67647009",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_2",
+      "sha256": "e49ee531b66833fffb0431836070433f389b5d9608a8c0d6331ef068a692b12d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_ALL_3",
+      "sha256": "a287ffedbb3431ae5eb45d21f26c60591eda3f28b5264e5c4d34d7b11a2742ac",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_HAND_1",
+      "sha256": "8b3d0ac5c878c10be138f5cb8d7cc5525a5f188f6c41eb7d09be04efc5b30d43",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.28
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_1",
+      "sha256": "f37d00018f0a574b2125fd2381f466ddddc600edd4077e88962c8d93b17f417a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.0
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_2",
+      "sha256": "5a42334c2f12f14040518dd85f89e895c30a83cc3ad72d401b7d25f92a9b9f10",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.36
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_HEUK_3",
+      "sha256": "efcdd8eae395cf384e8e6f5eb0a8a6b69b06804ccee2202ef6649bd553463bb7",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.24
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.1,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_1",
+      "sha256": "cb227c141a5b16abd6dde576d322a411b41681f37dab098d3e4398326956200c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.0,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_2",
+      "sha256": "e03d2e36730d75ca17cbbaa8586da641521b2dc213bfffb7d51ae54e1f81b24e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.32
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_BEOM_3",
+      "sha256": "7ee22be0d46a0d81f4b17bcf1dcdc896f493e041f5e7df8eb34e91421bcc700c",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_1",
+      "sha256": "c88a5e2cbe397ab7d658f7083c950f1f0220a30b308291cbe558176677fe72f0",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.6
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_2",
+      "sha256": "b931b55218ab70c9b7b4366e65882b9ab0d43657908abf845db621f915b6cad5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 9.04
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_LAST_SOE_3",
+      "sha256": "de091ec79389d1d302d8e49bc69f0b9763e94c2adc1bdeb554cb407f741f4971",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.76
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_1B",
+      "sha256": "049545e280eaa9b3ca723242bd097a4dbb010acc54cf27d7c07f3c272ecd74fb",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.4
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_1",
+      "sha256": "60381bfceb4356a099bb0941be95ddb2c916f4698689cfa7a6639994a05aabf4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.84
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_2",
+      "sha256": "0e2c4779607deb3ca7ac17557da2f4d41c2bc9c1c0e5cd5817e605ea3b5b854d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.84
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_SMELL_3",
+      "sha256": "e811356d736682b7ba716406d104b4ae909ba25f97b07967cc8a45bd49b6059e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.32
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_1",
+      "sha256": "80d470a6a2414e7305ec6872b18b575cc4771117cf59f8eace32cf2922387196",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.7,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_2",
+      "sha256": "2dd76ec1ea176bd66db6be643efdf34991ecf269c2a85c28626f505e6f6b2fa5",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_AFTER_SRC_3",
+      "sha256": "68cd966f681705b274db79f95227319a46521203efccd48e0a45cc0c3a0f4d3d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.64
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_WARN_1",
+      "sha256": "a713aeb93b11d6fc59c3e80339d35562e587e5ea31fb3ab4770422949dd5421e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.4
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_WARN_2",
+      "sha256": "21c757baa0ce11dbbc5de812687f1d330fffda57d27b31fd8cdb79d5a79f4293",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.8
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_JUMO_AWAY_1",
+      "sha256": "228cf04115e459a1f5b8eb4aafb7416683982be50546f95b0f3a0324e07bb18a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 10.32
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_JUMO_GONE_1",
+      "sha256": "b98554d8dd3ae6a69ca1ebe9f7c37324dcfd81d6671a659f9458f080b80e77fa",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.76
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_JUMO_GONE_SLIP",
+      "sha256": "687c99d0bbda4905d19ead86d2cd74b6dcd905aee6a5c00d2a29f1628247a2c1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_JUMO_GONE_2",
+      "sha256": "bcfab8e4e49cd9a64e32bc6a690ce6d3d392e8356345edc0213ec25d0c9dd357",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.52
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_JUMO_GONE_3",
+      "sha256": "ba043df61137f18e54b5d000790aee6f0258b9aa051fe23621b4d7b1c4fff428",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.72
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_1",
+      "sha256": "7280ae29673d382ae7bef390b0165ccadf9a6bc05ab507d2a2995b1d4383c859",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_2",
+      "sha256": "8231c79219192e27d34b19065df83fc05bdfe3b6b7af1a86f7e3c11577fbae69",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 5.68
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_3",
+      "sha256": "cc1fc20b2adac6810cf0e2e4af77feca252fe3d6b79ed25ede51b9b4dfc2cd57",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_GREET_4",
+      "sha256": "7ae5adc5bdbd4fcf05549c2792943755fea9098fda66c4715964aaee20861d9a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.8
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_4",
+      "sha256": "2c575234fc412b99941620458e39ff527671eb19b52c332caf40b6a072134438",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.84
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_3",
+      "sha256": "cb1f6a228cdd6ad8c8890e5008977c36331affaa64216e3af3a7ef3dcecd95c3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.24
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_1",
+      "sha256": "04968bcb6fb397c18e1c7c3ec45f5480f5b2119ad530b8d9227137eadd886004",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.36
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_REPEAT_2",
+      "sha256": "d833d35c071b6a2c1a8464ca20a15bb0fcef8c7d2090f303499cd1d8c89bcf98",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.4
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_IDENTIFY_1",
+      "sha256": "9f258f06ed8df6bdfcbe11133b87421bfd7b4f5657a938e3470d3340854621dd",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.96
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_IDENTIFY_2",
+      "sha256": "7b4a3cc65e9125971ce22c108ae77e18fa84f84d41e356fa227b2a5f234c6f86",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.92
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_ASK_1",
+      "sha256": "8812913ad5d65ec3845fc64c65959c0078dc80bc084478e983796755a5e59f63",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 8.16
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.6,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_ASK_VERSION",
+      "sha256": "1215545367d122c4c97afeef317e0a53b983ed4354b29b4c1da490e7639b130d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 6.64
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_ASK_FREE",
+      "sha256": "067c676ab3cd405cdad520b1de6d3ed0b0e8355c02066bc494917534fd757958",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_DONE",
+      "sha256": "eb2f4dd1d75f5da84f1eaa4e576b4cc62d76555eb8806022a09db82f8fca75b3",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 7.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "NPC_SHAMAN_RESPEC_CANCEL",
+      "sha256": "bc6e327349b3e4971448bbdea2971ac1eca1f41dd86493a4f01211184b9b1c7a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.48
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_ARRIVAL_1",
+      "sha256": "c6e40e9e6571e0245935ad84781360fe9459335eca24393bee730b3adfb8c5a4",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.48
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BONGMIL_ENTRY_1",
+      "sha256": "d5c659a6759d69fe25f83eff0a15ba16893ef6ba5e98ac571cb6d6f5f540a180",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.68
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -3.2,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BONGMIL_LAST_1",
+      "sha256": "7758b093d963f189716d79b07886855803bed1945f0bee0053807ce500ad124f",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.84
+      },
+      "lufs": -18.3,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_GATE_LOOK_1",
+      "sha256": "a1741641f24c46df4948896982141bb313d52e273416181caada09e5bf297ca0",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_STALL_GONE_1",
+      "sha256": "0742fc328defc4a60f36a7b630d0730575fa34529b4454979c28176fb709d0c7",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.6
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_STALL_ENDING_1",
+      "sha256": "10d45cee99f098160a10edc85e371b078299736e9ced4313e017bf535fe3e7c1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 4.16
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_CLEAR_CLOSE_1",
+      "sha256": "b4f0ce6cd294f7c502c11fdacaac2291d2a55839d47c812d7672febea3af92bf",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_CLEAR_DONE_1",
+      "sha256": "ee9df0007ac67afc75b6c1c8dd9dd1160ae7538ef03d4271167e0a46f5bd8b84",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.88
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_APJABI_1",
+      "sha256": "cc842a1de569f58d4c661d299c25a05696d7c8d83e15cc78c051126e335b3778",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.52
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_ELDER_1",
+      "sha256": "8ccc0343055e56b3db95a7fbe72f4928fc54972b729152bc5be273213615153a",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.96
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.8,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_NAME_1",
+      "sha256": "1dec2544950562d01b72f4cf173112e62b9beec28ee99b00ee2d397d460286ca",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 3.04
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_P3_1",
+      "sha256": "7609072eb003a2d36e237b5a79bda64728d980f26b5183a44e0c15966fe60a3d",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.32
+      },
+      "lufs": -18.2,
+      "true_peak_dbtp": -2.4,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BEOM_REPLY_BAIT_1",
+      "sha256": "00f14b602c5cd2647bde444d48c613336779c746f9f78646017555e3cb67d3f1",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 1.68
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.9,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BULGASARI_IRON_1",
+      "sha256": "2db3993ce700e06ebb3a273126833bfc39870f9945710404c39fa5786f6dbe0e",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.56
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -2.5,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BULGASARI_GOLD_1",
+      "sha256": "13a105464aff60ed4a586189148802a98c677023d0369b9875bbc5fc99aa9763",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.0
+      },
+      "lufs": -18.0,
+      "true_peak_dbtp": -4.0,
+      "pcm16": true,
+      "pass": true
+    },
+    {
+      "id": "BARK_DOHO_BULGASARI_DEATH_1",
+      "sha256": "ad3cd6dfc87fb044f12511950464013cc2752aa910c00fb837dc3d90d66fc556",
+      "format": {
+        "codec": "pcm_s16le",
+        "rate": 44100,
+        "ch": 1,
+        "dur": 2.24
+      },
+      "lufs": -18.1,
+      "true_peak_dbtp": -2.3,
+      "pcm16": true,
+      "pass": true
+    }
+  ],
+  "orphan_wavs": [
+    "NPC_SHAMAN_DONE_3",
+    "NPC_SHAMAN_PROXY_1"
+  ],
+  "excluded": [
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 6,
+      "id": "",
+      "text": "~ start",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 7,
+      "id": "BAND_PREVIEW_MERCHANT_1",
+      "text": "merchant: 던전서 건진 건 다 사 드리우.\\n값은… 뭐, 시세대로. [ID:BAND_PREVIEW_MERCHANT_1]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 8,
+      "id": "BAND_PREVIEW_DOHO_1",
+      "text": "doho: [#smug] 영감, 그 시세라는 게 매번 영감 마음이던데. [ID:BAND_PREVIEW_DOHO_1]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 9,
+      "id": "BAND_PREVIEW_ASK",
+      "text": "merchant: 도사 양반, 오늘은 뭘 보시려우? [ID:BAND_PREVIEW_ASK]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 10,
+      "id": "BAND_PREVIEW_CHOICE_TRADE",
+      "text": "- 거래한다 [ID:BAND_PREVIEW_CHOICE_TRADE] => trade",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 11,
+      "id": "BAND_PREVIEW_CHOICE_RUMOR",
+      "text": "- 요즘 소문을 묻는다 [ID:BAND_PREVIEW_CHOICE_RUMOR] => rumor",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 12,
+      "id": "BAND_PREVIEW_CHOICE_LEAVE",
+      "text": "- 그만 간다 [ID:BAND_PREVIEW_CHOICE_LEAVE] => END",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 14,
+      "id": "",
+      "text": "~ trade",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 15,
+      "id": "BAND_PREVIEW_TRADE",
+      "text": "merchant: 좌판은 다음에 펼치리다. 오늘은 구경만 하시구려. [ID:BAND_PREVIEW_TRADE]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 16,
+      "id": "",
+      "text": "=> END",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 18,
+      "id": "",
+      "text": "~ rumor",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 19,
+      "id": "BAND_PREVIEW_RUMOR_VILLAGER",
+      "text": "villager: 들녘 너머 굴에서 밤마다 개 짖는 소리가 난대요. [ID:BAND_PREVIEW_RUMOR_VILLAGER]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 20,
+      "id": "BAND_PREVIEW_RUMOR_SHAMAN",
+      "text": "shaman: 영감, 또 도사 양반한테 바가지 씌우는구먼. [ID:BAND_PREVIEW_RUMOR_SHAMAN]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 21,
+      "id": "BAND_PREVIEW_RUMOR_MERCHANT",
+      "text": "merchant: [#smile] 허허, 할매는 가던 길 가시구려. [ID:BAND_PREVIEW_RUMOR_MERCHANT]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 22,
+      "id": "BAND_PREVIEW_NARRATION",
+      "text": "못골의 밤이 깊어 간다. [ID:BAND_PREVIEW_NARRATION]",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/dev/band_preview.dialogue",
+      "line": 23,
+      "id": "",
+      "text": "=> END",
+      "reason": "dev"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 13,
+      "id": "NPC_DOKKAEBI_FIRST_0",
+      "text": "털북숭이 거한이 방망이를 어깨에 걸치고 씩 웃는다. [ID:NPC_DOKKAEBI_FIRST_0]",
+      "reason": "narration"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 49,
+      "id": "NPC_DOKKAEBI_JOB_CRAFT",
+      "text": "- 물건을 맡긴다 [#act=craft] [ID:NPC_DOKKAEBI_JOB_CRAFT]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 53,
+      "id": "NPC_DOKKAEBI_JOB_SWAP",
+      "text": "- 바꿔치기 한 판을 한다 [if not Talk.swap_used() /] [#act=swap] [ID:NPC_DOKKAEBI_JOB_SWAP]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 57,
+      "id": "NPC_DOKKAEBI_JOB_ASK",
+      "text": "- 이것저것 묻는다 [#act=ask] [ID:NPC_DOKKAEBI_JOB_ASK]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 59,
+      "id": "NPC_DOKKAEBI_JOB_LEAVE",
+      "text": "- 그만 간다 [#act=leave] [ID:NPC_DOKKAEBI_JOB_LEAVE]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 65,
+      "id": "NPC_DOKKAEBI_ASK_HINT",
+      "text": "- 홈에 옥 박는 얘기를 다시 듣는다 [#act=hint] [ID:NPC_DOKKAEBI_ASK_HINT]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 67,
+      "id": "NPC_DOKKAEBI_ASK_CHAT",
+      "text": "- 이런저런 잡담을 한다 [#act=chat] [ID:NPC_DOKKAEBI_ASK_CHAT]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/dokkaebi.dialogue",
+      "line": 69,
+      "id": "NPC_DOKKAEBI_ASK_BACK",
+      "text": "- 됐다 [ID:NPC_DOKKAEBI_ASK_BACK]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/elder.dialogue",
+      "line": 80,
+      "id": "NPC_ELDER_JOB_ACCEPT",
+      "text": "- 의뢰를 받는다 [if Talk.state_of(\"heukrang_clear\") == \"none\" /] [#act=accept] [ID:NPC_ELDER_JOB_ACCEPT]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/elder.dialogue",
+      "line": 84,
+      "id": "NPC_ELDER_JOB_REPORT",
+      "text": "- 소탕을 알린다 ({{Talk.reward_text(\"heukrang_clear\")}}) [if Talk.state_of(\"heukrang_clear\") == \"killed\" /] [#act=report] [ID:NPC_ELDER_JOB_REPORT]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/elder.dialogue",
+      "line": 90,
+      "id": "NPC_ELDER_JOB_THANKS",
+      "text": "- 사례를 받는다 ({{Talk.reward_text(\"heukrang_thanks\")}}) [if Talk.state_of(\"heukrang_thanks\") == \"killed\" /] [#act=thanks] [ID:NPC_ELDER_JOB_THANKS]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/elder.dialogue",
+      "line": 101,
+      "id": "",
+      "text": "- 홈을 뚫어 달라 [if Talk.socket_open() /] [#act=socket]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/elder.dialogue",
+      "line": 104,
+      "id": "NPC_ELDER_JOB_LEAVE",
+      "text": "- 그만 간다 [#act=leave] [ID:NPC_ELDER_JOB_LEAVE]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/eoksoe.dialogue",
+      "line": 16,
+      "id": "NPC_EOKSOE_GAMBLE_OPEN",
+      "text": "- 보따리를 본다 [#act=gamble_open] [ID:NPC_EOKSOE_GAMBLE_OPEN]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/eoksoe.dialogue",
+      "line": 19,
+      "id": "NPC_EOKSOE_LEAVE",
+      "text": "- 그만 간다 [#act=leave] [ID:NPC_EOKSOE_LEAVE]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/jumo.dialogue",
+      "line": 100,
+      "id": "NPC_JUMO_NEWS1_2",
+      "text": "주모가 조각을 받아 들고, 북쪽 산길 쪽을 한참 바라본다. [ID:NPC_JUMO_NEWS1_2]",
+      "reason": "narration"
+    },
+    {
+      "source": "data/dialogue/npc/jumo.dialogue",
+      "line": 160,
+      "id": "NPC_JUMO_JOB_RUMOR",
+      "text": "- 소문을 묻는다 [#act=rumor] [ID:NPC_JUMO_JOB_RUMOR]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/jumo.dialogue",
+      "line": 162,
+      "id": "NPC_JUMO_JOB_ACCEPT",
+      "text": "- 들녘 옛 주막 터 얘기를 묻는다 [if Talk.has_quest(\"old_tavern\") and Talk.state_of(\"old_tavern\") == \"none\" and Story.seen(\"npc/jumo/start\") > 1 /] [#act=accept] [ID:NPC_JUMO_JOB_ACCEPT]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/jumo.dialogue",
+      "line": 169,
+      "id": "NPC_JUMO_JOB_LEAVE",
+      "text": "- 그만 간다 [#act=leave] [ID:NPC_JUMO_JOB_LEAVE]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/merchant.dialogue",
+      "line": 51,
+      "id": "NPC_MERCHANT_JOB_SHOP",
+      "text": "- 거래한다 [#act=shop] [ID:NPC_MERCHANT_JOB_SHOP]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/merchant.dialogue",
+      "line": 54,
+      "id": "NPC_MERCHANT_JOB_LEAVE",
+      "text": "- 그만 간다 [#act=leave] [ID:NPC_MERCHANT_JOB_LEAVE]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 163,
+      "id": "NPC_SHAMAN_AFTER_SRC_3B",
+      "text": "할매의 눈이 목로 쪽에 한참 머문다. [ID:NPC_SHAMAN_AFTER_SRC_3B]",
+      "reason": "narration"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 219,
+      "id": "NPC_SHAMAN_JOB_IDENTIFY",
+      "text": "- 감정을 부탁한다 (미식별 {{Talk.unidentified()}}개 · 엽전 {{Talk.identify_cost()}}) [if Talk.unidentified() > 0 /] [#act=identify] [ID:NPC_SHAMAN_JOB_IDENTIFY]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 227,
+      "id": "NPC_SHAMAN_JOB_SHOP",
+      "text": "- 좌판을 본다 [if Talk.stock_ready() /] [#act=shop] [ID:NPC_SHAMAN_JOB_SHOP]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 230,
+      "id": "NPC_SHAMAN_JOB_RESPEC",
+      "text": "- 굿 한 판을 부탁한다 ({{Talk.respec_price_text()}}) [if Talk.respec_ready() /] [#act=respec] [ID:NPC_SHAMAN_JOB_RESPEC]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 232,
+      "id": "NPC_SHAMAN_JOB_LEAVE",
+      "text": "- 그만 간다 [#act=leave] [ID:NPC_SHAMAN_JOB_LEAVE]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 248,
+      "id": "NPC_SHAMAN_RESPEC_ASK_PAID",
+      "text": "shaman: 값은 엽전 {{Talk.respec_price()}}이오. 하겠소? [ID:NPC_SHAMAN_RESPEC_ASK_PAID]",
+      "speaker": "shaman",
+      "reason": "dynamic"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 252,
+      "id": "NPC_SHAMAN_RESPEC_YES",
+      "text": "- 굿을 한다 [#act=respec_yes] [ID:NPC_SHAMAN_RESPEC_YES]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 259,
+      "id": "NPC_SHAMAN_RESPEC_NO",
+      "text": "- 관둔다 [#act=respec_no] [ID:NPC_SHAMAN_RESPEC_NO]",
+      "reason": "choice"
+    },
+    {
+      "source": "data/dialogue/npc/shaman.dialogue",
+      "line": 265,
+      "id": "NPC_SHAMAN_RESPEC_SHORT",
+      "text": "shaman: 엽전이 모자라오. 굿 한 판에 엽전 {{Talk.respec_price()}}이 드오. [ID:NPC_SHAMAN_RESPEC_SHORT]",
+      "speaker": "shaman",
+      "reason": "dynamic"
+    },
+    {
+      "id": "BARK_VILLAGER_BEFORE_1",
+      "speaker": "villager",
+      "text": "어이쿠, 도사 양반이 오셨네.",
+      "source": "world/town_residents.gd",
+      "line": 17,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 17,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:BEFORE",
+      "reason": "unsupported_speaker_text_only"
+    },
+    {
+      "id": "BARK_VILLAGER_BEFORE_2",
+      "speaker": "villager",
+      "text": "옆 마을도 문 닫은 지 오래라던디…",
+      "source": "world/town_residents.gd",
+      "line": 18,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 18,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:BEFORE",
+      "reason": "unsupported_speaker_text_only"
+    },
+    {
+      "id": "BARK_VILLAGER_BEFORE_3",
+      "speaker": "villager",
+      "text": "밤엔 문 꼭 걸어요. 바람 소리도 수상하니.",
+      "source": "world/town_residents.gd",
+      "line": 19,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 19,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:BEFORE",
+      "reason": "unsupported_speaker_text_only"
+    },
+    {
+      "id": "BARK_VILLAGER_BEFORE_4",
+      "speaker": "villager",
+      "text": "장터 열리면 두부부터 사야지.",
+      "source": "world/town_residents.gd",
+      "line": 20,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 20,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:BEFORE",
+      "reason": "unsupported_speaker_text_only"
+    },
+    {
+      "id": "BARK_VILLAGER_HEUKRANG_1",
+      "speaker": "villager",
+      "text": "굴 쪽이 잠잠해졌다더니, 장터에 장돌뱅이 하나 들어왔더군. 보따리에 별게 다 들었다던데.",
+      "source": "world/town_residents.gd",
+      "line": 21,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 21,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:AFTER_HEUKRANG",
+      "reason": "unsupported_speaker_text_only"
+    },
+    {
+      "id": "BARK_VILLAGER_HEUKRANG_2",
+      "speaker": "villager",
+      "text": "이제 좀 살겠구먼.",
+      "source": "world/town_residents.gd",
+      "line": 22,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 22,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:AFTER_HEUKRANG",
+      "reason": "unsupported_speaker_text_only"
+    },
+    {
+      "id": "BARK_VILLAGER_ENDING_1",
+      "speaker": "villager",
+      "text": "하늘이 좀 맑아진 것 같우.",
+      "source": "world/town_residents.gd",
+      "line": 23,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 23,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:AFTER_ENDING",
+      "reason": "unsupported_speaker_text_only"
+    },
+    {
+      "id": "BARK_VILLAGER_ENDING_2",
+      "speaker": "villager",
+      "text": "도사 양반, 고맙수. 술 한잔은 나중에라도 꼭 내리다.",
+      "source": "world/town_residents.gd",
+      "line": 24,
+      "title": "fixed bark",
+      "branch": [],
+      "segment": 24,
+      "previous_text": "",
+      "next_text": "",
+      "kind": "extra",
+      "inventory_source": "world/town_residents.gd:AFTER_ENDING",
+      "reason": "unsupported_speaker_text_only"
+    }
+  ],
+  "previous_wav_comparison": {
+    "BARK_DOHO_ARRIVAL_1": "replaced",
+    "BARK_DOHO_BEOM_APJABI_1": "replaced",
+    "BARK_DOHO_BEOM_REPLY_BAIT_1": "replaced",
+    "BARK_DOHO_BEOM_REPLY_ELDER_1": "replaced",
+    "BARK_DOHO_BEOM_REPLY_NAME_1": "replaced",
+    "BARK_DOHO_BEOM_REPLY_P3_1": "replaced",
+    "BARK_DOHO_BONGMIL_ENTRY_1": "replaced",
+    "BARK_DOHO_BONGMIL_LAST_1": "replaced",
+    "BARK_DOHO_BULGASARI_DEATH_1": "replaced",
+    "BARK_DOHO_BULGASARI_GOLD_1": "replaced",
+    "BARK_DOHO_BULGASARI_IRON_1": "replaced",
+    "BARK_DOHO_CLEAR_CLOSE_1": "replaced",
+    "BARK_DOHO_CLEAR_DONE_1": "replaced",
+    "BARK_DOHO_GATE_LOOK_1": "replaced",
+    "BARK_DOHO_STALL_ENDING_1": "replaced",
+    "BARK_DOHO_STALL_GONE_1": "replaced",
+    "EV_ENDING_1": "replaced",
+    "EV_ENDING_2": "replaced",
+    "EV_ENDING_3": "replaced",
+    "EV_ENDING_4": "replaced",
+    "EV_GUMIHO_DEPART_1": "replaced",
+    "EV_GUMIHO_DEPART_2": "replaced",
+    "EV_GUMIHO_DEPART_3": "replaced",
+    "EV_GUMIHO_DEPART_4": "replaced",
+    "EV_GUMIHO_DEPART_5": "replaced",
+    "EV_GUMIHO_INTRO_1": "replaced",
+    "EV_GUMIHO_INTRO_2": "replaced",
+    "EV_GUMIHO_INTRO_3": "replaced",
+    "EV_GUMIHO_INTRO_4": "replaced",
+    "EV_GUMIHO_INTRO_5": "replaced",
+    "EV_GUMIHO_INTRO_6": "replaced",
+    "EV_GUMIHO_INTRO_CREDIT": "replaced",
+    "EV_GUMIHO_INTRO_MET": "replaced",
+    "EV_GUMIHO_INTRO_PAY": "replaced",
+    "EV_GUMIHO_INTRO_UNMET": "replaced",
+    "EV_SEAL_GATE_1": "replaced",
+    "EV_SEAL_GATE_2": "replaced",
+    "EV_SEAL_GATE_3": "replaced",
+    "EV_SEAL_GATE_4": "replaced",
+    "EV_SHAMAN_QUEST_1": "replaced",
+    "EV_SHAMAN_QUEST_2": "replaced",
+    "EV_SHAMAN_QUEST_3": "replaced",
+    "EV_SHAMAN_QUEST_3B": "replaced",
+    "EV_SHAMAN_QUEST_3C": "replaced",
+    "EV_SHAMAN_QUEST_4": "replaced",
+    "EV_SHAMAN_QUEST_5": "replaced",
+    "EV_SHAMAN_QUEST_6": "replaced",
+    "EV_SHAMAN_QUEST_7": "replaced",
+    "EV_SHAMAN_QUEST_8": "replaced",
+    "EV_SHAMAN_QUEST_9": "replaced",
+    "NPC_DOKKAEBI_ASK_1": "replaced",
+    "NPC_DOKKAEBI_BAG_FULL_1": "replaced",
+    "NPC_DOKKAEBI_BAG_FULL_2": "replaced",
+    "NPC_DOKKAEBI_BAG_FULL_3": "replaced",
+    "NPC_DOKKAEBI_CHAT_1": "replaced",
+    "NPC_DOKKAEBI_CHAT_2": "replaced",
+    "NPC_DOKKAEBI_CHAT_3": "replaced",
+    "NPC_DOKKAEBI_CHAT_4": "replaced",
+    "NPC_DOKKAEBI_CHAT_5": "replaced",
+    "NPC_DOKKAEBI_CHAT_6": "replaced",
+    "NPC_DOKKAEBI_CHAT_7": "replaced",
+    "NPC_DOKKAEBI_CHAT_8": "replaced",
+    "NPC_DOKKAEBI_CHAT_MOKRO": "replaced",
+    "NPC_DOKKAEBI_CRAFT_1": "replaced",
+    "NPC_DOKKAEBI_EMPTY_1": "replaced",
+    "NPC_DOKKAEBI_EMPTY_2": "replaced",
+    "NPC_DOKKAEBI_FIRST_1": "replaced",
+    "NPC_DOKKAEBI_FIRST_10": "replaced",
+    "NPC_DOKKAEBI_FIRST_11": "replaced",
+    "NPC_DOKKAEBI_FIRST_12": "replaced",
+    "NPC_DOKKAEBI_FIRST_14": "replaced",
+    "NPC_DOKKAEBI_FIRST_2": "replaced",
+    "NPC_DOKKAEBI_FIRST_3": "replaced",
+    "NPC_DOKKAEBI_FIRST_4": "replaced",
+    "NPC_DOKKAEBI_FIRST_5": "replaced",
+    "NPC_DOKKAEBI_FIRST_6": "replaced",
+    "NPC_DOKKAEBI_FIRST_7": "replaced",
+    "NPC_DOKKAEBI_FIRST_8": "replaced",
+    "NPC_DOKKAEBI_FIRST_9": "replaced",
+    "NPC_DOKKAEBI_GOLD_SHORT_1": "replaced",
+    "NPC_DOKKAEBI_GOLD_SHORT_2": "replaced",
+    "NPC_DOKKAEBI_GOLD_SHORT_3": "replaced",
+    "NPC_DOKKAEBI_GREET_1": "replaced",
+    "NPC_DOKKAEBI_GREET_2": "replaced",
+    "NPC_DOKKAEBI_GREET_3": "replaced",
+    "NPC_DOKKAEBI_GREET_4": "replaced",
+    "NPC_DOKKAEBI_GREET_5": "replaced",
+    "NPC_DOKKAEBI_GREET_6": "replaced",
+    "NPC_DOKKAEBI_HINT_AGAIN_1": "replaced",
+    "NPC_DOKKAEBI_HINT_AGAIN_2": "replaced",
+    "NPC_DOKKAEBI_HINT_AGAIN_3": "replaced",
+    "NPC_DOKKAEBI_MADE_1": "replaced",
+    "NPC_DOKKAEBI_MADE_2": "replaced",
+    "NPC_DOKKAEBI_MADE_3": "replaced",
+    "NPC_DOKKAEBI_NO_RESULT_1": "replaced",
+    "NPC_DOKKAEBI_NO_RESULT_2": "replaced",
+    "NPC_DOKKAEBI_NO_RESULT_3": "replaced",
+    "NPC_DOKKAEBI_NOTHING_1": "replaced",
+    "NPC_DOKKAEBI_NOTHING_2": "replaced",
+    "NPC_DOKKAEBI_NOTHING_3": "replaced",
+    "NPC_DOKKAEBI_SWAP_1": "replaced",
+    "NPC_DOKKAEBI_SWAP_DONE_1": "replaced",
+    "NPC_DOKKAEBI_SWAP_DONE_2": "replaced",
+    "NPC_DOKKAEBI_SWAP_NONE_1": "replaced",
+    "NPC_DOKKAEBI_SWAP_NONE_2": "replaced",
+    "NPC_ELDER_ACCEPT_1": "replaced",
+    "NPC_ELDER_ACTIVE_1": "replaced",
+    "NPC_ELDER_ACTIVE_2": "replaced",
+    "NPC_ELDER_AFTER_1": "replaced",
+    "NPC_ELDER_AFTER_2": "replaced",
+    "NPC_ELDER_AFTER_BEOM_1": "replaced",
+    "NPC_ELDER_AFTER_BEOM_2": "replaced",
+    "NPC_ELDER_AFTER_ENDING_2": "replaced",
+    "NPC_ELDER_AFTER_SOE_1": "replaced",
+    "NPC_ELDER_AFTER_SOE_2": "replaced",
+    "NPC_ELDER_CLEAR_ACTIVE_1": "replaced",
+    "NPC_ELDER_CLEAR_ACTIVE_2": "replaced",
+    "NPC_ELDER_CLEAR_DONE_1": "replaced",
+    "NPC_ELDER_CLEAR_DONE_2": "replaced",
+    "NPC_ELDER_FIRST_1": "replaced",
+    "NPC_ELDER_FIRST_2": "replaced",
+    "NPC_ELDER_GREET_1": "replaced",
+    "NPC_ELDER_GREET_2": "replaced",
+    "NPC_ELDER_GREET_3": "replaced",
+    "NPC_ELDER_GREET_4": "replaced",
+    "NPC_ELDER_HINT_G06_1": "replaced",
+    "NPC_ELDER_HINT_G06_2": "replaced",
+    "NPC_ELDER_HINT_G06_3": "replaced",
+    "NPC_ELDER_OFFER_1": "replaced",
+    "NPC_ELDER_OFFER_2": "replaced",
+    "NPC_ELDER_OFFER_3": "replaced",
+    "NPC_ELDER_OFFER_4": "replaced",
+    "NPC_ELDER_OFFER_AGAIN": "replaced",
+    "NPC_ELDER_REPORT_1": "replaced",
+    "NPC_ELDER_REPORT_2": "replaced",
+    "NPC_ELDER_REPORT_3": "replaced",
+    "NPC_ELDER_THANKS_1": "replaced",
+    "NPC_ELDER_THANKS_FULL": "replaced",
+    "NPC_ELDER_THANKS_NUDGE": "replaced",
+    "NPC_ELDER_VOUCH_1": "replaced",
+    "NPC_EOKSOE_FIRST_1": "replaced",
+    "NPC_EOKSOE_GREET_1": "replaced",
+    "NPC_EOKSOE_GREET_2": "replaced",
+    "NPC_JUMO_BUSY_1": "replaced",
+    "NPC_JUMO_BUSY_2": "replaced",
+    "NPC_JUMO_FIRST_1": "replaced",
+    "NPC_JUMO_FIRST_2": "replaced",
+    "NPC_JUMO_FIRST_3": "replaced",
+    "NPC_JUMO_GAKSI_DONE_1": "replaced",
+    "NPC_JUMO_GAKSI_DONE_2": "replaced",
+    "NPC_JUMO_GREET_1": "replaced",
+    "NPC_JUMO_GREET_2": "replaced",
+    "NPC_JUMO_GREET_3": "replaced",
+    "NPC_JUMO_MAIN_1": "replaced",
+    "NPC_JUMO_MAIN_10": "replaced",
+    "NPC_JUMO_MAIN_2": "replaced",
+    "NPC_JUMO_MAIN_3": "replaced",
+    "NPC_JUMO_MAIN_3B": "replaced",
+    "NPC_JUMO_MAIN_3C": "replaced",
+    "NPC_JUMO_MAIN_4": "replaced",
+    "NPC_JUMO_MAIN_4B": "replaced",
+    "NPC_JUMO_MAIN_5": "replaced",
+    "NPC_JUMO_MAIN_6": "replaced",
+    "NPC_JUMO_MAIN_7": "replaced",
+    "NPC_JUMO_MAIN_8": "replaced",
+    "NPC_JUMO_MAIN_9": "replaced",
+    "NPC_JUMO_NEWS1_1": "replaced",
+    "NPC_JUMO_NEWS1_3": "replaced",
+    "NPC_JUMO_NEWS1_4": "replaced",
+    "NPC_JUMO_NEWS1_BEOM": "replaced",
+    "NPC_JUMO_NEWS1_END": "replaced",
+    "NPC_JUMO_NEWS1_HEUK": "replaced",
+    "NPC_JUMO_NEWS1_LEFT_BEOM_SOE": "replaced",
+    "NPC_JUMO_NEWS1_LEFT_HEUK_BEOM": "replaced",
+    "NPC_JUMO_NEWS1_LEFT_HEUK_SOE": "replaced",
+    "NPC_JUMO_NEWS1_SOE": "replaced",
+    "NPC_JUMO_NEWS2_1": "replaced",
+    "NPC_JUMO_NEWS2_3": "replaced",
+    "NPC_JUMO_NEWS2_4": "replaced",
+    "NPC_JUMO_NEWS2_5": "replaced",
+    "NPC_JUMO_NEWS2_LAST_BEOM": "replaced",
+    "NPC_JUMO_NEWS2_LAST_HEUK": "replaced",
+    "NPC_JUMO_NEWS2_LAST_SOE": "replaced",
+    "NPC_JUMO_OFFER_1": "replaced",
+    "NPC_JUMO_OFFER_2": "replaced",
+    "NPC_JUMO_OFFER_3": "replaced",
+    "NPC_JUMO_RUMOR_1": "replaced",
+    "NPC_JUMO_RUMOR_2": "replaced",
+    "NPC_JUMO_RUMOR_3": "replaced",
+    "NPC_JUMO_RUMOR_4": "replaced",
+    "NPC_JUMO_RUMOR_5": "replaced",
+    "NPC_JUMO_RUMOR_6": "replaced",
+    "NPC_JUMO_RUMOR_7": "replaced",
+    "NPC_JUMO_RUMOR_8": "replaced",
+    "NPC_MERCHANT_ACTIVE_1": "replaced",
+    "NPC_MERCHANT_ACTIVE_2": "replaced",
+    "NPC_MERCHANT_AFTER_1": "replaced",
+    "NPC_MERCHANT_AFTER_2": "replaced",
+    "NPC_MERCHANT_AFTER_BEOM_1": "replaced",
+    "NPC_MERCHANT_AFTER_BEOM_2": "replaced",
+    "NPC_MERCHANT_AFTER_SOE_1": "replaced",
+    "NPC_MERCHANT_AFTER_SOE_2": "replaced",
+    "NPC_MERCHANT_FIRST_1": "replaced",
+    "NPC_MERCHANT_FIRST_2": "replaced",
+    "NPC_MERCHANT_FIRST_3": "replaced",
+    "NPC_MERCHANT_GREET_1": "replaced",
+    "NPC_MERCHANT_GREET_2": "replaced",
+    "NPC_MERCHANT_GREET_3": "replaced",
+    "NPC_MERCHANT_GREET_4": "replaced",
+    "NPC_MERCHANT_GREET_5": "replaced",
+    "NPC_MERCHANT_VOUCH_1": "replaced",
+    "NPC_SHAMAN_AFTER_ALL_1": "replaced",
+    "NPC_SHAMAN_AFTER_ALL_2": "replaced",
+    "NPC_SHAMAN_AFTER_ALL_3": "replaced",
+    "NPC_SHAMAN_AFTER_HAND_1": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_BEOM_1": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_BEOM_2": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_BEOM_3": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_HEUK_1": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_HEUK_2": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_HEUK_3": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_SOE_1": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_SOE_2": "replaced",
+    "NPC_SHAMAN_AFTER_LAST_SOE_3": "replaced",
+    "NPC_SHAMAN_AFTER_LORE_1": "replaced",
+    "NPC_SHAMAN_AFTER_LORE_2": "replaced",
+    "NPC_SHAMAN_AFTER_LORE_4": "replaced",
+    "NPC_SHAMAN_AFTER_SRC_1": "replaced",
+    "NPC_SHAMAN_AFTER_SRC_2": "replaced",
+    "NPC_SHAMAN_AFTER_SRC_3": "replaced",
+    "NPC_SHAMAN_DONE_1": "replaced",
+    "NPC_SHAMAN_DONE_2": "replaced",
+    "NPC_SHAMAN_DONE_3": "unchanged",
+    "NPC_SHAMAN_ENDING_1": "replaced",
+    "NPC_SHAMAN_GREET_1": "replaced",
+    "NPC_SHAMAN_GREET_2": "replaced",
+    "NPC_SHAMAN_GREET_3": "replaced",
+    "NPC_SHAMAN_GREET_4": "replaced",
+    "NPC_SHAMAN_HEAL_INTRO_1": "replaced",
+    "NPC_SHAMAN_IDENTIFY_1": "replaced",
+    "NPC_SHAMAN_IDENTIFY_2": "replaced",
+    "NPC_SHAMAN_JUMO_AWAY_1": "replaced",
+    "NPC_SHAMAN_JUMO_GONE_1": "replaced",
+    "NPC_SHAMAN_NUDGE_1": "replaced",
+    "NPC_SHAMAN_OFFER_1": "replaced",
+    "NPC_SHAMAN_OFFER_2": "replaced",
+    "NPC_SHAMAN_OFFER_3": "replaced",
+    "NPC_SHAMAN_OFFER_3B": "replaced",
+    "NPC_SHAMAN_OFFER_3C": "replaced",
+    "NPC_SHAMAN_OFFER_4": "replaced",
+    "NPC_SHAMAN_OFFER_5": "replaced",
+    "NPC_SHAMAN_OFFER_6": "replaced",
+    "NPC_SHAMAN_OFFER_7": "replaced",
+    "NPC_SHAMAN_OFFER_8": "replaced",
+    "NPC_SHAMAN_OFFER_9": "replaced",
+    "NPC_SHAMAN_PROGRESS_1": "replaced",
+    "NPC_SHAMAN_PROGRESS_2": "replaced",
+    "NPC_SHAMAN_PROXY_1": "unchanged",
+    "NPC_SHAMAN_REPEAT_1": "replaced",
+    "NPC_SHAMAN_REPEAT_2": "replaced",
+    "NPC_SHAMAN_REPEAT_3": "replaced",
+    "NPC_SHAMAN_REPEAT_4": "replaced",
+    "NPC_SHAMAN_REPORT_1": "replaced",
+    "NPC_SHAMAN_REPORT_2": "replaced",
+    "NPC_SHAMAN_REPORT_3": "replaced",
+    "NPC_SHAMAN_RESPEC_ASK_1": "replaced",
+    "NPC_SHAMAN_RESPEC_ASK_FREE": "replaced",
+    "NPC_SHAMAN_RESPEC_ASK_VERSION": "replaced",
+    "NPC_SHAMAN_RESPEC_CANCEL": "replaced",
+    "NPC_SHAMAN_RESPEC_DONE": "replaced",
+    "NPC_SHAMAN_SMELL_1": "replaced",
+    "NPC_SHAMAN_SMELL_2": "replaced",
+    "NPC_SHAMAN_SMELL_3": "replaced",
+    "NPC_SHAMAN_TAVERN_1": "replaced",
+    "NPC_SHAMAN_TAVERN_2": "replaced",
+    "NPC_SHAMAN_WARN_1": "replaced",
+    "NPC_SHAMAN_WARN_2": "replaced"
+  },
+  "checks": [
+    "source snapshot",
+    "ID coverage",
+    "request/raw/staged/game SHA",
+    "PCM16 mono 44100",
+    "-18 LUFS +/-1.1",
+    "TP <= -1.5",
+    "orphan bytes preserved"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BEOM_REPLY_ELDER_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "8eacfedea523f68d2a45787d892f0f0799d915ae1c60c783d6eee251007e3eed",
+  "request": {
+    "text": "촌장 어르신이 여기까지 내려오셨을 리가.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BEOM_REPLY_ELDER_1_8eacfedea523f68d2a45787d892f0f0799d915ae1c60c783d6eee251007e3eed.mp3",
+  "raw_sha256": "3b8de5f266607f0fc252e32424be32d4e1db09d313790a5b47b6fc499aae331a",
+  "bytes": 48526,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "http_status": 200,
+  "response_request_id": "XWg8qPAHGWEU84TDCXnI",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:53Z"
+}

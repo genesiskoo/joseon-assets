@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_NUDGE_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "37e4b0abb93363dfb784cf8b0e13b4fbb9e614e9a9b29dac271bd0a7a4a0f40d",
+  "request": {
+    "text": "주모는 만나 보았소? 길은 그 사람한테 물으시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_NUDGE_1_37e4b0abb93363dfb784cf8b0e13b4fbb9e614e9a9b29dac271bd0a7a4a0f40d.mp3",
+  "raw_sha256": "942ce9e0d160e1d5ea3599a0b998874c8ba89d30f9591382536d88a51f25711a",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "wxCNwFkrrHUYgnCV4rhr",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:13Z"
+}

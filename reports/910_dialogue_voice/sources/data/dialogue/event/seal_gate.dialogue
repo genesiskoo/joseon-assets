@@ -1,0 +1,16 @@
+# 봉밀굴 문 여는 순간 — CP-04 #1~#4 (D-097 ⑧, #549).
+# 코드 훅 = Stairs._touch_seal_gate (봉인 조각이 다 모인 첫 닿음). 밟는 트리거가 아니다.
+# 부르는 이름 = Story(러너) · Cut(컷 명령) · Seal(Stairs.SealHook — open_from_cut 가 네 줄 뒤에 문을 연다).
+# 할매 몸은 줄이 시작되기 전에 문 한 걸음 뒤(마을 마커 seal_behind)에 서고, 띠가 닫히면 정자 자리로 돌아간다.
+# 대사 = DIALOGUE_CRITICAL_PATH CP-04 표 그대로. 음성 없음(#613). 건너뛰기(Esc 길게) = 문 상태·조각 소모가 같다.
+
+~ start
+$> Cut.begin()
+$> Cut.face("shaman", "doho")
+shaman: 이 문의 봉인은 옛 도사들이 함께 새긴 것이오. [ID:EV_SEAL_GATE_1]
+doho: 꽤 묵은 봉인이네. [ID:EV_SEAL_GATE_2]
+shaman: 안에 갇힌 것이 풀려나오면, 못골은 끝이오. [ID:EV_SEAL_GATE_3]
+doho: 그러니 안에서 끝내야지. [ID:EV_SEAL_GATE_4]
+$> Seal.open_from_cut()
+$> Cut.end()
+=> END

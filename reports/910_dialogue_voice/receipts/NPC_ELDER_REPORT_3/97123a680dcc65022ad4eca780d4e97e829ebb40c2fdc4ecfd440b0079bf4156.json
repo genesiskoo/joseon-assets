@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_REPORT_3",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "97123a680dcc65022ad4eca780d4e97e829ebb40c2fdc4ecfd440b0079bf4156",
+  "request": {
+    "text": "가져가시오. 굴 어귀 값이오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "글은 내가 좀 읽지.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_REPORT_3_97123a680dcc65022ad4eca780d4e97e829ebb40c2fdc4ecfd440b0079bf4156.mp3",
+  "raw_sha256": "430a092da1a669036dd4714a9e8ae70a2b18a953b0e63f9b330fad1b52cb94c2",
+  "bytes": 44764,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.72
+  },
+  "http_status": 200,
+  "response_request_id": "md9gp69EnLwakPNDost4",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:54Z"
+}

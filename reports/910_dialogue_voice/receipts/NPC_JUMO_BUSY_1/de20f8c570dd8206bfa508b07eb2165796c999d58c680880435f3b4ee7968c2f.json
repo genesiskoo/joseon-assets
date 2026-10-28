@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_BUSY_1",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "de20f8c570dd8206bfa508b07eb2165796c999d58c680880435f3b4ee7968c2f",
+  "request": {
+    "text": "요샌 내가 자리를 자주 비운다우. 장 볼 데가 멀어서.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_BUSY_1_de20f8c570dd8206bfa508b07eb2165796c999d58c680880435f3b4ee7968c2f.mp3",
+  "raw_sha256": "9e2596053e597d1c6ad09dcb32e10132fd515d0c40b2015a3061a9267fb4dc67",
+  "bytes": 74021,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.56
+  },
+  "http_status": 200,
+  "response_request_id": "P1ArGiRN33YAiIh3xX0V",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:40Z"
+}

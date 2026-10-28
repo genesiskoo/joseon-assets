@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BULGASARI_DEATH_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "9c2620e4b6310ce154ab4516502c2f3110633a0bbde751e0a84ff97bd7b98b1e",
+  "request": {
+    "text": "미안하다. 배고팠지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BULGASARI_DEATH_1_9c2620e4b6310ce154ab4516502c2f3110633a0bbde751e0a84ff97bd7b98b1e.mp3",
+  "raw_sha256": "968ff1adb4243cc210d28eac5daddcb402e22759e01e8ac4968fc358d013151e",
+  "bytes": 36823,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.24
+  },
+  "http_status": 200,
+  "response_request_id": "6Yz1Ddznso50Yi3nfrDA",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:56Z"
+}

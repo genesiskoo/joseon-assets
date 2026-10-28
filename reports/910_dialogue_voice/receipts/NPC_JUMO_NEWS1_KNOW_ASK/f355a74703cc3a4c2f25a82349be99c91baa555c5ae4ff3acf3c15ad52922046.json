@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_KNOW_ASK",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "f355a74703cc3a4c2f25a82349be99c91baa555c5ae4ff3acf3c15ad52922046",
+  "request": {
+    "text": "그건 어떻게 알았나? 난 말한 적 없는데.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "목로엔 소문이 모이는 법이라우.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_NEWS1_KNOW_ASK_f355a74703cc3a4c2f25a82349be99c91baa555c5ae4ff3acf3c15ad52922046.mp3",
+  "raw_sha256": "6c5acc22104568303111ffeef3eb4d548aa1692b9b4760210ce5fda54f90a08e",
+  "bytes": 56049,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.44
+  },
+  "http_status": 200,
+  "response_request_id": "EXzbOCgoqgrsGzWhuVUS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:36Z"
+}

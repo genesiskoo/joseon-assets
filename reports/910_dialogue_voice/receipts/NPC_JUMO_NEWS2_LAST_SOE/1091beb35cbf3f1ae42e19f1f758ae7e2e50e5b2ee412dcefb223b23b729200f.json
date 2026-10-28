@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS2_LAST_SOE",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "1091beb35cbf3f1ae42e19f1f758ae7e2e50e5b2ee412dcefb223b23b729200f",
+  "request": {
+    "text": "이제 정령재 쇠부리 폐광 하나 남았수. 셋 다 모이거든 북쪽 돌문에 대 보시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS2_LAST_SOE_1091beb35cbf3f1ae42e19f1f758ae7e2e50e5b2ee412dcefb223b23b729200f.mp3",
+  "raw_sha256": "363e27f6f4098e8e13061c37ad58549f0136b3ab0e3804d55c9a98d5fe6ace2a",
+  "bytes": 109966,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.8
+  },
+  "http_status": 200,
+  "response_request_id": "iJSiRW6t6hejBUI7iCyb",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:26Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_JUMO_GONE_SLIP",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "de4477bde76928835e842e7a72972237b38f476696f87c90af2bb3db38bf90b1",
+  "request": {
+    "text": "요새 그 사람 말소리가 이상했소. 사람 흉내를 내다 만 것처럼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_JUMO_GONE_SLIP_de4477bde76928835e842e7a72972237b38f476696f87c90af2bb3db38bf90b1.mp3",
+  "raw_sha256": "695c81f4c6233af2553142c5b0d14bd22c9c3683cc609cc4091a2e43584728b4",
+  "bytes": 95755,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.92
+  },
+  "http_status": 200,
+  "response_request_id": "asCdgcf5AH5CKwaMtA34",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:39Z"
+}

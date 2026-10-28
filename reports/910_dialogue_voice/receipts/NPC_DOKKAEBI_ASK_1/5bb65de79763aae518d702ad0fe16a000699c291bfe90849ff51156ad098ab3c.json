@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_ASK_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "5bb65de79763aae518d702ad0fe16a000699c291bfe90849ff51156ad098ab3c",
+  "request": {
+    "text": "뭐가 궁금해? 말은 공짜야.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_ASK_1_5bb65de79763aae518d702ad0fe16a000699c291bfe90849ff51156ad098ab3c.mp3",
+  "raw_sha256": "10775a6eb1bea13b92f12c4be76e7047c9a962921215b192ca8b79ff437ad87c",
+  "bytes": 41838,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.56
+  },
+  "http_status": 200,
+  "response_request_id": "UlrMe5FsF4wCMMBJLUHI",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:21Z"
+}

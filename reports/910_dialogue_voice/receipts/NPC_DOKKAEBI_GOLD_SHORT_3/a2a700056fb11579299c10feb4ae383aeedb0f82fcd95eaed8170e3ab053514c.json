@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GOLD_SHORT_3",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "a2a700056fb11579299c10feb4ae383aeedb0f82fcd95eaed8170e3ab053514c",
+  "request": {
+    "text": "주머니가 가볍네. 값은 값이야. 채워서 다시 와.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GOLD_SHORT_3_a2a700056fb11579299c10feb4ae383aeedb0f82fcd95eaed8170e3ab053514c.mp3",
+  "raw_sha256": "5984bea9adecfb9fb5697fd3881b3a32d71117186a98a2a2913904a34b3445c7",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "3EjOkmk1teCo5V4PDozf",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:37Z"
+}

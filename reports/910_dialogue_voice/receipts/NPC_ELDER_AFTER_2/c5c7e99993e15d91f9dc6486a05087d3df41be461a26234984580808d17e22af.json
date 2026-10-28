@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_AFTER_2",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "c5c7e99993e15d91f9dc6486a05087d3df41be461a26234984580808d17e22af",
+  "request": {
+    "text": "고맙소. 구미호는 아직 북쪽 돌문 너머에 있소. 잊지 마시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_AFTER_2_c5c7e99993e15d91f9dc6486a05087d3df41be461a26234984580808d17e22af.mp3",
+  "raw_sha256": "a72353ee16551ff6abade7785df317e775bb60a360038e970eceee3fd9c6ae13",
+  "bytes": 88232,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.44
+  },
+  "http_status": 200,
+  "response_request_id": "z7Gz7o1IzoSLr7gr0VnE",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:57Z"
+}

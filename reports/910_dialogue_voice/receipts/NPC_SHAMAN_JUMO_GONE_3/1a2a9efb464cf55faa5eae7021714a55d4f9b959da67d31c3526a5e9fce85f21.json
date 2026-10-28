@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_JUMO_GONE_3",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "1a2a9efb464cf55faa5eae7021714a55d4f9b959da67d31c3526a5e9fce85f21",
+  "request": {
+    "text": "국물 맛은 나도 아직 기억나는데.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그런데 장터 사람들이 벌써 그 얼굴을 떠올리지 못하오. 홀림이 걷히는 거요.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_JUMO_GONE_3_1a2a9efb464cf55faa5eae7021714a55d4f9b959da67d31c3526a5e9fce85f21.mp3",
+  "raw_sha256": "b5bbad17f41a5fb765f08f99a726d0eed49052b503ee94c55528ea696b9e3ede",
+  "bytes": 44764,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.72
+  },
+  "http_status": 200,
+  "response_request_id": "K9W1mVYlVsrOFLuTLsQO",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:40Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_3",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "43bd8252441f0e264a1f3ac0125d34e103f53d225100ce9e9d8c86f58be0dbe5",
+  "request": {
+    "text": "마을 북쪽 산길 끝에 봉밀굴 문이 있수. 이 병의 뿌리가 그 안에 있다우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "닫힌 장터에 국솥만 끓고 있네. 무슨 일인데?",
+    "next_text": "그 돌문 열쇠가 세 쪽으로 흩어졌수. 굴 주인 셋이 하나씩 쥐고 있다우.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_MAIN_3_43bd8252441f0e264a1f3ac0125d34e103f53d225100ce9e9d8c86f58be0dbe5.mp3",
+  "raw_sha256": "947543e9eb0fa19cce2bb96cf8c2cd16401ee166bb92be638e48feaddb515c43",
+  "bytes": 137969,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.56
+  },
+  "http_status": 200,
+  "response_request_id": "GszXetGMTkg4Yb2xa6vr",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:13Z"
+}

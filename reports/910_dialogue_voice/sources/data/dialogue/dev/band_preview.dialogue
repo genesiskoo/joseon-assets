@@ -1,0 +1,23 @@
+# 대화 띠 미리보기 (#238) — dev 키 L · e2e dialogue_band 가 돌린다. 게임 흐름에서는 부르지 않는다 (마을 대화 대본 = #239 npc/).
+# 등장 = 도호(왼쪽) · 김 영감(오른쪽). 줄마다 띠의 한 가지를 보인다: 말하는 쪽 바뀜 · 선택지 · 이름표만 화자(마을 사람) ·
+# 오른쪽 사람 바뀜(무당 할매가 끼어듦) · 내레이션(이름표 없음). 첫 줄·선택지 줄 = 시안 mock_A1_talk · mock_A1_choice 와 같은 글.
+# 표정 태그(#662): 도호 둘째 줄 smug · 김 영감 마지막 줄 smile — 태그가 있어도 기존 BCA를 계속 쓴다.
+
+~ start
+merchant: 던전서 건진 건 다 사 드리우.\n값은… 뭐, 시세대로. [ID:BAND_PREVIEW_MERCHANT_1]
+doho: [#smug] 영감, 그 시세라는 게 매번 영감 마음이던데. [ID:BAND_PREVIEW_DOHO_1]
+merchant: 도사 양반, 오늘은 뭘 보시려우? [ID:BAND_PREVIEW_ASK]
+- 거래한다 [ID:BAND_PREVIEW_CHOICE_TRADE] => trade
+- 요즘 소문을 묻는다 [ID:BAND_PREVIEW_CHOICE_RUMOR] => rumor
+- 그만 간다 [ID:BAND_PREVIEW_CHOICE_LEAVE] => END
+
+~ trade
+merchant: 좌판은 다음에 펼치리다. 오늘은 구경만 하시구려. [ID:BAND_PREVIEW_TRADE]
+=> END
+
+~ rumor
+villager: 들녘 너머 굴에서 밤마다 개 짖는 소리가 난대요. [ID:BAND_PREVIEW_RUMOR_VILLAGER]
+shaman: 영감, 또 도사 양반한테 바가지 씌우는구먼. [ID:BAND_PREVIEW_RUMOR_SHAMAN]
+merchant: [#smile] 허허, 할매는 가던 길 가시구려. [ID:BAND_PREVIEW_RUMOR_MERCHANT]
+못골의 밤이 깊어 간다. [ID:BAND_PREVIEW_NARRATION]
+=> END

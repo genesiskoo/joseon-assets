@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.72
+  },
+  "lufs": -18.4,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 6.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.4,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "e5fd1ab31dd6205712f55cb070b641b827b8a1e5abbe395cd12700120032f5dc",
+  "id": "NPC_EOKSOE_GREET_2",
+  "speaker": "eoksoe",
+  "request_sha256": "be0906c7920db76b780eca1328944084c11b00c18fa43a75907650d0a1a04022",
+  "raw_sha256": "7d2a4aab1f6833d62bb7bb4a018f06c507d73b025e11551b5b2bdc7c400e6f97",
+  "file": "assets/audio/voice/NPC_EOKSOE_GREET_2.wav",
+  "previous_sha256": "c4a49611efd822cdd058d3de341fd194d1b274b9b6178ec24a049769b5a905eb"
+}

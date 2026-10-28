@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_OFFER_6",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "198324dea3df6581b856176c78bbf1f09c41d9fc0f0c9b1bfdd47996a309f4d0",
+  "request": {
+    "text": "도사 양반밖에 없소. 길은 장터 어귀의 주모가 아오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "또 봉인 타령이네.",
+    "next_text": "술값은—",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_OFFER_6_198324dea3df6581b856176c78bbf1f09c41d9fc0f0c9b1bfdd47996a309f4d0.mp3",
+  "raw_sha256": "b961fadbe0a3e71cb3cb0d910fe2b9671ef915767935c60d70c44667b7823547",
+  "bytes": 95755,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.92
+  },
+  "http_status": 200,
+  "response_request_id": "QQwPJuQKaVdabJK5Y3tL",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:09Z"
+}

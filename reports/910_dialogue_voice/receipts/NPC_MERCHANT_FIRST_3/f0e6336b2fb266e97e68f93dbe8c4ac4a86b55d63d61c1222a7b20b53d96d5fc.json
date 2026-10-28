@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_FIRST_3",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "f0e6336b2fb266e97e68f93dbe8c4ac4a86b55d63d61c1222a7b20b53d96d5fc",
+  "request": {
+    "text": "허허, 벌써부터?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "되게 해 드리지. 대신 값은 좀 깎고.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_FIRST_3_f0e6336b2fb266e97e68f93dbe8c4ac4a86b55d63d61c1222a7b20b53d96d5fc.mp3",
+  "raw_sha256": "cb2fe75c914665da87bda9042f6bb731dee88dce3605c51768c3b5e15d1228b2",
+  "bytes": 34315,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.08
+  },
+  "http_status": 200,
+  "response_request_id": "YcJ4VhxymliMv4ssdGtJ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:49Z"
+}

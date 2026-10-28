@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_HINT_AGAIN_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "66cb1f9b2de99c45a8b755c890a7e67603ed402192c8a924207e689355ef9c49",
+  "request": {
+    "text": "오방옥은 장비 홈에 박는 거야. 빛깔마다 힘이 다르니 쓰임부터 읽어 봐.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "아무거나 박았다간 돈값 못 하겠구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_HINT_AGAIN_1_66cb1f9b2de99c45a8b755c890a7e67603ed402192c8a924207e689355ef9c49.mp3",
+  "raw_sha256": "58ce2dd1f87f8a4e61917af39ae04eab29c2bb7bb793ed4a6d3920b898559e0a",
+  "bytes": 86978,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.36
+  },
+  "http_status": 200,
+  "response_request_id": "oWnqi1ab75Gh2gtuyVKZ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:23Z"
+}

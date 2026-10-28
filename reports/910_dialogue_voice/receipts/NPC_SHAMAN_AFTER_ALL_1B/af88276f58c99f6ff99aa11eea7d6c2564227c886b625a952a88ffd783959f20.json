@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_ALL_1B",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "af88276f58c99f6ff99aa11eea7d6c2564227c886b625a952a88ffd783959f20",
+  "request": {
+    "text": "수하가 다시 자리를 채우기 전에 가야 하오. 지금이 아니면 틈이 없소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "수하 셋이 다 쓰러졌소. 이제 구미호 혼자요. 문을 열 때가 왔소.",
+    "next_text": "드디어 끝이 보이네.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_ALL_1B_af88276f58c99f6ff99aa11eea7d6c2564227c886b625a952a88ffd783959f20.mp3",
+  "raw_sha256": "f3b5b6131d8f9b5728b74c1c5ecfcc23edeb16aea80a7bc95f7a2e4f16d0a63b",
+  "bytes": 102025,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.32
+  },
+  "http_status": 200,
+  "response_request_id": "abu2cR8RuR9irP4oysHT",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:23Z"
+}

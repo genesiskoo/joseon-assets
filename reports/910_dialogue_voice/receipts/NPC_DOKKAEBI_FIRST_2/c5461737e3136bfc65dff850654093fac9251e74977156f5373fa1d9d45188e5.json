@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "c5461737e3136bfc65dff850654093fac9251e74977156f5373fa1d9d45188e5",
+  "request": {
+    "text": "도깨비도 이사를 다니는 줄은 몰랐구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지.",
+    "next_text": "장터 뒤 대장간 터에 눌러앉았어. 물건 바꿀 일이 있으면 맡겨.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_DOKKAEBI_FIRST_2_c5461737e3136bfc65dff850654093fac9251e74977156f5373fa1d9d45188e5.mp3",
+  "raw_sha256": "e7a59483e78e2f6dc4392d0fb93ab24c3bcfd83863ea03fba9eaf96e62411341",
+  "bytes": 52287,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.2
+  },
+  "http_status": 200,
+  "response_request_id": "uLI0WJVzvPUImB4xaQYQ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:09Z"
+}

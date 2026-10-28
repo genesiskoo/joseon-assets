@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_RUMOR_7",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "eee441d1a55d3bfe7a6866a028a1922e14d759b012bba8a0e898d04fed0f3bb0",
+  "request": {
+    "text": "범굴에선 누가 이름을 불러도 대답 마시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_RUMOR_7_eee441d1a55d3bfe7a6866a028a1922e14d759b012bba8a0e898d04fed0f3bb0.mp3",
+  "raw_sha256": "abc9fe82c63fc13ec979f53f1e320f4b32c8cc46f315c6446baf0476ecc65626",
+  "bytes": 58557,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.6
+  },
+  "http_status": 200,
+  "response_request_id": "MsfqDaFZnSbcoimiPBsw",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:46Z"
+}

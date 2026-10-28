@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_SWAP_DONE_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "a7810edef56c2b1a83fdf1934e60923950f741f79c6bfdde5a8cc488c3bb033e",
+  "request": {
+    "text": "거래 성사. 옷은 잘 입고, 준 장비는 내가 잘 쓸게.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_SWAP_DONE_2_a7810edef56c2b1a83fdf1934e60923950f741f79c6bfdde5a8cc488c3bb033e.mp3",
+  "raw_sha256": "a57fb3bcafed5a9e2cc5606b88e1048b725aee2fb1591b62dbc129bf05ccb03f",
+  "bytes": 76529,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.72
+  },
+  "http_status": 200,
+  "response_request_id": "vt32xzaKx0nNLxAeFdpV",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:41Z"
+}

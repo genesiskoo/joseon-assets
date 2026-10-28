@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.8
+  },
+  "lufs": -18.3,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 6.699999999999999,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.3,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "f5e00f6f642d091dfb3e9194e1ad458720c2c523e1c3b2f2cc69a9d72576db54",
+  "id": "NPC_ELDER_GREET_1",
+  "speaker": "elder",
+  "request_sha256": "d3120ec660c53c24c3e1445f864d7e26794d646bcae86defb08f3097e0560a17",
+  "raw_sha256": "e28cf191c48887b429e52fd57d4b287b55fc256f99299f743af4eb6ea2e556d0",
+  "file": "assets/audio/voice/NPC_ELDER_GREET_1.wav",
+  "previous_sha256": "e4d913af429ac581aa17799ff4a5f6b4bb85f221bc3e2392bc7bb4bf14e76c3f"
+}

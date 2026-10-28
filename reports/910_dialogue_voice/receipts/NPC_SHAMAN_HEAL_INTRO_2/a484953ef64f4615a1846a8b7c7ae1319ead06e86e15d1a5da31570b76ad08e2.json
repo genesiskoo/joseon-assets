@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_HEAL_INTRO_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "a484953ef64f4615a1846a8b7c7ae1319ead06e86e15d1a5da31570b76ad08e2",
+  "request": {
+    "text": "몸이 축나거든 언제든 오시오. 말만 걸면 채워 드리리다. 값은 안 받소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_HEAL_INTRO_2_a484953ef64f4615a1846a8b7c7ae1319ead06e86e15d1a5da31570b76ad08e2.mp3",
+  "raw_sha256": "e63050466fc7f2b2ad64f9efcbcfd9aef25705c8474922056a24eb7a76c3e6e5",
+  "bytes": 103278,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.4
+  },
+  "http_status": 200,
+  "response_request_id": "u2oUyS5dh53nMYE5m37x",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:11Z"
+}

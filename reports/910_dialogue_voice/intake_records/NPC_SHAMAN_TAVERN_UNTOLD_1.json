@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.28
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "f186a9da79fe68e09e4fa5f616d2dba49e5226f592b9aab07acce24db848e07c",
+  "id": "NPC_SHAMAN_TAVERN_UNTOLD_1",
+  "speaker": "shaman",
+  "request_sha256": "a0d7479ce5bf38b30cffce6e3a493edefd2d41c196332dcf8696e0c626014021",
+  "raw_sha256": "0b0c3ed2f43a5a696e4cefe5d5a9cfcf33d2fa85d313b1c8adc1304dee65cb33",
+  "file": "assets/audio/voice/NPC_SHAMAN_TAVERN_UNTOLD_1.wav",
+  "previous_sha256": null
+}

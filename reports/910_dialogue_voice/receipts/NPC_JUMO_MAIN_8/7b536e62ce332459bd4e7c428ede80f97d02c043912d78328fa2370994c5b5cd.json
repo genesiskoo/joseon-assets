@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_8",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "7b536e62ce332459bd4e7c428ede80f97d02c043912d78328fa2370994c5b5cd",
+  "request": {
+    "text": "천 년 묵은 여우가 갇혀 있다우. 그 여우 얘긴 입에 올리기도 싫수. 국물 식겠수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "문 안엔 뭐가 있는데?",
+    "next_text": "국물값치곤 일이 크네. 외상으로 달아 두시오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_MAIN_8_7b536e62ce332459bd4e7c428ede80f97d02c043912d78328fa2370994c5b5cd.mp3",
+  "raw_sha256": "69040508d635627d64845203fa27456fee90aa96b147f26524454f3c53784e77",
+  "bytes": 150926,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 9.36
+  },
+  "http_status": 200,
+  "response_request_id": "mPFBVPV38OJfeHv6XDfb",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:19Z"
+}

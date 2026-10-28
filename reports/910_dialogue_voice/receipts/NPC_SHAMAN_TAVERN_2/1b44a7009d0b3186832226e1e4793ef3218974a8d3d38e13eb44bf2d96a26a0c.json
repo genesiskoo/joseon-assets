@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_TAVERN_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "1b44a7009d0b3186832226e1e4793ef3218974a8d3d38e13eb44bf2d96a26a0c",
+  "request": {
+    "text": "오래 시끄러운 자리였지. 잘했소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_TAVERN_2_1b44a7009d0b3186832226e1e4793ef3218974a8d3d38e13eb44bf2d96a26a0c.mp3",
+  "raw_sha256": "f422527b6c8ad5c8916a7c0e09ce6a706003ef28418b1064bfba0c2cbef5716d",
+  "bytes": 54795,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.36
+  },
+  "http_status": 200,
+  "response_request_id": "7dlHmflQVyQZtbHjSWXC",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:18Z"
+}

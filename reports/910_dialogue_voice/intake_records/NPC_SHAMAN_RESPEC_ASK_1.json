@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.16
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -3.6,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.6
+  },
+  "sha256": "8812913ad5d65ec3845fc64c65959c0078dc80bc084478e983796755a5e59f63",
+  "id": "NPC_SHAMAN_RESPEC_ASK_1",
+  "speaker": "shaman",
+  "request_sha256": "a4c985774627cbdbdfaff2c12fcbcc94bb723cbed28505c8a966c220a43e6c03",
+  "raw_sha256": "bec9ed63b404557b744f7b2f70f7a108cb2342a48f64ac97fe04113c241b8917",
+  "file": "assets/audio/voice/NPC_SHAMAN_RESPEC_ASK_1.wav",
+  "previous_sha256": "c3d192069d685f8059e6a820e7c3948cf01fa460e9897f7a0b6ec9693e4be6d7"
+}

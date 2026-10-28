@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_5",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "9b2e11933af9aaa119c38af52271cd36ac312d476e7fa3b0f32caa511d4d078d",
+  "request": {
+    "text": "남는 물건도 목록부터 보고 팔아. 내 손을 거치면 쓸 물건이 될 수도 있거든.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_5_9b2e11933af9aaa119c38af52271cd36ac312d476e7fa3b0f32caa511d4d078d.mp3",
+  "raw_sha256": "8fadca857b42c680a6771b4920177c9ae1b7468dd2c9be2bea926e1415496268",
+  "bytes": 91994,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.68
+  },
+  "http_status": 200,
+  "response_request_id": "a6Bi3WjajV5T5MlwHCkU",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:28Z"
+}

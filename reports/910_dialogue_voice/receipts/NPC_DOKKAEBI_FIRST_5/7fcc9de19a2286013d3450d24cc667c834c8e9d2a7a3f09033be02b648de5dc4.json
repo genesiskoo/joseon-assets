@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_5",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "7fcc9de19a2286013d3450d24cc667c834c8e9d2a7a3f09033be02b648de5dc4",
+  "request": {
+    "text": "바꿔 준다? 방망이로 금 나와라 뚝딱, 그거?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "필요한 재료와 값은 내놓은 목록에 다 적혀 있어.",
+    "next_text": "뚝딱은 소문이고, 손은 내가 놀리지. 그러니 값이 붙는 거야.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_DOKKAEBI_FIRST_5_7fcc9de19a2286013d3450d24cc667c834c8e9d2a7a3f09033be02b648de5dc4.mp3",
+  "raw_sha256": "accd8722e2f9031dbbbcfe562af21afdb27a026cdfd47a81d379aa0861d641c3",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "YSwZeUnr9Dlt33K0FjXa",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:11Z"
+}

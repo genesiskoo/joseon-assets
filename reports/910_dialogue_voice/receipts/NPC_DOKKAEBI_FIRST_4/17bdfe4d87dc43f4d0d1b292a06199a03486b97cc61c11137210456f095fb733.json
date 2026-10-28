@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_4",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "17bdfe4d87dc43f4d0d1b292a06199a03486b97cc61c11137210456f095fb733",
+  "request": {
+    "text": "필요한 재료와 값은 내놓은 목록에 다 적혀 있어.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "장터 뒤 대장간 터에 눌러앉았어. 물건 바꿀 일이 있으면 맡겨.",
+    "next_text": "바꿔 준다? 방망이로 금 나와라 뚝딱, 그거?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_FIRST_4_17bdfe4d87dc43f4d0d1b292a06199a03486b97cc61c11137210456f095fb733.mp3",
+  "raw_sha256": "d0688606ddc91e80ba4db0984520c0cce487051add14f55cc59b84176b0ac99f",
+  "bytes": 63990,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.92
+  },
+  "http_status": 200,
+  "response_request_id": "jeFuZZGy030UHPqJRSis",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:10Z"
+}

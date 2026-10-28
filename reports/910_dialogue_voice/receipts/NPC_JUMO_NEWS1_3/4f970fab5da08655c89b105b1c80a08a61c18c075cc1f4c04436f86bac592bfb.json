@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_3",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "4f970fab5da08655c89b105b1c80a08a61c18c075cc1f4c04436f86bac592bfb",
+  "request": {
+    "text": "이건 도사 양반 손에 있어야 쓸모가 있겠수. 도로 받으시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "국물 한 그릇이면 얼마든지 들고 다니지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS1_3_4f970fab5da08655c89b105b1c80a08a61c18c075cc1f4c04436f86bac592bfb.mp3",
+  "raw_sha256": "531f71689579aefb0cd79998cd68349491ef2a0c38cddd0fd0f815dd4def9602",
+  "bytes": 84470,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.2
+  },
+  "http_status": 200,
+  "response_request_id": "H22Ts99YZzWnANHC9bUr",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:29Z"
+}

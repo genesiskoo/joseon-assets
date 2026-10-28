@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_5",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "451ab80b11ff123bb4287ff1acb9663307de2a6030913c18f336292983023a02",
+  "request": {
+    "text": "목로엔 소문이 모이는 법이우. 못 믿겠거든 길부터 살펴보시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "마지막 한 쪽은 쇠부리 폐광, 쇠 먹는 놈 뱃속에 있수.",
+    "next_text": "열쇠 셋을 모아서 북쪽 돌문을 열어 주시우.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_MAIN_5_451ab80b11ff123bb4287ff1acb9663307de2a6030913c18f336292983023a02.mp3",
+  "raw_sha256": "3c7c71ca3091ef9ab3736aec8ff7f480ba4f1d53ef4af2da17467f195cee0c7d",
+  "bytes": 114981,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.12
+  },
+  "http_status": 200,
+  "response_request_id": "jWn9pbSk6cCfw51lE6ns",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:16Z"
+}

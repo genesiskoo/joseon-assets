@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_ENDING_1B",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "71ed5295479cd37b3e89de24dd82b39b63761ad736537ade277b8c6f8b96cefc",
+  "request": {
+    "text": "주모의 솥은 식었으나, 그 사람이 지키던 장터는 남았소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "구미호는 물러났으나 돌문 너머 틈에선 아직 금빛이 샌다오.",
+    "next_text": "그 여우가 틈 얘기를 하더니, 빈말이 아니었군.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/EV_ENDING_1B_71ed5295479cd37b3e89de24dd82b39b63761ad736537ade277b8c6f8b96cefc.mp3",
+  "raw_sha256": "91012dd7b57dae61bafadfd061cc498236d1e09a7ac64338abcf86883bd8d736",
+  "bytes": 90740,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.6
+  },
+  "http_status": 200,
+  "response_request_id": "c5zCDyQPyVTDAvvWmGNk",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:49Z"
+}

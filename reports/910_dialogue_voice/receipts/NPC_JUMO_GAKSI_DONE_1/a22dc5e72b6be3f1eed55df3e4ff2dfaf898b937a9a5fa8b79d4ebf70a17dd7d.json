@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_GAKSI_DONE_1",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "a22dc5e72b6be3f1eed55df3e4ff2dfaf898b937a9a5fa8b79d4ebf70a17dd7d",
+  "request": {
+    "text": "끝났수? 그 울음소리가 그쳤구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_GAKSI_DONE_1_a22dc5e72b6be3f1eed55df3e4ff2dfaf898b937a9a5fa8b79d4ebf70a17dd7d.mp3",
+  "raw_sha256": "1bad291b41cbc34aaa6e442c71167d2b17f8d86b59284dcbbdfd4a1c084649a5",
+  "bytes": 52287,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.2
+  },
+  "http_status": 200,
+  "response_request_id": "HVwVSaCSq4kKQRuCSBMV",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:19Z"
+}

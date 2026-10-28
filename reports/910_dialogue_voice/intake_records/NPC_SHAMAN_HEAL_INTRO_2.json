@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.4
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.300000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "4cfe7b15aca8e136a0afbb18151403a531679e56846e09160296d888a07527eb",
+  "id": "NPC_SHAMAN_HEAL_INTRO_2",
+  "speaker": "shaman",
+  "request_sha256": "a484953ef64f4615a1846a8b7c7ae1319ead06e86e15d1a5da31570b76ad08e2",
+  "raw_sha256": "e63050466fc7f2b2ad64f9efcbcfd9aef25705c8474922056a24eb7a76c3e6e5",
+  "file": "assets/audio/voice/NPC_SHAMAN_HEAL_INTRO_2.wav",
+  "previous_sha256": null
+}

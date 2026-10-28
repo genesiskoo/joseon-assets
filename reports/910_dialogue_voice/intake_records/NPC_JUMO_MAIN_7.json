@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.08
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 3.3000000000000007,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "086b37985e9d560d9c8e72040ffffa809119ad4579f0141baa769c2196a58261",
+  "id": "NPC_JUMO_MAIN_7",
+  "speaker": "doho",
+  "request_sha256": "9fde4e4b6ed9d9759791b9e535c25dbbda9d0cba373df895a8b043fb07de8649",
+  "raw_sha256": "c3cedeedcd43d01d78ca612fa41cbeeede0e744825706371e2537ba0e086d800",
+  "file": "assets/audio/voice/NPC_JUMO_MAIN_7.wav",
+  "previous_sha256": "5d5ef8981417cf4aca787f876e0e05acdde0284aa67541298d99126b00a527cc"
+}

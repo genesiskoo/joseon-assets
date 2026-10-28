@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_NOTHING_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "fbe9a03ae6e7982792c7b5c5a6589e33cb0cdef775c1c82ba69f060abc6a335a",
+  "request": {
+    "text": "한 상에 올릴 물건들이 아니야. 도로 가져가.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_NOTHING_2_fbe9a03ae6e7982792c7b5c5a6589e33cb0cdef775c1c82ba69f060abc6a335a.mp3",
+  "raw_sha256": "88ea0be30ce07cda0bd1bb09e4720a581c04ffd4c4c60116f31e5127edbb3ce9",
+  "bytes": 47272,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.88
+  },
+  "http_status": 200,
+  "response_request_id": "nPCtVAgAzTzx3qT6g0s6",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:32Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_NOTHING_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "7034d8b0e2705dcc9a120e5cd27f8b584ae3bfd99d18f65247b7da22e7c5a394",
+  "request": {
+    "text": "이걸론 아무것도 안 돼. 도로 가져가, 손해 본 건 없으니까.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_NOTHING_1_7034d8b0e2705dcc9a120e5cd27f8b584ae3bfd99d18f65247b7da22e7c5a394.mp3",
+  "raw_sha256": "401cd517102fbe4feed1777c3a7c9ba1011638fc9ac1410d6ecd3e4219eb0389",
+  "bytes": 71514,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.4
+  },
+  "http_status": 200,
+  "response_request_id": "t6VzmGgIr0bgk4WMpBSJ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:33Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_ENDING_3",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "2194673b4ee474538fd786d05b87fb510020f2cd9edb2b9f24e90e3091ba3f29",
+  "request": {
+    "text": "장터에 사람 소리가 다시 나는구려. 다 도사 양반 덕이오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_ENDING_3_2194673b4ee474538fd786d05b87fb510020f2cd9edb2b9f24e90e3091ba3f29.mp3",
+  "raw_sha256": "3ca9d97427d9d0117abf6a887707dbb803797ec9ddcbe83985ca403b36185ad1",
+  "bytes": 85724,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.28
+  },
+  "http_status": 200,
+  "response_request_id": "XjZ2GITTUIAjyfPuzpjW",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:03Z"
+}

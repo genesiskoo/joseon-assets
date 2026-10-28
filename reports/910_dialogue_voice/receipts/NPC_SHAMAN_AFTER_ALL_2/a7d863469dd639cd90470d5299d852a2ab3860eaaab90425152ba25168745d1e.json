@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_ALL_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "a7d863469dd639cd90470d5299d852a2ab3860eaaab90425152ba25168745d1e",
+  "request": {
+    "text": "드디어 끝이 보이네.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "수하가 다시 자리를 채우기 전에 가야 하오. 지금이 아니면 틈이 없소.",
+    "next_text": "북쪽 돌문에 조각 셋을 대면 문이 열릴 거요.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_AFTER_ALL_2_a7d863469dd639cd90470d5299d852a2ab3860eaaab90425152ba25168745d1e.mp3",
+  "raw_sha256": "f1a9a46725b6e90befe3d6406b9f85a9d1de5e00aca5f1b091c1d0d5fa0406a3",
+  "bytes": 31807,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.92
+  },
+  "http_status": 200,
+  "response_request_id": "dDfNsIXcj5Jakw5yxeY6",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:24Z"
+}

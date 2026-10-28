@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://actors/boss_voices.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+intro = "어둠 속에서 무언가 숨을 쉰다."
+p1 = PackedStringArray("도사 양반… 이쪽이오. 길을 찾았소.", "도사 양반, 늦었소. 이리 오시오.", "도사 양반, 싸게 드리우. 와서 보시우.")
+p1_reply = PackedStringArray("촌장 어르신이 여기까지 내려오셨을 리가.", "", "")
+p2 = PackedStringArray("나 여기 있구먼.", "그쪽이 아니여.", "도호야. 도호야. 도호야.")
+p2_reply = PackedStringArray("", "", "내 이름 함부로 부르지 마라, 털 빠진다.")
+p3 = PackedStringArray("……")
+split_line = "목소리가 셋으로 갈라진다."
+bristle_line = "털이 곤두선다."
+p3_reply = "말 못 하게 됐네. 잘됐다."
+bait_reply = "이건 좀 치사하다."
+end_line = "목소리가 그쳤다."

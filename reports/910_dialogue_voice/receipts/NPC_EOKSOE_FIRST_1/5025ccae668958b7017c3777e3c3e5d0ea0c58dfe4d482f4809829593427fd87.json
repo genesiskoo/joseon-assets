@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_EOKSOE_FIRST_1",
+  "speaker": "eoksoe",
+  "voice_id": "TRO4gatqxbbwLXHLDLSk",
+  "request_sha256": "5025ccae668958b7017c3777e3c3e5d0ea0c58dfe4d482f4809829593427fd87",
+  "request": {
+    "text": "흑랑 잡은 도사 양반이유? 덕에 길이 좀 조용해졌네유. 잘 만났슈.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/eoksoe/NPC_EOKSOE_FIRST_1_5025ccae668958b7017c3777e3c3e5d0ea0c58dfe4d482f4809829593427fd87.mp3",
+  "raw_sha256": "23c672058bfc2e02c6d2a0448d11ca0e97e6d70927f07cd2914e1dd91c613ecf",
+  "bytes": 81545,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.04
+  },
+  "http_status": 200,
+  "response_request_id": "GZNnUFC8Zx3efvuApfGZ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:08Z"
+}

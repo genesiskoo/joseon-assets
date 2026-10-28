@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_WARN_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "b2be24d98521f6321fe6204d8afcc69e764db9d18e67a6d65e63b96c8d6ee278",
+  "request": {
+    "text": "떠돌이한테 낯익은 얼굴이야 천지지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "하나만 일러 두겠소. 문 안에서 낯익은 얼굴을 보거든 놀라지 마시오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_WARN_2_b2be24d98521f6321fe6204d8afcc69e764db9d18e67a6d65e63b96c8d6ee278.mp3",
+  "raw_sha256": "ee0762c206711fe252c3465abef84971417093faefa5770c04dd286e7dbbbd5a",
+  "bytes": 46018,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.8
+  },
+  "http_status": 200,
+  "response_request_id": "pRKVGSCRDGDjNjUvi1Zw",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:36Z"
+}

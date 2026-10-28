@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_GREET_3",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "bdc2d7c67d5118d2530bb8af1b5fc0ed1f37b1c5227c9b1ce867aa07ba12c355",
+  "request": {
+    "text": "걷느라 고생하셨수. 앉아서 숨이나 돌리시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_GREET_3_bdc2d7c67d5118d2530bb8af1b5fc0ed1f37b1c5227c9b1ce867aa07ba12c355.mp3",
+  "raw_sha256": "b98094066a8be4dfdbb7946e4434b372bcee327f7dbd2e7af63a417dc3045135",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "pFvOG6gTmC0241JKhDiZ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:38Z"
+}

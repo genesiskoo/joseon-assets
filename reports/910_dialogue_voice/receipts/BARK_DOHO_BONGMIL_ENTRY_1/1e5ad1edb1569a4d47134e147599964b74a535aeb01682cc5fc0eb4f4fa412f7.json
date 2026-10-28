@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BONGMIL_ENTRY_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "1e5ad1edb1569a4d47134e147599964b74a535aeb01682cc5fc0eb4f4fa412f7",
+  "request": {
+    "text": "발소리도 아껴야겠군.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BONGMIL_ENTRY_1_1e5ad1edb1569a4d47134e147599964b74a535aeb01682cc5fc0eb4f4fa412f7.mp3",
+  "raw_sha256": "11f4a758a48337b70345ccd38b66ab4dc5a9cfc6a2db853dfe960cada0e2be24",
+  "bytes": 28046,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.68
+  },
+  "http_status": 200,
+  "response_request_id": "l31qJHijNo3mtsKW3XjT",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:50Z"
+}

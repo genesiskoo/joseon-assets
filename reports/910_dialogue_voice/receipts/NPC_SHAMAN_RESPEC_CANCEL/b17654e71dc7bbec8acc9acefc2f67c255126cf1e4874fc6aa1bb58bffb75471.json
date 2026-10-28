@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_RESPEC_CANCEL",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "b17654e71dc7bbec8acc9acefc2f67c255126cf1e4874fc6aa1bb58bffb75471",
+  "request": {
+    "text": "마음이 서거든 다시 오시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_RESPEC_CANCEL_b17654e71dc7bbec8acc9acefc2f67c255126cf1e4874fc6aa1bb58bffb75471.mp3",
+  "raw_sha256": "34c834c36673b57c026b33deba0f199745250945b2672bbbc4f5c75f2a6573f8",
+  "bytes": 40585,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.48
+  },
+  "http_status": 200,
+  "response_request_id": "uu8pafSR56mqqEynsyqb",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:49Z"
+}

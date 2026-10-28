@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SHAMAN_QUEST_7",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "02c08077af47c21d992981177f762ec8ef78c93256263698b8100eeee7b234a2",
+  "request": {
+    "text": "술값은—",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "도사 양반밖에 없소. 길은 장터 어귀의 주모가 아오.",
+    "next_text": "살아서 돌아오면 쳐 드리리다.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_SHAMAN_QUEST_7_02c08077af47c21d992981177f762ec8ef78c93256263698b8100eeee7b234a2.mp3",
+  "raw_sha256": "a5f521a3f3e5bc1fe8b62a527c07b2002ab6457375f7bc75e819579adf04f126",
+  "bytes": 25538,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.52
+  },
+  "http_status": 200,
+  "response_request_id": "RHvS7ZBaR0IiD26AjSfD",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:06Z"
+}

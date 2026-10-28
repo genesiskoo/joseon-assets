@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="QuestDef" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://core/quest_def.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "heukrang_clear"
+number = 2
+title = "흑랑 굴 소탕"
+giver = "elder"
+objective = 1
+target = "heukrang_gul"
+target_floor = 1
+bark_left = 3
+bark_line = "산책이 거의 끝났네. 몇 놈 안 남았어."
+done_line = "산책 끝. 촌장 영감한테 가 볼까."
+reward_points = 1

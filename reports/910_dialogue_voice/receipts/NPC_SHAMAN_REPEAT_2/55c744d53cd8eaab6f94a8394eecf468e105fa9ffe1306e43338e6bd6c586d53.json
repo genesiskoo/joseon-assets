@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_REPEAT_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "55c744d53cd8eaab6f94a8394eecf468e105fa9ffe1306e43338e6bd6c586d53",
+  "request": {
+    "text": "술 이야기는 돌아와서 합시다.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_REPEAT_2_55c744d53cd8eaab6f94a8394eecf468e105fa9ffe1306e43338e6bd6c586d53.mp3",
+  "raw_sha256": "bbe920827d8692b3f04731b0868e27d6eedfef11c190bcd3cd530ae025186e9f",
+  "bytes": 39331,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.4
+  },
+  "http_status": 200,
+  "response_request_id": "WIWpXp4ebEzxaPL7Esj4",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:44Z"
+}

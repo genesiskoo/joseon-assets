@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_GUMIHO_INTRO_CREDIT",
+  "speaker": "gumiho_f01",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "a5d5d6a1b43f6e65df78bdedadbca78c56025c9ff08ee4c0882f2981d17624a5",
+  "request": {
+    "text": "외상은 살아서 돌아오는 사람한테만 놓는다 했지? 살아서 왔네.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "그래서 갚으러 왔지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/gumiho_f01/EV_GUMIHO_INTRO_CREDIT_a5d5d6a1b43f6e65df78bdedadbca78c56025c9ff08ee4c0882f2981d17624a5.mp3",
+  "raw_sha256": "2fae1761c2e881d32a47da12f12509201b1cfa4a6efb35e607a708b5fc2e2131",
+  "bytes": 85724,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.28
+  },
+  "http_status": 200,
+  "response_request_id": "nfXySamixDyvN332d5Iv",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:54Z"
+}

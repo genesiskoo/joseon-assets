@@ -1,0 +1,266 @@
+# 무당 할매 (D-082 · #239, design/dialogue_v2.md §3.6) — 인사(처음 = 안내 / 주모 대신 받기 / 이야기 단계 / 무작위) → 일 선택지(감정 · 부적 · 굿 한 판 · 그만 — 알림·받기 버튼 없음, D-096).
+# 부르는 이름 = Story(러너) · Talk(NpcTalk — Npc.talk() 가 넘김). 선택지 태그 [#act=identify|shop|respec|leave] (굿 확인 = respec_yes|respec_no).
+# D-096(#541, design/quest_rework_dialogue_2026-10-01.md): 메인 의뢰인 = 주모 — 할매는 첫 장면 안내 · 봉인 해설 · 의심. 보고는 주모가 그날 목로에 있으면 주모가, 없으면 여기서 대신 받는다(Talk.here_today).
+# 말버릇: 주모 = 「열쇠」, 할매 = 「봉인」 — 같은 조각을 다르게 부른다(조각 하나 = 「쪽」). 조각 소식 = 주모는 story.jumo_seals · 할매는 story.shaman_seals(둘이 따로 센다).
+# D-097 표기: NPC 말 = 장터 · 굴(던전 · 층 · 아래로 금지) · 도호는 「도사 양반」으로만 불린다 · 문 = 처음 「마을 북쪽 산길 끝 봉밀굴 문」, 그 뒤 「북쪽 돌문」 · 풀 대사는 혼자 선다.
+# 낭독 규칙(dialogue_v2 §4.6 · #910): 할매 말끝 = 하오체 「-오 · -소 · -구려 · -리다」 · 농담 없음 · 줄 첫머리 「…」 금지 · 한 줄 한 호흡(긴 해설은 줄을 나눈다).
+# 조각의 효과 = 「셋이 모이면 문이 열린다」(worldbuilding §5.3) — 「금이 아문다 · 버틴다」는 쓰지 않는다(#908 H1 · #910).
+# 첫 만남(정자) 글 = event/shaman_quest 와 같은 글(번역 키만 따로 — test_town 이 대조). 이 블록을 보이면 정자 이벤트의 한 번만 표시 키를 같이 켜 이벤트가 또 뜨지 않게 한다.
+# 치유(#304): 말을 거는 모든 갈래에서 생명·도력을 채운다 — ~ start 맨 앞 한 줄(대사 아님). 처음 한 번만 그 사실을 알린다(shaman_heal_intro) — 정자 이벤트를 먼저 본 판은 첫 클릭 대화에서 알린다(#910 · #908 M11).
+# 주모를 만난 적이 있을 때만(Story.flag("jumo_met")) 「누구한테 들었소?」(~ src — 주모를 만난 뒤 한 번, 조각 수와 상관없이 #908 L3)와 「사람 냄새」(둘째 조각)가 열린다 — 굴부터 간 판에서 도호가 안 들은 말을 하지 않게.
+# 대신 받기도 주모를 만난 판에서만 「주모 대신」이라 말한다 — 안 만난 판은 할매 자신의 말로 받는다(#908 H2).
+# 조건식 주의: and 가 짧은 회로가 아니어도 안전하게 짰다 — 첫 만남의 Story.first 는 이벤트를 먼저 본 판에서 미리 켜져도 해롭지 않다(첫 만남이 이미 끝난 셈). 한 번만 보여야 하는 줄이 헛되이 소비되면 안 되는 곳(증언)은 Story.flag + Story.put 으로 썼다.
+# #777/D-110: 글자 부적·숨은 조합의 귀띔은 대본에서 뺀다. 격퇴 뒤에는 회복·서비스를 이어 가며 끝난 의뢰를 재촉하지 않는다.
+# 「열 때」 근거(#770 · 점검 P-05): 정자 「아직 그 문을 열 때는 아니오」(OFFER_4)와 셋째 소식 「문을 열 때가 왔소」(AFTER_ALL_1) 사이에 바뀐 것 = 수하 셋이 쓰러짐 → AFTER_ALL_1B 가 왜 지금인지 한 줄(수하가 다시 자리를 채우기 전).
+# 셋째 소식은 둘로 나눈다(#908 M8): 소식 = 문 여는 법 · 「낯익은 얼굴」 당부 = 다음에 말을 걸 때 한 번(shaman_warn).
+# 주모 자리 한 줄(#538): 주모를 만난 판에서 주모가 자리를 비운 날(away · Talk.here_today 거짓)·떠난 뒤(gone · 구미호 전) 한 번씩 — 소식·귀띔 뒤, 진행 갈래 앞(촌장 증언과 같은 Story.flag + put).
+
+~ start
+$> Talk.heal_full()
+if Story.flag("jumo_gone")
+	if Talk.state_of("heukrang_seal") == "killed"
+		$> Talk.complete_quest("heukrang_seal")
+	if Talk.state_of("beomgul_seal") == "killed"
+		$> Talk.complete_quest("beomgul_seal")
+	if Talk.state_of("soeburi_seal") == "killed"
+		$> Talk.complete_quest("soeburi_seal")
+	if Talk.has_quest("old_tavern") and Talk.state_of("old_tavern") == "killed"
+		=> tavern_proxy
+	match Talk.roll("shaman_after_end", 3)
+		when 0
+			shaman: 구미호는 물러났으나 남은 요괴들은 그대로요. 몸이 축나거든 다시 오시오. [ID:NPC_SHAMAN_ENDING_1]
+		when 1
+			shaman: 돌문 너머 틈은 내가 지켜보겠소. 도사 양반은 굴을 맡아 주시오. [ID:NPC_SHAMAN_ENDING_2]
+		else
+			shaman: 장터에 사람 소리가 다시 나는구려. 다 도사 양반 덕이오. [ID:NPC_SHAMAN_ENDING_3]
+elif (not Story.flag("event/shaman_quest")) and Story.first("shaman_offer")
+	shaman: 도사 양반, 늦었소. 못골이 석 달째 이 꼴이오. [ID:NPC_SHAMAN_OFFER_1]
+	doho: 할매, 술부터 한 잔… 아니, 분위기가 아니구먼. [ID:NPC_SHAMAN_OFFER_2]
+	shaman: 봉인이 흔들리오. 요사한 기운이 못골로 새고 있소. [ID:NPC_SHAMAN_OFFER_3]
+	shaman: 꼬리 아홉 달린 천 년 묵은 여우, 구미호의 기운이오. [ID:NPC_SHAMAN_OFFER_3B]
+	shaman: 그 수하 하나가 들녘 너머 흑랑 굴에 들어앉았소. [ID:NPC_SHAMAN_OFFER_3C]
+	shaman: 구미호는 마을 북쪽 산길 끝, 봉밀굴 문 안에 갇혀 있소. 아직 그 문을 열 때는 아니오. [ID:NPC_SHAMAN_OFFER_4]
+	doho: 또 봉인 타령이네. [ID:NPC_SHAMAN_OFFER_5]
+	shaman: 도사 양반밖에 없소. 길은 장터 어귀의 주모가 아오. [ID:NPC_SHAMAN_OFFER_6]
+	doho: 술값은— [ID:NPC_SHAMAN_OFFER_7]
+	shaman: 살아서 돌아오면 쳐 드리리다. [ID:NPC_SHAMAN_OFFER_8]
+	doho: …허. 하는 김에. [ID:NPC_SHAMAN_OFFER_9]
+	$> Story.put("event/shaman_quest")
+	if Story.first("shaman_heal_intro")
+		shaman: 가기 전에 몸부터 채워 드리리다. 말만 걸면 되오. 값은 안 받소. [ID:NPC_SHAMAN_HEAL_INTRO_1]
+elif (not Talk.here_today("jumo")) and (Talk.state_of("heukrang_seal") == "killed" or Talk.state_of("beomgul_seal") == "killed" or Talk.state_of("soeburi_seal") == "killed")
+	=> report_proxy
+elif (not Talk.here_today("jumo")) and Talk.has_quest("old_tavern") and Talk.state_of("old_tavern") == "killed"
+	=> tavern_proxy
+elif Talk.seals() > Story.value("shaman_seals", 0)
+	=> seal_news
+elif Story.flag("jumo_met") and Story.value("shaman_seals", 0) > 0 and not Story.flag("shaman_src")
+	=>< src
+elif Talk.seals() >= 3 and not Story.flag("jumo_gone") and not Story.flag("shaman_warn")
+	=> warn
+elif Story.flag("jumo_met") and Talk.presence("jumo") == "away" and (not Talk.here_today("jumo")) and not Story.flag("shaman_jumo_away")
+	=> away_jumo
+elif Story.flag("jumo_met") and Talk.presence("jumo") == "gone" and not Story.flag("jumo_gone") and not Story.flag("shaman_jumo_gone")
+	=> gone_jumo
+elif Story.first("shaman_heal_intro")
+	shaman: 몸이 축나거든 언제든 오시오. 말만 걸면 채워 드리리다. 값은 안 받소. [ID:NPC_SHAMAN_HEAL_INTRO_2]
+elif Talk.quest() == "accepted"
+	if Story.first("shaman_progress")
+		shaman: 아직이오? 길은 주모가 알려 주었을 텐데. [ID:NPC_SHAMAN_PROGRESS_1]
+		shaman: 탕약은 챙겼소? 김 영감네 좌판에 있소. [ID:NPC_SHAMAN_PROGRESS_2]
+	else
+		=> repeat
+elif Talk.quest() == "none"
+	if Story.first("shaman_nudge")
+		shaman: 주모는 만나 보았소? 길은 그 사람한테 물으시오. [ID:NPC_SHAMAN_NUDGE_1]
+	else
+		=> greet
+else
+	=> repeat
+=> jobs
+
+# 주모가 그날 목로에 없을 때 열쇠(1·4·6) 보고를 대신 받는다. 조각 둘 이상(주모 자리 단계 away·gone)에서만 닿는다.
+# 소식(seal_news)이 뒤를 잇는 게 보통이라 여기선 짧게 받기만 한다(#908 M8) — 남은 굴·문 얘기는 소식 몫.
+~ report_proxy
+if Story.flag("jumo_met")
+	shaman: 왔구려. 주모가 자리를 비웠으니 내가 대신 듣겠소. [ID:NPC_SHAMAN_DONE_1]
+	doho: 굴 주인은 치웠지. 국물값은 아직이지만. [ID:NPC_SHAMAN_DONE_2]
+else
+	shaman: 왔구려. 굴 주인을 베었다니, 그 조각부터 보여 주시오. [ID:NPC_SHAMAN_PROXY_UNMET_1]
+if Talk.state_of("heukrang_seal") == "killed"
+	$> Talk.complete_quest("heukrang_seal")
+if Talk.state_of("beomgul_seal") == "killed"
+	$> Talk.complete_quest("beomgul_seal")
+if Talk.state_of("soeburi_seal") == "killed"
+	$> Talk.complete_quest("soeburi_seal")
+if Talk.seals() >= 3
+	shaman: 세 쪽이 다 모였구려. 고맙소, 도사 양반. [ID:NPC_SHAMAN_REPORT_3]
+elif Talk.seals() == 2
+	shaman: 두 쪽째구려. 고맙소, 도사 양반. [ID:NPC_SHAMAN_REPORT_2]
+else
+	shaman: 한 쪽이 돌아왔구려. 고맙소, 도사 양반. [ID:NPC_SHAMAN_REPORT_1]
+if Talk.seals() > Story.value("shaman_seals", 0)
+	=> seal_news
+=> jobs
+
+# 옛 주막 일(퀘스트 3)도 주모가 그날 없으면 여기서 대신 받는다(D-094 ④ → D-096). 접수를 안 들은 판은 할매가 들은 소문으로 받는다(#908 M1).
+~ tavern_proxy
+if Story.flag("jumo_tavern_told")
+	shaman: 들녘 옛 주막 터 일이오? 주모가 맡긴 일이라 들었소. 내가 대신 듣겠소. [ID:NPC_SHAMAN_TAVERN_1]
+else
+	shaman: 들녘 옛 주막 터 울음이 그쳤다 들었소. 도사 양반 솜씨요? [ID:NPC_SHAMAN_TAVERN_UNTOLD_1]
+$> Talk.complete_quest("old_tavern")
+shaman: 오래 시끄러운 자리였지. 잘했소. [ID:NPC_SHAMAN_TAVERN_2]
+=> jobs
+
+# 조각 소식(#171 · D-093 순서 자유) — 해설 + 의심. 남은 굴을 가리키는 첫 조각 줄은 주모가 한다(주모가 첫 조각엔 늘 서 있다).
+# 해설은 네 줄로 나눈다(한 줄 한 호흡): 무엇인가 → 누가 나눴나 → 구미호가 한 일 → 모이면 문이 열린다.
+~ seal_news
+if Story.value("shaman_seals", 0) == 0
+	shaman: 손에 든 그 조각은 봉밀굴 문에 걸려 있던 봉인의 한 쪽이오. [ID:NPC_SHAMAN_AFTER_LORE_1]
+	shaman: 옛 도사들이 구미호를 가두며, 그 봉인을 패와 고리와 사슬 셋으로 나눠 걸었소. [ID:NPC_SHAMAN_AFTER_LORE_1B]
+	shaman: 봉인이 낡아 금이 가자, 구미호가 그걸 거꾸로 걸어 제 문을 잠갔소. [ID:NPC_SHAMAN_AFTER_LORE_2]
+	shaman: 그러고는 세 쪽을 굴마다 흩어 놓았지. 셋이 다시 모여야 그 문이 열리오. [ID:NPC_SHAMAN_AFTER_LORE_2B]
+	if Story.flag("jumo_met")
+		doho: 남의 자물쇠로 제 집 문을 잠갔구먼. 열쇠는 개한테, 범한테, 쇠 먹는 놈 뱃속에 맡겨 놓고. 뻔뻔하기는. [ID:NPC_SHAMAN_AFTER_LORE_4]
+		=>< src
+$> Story.put("shaman_seals", Talk.seals())
+if Talk.seals() >= 3
+	shaman: 수하 셋이 다 쓰러졌소. 이제 구미호 혼자요. 문을 열 때가 왔소. [ID:NPC_SHAMAN_AFTER_ALL_1]
+	shaman: 수하가 다시 자리를 채우기 전에 가야 하오. 지금이 아니면 틈이 없소. [ID:NPC_SHAMAN_AFTER_ALL_1B]
+	doho: 드디어 끝이 보이네. [ID:NPC_SHAMAN_AFTER_ALL_2]
+	shaman: 북쪽 돌문에 조각 셋을 대면 문이 열릴 거요. [ID:NPC_SHAMAN_AFTER_ALL_3]
+	shaman: 다만 그 문은 도력 있는 손으로만 열리오. 요괴는 조각을 쥘 수는 있어도 문에 대지는 못하오. [ID:NPC_SHAMAN_AFTER_HAND_1]
+elif Talk.seals() == 2
+	if Talk.den_cleared("beomgul") and Talk.den_cleared("soeburi")
+		shaman: 이제 남은 건 들녘의 흑랑 굴 하나요. [ID:NPC_SHAMAN_AFTER_LAST_HEUK_1]
+		shaman: 흑랑은 해와 달도 물어 삼키려던 불개요. 달려들 때를 조심하시오. [ID:NPC_SHAMAN_AFTER_LAST_HEUK_2]
+		doho: 그래 봐야 강아지 한 마리지. [ID:NPC_SHAMAN_AFTER_LAST_HEUK_3]
+	elif Talk.den_cleared("heukrang_gul") and Talk.den_cleared("soeburi")
+		shaman: 이제 남은 건 정령재의 범굴 하나요. [ID:NPC_SHAMAN_AFTER_LAST_BEOM_1]
+		shaman: 굴 안에서 누가 도사 양반 이름을 부르거든, 그건 사람이 아니오. [ID:NPC_SHAMAN_AFTER_LAST_BEOM_2]
+		doho: 내 이름 부를 사람이 이 동네에 또 있었나. [ID:NPC_SHAMAN_AFTER_LAST_BEOM_3]
+	else
+		shaman: 이제 남은 건 정령재의 쇠부리 폐광 하나요. [ID:NPC_SHAMAN_AFTER_LAST_SOE_1]
+		shaman: 그놈한텐 칼이 잘 안 드오. 불을 쓰시오. 화염 술법에 쓸 빈 부적은 김 영감이 파오. [ID:NPC_SHAMAN_AFTER_LAST_SOE_2]
+		doho: 칼 대신 불이라. 부적값이 또 나가겠군. [ID:NPC_SHAMAN_AFTER_LAST_SOE_3]
+	if Story.flag("jumo_met")
+		if Talk.here_today("jumo")
+			shaman: 주모를 보고 오셨소? 그 사람은 늘 웃고 있지. [ID:NPC_SHAMAN_SMELL_1B]
+		else
+			shaman: 그러고 보니 주모가 요새 통 안 보이는구려. [ID:NPC_SHAMAN_SMELL_1]
+		shaman: 그 사람한테선 사람 냄새가 너무 진하오. 일부러 덧칠한 것처럼. [ID:NPC_SHAMAN_SMELL_2]
+		doho: 국솥 김이 진해서 그렇겠지. [ID:NPC_SHAMAN_SMELL_3]
+=> jobs
+
+# 출처 되묻기 — 말버릇 「열쇠」↔「봉인」 복선(D-096). 주모를 만난 판에서 한 번(shaman_src). 첫 조각 해설 안에서 부르거나, 굴부터 가서 해설을 먼저 들은 판은 주모를 만난 뒤 첫 대화에서.
+# 두 곳 다 =>< 로 부르고 돌아간다(끝 = END 가 돌아가는 자리 — 촌장 hint_g06 과 같은 결).
+~ src
+$> Story.put("shaman_src")
+shaman: 열쇠라 했소? 그건 봉인이오. 굴마다 한 쪽씩 있는 줄은 나도 몰랐는데, 누구한테 들었소? [ID:NPC_SHAMAN_AFTER_SRC_1]
+doho: 주모한테. 목로엔 소문이 다 모이잖아. [ID:NPC_SHAMAN_AFTER_SRC_2]
+shaman: 주모라… 그렇소. [ID:NPC_SHAMAN_AFTER_SRC_3]
+할매의 눈이 목로 쪽에 한참 머문다. [ID:NPC_SHAMAN_AFTER_SRC_3B]
+=> END
+
+# 「낯익은 얼굴」 당부 — 셋째 소식 다음 대화에서 한 번(#908 M8: 문 앞에 서기 직전에 듣게).
+~ warn
+$> Story.put("shaman_warn")
+shaman: 하나만 일러 두겠소. 문 안에서 낯익은 얼굴을 보거든 놀라지 마시오. [ID:NPC_SHAMAN_WARN_1]
+doho: 떠돌이한테 낯익은 얼굴이야 천지지. [ID:NPC_SHAMAN_WARN_2]
+=> jobs
+
+# 주모 자리 한 줄 (#538 — npcs_v2 §3.2 · 글 정본 quest_rework_dialogue S9b·S11b): 의심만 비치고 정체는 확신하지 않는다(「구미호」·「여우」 없음). 각 한 번.
+# away = 주모를 만난 판 · 조각 2 · 그날 목로가 빈 날(Talk.here_today) — 조각 소식이 ~ start 의 앞 갈래라 둘째 해설이 늘 먼저 온다.
+~ away_jumo
+$> Story.put("shaman_jumo_away")
+shaman: 주모네 목로가 오늘도 비었구려. 요괴가 들끓는데 아낙 혼자 먼 길을 다니고도 늘 멀쩡히 돌아오니, 예사롭지 않소. [ID:NPC_SHAMAN_JUMO_AWAY_1]
+=> jobs
+
+# gone = 조각 3(또는 봉밀굴 문) · 셋째 해설 뒤 · 구미호 전. 영구 퇴장 표시 jumo_gone이 서면 위의 격퇴 뒤 인사로 간다.
+# 빈자리(D-115 L3): 사라짐 + 마을이 그 얼굴을 잊어 간다 · 둘째 조각의 말씨 미끄러짐을 못 본 판은 할매가 한 줄 품는다(jumo_slip_seen).
+~ gone_jumo
+$> Story.put("shaman_jumo_gone")
+shaman: 주모가 술잔도 안 치우고 자취를 감췄소. 사람이 그리 홀연히 사라지는 건 좋은 징조가 아니오. [ID:NPC_SHAMAN_JUMO_GONE_1]
+if not Story.flag("jumo_slip_seen")
+	shaman: 요새 그 사람 말소리가 이상했소. 사람 흉내를 내다 만 것처럼. [ID:NPC_SHAMAN_JUMO_GONE_SLIP]
+shaman: 그런데 장터 사람들이 벌써 그 얼굴을 떠올리지 못하오. 홀림이 걷히는 거요. [ID:NPC_SHAMAN_JUMO_GONE_2]
+doho: 국물 맛은 나도 아직 기억나는데. [ID:NPC_SHAMAN_JUMO_GONE_3]
+=> jobs
+
+# 주모를 아직 안 만난 채 정자에 돌아왔을 때의 인사(NUDGE 한 번 뒤) — 둘은 목로를 가리키고 하나는 당부, 하나는 감정 안내.
+~ greet
+match Talk.roll("shaman_greet", 4)
+	when 0
+		shaman: 도사 양반, 봉인이 또 흔들렸소. 길은 주모네 목로에서 물으시오. [ID:NPC_SHAMAN_GREET_1]
+	when 1
+		shaman: 못골 공기가 무겁소. 길이 막히거든 장터 어귀 주모를 찾으시오. [ID:NPC_SHAMAN_GREET_2]
+	when 2
+		shaman: 구미호 일은 아직 끝나지 않았소. 방심 마시오. [ID:NPC_SHAMAN_GREET_3]
+	else
+		shaman: 굴에서 건져 온 물건은 기운을 읽어야 쓸 수 있소. 감정은 내가 해 드리리다. [ID:NPC_SHAMAN_GREET_4]
+=> jobs
+
+# 의뢰를 받은 뒤 되풀이 — 굴로 보내는 한 줄. 조각이 둘이면 남은 굴, 셋이면 문을 가리킨다.
+~ repeat
+if Talk.seals() >= 3
+	shaman: 북쪽 돌문이 기다리오. 말은 그만, 가시오. [ID:NPC_SHAMAN_REPEAT_4]
+elif Talk.seals() == 2
+	shaman: 남은 굴 하나가 기다리오. 말은 그만, 가시오. [ID:NPC_SHAMAN_REPEAT_3]
+else
+	match Talk.roll("shaman_repeat", 2)
+		when 0
+			shaman: 굴에 들기 전에 몸부터 추스르고 가시오. [ID:NPC_SHAMAN_REPEAT_1]
+		else
+			shaman: 술 이야기는 돌아와서 합시다. [ID:NPC_SHAMAN_REPEAT_2]
+=> jobs
+
+~ jobs
+- 감정을 부탁한다 (미식별 {{Talk.unidentified()}}개 · 엽전 {{Talk.identify_cost()}}) [if Talk.unidentified() > 0 /] [#act=identify] [ID:NPC_SHAMAN_JOB_IDENTIFY]
+	if Talk.can_identify()
+		$> Talk.identify_all()
+		shaman: 봉인 너머의 기운이 묻어 있소. 이제 쓰임을 알겠구려. [ID:NPC_SHAMAN_IDENTIFY_1]
+	else
+		$> Talk.identify_all()
+		shaman: 엽전이 모자라오. 공짜로 읽어 드릴 순 없소. [ID:NPC_SHAMAN_IDENTIFY_2]
+	=> jobs
+- 좌판을 본다 [if Talk.stock_ready() /] [#act=shop] [ID:NPC_SHAMAN_JOB_SHOP]
+	$> Talk.open_shop()
+	=> END
+- 굿 한 판을 부탁한다 ({{Talk.respec_price_text()}}) [if Talk.respec_ready() /] [#act=respec] [ID:NPC_SHAMAN_JOB_RESPEC]
+	=> respec_ask
+- 그만 간다 [#act=leave] [ID:NPC_SHAMAN_JOB_LEAVE]
+=> END
+
+# 굿 한 판 (skills_v2 §4.6 · #246) — 찍은 술법·능력 점수를 전부 풀어 처음 자리로 돌려놓는 굿. 선택지(위 jobs)는 쓴 점수가 있을 때만 열린다(Talk.respec_ready — 감정이 미식별이 있을 때만 보이는 것과 같은 결).
+# 값 = 공짜(스킬 데이터가 바뀐 뒤 첫 굿 · 이번 판 첫 굿) 또는 엽전(레벨 × 200) — 선택지 글에 값이 보이고, 고르면 한 번 더 묻고(확인), 한다. 엽전이 모자라면 거절 줄 하나(respec_short).
+# 시작 참격 한 수는 남고 점수는 하나도 안 잃는다. 하는 일 = Talk.do_respec() (돌려받은 점수 알림 · 연출 · 몸 다시 재기는 Npc 가) — 됐는지는 Talk.respec_done.
+# 표기(dialogue_v2 §4.5): 「회차」 같은 장치 말은 NPC 입에 안 올린다(첫 굿 = 「첫 굿」) · 도호는 「도사 양반」 · 풀 대사가 아니라 차례로 이어지는 줄(2~3줄).
+~ respec_ask
+if not Talk.respec_affordable()
+	=> respec_short
+shaman: 배운 술법과 단련한 힘을 풀어서, 다시 나눌 수 있게 하는 굿이오. 점수는 한 점도 잃지 않소. [ID:NPC_SHAMAN_RESPEC_ASK_1]
+if Talk.respec_why() == "version"
+	shaman: 그새 술법의 결이 바뀌었구려. 이번 굿은 값을 안 받겠소. 하겠소? [ID:NPC_SHAMAN_RESPEC_ASK_VERSION]
+elif Talk.respec_free()
+	shaman: 첫 굿은 값을 안 받소. 하겠소? [ID:NPC_SHAMAN_RESPEC_ASK_FREE]
+else
+	shaman: 값은 엽전 {{Talk.respec_price()}}이오. 하겠소? [ID:NPC_SHAMAN_RESPEC_ASK_PAID]
+=> respec_confirm
+
+~ respec_confirm
+- 굿을 한다 [#act=respec_yes] [ID:NPC_SHAMAN_RESPEC_YES]
+	$> Talk.do_respec()
+	if Talk.respec_done
+		shaman: 방울이 울렸소. 풀린 점수는 다 돌려놨으니, 술법과 힘을 다시 나눠 쓰시오. [ID:NPC_SHAMAN_RESPEC_DONE]
+		=> jobs
+	else
+		=> respec_short
+- 관둔다 [#act=respec_no] [ID:NPC_SHAMAN_RESPEC_NO]
+	shaman: 마음이 서거든 다시 오시오. [ID:NPC_SHAMAN_RESPEC_CANCEL]
+	=> jobs
+
+# 엽전이 모자랄 때 — 고르는 순간(respec_ask)에 거절하고, 확인 뒤에도(respec_confirm — 그 사이 엽전이 줄 수는 없지만 do_respec 이 다시 재는 길이라) 같은 줄.
+~ respec_short
+shaman: 엽전이 모자라오. 굿 한 판에 엽전 {{Talk.respec_price()}}이 드오. [ID:NPC_SHAMAN_RESPEC_SHORT]
+=> jobs

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LORE_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "95d69c3c87332d76ced567dbc54ab359c4e7aadce88492c78dae316f5f155396",
+  "request": {
+    "text": "손에 든 그 조각은 봉밀굴 문에 걸려 있던 봉인의 한 쪽이오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "옛 도사들이 구미호를 가두며, 그 봉인을 패와 고리와 사슬 셋으로 나눠 걸었소.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_LORE_1_95d69c3c87332d76ced567dbc54ab359c4e7aadce88492c78dae316f5f155396.mp3",
+  "raw_sha256": "fa3971bc04788ef6b1eedce779a2fd3b1290238f2ba90ca1a75d3f4b64ae4786",
+  "bytes": 81545,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.04
+  },
+  "http_status": 200,
+  "response_request_id": "bRii35H4xZ9KJCfF0eSv",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:19Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_OFFER_3",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "530bdbab59089b5a98887cbee7ef5a3d0a79e0fd4a2e5d1a360c72e4f9af955b",
+  "request": {
+    "text": "듣고만 오라는 건 아니구먼. 다녀오지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_OFFER_3_530bdbab59089b5a98887cbee7ef5a3d0a79e0fd4a2e5d1a360c72e4f9af955b.mp3",
+  "raw_sha256": "38a3e2598e091be05c0bacec41a972988f97e34b9959a5f8c451f850f3f51812",
+  "bytes": 46018,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.8
+  },
+  "http_status": 200,
+  "response_request_id": "zYne4gJm5Arp3CwwZcr3",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:48Z"
+}

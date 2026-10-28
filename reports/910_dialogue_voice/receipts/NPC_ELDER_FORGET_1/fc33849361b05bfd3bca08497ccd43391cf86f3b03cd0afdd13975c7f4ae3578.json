@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_FORGET_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "fc33849361b05bfd3bca08497ccd43391cf86f3b03cd0afdd13975c7f4ae3578",
+  "request": {
+    "text": "주모네 목로 말이오. 거기 누가 있었는지, 얼굴이 통 떠오르질 않소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "어제까지 국 퍼 주던 사람인데.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_FORGET_1_fc33849361b05bfd3bca08497ccd43391cf86f3b03cd0afdd13975c7f4ae3578.mp3",
+  "raw_sha256": "78b1beb66b369ffd20572f14e4a1f12e4c21e11b15c2c55d90ca25b120736bef",
+  "bytes": 88232,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.44
+  },
+  "http_status": 200,
+  "response_request_id": "x3d21ppMAXfqHXivjukv",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:06Z"
+}

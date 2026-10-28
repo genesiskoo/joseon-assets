@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_RESPEC_DONE",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "1d875f1b8de484e654c073cb79e00cdf0fd77f8460eb57b2184af8ba9af7a962",
+  "request": {
+    "text": "방울이 울렸소. 풀린 점수는 다 돌려놨으니, 술법과 힘을 다시 나눠 쓰시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_RESPEC_DONE_1d875f1b8de484e654c073cb79e00cdf0fd77f8460eb57b2184af8ba9af7a962.mp3",
+  "raw_sha256": "e01930eeaffe7787b4780b6fa4249f4c1e103a18b743af45bf0fa18eabd742ca",
+  "bytes": 113727,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.04
+  },
+  "http_status": 200,
+  "response_request_id": "2nx5L2O6EyG2WODqkHLX",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:49Z"
+}

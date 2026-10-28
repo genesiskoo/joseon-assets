@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_GUMIHO_INTRO_4",
+  "speaker": "gumiho_f03",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "19e7033d6090d908f7f8a32b8009e010a5613c6a6f3a8cf984761e67b5064a2b",
+  "request": {
+    "text": "수상한 줄 알면서도 왔잖아. 끝이 궁금했지?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "보러 온 건 맞아. 네 뜻대로 될지는 두고 보자고.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/gumiho_f03/EV_GUMIHO_INTRO_4_19e7033d6090d908f7f8a32b8009e010a5613c6a6f3a8cf984761e67b5064a2b.mp3",
+  "raw_sha256": "7e1f6ae9c34c1dd893140d1b72c1b0e31eff7fd2e38e04a8845ded4664d6e4e3",
+  "bytes": 72767,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.48
+  },
+  "http_status": 200,
+  "response_request_id": "c3zxVTBdHhjFT3hcpfW9",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:55Z"
+}

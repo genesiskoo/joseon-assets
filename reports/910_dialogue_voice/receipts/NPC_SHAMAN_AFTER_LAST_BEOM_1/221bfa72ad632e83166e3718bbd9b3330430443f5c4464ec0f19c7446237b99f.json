@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LAST_BEOM_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "221bfa72ad632e83166e3718bbd9b3330430443f5c4464ec0f19c7446237b99f",
+  "request": {
+    "text": "이제 남은 건 정령재의 범굴 하나요.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "굴 안에서 누가 도사 양반 이름을 부르거든, 그건 사람이 아니오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_LAST_BEOM_1_221bfa72ad632e83166e3718bbd9b3330430443f5c4464ec0f19c7446237b99f.mp3",
+  "raw_sha256": "f88ba6f4df0b0ad94d74cb3a89d64874d868ec93f51224d0ea25c4b29d6a0db8",
+  "bytes": 65244,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.0
+  },
+  "http_status": 200,
+  "response_request_id": "viFJTbtiAimulmrsdDtS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:28Z"
+}

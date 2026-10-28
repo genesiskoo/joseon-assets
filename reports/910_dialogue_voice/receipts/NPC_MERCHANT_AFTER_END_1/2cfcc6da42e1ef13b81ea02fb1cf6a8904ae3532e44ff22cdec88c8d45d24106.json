@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_AFTER_END_1",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "2cfcc6da42e1ef13b81ea02fb1cf6a8904ae3532e44ff22cdec88c8d45d24106",
+  "request": {
+    "text": "목로 자리에 이제야 바람이 드는구려. 허허, 이 늙은이가 괜히 서운하네.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_AFTER_END_1_2cfcc6da42e1ef13b81ea02fb1cf6a8904ae3532e44ff22cdec88c8d45d24106.mp3",
+  "raw_sha256": "2a603e3fbe1e61c1ab0acdafc248daf934b1f7e3b986720db2875c9aea540ca9",
+  "bytes": 107458,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.64
+  },
+  "http_status": 200,
+  "response_request_id": "AGmhzWQzd6776YRctgKs",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:00Z"
+}

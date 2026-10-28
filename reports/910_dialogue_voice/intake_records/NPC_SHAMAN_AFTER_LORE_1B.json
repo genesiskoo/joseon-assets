@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.88
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 7.100000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "6c888ce9733b50b30a65276aad8831718f731c8d946a9146f229902758281336",
+  "id": "NPC_SHAMAN_AFTER_LORE_1B",
+  "speaker": "shaman",
+  "request_sha256": "248c37d7a07cfe865c55295fd1852357cbcf898d5ba6063342faa60f642219f3",
+  "raw_sha256": "a969fa9042ae06bfaa9327de207bb6d8e5c17e978ee6ddd52bd294eaba8afc2e",
+  "file": "assets/audio/voice/NPC_SHAMAN_AFTER_LORE_1B.wav",
+  "previous_sha256": null
+}

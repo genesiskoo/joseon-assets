@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.4
+  },
+  "lufs": -18.3,
+  "true_peak_dbtp": -2.3,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.100000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.3,
+    "true_peak_dbtp": -2.3
+  },
+  "sha256": "cea32eed426f1fec3ca2cead5761069da1bfeb9a9256a544e62b275e60902326",
+  "id": "NPC_ELDER_FORGET_2",
+  "speaker": "doho",
+  "request_sha256": "85bec66110b13f33c9dcc7b142aafb43e464f1aa369c0c14ade5a071c77c0fd5",
+  "raw_sha256": "95ba7f6a60154da1489100779c8cac261180aac5d96cd25c8ec0da49fe3bd6d9",
+  "file": "assets/audio/voice/NPC_ELDER_FORGET_2.wav",
+  "previous_sha256": null
+}

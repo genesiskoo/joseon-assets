@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.92
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.0,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "f2035f8b9207b2dc3bd4873bd62251573176e75b5135a07ceefa8b74c897ea5f",
+  "id": "EV_SEAL_GATE_2",
+  "speaker": "doho",
+  "request_sha256": "2d108c8920e09d6de7d43fad272ebfc7473c50742334707057445b92298928c1",
+  "raw_sha256": "11e18f42fc255b6c8fe8f7866e397e3da659ae32516c1cb8e44608eef97f7cf1",
+  "file": "assets/audio/voice/EV_SEAL_GATE_2.wav",
+  "previous_sha256": "5a4654c2e3a4352efd36a6861690ecdc9a6a2d4656db826019bb806815e52995"
+}

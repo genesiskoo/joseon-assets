@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS2_5",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "19e37f136548d721b725e9f546ce581c0587d0ab3cbc19c1caccf2db084d626c",
+  "request": {
+    "text": "사람 일은 모르는 거라우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "장사 접을 일이라도… 있나?",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS2_5_19e37f136548d721b725e9f546ce581c0587d0ab3cbc19c1caccf2db084d626c.mp3",
+  "raw_sha256": "009c3a30dec955cf8011aae41a7023c8b75a0a1f4ba12b72e686b7967c2e5b98",
+  "bytes": 36823,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.24
+  },
+  "http_status": 200,
+  "response_request_id": "HIdAhZ5BmoaUf0C8KI0e",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:27Z"
+}

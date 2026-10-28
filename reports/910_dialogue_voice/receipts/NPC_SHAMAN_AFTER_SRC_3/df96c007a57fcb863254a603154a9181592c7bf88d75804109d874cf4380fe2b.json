@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_SRC_3",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "df96c007a57fcb863254a603154a9181592c7bf88d75804109d874cf4380fe2b",
+  "request": {
+    "text": "주모라… 그렇소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "주모한테. 목로엔 소문이 다 모이잖아.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_SRC_3_df96c007a57fcb863254a603154a9181592c7bf88d75804109d874cf4380fe2b.mp3",
+  "raw_sha256": "c8e5a1cb423eb3c3e523e6fbec329c9d3241f5a74697b2853e9f7f87f58f3316",
+  "bytes": 43510,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.64
+  },
+  "http_status": 200,
+  "response_request_id": "MzHoHlNlT7dX5kNnP7m3",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:34Z"
+}

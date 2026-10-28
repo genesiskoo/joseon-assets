@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.0
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -4.0,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 0.10000000000000142,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.0
+  },
+  "sha256": "13a105464aff60ed4a586189148802a98c677023d0369b9875bbc5fc99aa9763",
+  "id": "BARK_DOHO_BULGASARI_GOLD_1",
+  "speaker": "doho",
+  "request_sha256": "f3bce9cd9288a966505cc92245cba732e64ce2c281fee44223b8a2eea5c211a6",
+  "raw_sha256": "ad893d9db9663bdbde6d5e3d13e5fb6f3ea5f0d787a3c1c5a074536bd3a9eaa6",
+  "file": "assets/audio/voice/BARK_DOHO_BULGASARI_GOLD_1.wav",
+  "previous_sha256": "03b8b58130b04e98110aeaa91e25b642684fc1aa429f25fe0346825e86778976"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_3",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "00ce1a498ddc19c1c0559fa24918752d0790fcdf651740fee8d877e96eaef630",
+  "request": {
+    "text": "틀리게 맡겨도 물건은 도로 줘. 도깨비는 값 치른 것만 먹거든.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_3_00ce1a498ddc19c1c0559fa24918752d0790fcdf651740fee8d877e96eaef630.mp3",
+  "raw_sha256": "77224b90d099fa345b7879b991037614a6be57d4d9c92a0f602e0028154c62ce",
+  "bytes": 85724,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.28
+  },
+  "http_status": 200,
+  "response_request_id": "amfboAeCgmBduxoq7h2A",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:27Z"
+}

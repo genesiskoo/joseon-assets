@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_GUMIHO_DEPART_1",
+  "speaker": "gumiho_f03",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "ca8f83bccce55431a3c38ae60e4d0d0957c6736a7bdc6453d4e5f4448fe9191e",
+  "request": {
+    "text": "문은 열렸어. 네가 열었잖아.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "이게 끝인 줄 알았어? 틈 너머가 진짜야.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/gumiho_f03/EV_GUMIHO_DEPART_1_ca8f83bccce55431a3c38ae60e4d0d0957c6736a7bdc6453d4e5f4448fe9191e.mp3",
+  "raw_sha256": "651dd06f992d74da6acd528e82a56b810e2617f562b379d082b5e42c2b0e4fdf",
+  "bytes": 53541,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.28
+  },
+  "http_status": 200,
+  "response_request_id": "BeEQ5hXb1dmMpqAUgNvi",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:57Z"
+}

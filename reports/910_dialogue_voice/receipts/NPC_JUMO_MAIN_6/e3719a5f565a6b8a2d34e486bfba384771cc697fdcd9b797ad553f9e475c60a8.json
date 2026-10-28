@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_6",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "e3719a5f565a6b8a2d34e486bfba384771cc697fdcd9b797ad553f9e475c60a8",
+  "request": {
+    "text": "열쇠 셋을 모아서 북쪽 돌문을 열어 주시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "목로엔 소문이 모이는 법이우. 못 믿겠거든 길부터 살펴보시우.",
+    "next_text": "문 안엔 뭐가 있는데?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_MAIN_6_e3719a5f565a6b8a2d34e486bfba384771cc697fdcd9b797ad553f9e475c60a8.mp3",
+  "raw_sha256": "7c1f1ee4c8258d000ed8c2df68fbc989f5cd01a7a561710559f828a5811a0324",
+  "bytes": 72767,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.48
+  },
+  "http_status": 200,
+  "response_request_id": "NDSthwUqjF30WnbtW9mD",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:16Z"
+}

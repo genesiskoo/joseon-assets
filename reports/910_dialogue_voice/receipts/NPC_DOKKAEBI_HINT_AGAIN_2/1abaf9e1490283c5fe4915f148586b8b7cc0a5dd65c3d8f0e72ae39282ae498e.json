@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_HINT_AGAIN_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "1abaf9e1490283c5fe4915f148586b8b7cc0a5dd65c3d8f0e72ae39282ae498e",
+  "request": {
+    "text": "아무거나 박았다간 돈값 못 하겠구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "오방옥은 장비 홈에 박는 거야. 빛깔마다 힘이 다르니 쓰임부터 읽어 봐.",
+    "next_text": "박힌 옥을 살려 빼려면 장비째 맡겨. 옥은 돌려주고 장비는 내가 가져.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_DOKKAEBI_HINT_AGAIN_2_1abaf9e1490283c5fe4915f148586b8b7cc0a5dd65c3d8f0e72ae39282ae498e.mp3",
+  "raw_sha256": "cd96c2257db0a6e461faef3f7f4bb32ec48a86104b3f8b66808248c88148abb9",
+  "bytes": 53541,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.28
+  },
+  "http_status": 200,
+  "response_request_id": "ocEs2Dc1Vq4WfjcgBlMY",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:22Z"
+}

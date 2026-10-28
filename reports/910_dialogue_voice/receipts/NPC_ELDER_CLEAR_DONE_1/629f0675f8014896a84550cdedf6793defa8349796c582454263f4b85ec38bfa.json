@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_CLEAR_DONE_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "629f0675f8014896a84550cdedf6793defa8349796c582454263f4b85ec38bfa",
+  "request": {
+    "text": "간밤엔 굴 쪽이 조용했소. 도사 양반 솜씨요?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "산책 좀 했지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_CLEAR_DONE_1_629f0675f8014896a84550cdedf6793defa8349796c582454263f4b85ec38bfa.mp3",
+  "raw_sha256": "83c59e27f0830ca943318e5bda1a0b293675695f5b1772a3c2001f092a8674e5",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "NUBICOLNwuFzswlePSYD",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:45Z"
+}

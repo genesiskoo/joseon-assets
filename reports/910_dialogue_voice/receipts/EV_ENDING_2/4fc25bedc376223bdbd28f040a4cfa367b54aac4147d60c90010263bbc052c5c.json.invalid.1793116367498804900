@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "id": "EV_ENDING_2",
+  "request_sha256": "4fc25bedc376223bdbd28f040a4cfa367b54aac4147d60c90010263bbc052c5c",
+  "request": {
+    "text": "그 여우가 틈 얘기를 하더니, 빈말이 아니었군.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "주모의 솥은 식었으나, 그 사람이 지키던 장터는 남았소.",
+    "next_text": "장터에 사람이 하나둘 돌아오고 있소. 당분간 굴을 돌며 못골을 지켜 주시오, 도사 양반.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": "No module named 'audio_intake'"
+    }
+  ]
+}

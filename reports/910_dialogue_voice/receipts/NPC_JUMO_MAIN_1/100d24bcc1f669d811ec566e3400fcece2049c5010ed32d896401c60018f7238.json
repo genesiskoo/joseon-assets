@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_1",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "100d24bcc1f669d811ec566e3400fcece2049c5010ed32d896401c60018f7238",
+  "request": {
+    "text": "그나저나 도사 양반, 이 장터가 왜 닫혔는지 아시우?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "닫힌 장터에 국솥만 끓고 있네. 무슨 일인데?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_MAIN_1_100d24bcc1f669d811ec566e3400fcece2049c5010ed32d896401c60018f7238.mp3",
+  "raw_sha256": "c723e31316f0673c7bb9cfa0c3b09d6c59cd652dc89466e67b442ec2d5b4ed57",
+  "bytes": 77783,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.8
+  },
+  "http_status": 200,
+  "response_request_id": "gaxOQfQ2335htGq8xPCq",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:11Z"
+}

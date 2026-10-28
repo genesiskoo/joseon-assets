@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_SRC_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "e2e4e95113fd7550201e6bacfce8f392e5c88e85528c34d98c1af5215c95198e",
+  "request": {
+    "text": "열쇠라 했소? 그건 봉인이오. 굴마다 한 쪽씩 있는 줄은 나도 몰랐는데, 누구한테 들었소?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "주모한테. 목로엔 소문이 다 모이잖아.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_SRC_1_e2e4e95113fd7550201e6bacfce8f392e5c88e85528c34d98c1af5215c95198e.mp3",
+  "raw_sha256": "f1ffcf98013ffa7a08a2ecf78d0bd88dd76ec5299e4eae17f2a1f5f19c091976",
+  "bytes": 131700,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.16
+  },
+  "http_status": 200,
+  "response_request_id": "6Cbe1rBkgLIIgZ5Kgm3q",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:35Z"
+}

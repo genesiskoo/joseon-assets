@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_OFFER_2",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "042181c8a2072171ce177b94d8a630d2a5c1ca058e8d346af76dbafe63888108",
+  "request": {
+    "text": "밤마다 굴 어귀에서 요괴들이 기어 나와, 밭을 헤집고 외양간을 비우오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "부탁이 하나 있소. 흑랑 굴 말이오.",
+    "next_text": "끝까지는 바라지도 않소. 굴 어귀만 비워 주시오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_OFFER_2_042181c8a2072171ce177b94d8a630d2a5c1ca058e8d346af76dbafe63888108.mp3",
+  "raw_sha256": "2c45834bbe11f97edb7eb3fd174c881d9938a4157a7a7e224f4d6e2b0a1ba51f",
+  "bytes": 104950,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.48
+  },
+  "http_status": 200,
+  "response_request_id": "mG1F2mJnSrNP2yPujzrS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:51Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LAST_HEUK_3",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "4de92f9bd8dc320cb04abaa0034dcf5f97a3cf0fef021d36d48fdb628bc2336c",
+  "request": {
+    "text": "그래 봐야 강아지 한 마리지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "흑랑은 해와 달도 물어 삼키려던 불개요. 달려들 때를 조심하시오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_AFTER_LAST_HEUK_3_4de92f9bd8dc320cb04abaa0034dcf5f97a3cf0fef021d36d48fdb628bc2336c.mp3",
+  "raw_sha256": "043aa46164285e54385b68d8973bccd77300650dcb52b590185df1bb7d1f0097",
+  "bytes": 36823,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.24
+  },
+  "http_status": 200,
+  "response_request_id": "iMeVpbuYHPHHq86EkOH1",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:27Z"
+}

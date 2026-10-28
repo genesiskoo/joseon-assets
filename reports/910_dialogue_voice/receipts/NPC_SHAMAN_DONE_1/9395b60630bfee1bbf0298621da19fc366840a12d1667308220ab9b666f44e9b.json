@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_DONE_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "9395b60630bfee1bbf0298621da19fc366840a12d1667308220ab9b666f44e9b",
+  "request": {
+    "text": "왔구려. 주모가 자리를 비웠으니 내가 대신 듣겠소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "굴 주인은 치웠지. 국물값은 아직이지만.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_DONE_1_9395b60630bfee1bbf0298621da19fc366840a12d1667308220ab9b666f44e9b.mp3",
+  "raw_sha256": "916109ad5a2c12df4065c5d108cae16fd721d5e48f9e5f6a1ac3f0d1f2b5e986",
+  "bytes": 81545,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.04
+  },
+  "http_status": 200,
+  "response_request_id": "vlE8HOSeTcj6y376TMez",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:13Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_GREET_2",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "5ca58be30857ecb223d3cf7c60be090e48f5413ef5c4e3a8eef995e4be5b5a61",
+  "request": {
+    "text": "또 오셨수? 산 사람 얼굴을 보니 반갑구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_GREET_2_5ca58be30857ecb223d3cf7c60be090e48f5413ef5c4e3a8eef995e4be5b5a61.mp3",
+  "raw_sha256": "7888cce33c21dab595719568e1a91ce92ce3d3555b3cd0a9d2d64338eace25cd",
+  "bytes": 65244,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.0
+  },
+  "http_status": 200,
+  "response_request_id": "5C9bbtq9K68jlsnpbKlS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:38Z"
+}

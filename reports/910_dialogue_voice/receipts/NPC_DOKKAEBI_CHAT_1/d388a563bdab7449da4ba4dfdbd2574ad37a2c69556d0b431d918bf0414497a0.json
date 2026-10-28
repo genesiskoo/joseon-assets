@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "d388a563bdab7449da4ba4dfdbd2574ad37a2c69556d0b431d918bf0414497a0",
+  "request": {
+    "text": "같은 옥 셋이면 한 단 위 옥으로 바꿔 줘. 맨 위 옥은 더 못 올려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_1_d388a563bdab7449da4ba4dfdbd2574ad37a2c69556d0b431d918bf0414497a0.mp3",
+  "raw_sha256": "21880cafee07bddf8ab9ec962ed517aa148a663652a3ffd75f3a80713e48d46c",
+  "bytes": 85724,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.28
+  },
+  "http_status": 200,
+  "response_request_id": "S8bT5c6nn4Sny4oMFvdj",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:25Z"
+}

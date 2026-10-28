@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_IDENTIFY_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "0447b4214d0f9e34d7be76cd8e7159d68e2423acb217c638c51bd502ef924170",
+  "request": {
+    "text": "엽전이 모자라오. 공짜로 읽어 드릴 순 없소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_IDENTIFY_2_0447b4214d0f9e34d7be76cd8e7159d68e2423acb217c638c51bd502ef924170.mp3",
+  "raw_sha256": "c16d4b5fa608dcfd6a01b553fa4e5da3ec839fab94d5e91e36c291a1993245e7",
+  "bytes": 63990,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.92
+  },
+  "http_status": 200,
+  "response_request_id": "M16vq5Zx72uRXMcScu42",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:46Z"
+}

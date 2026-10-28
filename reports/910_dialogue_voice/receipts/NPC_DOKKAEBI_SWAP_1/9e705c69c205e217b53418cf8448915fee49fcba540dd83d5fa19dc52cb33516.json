@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_SWAP_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "9e705c69c205e217b53418cf8448915fee49fcba540dd83d5fa19dc52cb33516",
+  "request": {
+    "text": "그래, 장비 하나 내놔 봐. 누비옷은 어디 안 갔어.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_SWAP_1_9e705c69c205e217b53418cf8448915fee49fcba540dd83d5fa19dc52cb33516.mp3",
+  "raw_sha256": "8118eb772e29dfdaf176bae7cbb1b09c9dc9244d4c7d9bb91a3946eedba3a2fd",
+  "bytes": 65244,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.0
+  },
+  "http_status": 200,
+  "response_request_id": "NTF57Hwk9pOCbJ7YExNg",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:21Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_14",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "48124a5511daed7b507ffbf48f9c14437250efb1f4364e2f1e5caf185419cd2f",
+  "request": {
+    "text": "자, 골라 봐.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "박기 전에 쓰임을 읽어 봐. 좋은 옥도 제자리 못 찾으면 아까우니까.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_FIRST_14_48124a5511daed7b507ffbf48f9c14437250efb1f4364e2f1e5caf185419cd2f.mp3",
+  "raw_sha256": "b4f6b279ca09b3fa15f1ddc6b859dd1d4c931f0289f155e3a16062b20c751b20",
+  "bytes": 23030,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.36
+  },
+  "http_status": 200,
+  "response_request_id": "ClEHbbCiCJHWMFMbO4R0",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:16Z"
+}

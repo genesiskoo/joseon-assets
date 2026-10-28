@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_JUMO_GONE_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "198cfa2ee4315ce65e1df86365a0064a980f35d2fd0c687d80c7350e1af9d1ca",
+  "request": {
+    "text": "주모가 술잔도 안 치우고 자취를 감췄소. 사람이 그리 홀연히 사라지는 건 좋은 징조가 아니오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_JUMO_GONE_1_198cfa2ee4315ce65e1df86365a0064a980f35d2fd0c687d80c7350e1af9d1ca.mp3",
+  "raw_sha256": "68408ac437317b6db6f2c27339ff76e599fb5ac9cd88bbca88e6552a9b76baee",
+  "bytes": 125430,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.76
+  },
+  "http_status": 200,
+  "response_request_id": "KfIklVgQeFSAdYXXl7pA",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:38Z"
+}

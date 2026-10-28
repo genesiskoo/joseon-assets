@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.88
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 9.100000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "a1741641f24c46df4948896982141bb313d52e273416181caada09e5bf297ca0",
+  "id": "BARK_DOHO_GATE_LOOK_1",
+  "speaker": "doho",
+  "request_sha256": "1fa74f307e2f6be198a20ef91492065ed28180356dacfe20bd88c2889a9d0a1f",
+  "raw_sha256": "3d164397bd667d6548039ab2a52d3c5ff490d94f59da2449a978d2dfd1f63447",
+  "file": "assets/audio/voice/BARK_DOHO_GATE_LOOK_1.wav",
+  "previous_sha256": "d0c3239bc72fa82d0f73a767c639854b5a3ea05c1604d2b554c9516fb32c8763"
+}

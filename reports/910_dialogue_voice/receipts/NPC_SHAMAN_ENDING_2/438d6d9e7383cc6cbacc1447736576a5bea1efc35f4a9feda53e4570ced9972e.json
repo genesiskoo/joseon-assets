@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_ENDING_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "438d6d9e7383cc6cbacc1447736576a5bea1efc35f4a9feda53e4570ced9972e",
+  "request": {
+    "text": "돌문 너머 틈은 내가 지켜보겠소. 도사 양반은 굴을 맡아 주시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_ENDING_2_438d6d9e7383cc6cbacc1447736576a5bea1efc35f4a9feda53e4570ced9972e.mp3",
+  "raw_sha256": "9d878373482500fa51e74947f4ebcf6349ab1969b779c2ee4c3b973e2418c554",
+  "bytes": 89486,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.52
+  },
+  "http_status": 200,
+  "response_request_id": "fqGUQAmmTqXvVwYafgrD",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:03Z"
+}

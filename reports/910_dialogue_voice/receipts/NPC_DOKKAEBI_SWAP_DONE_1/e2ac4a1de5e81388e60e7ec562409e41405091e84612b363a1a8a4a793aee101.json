@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_SWAP_DONE_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "e2ac4a1de5e81388e60e7ec562409e41405091e84612b363a1a8a4a793aee101",
+  "request": {
+    "text": "옜다, 누비옷. 홈 둘이야. 오방옥 쓰임부터 읽고 골라 박아.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_SWAP_DONE_1_e2ac4a1de5e81388e60e7ec562409e41405091e84612b363a1a8a4a793aee101.mp3",
+  "raw_sha256": "3466953acb5743fafb9a6147f30ac393b94c4458fe95b01dfe9a7dd613871eec",
+  "bytes": 80291,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.96
+  },
+  "http_status": 200,
+  "response_request_id": "BZxLpJvsi5dSJoCNjpaT",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:41Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_GREET_3",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "971940dc15780dd023b514db48ffe0d1a5ca1a39d708c7dd737d1d390230bc76",
+  "request": {
+    "text": "굴에서 건진 건 다 사 드리우. 값은 뭐, 시세대로 쳐 드리지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_GREET_3_971940dc15780dd023b514db48ffe0d1a5ca1a39d708c7dd737d1d390230bc76.mp3",
+  "raw_sha256": "a778dc10b4c2b94cd5ab4cfda2a35cbaca5bc24745d22806645afad3138242d1",
+  "bytes": 84470,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.2
+  },
+  "http_status": 200,
+  "response_request_id": "Pn7ONSv4inOPutYTsqsT",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:53Z"
+}

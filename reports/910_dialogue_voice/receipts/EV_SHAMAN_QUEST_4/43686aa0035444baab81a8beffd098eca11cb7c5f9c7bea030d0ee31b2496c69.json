@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SHAMAN_QUEST_4",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "43686aa0035444baab81a8beffd098eca11cb7c5f9c7bea030d0ee31b2496c69",
+  "request": {
+    "text": "구미호는 마을 북쪽 산길 끝, 봉밀굴 문 안에 갇혀 있소. 아직 그 문을 열 때는 아니오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그 수하 하나가 들녘 너머 흑랑 굴에 들어앉았소.",
+    "next_text": "또 봉인 타령이네.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/EV_SHAMAN_QUEST_4_43686aa0035444baab81a8beffd098eca11cb7c5f9c7bea030d0ee31b2496c69.mp3",
+  "raw_sha256": "d5f43bb74eccbae0bb12028162164870e82320d5ccfcc506dfca3e089f282a01",
+  "bytes": 145910,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 9.04
+  },
+  "http_status": 200,
+  "response_request_id": "biqFZFt1197plDM2GFMM",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:06Z"
+}

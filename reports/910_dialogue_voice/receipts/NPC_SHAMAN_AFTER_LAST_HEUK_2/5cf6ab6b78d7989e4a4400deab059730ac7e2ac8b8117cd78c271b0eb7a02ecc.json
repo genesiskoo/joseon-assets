@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LAST_HEUK_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "5cf6ab6b78d7989e4a4400deab059730ac7e2ac8b8117cd78c271b0eb7a02ecc",
+  "request": {
+    "text": "흑랑은 해와 달도 물어 삼키려던 불개요. 달려들 때를 조심하시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "이제 남은 건 들녘의 흑랑 굴 하나요.",
+    "next_text": "그래 봐야 강아지 한 마리지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_LAST_HEUK_2_5cf6ab6b78d7989e4a4400deab059730ac7e2ac8b8117cd78c271b0eb7a02ecc.mp3",
+  "raw_sha256": "5e7f756258642bdec0a998fddec5b636a8b95d1671c21bda20dd3302a77701a5",
+  "bytes": 118743,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.36
+  },
+  "http_status": 200,
+  "response_request_id": "H36FOUGtJtF61pG6LeXJ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:27Z"
+}

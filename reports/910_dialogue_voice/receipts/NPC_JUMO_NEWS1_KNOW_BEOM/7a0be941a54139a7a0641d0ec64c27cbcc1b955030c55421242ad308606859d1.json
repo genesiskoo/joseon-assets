@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_KNOW_BEOM",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "7a0be941a54139a7a0641d0ec64c27cbcc1b955030c55421242ad308606859d1",
+  "request": {
+    "text": "그 범이 마지막엔 도사 양반 이름을 부르더라며?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "남은 둘은 들녘의 흑랑 굴과 정령재의 쇠부리 폐광이우. 어느 쪽이 먼저든 상관없수.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS1_KNOW_BEOM_7a0be941a54139a7a0641d0ec64c27cbcc1b955030c55421242ad308606859d1.mp3",
+  "raw_sha256": "f69c771f23e98a5f3752fac8253ce281c3b5475bfa30dc2bf8d23a282441c231",
+  "bytes": 65244,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.0
+  },
+  "http_status": 200,
+  "response_request_id": "HRSsVWJGatFOXXrzSxE8",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:33Z"
+}

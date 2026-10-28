@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GREET_5",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "d55c7d860cda84c5405335c6a9d4a2cb4ee003b740ea47248deb48afb22767cb",
+  "request": {
+    "text": "이 동네에서 내가 제일 한가한 장사꾼이야. 손님이라곤 도사 양반뿐이니.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GREET_5_d55c7d860cda84c5405335c6a9d4a2cb4ee003b740ea47248deb48afb22767cb.mp3",
+  "raw_sha256": "79d591355eb5708e6722d0cbbbd80dae8db50f61d77785ab7b2ff81c7c2a7b0e",
+  "bytes": 95755,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.92
+  },
+  "http_status": 200,
+  "response_request_id": "S1EYlnRGpkr4r7OhiMgS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:19Z"
+}

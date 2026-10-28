@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_SOCKET_OFFER_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "900f30ab5eb520e04219bd15554a87899ebdac0b04e59323260c3ffacc78a029",
+  "request": {
+    "text": "정령재 쪽 요괴들은 가죽이 질기다 들었소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "칼이나 옷을 하나 가져오시오. 늙은이 손으로도 홈 하나는 내 드리리다.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_SOCKET_OFFER_1_900f30ab5eb520e04219bd15554a87899ebdac0b04e59323260c3ffacc78a029.mp3",
+  "raw_sha256": "bbadf77b862be62f14a85df9ab57554fa7ed2ce51a0f02f3774bfba9e73bf554",
+  "bytes": 59811,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.68
+  },
+  "http_status": 200,
+  "response_request_id": "pfCgdGexVv6rEkCQYfVh",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:04Z"
+}

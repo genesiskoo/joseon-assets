@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LORE_2B",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "ff9fef9012a741e42f5e7bfcfe6e13f55020da90c995a8d2ffe71c28dbd09c07",
+  "request": {
+    "text": "그러고는 세 쪽을 굴마다 흩어 놓았지. 셋이 다시 모여야 그 문이 열리오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "봉인이 낡아 금이 가자, 구미호가 그걸 거꾸로 걸어 제 문을 잠갔소.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_LORE_2B_ff9fef9012a741e42f5e7bfcfe6e13f55020da90c995a8d2ffe71c28dbd09c07.mp3",
+  "raw_sha256": "7a4f56b67a0081c780eaf6d96da43369ab34234c721b600d891508eae6b3a328",
+  "bytes": 113727,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.04
+  },
+  "http_status": 200,
+  "response_request_id": "dpYIn6mD5V3BexXC2drV",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:22Z"
+}

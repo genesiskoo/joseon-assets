@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_6",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "f84be024bad1498c847f5cd1c5c6b076032af0e55013519c1ab2932d6a929c3b",
+  "request": {
+    "text": "옛 도사들 곁에서 먹 갈던 몸이라 글귀를 좀 알지. 어깨너머로 배웠는데, 어깨가 높았거든.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_6_f84be024bad1498c847f5cd1c5c6b076032af0e55013519c1ab2932d6a929c3b.mp3",
+  "raw_sha256": "7f68232f60a5e18f7c86b701924ac04f0e7c28bb18579722184f5c0cdc2faf41",
+  "bytes": 113727,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.04
+  },
+  "http_status": 200,
+  "response_request_id": "brKiC1ZjptZQjjQfW4sv",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:29Z"
+}

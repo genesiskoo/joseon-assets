@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_AFTER_BEOM_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "6ed7457274300b615af229dfd45fc771e30f50962f848a83f2060948bbc3ae36",
+  "request": {
+    "text": "범굴 흰 범을 베셨소? 정령재에 간 이들을 불러 간 목소리가 그놈이었구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "촌장 목소리로 길을 찾았다길래, 반대쪽으로 갔지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_AFTER_BEOM_1_6ed7457274300b615af229dfd45fc771e30f50962f848a83f2060948bbc3ae36.mp3",
+  "raw_sha256": "7758a086dc01846d5c198d05f8b1278cd99dbe0a1e613cbd85e7458e2a870ca9",
+  "bytes": 103278,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.4
+  },
+  "http_status": 200,
+  "response_request_id": "B9qLBSHr2moxMlaxDq4D",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:01Z"
+}

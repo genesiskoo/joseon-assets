@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_PROGRESS_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "c62c0dab3a5bd5088983c76d570d82449951045fbeb9341909ad60eb3f85d36f",
+  "request": {
+    "text": "아직이오? 길은 주모가 알려 주었을 텐데.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "탕약은 챙겼소? 김 영감네 좌판에 있소.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_PROGRESS_1_c62c0dab3a5bd5088983c76d570d82449951045fbeb9341909ad60eb3f85d36f.mp3",
+  "raw_sha256": "2e01d247263fa598bb89db65cf4a7b6239efbfeecc6272023ace12d6c52bd3a0",
+  "bytes": 63990,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.92
+  },
+  "http_status": 200,
+  "response_request_id": "aTKriX4ANkwB8cGVtNcH",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:11Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_GUMIHO_INTRO_MET_0",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "534bc4412000d31c9d4f995dedc54eada880ef5363b3363838acdf7e4476275c",
+  "request": {
+    "text": "목로가 비어 있길래 짐작은 했지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "목로 밖에서 또 보는구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_GUMIHO_INTRO_MET_0_534bc4412000d31c9d4f995dedc54eada880ef5363b3363838acdf7e4476275c.mp3",
+  "raw_sha256": "ae31791c9404e616ad21e495864f72c910f36029720019c1087db3d1bb6e6c96",
+  "bytes": 47272,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.88
+  },
+  "http_status": 200,
+  "response_request_id": "Ge03InckiAorLDyxVnog",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:52Z"
+}

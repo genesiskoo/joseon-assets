@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_FIRST_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "48e3ab5c3c9854684b4069b662562253d5fb98fe267b1377c02b390c1903c725",
+  "request": {
+    "text": "국물이면 됐지. 외상도 되나?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "도사 양반, 목이나 축이고 가시구려. 술은 없어도 국물은 있수.",
+    "next_text": "외상은 살아서 돌아오는 사람한테만 놓수.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_FIRST_2_48e3ab5c3c9854684b4069b662562253d5fb98fe267b1377c02b390c1903c725.mp3",
+  "raw_sha256": "ad3721a86c8cdfec491e1b9d49ff6e90b9c001249a1378ec3176bc1188a7ad5f",
+  "bytes": 51034,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.12
+  },
+  "http_status": 200,
+  "response_request_id": "mfI8pyimWhz1LzRfeh6Z",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:09Z"
+}

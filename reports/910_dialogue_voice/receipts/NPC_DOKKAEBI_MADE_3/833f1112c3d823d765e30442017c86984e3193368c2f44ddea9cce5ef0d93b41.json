@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_MADE_3",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "833f1112c3d823d765e30442017c86984e3193368c2f44ddea9cce5ef0d93b41",
+  "request": {
+    "text": "뚝딱은 아니고 좀 걸렸어. 받아 가.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_MADE_3_833f1112c3d823d765e30442017c86984e3193368c2f44ddea9cce5ef0d93b41.mp3",
+  "raw_sha256": "64db964df517cc524ba794c6303f73b7a01947570b61b01c14ddff7fb6827191",
+  "bytes": 48526,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "http_status": 200,
+  "response_request_id": "fAy38teqd5O47eyBT1zD",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:31Z"
+}

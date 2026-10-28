@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SEAL_GATE_4",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "84cc780d9f50249ffb67512824cd1da9e022f552a4b7aa4bc92d597aee1da1a2",
+  "request": {
+    "text": "그러니 안에서 끝내야지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "안에 갇힌 것이 풀려나오면, 못골은 끝이오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_SEAL_GATE_4_84cc780d9f50249ffb67512824cd1da9e022f552a4b7aa4bc92d597aee1da1a2.mp3",
+  "raw_sha256": "f1b243288500f348635f0bfadb5d86e163f7a09c98555b7b89c89ffb22a7bd6a",
+  "bytes": 35569,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.16
+  },
+  "http_status": 200,
+  "response_request_id": "rfzC13cSbHLzczIhUEGx",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:01Z"
+}

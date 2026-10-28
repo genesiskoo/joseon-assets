@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_GAKSI_UNTOLD_3",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "591cf0413ba9ad94c5ee9dcceadf1c4520b33f86253cb8c7b0fbc792de8b921c",
+  "request": {
+    "text": "그 집은 내가 오래 일하던 데라우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "각시귀신 하나가 길을 막길래 치웠지.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_GAKSI_UNTOLD_3_591cf0413ba9ad94c5ee9dcceadf1c4520b33f86253cb8c7b0fbc792de8b921c.mp3",
+  "raw_sha256": "7446fe96a96148b46146ebed940b3aaf71b266be7ee7dccbf9e6533de357bda3",
+  "bytes": 47272,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.88
+  },
+  "http_status": 200,
+  "response_request_id": "dGPzdU0BUi04Gz2Fbmb0",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:21Z"
+}

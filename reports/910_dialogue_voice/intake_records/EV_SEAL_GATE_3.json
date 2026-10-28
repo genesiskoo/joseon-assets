@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.48
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.2,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 7.0,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.2
+  },
+  "sha256": "0b8502a8a7d7a4a065bb8c1d5cf247ab19549da9a8e7d5c6f3f9e1fdd145c812",
+  "id": "EV_SEAL_GATE_3",
+  "speaker": "shaman",
+  "request_sha256": "cc0999b4214fcf6c302fbcdef2d700753be7f98363e8b1cb668231f1fb3372f9",
+  "raw_sha256": "760e02cfec3dd4831fbe80a922173ffe4d4581aba311e813d8b563de2202323d",
+  "file": "assets/audio/voice/EV_SEAL_GATE_3.wav",
+  "previous_sha256": "9c99047db194b10a41fc875007a3878cbb77fd32e3c315c6296090d038558e52"
+}

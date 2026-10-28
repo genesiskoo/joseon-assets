@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -4.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 3.6000000000000014,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.4
+  },
+  "sha256": "c201d14a0932ecf97ad54694c97e834fb02f8ce3379ea961cb6443c47d6e0b3b",
+  "id": "NPC_SHAMAN_NUDGE_1",
+  "speaker": "shaman",
+  "request_sha256": "37e4b0abb93363dfb784cf8b0e13b4fbb9e614e9a9b29dac271bd0a7a4a0f40d",
+  "raw_sha256": "942ce9e0d160e1d5ea3599a0b998874c8ba89d30f9591382536d88a51f25711a",
+  "file": "assets/audio/voice/NPC_SHAMAN_NUDGE_1.wav",
+  "previous_sha256": "ff3eabe7e57d2ce5deb20bf1d064b17d6ded604df80648ffde0e3a893a4e33ae"
+}

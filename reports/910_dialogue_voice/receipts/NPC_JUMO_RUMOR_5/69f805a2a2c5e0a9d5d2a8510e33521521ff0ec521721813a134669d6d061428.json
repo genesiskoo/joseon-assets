@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_RUMOR_5",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "69f805a2a2c5e0a9d5d2a8510e33521521ff0ec521721813a134669d6d061428",
+  "request": {
+    "text": "내가 들녘 옛 주막집에서 오래 일했수. 그 얘긴, 말 못 하겠수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_RUMOR_5_69f805a2a2c5e0a9d5d2a8510e33521521ff0ec521721813a134669d6d061428.mp3",
+  "raw_sha256": "3c78bf1369416f00f95d2205e5ed84d1b0fd2392eb278bde17362b6dd60d29f5",
+  "bytes": 107458,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.64
+  },
+  "http_status": 200,
+  "response_request_id": "fzv1VhYTxjRr6jO11ANd",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:44Z"
+}

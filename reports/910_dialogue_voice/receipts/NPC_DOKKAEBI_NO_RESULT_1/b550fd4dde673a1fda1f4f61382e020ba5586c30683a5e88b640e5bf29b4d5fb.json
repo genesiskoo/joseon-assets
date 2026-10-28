@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_NO_RESULT_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "b550fd4dde673a1fda1f4f61382e020ba5586c30683a5e88b640e5bf29b4d5fb",
+  "request": {
+    "text": "이치는 맞는데 내줄 게 없어. 더 올릴 데도, 바꿔 줄 짝도 바닥이네.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_NO_RESULT_1_b550fd4dde673a1fda1f4f61382e020ba5586c30683a5e88b640e5bf29b4d5fb.mp3",
+  "raw_sha256": "e69ee3b70b30b6b47d5318aca505b44cc22f7f0c9c740350ba0c456a6daaa29b",
+  "bytes": 95755,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.92
+  },
+  "http_status": 200,
+  "response_request_id": "hiQubkC4LcYjbMXZboMQ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:35Z"
+}

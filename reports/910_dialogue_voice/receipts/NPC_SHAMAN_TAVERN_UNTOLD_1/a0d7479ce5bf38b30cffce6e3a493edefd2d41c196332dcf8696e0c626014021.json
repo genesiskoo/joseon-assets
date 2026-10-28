@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_TAVERN_UNTOLD_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "a0d7479ce5bf38b30cffce6e3a493edefd2d41c196332dcf8696e0c626014021",
+  "request": {
+    "text": "들녘 옛 주막 터 울음이 그쳤다 들었소. 도사 양반 솜씨요?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_TAVERN_UNTOLD_1_a0d7479ce5bf38b30cffce6e3a493edefd2d41c196332dcf8696e0c626014021.mp3",
+  "raw_sha256": "0b0c3ed2f43a5a696e4cefe5d5a9cfcf33d2fa85d313b1c8adc1304dee65cb33",
+  "bytes": 85724,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.28
+  },
+  "http_status": 200,
+  "response_request_id": "vLtCPOXpWpfE375oPI5F",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:18Z"
+}

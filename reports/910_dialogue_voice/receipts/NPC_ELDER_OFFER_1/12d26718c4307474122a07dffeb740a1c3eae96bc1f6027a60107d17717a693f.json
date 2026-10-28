@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_OFFER_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "12d26718c4307474122a07dffeb740a1c3eae96bc1f6027a60107d17717a693f",
+  "request": {
+    "text": "부탁이 하나 있소. 흑랑 굴 말이오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "밤마다 굴 어귀에서 요괴들이 기어 나와, 밭을 헤집고 외양간을 비우오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_OFFER_1_12d26718c4307474122a07dffeb740a1c3eae96bc1f6027a60107d17717a693f.mp3",
+  "raw_sha256": "43fea1b0214bc9fa0b052797175d1be8709a984310ae6ace1c42304d36878c6b",
+  "bytes": 57303,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.52
+  },
+  "http_status": 200,
+  "response_request_id": "JUoS4mu7fcg2XFpdvaOa",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:48Z"
+}

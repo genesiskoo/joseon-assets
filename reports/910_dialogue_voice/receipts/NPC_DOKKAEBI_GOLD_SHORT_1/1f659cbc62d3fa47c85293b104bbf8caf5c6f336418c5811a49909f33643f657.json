@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GOLD_SHORT_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "1f659cbc62d3fa47c85293b104bbf8caf5c6f336418c5811a49909f33643f657",
+  "request": {
+    "text": "엽전이 모자라. 도깨비 장사도 공짜는 아니야. 채워서 와.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GOLD_SHORT_1_1f659cbc62d3fa47c85293b104bbf8caf5c6f336418c5811a49909f33643f657.mp3",
+  "raw_sha256": "35b24123293d5666fc433f1258bcf4995f1cef46440b2d625dadd0c30abb346f",
+  "bytes": 75275,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.64
+  },
+  "http_status": 200,
+  "response_request_id": "LlTv0DVc2Kv9o8P1wtia",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:37Z"
+}

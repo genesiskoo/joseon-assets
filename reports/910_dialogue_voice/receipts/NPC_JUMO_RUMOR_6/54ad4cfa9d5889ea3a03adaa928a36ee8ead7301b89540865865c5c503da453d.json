@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_RUMOR_6",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "54ad4cfa9d5889ea3a03adaa928a36ee8ead7301b89540865865c5c503da453d",
+  "request": {
+    "text": "흑랑 굴 맨 끝엔 불개 한 마리가 산다우. 달려들 땐 옆으로 비켜서시구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_RUMOR_6_54ad4cfa9d5889ea3a03adaa928a36ee8ead7301b89540865865c5c503da453d.mp3",
+  "raw_sha256": "9435a2803e9ef17cd8dcebb20e8cacca045ab61c6e186e87043421b9d6b0f269",
+  "bytes": 109966,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.8
+  },
+  "http_status": 200,
+  "response_request_id": "CU7w9DdCWBASZbkYrXWn",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:44Z"
+}

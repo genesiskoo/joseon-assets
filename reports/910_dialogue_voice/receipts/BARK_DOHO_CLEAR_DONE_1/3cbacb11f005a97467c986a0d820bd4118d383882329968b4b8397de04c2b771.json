@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_CLEAR_DONE_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "3cbacb11f005a97467c986a0d820bd4118d383882329968b4b8397de04c2b771",
+  "request": {
+    "text": "산책 끝. 촌장 영감한테 가 볼까.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_CLEAR_DONE_1_3cbacb11f005a97467c986a0d820bd4118d383882329968b4b8397de04c2b771.mp3",
+  "raw_sha256": "8b4c5fe71ec99bc844ce26fb5bbe8bc236513578ba2da9c4645ae51d34daf967",
+  "bytes": 47272,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.88
+  },
+  "http_status": 200,
+  "response_request_id": "vrz8MbhRT4wPYR07nQma",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:52Z"
+}

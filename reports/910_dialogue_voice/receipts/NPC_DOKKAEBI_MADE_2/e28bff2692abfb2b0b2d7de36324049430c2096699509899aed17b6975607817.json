@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_MADE_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "e28bff2692abfb2b0b2d7de36324049430c2096699509899aed17b6975607817",
+  "request": {
+    "text": "됐네. 도깨비 솜씨는 믿을 만하지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_MADE_2_e28bff2692abfb2b0b2d7de36324049430c2096699509899aed17b6975607817.mp3",
+  "raw_sha256": "6ba6939d874f1fd46421d4260b5ba0ad31925bb5194af83edeb9de627cabb363",
+  "bytes": 49780,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.04
+  },
+  "http_status": 200,
+  "response_request_id": "EyP1Jwti6FytdA9PFbvA",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:31Z"
+}

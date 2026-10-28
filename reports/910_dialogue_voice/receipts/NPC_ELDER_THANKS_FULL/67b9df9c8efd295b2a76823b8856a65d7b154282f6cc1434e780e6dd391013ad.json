@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_THANKS_FULL",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "67b9df9c8efd295b2a76823b8856a65d7b154282f6cc1434e780e6dd391013ad",
+  "request": {
+    "text": "짐이 많구려. 가방을 비우고 다시 오시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_THANKS_FULL_67b9df9c8efd295b2a76823b8856a65d7b154282f6cc1434e780e6dd391013ad.mp3",
+  "raw_sha256": "c59e523237c826e6243508fc9903b0a7c706c9f8df9af082706d510eede3cfb5",
+  "bytes": 59811,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.68
+  },
+  "http_status": 200,
+  "response_request_id": "mmNwn6JEDmASGG6Oc1Gt",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:57Z"
+}

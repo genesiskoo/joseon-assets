@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_AFTER_SOE_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "ba4718abc2dadfacf3fcf31d92b7f5f4517c77d121d4f91b6230c41901d7e118",
+  "request": {
+    "text": "칼로는 못 죽인다던 불가살이를 베셨소? 이제 대장간 불도 다시 지필 수 있겠구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "그놈은 그냥 배가 고팠던 거야.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_AFTER_SOE_1_ba4718abc2dadfacf3fcf31d92b7f5f4517c77d121d4f91b6230c41901d7e118.mp3",
+  "raw_sha256": "40509dab9bf0b52b10e7cdda211628396bf414b165f4c8c6b4b66d851561c973",
+  "bytes": 107458,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.64
+  },
+  "http_status": 200,
+  "response_request_id": "RNLfc8VzO5d580iMQryF",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:02Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_MOKRO",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "6dfd0809e71216025bb93902058f49967eb4a0710cfb04c06a9ebc0f7e3a54cf",
+  "request": {
+    "text": "나는 목로 쪽엔 안 가. 국물이 아무리 좋아도, 같은 장사끼리는 서로 모른 척하는 게 예의거든.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_MOKRO_6dfd0809e71216025bb93902058f49967eb4a0710cfb04c06a9ebc0f7e3a54cf.mp3",
+  "raw_sha256": "93b858d9b9d1a4a26c500b15954723cf3239e73ee9105df2f96c54984d6b1a2f",
+  "bytes": 112474,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.96
+  },
+  "http_status": 200,
+  "response_request_id": "MtedqbspaAcwNDtnLMsK",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:25Z"
+}

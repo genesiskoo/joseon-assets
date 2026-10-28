@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_EMPTY_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "5637a5baf93f5db6ea10ba8049cb0af02eb26c2e029555f4f618c472d2cd3865",
+  "request": {
+    "text": "칸이 텅 비었잖아. 도깨비도 없는 걸론 못 바꿔 줘.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_EMPTY_2_5637a5baf93f5db6ea10ba8049cb0af02eb26c2e029555f4f618c472d2cd3865.mp3",
+  "raw_sha256": "1da7db96a4daaca7d9ea7293a9b1c652993ef18bc6c6302515ae691b83b37fe9",
+  "bytes": 66498,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.08
+  },
+  "http_status": 200,
+  "response_request_id": "KgoFJ01QNGD1uYS9q9zd",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:40Z"
+}

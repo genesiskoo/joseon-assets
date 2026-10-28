@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_EMPTY_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "a9501214876216fae8306c94e345c998e95f542f8cab656325240d09f905a374",
+  "request": {
+    "text": "빈손으로 뭘 바꾸라는 거야. 올려 놓고 말해.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_EMPTY_1_a9501214876216fae8306c94e345c998e95f542f8cab656325240d09f905a374.mp3",
+  "raw_sha256": "ab2b1d3980c5a80ca15369f973e4cc3cad5d7b38cdb1026a1852097dfdde7b03",
+  "bytes": 56049,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.44
+  },
+  "http_status": 200,
+  "response_request_id": "RTSiO3UqeEMeObzPlLaT",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:39Z"
+}

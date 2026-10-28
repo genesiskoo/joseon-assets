@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "id": "EV_ENDING_1",
+  "request_sha256": "a1a29df3fefd71637085a8efe0337dfc4ce5984bb873a08ea8661bd8c8fb449a",
+  "request": {
+    "text": "구미호는 물러났으나 돌문 너머 틈에선 아직 금빛이 샌다오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "주모의 솥은 식었으나, 그 사람이 지키던 장터는 남았소.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": "No module named 'audio_intake'"
+    }
+  ]
+}

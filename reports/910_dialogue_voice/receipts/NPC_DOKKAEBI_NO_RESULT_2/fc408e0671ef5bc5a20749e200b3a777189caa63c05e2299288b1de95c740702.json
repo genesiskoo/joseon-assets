@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_NO_RESULT_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "fc408e0671ef5bc5a20749e200b3a777189caa63c05e2299288b1de95c740702",
+  "request": {
+    "text": "재주가 모자란 게 아니라 판이 바닥이야. 맡긴 건 도로 가져가.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_NO_RESULT_2_fc408e0671ef5bc5a20749e200b3a777189caa63c05e2299288b1de95c740702.mp3",
+  "raw_sha256": "f0029c792c88e4206744be3600f273231379d800bd7ab3cd41271c44e825c9e2",
+  "bytes": 80291,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.96
+  },
+  "http_status": 200,
+  "response_request_id": "pECs2sZtOWZgWY4Maaxs",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:35Z"
+}

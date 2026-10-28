@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SHAMAN_QUEST_8",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "6a9cede700375f45cf8a4ac8c50d34b662ebf80461768c3504fb9c2aaf3f861d",
+  "request": {
+    "text": "살아서 돌아오면 쳐 드리리다.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "술값은—",
+    "next_text": "…허. 하는 김에.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/EV_SHAMAN_QUEST_8_6a9cede700375f45cf8a4ac8c50d34b662ebf80461768c3504fb9c2aaf3f861d.mp3",
+  "raw_sha256": "9a9e01771afdd348b33061f4f391b3a8e969d57149ddd0c498f4ace5090d26d6",
+  "bytes": 48526,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "http_status": 200,
+  "response_request_id": "f5awOBUZL1o5JNysS1nr",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:08Z"
+}

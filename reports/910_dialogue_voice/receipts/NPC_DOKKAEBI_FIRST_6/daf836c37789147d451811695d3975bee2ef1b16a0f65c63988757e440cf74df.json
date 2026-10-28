@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_6",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "daf836c37789147d451811695d3975bee2ef1b16a0f65c63988757e440cf74df",
+  "request": {
+    "text": "뚝딱은 소문이고, 손은 내가 놀리지. 그러니 값이 붙는 거야.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "바꿔 준다? 방망이로 금 나와라 뚝딱, 그거?",
+    "next_text": "첫 거래는 인사로 하지. 가방에서 쓰던 장비 아무거나 하나 내놔. 홈 둘 난 누비옷으로 바꿔 줄게.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_FIRST_6_daf836c37789147d451811695d3975bee2ef1b16a0f65c63988757e440cf74df.mp3",
+  "raw_sha256": "942d59b33db6bf1dd1e8f73e6fdbd5ecc2314b0a7b96346c28e76269c693f6f8",
+  "bytes": 88232,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.44
+  },
+  "http_status": 200,
+  "response_request_id": "TAsgJhy32htjRqGns8YE",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:12Z"
+}

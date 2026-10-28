@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_HINT_G06_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "a619e180a5ade18747a452ca88f1e6886a8a1b3e654eea93965f610b41571e4c",
+  "request": {
+    "text": "내가 뚫어 드린 건 이번 한 번뿐이오. 늙은이 솜씨에도 한도가 있소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "더 뚫고 싶거든 장터 뒤 도깨비를 찾아가 보시오. 빛깔 다른 온전한 옥 셋과 엽전이면 뚫어 준다 하오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_HINT_G06_1_a619e180a5ade18747a452ca88f1e6886a8a1b3e654eea93965f610b41571e4c.mp3",
+  "raw_sha256": "e6e21b36c94917757d78ce445399b797ba328ec9834026de1707688aa8ca9f5c",
+  "bytes": 97009,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.0
+  },
+  "http_status": 200,
+  "response_request_id": "UB17eBpbXOe9IWCfKvep",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:59Z"
+}

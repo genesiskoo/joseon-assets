@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.6
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "6976387bb236d879333e95b352206e4afc947769e5035533cd8bb0a2bf9739fe",
+  "id": "EV_ENDING_1B",
+  "speaker": "shaman",
+  "request_sha256": "71ed5295479cd37b3e89de24dd82b39b63761ad736537ade277b8c6f8b96cefc",
+  "raw_sha256": "91012dd7b57dae61bafadfd061cc498236d1e09a7ac64338abcf86883bd8d736",
+  "file": "assets/audio/voice/EV_ENDING_1B.wav",
+  "previous_sha256": null
+}

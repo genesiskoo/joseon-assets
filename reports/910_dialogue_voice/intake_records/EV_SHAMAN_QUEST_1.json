@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.88
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 6.100000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "42332e28b2b987f1102cf9355ac0d3a0db06e6372a99b77ab3b4a657972f4d87",
+  "id": "EV_SHAMAN_QUEST_1",
+  "speaker": "shaman",
+  "request_sha256": "0fce4833c359df18fba95cbbb7c40931097c829ae40c8f7f08ffbfc84c2e2bea",
+  "raw_sha256": "c1287880b998d61ef3804722647d97bb0f00deb431c7b11a967632fd549df9c1",
+  "file": "assets/audio/voice/EV_SHAMAN_QUEST_1.wav",
+  "previous_sha256": "fbe01612c4e9a223ad04302916ad020ac7af9f428bd40d0184e8fa4cb0566515"
+}

@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.76
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -4.0,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.399999999999999,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -4.0
+  },
+  "sha256": "b4858d684e0b9d84f0e711befaafc9d663f01c7721980cf026127284ef965d81",
+  "id": "NPC_JUMO_RUMOR_4",
+  "speaker": "jumo",
+  "request_sha256": "bf46f782c6a8cd722b57c07bb666ac884ba053750330914c9c05edabf5bc511c",
+  "raw_sha256": "00656c66b83af35d893f011bb81312f01621feca539da6e07f8866d057ed34c3",
+  "file": "assets/audio/voice/NPC_JUMO_RUMOR_4.wav",
+  "previous_sha256": "c586228a31e6700e7434b78fbeedbac80ff286876a5b941d901b6465fb7b4205"
+}

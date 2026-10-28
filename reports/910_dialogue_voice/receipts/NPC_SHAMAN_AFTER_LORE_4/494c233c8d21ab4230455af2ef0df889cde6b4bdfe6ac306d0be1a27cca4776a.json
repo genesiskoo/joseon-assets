@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LORE_4",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "494c233c8d21ab4230455af2ef0df889cde6b4bdfe6ac306d0be1a27cca4776a",
+  "request": {
+    "text": "남의 자물쇠로 제 집 문을 잠갔구먼. 열쇠는 개한테, 범한테, 쇠 먹는 놈 뱃속에 맡겨 놓고. 뻔뻔하기는.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_AFTER_LORE_4_494c233c8d21ab4230455af2ef0df889cde6b4bdfe6ac306d0be1a27cca4776a.mp3",
+  "raw_sha256": "2a6e521d239989181bbdebf552f1c14981b0847c493de95c840c32c87f43583b",
+  "bytes": 136715,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.48
+  },
+  "http_status": 200,
+  "response_request_id": "AZ073NFwdwL2CWnKKIft",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:23Z"
+}

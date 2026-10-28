@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.16
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.2,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.800000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.2
+  },
+  "sha256": "fca8965d37983d68afe7aa02ec0c8bc2582d03bc8b91b7ef257c496d4e1437f3",
+  "id": "NPC_SHAMAN_TAVERN_1",
+  "speaker": "shaman",
+  "request_sha256": "5fa4509f8ef9fddf7307f85bfd964872462334559f245dd4b0d27afb5f696523",
+  "raw_sha256": "408f585790900572aa1d8f88e23eedb725582abb92a7fd9a82395aeb5a0fdc7d",
+  "file": "assets/audio/voice/NPC_SHAMAN_TAVERN_1.wav",
+  "previous_sha256": "2c668ab49a40d75b9c8076f1d64bef0d26c7f036f8528903a907cdc7635b7697"
+}

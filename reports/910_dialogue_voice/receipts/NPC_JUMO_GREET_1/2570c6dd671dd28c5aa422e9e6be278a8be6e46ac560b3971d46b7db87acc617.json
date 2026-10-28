@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_GREET_1",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "2570c6dd671dd28c5aa422e9e6be278a8be6e46ac560b3971d46b7db87acc617",
+  "request": {
+    "text": "어서 오시구려. 국물 식기 전에 드시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_GREET_1_2570c6dd671dd28c5aa422e9e6be278a8be6e46ac560b3971d46b7db87acc617.mp3",
+  "raw_sha256": "028b9618b0e2e68338e2ff888fd1fd1a726b2b4fafac190fee0f7640deb76faf",
+  "bytes": 59811,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.68
+  },
+  "http_status": 200,
+  "response_request_id": "2KcLNZDztsDOMCNKnKcG",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:38Z"
+}

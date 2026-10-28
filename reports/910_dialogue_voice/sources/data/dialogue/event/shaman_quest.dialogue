@@ -1,0 +1,27 @@
+# 무당 의뢰 장면 — 첫 이벤트 (D-082 ⑥ · #240 → D-096 · #541). 트리거 = 못골 무당 할매 앞 (town.tscn EventShamanQuest — require_quest 없음) ·
+# 마커 = jeongja(카메라가 보는 점) · jeongja_step(도호가 서는 자리). 부르는 이름 = Story(러너) · Cut(컷 명령) · Talk(무당 할매 NpcTalk).
+# D-096: 이 장면은 안내로 끝난다 — 의뢰는 목로의 주모가 준다(npc/jumo.dialogue ~ offer_main). 술값 농담(일곱~아홉째)은 PD 락(2026-09-18) 그대로.
+# D-097: 설명은 3줄 + 당부 1줄(구미호 · 흑랑 굴 · 봉밀굴을 줄마다 새 이름 하나씩, 뜻풀이와 함께) · 문 = 처음 「마을 북쪽 산길 끝 봉밀굴 문」 · NPC 말 = 장터 · 굴 · 도사 양반.
+# 카메라 없이도 서는 글이다(클릭 첫 만남과 같은 글) — 「저 돌문」 같은 지시어는 쓰지 않았다.
+# 대사 = npc/shaman.dialogue 첫 만남 블록과 같은 글(번역 키만 따로 — test_town 이 1 · 2 · 3 · 3B · 3C · 4~9를 대조). 건너뛰기(Esc 길게) = Cut 명령은 즉시 끝 상태, 대사는 넘어간다.
+
+~ start
+$> Cut.begin()
+$> Cut.camera_to("jeongja", 1.2)
+$> Cut.walk("doho", "jeongja_step")
+$> Cut.face("shaman", "doho")
+$> Cut.face("doho", "shaman")
+shaman: 도사 양반, 늦었소. 못골이 석 달째 이 꼴이오. [ID:EV_SHAMAN_QUEST_1]
+doho: 할매, 술부터 한 잔… 아니, 분위기가 아니구먼. [ID:EV_SHAMAN_QUEST_2]
+shaman: 봉인이 흔들리오. 요사한 기운이 못골로 새고 있소. [ID:EV_SHAMAN_QUEST_3]
+shaman: 꼬리 아홉 달린 천 년 묵은 여우, 구미호의 기운이오. [ID:EV_SHAMAN_QUEST_3B]
+shaman: 그 수하 하나가 들녘 너머 흑랑 굴에 들어앉았소. [ID:EV_SHAMAN_QUEST_3C]
+shaman: 구미호는 마을 북쪽 산길 끝, 봉밀굴 문 안에 갇혀 있소. 아직 그 문을 열 때는 아니오. [ID:EV_SHAMAN_QUEST_4]
+doho: 또 봉인 타령이네. [ID:EV_SHAMAN_QUEST_5]
+shaman: 도사 양반밖에 없소. 길은 장터 어귀의 주모가 아오. [ID:EV_SHAMAN_QUEST_6]
+doho: 술값은— [ID:EV_SHAMAN_QUEST_7]
+shaman: 살아서 돌아오면 쳐 드리리다. [ID:EV_SHAMAN_QUEST_8]
+doho: …허. 하는 김에. [ID:EV_SHAMAN_QUEST_9]
+$> Cut.camera_back(0.8)
+$> Cut.end()
+=> END

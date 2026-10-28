@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.8
+  },
+  "lufs": -18.2,
+  "true_peak_dbtp": -2.3,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 3.3000000000000007,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.2,
+    "true_peak_dbtp": -2.3
+  },
+  "sha256": "21c757baa0ce11dbbc5de812687f1d330fffda57d27b31fd8cdb79d5a79f4293",
+  "id": "NPC_SHAMAN_WARN_2",
+  "speaker": "doho",
+  "request_sha256": "b2be24d98521f6321fe6204d8afcc69e764db9d18e67a6d65e63b96c8d6ee278",
+  "raw_sha256": "ee0762c206711fe252c3465abef84971417093faefa5770c04dd286e7dbbbd5a",
+  "file": "assets/audio/voice/NPC_SHAMAN_WARN_2.wav",
+  "previous_sha256": "e5e64dd160ac35aebfbba2cc6df12fd3052630e329b6a4294016630006228380"
+}

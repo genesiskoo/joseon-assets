@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.3,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 3.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.3
+  },
+  "sha256": "a990aa3612bb81414da911429f90047b924dc157f54d96b0cd69c8f6f34b9af3",
+  "id": "NPC_MERCHANT_AFTER_2",
+  "speaker": "doho",
+  "request_sha256": "42cae0748ad60af7eca48b3d21dbfdad04b1b8eaa576176ab3dcc052165a4b7f",
+  "raw_sha256": "952194ff3f79aa3f7fb2bcece31543e49c49483eb6bece0cb2c79c9231c67d64",
+  "file": "assets/audio/voice/NPC_MERCHANT_AFTER_2.wav",
+  "previous_sha256": "7a4ac171d3c1f3fdb66c9f66b2e924e7682c4aef55e221d18e50f45221bf9ce9"
+}

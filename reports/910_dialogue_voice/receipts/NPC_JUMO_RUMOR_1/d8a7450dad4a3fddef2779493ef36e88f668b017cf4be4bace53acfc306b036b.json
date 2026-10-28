@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_RUMOR_1",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "d8a7450dad4a3fddef2779493ef36e88f668b017cf4be4bace53acfc306b036b",
+  "request": {
+    "text": "들녘 옛 주막 터엔 함부로 가지 마시우. 거기 뭔가 있다는 게 나만 하는 말이 아니라우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_RUMOR_1_d8a7450dad4a3fddef2779493ef36e88f668b017cf4be4bace53acfc306b036b.mp3",
+  "raw_sha256": "e4b068afd160a289c9a62214f49bb2144dd395fc56eb63f3964760d67446c538",
+  "bytes": 112474,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.96
+  },
+  "http_status": 200,
+  "response_request_id": "xdD7Bi3viCTXm2JBW5Gp",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:41Z"
+}

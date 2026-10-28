@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_VOUCH_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "9d0e8c888faf16504d9f295f769c54c8fc351c4d57b7a80f8abb8c48bea2e23e",
+  "request": {
+    "text": "주모 만나셨소? 그 사람은 이 장터를 혼자 지켰소. 손님 없는 날도 솥은 안 내렸지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_VOUCH_1_9d0e8c888faf16504d9f295f769c54c8fc351c4d57b7a80f8abb8c48bea2e23e.mp3",
+  "raw_sha256": "ead8d1e7cf8b3e633dfa5bb0b8e4aef627f2ed0ca9b1c3c1fe0e905bf22d817d",
+  "bytes": 117489,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.28
+  },
+  "http_status": 200,
+  "response_request_id": "lBogbmuAYTTw6b2tJc4p",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:59Z"
+}

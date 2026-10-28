@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_7",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "789da6619f0a05e683e8556727830f56801e9eec8676a8756d4e7d1ab26901af",
+  "request": {
+    "text": "첫 거래는 인사로 하지. 가방에서 쓰던 장비 아무거나 하나 내놔. 홈 둘 난 누비옷으로 바꿔 줄게.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "뚝딱은 소문이고, 손은 내가 놀리지. 그러니 값이 붙는 거야.",
+    "next_text": "아무거나? 값은 안 따지고?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_FIRST_7_789da6619f0a05e683e8556727830f56801e9eec8676a8756d4e7d1ab26901af.mp3",
+  "raw_sha256": "a025056843854e7630bef5c0594bc4762179626cf07ce37508db6d10bab9f713",
+  "bytes": 125430,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.76
+  },
+  "http_status": 200,
+  "response_request_id": "8hapZ4i4dnmW7C79Ho4q",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:13Z"
+}

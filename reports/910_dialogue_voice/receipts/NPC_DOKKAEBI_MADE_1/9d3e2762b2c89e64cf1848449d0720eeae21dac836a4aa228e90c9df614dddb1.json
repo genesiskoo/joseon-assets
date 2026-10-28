@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_MADE_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "9d3e2762b2c89e64cf1848449d0720eeae21dac836a4aa228e90c9df614dddb1",
+  "request": {
+    "text": "자, 바꿔 줬어. 잘 봐, 속임수는 없어.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_MADE_1_9d3e2762b2c89e64cf1848449d0720eeae21dac836a4aa228e90c9df614dddb1.mp3",
+  "raw_sha256": "f06dc902b0787da979d3ba67489faca31f32bcabb1c88ec834215e3739140510",
+  "bytes": 66498,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.08
+  },
+  "http_status": 200,
+  "response_request_id": "cKUs1chJ0V4fEwtrblhs",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:31Z"
+}

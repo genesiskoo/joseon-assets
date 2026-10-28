@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_12",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "02d6715f1ad701079a8d33709fcae0dd97407cc12c78c05a8079107ee76de123",
+  "request": {
+    "text": "박기 전에 쓰임을 읽어 봐. 좋은 옥도 제자리 못 찾으면 아까우니까.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "옷 홈엔 오방옥을 박아. 옥 빛깔마다 보태 주는 힘이 달라.",
+    "next_text": "자, 골라 봐.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_FIRST_12_02d6715f1ad701079a8d33709fcae0dd97407cc12c78c05a8079107ee76de123.mp3",
+  "raw_sha256": "8aa978d43edb386f53a57e002f3e9f66ea5223fffc3fb9e478f6749c0308290a",
+  "bytes": 89486,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.52
+  },
+  "http_status": 200,
+  "response_request_id": "dokCGwhu738S6F9kDejS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:15Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_FIRST_3",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "f2c1887ffc46cbb312f970541fcf607ab4596e0a757566ef549cd7af35a085a0",
+  "request": {
+    "text": "외상은 살아서 돌아오는 사람한테만 놓수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "국물이면 됐지. 외상도 되나?",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_FIRST_3_f2c1887ffc46cbb312f970541fcf607ab4596e0a757566ef549cd7af35a085a0.mp3",
+  "raw_sha256": "87bef2f0fb3e49e0529bd9e81b8d1df27e487d1ced478947527e00f0aca6bc14",
+  "bytes": 57303,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.52
+  },
+  "http_status": 200,
+  "response_request_id": "egtTu148ezhGM2Te95hj",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:10Z"
+}

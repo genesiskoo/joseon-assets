@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_KNOW_HEUK",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "7eee194a802a3e98e92e4fd22eb462b5ecf93148f92dd18bf1f2b3131a757898",
+  "request": {
+    "text": "그 불개가 끝까지 꼬리를 세우고 버텼다지?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "남은 둘은 고개 너머 정령재의 범굴과 쇠부리 폐광이우. 어느 쪽이 먼저든 상관없수.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS1_KNOW_HEUK_7eee194a802a3e98e92e4fd22eb462b5ecf93148f92dd18bf1f2b3131a757898.mp3",
+  "raw_sha256": "a2bf384cfe29492251547ed607705c6da04b285f3ac40ba2512431a9dc0ff0b0",
+  "bytes": 59811,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.68
+  },
+  "http_status": 200,
+  "response_request_id": "ArdXhL3PqPUDjeSvEpnt",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:30Z"
+}

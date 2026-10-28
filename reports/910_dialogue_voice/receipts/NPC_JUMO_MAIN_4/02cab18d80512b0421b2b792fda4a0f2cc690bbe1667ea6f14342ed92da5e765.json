@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_4",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "02cab18d80512b0421b2b792fda4a0f2cc690bbe1667ea6f14342ed92da5e765",
+  "request": {
+    "text": "소문치곤 번지수까지 친절하구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "하나는 들녘 흑랑 굴의 개가, 하나는 고개 너머 범굴의 범이 쥐고 있수.",
+    "next_text": "마지막 한 쪽은 쇠부리 폐광, 쇠 먹는 놈 뱃속에 있수.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_MAIN_4_02cab18d80512b0421b2b792fda4a0f2cc690bbe1667ea6f14342ed92da5e765.mp3",
+  "raw_sha256": "77bd5242c843fa1b0c0ea3a5dad85b418175f4eea1d6efa23a1e9c77f294e7bf",
+  "bytes": 51034,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.12
+  },
+  "http_status": 200,
+  "response_request_id": "KGMUMQDCWnuhmK3ydIon",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:15Z"
+}

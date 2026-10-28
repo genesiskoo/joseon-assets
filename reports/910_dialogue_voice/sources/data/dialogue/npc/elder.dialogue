@@ -1,0 +1,159 @@
+# 촌장 (D-082 · #239 · #305, design/dialogue_v2.md §3.6 · npcs_v2.md §5.1·§5.3·§5.6) — 인사(처음 / 이야기 단계 / 무작위) → 일 선택지.
+# 맡은 일 = 퀘스트 2 「흑랑 굴 소탕」(heukrang_clear — 흑랑 굴 1층 싹쓸이, 받기·진행·보고 세 갈래, 스킬 포인트 +1) + 흑랑 처치 사례(heukrang_thanks — 엽전·영약·흠 있는 백옥, 퀘스트 아님).
+# 부르는 이름 = Story(러너) · Talk(NpcTalk — Npc.talk() 가 넘김). 선택지 태그 [#act=accept|report|thanks|leave].
+# 대사 정본 = DIALOGUE_VILLAGE_PACK §3 (처음 · 기본 · 의뢰 active · 「구미호 처치 후」 1·2·3 — 1·3 은 npcs_v2 §3.3 대로 흑랑 처치 뒤로 당겼고 2 「약소하지만…」 = 사례).
+# 정본에 없던 자리(#305 새로 씀, npcs_v2 §5.6) = 소탕 받기 4줄 · 받은 뒤 1줄 · 진행 2줄 풀 · 보고 5줄 · 재촉 2줄. 톤 = 촌장 지친 어른 · 도호 능청(「산책」).
+# 사례가 가방에 다 안 들어가면(#583 — Quest.turn_in 이 killed 그대로 둔다) 「짐이 많구려」 한 줄(가안 · 음성 없음) → 다시 말 걸면 재촉 줄 → 다시 받기.
+# 대사에서 층 번호 대신 굴 이름·어귀를 쓴다(D-097/#777). 무작위 = Talk.roll(바로 앞과 같은 줄 안 나옴).
+# #546 대본 점검 고침(design/script_audit_2026-10-02_A §3 · _C §2): 마을 사람 말은 「장터」 · 「저 밑」 대신 북쪽 산길 끝 봉밀굴 · 풀 줄은 혼자 선다. 전/후 = docs/art/546_script_fix/before_after.md.
+# 보스 뒤 인사(#307, npcs_v2 §5.2.1) — 흑랑 = 사례 갈래의 「베었구려!」 그대로(사례를 받기 전엔 재촉이 먼저) · 장산범·불가살이 = 처치 표시(Talk.den_cleared) 뒤 처음 말 걸 때 한 번씩.
+#   몰아 잡고 오면 말 걸 때마다 하나(범굴 → 쇠부리 폐광). 벤 보스만 말하고 다음 보스는 예고하지 않는다(순서 자유 D-093 — 그래서 옛 가안 「불가살이까지」의 「까지」를 뺐다).
+
+~ start
+if Story.first("elder_met")
+	elder: 떠돌이 도사가 웬일이오. [ID:NPC_ELDER_FIRST_1]
+	elder: 못골 장터가 닫힌 지 석 달이오. [ID:NPC_ELDER_FIRST_2]
+	if Talk.state_of("heukrang_clear") == "none"
+		=> offer
+elif Story.flag("event/ending") and not Story.flag("elder_after_ending")
+	=> after_ending
+elif Story.flag("jumo_met") and Talk.presence("jumo") != "gone" and not Story.flag("elder_vouch_jumo")
+	=> vouch_jumo
+elif Talk.presence("jumo") == "gone" and not Story.flag("jumo_gone") and not Story.flag("elder_forget_jumo")
+	=> forget_jumo
+elif Talk.socket_open() and not Story.flag("elder_socket_offer")
+	=> socket_offer
+elif Talk.state_of("socket_punch") == "done" and Talk.available_npc("dokkaebi") and not Story.flag("hint/g06_add_sockets")
+	$> Story.put("hint/g06_add_sockets")
+	=>< hint_g06_add_sockets
+	=> jobs
+elif Talk.state_of("heukrang_thanks") == "killed"
+	if Story.first("elder_after_heukrang")
+		elder: 베었구려! 못골이 오랜만에 숨을 쉬겠소. [ID:NPC_ELDER_AFTER_1]
+	else
+		elder: 사례는 받아 가시오. 빈손으로 보내면 내 잠자리가 편치 않소. [ID:NPC_ELDER_THANKS_NUDGE]
+elif Talk.den_cleared("beomgul") and not Story.flag("elder_after_jangsanbeom")
+	=> after_jangsanbeom
+elif Talk.den_cleared("soeburi") and not Story.flag("elder_after_bulgasari")
+	=> after_bulgasari
+elif Talk.state_of("heukrang_clear") == "killed"
+	elder: 간밤엔 굴 쪽이 조용했소. 도사 양반 솜씨요? [ID:NPC_ELDER_CLEAR_DONE_1]
+	doho: 산책 좀 했지. [ID:NPC_ELDER_CLEAR_DONE_2]
+elif Talk.state_of("heukrang_clear") == "accepted"
+	match Talk.roll("elder_clear", 2)
+		when 0
+			elder: 간밤에도 굴 어귀에서 뭔가 울었소. 아직 남았구려. [ID:NPC_ELDER_CLEAR_ACTIVE_1]
+		else
+			elder: 어귀만 비우면 되오. 끝까지 가란 말이 아니오. [ID:NPC_ELDER_CLEAR_ACTIVE_2]
+elif Talk.state_of("heukrang_clear") == "none"
+	elder: 굴 어귀 일, 생각해 보셨소? [ID:NPC_ELDER_OFFER_AGAIN]
+elif Talk.quest() == "accepted"
+	match Talk.roll("elder_active", 2)
+		when 0
+			elder: 할매도 주모도 못골을 오래 지킨 사람들이오. 그 말을 새겨들으시오. [ID:NPC_ELDER_ACTIVE_1]
+		else
+			elder: 굴 끝까지 가신다니, 부디 무리하지 마시오. [ID:NPC_ELDER_ACTIVE_2]
+else
+	=> greet
+=> jobs
+
+~ offer
+elder: 부탁이 하나 있소. 흑랑 굴 말이오. [ID:NPC_ELDER_OFFER_1]
+elder: 밤마다 굴 어귀에서 요괴들이 기어 나와, 밭을 헤집고 외양간을 비우오. [ID:NPC_ELDER_OFFER_2]
+elder: 끝까지는 바라지도 않소. 굴 어귀만 비워 주시오. [ID:NPC_ELDER_OFFER_3]
+doho: 어귀만? 그럼 산책이구먼. [ID:NPC_ELDER_OFFER_4]
+=> jobs
+
+~ greet
+match Talk.roll("elder_greet", 4)
+	when 0
+		elder: 무사히 돌아오셨구려. 다행이오. [ID:NPC_ELDER_GREET_1]
+	when 1
+		elder: 장터가 닫히니 하루가 한 달 같소. [ID:NPC_ELDER_GREET_2]
+	when 2
+		elder: 괴질에 장정 셋을 잃었소. 더는 잃을 수 없소. [ID:NPC_ELDER_GREET_3]
+	else
+		elder: 젊은이들은 떠났고, 남은 건 걱정뿐이오. [ID:NPC_ELDER_GREET_4]
+=> jobs
+
+~ jobs
+- 의뢰를 받는다 [if Talk.state_of("heukrang_clear") == "none" /] [#act=accept] [ID:NPC_ELDER_JOB_ACCEPT]
+	$> Talk.accept_quest("heukrang_clear")
+	elder: 그 산책, 부디 무사히 끝내시오. [ID:NPC_ELDER_ACCEPT_1]
+	=> jobs
+- 소탕을 알린다 ({{Talk.reward_text("heukrang_clear")}}) [if Talk.state_of("heukrang_clear") == "killed" /] [#act=report] [ID:NPC_ELDER_JOB_REPORT]
+	$> Talk.complete_quest("heukrang_clear")
+	elder: 몇 해 전 묵어 간 도사가 두고 간 책이 한 권 있소. 우리 집안은 글을 몰라서. [ID:NPC_ELDER_REPORT_1]
+	doho: 글은 내가 좀 읽지. [ID:NPC_ELDER_REPORT_2]
+	elder: 가져가시오. 굴 어귀 값이오. [ID:NPC_ELDER_REPORT_3]
+	=> jobs
+- 사례를 받는다 ({{Talk.reward_text("heukrang_thanks")}}) [if Talk.state_of("heukrang_thanks") == "killed" /] [#act=thanks] [ID:NPC_ELDER_JOB_THANKS]
+	$> Talk.complete_quest("heukrang_thanks")
+	if Talk.state_of("heukrang_thanks") == "done"
+		elder: 약소하지만 받으시오. [ID:NPC_ELDER_THANKS_1]
+		if Story.flag("jumo_gone")
+			elder: 고맙소. 장터도 사람 손으로 다시 살려 봐야지. [ID:NPC_ELDER_AFTER_ENDING_2]
+		else
+			elder: 고맙소. 구미호는 아직 북쪽 돌문 너머에 있소. 잊지 마시오. [ID:NPC_ELDER_AFTER_2]
+	else
+		elder: 짐이 많구려. 가방을 비우고 다시 오시오. [ID:NPC_ELDER_THANKS_FULL]
+	=> jobs
+- 홈을 뚫어 달라 [if Talk.socket_open() /] [#act=socket]
+	$> Talk.open_socket_service()
+	=> END
+- 그만 간다 [#act=leave] [ID:NPC_ELDER_JOB_LEAVE]
+=> END
+
+# 주모 증언 (D-096 · #541, design/quest_rework_dialogue_2026-10-01.md §3.4 · S4-1) — 주모를 만난 뒤(jumo_met) 주모가 마을에 있는 동안 한 번(elder_vouch_jumo).
+# 가지는 ~ start 의 첫 만남 바로 뒤 — 줄은 이 블록에(#546 이 위의 줄을 고치는 동안 겹치지 않게 파일 끝에 둔다). 끝나면 일 선택지.
+# 표시를 줄 앞에 켠다(최종판은 줄 뒤): 애드온은 마지막 대사 바로 뒤가 => 일 때만 선택지를 그 줄에 붙인다($> 가 끼면 빈 띠에 선택지만).
+~ vouch_jumo
+$> Story.put("elder_vouch_jumo")
+elder: 주모 만나셨소? 그 사람은 이 장터를 혼자 지켰소. 손님 없는 날도 솥은 안 내렸지. [ID:NPC_ELDER_VOUCH_1]
+=> jobs
+
+# 홈 뚫기 안내 — 의뢰 7을 마쳤고 도깨비 몸이 실제 마을에 서 있을 때 한 번. 공개 조합 안내이며 숨은 비결 기록을 만들지 않는다(D-110/#777).
+# 퀘스트 7 id = socket_punch (#309, data/quests/socket_punch.tres). 선택 창의 확인으로 done 이면 이 귀띔이 한 번 나온다.
+~ hint_g06_add_sockets
+elder: 내가 뚫어 드린 건 이번 한 번뿐이오. 늙은이 솜씨에도 한도가 있소. [ID:NPC_ELDER_HINT_G06_1]
+elder: 더 뚫고 싶거든 장터 뒤 도깨비를 찾아가 보시오. 빛깔 다른 온전한 옥 셋과 엽전이면 뚫어 준다 하오. [ID:NPC_ELDER_HINT_G06_2]
+doho: 촌장 솜씨보다 도깨비 솜씨가 낫다는 얘기구먼. [ID:NPC_ELDER_HINT_G06_3]
+=> END
+
+# 보스 뒤 인사 (#307, npcs_v2 §5.2.1) — 부르는 곳 = ~ start 의 처치 표시 갈래. 표시를 줄 앞에 켠다(vouch_jumo 와 같은 이유 — 선택지가 마지막 줄에 붙는다).
+# 장산범 = 정령재에 간 이들을 부른 목소리(촌장 목소리 「길을 찾았소」도 낸다, bosses_v2 §2.1·§2.6) · 불가살이 = 칼로는 못 죽인다 · 대장간 = 1.0 대장장이 떡밥(§3.3, 기능 없음) ·
+# 도호 「배가 고팠던 거지」 = 처치 바크 「…미안하다. 배고팠지.」의 메아리(bosses_v2 §3.1).
+~ after_jangsanbeom
+$> Story.put("elder_after_jangsanbeom")
+elder: 범굴 흰 범을 베셨소? 정령재에 간 이들을 불러 간 목소리가 그놈이었구려. [ID:NPC_ELDER_AFTER_BEOM_1]
+doho: 촌장 목소리로 길을 찾았다길래, 반대쪽으로 갔지. [ID:NPC_ELDER_AFTER_BEOM_2]
+=> jobs
+
+~ after_bulgasari
+$> Story.put("elder_after_bulgasari")
+elder: 칼로는 못 죽인다던 불가살이를 베셨소? 이제 대장간 불도 다시 지필 수 있겠구려. [ID:NPC_ELDER_AFTER_SOE_1]
+doho: 그놈은 그냥 배가 고팠던 거야. [ID:NPC_ELDER_AFTER_SOE_2]
+=> jobs
+
+# 구미호를 물리친 뒤 처음 말 걸 때 한 번 (#910 · #908 M9) — 엔딩 장면(event/ending)을 다 본 뒤. 증언(「혼자 지켰소」)을 받는 줄.
+# 옛 보스 인사보다 먼저 온다(엔딩 뒤 첫 말이 「불가살이를 베셨소?」가 되지 않게). 정체를 단정하지 않는다 — 촌장은 구미원을 못 봤다.
+~ after_ending
+$> Story.put("elder_after_ending")
+elder: 주모가 그리 사라질 줄은 몰랐소. 그 솥은 내가 치워 두겠소. [ID:NPC_ELDER_AFTER_END_1]
+doho: 국물 맛만은 진짜였는데. [ID:NPC_ELDER_AFTER_END_2]
+=> jobs
+
+# 홈 뚫기 의뢰 (퀘스트 7 socket_punch · #309 → #910 · #908 M4) — 정령재에 처음 들어선 뒤(Talk.socket_open) 처음 말 걸 때 한 번. 선택지 「홈을 뚫어 달라」의 입구.
+~ socket_offer
+$> Story.put("elder_socket_offer")
+elder: 정령재 쪽 요괴들은 가죽이 질기다 들었소. [ID:NPC_ELDER_SOCKET_OFFER_1]
+elder: 칼이나 옷을 하나 가져오시오. 늙은이 손으로도 홈 하나는 내 드리리다. [ID:NPC_ELDER_SOCKET_OFFER_2]
+doho: 공짜면 마다할 까닭이 없지. [ID:NPC_ELDER_SOCKET_OFFER_3]
+=> jobs
+
+# 빈자리(D-115 L3 · #910) — 주모가 사라진 뒤 구미호 전, 처음 말 걸 때 한 번. 홀림이 걷혀 얼굴이 떠오르지 않는다(사라진 건 안다 — 엔딩 뒤 줄과 맞음).
+~ forget_jumo
+$> Story.put("elder_forget_jumo")
+elder: 주모네 목로 말이오. 거기 누가 있었는지, 얼굴이 통 떠오르질 않소. [ID:NPC_ELDER_FORGET_1]
+doho: 어제까지 국 퍼 주던 사람인데. [ID:NPC_ELDER_FORGET_2]
+=> jobs

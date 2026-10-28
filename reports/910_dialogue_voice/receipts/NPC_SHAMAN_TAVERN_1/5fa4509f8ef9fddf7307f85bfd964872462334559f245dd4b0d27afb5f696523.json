@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_TAVERN_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "5fa4509f8ef9fddf7307f85bfd964872462334559f245dd4b0d27afb5f696523",
+  "request": {
+    "text": "들녘 옛 주막 터 일이오? 주모가 맡긴 일이라 들었소. 내가 대신 듣겠소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_TAVERN_1_5fa4509f8ef9fddf7307f85bfd964872462334559f245dd4b0d27afb5f696523.mp3",
+  "raw_sha256": "408f585790900572aa1d8f88e23eedb725582abb92a7fd9a82395aeb5a0fdc7d",
+  "bytes": 99517,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.16
+  },
+  "http_status": 200,
+  "response_request_id": "h75ZKDbEayN2hNpfyr6r",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:17Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GREET_6",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "2041a8c5af1763ac92af9c10a83ebdce7f767a1ad82c86ac3fa4d4966d22b9c4",
+  "request": {
+    "text": "바꿀 거 있으면 올려 봐. 없으면 구경만 해도 돼. 구경값은 안 받아.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GREET_6_2041a8c5af1763ac92af9c10a83ebdce7f767a1ad82c86ac3fa4d4966d22b9c4.mp3",
+  "raw_sha256": "32ecd09e6ed7559c46c2c3d11ff9a990e6a73139a6783f2e1f0908ff3addaa4e",
+  "bytes": 81545,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.04
+  },
+  "http_status": 200,
+  "response_request_id": "fRIaIgBNgYH5MU7w3DXt",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:20Z"
+}

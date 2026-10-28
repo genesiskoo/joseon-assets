@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BEOM_REPLY_NAME_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "57802574099aa4fdcb829a440a498a55ca189c3b8846124d6874436268fa639c",
+  "request": {
+    "text": "내 이름 함부로 부르지 마라, 털 빠진다.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BEOM_REPLY_NAME_1_57802574099aa4fdcb829a440a498a55ca189c3b8846124d6874436268fa639c.mp3",
+  "raw_sha256": "f5519731fb50f9d643344dca8233395f60f35fcd7b841e74ff62f43b7e646cb4",
+  "bytes": 49780,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.04
+  },
+  "http_status": 200,
+  "response_request_id": "b3StmCSEUJh2LTvmWUMW",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:54Z"
+}

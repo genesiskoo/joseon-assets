@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_REPEAT_4",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "8633c42ce2975ffdcd2474d6080ac481d7ea1643d000d97dd3f96d70431b42a4",
+  "request": {
+    "text": "북쪽 돌문이 기다리오. 말은 그만, 가시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_REPEAT_4_8633c42ce2975ffdcd2474d6080ac481d7ea1643d000d97dd3f96d70431b42a4.mp3",
+  "raw_sha256": "cc675ec22dda7dc85f5cc828e41be5ff155be9ea0f5ca1e30091598c2f11da87",
+  "bytes": 62318,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.84
+  },
+  "http_status": 200,
+  "response_request_id": "TMABHKVdLU2zXSOHLpvb",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:43Z"
+}

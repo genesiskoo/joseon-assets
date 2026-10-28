@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.0
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 6.699999999999999,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "ee53a506bed04a85a197d76152dc64d743dd28126b3802383b55943dc77ea4f7",
+  "id": "NPC_MERCHANT_FORGET_1",
+  "speaker": "merchant",
+  "request_sha256": "f4e27b8713007049da56cc890625cb18e1db31ff9db3b2be243d4130cf23688d",
+  "raw_sha256": "b97cc63ebad6cf606524c479bde0de5d76fd3d369b4eca8b8d7ebe5aa8c43150",
+  "file": "assets/audio/voice/NPC_MERCHANT_FORGET_1.wav",
+  "previous_sha256": null
+}

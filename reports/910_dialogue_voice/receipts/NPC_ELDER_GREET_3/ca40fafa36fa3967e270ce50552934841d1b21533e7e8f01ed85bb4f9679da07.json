@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_GREET_3",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "ca40fafa36fa3967e270ce50552934841d1b21533e7e8f01ed85bb4f9679da07",
+  "request": {
+    "text": "괴질에 장정 셋을 잃었소. 더는 잃을 수 없소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_GREET_3_ca40fafa36fa3967e270ce50552934841d1b21533e7e8f01ed85bb4f9679da07.mp3",
+  "raw_sha256": "33701d63cc943b3cf084f847506649485a9c7b6304572ea29198667f2cba7276",
+  "bytes": 70260,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.32
+  },
+  "http_status": 200,
+  "response_request_id": "3SvJbDmOKMopz2CsbeIJ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:52Z"
+}

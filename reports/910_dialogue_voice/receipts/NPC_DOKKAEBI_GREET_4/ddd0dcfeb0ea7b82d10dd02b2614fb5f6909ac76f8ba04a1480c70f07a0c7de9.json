@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GREET_4",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "ddd0dcfeb0ea7b82d10dd02b2614fb5f6909ac76f8ba04a1480c70f07a0c7de9",
+  "request": {
+    "text": "메밀묵 한 사발 곁들이면 마음이 너그러워지긴 해. …농담이야. 엽전이면 돼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GREET_4_ddd0dcfeb0ea7b82d10dd02b2614fb5f6909ac76f8ba04a1480c70f07a0c7de9.mp3",
+  "raw_sha256": "677db0042cc0f565ab3d7bbfa432a11a3e25ec0b116b9d44024623d989341dc9",
+  "bytes": 106204,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.56
+  },
+  "http_status": 200,
+  "response_request_id": "TqLqNVIUqyejV15edcKT",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:19Z"
+}

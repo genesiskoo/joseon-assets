@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.0
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -3.6,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 0.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.6
+  },
+  "sha256": "ca1748d0a7ba2864eb8a88088a8c04540f6b9738c13bdac29e9077ac23b7e0d8",
+  "id": "NPC_JUMO_NEWS1_KNOW_BEOM",
+  "speaker": "jumo",
+  "request_sha256": "7a0be941a54139a7a0641d0ec64c27cbcc1b955030c55421242ad308606859d1",
+  "raw_sha256": "f69c771f23e98a5f3752fac8253ce281c3b5475bfa30dc2bf8d23a282441c231",
+  "file": "assets/audio/voice/NPC_JUMO_NEWS1_KNOW_BEOM.wav",
+  "previous_sha256": null
+}

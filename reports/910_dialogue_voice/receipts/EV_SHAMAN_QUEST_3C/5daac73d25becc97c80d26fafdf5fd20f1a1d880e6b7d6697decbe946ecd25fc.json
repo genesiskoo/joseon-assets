@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SHAMAN_QUEST_3C",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "5daac73d25becc97c80d26fafdf5fd20f1a1d880e6b7d6697decbe946ecd25fc",
+  "request": {
+    "text": "그 수하 하나가 들녘 너머 흑랑 굴에 들어앉았소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "꼬리 아홉 달린 천 년 묵은 여우, 구미호의 기운이오.",
+    "next_text": "구미호는 마을 북쪽 산길 끝, 봉밀굴 문 안에 갇혀 있소. 아직 그 문을 열 때는 아니오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/EV_SHAMAN_QUEST_3C_5daac73d25becc97c80d26fafdf5fd20f1a1d880e6b7d6697decbe946ecd25fc.mp3",
+  "raw_sha256": "e8d23e77bd4ab9c78bcb21d313bd8e09b881fcc8a9619b43fc24899350bc5add",
+  "bytes": 84470,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.2
+  },
+  "http_status": 200,
+  "response_request_id": "GD5WUQRQ7l59HccTe0Jb",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:04Z"
+}

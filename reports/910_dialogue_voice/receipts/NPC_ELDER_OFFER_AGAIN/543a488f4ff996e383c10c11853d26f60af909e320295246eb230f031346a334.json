@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_OFFER_AGAIN",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "543a488f4ff996e383c10c11853d26f60af909e320295246eb230f031346a334",
+  "request": {
+    "text": "굴 어귀 일, 생각해 보셨소?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_OFFER_AGAIN_543a488f4ff996e383c10c11853d26f60af909e320295246eb230f031346a334.mp3",
+  "raw_sha256": "8d0019908b6f91de609f37e2137428b9b9a5964f414d2b8f255bbccb9ae666e6",
+  "bytes": 48526,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "http_status": 200,
+  "response_request_id": "Yfm5fdZVnASZvVbewEVR",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:47Z"
+}

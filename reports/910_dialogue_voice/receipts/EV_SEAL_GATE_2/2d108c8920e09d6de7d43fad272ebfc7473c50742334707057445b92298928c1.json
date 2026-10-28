@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SEAL_GATE_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "2d108c8920e09d6de7d43fad272ebfc7473c50742334707057445b92298928c1",
+  "request": {
+    "text": "꽤 묵은 봉인이네.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "이 문의 봉인은 옛 도사들이 함께 새긴 것이오.",
+    "next_text": "안에 갇힌 것이 풀려나오면, 못골은 끝이오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_SEAL_GATE_2_2d108c8920e09d6de7d43fad272ebfc7473c50742334707057445b92298928c1.mp3",
+  "raw_sha256": "11e18f42fc255b6c8fe8f7866e397e3da659ae32516c1cb8e44608eef97f7cf1",
+  "bytes": 31807,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.92
+  },
+  "http_status": 200,
+  "response_request_id": "rTbHaCo49l8IA3Cq5M9m",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:00Z"
+}

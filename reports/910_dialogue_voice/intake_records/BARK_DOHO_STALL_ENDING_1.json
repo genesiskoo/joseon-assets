@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.3,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 3.3999999999999986,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.3
+  },
+  "sha256": "10d45cee99f098160a10edc85e371b078299736e9ced4313e017bf535fe3e7c1",
+  "id": "BARK_DOHO_STALL_ENDING_1",
+  "speaker": "doho",
+  "request_sha256": "5ee3e137efe45cf9715e9e7218fb8018c0a7cbd51bf86555160cb366544c8f3d",
+  "raw_sha256": "a8edbc566faf4e808fc8d032977240604de738f3659fa1e1542fbc22169b70d2",
+  "file": "assets/audio/voice/BARK_DOHO_STALL_ENDING_1.wav",
+  "previous_sha256": "390062a73a849b196a492c704f71f7a6f4122140706ba8eb0253e0633ee07f99"
+}

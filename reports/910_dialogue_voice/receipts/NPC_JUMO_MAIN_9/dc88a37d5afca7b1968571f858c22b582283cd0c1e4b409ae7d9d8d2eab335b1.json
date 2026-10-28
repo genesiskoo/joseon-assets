@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_9",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "dc88a37d5afca7b1968571f858c22b582283cd0c1e4b409ae7d9d8d2eab335b1",
+  "request": {
+    "text": "국물값치곤 일이 크네. 외상으로 달아 두시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "천 년 묵은 여우가 갇혀 있다우. 그 여우 얘긴 입에 올리기도 싫수. 국물 식겠수.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_MAIN_9_dc88a37d5afca7b1968571f858c22b582283cd0c1e4b409ae7d9d8d2eab335b1.mp3",
+  "raw_sha256": "4b71559bbc40f6bfddf257d7170553982b7bd6efc6518e53d94f5caa9ad24e17",
+  "bytes": 56049,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.44
+  },
+  "http_status": 200,
+  "response_request_id": "EEqOcjOV3Vw4hu2vrzF9",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:18Z"
+}

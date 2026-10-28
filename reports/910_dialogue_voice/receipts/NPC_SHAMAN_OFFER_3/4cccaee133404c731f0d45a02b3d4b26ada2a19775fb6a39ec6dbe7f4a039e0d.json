@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_OFFER_3",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "4cccaee133404c731f0d45a02b3d4b26ada2a19775fb6a39ec6dbe7f4a039e0d",
+  "request": {
+    "text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "할매, 술부터 한 잔… 아니, 분위기가 아니구먼.",
+    "next_text": "꼬리 아홉 달린 천 년 묵은 여우, 구미호의 기운이오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_OFFER_3_4cccaee133404c731f0d45a02b3d4b26ada2a19775fb6a39ec6dbe7f4a039e0d.mp3",
+  "raw_sha256": "186357637c5e74c29060a12d0f1c610635675678ace5f9aff78ff122648798f9",
+  "bytes": 97009,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.0
+  },
+  "http_status": 200,
+  "response_request_id": "iAm8mtaMJlxPwUguTK8l",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:06Z"
+}

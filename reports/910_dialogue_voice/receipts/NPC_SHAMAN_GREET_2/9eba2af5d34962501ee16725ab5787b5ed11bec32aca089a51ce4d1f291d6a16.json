@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_GREET_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "9eba2af5d34962501ee16725ab5787b5ed11bec32aca089a51ce4d1f291d6a16",
+  "request": {
+    "text": "못골 공기가 무겁소. 길이 막히거든 장터 어귀 주모를 찾으시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_GREET_2_9eba2af5d34962501ee16725ab5787b5ed11bec32aca089a51ce4d1f291d6a16.mp3",
+  "raw_sha256": "bb509afc0d76dbabfbb8aaef882dab1cce7f590bcf0009b1ddc38fc6b15da7d1",
+  "bytes": 91994,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.68
+  },
+  "http_status": 200,
+  "response_request_id": "rkWHXdGK8DviyqSzOxU9",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:41Z"
+}

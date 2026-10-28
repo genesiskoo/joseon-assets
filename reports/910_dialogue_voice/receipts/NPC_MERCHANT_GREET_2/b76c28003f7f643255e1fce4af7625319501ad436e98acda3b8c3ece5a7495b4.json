@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_GREET_2",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "b76c28003f7f643255e1fce4af7625319501ad436e98acda3b8c3ece5a7495b4",
+  "request": {
+    "text": "오늘은 부적이 통 안 팔리네. 도사 양반이라도 한 장 사 가시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_GREET_2_b76c28003f7f643255e1fce4af7625319501ad436e98acda3b8c3ece5a7495b4.mp3",
+  "raw_sha256": "fea1718acf90116d1595ebb1a318e390bdef9330ecd27d356c8ec681172983e1",
+  "bytes": 84470,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.2
+  },
+  "http_status": 200,
+  "response_request_id": "4rEXQwinkYuJFLUVo894",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:53Z"
+}

@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 10.32
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.100000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "228cf04115e459a1f5b8eb4aafb7416683982be50546f95b0f3a0324e07bb18a",
+  "id": "NPC_SHAMAN_JUMO_AWAY_1",
+  "speaker": "shaman",
+  "request_sha256": "9009bc52429f555b481119012d6aaef369d8a83948fcd517144c63fe1c50eda5",
+  "raw_sha256": "a76c9d6009b28608aa3d4c60b2212aee5ca49db66e0e73eb62d95d27e1fbb657",
+  "file": "assets/audio/voice/NPC_SHAMAN_JUMO_AWAY_1.wav",
+  "previous_sha256": "f6e2e057c707e4ce79517d8bac06c81f60b0cd239c3d3d57b465774c393ac797"
+}

@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.76
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "46f01e8b0278c25f7881a828c98291e86e4dfb5ba80aa5eb6b4071bace07eaee",
+  "id": "NPC_MERCHANT_AFTER_BEOM_1",
+  "speaker": "merchant",
+  "request_sha256": "aafbfd6821db55d499d2fed8774efa5a65a4e40bec2be396f5ced1fd92e95739",
+  "raw_sha256": "428c21a860f69f115654562d88748de480e31be2448327e427a8b9f8abbe64e2",
+  "file": "assets/audio/voice/NPC_MERCHANT_AFTER_BEOM_1.wav",
+  "previous_sha256": "bb453d3e04d46ea5494984bf24bad73d69dcf0e39828122a6b303e350e2dfae9"
+}

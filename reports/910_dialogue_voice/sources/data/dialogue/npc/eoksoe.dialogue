@@ -1,0 +1,20 @@
+# #682 억쇠 — 흑랑 처치 뒤 장터, 대화 종료 뒤 전용 보부상 창. 첫 인사 정본 npcs_v2 §3.4(#544).
+# 화자 이름은 도사 양반, 억쇠가 도호의 이름을 알지 않는다(D-097). 경제는 NPC 소유 GambleService, 대화는 창 진입만.
+
+~ start
+if Story.first("eoksoe_met")
+	eoksoe: 흑랑 잡은 도사 양반이유? 덕에 길이 좀 조용해졌네유. 잘 만났슈. [ID:NPC_EOKSOE_FIRST_1]
+else
+	match Talk.roll("eoksoe_greet", 2)
+		when 0
+			eoksoe: 보따리 속은 나도 몰라유. 열어 봐야 알쥬. [ID:NPC_EOKSOE_GREET_1]
+		else
+			eoksoe: 손해 봐도 내 탓은 마슈, 도사 양반. 운도 실력이쥬. [ID:NPC_EOKSOE_GREET_2]
+=> jobs
+
+~ jobs
+- 보따리를 본다 [#act=gamble_open] [ID:NPC_EOKSOE_GAMBLE_OPEN]
+	$> Talk.open_gamble()
+	=> END
+- 그만 간다 [#act=leave] [ID:NPC_EOKSOE_LEAVE]
+=> END

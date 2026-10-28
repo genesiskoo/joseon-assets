@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_EOKSOE_GREET_1",
+  "speaker": "eoksoe",
+  "voice_id": "TRO4gatqxbbwLXHLDLSk",
+  "request_sha256": "d64cebd8acf5f1fadc09c399d141fc4bf96e6bff40e3226ff679c9e3bf23a3d6",
+  "request": {
+    "text": "보따리 속은 나도 몰라유. 열어 봐야 알쥬.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/eoksoe/NPC_EOKSOE_GREET_1_d64cebd8acf5f1fadc09c399d141fc4bf96e6bff40e3226ff679c9e3bf23a3d6.mp3",
+  "raw_sha256": "e222320bbf474c603cb009b7c89aa005af30239064938f4377b53b22f1a7a400",
+  "bytes": 56049,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.44
+  },
+  "http_status": 200,
+  "response_request_id": "Qd2FGYxbRZZi57MSB4Hi",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:08Z"
+}

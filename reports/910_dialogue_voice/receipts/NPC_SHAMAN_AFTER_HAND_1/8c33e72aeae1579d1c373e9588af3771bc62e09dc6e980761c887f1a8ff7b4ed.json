@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_HAND_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "8c33e72aeae1579d1c373e9588af3771bc62e09dc6e980761c887f1a8ff7b4ed",
+  "request": {
+    "text": "다만 그 문은 도력 있는 손으로만 열리오. 요괴는 조각을 쥘 수는 있어도 문에 대지는 못하오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "북쪽 돌문에 조각 셋을 대면 문이 열릴 거요.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_AFTER_HAND_1_8c33e72aeae1579d1c373e9588af3771bc62e09dc6e980761c887f1a8ff7b4ed.mp3",
+  "raw_sha256": "e595d119fb9c31baa1705ec4a22edd28d792f8a55e04fd558db6db1d3cbf0960",
+  "bytes": 149672,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 9.28
+  },
+  "http_status": 200,
+  "response_request_id": "VqZ8I3jPukPpgcENNlJc",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:26Z"
+}

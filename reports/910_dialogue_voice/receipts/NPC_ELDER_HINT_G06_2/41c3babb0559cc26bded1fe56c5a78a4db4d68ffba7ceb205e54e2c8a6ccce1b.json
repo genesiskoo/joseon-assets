@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_HINT_G06_2",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "41c3babb0559cc26bded1fe56c5a78a4db4d68ffba7ceb205e54e2c8a6ccce1b",
+  "request": {
+    "text": "더 뚫고 싶거든 장터 뒤 도깨비를 찾아가 보시오. 빛깔 다른 온전한 옥 셋과 엽전이면 뚫어 준다 하오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "내가 뚫어 드린 건 이번 한 번뿐이오. 늙은이 솜씨에도 한도가 있소.",
+    "next_text": "촌장 솜씨보다 도깨비 솜씨가 낫다는 얘기구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_HINT_G06_2_41c3babb0559cc26bded1fe56c5a78a4db4d68ffba7ceb205e54e2c8a6ccce1b.mp3",
+  "raw_sha256": "5923305a6473f8210927faf0aaf8f487a2cbca45e50cf18bbee5f30b63dcf2eb",
+  "bytes": 153434,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 9.52
+  },
+  "http_status": 200,
+  "response_request_id": "CFofa6uqJBzcXKliGKl6",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:00Z"
+}

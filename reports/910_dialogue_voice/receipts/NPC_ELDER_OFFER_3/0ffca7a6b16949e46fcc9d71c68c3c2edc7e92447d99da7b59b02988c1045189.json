@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_OFFER_3",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "0ffca7a6b16949e46fcc9d71c68c3c2edc7e92447d99da7b59b02988c1045189",
+  "request": {
+    "text": "끝까지는 바라지도 않소. 굴 어귀만 비워 주시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "밤마다 굴 어귀에서 요괴들이 기어 나와, 밭을 헤집고 외양간을 비우오.",
+    "next_text": "어귀만? 그럼 산책이구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_OFFER_3_0ffca7a6b16949e46fcc9d71c68c3c2edc7e92447d99da7b59b02988c1045189.mp3",
+  "raw_sha256": "11bf6eb2da9c1041970410e59f592e29588c9ceb6e45bb9af9d4938a71df00df",
+  "bytes": 76529,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.72
+  },
+  "http_status": 200,
+  "response_request_id": "wzc1Z7ZEpUmodTwEhBnq",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:50Z"
+}

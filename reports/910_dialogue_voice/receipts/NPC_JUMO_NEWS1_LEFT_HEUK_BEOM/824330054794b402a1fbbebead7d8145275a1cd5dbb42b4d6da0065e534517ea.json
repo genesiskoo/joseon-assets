@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_LEFT_HEUK_BEOM",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "824330054794b402a1fbbebead7d8145275a1cd5dbb42b4d6da0065e534517ea",
+  "request": {
+    "text": "남은 둘은 들녘의 흑랑 굴과 정령재의 범굴이우. 어느 쪽이 먼저든 상관없수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "쇠 먹는 놈을 정말 잡았수? 아니우, 잘했수. 참 잘했수.",
+    "next_text": "그놈이 불에 달아오르던 소리, 여기까지 들리는 것 같았수.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS1_LEFT_HEUK_BEOM_824330054794b402a1fbbebead7d8145275a1cd5dbb42b4d6da0065e534517ea.mp3",
+  "raw_sha256": "e1c35e0966d90d8b9b146b510168a9f4d27e20e93746aff32ded42ae27bd18f0",
+  "bytes": 147164,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 9.12
+  },
+  "http_status": 200,
+  "response_request_id": "9eulZDTk3AApdfm903sM",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:35Z"
+}

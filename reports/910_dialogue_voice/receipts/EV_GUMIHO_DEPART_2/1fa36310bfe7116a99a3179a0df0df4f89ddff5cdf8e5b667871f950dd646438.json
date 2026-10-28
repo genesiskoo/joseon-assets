@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_GUMIHO_DEPART_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "1fa36310bfe7116a99a3179a0df0df4f89ddff5cdf8e5b667871f950dd646438",
+  "request": {
+    "text": "네가 빠져나갈 길은 다시 막을 거다.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "이게 끝인 줄 알았어? 틈 너머가 진짜야.",
+    "next_text": "그 틈까지 닫을 수 있을까?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_GUMIHO_DEPART_2_1fa36310bfe7116a99a3179a0df0df4f89ddff5cdf8e5b667871f950dd646438.mp3",
+  "raw_sha256": "a435a9e938a099a34a6f7f79bd9a82f0ade3ba471aae2f652d88721522d87736",
+  "bytes": 48526,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "http_status": 200,
+  "response_request_id": "RwpZUwIAoice0VpZ0IAd",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:58Z"
+}

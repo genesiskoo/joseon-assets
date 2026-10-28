@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_1",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "41c2d3f61b0f5c8dcd1ad660469216941a15d77ceff5c0a05ed3ef80eca15e8f",
+  "request": {
+    "text": "벌써 하나 가져오셨수? 그게 열쇠우? 어디 좀 보여 주시우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS1_1_41c2d3f61b0f5c8dcd1ad660469216941a15d77ceff5c0a05ed3ef80eca15e8f.mp3",
+  "raw_sha256": "07ebd0daaeca5249463f23873705cfd95a1bd9810faf53c738cf8be7061d35d4",
+  "bytes": 84470,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.2
+  },
+  "http_status": 200,
+  "response_request_id": "MuGtZe5XFvaf8MDhiQ2f",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:29Z"
+}

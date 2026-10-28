@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 2.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "523e93a4fcaf98a1d9c7549333f565848674513227b21f95466864209216e025",
+  "id": "EV_GUMIHO_DEPART_2",
+  "speaker": "doho",
+  "request_sha256": "1fa36310bfe7116a99a3179a0df0df4f89ddff5cdf8e5b667871f950dd646438",
+  "raw_sha256": "a435a9e938a099a34a6f7f79bd9a82f0ade3ba471aae2f652d88721522d87736",
+  "file": "assets/audio/voice/EV_GUMIHO_DEPART_2.wav",
+  "previous_sha256": "3057c53b16e00b6403e8da3a8239148f9170b2b92390c71701c37a613a885afb"
+}

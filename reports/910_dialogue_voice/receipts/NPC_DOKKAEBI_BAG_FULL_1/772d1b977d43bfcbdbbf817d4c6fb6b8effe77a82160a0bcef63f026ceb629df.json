@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_BAG_FULL_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "772d1b977d43bfcbdbbf817d4c6fb6b8effe77a82160a0bcef63f026ceb629df",
+  "request": {
+    "text": "받아 갈 자리가 없잖아. 가방부터 비워 와.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_BAG_FULL_1_772d1b977d43bfcbdbbf817d4c6fb6b8effe77a82160a0bcef63f026ceb629df.mp3",
+  "raw_sha256": "a7f64983304440935bffc33ee24a13b20cdb7751e4ae7ca099b5771720c19026",
+  "bytes": 49780,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.04
+  },
+  "http_status": 200,
+  "response_request_id": "wO57tBEX1Kl17MGD2wUF",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:38Z"
+}

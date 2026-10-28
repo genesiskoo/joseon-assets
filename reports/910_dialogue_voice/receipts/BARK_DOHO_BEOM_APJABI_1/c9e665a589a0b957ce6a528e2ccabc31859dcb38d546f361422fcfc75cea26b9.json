@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BEOM_APJABI_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "c9e665a589a0b957ce6a528e2ccabc31859dcb38d546f361422fcfc75cea26b9",
+  "request": {
+    "text": "사람 목소리를 흉내 내는구먼. 사람이면 나와라.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BEOM_APJABI_1_c9e665a589a0b957ce6a528e2ccabc31859dcb38d546f361422fcfc75cea26b9.mp3",
+  "raw_sha256": "3ab5b928f3390e6a2efa7dd0472708b59622785803da3263a9c0b12fc37183e0",
+  "bytes": 57303,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.52
+  },
+  "http_status": 200,
+  "response_request_id": "zc7j6JJUyyTcxJnEeLFl",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:53Z"
+}

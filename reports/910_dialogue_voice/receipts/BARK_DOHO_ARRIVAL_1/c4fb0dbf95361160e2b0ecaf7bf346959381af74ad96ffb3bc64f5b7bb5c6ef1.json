@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_ARRIVAL_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "c4fb0dbf95361160e2b0ecaf7bf346959381af74ad96ffb3bc64f5b7bb5c6ef1",
+  "request": {
+    "text": "거, 술 한잔할 데가 없구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_ARRIVAL_1_c4fb0dbf95361160e2b0ecaf7bf346959381af74ad96ffb3bc64f5b7bb5c6ef1.mp3",
+  "raw_sha256": "ecbbc6fab155e7ff793b693d70da59cdda668f88c434c6dc5941b204a6d8e1fd",
+  "bytes": 40585,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.48
+  },
+  "http_status": 200,
+  "response_request_id": "GjpZzEl8Mgg4RzA1u12t",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:49Z"
+}

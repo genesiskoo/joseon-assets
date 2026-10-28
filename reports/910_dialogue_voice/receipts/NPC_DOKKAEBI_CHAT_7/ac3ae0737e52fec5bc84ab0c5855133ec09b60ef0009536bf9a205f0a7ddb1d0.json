@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_7",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "ac3ae0737e52fec5bc84ab0c5855133ec09b60ef0009536bf9a205f0a7ddb1d0",
+  "request": {
+    "text": "무당 할매는 날 볼 때마다 눈을 가늘게 떠. 해코지 안 한다니까. 오래 산 것끼리 좀 봐줘도 될 텐데.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_7_ac3ae0737e52fec5bc84ab0c5855133ec09b60ef0009536bf9a205f0a7ddb1d0.mp3",
+  "raw_sha256": "0c39de778f9564e67a0a04853a160e7eab12c8c3718a9cef68bbb303aed9f400",
+  "bytes": 131700,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.16
+  },
+  "http_status": 200,
+  "response_request_id": "cmAOqi3rBiYnTcsxaEUO",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:30Z"
+}

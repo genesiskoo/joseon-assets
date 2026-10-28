@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.56
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -3.7,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.0,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.7
+  },
+  "sha256": "2fb27031b83ba91cbb439c9d6c6635fa901ab4af67f838a7b1efbb24596c766b",
+  "id": "NPC_DOKKAEBI_ASK_1",
+  "speaker": "dokkaebi",
+  "request_sha256": "5bb65de79763aae518d702ad0fe16a000699c291bfe90849ff51156ad098ab3c",
+  "raw_sha256": "10775a6eb1bea13b92f12c4be76e7047c9a962921215b192ca8b79ff437ad87c",
+  "file": "assets/audio/voice/NPC_DOKKAEBI_ASK_1.wav",
+  "previous_sha256": "e771d1e484ce60d6a6f4a568babec51380abd168f3d25fbbceeeefb5a9031159"
+}

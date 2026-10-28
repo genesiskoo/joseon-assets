@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_AFTER_END_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "709616bebf3744c6dd81637efd8eb853d16986bfd40d05f4acb8a8e6722cfe1d",
+  "request": {
+    "text": "주모가 그리 사라질 줄은 몰랐소. 그 솥은 내가 치워 두겠소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "국물 맛만은 진짜였는데.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_AFTER_END_1_709616bebf3744c6dd81637efd8eb853d16986bfd40d05f4acb8a8e6722cfe1d.mp3",
+  "raw_sha256": "e88acd25f13405b02daac4b4fe8dc1aaead6cba73d4a7c7e09a625a0d87f456d",
+  "bytes": 91994,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.68
+  },
+  "http_status": 200,
+  "response_request_id": "CEmTmcyOsMaLMVlcCM3P",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:03Z"
+}

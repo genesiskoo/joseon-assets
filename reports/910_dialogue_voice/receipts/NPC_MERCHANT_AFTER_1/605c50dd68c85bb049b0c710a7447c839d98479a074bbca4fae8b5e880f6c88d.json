@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_AFTER_1",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "605c50dd68c85bb049b0c710a7447c839d98479a074bbca4fae8b5e880f6c88d",
+  "request": {
+    "text": "허허, 장터가 다시 열릴 기미가 보이네. 고맙수, 도사 양반.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "불개라더니, 내 칼은 못 삼키더군.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_AFTER_1_605c50dd68c85bb049b0c710a7447c839d98479a074bbca4fae8b5e880f6c88d.mp3",
+  "raw_sha256": "09b7b871c52b0d36d6f94f2197c66372fd0c40b06fe9f115565042b4b3b97b92",
+  "bytes": 89486,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.52
+  },
+  "http_status": 200,
+  "response_request_id": "2vkxpHvVDtD5YPYcdE4s",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:56Z"
+}

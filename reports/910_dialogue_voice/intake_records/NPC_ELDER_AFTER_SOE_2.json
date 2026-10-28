@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.48
+  },
+  "lufs": -18.4,
+  "true_peak_dbtp": -2.2,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 3.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.4,
+    "true_peak_dbtp": -2.2
+  },
+  "sha256": "f4cb73fdb2de9fb0a3dbfeb33afed6be381ac4e378b395f7196d13deafc72ace",
+  "id": "NPC_ELDER_AFTER_SOE_2",
+  "speaker": "doho",
+  "request_sha256": "f859236b605172a7d40afd65ea1f11bb4263cd7e0e508cac08d7d490a9e842da",
+  "raw_sha256": "3a457799ab4f5cbf9f99bb112dac037e44995665c3b3e7e41573012267241bbf",
+  "file": "assets/audio/voice/NPC_ELDER_AFTER_SOE_2.wav",
+  "previous_sha256": "c75110e7dabd62673c003fa7e8c7458d6e64c00006c2b5b6d00c3cecf420bbd7"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BEOM_REPLY_BAIT_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "425cec263cfbeccd0d0dab31db8ce0443856afe6a34b1a7bd8a318dc0d2dc7de",
+  "request": {
+    "text": "이건 좀 치사하다.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BEOM_REPLY_BAIT_1_425cec263cfbeccd0d0dab31db8ce0443856afe6a34b1a7bd8a318dc0d2dc7de.mp3",
+  "raw_sha256": "4be662b8f784374daf7514226c2b23e68574d71eccbb79b35f51587648b7caab",
+  "bytes": 28046,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.68
+  },
+  "http_status": 200,
+  "response_request_id": "PwJaR0kMrpZv3JXekY7k",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:54Z"
+}

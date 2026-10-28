@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_ACTIVE_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "209dd47e27453f72f3e581034c247f9df2537e5e67526be9aded3774c413de4a",
+  "request": {
+    "text": "할매도 주모도 못골을 오래 지킨 사람들이오. 그 말을 새겨들으시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_ACTIVE_1_209dd47e27453f72f3e581034c247f9df2537e5e67526be9aded3774c413de4a.mp3",
+  "raw_sha256": "90db27ec0138352a8544323184e0ee4478d09b4d13b42ad51f583997036bc1d0",
+  "bytes": 91994,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.68
+  },
+  "http_status": 200,
+  "response_request_id": "PO60I84h9R6C17v69MBc",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:49Z"
+}

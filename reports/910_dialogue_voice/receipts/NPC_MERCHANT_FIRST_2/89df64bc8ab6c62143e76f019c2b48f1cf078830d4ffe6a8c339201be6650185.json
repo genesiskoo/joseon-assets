@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_FIRST_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "89df64bc8ab6c62143e76f019c2b48f1cf078830d4ffe6a8c339201be6650185",
+  "request": {
+    "text": "되게 해 드리지. 대신 값은 좀 깎고.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "어이구, 도사 양반. 이 난리 통에 장사가 되겠수?",
+    "next_text": "허허, 벌써부터?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_MERCHANT_FIRST_2_89df64bc8ab6c62143e76f019c2b48f1cf078830d4ffe6a8c339201be6650185.mp3",
+  "raw_sha256": "e414de0bfbf408363bc087ec11a513a87f505f733da32d6cf87ec813f7b8357f",
+  "bytes": 63990,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.92
+  },
+  "http_status": 200,
+  "response_request_id": "lOusqPLsHjBU0RH087OV",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:50Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS2_MIRROR_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "42b5f0de38f325824b1f632a1d811a44a2aca2cab9f2f128e5145f02b4c68dd0",
+  "request": {
+    "text": "내가… 그랬나.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "국물이면 됐지? 도사 양반이 처음에 그랬잖수.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_NEWS2_MIRROR_2_42b5f0de38f325824b1f632a1d811a44a2aca2cab9f2f128e5145f02b4c68dd0.mp3",
+  "raw_sha256": "394080f532ede583ebf7d5fa055fe0462d7ede7e181c82cc8dc73e8291bbfe98",
+  "bytes": 35569,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.16
+  },
+  "http_status": 200,
+  "response_request_id": "S3m9UMn9lhYqp4a8kBC3",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:27Z"
+}

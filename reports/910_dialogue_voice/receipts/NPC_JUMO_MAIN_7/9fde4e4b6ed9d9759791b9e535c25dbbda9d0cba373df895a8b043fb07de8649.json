@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_7",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "9fde4e4b6ed9d9759791b9e535c25dbbda9d0cba373df895a8b043fb07de8649",
+  "request": {
+    "text": "문 안엔 뭐가 있는데?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "열쇠 셋을 모아서 북쪽 돌문을 열어 주시우.",
+    "next_text": "천 년 묵은 여우가 갇혀 있다우. 그 여우 얘긴 입에 올리기도 싫수. 국물 식겠수.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_MAIN_7_9fde4e4b6ed9d9759791b9e535c25dbbda9d0cba373df895a8b043fb07de8649.mp3",
+  "raw_sha256": "c3cedeedcd43d01d78ca612fa41cbeeede0e744825706371e2537ba0e086d800",
+  "bytes": 34315,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.08
+  },
+  "http_status": 200,
+  "response_request_id": "MZbqGelqX5zvQJIOi8c8",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:17Z"
+}

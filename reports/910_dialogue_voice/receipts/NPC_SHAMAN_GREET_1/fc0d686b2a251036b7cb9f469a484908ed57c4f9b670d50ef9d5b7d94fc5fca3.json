@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_GREET_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "fc0d686b2a251036b7cb9f469a484908ed57c4f9b670d50ef9d5b7d94fc5fca3",
+  "request": {
+    "text": "도사 양반, 봉인이 또 흔들렸소. 길은 주모네 목로에서 물으시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_GREET_1_fc0d686b2a251036b7cb9f469a484908ed57c4f9b670d50ef9d5b7d94fc5fca3.mp3",
+  "raw_sha256": "7cf07d3dcfdb63c8e40db95acf67654f98013e59f1ff8a6773b23434d4931bc5",
+  "bytes": 97009,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.0
+  },
+  "http_status": 200,
+  "response_request_id": "wTyxnAIgQFF1TeJ8zFzf",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:41Z"
+}

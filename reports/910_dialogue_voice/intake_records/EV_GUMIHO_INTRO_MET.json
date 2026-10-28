@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.0
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 3.8999999999999986,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "b00d63a435d4d2b448de39a6f2eb492677cf13c348be5b8ed3f55a59a40791c3",
+  "id": "EV_GUMIHO_INTRO_MET",
+  "speaker": "doho",
+  "request_sha256": "0f4fd36382e7737c0b329b1198ffd7d76ec68af733268e4637e94ead02a7c179",
+  "raw_sha256": "c939890bb3f8537ffdbfa7853113961c9f947241642409028baad5dcd27911f2",
+  "file": "assets/audio/voice/EV_GUMIHO_INTRO_MET.wav",
+  "previous_sha256": "61a0c4e30113f503ffb4f2b77dbc026621ee9533c1150b4e7a1885ccdf29165a"
+}

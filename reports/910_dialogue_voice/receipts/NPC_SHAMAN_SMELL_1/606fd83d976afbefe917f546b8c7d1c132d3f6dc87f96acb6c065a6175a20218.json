@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_SMELL_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "606fd83d976afbefe917f546b8c7d1c132d3f6dc87f96acb6c065a6175a20218",
+  "request": {
+    "text": "그러고 보니 주모가 요새 통 안 보이는구려.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_SMELL_1_606fd83d976afbefe917f546b8c7d1c132d3f6dc87f96acb6c065a6175a20218.mp3",
+  "raw_sha256": "78571c84d591f9863238ecc03f8b9e7f20151ee1aee6eae1179ade5a8af7e584",
+  "bytes": 62318,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.84
+  },
+  "http_status": 200,
+  "response_request_id": "b0v5d7L0a2GS2rbyu9fJ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:32Z"
+}

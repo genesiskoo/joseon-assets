@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_SMELL_2",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "95ff75fb97fc053a34a642f09e1f2f5b99a769156cb775dc10a430032f9d509b",
+  "request": {
+    "text": "그 사람한테선 사람 냄새가 너무 진하오. 일부러 덧칠한 것처럼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "국솥 김이 진해서 그렇겠지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_SMELL_2_95ff75fb97fc053a34a642f09e1f2f5b99a769156cb775dc10a430032f9d509b.mp3",
+  "raw_sha256": "213bc458e0bbfda39bb2db8791987c29ea59f693b40aeb5a9445b08f75103930",
+  "bytes": 94501,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.84
+  },
+  "http_status": 200,
+  "response_request_id": "3hAFOmbwnxhnnHPS9m3E",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:33Z"
+}

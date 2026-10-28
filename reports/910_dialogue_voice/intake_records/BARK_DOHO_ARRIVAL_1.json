@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.48
+  },
+  "lufs": -18.1,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 6.0,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.1,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "c6e40e9e6571e0245935ad84781360fe9459335eca24393bee730b3adfb8c5a4",
+  "id": "BARK_DOHO_ARRIVAL_1",
+  "speaker": "doho",
+  "request_sha256": "c4fb0dbf95361160e2b0ecaf7bf346959381af74ad96ffb3bc64f5b7bb5c6ef1",
+  "raw_sha256": "ecbbc6fab155e7ff793b693d70da59cdda668f88c434c6dc5941b204a6d8e1fd",
+  "file": "assets/audio/voice/BARK_DOHO_ARRIVAL_1.wav",
+  "previous_sha256": "3fabf0af62a24c6b4ab3f47e952bdec696a77d8ed798a805a3420b527b4a82f7"
+}

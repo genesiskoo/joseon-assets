@@ -1,0 +1,95 @@
+﻿  · 자리 간 e2e 칸 3개 (#553 — -Slots · JOSEON_E2E_SLOTS) · 판 공유(dialogue_audit,dialogue_choices,dialogue_band,dialogue_even
+t,ending,vendor_quest,bongmil_walk,npc_hover_view,boss_bulgasari,boss_greetings,boss_jangsanbeom,beomgul_walk,shaman_he
+al)
+  ⏳ 다른 자리의 단독 차례 (934-cave-gen · pid 31448 · 01:21 · 단독 대기(창 모드)) — 끝나면 이어서 돈다
+  ⏳ 다른 자리의 단독 차례 (934-cave-gen · pid 31448 · 01:57 · 단독(창 모드)) — 끝나면 이어서 돈다
+  ⏳ 다른 자리의 단독 차례 (stoic-pascal-52a0e7 (#962 사진)) — 끝나면 이어서 돈다
+== e2e 러너 자기검사 ==
+  PASS  E2E_SELFTEST PASS (판정 일치 5/5)  (7.4초)
+== e2e (dialogue_audit,dialogue_choices,dialogue_band,dialogue_event,ending,vendor_quest,bongmil_walk,npc_hover_view,bo
+ss_bulgasari,boss_greetings,boss_jangsanbeom,beomgul_walk,shaman_heal · 공유 칸 ①/3) ==
+E2E_PHASE_LAUNCH {"schema":1,"fixed_fps":0,"exe":"godot","argv":["--path","C:\\workspace\\joseon\\.claude\\worktrees\\9
+10-script-voice","--headless","--","--e2e=dialogue_audit,dialogue_choices,dialogue_band,dialogue_event,ending,vendor_qu
+est,bongmil_walk,npc_hover_view,boss_bulgasari,boss_greetings,boss_jangsanbeom,beomgul_walk,shaman_heal"],"phase_arg":"
+dialogue_audit,dialogue_choices,dialogue_band,dialogue_event,ending,vendor_quest,bongmil_walk,npc_hover_view,boss_bulga
+sari,boss_greetings,boss_jangsanbeom,beomgul_walk,shaman_heal","phase_tokens":["dialogue_audit","dialogue_choices","dia
+logue_band","dialogue_event","ending","vendor_quest","bongmil_walk","npc_hover_view","boss_bulgasari","boss_greetings",
+"boss_jangsanbeom","beomgul_walk","shaman_heal"],"skip":[],"exclusive":false,"contains_balance_boss":false,"combat_trac
+e":false,"launcher_pid":64772,"launched_utc":"2026-10-27T16:58:40.0592626Z"}
+E2E start: dialogue_audit, dialogue_choices, dialogue_band, dialogue_event, ending, vendor_quest, bongmil_walk, npc_hov
+er_view, boss_bulgasari, boss_greetings, boss_jangsanbeom, beomgul_walk, shaman_heal
+E2E ▶ dialogue_audit
+E2E dialogue_audit PASS (검사 43)
+E2E ▶ dialogue_choices
+E2E dialogue_choices PASS (검사 49)
+E2E ▶ dialogue_band
+  · 이름표 글꼴 = 번들 제목 글꼴(함렛 Bold)
+E2E dialogue_band PASS (검사 80)
+E2E ▶ dialogue_event
+E2E dialogue_event PASS (검사 50)
+E2E ▶ ending
+E2E ending PASS (검사 40)
+E2E ▶ vendor_quest
+E2E vendor_quest PASS (검사 54)
+E2E ▶ bongmil_walk
+  · 첫 접근 혼잣말 — 닿음까지 0.53초 (줄 2.6초 · 미룸 2.70초)
+  ✗ 혼잣말이 걷힌 뒤(2.57초) 문 글 「봉밀굴 문이 봉인에 막혀 있다 — 굴 주인들이 쥔 봉인 조각이 셋 모자란다 (0/3)」 · 마을 그대로
+  ✗ 같은 판에 다시 문 곁 → 혼잣말 없음 (판에 한 번 · story 플래그)
+  · 1층 72x72 · 적 40 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "hollin_mudang", "yeou"] · 
+장식 { "Stele": 2, "SteleFallen": 8, "PaperBits": 47, "Bones": 15, "RuinStone": 54, "RopeIntact": 19 } · 정예 자리 2 · 네임드 (-
+1, -1) · 봉인석 [(26, 29), (33, 39), (30, 55)] · 고리 [(0, 2), (2, 5), (1, 9)]
+  · 2층 72x72 · 적 34 · 명단 ["honbureum_sulsa", "hollin_yeogung_bow2", "hollin_yeogung_spear", "hollin_mudang", "yeou"] · 
+장식 { "SteleFallen": 4, "PaperBits": 42, "Bones": 16, "RuinStone": 29, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (-1, -1) · 봉인석
+ [(23, 20), (31, 12), (45, 7)] · 고리 [(4, 6), (3, 4), (0, 2), (4, 8)]
+  · 3층 72x72 · 적 33 · 명단 ["hollin_yeogung_bow2", "hollin_yeogung_spear", "hollin_mudang", "yeou", "wang_geomi"] · 장식 { 
+"Stele": 1, "SteleFallen": 2, "PaperBits": 38, "Bones": 16, "RuinStone": 40, "RopeIntact": 11 } · 정예 자리 2 · 네임드 (6, 61)
+ · 봉인석 [(22, 44), (59, 11), (63, 39)] · 고리 [(7, 8), (3, 8), (2, 6)]
+  · 4층 32x30 · 적 3 · 명단 ["yeou", "yeoubul"] · 장식 { "PaperBits": 8, "Bones": 6, "RuinStone": 11, "RopeIntact": 2 } · 정예 
+자리 0 · 네임드 (-1, -1) · 봉인석 [] · 고리 []
+E2E bongmil_walk FAIL (검사 165, 실패 2)
+E2E ▶ npc_hover_view
+E2E npc_hover_view PASS (검사 82)
+E2E ▶ boss_bulgasari
+  · 화로 Brazier_4_14 · 불가살이 (5.76278, 0.0, 12.45786) · 도호 (2.5, 0.000391, 15.5) · 달아오름 6.00초 · 출처 brazier
+  · 달아오름 알림 = 달아오르고 0.68초 뒤 · 그때 도호 바크 없음 · 달아오름 5.3초 남음
+  · 엽전 뜯기 물기 — 0.5초 · 선딜 1(코 0) · 닿은 한 대 1 · 맞음 1 · 달아오름 0 · 물러남 0 · 거리 1.72~1.72
+  · 바닥 칼 없음 · 불가살이 (6.634243, 0.0, 10.51608) · 붙듦  · 간 1 · 먹은 1
+  · 벽 쇠사슬 뜯음 [5] · #5 4.65칸 · 가장 가까운 #5 4.65칸 · 사슬 7
+  · 헤드리스 — 뜯은 벽 사슬 그림 지움 대조 생략 (더미 렌더러는 인스턴스 값 0)
+  · 삼키기 사진 틀 (화면 (1280.0, 720.0)) — 보스 머리 (609.2497, 196.2675) · 발 (609.2497, 396.6443) · 「무적」 (615.121, 189.9736) · 도호
+ 머리 (697.1077, 353.7885) · 몸집 × 1.22 · 겉칠 (0.74, 0.78, 0.86, 0.32)
+  · 벽 쇠사슬 뜯음 [5, 3] · #3 6.95칸 · 가장 가까운 #3 6.95칸 · 사슬 7
+  · 헤드리스 — 뜯은 벽 사슬 그림 지움 대조 생략 (더미 렌더러는 인스턴스 값 0)
+  · 포효 밀린 칸 3.000 (정격 3.0 · 경직 true · 도호 (10.5, 0.000391, 10.5) → (13.49957, 0.000391, 10.44938) · 불가살이 (9.511215, 0.0,
+ 10.50263))
+  · 코 밀린 칸 2.000 (정격 2.0 · 맞음 true · 도호 (11.5, 0.000624, 10.5) → (13.5, 0.000624, 10.49752) · 불가살이 (10.29121, 0.0, 10.5
+0068))
+  · 처치 뒤 줄 — 처치 1.81초 · 스킬 포인트 3.51초 (드랍 다 앉음 ≤ 0.90초)
+E2E boss_bulgasari PASS (검사 52)
+E2E ▶ boss_greetings
+  ✗ 촌장 다시 = 쇠부리 폐광 인사 + 도호 (["칼로는 못 죽인다던 불가살이를 베셨소? 이제 대장간 불도 다시 지필 수 있겠구려.", "그놈은 그냥 배가 고팠던 거야."])
+E2E boss_greetings FAIL (검사 36, 실패 1)
+E2E ▶ boss_jangsanbeom
+  · 파수 2 치움 (어린 장산범, #688)
+  · 앞선 덮치기 1번 · 미끼 「까마귀 울음」 · 선딜까지 기다림 끝
+  · 덮치기: 선딜 자리 (12.21983, 0.0, 5.500493) · 도호 (15.5, 0.000391, 13.5) · 끝 (15.2515, 0.000934, 12.37677) · 끝난 까닭 hit · 도호
+ 지금 (15.5, 0.000391, 13.5)
+  · 덮치기·빛 안 물기 뒤 도호 생명 110 → 83 (명중 굴림)
+  · 털 낚아채기 끌린 칸 2.871 (기대 2.871 = 거리 4.271 − 몸 앞 1.400 · 경직 true · 도호 (19.5, 0.000391, 12.5) → (16.63267, 0.000391, 12.
+36467))
+E2E boss_jangsanbeom PASS (검사 42)
+E2E ▶ beomgul_walk
+  · 1층 64x64 · 적 40 · 명단 ["hwajeok", "changgwi", "eorin_jangsanbeom"] · 장식 ["Rock 50", "RuinStone 68", "Bones 20", "Fur
+ 12"] · 정예 자리 1
+  · 2층 64x64 · 적 20 · 명단 ["hwajeok", "changgwi", "eorin_jangsanbeom"] · 장식 ["Rock 34", "RuinStone 54", "Bones 22", "Fur
+ 16"] · 정예 자리 1
+  · 3층 32x30 · 적 2 · 명단 ["eorin_jangsanbeom"] · 장식 ["Rock 12", "RuinStone 16", "Bones 9", "Fur 3"] · 정예 자리 0
+  · #691 장산범 멈춤 · 처음 파수 2 치움 — 같은 자리에 쉬는 어린 장산범 둘을 세운다
+E2E beomgul_walk PASS (검사 77)
+E2E ▶ shaman_heal
+E2E shaman_heal PASS (검사 29)
+E2E SUMMARY: 11/13 PASS
+E2E_PHASE_RAW C:\workspace\joseon\.claude\worktrees\910-script-voice\tmp\e2e_raw\20261027T1624189894327_6112\phase_1_sh
+ared
+  e2e  (269.1초) — 제한 3600초
+실패 1

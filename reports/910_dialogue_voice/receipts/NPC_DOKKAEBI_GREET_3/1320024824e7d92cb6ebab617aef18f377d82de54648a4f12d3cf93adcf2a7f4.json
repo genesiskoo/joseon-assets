@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GREET_3",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "1320024824e7d92cb6ebab617aef18f377d82de54648a4f12d3cf93adcf2a7f4",
+  "request": {
+    "text": "틀려도 안 뺏어. 마음 놓고 올려 봐.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GREET_3_1320024824e7d92cb6ebab617aef18f377d82de54648a4f12d3cf93adcf2a7f4.mp3",
+  "raw_sha256": "da658d015f880f6098bdd8c579b62e7577c14a6aa3750d507e1da6c19f733d6c",
+  "bytes": 46018,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.8
+  },
+  "http_status": 200,
+  "response_request_id": "g10sTEY69k8jfUMQjoqe",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:17Z"
+}

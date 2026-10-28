@@ -1,0 +1,96 @@
+# 김 영감 (D-082 · #239, design/dialogue_v2.md §3.6) — 인사(처음 / 이야기 단계 / 무작위) → 일 선택지(거래·그만).
+# 부르는 이름 = Story(러너) · Talk(NpcTalk — Npc.talk() 가 넘김). 선택지 태그 [#act=…] = 일 이름(띠 choose("shop") · 시험).
+# 대사 정본 = DIALOGUE_VILLAGE_PACK §1 (첫 만남 3줄 = dialogue_v2 §4.2 예시 — 정본 문서에 없던 자리, 표정 태그는 #243 뒤).
+# 층 번호 줄(옛 「삼 층?」)은 굴 이름으로 고쳤다(#171, npcs_v2 §5.5). 무작위 = Talk.roll(바로 앞과 같은 줄 안 나옴).
+# #546 대본 점검 고침(design/script_audit_2026-10-02_A §3.K · _C §2.1): 「던전」→「굴」 · 「저자」→「장터」 · 되묻기(「술?」「흑랑 굴?」) 없앰 · 「살아서 돌아오면」은 주모 몫이라 뺌. 전/후 = docs/art/546_script_fix/before_after.md.
+# 보스 뒤 인사(#307, npcs_v2 §5.2.1) — 굴 주인을 벤 뒤(처치 표시 Talk.den_cleared) 처음 말 걸 때 한 번씩. 몰아 잡고 오면 말 걸 때마다 하나(흑랑 굴 → 범굴 → 쇠부리 폐광).
+#   벤 보스만 말하고 다음 보스는 예고하지 않는다(순서 자유 D-093 — 남은 굴은 주모·할매 몫). 흑랑 칸 merchant_after_heukrang 은 옛 이름 그대로(이미 본 세이브는 다시 안 나옴).
+
+~ start
+if Story.first("merchant_met")
+	merchant: 어이구, 도사 양반. 이 난리 통에 장사가 되겠수? [ID:NPC_MERCHANT_FIRST_1]
+	doho: 되게 해 드리지. 대신 값은 좀 깎고. [ID:NPC_MERCHANT_FIRST_2]
+	merchant: 허허, 벌써부터? [ID:NPC_MERCHANT_FIRST_3]
+elif Story.flag("event/ending") and not Story.flag("merchant_after_ending")
+	=> after_ending
+elif Talk.presence("jumo") == "gone" and not Story.flag("jumo_gone") and not Story.flag("merchant_forget_jumo")
+	=> forget_jumo
+elif Story.flag("jumo_met") and Talk.presence("jumo") != "gone" and not Story.flag("merchant_vouch_jumo")
+	=> vouch_jumo
+elif Talk.den_cleared("heukrang_gul") and not Story.flag("merchant_after_heukrang")
+	=> after_heukrang
+elif Talk.den_cleared("beomgul") and not Story.flag("merchant_after_jangsanbeom")
+	=> after_jangsanbeom
+elif Talk.den_cleared("soeburi") and not Story.flag("merchant_after_bulgasari")
+	=> after_bulgasari
+elif Talk.quest() == "accepted"
+	match Talk.roll("merchant_active", 2)
+		when 0
+			merchant: 굴에 드실 채비는 하셨수? 탕약 두 병은 챙겨 가시우. [ID:NPC_MERCHANT_ACTIVE_1]
+		else
+			merchant: 다녀오시면 내가 한잔 사리다. 장터가 열리면 말이우. [ID:NPC_MERCHANT_ACTIVE_2]
+else
+	=> greet
+=> jobs
+
+~ greet
+match Talk.roll("merchant_greet", 5)
+	when 0
+		merchant: 도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까? [ID:NPC_MERCHANT_GREET_1]
+	when 1
+		merchant: 오늘은 부적이 통 안 팔리네. 도사 양반이라도 한 장 사 가시우. [ID:NPC_MERCHANT_GREET_2]
+	when 2
+		merchant: 굴에서 건진 건 다 사 드리우. 값은 뭐, 시세대로 쳐 드리지. [ID:NPC_MERCHANT_GREET_3]
+	when 3
+		merchant: 술 찾으시우? 장터가 닫혀서 술은 없수. 물은 있지. 물은 공짜여. [ID:NPC_MERCHANT_GREET_4]
+	else
+		merchant: 갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니. [ID:NPC_MERCHANT_GREET_5]
+=> jobs
+
+~ jobs
+- 거래한다 [#act=shop] [ID:NPC_MERCHANT_JOB_SHOP]
+	$> Talk.open_shop()
+	=> END
+- 그만 간다 [#act=leave] [ID:NPC_MERCHANT_JOB_LEAVE]
+=> END
+
+# 주모 증언 (D-096 · #541, design/quest_rework_dialogue_2026-10-01.md §3.4 · S4-2) — 주모를 만난 뒤(jumo_met) 주모가 마을에 있는 동안 한 번(merchant_vouch_jumo).
+# 가지는 ~ start 의 첫 만남 바로 뒤 — 줄은 이 블록에(#546 이 위의 줄을 고치는 동안 겹치지 않게 파일 끝에 둔다). 끝나면 일 선택지.
+# 표시를 줄 앞에 켠다(최종판은 줄 뒤): 애드온은 마지막 대사 바로 뒤가 => 일 때만 선택지를 그 줄에 붙인다($> 가 끼면 빈 띠에 선택지만).
+~ vouch_jumo
+$> Story.put("merchant_vouch_jumo")
+merchant: 주모 만나셨수? 그 사람 국밥이 못골에서 제일이우. 그 사람 없었으면 이 장터, 석 달 전에 죽었수. [ID:NPC_MERCHANT_VOUCH_1]
+=> jobs
+
+# 보스 뒤 인사 (#307, npcs_v2 §5.2.1) — 부르는 곳 = ~ start 의 처치 표시 갈래. 표시를 줄 앞에 켠다(vouch_jumo 와 같은 이유 — 선택지가 마지막 줄에 붙는다).
+# 흑랑 = 불개(해와 달을 물려던 개 — 「까막나라」는 D-097 점검 A대로 줄에 안 쓴다) · 장산범 = 아는 사람 목소리로 꾐(김 영감 목소리 「싸게 드리우」도 낸다, bosses_v2 §2.6) ·
+# 불가살이 = 칼이 안 든다 → 불로 달군다(bosses_v2 §3.3). 흑랑 첫 줄은 #546 글에 호칭만 「도사 양반」으로(dialogue_v2 §4.5 — #572 음성은 같은 키로 다시 뽑는다).
+~ after_heukrang
+$> Story.put("merchant_after_heukrang")
+merchant: 허허, 장터가 다시 열릴 기미가 보이네. 고맙수, 도사 양반. [ID:NPC_MERCHANT_AFTER_1]
+doho: 불개라더니, 내 칼은 못 삼키더군. [ID:NPC_MERCHANT_AFTER_2]
+=> jobs
+
+~ after_jangsanbeom
+$> Story.put("merchant_after_jangsanbeom")
+merchant: 범굴 흰 범을 베셨다며? 아는 사람 목소리로 꾄다던데, 참말이었수? [ID:NPC_MERCHANT_AFTER_BEOM_1]
+doho: 영감 목소리로 싸게 준다길래, 가짜인 줄 바로 알았지. [ID:NPC_MERCHANT_AFTER_BEOM_2]
+=> jobs
+
+~ after_bulgasari
+$> Story.put("merchant_after_bulgasari")
+merchant: 쇠부리 폐광 쇠 먹는 놈을 베셨수? 칼이 안 든다던 놈을, 대체 뭘로? [ID:NPC_MERCHANT_AFTER_SOE_1]
+doho: 달아오르니 칼이 들더구먼. [ID:NPC_MERCHANT_AFTER_SOE_2]
+=> jobs
+
+# 구미호를 물리친 뒤 처음 말 걸 때 한 번 (#910 · #908 M9) — 증언(「국밥이 제일이우」)을 받는 줄. 정체는 단정하지 않는다.
+~ after_ending
+$> Story.put("merchant_after_ending")
+merchant: 목로 자리에 이제야 바람이 드는구려. 허허, 이 늙은이가 괜히 서운하네. [ID:NPC_MERCHANT_AFTER_END_1]
+=> jobs
+
+# 빈자리(D-115 L3 · #910) — 주모가 사라진 뒤 구미호 전, 처음 말 걸 때 한 번. 증언(「국밥이 제일이우」)이 뒤집힌다.
+~ forget_jumo
+$> Story.put("merchant_forget_jumo")
+merchant: 주모 국밥 맛이 기억이 안 나우. 이상하지, 석 달을 매일 먹었는데. [ID:NPC_MERCHANT_FORGET_1]
+=> jobs

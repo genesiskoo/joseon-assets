@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_SMELL_1B",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "cc99b525caf1b95b64809b452b57b27c7b7125fa72da8538a1ffeb6fd002c228",
+  "request": {
+    "text": "주모를 보고 오셨소? 그 사람은 늘 웃고 있지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_SMELL_1B_cc99b525caf1b95b64809b452b57b27c7b7125fa72da8538a1ffeb6fd002c228.mp3",
+  "raw_sha256": "a8d880695c8b12f0b6dd96e9b34d6fb8e15d341d33bb2c82df82df0d2b7294d2",
+  "bytes": 71514,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.4
+  },
+  "http_status": 200,
+  "response_request_id": "RBS8DCa032c8pto26fzy",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:31Z"
+}

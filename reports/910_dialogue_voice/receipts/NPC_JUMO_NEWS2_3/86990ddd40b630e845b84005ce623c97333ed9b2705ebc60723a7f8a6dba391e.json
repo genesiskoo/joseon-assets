@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS2_3",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "86990ddd40b630e845b84005ce623c97333ed9b2705ebc60723a7f8a6dba391e",
+  "request": {
+    "text": "그때까지 내가 이 목로를 지키고 있을지는 모르겠수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "장사 접을 일이라도… 있나?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS2_3_86990ddd40b630e845b84005ce623c97333ed9b2705ebc60723a7f8a6dba391e.mp3",
+  "raw_sha256": "ee23f07fb63f0e95a7c6d88a200c2f8b4e9c3a49017da92ae48fc22ff10c8b76",
+  "bytes": 79037,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.88
+  },
+  "http_status": 200,
+  "response_request_id": "q9CBjautc1HArMkEHCAC",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:25Z"
+}

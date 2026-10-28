@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_HINT_AGAIN_3",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "37f9eaa3dcf2ac6c52d5b7af3fc56f549afec251553cc044c37b2f8cf78f76fd",
+  "request": {
+    "text": "박힌 옥을 살려 빼려면 장비째 맡겨. 옥은 돌려주고 장비는 내가 가져.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "아무거나 박았다간 돈값 못 하겠구먼.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_HINT_AGAIN_3_37f9eaa3dcf2ac6c52d5b7af3fc56f549afec251553cc044c37b2f8cf78f76fd.mp3",
+  "raw_sha256": "c317e003fdce04f10909658e5fd4d31651bee2ec53c2ff11436362b276c4546e",
+  "bytes": 103278,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.4
+  },
+  "http_status": 200,
+  "response_request_id": "Td8MufLJJO00sJE33vRA",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:23Z"
+}

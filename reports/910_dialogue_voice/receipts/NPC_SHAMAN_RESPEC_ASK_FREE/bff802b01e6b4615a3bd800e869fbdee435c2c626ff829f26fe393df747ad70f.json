@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_RESPEC_ASK_FREE",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "bff802b01e6b4615a3bd800e869fbdee435c2c626ff829f26fe393df747ad70f",
+  "request": {
+    "text": "첫 굿은 값을 안 받소. 하겠소?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_RESPEC_ASK_FREE_bff802b01e6b4615a3bd800e869fbdee435c2c626ff829f26fe393df747ad70f.mp3",
+  "raw_sha256": "dbca8a28841c7be97833a405620472aca369b5e5930bc5b572768a76663823db",
+  "bytes": 57303,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.52
+  },
+  "http_status": 200,
+  "response_request_id": "aXvF1nAFHVDiW72Pcpt4",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:47Z"
+}

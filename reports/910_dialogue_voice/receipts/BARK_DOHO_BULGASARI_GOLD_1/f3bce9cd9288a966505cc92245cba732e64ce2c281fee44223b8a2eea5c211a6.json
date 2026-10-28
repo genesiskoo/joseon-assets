@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BULGASARI_GOLD_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "f3bce9cd9288a966505cc92245cba732e64ce2c281fee44223b8a2eea5c211a6",
+  "request": {
+    "text": "야! 그거 내 돈이야!",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BULGASARI_GOLD_1_f3bce9cd9288a966505cc92245cba732e64ce2c281fee44223b8a2eea5c211a6.mp3",
+  "raw_sha256": "ad893d9db9663bdbde6d5e3d13e5fb6f3ea5f0d787a3c1c5a074536bd3a9eaa6",
+  "bytes": 33061,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.0
+  },
+  "http_status": 200,
+  "response_request_id": "A41wo6KDeZtjbvwu6K89",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:55Z"
+}

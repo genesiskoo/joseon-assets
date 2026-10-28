@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_GREET_5",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "839e7a5d19b321234d88b576330c409e8c6a6afda288904c86d4d2524cffc821",
+  "request": {
+    "text": "갓이야 덤으로 줘도 검 값은 못 깎아 주우. 목숨값이니.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_GREET_5_839e7a5d19b321234d88b576330c409e8c6a6afda288904c86d4d2524cffc821.mp3",
+  "raw_sha256": "c01fa62453c70eaea1f650dd745ed6da0ebaf0fe954d1fff34184a964c18b472",
+  "bytes": 77783,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.8
+  },
+  "http_status": 200,
+  "response_request_id": "4UrJZvn37dOjOoVycTkm",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:55Z"
+}

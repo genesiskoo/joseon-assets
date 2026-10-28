@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_EOKSOE_GREET_2",
+  "speaker": "eoksoe",
+  "voice_id": "TRO4gatqxbbwLXHLDLSk",
+  "request_sha256": "be0906c7920db76b780eca1328944084c11b00c18fa43a75907650d0a1a04022",
+  "request": {
+    "text": "손해 봐도 내 탓은 마슈, 도사 양반. 운도 실력이쥬.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/eoksoe/NPC_EOKSOE_GREET_2_be0906c7920db76b780eca1328944084c11b00c18fa43a75907650d0a1a04022.mp3",
+  "raw_sha256": "7d2a4aab1f6833d62bb7bb4a018f06c507d73b025e11551b5b2bdc7c400e6f97",
+  "bytes": 76529,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.72
+  },
+  "http_status": 200,
+  "response_request_id": "SwbTjsFPzSYOmYf9XKEv",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:08Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_BAG_FULL_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "d4d16d12d701a91962b1487ec31ec67f1a9412ad38531636f76fe2310d8b25a3",
+  "request": {
+    "text": "바꿔 주는 것도 좋지만 받아 갈 손은 비워 둬야지. 가방 좀 정리해.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_BAG_FULL_2_d4d16d12d701a91962b1487ec31ec67f1a9412ad38531636f76fe2310d8b25a3.mp3",
+  "raw_sha256": "eab999109bdbb51e430ab1b178759ad4349001758bcb97d77bf2935ab50a5178",
+  "bytes": 76529,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.72
+  },
+  "http_status": 200,
+  "response_request_id": "Qt6ca8rJNjRWhcNnv70R",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:39Z"
+}

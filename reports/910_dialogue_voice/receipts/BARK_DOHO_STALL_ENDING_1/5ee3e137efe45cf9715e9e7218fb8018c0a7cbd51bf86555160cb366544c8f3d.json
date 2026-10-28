@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_STALL_ENDING_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "5ee3e137efe45cf9715e9e7218fb8018c0a7cbd51bf86555160cb366544c8f3d",
+  "request": {
+    "text": "술은 마을에서 마시자 했는데, 따라 줄 사람이 없구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_STALL_ENDING_1_5ee3e137efe45cf9715e9e7218fb8018c0a7cbd51bf86555160cb366544c8f3d.mp3",
+  "raw_sha256": "a8edbc566faf4e808fc8d032977240604de738f3659fa1e1542fbc22169b70d2",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "iTBlTJleIUsGz2cX4sFH",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:52Z"
+}

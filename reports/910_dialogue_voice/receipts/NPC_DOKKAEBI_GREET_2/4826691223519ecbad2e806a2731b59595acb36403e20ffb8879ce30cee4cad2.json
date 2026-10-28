@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GREET_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "4826691223519ecbad2e806a2731b59595acb36403e20ffb8879ce30cee4cad2",
+  "request": {
+    "text": "쓰던 물건, 못 쓰는 물건, 주워 온 물건. 도깨비한텐 다 밑천이야.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GREET_2_4826691223519ecbad2e806a2731b59595acb36403e20ffb8879ce30cee4cad2.mp3",
+  "raw_sha256": "da990a7719e2300ae4e892774af1421d82cb67bd159ec9401c96be92aaafb680",
+  "bytes": 97009,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.0
+  },
+  "http_status": 200,
+  "response_request_id": "hJM2bpSET67kvuEUMaJP",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:17Z"
+}

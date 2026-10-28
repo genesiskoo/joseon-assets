@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_ENDING_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "4fc25bedc376223bdbd28f040a4cfa367b54aac4147d60c90010263bbc052c5c",
+  "request": {
+    "text": "그 여우가 틈 얘기를 하더니, 빈말이 아니었군.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "주모의 솥은 식었으나, 그 사람이 지키던 장터는 남았소.",
+    "next_text": "장터에 사람이 하나둘 돌아오고 있소. 당분간 굴을 돌며 못골을 지켜 주시오, 도사 양반.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_ENDING_2_4fc25bedc376223bdbd28f040a4cfa367b54aac4147d60c90010263bbc052c5c.mp3",
+  "raw_sha256": "8f4bd3d752179235eb062581c6d9c926963ad26c7c5683cd057c3f41404fc0c2",
+  "bytes": 62318,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.84
+  },
+  "http_status": 200,
+  "response_request_id": "Ce5fTU5lASVfRvdstj4d",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:49Z"
+}

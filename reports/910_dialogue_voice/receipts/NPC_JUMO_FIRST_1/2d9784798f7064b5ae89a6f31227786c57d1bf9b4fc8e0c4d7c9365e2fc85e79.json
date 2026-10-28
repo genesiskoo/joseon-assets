@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_FIRST_1",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "2d9784798f7064b5ae89a6f31227786c57d1bf9b4fc8e0c4d7c9365e2fc85e79",
+  "request": {
+    "text": "도사 양반, 목이나 축이고 가시구려. 술은 없어도 국물은 있수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "국물이면 됐지. 외상도 되나?",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_FIRST_1_2d9784798f7064b5ae89a6f31227786c57d1bf9b4fc8e0c4d7c9365e2fc85e79.mp3",
+  "raw_sha256": "9597be7f344e7ee32788d4294be1625304a5910b759ebf66bbc86e954086e190",
+  "bytes": 98263,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.08
+  },
+  "http_status": 200,
+  "response_request_id": "FNGajOP3He4TBJmXGcGz",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:10Z"
+}

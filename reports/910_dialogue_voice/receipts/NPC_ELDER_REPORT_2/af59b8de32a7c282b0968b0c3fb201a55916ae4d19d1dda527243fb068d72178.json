@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_REPORT_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "af59b8de32a7c282b0968b0c3fb201a55916ae4d19d1dda527243fb068d72178",
+  "request": {
+    "text": "글은 내가 좀 읽지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "몇 해 전 묵어 간 도사가 두고 간 책이 한 권 있소. 우리 집안은 글을 몰라서.",
+    "next_text": "가져가시오. 굴 어귀 값이오.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_ELDER_REPORT_2_af59b8de32a7c282b0968b0c3fb201a55916ae4d19d1dda527243fb068d72178.mp3",
+  "raw_sha256": "1d8e878e697c64d826c919889d8e3370c053500e5ab2df4ba373bc556007989e",
+  "bytes": 29300,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.76
+  },
+  "http_status": 200,
+  "response_request_id": "lA2zJ4JQEi0J8NUrZTFE",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:54Z"
+}

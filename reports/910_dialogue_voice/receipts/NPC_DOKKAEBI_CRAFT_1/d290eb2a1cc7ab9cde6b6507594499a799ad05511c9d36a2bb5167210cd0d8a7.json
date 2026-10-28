@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CRAFT_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "d290eb2a1cc7ab9cde6b6507594499a799ad05511c9d36a2bb5167210cd0d8a7",
+  "request": {
+    "text": "어디 보자. 뭘 가져왔어?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CRAFT_1_d290eb2a1cc7ab9cde6b6507594499a799ad05511c9d36a2bb5167210cd0d8a7.mp3",
+  "raw_sha256": "bb3a08e0da5d28525e619cda845389992e61fadad142292d3cf307caf9a86f56",
+  "bytes": 40585,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.48
+  },
+  "http_status": 200,
+  "response_request_id": "fecinXLw5EmNN4oqmjuz",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:20Z"
+}

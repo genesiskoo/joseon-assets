@@ -1,0 +1,29 @@
+{
+  "plan_sha256": "1c90b72d21864fb3d1111c49e07047ddeae9da171938a9c51b248a0dee73e7bb",
+  "before": {
+    "time": "2026-10-27T15:52:21Z",
+    "model": "eleven_v4",
+    "planned_characters": 8774,
+    "warnings": [],
+    "model_available": true,
+    "subscription": {
+      "character_count": 59379,
+      "character_limit": 197804,
+      "tier": "creator",
+      "can_extend_character_limit": false
+    },
+    "remaining_characters": 138425,
+    "pending_characters": 8774
+  },
+  "successful_receipts": 0,
+  "errors": [
+    "VOICE_FAILED EV_ENDING_2\n[{\"attempt\":1,\"error\":\"No module named 'audio_intake'\"}]"
+  ],
+  "after": {
+    "character_count": 59379,
+    "character_limit": 197804,
+    "tier": "creator"
+  },
+  "credit_counter_delta": 0,
+  "counter_note": "Account counter may be delayed or include other concurrent work."
+}

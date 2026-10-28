@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.16
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -5.1,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 1.1000000000000014,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -5.1
+  },
+  "sha256": "9999d592589ffeb1897dadd807d9a8f33dcc48f487c34ce3be45d7cc01d7c0ca",
+  "id": "NPC_JUMO_OFFER_2",
+  "speaker": "jumo",
+  "request_sha256": "f184ee44873f39c91fae56eb79dc7554cdbd11f64a5dd9664ec8dff40a0d293b",
+  "raw_sha256": "0a0cd2b0e7014a1e9a3b37353866df71437e1a0b5e88ba9abbd607d0a6b6717e",
+  "file": "assets/audio/voice/NPC_JUMO_OFFER_2.wav",
+  "previous_sha256": "aa0b483ea554d34e22d47a283b18e21eaadf3f02be350913f4ab51d2880b8f8c"
+}

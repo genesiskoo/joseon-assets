@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_ACTIVE_2",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "a3152bb8f07c617c1d63903d7985fdf1a9023dcb21e8ecd23f9bd6aed3b3ac42",
+  "request": {
+    "text": "굴 끝까지 가신다니, 부디 무리하지 마시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_ACTIVE_2_a3152bb8f07c617c1d63903d7985fdf1a9023dcb21e8ecd23f9bd6aed3b3ac42.mp3",
+  "raw_sha256": "1dd4cb5fce4d4b2ebd36a69876af68d6db1fb0e38f3c86e9190441e75509b0b2",
+  "bytes": 61065,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.76
+  },
+  "http_status": 200,
+  "response_request_id": "Z1hrnRjpwqV4FVVx8xzl",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:48Z"
+}

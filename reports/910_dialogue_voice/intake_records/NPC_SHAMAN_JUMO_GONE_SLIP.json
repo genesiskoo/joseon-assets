@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.92
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -3.6,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.5,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -3.6
+  },
+  "sha256": "687c99d0bbda4905d19ead86d2cd74b6dcd905aee6a5c00d2a29f1628247a2c1",
+  "id": "NPC_SHAMAN_JUMO_GONE_SLIP",
+  "speaker": "shaman",
+  "request_sha256": "de4477bde76928835e842e7a72972237b38f476696f87c90af2bb3db38bf90b1",
+  "raw_sha256": "695c81f4c6233af2553142c5b0d14bd22c9c3683cc609cc4091a2e43584728b4",
+  "file": "assets/audio/voice/NPC_SHAMAN_JUMO_GONE_SLIP.wav",
+  "previous_sha256": null
+}

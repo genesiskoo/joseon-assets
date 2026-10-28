@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_BAG_FULL_3",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "6ace26f830dfe94983fa9c4f755968486438c6a994665ed6a6fc0e06d0774561",
+  "request": {
+    "text": "내줄 물건 놓을 데가 없어. 가방 비우고 다시 와.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_BAG_FULL_3_6ace26f830dfe94983fa9c4f755968486438c6a994665ed6a6fc0e06d0774561.mp3",
+  "raw_sha256": "8c1baab955b708e3869473de62e86c7ddff993c53a4acf17a9a2965c3d4a82c8",
+  "bytes": 63990,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.92
+  },
+  "http_status": 200,
+  "response_request_id": "Llfh2ODVLhdLLxawidks",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:38Z"
+}

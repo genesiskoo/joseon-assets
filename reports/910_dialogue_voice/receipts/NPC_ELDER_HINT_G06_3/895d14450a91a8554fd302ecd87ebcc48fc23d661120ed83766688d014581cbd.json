@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_HINT_G06_3",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "895d14450a91a8554fd302ecd87ebcc48fc23d661120ed83766688d014581cbd",
+  "request": {
+    "text": "촌장 솜씨보다 도깨비 솜씨가 낫다는 얘기구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "더 뚫고 싶거든 장터 뒤 도깨비를 찾아가 보시오. 빛깔 다른 온전한 옥 셋과 엽전이면 뚫어 준다 하오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_ELDER_HINT_G06_3_895d14450a91a8554fd302ecd87ebcc48fc23d661120ed83766688d014581cbd.mp3",
+  "raw_sha256": "f509f54272a79154c6587dcad6160706f1ba80fe40c4dfbb45f897ffcb2195dc",
+  "bytes": 57303,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.52
+  },
+  "http_status": 200,
+  "response_request_id": "21eE8JwLOhnZD7PTpdSy",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:00Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_4",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "8296160f279824875fc1a3b2f2a31ea3d38ed63f7378112ce5a441042753ffc8",
+  "request": {
+    "text": "옛날엔 씨름 한 판에 금덩이도 걸었지. 요새 사람들은 겁이 많아.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_4_8296160f279824875fc1a3b2f2a31ea3d38ed63f7378112ce5a441042753ffc8.mp3",
+  "raw_sha256": "9c662252c4be51fae2e77ae4fd6f4ceb5a86fe225851d07fb643e8e69b480de8",
+  "bytes": 88232,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.44
+  },
+  "http_status": 200,
+  "response_request_id": "h31lujT6edCkNaocWGqL",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:27Z"
+}

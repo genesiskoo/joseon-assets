@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_REPORT_3",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "7545690573e53f4d18f892d22ae917d091dd83ff915c789b05aa0099c8754118",
+  "request": {
+    "text": "세 쪽이 다 모였구려. 고맙소, 도사 양반.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_REPORT_3_7545690573e53f4d18f892d22ae917d091dd83ff915c789b05aa0099c8754118.mp3",
+  "raw_sha256": "61818bf9b9856e5078bca21c01b877f5b78db6f78f722b70378b6ad10a12febe",
+  "bytes": 71514,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.4
+  },
+  "http_status": 200,
+  "response_request_id": "RjkyeUd0vjJgg56TbXXu",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:15Z"
+}

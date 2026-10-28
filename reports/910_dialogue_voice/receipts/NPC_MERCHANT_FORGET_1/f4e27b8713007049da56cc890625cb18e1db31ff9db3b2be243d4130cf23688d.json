@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_FORGET_1",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "f4e27b8713007049da56cc890625cb18e1db31ff9db3b2be243d4130cf23688d",
+  "request": {
+    "text": "주모 국밥 맛이 기억이 안 나우. 이상하지, 석 달을 매일 먹었는데.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_FORGET_1_f4e27b8713007049da56cc890625cb18e1db31ff9db3b2be243d4130cf23688d.mp3",
+  "raw_sha256": "b97cc63ebad6cf606524c479bde0de5d76fd3d369b4eca8b8d7ebe5aa8c43150",
+  "bytes": 97009,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.0
+  },
+  "http_status": 200,
+  "response_request_id": "MLXMnPoufHaxi8Xrlm4I",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:01Z"
+}

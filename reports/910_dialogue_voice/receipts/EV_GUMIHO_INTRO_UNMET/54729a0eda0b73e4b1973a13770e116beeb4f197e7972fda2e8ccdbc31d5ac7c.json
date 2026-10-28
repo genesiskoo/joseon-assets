@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_GUMIHO_INTRO_UNMET",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "54729a0eda0b73e4b1973a13770e116beeb4f197e7972fda2e8ccdbc31d5ac7c",
+  "request": {
+    "text": "네가 구미호로구나.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_GUMIHO_INTRO_UNMET_54729a0eda0b73e4b1973a13770e116beeb4f197e7972fda2e8ccdbc31d5ac7c.mp3",
+  "raw_sha256": "433f7aceaa8eef9943af547890e96d85eeac40f0e6426532b3655b1b369ea615",
+  "bytes": 30554,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.84
+  },
+  "http_status": 200,
+  "response_request_id": "4kpEIXXI9cqkxsfR99XE",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:54Z"
+}

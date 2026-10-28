@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_HEAL_INTRO_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "4316ecfb8d50e791e94d9e3bed5cefeb6a6ed8e4965ef12230ddf4b574db17a8",
+  "request": {
+    "text": "가기 전에 몸부터 채워 드리리다. 말만 걸면 되오. 값은 안 받소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_HEAL_INTRO_1_4316ecfb8d50e791e94d9e3bed5cefeb6a6ed8e4965ef12230ddf4b574db17a8.mp3",
+  "raw_sha256": "0854f189cbc4ee8c99af03d8de5aa2e63f4689f03d0650507c82686f81bed9d6",
+  "bytes": 95755,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.92
+  },
+  "http_status": 200,
+  "response_request_id": "82Dw6MOeJOVG2R5SAVaO",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:11Z"
+}

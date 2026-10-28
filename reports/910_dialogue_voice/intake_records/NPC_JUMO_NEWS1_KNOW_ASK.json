@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.44
+  },
+  "lufs": -18.3,
+  "true_peak_dbtp": -2.4,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.199999999999999,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.3,
+    "true_peak_dbtp": -2.4
+  },
+  "sha256": "4b7c1a3f221360ddb225b9a2662ad865d7e1f08cdb34e095c3d944d9726a0da0",
+  "id": "NPC_JUMO_NEWS1_KNOW_ASK",
+  "speaker": "doho",
+  "request_sha256": "f355a74703cc3a4c2f25a82349be99c91baa555c5ae4ff3acf3c15ad52922046",
+  "raw_sha256": "6c5acc22104568303111ffeef3eb4d548aa1692b9b4760210ce5fda54f90a08e",
+  "file": "assets/audio/voice/NPC_JUMO_NEWS1_KNOW_ASK.wav",
+  "previous_sha256": null
+}

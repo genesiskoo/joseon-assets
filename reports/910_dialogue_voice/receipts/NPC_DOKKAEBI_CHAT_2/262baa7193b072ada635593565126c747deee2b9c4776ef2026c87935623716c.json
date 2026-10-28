@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "262baa7193b072ada635593565126c747deee2b9c4776ef2026c87935623716c",
+  "request": {
+    "text": "메밀묵 쑤는 날엔 장터 뒤가 고소해. 냄새 맡거든 들러.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_2_262baa7193b072ada635593565126c747deee2b9c4776ef2026c87935623716c.mp3",
+  "raw_sha256": "933a66289de09cfa65d9b665482895283268bababc3fef1ab67d7b56fbb41991",
+  "bytes": 75275,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.64
+  },
+  "http_status": 200,
+  "response_request_id": "YWVPkgiMhSsecKismUFM",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:25Z"
+}

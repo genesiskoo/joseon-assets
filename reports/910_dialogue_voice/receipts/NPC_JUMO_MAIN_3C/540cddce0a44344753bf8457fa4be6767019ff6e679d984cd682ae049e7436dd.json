@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_3C",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "540cddce0a44344753bf8457fa4be6767019ff6e679d984cd682ae049e7436dd",
+  "request": {
+    "text": "하나는 들녘 흑랑 굴의 개가, 하나는 고개 너머 범굴의 범이 쥐고 있수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그 돌문 열쇠가 세 쪽으로 흩어졌수. 굴 주인 셋이 하나씩 쥐고 있다우.",
+    "next_text": "소문치곤 번지수까지 친절하구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_MAIN_3C_540cddce0a44344753bf8457fa4be6767019ff6e679d984cd682ae049e7436dd.mp3",
+  "raw_sha256": "cfcbbd347e09be0bd129d9eccfd714b640028ee8e5e998084997727caccea4e2",
+  "bytes": 130446,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.08
+  },
+  "http_status": 200,
+  "response_request_id": "agPDHbtD1JosLiQ7nuSS",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:14Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_CLEAR_CLOSE_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "00e0df0e07f234ca5c4a12a3f9bd9f42d70b2d57e2ec89df51862af69f520f10",
+  "request": {
+    "text": "산책이 거의 끝났네. 몇 놈 안 남았어.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_CLEAR_CLOSE_1_00e0df0e07f234ca5c4a12a3f9bd9f42d70b2d57e2ec89df51862af69f520f10.mp3",
+  "raw_sha256": "7afa2ccae33fabe236431ead5424062c279ba78fcc632a6c81adba811326c4a1",
+  "bytes": 48526,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.96
+  },
+  "http_status": 200,
+  "response_request_id": "6luGPgRVFHuu9vNv8YBk",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:52Z"
+}

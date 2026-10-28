@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BONGMIL_LAST_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "a2de8f88790aa0771f1c1aedd8d2d4760827b7e9dbb4b78b8eba2d3326ba4707",
+  "request": {
+    "text": "이 안이 끝이겠군.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BONGMIL_LAST_1_a2de8f88790aa0771f1c1aedd8d2d4760827b7e9dbb4b78b8eba2d3326ba4707.mp3",
+  "raw_sha256": "4ddb7267c0e95e52e38098cfacf0123a5951dbc504bd692dbaf728d1af1378aa",
+  "bytes": 30554,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.84
+  },
+  "http_status": 200,
+  "response_request_id": "MxgmPKLebj4EzAVxDxHv",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:50Z"
+}

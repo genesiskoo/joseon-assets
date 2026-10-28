@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_GREET_1",
+  "speaker": "merchant",
+  "voice_id": "pV5F1V6WTBQmi56Q6kfj",
+  "request_sha256": "9fc41f834f9e5011bd0a32339ca9ca0383faa4255377c18b9e7280a9cd252ac9",
+  "request": {
+    "text": "도사 양반, 갓끈이 풀렸수. 한 번 봐드릴까?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/merchant/NPC_MERCHANT_GREET_1_9fc41f834f9e5011bd0a32339ca9ca0383faa4255377c18b9e7280a9cd252ac9.mp3",
+  "raw_sha256": "6e5e77d0d7583d8723c848395b2418734439aa0bc79b91100e6639e651d73e50",
+  "bytes": 67752,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.16
+  },
+  "http_status": 200,
+  "response_request_id": "RH66MV9gKIkpsiRP0nJG",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:51Z"
+}

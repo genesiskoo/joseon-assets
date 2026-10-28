@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GOLD_SHORT_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "fd753b7241a59b55b90f6302b96a039c1eccb32ed40bfda48f2652795b1577fe",
+  "request": {
+    "text": "재료는 맞는데 값이 모자라. 나중에 주겠다는 말은 안 믿어.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GOLD_SHORT_2_fd753b7241a59b55b90f6302b96a039c1eccb32ed40bfda48f2652795b1577fe.mp3",
+  "raw_sha256": "6f29ebb69f24052b82ca54434ad1f423a5e995154238b0dbc928eb5d7df3491f",
+  "bytes": 80291,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.96
+  },
+  "http_status": 200,
+  "response_request_id": "b7TOKqcn4XZnRWQ9GSeu",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:37Z"
+}

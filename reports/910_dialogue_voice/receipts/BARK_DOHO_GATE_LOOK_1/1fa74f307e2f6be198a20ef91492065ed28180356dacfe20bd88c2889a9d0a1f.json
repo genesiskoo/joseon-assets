@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_GATE_LOOK_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "1fa74f307e2f6be198a20ef91492065ed28180356dacfe20bd88c2889a9d0a1f",
+  "request": {
+    "text": "이 빛, 어디서 본 것 같은데.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_GATE_LOOK_1_1fa74f307e2f6be198a20ef91492065ed28180356dacfe20bd88c2889a9d0a1f.mp3",
+  "raw_sha256": "3d164397bd667d6548039ab2a52d3c5ff490d94f59da2449a978d2dfd1f63447",
+  "bytes": 47272,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.88
+  },
+  "http_status": 200,
+  "response_request_id": "vsc7HkCKnpbNZGJEsFNQ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:51Z"
+}

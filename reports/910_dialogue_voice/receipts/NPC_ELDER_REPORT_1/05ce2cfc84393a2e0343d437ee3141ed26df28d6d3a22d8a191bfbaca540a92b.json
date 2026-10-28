@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_REPORT_1",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "05ce2cfc84393a2e0343d437ee3141ed26df28d6d3a22d8a191bfbaca540a92b",
+  "request": {
+    "text": "몇 해 전 묵어 간 도사가 두고 간 책이 한 권 있소. 우리 집안은 글을 몰라서.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "글은 내가 좀 읽지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_REPORT_1_05ce2cfc84393a2e0343d437ee3141ed26df28d6d3a22d8a191bfbaca540a92b.mp3",
+  "raw_sha256": "cdc4f662cafcb296d83022bce8360dfeba65ddb3f8e305fd9f7b635e047b6519",
+  "bytes": 98263,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.08
+  },
+  "http_status": 200,
+  "response_request_id": "wHGXJYypI2lstuQaDc2m",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:55Z"
+}

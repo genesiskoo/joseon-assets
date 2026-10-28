@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_SHAMAN_QUEST_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "be51e5ba2714f5130692b63a7221af54f431f51fab93e5c6277fc0e1ecd46eab",
+  "request": {
+    "text": "할매, 술부터 한 잔… 아니, 분위기가 아니구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "도사 양반, 늦었소. 못골이 석 달째 이 꼴이오.",
+    "next_text": "봉인이 흔들리오. 요사한 기운이 못골로 새고 있소.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_SHAMAN_QUEST_2_be51e5ba2714f5130692b63a7221af54f431f51fab93e5c6277fc0e1ecd46eab.mp3",
+  "raw_sha256": "edc5ba7c06cffbcc50b77c7bab147045f827c5ac84502e745859583de86f0f0e",
+  "bytes": 74021,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.56
+  },
+  "http_status": 200,
+  "response_request_id": "c6x60iIiAFwGnOfQjBs7",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:03Z"
+}

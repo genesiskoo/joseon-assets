@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_FIRST_2",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "18e796046390245131487033548121544bd6ae8be44ba9970258e3c3cc2d8f20",
+  "request": {
+    "text": "못골 장터가 닫힌 지 석 달이오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "떠돌이 도사가 웬일이오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_FIRST_2_18e796046390245131487033548121544bd6ae8be44ba9970258e3c3cc2d8f20.mp3",
+  "raw_sha256": "0ca7c32049909d98ccbb717dd84539f74c8f650cb03838560014fe3365bd86ab",
+  "bytes": 46018,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.8
+  },
+  "http_status": 200,
+  "response_request_id": "97iC1Rc4ZzXPO42a1tNz",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:43Z"
+}

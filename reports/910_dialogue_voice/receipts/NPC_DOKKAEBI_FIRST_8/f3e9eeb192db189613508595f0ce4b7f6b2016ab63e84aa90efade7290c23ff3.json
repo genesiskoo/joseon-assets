@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_8",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "f3e9eeb192db189613508595f0ce4b7f6b2016ab63e84aa90efade7290c23ff3",
+  "request": {
+    "text": "아무거나? 값은 안 따지고?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "첫 거래는 인사로 하지. 가방에서 쓰던 장비 아무거나 하나 내놔. 홈 둘 난 누비옷으로 바꿔 줄게.",
+    "next_text": "도깨비는 값을 안 따져. 비싼 걸 내놔도 누비옷, 싼 걸 내놔도 누비옷이야. 한 번뿐이니 잘 골라.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_DOKKAEBI_FIRST_8_f3e9eeb192db189613508595f0ce4b7f6b2016ab63e84aa90efade7290c23ff3.mp3",
+  "raw_sha256": "84918a2d5a7efac18b3cb62b5864e3f6b6d9daf3449dc7bb66c6d8bf06d57b88",
+  "bytes": 44764,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.72
+  },
+  "http_status": 200,
+  "response_request_id": "zSIUO4EZ2ovmBRlanWM5",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:12Z"
+}

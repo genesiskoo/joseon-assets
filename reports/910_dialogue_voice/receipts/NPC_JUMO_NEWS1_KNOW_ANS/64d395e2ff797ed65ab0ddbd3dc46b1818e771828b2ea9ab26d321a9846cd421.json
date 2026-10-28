@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_KNOW_ANS",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "64d395e2ff797ed65ab0ddbd3dc46b1818e771828b2ea9ab26d321a9846cd421",
+  "request": {
+    "text": "목로엔 소문이 모이는 법이라우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그건 어떻게 알았나? 난 말한 적 없는데.",
+    "next_text": "그 소문, 발 한번 빠르네.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS1_KNOW_ANS_64d395e2ff797ed65ab0ddbd3dc46b1818e771828b2ea9ab26d321a9846cd421.mp3",
+  "raw_sha256": "43d34c3c046d40cafa1e2852e1ba26eff642c354f68725a0e0607ac93882b9da",
+  "bytes": 56049,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.44
+  },
+  "http_status": 200,
+  "response_request_id": "xeFJ8F7y8rkw3Rydnyo2",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:37Z"
+}

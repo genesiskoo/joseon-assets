@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_GAKSI_UNTOLD_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "de4783db25e683fbcbf77ba6eaf9b9dfbc1dd7d0672bd909ed0bb3f9a344d6a4",
+  "request": {
+    "text": "각시귀신 하나가 길을 막길래 치웠지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "들녘 옛 주막 터 울음이 그쳤다던데, 도사 양반이 그랬수?",
+    "next_text": "그 집은 내가 오래 일하던 데라우.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_GAKSI_UNTOLD_2_de4783db25e683fbcbf77ba6eaf9b9dfbc1dd7d0672bd909ed0bb3f9a344d6a4.mp3",
+  "raw_sha256": "8b77ba6940878e0858e642b7acbc69ed9b981761b0288d0cb0bee4633e8cb1d5",
+  "bytes": 56049,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.44
+  },
+  "http_status": 200,
+  "response_request_id": "FWmlvOIsHzn8yBwJpO8N",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:21Z"
+}

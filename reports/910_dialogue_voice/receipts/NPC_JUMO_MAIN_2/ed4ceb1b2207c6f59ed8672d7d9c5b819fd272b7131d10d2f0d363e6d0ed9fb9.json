@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "ed4ceb1b2207c6f59ed8672d7d9c5b819fd272b7131d10d2f0d363e6d0ed9fb9",
+  "request": {
+    "text": "닫힌 장터에 국솥만 끓고 있네. 무슨 일인데?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그나저나 도사 양반, 이 장터가 왜 닫혔는지 아시우?",
+    "next_text": "마을 북쪽 산길 끝에 봉밀굴 문이 있수. 이 병의 뿌리가 그 안에 있다우.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_MAIN_2_ed4ceb1b2207c6f59ed8672d7d9c5b819fd272b7131d10d2f0d363e6d0ed9fb9.mp3",
+  "raw_sha256": "6786921b0532f509106f7b8d811a252712558d02f20994d37c9dee190e2c8d42",
+  "bytes": 70260,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.32
+  },
+  "http_status": 200,
+  "response_request_id": "b026loBIumgsLtuuxX2n",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:11Z"
+}

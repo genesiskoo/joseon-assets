@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_MERCHANT_AFTER_SOE_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "c78a5d3fd6eadac45e52d7bbdcb1b7f95c3679fdf048b4a0bc3d2db3fa87266f",
+  "request": {
+    "text": "달아오르니 칼이 들더구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "쇠부리 폐광 쇠 먹는 놈을 베셨수? 칼이 안 든다던 놈을, 대체 뭘로?",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_MERCHANT_AFTER_SOE_2_c78a5d3fd6eadac45e52d7bbdcb1b7f95c3679fdf048b4a0bc3d2db3fa87266f.mp3",
+  "raw_sha256": "1bbe63a435add7497d9c3bdc6e259330932d4ebca172085dca4176e530e65c0b",
+  "bytes": 35569,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.16
+  },
+  "http_status": 200,
+  "response_request_id": "FhgmhARcGvFNm13eU0bc",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:59Z"
+}

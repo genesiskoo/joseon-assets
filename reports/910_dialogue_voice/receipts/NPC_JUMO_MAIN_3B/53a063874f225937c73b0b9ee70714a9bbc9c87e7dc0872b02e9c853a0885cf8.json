@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_MAIN_3B",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "53a063874f225937c73b0b9ee70714a9bbc9c87e7dc0872b02e9c853a0885cf8",
+  "request": {
+    "text": "그 돌문 열쇠가 세 쪽으로 흩어졌수. 굴 주인 셋이 하나씩 쥐고 있다우.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "마을 북쪽 산길 끝에 봉밀굴 문이 있수. 이 병의 뿌리가 그 안에 있다우.",
+    "next_text": "하나는 들녘 흑랑 굴의 개가, 하나는 고개 너머 범굴의 범이 쥐고 있수.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_MAIN_3B_53a063874f225937c73b0b9ee70714a9bbc9c87e7dc0872b02e9c853a0885cf8.mp3",
+  "raw_sha256": "b0a0f047272ba0231d2e2a563dc9183b90ce97b6f6bdf4def4496306e598c267",
+  "bytes": 127938,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 7.92
+  },
+  "http_status": 200,
+  "response_request_id": "yRInhdwzheApnAPQp4Dp",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:14Z"
+}

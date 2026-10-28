@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_HEUK",
+  "speaker": "jumo",
+  "voice_id": "f4LjOjvSdOz7EHnjfyG9",
+  "request_sha256": "0d88c6a55867d5eac29702d3df5208730a910c8f481057fa9146af5bb3b62cec",
+  "request": {
+    "text": "그 개는… 편히 갔수? 아니우, 괜한 소릴 했수.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "남은 둘은 고개 너머 정령재의 범굴과 쇠부리 폐광이우. 어느 쪽이 먼저든 상관없수.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/jumo/NPC_JUMO_NEWS1_HEUK_0d88c6a55867d5eac29702d3df5208730a910c8f481057fa9146af5bb3b62cec.mp3",
+  "raw_sha256": "a2aea2459dad7fccc138670fed467ec768efc7c13fb47c61da5fb1dbaddcf8e3",
+  "bytes": 82798,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.12
+  },
+  "http_status": 200,
+  "response_request_id": "fnA25YuS4KT7SyR7QDPM",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:30Z"
+}

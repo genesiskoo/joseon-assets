@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_9",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "cc11e5eff0663f6a827f4376638d7951745a18bcdf655667f34bb0abcc3898cb",
+  "request": {
+    "text": "도깨비는 값을 안 따져. 비싼 걸 내놔도 누비옷, 싼 걸 내놔도 누비옷이야. 한 번뿐이니 잘 골라.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "아무거나? 값은 안 따지고?",
+    "next_text": "안 쓰는 걸 내놓으면 되겠구먼.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_FIRST_9_cc11e5eff0663f6a827f4376638d7951745a18bcdf655667f34bb0abcc3898cb.mp3",
+  "raw_sha256": "4db7f0eaf7d8f593dbce8cbb8e5b520b3b2dcd7abcd4835c878d4e70e34739b0",
+  "bytes": 136715,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 8.48
+  },
+  "http_status": 200,
+  "response_request_id": "mETyMzmweDG9aoewm9ma",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:15Z"
+}

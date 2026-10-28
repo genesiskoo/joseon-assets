@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_DONE_2",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "4dc1c08187ca435c45e4ff3e6828e9eeb423330c9939503319514e4d73c8fcb9",
+  "request": {
+    "text": "굴 주인은 치웠지. 국물값은 아직이지만.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "왔구려. 주모가 자리를 비웠으니 내가 대신 듣겠소.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_DONE_2_4dc1c08187ca435c45e4ff3e6828e9eeb423330c9939503319514e4d73c8fcb9.mp3",
+  "raw_sha256": "301c638cd4790f807c0b52b98c2a9bc82b6a979dcb307db513adc6e641daab92",
+  "bytes": 57303,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.52
+  },
+  "http_status": 200,
+  "response_request_id": "wYkh9CNnKVtidESAFr8F",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:14Z"
+}

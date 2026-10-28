@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "card": 777,
+  "lines": [
+    {"id":"BARK_DOHO_ARRIVAL_1","speaker":"doho","text":"거, 술 한잔할 데가 없구먼.","source":"core/story_barks.gd:ARRIVAL","audio":true},
+    {"id":"BARK_DOHO_BONGMIL_ENTRY_1","speaker":"doho","text":"발소리도 아껴야겠군.","source":"core/story_barks.gd:BONGMIL_ENTRY","audio":true},
+    {"id":"BARK_DOHO_BONGMIL_LAST_1","speaker":"doho","text":"이 안이 끝이겠군.","source":"core/story_barks.gd:BONGMIL_LAST","audio":true},
+    {"id":"BARK_DOHO_GATE_LOOK_1","speaker":"doho","text":"이 빛, 어디서 본 것 같은데.","source":"world/stairs.gd:FIRST_LOOK_LINE","audio":true},
+    {"id":"BARK_DOHO_STALL_GONE_1","speaker":"doho","text":"여우라도 다녀갔나?","source":"world/jumo_stall.gd:GONE_BARK","audio":true},
+    {"id":"BARK_DOHO_STALL_ENDING_1","speaker":"doho","text":"술은 마을에서 마시자 했는데, 따라 줄 사람이 없구먼.","source":"world/jumo_stall.gd:ENDING_BARK","audio":true},
+    {"id":"BARK_DOHO_CLEAR_CLOSE_1","speaker":"doho","text":"산책이 거의 끝났네. 몇 놈 안 남았어.","source":"data/quests/heukrang_clear.tres:bark_line","audio":true},
+    {"id":"BARK_DOHO_CLEAR_DONE_1","speaker":"doho","text":"산책 끝. 촌장 영감한테 가 볼까.","source":"data/quests/heukrang_clear.tres:done_line","audio":true},
+    {"id":"BARK_DOHO_BEOM_APJABI_1","speaker":"doho","text":"사람 목소리를 흉내 내는구먼. 사람이면 나와라.","source":"data/enemies/beom_apjabi.tres:intro_bark","audio":true},
+    {"id":"BARK_DOHO_BEOM_REPLY_ELDER_1","speaker":"doho","text":"촌장 어르신이 여기까지 내려오셨을 리가.","source":"data/bosses/jangsanbeom_voices.tres:p1_reply","audio":true},
+    {"id":"BARK_DOHO_BEOM_REPLY_NAME_1","speaker":"doho","text":"내 이름 함부로 부르지 마라, 털 빠진다.","source":"data/bosses/jangsanbeom_voices.tres:p2_reply","audio":true},
+    {"id":"BARK_DOHO_BEOM_REPLY_P3_1","speaker":"doho","text":"말 못 하게 됐네. 잘됐다.","source":"data/bosses/jangsanbeom_voices.tres:p3_reply","audio":true},
+    {"id":"BARK_DOHO_BEOM_REPLY_BAIT_1","speaker":"doho","text":"이건 좀 치사하다.","source":"data/bosses/jangsanbeom_voices.tres:bait_reply","audio":true},
+    {"id":"BARK_DOHO_BULGASARI_IRON_1","speaker":"doho","text":"쇠 좋아하나? 내 검은 안 돼.","source":"actors/boss_bulgasari.gd:BARK_IRON","audio":true},
+    {"id":"BARK_DOHO_BULGASARI_GOLD_1","speaker":"doho","text":"야! 그거 내 돈이야!","source":"actors/boss_bulgasari.gd:BARK_GOLD","audio":true},
+    {"id":"BARK_DOHO_BULGASARI_DEATH_1","speaker":"doho","text":"미안하다. 배고팠지.","source":"actors/boss_bulgasari.gd:BARK_DEATH","audio":true},
+    {"id":"BARK_VILLAGER_BEFORE_1","speaker":"villager","text":"어이쿠, 도사 양반이 오셨네.","source":"world/town_residents.gd:BEFORE","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"},
+    {"id":"BARK_VILLAGER_BEFORE_2","speaker":"villager","text":"옆 마을도 문 닫은 지 오래라던디…","source":"world/town_residents.gd:BEFORE","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"},
+    {"id":"BARK_VILLAGER_BEFORE_3","speaker":"villager","text":"밤엔 문 꼭 걸어요. 바람 소리도 수상하니.","source":"world/town_residents.gd:BEFORE","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"},
+    {"id":"BARK_VILLAGER_BEFORE_4","speaker":"villager","text":"장터 열리면 두부부터 사야지.","source":"world/town_residents.gd:BEFORE","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"},
+    {"id":"BARK_VILLAGER_HEUKRANG_1","speaker":"villager","text":"굴 쪽이 잠잠해졌다더니, 장터에 장돌뱅이 하나 들어왔더군. 보따리에 별게 다 들었다던데.","source":"world/town_residents.gd:AFTER_HEUKRANG","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"},
+    {"id":"BARK_VILLAGER_HEUKRANG_2","speaker":"villager","text":"이제 좀 살겠구먼.","source":"world/town_residents.gd:AFTER_HEUKRANG","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"},
+    {"id":"BARK_VILLAGER_ENDING_1","speaker":"villager","text":"하늘이 좀 맑아진 것 같우.","source":"world/town_residents.gd:AFTER_ENDING","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"},
+    {"id":"BARK_VILLAGER_ENDING_2","speaker":"villager","text":"도사 양반, 고맙수. 술 한잔은 나중에라도 꼭 내리다.","source":"world/town_residents.gd:AFTER_ENDING","audio":false,"exclude_reason":"이름 없는 주민의 확정 성우 없음"}
+  ]
+}

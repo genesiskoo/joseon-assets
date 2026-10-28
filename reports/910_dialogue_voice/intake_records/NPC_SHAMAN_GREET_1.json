@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.0
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.9,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.600000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.9
+  },
+  "sha256": "7280ae29673d382ae7bef390b0165ccadf9a6bc05ab507d2a2995b1d4383c859",
+  "id": "NPC_SHAMAN_GREET_1",
+  "speaker": "shaman",
+  "request_sha256": "fc0d686b2a251036b7cb9f469a484908ed57c4f9b670d50ef9d5b7d94fc5fca3",
+  "raw_sha256": "7cf07d3dcfdb63c8e40db95acf67654f98013e59f1ff8a6773b23434d4931bc5",
+  "file": "assets/audio/voice/NPC_SHAMAN_GREET_1.wav",
+  "previous_sha256": "34ed0141dbec11b31a55cdda20324b148e6aa6c48e999484ca7e481dadfb6370"
+}

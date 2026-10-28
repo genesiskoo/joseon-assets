@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_GREET_1",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "6b6250a8ea4dfc936618b412a3893363a37f773e200215fadbc83b582e253a96",
+  "request": {
+    "text": "왔어? 오늘은 뭘 바꿔 볼까.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_GREET_1_6b6250a8ea4dfc936618b412a3893363a37f773e200215fadbc83b582e253a96.mp3",
+  "raw_sha256": "7bf5a1a43c53f474e42b1c760ac8ba3e5c4e7691cd7c2d3a8dbc099d2c6f53de",
+  "bytes": 44764,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.72
+  },
+  "http_status": 200,
+  "response_request_id": "ItI3eTNI3xKLTakdGaff",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:17Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_FIRST_10",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "6245d5521d14a90d4147059e0172239f15ef25aebc807cbfe04ca394b80d4b3a",
+  "request": {
+    "text": "안 쓰는 걸 내놓으면 되겠구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "도깨비는 값을 안 따져. 비싼 걸 내놔도 누비옷, 싼 걸 내놔도 누비옷이야. 한 번뿐이니 잘 골라.",
+    "next_text": "옷 홈엔 오방옥을 박아. 옥 빛깔마다 보태 주는 힘이 달라.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_DOKKAEBI_FIRST_10_6245d5521d14a90d4147059e0172239f15ef25aebc807cbfe04ca394b80d4b3a.mp3",
+  "raw_sha256": "b20e942259c9435f923b21ea740cfc55432ba85732f10fe9d248f0ece7ecc917",
+  "bytes": 41838,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.56
+  },
+  "http_status": 200,
+  "response_request_id": "mWaKNgwRaWn0vC44pQma",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:13Z"
+}

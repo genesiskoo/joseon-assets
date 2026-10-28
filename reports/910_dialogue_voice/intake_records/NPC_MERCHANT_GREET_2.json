@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 5.2
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 6.300000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "89d79065f72064c0a8a29cdbe9921269b835d5ebe4c8a8925bd2a81dd392e202",
+  "id": "NPC_MERCHANT_GREET_2",
+  "speaker": "merchant",
+  "request_sha256": "b76c28003f7f643255e1fce4af7625319501ad436e98acda3b8c3ece5a7495b4",
+  "raw_sha256": "fea1718acf90116d1595ebb1a318e390bdef9330ecd27d356c8ec681172983e1",
+  "file": "assets/audio/voice/NPC_MERCHANT_GREET_2.wav",
+  "previous_sha256": "f25c93fa5a7da53b21dbba55fe5ab59e24181f25b461cac1203a07f78da7ad48"
+}

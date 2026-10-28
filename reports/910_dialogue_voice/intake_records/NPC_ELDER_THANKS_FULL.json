@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.68
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.6,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.199999999999999,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.6
+  },
+  "sha256": "9fcb30bd6743b661ac3603de3e02ca94ace0a685bb05bcb16778a5b36e7a5dc3",
+  "id": "NPC_ELDER_THANKS_FULL",
+  "speaker": "elder",
+  "request_sha256": "67b9df9c8efd295b2a76823b8856a65d7b154282f6cc1434e780e6dd391013ad",
+  "raw_sha256": "c59e523237c826e6243508fc9903b0a7c706c9f8df9af082706d510eede3cfb5",
+  "file": "assets/audio/voice/NPC_ELDER_THANKS_FULL.wav",
+  "previous_sha256": "b1ebbd433302d668d494b40ffcb8349d21d8b1889164b29c353a2014e627c646"
+}

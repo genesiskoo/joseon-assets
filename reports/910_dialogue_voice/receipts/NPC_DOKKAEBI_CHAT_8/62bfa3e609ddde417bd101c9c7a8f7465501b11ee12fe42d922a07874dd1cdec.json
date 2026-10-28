@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_CHAT_8",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "62bfa3e609ddde417bd101c9c7a8f7465501b11ee12fe42d922a07874dd1cdec",
+  "request": {
+    "text": "개 짖는 소리만 안 나면 이 동네도 살 만해. 도사 양반 덕이지.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_CHAT_8_62bfa3e609ddde417bd101c9c7a8f7465501b11ee12fe42d922a07874dd1cdec.mp3",
+  "raw_sha256": "41e54d3b3b6d2ddc2e716977607c71c7e4bee8afa69ebfd28b71e6f15612c470",
+  "bytes": 77783,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.8
+  },
+  "http_status": 200,
+  "response_request_id": "pHRTSQq6KtCixBHAkoRA",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:29Z"
+}

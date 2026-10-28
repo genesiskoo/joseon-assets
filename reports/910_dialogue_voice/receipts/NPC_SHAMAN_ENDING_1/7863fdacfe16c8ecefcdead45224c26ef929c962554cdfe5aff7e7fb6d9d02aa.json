@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_ENDING_1",
+  "speaker": "shaman",
+  "voice_id": "2TBd92uNP6wUTgcM1kLF",
+  "request_sha256": "7863fdacfe16c8ecefcdead45224c26ef929c962554cdfe5aff7e7fb6d9d02aa",
+  "request": {
+    "text": "구미호는 물러났으나 남은 요괴들은 그대로요. 몸이 축나거든 다시 오시오.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/shaman/NPC_SHAMAN_ENDING_1_7863fdacfe16c8ecefcdead45224c26ef929c962554cdfe5aff7e7fb6d9d02aa.mp3",
+  "raw_sha256": "6ab7256f7e3cd7b6509326eaba569280091f65d61563761dbcf3fc914a74adf7",
+  "bytes": 107458,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 6.64
+  },
+  "http_status": 200,
+  "response_request_id": "G7PD7LUygus1xj6BM6Or",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:02Z"
+}

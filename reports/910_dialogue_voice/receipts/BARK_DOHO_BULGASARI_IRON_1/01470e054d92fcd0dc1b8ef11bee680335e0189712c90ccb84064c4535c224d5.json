@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_BULGASARI_IRON_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "01470e054d92fcd0dc1b8ef11bee680335e0189712c90ccb84064c4535c224d5",
+  "request": {
+    "text": "쇠 좋아하나? 내 검은 안 돼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_BULGASARI_IRON_1_01470e054d92fcd0dc1b8ef11bee680335e0189712c90ccb84064c4535c224d5.mp3",
+  "raw_sha256": "90d25ef73b84516641aed4639eb14d92fdaa30aecbc1795d30ea08d66f57e138",
+  "bytes": 41838,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.56
+  },
+  "http_status": 200,
+  "response_request_id": "69tSwJ5AJkPB3TDL7lIc",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:55Z"
+}

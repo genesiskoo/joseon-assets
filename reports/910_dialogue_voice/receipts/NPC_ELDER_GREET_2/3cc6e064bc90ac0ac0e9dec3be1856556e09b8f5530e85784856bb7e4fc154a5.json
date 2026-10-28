@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_ELDER_GREET_2",
+  "speaker": "elder",
+  "voice_id": "s4H03ZZyLWvCo7Z3vvPm",
+  "request_sha256": "3cc6e064bc90ac0ac0e9dec3be1856556e09b8f5530e85784856bb7e4fc154a5",
+  "request": {
+    "text": "장터가 닫히니 하루가 한 달 같소.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/elder/NPC_ELDER_GREET_2_3cc6e064bc90ac0ac0e9dec3be1856556e09b8f5530e85784856bb7e4fc154a5.mp3",
+  "raw_sha256": "ad7972c3875f655de76edf1e90d1e4aad1fad519f19e39083a2de57f2b0d49d9",
+  "bytes": 51034,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.12
+  },
+  "http_status": 200,
+  "response_request_id": "u7vLf7RowBh1AdBJkO18",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:52Z"
+}

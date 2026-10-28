@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.28
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 4.100000000000001,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "d642b48cf9f8da75086eefbb0c1a17bdb212565a73df0ff9acb37f7483c2786e",
+  "id": "NPC_ELDER_CLEAR_DONE_2",
+  "speaker": "doho",
+  "request_sha256": "fa6774964ea5f3a27012d008b7dacd524de7a1c5fcfc59be8e4cd78d72a00f93",
+  "raw_sha256": "17af81c469148000ffef0837823d32e397a6fd701bc155b855efe1b565f29513",
+  "file": "assets/audio/voice/NPC_ELDER_CLEAR_DONE_2.wav",
+  "previous_sha256": "703baa3fbebc80dd0517df75d0e003cb413b2fad849a2247598b17231e50d3e2"
+}

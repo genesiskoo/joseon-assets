@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.0
+  },
+  "lufs": -18.0,
+  "true_peak_dbtp": -2.3,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 1.3999999999999986,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.0,
+    "true_peak_dbtp": -2.3
+  },
+  "sha256": "f0575839bbc07e2cf4b7381c548d7969bf59746f616c738ac1e524acc564d1ff",
+  "id": "EV_SHAMAN_QUEST_5",
+  "speaker": "doho",
+  "request_sha256": "540da557024a5d446dcbbcc96460c9871b067584d14eb6857ee349dba008de62",
+  "raw_sha256": "ebe315644796d7d026b783d053ba619a566fdc8494202cb1f26767c8bb9db403",
+  "file": "assets/audio/voice/EV_SHAMAN_QUEST_5.wav",
+  "previous_sha256": "ad73067f404da2d0e7064d24dd9b7cbeacd24c886778f70ec096829ab38a879d"
+}

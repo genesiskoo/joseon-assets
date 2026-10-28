@@ -1,0 +1,21 @@
+# 엔딩 — 마을로 돌아온 뒤 무당 할매 한 장면 (#768 · script_audit_2026-10-12 §4 질문 1 A · §6 · CP-08 갱신).
+# 코드 훅 = Main._ending_step (엔딩 컷을 닫고 못골에 선 뒤 — 먹이 다 걷히면). 밟는 트리거가 아니다.
+# 부르는 이름 = Story(러너) · Cut(컷 명령). 한 번만 = Cut.end() 까지 간 뒤 story["event/ending"](Main 이 켠다 — EventTrigger 와 같은 결).
+# 할매 첫 말 = 「틈」 한 줄(PD 10-13 그대로) · 마지막 훅은 보상 약속이 아니라 틈(D-110 — 「더 센 놈 · 좋은 물건」 · 희귀 토스트 없음).
+# 맺음 = 「어디로 가라」(D-097 정보 장면 규칙 — 굴을 돌며 못골을 지킨다 = 자유 사냥) · 도호 끝줄 = 정자 첫 장면 「…허. 하는 김에.」의 짝.
+# 표기(D-097): 도호는 「도사 양반」 · 문 = 「북쪽 돌문」(처음 이름은 이미 정자에서) · 굴 · 장터. 음성 없음(#613 결 — 뽑으면 같은 키로).
+
+~ start
+$> Cut.begin()
+$> Cut.camera_to("jeongja", 1.0)
+$> Cut.walk("doho", "jeongja_step")
+$> Cut.face("shaman", "doho")
+$> Cut.face("doho", "shaman")
+shaman: 구미호는 물러났으나 돌문 너머 틈에선 아직 금빛이 샌다오. [ID:EV_ENDING_1]
+shaman: 주모의 솥은 식었으나, 그 사람이 지키던 장터는 남았소. [ID:EV_ENDING_1B]
+doho: 그 여우가 틈 얘기를 하더니, 빈말이 아니었군. [ID:EV_ENDING_2]
+shaman: 장터에 사람이 하나둘 돌아오고 있소. 당분간 굴을 돌며 못골을 지켜 주시오, 도사 양반. [ID:EV_ENDING_3]
+doho: …허. 하는 김에. [ID:EV_ENDING_4]
+$> Cut.camera_back(0.8)
+$> Cut.end()
+=> END

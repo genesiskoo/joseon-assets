@@ -1,0 +1,38 @@
+# 구미원 — 재회와 격퇴 (#777). #730 심리형 연기: 의심을 읽고 발걸음을 이끈다.
+# 배우 외형/전투 단계는 #515/#762, 대사와 음성은 현재 보스에서도 실행한다.
+# 주모를 안 만난 판/외상을 끝까지 안 들은 판은 그 대화를 회상하지 않는다.
+# gumiho_f03 성우 = 주모 확정 성우(#613); 잔영 재도전은 이 대본을 열지 않는다.
+# 가면 사다리 L5(D-115 · gumiho_reveal_2026-10-26 §4): 목로의 친절한 말이 반말로 그대로 돌아온다 — 맞이 「국물 식겠어」 · 외상 · 거울말 「국물이면 됐다며」(미소가 굳는 줄).
+# 화자 갈림(#925): gumiho_f01 = 사람 탈(주모 얼굴) — 맞이·외상까지 · gumiho_f03 = 본체 — 거울말(들은 판) 또는 「문을 열 사람을 기다렸어」부터 끝·격퇴 전부. 이름표는 둘 다 「구미호」.
+
+~ intro
+$> Cut.begin()
+gumiho_f01: 어머, 도사 양반이 오셨네. 국물 식겠어. [ID:EV_GUMIHO_INTRO_1]
+if Story.flag("jumo_met")
+	doho: 목로가 비어 있길래 짐작은 했지. [ID:EV_GUMIHO_INTRO_MET_0]
+	doho: 목로 밖에서 또 보는구먼. [ID:EV_GUMIHO_INTRO_MET]
+	if Story.flag("jumo_credit_heard")
+		gumiho_f01: 외상은 살아서 돌아오는 사람한테만 놓는다 했지? 살아서 왔네. [ID:EV_GUMIHO_INTRO_CREDIT]
+		doho: 그래서 갚으러 왔지. [ID:EV_GUMIHO_INTRO_PAY]
+		gumiho_f03: 국물이면 됐다며. [ID:EV_GUMIHO_INTRO_MIRROR]
+else
+	doho: 네가 구미호로구나. [ID:EV_GUMIHO_INTRO_UNMET]
+gumiho_f03: 문을 열 사람을 기다렸어. 네 손으로 여기까지 와 줬네. [ID:EV_GUMIHO_INTRO_2]
+if Story.flag("jumo_met")
+	doho: 그래서 열쇠 얘기를 그리 친절하게 해 줬군. [ID:EV_GUMIHO_INTRO_3]
+gumiho_f03: 수상한 줄 알면서도 왔잖아. 끝이 궁금했지? [ID:EV_GUMIHO_INTRO_4]
+doho: 보러 온 건 맞아. 네 뜻대로 될지는 두고 보자고. [ID:EV_GUMIHO_INTRO_5]
+gumiho_f03: 그럼 어디까지 버티는지 보자. [ID:EV_GUMIHO_INTRO_6]
+$> Cut.end()
+=> END
+
+~ departure
+$> Cut.begin()
+gumiho_f03: 문은 열렸어. 네가 열었잖아. [ID:EV_GUMIHO_DEPART_1]
+gumiho_f03: 이게 끝인 줄 알았어? 틈 너머가 진짜야. [ID:EV_GUMIHO_DEPART_1B]
+doho: 네가 빠져나갈 길은 다시 막을 거다. [ID:EV_GUMIHO_DEPART_2]
+gumiho_f03: 그 틈까지 닫을 수 있을까? [ID:EV_GUMIHO_DEPART_3]
+doho: 저 너머가 더 깊구먼. [ID:EV_GUMIHO_DEPART_4]
+doho: 술은 마을에서 마시지. [ID:EV_GUMIHO_DEPART_5]
+$> Cut.end()
+=> END

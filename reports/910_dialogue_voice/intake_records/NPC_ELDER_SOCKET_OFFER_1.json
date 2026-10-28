@@ -1,0 +1,26 @@
+{
+  "format": {
+    "codec": "pcm_s16le",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.68
+  },
+  "lufs": -18.2,
+  "true_peak_dbtp": -2.5,
+  "pcm16": true,
+  "pass": true,
+  "normalization": {
+    "attempt": 1,
+    "gain_db": 5.0,
+    "ceiling_dbfs": -2.5,
+    "lufs": -18.2,
+    "true_peak_dbtp": -2.5
+  },
+  "sha256": "2e208bd7c640daabd818166c64f839b1b367224055bcbc6aeee8a97c9eb3de9d",
+  "id": "NPC_ELDER_SOCKET_OFFER_1",
+  "speaker": "elder",
+  "request_sha256": "900f30ab5eb520e04219bd15554a87899ebdac0b04e59323260c3ffacc78a029",
+  "raw_sha256": "bbadf77b862be62f14a85df9ab57554fa7ed2ce51a0f02f3774bfba9e73bf554",
+  "file": "assets/audio/voice/NPC_ELDER_SOCKET_OFFER_1.wav",
+  "previous_sha256": null
+}

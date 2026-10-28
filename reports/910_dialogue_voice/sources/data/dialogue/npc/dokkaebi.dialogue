@@ -1,0 +1,185 @@
+# 도깨비 — D-101/D-110 · #777. 흑랑 뒤 조합 NPC. 해체 반말, 호방함과 거래 신용.
+# 공개 조합 8의 재료·값은 맡김 창에서 확인한다. 글자 부적·숨은 조합·비결서·2회차·가까움 힌트는 EA에서 쓰지 않는다.
+# 첫 거래 = 쓰던 장비 하나 ↔ 홈 둘 누비옷(캐릭터당 한 번), 홈은 오방옥으로 안내.
+# 주모 복선은 구미호 격퇴 전 한 번만. 화자·기존 번역 ID는 유지한다.
+
+~ start
+if Story.first("dokkaebi_met")
+	=> first_meet
+=> greet
+
+# 첫 거래를 닫아도 jobs의 바꿔치기로 다시 연다.
+~ first_meet
+털북숭이 거한이 방망이를 어깨에 걸치고 씩 웃는다. [ID:NPC_DOKKAEBI_FIRST_0]
+dokkaebi: 오, 개 잡은 도사 양반이로군. 개 있는 동네엔 이사를 못 오는데, 덕분에 눌러앉게 됐지. [ID:NPC_DOKKAEBI_FIRST_1]
+doho: 도깨비도 이사를 다니는 줄은 몰랐구먼. [ID:NPC_DOKKAEBI_FIRST_2]
+dokkaebi: 장터 뒤 대장간 터에 눌러앉았어. 물건 바꿀 일이 있으면 맡겨. [ID:NPC_DOKKAEBI_FIRST_3]
+dokkaebi: 필요한 재료와 값은 내놓은 목록에 다 적혀 있어. [ID:NPC_DOKKAEBI_FIRST_4]
+doho: 바꿔 준다? 방망이로 금 나와라 뚝딱, 그거? [ID:NPC_DOKKAEBI_FIRST_5]
+dokkaebi: 뚝딱은 소문이고, 손은 내가 놀리지. 그러니 값이 붙는 거야. [ID:NPC_DOKKAEBI_FIRST_6]
+dokkaebi: 첫 거래는 인사로 하지. 가방에서 쓰던 장비 아무거나 하나 내놔. 홈 둘 난 누비옷으로 바꿔 줄게. [ID:NPC_DOKKAEBI_FIRST_7]
+doho: 아무거나? 값은 안 따지고? [ID:NPC_DOKKAEBI_FIRST_8]
+dokkaebi: 도깨비는 값을 안 따져. 비싼 걸 내놔도 누비옷, 싼 걸 내놔도 누비옷이야. 한 번뿐이니 잘 골라. [ID:NPC_DOKKAEBI_FIRST_9]
+doho: 안 쓰는 걸 내놓으면 되겠구먼. [ID:NPC_DOKKAEBI_FIRST_10]
+dokkaebi: 옷 홈엔 오방옥을 박아. 옥 빛깔마다 보태 주는 힘이 달라. [ID:NPC_DOKKAEBI_FIRST_11]
+dokkaebi: 박기 전에 쓰임을 읽어 봐. 좋은 옥도 제자리 못 찾으면 아까우니까. [ID:NPC_DOKKAEBI_FIRST_12]
+dokkaebi: 자, 골라 봐. [ID:NPC_DOKKAEBI_FIRST_14]
+$> Talk.dokkaebi_swap()
+=> END
+
+# 인사는 첫 만남 뒤에도 한 줄로 선다.
+~ greet
+match Talk.roll("dokkaebi_greet", 6)
+	when 0
+		dokkaebi: 왔어? 오늘은 뭘 바꿔 볼까. [ID:NPC_DOKKAEBI_GREET_1]
+	when 1
+		dokkaebi: 쓰던 물건, 못 쓰는 물건, 주워 온 물건. 도깨비한텐 다 밑천이야. [ID:NPC_DOKKAEBI_GREET_2]
+	when 2
+		dokkaebi: 틀려도 안 뺏어. 마음 놓고 올려 봐. [ID:NPC_DOKKAEBI_GREET_3]
+	when 3
+		dokkaebi: 메밀묵 한 사발 곁들이면 마음이 너그러워지긴 해. …농담이야. 엽전이면 돼. [ID:NPC_DOKKAEBI_GREET_4]
+	when 4
+		dokkaebi: 이 동네에서 내가 제일 한가한 장사꾼이야. 손님이라곤 도사 양반뿐이니. [ID:NPC_DOKKAEBI_GREET_5]
+	else
+		dokkaebi: 바꿀 거 있으면 올려 봐. 없으면 구경만 해도 돼. 구경값은 안 받아. [ID:NPC_DOKKAEBI_GREET_6]
+=> jobs
+
+# 일 선택지 — 맡긴다(K5 창) · 바꿔치기 한 판(첫 거래를 못 했을 때만 다시) · 묻는다 · 간다. 창이 열리는 길은 둘 다 => END(띠가 걷힌 뒤 연다).
+~ jobs
+- 물건을 맡긴다 [#act=craft] [ID:NPC_DOKKAEBI_JOB_CRAFT]
+	dokkaebi: 어디 보자. 뭘 가져왔어? [ID:NPC_DOKKAEBI_CRAFT_1]
+	$> Talk.open_craft()
+	=> END
+- 바꿔치기 한 판을 한다 [if not Talk.swap_used() /] [#act=swap] [ID:NPC_DOKKAEBI_JOB_SWAP]
+	dokkaebi: 그래, 장비 하나 내놔 봐. 누비옷은 어디 안 갔어. [ID:NPC_DOKKAEBI_SWAP_1]
+	$> Talk.dokkaebi_swap()
+	=> END
+- 이것저것 묻는다 [#act=ask] [ID:NPC_DOKKAEBI_JOB_ASK]
+	=> ask
+- 그만 간다 [#act=leave] [ID:NPC_DOKKAEBI_JOB_LEAVE]
+=> END
+
+# 묻는다 — 처음 귀띔 ①을 다시 듣거나(첫 만남을 닫기로 끝냈어도 닿는다) 잡담.
+~ ask
+dokkaebi: 뭐가 궁금해? 말은 공짜야. [ID:NPC_DOKKAEBI_ASK_1]
+- 홈에 옥 박는 얘기를 다시 듣는다 [#act=hint] [ID:NPC_DOKKAEBI_ASK_HINT]
+	=> hint_again
+- 이런저런 잡담을 한다 [#act=chat] [ID:NPC_DOKKAEBI_ASK_CHAT]
+	=> chat
+- 됐다 [ID:NPC_DOKKAEBI_ASK_BACK]
+=> jobs
+
+~ hint_again
+dokkaebi: 오방옥은 장비 홈에 박는 거야. 빛깔마다 힘이 다르니 쓰임부터 읽어 봐. [ID:NPC_DOKKAEBI_HINT_AGAIN_1]
+doho: 아무거나 박았다간 돈값 못 하겠구먼. [ID:NPC_DOKKAEBI_HINT_AGAIN_2]
+dokkaebi: 박힌 옥을 살려 빼려면 장비째 맡겨. 옥은 돌려주고 장비는 내가 가져. [ID:NPC_DOKKAEBI_HINT_AGAIN_3]
+=> jobs
+
+# 잡담 = 공개 조합·거래 원칙 + 인물 이야기(#910 — 귀띔과 겹치던 줄 셋을 메밀묵·씨름·개 이야기로). 재료와 값을 숨기지 않는다.
+~ chat
+if Talk.seals() >= 2 and not Story.flag("jumo_gone") and not Story.flag("dokkaebi_mokro")
+	$> Story.put("dokkaebi_mokro")
+	dokkaebi: 나는 목로 쪽엔 안 가. 국물이 아무리 좋아도, 같은 장사끼리는 서로 모른 척하는 게 예의거든. [ID:NPC_DOKKAEBI_CHAT_MOKRO]
+else
+	match Talk.roll("dokkaebi_chat", 8)
+		when 0
+			dokkaebi: 같은 옥 셋이면 한 단 위 옥으로 바꿔 줘. 맨 위 옥은 더 못 올려. [ID:NPC_DOKKAEBI_CHAT_1]
+		when 1
+			dokkaebi: 메밀묵 쑤는 날엔 장터 뒤가 고소해. 냄새 맡거든 들러. [ID:NPC_DOKKAEBI_CHAT_2]
+		when 2
+			dokkaebi: 틀리게 맡겨도 물건은 도로 줘. 도깨비는 값 치른 것만 먹거든. [ID:NPC_DOKKAEBI_CHAT_3]
+		when 3
+			dokkaebi: 옛날엔 씨름 한 판에 금덩이도 걸었지. 요새 사람들은 겁이 많아. [ID:NPC_DOKKAEBI_CHAT_4]
+		when 4
+			dokkaebi: 남는 물건도 목록부터 보고 팔아. 내 손을 거치면 쓸 물건이 될 수도 있거든. [ID:NPC_DOKKAEBI_CHAT_5]
+		when 5
+			dokkaebi: 옛 도사들 곁에서 먹 갈던 몸이라 글귀를 좀 알지. 어깨너머로 배웠는데, 어깨가 높았거든. [ID:NPC_DOKKAEBI_CHAT_6]
+		when 6
+			dokkaebi: 무당 할매는 날 볼 때마다 눈을 가늘게 떠. 해코지 안 한다니까. 오래 산 것끼리 좀 봐줘도 될 텐데. [ID:NPC_DOKKAEBI_CHAT_7]
+		else
+			dokkaebi: 개 짖는 소리만 안 나면 이 동네도 살 만해. 도사 양반 덕이지. [ID:NPC_DOKKAEBI_CHAT_8]
+=> jobs
+
+# ---- 맡김 창 결과 반응 — K5 가 부른다(Recipes.plan 의 reason). 전부 한 줄 풀(무작위 한 줄)이라 줄 하나만 보이는 화면에서도 선다 · 끝은 => END(창은 그대로 열려 있다). ----
+
+# 됨(ok).
+~ made
+match Talk.roll("dokkaebi_made", 3)
+	when 0
+		dokkaebi: 자, 바꿔 줬어. 잘 봐, 속임수는 없어. [ID:NPC_DOKKAEBI_MADE_1]
+	when 1
+		dokkaebi: 됐네. 도깨비 솜씨는 믿을 만하지. [ID:NPC_DOKKAEBI_MADE_2]
+	else
+		dokkaebi: 뚝딱은 아니고 좀 걸렸어. 받아 가. [ID:NPC_DOKKAEBI_MADE_3]
+=> END
+
+# 안 맞고 가깝지도 않음(no_match 에 near 없음) — 맡긴 건 그대로 돌려받는다.
+~ nothing
+match Talk.roll("dokkaebi_nothing", 3)
+	when 0
+		dokkaebi: 이걸론 아무것도 안 돼. 도로 가져가, 손해 본 건 없으니까. [ID:NPC_DOKKAEBI_NOTHING_1]
+	when 1
+		dokkaebi: 한 상에 올릴 물건들이 아니야. 도로 가져가. [ID:NPC_DOKKAEBI_NOTHING_2]
+	else
+		dokkaebi: 재주를 부리라면서 재료가 이래? 도로 가져가. 안 뺏어. [ID:NPC_DOKKAEBI_NOTHING_3]
+=> END
+
+# 맞지만 못 만듦(no_result) — 맨 위 단 옥 셋 · 남은 조각 없는 세트. 두 경우 다 읽히게 일반 말로.
+~ no_result
+match Talk.roll("dokkaebi_no_result", 3)
+	when 0
+		dokkaebi: 이치는 맞는데 내줄 게 없어. 더 올릴 데도, 바꿔 줄 짝도 바닥이네. [ID:NPC_DOKKAEBI_NO_RESULT_1]
+	when 1
+		dokkaebi: 재주가 모자란 게 아니라 판이 바닥이야. 맡긴 건 도로 가져가. [ID:NPC_DOKKAEBI_NO_RESULT_2]
+	else
+		dokkaebi: 맞게 가져왔는데 만들 게 없다니, 서로 민망하게 됐네. [ID:NPC_DOKKAEBI_NO_RESULT_3]
+=> END
+
+# 엽전 모자람(gold) — 「외상」은 주모 말이라 안 쓴다.
+~ gold_short
+match Talk.roll("dokkaebi_gold_short", 3)
+	when 0
+		dokkaebi: 엽전이 모자라. 도깨비 장사도 공짜는 아니야. 채워서 와. [ID:NPC_DOKKAEBI_GOLD_SHORT_1]
+	when 1
+		dokkaebi: 재료는 맞는데 값이 모자라. 나중에 주겠다는 말은 안 믿어. [ID:NPC_DOKKAEBI_GOLD_SHORT_2]
+	else
+		dokkaebi: 주머니가 가볍네. 값은 값이야. 채워서 다시 와. [ID:NPC_DOKKAEBI_GOLD_SHORT_3]
+=> END
+
+# 가방 가득(bag) — 결과가 하나라도 안 들어가면 실패로 돌려받는다.
+~ bag_full
+match Talk.roll("dokkaebi_bag_full", 3)
+	when 0
+		dokkaebi: 받아 갈 자리가 없잖아. 가방부터 비워 와. [ID:NPC_DOKKAEBI_BAG_FULL_1]
+	when 1
+		dokkaebi: 바꿔 주는 것도 좋지만 받아 갈 손은 비워 둬야지. 가방 좀 정리해. [ID:NPC_DOKKAEBI_BAG_FULL_2]
+	else
+		dokkaebi: 내줄 물건 놓을 데가 없어. 가방 비우고 다시 와. [ID:NPC_DOKKAEBI_BAG_FULL_3]
+=> END
+
+# 빈 칸(empty) — 맡김 칸이 텅 빈 채 맡기려 할 때(창이 그 단추를 막으면 안 불러도 된다).
+~ empty
+match Talk.roll("dokkaebi_empty", 2)
+	when 0
+		dokkaebi: 빈손으로 뭘 바꾸라는 거야. 올려 놓고 말해. [ID:NPC_DOKKAEBI_EMPTY_1]
+	else
+		dokkaebi: 칸이 텅 비었잖아. 도깨비도 없는 걸론 못 바꿔 줘. [ID:NPC_DOKKAEBI_EMPTY_2]
+=> END
+
+# ---- 바꿔치기 한 판 뒤 — K3 가 고르기가 끝난 뒤 부른다(선택). ----
+
+~ swap_done
+match Talk.roll("dokkaebi_swap_done", 2)
+	when 0
+		dokkaebi: 옜다, 누비옷. 홈 둘이야. 오방옥 쓰임부터 읽고 골라 박아. [ID:NPC_DOKKAEBI_SWAP_DONE_1]
+	else
+		dokkaebi: 거래 성사. 옷은 잘 입고, 준 장비는 내가 잘 쓸게. [ID:NPC_DOKKAEBI_SWAP_DONE_2]
+=> END
+
+~ swap_none
+match Talk.roll("dokkaebi_swap_none", 2)
+	when 0
+		dokkaebi: 빈손이네. 쓰던 장비 하나 들고 다시 와. 누비옷은 어디 안 가. [ID:NPC_DOKKAEBI_SWAP_NONE_1]
+	else
+		dokkaebi: 마음이 안 내키나 보네. 하고 싶을 때 와. 누비옷은 안 도망가. [ID:NPC_DOKKAEBI_SWAP_NONE_2]
+=> END

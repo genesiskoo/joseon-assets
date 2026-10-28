@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_SHAMAN_AFTER_LAST_SOE_3",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "0a68af5550b94768ace2838dd1c41b44207415a8fbcaa2012bc35d313e5f7977",
+  "request": {
+    "text": "칼 대신 불이라. 부적값이 또 나가겠군.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그놈한텐 칼이 잘 안 드오. 불을 쓰시오. 화염 술법에 쓸 빈 부적은 김 영감이 파오.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_SHAMAN_AFTER_LAST_SOE_3_0a68af5550b94768ace2838dd1c41b44207415a8fbcaa2012bc35d313e5f7977.mp3",
+  "raw_sha256": "56a0282f327cbc19b276c663481d55b4dc8bdd19a3277733a94cea7dc9f20e0b",
+  "bytes": 61065,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 3.76
+  },
+  "http_status": 200,
+  "response_request_id": "tiPhluJGAb8y1oBzb4nJ",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:30Z"
+}

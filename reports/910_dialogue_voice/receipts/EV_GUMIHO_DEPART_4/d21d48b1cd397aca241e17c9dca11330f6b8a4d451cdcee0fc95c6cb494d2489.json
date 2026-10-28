@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "EV_GUMIHO_DEPART_4",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "d21d48b1cd397aca241e17c9dca11330f6b8a4d451cdcee0fc95c6cb494d2489",
+  "request": {
+    "text": "저 너머가 더 깊구먼.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "그 틈까지 닫을 수 있을까?",
+    "next_text": "술은 마을에서 마시지.",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/EV_GUMIHO_DEPART_4_d21d48b1cd397aca241e17c9dca11330f6b8a4d451cdcee0fc95c6cb494d2489.mp3",
+  "raw_sha256": "a016e4670c3b79f361728d77301d29996a40078860cdecb176cfbc010666ee5e",
+  "bytes": 36823,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.24
+  },
+  "http_status": 200,
+  "response_request_id": "XXFtpeOcBxUbT48OLuF3",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:52:59Z"
+}

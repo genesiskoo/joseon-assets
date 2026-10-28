@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_JUMO_NEWS1_END",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "92fb282713cac9f5e0eecc723b9d2401f56e450b522b6b5077ce968c85a3549b",
+  "request": {
+    "text": "그 소문, 발 한번 빠르네.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "목로엔 소문이 모이는 법이라우.",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/NPC_JUMO_NEWS1_END_92fb282713cac9f5e0eecc723b9d2401f56e450b522b6b5077ce968c85a3549b.mp3",
+  "raw_sha256": "382ca12454b0069e7309b3a2c6a9a3367e62e23b7fd4d5191f288189938b50c4",
+  "bytes": 40585,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 2.48
+  },
+  "http_status": 200,
+  "response_request_id": "lYmvE9S7J2vBY2RBYrH0",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:54:37Z"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "NPC_DOKKAEBI_SWAP_NONE_2",
+  "speaker": "dokkaebi",
+  "voice_id": "RuWAHOtWIWeV7IdAQxY5",
+  "request_sha256": "de46126af17382f803c7b5036139091958eca3f2e1ed94a8c147977e01f26f84",
+  "request": {
+    "text": "마음이 안 내키나 보네. 하고 싶을 때 와. 누비옷은 안 도망가.",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/dokkaebi/NPC_DOKKAEBI_SWAP_NONE_2_de46126af17382f803c7b5036139091958eca3f2e1ed94a8c147977e01f26f84.mp3",
+  "raw_sha256": "896e110f2a716ff8ce679e0ce47616cff70a4501e23963f845961e110c67bd6e",
+  "bytes": 79037,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 4.88
+  },
+  "http_status": 200,
+  "response_request_id": "mWs4XD2rArMD4zZMIzdG",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:53:43Z"
+}

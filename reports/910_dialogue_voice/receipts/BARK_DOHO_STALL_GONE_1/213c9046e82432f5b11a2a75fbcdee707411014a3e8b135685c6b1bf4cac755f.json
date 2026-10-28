@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "id": "BARK_DOHO_STALL_GONE_1",
+  "speaker": "doho",
+  "voice_id": "Ir7oQcBXWiq4oFGROCfj",
+  "request_sha256": "213c9046e82432f5b11a2a75fbcdee707411014a3e8b135685c6b1bf4cac755f",
+  "request": {
+    "text": "여우라도 다녀갔나?",
+    "model_id": "eleven_v4",
+    "language_code": "ko",
+    "previous_text": "",
+    "next_text": "",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "raw": "raw/doho/BARK_DOHO_STALL_GONE_1_213c9046e82432f5b11a2a75fbcdee707411014a3e8b135685c6b1bf4cac755f.mp3",
+  "raw_sha256": "4ca8fb1be394d0e6c08d592421eb97ed299905203f11842241adc366f8d2b674",
+  "bytes": 26792,
+  "format": {
+    "codec": "mp3",
+    "rate": 44100,
+    "ch": 1,
+    "dur": 1.6
+  },
+  "http_status": 200,
+  "response_request_id": "NZgDMzRnw0pksHEghm9R",
+  "attempts": [],
+  "generated_at": "2026-10-27T15:55:51Z"
+}
