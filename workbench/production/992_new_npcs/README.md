@@ -23,7 +23,7 @@
 
 | `concept/youth_h.png` | 갑돌 H = E 옷 · 중간 얼굴(후보) | `ab0c3776865bfc42eec30b6e20d32c1977717ea794f50f14310feb0639c0c10b` |
 | `concept/youth_i.png` | 갑돌 I = F 옷 · 중간 얼굴(후보) | `489960a64d583d2863b7d0ffa628dd97abc76d18f169411572e7d2e0b947df31` |
-| `concept/youth_j.png` | 갑돌 J = G 옷 · 중간 얼굴(후보) | `2cc9eeb67baec276f0ef540350cd3d507dd0f5914ac833bdd640b85a22283095` |
+| `concept/youth_j.png` | 갑돌 J = G 옷 · 중간 얼굴 — **✅ 갑돌 채택 (PD 10-29 「J로」)** · h·i 기각 | `2cc9eeb67baec276f0ef540350cd3d507dd0f5914ac833bdd640b85a22283095` |
 
 e·f·g = PD 10-29 「너무 못생긴것 같은데..?」 → 얼굴 기각(옷은 h·i·j로 이음). h·i·j는 e를 「옷 = 맞음 · 얼굴 = 너무 못생김」, a를 「얼굴 = 너무 미소년」 참조로 넣어 그 사이를 노렸다 · 머리 = 총각 땋은 머리(상투·망건 없음).
 
