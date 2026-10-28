@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-10-29",
   "characters": [
     {
       "character_id": "doho",
@@ -160,6 +160,34 @@
           "display_name": "각시귀신",
           "runtime_aliases": [
             "gaksi_gwisin"
+          ]
+        }
+      ]
+    },
+    {
+      "character_id": "dallae",
+      "display_name": "달래",
+      "role": "npc",
+      "forms": [
+        {
+          "form_id": "human",
+          "display_name": "달래",
+          "runtime_aliases": [
+            "dallae"
+          ]
+        }
+      ]
+    },
+    {
+      "character_id": "gapdol",
+      "display_name": "갑돌",
+      "role": "npc",
+      "forms": [
+        {
+          "form_id": "human",
+          "display_name": "갑돌",
+          "runtime_aliases": [
+            "gapdol"
           ]
         }
       ]
@@ -19456,6 +19484,794 @@
       },
       "notes": [
         "대화 초상 BCA 루프 원본(1520×2688로 키워 loop_bca.py) — 9-17 F01/F03 시트를 갈음(옛 시트는 게임에서 지움, 원화 기록 d068-*은 보존)"
+      ]
+    },
+    {
+      "asset_id": "card992-dallae-child-a",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-child-a",
+      "display_name": "달래 시안 A — 댕기 머리끝 · 흙빛 저고리",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/child_a.png",
+        "sha256": "1ab84fa8f00df9a2c8cb3ff2b2232ab1268b49810ac538e90371f80129e439de",
+        "bytes": 1922467,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "달래는 B처음으로 가자",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/child_a.prompt.txt",
+          "sha256": "8e82ec68445389ca1e008a146a7136f83abf4cb351fbf2d97b7a3592f6c8903b",
+          "bytes": 2669
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD가 B를 고름"
+      ]
+    },
+    {
+      "asset_id": "card992-dallae-child-b",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-child-b",
+      "display_name": "달래 시안 B — 손목 댕기 · 쪽빛 저고리 · 주모 천 앞치마",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/child_b.png",
+        "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+        "bytes": 1883568,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "appearance"
+        ],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "달래는 B처음으로 가자",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/child_b.prompt.txt",
+          "sha256": "69421da0b3b931fbe7e326cbb3f0ccf36607dfd7e4f2adc4af9ab471b7724699",
+          "bytes": 2678
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "채택 — 그림 나이는 열두세 살쯤, 설정은 열 살 안팎 유지"
+      ]
+    },
+    {
+      "asset_id": "card992-dallae-child-c",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-child-c",
+      "display_name": "달래 시안 C — A 어린 판",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/child_c.png",
+        "sha256": "aec3fff195e3fe81933c915a7631c2affc8680efd881375ee6b6c97b7b3c4f6a",
+        "bytes": 1922698,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "달래는 B처음으로 가자",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/child_c.prompt.txt",
+          "sha256": "cc92574b101475034a838e51ebe99dbc3551d7d10c4e099b6e49448b8887d479",
+          "bytes": 3203
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD가 B 처음 판을 고름"
+      ]
+    },
+    {
+      "asset_id": "card992-dallae-child-d",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-child-d",
+      "display_name": "달래 시안 D — B 어린 판",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/child_d.png",
+        "sha256": "c6a4ea5fec51ac472d6e115fc1a18251218f04db06f19bcb8676a7fd1c7eafe9",
+        "bytes": 1881761,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "달래는 B처음으로 가자",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/child_d.prompt.txt",
+          "sha256": "d86036fd7a8d635d5709f955669324f7b915b9665d47a7e7175fcb17da217d37",
+          "bytes": 3212
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD가 B 처음 판을 고름"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-a",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-a",
+      "display_name": "갑돌 시안 A — 총각 땋은 머리 · 옥색 쾌자",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_a.png",
+        "sha256": "544bbbae9386289599b674bffdf49c6228cf2f0af773d3cbf9f7dfe19ee580f6",
+        "bytes": 1910315,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "남자가 너무 미소년임. 평범하고 살짝얼빠지게 나와야됨.",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_a.prompt.txt",
+          "sha256": "5a0a4657fbf280a2e4e44d8fc9ca9eae155e353ab7ef32a719e4513340838b82",
+          "bytes": 2444
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴 기각"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-b",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-b",
+      "display_name": "갑돌 시안 B — 상투·망건 · 옥색 두루마기 · 동백",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_b.png",
+        "sha256": "3002ffce47fdda4969e05288ca404a17f1e6bdac4acb263c1865b20bee41108c",
+        "bytes": 1983897,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "남자가 너무 미소년임. 평범하고 살짝얼빠지게 나와야됨.",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_b.prompt.txt",
+          "sha256": "53821247a8c9faa277d22bde36940b5095ccae3f53cdf134e0d362a914fb0b95",
+          "bytes": 2470
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴 기각"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-c",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-c",
+      "display_name": "갑돌 시안 C — 얼빠진 얼굴 · 안 맞는 두루마기",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_c.png",
+        "sha256": "72a5619a01a3049bc6171f15288c87b6ea3981810fc2472d329b2775c88a6a3b",
+        "bytes": 2016552,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "옷이 너무 도련님 옷임. 시안 3개 더 만들어",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_c.prompt.txt",
+          "sha256": "07d33fe5b0e7bb1bde6719ae59cc3421b0c81159ebca2c471ed5e4050768e44a",
+          "bytes": 2767
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "옷 기각"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-d",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-d",
+      "display_name": "갑돌 시안 D — 얼빠진 얼굴 · 배가 끼는 쾌자",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_d.png",
+        "sha256": "d9be11d73e0815c66d41104a19dbd6cc39035638fd792690eb4fb4a127ef6ce4",
+        "bytes": 1978643,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "옷이 너무 도련님 옷임. 시안 3개 더 만들어",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_d.prompt.txt",
+          "sha256": "9e6216c6d0164a01a9c64895d20f2074725a1758771e9f4c019e92fddbf5be61",
+          "bytes": 2783
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "옷 기각"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-e",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-e",
+      "display_name": "갑돌 시안 E — 머슴 · 옥색 머리띠",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_e.png",
+        "sha256": "059aad693375f5bb2e349d77706b509eafff556611bd8e9256e0e018dfc5c7c4",
+        "bytes": 2022693,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "너무 못생긴것 같은데..?",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_e.prompt.txt",
+          "sha256": "99ec8012dda551e73f104f6c601c13e205cc069d1716021dbba37785a516be86",
+          "bytes": 2824
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴 기각(옷은 H로 이음)"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-f",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-f",
+      "display_name": "갑돌 시안 F — 나무꾼 · 옥색 목수건",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_f.png",
+        "sha256": "2446c0324264cf4c28980efae8865b53146e5ba97a420600a783bf6f4efea1c0",
+        "bytes": 1992950,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "너무 못생긴것 같은데..?",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_f.prompt.txt",
+          "sha256": "43dffda01ea9e74b3248b4e3cc2076003c6e94d1dd6bb2747886892ba6c3e563",
+          "bytes": 2915
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴 기각(옷은 I로 이음)"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-g",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-g",
+      "display_name": "갑돌 시안 G — 주막 단골 · 패랭이 · 옥색 허리 리본",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_g.png",
+        "sha256": "24b112b7f80ba018b2ce35ffb07c1ecbb606a1327274a1bc06cda0821930a448",
+        "bytes": 2040814,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "너무 못생긴것 같은데..?",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_g.prompt.txt",
+          "sha256": "de87b6b96083bba149ca094f88f656c929dd0d88130c4c7c245081500d9db397",
+          "bytes": 2896
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴 기각(옷은 J로 이음)"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-h",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-h",
+      "display_name": "갑돌 시안 H — 머슴 · 옥색 머리띠 · 중간 얼굴",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_h.png",
+        "sha256": "ab0c3776865bfc42eec30b6e20d32c1977717ea794f50f14310feb0639c0c10b",
+        "bytes": 2000893,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "J로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_h.prompt.txt",
+          "sha256": "ff4a46c3a053cf861e35029e1efd5e413f8ebedbf796befe4afbb0b81bd677c3",
+          "bytes": 2371
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD가 J를 고름"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-i",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-i",
+      "display_name": "갑돌 시안 I — 나무꾼 · 옥색 목수건 · 중간 얼굴",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_i.png",
+        "sha256": "489960a64d583d2863b7d0ffa628dd97abc76d18f169411572e7d2e0b947df31",
+        "bytes": 2028812,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "J로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_i.prompt.txt",
+          "sha256": "9d0f06184f0b2186f655e419fb5e512c4cefab8ec7765965ce08e21802961be4",
+          "bytes": 2393
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD가 J를 고름"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-youth-j",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-youth-j",
+      "display_name": "갑돌 시안 J — 주막 단골 · 흰 저고리 · 패랭이 · 옥색 허리 리본",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/concept/youth_j.png",
+        "sha256": "2cc9eeb67baec276f0ef540350cd3d507dd0f5914ac833bdd640b85a22283095",
+        "bytes": 1926173,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "appearance"
+        ],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [
+          "card:#992 PD 2026-10-29 대화 판정 · 게임 docs/design/new_npc_looks_992.md (브랜치 claude/992-npc-art)"
+        ],
+        "quote": "J로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "D-120 새 NPC 원화 시안(#992)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/992_new_npcs/concept/youth_j.prompt.txt",
+          "sha256": "cdfd37b690506e8769509122a7eb59e663564b9730619052a95327448337c669",
+          "bytes": 2377
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "채택"
       ]
     }
   ],
