@@ -12,8 +12,12 @@
 | `concept/child_b.png` | 아이 B — 댕기 손목 · 쪽빛 저고리(주모 닮음) · 갈색 치마 (**나이 기각 → d**) | `e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786` |
 | `concept/child_c.png` | 아이 C = A 어린 판 (후보) | `aec3fff195e3fe81933c915a7631c2affc8680efd881375ee6b6c97b7b3c4f6a` |
 | `concept/child_d.png` | 아이 D = B 어린 판 (후보) | `c6a4ea5fec51ac472d6e115fc1a18251218f04db06f19bcb8676a7fd1c7eafe9` |
-| `concept/youth_a.png` | 젊은 남자 A — 총각 땋은 머리 · 옥색 쾌자 · 은비녀 선물 (후보) | `544bbbae9386289599b674bffdf49c6228cf2f0af773d3cbf9f7dfe19ee580f6` |
-| `concept/youth_b.png` | 젊은 남자 B — 상투·망건(어른 흉내) · 긴 옥색 두루마기 · 은비녀 + 동백 (후보) | `3002ffce47fdda4969e05288ca404a17f1e6bdac4acb263c1865b20bee41108c` |
+| `concept/youth_a.png` | 젊은 남자 A — 총각 땋은 머리 · 옥색 쾌자 · 은비녀 선물 (**PD 10-29 기각 「너무 미소년」**) | `544bbbae9386289599b674bffdf49c6228cf2f0af773d3cbf9f7dfe19ee580f6` |
+| `concept/youth_b.png` | 젊은 남자 B — 상투·망건(어른 흉내) · 긴 옥색 두루마기 · 은비녀 + 동백 (**PD 10-29 기각 「너무 미소년」**) | `3002ffce47fdda4969e05288ca404a17f1e6bdac4acb263c1865b20bee41108c` |
+| `concept/youth_c.png` | 젊은 남자 C = B 차림 · 평범하고 얼빠진 얼굴 · 안 맞는 두루마기 (후보) | `72a5619a01a3049bc6171f15288c87b6ea3981810fc2472d329b2775c88a6a3b` |
+| `concept/youth_d.png` | 젊은 남자 D = A 차림 · 평범하고 얼빠진 얼굴 · 배가 끼는 쾌자 (후보) | `d9be11d73e0815c66d41104a19dbd6cc39035638fd792690eb4fb4a127ef6ce4` |
+
+PD 10-29 「남자가 너무 미소년임. 평범하고 살짝얼빠지게 나와야됨.(구미호한테 홀리는 캐릭터니까. 캐릭터 설명 잘 읽고 만들어)」 → c·d는 억쇠 원화를 얼굴 결 참조로, 기각된 a·b를 「이렇게 하지 말 것」 참조로 넣었다.
 
 같은 얼굴 표지(아이): 가운데 가르마 한 갈래 땋은 머리 · 왼쪽 눈 밑 점 · 어미의 붉은 댕기 — 감염된 모습(#993)이 이어받는다.
 
