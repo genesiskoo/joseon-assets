@@ -35794,6 +35794,150 @@
         "evidence": []
       },
       "notes": []
+    },
+    {
+      "asset_id": "card992-dallae-model-tripo-views",
+      "character_id": "dallae",
+      "form_id": "human",
+      "version_id": "card992-dallae-model-tripo-views",
+      "display_name": "달래 3D (Tripo 웹 · 앞·옆·뒤)",
+      "role": "npc",
+      "runtime_aliases": [
+        "dallae"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/dallae/modeling/tripo_web_992/tripo_views.jpg",
+        "sha256": "dc8608ca58c1c17618ddc06812e149fdb152be28376e39ab9a5cc00112e7c756",
+        "bytes": 39883,
+        "width": 1280,
+        "height": 545
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "PD 승인 예산(120크레딧)으로 만든 3D 몸 — 앞·옆·뒤 확인 사진(#992)",
+        "tool": "Tripo 웹 HD H3.1 · 작업 3f1dcf18-1523-4a35-aef2-b83c7368dbfe · Rig Humanoid Mixamo · 동작 idle·walk",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/dallae/modeling/front_apose.png",
+            "sha256": "4a3828fd09eee259d61ca85f7113ddd03081193ad4bcb03ba67bbbfb415e2ec9",
+            "bytes": 1923350,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/game/dallae/dallae.glb",
+            "sha256": "1b9ab9162124711725a74ff82d634de14298b6493cf540ee679c5ebbe205c984",
+            "bytes": 1208084
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/dallae/modeling/tripo_web_992/dallae_tripo_idle_walk.glb",
+            "sha256": "3974b100fcbcf73969873b772904370924ec2bffd4efab552f184a4c82edff10",
+            "bytes": 1673724
+          }
+        ]
+      },
+      "notes": [
+        "Triangle 11,071면 · 65뼈 · idle·walk · 텍스처 1,024(반입) · ModelDef scale 1.329",
+        "게임 반입 2026-10-29 = assets/models/dallae/dallae.glb · data/models/dallae.tres (브랜치 claude/992-npc-art 미착륙 — runtime_inventory 갱신은 착륙 때 지휘 · NPC 배치 = #991)"
+      ]
+    },
+    {
+      "asset_id": "card992-gapdol-model-tripo-views",
+      "character_id": "gapdol",
+      "form_id": "human",
+      "version_id": "card992-gapdol-model-tripo-views",
+      "display_name": "갑돌 3D (Tripo 웹 · 앞·옆·뒤)",
+      "role": "npc",
+      "runtime_aliases": [
+        "gapdol"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/992_new_npcs/gapdol/modeling/tripo_web_992/tripo_views.jpg",
+        "sha256": "c0d907a8c6064e728d9ec410184fa05e8a6ef8c3f4b9c4aa6fb1be2300f03fe1",
+        "bytes": 48772,
+        "width": 1280,
+        "height": 545
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 992,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 992,
+        "source_commit": null,
+        "inclusion_reason": "PD 승인 예산(120크레딧)으로 만든 3D 몸 — 앞·옆·뒤 확인 사진(#992)",
+        "tool": "Tripo 웹 HD H3.1 · 작업 31b58319-11bb-4d6e-b04b-b0af83699aac · Rig Humanoid Mixamo · 동작 idle·walk",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/gapdol/modeling/front_apose.png",
+            "sha256": "bf0325fc21e742ecc88707529afec8281c144df2102330130e17ae12e354d3a7",
+            "bytes": 1767285,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/game/gapdol/gapdol.glb",
+            "sha256": "e2cffa9f0074eef391715701ebd35d0f104e7b3cc3df0fb70cfb3be7399781a8",
+            "bytes": 1166684
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/gapdol/modeling/tripo_web_992/gapdol_tripo_idle_walk.glb",
+            "sha256": "85d4b61b3a9d9b964820f96a4aa9046b708e9669ad90d09f1349ab50f32f17e2",
+            "bytes": 1614860
+          }
+        ]
+      },
+      "notes": [
+        "Triangle 11,708면 · 65뼈 · idle·walk · 텍스처 1,024(반입) · ModelDef scale 1.785",
+        "게임 반입 2026-10-29 = assets/models/gapdol/gapdol.glb · data/models/gapdol.tres (브랜치 claude/992-npc-art 미착륙 — runtime_inventory 갱신은 착륙 때 지휘 · NPC 배치 = #991)"
+      ]
     }
   ],
   "schema_version": "1.0.0"
