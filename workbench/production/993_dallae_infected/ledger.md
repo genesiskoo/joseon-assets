@@ -57,3 +57,10 @@
 |---|---|---|---|---|
 | 1 원화 시안 6 | Codex CLI gpt-5.6-sol(내장 image_gen) | — | 이미지 6 | Codex 주간 창 남음 54%(리셋 11-04 17:30) · Tripo 0(2,060 그대로) |
 | 1 원화 2차 6(PD 지시) | Codex CLI gpt-5.6-sol | — | 이미지 6 | Codex 주간 창 남음 53%(리셋 11-04 17:30) · Tripo 0 |
+| 5 동작 무료 프리셋 8 | Tripo 웹 Animate(달래 리그 · ego jaehoi 프로필) | `3f1dcf18-1523-4a35-aef2-b83c7368dbfe` | 0 | 2,060 → 2,060 |
+
+## 동작 (5단계)
+
+- 내보낸 GLB = `tripo_web_993/dallae_presets_10.glb`(SHA `6c73e98f…` · 클립 10: idle · walk · run · hit_to_body_01 · hug · defeat_02 · defeat_03 · sob · depressed · jump · 텍스처 2K — 반입 때 1,024) · 띠 = `reports/993/motions_a.jpg` · `motions_b.jpg`.
+- 판독(Claude): 쓸 것 = depressed(감염 대기) · defeat_03(쓰러져 엎드림 = 죽음 앞부분 · 대안 장면 누운 자세) · sob(잠깐 원래 얼굴) · hit_to_body_01(맞음) · run(달려듦). 약함 = hug(끌어안기로 안 읽힘) · jump(작은 콩) · defeat_02(서서 고개만).
+- 빠진 것 = **매달림(달려들어 허리를 끌어안음)** · **무릎 꿇고 주저앉기** → Tripo AI 동작 20 × 2 = 40(예산 안) — PD 확인 대기.
