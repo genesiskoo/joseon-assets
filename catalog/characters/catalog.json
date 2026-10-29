@@ -36739,6 +36739,72 @@
         "PD 지시: 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」 · 상처·피·피부 훼손 없음",
         "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 993, \"evidence\": [], \"quote\": null, \"supersedes\": []}"
       ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-model-bake",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-model-bake",
+      "display_name": "감염된 달래 3D (구운 감염 텍스처 · 앞·뒤·게임 각도)",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "reports/993/bake_preview.png",
+        "sha256": "37f9f8cf4f49aad48d4c2243ea3a954daeee52399c121efc2689c8dc2e61d2fa",
+        "bytes": 260189,
+        "width": 900,
+        "height": 560
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "#992 달래 리그 + tools/infect_bake.py 구운 감염(원화 A+2) — 반입 이벤트(#993)",
+        "tool": "Tripo 웹(리그 3f1dcf18 · 동작) · tools/infect_bake.py · albedo_ops preview",
+        "backend": "로컬",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/993_dallae_infected/concept/dallae_inf_ap2.png",
+            "sha256": "35963176face9b57e45b41f534867d8f22d9d73cda283038f3a20516e910e280",
+            "bytes": 1955206,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/993_dallae_infected/game/dallae_infected.glb",
+            "sha256": "6592a6d9ba548e9c22ca01901800be402647e5a3a0f2063242ad733ea3208dc2",
+            "bytes": 2209092
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입 2026-10-29 = assets/models/dallae_infected/dallae_infected.glb · data/models/dallae_infected.tres (브랜치 claude/993-infected-dallae 미착륙 · EnemyDef·명단 = #991)",
+        "look_audit 채도 0.153 = 밴드 밖(병색 바램) — PD 판정"
+      ]
     }
   ],
   "schema_version": "1.0.0"
