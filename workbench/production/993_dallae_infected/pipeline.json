@@ -12,8 +12,8 @@
     "2_refine": {"status": "skip"},
     "3_apose": {"status": "skip", "note": "#992 몸 재사용(PD)"},
     "4_3d_rig": {"status": "skip", "note": "#992 몸 재사용(PD) — Tripo 3f1dcf18 리그 그대로"},
-    "5_motion": {"status": "todo"},
-    "6_vfx": {"status": "todo"},
-    "7_intake": {"status": "todo"}
+    "5_motion": {"status": "done", "outputs": ["tripo_web_993/dallae_motions_12_named.glb aec1c81e"], "spent": "Tripo 20"},
+    "6_vfx": {"status": "done", "outputs": ["game/dallae_infected.glb 6592a6d9 (infect_bake 굽기)"], "note": "먹 겉칠 = 구운 텍스처 · 죽음 먹 풀림·원래 얼굴 = #991"},
+    "7_intake": {"status": "run", "note": "모델 반입 c3919589 · EnemyDef·명단 #991 · motion-pass 남음"}
   }
 }
