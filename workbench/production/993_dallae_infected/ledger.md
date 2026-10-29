@@ -31,22 +31,24 @@
 
 - **2026-10-29 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」** → B(꼬리 그림자) 기각 · 감염 표현에 **잿빛 피부 · 풀린 초점 · 충혈된 눈** 추가(수위 기준 갱신: 먹·그림자 + 피부색·눈 — 상처·피·피부 훼손·피눈물은 계속 없음). 2차 시안 = A+(먹 + 피부·눈) · C+(먹 안개 + 피부·눈) · D(피부·눈만) × 2.
 
+- **2026-10-29 「A+2」** → ① 외형 = A+2(먹 번짐 + 잿빛 피부·풀린 초점·충혈 · 고개 숙임) 채택 · 나머지 시안 기각. ②~⑤는 판정 대기.
+
 ## 원화 시안 (1단계 · Codex gpt-5.6-sol · 참조 = child_b + H1)
 
 | 시안 | 파일 | SHA-256 | 판정 |
 |---|---|---|---|
-| A1 번지는 먹 | `concept/dallae_inf_a1.png` | `239c04bf2cf79346a9901c985147bfea8557ef1b9a77cfb6a992e742ab67ad6a` | 대기 |
-| A2 번지는 먹(고개 숙임) | `concept/dallae_inf_a2.png` | `49659a61525ccdea75befc487838fe23b32ac1691bf5742e275136e465d2eef3` | 대기 |
+| A1 번지는 먹 | `concept/dallae_inf_a1.png` | `239c04bf2cf79346a9901c985147bfea8557ef1b9a77cfb6a992e742ab67ad6a` | 기각 — PD 10-29 「A+2」 |
+| A2 번지는 먹(고개 숙임) | `concept/dallae_inf_a2.png` | `49659a61525ccdea75befc487838fe23b32ac1691bf5742e275136e465d2eef3` | 기각 — PD 10-29 「A+2」 |
 | B1 꼬리 그림자 | `concept/dallae_inf_b1.png` | `8ff803e03674b1171161eed7ca9771b88956ef2f950a0ab2f78e0ea94804f341` | **기각** — PD 10-29 「구미호 그림자는 빼고」 |
 | B2 꼬리 그림자(고개 숙임) | `concept/dallae_inf_b2.png` | `61ad032ebfd0ae41e3abc4cc807c21f0ca0f5dba3c2322f7397bc49f12a45928` | **기각** — PD 10-29 「구미호 그림자는 빼고」 |
-| C1 먹 안개(먹 눈물) | `concept/dallae_inf_c1.png` | `cf4f2b6edad253b00788f69ce15aec5442af91957b180f50d1b0d2462882ebe8` | 대기 |
-| C2 먹 안개 | `concept/dallae_inf_c2.png` | `39d3e3b8564a4808d1696ed480794aaa0870a5ac61981471410b6704f2d92abb` | 대기 |
-| **2차** A+1 먹 + 피부·눈 | `concept/dallae_inf_ap1.png` | `e8212adea6702abcbb4358bc17dd88595fe92c2a741cfc8d091fab4af1123481` | 대기 |
-| A+2 (고개 숙임) | `concept/dallae_inf_ap2.png` | `35963176face9b57e45b41f534867d8f22d9d73cda283038f3a20516e910e280` | 대기 |
-| C+1 먹 안개 + 피부·눈 | `concept/dallae_inf_cp1.png` | `d1f7936adc911425ddb0fda466ad2749753af4b368dfdc1592a5a7ae66c2e1db` | 대기 |
-| C+2 (고개 숙임) | `concept/dallae_inf_cp2.png` | `a542f3036c1d6a2705b20012a22e437ae21d41798d7ebe31157229391075aae0` | 대기 |
-| D1 피부·눈만 | `concept/dallae_inf_d1.png` | `13246f255ffaaa4ac830d5f973df7b18986fc4afe15c0c6328ba74178cd484af` | 대기 |
-| D2 (고개 숙임) | `concept/dallae_inf_d2.png` | `8bddc8d598e3d8b0a209403c56a030c480bd987e1f3e3953494c0fab91f4c525` | 대기 |
+| C1 먹 안개(먹 눈물) | `concept/dallae_inf_c1.png` | `cf4f2b6edad253b00788f69ce15aec5442af91957b180f50d1b0d2462882ebe8` | 기각 — PD 10-29 「A+2」 |
+| C2 먹 안개 | `concept/dallae_inf_c2.png` | `39d3e3b8564a4808d1696ed480794aaa0870a5ac61981471410b6704f2d92abb` | 기각 — PD 10-29 「A+2」 |
+| **2차** A+1 먹 + 피부·눈 | `concept/dallae_inf_ap1.png` | `e8212adea6702abcbb4358bc17dd88595fe92c2a741cfc8d091fab4af1123481` | 기각 — PD 10-29 「A+2」 |
+| A+2 (고개 숙임) | `concept/dallae_inf_ap2.png` | `35963176face9b57e45b41f534867d8f22d9d73cda283038f3a20516e910e280` | **채택** — PD 10-29 「A+2」 |
+| C+1 먹 안개 + 피부·눈 | `concept/dallae_inf_cp1.png` | `d1f7936adc911425ddb0fda466ad2749753af4b368dfdc1592a5a7ae66c2e1db` | 기각 — PD 10-29 「A+2」 |
+| C+2 (고개 숙임) | `concept/dallae_inf_cp2.png` | `a542f3036c1d6a2705b20012a22e437ae21d41798d7ebe31157229391075aae0` | 기각 — PD 10-29 「A+2」 |
+| D1 피부·눈만 | `concept/dallae_inf_d1.png` | `13246f255ffaaa4ac830d5f973df7b18986fc4afe15c0c6328ba74178cd484af` | 기각 — PD 10-29 「A+2」 |
+| D2 (고개 숙임) | `concept/dallae_inf_d2.png` | `8bddc8d598e3d8b0a209403c56a030c480bd987e1f3e3953494c0fab91f4c525` | 기각 — PD 10-29 「A+2」 |
 
 ## 크레딧 · 이미지
 
