@@ -7,7 +7,7 @@
 | 물건 | 게임 id | 입력 그림 | 서비스 | 작업 id | 설정 | 결과 면 수 | 텍스처 | 판정 | 차감 | 잔액(전 → 후) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 달래 몸 | `dallae` | `dallae/modeling/front_apose.png` (SHA `4a3828fd…`) | Tripo 웹 HD · 정면 한 장(첫 아이콘) | `3f1dcf18-1523-4a35-aef2-b83c7368dbfe` | H3.1 · Triangle · 12,000 · Ultra 켬 · AI Complete 끔 · 2K · PBR 끔 · 조명 지우기 · Private | Triangle 11,071 · 정점 8,973 | 2K → 반입 1,024 | 채택(앞·옆·뒤 통과 — 손가락 분리 · 땋은 머리 · 댕기 · 앞치마) | 40 | 2,180 → 2,140 |
-| 갑돌 몸 | `gapdol` | `gapdol/modeling/front_apose.png` (SHA `bf0325fc…`) | 〃 | `31b58319-11bb-4d6e-b04b-b0af83699aac` | 〃 | Triangle 11,708 · 정점 8,320 | 2K → 반입 1,024 | 채택(앞·옆·뒤 통과 — 패랭이 · 땋은 머리 · 짚신) · 밝기 0.530 = look_audit 밴드(≤0.45) 밖 경고 → PD 판정 | 40 | 2,140 → 2,100 |
+| 갑돌 몸 | `gapdol` | `gapdol/modeling/front_apose.png` (SHA `bf0325fc…`) | 〃 | `31b58319-11bb-4d6e-b04b-b0af83699aac` | 〃 | Triangle 11,708 · 정점 8,320 | 2K → 반입 1,024 | 채택(앞·옆·뒤 통과 — 패랭이 · 땋은 머리 · 짚신) · 밝기 0.530 = look_audit 밴드(≤0.45) 밖 → **PD 판정 10-29 「그대로 둠」** | 40 | 2,140 → 2,100 |
 | 달래 리깅 | 〃 | — | Tripo 웹 Rig · Humanoid · Mixamo | 위와 같음 | 동작 프리셋 idle · walk(무료) | 65뼈 `mixamorig_*` · idle 15.33s · walk 2.33s | — | 채택 | 20 | 2,100 → 2,060(둘 합) |
 | 갑돌 리깅 | 〃 | — | 〃 | 위와 같음 | 〃 | 〃 | — | 채택 | 20 | 〃 |
 
