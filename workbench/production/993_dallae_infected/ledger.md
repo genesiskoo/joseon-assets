@@ -58,9 +58,15 @@
 | 1 원화 시안 6 | Codex CLI gpt-5.6-sol(내장 image_gen) | — | 이미지 6 | Codex 주간 창 남음 54%(리셋 11-04 17:30) · Tripo 0(2,060 그대로) |
 | 1 원화 2차 6(PD 지시) | Codex CLI gpt-5.6-sol | — | 이미지 6 | Codex 주간 창 남음 53%(리셋 11-04 17:30) · Tripo 0 |
 | 5 동작 무료 프리셋 8 | Tripo 웹 Animate(달래 리그 · ego jaehoi 프로필) | `3f1dcf18-1523-4a35-aef2-b83c7368dbfe` | 0 | 2,060 → 2,060 |
+| 5 AI 동작 매달림 | Tripo Text to Motion | 같은 리그 | 20 | 2,060 → 2,040 |
+| 5 AI 동작 무릎(기록 재사용) | Tripo AI Animation 기록 | 같은 리그 | 0 | 2,040 → 2,040 |
 
 ## 동작 (5단계)
 
 - 내보낸 GLB = `tripo_web_993/dallae_presets_10.glb`(SHA `6c73e98f…` · 클립 10: idle · walk · run · hit_to_body_01 · hug · defeat_02 · defeat_03 · sob · depressed · jump · 텍스처 2K — 반입 때 1,024) · 띠 = `reports/993/motions_a.jpg` · `motions_b.jpg`.
 - 판독(Claude): 쓸 것 = depressed(감염 대기) · defeat_03(쓰러져 엎드림 = 죽음 앞부분 · 대안 장면 누운 자세) · sob(잠깐 원래 얼굴) · hit_to_body_01(맞음) · run(달려듦). 약함 = hug(끌어안기로 안 읽힘) · jump(작은 콩) · defeat_02(서서 고개만).
-- 빠진 것 = **매달림(달려들어 허리를 끌어안음)** · **무릎 꿇고 주저앉기** → Tripo AI 동작 20 × 2 = 40(예산 안) — PD 확인 대기.
+- 빠진 것 = **매달림(달려들어 허리를 끌어안음)** · **무릎 꿇고 주저앉기** → Tripo AI 동작 20 × 2 = 40(예산 안) — PD 10-29 「40 써서 만들기」.
+- 매달림 = Tripo Text to Motion 새로 생성(「Lunging Embrace」 · 4초 · 문장 = 「A small thin girl lunges forward two quick steps and throws both arms tightly around someone's waist at her chest height, pressing her face against them and clinging on, holding still while clinging」) · **20크레딧** · 2,060 → 2,040.
+- 무릎 꿇기 = 계정 AI 동작 기록의 「Slumping to the Ground」(문장 「Death: the knees buckle and she sinks down into a kneeling seat…」)를 달래 리그에 다시 붙임 · **0크레딧**(잔액 그대로 확인) → 두 번째 생성은 안 함(20 아낌).
+- GLB = `tripo_web_993/dallae_motions_12.glb`(내보내기 원본 SHA `eb77e5a6…`) → 클립 이름만 바꾼 `dallae_motions_12_named.glb`(SHA `aec1c81e…` · `cling` · `kneel`) · 띠 `reports/993/motions_c.jpg`.
+- 쓸 클립(초안): 대기 = depressed · 걷기 = walk · 달려듦 = run · 공격(매달림) = cling · 맞음 = hit_to_body_01 · 죽음 = kneel(무릎 → 옆으로 쓰러짐) · 잠깐 원래 얼굴 = sob · 대안 장면 누운 자세 = defeat_03 끝 · 안 씀 = hug · jump · defeat_02.
