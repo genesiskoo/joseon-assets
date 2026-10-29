@@ -36092,12 +36092,14 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
+        "status": "rejected",
         "scope": [],
         "date": "2026-10-29",
         "card": 993,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#993 PD 2026-10-29 대화"
+        ],
+        "quote": "구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성",
         "supersedes": []
       },
       "provenance": {
@@ -36132,7 +36134,8 @@
         "evidence": []
       },
       "notes": [
-        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 993, \"evidence\": [], \"quote\": null, \"supersedes\": []}"
       ]
     },
     {
@@ -36155,12 +36158,14 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
+        "status": "rejected",
         "scope": [],
         "date": "2026-10-29",
         "card": 993,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#993 PD 2026-10-29 대화"
+        ],
+        "quote": "구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성",
         "supersedes": []
       },
       "provenance": {
@@ -36195,7 +36200,8 @@
         "evidence": []
       },
       "notes": [
-        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 993, \"evidence\": [], \"quote\": null, \"supersedes\": []}"
       ]
     },
     {
@@ -36322,6 +36328,384 @@
       },
       "notes": [
         "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-ap1",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-ap1",
+      "display_name": "감염된 달래 2차 A+ 먹 + 피부·초점·충혈 1",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_ap1.png",
+        "sha256": "e8212adea6702abcbb4358bc17dd88595fe92c2a741cfc8d091fab4af1123481",
+        "bytes": 1992399,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "PD 10-29 지시로 다시 그린 감염 표현 2차 시안(피부·초점·충혈)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_ap1.prompt.txt",
+          "sha256": "08200d38966486f6e267de09362e5e92e53c9091dec9c41a55d68aa5776bfce7",
+          "bytes": 2495
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD 지시: 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」 · 상처·피·피부 훼손 없음"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-ap2",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-ap2",
+      "display_name": "감염된 달래 2차 A+ 먹 + 피부·초점·충혈 2",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_ap2.png",
+        "sha256": "35963176face9b57e45b41f534867d8f22d9d73cda283038f3a20516e910e280",
+        "bytes": 1955206,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "PD 10-29 지시로 다시 그린 감염 표현 2차 시안(피부·초점·충혈)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_ap2.prompt.txt",
+          "sha256": "02365296795f0b22e24281f202b9a74ac547c2d66f1de41d50ce6d03b98b0a1b",
+          "bytes": 2601
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD 지시: 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」 · 상처·피·피부 훼손 없음"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-cp1",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-cp1",
+      "display_name": "감염된 달래 2차 C+ 먹 안개 + 피부·초점·충혈 1",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_cp1.png",
+        "sha256": "d1f7936adc911425ddb0fda466ad2749753af4b368dfdc1592a5a7ae66c2e1db",
+        "bytes": 1981661,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "PD 10-29 지시로 다시 그린 감염 표현 2차 시안(피부·초점·충혈)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_cp1.prompt.txt",
+          "sha256": "22e0a7c409b0b40c60ed563a766c0e035838a98138144b0609025aac423589da",
+          "bytes": 2376
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD 지시: 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」 · 상처·피·피부 훼손 없음"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-cp2",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-cp2",
+      "display_name": "감염된 달래 2차 C+ 먹 안개 + 피부·초점·충혈 2",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_cp2.png",
+        "sha256": "a542f3036c1d6a2705b20012a22e437ae21d41798d7ebe31157229391075aae0",
+        "bytes": 1994462,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "PD 10-29 지시로 다시 그린 감염 표현 2차 시안(피부·초점·충혈)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_cp2.prompt.txt",
+          "sha256": "a7733ea220429977abfa7a7bac88f2502165bdaee74d62f372dc467bffd9f589",
+          "bytes": 2482
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD 지시: 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」 · 상처·피·피부 훼손 없음"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-d1",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-d1",
+      "display_name": "감염된 달래 2차 D 피부·초점·충혈만 1",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_d1.png",
+        "sha256": "13246f255ffaaa4ac830d5f973df7b18986fc4afe15c0c6328ba74178cd484af",
+        "bytes": 1952316,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "PD 10-29 지시로 다시 그린 감염 표현 2차 시안(피부·초점·충혈)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_d1.prompt.txt",
+          "sha256": "6237c2d2f45d269d60f6cb4f93a1c4af4253b10ce38220f8148f8381c471e9c5",
+          "bytes": 2426
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD 지시: 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」 · 상처·피·피부 훼손 없음"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-d2",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-d2",
+      "display_name": "감염된 달래 2차 D 피부·초점·충혈만 2",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_d2.png",
+        "sha256": "8bddc8d598e3d8b0a209403c56a030c480bd987e1f3e3953494c0fab91f4c525",
+        "bytes": 1921019,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "PD 10-29 지시로 다시 그린 감염 표현 2차 시안(피부·초점·충혈)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_d2.prompt.txt",
+          "sha256": "79ec38a5049c36d358a998322b5a809a9395b589aa68607cb821d845d17eea82",
+          "bytes": 2532
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "PD 지시: 「구미호 그림자는 빼고 피부 촛점 충혈 이렇게 다시생성」 · 상처·피·피부 훼손 없음"
       ]
     }
   ],
