@@ -1,0 +1,19 @@
+{
+  "card": 993,
+  "id": "dallae_infected",
+  "body": "two_leg_human",
+  "budget": {"tripo_credits": null, "images": null, "note": "PD 판정 ①에서 받는다 — 추천 = #992 몸 재사용 + 겉칠(Tripo AI 동작 0~40)"},
+  "stages": {
+    "0_prep": {"status": "done", "outputs": ["ledger.md"], "note": "자리 = 게임 claude/993-infected-dallae (claude/992-npc-art 위)"},
+    "1_plan_concept": {"status": "wait_pd", "outputs": [
+      "concept/dallae_inf_a1.png 239c04bf", "concept/dallae_inf_a2.png 49659a61",
+      "concept/dallae_inf_b1.png 8ff803e0", "concept/dallae_inf_b2.png 61ad032e",
+      "concept/dallae_inf_c1.png cf4f2b6e", "concept/dallae_inf_c2.png 39d3e3b8"], "tasks": [], "spent": "Codex 이미지 6", "note": "멈춤 ①"},
+    "2_refine": {"status": "todo"},
+    "3_apose": {"status": "todo", "note": "몸 재사용이면 skip"},
+    "4_3d_rig": {"status": "todo", "note": "몸 재사용이면 skip"},
+    "5_motion": {"status": "todo"},
+    "6_vfx": {"status": "todo"},
+    "7_intake": {"status": "todo"}
+  }
+}

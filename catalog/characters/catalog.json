@@ -175,6 +175,13 @@
           "runtime_aliases": [
             "dallae"
           ]
+        },
+        {
+          "form_id": "infected",
+          "display_name": "감염된 달래(심굴 네임드)",
+          "runtime_aliases": [
+            "dallae_infected"
+          ]
         }
       ]
     },
@@ -35937,6 +35944,384 @@
       "notes": [
         "Triangle 11,708면 · 65뼈 · idle·walk · 텍스처 1,024(반입) · ModelDef scale 1.785",
         "게임 반입 2026-10-29 = assets/models/gapdol/gapdol.glb · data/models/gapdol.tres (브랜치 claude/992-npc-art 미착륙 — runtime_inventory 갱신은 착륙 때 지휘 · NPC 배치 = #991)"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-a1",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-a1",
+      "display_name": "감염된 달래 시안 A 번지는 먹 1",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_a1.png",
+        "sha256": "239c04bf2cf79346a9901c985147bfea8557ef1b9a77cfb6a992e742ab67ad6a",
+        "bytes": 1885330,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "D-120 감염된 아이(심굴 네임드) 감염 표현 시안(#993 /monster-make 1단계)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_a1.prompt.txt",
+          "sha256": "7a1406a41e62650e2dcf81dc27c1b38fd890aa3e285798d25801dd258fcc1d6f",
+          "bytes": 2060
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-a2",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-a2",
+      "display_name": "감염된 달래 시안 A 번지는 먹 2",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_a2.png",
+        "sha256": "49659a61525ccdea75befc487838fe23b32ac1691bf5742e275136e465d2eef3",
+        "bytes": 1871362,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "D-120 감염된 아이(심굴 네임드) 감염 표현 시안(#993 /monster-make 1단계)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_a2.prompt.txt",
+          "sha256": "daebd6102bbf0e60b92aba28b08432361529a5663153800b2fcd2b09ea58d16c",
+          "bytes": 2150
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-b1",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-b1",
+      "display_name": "감염된 달래 시안 B 꼬리 그림자 1",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_b1.png",
+        "sha256": "8ff803e03674b1171161eed7ca9771b88956ef2f950a0ab2f78e0ea94804f341",
+        "bytes": 1901810,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "D-120 감염된 아이(심굴 네임드) 감염 표현 시안(#993 /monster-make 1단계)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_b1.prompt.txt",
+          "sha256": "90804ae4759abcc46485d8c17bd896d2da3e34c731aa24c7c0c9829d1353d3c5",
+          "bytes": 2009
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-b2",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-b2",
+      "display_name": "감염된 달래 시안 B 꼬리 그림자 2",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_b2.png",
+        "sha256": "61ad032ebfd0ae41e3abc4cc807c21f0ca0f5dba3c2322f7397bc49f12a45928",
+        "bytes": 2050792,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "D-120 감염된 아이(심굴 네임드) 감염 표현 시안(#993 /monster-make 1단계)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_b2.prompt.txt",
+          "sha256": "fd9d00dbc53b69284fff678b88f33e099ed2fdb1b1a9bcc4174418a32c756cf1",
+          "bytes": 2099
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-c1",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-c1",
+      "display_name": "감염된 달래 시안 C 먹 안개 1",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_c1.png",
+        "sha256": "cf4f2b6edad253b00788f69ce15aec5442af91957b180f50d1b0d2462882ebe8",
+        "bytes": 1937905,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "D-120 감염된 아이(심굴 네임드) 감염 표현 시안(#993 /monster-make 1단계)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_c1.prompt.txt",
+          "sha256": "fbe7158c23a975955dec30718eee13ab671b9b5db6d25ef31f408865bc1a01eb",
+          "bytes": 1960
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
+      ]
+    },
+    {
+      "asset_id": "card993-dallae-infected-c2",
+      "character_id": "dallae",
+      "form_id": "infected",
+      "version_id": "card993-dallae-infected-c2",
+      "display_name": "감염된 달래 시안 C 먹 안개 2",
+      "role": "monster",
+      "runtime_aliases": [
+        "dallae_infected"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/993_dallae_infected/concept/dallae_inf_c2.png",
+        "sha256": "39d3e3b8564a4808d1696ed480794aaa0870a5ac61981471410b6704f2d92abb",
+        "bytes": 1895393,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-10-29",
+        "card": 993,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 993,
+        "source_commit": null,
+        "inclusion_reason": "D-120 감염된 아이(심굴 네임드) 감염 표현 시안(#993 /monster-make 1단계)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/993_dallae_infected/concept/dallae_inf_c2.prompt.txt",
+          "sha256": "a296adff6101e68494e94181dd4b0ea0cf9d4534262f28e1e00ef32924f5e58a",
+          "bytes": 2050
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/concept/child_b.png",
+            "sha256": "e3e9dc4b6ea5f8254eb6e57c4be983c42a081d8edb6637b9e0c560ec81cac786",
+            "bytes": 1883568,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "얼굴·옷 = #992 달래 child_b 그대로 · 감염 = 먹·그림자만"
       ]
     }
   ],
