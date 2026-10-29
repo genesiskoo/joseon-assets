@@ -21304,12 +21304,22 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
+        "status": "approved",
+        "scope": [
+          "dialogue_portrait"
+        ],
         "date": "2026-10-29",
         "card": 992,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#992 PD 2026-10-29 「승인」(지휘 세션 local_38d34822 전달 — 초상 반입 + Tripo 3D 120크레딧)",
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/ACCEPTANCE.md",
+            "sha256": "8a7dd901a2c89ee8419d722d81899b97ecf3ddbcc516625fa501779911bdfc06",
+            "bytes": 2058
+          }
+        ],
+        "quote": "승인",
         "supersedes": []
       },
       "provenance": {
@@ -21341,11 +21351,22 @@
         "world_display": "not_checked",
         "freshness": "indeterminate",
         "bindings": [],
-        "evidence": []
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/game/dallae/neutral.png",
+            "sha256": "ae43a011c39ac7ec8ea51f7d2609902bf6c72aef14058c6cffc0e56fdd78a2b9",
+            "bytes": 1366593,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
       },
       "notes": [
         "derived_from: workbench/production/992_new_npcs/concept/child_b.png",
-        "1024×1536 RGBA · 반입 전(알파 손질 필요 여부는 intake 때)"
+        "1024×1536 RGBA · 반입 전(알파 손질 필요 여부는 intake 때)",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 992, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "게임 반입 2026-10-29 = 알파만 손질한 사본 workbench/production/992_new_npcs/game/dallae/neutral.png (sha ae43a011c39ac7ec8ea51f7d2609902bf6c72aef14058c6cffc0e56fdd78a2b9) → game assets/portraits/talk/dallae/neutral.png · data/portraits/dallae.tres (tools/intake_portrait.ps1 · 브랜치 claude/992-npc-art 미착륙 — runtime_inventory 갱신은 착륙 때 지휘)"
       ]
     },
     {
@@ -21368,12 +21389,22 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
+        "status": "approved",
+        "scope": [
+          "dialogue_portrait"
+        ],
         "date": "2026-10-29",
         "card": 992,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#992 PD 2026-10-29 「승인」(지휘 세션 local_38d34822 전달 — 초상 반입 + Tripo 3D 120크레딧)",
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/ACCEPTANCE.md",
+            "sha256": "8a7dd901a2c89ee8419d722d81899b97ecf3ddbcc516625fa501779911bdfc06",
+            "bytes": 2058
+          }
+        ],
+        "quote": "승인",
         "supersedes": []
       },
       "provenance": {
@@ -21405,11 +21436,22 @@
         "world_display": "not_checked",
         "freshness": "indeterminate",
         "bindings": [],
-        "evidence": []
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/game/dallae/sad.png",
+            "sha256": "665f9383af39d583cc352c4f7e162a3248cb6631aa2f91167242614c7db2d025",
+            "bytes": 1365624,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
       },
       "notes": [
         "derived_from: workbench/production/992_new_npcs/concept/child_b.png",
-        "neutral 에서 얼굴만 편집 · 실루엣 같음"
+        "neutral 에서 얼굴만 편집 · 실루엣 같음",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 992, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "게임 반입 2026-10-29 = 알파만 손질한 사본 workbench/production/992_new_npcs/game/dallae/sad.png (sha 665f9383af39d583cc352c4f7e162a3248cb6631aa2f91167242614c7db2d025) → game assets/portraits/talk/dallae/sad.png · data/portraits/dallae.tres (tools/intake_portrait.ps1 · 브랜치 claude/992-npc-art 미착륙 — runtime_inventory 갱신은 착륙 때 지휘)"
       ]
     },
     {
@@ -21432,12 +21474,22 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
+        "status": "approved",
+        "scope": [
+          "dialogue_portrait"
+        ],
         "date": "2026-10-29",
         "card": 992,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#992 PD 2026-10-29 「승인」(지휘 세션 local_38d34822 전달 — 초상 반입 + Tripo 3D 120크레딧)",
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/ACCEPTANCE.md",
+            "sha256": "8a7dd901a2c89ee8419d722d81899b97ecf3ddbcc516625fa501779911bdfc06",
+            "bytes": 2058
+          }
+        ],
+        "quote": "승인",
         "supersedes": []
       },
       "provenance": {
@@ -21469,11 +21521,22 @@
         "world_display": "not_checked",
         "freshness": "indeterminate",
         "bindings": [],
-        "evidence": []
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/game/gapdol/neutral.png",
+            "sha256": "813a85b0b4197591fd7d0b92866c2630a5afc8830c2d8100aab3e63e2c9bb43a",
+            "bytes": 1479396,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
       },
       "notes": [
         "derived_from: workbench/production/992_new_npcs/concept/youth_j.png",
-        "3판(1판 얼굴 잘생겨짐 · 2판 모자 깨짐 = archive/)"
+        "3판(1판 얼굴 잘생겨짐 · 2판 모자 깨짐 = archive/)",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 992, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "게임 반입 2026-10-29 = 알파만 손질한 사본 workbench/production/992_new_npcs/game/gapdol/neutral.png (sha 813a85b0b4197591fd7d0b92866c2630a5afc8830c2d8100aab3e63e2c9bb43a) → game assets/portraits/talk/gapdol/neutral.png · data/portraits/gapdol.tres (tools/intake_portrait.ps1 · 브랜치 claude/992-npc-art 미착륙 — runtime_inventory 갱신은 착륙 때 지휘)"
       ]
     },
     {
@@ -21496,12 +21559,22 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
+        "status": "approved",
+        "scope": [
+          "dialogue_portrait"
+        ],
         "date": "2026-10-29",
         "card": 992,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#992 PD 2026-10-29 「승인」(지휘 세션 local_38d34822 전달 — 초상 반입 + Tripo 3D 120크레딧)",
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/ACCEPTANCE.md",
+            "sha256": "8a7dd901a2c89ee8419d722d81899b97ecf3ddbcc516625fa501779911bdfc06",
+            "bytes": 2058
+          }
+        ],
+        "quote": "승인",
         "supersedes": []
       },
       "provenance": {
@@ -21533,11 +21606,22 @@
         "world_display": "not_checked",
         "freshness": "indeterminate",
         "bindings": [],
-        "evidence": []
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/992_new_npcs/game/gapdol/smile.png",
+            "sha256": "ef62b9ffb3e39f94fad6818a10a8e3a4e59bc1fe3011aa8424ee0155185de951",
+            "bytes": 1480178,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
       },
       "notes": [
         "derived_from: workbench/production/992_new_npcs/concept/youth_j.png",
-        "neutral 에서 얼굴만 편집 · 실루엣 같음"
+        "neutral 에서 얼굴만 편집 · 실루엣 같음",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 992, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "게임 반입 2026-10-29 = 알파만 손질한 사본 workbench/production/992_new_npcs/game/gapdol/smile.png (sha ef62b9ffb3e39f94fad6818a10a8e3a4e59bc1fe3011aa8424ee0155185de951) → game assets/portraits/talk/gapdol/smile.png · data/portraits/gapdol.tres (tools/intake_portrait.ps1 · 브랜치 claude/992-npc-art 미착륙 — runtime_inventory 갱신은 착륙 때 지휘)"
       ]
     },
     {
