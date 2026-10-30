@@ -36760,12 +36760,16 @@
         "height": 560
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
-        "date": "2026-10-29",
+        "status": "approved",
+        "scope": [
+          "3D 몸 · 감염된 달래(봉밀굴 심굴 네임드) — 구운 감염 텍스처 + 동작 12"
+        ],
+        "date": "2026-10-30",
         "card": 993,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#993 PD 2026-10-30 대화 「합쳐」(판정 ④ https://claude.ai/artifact/FpcgYv1FBYeBXKDJnrGLU4)"
+        ],
+        "quote": "합쳐",
         "supersedes": []
       },
       "provenance": {
@@ -36803,7 +36807,9 @@
       },
       "notes": [
         "게임 반입 2026-10-29 = assets/models/dallae_infected/dallae_infected.glb · data/models/dallae_infected.tres (브랜치 claude/993-infected-dallae 미착륙 · EnemyDef·명단 = #991)",
-        "look_audit 채도 0.153 = 밴드 밖(병색 바램) — PD 판정"
+        "look_audit 채도 0.153 = 밴드 밖(병색 바램) — PD 판정",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 993, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "/motion-pass 게임 bad9ae95 · assets 446f1528 — ModelDef 박자·발 잠금(GLB 그대로) · 채도 0.153 = PD 10-29 「그대로 둠」"
       ]
     }
   ],
