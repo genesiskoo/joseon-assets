@@ -81,4 +81,5 @@
 - 발 잠금 단위 버그(`actors/clip_remake.gd`): walk/run_speed = 게임 배율 값인데 잠금은 모델 뿌리 안(배율 1)에서 돌아 배율 1.329 몸이 30% 빨리 디뎠다(잠근 뒤 3.705u/s) → ModelDef.scale로 나눔 → 2.829(목표 2.855, −1%) · 두 발 2.825·2.834(전 2.56·3.23). 발 잠금 쓰는 다른 모델 10개는 전부 배율 1 = 영향 0.
 - after(게임 경로): 전환 851·945°/s PASS · 달리기 넘김 19.4 → 4.8cm(한가운데 5.5) · 발 땅(foot_ground) 공중 창 밖 PASS · motion_pass 「루프 이음새 run 19.5」 줄은 Blender 파일 자라 clip_cut을 못 본다(게임 자 = loco_probe 이음새 줄이 정본).
 - 영상 = `reports/993/motion_pass/run_zoom.mp4` · `cling_ba.mp4` · `hit_ba.mp4`(왼 전 · 오른 후, model_viewer = ActorVisual 길).
+- **판정 ④ = PD 2026-10-30 「합쳐」**(https://claude.ai/artifact/FpcgYv1FBYeBXKDJnrGLU4) → 자료관 3D approved(313fdfc5) · 통합 브랜치 합치기·e2e dallae_infected = 지휘.
 - 남김(보고만): kneel 손·몸 최저 −12cm(누운 끝 — #991 먹 풀림이 덮음) · defeat_03 누운 장면 발 뜸 = 눕는 자세 · run 숙임 34° · 달리기 발 디딤 ±95ms 절뚝임(클립 자체).
