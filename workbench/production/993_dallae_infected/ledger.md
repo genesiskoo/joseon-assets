@@ -72,3 +72,13 @@
 - PD 10-29 「여기서 만들기」(먹 겉칠 = 이 카드에서) → **구운 감염 텍스처**: 게임 `tools/infect_bake.py --reach 0.4`(4차 — 1차 손 장갑·2차 주황 실금(UV 틈)·3차 매끈한 그러데이션을 고침) · 미리보기 `reports/993/bake_preview.png`.
 - 반입본 = `game/dallae_infected.glb`(SHA `6592a6d9…` · `dallae_motions_12_named.glb` → shrink 1024 → matte → infect_bake) → 게임 `assets/models/dallae_infected/` + `data/models/dallae_infected.tres`(게임 c3919589) · look_audit 밝기 0.271 · **채도 0.153(밴드 0.18 밖 — 병색 바램) → PD 2026-10-29 「그대로 둠」(감염된 몸만의 예외 · 다시 굽지 않음)** · 대비 0.141 · 텍셀 788 · 영상 `reports/993/idle_compare.mp4` · `cling.mp4` · `kneel.mp4`.
 - 쓸 클립(초안): 대기 = depressed · 걷기 = walk · 달려듦 = run · 공격(매달림) = cling · 맞음 = hit_to_body_01 · 죽음 = kneel(무릎 → 옆으로 쓰러짐) · 잠깐 원래 얼굴 = sob · 대안 장면 누운 자세 = defeat_03 끝 · 안 씀 = hug · jump · defeat_02.
+- #991 배선(story-d120 94e1d698) PD 「지금대로」: sob 안 씀 · 유품 늦게 떨어짐 = 후속.
+
+## /motion-pass (M4, 2026-10-30) — GLB 안 건드림 · ModelDef 숫자 + clip_remake 한 줄
+- before = `reports/993/motion_pass/before` FAIL 3: 대기(웅크림)↔달리기 전환 쓸기 1,496·1,320°/s(판정선 964) · 달리기 루프 이음새 19.5°(넘김 19.4cm, 한가운데 5.3cm).
+- 숨은 것: 반입 때 walk_speed·run_speed·step_phases를 안 적어 기본값(1.05·2.4) → 달리기 3.8u/s에서 발 10% 미끄럼.
+- 고침 = ModelDef: 지면 속도 run 2.855 · walk 0.804(loco_probe --model, 게임 배율) · 문턱 저절로 · 디딤 위상 · 발 잠금 walk·run · 달리기 끝 0.2초 첫 자세로 되돌림(창을 옮겨도 안 줄어 원 창이 최선 — loop_scan) · 매달림 창 0.6~2.4 + 되돌림 0.3 · 타격 0.42 · 선딜 맞춤(0.75초 → 선딜 0.6초 = 1.25배) · 피격 0.15~0.6 → 0.3초 · run_idle_blend 0.22.
+- 발 잠금 단위 버그(`actors/clip_remake.gd`): walk/run_speed = 게임 배율 값인데 잠금은 모델 뿌리 안(배율 1)에서 돌아 배율 1.329 몸이 30% 빨리 디뎠다(잠근 뒤 3.705u/s) → ModelDef.scale로 나눔 → 2.829(목표 2.855, −1%) · 두 발 2.825·2.834(전 2.56·3.23). 발 잠금 쓰는 다른 모델 10개는 전부 배율 1 = 영향 0.
+- after(게임 경로): 전환 851·945°/s PASS · 달리기 넘김 19.4 → 4.8cm(한가운데 5.5) · 발 땅(foot_ground) 공중 창 밖 PASS · motion_pass 「루프 이음새 run 19.5」 줄은 Blender 파일 자라 clip_cut을 못 본다(게임 자 = loco_probe 이음새 줄이 정본).
+- 영상 = `reports/993/motion_pass/run_zoom.mp4` · `cling_ba.mp4` · `hit_ba.mp4`(왼 전 · 오른 후, model_viewer = ActorVisual 길).
+- 남김(보고만): kneel 손·몸 최저 −12cm(누운 끝 — #991 먹 풀림이 덮음) · defeat_03 누운 장면 발 뜸 = 눕는 자세 · run 숙임 34° · 달리기 발 디딤 ±95ms 절뚝임(클립 자체).

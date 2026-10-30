@@ -1,0 +1,37 @@
+{
+  "fails": 0,
+  "limit_deg_s": 400.0,
+  "model": "dallae_infected",
+  "pairs": [
+    {
+      "blend": 0.22,
+      "from": "run",
+      "limit": 963.922895320831,
+      "max_tip_cm_s": 1896.78937196732,
+      "mean_turn_deg": 44.1184116435171,
+      "own_sweep": 945.022446392971,
+      "pass": true,
+      "sweep_max": 850.664612443296,
+      "sweep_mean": 621.22481451592,
+      "tick_max": 1136.76935224597,
+      "tick_mean": 894.638936482214,
+      "to": "idle",
+      "worst_phase": 0.36
+    },
+    {
+      "blend": 0.22,
+      "from": "idle",
+      "limit": 963.922895320831,
+      "max_tip_cm_s": 1938.23575973511,
+      "mean_turn_deg": 40.3529453213555,
+      "own_sweep": 945.022446392971,
+      "pass": true,
+      "sweep_max": 945.030779223759,
+      "sweep_mean": 945.015953258788,
+      "tick_max": 1060.375189021,
+      "tick_mean": 1060.375189021,
+      "to": "run",
+      "worst_phase": 0.949090876177322
+    }
+  ]
+}

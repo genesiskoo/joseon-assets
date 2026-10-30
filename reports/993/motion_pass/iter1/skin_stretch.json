@@ -1,0 +1,246 @@
+{
+  "model": "dallae_infected",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "cling",
+      "edges": 18698,
+      "m": 0.169920809566975,
+      "px": 11.1220893534747,
+      "rest_cm": 8.93806144595146,
+      "springs": false,
+      "t": 1.65
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "cling",
+      "edges": 18698,
+      "m": 0.169920809566975,
+      "px": 11.1220893534747,
+      "rest_cm": 8.93806144595146,
+      "springs": true,
+      "t": 1.65
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "defeat_02",
+      "edges": 18698,
+      "m": 0.117522701621056,
+      "px": 7.69239501519637,
+      "rest_cm": 7.18744099140167,
+      "springs": false,
+      "t": 4.08333333333332
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "defeat_02",
+      "edges": 18698,
+      "m": 0.117522701621056,
+      "px": 7.69239501519637,
+      "rest_cm": 7.18744099140167,
+      "springs": true,
+      "t": 4.08333333333332
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "defeat_03",
+      "edges": 18698,
+      "m": 0.284456193447113,
+      "px": 18.618950843811,
+      "rest_cm": 7.18744099140167,
+      "springs": false,
+      "t": 7.68333333333331
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "defeat_03",
+      "edges": 18698,
+      "m": 0.284456193447113,
+      "px": 18.618950843811,
+      "rest_cm": 7.18744099140167,
+      "springs": true,
+      "t": 7.68333333333331
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "depressed",
+      "edges": 18698,
+      "m": 0.140522859990597,
+      "px": 9.19785992665724,
+      "rest_cm": 8.93806144595146,
+      "springs": false,
+      "t": 8.88333333333335
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "depressed",
+      "edges": 18698,
+      "m": 0.140522859990597,
+      "px": 9.19785992665724,
+      "rest_cm": 8.93806144595146,
+      "springs": true,
+      "t": 8.88333333333335
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "hit_to_body_01",
+      "edges": 18698,
+      "m": 0.16812938451767,
+      "px": 11.0048324411566,
+      "rest_cm": 7.18744099140167,
+      "springs": false,
+      "t": 0.316666666666667
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "hit_to_body_01",
+      "edges": 18698,
+      "m": 0.16812938451767,
+      "px": 11.0048324411566,
+      "rest_cm": 7.18744099140167,
+      "springs": true,
+      "t": 0.316666666666667
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "hug",
+      "edges": 18698,
+      "m": 0.184885539114475,
+      "px": 12.1015989238566,
+      "rest_cm": 8.93806144595146,
+      "springs": false,
+      "t": 3.61666666666666
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "hug",
+      "edges": 18698,
+      "m": 0.184885539114475,
+      "px": 12.1015989238566,
+      "rest_cm": 8.93806144595146,
+      "springs": true,
+      "t": 3.61666666666666
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "idle",
+      "edges": 18698,
+      "m": 0.0436682030558586,
+      "px": 2.85828238183802,
+      "rest_cm": 7.18744099140167,
+      "springs": false,
+      "t": 25.4166666666665
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "idle",
+      "edges": 18698,
+      "m": 0.0436682030558586,
+      "px": 2.85828238183802,
+      "rest_cm": 7.18744099140167,
+      "springs": true,
+      "t": 25.4166666666665
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "jump",
+      "edges": 18698,
+      "m": 0.0988730862736702,
+      "px": 6.47169291973114,
+      "rest_cm": 8.93806144595146,
+      "springs": false,
+      "t": 4.18333333333332
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "jump",
+      "edges": 18698,
+      "m": 0.0988730862736702,
+      "px": 6.47169291973114,
+      "rest_cm": 8.93806144595146,
+      "springs": true,
+      "t": 4.18333333333332
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "kneel",
+      "edges": 18698,
+      "m": 0.246348530054092,
+      "px": 16.124631058086,
+      "rest_cm": 7.18744099140167,
+      "springs": false,
+      "t": 2.35
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "kneel",
+      "edges": 18698,
+      "m": 0.246348530054092,
+      "px": 16.124631058086,
+      "rest_cm": 7.18744099140167,
+      "springs": true,
+      "t": 2.35
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "run",
+      "edges": 18698,
+      "m": 0.261301249265671,
+      "px": 17.1033544973894,
+      "rest_cm": 7.18744099140167,
+      "springs": false,
+      "t": 1.01666666666667
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "run",
+      "edges": 18698,
+      "m": 0.261301249265671,
+      "px": 17.1033544973894,
+      "rest_cm": 7.18744099140167,
+      "springs": true,
+      "t": 1.01666666666667
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "sob",
+      "edges": 18698,
+      "m": 0.118680320680141,
+      "px": 7.76816644451835,
+      "rest_cm": 8.93806144595146,
+      "springs": false,
+      "t": 2.35
+    },
+    {
+      "bones": "mixamorig_LeftUpLeg–mixamorig_LeftLeg",
+      "clip": "sob",
+      "edges": 18698,
+      "m": 0.118680320680141,
+      "px": 7.76816644451835,
+      "rest_cm": 8.93806144595146,
+      "springs": true,
+      "t": 2.35
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "walk",
+      "edges": 18698,
+      "m": 0.172418415546417,
+      "px": 11.2855690175837,
+      "rest_cm": 7.18744099140167,
+      "springs": false,
+      "t": 1.78333333333333
+    },
+    {
+      "bones": "mixamorig_RightLeg–mixamorig_LeftLeg",
+      "clip": "walk",
+      "edges": 18698,
+      "m": 0.172418415546417,
+      "px": 11.2855690175837,
+      "rest_cm": 7.18744099140167,
+      "springs": true,
+      "t": 1.78333333333333
+    }
+  ]
+}

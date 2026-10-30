@@ -1,0 +1,152 @@
+{
+ "src": "C:\\workspace\\joseon\\.claude\\worktrees\\993-infected-dallae\\assets\\models\\dallae_infected\\dallae_infected.glb",
+ "fps": 24,
+ "meshes": [
+  {
+   "name": "tripo_node_4a14acfd-9770-4a13-b41d-1d34693b69fe",
+   "verts": 8973,
+   "unweighted": 0,
+   "rest_floor_cm": 0.0
+  }
+ ],
+ "clips": {
+  "cling": {
+   "len_s": 3.958,
+   "stretch": {
+    "cm": 11.84,
+    "pct": 176.1,
+    "bone": "mixamorig:LeftLeg",
+    "frame": 31.7
+   },
+   "floor_min_cm": -0.32,
+   "floor_max_cm": 0.15
+  },
+  "defeat_02": {
+   "len_s": 8.458,
+   "stretch": {
+    "cm": 8.51,
+    "pct": 157.3,
+    "bone": "mixamorig:RightLeg",
+    "frame": 50.8
+   },
+   "floor_min_cm": 0.36,
+   "floor_max_cm": 0.45
+  },
+  "defeat_03": {
+   "len_s": 5.542,
+   "stretch": {
+    "cm": 21.0,
+    "pct": 388.2,
+    "bone": "mixamorig:RightLeg",
+    "frame": 88.7
+   },
+   "floor_min_cm": -7.87,
+   "floor_max_cm": 3.45
+  },
+  "depressed": {
+   "len_s": 4.583,
+   "stretch": {
+    "cm": 10.46,
+    "pct": 155.6,
+    "bone": "mixamorig:LeftLeg",
+    "frame": 110.0
+   },
+   "floor_min_cm": -0.3,
+   "floor_max_cm": 1.03
+  },
+  "hit_to_body_01": {
+   "len_s": 1.292,
+   "stretch": {
+    "cm": 12.55,
+    "pct": 232.1,
+    "bone": "mixamorig:RightLeg",
+    "frame": 10.3
+   },
+   "floor_min_cm": 0.33,
+   "floor_max_cm": 0.77
+  },
+  "hug": {
+   "len_s": 5.583,
+   "stretch": {
+    "cm": 13.51,
+    "pct": 200.9,
+    "bone": "mixamorig:LeftLeg",
+    "frame": 44.7
+   },
+   "floor_min_cm": -0.02,
+   "floor_max_cm": 0.96
+  },
+  "idle": {
+   "len_s": 15.333,
+   "stretch": {
+    "cm": 3.26,
+    "pct": 60.3,
+    "bone": "mixamorig:RightLeg",
+    "frame": 306.7
+   },
+   "floor_min_cm": 0.13,
+   "floor_max_cm": 0.23,
+   "seam_deg": 0.1,
+   "seam_hip_cm": 0.0
+  },
+  "jump": {
+   "len_s": 2.208,
+   "stretch": {
+    "cm": 6.81,
+    "pct": 101.2,
+    "bone": "mixamorig:LeftLeg",
+    "frame": 17.7
+   },
+   "floor_min_cm": 0.32,
+   "floor_max_cm": 17.65
+  },
+  "kneel": {
+   "len_s": 2.958,
+   "stretch": {
+    "cm": 17.74,
+    "pct": 328.0,
+    "bone": "mixamorig:RightLeg",
+    "frame": 29.6
+   },
+   "floor_min_cm": -12.3,
+   "floor_max_cm": 1.38
+  },
+  "run": {
+   "len_s": 1.25,
+   "stretch": {
+    "cm": 19.48,
+    "pct": 360.2,
+    "bone": "mixamorig:RightLeg",
+    "frame": 12.5
+   },
+   "floor_min_cm": -0.27,
+   "floor_max_cm": 5.19,
+   "seam_deg": 19.5,
+   "seam_hip_cm": 0.74
+  },
+  "sob": {
+   "len_s": 5.583,
+   "stretch": {
+    "cm": 8.92,
+    "pct": 132.6,
+    "bone": "mixamorig:LeftLeg",
+    "frame": 33.5
+   },
+   "floor_min_cm": -0.33,
+   "floor_max_cm": -0.17
+  },
+  "walk": {
+   "len_s": 2.333,
+   "stretch": {
+    "cm": 10.66,
+    "pct": 197.2,
+    "bone": "mixamorig:RightLeg",
+    "frame": 9.3
+   },
+   "floor_min_cm": 0.02,
+   "floor_max_cm": 0.61,
+   "seam_deg": 0.04,
+   "seam_hip_cm": 0.0
+  }
+ }
+}

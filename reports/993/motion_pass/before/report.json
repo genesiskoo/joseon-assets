@@ -1,0 +1,204 @@
+{
+ "id": "dallae_infected",
+ "when": "2026-10-30 09:19",
+ "layers": {
+  "L0": [
+   {
+    "name": "model_check",
+    "value": "PASS",
+    "pass": true,
+    "note": ""
+   },
+   {
+    "name": "무가중 정점",
+    "value": 0,
+    "pass": true,
+    "note": ""
+   }
+  ],
+  "L1": [
+   {
+    "name": "전환 쓸기 run>idle",
+    "value": 1496,
+    "pass": false,
+    "note": "판정선 964°/s · 평균 953 · 섞기 0.10초"
+   },
+   {
+    "name": "전환 쓸기 idle>run",
+    "value": 1320,
+    "pass": false,
+    "note": "판정선 964°/s · 평균 1019 · 섞기 0.10초"
+   },
+   {
+    "name": "늘어남 cling",
+    "value": 11.84,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 15.7cm · 키의 12.1% · mixamorig:LeftLeg · 땅 -0.3~0.1cm"
+   },
+   {
+    "name": "늘어남 defeat_02",
+    "value": 8.51,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 11.3cm · 키의 8.7% · mixamorig:RightLeg · 땅 0.4~0.5cm"
+   },
+   {
+    "name": "늘어남 defeat_03",
+    "value": 21.0,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 27.9cm · 키의 21.5% · mixamorig:RightLeg · 땅 -7.9~3.5cm"
+   },
+   {
+    "name": "늘어남 depressed",
+    "value": 10.46,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 13.9cm · 키의 10.7% · mixamorig:LeftLeg · 땅 -0.3~1.0cm"
+   },
+   {
+    "name": "늘어남 hit_to_body_01",
+    "value": 12.55,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 16.7cm · 키의 12.8% · mixamorig:RightLeg · 땅 0.3~0.8cm"
+   },
+   {
+    "name": "늘어남 hug",
+    "value": 13.51,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 18.0cm · 키의 13.8% · mixamorig:LeftLeg · 땅 -0.0~1.0cm"
+   },
+   {
+    "name": "루프 이음새 idle",
+    "value": 0.1,
+    "pass": true,
+    "note": "골반 0.00cm"
+   },
+   {
+    "name": "늘어남 idle",
+    "value": 3.26,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 4.3cm · 키의 3.3% · mixamorig:RightLeg · 땅 0.1~0.2cm"
+   },
+   {
+    "name": "늘어남 jump",
+    "value": 6.81,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 9.1cm · 키의 7.0% · mixamorig:LeftLeg · 땅 0.3~17.6cm"
+   },
+   {
+    "name": "늘어남 kneel",
+    "value": 17.74,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 23.6cm · 키의 18.1% · mixamorig:RightLeg · 땅 -12.3~1.4cm"
+   },
+   {
+    "name": "루프 이음새 run",
+    "value": 19.5,
+    "pass": false,
+    "note": "골반 0.74cm"
+   },
+   {
+    "name": "늘어남 run",
+    "value": 19.48,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 25.9cm · 키의 19.9% · mixamorig:RightLeg · 땅 -0.3~5.2cm"
+   },
+   {
+    "name": "늘어남 sob",
+    "value": 8.92,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 11.9cm · 키의 9.1% · mixamorig:LeftLeg · 땅 -0.3~-0.2cm"
+   },
+   {
+    "name": "루프 이음새 walk",
+    "value": 0.04,
+    "pass": true,
+    "note": "골반 0.00cm"
+   },
+   {
+    "name": "늘어남 walk",
+    "value": 10.66,
+    "pass": true,
+    "note": "참고(문턱 PD) · 화면 14.2cm · 키의 10.9% · mixamorig:RightLeg · 땅 0.0~0.6cm"
+   },
+   {
+    "name": "화면px cling",
+    "value": 11.1,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 17.0cm · mixamorig_LeftUpLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px defeat_02",
+    "value": 7.7,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 11.8cm · mixamorig_RightLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px defeat_03",
+    "value": 18.6,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 28.4cm · mixamorig_RightLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px depressed",
+    "value": 9.2,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 14.1cm · mixamorig_LeftUpLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px hit_to_body_01",
+    "value": 11.0,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 16.8cm · mixamorig_RightLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px hug",
+    "value": 12.1,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 18.5cm · mixamorig_LeftUpLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px idle",
+    "value": 2.9,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 4.4cm · mixamorig_RightLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px jump",
+    "value": 6.5,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 9.9cm · mixamorig_LeftUpLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px kneel",
+    "value": 16.1,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 24.6cm · mixamorig_RightLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px run",
+    "value": 17.1,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 26.1cm · mixamorig_RightLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px sob",
+    "value": 7.8,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 11.9cm · mixamorig_LeftUpLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   },
+   {
+    "name": "화면px walk",
+    "value": 11.3,
+    "pass": true,
+    "note": "게임 안 · 옷 물리 켬 · 17.2cm · mixamorig_RightLeg–mixamorig_LeftLeg (문턱 PD — 크기는 필요조건, 가려지면 안 보인다 · L3가 최종)"
+   }
+  ],
+  "ref": [
+   {
+    "name": "loco_probe",
+    "value": "",
+    "pass": true,
+    "note": "     지면 속도 = 루트 0.000 + 디딤 발 0.605 = 0.605u/s (발마다 뒤로 0.593 · 0.617 · 디딤 몫 0.49 · 0.50) /      이음새 (프레임마다 뼈 움직임 cm): 끝 1.3 1.3 1.6 1.6 1.7 1.9 → 넘김 1.9 → 첫 1.8 1.8 2.2 · 한가운데 1.3 ○ /   → ModelDef.step_phases = {\"run\": Vector2(0.093, 0.593), \"walk\": Vector2(0.270, 0.770)} /   → 지면 속도 = run 2.148 · walk 0.605 / [DevMode] ON / [godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)"
+   }
+  ]
+ }
+}
