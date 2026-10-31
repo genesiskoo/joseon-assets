@@ -1,0 +1,282 @@
+{
+ "commit": "a69f6a46",
+ "made": "2026-10-31 12:35",
+ "stage": 3,
+ "rows": [
+  {
+   "clips": {
+    "attack": "attack",
+    "die": "die",
+    "hit": "hit",
+    "idle": "idle",
+    "run": "run",
+    "walk": "walk"
+   },
+   "grade": 0,
+   "id": "bat",
+   "info": {
+    "loco": {
+     "kind": "run",
+     "raw": 1.0,
+     "scale": 1.0,
+     "slip": 0.0
+    },
+    "motion_deg": {
+     "attack": 62.0,
+     "die": 92.1,
+     "hit": 37.9,
+     "idle": 82.5,
+     "run": 105.8,
+     "walk": 94.5
+    }
+   },
+   "key": "bat",
+   "model": "bat",
+   "name": "박쥐",
+   "problems": [],
+   "video": "v/bat.mp4",
+   "scenes": [
+    [
+     "chase",
+     0.03
+    ],
+    [
+     "attack",
+     16.03
+    ],
+    [
+     "hit",
+     21.03
+    ],
+    [
+     "die",
+     22.87
+    ],
+    [
+     "leader",
+     26.9
+    ]
+   ]
+  },
+  {
+   "clips": {
+    "attack": "attack",
+    "die": "die",
+    "hit": "hit",
+    "idle": "idle",
+    "run": "run",
+    "walk": "walk"
+   },
+   "grade": 0,
+   "id": "cave_bat",
+   "info": {
+    "loco": {
+     "kind": "run",
+     "raw": 0.91,
+     "scale": 0.91,
+     "slip": 0.0
+    },
+    "motion_deg": {
+     "attack": 62.0,
+     "die": 92.1,
+     "hit": 37.9,
+     "idle": 82.5,
+     "run": 105.8,
+     "walk": 94.5
+    }
+   },
+   "key": "cave_bat",
+   "model": "bat",
+   "name": "굴 박쥐",
+   "problems": [],
+   "video": "v/cave_bat.mp4",
+   "scenes": [
+    [
+     "chase",
+     0.03
+    ],
+    [
+     "attack",
+     16.03
+    ],
+    [
+     "hit",
+     21.03
+    ],
+    [
+     "die",
+     22.87
+    ],
+    [
+     "leader",
+     26.9
+    ]
+   ]
+  },
+  {
+   "clips": {
+    "attack": "attack",
+    "die": "die",
+    "hit": "hit",
+    "idle": "idle",
+    "run": "run",
+    "walk": "walk"
+   },
+   "grade": 0,
+   "id": "spider",
+   "info": {
+    "loco": {
+     "kind": "run",
+     "raw": 1.72,
+     "scale": 1.72,
+     "slip": 0.0
+    },
+    "motion_deg": {
+     "attack": 32.1,
+     "die": 145.1,
+     "hit": 20.8,
+     "idle": 15.7,
+     "run": 113.0,
+     "walk": 104.4
+    }
+   },
+   "key": "spider",
+   "model": "spider",
+   "name": "묵은거미",
+   "problems": [],
+   "video": "v/spider.mp4",
+   "scenes": [
+    [
+     "chase",
+     0.03
+    ],
+    [
+     "attack",
+     16.03
+    ],
+    [
+     "hit",
+     21.03
+    ],
+    [
+     "die",
+     22.87
+    ],
+    [
+     "leader",
+     26.9
+    ]
+   ]
+  },
+  {
+   "clips": {
+    "attack": "attack",
+    "die": "die",
+    "hit": "hit",
+    "idle": "idle",
+    "run": "run",
+    "walk": "walk"
+   },
+   "grade": 0,
+   "id": "vampire_bat",
+   "info": {
+    "loco": {
+     "kind": "run",
+     "raw": 0.95,
+     "scale": 0.95,
+     "slip": 0.0
+    },
+    "motion_deg": {
+     "attack": 62.0,
+     "die": 92.1,
+     "hit": 37.9,
+     "idle": 82.5,
+     "run": 105.8,
+     "walk": 94.5
+    }
+   },
+   "key": "vampire_bat",
+   "model": "bat",
+   "name": "흡혈 박쥐",
+   "problems": [],
+   "video": "v/vampire_bat.mp4",
+   "scenes": [
+    [
+     "chase",
+     0.03
+    ],
+    [
+     "attack",
+     16.03
+    ],
+    [
+     "hit",
+     21.03
+    ],
+    [
+     "die",
+     22.87
+    ],
+    [
+     "leader",
+     26.9
+    ]
+   ]
+  },
+  {
+   "clips": {
+    "attack": "attack",
+    "die": "die",
+    "hit": "hit",
+    "idle": "idle",
+    "run": "run",
+    "walk": "walk"
+   },
+   "grade": 0,
+   "id": "wang_geomi",
+   "info": {
+    "loco": {
+     "kind": "run",
+     "raw": 1.64,
+     "scale": 1.64,
+     "slip": 0.0
+    },
+    "motion_deg": {
+     "attack": 32.1,
+     "die": 145.1,
+     "hit": 20.8,
+     "idle": 15.7,
+     "run": 113.0,
+     "walk": 104.4
+    }
+   },
+   "key": "wang_geomi",
+   "model": "spider",
+   "name": "왕거미",
+   "problems": [],
+   "video": "v/wang_geomi.mp4",
+   "scenes": [
+    [
+     "chase",
+     0.03
+    ],
+    [
+     "attack",
+     16.43
+    ],
+    [
+     "hit",
+     21.43
+    ],
+    [
+     "die",
+     23.27
+    ],
+    [
+     "leader",
+     27.3
+    ]
+   ]
+  }
+ ]
+}
