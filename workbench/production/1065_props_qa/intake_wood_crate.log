@@ -1,0 +1,48 @@
+﻿규격 · 설정 = docs/design/modeling_bible.md (D-114 — 소품 Meshy · 캐릭터 Tripo · 생성 전 필수) · 반입 상한 정본 = art_3d_pipeline §5.4
+복사: C:\workspace\joseon-assets\workbench\production\1065_props_qa\intake\wood_crate.glb → C:\workspace\joseon\.claude\worktrees\1065-props-qa\assets\models\props\wood_crate.glb (0.29 MB)
+== 임포트 ==
+godot.bat : WARNING: Detected another project.godot at res://tools/ogv_bake. The folder will be ignored.
+At C:\workspace\joseon\.claude\worktrees\1065-props-qa\tools\intake_model.ps1:88 char:9
++         & $godot --headless --import | Out-Null
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: Detect...ill be ignored.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   at: _should_skip_directory (editor/file_system/editor_file_system.cpp:3497)
+WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+== 검수 ==
+godot.bat : WARNING: 3 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+At C:\workspace\joseon\.claude\worktrees\1065-props-qa\tools\intake_model.ps1:96 char:12
++     $out = & $godot @checkArgs | Out-String
++            ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: 3 Obje...` for details).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)
+Godot Engine v4.7.2.stable.steam.ed1daf0bf - https://godotengine.org
+
+== model_check res://assets/models/props/wood_crate.glb
+노드: MeshInstance3D 2 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2927
+AABB: 키 0.52 · 너비 0.90 · 깊이 0.66 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+
+== 외형 (look_audit) ==
+== look_audit res://assets/models/props/wood_crate.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/wood_crate	2927	512	0.192	0.300	0.070	569	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+외형 밴드 안
+로그: - 2026-11-01 `props/wood_crate` ← `C:\workspace\joseon-assets\workbench\production\1065_props_qa\intake\wood_crate.glb` → `res://assets/models/props/wood_crate.glb` (check WARN · look PASS · 밝기 0.192 · 채도 0.300 · 대비 0.070 · 텍셀 569)
+다음: godot res://tools/model_viewer.tscn -- --model=props/wood_crate  (정면·키·픽셀 느낌 확인 → data/models/<id>.tres 보정)
+
