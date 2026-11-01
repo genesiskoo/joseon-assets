@@ -1,0 +1,140 @@
+{
+ "glbs": [
+  "assets/models/doho/doho.glb",
+  "tmp/1089/doho_retopo_v4.glb"
+ ],
+ "poses": {
+  "rest": [
+   {
+    "stretch_max": 0.0,
+    "stretch_p99": 0.0,
+    "folds": 0
+   },
+   {
+    "stretch_max": 0.0,
+    "stretch_p99": 0.0,
+    "folds": 0
+   }
+  ],
+  "loops_arm": [
+   {
+    "stretch_max": 0.0,
+    "stretch_p99": 0.0,
+    "folds": 0
+   },
+   {
+    "stretch_max": 0.0,
+    "stretch_p99": 0.0,
+    "folds": 0
+   }
+  ],
+  "loops_leg": [
+   {
+    "stretch_max": 0.0,
+    "stretch_p99": 0.0,
+    "folds": 0
+   },
+   {
+    "stretch_max": 0.0,
+    "stretch_p99": 0.0,
+    "folds": 0
+   }
+  ],
+  "elbow": [
+   {
+    "stretch_max": 513.9,
+    "stretch_p99": 37.7,
+    "folds": 19,
+    "girth_verts": 31,
+    "shrink": -8.3
+   },
+   {
+    "stretch_max": 160.3,
+    "stretch_p99": 21.0,
+    "folds": 12,
+    "girth_verts": 78,
+    "shrink": -9.0
+   }
+  ],
+  "shoulder": [
+   {
+    "stretch_max": 382.0,
+    "stretch_p99": 14.3,
+    "folds": 3,
+    "girth_verts": 36,
+    "shrink": -6.6
+   },
+   {
+    "stretch_max": 283.1,
+    "stretch_p99": 21.0,
+    "folds": 9,
+    "girth_verts": 56,
+    "shrink": -8.6
+   }
+  ],
+  "shoulder_up": [
+   {
+    "stretch_max": 343.8,
+    "stretch_p99": 13.9,
+    "folds": 10,
+    "girth_verts": 36,
+    "shrink": -4.3
+   },
+   {
+    "stretch_max": 220.1,
+    "stretch_p99": 21.0,
+    "folds": 10,
+    "girth_verts": 56,
+    "shrink": -4.5
+   }
+  ],
+  "wrist": [
+   {
+    "stretch_max": 35.4,
+    "stretch_p99": 3.1,
+    "folds": 0,
+    "girth_verts": 62,
+    "shrink": -6.8
+   },
+   {
+    "stretch_max": 29.3,
+    "stretch_p99": 0.8,
+    "folds": 0,
+    "girth_verts": 25,
+    "shrink": -10.2
+   }
+  ],
+  "knee": [
+   {
+    "stretch_max": 381.4,
+    "stretch_p99": 50.8,
+    "folds": 78,
+    "girth_verts": 1,
+    "shrink": -7.0
+   },
+   {
+    "stretch_max": 272.1,
+    "stretch_p99": 84.3,
+    "folds": 23,
+    "girth_verts": 11,
+    "shrink": -12.7
+   }
+  ],
+  "neck": [
+   {
+    "stretch_max": 70.9,
+    "stretch_p99": 5.1,
+    "folds": 3,
+    "girth_verts": 164,
+    "shrink": -4.1
+   },
+   {
+    "stretch_max": 75.0,
+    "stretch_p99": 2.6,
+    "folds": 0,
+    "girth_verts": 151,
+    "shrink": -3.0
+   }
+  ]
+ }
+}
