@@ -1,0 +1,86 @@
+{
+  "model": "doho_armor",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "walk",
+      "edges": 24368,
+      "m": 0.0827277824282646,
+      "px": 5.41490939530459,
+      "rest_cm": 11.054789274931,
+      "springs": false,
+      "t": 0.0166666666666667
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "walk",
+      "edges": 24368,
+      "m": 0.0827277824282646,
+      "px": 5.41490939530459,
+      "rest_cm": 11.054789274931,
+      "springs": true,
+      "t": 0.0166666666666667
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "run",
+      "edges": 24368,
+      "m": 0.119606845080853,
+      "px": 7.82881167801944,
+      "rest_cm": 11.054789274931,
+      "springs": false,
+      "t": 0.216666666666667
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "run",
+      "edges": 24368,
+      "m": 0.119606845080853,
+      "px": 7.82881167801944,
+      "rest_cm": 11.054789274931,
+      "springs": true,
+      "t": 0.216666666666667
+    },
+    {
+      "bones": "R_Upperarm–Spine01",
+      "clip": "skill_strike",
+      "edges": 24368,
+      "m": 0.0973935052752495,
+      "px": 6.37484761801633,
+      "rest_cm": 5.545424669981,
+      "springs": false,
+      "t": 0.916666666666668
+    },
+    {
+      "bones": "R_Upperarm–Spine01",
+      "clip": "skill_strike",
+      "edges": 24368,
+      "m": 0.0973935052752495,
+      "px": 6.37484761801633,
+      "rest_cm": 5.545424669981,
+      "springs": true,
+      "t": 0.916666666666668
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "skill_whirl",
+      "edges": 24368,
+      "m": 0.0827277824282646,
+      "px": 5.41490939530459,
+      "rest_cm": 11.054789274931,
+      "springs": false,
+      "t": 0.0166666666666667
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "skill_whirl",
+      "edges": 24368,
+      "m": 0.0827277824282646,
+      "px": 5.41490939530459,
+      "rest_cm": 11.054789274931,
+      "springs": true,
+      "t": 0.0166666666666667
+    }
+  ]
+}

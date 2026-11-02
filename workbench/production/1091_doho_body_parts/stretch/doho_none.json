@@ -1,0 +1,86 @@
+{
+  "model": "doho_none",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "walk",
+      "edges": 20853,
+      "m": 0.0550110824406147,
+      "px": 3.60072539611296,
+      "rest_cm": 5.19174449145794,
+      "springs": false,
+      "t": 2.25
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "walk",
+      "edges": 20853,
+      "m": 0.0550110824406147,
+      "px": 3.60072539611296,
+      "rest_cm": 5.19174449145794,
+      "springs": true,
+      "t": 2.25
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "run",
+      "edges": 20853,
+      "m": 0.113849300891161,
+      "px": 7.45195424014872,
+      "rest_cm": 5.19174449145794,
+      "springs": false,
+      "t": 0.25
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "run",
+      "edges": 20853,
+      "m": 0.113849300891161,
+      "px": 7.45195424014872,
+      "rest_cm": 5.19174449145794,
+      "springs": true,
+      "t": 0.25
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "skill_strike",
+      "edges": 20853,
+      "m": 0.145752806216478,
+      "px": 9.54018367962404,
+      "rest_cm": 5.19174449145794,
+      "springs": false,
+      "t": 1.05
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "skill_strike",
+      "edges": 20853,
+      "m": 0.145752806216478,
+      "px": 9.54018367962404,
+      "rest_cm": 5.19174449145794,
+      "springs": true,
+      "t": 1.05
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "skill_whirl",
+      "edges": 20853,
+      "m": 0.122843973338604,
+      "px": 8.04069643670862,
+      "rest_cm": 3.58757749199867,
+      "springs": false,
+      "t": 0.65
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "skill_whirl",
+      "edges": 20853,
+      "m": 0.122843973338604,
+      "px": 8.04069643670862,
+      "rest_cm": 3.58757749199867,
+      "springs": true,
+      "t": 0.65
+    }
+  ]
+}

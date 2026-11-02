@@ -1,0 +1,86 @@
+{
+  "model": "doho_elder",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "R_Clavicle–Spine01",
+      "clip": "walk",
+      "edges": 20917,
+      "m": 0.0796386301517487,
+      "px": 5.21271033720537,
+      "rest_cm": 7.94329792261124,
+      "springs": false,
+      "t": 0.05
+    },
+    {
+      "bones": "R_Clavicle–Spine01",
+      "clip": "walk",
+      "edges": 20917,
+      "m": 0.0796386301517487,
+      "px": 5.21271033720537,
+      "rest_cm": 7.94329792261124,
+      "springs": true,
+      "t": 0.05
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "run",
+      "edges": 20917,
+      "m": 0.113849300891161,
+      "px": 7.45195424014872,
+      "rest_cm": 5.19174449145794,
+      "springs": false,
+      "t": 0.25
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "run",
+      "edges": 20917,
+      "m": 0.113849300891161,
+      "px": 7.45195424014872,
+      "rest_cm": 5.19174449145794,
+      "springs": true,
+      "t": 0.25
+    },
+    {
+      "bones": "Waist–R_Upperarm",
+      "clip": "skill_strike",
+      "edges": 20917,
+      "m": 0.18935389071703,
+      "px": 12.3940728469328,
+      "rest_cm": 7.39903375506401,
+      "springs": false,
+      "t": 0.65
+    },
+    {
+      "bones": "Waist–R_Upperarm",
+      "clip": "skill_strike",
+      "edges": 20917,
+      "m": 0.18935389071703,
+      "px": 12.3940728469328,
+      "rest_cm": 7.39903375506401,
+      "springs": true,
+      "t": 0.65
+    },
+    {
+      "bones": "Waist–R_Upperarm",
+      "clip": "skill_whirl",
+      "edges": 20917,
+      "m": 0.123472087085247,
+      "px": 8.0818093364889,
+      "rest_cm": 7.39903375506401,
+      "springs": false,
+      "t": 0.516666666666667
+    },
+    {
+      "bones": "Waist–R_Upperarm",
+      "clip": "skill_whirl",
+      "edges": 20917,
+      "m": 0.123472087085247,
+      "px": 8.0818093364889,
+      "rest_cm": 7.39903375506401,
+      "springs": true,
+      "t": 0.516666666666667
+    }
+  ]
+}

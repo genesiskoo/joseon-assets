@@ -1,0 +1,35 @@
+{
+ "walk": {
+  "frames": 36,
+  "pierce_max_verts": 155,
+  "pierce_max_frame": 34,
+  "gap_max_cm": 7.8,
+  "gap_p95_cm": 5.7
+ },
+ "run": {
+  "frames": 20,
+  "pierce_max_verts": 309,
+  "pierce_max_frame": 18,
+  "gap_max_cm": 10.6,
+  "gap_p95_cm": 6.0
+ },
+ "skill_strike": {
+  "frames": 41,
+  "pierce_max_verts": 239,
+  "pierce_max_frame": 54,
+  "gap_max_cm": 11.5,
+  "gap_p95_cm": 5.9
+ },
+ "skill_whirl": {
+  "frames": 77,
+  "pierce_max_verts": 254,
+  "pierce_max_frame": 6,
+  "gap_max_cm": 11.3,
+  "gap_p95_cm": 6.2
+ },
+ "_body_verts": 5424,
+ "_rim_verts": 1914,
+ "_covered_verts": 1191,
+ "_rest_gap_max_cm": 6.0,
+ "_rest_gap_p95_cm": 5.6
+}

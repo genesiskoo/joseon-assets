@@ -1,0 +1,86 @@
+{
+  "model": "doho_bandit",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "Spine01–L_Clavicle",
+      "clip": "walk",
+      "edges": 17680,
+      "m": 0.0896516665816307,
+      "px": 5.8681090853431,
+      "rest_cm": 10.2902494370937,
+      "springs": false,
+      "t": 0.05
+    },
+    {
+      "bones": "Spine01–L_Clavicle",
+      "clip": "walk",
+      "edges": 17680,
+      "m": 0.0896516665816307,
+      "px": 5.8681090853431,
+      "rest_cm": 10.2902494370937,
+      "springs": true,
+      "t": 0.05
+    },
+    {
+      "bones": "Spine01–L_Clavicle",
+      "clip": "run",
+      "edges": 17680,
+      "m": 0.0896517708897591,
+      "px": 5.86811591278423,
+      "rest_cm": 10.2902494370937,
+      "springs": false,
+      "t": 0.05
+    },
+    {
+      "bones": "Spine01–L_Clavicle",
+      "clip": "run",
+      "edges": 17680,
+      "m": 0.0896517708897591,
+      "px": 5.86811591278423,
+      "rest_cm": 10.2902494370937,
+      "springs": true,
+      "t": 0.05
+    },
+    {
+      "bones": "R_Clavicle–Spine02",
+      "clip": "skill_strike",
+      "edges": 17680,
+      "m": 0.102644808590412,
+      "px": 6.71856928955425,
+      "rest_cm": 3.67792025208473,
+      "springs": false,
+      "t": 0.883333333333334
+    },
+    {
+      "bones": "R_Clavicle–Spine02",
+      "clip": "skill_strike",
+      "edges": 17680,
+      "m": 0.102644808590412,
+      "px": 6.71856928955425,
+      "rest_cm": 3.67792025208473,
+      "springs": true,
+      "t": 0.883333333333334
+    },
+    {
+      "bones": "Spine01–L_Clavicle",
+      "clip": "skill_whirl",
+      "edges": 17680,
+      "m": 0.0975296869874001,
+      "px": 6.38376133008437,
+      "rest_cm": 10.2902494370937,
+      "springs": false,
+      "t": 1.25
+    },
+    {
+      "bones": "Spine01–L_Clavicle",
+      "clip": "skill_whirl",
+      "edges": 17680,
+      "m": 0.0975296869874001,
+      "px": 6.38376133008437,
+      "rest_cm": 10.2902494370937,
+      "springs": true,
+      "t": 1.25
+    }
+  ]
+}

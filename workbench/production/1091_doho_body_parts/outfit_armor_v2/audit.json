@@ -1,0 +1,67 @@
+{
+ "walk": {
+  "frames": 36,
+  "pierce_max_verts": 110,
+  "pierce_max_frame": 66,
+  "gap_max_cm": 6.3,
+  "gap_p95_cm": 4.6,
+  "pierce_bones": {
+   "R_Thigh": 43,
+   "L_Thigh": 28,
+   "L_Upperarm": 10,
+   "Pelvis": 7,
+   "R_Upperarm": 5,
+   "L_Hand": 5
+  }
+ },
+ "run": {
+  "frames": 20,
+  "pierce_max_verts": 118,
+  "pierce_max_frame": 0,
+  "gap_max_cm": 7.7,
+  "gap_p95_cm": 4.6,
+  "pierce_bones": {
+   "L_Thigh": 46,
+   "R_Thigh": 33,
+   "L_Upperarm": 12,
+   "L_Foot": 11,
+   "Spine01": 3,
+   "Pelvis": 3
+  }
+ },
+ "skill_strike": {
+  "frames": 41,
+  "pierce_max_verts": 155,
+  "pierce_max_frame": 42,
+  "gap_max_cm": 8.0,
+  "gap_p95_cm": 4.5,
+  "pierce_bones": {
+   "R_Thigh": 63,
+   "L_Thigh": 28,
+   "R_Foot": 17,
+   "L_Foot": 11,
+   "Pelvis": 8,
+   "L_Hand": 7
+  }
+ },
+ "skill_whirl": {
+  "frames": 77,
+  "pierce_max_verts": 156,
+  "pierce_max_frame": 42,
+  "gap_max_cm": 8.1,
+  "gap_p95_cm": 4.8,
+  "pierce_bones": {
+   "R_Thigh": 43,
+   "L_Thigh": 29,
+   "L_Foot": 18,
+   "R_Foot": 11,
+   "NeckTwist01": 10,
+   "R_Upperarm": 9
+  }
+ },
+ "_body_verts": 2779,
+ "_rim_verts": 1339,
+ "_covered_verts": 1125,
+ "_rest_gap_max_cm": 6.0,
+ "_rest_gap_p95_cm": 5.0
+}

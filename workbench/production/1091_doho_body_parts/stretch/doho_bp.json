@@ -1,0 +1,86 @@
+{
+  "model": "doho_bp",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "R_Calf–L_Calf",
+      "clip": "walk",
+      "edges": 22351,
+      "m": 0.343311564996839,
+      "px": 22.4713024361567,
+      "rest_cm": 1.56266819685698,
+      "springs": false,
+      "t": 1.15
+    },
+    {
+      "bones": "R_Calf–L_Calf",
+      "clip": "walk",
+      "edges": 22351,
+      "m": 0.343311564996839,
+      "px": 22.4713024361567,
+      "rest_cm": 1.56266819685698,
+      "springs": true,
+      "t": 1.15
+    },
+    {
+      "bones": "R_Calf–L_Calf",
+      "clip": "run",
+      "edges": 22351,
+      "m": 0.524124370887876,
+      "px": 34.3063224581155,
+      "rest_cm": 1.56266819685698,
+      "springs": false,
+      "t": 0.216666666666667
+    },
+    {
+      "bones": "R_Calf–L_Calf",
+      "clip": "run",
+      "edges": 22351,
+      "m": 0.524124370887876,
+      "px": 34.3063224581155,
+      "rest_cm": 1.56266819685698,
+      "springs": true,
+      "t": 0.216666666666667
+    },
+    {
+      "bones": "L_Calf–R_Calf",
+      "clip": "skill_strike",
+      "edges": 22351,
+      "m": 0.431808404624462,
+      "px": 28.2638228481466,
+      "rest_cm": 1.93391516804695,
+      "springs": false,
+      "t": 1.01666666666667
+    },
+    {
+      "bones": "L_Calf–R_Calf",
+      "clip": "skill_strike",
+      "edges": 22351,
+      "m": 0.431808404624462,
+      "px": 28.2638228481466,
+      "rest_cm": 1.93391516804695,
+      "springs": true,
+      "t": 1.01666666666667
+    },
+    {
+      "bones": "L_Calf–R_Calf",
+      "clip": "skill_whirl",
+      "edges": 22351,
+      "m": 0.351924769580364,
+      "px": 23.0350758270784,
+      "rest_cm": 1.93391516804695,
+      "springs": false,
+      "t": 0.716666666666667
+    },
+    {
+      "bones": "L_Calf–R_Calf",
+      "clip": "skill_whirl",
+      "edges": 22351,
+      "m": 0.351924769580364,
+      "px": 23.0350758270784,
+      "rest_cm": 1.93391516804695,
+      "springs": true,
+      "t": 0.716666666666667
+    }
+  ]
+}

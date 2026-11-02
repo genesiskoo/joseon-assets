@@ -1,0 +1,86 @@
+{
+  "model": "doho_bp",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "R_Upperarm–Spine01",
+      "clip": "walk",
+      "edges": 22351,
+      "m": 0.082119831815362,
+      "px": 5.37511626427824,
+      "rest_cm": 1.97591464966536,
+      "springs": false,
+      "t": 0.05
+    },
+    {
+      "bones": "R_Upperarm–Spine01",
+      "clip": "walk",
+      "edges": 22351,
+      "m": 0.082119831815362,
+      "px": 5.37511626427824,
+      "rest_cm": 1.97591464966536,
+      "springs": true,
+      "t": 0.05
+    },
+    {
+      "bones": "Hem_L–L_Thigh",
+      "clip": "run",
+      "edges": 22351,
+      "m": 0.125647954642773,
+      "px": 8.22422975843603,
+      "rest_cm": 4.22991886734962,
+      "springs": false,
+      "t": 0.283333333333333
+    },
+    {
+      "bones": "R_Thigh–R_Thigh",
+      "clip": "run",
+      "edges": 22351,
+      "m": 0.124648630619049,
+      "px": 8.15881945870139,
+      "rest_cm": 4.60318028926849,
+      "springs": true,
+      "t": 0.216666666666667
+    },
+    {
+      "bones": "Waist–Spine02",
+      "clip": "skill_strike",
+      "edges": 22351,
+      "m": 0.187317883595824,
+      "px": 12.2608069262721,
+      "rest_cm": 2.69645247608423,
+      "springs": false,
+      "t": 0.883333333333334
+    },
+    {
+      "bones": "Hem_R–R_Thigh",
+      "clip": "skill_strike",
+      "edges": 22351,
+      "m": 0.241980623453856,
+      "px": 15.8387317169796,
+      "rest_cm": 1.04824490845203,
+      "springs": true,
+      "t": 0.583333333333333
+    },
+    {
+      "bones": "L_Thigh–L_Thigh",
+      "clip": "skill_whirl",
+      "edges": 22351,
+      "m": 0.147050768136978,
+      "px": 9.62514118714766,
+      "rest_cm": 8.12841057777405,
+      "springs": false,
+      "t": 0.65
+    },
+    {
+      "bones": "Hem_L–L_Thigh",
+      "clip": "skill_whirl",
+      "edges": 22351,
+      "m": 0.234155346639454,
+      "px": 15.326531780037,
+      "rest_cm": 0.956353079527617,
+      "springs": true,
+      "t": 0.55
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "model": "doho_bp",
+  "px_per_m": 65.4545454545455,
+  "rows": [
+    {
+      "bones": "L_Thigh–Hem_L",
+      "clip": "walk",
+      "edges": 22351,
+      "m": 0.0677406005561352,
+      "px": 4.43393021821976,
+      "rest_cm": 4.73771654069424,
+      "springs": false,
+      "t": 1.15
+    },
+    {
+      "bones": "L_Thigh–Hem_L",
+      "clip": "walk",
+      "edges": 22351,
+      "m": 0.0677406005561352,
+      "px": 4.43393021821976,
+      "rest_cm": 4.73771654069424,
+      "springs": true,
+      "t": 1.15
+    },
+    {
+      "bones": "Hem_L–L_Thigh",
+      "clip": "run",
+      "edges": 22351,
+      "m": 0.125647954642773,
+      "px": 8.22422975843603,
+      "rest_cm": 4.22991886734962,
+      "springs": false,
+      "t": 0.283333333333333
+    },
+    {
+      "bones": "Hem_L–L_Thigh",
+      "clip": "run",
+      "edges": 22351,
+      "m": 0.123228184878826,
+      "px": 8.06584482843226,
+      "rest_cm": 4.22991886734962,
+      "springs": true,
+      "t": 0.233333333333333
+    },
+    {
+      "bones": "R_Thigh–Hem_R",
+      "clip": "skill_strike",
+      "edges": 22351,
+      "m": 0.15526107698679,
+      "px": 10.1625432209535,
+      "rest_cm": 7.5398214161396,
+      "springs": false,
+      "t": 1.05
+    },
+    {
+      "bones": "Hem_R–R_Thigh",
+      "clip": "skill_strike",
+      "edges": 22351,
+      "m": 0.241980623453856,
+      "px": 15.8387317169796,
+      "rest_cm": 1.04824490845203,
+      "springs": true,
+      "t": 0.583333333333333
+    },
+    {
+      "bones": "Hem_L–Pelvis",
+      "clip": "skill_whirl",
+      "edges": 22351,
+      "m": 0.134544879198074,
+      "px": 8.80657391114668,
+      "rest_cm": 19.2731648683548,
+      "springs": false,
+      "t": 1.11666666666667
+    },
+    {
+      "bones": "Hem_L–L_Thigh",
+      "clip": "skill_whirl",
+      "edges": 22351,
+      "m": 0.234155346639454,
+      "px": 15.326531780037,
+      "rest_cm": 0.956353079527617,
+      "springs": true,
+      "t": 0.55
+    }
+  ]
+}

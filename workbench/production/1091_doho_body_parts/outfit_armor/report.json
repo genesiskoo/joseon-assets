@@ -1,0 +1,57 @@
+{
+ "body_scale": 1.733108896292735,
+ "arm_align_deg": {
+  "L_Clavicle": 8.6,
+  "L_Upperarm": 47.6,
+  "L_Forearm": 17.0,
+  "L_Hand": 8.5,
+  "R_Clavicle": 8.6,
+  "R_Upperarm": 47.6,
+  "R_Forearm": 16.3,
+  "R_Hand": 2.7
+ },
+ "fist_bones": 28,
+ "split_faces": {
+  "body": 5987,
+  "robe": 3958,
+  "sash": 910,
+  "hat": 722,
+  "beads": 422
+ },
+ "joint_move_max_m": 0.161,
+ "outfit": {
+  "src": "C:\\workspace\\joseon-assets\\workbench\\production\\1091_doho_body_parts\\outfit_armor\\src\\armor_9fe4d3a6_rigged.glb",
+  "scale": 1.733,
+  "faces": 10037,
+  "dropped": 1376
+ },
+ "ground_cm": {
+  "idle": -2.3,
+  "walk": -3.7,
+  "run": -6.2,
+  "hit": -3.9,
+  "die": -9.1,
+  "kick_spin": -7.0,
+  "cast": -2.3,
+  "attack": -8.0,
+  "attack2": -6.8,
+  "idle_out": -2.3,
+  "attack3": -6.5,
+  "attack4": -4.5,
+  "skill_strike": -8.9,
+  "skill_leap": -10.6,
+  "skill_thrust": -4.4,
+  "skill_whirl": -5.6,
+  "guard": -5.4
+ },
+ "crotch_web_verts": 66,
+ "body_unmapped_groups": [],
+ "culled_faces": 8872,
+ "tris": {
+  "body": 2914,
+  "hat": 1144,
+  "outfit": 10037
+ },
+ "tris_total": 14095,
+ "unit_scale_channels_dropped": 1411
+}
