@@ -1,0 +1,916 @@
+{
+ "_doc": "#1109 1막 두루마리판 배치표 — 두루마리 좌표 4608×1024 · box = [x, y, w(, 돌림 도)] · _cues = [겹, 채널, 시작 초, 길이, 끝 값] · 판 0 겹은 1099_story_scroll/layout.json",
+ "cave": [
+  85,
+  445
+ ],
+ "gold": [
+  3420,
+  470
+ ],
+ "pieces": [
+  "A5_far_people_",
+  "A7_smoke_shapes_"
+ ],
+ "boxes": {
+  "A1": {
+   "file": "A1_chain_seal",
+   "box": [
+    -81,
+    346,
+    326
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     1,
+     0
+    ],
+    "sweep_mix": 0.6,
+    "rim_amount": 0.6,
+    "edge_feather": 0.03
+   }
+  },
+  "A2": {
+   "file": "A2_sansin_tiger",
+   "box": [
+    700,
+    170,
+    250
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     1
+    ],
+    "sweep_mix": 0.6,
+    "density": 0.75,
+    "edge_feather": 0.03
+   }
+  },
+  "T0": {
+   "file": "A8_smoke_trail",
+   "box": [
+    60,
+    -150,
+    1536
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     1,
+     0
+    ],
+    "density": 0.55,
+    "bleed": 0.2,
+    "edge_feather": 0.02
+   }
+  },
+  "T1": {
+   "file": "A8_smoke_trail",
+   "box": [
+    1590,
+    -150,
+    1536
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     1,
+     0
+    ],
+    "density": 0.55,
+    "bleed": 0.2,
+    "edge_feather": 0.02
+   }
+  },
+  "T2": {
+   "file": "A8_smoke_trail",
+   "box": [
+    3120,
+    -150,
+    1536
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     1,
+     0
+    ],
+    "density": 0.55,
+    "bleed": 0.2,
+    "edge_feather": 0.02
+   }
+  },
+  "A3": {
+   "file": "A3_road",
+   "box": [
+    1440,
+    90,
+    1536
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "edge_feather": 0.08,
+    "bleed": 0.35
+   }
+  },
+  "A4": {
+   "file": "A4_far_village",
+   "box": [
+    3072,
+    60,
+    1536
+   ],
+   "params": {
+    "order_mode": 0,
+    "drop_uv": [
+     0.55,
+     0.62
+    ],
+    "edge_feather": 0.08,
+    "bleed": 0.4
+   }
+  },
+  "P0": {
+   "file": "A5_far_people_0",
+   "box": [
+    3560,
+    670,
+    72
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.015
+   }
+  },
+  "P1": {
+   "file": "A5_far_people_1",
+   "box": [
+    3665,
+    670,
+    46
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.015
+   }
+  },
+  "P2": {
+   "file": "A5_far_people_2",
+   "box": [
+    3755,
+    670,
+    72
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.015
+   }
+  },
+  "P3": {
+   "file": "A5_far_people_3",
+   "box": [
+    3860,
+    670,
+    72
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.015
+   }
+  },
+  "P4": {
+   "file": "A5_far_people_4",
+   "box": [
+    3965,
+    670,
+    72
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.015
+   }
+  },
+  "P5": {
+   "file": "A5_far_people_5",
+   "box": [
+    4070,
+    670,
+    72
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.015
+   }
+  },
+  "A6": {
+   "file": "A6_smoke_fox",
+   "box": [
+    3260,
+    400,
+    760
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "sweep_mix": 0.6,
+    "rim_amount": 0.5,
+    "bleed": 0.45
+   }
+  },
+  "S0": {
+   "file": "A7_smoke_shapes_0",
+   "box": [
+    3360,
+    500,
+    120
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     -1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.02,
+    "bleed": 0.4
+   }
+  },
+  "S1": {
+   "file": "A7_smoke_shapes_1",
+   "box": [
+    3480,
+    500,
+    120
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     -1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.02,
+    "bleed": 0.4
+   }
+  },
+  "S2": {
+   "file": "A7_smoke_shapes_2",
+   "box": [
+    3620,
+    500,
+    120
+   ],
+   "params": {
+    "order_mode": 1,
+    "sweep_dir": [
+     0,
+     -1
+    ],
+    "sweep_mix": 0.7,
+    "edge_feather": 0.02,
+    "bleed": 0.4
+   }
+  },
+  "TR0": {
+   "file": "A8_smoke_trail",
+   "box": [
+    3072,
+    288,
+    1536
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "density": 0.85,
+    "bleed": 0.4,
+    "edge_feather": 0.02
+   }
+  },
+  "TR1": {
+   "file": "A8_smoke_trail",
+   "box": [
+    1536,
+    288,
+    1536
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "density": 0.85,
+    "bleed": 0.4,
+    "edge_feather": 0.02
+   }
+  },
+  "TR2": {
+   "file": "A8_smoke_trail",
+   "box": [
+    620,
+    449,
+    936
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "density": 0.85,
+    "bleed": 0.4,
+    "edge_feather": 0.02
+   }
+  },
+  "F0": {
+   "file": "A9_footprints",
+   "box": [
+    1536,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F1": {
+   "file": "A9_footprints",
+   "box": [
+    1876,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F2": {
+   "file": "A9_footprints",
+   "box": [
+    2216,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F3": {
+   "file": "A9_footprints",
+   "box": [
+    2556,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F4": {
+   "file": "A9_footprints",
+   "box": [
+    2896,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F5": {
+   "file": "A9_footprints",
+   "box": [
+    3236,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F6": {
+   "file": "A9_footprints",
+   "box": [
+    3576,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F7": {
+   "file": "A9_footprints",
+   "box": [
+    3916,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F8": {
+   "file": "A9_footprints",
+   "box": [
+    4256,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "F9": {
+   "file": "A9_footprints",
+   "box": [
+    4596,
+    592,
+    340
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "FC": {
+   "file": "A9_footprints",
+   "box": [
+    1356,
+    520,
+    340,
+    62.5
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  },
+  "FD": {
+   "file": "A9_footprints",
+   "box": [
+    1352,
+    434,
+    176,
+    65.2
+   ],
+   "params": {
+    "order_mode": 2,
+    "sweep_dir": [
+     -1,
+     0
+    ],
+    "soft": 0.03,
+    "bleed": 0.05,
+    "rim_amount": 0.0,
+    "edge_feather": 0.01
+   }
+  }
+ },
+ "_cues": [
+  [
+   "A1",
+   "progress",
+   11.0,
+   3.6,
+   1.0
+  ],
+  [
+   "A2",
+   "progress",
+   15.0,
+   4.0,
+   1.0
+  ],
+  [
+   "T0",
+   "progress",
+   23.0,
+   5.5,
+   1.0
+  ],
+  [
+   "T0",
+   "wash",
+   50.0,
+   5.0,
+   0.85
+  ],
+  [
+   "T1",
+   "progress",
+   29.5,
+   5.5,
+   1.0
+  ],
+  [
+   "T1",
+   "wash",
+   50.6,
+   5.0,
+   0.85
+  ],
+  [
+   "T2",
+   "progress",
+   34.5,
+   5.5,
+   1.0
+  ],
+  [
+   "T2",
+   "wash",
+   51.2,
+   5.0,
+   0.85
+  ],
+  [
+   "A4",
+   "progress",
+   40.0,
+   4.5,
+   1.0
+  ],
+  [
+   "P0",
+   "progress",
+   43.0,
+   2.4,
+   1.0
+  ],
+  [
+   "P0",
+   "dilute",
+   54.0,
+   2.0,
+   0.72
+  ],
+  [
+   "P1",
+   "progress",
+   43.4,
+   2.4,
+   1.0
+  ],
+  [
+   "P1",
+   "dilute",
+   54.7,
+   2.0,
+   0.72
+  ],
+  [
+   "P2",
+   "progress",
+   43.8,
+   2.4,
+   1.0
+  ],
+  [
+   "P2",
+   "dilute",
+   55.4,
+   2.0,
+   0.72
+  ],
+  [
+   "P3",
+   "progress",
+   44.2,
+   2.4,
+   1.0
+  ],
+  [
+   "P3",
+   "dilute",
+   56.1,
+   2.0,
+   0.72
+  ],
+  [
+   "P4",
+   "progress",
+   44.6,
+   2.4,
+   1.0
+  ],
+  [
+   "P4",
+   "dilute",
+   56.8,
+   2.0,
+   0.72
+  ],
+  [
+   "P5",
+   "progress",
+   45.0,
+   2.4,
+   1.0
+  ],
+  [
+   "P5",
+   "dilute",
+   57.5,
+   2.0,
+   0.72
+  ],
+  [
+   "A6",
+   "progress",
+   44.0,
+   3.0,
+   1.0
+  ],
+  [
+   "A6",
+   "wash",
+   49.0,
+   3.0,
+   1.0
+  ],
+  [
+   "S0",
+   "progress",
+   48.5,
+   2.6,
+   1.0
+  ],
+  [
+   "S0",
+   "dilute",
+   58.5,
+   3.0,
+   0.5
+  ],
+  [
+   "S1",
+   "progress",
+   50.1,
+   2.6,
+   1.0
+  ],
+  [
+   "S1",
+   "dilute",
+   58.5,
+   3.0,
+   0.5
+  ],
+  [
+   "S2",
+   "progress",
+   51.7,
+   2.6,
+   1.0
+  ],
+  [
+   "S2",
+   "dilute",
+   58.5,
+   3.0,
+   0.5
+  ],
+  [
+   "F9",
+   "progress",
+   60.0,
+   3.0,
+   1.0
+  ],
+  [
+   "A3",
+   "progress",
+   64.0,
+   4.0,
+   1.0
+  ],
+  [
+   "TR0",
+   "progress",
+   64.5,
+   4.0,
+   1.0
+  ],
+  [
+   "TR1",
+   "progress",
+   68.0,
+   4.0,
+   1.0
+  ],
+  [
+   "TR2",
+   "progress",
+   76.0,
+   4.0,
+   1.0
+  ],
+  [
+   "F8",
+   "progress",
+   65.5,
+   1.6,
+   1.0
+  ],
+  [
+   "F7",
+   "progress",
+   66.45,
+   1.6,
+   1.0
+  ],
+  [
+   "F6",
+   "progress",
+   67.4,
+   1.6,
+   1.0
+  ],
+  [
+   "F5",
+   "progress",
+   68.35,
+   1.6,
+   1.0
+  ],
+  [
+   "F4",
+   "progress",
+   69.3,
+   1.6,
+   1.0
+  ],
+  [
+   "F3",
+   "progress",
+   70.25,
+   1.6,
+   1.0
+  ],
+  [
+   "F2",
+   "progress",
+   71.2,
+   1.6,
+   1.0
+  ],
+  [
+   "F1",
+   "progress",
+   72.15,
+   1.6,
+   1.0
+  ],
+  [
+   "F0",
+   "progress",
+   73.1,
+   1.6,
+   1.0
+  ],
+  [
+   "FC",
+   "progress",
+   114.0,
+   2.4,
+   1.0
+  ],
+  [
+   "FD",
+   "progress",
+   116.2,
+   2.0,
+   1.0
+  ]
+ ]
+}
