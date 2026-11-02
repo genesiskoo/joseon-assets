@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29",
+  "updated_at": "2026-11-02",
   "characters": [
     {
       "character_id": "doho",
@@ -23126,6 +23126,162 @@
       "notes": []
     },
     {
+      "asset_id": "card1091-doho-body-apose-a",
+      "character_id": "doho",
+      "form_id": "human",
+      "version_id": "2026-11-02",
+      "display_name": "도호 · 바지저고리 몸 A포즈 (장화 · 몸·옷 분리 시험 3D 입력)",
+      "role": "player",
+      "runtime_aliases": [
+        "doho"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1091_doho_body_parts/art/doho_body_A.png",
+        "sha256": "062d10bbf96a9a05c50ec3264e302cf2a95c0c595ca473991bb96da81f127245",
+        "bytes": 1646577,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 모델링 입력 원화 (몸·옷 분리 시험 — 겉모습 승인 아님, 외형 정본은 H1 그대로)"
+        ],
+        "date": "2026-11-02",
+        "card": 1091,
+        "evidence": [
+          "board #1091 — PD 11-02 「A로 진행」 (A 장화 · B 버선 중 A)"
+        ],
+        "quote": "A로 진행",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1091,
+        "source_commit": null,
+        "inclusion_reason": "몸·옷 분리 시험 — 도포·흑립·띠를 뺀 바지저고리 몸을 Tripo 3D·리깅 입력으로 (겉모습은 지금 도호 그대로)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 2장)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1091_doho_body_parts/art/prompt.txt",
+          "sha256": "a05f634ef7fba3d5c1cf5485e33f41f2b437746709c293e7952005dc0cab4a47",
+          "bytes": 2103,
+          "width": null,
+          "height": null
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1091_doho_body_parts/ref/h1_doho_front_tpose.png",
+            "sha256": "cf4afd24933b4bdd578fba410b539c7cc89f73afbf631bc5d82ed2afd44e1d1a",
+            "bytes": 1561101,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1091_doho_body_parts/ref/game_doho_now_front.png",
+            "sha256": "3f5f16155e5b0d8acf0b830bcdebd356768257c00dfcb4c7637fa034500be0c3",
+            "bytes": 723344,
+            "width": 900,
+            "height": 900
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "§5.4 독립 점검 1~7·9 ○ · 8 ✗(참조 T포즈 · 도포 없어 어깨 좁아 보임 · 머리 살짝 작음) — 장부 ledger.md",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
+      "asset_id": "card1091-doho-body-apose-b",
+      "character_id": "doho",
+      "form_id": "human",
+      "version_id": "2026-11-02",
+      "display_name": "도호 · 바지저고리 몸 A포즈 (버선·행전 · 안 씀)",
+      "role": "player",
+      "runtime_aliases": [
+        "doho"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1091_doho_body_parts/art/doho_body_B.png",
+        "sha256": "b0e155803716149b1209be2f8df581f985bfc851db428e08fe29a95d278fa1db",
+        "bytes": 1648645,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [
+          "3D 모델링 입력 원화 후보 — A 채택으로 안 씀(그림 결함 아님)"
+        ],
+        "date": "2026-11-02",
+        "card": 1091,
+        "evidence": [
+          "board #1091 — PD 11-02 「A로 진행」"
+        ],
+        "quote": "A로 진행",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1091,
+        "source_commit": null,
+        "inclusion_reason": "몸·옷 분리 시험 — 도포·흑립·띠를 뺀 바지저고리 몸을 Tripo 3D·리깅 입력으로 (겉모습은 지금 도호 그대로)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 2장)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1091_doho_body_parts/art/prompt.txt",
+          "sha256": "a05f634ef7fba3d5c1cf5485e33f41f2b437746709c293e7952005dc0cab4a47",
+          "bytes": 2103,
+          "width": null,
+          "height": null
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1091_doho_body_parts/ref/h1_doho_front_tpose.png",
+            "sha256": "cf4afd24933b4bdd578fba410b539c7cc89f73afbf631bc5d82ed2afd44e1d1a",
+            "bytes": 1561101,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1091_doho_body_parts/ref/game_doho_now_front.png",
+            "sha256": "3f5f16155e5b0d8acf0b830bcdebd356768257c00dfcb4c7637fa034500be0c3",
+            "bytes": 723344,
+            "width": 900,
+            "height": 900
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "버선이면 겉모습 유지에 장화를 파츠로 하나 더 떼야 함",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
       "asset_id": "card997-col-29cb2639dc",
       "character_id": "merchant",
       "form_id": "human",
@@ -31960,6 +32116,427 @@
         "evidence": []
       },
       "notes": []
+    },
+    {
+      "asset_id": "card899-mukeun-a_1",
+      "character_id": "mukeun_geomi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "묵은거미 원화 시안 · A안 고치 등짐 (mukeun_a_1.png)",
+      "role": "monster",
+      "runtime_aliases": [
+        "spider",
+        "wang_geomi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/899_mukeun_geomi/mukeun_a_1.png",
+        "sha256": "e30323ab3976182e8acd12362969e62aa043566e1b773ad3972d7503d5b01dc3",
+        "bytes": 1375356,
+        "width": 1024,
+        "height": 1024
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "외형 (묵은거미 원화 A1 — 2단계 다듬기 없이 그대로 채택, 다음 = A포즈 입력 원화)"
+        ],
+        "date": "2026-10-23",
+        "card": 899,
+        "evidence": [
+          "board #899 — PD 판정 ① 10-23 「전부 추천대로」 = 외형 A1(mukeun_a_1.png) 추천안"
+        ],
+        "quote": "전부 추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 899,
+        "source_commit": null,
+        "inclusion_reason": "/monster-make 1단계 시안 — 범굴·심굴 거미 대역(정지 메시) 교체용 외형 후보",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/899_mukeun_geomi/p_a.txt",
+          "sha256": "b1c5f01c55a65cae531c8914bc98558ea775fda179029d5e4e8876cf6d429ae6",
+          "bytes": 833
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-23\", \"card\": 899, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
+      "asset_id": "card899-mukeun-a_2",
+      "character_id": "mukeun_geomi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "묵은거미 원화 시안 · A안 고치 등짐 (mukeun_a_2.png)",
+      "role": "monster",
+      "runtime_aliases": [
+        "spider",
+        "wang_geomi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/899_mukeun_geomi/mukeun_a_2.png",
+        "sha256": "0ee161649ee717a8ae75173c7fe6ec5c354c0dfb034c77d82fbc85e036d0370e",
+        "bytes": 1275909,
+        "width": 1024,
+        "height": 1024
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [
+          "외형 후보 — A1 채택으로 안 씀(그림 결함 아님)"
+        ],
+        "date": "2026-10-23",
+        "card": 899,
+        "evidence": [
+          "board #899 — PD 판정 ① 10-23 「전부 추천대로」 = 외형 A1(mukeun_a_1.png) 추천안"
+        ],
+        "quote": "전부 추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 899,
+        "source_commit": null,
+        "inclusion_reason": "/monster-make 1단계 시안 — 범굴·심굴 거미 대역(정지 메시) 교체용 외형 후보",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/899_mukeun_geomi/p_a.txt",
+          "sha256": "b1c5f01c55a65cae531c8914bc98558ea775fda179029d5e4e8876cf6d429ae6",
+          "bytes": 833
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-23\", \"card\": 899, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
+      "asset_id": "card899-mukeun-b_1",
+      "character_id": "mukeun_geomi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "묵은거미 원화 시안 · B안 묵은 껍질(바위·이끼) (mukeun_b_1.png)",
+      "role": "monster",
+      "runtime_aliases": [
+        "spider",
+        "wang_geomi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/899_mukeun_geomi/mukeun_b_1.png",
+        "sha256": "7bea88c3030a7f67c4047d059cb248c6000844713bc7ae06f0fa85af8bab3e5b",
+        "bytes": 1170318,
+        "width": 1024,
+        "height": 1024
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [
+          "외형 후보 — A1 채택으로 안 씀(그림 결함 아님)"
+        ],
+        "date": "2026-10-23",
+        "card": 899,
+        "evidence": [
+          "board #899 — PD 판정 ① 10-23 「전부 추천대로」 = 외형 A1(mukeun_a_1.png) 추천안"
+        ],
+        "quote": "전부 추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 899,
+        "source_commit": null,
+        "inclusion_reason": "/monster-make 1단계 시안 — 범굴·심굴 거미 대역(정지 메시) 교체용 외형 후보",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/899_mukeun_geomi/p_b.txt",
+          "sha256": "1e4d8fb7e1d835e6d7e795a8c484fe229be5d72817977f43fbf3fedb73063445",
+          "bytes": 641
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "B안 문장으로 생성됐으나 결과가 A안(고치 등짐)으로 쏠림 — 같은 폴더의 A 결과 영향 추정, B안 판정에는 b_2·b_3 사용",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-23\", \"card\": 899, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
+      "asset_id": "card899-mukeun-b_2",
+      "character_id": "mukeun_geomi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "묵은거미 원화 시안 · B안 묵은 껍질(바위·이끼) (mukeun_b_2.png)",
+      "role": "monster",
+      "runtime_aliases": [
+        "spider",
+        "wang_geomi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/899_mukeun_geomi/mukeun_b_2.png",
+        "sha256": "26fe3af3db9371b4aa7f989e31e90c019e88617cd32551ede5cc6163065240b4",
+        "bytes": 1213655,
+        "width": 1024,
+        "height": 1024
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [
+          "외형 후보 — A1 채택으로 안 씀(그림 결함 아님)"
+        ],
+        "date": "2026-10-23",
+        "card": 899,
+        "evidence": [
+          "board #899 — PD 판정 ① 10-23 「전부 추천대로」 = 외형 A1(mukeun_a_1.png) 추천안"
+        ],
+        "quote": "전부 추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 899,
+        "source_commit": null,
+        "inclusion_reason": "/monster-make 1단계 시안 — 범굴·심굴 거미 대역(정지 메시) 교체용 외형 후보",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/899_mukeun_geomi/p_b.txt",
+          "sha256": "1e4d8fb7e1d835e6d7e795a8c484fe229be5d72817977f43fbf3fedb73063445",
+          "bytes": 641
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-23\", \"card\": 899, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
+      "asset_id": "card899-mukeun-b_3",
+      "character_id": "mukeun_geomi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "묵은거미 원화 시안 · B안 묵은 껍질(바위·이끼) (mukeun_b_3.png)",
+      "role": "monster",
+      "runtime_aliases": [
+        "spider",
+        "wang_geomi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/899_mukeun_geomi/mukeun_b_3.png",
+        "sha256": "bc2fe027e5dedbe4a0c44ad91f00ba863977e207e366a9ad664503829383e303",
+        "bytes": 1416645,
+        "width": 1024,
+        "height": 1024
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [
+          "외형 후보 — A1 채택으로 안 씀(그림 결함 아님)"
+        ],
+        "date": "2026-10-23",
+        "card": 899,
+        "evidence": [
+          "board #899 — PD 판정 ① 10-23 「전부 추천대로」 = 외형 A1(mukeun_a_1.png) 추천안"
+        ],
+        "quote": "전부 추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 899,
+        "source_commit": null,
+        "inclusion_reason": "/monster-make 1단계 시안 — 범굴·심굴 거미 대역(정지 메시) 교체용 외형 후보",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/899_mukeun_geomi/p_b.txt",
+          "sha256": "1e4d8fb7e1d835e6d7e795a8c484fe229be5d72817977f43fbf3fedb73063445",
+          "bytes": 641
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-23\", \"card\": 899, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
+      "asset_id": "card899-mukeun-c_1",
+      "character_id": "mukeun_geomi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "묵은거미 원화 시안 · C안 삭은 줄·먼지 (mukeun_c_1.png)",
+      "role": "monster",
+      "runtime_aliases": [
+        "spider",
+        "wang_geomi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/899_mukeun_geomi/mukeun_c_1.png",
+        "sha256": "8c9896f4cdd7aa80d305681c5e41ae8ecfa61853c0a188d21921786f32ee166e",
+        "bytes": 953081,
+        "width": 1024,
+        "height": 1024
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [
+          "외형 후보 — A1 채택으로 안 씀(그림 결함 아님)"
+        ],
+        "date": "2026-10-23",
+        "card": 899,
+        "evidence": [
+          "board #899 — PD 판정 ① 10-23 「전부 추천대로」 = 외형 A1(mukeun_a_1.png) 추천안"
+        ],
+        "quote": "전부 추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 899,
+        "source_commit": null,
+        "inclusion_reason": "/monster-make 1단계 시안 — 범굴·심굴 거미 대역(정지 메시) 교체용 외형 후보",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/899_mukeun_geomi/p_c.txt",
+          "sha256": "0181a6e9c51d98cb23b00f5d6952984becfdae2f56342ef58f4c9234f6e2b366",
+          "bytes": 702
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-23\", \"card\": 899, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
+    },
+    {
+      "asset_id": "card899-mukeun-c_2",
+      "character_id": "mukeun_geomi",
+      "form_id": "monster",
+      "version_id": "2026-10-23",
+      "display_name": "묵은거미 원화 시안 · C안 삭은 줄·먼지 (mukeun_c_2.png)",
+      "role": "monster",
+      "runtime_aliases": [
+        "spider",
+        "wang_geomi"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/899_mukeun_geomi/mukeun_c_2.png",
+        "sha256": "f24656c16ef1f075152d3637826760f405c241dd2c73429bef340f0c5222471d",
+        "bytes": 1063407,
+        "width": 1024,
+        "height": 1024
+      },
+      "decision": {
+        "status": "rejected",
+        "scope": [
+          "외형 후보 — A1 채택으로 안 씀(그림 결함 아님)"
+        ],
+        "date": "2026-10-23",
+        "card": 899,
+        "evidence": [
+          "board #899 — PD 판정 ① 10-23 「전부 추천대로」 = 외형 A1(mukeun_a_1.png) 추천안"
+        ],
+        "quote": "전부 추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 899,
+        "source_commit": null,
+        "inclusion_reason": "/monster-make 1단계 시안 — 범굴·심굴 거미 대역(정지 메시) 교체용 외형 후보",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/899_mukeun_geomi/p_c.txt",
+          "sha256": "0181a6e9c51d98cb23b00f5d6952984becfdae2f56342ef58f4c9234f6e2b366",
+          "bytes": 702
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-23\", \"card\": 899, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "자료관 복원 #1127 (2026-11-02): 낡은 작업 파일에만 남아 있던 기록을 HEAD 위로 옮김"
+      ]
     },
     {
       "asset_id": "card997-col-bed64cae57",
