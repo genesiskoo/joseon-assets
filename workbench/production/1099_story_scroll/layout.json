@@ -1,0 +1,175 @@
+{
+ "always": [
+  "L01_landscape",
+  "L02_village"
+ ],
+ "villagers": [
+  "L03_villagers_0",
+  "L03_villagers_1",
+  "L03_villagers_2",
+  "L03_villagers_3",
+  "L03_villagers_4",
+  "L03_villagers_5",
+  "L03_villagers_6",
+  "L03_villagers_7",
+  "L03_villagers_8",
+  "L03_villagers_9"
+ ],
+ "grey_order": [
+  "L03_villagers_3",
+  "L03_villagers_6",
+  "L03_villagers_1",
+  "L03_villagers_8",
+  "L03_villagers_0",
+  "L03_villagers_5",
+  "L03_villagers_9",
+  "L03_villagers_2",
+  "L03_villagers_7"
+ ],
+ "grey_per_kill": 3,
+ "tavern": [
+  880,
+  700
+ ],
+ "gold": [
+  95,
+  575
+ ],
+ "kill_layers": {
+  "heukrang": [
+   "L05_hound",
+   "L09_slashes_0"
+  ],
+  "beom": [
+   "L06_tiger",
+   "L09_slashes_1"
+  ],
+  "bulgasari": [
+   "L07_bulgasari",
+   "L08_chain_broken",
+   "L09_slashes_2"
+  ]
+ },
+ "boxes": {
+  "L01_landscape": [
+   0,
+   0,
+   1536
+  ],
+  "L02_village": [
+   0,
+   0,
+   1536
+  ],
+  "L03_villagers_0": [
+   610,
+   690,
+   48
+  ],
+  "L03_villagers_1": [
+   690,
+   735,
+   40
+  ],
+  "L03_villagers_2": [
+   760,
+   690,
+   40
+  ],
+  "L03_villagers_3": [
+   1000,
+   715,
+   50
+  ],
+  "L03_villagers_4": [
+   1085,
+   690,
+   46
+  ],
+  "L03_villagers_5": [
+   1150,
+   740,
+   58
+  ],
+  "L03_villagers_6": [
+   1230,
+   700,
+   44
+  ],
+  "L03_villagers_7": [
+   1300,
+   745,
+   46
+  ],
+  "L03_villagers_8": [
+   1040,
+   790,
+   58
+  ],
+  "L03_villagers_9": [
+   720,
+   800,
+   40
+  ],
+  "L04_jumo_child": [
+   815,
+   520,
+   170
+  ],
+  "L05_hound": [
+   230,
+   620,
+   400
+  ],
+  "L06_tiger": [
+   690,
+   40,
+   330
+  ],
+  "L07_bulgasari": [
+   10,
+   400,
+   330
+  ],
+  "L08_chain_broken": [
+   40,
+   420,
+   260
+  ],
+  "L09_slashes_0": [
+   300,
+   560,
+   300
+  ],
+  "L09_slashes_1": [
+   770,
+   20,
+   250
+  ],
+  "L09_slashes_2": [
+   90,
+   380,
+   240
+  ],
+  "L10_nine_streams": [
+   0,
+   0,
+   1536
+  ],
+  "L11_doho_pass": [
+   1270,
+   170,
+   190
+  ],
+  "L12_doho_cave": [
+   200,
+   450,
+   150
+  ],
+  "L13_doho_leave": [
+   1330,
+   150,
+   160
+  ]
+ }
+}
