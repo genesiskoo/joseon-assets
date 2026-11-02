@@ -35,4 +35,12 @@ if [ -n "$bad" ]; then
   } >&2
   exit 1
 fi
+
+# 자료관 장부가 줄어드는 커밋 막기 (게임 카드 #1127) — 본문·사연 = catalog_guard.py
+guard="$(dirname "$0")/catalog_guard.py"
+if command -v python >/dev/null 2>&1; then
+  python "$guard" || exit 1
+elif command -v python3 >/dev/null 2>&1; then
+  python3 "$guard" || exit 1
+fi
 exit 0
