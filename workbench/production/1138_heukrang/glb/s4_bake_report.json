@@ -1,0 +1,173 @@
+{
+ "U": 0.30625224471056245,
+ "fwd": [
+  0.0,
+  0.0,
+  1.0
+ ],
+ "tempo": [
+  1.2,
+  1.4
+ ],
+ "clips": {
+  "idle": {
+   "len": 2.2,
+   "keys": 67,
+   "loop": true,
+   "drop_hips_cm_max": 0.0,
+   "drop_chest_cm_max": 0.0,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "walk": {
+   "len": 1.02,
+   "keys": 62,
+   "loop": true,
+   "drop_hips_cm_max": 2.37,
+   "drop_chest_cm_max": 0.03,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "run": {
+   "len": 0.77,
+   "keys": 93,
+   "loop": true,
+   "drop_hips_cm_max": 3.65,
+   "drop_chest_cm_max": 3.86,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "attack": {
+   "len": 0.6667,
+   "keys": 81,
+   "loop": false,
+   "drop_hips_cm_max": 1.92,
+   "drop_chest_cm_max": 0.0,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "hit": {
+   "len": 0.3,
+   "keys": 37,
+   "loop": false,
+   "drop_hips_cm_max": 0.0,
+   "drop_chest_cm_max": 0.4,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "pounce": {
+   "len": 0.65,
+   "keys": 40,
+   "loop": false,
+   "drop_hips_cm_max": 0.0,
+   "drop_chest_cm_max": 0.0,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "pounce_air": {
+   "len": 0.4,
+   "keys": 25,
+   "loop": true,
+   "drop_hips_cm_max": 0.0,
+   "drop_chest_cm_max": 0.0,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "pounce_land": {
+   "len": 0.25,
+   "keys": 16,
+   "loop": false,
+   "drop_hips_cm_max": 0.0,
+   "drop_chest_cm_max": 0.0,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  },
+  "die": {
+   "len": 1.2,
+   "keys": 37,
+   "loop": false,
+   "drop_hips_cm_max": 0.0,
+   "drop_chest_cm_max": 0.0,
+   "ik_miss_mm": 0.0,
+   "unreach_mm": 0.0
+  }
+ },
+ "compact": [
+  522,
+  522,
+  349912
+ ],
+ "ground": {
+  "walk": {
+   "v": 0.5359,
+   "touch": {
+    "FL": 0.258,
+    "FR": 0.754,
+    "BL": 0.0,
+    "BR": 0.508
+   }
+  },
+  "run": {
+   "v": 2.0782,
+   "touch": {
+    "FL": 0.487,
+    "FR": 0.404,
+    "BL": 0.0,
+    "BR": 0.088
+   }
+  }
+ },
+ "modeldef": {
+  "walk_speed": 1.179,
+  "run_speed": 4.572,
+  "step_phases": {
+   "walk": [
+    0.258,
+    0.754
+   ],
+   "run": [
+    0.044,
+    0.446
+   ]
+  },
+  "hit_speed": 1.0,
+  "attack_impact": {
+   "attack": 0.6
+  }
+ },
+ "gallery": {
+  "idle_cm": 7.488946449708707,
+  "threshold": 2.6,
+  "walk": {
+   "clip": "walk",
+   "speed": 1.2,
+   "rate": 1.018,
+   "slip": 0.0,
+   "duty": 0.57,
+   "steps": 2.8
+  },
+  "run": {
+   "clip": "run",
+   "speed": 4.0,
+   "rate": 0.875,
+   "slip": 3.6,
+   "duty": 0.23,
+   "steps": 3.3
+  },
+  "attack": {
+   "len": 0.667,
+   "impact": 0.6,
+   "head_push_cm": 34.6,
+   "peak_t": 0.358,
+   "peak_dt": -0.042,
+   "peak_speed": 10.09
+  },
+  "hit": {
+   "len": 0.3,
+   "played": 0.3,
+   "move_cm": 17.4,
+   "tilt_deg": 4.4
+  }
+ },
+ "size_bytes": 2048100
+}

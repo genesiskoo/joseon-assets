@@ -1,0 +1,19 @@
+You are making 3D-modeling input images for a game monster. Use your built-in image generation tool. The two attached images show the approved creature design: Heukrang, a huge black wolf-dog demon (a boss) with red eyes and a thick shaggy mane.
+
+Create THREE separate images of this exact same creature in the same neutral standing pose, and save them in the current folder as PNG files:
+1. side_left.png - strict side view (orthographic profile) of the creature's LEFT side, head pointing to the left edge of the image. Landscape 1536x1024.
+2. front.png - strict front view, the creature facing the camera head-on, symmetrical. Square 1024x1024.
+3. back.png - strict back view, seen from directly behind, symmetrical. Square 1024x1024.
+Make image 1 first, then use it as the reference for images 2 and 3, so all three show the same creature, proportions, fur pattern and pose.
+
+Pose and shape rules for all three images (they feed an image-to-3D generator, which fails when fur hides the legs):
+- Standing still on all four legs in a neutral stance, head level, looking straight ahead, mouth closed with the fangs just visible.
+- All four legs straight and vertical and clearly separated: visible background between the two front legs, between the two hind legs, and between the front pair and the hind pair. All paws flat on one ground line.
+- The tail is lifted and held out behind, clearly away from the hind legs (not hanging down between them).
+- Fur: thick but short-to-medium, grouped into large clumped locks that follow the body form. The mane may be fuller around the neck and shoulders, but no long fur hangs below the belly line, between the legs, or over the legs. No long chest fur hanging between the front legs.
+- Color: very dark charcoal-grey fur with clear mid-grey variation between the locks so the 3D form reads (not pure black), a subtle lighter undercoat, deep red eyes. Matte, hand-painted dark-fantasy game style.
+- The whole body inside the frame with margin on every side (nose to tail tip, ear tips to paws), centered.
+- Plain pure white background, flat even lighting, no cast shadow, no ground plane, no scenery, no text, no labels, no border.
+Keep the same face, head shape, ears, mane, body proportions and heavy wolf-dog build as the reference. Do not add armor, collars, chains, fire, smoke or glow effects.
+
+When finished, list the saved file names and their pixel sizes.
