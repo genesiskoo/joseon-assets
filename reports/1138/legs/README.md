@@ -4,3 +4,4 @@
 - 2·3·4 = model_viewer --compare --strip=8:4 --yaw=90 · 위 두 줄 = 지금 게임 GLB · 아래 두 줄 = 고친 후보(--legs=track · 다리 사이 막 끊기)
   - 2 흑랑 달리기: 위 = 지금 main(고치기 전 Tripo 몸) · 3 불가살이 걷기 · 4 들개 달리기: 위 = 옛 Hunyuan 몸
 - 블라인드 독립 판독(Sonnet) 점수(5점) 고친 쪽 / 비교: 불가살이 4·4 / 2·2 · 흑랑 4·3 / 4·3 · 여우 3·3 / 4·3 · 들개 3·2 / 4·3 · 장산범 2·2 / 3·3
+- 5 = 흑랑 되돌림 인게임 같은 구도(enemy_tour_videos ingame) — 왼쪽 = 고치기 전 Tripo 몸(main aee9b3ed) · 오른쪽 = 옛 Hunyuan 몸 + #1197 물어뜯기(main 6ee447b0) · jpg 2·6·10·14.6초 · mp4 19초
