@@ -1,0 +1,19 @@
+You are making 3D-modeling input images for a game monster. Use your built-in image generation tool. The attached images show the approved creature design: Bulgasari, the iron-eating beast (a boss) - a huge, heavy, bear-like quadruped with a pig-like snout and small tusks, small eyes, short thick legs with big clawed paws, a row of short iron spikes along the spine, and a short thin tail.
+
+Creature details to keep: dark iron-grey leathery hide with mid-grey variation and subtle rust-brown tones so the 3D form reads (matte, not shiny metal, not pure black), the iron spikes on the back and shoulders, the heavy rounded body. The short tail is held out straight behind, level with the rump, not hanging between the hind legs.
+
+Create THREE separate images of this exact same creature in the same neutral standing pose, and save them in the current folder as PNG files:
+1. side_left.png - strict side view (orthographic profile) of the creature's LEFT side, head pointing to the LEFT edge of the image. Landscape 1536x1024.
+2. front.png - strict front view, the creature facing the camera head-on, perfectly symmetrical. Square 1024x1024.
+3. back.png - strict back view, seen from directly behind, perfectly symmetrical. Square 1024x1024.
+Make image 1 first, then use it as the reference for images 2 and 3, so all three show the same creature, proportions, colors and pose.
+
+These images feed an image-to-3D generator, which fails when fur or tails hide the legs. Rules for all three images:
+- Standing still on all four legs in a neutral stance, head level, looking straight ahead. All four legs straight and vertical; all paws flat on one ground line.
+- Side view: clear open background between the two front legs, between the two hind legs, and between the front pair and the hind pair, from the ground up to the belly. Nothing hangs below the belly line.
+- Front view: real front-view anatomy. The two FRONT legs are nearest the camera, straight and vertical, with a clear vertical gap of background between them. The two HIND legs stand directly behind the front legs, in line with them, so from the front they are almost completely hidden (at most the hind paws peek out just inside the front paws). Do NOT draw four leg columns side by side. Body width matches the side view (the body is much narrower than it is long).
+- Back view: the two HIND legs are nearest the camera with a clear vertical gap of background between them, ground up to the crotch; the front legs are hidden behind them. Do NOT draw four leg columns side by side. The tail is held out behind exactly as in the side view, so from behind it points at the camera and appears only as a short, foreshortened shape at hip height; it must not hang down between the hind legs. Hind feet show heels, not toes.
+- The whole body inside the frame with margin on every side (nose to tail tip, top to paws), centered.
+- Plain pure white background (#FFFFFF), flat even lighting, no cast shadow, no ground plane, no scenery, no text, no labels, no border. Matte, hand-painted dark-fantasy game style. No armor, collars, chains, fire, smoke or glow effects.
+
+When finished, list the saved file names and their pixel sizes.
