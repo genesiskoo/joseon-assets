@@ -1,0 +1,9 @@
+Use your built-in image generation tool to EDIT the three attached images (1 = side_left.png, 2 = front.png, 3 = back.png). They show the same game monster, Meokjine, a giant centipede, and are used as input for an image-to-3D generator. Make one edited image per input and save them in the current folder as side_left_v2.png (landscape 1536x1024), front_v2.png (square 1024x1024) and back_v2.png (square 1024x1024).
+
+For all three: a fully MATTE dark black-brown armored shell with only subtle dark green variation (no glossy highlights, no wet sheen), orange-brown legs, slightly larger venom claws under the head, the same pose (front third raised in a smooth upward curve, the rest lying straight and flat on the ground with uniform segments, one pair of legs per segment).
+
+1. side_left_v2: keep the creature, pose, segments and framing exactly; only make the shell matte and enlarge the venom claws slightly.
+2. front_v2: redraw as a strict eye-level head-on orthographic view with the camera at head height, not from above: the raised head and front body fill the view, the rear body is hidden behind it, legs spread symmetrically on both sides, with a clear white margin at the bottom.
+3. back_v2: redraw as a strict eye-level orthographic view from directly behind the tail end, camera at ground level, not from above: the two tail appendages and the last segment are nearest, the body recedes straight ahead without strong perspective compression, the raised head shows smaller above it, legs spread symmetrically, with a clear white margin at the bottom.
+
+Plain pure white background (#FFFFFF), flat even lighting, no cast shadow, no ground plane, no text. When finished, list the saved file names and their pixel sizes.

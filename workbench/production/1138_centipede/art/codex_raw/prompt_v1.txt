@@ -1,0 +1,18 @@
+You are making 3D-modeling input images for a game monster. Use your built-in image generation tool. The attached images show the approved creature design: Meokjine, the ink centipede (a common monster) - a giant centipede about 2.2 m long with a dark armored body, orange-brown legs, two long antennae and large venom claws under the head.
+
+Create THREE separate images of this exact same creature in the same pose, and save them in the current folder as PNG files:
+1. side_left.png - strict side view (orthographic profile) of the creature's LEFT side, head pointing to the LEFT edge of the image. Landscape 1536x1024.
+2. front.png - strict front view, head-on, perfectly symmetrical. Square 1024x1024.
+3. back.png - strict back view, seen from directly behind the tail end, perfectly symmetrical. Square 1024x1024.
+Make image 1 first, then use it as the reference for images 2 and 3, so all three show the same creature, proportions, colors and pose.
+
+These images feed an image-to-3D generator. Rules for all three images:
+- Pose: the front part of the body (head plus the first few segments, about one third of the length) is raised in a smooth upward curve, head up and level, in a menacing rearing stance. The rest of the body lies flat along the ground in a perfectly STRAIGHT line, not curved sideways, not S-shaped.
+- The straight part of the body is made of many identical, evenly spaced armored segments. Each segment has exactly one pair of legs, one on each side, spread outward and down to the ground, all legs clearly separated with background visible between them. The tail end has two short tail appendages pointing backward.
+- Colors: matte black-brown armored plates with subtle dark green variation and slightly lighter edges so the 3D form reads (not pure black, not glossy), orange-brown legs and antennae.
+- Front view: the raised head and front body face the camera; legs spread symmetrically on both sides; the straight rear body is hidden behind.
+- Back view: the tail end is nearest the camera, legs spread symmetrically on both sides; the raised head shows above, further back.
+- The whole body inside the frame with margin on every side, centered.
+- Plain pure white background (#FFFFFF), flat even lighting, no cast shadow, no ground plane, no scenery, no text, no labels, no border. Matte, hand-painted dark-fantasy game style. No fire, smoke or glow effects.
+
+When finished, list the saved file names and their pixel sizes.

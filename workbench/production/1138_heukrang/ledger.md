@@ -56,3 +56,8 @@
 
 - 반입(이 카드): `s7_slate.glb` → `.\tools\intake_model.ps1 -Src … -Id boss_heukrang -Budget boss` · ModelDef walk_speed 1.179 · run_speed 4.572(디딤 위상 그대로) · eorin_heukrang 같은 GLB · #1197이 quad_gait를 먼저 바꾸면 같은 굽기 다시(s3 명령 → reweight limb → s6·s7) · 시험(test_quad_family · heukrang e2e · walk_audit) · 생성 출처 장부 「교체됨 → Tripo c4bae842」 · 옛 GLB는 git.
 - 나머지 몸 5(장산범 · 불가살이 · 여우 · 들개 · 지네)·소품 2 = PD가 이 결과를 보고 정함.
+
+## 5. 반입 · 착륙 (2026-11-05, PD 「추천대로」 = 결정 ① 「합쳐」)
+- 게임 main `c69e1e68` art(#1138) 반입 + `b236a22a` test(#1138) vfx_cues 怒 높이 테두리 0.2 — 착륙 e2e 39/39 · 반입본 = `glb/s7_slate.glb` 그대로 · 어린 흑랑 `loco_scale_max 1.9`.
+- 인게임 전/후 사진 = 게임 `docs/art/1138_heukrang/ingame_before_after.jpg` · 새 몸 네 방향 = `reports/1138/1138_heukrang_views_new.jpg`.
+- 자료관(D-109) = `card1138-heukrang-model-tripo` approved(근거 = PD 「추천대로」) · runtime_inventory 흑랑 두 줄 새로 · 검사 새 오류 0(150 → 150 — 남은 150은 다른 카드의 낡은 촬영 해시, 그중 card744 옛 구미호 렌더 1건은 흑랑 GLB 해시가 바뀌어 생김 · 보존 규칙대로 그대로).

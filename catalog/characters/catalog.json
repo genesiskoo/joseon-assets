@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02",
+  "updated_at": "2026-11-05",
   "characters": [
     {
       "character_id": "doho",
@@ -3091,7 +3091,7 @@
         "portrait_id": null,
         "portrait_resource": null,
         "definition_config": "script = ExtResource(\"1\")\nid = \"boss_heukrang\"\ndisplay_name = \"흑랑\"\nbehavior = 0\nmax_hp = 150.0\ndefense = 3.0\nevasion = 25.0\nxp = 120\ndrop_class = 2\ndmg_min = 8.0\ndmg_max = 13.0\naccuracy = 80.0\nattack_range = 1.7\nattack_cooldown = 1.2\nwindup = 0.4\nstagger_sec = 0.12\nknockback = 0.08\nresist_cold = 50.0\nresist_lightning = -25.0\nresist_sal = 50.0\ncan_freeze = false\nmove_speed = 4.0\naggro_range = 12.0\nkeep_distance_min = 3.0\nkeep_distance_max = 9.0\ndash_speed = 14.0\ndash_length = 9.0\ncolor = Color(0.2, 0.12, 0.28, 1)\nheight = 2.4\nradius = 0.7\nmodel = ExtResource(\"2\")\nlaunch_mult = 0.0\nfamily = &\"heukrang\"\nkind = 2\nside = 1\nbody = 1\nelite_ok = false",
-        "model_config": "script = ExtResource(\"1\")\nid = \"boss_heukrang\"\nscene_path = \"res://assets/models/boss_heukrang/boss_heukrang.glb\"\nscale = 2.2\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 2.4\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 1.265\nrun_speed = 4.905\nrun_threshold = 0.0\nloco_scale_min = 0.65\nstep_phases = {\n\"run\": Vector2(0.044, 0.446),\n\"walk\": Vector2(0.258, 0.754)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+        "model_config": "script = ExtResource(\"1\")\nid = \"boss_heukrang\"\nscene_path = \"res://assets/models/boss_heukrang/boss_heukrang.glb\"\nscale = 2.2\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 2.4\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 1.179\nrun_speed = 4.572\nrun_threshold = 0.0\nloco_scale_min = 0.65\nstep_phases = {\n\"run\": Vector2(0.044, 0.446),\n\"walk\": Vector2(0.258, 0.754)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
           "data/dungeons/heukrang_gul.tres"
@@ -3104,29 +3104,29 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "4ccd93bcccb569dce0d47bbaa3b7eaa25cfe49b6b434bc65bd869187eb4db090",
+            "bytes": 28742
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "assets/models/boss_heukrang/boss_heukrang.glb",
             "exists": true,
-            "sha256": "fedb53a10da0473a94ce3bfb0ed98d9036b629805ba22674783981ad5d2505a8",
-            "bytes": 1729148
+            "sha256": "48c624dc20b27073ac9382bd813dded0db14fe6fb22bd8c50787b6fa50230b92",
+            "bytes": 1958660
           },
           {
             "repository": "game",
@@ -3146,8 +3146,8 @@
             "repository": "game",
             "path": "data/models/boss_heukrang.tres",
             "exists": true,
-            "sha256": "9f022aca777ec377a415c1b6e9ce55c4587d40f959257c0de37d66cf9df20641",
-            "bytes": 1979
+            "sha256": "2c60cb29f5ef29a2ba6ec7f20c73edfab41f52b321f63b151bb7ca5cc7bf7cb6",
+            "bytes": 2510
           },
           {
             "repository": "game",
@@ -3157,7 +3157,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "44387ea580f44c47f040348321312cddcdc4a2e3fcc9fac7fd4dcae17b58a358",
+        "fingerprint": "181a7cacfe7123eb11e78ea2b92c001b04e0f01b8d9030deb0fce9aa61151e93",
         "dependency_complete": true
       },
       {
@@ -4044,7 +4044,7 @@
         "portrait_id": null,
         "portrait_resource": null,
         "definition_config": "script = ExtResource(\"1\")\nid = \"eorin_heukrang\"\ndisplay_name = \"어린 흑랑\"\nbehavior = 2\nmax_hp = 20.0\ndefense = 1.0\nevasion = 25.0\nxp = 8\ndmg_min = 4.0\ndmg_max = 7.0\naccuracy = 65.0\nattack_range = 1.2\nattack_cooldown = 1.2\nwindup = 0.4\nknockback = 0.3\nresist_cold = 50.0\nresist_lightning = -25.0\nresist_sal = 50.0\nmove_speed = 4.2\naggro_range = 9.0\nkeep_distance_min = 3.0\nkeep_distance_max = 6.0\ndash_speed = 12.0\ndash_length = 6.0\ncolor = Color(0.32, 0.26, 0.34, 1)\nheight = 1.3\nradius = 0.4\nmodel = ExtResource(\"2\")\nmodel_tint = Color(1.45, 1.35, 1.25, 1)\nlaunch_mult = 1.2\nfamily = &\"eorin_heukrang\"\nsound_family = &\"wolf\"\nkind = 2\nside = 1\nbody = 1\nboss_kin = &\"heukrang_gul\"\ntint_stage = 1\npack_min = 2\npack_max = 3",
-        "model_config": "script = ExtResource(\"1\")\nid = \"eorin_heukrang\"\nscene_path = \"res://assets/models/boss_heukrang/boss_heukrang.glb\"\nscale = 1.21\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 0.96\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 0.696\nrun_speed = 2.698\nrun_threshold = 0.0\nloco_scale_min = 0.65\nstep_phases = {\n\"run\": Vector2(0.044, 0.446),\n\"walk\": Vector2(0.258, 0.754)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+        "model_config": "script = ExtResource(\"1\")\nid = \"eorin_heukrang\"\nscene_path = \"res://assets/models/boss_heukrang/boss_heukrang.glb\"\nscale = 1.21\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 0.875\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 0.648\nrun_speed = 2.515\nrun_threshold = 0.0\nloco_scale_min = 0.65\nloco_scale_max = 1.9\nstep_phases = {\n\"run\": Vector2(0.044, 0.446),\n\"walk\": Vector2(0.258, 0.754)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(1.45, 1.35, 1.25, 1)",
         "usage_evidence": [
           "data/dungeons/heukrang_gul.tres"
@@ -4057,29 +4057,29 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "4ccd93bcccb569dce0d47bbaa3b7eaa25cfe49b6b434bc65bd869187eb4db090",
+            "bytes": 28742
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "assets/models/boss_heukrang/boss_heukrang.glb",
             "exists": true,
-            "sha256": "fedb53a10da0473a94ce3bfb0ed98d9036b629805ba22674783981ad5d2505a8",
-            "bytes": 1729148
+            "sha256": "48c624dc20b27073ac9382bd813dded0db14fe6fb22bd8c50787b6fa50230b92",
+            "bytes": 1958660
           },
           {
             "repository": "game",
@@ -4099,8 +4099,8 @@
             "repository": "game",
             "path": "data/models/eorin_heukrang.tres",
             "exists": true,
-            "sha256": "114d55a920b4ffc6a5f4960d9531c5ed0b516fd80961e8f75fcbd399643e5565",
-            "bytes": 1452
+            "sha256": "7837cde16d94319bfc5bdb745a7f2a3509ff3b6108d4772208d6aee1df44066e",
+            "bytes": 1733
           },
           {
             "repository": "game",
@@ -4110,7 +4110,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "921d7d0bdf4cfbc4fa08db2aa5bca5773dcb4d37784044265933cf89744e95de",
+        "fingerprint": "488009ed67e1d114baf8dd8ec87ef27cc940af21cda3bbae78b1e137322bde9e",
         "dependency_complete": true
       },
       {
@@ -38008,6 +38008,527 @@
         "look_audit 채도 0.153 = 밴드 밖(병색 바램) — PD 판정",
         "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-10-29\", \"card\": 993, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
         "/motion-pass 게임 bad9ae95 · assets 446f1528 — ModelDef 박자·발 잠금(GLB 그대로) · 채도 0.153 = PD 10-29 「그대로 둠」"
+      ]
+    },
+    {
+      "asset_id": "card1138-heukrang-model-tripo",
+      "character_id": "heukrang",
+      "form_id": "monster",
+      "version_id": "card1138-heukrang-model-tripo",
+      "display_name": "흑랑 3D (Tripo 웹 H3.1 · 앞·옆·뒤·게임 각도)",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_heukrang",
+        "eorin_heukrang"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "reports/1138/1138_heukrang_views_new.jpg",
+        "sha256": "478efe129a34c0d90c5e0f17ea94a00656830f7953f9d7e68c8bfab79153f405",
+        "bytes": 46271,
+        "width": 1280,
+        "height": 345
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 몸 · 보스 흑랑 · 어린 흑랑(같은 GLB) — Tripo 웹 몸 + 우리 리그·굽기(rig_quadruped · reweight limb · 빛깔 = 옛 몸 평균색)"
+        ],
+        "date": "2026-11-05",
+        "card": 1138,
+        "evidence": [
+          "card:#1138 PD 2026-11-05 「추천대로」(본진 지휘 세션 전달 — 결정 ① 새 몸으로 바꿈 = 흑랑 반입 「합쳐」 · ③ 꼬리 들림·덩치 그대로)"
+        ],
+        "quote": "추천대로",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1138,
+        "source_commit": "c69e1e68d6996d750e40a867ec33de23e06c8ec8",
+        "inclusion_reason": "Hunyuan3D 유래 몸 교체(#1138, #1128 접음) — Codex 3D 입력 원화(독립 판독) → Tripo 웹 여러 방향 → 우리 리그(0크레딧)",
+        "tool": "Tripo 웹 H3.1 여러 방향 · 작업 c4bae842-f160-4bb1-89d4-6946013d3f17 · Ultra Mesh · Triangle 12,000 → 11,436면 · 2K · 40크레딧",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_heukrang/art/1_front.png",
+            "sha256": "8e066307e8073471a4720896b93eb1aba60175cf5a557f1078582e97df16607f",
+            "bytes": 519490,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_heukrang/art/2_left.png",
+            "sha256": "1134244ddbe7c727cc9c43630b9d9c1fe21920f250f39155085aac356428c53a",
+            "bytes": 1185776,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_heukrang/art/3_back.png",
+            "sha256": "b445ca079fd97390c2ba45e2d29fcbe517a0421b36b1376073c584eb62816930",
+            "bytes": 534290,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_heukrang/art/4_right.png",
+            "sha256": "e37f85797557ad8e5546d7500fe40ed2c0a9711a0dc511d1b844e7c9657aa1aa",
+            "bytes": 1188619,
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_heukrang/glb/s7_slate.glb",
+            "sha256": "48c624dc20b27073ac9382bd813dded0db14fe6fb22bd8c50787b6fa50230b92",
+            "bytes": 1958660
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입 2026-11-05 = assets/models/boss_heukrang/boss_heukrang.glb · data/models/boss_heukrang.tres(walk 1.179 · run 4.572) · eorin_heukrang.tres(loco_scale_max 1.9) — 착륙 main c69e1e68 + b236a22a(e2e 39/39)",
+        "인게임 전/후 사진(같은 구도) = game docs/art/1138_heukrang/ingame_before_after.jpg · 비교 영상 = assets reports/1138/1138_heukrang_compare.mp4",
+        "옛 몸 = Hunyuan3D v3(장부에 자료 없음 — git 이력) · 꼬리 들림 · 길고 낮은 덩치 = PD 「그대로」(결정 ③)",
+        "장부 = assets workbench/production/1138_heukrang/ledger.md"
+      ]
+    },
+    {
+      "asset_id": "card1138-bulgasari-model-tripo",
+      "character_id": "bulgasari",
+      "form_id": "monster",
+      "version_id": "card1138-bulgasari-model-tripo",
+      "display_name": "불가살이 3D (Tripo 웹 H3.1 · 앞·옆·뒤·게임 각도)",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_bulgasari",
+        "soemeogi",
+        "soemeogi_elder"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "reports/1138/1138_bulgasari_views_new.jpg",
+        "sha256": "820810e25218576d4f300276db2a5a181d66df4417882b0a7becc1a4d291b341",
+        "bytes": 32777,
+        "width": 1200,
+        "height": 300
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-05",
+        "card": 1138,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1138,
+        "source_commit": null,
+        "inclusion_reason": "Hunyuan3D 유래 몸 교체(#1138, #1128 접음) — Codex 3D 입력 원화(독립 판독) → Tripo 웹 여러 방향 → 우리 리그(0크레딧)",
+        "tool": "Tripo 웹 H3.1 여러 방향 · 작업 ae95ac07-140e-4595-82c5-72b1ff9c11d1 · Ultra Mesh · Triangle 12,000 → 11,363면 · 2K · 40크레딧",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/1_front.png",
+            "sha256": "6fdc2b9e7f26061d2b3c18f63b47a432b6644fc65f08d3da9835027fbdfc823b",
+            "bytes": 998977,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/2_left.png",
+            "sha256": "eec8e6b6fb0dfd28f28b2219d733e620b3fef6ccc8ce1d121de6938e403eaf89",
+            "bytes": 1808587,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/3_back.png",
+            "sha256": "618efa5b9bcd51e62a20f1c36655c0c692238991006b05352837edcd3ff7a489",
+            "bytes": 949286,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/4_right.png",
+            "sha256": "1cfce05f308be6cf1d1da6fe0b2bce4bc51ec42f6cc7403dde421fdd677eaa19",
+            "bytes": 1794014,
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/glb/s6_color.glb",
+            "sha256": "7fccf03f4ae5c80e707732dddb770e1348e6904aa54b5a08902e592bcf8601cc",
+            "bytes": 2531716
+          }
+        ]
+      },
+      "notes": [
+        "반입 후보 — ModelDef walk 1.698 · run 5.282 · loco_scale_max 1.9 · 쇠먹이 둘도 같은 GLB · 반입은 PD 「합쳐」 뒤(D-079)",
+        "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ① · 비교 영상 = reports/1138/1138_bulgasari_compare.mp4",
+        "장부 = assets workbench/production/1138_bulgasari/ledger.md"
+      ]
+    },
+    {
+      "asset_id": "card1138-jangsanbeom-model-tripo",
+      "character_id": "jangsanbeom",
+      "form_id": "monster",
+      "version_id": "card1138-jangsanbeom-model-tripo",
+      "display_name": "장산범 3D (Tripo 웹 H3.1 · 앞·옆·뒤·게임 각도)",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_jangsanbeom",
+        "eorin_jangsanbeom"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "reports/1138/1138_jangsanbeom_views_new.jpg",
+        "sha256": "c2f3740806a73928dad3ae7159e5cf045e0251ecfb0ef518c0b1bb0c8776805b",
+        "bytes": 36186,
+        "width": 1100,
+        "height": 275
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-05",
+        "card": 1138,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1138,
+        "source_commit": null,
+        "inclusion_reason": "Hunyuan3D 유래 몸 교체(#1138, #1128 접음) — Codex 3D 입력 원화(독립 판독) → Tripo 웹 여러 방향 → 우리 리그(0크레딧)",
+        "tool": "Tripo 웹 H3.1 여러 방향 · 작업 2d1f5bca-5e7c-4e4f-9fbc-86e245e90495 · Ultra Mesh · Triangle 12,000 → 11,704면 · 2K · 40크레딧",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_jangsanbeom/art/1_front.png",
+            "sha256": "1925e69d902637f93e8b0a85a3a5b73e4a034749990a7afecf719b26e6453b7d",
+            "bytes": 333072,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_jangsanbeom/art/2_left.png",
+            "sha256": "487ae55f2cb85e5f6b3fd53c5d3efa738d597483c66f4a7c7a8b899ca3b178ac",
+            "bytes": 941147,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_jangsanbeom/art/3_back.png",
+            "sha256": "10b22267e3b47b6e2a4825a26ce7573166aa5ba31a1f15431bcf09e1371438b1",
+            "bytes": 318395,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_jangsanbeom/art/4_right.png",
+            "sha256": "0985edb000e04cc621a2c359f6ebd50eb5f1887cecb1a42beb8cf33cef886175",
+            "bytes": 921939,
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_jangsanbeom/glb/s6_color.glb",
+            "sha256": "826d6c7eade97e82931b33f81c313e0145c035393f24aa2afc02d3a9c16a227a",
+            "bytes": 1973056
+          }
+        ]
+      },
+      "notes": [
+        "반입 후보 — ModelDef walk 1.600 · run 6.202 · 어린 장산범도 같은 GLB · 긴 털 막 48삼각형 끊음(cut_leg_bridges) · 늘어남 9.2cm(옛 6.9) · 반입은 PD 「합쳐」 뒤",
+        "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ①② · 비교 영상 = reports/1138/1138_jangsanbeom_compare.mp4",
+        "장부 = assets workbench/production/1138_jangsanbeom/ledger.md"
+      ]
+    },
+    {
+      "asset_id": "card1138-yeou-model-tripo",
+      "character_id": "yeou",
+      "form_id": "monster",
+      "version_id": "card1138-yeou-model-tripo",
+      "display_name": "여우 3D (Tripo 웹 H3.1 · 앞·옆·뒤·게임 각도)",
+      "role": "monster",
+      "runtime_aliases": [
+        "yeou",
+        "dungap_yeou",
+        "maegu"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "reports/1138/1138_fox_views_new.jpg",
+        "sha256": "4105a88a1b95b478b3f941311b6bb281dded09597d7078520fa58e25576c1aae",
+        "bytes": 28450,
+        "width": 1100,
+        "height": 275
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-05",
+        "card": 1138,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1138,
+        "source_commit": null,
+        "inclusion_reason": "Hunyuan3D 유래 몸 교체(#1138, #1128 접음) — Codex 3D 입력 원화(독립 판독) → Tripo 웹 여러 방향 → 우리 리그(0크레딧)",
+        "tool": "Tripo 웹 H3.1 여러 방향 · 작업 0eb518ca-3c6a-4cbe-bd74-e56d66d4c955 · Ultra Mesh · Triangle 12,000 → 11,462면 · 2K · 40크레딧",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_fox/art/1_front.png",
+            "sha256": "06be45a1b0280df672283344919f327732b5e046fd949f9d4a05440825605289",
+            "bytes": 392324,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_fox/art/2_left.png",
+            "sha256": "7da8bb2583b00f2ffcdfae563239edc99bf5ecca730da82f24533ce39b5a367e",
+            "bytes": 1131258,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_fox/art/3_back.png",
+            "sha256": "cd7b7cf06701d589c2961135d7baa52da70977d6b74edfcd80eda89048befa9e",
+            "bytes": 345002,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_fox/art/4_right.png",
+            "sha256": "e4841af52f715b4b5336824ccfe2ef76c20e17c4fb68b18420822df9d11eeed7",
+            "bytes": 1118320,
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_fox/glb/s6_color.glb",
+            "sha256": "84c7ac9cbecbe095abcc64c59021856fff91a38802c1643c4513b8cdb95c72a4",
+            "bytes": 2005116
+          }
+        ]
+      },
+      "notes": [
+        "반입 후보 = assets/models/fox/fox.glb 자리(여우 · 둔갑 여우 · 매구 = 같은 GLB, 틴트만 다름) — ModelDef(×1.144) walk 0.816 · run 3.487 · 반입은 PD 「합쳐」 뒤",
+        "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ①② · 비교 영상 = reports/1138/1138_fox_compare.mp4",
+        "장부 = assets workbench/production/1138_fox/ledger.md"
+      ]
+    },
+    {
+      "asset_id": "card1138-plague_dog-model-tripo",
+      "character_id": "plague_dog",
+      "form_id": "monster",
+      "version_id": "card1138-plague_dog-model-tripo",
+      "display_name": "버려진 들개 3D (Tripo 웹 H3.1 · 앞·옆·뒤·게임 각도)",
+      "role": "monster",
+      "runtime_aliases": [
+        "plague_dog"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "reports/1138/1138_plague_dog_views_new.jpg",
+        "sha256": "7a99b91aba4cb305774c72c0f12351f86fc3f1548774848ed054003f87806e2e",
+        "bytes": 34745,
+        "width": 1100,
+        "height": 275
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-05",
+        "card": 1138,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1138,
+        "source_commit": null,
+        "inclusion_reason": "Hunyuan3D 유래 몸 교체(#1138, #1128 접음) — Codex 3D 입력 원화(독립 판독) → Tripo 웹 여러 방향 → 우리 리그(0크레딧)",
+        "tool": "Tripo 웹 H3.1 여러 방향 · 작업 31a74e41-a869-45f3-bb24-19988b6af190 · Ultra Mesh · Triangle 12,000 → 11,556면 · 2K · 40크레딧",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_plague_dog/art/1_front.png",
+            "sha256": "62a68fa01938c0dd34d54c7a61e9e2700ddbce17f674e993f5ecce700ac15b9e",
+            "bytes": 414622,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_plague_dog/art/2_left.png",
+            "sha256": "22babbcfe2f9402c16b5adb3a9a502c7c2c6153ad955782f3d4e81a60b210152",
+            "bytes": 1105971,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_plague_dog/art/3_back.png",
+            "sha256": "6469dadd8a6ce29bc64e5a9df54b31570e51f4b29ec15f73a6b353263360cb96",
+            "bytes": 429217,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_plague_dog/art/4_right.png",
+            "sha256": "07b2b2c0eac7c5764f9fda00610de335050bc15adde00c70c0446a10ea2b3c10",
+            "bytes": 1100547,
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_plague_dog/glb/s6_color.glb",
+            "sha256": "685f3eb95b068b564c92477f9d30f4786bf99e28b2df64fbca83bf1bc3a20afa",
+            "bytes": 2118564
+          }
+        ]
+      },
+      "notes": [
+        "반입 후보 — ModelDef walk 0.875 · run 3.961 · 갈비 드러난 마른 몸(원화에 더 가까움) · 반입은 PD 「합쳐」 뒤",
+        "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ①② · 비교 영상 = reports/1138/1138_plague_dog_compare.mp4",
+        "장부 = assets workbench/production/1138_plague_dog/ledger.md"
+      ]
+    },
+    {
+      "asset_id": "card1138-centipede-modeling-side",
+      "character_id": "centipede",
+      "form_id": "monster",
+      "version_id": "card1138-centipede-modeling-side",
+      "display_name": "먹지네 3D 입력 원화 — 옆(앞 ⅓ 든 자세)",
+      "role": "monster",
+      "runtime_aliases": [
+        "centipede"
+      ],
+      "media_type": "modeling",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1138_centipede/art/2_left.png",
+        "sha256": "051f617a46ab674745aa06632d5745700b349f4eb0e732f58d58a7a7d8970650",
+        "bytes": 516300,
+        "width": 2048,
+        "height": 2048
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-05",
+        "card": 1138,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1138,
+        "source_commit": null,
+        "inclusion_reason": "Tripo 여러 방향용 입력 원화(#1138) — 옆은 독립 판독 통과, 정면·뒤는 다섯 판 다 위에서 본 구도라 멈춤",
+        "tool": "Codex CLI gpt-5.6-sol 내장 image_gen (v3 옆) · frame_views 2048² 틀",
+        "backend": "Codex CLI (ChatGPT OAuth)",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1138_centipede/art/codex_raw/prompt_v3.txt",
+          "sha256": "afdd3826a3a416499c103c77be411fd1c9e7face8b4a40bdce6527f975c92b05",
+          "bytes": 2530
+        },
+        "references": []
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "정면·뒤 시도 8(v1~v5) = 위에서 본 구도 → Tripo 안 돌림(Front 칸 없으면 시작 안 함 · 0크레딧) · 길 ㉮㉯㉰ = 판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ④",
+        "장부 = assets workbench/production/1138_centipede/ledger.md"
       ]
     }
   ],

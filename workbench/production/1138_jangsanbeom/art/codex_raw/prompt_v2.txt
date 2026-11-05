@@ -1,0 +1,12 @@
+Use your built-in image generation tool to EDIT the three attached images (1 = side_left.png, 2 = front.png, 3 = back.png). They are strict side, front and back views of the same game monster, Jangsanbeom, used as input for an image-to-3D generator. Make one edited image per input and save them in the current folder as side_left_v2.png (landscape 1536x1024), front_v2.png (square 1024x1024) and back_v2.png (square 1024x1024).
+
+For all three: keep the creature, pose, proportions, face, eyes, colors, legs, paws, tail, framing and white background exactly the same, and change only the hair:
+- Every lock of the long white hair (head, jaw, neck, chest, shoulders, flanks, hips) must END at or above the belly line. Nothing hangs below the belly; the legs below the belly show only short white fur and are fully visible, with open background between them.
+- The hair stays grouped in thick clumped locks with light grey shading between them.
+
+Specific changes:
+1. side_left: shorten the long hair on the head, jaw and chest so every strand ends at the belly line; the space between the front legs is open from the ground up to the chest.
+2. front: trim the side hair clumps so they end at the belly line instead of reaching the knees; the body becomes slightly narrower; keep both front legs and the gap between them.
+3. back: shorten the hip and flank hair so it ends at the belly line and does not cover the upper hind legs; make the heels and hock bends clearly visible; keep the tail foreshortened at hip height.
+
+Plain pure white background (#FFFFFF), flat even lighting, no cast shadow, no ground plane, no text. When finished, list the saved file names and their pixel sizes.
