@@ -2861,7 +2861,7 @@
         "portrait_id": null,
         "portrait_resource": null,
         "definition_config": "script = ExtResource(\"1\")\nid = \"boss_bulgasari\"\ndisplay_name = \"불가살이\"\nbehavior = 0\nmax_hp = 850.0\ndefense = 5.0\nevasion = 5.0\nxp = 800\ndrop_class = 2\nseal_item = &\"seal_bulgasari\"\ndmg_min = 12.0\ndmg_max = 19.0\naccuracy = 85.0\nattack_range = 1.9\nattack_cooldown = 1.5\nwindup = 0.5\nstagger_sec = 0.0\nknockback = 0.08\nresist_phys = 85.0\nresist_fire = -50.0\nresist_lightning = -25.0\nresist_sal = 50.0\ncan_freeze = false\nmove_speed = 3.2\naggro_range = 12.0\nkeep_distance_min = 3.0\nkeep_distance_max = 9.0\ndash_speed = 12.0\ndash_length = 8.0\ncolor = Color(0.227, 0.247, 0.282, 1)\nheight = 2.2\nradius = 0.9\nmodel = ExtResource(\"2\")\nmodel_tint = Color(1.4, 1.4, 1.45, 1)\nlaunch_mult = 0.0\nfamily = &\"bulgasari\"\nkind = 2\nside = 1\nbody = 1\nregion_tier = 3\nelite_ok = false\nhit_material = &\"iron\"\nboss_scene = \"res://actors/boss_bulgasari.tscn\"\nkill_skill_points = 2",
-        "model_config": "script = ExtResource(\"1\")\nid = \"boss_bulgasari\"\nscene_path = \"res://assets/models/boss_bulgasari/boss_bulgasari.glb\"\nscale = 2.86\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 2.33\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 1.843\nrun_speed = 5.731\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.042, 0.444),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+        "model_config": "script = ExtResource(\"1\")\nid = \"boss_bulgasari\"\nscene_path = \"res://assets/models/boss_bulgasari/boss_bulgasari.glb\"\nscale = 2.86\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 2.12\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 1.561\nrun_speed = 4.854\nrun_threshold = 0.0\nloco_scale_max = 2.1\nstep_phases = {\n\"run\": Vector2(0.042, 0.446),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6,\n\"nose\": 0.6087,\n\"roar\": 0.625\n}\nhit_speed = 1.0\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(1.4, 1.4, 1.45, 1)",
         "usage_evidence": [
           "data/dungeons/soeburi.tres"
@@ -2874,15 +2874,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/boss.gd",
             "exists": true,
-            "sha256": "3a2ac4feec29d5b02168fbb78a6156a649b1e7b0fc8758fd663301253a346525",
-            "bytes": 22022
+            "sha256": "8290f10cc1aff8e36e01c15f4c5d83c265a3aa099680ec94921b92eb2629293a",
+            "bytes": 25276
           },
           {
             "repository": "game",
@@ -2895,8 +2895,8 @@
             "repository": "game",
             "path": "actors/boss_bulgasari.gd",
             "exists": true,
-            "sha256": "e2d706ec6011917d1ae8140a989072f024b40fafd5beeaaf42a2f58cb2416926",
-            "bytes": 44176
+            "sha256": "48c308a877b11c4efb5e61284f74d09efbf88f4676b2d9dbe0c9c457fab150ff",
+            "bytes": 48757
           },
           {
             "repository": "game",
@@ -2909,29 +2909,29 @@
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "assets/models/boss_bulgasari/boss_bulgasari.glb",
             "exists": true,
-            "sha256": "f7d1d43f33d4cfa8df303821ac367581c542edfa2152c170f92fb3ef89ff0169",
-            "bytes": 2443236
+            "sha256": "3e3983a2b0889c6304d78e1b711888be4b12e0e2c19ed0f1a60eb715abb3747f",
+            "bytes": 2531820
           },
           {
             "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -2944,8 +2944,8 @@
             "repository": "game",
             "path": "data/models/boss_bulgasari.tres",
             "exists": true,
-            "sha256": "0af94d1ef0d47261905c42acb78863b0505c5ccc51ca5bd0e83b7beb5fa1f60a",
-            "bytes": 2020
+            "sha256": "7a09c52e83ab447303d0488fbf6b5debc0f734722b55c7cb31f995a4626b1cbb",
+            "bytes": 2454
           },
           {
             "repository": "game",
@@ -2955,7 +2955,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "5f2867154f02ad44b04dda82a2030ee85e65980da4e66aa3112c75512734698d",
+        "fingerprint": "08d74cea70cc97855a75748154697d25310944c494264a2617a93ffbd9da8f68",
         "dependency_complete": true
       },
       {
@@ -6585,7 +6585,7 @@
         "portrait_id": null,
         "portrait_resource": null,
         "definition_config": "script = ExtResource(\"1\")\nid = \"soemeogi\"\ndisplay_name = \"쇠먹이\"\nbehavior = 0\nmax_hp = 46.0\ndefense = 3.0\nevasion = 5.0\nxp = 10\ndmg_min = 7.0\ndmg_max = 12.0\naccuracy = 70.0\nattack_range = 1.6\nattack_cooldown = 1.5\nwindup = 0.45\nstagger_sec = 0.2\nknockback = 0.15\nresist_phys = 50.0\nresist_fire = -50.0\nresist_lightning = -25.0\nresist_sal = 50.0\nmove_speed = 2.8\naggro_range = 9.0\ncolor = Color(0.34, 0.24, 0.2, 1)\nheight = 1.2\nradius = 0.5\nmodel = ExtResource(\"2\")\nmodel_tint = Color(1.6, 1.3, 1.1, 1)\nlaunch_mult = 0.6\nfamily = &\"soemeogi\"\nkind = 2\nside = 1\nbody = 1\nregion_tier = 3\nboss_kin = &\"soeburi\"\npack_min = 2\npack_max = 3\npack_weight = 2\nhit_material = &\"iron\"",
-        "model_config": "script = ExtResource(\"1\")\nid = \"soemeogi\"\nscene_path = \"res://assets/models/boss_bulgasari/boss_bulgasari.glb\"\nscale = 1.29\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.05\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 0.831\nrun_speed = 2.585\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.042, 0.444),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+        "model_config": "script = ExtResource(\"1\")\nid = \"soemeogi\"\nscene_path = \"res://assets/models/boss_bulgasari/boss_bulgasari.glb\"\nscale = 1.29\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 0.95\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 0.704\nrun_speed = 2.189\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.042, 0.446),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(1.6, 1.3, 1.1, 1)",
         "usage_evidence": [
           "data/dungeons/soeburi.tres"
@@ -6598,36 +6598,36 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "assets/models/boss_bulgasari/boss_bulgasari.glb",
             "exists": true,
-            "sha256": "f7d1d43f33d4cfa8df303821ac367581c542edfa2152c170f92fb3ef89ff0169",
-            "bytes": 2443236
+            "sha256": "3e3983a2b0889c6304d78e1b711888be4b12e0e2c19ed0f1a60eb715abb3747f",
+            "bytes": 2531820
           },
           {
             "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -6640,8 +6640,8 @@
             "repository": "game",
             "path": "data/models/soemeogi.tres",
             "exists": true,
-            "sha256": "d9c7eaaedc8d5771d5445a6a5ccbb330d5a646b18779abc71a3d3dd2793fc231",
-            "bytes": 1418
+            "sha256": "bb9583a830a493c8dc1896b8d4c0124961fb048ccbae449ef0b3b72c6ebd6a4c",
+            "bytes": 1447
           },
           {
             "repository": "game",
@@ -6651,7 +6651,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "fa89517206b321afb98929dc3a913d7a93e84e83006b221642f88b6e9642c9ba",
+        "fingerprint": "00d372b10787204a4401fefbc0d2ed20e174957db55321e284d160217271af0f",
         "dependency_complete": true
       },
       {
@@ -6672,10 +6672,12 @@
         "portrait_id": null,
         "portrait_resource": null,
         "definition_config": "script = ExtResource(\"1\")\nid = \"soemeogi_elder\"\ndisplay_name = \"쇠먹이 맏이\"\nbehavior = 0\nmax_hp = 276.0\ndefense = 5.0\nevasion = 5.0\nxp = 60\ndrop_class = 1\ndmg_min = 10.0\ndmg_max = 14.0\naccuracy = 75.0\nattack_range = 1.8\nattack_cooldown = 1.5\nwindup = 0.5\nstagger_sec = 0.1\nknockback = 0.1\nresist_phys = 50.0\nresist_fire = -50.0\nresist_lightning = -25.0\nresist_sal = 50.0\ncan_freeze = false\nmove_speed = 2.8\naggro_range = 10.0\ncolor = Color(0.45, 0.2, 0.14, 1)\nheight = 1.5\nradius = 0.62\nmodel = ExtResource(\"2\")\nmodel_tint = Color(1.8, 1.3, 1, 1)\nlaunch_mult = 0.2\nfamily = &\"soemeogi\"\nkind = 2\nside = 1\nbody = 1\nregion_tier = 3\nboss_kin = &\"soeburi\"\ntint_stage = 4\nsize_mult = 1.3\nelite_ok = false\nhit_material = &\"iron\"",
-        "model_config": "script = ExtResource(\"1\")\nid = \"soemeogi\"\nscene_path = \"res://assets/models/boss_bulgasari/boss_bulgasari.glb\"\nscale = 1.29\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.05\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 0.831\nrun_speed = 2.585\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.042, 0.444),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
+        "model_config": "script = ExtResource(\"1\")\nid = \"soemeogi\"\nscene_path = \"res://assets/models/boss_bulgasari/boss_bulgasari.glb\"\nscale = 1.29\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 0.95\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 0.704\nrun_speed = 2.189\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.042, 0.446),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(1.8, 1.3, 1, 1)",
         "usage_evidence": [
-          "data/dungeons/soeburi.tres"
+          "data/dungeons/hyeongung.tres",
+          "data/dungeons/soeburi.tres",
+          "data/dungeons/sollbaram_amja.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -6685,36 +6687,50 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "assets/models/boss_bulgasari/boss_bulgasari.glb",
             "exists": true,
-            "sha256": "f7d1d43f33d4cfa8df303821ac367581c542edfa2152c170f92fb3ef89ff0169",
-            "bytes": 2443236
+            "sha256": "3e3983a2b0889c6304d78e1b711888be4b12e0e2c19ed0f1a60eb715abb3747f",
+            "bytes": 2531820
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/hyeongung.tres",
+            "exists": true,
+            "sha256": "5a8a14d0da924773ad08f4e805ad3b2139c7f343d8caa6a771aca63810e03e45",
+            "bytes": 2732
           },
           {
             "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/sollbaram_amja.tres",
+            "exists": true,
+            "sha256": "e077235fda997670901c26cfb66f983f711dfd001424e03ec3653c5bac12e0ad",
+            "bytes": 3530
           },
           {
             "repository": "game",
@@ -6727,8 +6743,8 @@
             "repository": "game",
             "path": "data/models/soemeogi.tres",
             "exists": true,
-            "sha256": "d9c7eaaedc8d5771d5445a6a5ccbb330d5a646b18779abc71a3d3dd2793fc231",
-            "bytes": 1418
+            "sha256": "bb9583a830a493c8dc1896b8d4c0124961fb048ccbae449ef0b3b72c6ebd6a4c",
+            "bytes": 1447
           },
           {
             "repository": "game",
@@ -6738,7 +6754,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "8a4c45514b2e99637cf37f8e6ea719abb5782b81172ccd9b0b6a8878666593e1",
+        "fingerprint": "2b3df85bc44a784193e4c66cd0c9e1b915f7015bcd98d03e478f3fe4d1adb677",
         "dependency_complete": true
       },
       {
@@ -38202,7 +38218,8 @@
         "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ① · 비교 영상 = reports/1138/1138_bulgasari_compare.mp4",
         "장부 = assets workbench/production/1138_bulgasari/ledger.md",
         "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-11-05\", \"card\": 1138, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
-        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판(--legs=track, monster_motion_v2 §4.11)은 새 자료로 다시 등록 · 블라인드 판독 = 게임 카드 #1138 댓글"
+        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판(--legs=track, monster_motion_v2 §4.11)은 새 자료로 다시 등록 · 블라인드 판독 = 게임 카드 #1138 댓글",
+        "2판(리그 고침) = card1138-bulgasari-model-tripo-v2 — PD 2026-11-05 「합쳐」로 게임 몸"
       ]
     },
     {
@@ -38546,6 +38563,104 @@
       "notes": [
         "정면·뒤 시도 8(v1~v5) = 위에서 본 구도 → Tripo 안 돌림(Front 칸 없으면 시작 안 함 · 0크레딧) · 길 ㉮㉯㉰ = 판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ④",
         "장부 = assets workbench/production/1138_centipede/ledger.md"
+      ]
+    },
+    {
+      "asset_id": "card1138-bulgasari-model-tripo-v2",
+      "character_id": "bulgasari",
+      "form_id": "monster",
+      "version_id": "card1138-bulgasari-model-tripo-v2",
+      "display_name": "불가살이 3D 2판 (Tripo 웹 H3.1 · 다리 리그 track · 인게임)",
+      "role": "boss",
+      "runtime_aliases": [
+        "boss_bulgasari",
+        "soemeogi",
+        "soemeogi_elder"
+      ],
+      "media_type": "model_render",
+      "file": {
+        "repository": "assets",
+        "path": "reports/1138/bulgasari_v2/bulgasari_v2_ingame_new.jpg",
+        "sha256": "a8ee606b66f98d8f1e39770e1134c0912b066f49991ddf6c141bf8b4996dd24f",
+        "bytes": 127439,
+        "width": 1280,
+        "height": 864
+      },
+      "decision": {
+        "status": "approved",
+        "scope": [
+          "3D 몸 · 불가살이 · 쇠먹이 · 쇠먹이 맏이(같은 GLB) — Tripo 웹 몸 + 우리 리그 2판(rig_quadruped --legs=track) · 빛깔 = 1판 그대로(옛 몸 밝기)"
+        ],
+        "date": "2026-11-05",
+        "card": 1138,
+        "evidence": [
+          "card:#1138 PD 2026-11-05 이 세션 대화 「합쳐」 — 판정판 3판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 불가살이 칸(전/후 영상 assets reports/1138/bulgasari_v2/ · 블라인드 독립 판독 걷기 4 · 달리기 4 · 인게임 3, 옛 몸 3 · 3 · 2)"
+        ],
+        "quote": "합쳐",
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1138,
+        "source_commit": "a4d0c810fedcdd0027a1e2de2288c22077d557b9",
+        "inclusion_reason": "Hunyuan3D 유래 몸 교체(#1138, #1128 접음) — 1판(다리 리그 옛 배치 · 기각)의 같은 메시·빛깔에 리그만 다시(--legs=track, monster_motion_v2 §4.11)",
+        "tool": "Tripo 웹 H3.1 여러 방향 · 작업 ae95ac07-140e-4595-82c5-72b1ff9c11d1 · Ultra Mesh · Triangle 12,000 → 11,363면 · 2K · 40크레딧(1판과 같은 메시) · 리그 2판 0크레딧",
+        "backend": "Tripo Studio 웹 구독",
+        "prompt": null,
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/1_front.png",
+            "sha256": "6fdc2b9e7f26061d2b3c18f63b47a432b6644fc65f08d3da9835027fbdfc823b",
+            "bytes": 998977,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/2_left.png",
+            "sha256": "eec8e6b6fb0dfd28f28b2219d733e620b3fef6ccc8ce1d121de6938e403eaf89",
+            "bytes": 1808587,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/3_back.png",
+            "sha256": "618efa5b9bcd51e62a20f1c36655c0c692238991006b05352837edcd3ff7a489",
+            "bytes": 949286,
+            "width": 2048,
+            "height": 2048
+          },
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/art/4_right.png",
+            "sha256": "1cfce05f308be6cf1d1da6fe0b2bce4bc51ec42f6cc7403dde421fdd677eaa19",
+            "bytes": 1794014,
+            "width": 2048,
+            "height": 2048
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1138_bulgasari/glb/s7_track.glb",
+            "sha256": "3e3983a2b0889c6304d78e1b711888be4b12e0e2c19ed0f1a60eb715abb3747f",
+            "bytes": 2531820
+          }
+        ]
+      },
+      "notes": [
+        "게임 반입 2026-11-05 = assets/models/boss_bulgasari/boss_bulgasari.glb SHA-256 3e3983a2b0889c6304d78e1b711888be4b12e0e2c19ed0f1a60eb715abb3747f · data/models/boss_bulgasari.tres(walk 1.561 · run 4.854 · loco_scale_max 2.1 · target_height 2.12) · soemeogi.tres(0.704 · 2.189 · 0.95) — 착륙 main a4d0c810f",
+        "인게임 전/후(같은 구도 · 진짜 게임 셸) = game docs/art/1138_bulgasari/ingame_before_after.jpg · 이 그림 = 그 오른쪽(새 몸) 네 칸 · 영상 = assets reports/1138/bulgasari_v2/",
+        "look_audit 밝기 0.147 · 채도 0.073 · 대비 0.042 = 밴드 밖(옛 몸처럼 — 게임 틴트 EnemyDef.model_tint가 올린다)",
+        "1판 = card1138-bulgasari-model-tripo(기각 — 다리 리그 옛 배치) · 장부 = assets workbench/production/1138_bulgasari/ledger.md §5"
       ]
     }
   ],
