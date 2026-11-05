@@ -24,3 +24,9 @@
 
 ## 4. 판정판 (2026-11-05)
 - PD 판정판 = https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ③ · 소품은 캐릭터 자료관(D-109) 대상이 아니다.
+
+## 5. 반입 (2026-11-05 PD 「합쳐」)
+- 손질(0크레딧): `albedo_ops shrink --max 512 --name Material_001_albedo`(옛 옆 텍스처 이름 그대로) → `albedo_ops matte`(거칠기 0.8 → 1) → `glb/grade.py`(채도 = 옛 반입 결과에 맞춤 — 팻말 ×0.363 → 0.190(옛 0.189) · 사발 ×0.374 → 0.206(옛 0.200) · 사발 속 흰 술빛(텍스처 4.5% · 밝기 0.84) → 탁한 술빛 `--tone 0.42,0.355,0.26`, #1078 B4) = **`glb/away_sign_game.glb` · `glb/cold_cup_game.glb`**(반입본).
+- 밝기는 안 올림(#557 「누르기만」) — 사발 0.151(밴드 0.18 아래 · 옛 0.235는 흰 술빛 덕) · 대비 0.095(옛 0.187 밴드 밖 → 안).
+- 옆 텍스처: 옛 `.import`에 md5가 없어 Godot가 안 덮는다 → `glb/side_tex.py`로 새 GLB 이미지 바이트를 옆 파일에 먼저 씀(게임 LESSONS).
+- 전/후(인게임 팻말 확대 + 평면 네 방향 옛/새) = 게임 `docs/art/1138_props/before_after.jpg` — 사발은 지름 0.15라 인게임 사진에선 안 보인다.
