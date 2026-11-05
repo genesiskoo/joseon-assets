@@ -6,8 +6,9 @@
 - 지시문 = `prompts/` (`slots.py`가 만든다) · 축소 = `exports/<A|B>_<id>_{128,64,40}.png` · SHA = `outputs.json` · Claude 추천 = `rec.json`.
 - 판정판: https://claude.ai/artifact/DDw9rVCrB3t9u2CCeKh2xj (db `verdicts/<id>` = {pick, note})
 
-## 채택 (2026-11-05 PD 「추천대로 반입」)
-- 14칸 모두 Claude 추천대로: 돌개바람 B · 소나기 B · 젖은 하늘 B · 짙은 안개 A · 하늘 기운 B · 용오름 A · 호풍환우 A · 종이 병사 B · 허수아비 A · 종이 숙련 B · 속박부 B · 퇴마 기운 A · 그림자 칼 B · 신장 부르기 A.
+## 채택 (2026-11-05 PD 판정판 고름 — 20:29 KST, db verdicts)
+- 처음엔 「추천대로」로 Claude 추천을 반입했으나(ab413ee8), 그 뒤 PD가 판정판에서 칸마다 골랐다 → 7칸 바꿈(젖은 하늘 B→A · 하늘 기운 B→A · 용오름 A→B · 호풍환우 A→B · 퇴마 기운 A→B · 그림자 칼 B→A · 신장 부르기 A→B).
+- 최종 14칸: 돌개바람 B · 소나기 B · 젖은 하늘 A · 짙은 안개 A · 하늘 기운 A · 용오름 B · 호풍환우 B · 종이 병사 B · 허수아비 A · 종이 숙련 B · 속박부 B · 퇴마 기운 B · 그림자 칼 A · 신장 부르기 B.
 - 반입 = `exports/<채택>_<id>_128.png` 바이트 그대로 → 게임 `assets/sprites/ui/icons_a/skills/<id>.png` (무손실 · 밉맵 끔) · 칸 = `data/skills/v5/<id>.tres` icon. 게임 SHA = `adopted.json` (= 게임 `tests/test_skills.gd` V5_INTAKE).
 - 원본 `raw/` (28장 ≈ 79MB)은 저장소에 넣지 않는다(#579, 카드 합 ≥ 50MB) — 드라이브 `JoseonHunters_raw/1157/`로 옮길 몫(G: 켠 뒤). 원본 SHA = `outputs.json`.
 - 판정판 `board.html`(3MB, 그림 내장)도 저장소 밖 — 아티팩트 주소로 본다.
