@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05",
+  "updated_at": "2026-11-06",
   "characters": [
     {
       "character_id": "doho",
@@ -19811,11 +19811,15 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
-        "date": null,
-        "card": 731,
-        "evidence": [],
+        "status": "approved",
+        "scope": [
+          "appearance"
+        ],
+        "date": "2026-10-29",
+        "card": 1216,
+        "evidence": [
+          "PD 아트 자료관 판정 2026-10-29T02:10:12.385Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card731-01_face_front_v1 · by u_1HCnCzO1phOE099hN4p02A)"
+        ],
         "quote": null,
         "supersedes": []
       },
@@ -19866,7 +19870,8 @@
       },
       "notes": [
         "#731 manifest: pending PD selection — 판정 전(게임 미반입)",
-        "근거 기록 game:docs/art/731_gumiho_anchors/manifest.json"
+        "근거 기록 game:docs/art/731_gumiho_anchors/manifest.json",
+        "이전 판정 (2026-10-29 자료관 판정으로 바뀜): {\"card\": 731, \"date\": null, \"evidence\": [], \"quote\": null, \"scope\": [], \"status\": \"unreviewed\", \"supersedes\": []}"
       ]
     },
     {
@@ -19890,11 +19895,15 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
-        "date": null,
-        "card": 731,
-        "evidence": [],
+        "status": "approved",
+        "scope": [
+          "appearance"
+        ],
+        "date": "2026-10-29",
+        "card": 1216,
+        "evidence": [
+          "PD 아트 자료관 판정 2026-10-29T02:10:18.344Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card731-02_face_profile_v1 · by u_1HCnCzO1phOE099hN4p02A)"
+        ],
         "quote": null,
         "supersedes": []
       },
@@ -19945,7 +19954,8 @@
       },
       "notes": [
         "#731 manifest: pending PD selection — 판정 전(게임 미반입)",
-        "근거 기록 game:docs/art/731_gumiho_anchors/manifest.json"
+        "근거 기록 game:docs/art/731_gumiho_anchors/manifest.json",
+        "이전 판정 (2026-10-29 자료관 판정으로 바뀜): {\"card\": 731, \"date\": null, \"evidence\": [], \"quote\": null, \"scope\": [], \"status\": \"unreviewed\", \"supersedes\": []}"
       ]
     },
     {
@@ -19969,11 +19979,15 @@
         "height": 1374
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
-        "date": null,
-        "card": 733,
-        "evidence": [],
+        "status": "approved",
+        "scope": [
+          "appearance"
+        ],
+        "date": "2026-10-29",
+        "card": 1216,
+        "evidence": [
+          "PD 아트 자료관 판정 2026-10-29T02:09:56.588Z (https://claude.ai/artifact/MCeoZda94vDbNxjhF9hoEs · judgments/card733-01_between_human_beast_t2i_v1 · by u_1HCnCzO1phOE099hN4p02A)"
+        ],
         "quote": null,
         "supersedes": []
       },
@@ -20003,7 +20017,8 @@
       },
       "notes": [
         "#733 에서 PD 가 B 를 다듬을 방향으로 골랐고 A 는 탐색으로 남겼다(retained-exploration) — 이 그림 자체의 판정은 아직",
-        "무참조 t2i(참조 0) · 근거 기록 game:docs/art/733_gumiho_t2i/manifest.json"
+        "무참조 t2i(참조 0) · 근거 기록 game:docs/art/733_gumiho_t2i/manifest.json",
+        "이전 판정 (2026-10-29 자료관 판정으로 바뀜): {\"card\": 733, \"date\": null, \"evidence\": [], \"quote\": null, \"scope\": [], \"status\": \"unreviewed\", \"supersedes\": []}"
       ]
     },
     {
@@ -20063,7 +20078,8 @@
       },
       "notes": [
         "PD 가 #733 A/B/C 가운데 B 를 다듬을 방향으로 골랐다 — 최종 형태 채택 아님(→ #734 인간성·분노·한 조정)",
-        "무참조 t2i(참조 0)"
+        "무참조 t2i(참조 0)",
+        "2026-10-29 PD 보류 (아트 자료관 #1216)"
       ]
     },
     {
