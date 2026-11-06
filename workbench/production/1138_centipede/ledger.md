@@ -19,7 +19,11 @@
 - 길 셋(PD 판정판 ④): ㉮ 위에서 본 정면 그대로 넣고 Tripo 한 번(40 · 망가질 수 있음) · **㉯ 이 카드에서 빼고 따로(추천)** — 옛 몸 유지, 정면 그림 길을 먼저 찾음 · ㉰ 옆 한 장 단일 이미지(40 · 반대쪽 다리 빔 · 납작).
 
 ## 3. 잔여량
-- Codex 주간 33% 남음(리셋 11-09 17:55, `python tools/ai_quota.py`).
+- Codex 주간 33% 남음(11-05 10:09 KST 기준 — 그 뒤 생성 넷은 안 잼 · 11-06 15% · 리셋 11-09 17:55, `python tools/ai_quota.py`).
 
 ## 4. 자료관 · 판정판
-- 자료관(D-109) = `card1138-centipede-modeling-side` (옆 원화만 · unreviewed) · PD 판정판 = https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ④.
+- 자료관(D-109) = `card1138-centipede-modeling-side` (옆 원화만 · unreviewed → 11-06 rejected, §5) · PD 판정판 = https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ④.
+
+## 5. 판정 (11-06)
+- PD 11-06 00:25 「따로 카드로」(㉯) → #1214 · 이어 PD 11-06 「추천대로」(본진 지휘 세션 — #1138 작업 확인 뒤 물음 ③) → 먹지네 = 옛 몸 유지(정면 원화 다섯 판 실패 · 네발 넷과 같은 결) · #1214 접음(닫힘) · 옆 원화 v3(`art/2_left.png` · `4_right.png`)은 자료로만.
+- 자료관 `card1138-centipede-modeling-side` = rejected(#1216 — 작업 접음 · 그림 자체 판정 아님).

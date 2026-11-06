@@ -3146,8 +3146,8 @@
             "repository": "game",
             "path": "data/models/boss_heukrang.tres",
             "exists": true,
-            "sha256": "bcd6370552e330054a5fbda858d1e2e59bb83c1baf2b2fcb8ee7a4a39a4600bd",
-            "bytes": 2416
+            "sha256": "ecb60cb3c8db4ecf22809668c2c2d8d4d92f9a0e9279a3462cdf116ed4799304",
+            "bytes": 2421
           },
           {
             "repository": "game",
@@ -3157,7 +3157,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "c46a672bfbdd8c6461af3142222d7620965bfc17c72377c17ccf5ce86ed39599",
+        "fingerprint": "6d9b84689bbc014e9222efb10c84e4279d9ab3e0a72c82702bd2d805250f6778",
         "dependency_complete": true
       },
       {
@@ -38120,7 +38120,7 @@
         "옛 몸 = Hunyuan3D v3(장부에 자료 없음 — git 이력) · 꼬리 들림 · 길고 낮은 덩치 = PD 「그대로」(결정 ③)",
         "장부 = assets workbench/production/1138_heukrang/ledger.md",
         "이전 decision: {\"status\": \"approved\", \"scope\": [\"3D 몸 · 보스 흑랑 · 어린 흑랑(같은 GLB) — Tripo 웹 몸 + 우리 리그·굽기(rig_quadruped · reweight limb · 빛깔 = 옛 몸 평균색)\"], \"date\": \"2026-11-05\", \"card\": 1138, \"evidence\": [\"card:#1138 PD 2026-11-05 「추천대로」(본진 지휘 세션 전달 — 결정 ① 새 몸으로 바꿈 = 흑랑 반입 「합쳐」 · ③ 꼬리 들림·덩치 그대로)\"], \"quote\": \"추천대로\", \"supersedes\": []}",
-        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판(--legs=track, monster_motion_v2 §4.11)은 새 자료로 다시 등록 · 블라인드 판독 = 게임 카드 #1138 댓글",
+        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. PD 11-06 「기존 몸으로 쓰자」 — 다시 등록 안 함(게임 = 옛 Hunyuan 몸) · 블라인드 판독 = 게임 카드 #1138 댓글",
         "게임에서 뺌: 흑랑 = 옛 Hunyuan 몸 + #1197 물어뜯기(게임 커밋 6ee447b04 되돌림)"
       ]
     },
@@ -38218,7 +38218,7 @@
         "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ① · 비교 영상 = reports/1138/1138_bulgasari_compare.mp4",
         "장부 = assets workbench/production/1138_bulgasari/ledger.md",
         "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-11-05\", \"card\": 1138, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
-        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판(--legs=track, monster_motion_v2 §4.11)은 새 자료로 다시 등록 · 블라인드 판독 = 게임 카드 #1138 댓글",
+        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판 = card1138-bulgasari-model-tripo-v2 (approved)로 등록함 · 블라인드 판독 = 게임 카드 #1138 댓글",
         "2판(리그 고침) = card1138-bulgasari-model-tripo-v2 — PD 2026-11-05 「합쳐」로 게임 몸"
       ]
     },
@@ -38315,7 +38315,7 @@
         "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ①② · 비교 영상 = reports/1138/1138_jangsanbeom_compare.mp4",
         "장부 = assets workbench/production/1138_jangsanbeom/ledger.md",
         "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-11-05\", \"card\": 1138, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
-        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판(--legs=track, monster_motion_v2 §4.11)은 새 자료로 다시 등록 · 블라인드 판독 = 게임 카드 #1138 댓글"
+        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. PD 11-06 「기존 몸으로 쓰자」 — 다시 등록 안 함(게임 = 옛 Hunyuan 몸) · 블라인드 판독 = 게임 카드 #1138 댓글"
       ]
     },
     {
@@ -38412,7 +38412,7 @@
         "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ①② · 비교 영상 = reports/1138/1138_fox_compare.mp4",
         "장부 = assets workbench/production/1138_fox/ledger.md",
         "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-11-05\", \"card\": 1138, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
-        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판(--legs=track, monster_motion_v2 §4.11)은 새 자료로 다시 등록 · 블라인드 판독 = 게임 카드 #1138 댓글"
+        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. PD 11-06 「기존 몸으로 쓰자」 — 다시 등록 안 함(게임 = 옛 Hunyuan 몸) · 블라인드 판독 = 게임 카드 #1138 댓글"
       ]
     },
     {
@@ -38507,7 +38507,7 @@
         "판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ①② · 비교 영상 = reports/1138/1138_plague_dog_compare.mp4",
         "장부 = assets workbench/production/1138_plague_dog/ledger.md",
         "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-11-05\", \"card\": 1138, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
-        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. 리그 고친 판(--legs=track, monster_motion_v2 §4.11)은 새 자료로 다시 등록 · 블라인드 판독 = 게임 카드 #1138 댓글"
+        "기각 = 이 판의 동작(다리 리그) — 몸 모양 판정 아님. PD 11-06 「기존 몸으로 쓰자」 — 다시 등록 안 함(게임 = 옛 Hunyuan 몸) · 블라인드 판독 = 게임 카드 #1138 댓글"
       ]
     },
     {
@@ -38530,12 +38530,14 @@
         "height": 2048
       },
       "decision": {
-        "status": "unreviewed",
+        "status": "rejected",
         "scope": [],
-        "date": "2026-11-05",
-        "card": 1138,
-        "evidence": [],
-        "quote": null,
+        "date": "2026-11-06",
+        "card": 1216,
+        "evidence": [
+          "card:#1216 PD 2026-11-06 「추천대로」(본진 지휘 세션 전달 — #1138 작업 확인 뒤 물음 ③ = 먹지네도 옛 몸 · #1214 접음)"
+        ],
+        "quote": "추천대로",
         "supersedes": []
       },
       "provenance": {
@@ -38562,7 +38564,9 @@
       },
       "notes": [
         "정면·뒤 시도 8(v1~v5) = 위에서 본 구도 → Tripo 안 돌림(Front 칸 없으면 시작 안 함 · 0크레딧) · 길 ㉮㉯㉰ = 판정판 https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE 결정 ④",
-        "장부 = assets workbench/production/1138_centipede/ledger.md"
+        "장부 = assets workbench/production/1138_centipede/ledger.md",
+        "이전 decision: {\"status\": \"unreviewed\", \"scope\": [], \"date\": \"2026-11-05\", \"card\": 1138, \"evidence\": [], \"quote\": null, \"supersedes\": []}",
+        "작업 접음 — 먹지네는 옛 몸 그대로(#1214 닫힘) · 그림 자체 판정 아님 · 자료로만 남김"
       ]
     },
     {

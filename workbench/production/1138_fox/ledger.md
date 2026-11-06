@@ -24,4 +24,4 @@
 ## 4. 보관 · 비교 (2026-11-05)
 - git = 입력 원화 · Codex 원본 · Tripo 원본 GLB · 최종 `glb/s6_color.glb` · 도구 · 사진. **중간 GLB(s1~s5 · 갈래본)는 git에 안 넣음** — 이 PC에만 둔다(다시 만들기 = §3 순서, `glb/post_tripo2.sh` + 몸별 손질).
 - 비교 영상(왼쪽 지금 · 오른쪽 새, 걷기 → 달리기 한 바퀴 · 동작 확인 툴) = `reports/1138/1138_fox_compare.mp4` · 새 몸 네 방향 = `reports/1138/1138_fox_views_new.jpg` · PD 판정판 = https://claude.ai/artifact/7A9v8pEDbDNPhZT1fJhizE
-- 자료관(D-109) = `card1138-yeou-model-tripo` (unreviewed — PD 판정 뒤 갱신).
+- 자료관(D-109) = `card1138-yeou-model-tripo` = rejected — PD 11-05 「죄다 다리빙신」(`699ad6e2`) → 리그 고친 판 독립 판독 = 옛 몸이 나음 → PD 11-06 「기존 몸으로 쓰자」: 게임 = 옛 Hunyuan 몸 유지 · 다시 등록 안 함.

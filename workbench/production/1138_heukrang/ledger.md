@@ -57,7 +57,14 @@
 - 반입(이 카드): `s7_slate.glb` → `.\tools\intake_model.ps1 -Src … -Id boss_heukrang -Budget boss` · ModelDef walk_speed 1.179 · run_speed 4.572(디딤 위상 그대로) · eorin_heukrang 같은 GLB · #1197이 quad_gait를 먼저 바꾸면 같은 굽기 다시(s3 명령 → reweight limb → s6·s7) · 시험(test_quad_family · heukrang e2e · walk_audit) · 생성 출처 장부 「교체됨 → Tripo c4bae842」 · 옛 GLB는 git.
 - 나머지 몸 5(장산범 · 불가살이 · 여우 · 들개 · 지네)·소품 2 = PD가 이 결과를 보고 정함.
 
-## 5. 반입 · 착륙 (2026-11-05, PD 「추천대로」 = 결정 ① 「합쳐」)
+## 6. 반입 · 착륙 (2026-11-05, PD 「추천대로」 = 결정 ① 「합쳐」)
 - 게임 main `c69e1e68` art(#1138) 반입 + `b236a22a` test(#1138) vfx_cues 怒 높이 테두리 0.2 — 착륙 e2e 39/39 · 반입본 = `glb/s7_slate.glb` 그대로 · 어린 흑랑 `loco_scale_max 1.9`.
 - 인게임 전/후 사진 = 게임 `docs/art/1138_heukrang/ingame_before_after.jpg` · 새 몸 네 방향 = `reports/1138/1138_heukrang_views_new.jpg`.
 - 자료관(D-109) = `card1138-heukrang-model-tripo` approved(근거 = PD 「추천대로」) · runtime_inventory 흑랑 두 줄 새로 · 검사 새 오류 0(150 → 150 — 남은 150은 다른 카드의 낡은 촬영 해시, 그중 card744 옛 구미호 렌더 1건은 흑랑 GLB 해시가 바뀌어 생김 · 보존 규칙대로 그대로).
+
+## 7. 되돌림 → 옛 몸 유지 (11-05~06 · 최종)
+- PD 11-05 13:32 「죄다 다리빙신이 됐는데? 검수안하냐」 → 14:21 「옛 몸로 되돌려」 → 게임 `6ee447b04` = 옛 Hunyuan 몸(#118 슬레이트) + #1197 물어뜯기 다시 굽기 · ModelDef walk 1.265 · run 4.905 = 반입 전 값 그대로 · 어린 흑랑 걷기 상한 줄(1.9) 뺌 · vfx_cues 怒 테두리 0.12(`b236a22a9` 되돌림).
+- 자료관 `card1138-heukrang-model-tripo` = rejected(`699ad6e2` — 다리 리그 판 · 몸 모양 판정 아님).
+- 리그 고친 판(`--legs=track`, 게임 `dfe617772`) 독립 판독 = 옛 몸과 비슷 → PD 11-06 00:32 「기존 몸으로 쓰자」 = 새 몸 다시 판정 안 함 · 자료관 다시 등록 안 함(게임 `8155b56a4` · D-114 갱신 노트).
+- 새 몸 텍스처 `boss_heukrang_basecolor.png` 지움(게임 `2b0fb4539`).
+- #1128에서 확인 못 한 둘(텐센트 HY 3D 약관 §5.4(c) 「텐센트와 경쟁하는 콘텐츠」 범위 · Higgsfield 뒷단)은 PD 11-06 「추천대로」로 안고 EA까지 쓴다(#1216) — 출시 체크 4.1(Steam AI 공개)에서 약관을 다시 본다.
