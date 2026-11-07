@@ -38682,6 +38682,168 @@
         "look_audit 밝기 0.147 · 채도 0.073 · 대비 0.042 = 밴드 밖(옛 몸처럼 — 게임 틴트 EnemyDef.model_tint가 올린다)",
         "1판 = card1138-bulgasari-model-tripo(기각 — 다리 리그 옛 배치) · 장부 = assets workbench/production/1138_bulgasari/ledger.md §5"
       ]
+    },
+    {
+      "asset_id": "card1221-gwisae-modeling-front-apose-a",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1221-gwisae-modeling-front-apose-a",
+      "display_name": "귀새 정면 A포즈 A — G02 긴 분할 외투 (3D 입력 시안)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1221_gwisae/art/gwisae_apose_a.png",
+        "sha256": "8a2fd6ec1db17cfaaddc04f995ab1b10f6822af45dbea23d31755e6c7b07ff2a",
+        "bytes": 1618902,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-08",
+        "card": 1221,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1221,
+        "source_commit": null,
+        "inclusion_reason": "G02 승인 외형에서 파생 — Tripo 3D 입력 시안(modeling_bible §4.3, #1221)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1221_gwisae/art/gwisae_apose_a.prompt.txt",
+          "sha256": "d1f7ff5ad0f14b790f256bdcb1ad2e950a2b2c12fcc2f9933d146d31a6f7fdf3",
+          "bytes": 4235
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "sheets/approved-2026-09-17/catalog_gwisae_G01-G03.png",
+            "sha256": "c122df49a92dc96b81fb19b97be759132d94cee3769d9d4967992f14e9af2873",
+            "bytes": 2327377,
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "sheets/approved-2026-09-17-h1/K2_H_doho_hero_options.png",
+            "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75",
+            "bytes": 1983620,
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: sheets/approved-2026-09-17/catalog_gwisae_G01-G03.png 가운데 열(G02)",
+        "참조 순서 = G02 열 잘라낸 것 · G02 탈 확대 · H1 시트 왼쪽(화풍만)",
+        "modeling_bible §4.3 입력 · Tripo 생성 전 · 탈 눈 = 감은 초승달(guisae_prep §3 #4)"
+      ]
+    },
+    {
+      "asset_id": "card1221-gwisae-modeling-front-apose-b",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1221-gwisae-modeling-front-apose-b",
+      "display_name": "귀새 정면 A포즈 B — 짧은 분할 외투 (3D 입력 시안)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+        "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+        "bytes": 1517168,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-08",
+        "card": 1221,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1221,
+        "source_commit": null,
+        "inclusion_reason": "G02 승인 외형에서 파생 — Tripo 3D 입력 시안(modeling_bible §4.3, #1221)",
+        "tool": "Codex CLI exec · gpt-5.6-sol · 내장 image_gen",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.prompt.txt",
+          "sha256": "5b5e3b4afdfe0f66f35b266a5ea23a722c02fa95c35144942f25da282fa66216",
+          "bytes": 4409
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "sheets/approved-2026-09-17/catalog_gwisae_G01-G03.png",
+            "sha256": "c122df49a92dc96b81fb19b97be759132d94cee3769d9d4967992f14e9af2873",
+            "bytes": 2327377,
+            "width": 1672,
+            "height": 941
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "sheets/approved-2026-09-17-h1/K2_H_doho_hero_options.png",
+            "sha256": "bf0138017f8ff1feac4c79e0b25b01faf44624fc3eb67369de3c0b99c10f2b75",
+            "bytes": 1983620,
+            "width": 1536,
+            "height": 1024
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "derived_from: sheets/approved-2026-09-17/catalog_gwisae_G01-G03.png 가운데 열(G02)",
+        "참조 순서 = G02 열 잘라낸 것 · G02 탈 확대 · H1 시트 왼쪽(화풍만)",
+        "modeling_bible §4.3 입력 · Tripo 생성 전 · 탈 눈 = 감은 초승달(guisae_prep §3 #4)"
+      ]
     }
   ],
   "schema_version": "1.0.0"
