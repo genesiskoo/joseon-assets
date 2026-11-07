@@ -38703,12 +38703,14 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
+        "status": "rejected",
         "scope": [],
         "date": "2026-11-08",
         "card": 1221,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#1221 PD 2026-11-08 B 채택 — A 안 고름"
+        ],
+        "quote": "B 채택 · 60크레딧",
         "supersedes": []
       },
       "provenance": {
@@ -38784,12 +38786,16 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
+        "status": "approved",
+        "scope": [
+          "3d_input"
+        ],
         "date": "2026-11-08",
         "card": 1221,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#1221 PD 2026-11-08 대화 판정 (Tripo 예산 60크레딧 함께)"
+        ],
+        "quote": "B 채택 · 60크레딧",
         "supersedes": []
       },
       "provenance": {
