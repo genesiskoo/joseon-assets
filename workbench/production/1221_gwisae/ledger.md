@@ -15,9 +15,22 @@
 
 프롬프트 = `art/gwisae_apose_<a|b>.prompt.txt`. 공통: 탈 쓴 채(감은 초승달 눈 · 무표정 붉은 입) · 손 비움 · 단검 뺌(소켓으로 따로) · 홍사 = 오른 허리 감은 고리 · 여분 탈 둘 = 왼 허리 · 끈·술은 아래로 짧게.
 
-## 3D (채택 + 예산 뒤)
+## 3D (2026-11-08)
+
+브라우저 = ego 브라우저(PD 로그인 상태 그대로) · Tripo 웹 화면은 홈 → 3D Workspace → Model(HD Model) · 입력 = 첫 아이콘(사진 한 장).
 
 | 물건 | 게임 id | 입력 그림 | 서비스 | 작업 id | 설정 | 결과 면 수 | 텍스처 | 판정 | 차감 | 잔액(전 → 후) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 귀새 몸 | `gwisae` | — | Tripo 웹 HD | — | H3.1 · Triangle · 12,000 · Ultra 켬 · 2K · PBR 끔 · 조명 지우기 · Private | — | — | — | — | — |
-| 귀새 리깅 | 〃 | — | Tripo 웹 Rig · Humanoid · Mixamo | — | idle · walk(무료) | — | — | — | — | — |
+| 귀새 몸 | `gwisae` | `art/gwisae_apose_b.png` (SHA `fdaa6f32…`) | Tripo 웹 HD · 정면 한 장 | `8a95ac26-a47e-4d25-85d8-221f96f40da8` | H3.1 · Triangle · 12,000 · Ultra 켬 · AI Complete 끔 · 2K · PBR 끔 · 조명 지우기 · Private · Parts·8K 끔 | Triangle 11,174 · 정점 9,115 | 2K → 반입 1,024 | 채택(앞·옆·뒤 통과 — 팔·몸통 떨어짐 · 손가락 분리 · 포니테일 등 뒤 허리까지 · 탈·홍사 고리·허리 탈 둘 형태 유지) | 40 | 1,765 → 1,725 |
+| 귀새 리깅 | 〃 | — | Tripo 웹 Rig · Humanoid · Mixamo | 위와 같음 | 동작 프리셋 idle · walk(무료) | 65뼈 `mixamorig:*` · idle 15.33s · walk 2.33s | — | 채택 | 20 | 1,725 → 1,705 |
+
+**합계 60크레딧**(예산 그대로) · 잔액 1,765 → 1,705.
+
+| 파일 | SHA-256 | 비고 |
+|---|---|---|
+| `modeling/tripo_web_1221/gwisae_tripo_idle_walk.glb` | `2979b652ec5c5619b372dc26a3f70957111eb64a02d27019b4bb56bb6c2bd592` | Tripo 내보내기 원본(GLB · 2k · 뼈대 · 동작 2 · stay in place · 1,592,460 B) · 원본 키 0.98 → 1.65면 scale ≈ 1.684 · 금속 0 |
+
+## 다음 (반입 · 이 카드)
+
+- `albedo_ops.py shrink --max 1024 --name basecolor` → `matte` → `intake_model.ps1 -Id gwisae -Height 1.65` → `data/models/gwisae.tres`.
+- 단검 소켓(오른손 `weapon_socket`) · 홍사 끈 · 포니테일 SpringBone = 보조 뼈 추가(Tripo Mixamo 뼈대엔 머리카락·끈 뼈가 없다 — rig_fix 보조 뼈) · 허리 탈 둘 = 지금은 몸과 한 덩어리(탈 바꿈 때 얼굴 탈을 갈아끼우려면 떼어 낼지 = 판단 거리).
