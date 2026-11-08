@@ -30,7 +30,14 @@
 |---|---|---|
 | `modeling/tripo_web_1221/gwisae_tripo_idle_walk.glb` | `2979b652ec5c5619b372dc26a3f70957111eb64a02d27019b4bb56bb6c2bd592` | Tripo 내보내기 원본(GLB · 2k · 뼈대 · 동작 2 · stay in place · 1,592,460 B) · 원본 키 0.98 → 1.65면 scale ≈ 1.684 · 금속 0 |
 
-## 다음 (반입 · 이 카드)
+## 반입 · 착륙 (2026-11-08)
+
+- 몸 착륙 = 게임 main `7c1cb432a`(PD 「합쳐 · 추천대로」) · 반입본 `game/gwisae.glb`(1024 · 무광) · 키 1.65 · scale 1.684 · 단검 = 임시 산적 단검.
+- 포니테일 흔들림 = 게임 `47e0010b5`(착륙 전 · PD 확인) — `tools/blender/hair_tail.py`로 보조 뼈 Pony1→Pony3(머리 아래, 정점 773) · 뼈 65 → 68 · 동작 길이 그대로 · 스프링 끝 차이 최대 0.56m(0.6초 200° 돌기) · 영상 `reports/1221/gwisae_pony_spring_off_on*.mp4`.
+- 게임 반입본 SHA(포니테일 뼈 포함) = `ed60c44755c93379aac79e5898c14a304d05ce8d9326c7798950417f0cceb3a4`.
+- 홍사 술 = 뼈 없음(바지·외투와 한 덩어리 · 게임 크기 ≈ 5픽셀) → G5 #1223 홍사 꼬리 이펙트 · 주먹·단검 자리 = G4 #1222 · 휜 단검 모델 = #1237(Meshy).
+
+## (옛) 다음 (반입 · 이 카드)
 
 - `albedo_ops.py shrink --max 1024 --name basecolor` → `matte` → `intake_model.ps1 -Id gwisae -Height 1.65` → `data/models/gwisae.tres`.
 - 단검 소켓(오른손 `weapon_socket`) · 홍사 끈 · 포니테일 SpringBone = 보조 뼈 추가(Tripo Mixamo 뼈대엔 머리카락·끈 뼈가 없다 — rig_fix 보조 뼈) · 허리 탈 둘 = 지금은 몸과 한 덩어리(탈 바꿈 때 얼굴 탈을 갈아끼우려면 떼어 낼지 = 판단 거리).
