@@ -1166,7 +1166,7 @@
         "portrait_id": "doho",
         "portrait_resource": "data/portraits/doho.tres",
         "definition_config": "[gd_scene load_steps=11 format=3]\n\n[ext_resource type=\"Script\" path=\"res://actors/player.gd\" id=\"1_player\"]\n[ext_resource type=\"Script\" path=\"res://actors/actor_visual.gd\" id=\"av_visual\"]\n[ext_resource type=\"Resource\" path=\"res://data/models/doho.tres\" id=\"md_doho\"]\n[ext_resource type=\"Script\" path=\"res://actors/player_combat.gd\" id=\"2_combat\"]\n\n[sub_resource type=\"CapsuleShape3D\" id=\"shape_body\"]\nradius = 0.35\nheight = 1.6\n\n[sub_resource type=\"CapsuleMesh\" id=\"mesh_body\"]\nradius = 0.35\nheight = 1.6\n\n[sub_resource type=\"StandardMaterial3D\" id=\"mat_body\"]\nalbedo_color = Color(0.12, 0.14, 0.32, 1)\nroughness = 0.9\n\n[sub_resource type=\"CylinderMesh\" id=\"mesh_hat\"]\ntop_radius = 0.55\nbottom_radius = 0.55\nheight = 0.06\n\n[sub_resource type=\"StandardMaterial3D\" id=\"mat_hat\"]\nalbedo_color = Color(0.05, 0.05, 0.05, 1)\nroughness = 1.0\n\n[sub_resource type=\"BoxMesh\" id=\"mesh_nose\"]\nsize = Vector3(0.12, 0.12, 0.3)\n\n[node name=\"Player\" type=\"CharacterBody3D\"]\ncollision_layer = 2\ncollision_mask = 1\nscript = ExtResource(\"1_player\")\n\n[node name=\"Collision\" type=\"CollisionShape3D\" parent=\".\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)\nshape = SubResource(\"shape_body\")\n\n[node name=\"Visual\" type=\"Node3D\" parent=\".\"]\nscript = ExtResource(\"av_visual\")\nmodel = ExtResource(\"md_doho\")\nplayer_light_shadow = false\n\n[node name=\"Body\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)\nmesh = SubResource(\"mesh_body\")\nmaterial_override = SubResource(\"mat_body\")\n\n[node name=\"Heukrip\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62, 0)\nmesh = SubResource(\"mesh_hat\")\nmaterial_override = SubResource(\"mat_hat\")\n\n[node name=\"Nose\" type=\"MeshInstance3D\" parent=\"Visual\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0.4)\nmesh = SubResource(\"mesh_nose\")\nmaterial_override = SubResource(\"mat_hat\")\n\n[node name=\"LightRadius\" type=\"OmniLight3D\" parent=\".\"]\ntransform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0)\nlight_color = Color(0.98, 0.92, 0.82, 1)\nlight_energy = 2.2\nomni_range = 9.0\n\n[node name=\"Combat\" type=\"Node\" parent=\".\"]\nscript = ExtResource(\"2_combat\")",
-        "model_config": "script = ExtResource(\"1\")\nid = \"doho\"\nscene_path = \"res://assets/models/doho/doho.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/doho_sword_held.glb\"\nweapon_placeholder = false\nweapon_bone = \"R_Hand\"\nweapon_offset_pos = Vector3(-0.0122, 0.0617, 0.0165)\nweapon_offset_rot_deg = Vector3(-3.86, 157.72, 90.97)\nsheath_scene = \"res://assets/models/weapons/doho_sheath.glb\"\nsheath_bone = \"Pelvis\"\nsheath_offset_pos = Vector3(0.1266, -0.1266, 0.1989)\nsheath_offset_rot_deg = Vector3(14.36, 6.11, 56.3)\nwalk_blade = \"sheath\"\nrun_blade = \"sheath\"\nblade_draw_sec = 0.12\nsheathed_offset_y = -0.071\nidle_blade = \"forward\"\ncast_clip = \"cast\"\ncast_variants = {\n\"chant\": \"cast_chant\",\n\"ground\": \"cast_ground\",\n\"sky\": \"cast_sky\"\n}\ncast_hand_bone = \"L_Hand\"\ncast_hand_scene = \"res://assets/models/weapons/doho_cast_hand.glb\"\ncast_hand_hide_scale = 0.02\ncast_hand_offset_rot_deg = Vector3(6.49, 169.35, 0.09)\nwalk_speed = 1.2\nrun_speed = 3.7\nrun_threshold = 2.6\nloco_scale_min = 0.75\nloco_scale_max = 1.5\nstep_phases = {\n\"run\": Vector2(0.374, 0.874),\n\"walk\": Vector2(0.085, 0.585)\n}\nstep_dip = {\n\"run\": 0.1,\n\"walk\": 0.05\n}\nstep_dip_width = 0.34\nstep_dip_peak = 0.3\nspring_roots = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_ends = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_tips = PackedFloat32Array(0.2, 0.17, 0.18)\nspring_stiffness = 1.2\nspring_drag = 0.4\nspring_gravity = 0.8\nspring_stiffness_each = PackedFloat32Array(1.0, 1.4, 1.4)\nspring_drag_each = PackedFloat32Array(0.5, 0.5, 0.5)\nspring_gravity_each = PackedFloat32Array(0.05, 0.05, 0.05)\nflare_bones = PackedStringArray(\"Hem_L\", \"Hem_R\")\nflare_deg_per_turn = 55.0\nflare_max_deg = 45.0\nflare_attack = 0.06\nflare_release = 0.3\nflare_dead_rad = 1.0\nattack_impact = {\n\"attack\": 0.4,\n\"attack2\": 0.55,\n\"attack3\": 0.42,\n\"attack4\": 0.5,\n\"cast\": 0.3349,\n\"cast_chant\": 0.4278,\n\"cast_ground\": 0.3512,\n\"cast_sky\": 0.3553,\n\"kick_spin\": 0.32\n}\nattack_impact_default = 0.45\nswing_warp = {\n\"attack\": Vector3(0.33, 0.43, 0.52),\n\"attack2\": Vector3(0.47, 0.56, 0.62),\n\"attack3\": Vector3(0.39, 0.47, 0.54),\n\"attack4\": Vector3(0.45, 0.51, 0.56),\n\"skill_leap\": Vector3(0.356522, 0.394783, 0.521739),\n\"skill_strike\": Vector3(0.44, 0.53, 0.6),\n\"skill_thrust\": Vector3(0.47, 0.52, 0.56),\n\"skill_whirl\": Vector3(0.335, 0.371, 0.42)\n}\nswing_phases = Vector4(0.46, 0.05, 0.08, 0.1)\nswing_phases_clip = {\n\"skill_leap\": Vector4(0.3, 0.015, 0.073, 0.13)\n}\nswing_knots = {\n\"skill_thrust\": PackedVector2Array(0, 0, 0.014718, 0.05, 0.032544, 0.1, 0.057589, 0.15, 0.089668, 0.2, 0.162378, 0.25, 0.202558, 0.3, 0.242567, 0.35, 0.36911, 0.4, 0.42648, 0.45, 0.46, 0.47, 0.51, 0.52, 0.59, 0.56, 0.69, 0.56, 1, 1),\n\"attack\": PackedVector2Array(0, 0, 0.0745, 0.1946, 0.1342, 0.3589, 0.1815, 0.43, 0.2558, 0.47, 0.3755, 0.52, 0.9149, 0.7462, 0.9485, 0.7784, 1, 1),\n\"attack2\": PackedVector2Array(0, 0, 0.1155, 0.447, 0.143, 0.5028, 0.1815, 0.56, 0.2805, 0.61, 0.5456, 0.635, 0.8428, 0.7516, 0.9069, 0.8, 1, 1),\n\"attack3\": PackedVector2Array(0, 0, 0.0264, 0.155, 0.0876, 0.345, 0.1165, 0.384, 0.1815, 0.47, 0.24, 0.52, 0.3373, 0.55, 0.8636, 0.7243, 0.932, 0.774, 1, 1),\n\"skill_strike\": PackedVector2Array(0, 0, 0.230769, 0.31, 0.320513, 0.422, 0.384615, 0.53, 0.435897, 0.609, 0.641026, 0.645, 1, 1),\n\"skill_whirl\": PackedVector2Array(0, 0, 0.058824, 0.079, 0.264706, 0.286, 0.294118, 0.286, 0.352941, 0.371, 0.394118, 0.415, 0.494118, 0.422, 0.6229, 0.474, 1, 1),\n\"skill_leap\": PackedVector2Array(0, 0, 0.092857, 0.173913, 0.142857, 0.243478, 0.514286, 0.394783, 0.7, 0.695652, 1, 1)\n}\ntrail_gate_skills = PackedStringArray(\"skill_strike\")\nclip_cut = {\n\"skill_leap\": Vector4(0, 1.15, 0.805, 0.32)\n}\ncast_speed = 1.25\nswing_fill = {\n\"attack\": 0.66,\n\"attack2\": 0.66,\n\"attack3\": 0.66\n}\nswing_fill_visual = {\n\"attack\": 1.0,\n\"attack2\": 1.0,\n\"attack3\": 1.0\n}\nleap_takeoff = {\n\"skill_leap\": 0.243478\n}\nsecond_hit = {\n\"skill_whirl\": 0.46\n}\nhit_speed = 2.5\nattack_chain = PackedStringArray(\"attack\", \"attack2\", \"attack3\")\nchain_reset_sec = 1.2\nchain_blend = 0.1\nchain_blend_in = 0.12\nchain_blend_out = 0.3\nchain_head_skip = 0.04\nrun_idle_blend = 0.18\nloop_end = {\n\"run\": 0.5667,\n\"walk\": 1.1\n}\nstance_lock = PackedStringArray(\"run\")\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nclip_files = {\n\"idle\": \"res://assets/models/doho/doho_idle_ip.res\",\n\"run_stop0\": \"res://assets/models/doho/doho_run_stop0.res\",\n\"run_stop1\": \"res://assets/models/doho/doho_run_stop1.res\",\n\"run_stop2\": \"res://assets/models/doho/doho_run_stop2.res\",\n\"run_stop3\": \"res://assets/models/doho/doho_run_stop3.res\",\n\"run_stop4\": \"res://assets/models/doho/doho_run_stop4.res\",\n\"run_stop5\": \"res://assets/models/doho/doho_run_stop5.res\",\n\"run_stop6\": \"res://assets/models/doho/doho_run_stop6.res\",\n\"run_stop7\": \"res://assets/models/doho/doho_run_stop7.res\",\n\"run_stop8\": \"res://assets/models/doho/doho_run_stop8.res\",\n\"run_stop9\": \"res://assets/models/doho/doho_run_stop9.res\",\n\"run_stop10\": \"res://assets/models/doho/doho_run_stop10.res\",\n\"run_stop11\": \"res://assets/models/doho/doho_run_stop11.res\",\n\"run_stop12\": \"res://assets/models/doho/doho_run_stop12.res\",\n\"run_stop13\": \"res://assets/models/doho/doho_run_stop13.res\",\n\"skill_strike\": \"res://assets/models/doho/doho_skill_strike_g.res\",\n\"skill_thrust\": \"res://assets/models/doho/doho_skill_thrust_g.res\",\n\"skill_whirl\": \"res://assets/models/doho/doho_skill_whirl_g.res\",\n\"skill_leap\": \"res://assets/models/doho/doho_skill_leap_g.res\",\n\"guard\": \"res://assets/models/doho/doho_guard_g.res\",\n\"cast\": \"res://assets/models/doho/doho_cast_throw.res\",\n\"cast_sky\": \"res://assets/models/doho/doho_cast_sky.res\",\n\"cast_ground\": \"res://assets/models/doho/doho_cast_ground.res\",\n\"cast_chant\": \"res://assets/models/doho/doho_cast_chant.res\"\n}\nstop_clips = {\n\"run\": [\"run_stop0\", \"run_stop1\", \"run_stop2\", \"run_stop3\", \"run_stop4\", \"run_stop5\", \"run_stop6\", \"run_stop7\", \"run_stop8\", \"run_stop9\", \"run_stop10\", \"run_stop11\", \"run_stop12\", \"run_stop13\"]\n}\nstop_blend = 0.1",
+        "model_config": "script = ExtResource(\"1\")\nid = \"doho\"\nscene_path = \"res://assets/models/doho/doho.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/doho_sword_held.glb\"\nweapon_placeholder = false\nweapon_bone = \"R_Hand\"\nweapon_offset_pos = Vector3(-0.0122, 0.0617, 0.0165)\nweapon_offset_rot_deg = Vector3(-3.86, 157.72, 90.97)\nsheath_scene = \"res://assets/models/weapons/doho_sheath.glb\"\nsheath_bone = \"Pelvis\"\nsheath_offset_pos = Vector3(0.1266, -0.1266, 0.1989)\nsheath_offset_rot_deg = Vector3(14.36, 6.11, 56.3)\nwalk_blade = \"sheath\"\nrun_blade = \"sheath\"\nblade_draw_sec = 0.12\nsheathed_offset_y = -0.071\nidle_blade = \"forward\"\ncast_clip = \"cast\"\ncast_variants = {\n\"chant\": \"cast_chant\",\n\"ground\": \"cast_ground\",\n\"sky\": \"cast_sky\"\n}\ncast_hand_bone = \"L_Hand\"\ncast_hand_scene = \"res://assets/models/weapons/doho_cast_hand.glb\"\ncast_hand_hide_scale = 0.02\ncast_hand_offset_rot_deg = Vector3(6.49, 169.35, 0.09)\nwalk_speed = 1.2\nrun_speed = 3.7\nrun_threshold = 2.6\nloco_scale_min = 0.75\nloco_scale_max = 1.5\nstep_phases = {\n\"run\": Vector2(0.374, 0.874),\n\"walk\": Vector2(0.085, 0.585)\n}\nstep_dip = {\n\"run\": 0.1,\n\"walk\": 0.05\n}\nstep_dip_width = 0.34\nstep_dip_peak = 0.3\nspring_roots = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_ends = PackedStringArray(\"SashTail\", \"Sleeve_L\", \"Sleeve_R\")\nspring_tips = PackedFloat32Array(0.2, 0.17, 0.18)\nspring_stiffness = 1.2\nspring_drag = 0.4\nspring_gravity = 0.8\nspring_stiffness_each = PackedFloat32Array(1.0, 1.4, 1.4)\nspring_drag_each = PackedFloat32Array(0.5, 0.5, 0.5)\nspring_gravity_each = PackedFloat32Array(0.05, 0.05, 0.05)\nflare_bones = PackedStringArray(\"Hem_L\", \"Hem_R\")\nflare_deg_per_turn = 55.0\nflare_max_deg = 45.0\nflare_attack = 0.06\nflare_release = 0.3\nflare_dead_rad = 1.0\nattack_impact = {\n\"attack\": 0.4,\n\"attack2\": 0.55,\n\"attack3\": 0.42,\n\"attack4\": 0.5,\n\"cast\": 0.3349,\n\"cast_chant\": 0.4278,\n\"cast_ground\": 0.3512,\n\"cast_sky\": 0.3553,\n\"kick_spin\": 0.32\n}\nattack_impact_default = 0.45\nswing_warp = {\n\"attack\": Vector3(0.33, 0.43, 0.52),\n\"attack2\": Vector3(0.47, 0.56, 0.62),\n\"attack3\": Vector3(0.39, 0.47, 0.54),\n\"attack4\": Vector3(0.45, 0.51, 0.56),\n\"skill_leap\": Vector3(0.356522, 0.394783, 0.521739),\n\"skill_strike\": Vector3(0.44, 0.53, 0.6),\n\"skill_whirl\": Vector3(0.335, 0.371, 0.42)\n}\nswing_phases = Vector4(0.46, 0.05, 0.08, 0.1)\nswing_phases_clip = {\n\"skill_leap\": Vector4(0.3, 0.015, 0.073, 0.13)\n}\nswing_knots = {\n\"attack\": PackedVector2Array(0, 0, 0.0745, 0.1946, 0.1342, 0.3589, 0.1815, 0.43, 0.2558, 0.47, 0.3755, 0.52, 0.9149, 0.7462, 0.9485, 0.7784, 1, 1),\n\"attack2\": PackedVector2Array(0, 0, 0.1155, 0.447, 0.143, 0.5028, 0.1815, 0.56, 0.2805, 0.61, 0.5456, 0.635, 0.8428, 0.7516, 0.9069, 0.8, 1, 1),\n\"attack3\": PackedVector2Array(0, 0, 0.0264, 0.155, 0.0876, 0.345, 0.1165, 0.384, 0.1815, 0.47, 0.24, 0.52, 0.3373, 0.55, 0.8636, 0.7243, 0.932, 0.774, 1, 1),\n\"skill_strike\": PackedVector2Array(0, 0, 0.230769, 0.31, 0.320513, 0.422, 0.384615, 0.53, 0.435897, 0.609, 0.641026, 0.645, 1, 1),\n\"skill_whirl\": PackedVector2Array(0, 0, 0.058824, 0.079, 0.264706, 0.286, 0.294118, 0.286, 0.352941, 0.371, 0.394118, 0.415, 0.494118, 0.422, 0.6229, 0.474, 1, 1),\n\"skill_leap\": PackedVector2Array(0, 0, 0.092857, 0.173913, 0.142857, 0.243478, 0.514286, 0.394783, 0.7, 0.695652, 1, 1)\n}\ntrail_gate_skills = PackedStringArray(\"skill_strike\")\nclip_cut = {\n\"skill_leap\": Vector4(0, 1.15, 0.805, 0.32)\n}\ncast_speed = 1.25\nswing_fill = {\n\"attack\": 0.66,\n\"attack2\": 0.66,\n\"attack3\": 0.66,\n\"kick_spin\": 0.66\n}\nswing_fill_visual = {\n\"attack\": 1.0,\n\"attack2\": 1.0,\n\"attack3\": 1.0\n}\nleap_takeoff = {\n\"skill_leap\": 0.243478\n}\nsecond_hit = {\n\"skill_whirl\": 0.46\n}\nhit_speed = 2.5\nattack_chain = PackedStringArray(\"attack\", \"attack2\", \"attack3\")\nflurry_finisher = \"kick_spin\"\nchain_reset_sec = 1.2\nchain_blend = 0.1\nchain_blend_in = 0.12\nchain_blend_out = 0.3\nchain_head_skip = 0.04\nrun_idle_blend = 0.18\nloop_end = {\n\"run\": 0.5667,\n\"walk\": 1.1\n}\nstance_lock = PackedStringArray(\"run\")\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nclip_files = {\n\"idle\": \"res://assets/models/doho/doho_idle_ip.res\",\n\"run_stop0\": \"res://assets/models/doho/doho_run_stop0.res\",\n\"run_stop1\": \"res://assets/models/doho/doho_run_stop1.res\",\n\"run_stop2\": \"res://assets/models/doho/doho_run_stop2.res\",\n\"run_stop3\": \"res://assets/models/doho/doho_run_stop3.res\",\n\"run_stop4\": \"res://assets/models/doho/doho_run_stop4.res\",\n\"run_stop5\": \"res://assets/models/doho/doho_run_stop5.res\",\n\"run_stop6\": \"res://assets/models/doho/doho_run_stop6.res\",\n\"run_stop7\": \"res://assets/models/doho/doho_run_stop7.res\",\n\"run_stop8\": \"res://assets/models/doho/doho_run_stop8.res\",\n\"run_stop9\": \"res://assets/models/doho/doho_run_stop9.res\",\n\"run_stop10\": \"res://assets/models/doho/doho_run_stop10.res\",\n\"run_stop11\": \"res://assets/models/doho/doho_run_stop11.res\",\n\"run_stop12\": \"res://assets/models/doho/doho_run_stop12.res\",\n\"run_stop13\": \"res://assets/models/doho/doho_run_stop13.res\",\n\"skill_strike\": \"res://assets/models/doho/doho_skill_strike_g.res\",\n\"skill_whirl\": \"res://assets/models/doho/doho_skill_whirl_g.res\",\n\"skill_leap\": \"res://assets/models/doho/doho_skill_leap_g.res\",\n\"guard\": \"res://assets/models/doho/doho_guard_g.res\",\n\"cast\": \"res://assets/models/doho/doho_cast_throw.res\",\n\"cast_sky\": \"res://assets/models/doho/doho_cast_sky.res\",\n\"cast_ground\": \"res://assets/models/doho/doho_cast_ground.res\",\n\"cast_chant\": \"res://assets/models/doho/doho_cast_chant.res\"\n}\nstop_clips = {\n\"run\": [\"run_stop0\", \"run_stop1\", \"run_stop2\", \"run_stop3\", \"run_stop4\", \"run_stop5\", \"run_stop6\", \"run_stop7\", \"run_stop8\", \"run_stop9\", \"run_stop10\", \"run_stop11\", \"run_stop12\", \"run_stop13\"]\n}\nstop_blend = 0.1",
         "tint": null,
         "usage_evidence": [
           "world/main.tscn",
@@ -1180,15 +1180,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -1208,8 +1208,8 @@
             "repository": "game",
             "path": "actors/player_combat.gd",
             "exists": true,
-            "sha256": "4dfa4383d66435df57a10ef52fe9f67149ba84bc49a463ee98f11d24393745f8",
-            "bytes": 182636
+            "sha256": "02389adaeb49577cd5f0877c50e42793eda8cfc66723b07b77de328959b3710e",
+            "bytes": 180117
           },
           {
             "repository": "game",
@@ -1374,13 +1374,6 @@
           },
           {
             "repository": "game",
-            "path": "assets/models/doho/doho_skill_thrust_g.res",
-            "exists": true,
-            "sha256": "dff3e68d8a2104129ff712e3abc35b67969b893d8f51fc892d1bd675fcfc3bc6",
-            "bytes": 26315
-          },
-          {
-            "repository": "game",
             "path": "assets/models/doho/doho_skill_whirl_g.res",
             "exists": true,
             "sha256": "8832f18af7f7aeb18c3daf42ad7c4e7a1afb0f2dba460e3fe7f7bd5b647fe435",
@@ -1467,8 +1460,8 @@
             "repository": "game",
             "path": "data/models/doho.tres",
             "exists": true,
-            "sha256": "2581704481b216897c906680aa87b76da180fd15f1441495a94f332d0d622dbf",
-            "bytes": 7059
+            "sha256": "161f2aa199dd7cceaaf001364f9c8091a1ac3e337d42c29b8b60cbb73de8d466",
+            "bytes": 6763
           },
           {
             "repository": "game",
@@ -1492,7 +1485,7 @@
             "bytes": 4433
           }
         ],
-        "fingerprint": "5de026cf7167f2b4d5cafdf125cd06780883de7da9a01bb26f36216d5da87896",
+        "fingerprint": "c2b60ebb2ab7c52dfb39b25c138aa3f429e9742e463f08f726a24105f76ab943",
         "dependency_complete": true
       },
       {
@@ -1526,22 +1519,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "actors/npc_def.gd",
             "exists": true,
-            "sha256": "20768ad884a42d89e170b4f49314f2c5b667f4ff53a62e0196e66a03ee02c89c",
-            "bytes": 6558
+            "sha256": "07328392a753dd24e5fd6f3d94ffdb889d73ebe85487cf3ab423cdd0a69b7b33",
+            "bytes": 6687
           },
           {
             "repository": "game",
@@ -1617,11 +1610,11 @@
             "repository": "game",
             "path": "world/town.tscn",
             "exists": true,
-            "sha256": "c3a426b28ff0e1d0ea1faab9400eba1099fe8d11a71591263b42eac58196d1cc",
-            "bytes": 8788
+            "sha256": "1a0a247948dd9a8d3a107b0fb4ed4665bae3e33b46990c1477047f599cdac02e",
+            "bytes": 8557
           }
         ],
-        "fingerprint": "408a04f4f94e26bf82affacfd8513fd69861b407010d9d029945ea537e54a55a",
+        "fingerprint": "b2f42ade5c83e7da73f75cd982007607dc36106abd6f13905316293b54f549d3",
         "dependency_complete": true
       },
       {
@@ -1655,22 +1648,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "actors/npc_def.gd",
             "exists": true,
-            "sha256": "20768ad884a42d89e170b4f49314f2c5b667f4ff53a62e0196e66a03ee02c89c",
-            "bytes": 6558
+            "sha256": "07328392a753dd24e5fd6f3d94ffdb889d73ebe85487cf3ab423cdd0a69b7b33",
+            "bytes": 6687
           },
           {
             "repository": "game",
@@ -1746,11 +1739,11 @@
             "repository": "game",
             "path": "world/town.tscn",
             "exists": true,
-            "sha256": "c3a426b28ff0e1d0ea1faab9400eba1099fe8d11a71591263b42eac58196d1cc",
-            "bytes": 8788
+            "sha256": "1a0a247948dd9a8d3a107b0fb4ed4665bae3e33b46990c1477047f599cdac02e",
+            "bytes": 8557
           }
         ],
-        "fingerprint": "51c45b042e3368ff0ee7f5e1f0e8c0c79d24a80f601ae5fc62a1ba78fff14265",
+        "fingerprint": "27fe20a2351808600cb12a2b73874ba0134347b1515f065ceab61fe6ac7f532f",
         "dependency_complete": true
       },
       {
@@ -1789,22 +1782,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "actors/npc_def.gd",
             "exists": true,
-            "sha256": "20768ad884a42d89e170b4f49314f2c5b667f4ff53a62e0196e66a03ee02c89c",
-            "bytes": 6558
+            "sha256": "07328392a753dd24e5fd6f3d94ffdb889d73ebe85487cf3ab423cdd0a69b7b33",
+            "bytes": 6687
           },
           {
             "repository": "game",
@@ -1887,11 +1880,11 @@
             "repository": "game",
             "path": "world/town.tscn",
             "exists": true,
-            "sha256": "c3a426b28ff0e1d0ea1faab9400eba1099fe8d11a71591263b42eac58196d1cc",
-            "bytes": 8788
+            "sha256": "1a0a247948dd9a8d3a107b0fb4ed4665bae3e33b46990c1477047f599cdac02e",
+            "bytes": 8557
           }
         ],
-        "fingerprint": "471494035916ff8a1a6ce75a71c479c4e4d8bef80c107e5bf93f78787de44a1d",
+        "fingerprint": "dad43ece014b1b76efbc796255c4a341f8fd1eb2682f8e54cf2f7469eda172c4",
         "dependency_complete": true
       },
       {
@@ -1925,22 +1918,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "actors/npc_def.gd",
             "exists": true,
-            "sha256": "20768ad884a42d89e170b4f49314f2c5b667f4ff53a62e0196e66a03ee02c89c",
-            "bytes": 6558
+            "sha256": "07328392a753dd24e5fd6f3d94ffdb889d73ebe85487cf3ab423cdd0a69b7b33",
+            "bytes": 6687
           },
           {
             "repository": "game",
@@ -2016,11 +2009,11 @@
             "repository": "game",
             "path": "world/town.tscn",
             "exists": true,
-            "sha256": "c3a426b28ff0e1d0ea1faab9400eba1099fe8d11a71591263b42eac58196d1cc",
-            "bytes": 8788
+            "sha256": "1a0a247948dd9a8d3a107b0fb4ed4665bae3e33b46990c1477047f599cdac02e",
+            "bytes": 8557
           }
         ],
-        "fingerprint": "5666b18918fffda5cdc130b3c2edaa532cb6d3734baca8f2fb91a2b4805f8cad",
+        "fingerprint": "dc3272ac81fe95da73b4b85a042846fa219513e3582f8d15827eb606ec82d962",
         "dependency_complete": true
       },
       {
@@ -2040,7 +2033,7 @@
         "scene_path": "assets/models/jumo/jumo.glb",
         "portrait_id": "jumo",
         "portrait_resource": "data/portraits/jumo.tres",
-        "definition_config": "script = ExtResource(\"1\")\nid = \"jumo\"\ndisplay_name = \"주모\"\ndialogue = \"res://data/dialogue/npc/jumo.dialogue\"\nportrait = ExtResource(\"3\")\ncolor = Color(0.22, 0.25, 0.36, 1)\nheight = 1.6\nmodel = ExtResource(\"2\")\naway_seals = 2\naway_chance = 0.5\naway_bark = \"주모가 요새 통 안 보이네\"\ngone_flag = \"jumo_gone\"\ngone_story_flag = \"jumo_left\"\nout_story_flag = \"jumo_taken\"\nout_until_den = \"beomgul\"\nhere_on_visit_key = \"jumo_back_visit\"",
+        "definition_config": "script = ExtResource(\"1\")\nid = \"jumo\"\ndisplay_name = \"주모\"\ndialogue = \"res://data/dialogue/npc/jumo.dialogue\"\nportrait = ExtResource(\"3\")\ncolor = Color(0.22, 0.25, 0.36, 1)\nheight = 1.6\nmodel = ExtResource(\"2\")\naway_seals = 2\naway_chance = 0.5\naway_bark = \"주모가 요새 통 안 보이네\"\ngone_flag = \"jumo_gone\"\ngone_story_flag = \"jumo_left\"\nout_story_flag = \"jumo_taken\"\nout_until_den = \"beomgul\"\nhere_on_visit_keys = PackedStringArray(\"jumo_back_visit\", \"jumo_farewell_visit\")",
         "model_config": "script = ExtResource(\"1\")\nid = \"jumo\"\nscene_path = \"res://assets/models/jumo/jumo.glb\"\nscale = 0.914\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
@@ -2054,22 +2047,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "actors/npc_def.gd",
             "exists": true,
-            "sha256": "20768ad884a42d89e170b4f49314f2c5b667f4ff53a62e0196e66a03ee02c89c",
-            "bytes": 6558
+            "sha256": "07328392a753dd24e5fd6f3d94ffdb889d73ebe85487cf3ab423cdd0a69b7b33",
+            "bytes": 6687
           },
           {
             "repository": "game",
@@ -2110,8 +2103,8 @@
             "repository": "game",
             "path": "data/dialogue/npc/jumo.dialogue",
             "exists": true,
-            "sha256": "6411e0fce6ae558deed52d64333dbcab881b2af64c70400cbd4f576d32d16642",
-            "bytes": 12745
+            "sha256": "0ea370d40bb2e3cbe6ae4dbe698593be3015b1b3630ceb8af4762120798811a8",
+            "bytes": 13921
           },
           {
             "repository": "game",
@@ -2124,8 +2117,8 @@
             "repository": "game",
             "path": "data/npcs/jumo.tres",
             "exists": true,
-            "sha256": "bbd684d7d4cbc308b2413a1421aacb7f3b95cd34bad7c270de956f81cf0ebb61",
-            "bytes": 747
+            "sha256": "c0462b954454aa7eae2c914523f6e13700b4658b0bbd3de591f613423265929d",
+            "bytes": 790
           },
           {
             "repository": "game",
@@ -2145,11 +2138,11 @@
             "repository": "game",
             "path": "world/town.tscn",
             "exists": true,
-            "sha256": "c3a426b28ff0e1d0ea1faab9400eba1099fe8d11a71591263b42eac58196d1cc",
-            "bytes": 8788
+            "sha256": "1a0a247948dd9a8d3a107b0fb4ed4665bae3e33b46990c1477047f599cdac02e",
+            "bytes": 8557
           }
         ],
-        "fingerprint": "9f1089f0426301671bbbbad787ca5aab2c09b6720aae1ab2fa9f3e6cd4daf03e",
+        "fingerprint": "bff008e5b9d8bc6cf24a5afe56ede024b4e6a1efc5527167dd8d5cd9090b4385",
         "dependency_complete": true
       },
       {
@@ -2183,22 +2176,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "actors/npc_def.gd",
             "exists": true,
-            "sha256": "20768ad884a42d89e170b4f49314f2c5b667f4ff53a62e0196e66a03ee02c89c",
-            "bytes": 6558
+            "sha256": "07328392a753dd24e5fd6f3d94ffdb889d73ebe85487cf3ab423cdd0a69b7b33",
+            "bytes": 6687
           },
           {
             "repository": "game",
@@ -2295,11 +2288,11 @@
             "repository": "game",
             "path": "world/town.tscn",
             "exists": true,
-            "sha256": "c3a426b28ff0e1d0ea1faab9400eba1099fe8d11a71591263b42eac58196d1cc",
-            "bytes": 8788
+            "sha256": "1a0a247948dd9a8d3a107b0fb4ed4665bae3e33b46990c1477047f599cdac02e",
+            "bytes": 8557
           }
         ],
-        "fingerprint": "b1be0fbb117ae0a1ed4d61f08a30b3e4810319563a32e2acec863743a3d316c8",
+        "fingerprint": "f7d23813120bb0e86c7d252c5123975bda7fb78b1eff390d81d971a1ca0f7318",
         "dependency_complete": true
       },
       {
@@ -2333,22 +2326,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
             "path": "actors/npc_def.gd",
             "exists": true,
-            "sha256": "20768ad884a42d89e170b4f49314f2c5b667f4ff53a62e0196e66a03ee02c89c",
-            "bytes": 6558
+            "sha256": "07328392a753dd24e5fd6f3d94ffdb889d73ebe85487cf3ab423cdd0a69b7b33",
+            "bytes": 6687
           },
           {
             "repository": "game",
@@ -2389,8 +2382,8 @@
             "repository": "game",
             "path": "data/dialogue/npc/shaman.dialogue",
             "exists": true,
-            "sha256": "48d60eaead45964b0fefdc94f89de7f3775e6239786bf48b3181a00a03c80948",
-            "bytes": 17540
+            "sha256": "5f63d9576035df57fd4caec6f6ecd1e11e94760b1a6df6cd2c4baf43384067f3",
+            "bytes": 18602
           },
           {
             "repository": "game",
@@ -2424,11 +2417,11 @@
             "repository": "game",
             "path": "world/town.tscn",
             "exists": true,
-            "sha256": "c3a426b28ff0e1d0ea1faab9400eba1099fe8d11a71591263b42eac58196d1cc",
-            "bytes": 8788
+            "sha256": "1a0a247948dd9a8d3a107b0fb4ed4665bae3e33b46990c1477047f599cdac02e",
+            "bytes": 8557
           }
         ],
-        "fingerprint": "ea3ea824280ea24cc2e0575e65e5753465b2f91b33e2609893128f8166887eb7",
+        "fingerprint": "b26633dfe5fcc25805f81b200a2097884a721436a8a7ddb6b0c0153d3e9cd40c",
         "dependency_complete": true
       },
       {
@@ -2460,7 +2453,8 @@
         "tint": null,
         "usage_evidence": [
           "data/dungeons/heukrang_gul.tres",
-          "data/fields/deulnyeok.tres"
+          "data/fields/deulnyeok.tres",
+          "data/fields/galbat_naru.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -2470,22 +2464,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -2526,8 +2520,15 @@
             "repository": "game",
             "path": "data/fields/deulnyeok.tres",
             "exists": true,
-            "sha256": "dc4dc0ffa8d15faeed3f1bcf3d0a4a64f6f15dd430c4aad6432ea1dac133a248",
-            "bytes": 4732
+            "sha256": "2e16d63f52174ca7fc4145be338179eb83706ed5878a440d41e48dbd2150632b",
+            "bytes": 6722
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/galbat_naru.tres",
+            "exists": true,
+            "sha256": "688dfc780b799e030eb16267b578cae9f65f59514362bf5c0098a15339202af1",
+            "bytes": 3048
           },
           {
             "repository": "game",
@@ -2551,7 +2552,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "bb648d43bed77e8be36a088940868748f6f4d1356d8c046b3ef2d9b2c7744e42",
+        "fingerprint": "694934dc60361398c6f179cfe499cff96bc45ca0b4dc39dddbd13b65606cea09",
         "dependency_complete": true
       },
       {
@@ -2576,7 +2577,8 @@
         "tint": null,
         "usage_evidence": [
           "data/dungeons/heukrang_gul.tres",
-          "data/fields/deulnyeok.tres"
+          "data/fields/deulnyeok.tres",
+          "data/fields/galbat_naru.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -2586,22 +2588,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -2628,8 +2630,15 @@
             "repository": "game",
             "path": "data/fields/deulnyeok.tres",
             "exists": true,
-            "sha256": "dc4dc0ffa8d15faeed3f1bcf3d0a4a64f6f15dd430c4aad6432ea1dac133a248",
-            "bytes": 4732
+            "sha256": "2e16d63f52174ca7fc4145be338179eb83706ed5878a440d41e48dbd2150632b",
+            "bytes": 6722
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/galbat_naru.tres",
+            "exists": true,
+            "sha256": "688dfc780b799e030eb16267b578cae9f65f59514362bf5c0098a15339202af1",
+            "bytes": 3048
           },
           {
             "repository": "game",
@@ -2646,7 +2655,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "d9607714ed7ca034481fc48faf56b0e77d7d140e9fde5edbaaf4058ae79fe962",
+        "fingerprint": "04aff3703719806a48efe6c515e3001143890c328bb8d07766350593cd9ef2ab",
         "dependency_complete": true
       },
       {
@@ -2686,22 +2695,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -2728,8 +2737,8 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
           },
           {
             "repository": "game",
@@ -2746,7 +2755,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "6c71d86b9871fe00fbfe265a2b30665b1e5db516228236c5a49f452c4e47d777",
+        "fingerprint": "a7b000eea8b11278f7ecc75255abac8604d4e2af338d363941c9018b1b80f51e",
         "dependency_complete": true
       },
       {
@@ -2770,7 +2779,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"gwangbu_neok\"\nscene_path = \"res://assets/models/gwangbu_neok/gwangbu_neok.glb\"\nscale = 1.0\ny_offset = 0.3\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.05\nhover_hz = 0.45\nflap_amp = 0.0\nfloat_lean = 4.5\nfloat_lean_max = 16.0\nfloat_lunge = 1.0\nfloat_kick = 1.0\nfloat_flinch = 1.0\nfloat_fade = 0.45\nrobe_wave = 0.04\nrobe_hz = 1.6\nrobe_top = 0.45\nrobe_drag = 0.035\nrobe_drag_max = 0.12\nrobe_hair = 0.0\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(1.15, 1.4, 1.2, 1)",
         "usage_evidence": [
-          "data/dungeons/beomgul.tres"
+          "data/dungeons/beomgul.tres",
+          "data/dungeons/gotjip_gul.tres",
+          "data/dungeons/gwana_ok.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -2780,22 +2791,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -2810,6 +2821,20 @@
             "exists": true,
             "sha256": "7eb7563c2c598e8d47a9239d828a4cabf8e962f024203f368171757c80a37055",
             "bytes": 4299
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gotjip_gul.tres",
+            "exists": true,
+            "sha256": "b9b2d33158aeccfa9c2c4caac135a2feb7b5fb7c9f9048b9aec5787088d452b2",
+            "bytes": 3277
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gwana_ok.tres",
+            "exists": true,
+            "sha256": "4ad21271ed58e58b782c97f32b8d42cced3c4c7a6c0c95dc20619b0ae15efc67",
+            "bytes": 2596
           },
           {
             "repository": "game",
@@ -2840,7 +2865,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "ca4f4fcd07dc6d6027ce8d65e8bb2ae9c6dbd228279ecf749abac7d274d587af",
+        "fingerprint": "5ded82c57625df8dd93b1b729ce9f975cf10e51eaf97375e3a9d21fdadbf1d8b",
         "dependency_complete": true
       },
       {
@@ -2895,8 +2920,8 @@
             "repository": "game",
             "path": "actors/boss_bulgasari.gd",
             "exists": true,
-            "sha256": "48c308a877b11c4efb5e61284f74d09efbf88f4676b2d9dbe0c9c457fab150ff",
-            "bytes": 48757
+            "sha256": "4399f99e009069925775586a139b97871f3660684c9e462c19e10a38f77ae61e",
+            "bytes": 48770
           },
           {
             "repository": "game",
@@ -2955,7 +2980,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "08d74cea70cc97855a75748154697d25310944c494264a2617a93ffbd9da8f68",
+        "fingerprint": "23ef13f839d4ce51308e334e5e9e7d9e8b8dcc0412c0c70e15a81fd4d957870a",
         "dependency_complete": true
       },
       {
@@ -2989,15 +3014,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/boss.gd",
             "exists": true,
-            "sha256": "3a2ac4feec29d5b02168fbb78a6156a649b1e7b0fc8758fd663301253a346525",
-            "bytes": 22022
+            "sha256": "8290f10cc1aff8e36e01c15f4c5d83c265a3aa099680ec94921b92eb2629293a",
+            "bytes": 25276
           },
           {
             "repository": "game",
@@ -3010,8 +3035,8 @@
             "repository": "game",
             "path": "actors/boss_gumiho.gd",
             "exists": true,
-            "sha256": "b882552dc86a21f4a0cc0d496a15f667e2f5e878de2d82fb9096a2eaa65084be",
-            "bytes": 22132
+            "sha256": "968d2983e6041d5faefc0989f945a81f553e1dbd285dba5de3eccdd6bf068d31",
+            "bytes": 23150
           },
           {
             "repository": "game",
@@ -3024,15 +3049,15 @@
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3045,8 +3070,8 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
           },
           {
             "repository": "game",
@@ -3070,7 +3095,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "46f4a3f68fd6dbebb4c6999fcbd8d790557401ad3744b3dba398862691578ec1",
+        "fingerprint": "35d883c19505526245e81a82177fd9aece097c31cbf7f361b81514f513431fc1",
         "dependency_complete": true
       },
       {
@@ -3177,7 +3202,7 @@
         "scene_path": "assets/models/boss_jangsanbeom/boss_jangsanbeom.glb",
         "portrait_id": null,
         "portrait_resource": null,
-        "definition_config": "script = ExtResource(\"1\")\nid = \"boss_jangsanbeom\"\ndisplay_name = \"장산범\"\nbehavior = 0\nmax_hp = 240.0\ndefense = 3.0\nevasion = 40.0\nxp = 400\ndrop_class = 2\ndmg_min = 10.0\ndmg_max = 16.0\naccuracy = 90.0\nattack_range = 1.8\nattack_cooldown = 1.2\nwindup = 0.4\nstagger_sec = 0.1\nknockback = 0.08\nresist_fire = -25.0\nresist_cold = 25.0\nresist_lightning = -25.0\nresist_sal = 50.0\ncan_freeze = false\nmove_speed = 4.5\naggro_range = 16.0\ndash_speed = 16.0\ndash_length = 12.0\ncolor = Color(0.9, 0.88, 0.84, 1)\nheight = 2.4\nradius = 0.8\nmodel = ExtResource(\"2\")\nlaunch_mult = 0.0\nfamily = &\"jangsanbeom\"\nkind = 2\nside = 1\nbody = 1\nregion_tier = 2\nelite_ok = false\nboss_scene = \"res://actors/boss_jangsanbeom.tscn\"\nkill_skill_points = 1",
+        "definition_config": "script = ExtResource(\"1\")\nid = \"boss_jangsanbeom\"\ndisplay_name = \"장산범\"\nbehavior = 0\nmax_hp = 240.0\ndefense = 3.0\nevasion = 40.0\nxp = 400\ndrop_class = 2\ndmg_min = 10.0\ndmg_max = 16.0\naccuracy = 90.0\nattack_range = 2.1\nattack_cooldown = 1.2\nwindup = 0.4\nstagger_sec = 0.1\nknockback = 0.08\nresist_fire = -25.0\nresist_cold = 25.0\nresist_lightning = -25.0\nresist_sal = 50.0\ncan_freeze = false\nmove_speed = 4.5\naggro_range = 16.0\ndash_speed = 16.0\ndash_length = 12.0\ncolor = Color(0.9, 0.88, 0.84, 1)\nheight = 2.4\nradius = 0.8\nmodel = ExtResource(\"2\")\nlaunch_mult = 0.0\nfamily = &\"jangsanbeom\"\nkind = 2\nside = 1\nbody = 1\nregion_tier = 2\nelite_ok = false\nboss_scene = \"res://actors/boss_jangsanbeom.tscn\"\nkill_skill_points = 1",
         "model_config": "script = ExtResource(\"1\")\nid = \"boss_jangsanbeom\"\nscene_path = \"res://assets/models/boss_jangsanbeom/boss_jangsanbeom.glb\"\nscale = 2.64\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 2.1\npixel_filter = false\nstatic_mesh = false\nwalk_speed = 1.525\nrun_speed = 5.914\nrun_threshold = 0.0\nloco_scale_min = 0.65\nstep_phases = {\n\"run\": Vector2(0.044, 0.446),\n\"walk\": Vector2(0.258, 0.754)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
@@ -3191,15 +3216,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/boss.gd",
             "exists": true,
-            "sha256": "3a2ac4feec29d5b02168fbb78a6156a649b1e7b0fc8758fd663301253a346525",
-            "bytes": 22022
+            "sha256": "8290f10cc1aff8e36e01c15f4c5d83c265a3aa099680ec94921b92eb2629293a",
+            "bytes": 25276
           },
           {
             "repository": "game",
@@ -3212,8 +3237,8 @@
             "repository": "game",
             "path": "actors/boss_jangsanbeom.gd",
             "exists": true,
-            "sha256": "8d4e8eee142ae9df7ab03456e501e3938774efb2465a08b838ec4775761553f5",
-            "bytes": 38865
+            "sha256": "46bc779838f19a43dad6b120c637e1677e6016d08b25335d87ee10565424b783",
+            "bytes": 43231
           },
           {
             "repository": "game",
@@ -3226,15 +3251,15 @@
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3254,7 +3279,7 @@
             "repository": "game",
             "path": "data/enemies/boss_jangsanbeom.tres",
             "exists": true,
-            "sha256": "716eca4666089073f9be058d79e2790ecc106103d5069942957e0037e7cf3edb",
+            "sha256": "96468fbef283195dc99accef18965026f79a2c3dfbb2e6a2bcac41e84dc05b07",
             "bytes": 969
           },
           {
@@ -3272,7 +3297,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "1f42fc8ea20f894c256adb8c1fba36b2d39adb79cdb808d709aee6523a0958b1",
+        "fingerprint": "149f57f75e597df0eda4b3c21703becdcdf29fcc9341e0085ea0c22e9ead243f",
         "dependency_complete": true
       },
       {
@@ -3312,22 +3337,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3354,8 +3379,8 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
           },
           {
             "repository": "game",
@@ -3372,7 +3397,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "03bd1497e98fd6fdf2764d2512930fe46d6e7a2bd8a124d51e54ceeba7a778ea",
+        "fingerprint": "b0b231df15158a476c308864b06aac7024fdf0985101e9f52a8d7618f8d89acd",
         "dependency_complete": true
       },
       {
@@ -3406,22 +3431,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3434,8 +3459,8 @@
             "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -3459,7 +3484,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "101015dfbb88e96cee845656742a3d52094b9faa9842408974978937fdbeec95",
+        "fingerprint": "b52d2f73cd7d28c8e4af9c6a724dbec45771f29fc358825d931f5b62a64c911a",
         "dependency_complete": true
       },
       {
@@ -3483,7 +3508,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"centipede\"\nscene_path = \"res://assets/models/centipede/centipede.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 0.9\npixel_filter = false\nstatic_mesh = true\nsegment_scene = \"res://assets/models/centipede/centipede_segment.glb\"\ntail_tip_scene = \"res://assets/models/centipede/centipede_tip.glb\"\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/dungeons/soeburi.tres"
+          "data/dungeons/hyeongung.tres",
+          "data/dungeons/soeburi.tres",
+          "data/fields/daseot_neunggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -3493,22 +3520,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3533,10 +3560,17 @@
           },
           {
             "repository": "game",
+            "path": "data/dungeons/hyeongung.tres",
+            "exists": true,
+            "sha256": "5a8a14d0da924773ad08f4e805ad3b2139c7f343d8caa6a771aca63810e03e45",
+            "bytes": 2732
+          },
+          {
+            "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -3544,6 +3578,13 @@
             "exists": true,
             "sha256": "84ab9f4c60362a0fd2e4b933a59b32b8aa590b20cede41638a1818134bf72e6f",
             "bytes": 933
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/daseot_neunggol.tres",
+            "exists": true,
+            "sha256": "010a6904f19ba46ea6e4a9b5312020628b56254142bfc5b906e0cae0a07326d7",
+            "bytes": 4071
           },
           {
             "repository": "game",
@@ -3560,7 +3601,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "47ab61b1811fdebd208618b0b7ed3d1e4811f88e65fefe300c677b13c219d29d",
+        "fingerprint": "4da610e2a7c81d0ad049bfffab88e6c2e814a04153628e0ebe9be201b3f1db31",
         "dependency_complete": true
       },
       {
@@ -3585,6 +3626,7 @@
         "tint": "Color(0.55, 0.68, 0.58, 1)",
         "usage_evidence": [
           "data/dungeons/beomgul.tres",
+          "data/dungeons/gwana_ok.tres",
           "data/enemies/beom_apjabi.tres"
         ],
         "connection": "connected",
@@ -3595,22 +3637,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3625,6 +3667,13 @@
             "exists": true,
             "sha256": "7eb7563c2c598e8d47a9239d828a4cabf8e962f024203f368171757c80a37055",
             "bytes": 4299
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gwana_ok.tres",
+            "exists": true,
+            "sha256": "4ad21271ed58e58b782c97f32b8d42cced3c4c7a6c0c95dc20619b0ae15efc67",
+            "bytes": 2596
           },
           {
             "repository": "game",
@@ -3655,7 +3704,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "ca4f4fcd07dc6d6027ce8d65e8bb2ae9c6dbd228279ecf749abac7d274d587af",
+        "fingerprint": "3df3338fd5144fd563ffaa0db2503d748d5df7f22b79e1de9bb7963df1f178eb",
         "dependency_complete": true
       },
       {
@@ -3695,22 +3744,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3737,8 +3786,8 @@
             "repository": "game",
             "path": "data/fields/deulnyeok.tres",
             "exists": true,
-            "sha256": "dc4dc0ffa8d15faeed3f1bcf3d0a4a64f6f15dd430c4aad6432ea1dac133a248",
-            "bytes": 4732
+            "sha256": "2e16d63f52174ca7fc4145be338179eb83706ed5878a440d41e48dbd2150632b",
+            "bytes": 6722
           },
           {
             "repository": "game",
@@ -3755,7 +3804,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "02bcf8d91a579bb4ff21120c313d41f83d4f2b090b3542d8fcb84c9e47b5085f",
+        "fingerprint": "b64d152baf6e27198874f9e70e4c8f205e7efd7d3483c059d57f17b1c4b00025",
         "dependency_complete": true
       },
       {
@@ -3789,22 +3838,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3824,8 +3873,8 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
           },
           {
             "repository": "game",
@@ -3849,7 +3898,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "0a0b8d7e85f873bc04b62ac4c16a3769a5b7e02d59cf1131e919588d86273888",
+        "fingerprint": "509be0c554ac09964b044f33dbded05f7e276db9ceb916422864def0a9754d95",
         "dependency_complete": true
       },
       {
@@ -3883,22 +3932,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3911,8 +3960,8 @@
             "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -3936,7 +3985,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "4431cc8e10f12e45da8f1d0868798b6fbd987044f7d62693992d11d0c7db7395",
+        "fingerprint": "6c4a9de6a265678773ffa0907b8b864c55619dbfbc9c395dc2e276dfc14fc6f5",
         "dependency_complete": true
       },
       {
@@ -3970,22 +4019,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -3998,8 +4047,8 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
           },
           {
             "repository": "game",
@@ -4023,7 +4072,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "efaf69859cf66b72bb078ecda87fb7f9cdc673539afd1c46d8d7a52e7e6ff3d5",
+        "fingerprint": "7b1dd42b446c501e78164de942bac5635c00509d425aeb9a3f92b0f3df93fc5b",
         "dependency_complete": true
       },
       {
@@ -4144,22 +4193,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4197,7 +4246,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "6922707600c2a3bea01d035773f9e61876d0a516672e2de2e7989319e3e277f0",
+        "fingerprint": "6b90f011925db4b3ba3122e4dca402ea272c0721fd7519d0bcd9c3b9f4ebf421",
         "dependency_complete": true
       },
       {
@@ -4227,7 +4276,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"talisman_master_v2\"\nscene_path = \"res://assets/models/talisman_master_v2/talisman_master_v2.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/talisman_sword.glb\"\nweapon_placeholder = false\nweapon_bone = \"mixamorig_RightHand\"\nweapon_offset_pos = Vector3(-0.006, 0.0506, 0.0243)\nweapon_offset_rot_deg = Vector3(-1.72, -163.45, 58.09)\nwalk_speed = 1.08\nrun_speed = 3.64\nstep_phases = {\n\"run\": Vector2(0.373, 0.873),\n\"walk\": Vector2(0.086, 0.586)\n}\nattack_impact = {\n\"attack\": 0.55,\n\"slash\": 0.5556\n}\nswing_knots = {\n\"attack\": PackedVector2Array(0, 0, 0.0333, 0.1667, 0.2667, 0.5833, 0.4433, 0.7778, 0.55, 0.875, 0.6889, 1, 1, 1)\n}\nhit_speed = 1.0\ndie_fall_from = 1.85\ndie_drop_from = 1.3\ndie_lie_reach = 1.51\nloop_end = {\n\"run\": 0.5667,\n\"walk\": 1.1\n}\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack\": Vector4(0, 0.6, 0.45, 0.125)\n}\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/dungeons/soeburi.tres"
+          "data/dungeons/hyeongung.tres",
+          "data/dungeons/soeburi.tres",
+          "data/fields/daseot_neunggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -4237,22 +4288,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4270,10 +4321,17 @@
           },
           {
             "repository": "game",
+            "path": "data/dungeons/hyeongung.tres",
+            "exists": true,
+            "sha256": "5a8a14d0da924773ad08f4e805ad3b2139c7f343d8caa6a771aca63810e03e45",
+            "bytes": 2732
+          },
+          {
+            "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -4281,6 +4339,13 @@
             "exists": true,
             "sha256": "15e1f34b20a0833221e484cebff04819881201d30573b8c460ebff9adccc6a8e",
             "bytes": 886
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/daseot_neunggol.tres",
+            "exists": true,
+            "sha256": "010a6904f19ba46ea6e4a9b5312020628b56254142bfc5b906e0cae0a07326d7",
+            "bytes": 4071
           },
           {
             "repository": "game",
@@ -4297,7 +4362,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "beb01dbf2fa732bcf15ffdbc8e91ee6695d634a920ca885c560abdf22602f904",
+        "fingerprint": "5581393b9c5a773ae587b1787db5e3dd357c8163b5fa7a05d357a8303c0cbae4",
         "dependency_complete": true
       },
       {
@@ -4321,7 +4386,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"sobok_gwisin\"\nscene_path = \"res://assets/models/sobok_gwisin/sobok_gwisin.glb\"\nscale = 1.0\ny_offset = 0.3\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.05\nhover_hz = 0.45\nflap_amp = 0.0\nfloat_lean = 4.5\nfloat_lean_max = 16.0\nfloat_lunge = 1.0\nfloat_kick = 1.0\nfloat_flinch = 1.0\nfloat_fade = 0.45\nrobe_wave = 0.04\nrobe_hz = 1.6\nrobe_top = 0.45\nrobe_drag = 0.035\nrobe_drag_max = 0.12\nrobe_hair = 0.5\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.86, 0.8, 0.7, 1)",
         "usage_evidence": [
-          "data/fields/jeongnyeongjae.tres"
+          "data/fields/jeongnyeongjae.tres",
+          "data/fields/kkotmudeom.tres",
+          "data/fields/uldaesup.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -4331,22 +4398,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4366,8 +4433,22 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/kkotmudeom.tres",
+            "exists": true,
+            "sha256": "7240f38aab64bddbb5df96bd23e6e058318dd5da4fbf8c6ee9501e8d59d34bcf",
+            "bytes": 3533
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/uldaesup.tres",
+            "exists": true,
+            "sha256": "d35e2ede30817723dc62e2aeafe8fca00b2db3cf22fd37b19b2f18671a6e0bad",
+            "bytes": 3380
           },
           {
             "repository": "game",
@@ -4384,7 +4465,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "11627eb6b1560fec085dc0e8e0dd4c79095bd6233b27939944923205a2365407",
+        "fingerprint": "c44c4722e0b6a1aaa76e5c5747d244c487c7fea6e4bea9fb82e50da3891ece57",
         "dependency_complete": true
       },
       {
@@ -4418,22 +4499,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4467,8 +4548,8 @@
             "repository": "game",
             "path": "data/fields/deulnyeok.tres",
             "exists": true,
-            "sha256": "dc4dc0ffa8d15faeed3f1bcf3d0a4a64f6f15dd430c4aad6432ea1dac133a248",
-            "bytes": 4732
+            "sha256": "2e16d63f52174ca7fc4145be338179eb83706ed5878a440d41e48dbd2150632b",
+            "bytes": 6722
           },
           {
             "repository": "game",
@@ -4492,7 +4573,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "730711b97bf7dece1fcd6b5d8fb7661e9635e212410b2a2358c6e3b0e6438e29",
+        "fingerprint": "4124254ba5955da10fa59d9a19a13e7fa4b49e7de5d8fb843368631694b39278",
         "dependency_complete": true
       },
       {
@@ -4516,7 +4597,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"yacha\"\nscene_path = \"res://assets/models/yacha/yacha.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 2.4\npixel_filter = false\nwalk_speed = 1.831\nrun_speed = 6.624\nrun_threshold = 0.0\nloco_scale_min = 0.6\nstep_phases = {\n\"run\": Vector2(0.297, 0.797),\n\"walk\": Vector2(0.257, 0.757)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nswing_knots = {\n\"attack\": PackedVector2Array(0, 0, 0.6, 0.846, 1, 1)\n}\nhit_speed = 1.0\ndie_fall_from = 1.85\ndie_drop_from = 0.5\ndie_lie_reach = 2.3\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack\": Vector4(0.45, 1.75, 0.833, 0.25),\n\"hit\": Vector4(0, 0.27, 0.3, 0.1),\n\"idle\": Vector4(0, 1.3, 0, 0.45),\n\"run\": Vector4(0.0333, 0.6667, 0, 0),\n\"walk\": Vector4(0.0333, 1.0667, 0, 0)\n}\nroot_align = PackedStringArray(\"attack\")\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(1.1, 1.2, 1.45, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/gotjip_gul.tres",
+          "data/fields/gureumbawi.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -4526,22 +4609,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4554,8 +4637,15 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gotjip_gul.tres",
+            "exists": true,
+            "sha256": "b9b2d33158aeccfa9c2c4caac135a2feb7b5fb7c9f9048b9aec5787088d452b2",
+            "bytes": 3277
           },
           {
             "repository": "game",
@@ -4563,6 +4653,13 @@
             "exists": true,
             "sha256": "ad34a71ecd784edd413377faedbb517921a89f2d9fde85411d2de79b53176951",
             "bytes": 1513
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/gureumbawi.tres",
+            "exists": true,
+            "sha256": "faf21013a81c560eaa7c9281feca672a2448c1208c0ad6317059879d86486222",
+            "bytes": 3386
           },
           {
             "repository": "game",
@@ -4579,7 +4676,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "65a9060ab9399bef20a52599359888ed72e88a7bf7e7cfa9944586ab585676ca",
+        "fingerprint": "dc2b5faf9651ef6fcc746634dd55750bd2d3041a0b5c8e4b3b0b67411f5fea90",
         "dependency_complete": true
       },
       {
@@ -4613,22 +4710,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4641,8 +4738,8 @@
             "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -4666,7 +4763,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "d770a549da7ff50576e9c8c3272bb55f01139bf8523f6119390c17e81f39ea3b",
+        "fingerprint": "645778614bd5d571662cf02ba96572cbf5b467e8db484df413a34e4e641da192",
         "dependency_complete": true
       },
       {
@@ -4706,22 +4803,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4741,8 +4838,8 @@
             "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -4766,7 +4863,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "9c6369c8138c73ac7e56c06536f7162e3f29c2d5dd5fc919e33e7a0cc7ae15ec",
+        "fingerprint": "d05039f966ab4a4d59fa567fdbc55bfa97752b517f6871f221273b6a944a4251",
         "dependency_complete": true
       },
       {
@@ -4790,7 +4887,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"agwi\"\nscene_path = \"res://assets/models/agwi/agwi.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.4\npixel_filter = false\nwalk_speed = 1.031\nrun_speed = 3.681\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.283, 0.783),\n\"walk\": Vector2(0.24, 0.74)\n}\nattack_impact = {\n\"attack\": 0.594\n}\nhit_speed = 1.0\ndie_fall_from = 1.85\ndie_drop_from = 1.3\ndie_lie_reach = 1.28\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack\": Vector4(0.15, 1.75, 0.673, 0.15),\n\"eat\": Vector4(0.6, 3.3, 0, 0.4),\n\"hit\": Vector4(0, 0.27, 0.3, 0.1),\n\"idle\": Vector4(0, 1.3, 0, 0.45),\n\"run\": Vector4(0.0333, 0.6667, 0, 0),\n\"walk\": Vector4(0.0333, 1.0667, 0, 0)\n}\nroot_align = PackedStringArray(\"attack\")\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.82, 0.86, 0.8, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/gotjip_gul.tres",
+          "data/dungeons/sollbaram_amja.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -4800,22 +4899,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4828,8 +4927,22 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gotjip_gul.tres",
+            "exists": true,
+            "sha256": "b9b2d33158aeccfa9c2c4caac135a2feb7b5fb7c9f9048b9aec5787088d452b2",
+            "bytes": 3277
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/sollbaram_amja.tres",
+            "exists": true,
+            "sha256": "e077235fda997670901c26cfb66f983f711dfd001424e03ec3653c5bac12e0ad",
+            "bytes": 3530
           },
           {
             "repository": "game",
@@ -4853,7 +4966,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "8b46d34204d8fc60825d1e4cd04888e9d8f3d6ec9cc96551b5e4cfa50b3121ef",
+        "fingerprint": "5d396c03332908a3d038ddd3f51a84817ed5cdd934c286e33e250e04b2879684",
         "dependency_complete": true
       },
       {
@@ -4877,7 +4990,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"gwangbu_neok\"\nscene_path = \"res://assets/models/gwangbu_neok/gwangbu_neok.glb\"\nscale = 1.0\ny_offset = 0.3\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.05\nhover_hz = 0.45\nflap_amp = 0.0\nfloat_lean = 4.5\nfloat_lean_max = 16.0\nfloat_lunge = 1.0\nfloat_kick = 1.0\nfloat_flinch = 1.0\nfloat_fade = 0.45\nrobe_wave = 0.04\nrobe_hz = 1.6\nrobe_top = 0.45\nrobe_drag = 0.035\nrobe_drag_max = 0.12\nrobe_hair = 0.0\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.72, 0.72, 0.76, 1)",
         "usage_evidence": [
-          "data/dungeons/soeburi.tres"
+          "data/dungeons/hyeongung.tres",
+          "data/dungeons/soeburi.tres",
+          "data/fields/daseot_neunggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -4887,22 +5002,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -4913,10 +5028,17 @@
           },
           {
             "repository": "game",
+            "path": "data/dungeons/hyeongung.tres",
+            "exists": true,
+            "sha256": "5a8a14d0da924773ad08f4e805ad3b2139c7f343d8caa6a771aca63810e03e45",
+            "bytes": 2732
+          },
+          {
+            "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -4924,6 +5046,13 @@
             "exists": true,
             "sha256": "2d28a42a880ec3882209cb151c46535dc9c6e35a7433a15beeb62cfa217fc9f9",
             "bytes": 995
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/daseot_neunggol.tres",
+            "exists": true,
+            "sha256": "010a6904f19ba46ea6e4a9b5312020628b56254142bfc5b906e0cae0a07326d7",
+            "bytes": 4071
           },
           {
             "repository": "game",
@@ -4940,7 +5069,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "4345a426fc22c5443d6a9fb1951fe5339cf15435aebd0e18bda31ec6585710b3",
+        "fingerprint": "02ddddbbeb1efc835e8b1308584834f6c2ab78904e91434981549c5ef8dc9ea0",
         "dependency_complete": true
       },
       {
@@ -4964,7 +5093,10 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"hollin_mudang\"\nscene_path = \"res://assets/models/hollin_mudang/hollin_mudang.glb\"\nscale = 1.633\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nwalk_speed = 1.032\nrun_speed = 3.647\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.093, 0.593),\n\"walk\": Vector2(0.01, 0.51)\n}\nattack_impact = {\n\"attack\": 0.5\n}\nhit_speed = 1.0\nclip_cut = {\n\"attack\": Vector4(0.3, 1.3, 0.7, 0.15)\n}\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/gotjip_gul.tres",
+          "data/dungeons/sollbaram_amja.tres",
+          "data/fields/geulbanggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -4974,22 +5106,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5002,8 +5134,22 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gotjip_gul.tres",
+            "exists": true,
+            "sha256": "b9b2d33158aeccfa9c2c4caac135a2feb7b5fb7c9f9048b9aec5787088d452b2",
+            "bytes": 3277
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/sollbaram_amja.tres",
+            "exists": true,
+            "sha256": "e077235fda997670901c26cfb66f983f711dfd001424e03ec3653c5bac12e0ad",
+            "bytes": 3530
           },
           {
             "repository": "game",
@@ -5011,6 +5157,13 @@
             "exists": true,
             "sha256": "446557b1d0cab224d939d9bb033d52a822f848a63c8104ec2e4c4e95868959c4",
             "bytes": 1066
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/geulbanggol.tres",
+            "exists": true,
+            "sha256": "d2a8b5d7ac542e09e6f1d487d44637d227aec2e7d1509dcc9d12147198dc9191",
+            "bytes": 4216
           },
           {
             "repository": "game",
@@ -5027,7 +5180,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "9732e951d1c3e669e5b4e02b7ecb1dffd2c8a8c749773382e6506de5f8abab2d",
+        "fingerprint": "518170fe61f5a0a0304c3e0239a76cece319bdbccd4eee39363360d4a80e6cb7",
         "dependency_complete": true
       },
       {
@@ -5057,7 +5210,11 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"plague_miner\"\nscene_path = \"res://assets/models/plague_miner/plague_miner.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/miner_pickaxe.glb\"\nweapon_placeholder = false\nweapon_bone = \"RightHand\"\nweapon_offset_pos = Vector3(0.0184, 0.1074, 0.0015)\nweapon_offset_rot_deg = Vector3(-15, 5, 50)\nwalk_speed = 1.286\nrun_speed = 4.507\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.291, 0.791),\n\"walk\": Vector2(0.242, 0.742)\n}\nattack_impact = {\n\"attack\": 0.525\n}\nswing_knots = {\n\"attack\": PackedVector2Array(0, 0, 0.1525, 0.1279, 0.1713, 0.4767, 0.26, 0.6221, 0.5625, 0.8663, 0.6875, 1, 1, 1)\n}\nhit_speed = 1.0\nrun_idle_blend = 0.25\ndie_fall_from = 1.85\ndie_drop_from = 1.3\ndie_lie_reach = 1.46\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack\": Vector4(0.28, 2, 0.8, 0.25),\n\"hit\": Vector4(0, 0.27, 0.3, 0.1),\n\"idle\": Vector4(0, 1.3, 0, 0.45),\n\"run\": Vector4(0.0333, 0.6667, 0, 0),\n\"walk\": Vector4(0.0333, 1.0667, 0, 0)\n}\nroot_align = PackedStringArray(\"attack\")\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.82, 0.66, 0.64, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/gotjip_gul.tres",
+          "data/dungeons/sollbaram_amja.tres",
+          "data/fields/geulbanggol.tres",
+          "data/fields/gureumbawi.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -5067,22 +5224,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5102,8 +5259,22 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gotjip_gul.tres",
+            "exists": true,
+            "sha256": "b9b2d33158aeccfa9c2c4caac135a2feb7b5fb7c9f9048b9aec5787088d452b2",
+            "bytes": 3277
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/sollbaram_amja.tres",
+            "exists": true,
+            "sha256": "e077235fda997670901c26cfb66f983f711dfd001424e03ec3653c5bac12e0ad",
+            "bytes": 3530
           },
           {
             "repository": "game",
@@ -5111,6 +5282,20 @@
             "exists": true,
             "sha256": "e2baae87fe30cb745b7481447bea59009f45b7ec6dd026fa7fba654e91ead026",
             "bytes": 848
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/geulbanggol.tres",
+            "exists": true,
+            "sha256": "d2a8b5d7ac542e09e6f1d487d44637d227aec2e7d1509dcc9d12147198dc9191",
+            "bytes": 4216
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/gureumbawi.tres",
+            "exists": true,
+            "sha256": "faf21013a81c560eaa7c9281feca672a2448c1208c0ad6317059879d86486222",
+            "bytes": 3386
           },
           {
             "repository": "game",
@@ -5127,7 +5312,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "110cf012533dbbbc20c9704faecb16fc58a62debea252a64b063f440cd903c57",
+        "fingerprint": "61ca2738e91abe1c9854ddc94c94105503af07acc0def561a237b7073a4d6d63",
         "dependency_complete": true
       },
       {
@@ -5157,7 +5342,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"hollin_yeogung\"\nscene_path = \"res://assets/models/hollin_yeogung/hollin_yeogung.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.55\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/yeogung_bow.glb\"\nweapon_placeholder = false\nweapon_bone = \"LeftHand\"\nweapon_offset_pos = Vector3(-0.0198, 0.0863, 0.0267)\nweapon_offset_rot_deg = Vector3(-0.96, -14.96, 73.17)\nwalk_speed = 1.232\nrun_speed = 4.403\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.338, 0.838),\n\"walk\": Vector2(0.255, 0.755)\n}\nattack_impact = {\n\"attack_bow\": 0.6,\n\"attack_spear\": 0.5333\n}\nattack_solo = true\nswing_knots = {\n\"attack_bow\": PackedVector2Array(0, 0, 0.3733, 0.17553, 0.5333, 0.29777, 0.6, 0.40436, 0.64, 0.4733, 0.7333, 0.6383, 1, 1),\n\"attack_spear\": PackedVector2Array(0, 0, 0.4933, 0.5167, 0.6, 0.7, 1, 1)\n}\nhit_speed = 1.0\ndie_fall_from = 1.85\ndie_drop_from = 1.3\ndie_lie_reach = 1.34\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack_bow\": Vector4(1.9, 5.0333, 0.75, 0),\n\"attack_spear\": Vector4(0.4, 1, 0.75, 0.25),\n\"hit\": Vector4(0, 0.27, 0.3, 0.1),\n\"idle\": Vector4(0, 1.3, 0, 0.45),\n\"run\": Vector4(0.0333, 0.6667, 0, 0),\n\"walk\": Vector4(0.0333, 1.0667, 0, 0)\n}\nroot_pin = PackedStringArray(\"attack_spear\")\nroot_turn = {\n\"attack_bow\": Vector3(-77, 0.3733, 0.7333)\n}\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack_bow\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/fields/jeongnyeongjae.tres"
+          "data/fields/jeongnyeongjae.tres",
+          "data/fields/uldaesup.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -5167,22 +5353,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5209,8 +5395,15 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/uldaesup.tres",
+            "exists": true,
+            "sha256": "d35e2ede30817723dc62e2aeafe8fca00b2db3cf22fd37b19b2f18671a6e0bad",
+            "bytes": 3380
           },
           {
             "repository": "game",
@@ -5227,7 +5420,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "890e09de1e29d022dc17bf84ea8d3aaf159322ebe12577145d6214a1280f3aa7",
+        "fingerprint": "156ec24c3566173833cf51085591801451f731d9c1330a85a067d8ed307bfcf6",
         "dependency_complete": true
       },
       {
@@ -5257,7 +5450,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"hollin_yeogung\"\nscene_path = \"res://assets/models/hollin_yeogung/hollin_yeogung.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.55\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/yeogung_bow.glb\"\nweapon_placeholder = false\nweapon_bone = \"LeftHand\"\nweapon_offset_pos = Vector3(-0.0198, 0.0863, 0.0267)\nweapon_offset_rot_deg = Vector3(-0.96, -14.96, 73.17)\nwalk_speed = 1.232\nrun_speed = 4.403\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.338, 0.838),\n\"walk\": Vector2(0.255, 0.755)\n}\nattack_impact = {\n\"attack_bow\": 0.6,\n\"attack_spear\": 0.5333\n}\nattack_solo = true\nswing_knots = {\n\"attack_bow\": PackedVector2Array(0, 0, 0.3733, 0.17553, 0.5333, 0.29777, 0.6, 0.40436, 0.64, 0.4733, 0.7333, 0.6383, 1, 1),\n\"attack_spear\": PackedVector2Array(0, 0, 0.4933, 0.5167, 0.6, 0.7, 1, 1)\n}\nhit_speed = 1.0\ndie_fall_from = 1.85\ndie_drop_from = 1.3\ndie_lie_reach = 1.34\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack_bow\": Vector4(1.9, 5.0333, 0.75, 0),\n\"attack_spear\": Vector4(0.4, 1, 0.75, 0.25),\n\"hit\": Vector4(0, 0.27, 0.3, 0.1),\n\"idle\": Vector4(0, 1.3, 0, 0.45),\n\"run\": Vector4(0.0333, 0.6667, 0, 0),\n\"walk\": Vector4(0.0333, 1.0667, 0, 0)\n}\nroot_pin = PackedStringArray(\"attack_spear\")\nroot_turn = {\n\"attack_bow\": Vector3(-77, 0.3733, 0.7333)\n}\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack_bow\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.86, 0.72, 0.8, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/fields/gureumbawi.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -5267,22 +5461,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5302,8 +5496,8 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
           },
           {
             "repository": "game",
@@ -5311,6 +5505,13 @@
             "exists": true,
             "sha256": "ac5b3e6d901d9e809e40c7de62d45e71e949f184ec1ecc0e1e456380ebb73e0e",
             "bytes": 851
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/gureumbawi.tres",
+            "exists": true,
+            "sha256": "faf21013a81c560eaa7c9281feca672a2448c1208c0ad6317059879d86486222",
+            "bytes": 3386
           },
           {
             "repository": "game",
@@ -5327,7 +5528,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "5485b6e67adc0700c6f4aab2defa0331b0ad988a4899149578ee3dfa59f8ea68",
+        "fingerprint": "f455f380bf81b5f07c5174b5847699a78522a4e622a8e9886e92fe0b536e4446",
         "dependency_complete": true
       },
       {
@@ -5367,22 +5568,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5402,8 +5603,8 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
           },
           {
             "repository": "game",
@@ -5427,7 +5628,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "f61bb6406b027150d5b386a18c6a8e7d7de2084b926733a722a712ab7fbd0230",
+        "fingerprint": "1ac835e362aecbaaec6a62a63ee2f4742a5e24f4b27665d10ba75e6d8a1cf77b",
         "dependency_complete": true
       },
       {
@@ -5459,15 +5660,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
@@ -5480,8 +5681,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5512,7 +5713,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "775801d411f1912367ec4abd9c7acd31a96b29f72956d2fdb0bb9d4af3356750",
+        "fingerprint": "58db60f456c63c5115f075bff9661d4ee40655b76b51ef1a1773b42e4cdb7228",
         "dependency_complete": true
       },
       {
@@ -5542,7 +5743,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"talisman_master_v2\"\nscene_path = \"res://assets/models/talisman_master_v2/talisman_master_v2.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/talisman_sword.glb\"\nweapon_placeholder = false\nweapon_bone = \"mixamorig_RightHand\"\nweapon_offset_pos = Vector3(-0.006, 0.0506, 0.0243)\nweapon_offset_rot_deg = Vector3(-1.72, -163.45, 58.09)\nwalk_speed = 1.08\nrun_speed = 3.64\nstep_phases = {\n\"run\": Vector2(0.373, 0.873),\n\"walk\": Vector2(0.086, 0.586)\n}\nattack_impact = {\n\"attack\": 0.55,\n\"slash\": 0.5556\n}\nswing_knots = {\n\"attack\": PackedVector2Array(0, 0, 0.0333, 0.1667, 0.2667, 0.5833, 0.4433, 0.7778, 0.55, 0.875, 0.6889, 1, 1, 1)\n}\nhit_speed = 1.0\ndie_fall_from = 1.85\ndie_drop_from = 1.3\ndie_lie_reach = 1.51\nloop_end = {\n\"run\": 0.5667,\n\"walk\": 1.1\n}\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack\": Vector4(0, 0.6, 0.45, 0.125)\n}\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.72, 0.64, 0.82, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/sollbaram_amja.tres",
+          "data/fields/geulbanggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -5552,22 +5755,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5587,8 +5790,15 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/sollbaram_amja.tres",
+            "exists": true,
+            "sha256": "e077235fda997670901c26cfb66f983f711dfd001424e03ec3653c5bac12e0ad",
+            "bytes": 3530
           },
           {
             "repository": "game",
@@ -5596,6 +5806,13 @@
             "exists": true,
             "sha256": "d79cf0ce197189b8e143576aecefccf79b1e7e7a236b6a44fa05ff963820b605",
             "bytes": 959
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/geulbanggol.tres",
+            "exists": true,
+            "sha256": "d2a8b5d7ac542e09e6f1d487d44637d227aec2e7d1509dcc9d12147198dc9191",
+            "bytes": 4216
           },
           {
             "repository": "game",
@@ -5612,7 +5829,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "cda808a07dcd848835ef9e66cee1878ca7d1dfeb9b8fcbfb1e803e0c253bdb6b",
+        "fingerprint": "2574b29a52ae5bfd38a4ec76fbcd02e3c5695cf89711be1768880f055976c400",
         "dependency_complete": true
       },
       {
@@ -5644,7 +5861,10 @@
         "tint": null,
         "usage_evidence": [
           "data/dungeons/beomgul.tres",
-          "data/fields/jeongnyeongjae.tres"
+          "data/dungeons/gwana_ok.tres",
+          "data/fields/jeongnyeongjae.tres",
+          "data/fields/kkotmudeom.tres",
+          "data/fields/uldaesup.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -5654,22 +5874,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5701,6 +5921,13 @@
           },
           {
             "repository": "game",
+            "path": "data/dungeons/gwana_ok.tres",
+            "exists": true,
+            "sha256": "4ad21271ed58e58b782c97f32b8d42cced3c4c7a6c0c95dc20619b0ae15efc67",
+            "bytes": 2596
+          },
+          {
+            "repository": "game",
             "path": "data/enemies/hwajeok.tres",
             "exists": true,
             "sha256": "89433f4e4b3b10e7a4020ba92275385c729b34cb7c7b21045f0345abcccb3a07",
@@ -5710,8 +5937,22 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/kkotmudeom.tres",
+            "exists": true,
+            "sha256": "7240f38aab64bddbb5df96bd23e6e058318dd5da4fbf8c6ee9501e8d59d34bcf",
+            "bytes": 3533
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/uldaesup.tres",
+            "exists": true,
+            "sha256": "d35e2ede30817723dc62e2aeafe8fca00b2db3cf22fd37b19b2f18671a6e0bad",
+            "bytes": 3380
           },
           {
             "repository": "game",
@@ -5735,7 +5976,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "601f2749ad728b4f03bb13aa81dba92728d4a08baeb725d4096e8df2934439ae",
+        "fingerprint": "5463a1791ea4121ad1d3ac36d5434770293727277d2cf2a8675415df88fa62dd",
         "dependency_complete": true
       },
       {
@@ -5769,22 +6010,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5818,8 +6059,8 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
           },
           {
             "repository": "game",
@@ -5836,7 +6077,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "da5d39bb5b6206783f610b7ba73bbb858341921e427dea99b26b31952dc7a1b4",
+        "fingerprint": "979cb3de66118bb6c58d02d73209e28086abb8fcb3be5ec341cefd04244db4f4",
         "dependency_complete": true
       },
       {
@@ -5867,7 +6108,8 @@
         "tint": null,
         "usage_evidence": [
           "data/dungeons/beomgul.tres",
-          "data/fields/jeongnyeongjae.tres"
+          "data/fields/jeongnyeongjae.tres",
+          "data/fields/uldaesup.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -5877,22 +6119,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -5926,8 +6168,15 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/uldaesup.tres",
+            "exists": true,
+            "sha256": "d35e2ede30817723dc62e2aeafe8fca00b2db3cf22fd37b19b2f18671a6e0bad",
+            "bytes": 3380
           },
           {
             "repository": "game",
@@ -5944,7 +6193,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "2558b1776eeeca79356831d5bf9251cf23630194b0ae35ee6d1198b9e6b92b91",
+        "fingerprint": "bc8f124ffb9a533ec8784f3e4d008364c62b155f1dae0bdde2927d8a6dc0d0f5",
         "dependency_complete": true
       },
       {
@@ -5968,7 +6217,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"locust\"\nscene_path = \"res://assets/models/locust/locust.tscn\"\nscale = 1.0\ny_offset = 0.9\nyaw_offset_deg = 0.0\ntarget_height = 0.6\nshadow_size = Vector2(1.1, 1.1)\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.06\nhover_hz = 0.9\nflap_amp = 0.0\nfloat_lean = 3.0\nfloat_lean_max = 10.0\nfloat_lunge = 1.0\nfloat_kick = 0.0\nfloat_flinch = 1.0\nfloat_fade = 0.0\nkeep_emission = true\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/fields/jeongnyeongjae.tres"
+          "data/fields/jeongnyeongjae.tres",
+          "data/fields/kkotmudeom.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -5978,15 +6228,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
@@ -5999,8 +6249,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6020,8 +6270,15 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/kkotmudeom.tres",
+            "exists": true,
+            "sha256": "7240f38aab64bddbb5df96bd23e6e058318dd5da4fbf8c6ee9501e8d59d34bcf",
+            "bytes": 3533
           },
           {
             "repository": "game",
@@ -6038,7 +6295,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "9167d24aa883f9ff42b27c6a995ea8ecf403903409f345eb8b5b631590c63f29",
+        "fingerprint": "c52e498c581b03635b4681e65f6a8ac006bb3d78dff264b0c1ad22fe05f04d3f",
         "dependency_complete": true
       },
       {
@@ -6062,7 +6319,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"fox\"\nscene_path = \"res://assets/models/fox/fox.glb\"\nscale = 1.144\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.0\npixel_filter = false\nwalk_speed = 0.778\nrun_speed = 3.324\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.046, 0.444),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\ndie_fall_from = 0.35\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.85, 1.2, 1.85, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/fields/gureumbawi.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -6072,22 +6330,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6100,8 +6358,8 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
           },
           {
             "repository": "game",
@@ -6109,6 +6367,13 @@
             "exists": true,
             "sha256": "99dc446685eb9ed9d4b5c0e5eb57afe8c3c9af9370cfb60e0b430631833a2175",
             "bytes": 867
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/gureumbawi.tres",
+            "exists": true,
+            "sha256": "faf21013a81c560eaa7c9281feca672a2448c1208c0ad6317059879d86486222",
+            "bytes": 3386
           },
           {
             "repository": "game",
@@ -6125,7 +6390,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "4c7e5a7f7a8c5417007f7fc0499bc82ea04f40ec01d8679b3972dba24864de82",
+        "fingerprint": "636985bbb983f41a456f1b75e6bae7fc9491324463d551b7fa8fdb6257e109e9",
         "dependency_complete": true
       },
       {
@@ -6149,6 +6414,7 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"sobok_gwisin\"\nscene_path = \"res://assets/models/sobok_gwisin/sobok_gwisin.glb\"\nscale = 1.0\ny_offset = 0.3\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.05\nhover_hz = 0.45\nflap_amp = 0.0\nfloat_lean = 4.5\nfloat_lean_max = 16.0\nfloat_lunge = 1.0\nfloat_kick = 1.0\nfloat_flinch = 1.0\nfloat_fade = 0.45\nrobe_wave = 0.04\nrobe_hz = 1.6\nrobe_top = 0.45\nrobe_drag = 0.035\nrobe_drag_max = 0.12\nrobe_hair = 0.5\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.66, 0.82, 0.8, 1)",
         "usage_evidence": [
+          "data/dungeons/gwana_ok.tres",
           "data/fields/jeongnyeongjae.tres"
         ],
         "connection": "connected",
@@ -6159,22 +6425,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6182,6 +6448,13 @@
             "exists": true,
             "sha256": "70984849a6ed85df7275d22944bd867bd2c22ad8878e98f4040a9ad72aa2802c",
             "bytes": 1332716
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gwana_ok.tres",
+            "exists": true,
+            "sha256": "4ad21271ed58e58b782c97f32b8d42cced3c4c7a6c0c95dc20619b0ae15efc67",
+            "bytes": 2596
           },
           {
             "repository": "game",
@@ -6194,8 +6467,8 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
           },
           {
             "repository": "game",
@@ -6212,7 +6485,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "ec95aa9a96a7b5b2457726e6dcb47243e0150d7a6b68585005671d86fe537aed",
+        "fingerprint": "3efc0f4b8bf5ccbd79d2106ae31c2f8655d5b5c9789911bd9b4e0f90e360d3b9",
         "dependency_complete": true
       },
       {
@@ -6236,6 +6509,7 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"nachalnyeo\"\nscene_path = \"res://assets/models/nachalnyeo/nachalnyeo.glb\"\nscale = 1.0\ny_offset = 0.2\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.06\nhover_hz = 0.5\nflap_amp = 0.0\nfloat_lean = 4.5\nfloat_lean_max = 16.0\nfloat_lunge = 0.7\nfloat_kick = 1.0\nfloat_flinch = 0.7\nfloat_fade = 0.0\nrobe_wave = 0.04\nrobe_hz = 1.4\nrobe_top = 0.45\nrobe_drag = 0.03\nrobe_drag_max = 0.12\nrobe_hair = 0.0\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
+          "data/dungeons/hyeongung.tres",
           "data/dungeons/soeburi.tres"
         ],
         "connection": "connected",
@@ -6246,22 +6520,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6272,10 +6546,17 @@
           },
           {
             "repository": "game",
+            "path": "data/dungeons/hyeongung.tres",
+            "exists": true,
+            "sha256": "5a8a14d0da924773ad08f4e805ad3b2139c7f343d8caa6a771aca63810e03e45",
+            "bytes": 2732
+          },
+          {
+            "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -6299,7 +6580,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "9c0e39d7339d48dc843de918602f18c2961cb5a309dbfd3186590e9b539e729f",
+        "fingerprint": "dd9af1e37544cc628b4f83e6a07ae2a4cc6da6e5a5475bf9421e3567e592ed34",
         "dependency_complete": true
       },
       {
@@ -6323,7 +6604,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"nachalnyeo\"\nscene_path = \"res://assets/models/nachalnyeo/nachalnyeo.glb\"\nscale = 1.0\ny_offset = 0.2\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.06\nhover_hz = 0.5\nflap_amp = 0.0\nfloat_lean = 4.5\nfloat_lean_max = 16.0\nfloat_lunge = 0.7\nfloat_kick = 1.0\nfloat_flinch = 0.7\nfloat_fade = 0.0\nrobe_wave = 0.04\nrobe_hz = 1.4\nrobe_top = 0.45\nrobe_drag = 0.03\nrobe_drag_max = 0.12\nrobe_hair = 0.0\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(1.25, 0.62, 0.62, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/gotjip_gul.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -6333,22 +6615,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6361,8 +6643,15 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gotjip_gul.tres",
+            "exists": true,
+            "sha256": "b9b2d33158aeccfa9c2c4caac135a2feb7b5fb7c9f9048b9aec5787088d452b2",
+            "bytes": 3277
           },
           {
             "repository": "game",
@@ -6386,7 +6675,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "ceb9f4491188ef5e206016330531a9c1e914256eaf400f65cc41f5b97b4fdda9",
+        "fingerprint": "b0e1f21ae04e623e45fe20626337d2851529570cd06774d8026d7fdd4e1756e1",
         "dependency_complete": true
       },
       {
@@ -6418,22 +6707,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6464,7 +6753,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "fa1a4b226a05e63f2b171eb45faaade897ce53bf55b663344eaed70c6a1addec",
+        "fingerprint": "c26238366ca402c3cfb65914ebfb8e6e047fc4f89d4f55c395b7e049ad6c6dc3",
         "dependency_complete": true
       },
       {
@@ -6494,7 +6783,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"plague_miner\"\nscene_path = \"res://assets/models/plague_miner/plague_miner.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.7\npixel_filter = false\nweapon_scene = \"res://assets/models/weapons/miner_pickaxe.glb\"\nweapon_placeholder = false\nweapon_bone = \"RightHand\"\nweapon_offset_pos = Vector3(0.0184, 0.1074, 0.0015)\nweapon_offset_rot_deg = Vector3(-15, 5, 50)\nwalk_speed = 1.286\nrun_speed = 4.507\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.291, 0.791),\n\"walk\": Vector2(0.242, 0.742)\n}\nattack_impact = {\n\"attack\": 0.525\n}\nswing_knots = {\n\"attack\": PackedVector2Array(0, 0, 0.1525, 0.1279, 0.1713, 0.4767, 0.26, 0.6221, 0.5625, 0.8663, 0.6875, 1, 1, 1)\n}\nhit_speed = 1.0\nrun_idle_blend = 0.25\ndie_fall_from = 1.85\ndie_drop_from = 1.3\ndie_lie_reach = 1.46\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack\": Vector4(0.28, 2, 0.8, 0.25),\n\"hit\": Vector4(0, 0.27, 0.3, 0.1),\n\"idle\": Vector4(0, 1.3, 0, 0.45),\n\"run\": Vector4(0.0333, 0.6667, 0, 0),\n\"walk\": Vector4(0.0333, 1.0667, 0, 0)\n}\nroot_align = PackedStringArray(\"attack\")\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/dungeons/soeburi.tres"
+          "data/dungeons/hyeongung.tres",
+          "data/dungeons/soeburi.tres",
+          "data/fields/daseot_neunggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -6504,22 +6795,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6537,10 +6828,17 @@
           },
           {
             "repository": "game",
+            "path": "data/dungeons/hyeongung.tres",
+            "exists": true,
+            "sha256": "5a8a14d0da924773ad08f4e805ad3b2139c7f343d8caa6a771aca63810e03e45",
+            "bytes": 2732
+          },
+          {
+            "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -6548,6 +6846,13 @@
             "exists": true,
             "sha256": "498bcf83571b922ebb391a5890dc80b2e9a96441734ba0f8eb34c9f6ed670003",
             "bytes": 831
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/daseot_neunggol.tres",
+            "exists": true,
+            "sha256": "010a6904f19ba46ea6e4a9b5312020628b56254142bfc5b906e0cae0a07326d7",
+            "bytes": 4071
           },
           {
             "repository": "game",
@@ -6564,7 +6869,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "47152b85de5479f084f721276c3e5bd66bd5edaeecc90cf596af6b3139ba4678",
+        "fingerprint": "9a7fb41856dab1e1549ebff8071b0354dd63a795e1b70d1cbae868384fbbbad4",
         "dependency_complete": true
       },
       {
@@ -6778,7 +7083,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"spider\"\nscene_path = \"res://assets/models/spider/spider.glb\"\nscale = 1.0\ny_offset = 0.748\nyaw_offset_deg = 0.0\ntarget_height = 1.49\npixel_filter = false\nstatic_mesh = false\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nwalk_speed = 0.873\nrun_speed = 2.323\nrun_threshold = 0.0",
         "tint": null,
         "usage_evidence": [
-          "data/dungeons/beomgul.tres"
+          "data/dungeons/beomgul.tres",
+          "data/dungeons/gwana_ok.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -6788,22 +7094,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6818,6 +7124,13 @@
             "exists": true,
             "sha256": "7eb7563c2c598e8d47a9239d828a4cabf8e962f024203f368171757c80a37055",
             "bytes": 4299
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gwana_ok.tres",
+            "exists": true,
+            "sha256": "4ad21271ed58e58b782c97f32b8d42cced3c4c7a6c0c95dc20619b0ae15efc67",
+            "bytes": 2596
           },
           {
             "repository": "game",
@@ -6841,7 +7154,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "80afe629f71f3c2635d4fa11fe29cde2793d550a27ae04b1caf27797aba1898b",
+        "fingerprint": "eea2ca04af14b223ff87514dd2bdd019fc6237303841825bae083e547e13be39",
         "dependency_complete": true
       },
       {
@@ -6872,7 +7185,8 @@
         "tint": null,
         "usage_evidence": [
           "data/dungeons/heukrang_gul.tres",
-          "data/fields/deulnyeok.tres"
+          "data/fields/deulnyeok.tres",
+          "data/fields/galbat_naru.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -6882,22 +7196,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -6931,8 +7245,15 @@
             "repository": "game",
             "path": "data/fields/deulnyeok.tres",
             "exists": true,
-            "sha256": "dc4dc0ffa8d15faeed3f1bcf3d0a4a64f6f15dd430c4aad6432ea1dac133a248",
-            "bytes": 4732
+            "sha256": "2e16d63f52174ca7fc4145be338179eb83706ed5878a440d41e48dbd2150632b",
+            "bytes": 6722
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/galbat_naru.tres",
+            "exists": true,
+            "sha256": "688dfc780b799e030eb16267b578cae9f65f59514362bf5c0098a15339202af1",
+            "bytes": 3048
           },
           {
             "repository": "game",
@@ -6949,7 +7270,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "f676b3a43bafc0a3de58f8297805ad495fd39bbde37f0777eb56b977b9e92fb1",
+        "fingerprint": "f42bc5cd1a42aa502b9e410e0af9b07db00f3e4bb9deba75a43219836767133b",
         "dependency_complete": true
       },
       {
@@ -6983,22 +7304,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -7036,7 +7357,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "a4c19ac8000c8d4ef6180676d201ba8e62304eb240a2c0df34cd5be13282ea11",
+        "fingerprint": "8bca518e9ad56028787d2308a9a4ac840e46199ea0bb9dfb5f0a9fa843876051",
         "dependency_complete": true
       },
       {
@@ -7060,7 +7381,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"uinyeogwi\"\nscene_path = \"res://assets/models/uinyeogwi/uinyeogwi.glb\"\nscale = 1.633\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.6\npixel_filter = false\nwalk_speed = 1.032\nrun_speed = 3.647\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.093, 0.593),\n\"walk\": Vector2(0.01, 0.51)\n}\nattack_impact = {\n\"attack\": 0.53\n}\nhit_speed = 1.0\nclip_cut = {\n\"attack\": Vector4(0.45, 1.45, 0.7, 0.15)\n}\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit_to_head\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/fields/jeongnyeongjae.tres"
+          "data/fields/jeongnyeongjae.tres",
+          "data/fields/kkotmudeom.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -7070,22 +7392,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -7105,8 +7427,15 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/kkotmudeom.tres",
+            "exists": true,
+            "sha256": "7240f38aab64bddbb5df96bd23e6e058318dd5da4fbf8c6ee9501e8d59d34bcf",
+            "bytes": 3533
           },
           {
             "repository": "game",
@@ -7123,7 +7452,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "2d919afe0f11897fa8259b6031e5b4d2f193e2d2e7c16e8505d765c0792b2007",
+        "fingerprint": "7d50bdd4fe23201817f225f813571e348105281f989f6cf864ee6a545bc02cbb",
         "dependency_complete": true
       },
       {
@@ -7147,7 +7476,10 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"bat\"\nscene_path = \"res://assets/models/bat/bat.glb\"\nscale = 0.63\ny_offset = 0.85\nyaw_offset_deg = 0.0\ntarget_height = 0.7\npixel_filter = false\nstatic_mesh = false\nhover_amp = 0.04\nhover_hz = 0.9\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nwalk_speed = 2.5\nrun_speed = 4.5\nrun_threshold = 0.0",
         "tint": null,
         "usage_evidence": [
-          "data/fields/jeongnyeongjae.tres"
+          "data/dungeons/gwana_ok.tres",
+          "data/fields/jeongnyeongjae.tres",
+          "data/fields/kkotmudeom.tres",
+          "data/fields/uldaesup.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -7157,22 +7489,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -7180,6 +7512,13 @@
             "exists": true,
             "sha256": "15cc4a777638afd4bf3083b8bdb4ad5f1b1ead6f0087cc8907ebada6c24ba1b0",
             "bytes": 1020980
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gwana_ok.tres",
+            "exists": true,
+            "sha256": "4ad21271ed58e58b782c97f32b8d42cced3c4c7a6c0c95dc20619b0ae15efc67",
+            "bytes": 2596
           },
           {
             "repository": "game",
@@ -7192,8 +7531,22 @@
             "repository": "game",
             "path": "data/fields/jeongnyeongjae.tres",
             "exists": true,
-            "sha256": "18d0a0eba4f970b747cc2e19034a2e034eeb1d4b5449db51ee3515c972f943ab",
-            "bytes": 5384
+            "sha256": "b95e12e6332273b50bdc77ef9cf289c89f5c0d03e82547bd66126bbaeba3e5d2",
+            "bytes": 7271
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/kkotmudeom.tres",
+            "exists": true,
+            "sha256": "7240f38aab64bddbb5df96bd23e6e058318dd5da4fbf8c6ee9501e8d59d34bcf",
+            "bytes": 3533
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/uldaesup.tres",
+            "exists": true,
+            "sha256": "d35e2ede30817723dc62e2aeafe8fca00b2db3cf22fd37b19b2f18671a6e0bad",
+            "bytes": 3380
           },
           {
             "repository": "game",
@@ -7210,7 +7563,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "d319222cf9eeacc063b3021fe60cfc3019ec375cc165190dba53af194146243c",
+        "fingerprint": "a69f44520c508d52d1765aa0b776e1f9f65e3f2050bdafbcead50f622e66f70c",
         "dependency_complete": true
       },
       {
@@ -7234,7 +7587,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"spider\"\nscene_path = \"res://assets/models/spider/spider.glb\"\nscale = 1.0\ny_offset = 0.748\nyaw_offset_deg = 0.0\ntarget_height = 1.49\npixel_filter = false\nstatic_mesh = false\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"\nwalk_speed = 0.873\nrun_speed = 2.323\nrun_threshold = 0.0",
         "tint": "Color(0.62, 0.56, 0.7, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/sollbaram_amja.tres",
+          "data/fields/geulbanggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -7244,22 +7599,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -7272,8 +7627,15 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/sollbaram_amja.tres",
+            "exists": true,
+            "sha256": "e077235fda997670901c26cfb66f983f711dfd001424e03ec3653c5bac12e0ad",
+            "bytes": 3530
           },
           {
             "repository": "game",
@@ -7281,6 +7643,13 @@
             "exists": true,
             "sha256": "cc64bdb8eb600f8e377358458b6d112aacda903b1f11e737d66921f50a527374",
             "bytes": 897
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/geulbanggol.tres",
+            "exists": true,
+            "sha256": "d2a8b5d7ac542e09e6f1d487d44637d227aec2e7d1509dcc9d12147198dc9191",
+            "bytes": 4216
           },
           {
             "repository": "game",
@@ -7297,7 +7666,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "84d3a3ab87bf0b4b56ce2a4f5d6061d2ee66847c0a30ea41bb353aa8e8f8adfc",
+        "fingerprint": "cdd059b519228f04958ace449ed99642bbdd4bfe7a8046c74f4e6c1b88f586f6",
         "dependency_complete": true
       },
       {
@@ -7321,7 +7690,9 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"yacha\"\nscene_path = \"res://assets/models/yacha/yacha.glb\"\nscale = 1.0\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 2.4\npixel_filter = false\nwalk_speed = 1.831\nrun_speed = 6.624\nrun_threshold = 0.0\nloco_scale_min = 0.6\nstep_phases = {\n\"run\": Vector2(0.297, 0.797),\n\"walk\": Vector2(0.257, 0.757)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nswing_knots = {\n\"attack\": PackedVector2Array(0, 0, 0.6, 0.846, 1, 1)\n}\nhit_speed = 1.0\ndie_fall_from = 1.85\ndie_drop_from = 0.5\ndie_lie_reach = 2.3\nstance_lock = PackedStringArray(\"walk\", \"run\")\nclip_cut = {\n\"attack\": Vector4(0.45, 1.75, 0.833, 0.25),\n\"hit\": Vector4(0, 0.27, 0.3, 0.1),\n\"idle\": Vector4(0, 1.3, 0, 0.45),\n\"run\": Vector4(0.0333, 0.6667, 0, 0),\n\"walk\": Vector4(0.0333, 1.0667, 0, 0)\n}\nroot_align = PackedStringArray(\"attack\")\nattack_fit = true\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/dungeons/soeburi.tres"
+          "data/dungeons/hyeongung.tres",
+          "data/dungeons/soeburi.tres",
+          "data/fields/daseot_neunggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -7331,22 +7702,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -7357,10 +7728,17 @@
           },
           {
             "repository": "game",
+            "path": "data/dungeons/hyeongung.tres",
+            "exists": true,
+            "sha256": "5a8a14d0da924773ad08f4e805ad3b2139c7f343d8caa6a771aca63810e03e45",
+            "bytes": 2732
+          },
+          {
+            "repository": "game",
             "path": "data/dungeons/soeburi.tres",
             "exists": true,
-            "sha256": "32a8d39a9e6b978f0592efb412a88d38d9837782e4ea6449dcd32829dda78632",
-            "bytes": 4685
+            "sha256": "f852e2b6874c0103e2e500f577882fbabca6c91ae446e21c7b02858518cf9abe",
+            "bytes": 5495
           },
           {
             "repository": "game",
@@ -7368,6 +7746,13 @@
             "exists": true,
             "sha256": "b3f258ebd8715600e8a8c4b1034e87256f6f6a3c9cb80ee2820356333a530814",
             "bytes": 788
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/daseot_neunggol.tres",
+            "exists": true,
+            "sha256": "010a6904f19ba46ea6e4a9b5312020628b56254142bfc5b906e0cae0a07326d7",
+            "bytes": 4071
           },
           {
             "repository": "game",
@@ -7384,7 +7769,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "66b520ba02397fed1ccf7e140bfbd77a6fa04fe312ee8a0c87319d1334d31065",
+        "fingerprint": "72877e1c64b69d57764464bfd0566780944323aaf0232ddc032a8b5072253455",
         "dependency_complete": true
       },
       {
@@ -7408,7 +7793,8 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"fox\"\nscene_path = \"res://assets/models/fox/fox.glb\"\nscale = 1.144\ny_offset = 0.0\nyaw_offset_deg = 0.0\ntarget_height = 1.0\npixel_filter = false\nwalk_speed = 0.778\nrun_speed = 3.324\nrun_threshold = 0.0\nstep_phases = {\n\"run\": Vector2(0.046, 0.444),\n\"walk\": Vector2(0.25, 0.75)\n}\nattack_impact = {\n\"attack\": 0.6\n}\nhit_speed = 1.0\ndie_fall_from = 0.35\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": null,
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/fields/gureumbawi.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -7418,22 +7804,22 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -7446,8 +7832,8 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
           },
           {
             "repository": "game",
@@ -7455,6 +7841,13 @@
             "exists": true,
             "sha256": "cb4b697da61d5acff25aab483878d8158f518d82c14b79ca3f29aab2043e5a48",
             "bytes": 812
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/gureumbawi.tres",
+            "exists": true,
+            "sha256": "faf21013a81c560eaa7c9281feca672a2448c1208c0ad6317059879d86486222",
+            "bytes": 3386
           },
           {
             "repository": "game",
@@ -7471,7 +7864,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "4d7a6deaa0a3c288bd0a80136629647e0a6fb2c501072d1e31c55016ff5ec80d",
+        "fingerprint": "2ac271a12b1f901da2ac1d1caadba14d70e504d13bb815584068f53671200772",
         "dependency_complete": true
       },
       {
@@ -7495,7 +7888,10 @@
         "model_config": "script = ExtResource(\"1\")\nid = \"honbul\"\nscene_path = \"res://assets/models/honbul/honbul.tscn\"\nscale = 1.0\ny_offset = 1.0\nyaw_offset_deg = 0.0\ntarget_height = 0.5\npixel_filter = false\nstatic_mesh = true\nhover_amp = 0.08\nhover_hz = 1.1\nflap_amp = 0.0\nkeep_emission = true\nbisect = false\nanim_idle = \"idle\"\nanim_walk = \"walk\"\nanim_run = \"run\"\nanim_attack = \"attack\"\nanim_hit = \"hit\"\nanim_die = \"die\"",
         "tint": "Color(0.8, 0.95, 1.4, 1)",
         "usage_evidence": [
-          "data/dungeons/bongmil_gul.tres"
+          "data/dungeons/bongmil_gul.tres",
+          "data/dungeons/gotjip_gul.tres",
+          "data/dungeons/sollbaram_amja.tres",
+          "data/fields/geulbanggol.tres"
         ],
         "connection": "connected",
         "load": "not_checked",
@@ -7505,15 +7901,15 @@
             "repository": "game",
             "path": "actors/actor_visual.gd",
             "exists": true,
-            "sha256": "517425a11da8c18ae9e61d02e68080bd3003d887e60c122e7693a87af11e88cf",
-            "bytes": 138072
+            "sha256": "17185f6dacb7a366b73617fe911a8cff8674cbc4e4520c575e1185ee3b8e9588",
+            "bytes": 139170
           },
           {
             "repository": "game",
             "path": "actors/enemy_def.gd",
             "exists": true,
-            "sha256": "5b57604ed1f2bf0d4d2bec4e1c15a203e49c927f1fd39b9989f6074c4c6bc2e6",
-            "bytes": 28350
+            "sha256": "f3eb7aa635242e7cbf523f93d78fcb9008f3d796cf18c0efb3ca95cb3f037fde",
+            "bytes": 29206
           },
           {
             "repository": "game",
@@ -7526,8 +7922,8 @@
             "repository": "game",
             "path": "actors/model_def.gd",
             "exists": true,
-            "sha256": "97f688f321bc70e0b686b50a9271bf5f9360eb6643cefbf56c76e8ee3d61b8ed",
-            "bytes": 44170
+            "sha256": "f0405f41e1b6d8e3e9a2de2ad77f04aa884509b8e6439727bb8ce557aced3c3d",
+            "bytes": 44594
           },
           {
             "repository": "game",
@@ -7540,8 +7936,22 @@
             "repository": "game",
             "path": "data/dungeons/bongmil_gul.tres",
             "exists": true,
-            "sha256": "d13ed04e40cab2b6d7b62810f2295b4e44a4fd7273af31ebdf3fc534d174a1dd",
-            "bytes": 6427
+            "sha256": "b72bf0e79d0732b1cc48228ec2782848bf448ee5089578c866d284dfe1a05a38",
+            "bytes": 7114
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/gotjip_gul.tres",
+            "exists": true,
+            "sha256": "b9b2d33158aeccfa9c2c4caac135a2feb7b5fb7c9f9048b9aec5787088d452b2",
+            "bytes": 3277
+          },
+          {
+            "repository": "game",
+            "path": "data/dungeons/sollbaram_amja.tres",
+            "exists": true,
+            "sha256": "e077235fda997670901c26cfb66f983f711dfd001424e03ec3653c5bac12e0ad",
+            "bytes": 3530
           },
           {
             "repository": "game",
@@ -7549,6 +7959,13 @@
             "exists": true,
             "sha256": "eeb25a5346454b43bc3905f53002ee13aa62dff05ba793f4100830eb7157733b",
             "bytes": 878
+          },
+          {
+            "repository": "game",
+            "path": "data/fields/geulbanggol.tres",
+            "exists": true,
+            "sha256": "d2a8b5d7ac542e09e6f1d487d44637d227aec2e7d1509dcc9d12147198dc9191",
+            "bytes": 4216
           },
           {
             "repository": "game",
@@ -7565,7 +7982,7 @@
             "bytes": 20032
           }
         ],
-        "fingerprint": "8e665f56f5359e5504da8b623a4b35b9b87902cf1a430f95106a74d98cb135dc",
+        "fingerprint": "03fe9b2eea36b63ffe6901891529d35d1b88cb3e9ed4942621a1cd1f7dfc5f6b",
         "dependency_complete": true
       }
     ],
@@ -7787,8 +8204,8 @@
             "repository": "game",
             "path": "data/dialogue/event/gumiho.dialogue",
             "exists": true,
-            "sha256": "91d08586bc3b56b30bd96236184d105a46db124ddf3686e60e66a5bf0c0313f1",
-            "bytes": 4315
+            "sha256": "f7838f7b184953656d84c2fb30dfac566079a922f488e997be2a37178efc445d",
+            "bytes": 4424
           },
           {
             "repository": "game",
@@ -7843,8 +8260,8 @@
             "repository": "game",
             "path": "data/dialogue/npc/jumo.dialogue",
             "exists": true,
-            "sha256": "6411e0fce6ae558deed52d64333dbcab881b2af64c70400cbd4f576d32d16642",
-            "bytes": 12745
+            "sha256": "0ea370d40bb2e3cbe6ae4dbe698593be3015b1b3630ceb8af4762120798811a8",
+            "bytes": 13921
           },
           {
             "repository": "game",
@@ -7857,8 +8274,8 @@
             "repository": "game",
             "path": "data/dialogue/npc/shaman.dialogue",
             "exists": true,
-            "sha256": "48d60eaead45964b0fefdc94f89de7f3775e6239786bf48b3181a00a03c80948",
-            "bytes": 17540
+            "sha256": "5f63d9576035df57fd4caec6f6ecd1e11e94760b1a6df6cd2c4baf43384067f3",
+            "bytes": 18602
           },
           {
             "repository": "game",
@@ -7868,7 +8285,7 @@
             "bytes": 893
           }
         ],
-        "fingerprint": "f8f6aaf78d2dfbc696719d3b537d29fd3a0e6298e89961d9cf022d0402ec1d81",
+        "fingerprint": "4e10d3459958e6572eaf8f1a1573fad7e1a22a236a978a656411cca2fe607c67",
         "dependency_complete": true
       },
       {
@@ -8053,8 +8470,8 @@
             "repository": "game",
             "path": "data/dialogue/npc/jumo.dialogue",
             "exists": true,
-            "sha256": "6411e0fce6ae558deed52d64333dbcab881b2af64c70400cbd4f576d32d16642",
-            "bytes": 12745
+            "sha256": "0ea370d40bb2e3cbe6ae4dbe698593be3015b1b3630ceb8af4762120798811a8",
+            "bytes": 13921
           },
           {
             "repository": "game",
@@ -8064,7 +8481,7 @@
             "bytes": 730
           }
         ],
-        "fingerprint": "444c8411a9fe169a8c9c58c66ccb70cbab6ca0421c5b5f3c4a6abf20d5a273db",
+        "fingerprint": "d137e5d1c93a30e736cd8810acd494ad4a0fb0ab7fff7e34d415a557b759c76e",
         "dependency_complete": true
       },
       {
@@ -8111,8 +8528,8 @@
             "repository": "game",
             "path": "data/dialogue/event/gumiho.dialogue",
             "exists": true,
-            "sha256": "91d08586bc3b56b30bd96236184d105a46db124ddf3686e60e66a5bf0c0313f1",
-            "bytes": 4315
+            "sha256": "f7838f7b184953656d84c2fb30dfac566079a922f488e997be2a37178efc445d",
+            "bytes": 4424
           },
           {
             "repository": "game",
@@ -8122,7 +8539,7 @@
             "bytes": 292
           }
         ],
-        "fingerprint": "02e262613a56c1e32a2b68452dd89cb361f369f6f7cc1d992a7c07cf6dc9574a",
+        "fingerprint": "33a1f0f041bf92c26fc0e869c0a9988f8fbe470d3ef77e09c912458a0643e1b5",
         "dependency_complete": true
       },
       {
@@ -8169,8 +8586,8 @@
             "repository": "game",
             "path": "data/dialogue/event/gumiho.dialogue",
             "exists": true,
-            "sha256": "91d08586bc3b56b30bd96236184d105a46db124ddf3686e60e66a5bf0c0313f1",
-            "bytes": 4315
+            "sha256": "f7838f7b184953656d84c2fb30dfac566079a922f488e997be2a37178efc445d",
+            "bytes": 4424
           },
           {
             "repository": "game",
@@ -8180,7 +8597,7 @@
             "bytes": 293
           }
         ],
-        "fingerprint": "1fc3e0c18943b128783b1bfe0c1d2e68e8b0ac528b8f112c0a990f2edbdf8bc0",
+        "fingerprint": "e53e15be02ac8905ecec0ab6bcf41ed82c86075c218560e6c20bf91f9877e828",
         "dependency_complete": true
       },
       {
@@ -8294,8 +8711,8 @@
             "repository": "game",
             "path": "data/dialogue/npc/jumo.dialogue",
             "exists": true,
-            "sha256": "6411e0fce6ae558deed52d64333dbcab881b2af64c70400cbd4f576d32d16642",
-            "bytes": 12745
+            "sha256": "0ea370d40bb2e3cbe6ae4dbe698593be3015b1b3630ceb8af4762120798811a8",
+            "bytes": 13921
           },
           {
             "repository": "game",
@@ -8305,7 +8722,7 @@
             "bytes": 283
           }
         ],
-        "fingerprint": "308c77555a427eb513c74a6f2c6ea77518e65a2772f8ee7ed21f2d8e43c11650",
+        "fingerprint": "35dcb03cecf52a6ab4f0767ffe75e3757225324cdd58103c903a8115d3c69ee4",
         "dependency_complete": true
       },
       {
@@ -8475,8 +8892,8 @@
             "repository": "game",
             "path": "data/dialogue/npc/shaman.dialogue",
             "exists": true,
-            "sha256": "48d60eaead45964b0fefdc94f89de7f3775e6239786bf48b3181a00a03c80948",
-            "bytes": 17540
+            "sha256": "5f63d9576035df57fd4caec6f6ecd1e11e94760b1a6df6cd2c4baf43384067f3",
+            "bytes": 18602
           },
           {
             "repository": "game",
@@ -8486,7 +8903,7 @@
             "bytes": 294
           }
         ],
-        "fingerprint": "3b86b8173fc9715f5955126fb3298b5f3c7879140de25ef9eb5e7546ab9858df",
+        "fingerprint": "442a64949eadb62d1f11f9e4065f519d7d07c79d386be40f958c801dc3346ffb",
         "dependency_complete": true
       }
     ],
