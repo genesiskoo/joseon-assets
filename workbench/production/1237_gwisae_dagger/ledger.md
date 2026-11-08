@@ -25,7 +25,11 @@
 | `glb/gwisae_dagger_meshy.glb` | `ac26487a1424caba13d57717bde1974716cbd2fd932debcfa5f7ed4c8f973e27` | Meshy 원본(2,588,400 B · 텍스처 2K) |
 | 게임 `assets/models/weapons/gwisae_dagger.glb` | `d358cd5ab1024531a92f3afe88dcdbc86a121ef39b67b477d9649fd5e94228cd` | `tools/blender/weapon_intake.py --grip=0.60 --flip=1 --length=0.42` · 칼끝 +0.343 · 자루 끝 −0.077 · 텍스처 1,024 · 무광 |
 
+## 착륙 (2026-11-08)
+
+- 게임 main `da8a13cc1`(PD 「그대로 합쳐」 · 작업 트리 커밋 050726390) — `data/models/gwisae.tres` weapon_scene = `gwisae_dagger.glb` · 가벼운 시험 단위 + e2e 16/16 PASS.
+
 ## 남은 것
 
 - 손 보정값은 산적 단검 것 그대로(같은 축) — 주먹 쥐기 · 보정 다시 재기 = G4 #1222.
-- 게임 거리에서 날이 산적 단검(코드 모양, 날 6cm)보다 가늘게 읽힌다 — 판정 거리: 길이 0.42 → 0.48로 키우기 / 그대로.
+- 게임 거리에서 날이 산적 단검(코드 모양, 날 6cm)보다 가늘게 읽힌다 — PD 판정 11-08 「그대로 합쳐」 = 길이 0.42 유지.
