@@ -1,0 +1,2119 @@
+{
+ "_about": "tools/blender/tripo_anim.py 결과 (#222) — #223 ModelDef 값: 길이·타격(impact = 게임이 칼이 닿는 비율)·단계 경계(bounds, 출력 프레임). check = 그 프레임의 골반·손·칼끝 자리(glTF 좌표, m) — 반입 뒤 같은 자리인지 재 볼 때",
+ "fbx": "C:/workspace/joseon/.claude/worktrees/1221-gwisae-model/tmp/1222/web/fbx49/tripo_convert_ce6be1e5-c9a8-4a95-b537-d52cc1517bae.fbx",
+ "plan": "C:/workspace/joseon/.claude/worktrees/1221-gwisae-model/tools/plans/tripo_gwisae_anim_v2.json",
+ "glb": "C:/workspace/joseon/.claude/worktrees/1221-gwisae-model/tmp/1222/build/gwisae_v2.glb",
+ "fps": 60,
+ "height": 0.0,
+ "scale": 1.0,
+ "bones": {
+  "hip": "mixamorig:Hips",
+  "chest": "mixamorig:Spine2",
+  "upperarm": "mixamorig:RightArm",
+  "forearm": "mixamorig:RightForeArm",
+  "hand": "mixamorig:RightHand",
+  "lfoot": "mixamorig:LeftFoot",
+  "rfoot": "mixamorig:RightFoot",
+  "lhand": "mixamorig:LeftHand"
+ },
+ "clips": {
+  "idle": {
+   "src": "idle",
+   "range": [
+    1.0,
+    369.0
+   ],
+   "loop": true,
+   "frames": 460,
+   "fps": 60,
+   "len": 7.6667,
+   "kind": "uniform",
+   "bounds": [
+    0,
+    460
+   ],
+   "src_marks": [
+    1.0,
+    369.0
+   ],
+   "fractions": [
+    1.0
+   ],
+   "impact": null,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "pin",
+   "inplace_max_cm": 0.0,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": 0.01,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 0.33,
+   "tip_peak_frame": 245.5,
+   "tip_sharp": 3.65,
+   "tip_min_z": 0.573,
+   "blade_turn_max_deg": 0.7,
+   "blade_turn_frame": 245.5,
+   "hip_min_pct": 98.3,
+   "hip_end_pct": 99.6,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.55116,
+      0.00957
+     ],
+     "hand": [
+      -0.11764,
+      0.50945,
+      0.01409
+     ],
+     "tip": [
+      -0.00452,
+      0.61429,
+      0.40474
+     ],
+     "grip": [
+      -0.11708,
+      0.45313,
+      0.03262
+     ]
+    },
+    "230": {
+     "hip": [
+      0.00191,
+      0.54908,
+      0.00957
+     ],
+     "hand": [
+      -0.11541,
+      0.50718,
+      0.00477
+     ],
+     "tip": [
+      -0.1043,
+      0.60781,
+      0.41239
+     ],
+     "grip": [
+      -0.11629,
+      0.45051,
+      0.02221
+     ]
+    },
+    "460": {
+     "hip": [
+      0.00191,
+      0.55116,
+      0.00957
+     ],
+     "hand": [
+      -0.11764,
+      0.50945,
+      0.01409
+     ],
+     "tip": [
+      -0.00452,
+      0.61429,
+      0.40474
+     ],
+     "grip": [
+      -0.11708,
+      0.45313,
+      0.03262
+     ]
+    }
+   },
+   "step_phases": [
+    0.391,
+    0.891
+   ],
+   "step_raw": {
+    "left": 0.845,
+    "right": 0.436,
+    "off_cycles": 0.045
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 461,
+    "length": 7.66667,
+    "step": 0.01667
+   }
+  },
+  "walk": {
+   "src": "walk",
+   "range": [
+    8.0,
+    36.0
+   ],
+   "loop": true,
+   "frames": 70,
+   "fps": 60,
+   "len": 1.1667,
+   "kind": "uniform",
+   "bounds": [
+    0,
+    70
+   ],
+   "src_marks": [
+    8.0,
+    36.0
+   ],
+   "fractions": [
+    1.0
+   ],
+   "impact": null,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "pin",
+   "inplace_max_cm": 0.0,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": 0.49,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 1.13,
+   "tip_peak_frame": 54.5,
+   "tip_sharp": 1.63,
+   "tip_min_z": 0.429,
+   "blade_turn_max_deg": 2.6,
+   "blade_turn_frame": 43.5,
+   "hip_min_pct": 95.7,
+   "hip_end_pct": 95.9,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.53041,
+      0.00957
+     ],
+     "hand": [
+      -0.12486,
+      0.48279,
+      -0.06663
+     ],
+     "tip": [
+      -0.10631,
+      0.4306,
+      0.3497
+     ],
+     "grip": [
+      -0.12726,
+      0.42367,
+      -0.07057
+     ]
+    },
+    "35": {
+     "hip": [
+      0.00191,
+      0.52926,
+      0.00957
+     ],
+     "hand": [
+      -0.12642,
+      0.5094,
+      0.09554
+     ],
+     "tip": [
+      -0.02571,
+      0.7911,
+      0.39034
+     ],
+     "grip": [
+      -0.12322,
+      0.46846,
+      0.13832
+     ]
+    },
+    "70": {
+     "hip": [
+      0.00191,
+      0.53041,
+      0.00957
+     ],
+     "hand": [
+      -0.12486,
+      0.48279,
+      -0.06663
+     ],
+     "tip": [
+      -0.10631,
+      0.4306,
+      0.3497
+     ],
+     "grip": [
+      -0.12726,
+      0.42367,
+      -0.07057
+     ]
+    }
+   },
+   "step_phases": [
+    0.045,
+    0.545
+   ],
+   "step_raw": {
+    "left": 0.554,
+    "right": 0.036,
+    "off_cycles": 0.009
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 71,
+    "length": 1.16667,
+    "step": 0.01667
+   }
+  },
+  "run": {
+   "src": "run",
+   "range": [
+    10.0,
+    25.0
+   ],
+   "loop": true,
+   "frames": 38,
+   "fps": 60,
+   "len": 0.6333,
+   "kind": "uniform",
+   "bounds": [
+    0,
+    38
+   ],
+   "src_marks": [
+    10.0,
+    25.0
+   ],
+   "fractions": [
+    1.0
+   ],
+   "impact": null,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "pin",
+   "inplace_max_cm": 54.29,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": 1.07,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 8.98,
+   "tip_peak_frame": 28.5,
+   "tip_sharp": 2.69,
+   "tip_min_z": 0.335,
+   "blade_turn_max_deg": 23.3,
+   "blade_turn_frame": 28.5,
+   "hip_min_pct": 85.3,
+   "hip_end_pct": 85.5,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.47318,
+      0.00957
+     ],
+     "hand": [
+      -0.18109,
+      0.53782,
+      -0.05292
+     ],
+     "tip": [
+      0.13363,
+      0.33539,
+      0.13781
+     ],
+     "grip": [
+      -0.19985,
+      0.48459,
+      -0.07111
+     ]
+    },
+    "19": {
+     "hip": [
+      0.00191,
+      0.4738,
+      0.00957
+     ],
+     "hand": [
+      -0.09968,
+      0.49719,
+      0.21756
+     ],
+     "tip": [
+      0.00035,
+      0.90453,
+      0.19594
+     ],
+     "grip": [
+      -0.10248,
+      0.50443,
+      0.27635
+     ]
+    },
+    "38": {
+     "hip": [
+      0.00191,
+      0.47318,
+      0.00957
+     ],
+     "hand": [
+      -0.18109,
+      0.53782,
+      -0.05292
+     ],
+     "tip": [
+      0.13363,
+      0.33539,
+      0.13781
+     ],
+     "grip": [
+      -0.19985,
+      0.48459,
+      -0.07111
+     ]
+    }
+   },
+   "step_phases": [
+    0.314,
+    0.814
+   ],
+   "step_raw": {
+    "left": 0.791,
+    "right": 0.337,
+    "off_cycles": 0.023
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 39,
+    "length": 0.63333,
+    "step": 0.01667
+   }
+  },
+  "hit": {
+   "src": "hit_to_body_01",
+   "range": [
+    2.0,
+    24.0
+   ],
+   "loop": false,
+   "frames": 18,
+   "fps": 60,
+   "len": 0.3,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    6,
+    18
+   ],
+   "src_marks": [
+    2.0,
+    10.0,
+    24.0
+   ],
+   "fractions": [
+    0.3333,
+    0.6667
+   ],
+   "impact": 0.3333,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 0.0,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 6.28,
+   "tip_peak_frame": 3.5,
+   "tip_sharp": 2.39,
+   "tip_min_z": 0.806,
+   "blade_turn_max_deg": 13.1,
+   "blade_turn_frame": 3.5,
+   "hip_min_pct": 89.3,
+   "hip_end_pct": 92.8,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.4941,
+      0.00957
+     ],
+     "hand": [
+      -0.08914,
+      0.67727,
+      0.06997
+     ],
+     "tip": [
+      0.04996,
+      0.80565,
+      -0.30495
+     ],
+     "grip": [
+      -0.05995,
+      0.72352,
+      0.0929
+     ]
+    },
+    "6": {
+     "hip": [
+      0.00191,
+      0.51869,
+      0.00957
+     ],
+     "hand": [
+      -0.08969,
+      0.69167,
+      0.08626
+     ],
+     "tip": [
+      0.17185,
+      1.00311,
+      -0.01862
+     ],
+     "grip": [
+      -0.09346,
+      0.71729,
+      0.13961
+     ]
+    },
+    "9": {
+     "hip": [
+      0.00191,
+      0.5185,
+      0.00957
+     ],
+     "hand": [
+      -0.11347,
+      0.66277,
+      0.07452
+     ],
+     "tip": [
+      0.1227,
+      1.00918,
+      0.04942
+     ],
+     "grip": [
+      -0.12807,
+      0.68072,
+      0.12911
+     ]
+    },
+    "18": {
+     "hip": [
+      0.00191,
+      0.51327,
+      0.00957
+     ],
+     "hand": [
+      -0.11605,
+      0.64401,
+      0.07661
+     ],
+     "tip": [
+      0.03893,
+      0.94353,
+      -0.17373
+     ],
+     "grip": [
+      -0.10746,
+      0.68176,
+      0.12151
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 19,
+    "length": 0.3,
+    "step": 0.01667
+   }
+  },
+  "die": {
+   "src": "fall",
+   "range": [
+    20.0,
+    58.0
+   ],
+   "loop": false,
+   "frames": 81,
+   "fps": 60,
+   "len": 1.35,
+   "kind": "uniform",
+   "bounds": [
+    0,
+    81
+   ],
+   "src_marks": [
+    20.0,
+    58.0
+   ],
+   "fractions": [
+    1.0
+   ],
+   "impact": null,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 0.12,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 4.83,
+   "tip_peak_frame": 46.5,
+   "tip_sharp": 2.33,
+   "tip_min_z": 0.099,
+   "blade_turn_max_deg": 13.0,
+   "blade_turn_frame": 45.5,
+   "hip_min_pct": 26.8,
+   "hip_end_pct": 30.8,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.50178,
+      0.00957
+     ],
+     "hand": [
+      -0.1707,
+      0.46245,
+      0.0139
+     ],
+     "tip": [
+      -0.45887,
+      0.76598,
+      0.04898
+     ],
+     "grip": [
+      -0.20894,
+      0.42742,
+      0.04265
+     ]
+    },
+    "40": {
+     "hip": [
+      0.00191,
+      0.16735,
+      0.00957
+     ],
+     "hand": [
+      0.04904,
+      0.46545,
+      0.14847
+     ],
+     "tip": [
+      0.35214,
+      0.41334,
+      -0.13756
+     ],
+     "grip": [
+      0.08601,
+      0.5028,
+      0.17595
+     ]
+    },
+    "81": {
+     "hip": [
+      0.00191,
+      0.1702,
+      0.00957
+     ],
+     "hand": [
+      0.09712,
+      0.13631,
+      0.1408
+     ],
+     "tip": [
+      0.43888,
+      0.32079,
+      -0.01909
+     ],
+     "grip": [
+      0.13146,
+      0.11958,
+      0.18615
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 82,
+    "length": 1.35,
+    "step": 0.01667
+   }
+  },
+  "attack": {
+   "src": "ai_slash_a",
+   "range": [
+    6.0,
+    44.0
+   ],
+   "loop": false,
+   "frames": 33,
+   "fps": 60,
+   "len": 0.55,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    15,
+    33
+   ],
+   "src_marks": [
+    6.0,
+    22.0,
+    44.0
+   ],
+   "fractions": [
+    0.4545,
+    0.5455
+   ],
+   "impact": 0.4545,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 2.64,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 20.26,
+   "tip_peak_frame": 13.5,
+   "tip_sharp": 3.56,
+   "tip_min_z": 0.353,
+   "blade_turn_max_deg": 53.8,
+   "blade_turn_frame": 13.5,
+   "hip_min_pct": 77.1,
+   "hip_end_pct": 87.2,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.49346,
+      0.00957
+     ],
+     "hand": [
+      -0.19191,
+      0.57512,
+      0.08945
+     ],
+     "tip": [
+      0.09477,
+      0.85987,
+      0.20406
+     ],
+     "grip": [
+      -0.23283,
+      0.61352,
+      0.10862
+     ]
+    },
+    "15": {
+     "hip": [
+      0.00191,
+      0.46521,
+      0.00957
+     ],
+     "hand": [
+      -0.33526,
+      0.58831,
+      0.12833
+     ],
+     "tip": [
+      -0.18521,
+      0.9789,
+      0.09188
+     ],
+     "grip": [
+      -0.3859,
+      0.60924,
+      0.10567
+     ]
+    },
+    "16": {
+     "hip": [
+      0.00191,
+      0.47553,
+      0.00957
+     ],
+     "hand": [
+      -0.31467,
+      0.56562,
+      0.1032
+     ],
+     "tip": [
+      -0.16798,
+      0.95785,
+      0.1354
+     ],
+     "grip": [
+      -0.36833,
+      0.58984,
+      0.09616
+     ]
+    },
+    "33": {
+     "hip": [
+      0.00191,
+      0.48229,
+      0.00957
+     ],
+     "hand": [
+      -0.21097,
+      0.5635,
+      0.1241
+     ],
+     "tip": [
+      0.00736,
+      0.91727,
+      0.18391
+     ],
+     "grip": [
+      -0.25797,
+      0.59291,
+      0.14513
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 34,
+    "length": 0.55,
+    "step": 0.01667
+   }
+  },
+  "attack2": {
+   "src": "ai_slash_b",
+   "range": [
+    6.0,
+    44.0
+   ],
+   "loop": false,
+   "frames": 33,
+   "fps": 60,
+   "len": 0.55,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    15,
+    33
+   ],
+   "src_marks": [
+    6.0,
+    21.0,
+    44.0
+   ],
+   "fractions": [
+    0.4545,
+    0.5455
+   ],
+   "impact": 0.4545,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 2.14,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 20.57,
+   "tip_peak_frame": 16.5,
+   "tip_sharp": 2.66,
+   "tip_min_z": 0.767,
+   "blade_turn_max_deg": 35.1,
+   "blade_turn_frame": 15.5,
+   "hip_min_pct": 85.8,
+   "hip_end_pct": 85.8,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.49151,
+      0.00957
+     ],
+     "hand": [
+      -0.16051,
+      0.61232,
+      0.09275
+     ],
+     "tip": [
+      0.03133,
+      0.95375,
+      0.2445
+     ],
+     "grip": [
+      -0.20576,
+      0.62593,
+      0.12855
+     ]
+    },
+    "15": {
+     "hip": [
+      0.00191,
+      0.48288,
+      0.00957
+     ],
+     "hand": [
+      -0.30384,
+      0.59066,
+      0.20737
+     ],
+     "tip": [
+      -0.13034,
+      0.85325,
+      0.48547
+     ],
+     "grip": [
+      -0.35236,
+      0.59199,
+      0.24142
+     ]
+    },
+    "16": {
+     "hip": [
+      0.00191,
+      0.4826,
+      0.00957
+     ],
+     "hand": [
+      -0.33186,
+      0.5914,
+      0.10128
+     ],
+     "tip": [
+      -0.38943,
+      0.94262,
+      0.32428
+     ],
+     "grip": [
+      -0.39095,
+      0.58707,
+      0.0991
+     ]
+    },
+    "33": {
+     "hip": [
+      0.00191,
+      0.47447,
+      0.00957
+     ],
+     "hand": [
+      -0.17217,
+      0.55451,
+      0.13598
+     ],
+     "tip": [
+      -0.1706,
+      0.97439,
+      0.12605
+     ],
+     "grip": [
+      -0.22544,
+      0.55864,
+      0.16168
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 34,
+    "length": 0.55,
+    "step": 0.01667
+   }
+  },
+  "skill_kkekki": {
+   "src": "ai_twin_stab",
+   "range": [
+    3.0,
+    40.0
+   ],
+   "loop": false,
+   "frames": 36,
+   "fps": 60,
+   "len": 0.6,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    13,
+    36
+   ],
+   "src_marks": [
+    3.0,
+    13.0,
+    40.0
+   ],
+   "fractions": [
+    0.3611,
+    0.6389
+   ],
+   "impact": 0.3611,
+   "sf_s": null,
+   "arc": null,
+   "blade": "forearm",
+   "inplace": "ends",
+   "inplace_max_cm": 2.79,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 8.31,
+   "tip_peak_frame": 21.5,
+   "tip_sharp": 2.32,
+   "tip_min_z": 0.445,
+   "blade_turn_max_deg": 14.5,
+   "blade_turn_frame": 21.5,
+   "hip_min_pct": 60.7,
+   "hip_end_pct": 79.2,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.44292,
+      0.00957
+     ],
+     "hand": [
+      -0.18007,
+      0.50551,
+      0.11499
+     ],
+     "tip": [
+      -0.29859,
+      0.46732,
+      0.51611
+     ],
+     "grip": [
+      -0.23647,
+      0.51947,
+      0.10314
+     ]
+    },
+    "13": {
+     "hip": [
+      0.00191,
+      0.40309,
+      0.00957
+     ],
+     "hand": [
+      -0.30582,
+      0.58995,
+      0.23319
+     ],
+     "tip": [
+      -0.55487,
+      0.72744,
+      0.54217
+     ],
+     "grip": [
+      -0.35469,
+      0.56729,
+      0.20841
+     ]
+    },
+    "18": {
+     "hip": [
+      0.00191,
+      0.33601,
+      0.00957
+     ],
+     "hand": [
+      -0.34075,
+      0.46478,
+      0.22429
+     ],
+     "tip": [
+      -0.64641,
+      0.49628,
+      0.51061
+     ],
+     "grip": [
+      -0.36283,
+      0.41126,
+      0.21148
+     ]
+    },
+    "36": {
+     "hip": [
+      0.00191,
+      0.43792,
+      0.00957
+     ],
+     "hand": [
+      -0.19909,
+      0.4888,
+      0.08389
+     ],
+     "tip": [
+      -0.43304,
+      0.44541,
+      0.42999
+     ],
+     "grip": [
+      -0.24888,
+      0.50549,
+      0.05636
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 37,
+    "length": 0.6,
+    "step": 0.01667
+   }
+  },
+  "skill_throw": {
+   "src": "ai_fan_throw",
+   "range": [
+    3.0,
+    44.0
+   ],
+   "loop": false,
+   "frames": 30,
+   "fps": 60,
+   "len": 0.5,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    15,
+    30
+   ],
+   "src_marks": [
+    3.0,
+    25.0,
+    44.0
+   ],
+   "fractions": [
+    0.5,
+    0.5
+   ],
+   "impact": 0.5,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 1.5,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 18.05,
+   "tip_peak_frame": 13.5,
+   "tip_sharp": 4.98,
+   "tip_min_z": 0.48,
+   "blade_turn_max_deg": 48.8,
+   "blade_turn_frame": 13.5,
+   "hip_min_pct": 83.2,
+   "hip_end_pct": 86.9,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.49178,
+      0.00957
+     ],
+     "hand": [
+      -0.08205,
+      0.65789,
+      0.18687
+     ],
+     "tip": [
+      0.23922,
+      0.47981,
+      -0.01678
+     ],
+     "grip": [
+      -0.04194,
+      0.67818,
+      0.22554
+     ]
+    },
+    "15": {
+     "hip": [
+      0.00191,
+      0.46289,
+      0.00957
+     ],
+     "hand": [
+      -0.03653,
+      0.5435,
+      0.07834
+     ],
+     "tip": [
+      0.21786,
+      0.7702,
+      -0.16721
+     ],
+     "grip": [
+      0.00237,
+      0.55331,
+      0.122
+     ]
+    },
+    "30": {
+     "hip": [
+      0.00191,
+      0.48071,
+      0.00957
+     ],
+     "hand": [
+      -0.07815,
+      0.64459,
+      0.1627
+     ],
+     "tip": [
+      0.1974,
+      0.69004,
+      -0.151
+     ],
+     "grip": [
+      -0.04521,
+      0.68362,
+      0.19283
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 31,
+    "length": 0.5,
+    "step": 0.01667
+   }
+  },
+  "skill_toss": {
+   "src": "ai_needle_throw",
+   "range": [
+    6.0,
+    48.0
+   ],
+   "loop": false,
+   "frames": 27,
+   "fps": 60,
+   "len": 0.45,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    14,
+    27
+   ],
+   "src_marks": [
+    6.0,
+    24.0,
+    48.0
+   ],
+   "fractions": [
+    0.5185,
+    0.4815
+   ],
+   "impact": 0.5185,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 0.76,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 34.59,
+   "tip_peak_frame": 14.5,
+   "tip_sharp": 6.95,
+   "tip_min_z": 0.852,
+   "blade_turn_max_deg": 76.4,
+   "blade_turn_frame": 14.5,
+   "hip_min_pct": 98.7,
+   "hip_end_pct": 98.7,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.54618,
+      0.00957
+     ],
+     "hand": [
+      -0.085,
+      0.59882,
+      0.14087
+     ],
+     "tip": [
+      0.08551,
+      0.97198,
+      0.2307
+     ],
+     "grip": [
+      -0.06553,
+      0.58089,
+      0.19393
+     ]
+    },
+    "13": {
+     "hip": [
+      0.00191,
+      0.54611,
+      0.00957
+     ],
+     "hand": [
+      -0.12082,
+      0.67213,
+      0.16833
+     ],
+     "tip": [
+      -0.36612,
+      0.91279,
+      -0.07314
+     ],
+     "grip": [
+      -0.16035,
+      0.68106,
+      0.21161
+     ]
+    },
+    "14": {
+     "hip": [
+      0.00191,
+      0.54587,
+      0.00957
+     ],
+     "hand": [
+      -0.06329,
+      0.58645,
+      0.15023
+     ],
+     "tip": [
+      -0.28709,
+      0.91428,
+      0.2875
+     ],
+     "grip": [
+      -0.07656,
+      0.56011,
+      0.20167
+     ]
+    },
+    "27": {
+     "hip": [
+      0.00191,
+      0.54624,
+      0.00957
+     ],
+     "hand": [
+      -0.02958,
+      0.60883,
+      0.08904
+     ],
+     "tip": [
+      0.22018,
+      0.94491,
+      0.05636
+     ],
+     "grip": [
+      0.01418,
+      0.58348,
+      0.12
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 28,
+    "length": 0.45,
+    "step": 0.01667
+   }
+  },
+  "skill_roll": {
+   "src": "dive",
+   "range": [
+    10.0,
+    62.0
+   ],
+   "loop": false,
+   "frames": 36,
+   "fps": 60,
+   "len": 0.6,
+   "kind": "uniform",
+   "bounds": [
+    0,
+    36
+   ],
+   "src_marks": [
+    10.0,
+    62.0
+   ],
+   "fractions": [
+    1.0
+   ],
+   "impact": null,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 0.09,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 22.54,
+   "tip_peak_frame": 21.5,
+   "tip_sharp": 2.1,
+   "tip_min_z": -0.16,
+   "blade_turn_max_deg": 59.1,
+   "blade_turn_frame": 2.5,
+   "hip_min_pct": 21.3,
+   "hip_end_pct": 89.8,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.4378,
+      0.00957
+     ],
+     "hand": [
+      -0.06589,
+      0.53639,
+      0.22651
+     ],
+     "tip": [
+      -0.10537,
+      0.86997,
+      -0.02562
+     ],
+     "grip": [
+      -0.03254,
+      0.57087,
+      0.26135
+     ]
+    },
+    "18": {
+     "hip": [
+      0.00191,
+      0.57618,
+      0.00957
+     ],
+     "hand": [
+      0.03039,
+      0.22319,
+      0.13333
+     ],
+     "tip": [
+      0.01821,
+      0.56454,
+      -0.11106
+     ],
+     "grip": [
+      0.06667,
+      0.19957,
+      0.09282
+     ]
+    },
+    "36": {
+     "hip": [
+      0.00191,
+      0.49658,
+      0.00957
+     ],
+     "hand": [
+      -0.10849,
+      0.47962,
+      0.08445
+     ],
+     "tip": [
+      -0.03556,
+      0.75141,
+      0.39624
+     ],
+     "grip": [
+      -0.09507,
+      0.43675,
+      0.12316
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 37,
+    "length": 0.6,
+    "step": 0.01667
+   }
+  },
+  "skill_leap_strike": {
+   "src": "ai_sword_leap",
+   "range": [
+    30.0,
+    66.0
+   ],
+   "loop": false,
+   "frames": 36,
+   "fps": 60,
+   "len": 0.6,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    20,
+    36
+   ],
+   "src_marks": [
+    30.0,
+    45.0,
+    66.0
+   ],
+   "fractions": [
+    0.5556,
+    0.4444
+   ],
+   "impact": 0.5556,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 3.46,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 10.89,
+   "tip_peak_frame": 0.5,
+   "tip_sharp": 2.08,
+   "tip_min_z": 0.265,
+   "blade_turn_max_deg": 29.0,
+   "blade_turn_frame": 26.5,
+   "hip_min_pct": 68.3,
+   "hip_end_pct": 68.3,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.42312,
+      0.00957
+     ],
+     "hand": [
+      -0.20133,
+      0.48565,
+      -0.11734
+     ],
+     "tip": [
+      0.01965,
+      0.26461,
+      0.16321
+     ],
+     "grip": [
+      -0.24984,
+      0.46735,
+      -0.08857
+     ]
+    },
+    "18": {
+     "hip": [
+      0.00191,
+      0.85161,
+      0.00957
+     ],
+     "hand": [
+      -0.1071,
+      0.77488,
+      0.18376
+     ],
+     "tip": [
+      0.27208,
+      0.95357,
+      0.15752
+     ],
+     "grip": [
+      -0.0792,
+      0.72637,
+      0.20338
+     ]
+    },
+    "20": {
+     "hip": [
+      0.00191,
+      0.81905,
+      0.00957
+     ],
+     "hand": [
+      -0.17703,
+      0.74379,
+      0.01912
+     ],
+     "tip": [
+      0.21315,
+      0.77613,
+      0.17116
+     ],
+     "grip": [
+      -0.16955,
+      0.68502,
+      0.02162
+     ]
+    },
+    "36": {
+     "hip": [
+      0.00191,
+      0.37774,
+      0.00957
+     ],
+     "hand": [
+      -0.00169,
+      0.55301,
+      0.17002
+     ],
+     "tip": [
+      -0.12606,
+      0.75105,
+      -0.17885
+     ],
+     "grip": [
+      0.01386,
+      0.60635,
+      0.19074
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 37,
+    "length": 0.6,
+    "step": 0.01667
+   }
+  },
+  "skill_heavy": {
+   "src": "chop",
+   "range": [
+    28.0,
+    70.0
+   ],
+   "loop": false,
+   "frames": 45,
+   "fps": 60,
+   "len": 0.75,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    25,
+    45
+   ],
+   "src_marks": [
+    28.0,
+    51.0,
+    70.0
+   ],
+   "fractions": [
+    0.5556,
+    0.4444
+   ],
+   "impact": 0.5556,
+   "sf_s": null,
+   "arc": null,
+   "blade": "forearm",
+   "inplace": "ends",
+   "inplace_max_cm": 0.02,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 22.9,
+   "tip_peak_frame": 24.5,
+   "tip_sharp": 4.6,
+   "tip_min_z": 0.04,
+   "blade_turn_max_deg": 35.9,
+   "blade_turn_frame": 23.5,
+   "hip_min_pct": 91.3,
+   "hip_end_pct": 93.2,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.51687,
+      0.00957
+     ],
+     "hand": [
+      -0.08377,
+      0.47291,
+      0.11198
+     ],
+     "tip": [
+      -0.03567,
+      0.05588,
+      0.09876
+     ],
+     "grip": [
+      -0.13482,
+      0.46458,
+      0.083
+     ]
+    },
+    "22": {
+     "hip": [
+      0.00191,
+      0.54783,
+      0.00957
+     ],
+     "hand": [
+      -0.01201,
+      0.79334,
+      0.33204
+     ],
+     "tip": [
+      0.14559,
+      1.16141,
+      0.45886
+     ],
+     "grip": [
+      -0.01769,
+      0.77978,
+      0.38948
+     ]
+    },
+    "25": {
+     "hip": [
+      0.00191,
+      0.51693,
+      0.00957
+     ],
+     "hand": [
+      -0.06964,
+      0.4552,
+      0.22967
+     ],
+     "tip": [
+      0.09169,
+      0.21925,
+      0.5374
+     ],
+     "grip": [
+      -0.07472,
+      0.40505,
+      0.19843
+     ]
+    },
+    "45": {
+     "hip": [
+      0.00191,
+      0.51584,
+      0.00957
+     ],
+     "hand": [
+      -0.05937,
+      0.41848,
+      0.1184
+     ],
+     "tip": [
+      0.11757,
+      0.0473,
+      0.20394
+     ],
+     "grip": [
+      -0.05065,
+      0.40567,
+      0.06116
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 46,
+    "length": 0.75,
+    "step": 0.01667
+   }
+  },
+  "skill_finisher": {
+   "src": "ai_plunge",
+   "range": [
+    10.0,
+    60.0
+   ],
+   "loop": false,
+   "frames": 54,
+   "fps": 60,
+   "len": 0.9,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    32,
+    54
+   ],
+   "src_marks": [
+    10.0,
+    43.0,
+    60.0
+   ],
+   "fractions": [
+    0.5926,
+    0.4074
+   ],
+   "impact": 0.5926,
+   "sf_s": null,
+   "arc": null,
+   "blade": "arm",
+   "inplace": "ends",
+   "inplace_max_cm": 2.84,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 14.52,
+   "tip_peak_frame": 16.5,
+   "tip_sharp": 3.9,
+   "tip_min_z": 0.18,
+   "blade_turn_max_deg": 22.8,
+   "blade_turn_frame": 16.5,
+   "hip_min_pct": 62.4,
+   "hip_end_pct": 79.7,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.51456,
+      0.00957
+     ],
+     "hand": [
+      -0.10162,
+      0.588,
+      0.15501
+     ],
+     "tip": [
+      -0.10557,
+      0.27038,
+      0.42979
+     ],
+     "grip": [
+      -0.0563,
+      0.56027,
+      0.1287
+     ]
+    },
+    "27": {
+     "hip": [
+      0.00191,
+      0.39362,
+      0.00957
+     ],
+     "hand": [
+      -0.28779,
+      0.58096,
+      0.25153
+     ],
+     "tip": [
+      -0.578,
+      0.6239,
+      0.55209
+     ],
+     "grip": [
+      -0.27757,
+      0.52695,
+      0.27376
+     ]
+    },
+    "32": {
+     "hip": [
+      0.00191,
+      0.34608,
+      0.00957
+     ],
+     "hand": [
+      -0.27591,
+      0.47459,
+      0.26584
+     ],
+     "tip": [
+      -0.53365,
+      0.4506,
+      0.59659
+     ],
+     "grip": [
+      -0.2454,
+      0.43019,
+      0.29062
+     ]
+    },
+    "54": {
+     "hip": [
+      0.00191,
+      0.44063,
+      0.00957
+     ],
+     "hand": [
+      -0.17626,
+      0.53179,
+      0.14889
+     ],
+     "tip": [
+      -0.36704,
+      0.30875,
+      0.44932
+     ],
+     "grip": [
+      -0.13028,
+      0.4949,
+      0.15536
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 55,
+    "length": 0.9,
+    "step": 0.01667
+   }
+  },
+  "skill_net": {
+   "src": "ai_net",
+   "range": [
+    3.0,
+    44.0
+   ],
+   "loop": false,
+   "frames": 33,
+   "fps": 60,
+   "len": 0.55,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    16,
+    33
+   ],
+   "src_marks": [
+    3.0,
+    23.0,
+    44.0
+   ],
+   "fractions": [
+    0.4848,
+    0.5152
+   ],
+   "impact": 0.4848,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 2.39,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 21.8,
+   "tip_peak_frame": 15.5,
+   "tip_sharp": 3.82,
+   "tip_min_z": 0.445,
+   "blade_turn_max_deg": 50.1,
+   "blade_turn_frame": 15.5,
+   "hip_min_pct": 88.8,
+   "hip_end_pct": 97.9,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.54444,
+      0.00957
+     ],
+     "hand": [
+      -0.09732,
+      0.54367,
+      0.01859
+     ],
+     "tip": [
+      0.16038,
+      0.82326,
+      0.19697
+     ],
+     "grip": [
+      -0.07571,
+      0.50414,
+      0.05714
+     ]
+    },
+    "16": {
+     "hip": [
+      0.00191,
+      0.52913,
+      0.00957
+     ],
+     "hand": [
+      -0.1574,
+      0.84699,
+      0.10328
+     ],
+     "tip": [
+      0.19392,
+      0.881,
+      -0.12435
+     ],
+     "grip": [
+      -0.17064,
+      0.90179,
+      0.0849
+     ]
+    },
+    "33": {
+     "hip": [
+      0.00191,
+      0.54176,
+      0.00957
+     ],
+     "hand": [
+      -0.12585,
+      0.53199,
+      -0.00582
+     ],
+     "tip": [
+      0.01791,
+      0.8055,
+      0.27866
+     ],
+     "grip": [
+      -0.12802,
+      0.49239,
+      0.03826
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 34,
+    "length": 0.55,
+    "step": 0.01667
+   }
+  },
+  "mask_swap": {
+   "src": "ai_mask",
+   "range": [
+    1.0,
+    44.0
+   ],
+   "loop": false,
+   "frames": 36,
+   "fps": 60,
+   "len": 0.6,
+   "kind": "anchor",
+   "bounds": [
+    0,
+    13,
+    36
+   ],
+   "src_marks": [
+    1.0,
+    13.0,
+    44.0
+   ],
+   "fractions": [
+    0.3611,
+    0.6389
+   ],
+   "impact": 0.3611,
+   "sf_s": null,
+   "arc": null,
+   "blade": "keep",
+   "inplace": "ends",
+   "inplace_max_cm": 0.56,
+   "inplace_residual_mm": 0.0,
+   "seam_deg_before": null,
+   "channels": 650,
+   "floor_guard_frames": 0,
+   "tip_peak_ms": 5.45,
+   "tip_peak_frame": 16.5,
+   "tip_sharp": 2.79,
+   "tip_min_z": 0.561,
+   "blade_turn_max_deg": 12.7,
+   "blade_turn_frame": 16.5,
+   "hip_min_pct": 96.4,
+   "hip_end_pct": 97.2,
+   "check": {
+    "0": {
+     "hip": [
+      0.00191,
+      0.53384,
+      0.00957
+     ],
+     "hand": [
+      -0.14053,
+      0.4941,
+      0.01555
+     ],
+     "tip": [
+      0.12075,
+      0.60799,
+      0.32404
+     ],
+     "grip": [
+      -0.1479,
+      0.44322,
+      0.04511
+     ]
+    },
+    "13": {
+     "hip": [
+      0.00191,
+      0.53905,
+      0.00957
+     ],
+     "hand": [
+      -0.12059,
+      0.5397,
+      0.05414
+     ],
+     "tip": [
+      0.17388,
+      0.76304,
+      0.25365
+     ],
+     "grip": [
+      -0.12177,
+      0.50474,
+      0.10202
+     ]
+    },
+    "18": {
+     "hip": [
+      0.00191,
+      0.54067,
+      0.00957
+     ],
+     "hand": [
+      -0.11652,
+      0.50852,
+      -0.05494
+     ],
+     "tip": [
+      -0.08176,
+      0.6775,
+      0.32799
+     ],
+     "grip": [
+      -0.13951,
+      0.46087,
+      -0.02818
+     ]
+    },
+    "36": {
+     "hip": [
+      0.00191,
+      0.53751,
+      0.00957
+     ],
+     "hand": [
+      -0.12083,
+      0.49806,
+      0.03327
+     ],
+     "tip": [
+      0.17389,
+      0.63755,
+      0.29799
+     ],
+     "grip": [
+      -0.11957,
+      0.44729,
+      0.06389
+     ]
+    }
+   },
+   "glb": {
+    "channels": 195,
+    "keys": 37,
+    "length": 0.6,
+    "step": 0.01667
+   }
+  }
+ }
+}
