@@ -1,0 +1,2717 @@
+=== assets/models/agwi/agwi.glb
+== model_check res://assets/models/agwi/agwi.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 24: Hips, LeftUpLeg, LeftLeg, LeftFoot, LeftToeBase, RightUpLeg…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11296
+AABB: 키 1.40 · 너비 1.04 · 깊이 0.33 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 7: attack(2.83s), die(3.00s), eat(7.23s), hit(1.67s), idle(4.03s), run(0.67s), walk(1.07s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+  타격 프레임(오른손 속도 피크) → attack_impact = {"attack": 0.39}
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/bandit_v2/bandit_v2.glb
+== model_check res://assets/models/bandit_v2/bandit_v2.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 8112
+AABB: 키 1.44 · 너비 1.50 · 깊이 0.29 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 7: attack(0.55s), attack2(0.55s), die(3.00s), hit(0.30s), idle(7.67s), run(0.63s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/bat/bat.glb
+== model_check res://assets/models/bat/bat.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 8: Root, Body, Head, WingL1, WingL2, WingR1…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 6196
+AABB: 키 0.73 · 너비 1.90 · 깊이 0.41 · 발 y=-0.36 · 중심 x=-0.00 z=-0.01
+⚠ 발이 y=0에서 -0.36 떨어짐 → ModelDef.y_offset = 0.36 권장
+텍스처: 1024x1024
+클립 6: attack(0.50s), die(1.20s), hit(0.30s), idle(0.60s), run(0.22s), walk(0.28s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT WARN: 발 높이
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/boss_bulgasari/boss_bulgasari.glb
+== model_check res://assets/models/boss_bulgasari/boss_bulgasari.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 19: Hips, BL_Up, BL_Low, BL_Foot, BR_Up, BR_Low…
+규격: 보스 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤40000 (넘으면 경고만, #199)
+삼각형 11363
+AABB: 키 0.74 · 너비 0.48 · 깊이 1.18 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 12: attack(0.83s), die(1.20s), hit(0.30s), idle(2.20s), nose(1.15s), pounce(0.65s), pounce_air(0.40s), pounce_land(0.25s), roar(1.60s), run(0.60s), swallow(2.00s), walk(0.94s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/boss_heukrang/boss_heukrang.glb
+== model_check res://assets/models/boss_heukrang/boss_heukrang.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 19: Hips, BL_Up, BL_Low, BL_Foot, BR_Up, BR_Low…
+규격: 보스 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤40000 (넘으면 경고만, #199)
+삼각형 10000
+AABB: 키 0.79 · 너비 0.43 · 깊이 1.09 · 발 y=-0.00 · 중심 x=-0.00 z=-0.08
+텍스처: 1024x1024
+클립 9: attack(0.95s), die(1.20s), hit(0.30s), idle(2.20s), pounce(0.65s), pounce_air(0.40s), pounce_land(0.25s), run(0.77s), walk(1.02s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/boss_jangsanbeom/boss_jangsanbeom.glb
+== model_check res://assets/models/boss_jangsanbeom/boss_jangsanbeom.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 19: Hips, BL_Up, BL_Low, BL_Foot, BR_Up, BR_Low…
+규격: 보스 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤40000 (넘으면 경고만, #199)
+삼각형 10000
+AABB: 키 0.79 · 너비 0.35 · 깊이 1.03 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 9: attack(0.67s), die(1.20s), hit(0.30s), idle(2.20s), pounce(0.65s), pounce_air(0.40s), pounce_land(0.25s), run(0.77s), walk(1.02s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/buildings/choga.glb
+== model_check res://assets/models/buildings/choga.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 14808  ⚠ 12000 초과 → remesh 권장
+AABB: 키 4.00 · 너비 7.73 · 깊이 5.58 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/buildings/giwa.glb
+== model_check res://assets/models/buildings/giwa.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 18469  ⚠ 12000 초과 → remesh 권장
+AABB: 키 4.00 · 너비 6.17 · 깊이 5.25 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/buildings/jumak.glb
+== model_check res://assets/models/buildings/jumak.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 4203
+AABB: 키 4.00 · 너비 8.11 · 깊이 7.13 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/buildings/well.glb
+== model_check res://assets/models/buildings/well.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 10097
+AABB: 키 2.00 · 너비 1.71 · 깊이 1.29 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/centipede/centipede.glb
+== model_check res://assets/models/centipede/centipede.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 4998
+AABB: 키 0.90 · 너비 0.58 · 깊이 0.42 · 발 y=-0.00 · 중심 x=0.00 z=0.07
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/centipede/centipede_segment.glb
+== model_check res://assets/models/centipede/centipede_segment.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 1000
+AABB: 키 0.26 · 너비 0.61 · 깊이 0.29 · 발 y=0.02 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/centipede/centipede_tip.glb
+== model_check res://assets/models/centipede/centipede_tip.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 500
+AABB: 키 0.23 · 너비 0.36 · 깊이 0.30 · 발 y=0.08 · 중심 x=0.00 z=-0.15
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/dallae/dallae.glb
+== model_check res://assets/models/dallae/dallae.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11071
+AABB: 키 0.98 · 너비 0.39 · 깊이 0.31 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 2: idle(15.33s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → (없음)
+  die    → (없음)
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/dallae_infected/dallae_infected.glb
+== model_check res://assets/models/dallae_infected/dallae_infected.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11071
+AABB: 키 0.98 · 너비 0.39 · 깊이 0.31 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 12: cling(3.96s), defeat_02(8.46s), defeat_03(5.54s), depressed(4.58s), hit_to_body_01(1.29s), hug(5.58s), idle(15.33s), jump(2.21s), kneel(2.96s), run(1.25s), sob(5.58s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → hit_to_body_01
+  die    → defeat_02
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/doho/doho.glb
+== model_check res://assets/models/doho/doho.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 83: BoneRoot, Hip, Pelvis, L_Thigh, Hem_L, L_Calf…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11999
+AABB: 키 1.70 · 너비 1.28 · 깊이 0.42 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 1024x1024 · 노멀 256 · ORM/AO 1024
+⚠ ORM 1024 > 512
+클립 17: attack(1.53s), attack2(1.40s), attack3(1.28s), attack4(1.90s), cast(0.80s), die(3.70s), guard(1.90s), hit(1.62s), idle(7.43s), idle_out(7.43s), kick_spin(0.50s), run(0.63s), skill_leap(2.00s), skill_strike(1.33s), skill_thrust(1.50s), skill_whirl(2.53s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT WARN: 텍스처 초과
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/dueoksini/dueoksini.glb
+== model_check res://assets/models/dueoksini/dueoksini.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 24: Hips, LeftUpLeg, LeftLeg, LeftFoot, LeftToeBase, RightUpLeg…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 12327
+AABB: 키 2.80 · 너비 2.39 · 깊이 1.14 · 발 y=-0.00 · 중심 x=-0.01 z=0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 8: attack(1.87s), attack_punch(2.47s), die(3.00s), hit(4.53s), idle(4.03s), run(0.67s), slam(3.47s), walk(1.07s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+  타격 프레임(오른손 속도 피크) → attack_impact = {"attack": 0.83, "attack_punch": 0.28}
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/elder_v2/elder_v2.glb
+== model_check res://assets/models/elder_v2/elder_v2.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 7742
+AABB: 키 1.60 · 너비 1.54 · 깊이 0.40 · 발 y=-0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 7: greet(3.50s), idle(4.53s), idle_arms(4.53s), idle_look(6.00s), idle_wait(4.00s), laugh(5.60s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → (없음)
+  die    → (없음)
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/eoksoe/botjim.glb
+== model_check res://assets/models/eoksoe/botjim.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 4939
+AABB: 키 0.45 · 너비 0.28 · 깊이 0.22 · 발 y=-0.22 · 중심 x=0.14 z=0.00
+⚠ 발이 y=0에서 -0.22 떨어짐 → ModelDef.y_offset = 0.22 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/eoksoe/eoksoe.glb
+== model_check res://assets/models/eoksoe/eoksoe.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 23655  ⚠ 15000 초과 → remesh 권장
+AABB: 키 0.93 · 너비 0.98 · 깊이 0.24 · 발 y=-0.00 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+클립 2: idle(15.33s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → (없음)
+  die    → (없음)
+RESULT WARN: 폴리 과다
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/fox/fox.glb
+== model_check res://assets/models/fox/fox.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 19: Hips, BL_Up, BL_Low, BL_Foot, BR_Up, BR_Low…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 10000
+AABB: 키 0.87 · 너비 0.33 · 깊이 1.00 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 9: attack(0.50s), die(1.20s), hit(0.30s), idle(2.20s), pounce(0.60s), pounce_air(0.40s), pounce_land(0.25s), run(0.64s), walk(0.94s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gaksi_gwisin/gaksi_gwisin.glb
+== model_check res://assets/models/gaksi_gwisin/gaksi_gwisin.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11554
+AABB: 키 0.98 · 너비 0.51 · 깊이 0.23 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 15: attack(1.96s), cast(2.96s), die(2.96s), fall(3.00s), hit_ai2(1.96s), hit_to_body_01(1.29s), hit_to_body_02(1.71s), hit_to_head(1.83s), hit_to_side(1.25s), hit_v1(0.96s), idle(3.96s), idle_preset(15.33s), run(1.25s), slash(6.58s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit_ai2
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gapdol/gapdol.glb
+== model_check res://assets/models/gapdol/gapdol.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11708
+AABB: 키 0.98 · 너비 0.47 · 깊이 0.24 · 발 y=0.00 · 중심 x=0.00 z=-0.00
+텍스처: 1024x1024
+클립 2: idle(15.33s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → (없음)
+  die    → (없음)
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/geomi_sinbu/geomi_sinbu.glb
+== model_check res://assets/models/geomi_sinbu/geomi_sinbu.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 28: Root, Abdomen, Pelvis, Waist, Chest, Neck…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11924
+AABB: 키 0.95 · 너비 0.98 · 깊이 0.84 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 6: attack(0.75s), die(1.20s), hit(0.30s), idle(2.40s), run(0.30s), walk(0.50s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gumiho_h2/gumiho_h2.glb
+== model_check res://assets/models/gumiho_h2/gumiho_h2.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 14306
+AABB: 키 0.98 · 너비 0.48 · 깊이 0.31 · 발 y=-0.00 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+클립 8: demon_idle(4.96s), die(3.00s), hit(0.30s), idle(15.33s), offer(4.96s), pour(4.96s), talk(4.96s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gumiho_tail/gumiho_tail.glb
+== model_check res://assets/models/gumiho_tail/gumiho_tail.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 1499
+AABB: 키 0.81 · 너비 0.98 · 깊이 0.56 · 발 y=0.01 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gumiho_y1/gumiho_y1.glb
+== model_check res://assets/models/gumiho_y1/gumiho_y1.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 19: Hips, BL_Up, BL_Low, BL_Foot, BR_Up, BR_Low…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 14053
+AABB: 키 0.98 · 너비 0.31 · 깊이 0.50 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 9: attack(0.50s), die(1.20s), hit(0.30s), idle(2.20s), pounce(0.60s), pounce_air(0.40s), pounce_land(0.25s), run(0.55s), walk(0.85s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gumiho_y2/gumiho_y2.glb
+== model_check res://assets/models/gumiho_y2/gumiho_y2.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 14069
+AABB: 키 0.98 · 너비 0.55 · 깊이 0.20 · 발 y=-0.00 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+클립 8: attack(4.96s), die(3.00s), hit(4.96s), idle(4.96s), leap(4.96s), roar(4.96s), run(4.96s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gwangbu_neok/gwangbu_neok.glb
+== model_check res://assets/models/gwangbu_neok/gwangbu_neok.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 9381
+AABB: 키 1.60 · 너비 0.65 · 깊이 0.33 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/gwisae/gwisae.glb
+== model_check res://assets/models/gwisae/gwisae.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 68: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11174
+AABB: 키 0.98 · 너비 0.46 · 깊이 0.24 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 1024x1024
+클립 16: attack(0.55s), attack2(0.55s), die(1.35s), hit(0.30s), idle(7.67s), mask_swap(0.60s), run(0.63s), skill_finisher(0.90s), skill_heavy(0.75s), skill_kkekki(0.60s), skill_leap_strike(0.60s), skill_net(0.55s), skill_roll(0.60s), skill_throw(0.50s), skill_toss(0.45s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/hollin_mudang/hollin_mudang.glb
+== model_check res://assets/models/hollin_mudang/hollin_mudang.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11221
+AABB: 키 0.98 · 너비 0.52 · 깊이 0.21 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 1024x1024
+클립 11: attack(1.96s), cast(2.96s), die(2.96s), fall(3.00s), hit(0.96s), hit_to_body_01(1.29s), idle(3.96s), idle_preset(15.33s), run(1.25s), slash(6.58s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/hollin_yeogung/hollin_yeogung.glb
+== model_check res://assets/models/hollin_yeogung/hollin_yeogung.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 24: Hips, LeftUpLeg, LeftLeg, LeftFoot, LeftToeBase, RightUpLeg…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11834
+AABB: 키 1.55 · 너비 1.00 · 깊이 0.31 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 7: attack_bow(5.03s), attack_spear(3.03s), die(3.00s), hit(1.67s), idle(4.03s), run(0.67s), walk(1.07s)
+  idle   → idle
+  walk   → walk
+  attack → attack_bow
+  hit    → hit
+  die    → die
+  타격 프레임(오른손 속도 피크) → attack_impact = {"attack_bow": 0.24, "attack_spear": 0.25}
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/imugi/imugi.glb
+== model_check res://assets/models/imugi/imugi.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 5999
+AABB: 키 1.19 · 너비 1.05 · 깊이 1.05 · 발 y=0.00 · 중심 x=0.00 z=0.31
+⚠ 원점이 중앙에서 벗어남 (x=0.00 z=0.31)
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 원점 치우침, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/imugi/imugi_segment.glb
+== model_check res://assets/models/imugi/imugi_segment.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 799
+AABB: 키 0.33 · 너비 0.32 · 깊이 0.43 · 발 y=0.03 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/imugi/imugi_tip.glb
+== model_check res://assets/models/imugi/imugi_tip.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 260
+AABB: 키 0.33 · 너비 0.29 · 깊이 1.07 · 발 y=0.02 · 중심 x=-0.00 z=-0.54
+⚠ 원점이 중앙에서 벗어남 (x=-0.00 z=-0.54)
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 원점 치우침, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/jumo/jumo.glb
+== model_check res://assets/models/jumo/jumo.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 41: Root, Hip, Pelvis, L_Thigh, L_Calf, L_Foot…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 10862
+AABB: 키 1.75 · 너비 0.91 · 깊이 0.43 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 1024x1024
+클립 3: idle(4.03s), talk(5.20s), walk(1.00s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → (없음)
+  die    → (없음)
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/merchant_v2/merchant_v2.glb
+== model_check res://assets/models/merchant_v2/merchant_v2.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 8243
+AABB: 키 1.50 · 너비 1.40 · 깊이 0.38 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 7: greet(3.50s), idle(4.00s), idle_arms(4.53s), idle_look(6.00s), idle_wait(4.00s), laugh(5.60s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → (없음)
+  die    → (없음)
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/nachalnyeo/nachalnyeo.glb
+== model_check res://assets/models/nachalnyeo/nachalnyeo.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 12170
+AABB: 키 1.70 · 너비 0.89 · 깊이 0.66 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/paper_soldier/paper_soldier.glb
+== model_check res://assets/models/paper_soldier/paper_soldier.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 55: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11621
+AABB: 키 0.98 · 너비 0.61 · 깊이 0.18 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 8: attack(1.53s), attack2(1.40s), attack3(1.28s), die(3.00s), hit(0.30s), idle(7.67s), run(0.63s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/plague_dog/plague_dog.glb
+== model_check res://assets/models/plague_dog/plague_dog.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 19: Hips, BL_Up, BL_Low, BL_Foot, BR_Up, BR_Low…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 12508
+AABB: 키 0.97 · 너비 0.36 · 깊이 1.32 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024 · ORM/AO 512
+클립 9: attack(0.50s), die(1.20s), hit(0.30s), idle(2.20s), pounce(0.60s), pounce_air(0.40s), pounce_land(0.25s), run(0.55s), walk(0.85s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/plague_miner/plague_miner.glb
+== model_check res://assets/models/plague_miner/plague_miner.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 24: Hips, LeftUpLeg, LeftLeg, LeftFoot, LeftToeBase, RightUpLeg…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11156
+AABB: 키 1.70 · 너비 1.31 · 깊이 0.33 · 발 y=-0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 6: attack(3.03s), die(3.00s), hit(1.67s), idle(4.03s), run(0.67s), walk(1.07s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+  타격 프레임(오른손 속도 피크) → attack_impact = {"attack": 0.55}
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/abandoned_bundle.glb
+== model_check res://assets/models/props/abandoned_bundle.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1521
+AABB: 키 1.70 · 너비 1.56 · 깊이 1.90 · 발 y=-0.86 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.86 떨어짐 → ModelDef.y_offset = 0.86 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/altar.glb
+== model_check res://assets/models/props/altar.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4999
+AABB: 키 0.63 · 너비 0.94 · 깊이 0.98 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/altar_bowl.glb
+== model_check res://assets/models/props/altar_bowl.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1548
+AABB: 키 1.09 · 너비 1.90 · 깊이 1.90 · 발 y=-0.54 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.54 떨어짐 → ModelDef.y_offset = 0.54 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/ancestral_tablets.glb
+== model_check res://assets/models/props/ancestral_tablets.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1469
+AABB: 키 1.90 · 너비 1.81 · 깊이 0.98 · 발 y=-0.95 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/anvil.glb
+== model_check res://assets/models/props/anvil.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1540
+AABB: 키 1.84 · 너비 1.89 · 깊이 1.71 · 발 y=-0.91 · 중심 x=-0.01 z=-0.00
+⚠ 발이 y=0에서 -0.91 떨어짐 → ModelDef.y_offset = 0.91 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/ash_ring.glb
+== model_check res://assets/models/props/ash_ring.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1541
+AABB: 키 0.48 · 너비 1.82 · 깊이 1.90 · 발 y=-0.24 · 중심 x=0.01 z=0.00
+⚠ 발이 y=0에서 -0.24 떨어짐 → ModelDef.y_offset = 0.24 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/away_sign.glb
+== model_check res://assets/models/props/away_sign.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1495
+AABB: 키 1.90 · 너비 1.08 · 깊이 0.26 · 발 y=-0.95 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/bamboo_clump.glb
+== model_check res://assets/models/props/bamboo_clump.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1133
+AABB: 키 2.00 · 너비 1.49 · 깊이 1.53 · 발 y=0.00 · 중심 x=0.09 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/bandaji.glb
+== model_check res://assets/models/props/bandaji.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2827
+AABB: 키 0.99 · 너비 1.90 · 깊이 1.04 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/beacon_tower.glb
+== model_check res://assets/models/props/beacon_tower.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4999
+AABB: 키 0.55 · 너비 0.98 · 깊이 0.98 · 발 y=-0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/bellows.glb
+== model_check res://assets/models/props/bellows.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1520
+AABB: 키 0.77 · 너비 1.90 · 깊이 0.57 · 발 y=-0.39 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.39 떨어짐 → ModelDef.y_offset = 0.39 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/bent_pine.glb
+== model_check res://assets/models/props/bent_pine.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 19707  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.50 · 너비 0.61 · 깊이 0.43 · 발 y=0.00 · 중심 x=-0.00 z=0.01
+텍스처: 1024x1024 · 노멀 1024 · ORM/AO 1024
+⚠ 주 텍스처(알베도·노멀) 1024 > 512
+⚠ ORM 1024 > 256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 텍스처 초과, 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/bent_pine_far.glb
+== model_check res://assets/models/props/bent_pine_far.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4121
+AABB: 키 0.44 · 너비 0.55 · 깊이 0.39 · 발 y=0.03 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024 · 노멀 1024 · ORM/AO 1024
+⚠ 주 텍스처(알베도·노멀) 1024 > 512
+⚠ ORM 1024 > 256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 텍스처 초과, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/boulders_a.glb
+== model_check res://assets/models/props/boulders_a.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4499
+AABB: 키 0.58 · 너비 0.97 · 깊이 0.98 · 발 y=-0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/boulders_b.glb
+== model_check res://assets/models/props/boulders_b.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4499
+AABB: 키 0.59 · 너비 0.98 · 깊이 0.98 · 발 y=-0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/broken_onggi.glb
+== model_check res://assets/models/props/broken_onggi.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1569
+AABB: 키 1.09 · 너비 1.32 · 깊이 1.89 · 발 y=-0.55 · 중심 x=0.01 z=-0.00
+⚠ 발이 y=0에서 -0.55 떨어짐 → ModelDef.y_offset = 0.55 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/broken_timber.glb
+== model_check res://assets/models/props/broken_timber.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1535
+AABB: 키 1.16 · 너비 1.90 · 깊이 0.37 · 발 y=-0.58 · 중심 x=-0.00 z=-0.01
+⚠ 발이 y=0에서 -0.58 떨어짐 → ModelDef.y_offset = 0.58 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/broken_wheel.glb
+== model_check res://assets/models/props/broken_wheel.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1531
+AABB: 키 0.42 · 너비 1.80 · 깊이 1.90 · 발 y=-0.21 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.21 떨어짐 → ModelDef.y_offset = 0.21 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/brush_fence.glb
+== model_check res://assets/models/props/brush_fence.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4220
+AABB: 키 1.20 · 너비 2.69 · 깊이 0.27 · 발 y=0.00 · 중심 x=-0.00 z=-0.03
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/bujeok_mokpan.glb
+== model_check res://assets/models/props/bujeok_mokpan.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1199
+AABB: 키 1.90 · 너비 1.27 · 깊이 0.16 · 발 y=-0.95 · 중심 x=0.00 z=-0.01
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/burnt_rock.glb
+== model_check res://assets/models/props/burnt_rock.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1550
+AABB: 키 0.92 · 너비 1.90 · 깊이 1.47 · 발 y=-0.46 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.46 떨어짐 → ModelDef.y_offset = 0.46 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/burnt_stump.glb
+== model_check res://assets/models/props/burnt_stump.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1556
+AABB: 키 1.19 · 너비 1.88 · 깊이 1.38 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cairn.glb
+== model_check res://assets/models/props/cairn.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 6187  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.00 · 너비 0.86 · 깊이 0.76 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cargo_pile.glb
+== model_check res://assets/models/props/cargo_pile.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2995
+AABB: 키 1.26 · 너비 1.89 · 깊이 1.48 · 발 y=-0.63 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.63 떨어짐 → ModelDef.y_offset = 0.63 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/carved_stele.glb
+== model_check res://assets/models/props/carved_stele.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1540
+AABB: 키 1.90 · 너비 0.80 · 깊이 0.53 · 발 y=-0.95 · 중심 x=-0.00 z=0.01
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cave_arch.glb
+== model_check res://assets/models/props/cave_arch.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 10212  ⚠ 5000 초과 → remesh 권장
+AABB: 키 3.00 · 너비 4.37 · 깊이 3.87 · 발 y=0.00 · 중심 x=0.00 z=-0.01
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cave_beomgul.glb
+== model_check res://assets/models/props/cave_beomgul.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4499
+AABB: 키 0.79 · 너비 0.98 · 깊이 0.92 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cave_heukrang.glb
+== model_check res://assets/models/props/cave_heukrang.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4499
+AABB: 키 0.70 · 너비 0.98 · 깊이 0.94 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cave_rock_flat.glb
+== model_check res://assets/models/props/cave_rock_flat.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1526
+AABB: 키 0.26 · 너비 1.90 · 깊이 1.45 · 발 y=-0.13 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.13 떨어짐 → ModelDef.y_offset = 0.13 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cave_rock_moss.glb
+== model_check res://assets/models/props/cave_rock_moss.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1453
+AABB: 키 1.17 · 너비 1.89 · 깊이 1.88 · 발 y=-0.59 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.59 떨어짐 → ModelDef.y_offset = 0.59 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cave_rock_spiky.glb
+== model_check res://assets/models/props/cave_rock_spiky.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1561
+AABB: 키 1.90 · 너비 1.13 · 깊이 1.14 · 발 y=-0.95 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cave_soeburi.glb
+== model_check res://assets/models/props/cave_soeburi.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4500
+AABB: 키 0.68 · 너비 0.98 · 깊이 0.95 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/censer.glb
+== model_check res://assets/models/props/censer.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4361
+AABB: 키 1.00 · 너비 0.88 · 깊이 0.75 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/chain.glb
+== model_check res://assets/models/props/chain.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4370
+AABB: 키 0.16 · 너비 1.00 · 깊이 1.00 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/charred_wood_pile.glb
+== model_check res://assets/models/props/charred_wood_pile.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1552
+AABB: 키 1.00 · 너비 1.89 · 깊이 1.59 · 발 y=-0.50 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.50 떨어짐 → ModelDef.y_offset = 0.50 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cheomju.glb
+== model_check res://assets/models/props/cheomju.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1180
+AABB: 키 1.90 · 너비 1.48 · 깊이 1.45 · 발 y=-0.95 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/chimney.glb
+== model_check res://assets/models/props/chimney.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4164
+AABB: 키 20.00 · 너비 9.08 · 깊이 9.03 · 발 y=0.00 · 중심 x=-0.04 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cloth_sash.glb
+== model_check res://assets/models/props/cloth_sash.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 드랍 — 알베도·노멀 ≤256 · 삼각형 ≤12000(표에 상한 없음) (넘으면 경고만, #199)
+삼각형 953
+AABB: 키 0.30 · 너비 1.90 · 깊이 1.06 · 발 y=-0.15 · 중심 x=0.00 z=-0.53
+⚠ 발이 y=0에서 -0.15 떨어짐 → ModelDef.y_offset = 0.15 권장
+⚠ 원점이 중앙에서 벗어남 (x=0.00 z=-0.53)
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 원점 치우침, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/cold_cup.glb
+== model_check res://assets/models/props/cold_cup.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1555
+AABB: 키 0.86 · 너비 1.86 · 깊이 1.90 · 발 y=-0.42 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.42 떨어짐 → ModelDef.y_offset = 0.42 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dangsan_zelkova.glb
+== model_check res://assets/models/props/dangsan_zelkova.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4500
+AABB: 키 0.93 · 너비 0.97 · 깊이 0.90 · 발 y=-0.01 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dead_tree.glb
+== model_check res://assets/models/props/dead_tree.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3000
+AABB: 키 1.00 · 너비 0.94 · 깊이 0.90 · 발 y=-0.01 · 중심 x=-0.00 z=-0.01
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/doho_sword.glb
+== model_check res://assets/models/props/doho_sword.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 드랍 — 알베도·노멀 ≤256 · 삼각형 ≤12000(표에 상한 없음) (넘으면 경고만, #199)
+삼각형 250
+AABB: 키 0.94 · 너비 0.12 · 깊이 0.04 · 발 y=-0.14 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.14 떨어짐 → ModelDef.y_offset = 0.14 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/drying_line.glb
+== model_check res://assets/models/props/drying_line.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5114  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.80 · 너비 3.25 · 깊이 0.87 · 발 y=-0.00 · 중심 x=0.00 z=-0.01
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dungeon_132/bone_heap.glb
+== model_check res://assets/models/props/dungeon_132/bone_heap.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 7755  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.50 · 너비 1.28 · 깊이 0.97 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dungeon_132/broken_statue.glb
+== model_check res://assets/models/props/dungeon_132/broken_statue.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 7858  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.30 · 너비 0.77 · 깊이 0.61 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dungeon_132/nest.glb
+== model_check res://assets/models/props/dungeon_132/nest.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5874  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.39 · 너비 1.21 · 깊이 1.20 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dungeon_132/palisade.glb
+== model_check res://assets/models/props/dungeon_132/palisade.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5652  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.31 · 너비 1.80 · 깊이 0.30 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dungeon_132/pillar.glb
+== model_check res://assets/models/props/dungeon_132/pillar.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5799  ⚠ 5000 초과 → remesh 권장
+AABB: 키 2.00 · 너비 0.94 · 깊이 0.94 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dungeon_132/roots.glb
+== model_check res://assets/models/props/dungeon_132/roots.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 7534  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.60 · 너비 1.05 · 깊이 0.59 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/dungeon_132/seal_stone.glb
+== model_check res://assets/models/props/dungeon_132/seal_stone.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5840  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.25 · 너비 1.28 · 깊이 1.28 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fallen_pine.glb
+== model_check res://assets/models/props/fallen_pine.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2972
+AABB: 키 0.46 · 너비 1.90 · 깊이 1.15 · 발 y=-0.23 · 중심 x=-0.00 z=-0.01
+⚠ 발이 y=0에서 -0.23 떨어짐 → ModelDef.y_offset = 0.23 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fallen_rock_a.glb
+== model_check res://assets/models/props/fallen_rock_a.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1519
+AABB: 키 0.65 · 너비 1.71 · 깊이 1.82 · 발 y=-0.32 · 중심 x=-0.02 z=-0.02
+⚠ 발이 y=0에서 -0.32 떨어짐 → ModelDef.y_offset = 0.32 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fallen_rock_b.glb
+== model_check res://assets/models/props/fallen_rock_b.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1555
+AABB: 키 1.29 · 너비 1.81 · 깊이 1.66 · 발 y=-0.64 · 중심 x=-0.05 z=-0.00
+⚠ 발이 y=0에서 -0.64 떨어짐 → ModelDef.y_offset = 0.64 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fallen_rock_c.glb
+== model_check res://assets/models/props/fallen_rock_c.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1449
+AABB: 키 0.32 · 너비 1.74 · 깊이 1.84 · 발 y=-0.17 · 중심 x=0.00 z=0.03
+⚠ 발이 y=0에서 -0.17 떨어짐 → ModelDef.y_offset = 0.17 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fire_pit.glb
+== model_check res://assets/models/props/fire_pit.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5898  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.30 · 너비 2.02 · 깊이 2.00 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/flag_pillar.glb
+== model_check res://assets/models/props/flag_pillar.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5000
+AABB: 키 0.98 · 너비 0.41 · 깊이 0.65 · 발 y=-0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/folded_robe.glb
+== model_check res://assets/models/props/folded_robe.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 드랍 — 알베도·노멀 ≤256 · 삼각형 ≤12000(표에 상한 없음) (넘으면 경고만, #199)
+삼각형 1200
+AABB: 키 0.88 · 너비 1.45 · 깊이 1.88 · 발 y=-0.44 · 중심 x=0.00 z=-0.94
+⚠ 발이 y=0에서 -0.44 떨어짐 → ModelDef.y_offset = 0.44 권장
+⚠ 원점이 중앙에서 벗어남 (x=0.00 z=-0.94)
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 원점 치우침, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fort_gate.glb
+== model_check res://assets/models/props/fort_gate.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5000
+AABB: 키 0.66 · 너비 0.98 · 깊이 0.37 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fort_wall_ruin.glb
+== model_check res://assets/models/props/fort_wall_ruin.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4500
+AABB: 키 0.39 · 너비 0.97 · 깊이 0.46 · 발 y=-0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/fur.glb
+== model_check res://assets/models/props/fur.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1476
+AABB: 키 0.04 · 너비 1.79 · 깊이 1.90 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/furnace.glb
+== model_check res://assets/models/props/furnace.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4220
+AABB: 키 1.00 · 너비 0.84 · 깊이 0.82 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/gate_posts.glb
+== model_check res://assets/models/props/gate_posts.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4899
+AABB: 키 3.00 · 너비 2.58 · 깊이 1.07 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/grain_sack.glb
+== model_check res://assets/models/props/grain_sack.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1566
+AABB: 키 0.80 · 너비 0.79 · 깊이 0.51 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/hand_cart.glb
+== model_check res://assets/models/props/hand_cart.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5999  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.20 · 너비 2.54 · 깊이 1.50 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/honrye_binyeo.glb
+== model_check res://assets/models/props/honrye_binyeo.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1217
+AABB: 키 1.76 · 너비 1.90 · 깊이 0.18 · 발 y=-0.88 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.88 떨어짐 → ModelDef.y_offset = 0.88 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/iljumun.glb
+== model_check res://assets/models/props/iljumun.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4500
+AABB: 키 0.92 · 너비 0.98 · 깊이 0.66 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/injang.glb
+== model_check res://assets/models/props/injang.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1218
+AABB: 키 1.90 · 너비 0.97 · 깊이 0.96 · 발 y=-0.95 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/iron_ingot_pile.glb
+== model_check res://assets/models/props/iron_ingot_pile.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1505
+AABB: 키 0.85 · 너비 1.90 · 깊이 1.59 · 발 y=-0.42 · 중심 x=-0.00 z=0.01
+⚠ 발이 y=0에서 -0.42 떨어짐 → ModelDef.y_offset = 0.42 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/jade_ring.glb
+== model_check res://assets/models/props/jade_ring.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 드랍 — 알베도·노멀 ≤256 · 삼각형 ≤12000(표에 상한 없음) (넘으면 경고만, #199)
+삼각형 996
+AABB: 키 1.90 · 너비 1.01 · 깊이 0.38 · 발 y=-0.95 · 중심 x=0.00 z=-0.19
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/jangdokdae.glb
+== model_check res://assets/models/props/jangdokdae.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 10374  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.50 · 너비 0.77 · 깊이 0.73 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512 · 노멀 512 · ORM/AO 256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/jangseung.glb
+== model_check res://assets/models/props/jangseung.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5978  ⚠ 5000 초과 → remesh 권장
+AABB: 키 2.00 · 너비 0.56 · 깊이 0.56 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/jeongjagwan.glb
+== model_check res://assets/models/props/jeongjagwan.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1413
+AABB: 키 1.90 · 너비 1.65 · 깊이 1.53 · 발 y=-0.95 · 중심 x=0.00 z=0.01
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/jige.glb
+== model_check res://assets/models/props/jige.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 10137  ⚠ 5000 초과 → remesh 권장
+AABB: 키 2.00 · 너비 0.88 · 깊이 0.78 · 발 y=0.00 · 중심 x=-0.01 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/jumak_lantern.glb
+== model_check res://assets/models/props/jumak_lantern.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1505
+AABB: 키 1.90 · 너비 0.85 · 깊이 0.88 · 발 y=-0.95 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/lantern_post.glb
+== model_check res://assets/models/props/lantern_post.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3074
+AABB: 키 1.90 · 너비 0.89 · 깊이 0.44 · 발 y=-0.95 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/lumber_stack.glb
+== model_check res://assets/models/props/lumber_stack.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1482
+AABB: 키 0.76 · 너비 1.90 · 깊이 0.68 · 발 y=-0.38 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.38 떨어짐 → ModelDef.y_offset = 0.38 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/maaebul.glb
+== model_check res://assets/models/props/maaebul.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 12060  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.90 · 너비 0.96 · 깊이 0.36 · 발 y=-0.95 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/market_stall.glb
+== model_check res://assets/models/props/market_stall.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2681
+AABB: 키 1.48 · 너비 1.87 · 깊이 1.33 · 발 y=-0.75 · 중심 x=-0.01 z=0.00
+⚠ 발이 y=0에서 -0.75 떨어짐 → ModelDef.y_offset = 0.75 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/medicine_flask.glb
+== model_check res://assets/models/props/medicine_flask.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 드랍 — 알베도·노멀 ≤256 · 삼각형 ≤12000(표에 상한 없음) (넘으면 경고만, #199)
+삼각형 1200
+AABB: 키 1.90 · 너비 1.35 · 깊이 1.30 · 발 y=-0.95 · 중심 x=0.00 z=-0.65
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+⚠ 원점이 중앙에서 벗어남 (x=0.00 z=-0.65)
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 원점 치우침, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/mining_tools.glb
+== model_check res://assets/models/props/mining_tools.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2779
+AABB: 키 1.79 · 너비 1.55 · 깊이 1.88 · 발 y=-0.90 · 중심 x=-0.00 z=-0.01
+⚠ 발이 y=0에서 -0.90 떨어짐 → ModelDef.y_offset = 0.90 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/mortar.glb
+== model_check res://assets/models/props/mortar.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2999
+AABB: 키 0.25 · 너비 0.18 · 깊이 0.15 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/mossy_boulder.glb
+== model_check res://assets/models/props/mossy_boulder.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2500
+AABB: 키 0.15 · 너비 0.23 · 깊이 0.20 · 발 y=-0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/mound.glb
+== model_check res://assets/models/props/mound.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1436
+AABB: 키 0.77 · 너비 1.87 · 깊이 1.87 · 발 y=-0.40 · 중심 x=0.01 z=0.01
+⚠ 발이 y=0에서 -0.40 떨어짐 → ModelDef.y_offset = 0.40 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/mukham.glb
+== model_check res://assets/models/props/mukham.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1004
+AABB: 키 1.90 · 너비 0.41 · 깊이 0.44 · 발 y=-0.95 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/munru.glb
+== model_check res://assets/models/props/munru.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 18807  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.03 · 너비 1.90 · 깊이 1.16 · 발 y=-0.51 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.51 떨어짐 → ModelDef.y_offset = 0.51 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/namu_sae.glb
+== model_check res://assets/models/props/namu_sae.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1252
+AABB: 키 1.44 · 너비 1.16 · 깊이 1.90 · 발 y=-0.72 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.72 떨어짐 → ModelDef.y_offset = 0.72 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/offering_bowls.glb
+== model_check res://assets/models/props/offering_bowls.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3023
+AABB: 키 0.95 · 너비 1.90 · 깊이 1.55 · 발 y=-0.47 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.47 떨어짐 → ModelDef.y_offset = 0.47 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/oil_lamp_stand.glb
+== model_check res://assets/models/props/oil_lamp_stand.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3098
+AABB: 키 1.90 · 너비 0.79 · 깊이 0.66 · 발 y=-0.95 · 중심 x=0.01 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/onggi_big.glb
+== model_check res://assets/models/props/onggi_big.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1569
+AABB: 키 1.90 · 너비 1.71 · 깊이 1.72 · 발 y=-0.95 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/onggi_jar.glb
+== model_check res://assets/models/props/onggi_jar.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1566
+AABB: 키 0.72 · 너비 0.71 · 깊이 0.71 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/onggi_lidded.glb
+== model_check res://assets/models/props/onggi_lidded.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1540
+AABB: 키 1.30 · 너비 1.90 · 깊이 1.05 · 발 y=-0.65 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.65 떨어짐 → ModelDef.y_offset = 0.65 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/onggi_small.glb
+== model_check res://assets/models/props/onggi_small.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1573
+AABB: 키 1.40 · 너비 1.76 · 깊이 1.90 · 발 y=-0.71 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.71 떨어짐 → ModelDef.y_offset = 0.71 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/ore_barrow.glb
+== model_check res://assets/models/props/ore_barrow.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3860
+AABB: 키 0.51 · 너비 1.00 · 깊이 0.39 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/paddy_dike.glb
+== model_check res://assets/models/props/paddy_dike.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1333
+AABB: 키 0.31 · 너비 1.90 · 깊이 0.38 · 발 y=-0.14 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.14 떨어짐 → ModelDef.y_offset = 0.14 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/paeraengi.glb
+== model_check res://assets/models/props/paeraengi.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1229
+AABB: 키 1.24 · 너비 1.81 · 깊이 1.86 · 발 y=-0.62 · 중심 x=-0.00 z=0.01
+⚠ 발이 y=0에서 -0.62 떨어짐 → ModelDef.y_offset = 0.62 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/paper_talisman.glb
+== model_check res://assets/models/props/paper_talisman.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 드랍 — 알베도·노멀 ≤256 · 삼각형 ≤12000(표에 상한 없음) (넘으면 경고만, #199)
+삼각형 240
+AABB: 키 0.32 · 너비 0.08 · 깊이 0.00 · 발 y=-0.32 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.32 떨어짐 → ModelDef.y_offset = 0.32 권장
+텍스처: 없음(단색)
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/pass_barrier.glb
+== model_check res://assets/models/props/pass_barrier.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 8153  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.50 · 너비 2.54 · 깊이 2.94 · 발 y=0.00 · 중심 x=-0.01 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/piju.glb
+== model_check res://assets/models/props/piju.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1234
+AABB: 키 1.39 · 너비 1.38 · 깊이 1.89 · 발 y=-0.71 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.71 떨어짐 → ModelDef.y_offset = 0.71 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/pillar.glb
+== model_check res://assets/models/props/pillar.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4080
+AABB: 키 1.00 · 너비 0.46 · 깊이 0.46 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/pine_dead.glb
+== model_check res://assets/models/props/pine_dead.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2910
+AABB: 키 1.90 · 너비 1.54 · 깊이 0.43 · 발 y=-0.95 · 중심 x=0.01 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/pine_straight.glb
+== model_check res://assets/models/props/pine_straight.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2922
+AABB: 키 1.89 · 너비 1.35 · 깊이 0.59 · 발 y=-0.95 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/plank_bridge.glb
+== model_check res://assets/models/props/plank_bridge.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5502  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.70 · 너비 2.70 · 깊이 1.02 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/plank_walk.glb
+== model_check res://assets/models/props/plank_walk.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1471
+AABB: 키 0.31 · 너비 1.90 · 깊이 0.86 · 발 y=-0.15 · 중심 x=0.00 z=0.01
+⚠ 발이 y=0에서 -0.15 떨어짐 → ModelDef.y_offset = 0.15 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/ppalgan_daenggi.glb
+== model_check res://assets/models/props/ppalgan_daenggi.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1235
+AABB: 키 0.98 · 너비 1.89 · 깊이 1.39 · 발 y=-0.49 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.49 떨어짐 → ModelDef.y_offset = 0.49 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/red_silk.glb
+== model_check res://assets/models/props/red_silk.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2869
+AABB: 키 1.10 · 너비 1.85 · 깊이 1.70 · 발 y=-0.55 · 중심 x=0.01 z=0.00
+⚠ 발이 y=0에서 -0.55 떨어짐 → ModelDef.y_offset = 0.55 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/river_stones.glb
+== model_check res://assets/models/props/river_stones.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2041
+AABB: 키 0.08 · 너비 0.34 · 깊이 0.31 · 발 y=-0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/rock_outcrop.glb
+== model_check res://assets/models/props/rock_outcrop.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 8205  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.70 · 너비 0.97 · 깊이 1.05 · 발 y=0.00 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/rock_outcrop_far.glb
+== model_check res://assets/models/props/rock_outcrop_far.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1564
+AABB: 키 0.70 · 너비 0.97 · 깊이 1.04 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512 · 노멀 512 · ORM/AO 256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/roof_pile.glb
+== model_check res://assets/models/props/roof_pile.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2644
+AABB: 키 0.02 · 너비 0.05 · 깊이 0.05 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/roof_tile_bundle.glb
+== model_check res://assets/models/props/roof_tile_bundle.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1509
+AABB: 키 1.90 · 너비 1.68 · 깊이 1.88 · 발 y=-0.95 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/rotten_log.glb
+== model_check res://assets/models/props/rotten_log.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1547
+AABB: 키 0.68 · 너비 1.86 · 깊이 0.73 · 발 y=-0.33 · 중심 x=-0.01 z=0.00
+⚠ 발이 y=0에서 -0.33 떨어짐 → ModelDef.y_offset = 0.33 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/ruin_wall.glb
+== model_check res://assets/models/props/ruin_wall.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3040
+AABB: 키 3.00 · 너비 3.42 · 깊이 0.52 · 발 y=0.00 · 중심 x=0.00 z=-0.02
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/ruined_hut.glb
+== model_check res://assets/models/props/ruined_hut.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4500
+AABB: 키 0.52 · 너비 0.97 · 깊이 0.70 · 발 y=-0.01 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/sanddalgi.glb
+== model_check res://assets/models/props/sanddalgi.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1013
+AABB: 키 1.32 · 너비 1.89 · 깊이 1.85 · 발 y=-0.67 · 중심 x=0.00 z=-0.01
+⚠ 발이 y=0에서 -0.67 떨어짐 → ModelDef.y_offset = 0.67 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/sansingak.glb
+== model_check res://assets/models/props/sansingak.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4500
+AABB: 키 0.97 · 너비 0.97 · 깊이 0.86 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/satgat.glb
+== model_check res://assets/models/props/satgat.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1195
+AABB: 키 1.46 · 너비 1.89 · 깊이 1.89 · 발 y=-0.73 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.73 떨어짐 → ModelDef.y_offset = 0.73 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/scarecrow.glb
+== model_check res://assets/models/props/scarecrow.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2794
+AABB: 키 1.89 · 너비 1.67 · 깊이 0.65 · 발 y=-0.94 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.94 떨어짐 → ModelDef.y_offset = 0.94 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/seal_door.glb
+== model_check res://assets/models/props/seal_door.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 268
+AABB: 키 2.02 · 너비 1.48 · 깊이 0.29 · 발 y=0.00 · 중심 x=0.00 z=0.04
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/seal_heukrang.glb
+== model_check res://assets/models/props/seal_heukrang.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1184
+AABB: 키 1.90 · 너비 1.08 · 깊이 0.21 · 발 y=-0.95 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/seal_jangsanbeom.glb
+== model_check res://assets/models/props/seal_jangsanbeom.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1237
+AABB: 키 1.90 · 너비 1.86 · 깊이 0.46 · 발 y=-0.95 · 중심 x=-0.00 z=-0.01
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/seal_plate.glb
+== model_check res://assets/models/props/seal_plate.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4364
+AABB: 키 0.15 · 너비 1.00 · 깊이 1.00 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/seal_post.glb
+== model_check res://assets/models/props/seal_post.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5047  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.80 · 너비 2.30 · 깊이 0.28 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/seal_shards.glb
+== model_check res://assets/models/props/seal_shards.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1490
+AABB: 키 1.82 · 너비 1.90 · 깊이 0.18 · 발 y=-0.91 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.91 떨어짐 → ModelDef.y_offset = 0.91 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/shrine_tree.glb
+== model_check res://assets/models/props/shrine_tree.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 15247  ⚠ 5000 초과 → remesh 권장
+AABB: 키 5.00 · 너비 5.50 · 깊이 5.11 · 발 y=0.00 · 중심 x=0.04 z=0.06
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/signpost.glb
+== model_check res://assets/models/props/signpost.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1962
+AABB: 키 1.80 · 너비 1.27 · 깊이 0.28 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/skull_pile.glb
+== model_check res://assets/models/props/skull_pile.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1518
+AABB: 키 1.10 · 너비 1.90 · 깊이 1.60 · 발 y=-0.55 · 중심 x=0.00 z=-0.01
+⚠ 발이 y=0에서 -0.55 떨어짐 → ModelDef.y_offset = 0.55 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/slag_heap.glb
+== model_check res://assets/models/props/slag_heap.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1548
+AABB: 키 0.47 · 너비 1.84 · 깊이 1.89 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/small_chest.glb
+== model_check res://assets/models/props/small_chest.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1418
+AABB: 키 1.58 · 너비 1.85 · 깊이 1.90 · 발 y=-0.79 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.79 떨어짐 → ModelDef.y_offset = 0.79 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/smithy_ruin.glb
+== model_check res://assets/models/props/smithy_ruin.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4278
+AABB: 키 1.09 · 너비 1.31 · 깊이 1.89 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/sotdae.glb
+== model_check res://assets/models/props/sotdae.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 8078  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.40 · 너비 0.19 · 깊이 0.11 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/soup_cauldron.glb
+== model_check res://assets/models/props/soup_cauldron.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1538
+AABB: 키 1.49 · 너비 1.87 · 깊이 1.88 · 발 y=-0.75 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.75 떨어짐 → ModelDef.y_offset = 0.75 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stalagmite.glb
+== model_check res://assets/models/props/stalagmite.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3128
+AABB: 키 1.90 · 너비 1.51 · 깊이 1.34 · 발 y=-0.95 · 중심 x=0.01 z=0.01
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stone_guardian.glb
+== model_check res://assets/models/props/stone_guardian.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3130
+AABB: 키 1.90 · 너비 0.98 · 깊이 0.92 · 발 y=-0.95 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stone_lantern.glb
+== model_check res://assets/models/props/stone_lantern.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4264
+AABB: 키 1.00 · 너비 0.48 · 깊이 0.47 · 발 y=0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stone_offering_table.glb
+== model_check res://assets/models/props/stone_offering_table.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1534
+AABB: 키 0.73 · 너비 1.89 · 깊이 1.55 · 발 y=-0.37 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.37 떨어짐 → ModelDef.y_offset = 0.37 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stone_pagoda.glb
+== model_check res://assets/models/props/stone_pagoda.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4999
+AABB: 키 0.98 · 너비 0.49 · 깊이 0.49 · 발 y=0.00 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stone_stair_piece.glb
+== model_check res://assets/models/props/stone_stair_piece.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1545
+AABB: 키 0.89 · 너비 1.90 · 깊이 1.28 · 발 y=-0.45 · 중심 x=-0.00 z=0.01
+⚠ 발이 y=0에서 -0.45 떨어짐 → ModelDef.y_offset = 0.45 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stone_wall.glb
+== model_check res://assets/models/props/stone_wall.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4174
+AABB: 키 0.60 · 너비 3.11 · 깊이 0.51 · 발 y=-0.00 · 중심 x=-0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/straw_mat.glb
+== model_check res://assets/models/props/straw_mat.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 3003
+AABB: 키 0.28 · 너비 1.40 · 깊이 1.90 · 발 y=-0.15 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.15 떨어짐 → ModelDef.y_offset = 0.15 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/straw_mat_pile.glb
+== model_check res://assets/models/props/straw_mat_pile.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1513
+AABB: 키 1.16 · 너비 1.50 · 깊이 1.88 · 발 y=-0.58 · 중심 x=-0.05 z=-0.01
+⚠ 발이 y=0에서 -0.58 떨어짐 → ModelDef.y_offset = 0.58 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/straw_sandals.glb
+== model_check res://assets/models/props/straw_sandals.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 드랍 — 알베도·노멀 ≤256 · 삼각형 ≤12000(표에 상한 없음) (넘으면 경고만, #199)
+삼각형 1200
+AABB: 키 0.49 · 너비 1.53 · 깊이 1.89 · 발 y=-0.24 · 중심 x=0.00 z=-0.95
+⚠ 발이 y=0에서 -0.24 떨어짐 → ModelDef.y_offset = 0.24 권장
+⚠ 원점이 중앙에서 벗어남 (x=0.00 z=-0.95)
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 원점 치우침, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/straw_stack.glb
+== model_check res://assets/models/props/straw_stack.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5612  ⚠ 5000 초과 → remesh 권장
+AABB: 키 3.00 · 너비 3.63 · 깊이 3.66 · 발 y=0.00 · 중심 x=-0.01 z=0.03
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/stump.glb
+== model_check res://assets/models/props/stump.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1564
+AABB: 키 0.89 · 너비 1.70 · 깊이 1.90 · 발 y=0.00 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/temple_lantern.glb
+== model_check res://assets/models/props/temple_lantern.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4500
+AABB: 키 0.98 · 너비 0.40 · 깊이 0.40 · 발 y=-0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/temple_ruin.glb
+== model_check res://assets/models/props/temple_ruin.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4499
+AABB: 키 0.67 · 너비 0.98 · 깊이 0.91 · 발 y=-0.01 · 중심 x=0.00 z=-0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/timber_prop.glb
+== model_check res://assets/models/props/timber_prop.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 4203
+AABB: 키 1.00 · 너비 0.72 · 깊이 0.19 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/town_sealed_threshold.glb
+== model_check res://assets/models/props/town_sealed_threshold.glb
+노드: MeshInstance3D 9 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 11471  ⚠ 5000 초과 → remesh 권장
+AABB: 키 3.07 · 너비 4.37 · 깊이 5.26 · 발 y=-0.07 · 중심 x=0.00 z=0.69
+⚠ 원점이 중앙에서 벗어남 (x=0.00 z=0.69)
+텍스처: 256x256, 1024x1024
+⚠ 주 텍스처(알베도·노멀) 1024 > 512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 텍스처 초과, 폴리 과다, 원점 치우침, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/tripod_torch.glb
+== model_check res://assets/models/props/tripod_torch.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1531
+AABB: 키 1.89 · 너비 1.18 · 깊이 0.85 · 발 y=-0.95 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/village_lantern.glb
+== model_check res://assets/models/props/village_lantern.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1379
+AABB: 키 1.90 · 너비 0.68 · 깊이 0.68 · 발 y=-0.95 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.95 떨어짐 → ModelDef.y_offset = 0.95 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/wall_torch.glb
+== model_check res://assets/models/props/wall_torch.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2027
+AABB: 키 0.08 · 너비 0.02 · 깊이 0.04 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/water_trough.glb
+== model_check res://assets/models/props/water_trough.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1487
+AABB: 키 0.98 · 너비 1.90 · 깊이 0.87 · 발 y=-0.49 · 중심 x=-0.00 z=-0.00
+⚠ 발이 y=0에서 -0.49 떨어짐 → ModelDef.y_offset = 0.49 권장
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/wood_crate.glb
+== model_check res://assets/models/props/wood_crate.glb
+노드: MeshInstance3D 2 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 2927
+AABB: 키 0.52 · 너비 0.90 · 깊이 0.66 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 512x512
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/wooden_platform.glb
+== model_check res://assets/models/props/wooden_platform.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 5898  ⚠ 5000 초과 → remesh 권장
+AABB: 키 0.40 · 너비 1.33 · 깊이 0.85 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 512x512 · 노멀 512 · ORM/AO 256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/woodpile.glb
+== model_check res://assets/models/props/woodpile.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 11130  ⚠ 5000 초과 → remesh 권장
+AABB: 키 1.50 · 너비 2.78 · 깊이 1.87 · 발 y=0.00 · 중심 x=-0.00 z=0.01
+텍스처: 512x512 · 노멀 512 · ORM/AO 256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/props/yundo.glb
+== model_check res://assets/models/props/yundo.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 소품 — 알베도·노멀 ≤512 · ORM/AO ≤256 · 삼각형 ≤5000 (넘으면 경고만, #199)
+삼각형 1207
+AABB: 키 0.41 · 너비 1.90 · 깊이 1.90 · 발 y=-0.21 · 중심 x=0.00 z=-0.00
+⚠ 발이 y=0에서 -0.21 떨어짐 → ModelDef.y_offset = 0.21 권장
+텍스처: 256x256
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/shaman_v2/shaman_v2.glb
+== model_check res://assets/models/shaman_v2/shaman_v2.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 8094
+AABB: 키 1.50 · 너비 1.42 · 깊이 0.38 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 7: greet(3.50s), idle(3.50s), idle_arms(4.53s), idle_look(6.00s), idle_wait(4.00s), laugh(5.60s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → (없음)
+  hit    → (없음)
+  die    → (없음)
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/sobok_gwisin/sobok_gwisin.glb
+== model_check res://assets/models/sobok_gwisin/sobok_gwisin.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 12254
+AABB: 키 1.60 · 너비 0.90 · 깊이 0.51 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/spider/spider.glb
+== model_check res://assets/models/spider/spider.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 25: Root, Abdomen, Waist, Chest, Head, Leg0_Up…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11999
+AABB: 키 1.49 · 너비 1.84 · 깊이 2.00 · 발 y=-0.75 · 중심 x=-0.00 z=0.00
+⚠ 발이 y=0에서 -0.75 떨어짐 → ModelDef.y_offset = 0.75 권장
+텍스처: 1024x1024 · ORM/AO 512
+클립 6: attack(0.50s), die(1.20s), hit(0.30s), idle(2.40s), run(0.33s), walk(0.50s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT WARN: 발 높이
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/talisman_master_v2/talisman_master_v2.glb
+== model_check res://assets/models/talisman_master_v2/talisman_master_v2.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 8096
+AABB: 키 1.60 · 너비 1.47 · 깊이 0.41 · 발 y=0.00 · 중심 x=-0.00 z=0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 7: attack(1.53s), die(3.00s), hit(0.30s), idle(7.67s), run(0.63s), slash(0.45s), walk(1.17s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/tilekit_cave/floor.glb
+== model_check res://assets/models/tilekit_cave/floor.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 12
+AABB: 키 0.10 · 너비 1.00 · 깊이 1.00 · 발 y=-0.10 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.10 떨어짐 → ModelDef.y_offset = 0.10 권장
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/tilekit_cave/wall.glb
+== model_check res://assets/models/tilekit_cave/wall.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 20
+AABB: 키 2.00 · 너비 1.00 · 깊이 1.00 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/tilekit_stone/floor.glb
+== model_check res://assets/models/tilekit_stone/floor.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 12
+AABB: 키 0.10 · 너비 1.00 · 깊이 1.00 · 발 y=-0.10 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.10 떨어짐 → ModelDef.y_offset = 0.10 권장
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/tilekit_stone/stairs_down.glb
+== model_check res://assets/models/tilekit_stone/stairs_down.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 514
+AABB: 키 0.61 · 너비 1.00 · 깊이 1.00 · 발 y=0.00 · 중심 x=0.00 z=-0.00
+텍스처: 2048x2048
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/tilekit_stone/stairs_up.glb
+== model_check res://assets/models/tilekit_stone/stairs_up.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 502
+AABB: 키 0.35 · 너비 1.00 · 깊이 1.00 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 2048x2048
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/tilekit_stone/wall.glb
+== model_check res://assets/models/tilekit_stone/wall.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 표 밖 — 삼각형 12000 초과만 경고 (#199)
+삼각형 20
+AABB: 키 2.00 · 너비 1.00 · 깊이 1.00 · 발 y=0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/uinyeogwi/uinyeogwi.glb
+== model_check res://assets/models/uinyeogwi/uinyeogwi.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 65: mixamorig_Hips, mixamorig_LeftUpLeg, mixamorig_LeftLeg, mixamorig_LeftFoot, mixamorig_LeftToeBase, mixamorig_LeftToe_End…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 11827
+AABB: 키 0.98 · 너비 0.41 · 깊이 0.21 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 1024x1024
+클립 14: attack(1.96s), cast(2.96s), die(2.96s), hit_ai2(1.96s), hit_to_body_02(1.71s), hit_to_head(1.83s), hit_to_side(1.25s), hit_to_stomach(1.54s), hit_v1(0.96s), idle(3.96s), idle_preset(15.33s), run(1.25s), slash(6.58s), walk(2.33s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit_ai2
+  die    → die
+RESULT PASS
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/bandit_club.glb
+== model_check res://assets/models/weapons/bandit_club.glb
+노드: MeshInstance3D 5 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 192
+AABB: 키 0.75 · 너비 0.08 · 깊이 0.08 · 발 y=-0.13 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.13 떨어짐 → ModelDef.y_offset = 0.13 권장
+텍스처: 없음(단색)
+금속: 재질 2개가 금속 텍스처 없이 metallic ≥ 0.5 ⚠ Meshy 리깅 흔적 — python tools/albedo_ops.py dielectric --glb <glb>
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 금속 박힘, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/bandit_dagger.glb
+== model_check res://assets/models/weapons/bandit_dagger.glb
+노드: MeshInstance3D 4 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 116
+AABB: 키 0.44 · 너비 0.07 · 깊이 0.04 · 발 y=-0.10 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.10 떨어짐 → ModelDef.y_offset = 0.10 권장
+텍스처: 없음(단색)
+금속: 재질 3개가 금속 텍스처 없이 metallic ≥ 0.5 ⚠ Meshy 리깅 흔적 — python tools/albedo_ops.py dielectric --glb <glb>
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 금속 박힘, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/doho_cast_hand.glb
+== model_check res://assets/models/weapons/doho_cast_hand.glb
+노드: MeshInstance3D 13 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 156
+AABB: 키 0.26 · 너비 0.08 · 깊이 0.06 · 발 y=-0.01 · 중심 x=-0.01 z=0.00
+텍스처: 없음(단색)
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/doho_sheath.glb
+== model_check res://assets/models/weapons/doho_sheath.glb
+노드: MeshInstance3D 3 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 112
+AABB: 키 0.86 · 너비 0.06 · 깊이 0.03 · 발 y=-0.00 · 중심 x=0.00 z=0.00
+텍스처: 없음(단색)
+금속: 재질 2개가 금속 텍스처 없이 metallic ≥ 0.5 ⚠ Meshy 리깅 흔적 — python tools/albedo_ops.py dielectric --glb <glb>
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 금속 박힘, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/doho_sword_held.glb
+== model_check res://assets/models/weapons/doho_sword_held.glb
+노드: MeshInstance3D 4 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 116
+AABB: 키 1.03 · 너비 0.08 · 깊이 0.06 · 발 y=-0.13 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.13 떨어짐 → ModelDef.y_offset = 0.13 권장
+텍스처: 없음(단색)
+금속: 재질 3개가 금속 텍스처 없이 metallic ≥ 0.5 ⚠ Meshy 리깅 흔적 — python tools/albedo_ops.py dielectric --glb <glb>
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 금속 박힘, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/gwisae_dagger.glb
+== model_check res://assets/models/weapons/gwisae_dagger.glb
+노드: MeshInstance3D 1 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 3048  ⚠ 1500 초과 → remesh 권장
+AABB: 키 0.42 · 너비 0.08 · 깊이 0.04 · 발 y=-0.08 · 중심 x=0.00 z=-0.00
+텍스처: 1024x1024
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 폴리 과다, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/miner_pickaxe.glb
+== model_check res://assets/models/weapons/miner_pickaxe.glb
+노드: MeshInstance3D 5 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 312
+AABB: 키 0.52 · 너비 0.47 · 깊이 0.06 · 발 y=-0.22 · 중심 x=0.09 z=0.00
+⚠ 발이 y=0에서 -0.22 떨어짐 → ModelDef.y_offset = 0.22 권장
+텍스처: 없음(단색)
+금속: 재질 3개가 금속 텍스처 없이 metallic ≥ 0.5 ⚠ Meshy 리깅 흔적 — python tools/albedo_ops.py dielectric --glb <glb>
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 금속 박힘, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/talisman_sword.glb
+== model_check res://assets/models/weapons/talisman_sword.glb
+노드: MeshInstance3D 4 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 116
+AABB: 키 0.86 · 너비 0.08 · 깊이 0.06 · 발 y=-0.12 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.12 떨어짐 → ModelDef.y_offset = 0.12 권장
+텍스처: 없음(단색)
+금속: 재질 3개가 금속 텍스처 없이 metallic ≥ 0.5 ⚠ Meshy 리깅 흔적 — python tools/albedo_ops.py dielectric --glb <glb>
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 금속 박힘, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/yeogung_bow.glb
+== model_check res://assets/models/weapons/yeogung_bow.glb
+노드: MeshInstance3D 4 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 312
+AABB: 키 1.21 · 너비 0.20 · 깊이 0.04 · 발 y=-0.60 · 중심 x=-0.08 z=0.00
+⚠ 발이 y=0에서 -0.60 떨어짐 → ModelDef.y_offset = 0.60 권장
+텍스처: 없음(단색)
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/weapons/yeogung_spear.glb
+== model_check res://assets/models/weapons/yeogung_spear.glb
+노드: MeshInstance3D 5 · Skeleton3D 0 · AnimationPlayer 0
+규격: 잡동사니 — 삼각형 ≤1500 (넘으면 경고만, #199)
+삼각형 180
+AABB: 키 1.62 · 너비 0.07 · 깊이 0.07 · 발 y=-0.48 · 중심 x=0.00 z=0.00
+⚠ 발이 y=0에서 -0.48 떨어짐 → ModelDef.y_offset = 0.48 권장
+텍스처: 없음(단색)
+금속: 재질 3개가 금속 텍스처 없이 metallic ≥ 0.5 ⚠ Meshy 리깅 흔적 — python tools/albedo_ops.py dielectric --glb <glb>
+⚠ AnimationPlayer 없음 — 정적 모델로 표시됨
+RESULT WARN: 발 높이, 금속 박힘, 애니 없음
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+=== assets/models/yacha/yacha.glb
+== model_check res://assets/models/yacha/yacha.glb
+노드: MeshInstance3D 1 · Skeleton3D 1 · AnimationPlayer 1
+본 24: Hips, LeftUpLeg, LeftLeg, LeftFoot, LeftToeBase, RightUpLeg…
+규격: 인물 — 알베도·노멀 ≤1024 · ORM/AO ≤512 · 삼각형 ≤15000 (넘으면 경고만, #199)
+삼각형 10720
+AABB: 키 2.40 · 너비 1.79 · 깊이 0.59 · 발 y=-0.00 · 중심 x=0.00 z=-0.00
+텍스처: 1024x1024
+발광: 재질 1개가 발광 텍스처를 켜 둠 ⚠ Meshy 리깅 흔적 — 게임은 끄고 쓴다(진짜로 빛나야 하면 ModelDef.keep_emission)
+클립 6: attack(1.87s), die(3.53s), hit(1.67s), idle(4.03s), run(0.67s), walk(1.07s)
+  idle   → idle
+  walk   → walk
+  attack → attack
+  hit    → hit
+  die    → die
+  타격 프레임(오른손 속도 피크) → attack_impact = {"attack": 0.83}
+RESULT WARN: 발광 박힘
+[DevMode] ON
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+DONE

@@ -1,0 +1,1309 @@
+=== assets/models/agwi/agwi.glb
+== look_audit res://assets/models/agwi/agwi.glb · 인물(ModelDef data/models/agwi.tres) · 화면 높이 1.40 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+agwi	11296	1024	0.520	0.184	0.117	731	X 밝기
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum lum=0.520 sat=0.184 contrast=0.117 texel=731 tex=1024 family=char
+=== assets/models/bandit_v2/bandit_v2.glb
+== look_audit res://assets/models/bandit_v2/bandit_v2.glb · 인물(ModelDef data/models/bandit_v2.tres) · 화면 높이 1.50 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+bandit_v2	8112	1024	0.346	0.226	0.143	683	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.346 sat=0.226 contrast=0.143 texel=683 tex=1024 family=char
+=== assets/models/bat/bat.glb
+== look_audit res://assets/models/bat/bat.glb · 인물(ModelDef data/models/bat.tres) · 화면 높이 0.70 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+bat	6196	1024	0.229	0.190	0.079	1463	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.229 sat=0.190 contrast=0.079 texel=1463 tex=1024 family=char
+=== assets/models/boss_bulgasari/boss_bulgasari.glb
+== look_audit res://assets/models/boss_bulgasari/boss_bulgasari.glb · 인물(ModelDef data/models/boss_bulgasari.tres) · 화면 높이 2.12 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+boss_bulgasari	11363	1024	0.147	0.073	0.042	483	X 밝기,채도,대비
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat,contrast lum=0.147 sat=0.073 contrast=0.042 texel=483 tex=1024 family=char
+=== assets/models/boss_heukrang/boss_heukrang.glb
+== look_audit res://assets/models/boss_heukrang/boss_heukrang.glb · 인물(ModelDef data/models/boss_heukrang.tres) · 화면 높이 2.40 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+boss_heukrang	10000	1024	0.220	0.184	0.085	427	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.220 sat=0.184 contrast=0.085 texel=427 tex=1024 family=char
+=== assets/models/boss_jangsanbeom/boss_jangsanbeom.glb
+== look_audit res://assets/models/boss_jangsanbeom/boss_jangsanbeom.glb · 인물(ModelDef data/models/boss_jangsanbeom.tres) · 화면 높이 2.10 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+boss_jangsanbeom	10000	1024	0.548	0.128	0.059	488	X 밝기,채도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat lum=0.548 sat=0.128 contrast=0.059 texel=488 tex=1024 family=char
+=== assets/models/buildings/choga.glb
+== look_audit res://assets/models/buildings/choga.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 7.73 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+buildings/choga	14808	1024	0.338	0.171	0.087	133	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.338 sat=0.171 contrast=0.087 texel=133 tex=1024 family=prop
+=== assets/models/buildings/giwa.glb
+== look_audit res://assets/models/buildings/giwa.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 6.17 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+buildings/giwa	18469	1024	0.305	0.181	0.212	166	X 빛 구움,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=baked,density lum=0.305 sat=0.181 contrast=0.212 texel=166 tex=1024 family=prop
+=== assets/models/buildings/jumak.glb
+== look_audit res://assets/models/buildings/jumak.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 8.11 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+buildings/jumak	4203	512	0.339	0.183	0.098	63	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.339 sat=0.183 contrast=0.098 texel=63 tex=512 family=prop
+=== assets/models/buildings/well.glb
+== look_audit res://assets/models/buildings/well.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+buildings/well	10097	1024	0.338	0.088	0.103	512	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.338 sat=0.088 contrast=0.103 texel=512 tex=1024 family=prop
+=== assets/models/centipede/centipede.glb
+== look_audit res://assets/models/centipede/centipede.glb · 인물(ModelDef data/models/centipede.tres) · 화면 높이 0.90 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+centipede	4998	1024	0.208	0.647	0.118	1138	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.208 sat=0.647 contrast=0.118 texel=1138 tex=1024 family=char
+=== assets/models/centipede/centipede_segment.glb
+== look_audit res://assets/models/centipede/centipede_segment.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.61 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+centipede/centipede_segment	1000	1024	0.197	0.631	0.123	1685	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.197 sat=0.631 contrast=0.123 texel=1685 tex=1024 family=prop
+=== assets/models/centipede/centipede_tip.glb
+== look_audit res://assets/models/centipede/centipede_tip.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.36 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+centipede/centipede_tip	500	1024	0.202	0.656	0.105	2836	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.202 sat=0.656 contrast=0.105 texel=2836 tex=1024 family=prop
+=== assets/models/dallae/dallae.glb
+== look_audit res://assets/models/dallae/dallae.glb · 인물(ModelDef data/models/dallae.tres) · 화면 높이 1.30 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+dallae	11071	1024	0.351	0.239	0.151	788	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.351 sat=0.239 contrast=0.151 texel=788 tex=1024 family=char
+=== assets/models/dallae_infected/dallae_infected.glb
+== look_audit res://assets/models/dallae_infected/dallae_infected.glb · 인물(ModelDef data/models/dallae_infected.tres) · 화면 높이 1.30 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+dallae_infected	11071	1024	0.271	0.153	0.141	788	X 채도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.271 sat=0.153 contrast=0.141 texel=788 tex=1024 family=char
+=== assets/models/doho/doho.glb
+== look_audit res://assets/models/doho/doho.glb · 인물(ModelDef data/models/doho.tres) · 화면 높이 1.70 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+doho	11999	1024	0.241	0.288	0.155	602	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.241 sat=0.288 contrast=0.155 texel=602 tex=1024 family=char
+=== assets/models/dueoksini/dueoksini.glb
+== look_audit res://assets/models/dueoksini/dueoksini.glb · 인물(ModelDef data/models/dueoksini.tres) · 화면 높이 2.80 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+dueoksini	12327	1024	0.184	0.382	0.063	366	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.184 sat=0.382 contrast=0.063 texel=366 tex=1024 family=char
+=== assets/models/elder_v2/elder_v2.glb
+== look_audit res://assets/models/elder_v2/elder_v2.glb · 인물(ModelDef data/models/elder_v2.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+elder_v2	7742	1024	0.253	0.183	0.151	640	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.253 sat=0.183 contrast=0.151 texel=640 tex=1024 family=char
+=== assets/models/eoksoe/botjim.glb
+== look_audit res://assets/models/eoksoe/botjim.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.45 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+eoksoe/botjim	4939	512	0.297	0.287	0.070	1138	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.297 sat=0.287 contrast=0.070 texel=1138 tex=512 family=prop
+=== assets/models/eoksoe/eoksoe.glb
+== look_audit res://assets/models/eoksoe/eoksoe.glb · 인물(ModelDef data/models/eoksoe.tres) · 화면 높이 1.65 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+eoksoe	23655	1024	0.324	0.206	0.132	621	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.324 sat=0.206 contrast=0.132 texel=621 tex=1024 family=char
+=== assets/models/fox/fox.glb
+== look_audit res://assets/models/fox/fox.glb · 인물(ModelDef data/models/fox.tres) · 화면 높이 1.00 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+fox	10000	1024	0.347	0.507	0.120	1024	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.347 sat=0.507 contrast=0.120 texel=1024 tex=1024 family=char
+=== assets/models/gaksi_gwisin/gaksi_gwisin.glb
+== look_audit res://assets/models/gaksi_gwisin/gaksi_gwisin.glb · 인물(ModelDef data/models/gaksi_gwisin.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gaksi_gwisin	11554	1024	0.416	0.415	0.259	640	X 빛 구움
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=baked lum=0.416 sat=0.415 contrast=0.259 texel=640 tex=1024 family=char
+=== assets/models/gapdol/gapdol.glb
+== look_audit res://assets/models/gapdol/gapdol.glb · 인물(ModelDef data/models/gapdol.tres) · 화면 높이 1.75 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gapdol	11708	1024	0.530	0.283	0.134	585	X 밝기
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum lum=0.530 sat=0.283 contrast=0.134 texel=585 tex=1024 family=char
+=== assets/models/geomi_sinbu/geomi_sinbu.glb
+== look_audit res://assets/models/geomi_sinbu/geomi_sinbu.glb · 인물(ModelDef data/models/geomi_sinbu.tres) · 화면 높이 2.20 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+geomi_sinbu	11924	1024	0.312	0.482	0.180	465	X 채도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.312 sat=0.482 contrast=0.180 texel=465 tex=1024 family=char
+=== assets/models/gumiho_h2/gumiho_h2.glb
+== look_audit res://assets/models/gumiho_h2/gumiho_h2.glb · 인물(ModelDef data/models/gumiho_h2.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gumiho_h2	14306	1024	0.214	0.257	0.116	640	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.214 sat=0.257 contrast=0.116 texel=640 tex=1024 family=char
+=== assets/models/gumiho_tail/gumiho_tail.glb
+== look_audit res://assets/models/gumiho_tail/gumiho_tail.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gumiho_tail	1499	512	0.217	0.368	0.027	523	X 채도,납작
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,flat lum=0.217 sat=0.368 contrast=0.027 texel=523 tex=512 family=prop
+=== assets/models/gumiho_y1/gumiho_y1.glb
+== look_audit res://assets/models/gumiho_y1/gumiho_y1.glb · 인물(ModelDef data/models/gumiho_y1.tres) · 화면 높이 3.00 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gumiho_y1	14053	1024	0.231	0.192	0.111	341	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.231 sat=0.192 contrast=0.111 texel=341 tex=1024 family=char
+=== assets/models/gumiho_y2/gumiho_y2.glb
+== look_audit res://assets/models/gumiho_y2/gumiho_y2.glb · 인물(ModelDef data/models/gumiho_y2.tres) · 화면 높이 3.40 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gumiho_y2	14069	1024	0.248	0.078	0.100	301	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.248 sat=0.078 contrast=0.100 texel=301 tex=1024 family=char
+=== assets/models/gwangbu_neok/gwangbu_neok.glb
+== look_audit res://assets/models/gwangbu_neok/gwangbu_neok.glb · 인물(ModelDef data/models/gwangbu_neok.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gwangbu_neok	9381	1024	0.590	0.010	0.166	640	X 밝기,채도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat lum=0.590 sat=0.010 contrast=0.166 texel=640 tex=1024 family=char
+=== assets/models/gwisae/gwisae.glb
+== look_audit res://assets/models/gwisae/gwisae.glb · 인물(ModelDef data/models/gwisae.tres) · 화면 높이 1.65 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+gwisae	11174	1024	0.232	0.190	0.086	621	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.232 sat=0.190 contrast=0.086 texel=621 tex=1024 family=char
+=== assets/models/hollin_mudang/hollin_mudang.glb
+== look_audit res://assets/models/hollin_mudang/hollin_mudang.glb · 인물(ModelDef data/models/hollin_mudang.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+hollin_mudang	11221	1024	0.351	0.246	0.179	640	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.351 sat=0.246 contrast=0.179 texel=640 tex=1024 family=char
+=== assets/models/hollin_yeogung/hollin_yeogung.glb
+== look_audit res://assets/models/hollin_yeogung/hollin_yeogung.glb · 인물(ModelDef data/models/hollin_yeogung.tres) · 화면 높이 1.55 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+hollin_yeogung	11834	1024	0.197	0.256	0.229	661	X 빛 구움
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=baked lum=0.197 sat=0.256 contrast=0.229 texel=661 tex=1024 family=char
+=== assets/models/imugi/imugi.glb
+== look_audit res://assets/models/imugi/imugi.glb · 인물(ModelDef data/models/imugi.tres) · 화면 높이 1.19 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+imugi	5999	1024	0.244	0.357	0.134	864	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.244 sat=0.357 contrast=0.134 texel=864 tex=1024 family=char
+=== assets/models/imugi/imugi_segment.glb
+== look_audit res://assets/models/imugi/imugi_segment.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.43 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+imugi/imugi_segment	799	1024	0.231	0.380	0.123	2394	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.231 sat=0.380 contrast=0.123 texel=2394 tex=1024 family=prop
+=== assets/models/imugi/imugi_tip.glb
+== look_audit res://assets/models/imugi/imugi_tip.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.07 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+imugi/imugi_tip	260	1024	0.216	0.372	0.102	953	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.216 sat=0.372 contrast=0.102 texel=953 tex=1024 family=prop
+=== assets/models/jumo/jumo.glb
+== look_audit res://assets/models/jumo/jumo.glb · 인물(ModelDef data/models/jumo.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+jumo	10862	1024	0.224	0.253	0.158	640	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.224 sat=0.253 contrast=0.158 texel=640 tex=1024 family=char
+=== assets/models/merchant_v2/merchant_v2.glb
+== look_audit res://assets/models/merchant_v2/merchant_v2.glb · 인물(ModelDef data/models/merchant_v2.tres) · 화면 높이 1.50 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+merchant_v2	8243	1024	0.357	0.211	0.149	683	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.357 sat=0.211 contrast=0.149 texel=683 tex=1024 family=char
+=== assets/models/nachalnyeo/nachalnyeo.glb
+== look_audit res://assets/models/nachalnyeo/nachalnyeo.glb · 인물(ModelDef data/models/nachalnyeo.tres) · 화면 높이 1.70 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+nachalnyeo	12170	1024	0.209	0.425	0.204	602	X 빛 구움
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=baked lum=0.209 sat=0.425 contrast=0.204 texel=602 tex=1024 family=char
+=== assets/models/paper_soldier/paper_soldier.glb
+== look_audit res://assets/models/paper_soldier/paper_soldier.glb · 인물(ModelDef data/models/paper_soldier.tres) · 화면 높이 1.45 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+paper_soldier	11621	1024	0.662	0.478	0.147	706	X 밝기,채도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat lum=0.662 sat=0.478 contrast=0.147 texel=706 tex=1024 family=char
+=== assets/models/plague_dog/plague_dog.glb
+== look_audit res://assets/models/plague_dog/plague_dog.glb · 인물(ModelDef data/models/plague_dog.tres) · 화면 높이 0.97 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+plague_dog	12508	1024	0.384	0.362	0.092	1056	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.384 sat=0.362 contrast=0.092 texel=1056 tex=1024 family=char
+=== assets/models/plague_miner/plague_miner.glb
+== look_audit res://assets/models/plague_miner/plague_miner.glb · 인물(ModelDef data/models/plague_miner.tres) · 화면 높이 1.70 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+plague_miner	11156	1024	0.143	0.105	0.095	602	X 밝기,채도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat lum=0.143 sat=0.105 contrast=0.095 texel=602 tex=1024 family=char
+=== assets/models/props/abandoned_bundle.glb
+== look_audit res://assets/models/props/abandoned_bundle.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/abandoned_bundle	1521	512	0.305	0.224	0.081	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.305 sat=0.224 contrast=0.081 texel=270 tex=512 family=prop
+=== assets/models/props/altar.glb
+== look_audit res://assets/models/props/altar.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/altar	4999	512	0.297	0.111	0.070	522	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.297 sat=0.111 contrast=0.070 texel=522 tex=512 family=prop
+=== assets/models/props/altar_bowl.glb
+== look_audit res://assets/models/props/altar_bowl.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/altar_bowl	1548	512	0.380	0.114	0.100	270	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.380 sat=0.114 contrast=0.100 texel=270 tex=512 family=prop
+=== assets/models/props/ancestral_tablets.glb
+== look_audit res://assets/models/props/ancestral_tablets.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/ancestral_tablets	1469	512	0.269	0.272	0.073	269	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.269 sat=0.272 contrast=0.073 texel=269 tex=512 family=prop
+=== assets/models/props/anvil.glb
+== look_audit res://assets/models/props/anvil.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/anvil	1540	512	0.276	0.266	0.069	272	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.276 sat=0.266 contrast=0.069 texel=272 tex=512 family=prop
+=== assets/models/props/ash_ring.glb
+== look_audit res://assets/models/props/ash_ring.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/ash_ring	1541	512	0.375	0.158	0.096	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.375 sat=0.158 contrast=0.096 texel=270 tex=512 family=prop
+=== assets/models/props/away_sign.glb
+== look_audit res://assets/models/props/away_sign.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/away_sign	1495	512	0.263	0.190	0.086	269	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.263 sat=0.190 contrast=0.086 texel=269 tex=512 family=prop
+=== assets/models/props/bamboo_clump.glb
+== look_audit res://assets/models/props/bamboo_clump.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/bamboo_clump	1133	512	0.338	0.179	0.039	256	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.338 sat=0.179 contrast=0.039 texel=256 tex=512 family=prop
+=== assets/models/props/bandaji.glb
+== look_audit res://assets/models/props/bandaji.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/bandaji	2827	512	0.235	0.371	0.143	269	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.235 sat=0.371 contrast=0.143 texel=269 tex=512 family=prop
+=== assets/models/props/beacon_tower.glb
+== look_audit res://assets/models/props/beacon_tower.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/beacon_tower	4999	512	0.357	0.192	0.053	521	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.357 sat=0.192 contrast=0.053 texel=521 tex=512 family=prop
+=== assets/models/props/bellows.glb
+== look_audit res://assets/models/props/bellows.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/bellows	1520	512	0.305	0.356	0.089	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.305 sat=0.356 contrast=0.089 texel=269 tex=512 family=prop
+=== assets/models/props/bent_pine.glb
+== look_audit res://assets/models/props/bent_pine.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.61 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/bent_pine	19707	1024	0.293	0.183	0.020	1685	X 납작,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=flat,density lum=0.293 sat=0.183 contrast=0.020 texel=1685 tex=1024 family=prop
+=== assets/models/props/bent_pine_far.glb
+== look_audit res://assets/models/props/bent_pine_far.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.55 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/bent_pine_far	4121	1024	0.287	0.178	0.039	1874	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.287 sat=0.178 contrast=0.039 texel=1874 tex=1024 family=prop
+=== assets/models/props/boulders_a.glb
+== look_audit res://assets/models/props/boulders_a.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/boulders_a	4499	512	0.322	0.190	0.070	523	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.322 sat=0.190 contrast=0.070 texel=523 tex=512 family=prop
+=== assets/models/props/boulders_b.glb
+== look_audit res://assets/models/props/boulders_b.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/boulders_b	4499	512	0.298	0.268	0.078	521	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.298 sat=0.268 contrast=0.078 texel=521 tex=512 family=prop
+=== assets/models/props/broken_onggi.glb
+== look_audit res://assets/models/props/broken_onggi.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/broken_onggi	1569	512	0.240	0.532	0.107	271	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.240 sat=0.532 contrast=0.107 texel=271 tex=512 family=prop
+=== assets/models/props/broken_timber.glb
+== look_audit res://assets/models/props/broken_timber.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/broken_timber	1535	512	0.331	0.391	0.086	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.331 sat=0.391 contrast=0.086 texel=269 tex=512 family=prop
+=== assets/models/props/broken_wheel.glb
+== look_audit res://assets/models/props/broken_wheel.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/broken_wheel	1531	512	0.326	0.288	0.094	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.326 sat=0.288 contrast=0.094 texel=270 tex=512 family=prop
+=== assets/models/props/brush_fence.glb
+== look_audit res://assets/models/props/brush_fence.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.69 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/brush_fence	4220	512	0.337	0.172	0.017	190	X 납작,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=flat,density lum=0.337 sat=0.172 contrast=0.017 texel=190 tex=512 family=prop
+=== assets/models/props/bujeok_mokpan.glb
+== look_audit res://assets/models/props/bujeok_mokpan.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/bujeok_mokpan	1199	256	0.267	0.482	0.080	135	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.267 sat=0.482 contrast=0.080 texel=135 tex=256 family=prop
+=== assets/models/props/burnt_rock.glb
+== look_audit res://assets/models/props/burnt_rock.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/burnt_rock	1550	512	0.295	0.144	0.106	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.295 sat=0.144 contrast=0.106 texel=270 tex=512 family=prop
+=== assets/models/props/burnt_stump.glb
+== look_audit res://assets/models/props/burnt_stump.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.88 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/burnt_stump	1556	512	0.177	0.146	0.073	273	X 밝기,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,density lum=0.177 sat=0.146 contrast=0.073 texel=273 tex=512 family=prop
+=== assets/models/props/cairn.glb
+== look_audit res://assets/models/props/cairn.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cairn	6187	512	0.337	0.155	0.101	512	OK
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.337 sat=0.155 contrast=0.101 texel=512 tex=512 family=prop
+=== assets/models/props/cargo_pile.glb
+== look_audit res://assets/models/props/cargo_pile.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cargo_pile	2995	512	0.341	0.286	0.118	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.341 sat=0.286 contrast=0.118 texel=270 tex=512 family=prop
+=== assets/models/props/carved_stele.glb
+== look_audit res://assets/models/props/carved_stele.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/carved_stele	1540	512	0.447	0.202	0.050	269	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.447 sat=0.202 contrast=0.050 texel=269 tex=512 family=prop
+=== assets/models/props/cave_arch.glb
+== look_audit res://assets/models/props/cave_arch.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 4.37 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cave_arch	10212	512	0.218	0.192	0.128	117	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.218 sat=0.192 contrast=0.128 texel=117 tex=512 family=prop
+=== assets/models/props/cave_beomgul.glb
+== look_audit res://assets/models/props/cave_beomgul.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cave_beomgul	4499	512	0.313	0.173	0.061	522	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.313 sat=0.173 contrast=0.061 texel=522 tex=512 family=prop
+=== assets/models/props/cave_heukrang.glb
+== look_audit res://assets/models/props/cave_heukrang.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cave_heukrang	4499	512	0.245	0.251	0.055	522	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.245 sat=0.251 contrast=0.055 texel=522 tex=512 family=prop
+=== assets/models/props/cave_rock_flat.glb
+== look_audit res://assets/models/props/cave_rock_flat.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cave_rock_flat	1526	512	0.387	0.308	0.073	270	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.387 sat=0.308 contrast=0.073 texel=270 tex=512 family=prop
+=== assets/models/props/cave_rock_moss.glb
+== look_audit res://assets/models/props/cave_rock_moss.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cave_rock_moss	1453	512	0.287	0.384	0.081	271	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.287 sat=0.384 contrast=0.081 texel=271 tex=512 family=prop
+=== assets/models/props/cave_rock_spiky.glb
+== look_audit res://assets/models/props/cave_rock_spiky.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cave_rock_spiky	1561	512	0.294	0.061	0.075	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.294 sat=0.061 contrast=0.075 texel=269 tex=512 family=prop
+=== assets/models/props/cave_soeburi.glb
+== look_audit res://assets/models/props/cave_soeburi.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cave_soeburi	4500	512	0.278	0.211	0.056	522	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.278 sat=0.211 contrast=0.056 texel=522 tex=512 family=prop
+=== assets/models/props/censer.glb
+== look_audit res://assets/models/props/censer.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/censer	4361	512	0.199	0.240	0.078	512	OK
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.199 sat=0.240 contrast=0.078 texel=512 tex=512 family=prop
+=== assets/models/props/chain.glb
+== look_audit res://assets/models/props/chain.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/chain	4370	512	0.188	0.245	0.019	512	X 납작
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=flat lum=0.188 sat=0.245 contrast=0.019 texel=512 tex=512 family=prop
+=== assets/models/props/charred_wood_pile.glb
+== look_audit res://assets/models/props/charred_wood_pile.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/charred_wood_pile	1552	512	0.242	0.142	0.132	270	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.242 sat=0.142 contrast=0.132 texel=270 tex=512 family=prop
+=== assets/models/props/cheomju.glb
+== look_audit res://assets/models/props/cheomju.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cheomju	1180	256	0.188	0.193	0.058	135	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.188 sat=0.193 contrast=0.058 texel=135 tex=256 family=prop
+=== assets/models/props/chimney.glb
+== look_audit res://assets/models/props/chimney.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 20.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/chimney	4164	512	0.339	0.170	0.139	26	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.339 sat=0.170 contrast=0.139 texel=26 tex=512 family=prop
+=== assets/models/props/cloth_sash.glb
+== look_audit res://assets/models/props/cloth_sash.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cloth_sash	953	256	0.666	0.151	0.018	135	X 밝기,납작,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,flat,density lum=0.666 sat=0.151 contrast=0.018 texel=135 tex=256 family=prop
+=== assets/models/props/cold_cup.glb
+== look_audit res://assets/models/props/cold_cup.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/cold_cup	1555	512	0.151	0.206	0.095	269	X 밝기,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,density lum=0.151 sat=0.206 contrast=0.095 texel=269 tex=512 family=prop
+=== assets/models/props/dangsan_zelkova.glb
+== look_audit res://assets/models/props/dangsan_zelkova.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.97 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dangsan_zelkova	4500	512	0.242	0.253	0.059	528	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.242 sat=0.253 contrast=0.059 texel=528 tex=512 family=prop
+=== assets/models/props/dead_tree.glb
+== look_audit res://assets/models/props/dead_tree.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dead_tree	3000	512	0.274	0.055	0.071	511	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.274 sat=0.055 contrast=0.071 texel=511 tex=512 family=prop
+=== assets/models/props/doho_sword.glb
+== look_audit res://assets/models/props/doho_sword.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.94 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/doho_sword	250	256+단색	0.377	0.251	0.245	274	X 빛 구움,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=baked,density lum=0.377 sat=0.251 contrast=0.245 texel=274 tex=256+solid family=prop
+=== assets/models/props/drying_line.glb
+== look_audit res://assets/models/props/drying_line.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 3.25 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/drying_line	5114	512	0.334	0.155	0.104	157	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.334 sat=0.155 contrast=0.104 texel=157 tex=512 family=prop
+=== assets/models/props/dungeon_132/bone_heap.glb
+== look_audit res://assets/models/props/dungeon_132/bone_heap.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.28 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dungeon_132/bone_heap	7755	512	0.282	0.355	0.142	401	X 채도,대비
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast lum=0.282 sat=0.355 contrast=0.142 texel=401 tex=512 family=prop
+=== assets/models/props/dungeon_132/broken_statue.glb
+== look_audit res://assets/models/props/dungeon_132/broken_statue.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.30 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dungeon_132/broken_statue	7858	512	0.305	0.197	0.110	394	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.305 sat=0.197 contrast=0.110 texel=394 tex=512 family=prop
+=== assets/models/props/dungeon_132/nest.glb
+== look_audit res://assets/models/props/dungeon_132/nest.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.21 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dungeon_132/nest	5874	512	0.234	0.320	0.075	425	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.234 sat=0.320 contrast=0.075 texel=425 tex=512 family=prop
+=== assets/models/props/dungeon_132/palisade.glb
+== look_audit res://assets/models/props/dungeon_132/palisade.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.80 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dungeon_132/palisade	5652	512	0.222	0.425	0.116	284	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.222 sat=0.425 contrast=0.116 texel=284 tex=512 family=prop
+=== assets/models/props/dungeon_132/pillar.glb
+== look_audit res://assets/models/props/dungeon_132/pillar.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dungeon_132/pillar	5799	512	0.297	0.182	0.114	256	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.297 sat=0.182 contrast=0.114 texel=256 tex=512 family=prop
+=== assets/models/props/dungeon_132/roots.glb
+== look_audit res://assets/models/props/dungeon_132/roots.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.60 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dungeon_132/roots	7534	512	0.146	0.602	0.087	320	X 밝기,채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat,density lum=0.146 sat=0.602 contrast=0.087 texel=320 tex=512 family=prop
+=== assets/models/props/dungeon_132/seal_stone.glb
+== look_audit res://assets/models/props/dungeon_132/seal_stone.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.28 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/dungeon_132/seal_stone	5840	512	0.294	0.118	0.084	400	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.294 sat=0.118 contrast=0.084 texel=400 tex=512 family=prop
+=== assets/models/props/fallen_pine.glb
+== look_audit res://assets/models/props/fallen_pine.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fallen_pine	2972	512	0.307	0.333	0.093	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.307 sat=0.333 contrast=0.093 texel=269 tex=512 family=prop
+=== assets/models/props/fallen_rock_a.glb
+== look_audit res://assets/models/props/fallen_rock_a.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.82 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fallen_rock_a	1519	512	0.337	0.252	0.076	282	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.337 sat=0.252 contrast=0.076 texel=282 tex=512 family=prop
+=== assets/models/props/fallen_rock_b.glb
+== look_audit res://assets/models/props/fallen_rock_b.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.81 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fallen_rock_b	1555	512	0.346	0.312	0.051	284	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.346 sat=0.312 contrast=0.051 texel=284 tex=512 family=prop
+=== assets/models/props/fallen_rock_c.glb
+== look_audit res://assets/models/props/fallen_rock_c.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.84 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fallen_rock_c	1449	512	0.402	0.259	0.089	278	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.402 sat=0.259 contrast=0.089 texel=278 tex=512 family=prop
+=== assets/models/props/fire_pit.glb
+== look_audit res://assets/models/props/fire_pit.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.02 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fire_pit	5898	512	0.345	0.090	0.154	254	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.345 sat=0.090 contrast=0.154 texel=254 tex=512 family=prop
+=== assets/models/props/flag_pillar.glb
+== look_audit res://assets/models/props/flag_pillar.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/flag_pillar	5000	512	0.338	0.188	0.075	523	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.338 sat=0.188 contrast=0.075 texel=523 tex=512 family=prop
+=== assets/models/props/folded_robe.glb
+== look_audit res://assets/models/props/folded_robe.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.88 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/folded_robe	1200	256	0.324	0.074	0.116	136	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.324 sat=0.074 contrast=0.116 texel=136 tex=256 family=prop
+=== assets/models/props/fort_gate.glb
+== look_audit res://assets/models/props/fort_gate.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fort_gate	5000	512	0.344	0.140	0.075	522	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.344 sat=0.140 contrast=0.075 texel=522 tex=512 family=prop
+=== assets/models/props/fort_wall_ruin.glb
+== look_audit res://assets/models/props/fort_wall_ruin.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.97 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fort_wall_ruin	4500	512	0.350	0.208	0.072	526	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.350 sat=0.208 contrast=0.072 texel=526 tex=512 family=prop
+=== assets/models/props/fur.glb
+== look_audit res://assets/models/props/fur.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/fur	1476	512	0.622	0.132	0.084	270	X 밝기,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,density lum=0.622 sat=0.132 contrast=0.084 texel=270 tex=512 family=prop
+=== assets/models/props/furnace.glb
+== look_audit res://assets/models/props/furnace.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/furnace	4220	512	0.259	0.178	0.056	512	OK
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.259 sat=0.178 contrast=0.056 texel=512 tex=512 family=prop
+=== assets/models/props/gate_posts.glb
+== look_audit res://assets/models/props/gate_posts.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 3.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/gate_posts	4899	512	0.343	0.171	0.193	171	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.343 sat=0.171 contrast=0.193 texel=171 tex=512 family=prop
+=== assets/models/props/grain_sack.glb
+== look_audit res://assets/models/props/grain_sack.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.80 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/grain_sack	1566	512	0.337	0.184	0.027	640	X 납작
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=flat lum=0.337 sat=0.184 contrast=0.027 texel=640 tex=512 family=prop
+=== assets/models/props/hand_cart.glb
+== look_audit res://assets/models/props/hand_cart.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.54 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/hand_cart	5999	512	0.335	0.189	0.082	202	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.335 sat=0.189 contrast=0.082 texel=202 tex=512 family=prop
+=== assets/models/props/honrye_binyeo.glb
+== look_audit res://assets/models/props/honrye_binyeo.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/honrye_binyeo	1217	256	0.364	0.147	0.110	135	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.364 sat=0.147 contrast=0.110 texel=135 tex=256 family=prop
+=== assets/models/props/iljumun.glb
+== look_audit res://assets/models/props/iljumun.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/iljumun	4500	512	0.278	0.256	0.053	522	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.278 sat=0.256 contrast=0.053 texel=522 tex=512 family=prop
+=== assets/models/props/injang.glb
+== look_audit res://assets/models/props/injang.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/injang	1218	256	0.174	0.558	0.092	135	X 밝기,채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat,density lum=0.174 sat=0.558 contrast=0.092 texel=135 tex=256 family=prop
+=== assets/models/props/iron_ingot_pile.glb
+== look_audit res://assets/models/props/iron_ingot_pile.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/iron_ingot_pile	1505	512	0.251	0.255	0.053	269	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.251 sat=0.255 contrast=0.053 texel=269 tex=512 family=prop
+=== assets/models/props/jade_ring.glb
+== look_audit res://assets/models/props/jade_ring.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/jade_ring	996	256	0.532	0.148	0.070	135	X 밝기,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,density lum=0.532 sat=0.148 contrast=0.070 texel=135 tex=256 family=prop
+=== assets/models/props/jangdokdae.glb
+== look_audit res://assets/models/props/jangdokdae.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.77 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/jangdokdae	10374	512	0.341	0.191	0.149	668	X 대비
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast lum=0.341 sat=0.191 contrast=0.149 texel=668 tex=512 family=prop
+=== assets/models/props/jangseung.glb
+== look_audit res://assets/models/props/jangseung.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/jangseung	5978	512	0.340	0.182	0.132	256	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.340 sat=0.182 contrast=0.132 texel=256 tex=512 family=prop
+=== assets/models/props/jeongjagwan.glb
+== look_audit res://assets/models/props/jeongjagwan.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/jeongjagwan	1413	256	0.187	0.131	0.048	135	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.187 sat=0.131 contrast=0.048 texel=135 tex=256 family=prop
+=== assets/models/props/jige.glb
+== look_audit res://assets/models/props/jige.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/jige	10137	512	0.339	0.187	0.099	256	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.339 sat=0.187 contrast=0.099 texel=256 tex=512 family=prop
+=== assets/models/props/jumak_lantern.glb
+== look_audit res://assets/models/props/jumak_lantern.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/jumak_lantern	1505	512	0.333	0.343	0.237	269	X 채도,빛 구움,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,baked,density lum=0.333 sat=0.343 contrast=0.237 texel=269 tex=512 family=prop
+=== assets/models/props/lantern_post.glb
+== look_audit res://assets/models/props/lantern_post.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/lantern_post	3074	512	0.272	0.268	0.109	269	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.272 sat=0.268 contrast=0.109 texel=269 tex=512 family=prop
+=== assets/models/props/lumber_stack.glb
+== look_audit res://assets/models/props/lumber_stack.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/lumber_stack	1482	512	0.253	0.346	0.043	269	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.253 sat=0.346 contrast=0.043 texel=269 tex=512 family=prop
+=== assets/models/props/maaebul.glb
+== look_audit res://assets/models/props/maaebul.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/maaebul	12060	512	0.511	0.067	0.143	269	X 밝기,채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat,contrast,density lum=0.511 sat=0.067 contrast=0.143 texel=269 tex=512 family=prop
+=== assets/models/props/market_stall.glb
+== look_audit res://assets/models/props/market_stall.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.87 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/market_stall	2681	512	0.356	0.421	0.076	273	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.356 sat=0.421 contrast=0.076 texel=273 tex=512 family=prop
+=== assets/models/props/medicine_flask.glb
+== look_audit res://assets/models/props/medicine_flask.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/medicine_flask	1200	256	0.230	0.378	0.068	135	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.230 sat=0.378 contrast=0.068 texel=135 tex=256 family=prop
+=== assets/models/props/mining_tools.glb
+== look_audit res://assets/models/props/mining_tools.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.88 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/mining_tools	2779	512	0.312	0.341	0.082	272	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.312 sat=0.341 contrast=0.082 texel=272 tex=512 family=prop
+=== assets/models/props/mortar.glb
+== look_audit res://assets/models/props/mortar.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.25 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/mortar	2999	512	0.335	0.206	0.114	2029	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.335 sat=0.206 contrast=0.114 texel=2029 tex=512 family=prop
+=== assets/models/props/mossy_boulder.glb
+== look_audit res://assets/models/props/mossy_boulder.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.23 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/mossy_boulder	2500	512	0.337	0.159	0.118	2224	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.337 sat=0.159 contrast=0.118 texel=2224 tex=512 family=prop
+=== assets/models/props/mound.glb
+== look_audit res://assets/models/props/mound.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.87 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/mound	1436	512	0.337	0.316	0.045	273	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.337 sat=0.316 contrast=0.045 texel=273 tex=512 family=prop
+=== assets/models/props/mukham.glb
+== look_audit res://assets/models/props/mukham.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/mukham	1004	256	0.218	0.305	0.133	135	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.218 sat=0.305 contrast=0.133 texel=135 tex=256 family=prop
+=== assets/models/props/munru.glb
+== look_audit res://assets/models/props/munru.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/munru	18807	512	0.305	0.254	0.133	269	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.305 sat=0.254 contrast=0.133 texel=269 tex=512 family=prop
+=== assets/models/props/namu_sae.glb
+== look_audit res://assets/models/props/namu_sae.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/namu_sae	1252	256	0.575	0.448	0.106	135	X 밝기,채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat,density lum=0.575 sat=0.448 contrast=0.106 texel=135 tex=256 family=prop
+=== assets/models/props/offering_bowls.glb
+== look_audit res://assets/models/props/offering_bowls.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/offering_bowls	3023	512	0.299	0.246	0.051	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.299 sat=0.246 contrast=0.051 texel=270 tex=512 family=prop
+=== assets/models/props/oil_lamp_stand.glb
+== look_audit res://assets/models/props/oil_lamp_stand.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/oil_lamp_stand	3098	512	0.301	0.329	0.080	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.301 sat=0.329 contrast=0.080 texel=269 tex=512 family=prop
+=== assets/models/props/onggi_big.glb
+== look_audit res://assets/models/props/onggi_big.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/onggi_big	1569	512	0.248	0.405	0.091	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.248 sat=0.405 contrast=0.091 texel=269 tex=512 family=prop
+=== assets/models/props/onggi_jar.glb
+== look_audit res://assets/models/props/onggi_jar.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.72 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/onggi_jar	1566	512	0.222	0.273	0.058	711	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.222 sat=0.273 contrast=0.058 texel=711 tex=512 family=prop
+=== assets/models/props/onggi_lidded.glb
+== look_audit res://assets/models/props/onggi_lidded.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/onggi_lidded	1540	512	0.280	0.585	0.161	269	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.280 sat=0.585 contrast=0.161 texel=269 tex=512 family=prop
+=== assets/models/props/onggi_small.glb
+== look_audit res://assets/models/props/onggi_small.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/onggi_small	1573	512	0.224	0.491	0.087	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.224 sat=0.491 contrast=0.087 texel=269 tex=512 family=prop
+=== assets/models/props/ore_barrow.glb
+== look_audit res://assets/models/props/ore_barrow.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/ore_barrow	3860	512	0.134	0.175	0.090	512	X 밝기
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum lum=0.134 sat=0.175 contrast=0.090 texel=512 tex=512 family=prop
+=== assets/models/props/paddy_dike.glb
+== look_audit res://assets/models/props/paddy_dike.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/paddy_dike	1333	512	0.343	0.309	0.049	269	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.343 sat=0.309 contrast=0.049 texel=269 tex=512 family=prop
+=== assets/models/props/paeraengi.glb
+== look_audit res://assets/models/props/paeraengi.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.86 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/paeraengi	1229	256	0.249	0.452	0.074	138	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.249 sat=0.452 contrast=0.074 texel=138 tex=256 family=prop
+=== assets/models/props/paper_talisman.glb
+== look_audit res://assets/models/props/paper_talisman.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.32 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/paper_talisman	240	단색	0.383	0.355	0.182	-	X 채도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.383 sat=0.355 contrast=0.182 texel=- tex=solid family=prop
+=== assets/models/props/pass_barrier.glb
+== look_audit res://assets/models/props/pass_barrier.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.94 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/pass_barrier	8153	512	0.272	0.168	0.127	174	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.272 sat=0.168 contrast=0.127 texel=174 tex=512 family=prop
+=== assets/models/props/piju.glb
+== look_audit res://assets/models/props/piju.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/piju	1234	256	0.161	0.421	0.054	135	X 밝기,채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat,density lum=0.161 sat=0.421 contrast=0.054 texel=135 tex=256 family=prop
+=== assets/models/props/pillar.glb
+== look_audit res://assets/models/props/pillar.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/pillar	4080	512	0.287	0.014	0.119	512	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.287 sat=0.014 contrast=0.119 texel=512 tex=512 family=prop
+=== assets/models/props/pine_dead.glb
+== look_audit res://assets/models/props/pine_dead.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/pine_dead	2910	512	0.369	0.237	0.101	269	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.369 sat=0.237 contrast=0.101 texel=269 tex=512 family=prop
+=== assets/models/props/pine_straight.glb
+== look_audit res://assets/models/props/pine_straight.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/pine_straight	2922	512	0.283	0.403	0.056	272	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.283 sat=0.403 contrast=0.056 texel=272 tex=512 family=prop
+=== assets/models/props/plank_bridge.glb
+== look_audit res://assets/models/props/plank_bridge.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.70 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/plank_bridge	5502	512	0.338	0.180	0.078	189	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.338 sat=0.180 contrast=0.078 texel=189 tex=512 family=prop
+=== assets/models/props/plank_walk.glb
+== look_audit res://assets/models/props/plank_walk.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/plank_walk	1471	512	0.354	0.300	0.079	270	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.354 sat=0.300 contrast=0.079 texel=270 tex=512 family=prop
+=== assets/models/props/ppalgan_daenggi.glb
+== look_audit res://assets/models/props/ppalgan_daenggi.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/ppalgan_daenggi	1235	256	0.181	0.775	0.067	136	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.181 sat=0.775 contrast=0.067 texel=136 tex=256 family=prop
+=== assets/models/props/red_silk.glb
+== look_audit res://assets/models/props/red_silk.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.85 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/red_silk	2869	512	0.283	0.534	0.045	276	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.283 sat=0.534 contrast=0.045 texel=276 tex=512 family=prop
+=== assets/models/props/river_stones.glb
+== look_audit res://assets/models/props/river_stones.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.34 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/river_stones	2041	512	0.339	0.193	0.080	1502	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.339 sat=0.193 contrast=0.080 texel=1502 tex=512 family=prop
+=== assets/models/props/rock_outcrop.glb
+== look_audit res://assets/models/props/rock_outcrop.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.05 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/rock_outcrop	8205	512	0.335	0.170	0.137	488	X 대비
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast lum=0.335 sat=0.170 contrast=0.137 texel=488 tex=512 family=prop
+=== assets/models/props/rock_outcrop_far.glb
+== look_audit res://assets/models/props/rock_outcrop_far.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.04 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/rock_outcrop_far	1564	512	0.337	0.119	0.125	494	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.337 sat=0.119 contrast=0.125 texel=494 tex=512 family=prop
+=== assets/models/props/roof_pile.glb
+== look_audit res://assets/models/props/roof_pile.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.05 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/roof_pile	2644	512	0.338	0.162	0.046	10106	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.338 sat=0.162 contrast=0.046 texel=10106 tex=512 family=prop
+=== assets/models/props/roof_tile_bundle.glb
+== look_audit res://assets/models/props/roof_tile_bundle.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/roof_tile_bundle	1509	512	0.314	0.237	0.098	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.314 sat=0.237 contrast=0.098 texel=270 tex=512 family=prop
+=== assets/models/props/rotten_log.glb
+== look_audit res://assets/models/props/rotten_log.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.86 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/rotten_log	1547	512	0.339	0.426	0.084	275	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.339 sat=0.426 contrast=0.084 texel=275 tex=512 family=prop
+=== assets/models/props/ruin_wall.glb
+== look_audit res://assets/models/props/ruin_wall.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 3.42 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/ruin_wall	3040	512	0.341	0.176	0.147	150	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.341 sat=0.176 contrast=0.147 texel=150 tex=512 family=prop
+=== assets/models/props/ruined_hut.glb
+== look_audit res://assets/models/props/ruined_hut.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.97 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/ruined_hut	4500	512	0.303	0.298	0.051	530	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.303 sat=0.298 contrast=0.051 texel=530 tex=512 family=prop
+=== assets/models/props/sanddalgi.glb
+== look_audit res://assets/models/props/sanddalgi.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/sanddalgi	1013	256	0.222	0.621	0.036	135	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.222 sat=0.621 contrast=0.036 texel=135 tex=256 family=prop
+=== assets/models/props/sansingak.glb
+== look_audit res://assets/models/props/sansingak.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.97 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/sansingak	4500	512	0.223	0.273	0.063	525	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.223 sat=0.273 contrast=0.063 texel=525 tex=512 family=prop
+=== assets/models/props/satgat.glb
+== look_audit res://assets/models/props/satgat.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/satgat	1195	256	0.311	0.415	0.058	135	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.311 sat=0.415 contrast=0.058 texel=135 tex=256 family=prop
+=== assets/models/props/scarecrow.glb
+== look_audit res://assets/models/props/scarecrow.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/scarecrow	2794	512	0.348	0.324	0.105	271	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.348 sat=0.324 contrast=0.105 texel=271 tex=512 family=prop
+=== assets/models/props/seal_door.glb
+== look_audit res://assets/models/props/seal_door.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.02 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/seal_door	268	512+단색	0.257	0.124	0.092	253	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.257 sat=0.124 contrast=0.092 texel=253 tex=512+solid family=prop
+=== assets/models/props/seal_heukrang.glb
+== look_audit res://assets/models/props/seal_heukrang.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/seal_heukrang	1184	256	0.201	0.670	0.111	135	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.201 sat=0.670 contrast=0.111 texel=135 tex=256 family=prop
+=== assets/models/props/seal_jangsanbeom.glb
+== look_audit res://assets/models/props/seal_jangsanbeom.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/seal_jangsanbeom	1237	256	0.224	0.480	0.073	135	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.224 sat=0.480 contrast=0.073 texel=135 tex=256 family=prop
+=== assets/models/props/seal_plate.glb
+== look_audit res://assets/models/props/seal_plate.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/seal_plate	4364	512	0.289	0.095	0.093	512	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.289 sat=0.095 contrast=0.093 texel=512 tex=512 family=prop
+=== assets/models/props/seal_post.glb
+== look_audit res://assets/models/props/seal_post.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.30 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/seal_post	5047	512	0.340	0.187	0.119	222	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.340 sat=0.187 contrast=0.119 texel=222 tex=512 family=prop
+=== assets/models/props/seal_shards.glb
+== look_audit res://assets/models/props/seal_shards.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/seal_shards	1490	512	0.395	0.232	0.103	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.395 sat=0.232 contrast=0.103 texel=270 tex=512 family=prop
+=== assets/models/props/shrine_tree.glb
+== look_audit res://assets/models/props/shrine_tree.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 5.50 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/shrine_tree	15247	512	0.283	0.185	0.051	93	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.283 sat=0.185 contrast=0.051 texel=93 tex=512 family=prop
+=== assets/models/props/signpost.glb
+== look_audit res://assets/models/props/signpost.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.80 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/signpost	1962	512	0.333	0.185	0.132	284	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.333 sat=0.185 contrast=0.132 texel=284 tex=512 family=prop
+=== assets/models/props/skull_pile.glb
+== look_audit res://assets/models/props/skull_pile.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/skull_pile	1518	512	0.382	0.239	0.145	270	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.382 sat=0.239 contrast=0.145 texel=270 tex=512 family=prop
+=== assets/models/props/slag_heap.glb
+== look_audit res://assets/models/props/slag_heap.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/slag_heap	1548	512	0.214	0.260	0.080	271	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.214 sat=0.260 contrast=0.080 texel=271 tex=512 family=prop
+=== assets/models/props/small_chest.glb
+== look_audit res://assets/models/props/small_chest.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/small_chest	1418	512	0.211	0.307	0.052	270	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.211 sat=0.307 contrast=0.052 texel=270 tex=512 family=prop
+=== assets/models/props/smithy_ruin.glb
+== look_audit res://assets/models/props/smithy_ruin.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/smithy_ruin	4278	512	0.408	0.366	0.108	271	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.408 sat=0.366 contrast=0.108 texel=271 tex=512 family=prop
+=== assets/models/props/sotdae.glb
+== look_audit res://assets/models/props/sotdae.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.40 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/sotdae	8078	512	0.320	0.194	0.129	1280	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.320 sat=0.194 contrast=0.129 texel=1280 tex=512 family=prop
+=== assets/models/props/soup_cauldron.glb
+== look_audit res://assets/models/props/soup_cauldron.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.88 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/soup_cauldron	1538	512	0.277	0.318	0.096	273	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.277 sat=0.318 contrast=0.096 texel=273 tex=512 family=prop
+=== assets/models/props/stalagmite.glb
+== look_audit res://assets/models/props/stalagmite.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stalagmite	3128	512	0.480	0.242	0.093	269	X 밝기,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,density lum=0.480 sat=0.242 contrast=0.093 texel=269 tex=512 family=prop
+=== assets/models/props/stone_guardian.glb
+== look_audit res://assets/models/props/stone_guardian.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stone_guardian	3130	512	0.467	0.230	0.085	269	X 밝기,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,density lum=0.467 sat=0.230 contrast=0.085 texel=269 tex=512 family=prop
+=== assets/models/props/stone_lantern.glb
+== look_audit res://assets/models/props/stone_lantern.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stone_lantern	4264	512	0.292	0.071	0.092	512	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.292 sat=0.071 contrast=0.092 texel=512 tex=512 family=prop
+=== assets/models/props/stone_offering_table.glb
+== look_audit res://assets/models/props/stone_offering_table.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stone_offering_table	1534	512	0.439	0.151	0.058	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.439 sat=0.151 contrast=0.058 texel=270 tex=512 family=prop
+=== assets/models/props/stone_pagoda.glb
+== look_audit res://assets/models/props/stone_pagoda.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stone_pagoda	4999	512	0.323	0.118	0.088	523	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.323 sat=0.118 contrast=0.088 texel=523 tex=512 family=prop
+=== assets/models/props/stone_stair_piece.glb
+== look_audit res://assets/models/props/stone_stair_piece.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stone_stair_piece	1545	512	0.373	0.204	0.029	270	X 납작,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=flat,density lum=0.373 sat=0.204 contrast=0.029 texel=270 tex=512 family=prop
+=== assets/models/props/stone_wall.glb
+== look_audit res://assets/models/props/stone_wall.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 3.11 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stone_wall	4174	512	0.338	0.040	0.076	165	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.338 sat=0.040 contrast=0.076 texel=165 tex=512 family=prop
+=== assets/models/props/straw_mat.glb
+== look_audit res://assets/models/props/straw_mat.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/straw_mat	3003	512	0.384	0.553	0.069	269	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.384 sat=0.553 contrast=0.069 texel=269 tex=512 family=prop
+=== assets/models/props/straw_mat_pile.glb
+== look_audit res://assets/models/props/straw_mat_pile.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.88 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/straw_mat_pile	1513	512	0.399	0.406	0.056	272	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.399 sat=0.406 contrast=0.056 texel=272 tex=512 family=prop
+=== assets/models/props/straw_sandals.glb
+== look_audit res://assets/models/props/straw_sandals.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/straw_sandals	1200	256	0.423	0.298	0.036	135	X 대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=contrast,density lum=0.423 sat=0.298 contrast=0.036 texel=135 tex=256 family=prop
+=== assets/models/props/straw_stack.glb
+== look_audit res://assets/models/props/straw_stack.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 3.66 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/straw_stack	5612	512	0.342	0.183	0.027	140	X 납작,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=flat,density lum=0.342 sat=0.183 contrast=0.027 texel=140 tex=512 family=prop
+=== assets/models/props/stump.glb
+== look_audit res://assets/models/props/stump.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/stump	1564	512	0.196	0.325	0.144	269	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.196 sat=0.325 contrast=0.144 texel=269 tex=512 family=prop
+=== assets/models/props/temple_lantern.glb
+== look_audit res://assets/models/props/temple_lantern.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/temple_lantern	4500	512	0.377	0.115	0.065	520	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.377 sat=0.115 contrast=0.065 texel=520 tex=512 family=prop
+=== assets/models/props/temple_ruin.glb
+== look_audit res://assets/models/props/temple_ruin.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.98 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/temple_ruin	4499	512	0.342	0.147	0.053	524	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.342 sat=0.147 contrast=0.053 texel=524 tex=512 family=prop
+=== assets/models/props/timber_prop.glb
+== look_audit res://assets/models/props/timber_prop.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/timber_prop	4203	512	0.246	0.175	0.092	512	OK
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.246 sat=0.175 contrast=0.092 texel=512 tex=512 family=prop
+=== assets/models/props/town_sealed_threshold.glb
+== look_audit res://assets/models/props/town_sealed_threshold.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 5.26 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/town_sealed_threshold	11471	1024+단색	0.214	0.189	0.119	195	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.214 sat=0.189 contrast=0.119 texel=195 tex=1024+solid family=prop
+=== assets/models/props/tripod_torch.glb
+== look_audit res://assets/models/props/tripod_torch.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.89 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/tripod_torch	1531	512	0.328	0.180	0.101	270	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.328 sat=0.180 contrast=0.101 texel=270 tex=512 family=prop
+=== assets/models/props/village_lantern.glb
+== look_audit res://assets/models/props/village_lantern.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/village_lantern	1379	512	0.310	0.517	0.196	270	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.310 sat=0.517 contrast=0.196 texel=270 tex=512 family=prop
+=== assets/models/props/wall_torch.glb
+== look_audit res://assets/models/props/wall_torch.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.08 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/wall_torch	2027	512	0.230	0.189	0.065	6400	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.230 sat=0.189 contrast=0.065 texel=6400 tex=512 family=prop
+=== assets/models/props/water_trough.glb
+== look_audit res://assets/models/props/water_trough.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/water_trough	1487	512	0.266	0.372	0.085	270	X 채도,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,density lum=0.266 sat=0.372 contrast=0.085 texel=270 tex=512 family=prop
+=== assets/models/props/wood_crate.glb
+== look_audit res://assets/models/props/wood_crate.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/wood_crate	2927	512	0.192	0.300	0.070	569	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.192 sat=0.300 contrast=0.070 texel=569 tex=512 family=prop
+=== assets/models/props/wooden_platform.glb
+== look_audit res://assets/models/props/wooden_platform.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.33 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/wooden_platform	5898	512	0.340	0.197	0.121	385	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.340 sat=0.197 contrast=0.121 texel=385 tex=512 family=prop
+=== assets/models/props/woodpile.glb
+== look_audit res://assets/models/props/woodpile.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.78 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/woodpile	11130	512	0.339	0.195	0.125	184	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.339 sat=0.195 contrast=0.125 texel=184 tex=512 family=prop
+=== assets/models/props/yundo.glb
+== look_audit res://assets/models/props/yundo.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.90 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+props/yundo	1207	256	0.198	0.585	0.138	135	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.198 sat=0.585 contrast=0.138 texel=135 tex=256 family=prop
+=== assets/models/shaman_v2/shaman_v2.glb
+== look_audit res://assets/models/shaman_v2/shaman_v2.glb · 인물(ModelDef data/models/shaman_v2.tres) · 화면 높이 1.50 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+shaman_v2	8094	1024	0.362	0.380	0.150	683	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.362 sat=0.380 contrast=0.150 texel=683 tex=1024 family=char
+=== assets/models/sobok_gwisin/sobok_gwisin.glb
+== look_audit res://assets/models/sobok_gwisin/sobok_gwisin.glb · 인물(ModelDef data/models/sobok_gwisin.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+sobok_gwisin	12254	1024	0.380	0.127	0.368	640	X 채도,빛 구움
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,baked lum=0.380 sat=0.127 contrast=0.368 texel=640 tex=1024 family=char
+=== assets/models/spider/spider.glb
+== look_audit res://assets/models/spider/spider.glb · 인물(ModelDef data/models/spider.tres) · 화면 높이 1.49 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+spider	11999	1024	0.250	0.364	0.138	687	OK
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.250 sat=0.364 contrast=0.138 texel=687 tex=1024 family=char
+=== assets/models/talisman_master_v2/talisman_master_v2.glb
+== look_audit res://assets/models/talisman_master_v2/talisman_master_v2.glb · 인물(ModelDef data/models/talisman_master_v2.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+talisman_master_v2	8096	1024	0.380	0.145	0.146	640	X 채도
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.380 sat=0.145 contrast=0.146 texel=640 tex=1024 family=char
+=== assets/models/tilekit_cave/floor.glb
+== look_audit res://assets/models/tilekit_cave/floor.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+tilekit_cave/floor	12	1024	0.283	0.226	0.028	1024	X 납작,밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=flat,density lum=0.283 sat=0.226 contrast=0.028 texel=1024 tex=1024 family=prop
+=== assets/models/tilekit_cave/wall.glb
+== look_audit res://assets/models/tilekit_cave/wall.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+tilekit_cave/wall	20	1024	0.269	0.245	0.062	512	OK
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.269 sat=0.245 contrast=0.062 texel=512 tex=1024 family=prop
+=== assets/models/tilekit_stone/floor.glb
+== look_audit res://assets/models/tilekit_stone/floor.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+tilekit_stone/floor	12	1024	0.320	0.190	0.090	1024	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.320 sat=0.190 contrast=0.090 texel=1024 tex=1024 family=prop
+=== assets/models/tilekit_stone/stairs_down.glb
+== look_audit res://assets/models/tilekit_stone/stairs_down.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+tilekit_stone/stairs_down	514	2048	0.333	0.185	0.073	2048	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.333 sat=0.185 contrast=0.073 texel=2048 tex=2048 family=prop
+=== assets/models/tilekit_stone/stairs_up.glb
+== look_audit res://assets/models/tilekit_stone/stairs_up.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+tilekit_stone/stairs_up	502	2048	0.316	0.190	0.073	2048	X 밀도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=density lum=0.316 sat=0.190 contrast=0.073 texel=2048 tex=2048 family=prop
+=== assets/models/tilekit_stone/wall.glb
+== look_audit res://assets/models/tilekit_stone/wall.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 2.00 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+tilekit_stone/wall	20	1024	0.320	0.192	0.090	512	OK
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.320 sat=0.192 contrast=0.090 texel=512 tex=1024 family=prop
+=== assets/models/uinyeogwi/uinyeogwi.glb
+== look_audit res://assets/models/uinyeogwi/uinyeogwi.glb · 인물(ModelDef data/models/uinyeogwi.tres) · 화면 높이 1.60 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+uinyeogwi	11827	1024	0.442	0.124	0.285	640	X 채도,빛 구움
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,baked lum=0.442 sat=0.124 contrast=0.285 texel=640 tex=1024 family=char
+=== assets/models/weapons/bandit_club.glb
+== look_audit res://assets/models/weapons/bandit_club.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.75 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/bandit_club	192	단색	0.218	0.470	0.054	-	X 채도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.218 sat=0.470 contrast=0.054 texel=- tex=solid family=prop
+=== assets/models/weapons/bandit_dagger.glb
+== look_audit res://assets/models/weapons/bandit_dagger.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.44 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/bandit_dagger	116	단색	0.494	0.145	0.309	-	X 밝기
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum lum=0.494 sat=0.145 contrast=0.309 texel=- tex=solid family=prop
+=== assets/models/weapons/doho_cast_hand.glb
+== look_audit res://assets/models/weapons/doho_cast_hand.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.26 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/doho_cast_hand	156	단색	0.405	0.348	0.113	-	X 채도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.405 sat=0.348 contrast=0.113 texel=- tex=solid family=prop
+=== assets/models/weapons/doho_sheath.glb
+== look_audit res://assets/models/weapons/doho_sheath.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.86 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/doho_sheath	112	단색	0.110	0.308	0.138	-	X 밝기,채도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat lum=0.110 sat=0.308 contrast=0.138 texel=- tex=solid family=prop
+=== assets/models/weapons/doho_sword_held.glb
+== look_audit res://assets/models/weapons/doho_sword_held.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.03 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/doho_sword_held	116	단색	0.661	0.193	0.294	-	X 밝기
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum lum=0.661 sat=0.193 contrast=0.294 texel=- tex=solid family=prop
+=== assets/models/weapons/gwisae_dagger.glb
+== look_audit res://assets/models/weapons/gwisae_dagger.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.42 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/gwisae_dagger	3048	1024	0.263	0.566	0.131	2438	X 채도,대비,밀도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat,contrast,density lum=0.263 sat=0.566 contrast=0.131 texel=2438 tex=1024 family=prop
+=== assets/models/weapons/miner_pickaxe.glb
+== look_audit res://assets/models/weapons/miner_pickaxe.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.52 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/miner_pickaxe	312	단색	0.206	0.289	0.050	-	OK
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT PASS flags= lum=0.206 sat=0.289 contrast=0.050 texel=- tex=solid family=prop
+=== assets/models/weapons/talisman_sword.glb
+== look_audit res://assets/models/weapons/talisman_sword.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 0.86 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/talisman_sword	116	단색	0.594	0.315	0.246	-	X 밝기,채도
+밴드: 밝기 0.18~0.45 · 채도(작은 소품) 0.06~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum,sat lum=0.594 sat=0.315 contrast=0.246 texel=- tex=solid family=prop
+=== assets/models/weapons/yeogung_bow.glb
+== look_audit res://assets/models/weapons/yeogung_bow.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.21 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/yeogung_bow	312	단색	0.300	0.494	0.304	-	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.300 sat=0.494 contrast=0.304 texel=- tex=solid family=prop
+=== assets/models/weapons/yeogung_spear.glb
+== look_audit res://assets/models/weapons/yeogung_spear.glb · 배경(뼈대·ModelDef 없음) · 화면 높이 1.62 (AABB 가장 긴 변)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+weapons/yeogung_spear	180	단색	0.224	0.568	0.164	-	X 채도
+밴드: 밝기 0.18~0.45 · 채도(배경) 0.12~0.30 · 대비 0.05~0.13(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=sat lum=0.224 sat=0.568 contrast=0.164 texel=- tex=solid family=prop
+=== assets/models/yacha/yacha.glb
+== look_audit res://assets/models/yacha/yacha.glb · 인물(ModelDef data/models/yacha.tres) · 화면 높이 2.40 (ModelDef.target_height)
+가족	삼각형	텍스처	밝기	채도	대비	텍셀/유닛	판정
+yacha	10720	1024	0.143	0.388	0.112	427	X 밝기
+밴드: 밝기 0.18~0.45 · 채도(인물) 0.18~0.45 · 대비 0.05~0.18(0.20 넘음 빛 구움 · 0.03 미만 납작, 텍스처 있을 때) · 텍셀 400~900/유닛 — design/asset_pipeline_consistency_2026-09-21.md §4
+LOOK_RESULT WARN flags=lum lum=0.143 sat=0.388 contrast=0.112 texel=427 tex=1024 family=char
+DONE
