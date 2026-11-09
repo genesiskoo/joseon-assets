@@ -40848,12 +40848,17 @@
         "height": 1536
       },
       "decision": {
-        "status": "unreviewed",
-        "scope": [],
+        "status": "approved",
+        "scope": [
+          "keyart",
+          "bca_portrait_source"
+        ],
         "date": "2026-11-10",
         "card": 1278,
-        "evidence": [],
-        "quote": null,
+        "evidence": [
+          "card:#1278 PD 2026-11-10 대화 판정"
+        ],
+        "quote": "도호 G를 키아트로 쓰면 될듯",
         "supersedes": []
       },
       "provenance": {
@@ -40897,7 +40902,8 @@
       },
       "notes": [
         "참조 순서 = ref_doho.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
-        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)",
+        "PD 11-10: 키아트 = 대화 초상(BCA) 원본 · 나머지 채택작 = 컨셉 아트"
       ]
     },
     {
@@ -41467,6 +41473,758 @@
           "path": "workbench/production/1278_tone_t1/r3/gwisae_G.prompt.txt",
           "sha256": "8f9837e81953f24e327c3a18cf013b7fec29cfe35eef41b0b02390d3bf271b2d",
           "bytes": 2821
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+            "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+            "bytes": 1517168,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_gwisae.png · ref_mask.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-doho-r4-h",
+      "character_id": "doho",
+      "form_id": "human",
+      "version_id": "card1278-doho-r4-h",
+      "display_name": "도호 H1 4판 전신 H — 어깨 너머 · 갓 챙 집기 (#1278)",
+      "role": "player",
+      "runtime_aliases": [
+        "doho"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/doho_H.png",
+        "sha256": "70743dfac59f78cf754266cdc64a91dd05021b78007009271be34722a39c48ea",
+        "bytes": 2276314,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/doho_H.prompt.txt",
+          "sha256": "5accbf1d2f639f29539435267728d42ecac6216007246811c5c8bba6c6611c13",
+          "bytes": 3247
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/doho/comfy__2026-09-17_doho_h1_gpt25_full.png",
+            "sha256": "ed130ead219eb068381d29fff1e214578e73f391a78c3d1a70bad5509a1d38fa",
+            "bytes": 4315749,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_doho.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-doho-r4-i",
+      "character_id": "doho",
+      "form_id": "human",
+      "version_id": "card1278-doho-r4-i",
+      "display_name": "도호 H1 4판 전신 I — 등 돌려 · 갓 챙 쥠 (#1278)",
+      "role": "player",
+      "runtime_aliases": [
+        "doho"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/doho_I.png",
+        "sha256": "b0ec18031509bc665fc0b341f35c9e7a91050aa026966280506b7a73c4397749",
+        "bytes": 2391760,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/doho_I.prompt.txt",
+          "sha256": "259458d4b75f6469f2d42caae78d9c9c3d3b3afe506c681643aa469c4ca831df",
+          "bytes": 3109
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/doho/comfy__2026-09-17_doho_h1_gpt25_full.png",
+            "sha256": "ed130ead219eb068381d29fff1e214578e73f391a78c3d1a70bad5509a1d38fa",
+            "bytes": 4315749,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_doho.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-cheongyeon-r4-h",
+      "character_id": "cheongyeon",
+      "form_id": "human",
+      "version_id": "card1278-cheongyeon-r4-h",
+      "display_name": "청연 C01 4판 전신 H — 기도 ¾ (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "cheongyeon"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/cheongyeon_H.png",
+        "sha256": "1a60b8e03df52ece233b276ea4d2dee64e845249b352bede0bfad28e2b9752c1",
+        "bytes": 2639841,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/cheongyeon_H.prompt.txt",
+          "sha256": "caa10faa6f40b0272961cfae6269a8f41f05ea946059f536320fc3f8d1657250",
+          "bytes": 3232
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/cheongyeon/comfy__2026-09-17_cheongyeon_c01_gpt25_full.png",
+            "sha256": "767f296d3f3f7695e89d6fdb4c4205ccb0caa7bf665e9ba5c08252ace34b6a92",
+            "bytes": 4431435,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_cheongyeon.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-cheongyeon-r4-i",
+      "character_id": "cheongyeon",
+      "form_id": "human",
+      "version_id": "card1278-cheongyeon-r4-i",
+      "display_name": "청연 C01 4판 전신 I — 기도 정면 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "cheongyeon"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/cheongyeon_I.png",
+        "sha256": "ef65df0d4c07dee489f49279cb93a2313737af7bdb9ea8094142ef7c069a5aa2",
+        "bytes": 2511740,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/cheongyeon_I.prompt.txt",
+          "sha256": "758f7a9a0ff95ea3b53d327328b439d36258c03cb4a306319c8d1bb53d7d8b67",
+          "bytes": 3186
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/cheongyeon/comfy__2026-09-17_cheongyeon_c01_gpt25_full.png",
+            "sha256": "767f296d3f3f7695e89d6fdb4c4205ccb0caa7bf665e9ba5c08252ace34b6a92",
+            "bytes": 4431435,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_cheongyeon.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-cheongyeon-r4-j",
+      "character_id": "cheongyeon",
+      "form_id": "human",
+      "version_id": "card1278-cheongyeon-r4-j",
+      "display_name": "청연 C01 4판 전신 J — 방울 듣기 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "cheongyeon"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/cheongyeon_J.png",
+        "sha256": "8721134bae2b696a6f9e2d5b446b663d90420699498e1556e8b355007935b46f",
+        "bytes": 2679863,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/cheongyeon_J.prompt.txt",
+          "sha256": "85b8f20cddc2ae65b043e4278eb3415cb6807bf9be93727aceddef19c1fbfa8f",
+          "bytes": 3182
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/cheongyeon/comfy__2026-09-17_cheongyeon_c01_gpt25_full.png",
+            "sha256": "767f296d3f3f7695e89d6fdb4c4205ccb0caa7bf665e9ba5c08252ace34b6a92",
+            "bytes": 4431435,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_cheongyeon.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-cheongyeon-r4-k",
+      "character_id": "cheongyeon",
+      "form_id": "human",
+      "version_id": "card1278-cheongyeon-r4-k",
+      "display_name": "청연 C01 4판 전신 K — 방울 올려봄 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "cheongyeon"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/cheongyeon_K.png",
+        "sha256": "45f5a471984105dfb482af5a6f799f809798c008a59dcf9db1f2aff4a9f95938",
+        "bytes": 2566478,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/cheongyeon_K.prompt.txt",
+          "sha256": "61d54b43d963d0182d50ac92ca1c424304cdbdc6b400fff4cb00ec1727407538",
+          "bytes": 3197
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/cheongyeon/comfy__2026-09-17_cheongyeon_c01_gpt25_full.png",
+            "sha256": "767f296d3f3f7695e89d6fdb4c4205ccb0caa7bf665e9ba5c08252ace34b6a92",
+            "bytes": 4431435,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_cheongyeon.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-gwisae-r4-h",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1278-gwisae-r4-h",
+      "display_name": "귀새 탈 4판 전신 H — 키아트 후보 · 갸웃 역수 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/gwisae_H.png",
+        "sha256": "680aad79e6187dc7f6fefd06a8acb7466605173c7f252b96e9f811c15549a8c3",
+        "bytes": 2265815,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/gwisae_H.prompt.txt",
+          "sha256": "2281ac3fc41fc093d20afb2997e415291d2f2db7b7dba4f7b4af248df34001d6",
+          "bytes": 3461
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+            "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+            "bytes": 1517168,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_gwisae.png · ref_mask.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-gwisae-r4-i",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1278-gwisae-r4-i",
+      "display_name": "귀새 탈 4판 전신 I — 키아트 후보 · 탈춤 손짓 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/gwisae_I.png",
+        "sha256": "328c3eebfc2c44c45f4be8f576d27d7f74bcebde2bbce02a7f455c1e5eaf78b7",
+        "bytes": 2272286,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/gwisae_I.prompt.txt",
+          "sha256": "bf467939bed66b6df66b542a994bd98f83dba9c36ea28b2e9163d6e6449eba73",
+          "bytes": 3425
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+            "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+            "bytes": 1517168,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_gwisae.png · ref_mask.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-gwisae-r4-j",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1278-gwisae-r4-j",
+      "display_name": "귀새 탈 4판 전신 J — 키아트 후보 · 옆모습 돌아봄 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/gwisae_J.png",
+        "sha256": "cb41f0d0e7d3edc3ab73f929c30a3b19861824b8d23f7f3ed097974ed434f266",
+        "bytes": 2288568,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/gwisae_J.prompt.txt",
+          "sha256": "62a0da618e539eea61f33d7739f71c020153ac52e845bebaf0da9980b945b834",
+          "bytes": 3419
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+            "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+            "bytes": 1517168,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_gwisae.png · ref_mask.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "2판 프롬프트 = 연출표 §2.1 + 렌더링 꼬리말(톤 = 그림 처리만)"
+      ]
+    },
+    {
+      "asset_id": "card1278-gwisae-r4-k",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1278-gwisae-r4-k",
+      "display_name": "귀새 탈 4판 전신 K — 키아트 후보 · 고요히 숙임 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/r4/gwisae_K.png",
+        "sha256": "e5ba166771b0af89177ac270747c4cb8e8927e88a9191dc8f0902dc2bfaea9f9",
+        "bytes": 2293686,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-10",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 4판 전신 (PD 11-10 「모든 원화는 전신 기준」) — 톤은 하나, 구도·자세·얼굴은 인물 연출표(§2.1, PD 11-10) (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/r4/gwisae_K.prompt.txt",
+          "sha256": "63f8eb003e1284e1f4e8dd07993f9e4845ff01166a59b3f545d115508a80a50a",
+          "bytes": 3450
         },
         "references": [
           {
