@@ -39267,6 +39267,678 @@
         "참조 순서 = G02 열 잘라낸 것 · G02 탈 확대 · H1 시트 왼쪽(화풍만)",
         "modeling_bible §4.3 입력 · Tripo 생성 전 · 탈 눈 = 감은 초승달(guisae_prep §3 #4)"
       ]
+    },
+    {
+      "asset_id": "card1278-doho-tone-a",
+      "character_id": "doho",
+      "form_id": "human",
+      "version_id": "card1278-doho-tone-a",
+      "display_name": "도호 H1 톤 시범 a — 톤 기준 그대로 (#1278)",
+      "role": "player",
+      "runtime_aliases": [
+        "doho"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/doho_a.png",
+        "sha256": "d6d56404bfc35a4a07eb17348f5023c839b2ec95cc5e18795febd5a89dee8617",
+        "bytes": 2448509,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/doho_a.prompt.txt",
+          "sha256": "366e237ed815fe8cf66f63810ae5b9b3dab3140d42fe5e9ebb2fd422ef6b23df",
+          "bytes": 2533
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/doho/comfy__2026-09-17_doho_h1_gpt25_full.png",
+            "sha256": "ed130ead219eb068381d29fff1e214578e73f391a78c3d1a70bad5509a1d38fa",
+            "bytes": 4315749,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_doho.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-doho-tone-b",
+      "character_id": "doho",
+      "form_id": "human",
+      "version_id": "card1278-doho-tone-b",
+      "display_name": "도호 H1 톤 시범 b — 실사 쪽 반 걸음 (#1278)",
+      "role": "player",
+      "runtime_aliases": [
+        "doho"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/doho_b.png",
+        "sha256": "58bd4adaa20e044b0f1b1da703d9e499776aa2751878da48d8bd7e96cb36d849",
+        "bytes": 2601101,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/doho_b.prompt.txt",
+          "sha256": "0c9a20b23cd3818825331ebac5f7f0e8c186685640b541bb95a22f396651f149",
+          "bytes": 2685
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/doho/comfy__2026-09-17_doho_h1_gpt25_full.png",
+            "sha256": "ed130ead219eb068381d29fff1e214578e73f391a78c3d1a70bad5509a1d38fa",
+            "bytes": 4315749,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_doho.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-doho-tone-c",
+      "character_id": "doho",
+      "form_id": "human",
+      "version_id": "card1278-doho-tone-c",
+      "display_name": "도호 H1 톤 시범 c — 그래픽 쪽 반 걸음 (#1278)",
+      "role": "player",
+      "runtime_aliases": [
+        "doho"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/doho_c.png",
+        "sha256": "a24f327af239b6938c2069f18103664697449eed3585b5f97724e79b8e8abb12",
+        "bytes": 2544215,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/doho_c.prompt.txt",
+          "sha256": "068211eaa62d6da942a41133ee272015ad23541e0c180a2ef4a7419563c62868",
+          "bytes": 2683
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/doho/comfy__2026-09-17_doho_h1_gpt25_full.png",
+            "sha256": "ed130ead219eb068381d29fff1e214578e73f391a78c3d1a70bad5509a1d38fa",
+            "bytes": 4315749,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_doho.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-cheongyeon-tone-a",
+      "character_id": "cheongyeon",
+      "form_id": "human",
+      "version_id": "card1278-cheongyeon-tone-a",
+      "display_name": "청연 C01 톤 시범 a — 톤 기준 그대로 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "cheongyeon"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/cheongyeon_a.png",
+        "sha256": "00a64f9401eff8c40ca0f614780ff753a1ae7f4f3d221a28aff0a2a4983cd78f",
+        "bytes": 2826257,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/cheongyeon_a.prompt.txt",
+          "sha256": "aef2f8d59981d4b3defafc5ec5a496d2889a9502c00dda255ea101ab2e7a6225",
+          "bytes": 2503
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/cheongyeon/comfy__2026-09-17_cheongyeon_c01_gpt25_full.png",
+            "sha256": "767f296d3f3f7695e89d6fdb4c4205ccb0caa7bf665e9ba5c08252ace34b6a92",
+            "bytes": 4431435,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_cheongyeon.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-cheongyeon-tone-b",
+      "character_id": "cheongyeon",
+      "form_id": "human",
+      "version_id": "card1278-cheongyeon-tone-b",
+      "display_name": "청연 C01 톤 시범 b — 실사 쪽 반 걸음 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "cheongyeon"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/cheongyeon_b.png",
+        "sha256": "4c80260ec685168a6e20edec96c144eb35536e2828789bcea6a2898e4867ee43",
+        "bytes": 2808381,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/cheongyeon_b.prompt.txt",
+          "sha256": "c2152dfa197c217c14539fa649b9e5e50ee271105eb74fe0cbfa9b96ad166a03",
+          "bytes": 2655
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/cheongyeon/comfy__2026-09-17_cheongyeon_c01_gpt25_full.png",
+            "sha256": "767f296d3f3f7695e89d6fdb4c4205ccb0caa7bf665e9ba5c08252ace34b6a92",
+            "bytes": 4431435,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_cheongyeon.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-cheongyeon-tone-c",
+      "character_id": "cheongyeon",
+      "form_id": "human",
+      "version_id": "card1278-cheongyeon-tone-c",
+      "display_name": "청연 C01 톤 시범 c — 그래픽 쪽 반 걸음 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "cheongyeon"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/cheongyeon_c.png",
+        "sha256": "3423921ebc8901ec6af78279e2ba7d77b139aac2f8c56d1a8da4b9f5988c229b",
+        "bytes": 2744492,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/cheongyeon_c.prompt.txt",
+          "sha256": "3237dc5ee67e78346becbc38a1cfb989092930e042dbf6ee357ef40564d0e5f7",
+          "bytes": 2653
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/997_portraits/collected/cheongyeon/comfy__2026-09-17_cheongyeon_c01_gpt25_full.png",
+            "sha256": "767f296d3f3f7695e89d6fdb4c4205ccb0caa7bf665e9ba5c08252ace34b6a92",
+            "bytes": 4431435,
+            "width": 1520,
+            "height": 2688
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_cheongyeon.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-gwisae-tone-a",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1278-gwisae-tone-a",
+      "display_name": "귀새 탈 톤 시범 a — 톤 기준 그대로 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/gwisae_a.png",
+        "sha256": "0e965d058634775a0d6f27333b1913dc47df84ec4ad4bb3fafd891a4a3ba288c",
+        "bytes": 2392283,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/gwisae_a.prompt.txt",
+          "sha256": "763062ca7432799ad96e795e725700a52439b3b736cce167725ad5fa814cf5f1",
+          "bytes": 3009
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+            "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+            "bytes": 1517168,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_gwisae.png · ref_mask.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-gwisae-tone-b",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1278-gwisae-tone-b",
+      "display_name": "귀새 탈 톤 시범 b — 실사 쪽 반 걸음 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/gwisae_b.png",
+        "sha256": "66efd96a94f23e8c4ff6f8f5b226206dd16857baf632cc3cb90f1c2bac3eaced",
+        "bytes": 2479314,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/gwisae_b.prompt.txt",
+          "sha256": "c4b3a8cc00dc1d5c5f81f5ee78d77702f46b77f6634e8a7b0d8960645d3c361c",
+          "bytes": 3161
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+            "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+            "bytes": 1517168,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_gwisae.png · ref_mask.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
+    },
+    {
+      "asset_id": "card1278-gwisae-tone-c",
+      "character_id": "gwisae",
+      "form_id": "human",
+      "version_id": "card1278-gwisae-tone-c",
+      "display_name": "귀새 탈 톤 시범 c — 그래픽 쪽 반 걸음 (#1278)",
+      "role": "related_character",
+      "runtime_aliases": [
+        "gwisae"
+      ],
+      "media_type": "concept",
+      "file": {
+        "repository": "assets",
+        "path": "workbench/production/1278_tone_t1/gwisae_c.png",
+        "sha256": "9a2104459768b2caa3dbcc61b49d5466f14126e65574fe733e9ebe8ddb904f55",
+        "bytes": 2512884,
+        "width": 1024,
+        "height": 1536
+      },
+      "decision": {
+        "status": "unreviewed",
+        "scope": [],
+        "date": "2026-11-09",
+        "card": 1278,
+        "evidence": [],
+        "quote": null,
+        "supersedes": []
+      },
+      "provenance": {
+        "source_card": 1278,
+        "source_commit": null,
+        "inclusion_reason": "원화 톤 통일 T1 — 구미호 얼굴 정면 톤 기준 · 톤 시범 허리 위 초상 (art_tone_unify_2026-11-09)",
+        "tool": "Codex CLI 0.147 exec · gpt-5.6-sol · 내장 image_gen (참조 이미지 -i)",
+        "backend": "ChatGPT 계정",
+        "prompt": {
+          "repository": "assets",
+          "path": "workbench/production/1278_tone_t1/gwisae_c.prompt.txt",
+          "sha256": "043a6e127f7aa04e1f1e64566f3307d91591fe0de399f0876e2a38bbf68192a7",
+          "bytes": 3159
+        },
+        "references": [
+          {
+            "repository": "assets",
+            "path": "workbench/production/1221_gwisae/art/gwisae_apose_b.png",
+            "sha256": "fdaa6f3262a0c806fe1d2968166506ca10e58fd6c171e5df4c2a191487e8c71d",
+            "bytes": 1517168,
+            "width": 1024,
+            "height": 1536
+          },
+          {
+            "repository": "assets",
+            "path": "video/MV_작두신내림_2026-10-26/refs/gwisae_G02_mask.png",
+            "sha256": "53a980814e9266bb31523eb8ce172611fc153f33f1e276c1c28e9893b133d336",
+            "bytes": 459306,
+            "width": 600,
+            "height": 650
+          },
+          {
+            "repository": "assets",
+            "path": "catalog/characters/media/9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6/01_face_front_v1.png",
+            "sha256": "9a2fb9fbc29dd38b686ec6d82bb936b65996c10d0fa7eb709142524e2195a4a6",
+            "bytes": 2519622,
+            "width": 1024,
+            "height": 1536
+          }
+        ]
+      },
+      "runtime": {
+        "connection": "not_checked",
+        "load": "not_checked",
+        "world_display": "not_checked",
+        "freshness": "indeterminate",
+        "bindings": [],
+        "evidence": []
+      },
+      "notes": [
+        "참조 순서 = ref_gwisae.png · ref_mask.png · ref_tone.png (ref_tone = 톤만, 얼굴 복제 금지)",
+        "Codex 꼬리말 = art_tone_unify_2026-11-09 §2"
+      ]
     }
   ],
   "schema_version": "1.0.0"
